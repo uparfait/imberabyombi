@@ -46,3 +46,4 @@ export const TASK_ACT = {
   comment_cancel: t => { const cid = comment_box(t).dataset.comment; tv_api(t)?.put(s => ({ cedit: { ...s.cedit, [cid]: false } })); },
   comment_save: t => { const box = comment_box(t), id = t.closest('[data-task]').dataset.task, cid = box.dataset.comment;
     const ta = box.querySelector('[data-comment-editor] textarea'), text = ta.value.trim();
+    if (!text) return ta.focus();
