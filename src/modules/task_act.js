@@ -32,3 +32,4 @@ export const TASK_ACT = {
     if (f?.url) fetch(f.url).then(x => x.blob()).then(b => view_file(new File([b], f.name, { type: f.type || b.type }))); },
   task_file_close: t => tv_api(t)?.put({ prev: null }),
   task_file_rm: t => { const id = t.dataset.id, i = +t.dataset.i;
+    request(() => { db.upsert('tasks', { id, files: files_of(db.find('tasks', id)).filter((_, j) => j !== i) }); task_refresh(id, 'Attachment removed.'); },
