@@ -12,3 +12,4 @@ export function verify_page() {
     <form data-form="otp" className="on_bg mt-8 grid gap-6" noValidate><div data-msg-slot="" className="empty:hidden"></div>
       {otp_boxes('Verification code')}
       <label className="flex cursor-pointer items-center gap-3 justify-self-start text-sm font-normal">
+        <input type="checkbox" name="trust" />Trust this device for 30 days</label>
