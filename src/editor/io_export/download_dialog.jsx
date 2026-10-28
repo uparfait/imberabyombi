@@ -43,3 +43,4 @@ const fmt_card = (f, on, pick) => (
 
 /* opt: { fmt, scope, quality, multi, busy }, shared with the submit handler */
 function Download_body({ opt }) {
+  const [, set_n] = useState(0), f = FORMATS.find(x => x.key === opt.fmt);
