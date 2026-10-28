@@ -17,3 +17,4 @@ export function table_full(c, on) {
   const box = r => `inset(${r.top}px ${innerWidth - r.right}px ${innerHeight - r.bottom}px ${r.left}px round 1.5rem)`, ease = 'cubic-bezier(.22,.8,.22,1)';
   tip.hide(); close_pops();
   if (on) {
+    qs('#main')?.classList.remove('page_enter'); const r = card.getBoundingClientRect(); PH[c] = r.height; set(true);
