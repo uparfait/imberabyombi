@@ -12,3 +12,4 @@ export function add_comment() {
   const quote = s.toString().replace(/\u200b/g, '').slice(0, 300), id = uid();
   begin_op(); const spans = wrap_selection('cmt', { 'data-cid': id }); if (!spans.length) return;
   end_op(body_index(host));
+  state.comments.push({ id, tab: state.active, quote, text: '', time: Date.now(), replies: [], draft: true });
