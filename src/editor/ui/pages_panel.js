@@ -27,3 +27,4 @@ export function render_pages_panel() {
 
 /* the panels take room beside the pages when the editor is wide; on a narrow editor they cover the pages */
 export function apply_panels() {
+  const sb = refs.sidebar, cp = refs.comments_panel, sc = scroller; if (!sb || !cp || !sc) return;
