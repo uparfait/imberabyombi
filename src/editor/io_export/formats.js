@@ -20,3 +20,4 @@ export const FORMATS = [
   { key: 'rtf', ext: 'rtf', name: 'Rich Text', desc: 'Basic formatting for WordPad and older editors', color: '#8430ce', icon: 'article', tabs: true },
   { key: 'epub', ext: 'epub', name: 'EPUB e-book', desc: 'For e-readers and book apps; each tab is a chapter', color: '#188038', icon: 'menu_book', tabs: true },
   { key: 'xlsx', ext: 'xlsx', name: 'Excel tables', desc: 'Each table becomes its own worksheet', color: '#107c41', icon: 'table_view', tabs: true },
+  { key: 'csv', ext: 'csv', name: 'CSV', desc: 'Table data as comma-separated values', color: '#12a4af', icon: 'csv', tabs: true },
