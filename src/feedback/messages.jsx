@@ -14,3 +14,4 @@ export function show_msg(slot, tone, title, text, autohide = tone === 'ok') {
   if (autohide) setTimeout(() => { if (!slot.contains(m)) return; m.classList.add('msg_out'); setTimeout(() => m.remove(), 300); }, 7000);
 }
 /* A new slot at the top of a form or section that has none (as in the reference). Views should render their own empty
+   [data-msg-slot]; React leaves this extra first child alone. */
