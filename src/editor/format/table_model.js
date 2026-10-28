@@ -9,3 +9,4 @@ export const HDR_BG = '#e8eaed', STRIPE_BG = '#f8f9fa';
 export const TABLE_PRESETS = [
   { key: 'grid', label: 'Grid', bw: 1, bc: '#000000', header: false, striped: false, style: '' },
   { key: 'header', label: 'Header', bw: 1, bc: '#9aa0a6', header: true, striped: false, style: '' },
+  { key: 'striped', label: 'Striped', bw: 1, bc: '#dadce0', header: true, striped: true, style: '' },
