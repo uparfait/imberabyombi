@@ -8,3 +8,5 @@ export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.r
   return { getItem: k => m.has(k) ? m.get(k) : null, setItem: (k, v) => m.set(k, String(v)), removeItem: k => m.delete(k),
     key: i => [...m.keys()][i], get length() { return m.size; } };
 } })();
+
+/* seed(c) lives in src/schemas, which hands it over with set_seeder(seed) when it loads. db.js does not import the schemas
