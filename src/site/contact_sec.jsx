@@ -28,3 +28,4 @@ export function contact_form() {
 export function contact_sec(full) {
   return (
     <section {...spy_attrs('contact', full)} className="wrap section"><div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr]">
+      <div>{sec_head('Contact', lorem.t(4), lorem.s())}
