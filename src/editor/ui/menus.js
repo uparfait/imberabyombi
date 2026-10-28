@@ -5,3 +5,4 @@ import { state, refs, pages_el, current_page, qs, save_soon } from '../core/inde
 import { indent, clear_formatting, toggle_checklist, insert_hr, insert_page_break, insert_text_at_caret, table_grid_el, table_menu_items } from '../format/index.js';
 import { open_link_dialog, add_comment, add_blank_page } from '../content/index.js';
 import { pick_any, attach_files } from '../io_import/index.js';
+import { cmd, file_items, edit_items, view_items } from './menus_main.js';
