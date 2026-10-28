@@ -35,3 +35,4 @@ function install_panels(offs) {
   listen(offs, refs.comments_close, 'click', () => { state.show_comments = false; apply_panels(); });
   listen(offs, refs.top_comments, 'click', () => { state.show_comments = !state.show_comments; apply_panels(); render_comments(); });
   listen(offs, refs.add_tab_btn, 'click', () => add_tab());
+  listen(offs, refs.add_page_btn, 'click', () => add_blank_page(current_page()));
