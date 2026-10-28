@@ -18,3 +18,4 @@ export function insert_block_at_caret(node) {
   if (!block) host.appendChild(node);
   else if (is_empty_block(block)) block.before(node);
   else if (is_list(block) || is_table(block)) block.after(node);
+  else {
