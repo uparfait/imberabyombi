@@ -53,3 +53,4 @@ export const VIZ_REL_B = {
       + leaves.map((k, i) => mark_group(k, [['Group ' + (i < 4 ? 1 : 2), 'Cluster', i < 4 ? 0 : 1]],
         `<circle class="hit_area" cx="${round1(x(0))}" cy="${round1(y(i))}" r="12"/>`
         + dot(x(0), y(i), i < 4 ? 'var(--series_1)' : 'var(--series_2)', 4)) + `<text x="${round1(x(0) + 10)}" y="${round1(y(i) + 4)}">${esc(fit(k, f.r - 14))}</text>`)
+        .join(''), 'Dendrogram'),
