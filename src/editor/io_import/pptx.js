@@ -64,3 +64,4 @@ export async function pptx_to_html(file) {
   const z = await unzip(await file.arrayBuffer());
   const prels = rels_of(z.has('ppt/_rels/presentation.xml.rels') ? await z.text('ppt/_rels/presentation.xml.rels') : '');
   let slides = z.has('ppt/presentation.xml')
+    ? by_tag(parse_xml(await z.text('ppt/presentation.xml')), 'sldId')
