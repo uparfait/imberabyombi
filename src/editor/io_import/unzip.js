@@ -16,3 +16,4 @@ export async function unzip(buf) {
   }
   const cache = new Map();
   const find = n => entries.has(n) ? n : Array.from(entries.keys()).find(k => k.toLowerCase() === String(n).toLowerCase());
+  async function bytes(n) {
