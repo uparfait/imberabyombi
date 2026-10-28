@@ -18,3 +18,4 @@ export function typer(el) {
   let w; try { w = JSON.parse(el.dataset.type); } catch { return; }
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = w[0]; return; }
   let i = 0, j = 0, del = false, hold = 0;
+  TIMERS.push(setInterval(() => { if (hold) { hold--; return; } const s = w[i]; j += del ? -1 : 1; el.textContent = s.slice(0, j);
