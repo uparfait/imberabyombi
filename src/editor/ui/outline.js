@@ -23,3 +23,4 @@ export function render_outline() {
     const row = el('div', { class: 'outline_row select-none', role: 'treeitem', tabindex: '-1', 'aria-level': String(lvl + 1), 'data-lvl': String(lvl),
       style: `padding-left:${0.25 + lvl * 0.875}rem` });
     row.innerHTML = (kids ? `<button type="button" class="outline_fold" tabindex="-1" aria-label="Fold or unfold">${mi('expand_more')}</button>` : '<span class="outline_fold_gap"></span>')
+      + '<span class="outline_text min-w-0 flex-1 truncate"></span>'
