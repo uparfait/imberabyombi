@@ -10,3 +10,4 @@ const SOCIAL_CLS = 'grid h-10 w-10 place-items-center rounded-full border border
 
 export function footer() {
   const y = new Date().getFullYear(), soc = [['mail', 'Email'], ['globe', 'Website'], ['send', 'Telegram'], ['link', 'LinkedIn']];
+  const col = (t, items) => (
