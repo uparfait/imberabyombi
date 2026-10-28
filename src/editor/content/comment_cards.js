@@ -22,3 +22,4 @@ function on_card_click(e, c, card) {
   const x = e.target.closest('[data-x]');
   if (!x) {
     if (e.target.closest('input,textarea')) return;
+    activate_comment(c.id); const sp = qs(`.cmt[data-cid="${c.id}"]`, pages_el); if (sp) sp.scrollIntoView({ block: 'center', behavior: 'smooth' });
