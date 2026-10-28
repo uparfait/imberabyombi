@@ -17,3 +17,4 @@ export function table_name(t, i) {
 export const top_tables = root => qsa('table', root).filter(t => !t.parentElement.closest('table'));
 /* [{ name, hdr (first row is a header), rows: [[cell text…]…] }]; a spanned cell is followed by empty cells */
 export function export_data(root) {
+  const ts = top_tables(root);
