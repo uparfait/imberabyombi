@@ -6,3 +6,4 @@ import { css_var, rem } from '../lib/index.js';
 export const CHARTS = new Map();
 export function draw_chart(cv, labels, vals, anim = true) {
   if (!cv) return; CHARTS.set(cv.id, [labels, vals]);
+  const dpr = devicePixelRatio || 1, wd = cv.clientWidth, ht = cv.clientHeight; if (!wd || !ht) return;
