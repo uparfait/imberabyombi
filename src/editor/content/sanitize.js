@@ -16,3 +16,4 @@ export const IMG_ONLY_STYLE = new Set(['border', 'border-radius', 'box-shadow', 
 export const KEEP_ATTR = new Set(['colspan', 'rowspan', 'start', 'alt', 'width', 'color', 'face', 'data-cid', 'data-checked', 'data-strike', 'data-pos',
   'data-align', 'data-hdr', 'data-autobg', 'data-header', 'data-striped', 'data-style', 'download', 'title']);
 /* an image in front of / behind the text keeps its place on the page (and the page it is on, data-page) */
+const ABS_STYLE = ['position', 'left', 'top', 'z-index'];
