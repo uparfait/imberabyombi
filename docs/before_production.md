@@ -14,3 +14,4 @@ The template is a complete front end with demo data in the browser. Before real 
 - Replace the brand name and logo parts (`cfg.name`, `cfg.logo`) and the favicon (`public/favicon.svg`).
 
 ## SEO and sharing
+- Update `index.html`: title, description, keywords, author, canonical URL, Open Graph image, JSON-LD values.
