@@ -4,3 +4,4 @@
 import { el, esc_html, PALETTE } from '../core/index.js';
 import { close_menus } from './menu_engine.js';
 import { peek, peek_on, keep, unpeek } from './hover_preview.js';
+import { mi } from './ui_dom.js';
