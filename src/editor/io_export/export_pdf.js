@@ -26,3 +26,4 @@ export async function export_pdf(scope, name, scale = 2) {
         qsa('[contenteditable]', c).forEach(x => x.removeAttribute('contenteditable'));
         holder.innerHTML = ''; holder.appendChild(c);
         /* html2canvas's own option names */
+        const canvas = await window.html2canvas(c, { scale, useCORS: true, backgroundColor: bg, logging: false });
