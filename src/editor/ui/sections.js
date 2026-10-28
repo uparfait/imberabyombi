@@ -40,3 +40,4 @@ export function section_moves(k) { const m = section_model(); return { up: up_to
 function rewrite(m, mark) {
   begin_op();
   if (mark) mark.setAttribute('data-sec', '');
+  const bs = bodies(); bs.forEach((b, i) => { b.innerHTML = i ? '' : m.c.innerHTML; });
