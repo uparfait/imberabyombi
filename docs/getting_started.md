@@ -31,3 +31,4 @@ and the map embed. Broken images fall back to a branded placeholder.
 
 ## Reset the demo
 Settings → Data → **Reset demo data** restores the sample records. Theme, session and tokens stay.
+All storage keys start with `loremds:v1:` (`window.NS` in `index.html`); change it to start a fresh dataset.
