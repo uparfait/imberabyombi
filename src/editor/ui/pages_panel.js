@@ -18,3 +18,4 @@ export function render_pages_panel() {
     row.querySelector('.truncate').textContent = snip;
     row.addEventListener('click', e => {
       if (e.target.closest('.page_del')) { delete_page(i); return; }
+      b.closest('.page_wrap').scrollIntoView({ block: 'start', behavior: 'smooth' }); caret_to_start(first_flow(b));
