@@ -9,3 +9,6 @@ export function after_close(fn) {
   const d = document.getElementById('modal');
   if (!d || !d.open) { fn(); return; }
   d.addEventListener('close', () => fn(), { once: true });
+}
+
+/* { title, content (JSX), buttons: [{ label, primary, action(form) }], width, on_open(form) }: Cancel comes with the
