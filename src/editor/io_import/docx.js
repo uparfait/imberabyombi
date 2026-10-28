@@ -61,3 +61,4 @@ async function docx_blocks(cx, nodes, container) {
         if (pb) { stack = []; page_break(); } continue;
       }
       stack = [];
+      let tag = 'p', cls = ''; const hm = /heading\s*([1-6])/i.exec(style);
