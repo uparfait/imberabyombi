@@ -32,3 +32,4 @@ function on_keydown(e) {
   if (t.dataset?.list != null && pick.a === t && k === 'ArrowDown') { e.preventDefault(); pick.el.querySelector('.pk_item')?.focus(); }
   if ((k === 'Enter' || k === ' ') && t.matches?.('[data-act][tabindex]:not(button, a, input, select, textarea)')) { e.preventDefault(); t.click(); }
   if (k === 'Enter' && t.tagName === 'INPUT' && t.closest?.('.kv_cell, .tv_status_more') && !pick.a) {
+    e.preventDefault(); t.closest('.kv_cell, [data-tv-status]').querySelector('[data-act=tv_save], [data-act=tv_status_save]')?.click(); }
