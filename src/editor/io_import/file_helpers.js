@@ -6,3 +6,4 @@ import { esc_html } from '../core/index.js';
 export const IMG_EXT = new Set('png jpg jpeg gif webp bmp svg avif ico'.split(' '));
 export const CODE_EXT = new Set(('js mjs cjs ts jsx tsx py java c h cpp cc hpp cs go rb php rs kt kts swift sh bash zsh ps1 bat cmd sql css scss ' +
   'sass less xml yaml yml toml ini cfg conf env log r pl lua dart scala vue svelte gradle properties tex bib srt vtt diff patch').split(' '));
+export const ext_of = n => { const m = /\.([^.]+)$/.exec(n || ''); return m ? m[1].toLowerCase() : ''; };
