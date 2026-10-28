@@ -18,3 +18,6 @@ export function el(tag, attrs = {}, html) {
 export function download(blob, name) {
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+}
+
+/* one promise per library: the first URL that loads wins; a failed library can be retried later */
