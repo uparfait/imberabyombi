@@ -23,3 +23,4 @@ function on_input(e) {
   if (!pick.mute && pick.a === t) { if (t.dataset.list == null && t.value) pick.view = pick.from(t); pick.draw(); }
   else if (!pick.mute && t.dataset.list != null) pick.open(t);
   if (t.type === 'range') fill_range(t);
+  if (t.dataset.out) { const o = qs(t.dataset.out); if (o) o.value = t.value; }
