@@ -6,3 +6,4 @@ export const PROJECT_APP = 'document-editor';
 
 export const CONTENT_CSS = '\n' + [
   '.doc_content{font-family:Arial,sans-serif;font-size:11pt;line-height:1.15;color:#000;white-space:pre-wrap;overflow-wrap:break-word;'
+    + 'word-wrap:break-word;tab-size:4;-moz-tab-size:4}',
