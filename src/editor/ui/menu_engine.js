@@ -4,3 +4,4 @@
    previews it (hover_preview.js) unless it opens a submenu or a dialog (no_preview, or a label ending in "…"); a click keeps
    it. peek: a view-only preview, () => undo function (zoom). */
 import { el, esc_html } from '../core/index.js';
+import { peek, peek_view, unpeek, unpeek_key, pick } from './hover_preview.js';
