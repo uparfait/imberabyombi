@@ -10,3 +10,4 @@ function page_lines(tc) {
     if (!('str' in it)) continue;
     const y = it.transform[5], h = Math.abs(it.transform[3]) || it.height || 10;
     if (cur.y !== null && Math.abs(y - cur.y) > h * 0.5 && cur.text) { lines.push(cur); cur = { text: '', y: null, h: 0 }; }
+    if (cur.y === null) cur.y = y; cur.text += it.str; cur.h = Math.max(cur.h, h);
