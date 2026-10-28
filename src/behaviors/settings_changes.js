@@ -22,3 +22,4 @@ export function role_land_change(t) {
 export function perm_change(t) {
   const rs = roles(), r = rs.find(x => x.id === t.dataset.role);
   if (r && r.perms !== '*') request(() => { const was = r.land; r.perms = { ...r.perms, [t.dataset.perm]: +t.value };
+    if (!role_opens(r).some(m => m.k === r.land)) r.land = role_opens(r)[0]?.k || '';   /* its landing page was taken away: the first page it can still open */
