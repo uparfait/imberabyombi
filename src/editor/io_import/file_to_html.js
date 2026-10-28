@@ -49,3 +49,4 @@ export async function file_to_html(file) {
   if (['doc', 'ppt', 'pages', 'key', 'wpd', 'wps'].includes(ext)) {
     const chip = await attachment_html(file);
     return { kind: 'file', html: `<p>${chip}</p>`, inline: chip,
+      note: `${name} uses an older format that can’t be turned into editable text, so it was attached as a file. `
