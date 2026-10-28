@@ -30,7 +30,7 @@ export function week_grid(d, items) {
       {items.filter(i => i.date === k && !i.all_day).map(chip)}{k === td ? now_line : null}</div>; };
   return <div className="overflow-x-auto"><div className="min-w-[44rem]">
     <div className={`${cols} border-b border-line`}>
-      <div className="self-end pb-1 pl-1 text-[10px] text-muted">{`GMT${o >= 0 ? '+' : '-'}${pad(Math.abs(o))}`}</div>{days.map(head)}</div>
+      <div className="self-end pb-1 pl-1 text-[0.625rem] text-muted">{`GMT${o >= 0 ? '+' : '-'}${pad(Math.abs(o))}`}</div>{days.map(head)}</div>
     {items.some(i => i.all_day && days.some(x => ymd(x) === i.date)) ? <div className={`${cols} border-b border-line`}>
       <div className="self-center pr-2 text-right text-[10px] text-muted">Tasks</div>{days.map(all_day)}</div> : null}
     <div id="date_hours" className="max-h-[34rem] overflow-y-auto" data-chain=""><div className={`relative ${cols}`} style={{ height: '72rem' }}>
