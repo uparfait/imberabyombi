@@ -14,3 +14,4 @@ export function spark(v, hi = true, labels = null, fmt = num, name = 'Value', w 
     <div className="kpi_spark">
       <svg viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden="true"><path d={path_of(pts)} /></svg>
       {hi ? <span style={{ left: `${round1(ex / w * 100)}%`, top: `${round1(ey / h * 100)}%` }}></span> : null}
+      {labels ? v.map((n, i) => (
