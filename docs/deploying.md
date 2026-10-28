@@ -22,10 +22,7 @@ Asset paths and every link in the app follow it.
 3. In the repository settings, set Pages to deploy from that branch or from GitHub Actions.
 GitHub Pages serves `404.html` for every unknown path, so deep links and reloads open the app on the right page.
 
-## Netlify, Vercel, Cloudflare Pages
-- Build command: `npm run build`
-- Output folder: `dist`
-- No redirects are needed (hash routes).
+## Netlify, Cloudflare Pages
 
 ## Any web server (Apache, Nginx, IIS, a shared host)
 Upload the contents of `dist/`. Serve `index.html` for `/`. Let the server cache `assets/*` files for a long time
