@@ -17,3 +17,4 @@ export function rtf_to_html(rtf) {
     out.push(`<table class="doc_table"><tbody>${rows.map(r => `<tr>${r.map(c => `<td><p>${c || '<br>'}</p></td>`).join('')}</tr>`).join('')}</tbody></table>`); rows = [];
   };
   const end_para = () => { if (in_tbl) { para += '<br>'; return; } flush_table(); out.push(`<p>${para || '<br>'}</p>`); para = ''; };
+  let i = 0; const L = rtf.length;
