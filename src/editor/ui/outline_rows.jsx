@@ -52,3 +52,4 @@ function on_key(e, row) {
   else if (k === 'ArrowUp') to(rows[i - 1]);
   else if (k === 'Home') to(rows[0]);
   else if (k === 'End') to(rows[rows.length - 1]);
+  else if (k === 'ArrowRight') {
