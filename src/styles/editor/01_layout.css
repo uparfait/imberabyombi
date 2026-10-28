@@ -22,3 +22,5 @@
 }
 #editor .tb_back { display: none; }   /* Back in the toolbar only while the title bar is folded away */
 #editor #topbar:not(.show) + #toolbar .tb_back { display: inline-grid; }
+
+/* Workspace: rulers + the scrolling pages, on a tinted surface so the white pages stand out (flat: a line, no shadow) */
