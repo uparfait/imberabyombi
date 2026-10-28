@@ -9,3 +9,4 @@ import { staff_card } from './strategies_staff.jsx';
 export function staff_dir() {
   lorem.seed(77); const teams = [lorem.t(1), lorem.t(1), lorem.t(1), lorem.t(1)];
   return (
+    <section className="wrap section"><div className="flex flex-wrap items-center gap-3">
