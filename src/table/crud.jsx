@@ -35,3 +35,4 @@ export function crud(c, o = {}) {
   o.mod = o.mod || route.mod; cur[c] = o;
   const s = schemas[c], can = auth.can(o.mod, 2), st = ui.sort[c], hide = tview(c).hide, full = ui.table_full === c, b = table_body(c);
   after_render(() => sync_tools(c));
+  return (
