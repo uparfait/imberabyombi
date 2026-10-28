@@ -14,3 +14,4 @@ export function update_link_bubble() {
   lb.style.display = 'flex';
   const u = rem();   /* gaps in rem: they scale with the interface */
   lb.style.left = clamp(r.left, u / 2, innerWidth - lb.offsetWidth - u / 2) + 'px';
+  lb.style.top = Math.min(r.bottom + u * 0.375, innerHeight - u * 3.125) + 'px';
