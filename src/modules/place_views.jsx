@@ -14,3 +14,4 @@ const returned = (r, can) => can && r.status === 'Rented' ? <button className="b
 VIEWS.library = () => {
   const t = ui.tab.lib || 'books', b = db.list('books'), rn = db.list('rentals');
   const out = rn.filter(r => r.status === 'Rented'), over = out.filter(r => r.due < ymd()).length;
+  return <>{stat_row([['Titles', b.length, 'book'], ['Copies', b.reduce((a, x) => a + (+x.copies || 0), 0), 'layers', 'ink'], ['On loan', out.length, 'arrow_r', 'info'],
