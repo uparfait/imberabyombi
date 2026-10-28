@@ -20,3 +20,4 @@ export const VIZ_TIME_A = {
     const x = band(m.length, f.l, f.w - f.r), pts = v.map((val, i) => [x(i), ax.y(val)]);
     return { svg: svg(f, ax.g + `<path d="${path_of(pts)}L${round1(x(11))} ${round1(ax.y(0))}L${round1(x(0))} ${round1(ax.y(0))}Z" style="fill:var(--series_1);opacity:.1"/>`
         + `<path class="series_line" d="${path_of(pts)}" style="stroke:var(--series_1)"/>${dot(x(11), ax.y(v[11]), 'var(--series_1)')}`
+        + `<text class="value_label" x="${round1(x(11))}" y="${round1(ax.y(v[11]) - 10)}" text-anchor="end">${num(v[11])}</text>`
