@@ -63,3 +63,4 @@ export function inline_xml(node, f, ctx) {
     if (n.nodeType === 3) { out += text_runs(n.data.replace(/\u200b/g, ''), f); return; }
     if (n.nodeType !== 1) return;
     const t = n.tagName;
+    if (t === 'BR') { if (n.nextSibling) out += `<w:r>${r_pr(f)}<w:br/></w:r>`; return; }
