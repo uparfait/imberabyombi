@@ -4,3 +4,4 @@ import { qs } from '../lib/index.js';
 import { reduced, show_dialog } from '../feedback/index.js';
 import { before_render } from '../store/index.js';
 import { DIALOGS, set_dialog } from './dialog_store.js';
+import { pick } from './pick.js';
