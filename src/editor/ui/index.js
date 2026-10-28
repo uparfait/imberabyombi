@@ -23,3 +23,4 @@ export * from './pages_panel.js';
 export * from './rulers.js';
 export * from './view.js';
 export * from './menu_items.jsx';
+export * from './menus_main.js';
