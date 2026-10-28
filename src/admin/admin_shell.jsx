@@ -8,3 +8,5 @@ import { sidebar } from './sidebar.jsx';
 import { header_tools } from './header_tools.jsx';
 import { panel_html } from './panel_html.jsx';
 import { Live_slot, sync_ref } from './live_slot.jsx';
+
+const RAIL = [['notes', 'bulb', 'text-warn', 'Notes'], ['tasks', 'check', 'text-info', 'My tasks'], ['help', 'help', 'text-ok', 'Help']];
