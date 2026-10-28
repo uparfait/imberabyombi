@@ -10,3 +10,4 @@ let seq = 0;
 const tie = k => el => { if (el) KEYS.set(el, k); };
 const keyed = groups => groups.map(g => ({ t: g.t, key: ++seq, items: (g.items || []).map(x => ({ t: x.t, done: x.done, key: ++seq })) }));
 export const sub_api = el => API.get(el?.closest?.('[data-subs]'));
+export const sub_key = el => KEYS.get(el);
