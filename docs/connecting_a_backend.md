@@ -21,3 +21,4 @@ error becomes a notification. Put your `fetch()` inside `fn` and set `cfg.latenc
 ```js
 request(async () => {
   const res = await fetch('/api/tasks', { method: 'POST', body: JSON.stringify(row), headers: { 'Content-Type': 'application/json' } });
+  if (!res.ok) throw new Error('save failed');          // shown as "The request could not be completed"
