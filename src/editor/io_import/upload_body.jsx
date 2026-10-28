@@ -9,3 +9,5 @@ import { qs } from '../core/index.js';
 import { after_close } from '../format/index.js';
 import { ext_of, fmt_size } from './file_helpers.js';
 import { badge, fmt_chip } from './badge.jsx';
+
+export function upload_store(files, m) {
