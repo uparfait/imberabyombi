@@ -12,3 +12,4 @@ export const fmt_size = n => n < 1024 ? n + ' B' : n < 1048576 ? (n / 1024).toFi
 export const BADGES = {
   docx: ['DOCX', '#2b579a'], docm: ['DOCX', '#2b579a'], dotx: ['DOTX', '#2b579a'], doc: ['DOC', '#2b579a'], odt: ['ODT', '#2b579a'],
   rtf: ['RTF', '#8430ce'], pdf: ['PDF', '#d93025'], xlsx: ['XLSX', '#107c41'], xlsm: ['XLSM', '#107c41'], xls: ['XLS', '#107c41'],
+  ods: ['ODS', '#107c41'], csv: ['CSV', '#12a4af'], tsv: ['TSV', '#12a4af'], json: ['JSON', '#5f6368'], pptx: ['PPTX', '#c43e1c'],
