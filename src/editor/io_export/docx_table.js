@@ -35,3 +35,4 @@ export function table_xml(t, ctx) {
   return out + '</w:tbl>';
 }
 const HR_XML = '<w:p><w:pPr><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="1" w:color="9AA0A6"/></w:pBdr></w:pPr></w:p>';
+/* loose inline nodes (text, spans, images between blocks) are gathered into one paragraph; cell_fmt: a table cell's base format */
