@@ -18,3 +18,4 @@ export function refresh_toolbar() {
     if (k === 'bold' || k === 'italic' || k === 'underline') on = q(k);
     else {
       const li = n.closest('li'), l = li && li.parentElement;
+      if (k === 'checklist') on = !!(l && l.classList.contains('checklist'));
