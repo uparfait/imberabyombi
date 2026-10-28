@@ -25,3 +25,4 @@ export function load_img(src) {
 export const CROSS_MSG = 'This image comes from another website, so it can’t be edited here. Download it, then upload it instead.';
 
 /* draw im with render(canvas, im) and read the result back ('alpha' from render keeps transparency: PNG) */
+function draw(img, im, render) {
