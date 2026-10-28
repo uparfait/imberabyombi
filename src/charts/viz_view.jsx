@@ -60,3 +60,4 @@ export function charts_view() {
       </div>
       <div id="viz_all" className="viz_all grid gap-10">
         <section id="viz_kpi" className="scroll-mt-20"><h2 className="mb-4 text-xl">KPIs</h2><div id="viz_kpis">{kpis()}</div></section>
+        {VIZGROUPS.slice(1).map(([g, l]) => (
