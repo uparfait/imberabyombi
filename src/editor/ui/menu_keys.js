@@ -27,3 +27,5 @@ export function menu_key(e) {
   if (k === 'ArrowDown' || k === 'ArrowUp') {
     if (n) focus_row(m, rows[at < 0 ? (k === 'ArrowDown' ? 0 : n - 1) : (at + (k === 'ArrowDown' ? 1 : -1) + n) % n]);
     return true;
+  }
+  if (k === 'Home' || k === 'End') { if (n) focus_row(m, rows[k === 'Home' ? 0 : n - 1]); return true; }
