@@ -59,3 +59,4 @@ export function mark_outline() {
   while (at >= 0 && rows[at].hidden) at--;
   rows.forEach((row, i) => {
     row.classList.toggle('active', i === at);
+    if (i === at) row.setAttribute('aria-current', 'location'); else row.removeAttribute('aria-current');
