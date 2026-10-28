@@ -2,3 +2,4 @@
    block; a project file is recognised and returned as { project }. And any file as a downloadable attachment chip. */
 import { esc_html, read_as_data_url } from '../core/index.js';
 import { PROJECT_APP } from '../io_export/index.js';
+import { fmt_size } from './file_helpers.js';
