@@ -58,3 +58,4 @@ export function tab_menu(t) {
   ];
 }
 /* the tab's name becomes a field in its row: Enter / leaving saves, Esc cancels */
+export function start_rename(t) {
