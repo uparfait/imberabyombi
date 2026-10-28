@@ -32,3 +32,4 @@ export function row_drag(e, o) {
       if (Math.abs(py - y0) < START && Math.abs(ev.clientX - x0) < START) return;
       on = true; o.row.classList.add('dragging'); if (o.list && o.cls) o.list.classList.add(o.cls);
       line = el('div', { class: 'drop_line pointer-events-none fixed z-[70] h-0.5 rounded-full bg-brand' }); line.hidden = true;
+      document.body.appendChild(line); tick();
