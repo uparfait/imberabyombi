@@ -37,3 +37,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 | `before_render(fn)` | a cleanup that runs before every draw (close the picker, hide tooltips) |
 
 ## Where state lives
+| Kind                         | Where                                            |
