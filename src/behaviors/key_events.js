@@ -36,3 +36,6 @@ function on_keydown(e) {
   if ((e.ctrlKey || e.metaKey) && k.toLowerCase() === 'k' && route.path.startsWith('/admin') && auth.user) { e.preventDefault(); open_cmd(); }
   if (k === 'Escape') { const pop = qs('.pop:not([hidden])'); close_pops();
     if (!pop && ui.table_full && !qs('dialog[open]')) table_full(ui.table_full, false); if (ui.side && innerWidth < 1024) ACT.side(); }
+}
+
+export const install_keys = () => { document.addEventListener('submit', on_submit); document.addEventListener('keydown', on_keydown); };
