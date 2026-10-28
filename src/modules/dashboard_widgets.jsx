@@ -10,3 +10,5 @@ import { draw_chart } from '../charts/index.js';
 import { cal_items } from '../admin/index.js';
 import { due_tag } from './task_dates.jsx';
 import { to } from '../router/index.js';
+
+const head = (title, path, link) => <header className="flex items-center justify-between"><h2 className="text-lg">{title}</h2>
