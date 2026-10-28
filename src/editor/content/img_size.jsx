@@ -30,4 +30,6 @@ export function alt_text_dialog(img) {
       <input type="text" id="alt_t" name="alt" defaultValue={img.getAttribute('alt') || ''} placeholder=" " /></div>
   ), on_submit: () => {
     const v = qs('#alt_t').value.trim(); img_op(img, x => x.setAttribute('alt', v));
+    toast(v ? 'Alt text saved' : 'Alt text removed');   /* it does not show on the page, so say so (the quick bar shows it) */
+  } });
 }
