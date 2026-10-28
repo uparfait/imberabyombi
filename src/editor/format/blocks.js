@@ -63,3 +63,4 @@ export function transform_case(mode) {
   if (!can_edit()) return;
   const host = restore_focus(); const s = getSelection(); if (!s.rangeCount || s.isCollapsed) { toast('Select text first'); return; }
   begin_op(); const r = s.getRangeAt(0); const saved = [r.startContainer, r.startOffset, r.endContainer, r.endOffset];
+  const root = el_of(r.commonAncestorContainer);
