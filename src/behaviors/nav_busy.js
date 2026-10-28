@@ -2,3 +2,5 @@
    The click listener calls set_nav_busy(href); a sidebar link reads use_nav_busy(href) (a hook: call it in a component);
    every redraw clears it (the reference's redraw brought the icon back). */
 import { useSyncExternalStore } from 'react';
+
+let busy_href = null;
