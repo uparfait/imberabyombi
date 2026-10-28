@@ -76,3 +76,4 @@ export function shallow_clone(c) {
 }
 export function move_items(c, items, next) {
   let f = first_flow(next);
+  if (!(f && f.hasAttribute('data-cont') && same_kind(f, c))) { f = shallow_clone(c); f.setAttribute('data-cont', '1'); next.insertBefore(f, next.firstChild); }
