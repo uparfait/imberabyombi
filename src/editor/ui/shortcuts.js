@@ -64,3 +64,4 @@ export function on_key(e) {
   if (!(e.ctrlKey || e.metaKey)) return;
   const k = e.key.toLowerCase(), g = global_key(e, k);
   if (g) { done(); g(); return; }
+  const in_editor = !!(editable_of(t) && pages_el && pages_el.contains(t)), in_field = !!(t.matches && t.matches('input,textarea,select'));
