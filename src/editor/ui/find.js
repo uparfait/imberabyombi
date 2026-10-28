@@ -13,3 +13,4 @@ export function open_find() {
   const p = refs.find_panel, i = refs.find_input; if (!p || !i) return;
   p.classList.add('show'); find_state.open = true;
   const sel = last_range && !last_range.collapsed ? last_range.toString() : '';
+  if (sel && sel.length < 80) i.value = sel;
