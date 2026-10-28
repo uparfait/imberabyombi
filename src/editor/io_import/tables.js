@@ -32,3 +32,4 @@ export function rows_to_table(rows, header) {
   return h + '</table>';
 }
 /* empty trailing rows / columns dropped, then at most max_r rows and max_c columns (cut = something was left out) */
+export function trim_rows(rows, max_r = 2000, max_c = 40) {
