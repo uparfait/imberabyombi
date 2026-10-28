@@ -22,3 +22,4 @@ const FLD = 'fld mb-1.5 mt-3 block text-sm text-muted', SEG_ON = 'bg-brand/15 te
 
 export function Upload_body({ up }) {
   const { files, m } = use_up(up), zone = useRef(null), input = useRef(null), [over, set_over] = useState(false);
+  const add = fl => up.set({ files: [...up.get().files, ...Array.from(fl || [])] });
