@@ -86,3 +86,4 @@ export function toggle_menu(anchor, items_fn, opts) {
 /* the rows a keyboard can reach in menu m */
 export function menu_rows(m) { return Array.from(m.querySelectorAll(':scope > .ed_mi:not(.disabled)')); }
 /* the row the keyboard goes on from (the pointer's row too), marked .cur in case a preview moves the focus */
+function set_cur(r, m = r.parentElement) { if (!m) return; if (m._cur && m._cur !== r) m._cur.classList.remove('cur'); m._cur = r; r.classList.add('cur'); }
