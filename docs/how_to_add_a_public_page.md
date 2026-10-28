@@ -36,7 +36,7 @@ Add `['services', 'Services']` to `PUB` in `src/site/site_bits.jsx`: the header 
 list it. To also show the section on the home page, add `{services_sec()}` to `home()` in `src/site/pages.jsx`.
 
 ## 4. Tell search engines
-Add `<url><loc>https://example.com/#/services</loc></url>` to `public/sitemap.xml`.
+Add `<url><loc>https://example.com/services</loc></url>` to `public/sitemap.xml`.
 
 ## Tips
 - Keep each file under 100 lines: one section per file.
