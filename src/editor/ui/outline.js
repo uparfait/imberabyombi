@@ -10,3 +10,5 @@ import { wire_outline_row } from './outline_rows.jsx';
 function fold_key(h, seen) { const k = level_of(h) + ':' + clean_text(h), n = (seen[k] = (seen[k] || 0) + 1); return n > 1 ? k + '#' + n : k; }
 export const outline_el = () => document.getElementById('outline');
 export const outline_rows = ol => (ol ? qsa(':scope > .outline_row', ol) : []);
+
+export function render_outline() {
