@@ -20,3 +20,4 @@ export async function export_pdf(scope, name, scale = 2) {
       if (state.active !== ids[ti]) { state.active = ids[ti]; render_tab(); await new Promise(r => setTimeout(r, 80)); }
       const pages = qsa('.page', pages_el);
       for (let i = 0; i < pages.length; i++) {
+        toast(`Making PDF: ${ids.length > 1 ? `tab ${ti + 1} of ${ids.length}, ` : ''}page ${i + 1} of ${pages.length}`, 0);
