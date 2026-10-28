@@ -2,3 +2,4 @@
    fallbacks: no access to a module, and page not found (admin or public). */
 import { VIEWS } from './views.js';
 import { emails_view } from '../emails/index.js';
+import { viz } from '../charts/index.js';
