@@ -5,3 +5,4 @@ import { ic, i3 } from '../icons/index.js';
 import { ui, render_flags, get_version } from '../store/index.js';
 import { MODS } from '../auth/index.js';
 import { sidebar } from './sidebar.jsx';
+import { header_tools } from './header_tools.jsx';
