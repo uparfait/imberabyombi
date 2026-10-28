@@ -25,3 +25,4 @@ export const sub_group = (g = {}) => <div key={g.key} ref={tie(g.key)} className
 /* groups: the subtasks it opens with. Changes are drawn at once (flushSync), so a handler can focus the new row right after */
 export function Sub_editor({ groups }) {
   const [gs, set_gs] = useState(() => keyed(groups));
+  const put = fn => flushSync(() => set_gs(fn));
