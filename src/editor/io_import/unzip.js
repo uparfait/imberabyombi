@@ -31,3 +31,6 @@ export async function unzip(buf) {
   return {
     names: () => Array.from(entries.keys()), has: n => !!find(n), bytes,
     text: async n => new TextDecoder().decode(await bytes(n)),
+    data_url: async n => { const m = MIME[ext_of(n)]; if (!m || !find(n)) return null; return `data:${m};base64,${bytes_to_b64(await bytes(n))}`; }
+  };
+}
