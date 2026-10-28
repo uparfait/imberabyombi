@@ -33,3 +33,4 @@ export function notify(text, tone = 'ok', title) {
   const close = () => { clearTimeout(tm); n.classList.add('out'); setTimeout(() => n.remove(), reduced() ? 0 : 350); };
   const run = () => { t0 = Date.now(); tm = setTimeout(close, left); };
   n.addEventListener('mouseenter', () => { clearTimeout(tm); left -= Date.now() - t0; });
+  n.addEventListener('mouseleave', run);
