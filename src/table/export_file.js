@@ -6,3 +6,5 @@ import { schemas } from '../schemas/index.js';
 import { role_name } from '../auth/index.js';
 import { notify } from '../feedback/index.js';
 import { rows_of } from './rows.js';
+
+export const EXPORTS = [['csv', 'CSV', 'file'], ['json', 'JSON', 'note'], ['xls', 'Excel', 'grid']];
