@@ -55,3 +55,4 @@ export function install_format() {
   document.addEventListener('mousemove', on_hover);
   addEventListener('mousedown', on_down, true);
   return () => {
+    document.removeEventListener('mousemove', on_hover); removeEventListener('mousedown', on_down, true);
