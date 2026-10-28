@@ -32,3 +32,5 @@
 .tb_btn .dd_arrow { margin-left: -.125rem; }
 .tb_dd.mode_btn { gap: .375rem; padding: 0 .25rem 0 .5rem; }
 .tb_dd.mode_btn .ic_slot { display: inline-grid; place-items: center; }
+
+.tb_sep { flex: none; width: 1px; height: 1.25rem; margin: 0 .3125rem; background: rgb(var(--line)); }
