@@ -14,3 +14,4 @@ export function save_project(name = file_base()) {
   download(new Blob([JSON.stringify(data)], { type: 'application/json' }), name + '.json'); toast('Project file saved with all tabs');
 }
 export function export_name() { return state.tabs.length > 1 ? `${file_base()} - ${active_tab().name}` : file_base(); }
+export function clean_content() { const d = el('div'); d.innerHTML = collect_html(); qsa('.cmt', d).forEach(s => s.replaceWith(...s.childNodes)); return d; }
