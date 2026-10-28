@@ -20,3 +20,4 @@ export function schedule_ui() {
   }, 250);
 }
 /* editor_start's stop(): drop pending frames / timers */
+export function cancel_scheduled() {
