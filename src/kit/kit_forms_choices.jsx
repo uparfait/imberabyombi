@@ -22,3 +22,4 @@ export function kit_forms_choices(brand_hex) {
   const multi = Array.from({ length: 10 }, () => lorem.t(2));   /* the first two start selected */
   return (
     <fieldset className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><legend>Choices</legend>
+      {groups}{suggest}
