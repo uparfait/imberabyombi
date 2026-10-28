@@ -6,3 +6,4 @@ public/               favicon.svg, robots.txt, sitemap.xml (copied as they are i
 src/main.jsx          entry: stylesheet (in order), mounts <App/> in #app, starts the router (boot)
 src/app.jsx           root component: the page for the current route + the shared dialogs
 src/styles/           the stylesheet: base/ (fonts, tokens, scaling, native elements), components/ (@layer components),
+                      overrides/ (rules after the utilities); index.css and overrides.css import them in order
