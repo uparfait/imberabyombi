@@ -14,3 +14,4 @@ export const auth = {
   boss() { const r = auth.role(); return r?.perms === '*' || r?.id === 'admin'; }
 };
 export const me = () => auth.user?.name || '';
+export const base_url = () => location.href.split('#')[0];
