@@ -45,3 +45,4 @@ export function crud(c, o = {}) {
           <h2 id={`table_title_${c}`} className="text-lg">{o.title || cap(s.l) + 's'}</h2>
           <span className="chip bg-surface-2 text-muted" id={`table_count_${c}`}>{b.count}</span>
           <div className="ml-auto flex items-center gap-2">{export_menu(c)}
+            {can ? <button className="btn btn_primary btn_sm" data-act="add" data-col={c}>{ic('plus', 'w-4 h-4')}{`Add ${s.l}`}</button> : null}{full_btn(c, full)}</div>
