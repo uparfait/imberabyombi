@@ -26,3 +26,4 @@
   :where(input, select, textarea):is(:focus, [data-open]) { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
   :where(input, select, textarea, button):disabled { opacity: .5; cursor: not-allowed; }
   input::placeholder, textarea::placeholder { color: rgb(var(--muted) / .75); opacity: 1; }
+  textarea { min-height: 7rem; resize: vertical; }
