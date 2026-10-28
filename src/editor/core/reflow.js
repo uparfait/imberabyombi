@@ -22,3 +22,4 @@ export function reflow(cur = 0, full = false) {
   if (state.setup.pageless) { reflow_pageless(); return; }
   set_cur_sel(save_sel());
   let bs = bodies();
+  for (let i = Math.max(0, cur - 1); i < bs.length; i++) {
