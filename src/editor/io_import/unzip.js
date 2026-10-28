@@ -27,3 +27,5 @@ export async function unzip(buf) {
     }
     else throw new Error('it uses a compression method that isn’t supported');
     cache.set(name, out); return out;
+  }
+  return {
