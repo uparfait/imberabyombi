@@ -4,3 +4,4 @@ import { qs, esc_html, last_range, el_of, editable_of, restore_focus, begin_op, 
 import { can_edit, previewing } from '../format/index.js';
 import { modal } from '../../overlays/index.js';
 import { show_err } from '../../feedback/index.js';
+import { hide_link_bubble } from './link_bubble.js';
