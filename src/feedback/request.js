@@ -10,3 +10,4 @@ import { notify } from './notify.js';
       floating #loader at the top (after 150 ms, so instant work such as navigation never flashes it). Public and
       sign-in pages never show #loader: there only the busy button spins. */
 export const req = {
+  n: 0, t: null,
