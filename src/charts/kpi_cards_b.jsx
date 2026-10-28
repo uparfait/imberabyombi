@@ -15,3 +15,4 @@ export const kpi_cards_b = k => {
       [['Source', 'Share'], src.map((n, i) => [n, share(i)])]),
     kpi_card('sm:col-span-2', 'Top performers', 'The five highest values this period, ranked.',
       <ol className="mt-3 grid gap-1">{lead.map(([n, v], i) => (
+        <li key={i} className="kpi_part grid grid-cols-[1.5rem_6rem_1fr_auto] items-center gap-2 py-1 text-sm"
