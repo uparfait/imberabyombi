@@ -13,3 +13,4 @@ export function table_xml(t, ctx) {
   const bw = parseFloat(t.style.getPropertyValue('--bw')), bwv = isNaN(bw) ? 1 : bw, bc = to_hex(t.style.getPropertyValue('--bc')) || '000000';
   const minimal = t.getAttribute('data-style') === 'minimal';
   const bdr = s => bwv && !(minimal && /^(left|right|insideV)$/.test(s))
+    ? `<w:${s} w:val="single" w:sz="${Math.max(2, Math.round(bwv * 6))}" w:space="0" w:color="${bc}"/>` : `<w:${s} w:val="nil"/>`;
