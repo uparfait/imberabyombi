@@ -43,3 +43,4 @@ export const kpi_cards_b = k => {
         <p className="mt-2 text-sm text-muted">{`From ${num(1284 * m)} reviews`}</p></>,
       [['Measure', 'Value'], [['Average rating', `${rate.toFixed(1)} / 5`], ['Reviews', num(1284 * m)]]]),
     kpi_card('', 'Conversion rate', 'Share of visits that became a sign-up, each month. A fall shows in red.',
+      <><p className="kpi_value">{pct_fmt(conv[11])}</p>{delta(d_conv)}{spark(conv, true, mo, pct_fmt, 'Conversion rate')}</>,
