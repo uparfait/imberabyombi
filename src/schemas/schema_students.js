@@ -34,3 +34,5 @@ export const payments_schema = {
     field_spec('item', 'For', 'select', option_list('Tuition|Transport|Meals|Uniform|Library fine'), 1),
     field_spec('amount', 'Amount', 'number', 0, 1, { min: 0 }), field_spec('method', 'Method', 'select', option_list('Cash|Mobile money|Bank|Card')),
     field_spec('date', 'Date', 'date', 0, 1, { def: () => ymd() }), field_spec('status', 'Status', 'select', STATUS.pay, 1)
+  ],
+  g: () => ({
