@@ -3,3 +3,4 @@
 These rules keep the template easy to read, easy to search and easy to reuse for any kind of website.
 
 ## 1. Every file stays short
+No file is longer than **100 lines**: code, styles, configuration and documentation. When a file grows, split it by
