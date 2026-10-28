@@ -60,3 +60,4 @@ export function move_section_by(k, d) {
   return to < 0 ? null : move_section(k, to, m);
 }
 export function delete_section(k) {
+  if (!can_edit()) return;
