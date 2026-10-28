@@ -33,3 +33,4 @@ export function save_soon() { clearTimeout(save_timer); save_timer = setTimeout(
 set_on_change(save_soon);
 
 /* fill state from db; false when nothing (valid) is saved */
+export function restore_doc() {
