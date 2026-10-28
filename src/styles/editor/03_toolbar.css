@@ -7,7 +7,7 @@
   border: 1px solid rgb(var(--line)); border-radius: 1.25rem; background: rgb(var(--fg) / .03); user-select: none;
   overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scrollbar-width: none;
 }
-@media (max-width: 639.98px) {   /* phones: tighter rows, no separators (the bar wraps instead of scrolling sideways) */
+#toolbar::-webkit-scrollbar { display: none; }
   #toolbar { margin: .375rem .5rem; padding: .1875rem .25rem; }
   #toolbar .tb_sep { display: none; }
   #toolbar .tb_fill { min-width: 0; }
