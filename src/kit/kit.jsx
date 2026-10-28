@@ -24,3 +24,4 @@ const SECS = [['tokens', 'Tokens'], ['type', 'Typography'], ['lists', 'Lists'], 
 const LEAD = 'Every element below is styled by the tokens at the top of the stylesheet. Change one token and the whole system follows.';
 
 export function kit() {
+  lorem.seed(99);
