@@ -61,3 +61,4 @@ Every feature below is working code. Each line says what it is and where it live
 ## Platform
 - Hash router with per-page title and description, redirects to sign-in and back, not-found and no-access views.
 - Role-based access on every module, button, widget and route; landing page per role.
+- Storage in the browser with a memory fallback; deterministic lorem ipsum and seed data.
