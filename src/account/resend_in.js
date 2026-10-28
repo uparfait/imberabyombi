@@ -5,3 +5,4 @@ import { qs } from '../lib/index.js';
 import { TIMERS } from '../store/index.js';
 
 export function resend_in(n) {
+  const b = qs('#otp_resend'); if (!b) return; let s = n; b.disabled = true;
