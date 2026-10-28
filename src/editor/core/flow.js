@@ -25,3 +25,4 @@ export function normalize_body(b) {
     if (n.nodeType === 8) { n.remove(); continue; }
     if (is_abs(n)) continue;
     if (n.nodeType === 1 && BLOCK_RE.test(n.tagName)) {
+      p = null;
