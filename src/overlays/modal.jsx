@@ -29,3 +29,4 @@ function split_q(msg, cta) {
     return [q, more.replace(/<[^>]+>/g, '').trim()];
   }
   const kids = Children.toArray(Array.isArray(msg) ? msg : msg.type === Fragment ? msg.props.children : [msg]), q = [];
+  for (const [i, k] of kids.entries()) {
