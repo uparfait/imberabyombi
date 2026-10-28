@@ -41,3 +41,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 |------------------------------|--------------------------------------------------|
 | Records (tasks, staff …)     | `db` collections (`db.list('tasks')`)            |
 | Settings (theme, tokens …)   | `db.get('theme')` / `db.set(...)`                |
+| What the screen shows        | `ui`                                             |
