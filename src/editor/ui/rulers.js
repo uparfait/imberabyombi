@@ -18,3 +18,4 @@ export function update_rulers() {
 }
 export function ruler_ticks(len, start, horiz, z) {
   let s = ''; const from = Math.ceil(-start * 8), to = Math.floor((len - start) * 8), b = u(17);
+  for (let k = from; k <= to; k++) {
