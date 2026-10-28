@@ -27,3 +27,4 @@ function keep_style(c, tag) {
   (abs_img(c, tag) ? [...KEEP_STYLE, ...ABS_STYLE] : KEEP_STYLE).forEach(p => {
     if (IMG_ONLY_STYLE.has(p) && tag !== 'IMG') return;
     if (p.startsWith('--') && tag !== 'TABLE') return;
+    const val = c.style.getPropertyValue(p);
