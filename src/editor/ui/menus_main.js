@@ -5,3 +5,4 @@ import { paste_from_clipboard, render_comments } from '../content/index.js';
 import { open_upload_dialog, pick_file } from '../io_import/index.js';
 import { open_download_dialog } from '../io_export/index.js';
 import { set_theme } from '../../actions/index.js';
+import { db } from '../../store/index.js';
