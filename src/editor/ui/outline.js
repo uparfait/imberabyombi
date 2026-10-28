@@ -48,3 +48,6 @@ export function toggle_fold(row, open) {
   row.classList.toggle('folded', f); row.setAttribute('aria-expanded', String(!f));
   if (t) { const s = new Set(t.folds || []); if (f) s.add(row._key); else s.delete(row._key); t.folds = Array.from(s); save_soon(); }
   apply_folds(row.parentElement); mark_outline();
+}
+
+/* the row of the heading the caret is in (or its folded parent), and the one row reached by Tab (roving tabindex) */
