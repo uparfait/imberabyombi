@@ -12,3 +12,4 @@ import { before_page } from './render_hooks.js';
 /* Moving between staff pages is a get: it waits for the page's data (cfg.latency) with the top loader and the clicked sidebar
    link spinning, then the page draws with its tables already filled. Public and sign-in pages draw at once. */
 export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
+  return request(() => { render_flags.nav_fetched = get; document.startViewTransition && !reduced() ? document.startViewTransition(() => render()) : render(); },
