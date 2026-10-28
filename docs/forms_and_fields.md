@@ -28,3 +28,4 @@ the format, or click to open the mini calendar (dates, weeks, months) and the 15
 12/24-hour setting. Saved values are ISO: `YYYY-MM-DD`, `HH:MM` and `YYYY-MM-DDTHH:MM` (`form_obj()` converts them).
 
 ## Selects and suggestions: one shared picker
+- Every `<select>` inside `.field` or `.pick` opens a menu with a search box; multiple selects get checkboxes,
