@@ -15,3 +15,4 @@ export function peek(key, fn) {
   if (cur && cur.key === key) return;
   unpeek();
   cur = { key, undo: () => live.cancel(), keep: () => live.keep(fn) };
+  live.preview(fn);
