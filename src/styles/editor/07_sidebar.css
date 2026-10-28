@@ -58,3 +58,4 @@ input.tab_filter, .tab_filter input {
 .outline_text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: .125rem; }
 .outline_more { display: inline-grid; flex: none; place-items: center; width: 1.625rem; height: 1.625rem; border-radius: var(--pill);
   color: rgb(var(--muted)); opacity: 0; transition: opacity .15s, background-color .15s; }
+.outline_more svg { width: 1rem; height: 1rem; }
