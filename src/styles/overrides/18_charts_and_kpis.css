@@ -1,3 +1,4 @@
 /* overrides/18_charts_and_kpis.css: rules that come after the utilities, as in the reference */
   /* Cards open their data on click: pointer everywhere on them, but only the hovered mark or part is marked */
   .viz_card[data-act], .kpi[data-act] { cursor: pointer; }
+  .viz_card:focus-visible, .kpi:focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
