@@ -10,3 +10,5 @@ export const kit_type = () => (
       Ut enim <span className="font-semibold text-accent">ad minim</span> <a href="#/" className="text-accent underline underline-offset-4">veniam</a>.</p>
     <blockquote><p>{lorem.s(14, 20)}</p><footer className="mt-2 text-sm text-muted"><cite className="text-fg">{lorem.name()}</cite></footer></blockquote><hr />
     <address className="text-muted">{lorem.t(2)} 12<br />{lorem.t(1)} 00100<br /><a href="mailto:hello@lorem.io" className="text-accent">hello@lorem.io</a></address>
+    <pre><code>{`const ${lorem.w(1)} = (${lorem.w(1)}) => ${lorem.w(1)}.map(x => x * 2);`}</code></pre></article>
+);
