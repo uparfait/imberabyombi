@@ -26,3 +26,4 @@ export const set_replace_target = img => { replace_target = img; };
 export const ensure_img_box = () => img_box || (img_box = el('div', { class: 'img_sel' }, BOX_HTML()));
 
 /* While the pointer is on a quick-bar button its preview may move the image: the box stays where it is (frozen) */
+let frozen = false;
