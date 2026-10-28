@@ -9,3 +9,4 @@ import { pages_click, pages_pointerdown, pages_dragstart, pages_mouseup, pages_m
 import { pages_paste, drop_handler, window_dragover } from './paste.js';
 
 export function install_content() {
+  const offs = [install_img_box(), install_link_bubble()];
