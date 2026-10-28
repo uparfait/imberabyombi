@@ -22,3 +22,4 @@ function moved(f, kb) {
   if (r && !r.hidden) r.focus();
 }
 function section_items(row, kb) {
+  const k = row._ti, mv = section_moves(k), text = clean_text(row._h);
