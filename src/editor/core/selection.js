@@ -22,3 +22,4 @@ export function restore_sel(sel) {
   if (!sc || !sc.isConnected) return;
   const so = Math.min(sel.so, node_len(sc)); let eo;
   if (!ec || !ec.isConnected || editable_of(ec) !== editable_of(sc)) { ec = sc; eo = so; } else eo = Math.min(sel.eo, node_len(ec));
+  const host = editable_of(sc); if (!host) return;
