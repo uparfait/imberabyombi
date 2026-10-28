@@ -13,3 +13,5 @@ export const legend = (names, kind = 'rect', idx = names.map((_, i) => i)) => (
 
 /* lo / hi: the end labels; colors: one swatch each */
 export const scale_legend = (lo, colors, hi) => (
+  <div className="viz_scale"><span>{lo}</span>{colors.map((c, i) => <i key={i} style={{ background: c }}></i>)}<span>{hi}</span></div>
+);
