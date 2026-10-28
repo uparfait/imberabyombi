@@ -31,3 +31,4 @@
 .preset table { width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; }
 .preset td { height: .5625rem; padding: 0; white-space: normal; }
 .preset tbody tr:hover { background: none; }
+.preset_lbl { margin-top: .3125rem; text-align: center; font-size: .72rem; line-height: 1.2; color: #3c4043; }
