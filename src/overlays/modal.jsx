@@ -2,3 +2,4 @@
    question is the title. The form itself is <Modal_form/> (modal_form.jsx), drawn into #modal by <Dialog_hosts/>. */
 import { Children, Fragment } from 'react';
 import { qs } from '../lib/index.js';
+import { show_dialog } from '../feedback/index.js';
