@@ -9,3 +9,4 @@ const icon_btn = (x, tip, icon, cls) => `<button type="button" class="icon_btn h
 const DRAFT = '<textarea class="c_input mt-2" rows="2" placeholder="Comment" aria-label="Comment"></textarea>'
   + '<div class="mt-2 flex justify-end gap-2"><button type="button" class="btn btn_ghost btn_sm" data-x="cancel">Cancel</button>'
   + '<button type="button" class="btn btn_primary btn_sm" data-x="save">Comment</button></div>';
+const REPLY = '<input class="c_input mt-2" placeholder="Reply" aria-label="Reply">';
