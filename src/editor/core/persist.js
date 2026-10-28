@@ -36,3 +36,4 @@ set_on_change(save_soon);
 export function restore_doc() {
   const d = db.get(DOC_KEY);
   const tabs = d && Array.isArray(d.tabs) ? d.tabs.filter(t => t && typeof t === 'object') : [];
+  if (!tabs.length) return false;
