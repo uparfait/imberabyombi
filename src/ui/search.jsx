@@ -27,3 +27,4 @@ export const clear_x = () => (
 );
 export const search_ui = () => (
   <>
+    <button type="button" className="search_btn" data-act="run_search" aria-label="Search" data-tip="Search">{ic('search', 'h-[1.125rem] w-[1.125rem]')}</button>
