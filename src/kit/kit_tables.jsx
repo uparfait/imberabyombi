@@ -2,3 +2,4 @@
    its details through data-act="row") and the data table every admin list uses (crud, staff demo data). */
 import { lorem, money } from '../lib/index.js';
 import { badge, person, bar_cell } from '../ui/index.js';
+import { crud } from '../table/index.js';
