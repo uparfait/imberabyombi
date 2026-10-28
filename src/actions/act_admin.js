@@ -5,3 +5,4 @@ import { ui, db, rerender } from '../store/index.js';
 import { me } from '../auth/index.js';
 import { reduced, notify } from '../feedback/index.js';
 import { ask, slide_in } from '../overlays/index.js';
+import { MAILS } from '../emails/index.js';
