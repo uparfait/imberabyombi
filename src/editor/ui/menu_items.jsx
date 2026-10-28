@@ -53,3 +53,6 @@ export function text_items() {
     { sep: true },
     { label: 'Capitalization', icon: 'match_case', sub: () => [{ label: 'lowercase', action: () => transform_case('lower') },
       { label: 'UPPERCASE', action: () => transform_case('upper') }, { label: 'Title Case', action: () => transform_case('title') }] }
+  ];
+}
+export function style_items() {
