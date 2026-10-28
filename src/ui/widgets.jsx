@@ -2,6 +2,7 @@
    the two-tone logo and the light/dark switch button. */
 import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
+import { to } from '../router/index.js';
 
 /* Generic pieces */
 export const tabs = (key, items, cur) => (
