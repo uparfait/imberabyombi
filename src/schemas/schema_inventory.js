@@ -24,3 +24,4 @@ export const inventory_schema = {
   l: 'inventory item', n: 12, cols: ['item', 'category', 'qty', 'unit', 'location'],
   f: [
     field_spec('item', 'Item', 'text', 0, 1), field_spec('category', 'Category', 'select', option_list('Kitchen|Cleaning|Stationery|Electronics|Sports|Furniture')),
+    field_spec('qty', 'Quantity', 'number', 0, 1, { min: 0 }), field_spec('min', 'Minimum stock', 'number', 0, 0, { min: 0, def: () => 5 }),
