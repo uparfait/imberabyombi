@@ -20,3 +20,4 @@ export function unwrap_comments(d) {
 }
 /* scope 'all' (several tabs): every tab, joined by page breaks; otherwise the open tab */
 export function export_root(scope) {
+  if (hist_timer) commit(); save_tab(); const d = el('div');
