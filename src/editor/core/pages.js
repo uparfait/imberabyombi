@@ -3,3 +3,4 @@
 import { DPI } from './constants.js';
 import { qs, qsa, el } from './utils.js';
 import { state, dims } from './state.js';
+import { bodies } from './dom.js';
