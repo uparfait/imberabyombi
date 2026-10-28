@@ -12,3 +12,4 @@ export function ensure_colgroup(t, chain) {
   const n = Math.max(1, ...Array.from(t.rows).map(r => Array.from(r.cells).reduce((a, c) => a + (c.colSpan || 1), 0)));
   if (!cg || cg.children.length !== n) {
     const tw = t.offsetWidth || 1, first = t.rows[0];
+    const ws = first && first.cells.length === n ? Array.from(first.cells).map(c => c.offsetWidth / tw * 100) : Array(n).fill(100 / n);
