@@ -35,3 +35,4 @@
   /* Side panel (notes, my tasks, help): opens beside the content; a border with rounded top corners shows its edges under the header */
   .panel { width: 0; border: 0 solid rgb(var(--line)); border-radius: 1.5rem 1.5rem 0 0; transition: width .3s var(--ease); }
   .panel[data-open=true] { width: 22rem; border-width: 1px 1px 0; }
+  .panel_in { width: 22rem; }
