@@ -14,3 +14,4 @@ export const TABLE_PRESETS = [
   { key: 'none', label: 'No borders', bw: 0, bc: '#000000', header: false, striped: false, style: '' }
 ];
 /* opts: { width: % of the line, preset: key } */
+export function build_table(rows, cols, opts = {}) {
