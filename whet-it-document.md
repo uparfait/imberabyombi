@@ -54,6 +54,8 @@ Every feature below is working code. Each line says what it is and where it live
   in front of or behind text) and drag to move, links, comments, find and replace, word count, zoom, editing modes.
 - Live preview: hovering a formatting choice shows it at once; leaving restores; a click keeps it.
 - Document tabs with outlines (fold, drag sections, move up / down); import DOCX, PDF, XLSX, PPTX, EPUB, RTF, HTML,
+  Markdown, JSON; export DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT; saved in the browser.
+
 ## Data tables (`src/table/`, `src/schemas/`)
 - Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
   Action Buttons column pinned first, details view (COLUMN NAME / VALUE), add, edit, delete.
