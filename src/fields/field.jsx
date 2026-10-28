@@ -10,3 +10,4 @@ import { DTF, dt_attrs, dt_show } from './date_formats.js';
 export function field(f, v) {
   const id = 'field_' + f.k, req = !!f.req, val = v ?? '', opts = typeof f.o === 'function' ? f.o() : (f.o || []);
   if (f.t === 'hidden') return <input key={f.k} type="hidden" name={f.k} defaultValue={val} />;
+  let ctl; /* placeholder=" " lets the Imberabyombi label rest inside an empty field */
