@@ -34,3 +34,4 @@ export function import_change(t) {
   request(() => t.files[0].text().then(txt => {
     let o; try { o = JSON.parse(txt); if (!o || typeof o !== 'object' || Array.isArray(o)) throw 0; }
     catch { t.value = ''; return show_msg(qs('#backup_msg'), 'bad', 'That file is not a valid backup', 'Choose a .json file exported from this app.', false); }
+    Object.entries(o).forEach(([k, v]) => db.set(k, v)); apply_tokens(); rerender();
