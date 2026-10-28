@@ -37,3 +37,4 @@ export function split_text(block, b, next) {
   const r = document.createRange(); r.setStart(p.node, p.offset); r.setEnd(block, block.childNodes.length);
   const frag = r.extractContents();
   const nb = block.cloneNode(false); nb.setAttribute('data-cont', '1'); nb.removeAttribute('id'); nb.appendChild(frag);
+  insert_at_start(next, [nb]);
