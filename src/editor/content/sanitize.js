@@ -77,3 +77,4 @@ export function sanitize_html(html) {
     if (!d.isConnected) return;
     if (Array.from(d.children).some(x => BLOCK_RE.test(x.tagName))) d.replaceWith(...d.childNodes);
     else {
+      const p = doc.createElement('p'); if (d.getAttribute('style')) p.setAttribute('style', d.getAttribute('style'));
