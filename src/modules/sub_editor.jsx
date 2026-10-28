@@ -8,3 +8,4 @@ import { ic } from '../icons/index.js';
 const API = new WeakMap(), KEYS = new WeakMap();
 let seq = 0;
 const tie = k => el => { if (el) KEYS.set(el, k); };
+const keyed = groups => groups.map(g => ({ t: g.t, key: ++seq, items: (g.items || []).map(x => ({ t: x.t, done: x.done, key: ++seq })) }));
