@@ -64,3 +64,4 @@ function on_key(e, row) {
 /* drag a section: the model is taken once (the document does not change during a drag) */
 function on_down(e, row) {
   if (row._ti < 0 || e.target.closest('button')) return;
+  const ol = row.parentElement; let m = null;
