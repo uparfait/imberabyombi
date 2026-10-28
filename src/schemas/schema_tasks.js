@@ -3,3 +3,4 @@
 import { lorem, uniq, ymd, add_d, now_dt } from '../lib/index.js';
 import { me } from '../auth/index.js';
 import { person_you } from '../ui/index.js';
+import { due_tag, sub_progress, read_subs, read_files, files_of, comments_of } from '../modules/index.js';
