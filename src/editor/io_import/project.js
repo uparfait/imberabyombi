@@ -7,3 +7,5 @@ import { render_all } from '../ui/index.js';
 /* project files written by the original editor name these setup keys in camelCase */
 const OLD_KEYS = { pageColor: 'page_color', pageNumbers: 'page_numbers', headerHTML: 'header_html', footerHTML: 'footer_html' };
 const setup_of = s => Object.fromEntries(Object.entries(s || {}).map(([k, v]) => [OLD_KEYS[k] || k, v]));
+
+export function load_project(d) {
