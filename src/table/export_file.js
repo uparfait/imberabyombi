@@ -14,3 +14,4 @@ export const date_key = c => schemas[c].f.find(f => /^date/.test(f.t))?.k;
 export function export_file(c, fmt, cols, from, to, flt = {}) {
   const dk = date_key(c), name = EXPORTS.find(x => x[0] === fmt)?.[1] || 'CSV';
   /* the dialog's filters replace the table's own for those columns */
+  const q0 = ui.q[c]; ui.q[c] = { ...q0, ...flt }; let rows; try { rows = rows_of(c); } finally { ui.q[c] = q0; }
