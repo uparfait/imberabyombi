@@ -7,3 +7,4 @@ import { img_box, select_image, hide_img_sel, position_img_box, pos_of } from '.
 import { drop_point, place_at, anchor_abs } from './img_pos.js';
 
 let drag = null, caret_el = null, swallow_until = 0;
+/* true once right after a drag (or a cancelled one): the click that follows the release is not a click */
