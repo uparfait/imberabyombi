@@ -17,3 +17,4 @@ export function hero_sec() {
             data-type={JSON.stringify([lorem.w(2), lorem.w(1), lorem.w(2)])}></span></p>
           <p className="mt-5 max-w-lg text-fg/70">{lorem.p(2)}</p>
           <div className="mt-9 flex flex-wrap gap-3"><a href="#/login" className="btn btn_primary group py-2 pl-6 pr-2">Get started<span
+            className={GO_CLS}>{ic('arrow_r', 'h-4 w-4')}</span></a><a href="#/intro" className="btn btn_glass">Read the overview</a></div>
