@@ -46,3 +46,4 @@ export function drop_handler(e) {
   const files = Array.from((e.dataTransfer && e.dataTransfer.files) || []); if (!files.length) return;
   e.preventDefault(); if (e.target.closest && e.target.closest('dialog')) return; if (!can_edit()) return;
   const pos = caret_from_point(e.clientX, e.clientY), host = pos && editable_of(pos.node);
+  if (host && host.classList.contains('pg_body')) set_caret(pos.node, pos.off);
