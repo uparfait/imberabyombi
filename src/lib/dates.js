@@ -5,3 +5,4 @@ import { pad } from './text.js';
 import { db } from '../store/db.js';
 
 export const ymd = (d = new Date()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+export const hm = (d = new Date()) => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
