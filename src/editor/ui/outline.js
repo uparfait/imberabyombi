@@ -52,3 +52,4 @@ export function toggle_fold(row, open) {
 
 /* the row of the heading the caret is in (or its folded parent), and the one row reached by Tab (roving tabindex) */
 export function mark_outline() {
+  const rows = outline_rows(outline_el()); if (!rows.length) return;
