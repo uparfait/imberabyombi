@@ -27,3 +27,4 @@ export function hero_sec() {
   );
 }
 export function about_sec(full) {
+  return (
