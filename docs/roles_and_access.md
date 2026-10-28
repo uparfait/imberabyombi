@@ -16,3 +16,5 @@ Code: [`src/auth/`](../src/auth/). Each role has a level per module: `0` = no ac
 | Cleaner           | Own tasks, attendance                                          |
 | Parking officer   | Smart parking                                                  |
 | Event coordinator | Events, calendar, reservations                                 |
+
+Every role manages its own tasks and opens Settings (theme, profile).
