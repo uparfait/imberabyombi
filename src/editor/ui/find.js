@@ -19,3 +19,4 @@ export function open_find() {
 export function close_find() {
   if (refs.find_panel) refs.find_panel.classList.remove('show');
   find_state.open = false; find_state.matches = [];
+  if (has_hl) { CSS.highlights.delete('find_all'); CSS.highlights.delete('find_cur'); }
