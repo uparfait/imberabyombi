@@ -24,3 +24,4 @@ export function render_outline() {
       style: `padding-left:${0.25 + lvl * 0.875}rem` });
     row.innerHTML = (kids ? `<button type="button" class="outline_fold" tabindex="-1" aria-label="Fold or unfold">${mi('expand_more')}</button>` : '<span class="outline_fold_gap"></span>')
       + '<span class="outline_text min-w-0 flex-1 truncate"></span>'
+      + (top ? `<button type="button" class="outline_more" tabindex="-1" aria-label="Section options" data-tip="Section options" aria-haspopup="menu">${mi('more_vert')}</button>` : '');
