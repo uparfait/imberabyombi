@@ -34,3 +34,5 @@ export function export_dialog(c, fmt) {
       if (!cols.length) { form_msg(f, 'bad', 'Choose at least one column', 'Tick the columns to include.', false); return false; }
       if (d.from && d.to && d.from > d.to) { show_err(f.elements.to, 'Use a time on or after From.'); return false; }
       export_file(c, fmt, cols.map(k => [k, (d['as_' + k] || '').trim() || label(c, k)]), d.from, d.to,
+        Object.fromEntries(sels.map(x => [x.k, d['flt_' + x.k] || '']))); } });
+}
