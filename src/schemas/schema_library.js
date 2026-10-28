@@ -9,3 +9,4 @@ export const books_schema = {
   l: 'book', n: 14, cols: ['title', 'author', 'isbn', 'category', 'copies', 'shelf'],
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('author', 'Author'), field_spec('isbn', 'ISBN'),
+    field_spec('category', 'Category', 'select', option_list('Fiction|Science|History|Languages|Reference')),
