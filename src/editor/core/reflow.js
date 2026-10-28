@@ -4,3 +4,4 @@ import { el } from './utils.js';
 import { state } from './state.js';
 import { pages_el } from './refs.js';
 import { is_break, is_abs, bodies, page_wraps, first_flow, last_flow } from './dom.js';
+import { add_page_after, remove_page, update_page_numbers } from './pages.js';
