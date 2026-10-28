@@ -7,3 +7,4 @@ export const EDITOR_MEDIA_PATHS = {
   table: BOX + 'M3 10h18M3 15h18M9 4v16M15 4v16',
   table_rows: BOX + 'M3 9.5h18M3 14.5h18',
   table_view: BOX + 'M3 9h18M9 9v11M3 14.5h18',
+  view_column: BOX + 'M9 4v16M15 4v16',
