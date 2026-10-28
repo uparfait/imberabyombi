@@ -59,3 +59,4 @@ export function text_runs(t, f) {
    footers pass only the sizes, so their links stay text and their images are left out */
 export function inline_xml(node, f, ctx) {
   let out = '';
+  node.childNodes.forEach(n => {
