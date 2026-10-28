@@ -9,3 +9,4 @@ export let SEED = 1;
 export const lorem = {
   seed(n) { SEED = (Math.abs(n) % 2147483646) + 1; },
   r() { SEED = SEED * 16807 % 2147483647; return (SEED - 1) / 2147483646; },
+  int(a, b) { return a + Math.floor(lorem.r() * (b - a + 1)); },
