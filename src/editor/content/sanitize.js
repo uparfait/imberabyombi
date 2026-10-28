@@ -53,3 +53,4 @@ function keep_attrs(c, tag) {
 }
 
 function clean(node) {
+  for (const c of Array.from(node.childNodes)) {
