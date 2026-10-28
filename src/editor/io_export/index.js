@@ -19,3 +19,4 @@ export * from './docx_runs.js';
 export * from './docx_paras.js';
 export * from './docx_table.js';
 export * from './docx_image.js';
+export * from './docx_styles.js';
