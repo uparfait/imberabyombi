@@ -13,3 +13,4 @@ export const comments_of = r => Array.isArray(r?.comments) ? r.comments : [];
 /* the subtasks an editor shows (form or task view), read back from its fields */
 const read_item = x => ({ t: x.querySelector('.sub_text').value.trim(), done: x.querySelector('input[type=checkbox]').checked });
 export const read_subs = root => qsa('[data-sub-group]', root)
+  .map(g => ({ t: g.querySelector('.sub_title').value.trim(), items: qsa('[data-sub-item]', g).map(read_item).filter(x => x.t) }))
