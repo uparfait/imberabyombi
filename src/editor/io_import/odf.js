@@ -11,3 +11,4 @@ async function odf_img(cx, fr) {
   const im = by_tag(fr, 'image')[0], href = im && im.getAttribute('xlink:href'); if (!href || !cx.z.has(href)) return '';
   const url = await cx.z.data_url(href); if (!url) return '';
   const sw = fr.getAttribute('svg:width') || '', w = parseFloat(sw) || 0, u = sw.replace(/[\d.]/g, '');
+  const px = u === 'cm' ? w * 37.8 : u === 'mm' ? w * 3.78 : u === 'in' ? w * 96 : u === 'pt' ? w * 4 / 3 : 300;
