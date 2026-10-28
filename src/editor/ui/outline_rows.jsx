@@ -71,3 +71,4 @@ function on_down(e, row) {
     rows: () => outline_rows(ol).filter(r => !r.hidden),
     target: (g, rs) => {
       const md = model(), h = md.heads[row._ti]; if (!h) return null;
+      const t = g < rs.length ? rs[g]._ti : -2, to = t === -2 ? md.blocks.length : t >= 0 && md.heads[t] ? md.heads[t].i : -1;
