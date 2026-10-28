@@ -50,3 +50,4 @@ export function apply_inline_style(prop, value) {
   const s = getSelection(); if (!s.rangeCount) return;
   if (s.isCollapsed) {
     const sp = el('span'); sp.style[prop] = value; sp.textContent = '\u200b';
+    const r = s.getRangeAt(0); r.insertNode(sp); set_caret(sp.firstChild, 1);
