@@ -23,3 +23,5 @@
   width: auto; min-width: 6rem; max-width: min(60vw, 32rem); field-sizing: content; min-height: 0; margin-left: -.125rem;
   padding: .0625rem .5rem; border: 1px solid transparent; border-radius: calc(var(--radius) * .5); background: transparent;
   color: rgb(var(--fg)); font: 500 1.125rem/1.5 var(--font_display); letter-spacing: -.01em; text-overflow: ellipsis; outline: 0;
+}
+.title_input:hover { border-color: rgb(var(--line)); }
