@@ -18,7 +18,7 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 - `/login?role=<id>` locks the sign-in form to a role (invite link); `&email=..&name=..` pre-fills it (access link).
 
 ## How a navigation works
-1. `hashchange` → `navigate()`.
+1. A click on an internal link, `go(path)` from code, or Back / Forward (`popstate`) → `navigate()`.
 2. On staff pages the navigation is a "get": the clicked sidebar link shows the spinner, the top loader shows if it
    takes more than 150 ms, and the page waits `cfg.latency` for its data like a real API would.
 3. `render()` (src/store/app_state.js) clears the page's timers and overlays, then React draws the new page
