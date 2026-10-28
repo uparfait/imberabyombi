@@ -12,3 +12,7 @@ export function fix_list_starts() {
     if (f && f.tagName === 'OL' && f.hasAttribute('data-cont')) {
       const p = last_flow(bs[i - 1]);
       if (p && p.tagName === 'OL') f.setAttribute('start', (parseInt(p.getAttribute('start')) || 1) + Array.from(p.children).filter(x => x.tagName === 'LI').length);
+    }
+  }
+}
+export function join_conts(root) {
