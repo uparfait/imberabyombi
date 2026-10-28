@@ -2,3 +2,5 @@
    crosses out ticked items). */
 import { el_of, restore_focus, last_range, set_last_range, begin_op, end_op } from '../core/index.js';
 import { can_edit, exec } from './commands.js';
+
+/* ================= lists ================= */
