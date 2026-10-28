@@ -15,3 +15,4 @@ const dom_copy = from => <span style={{ display: 'contents' }} ref={el => { if (
 
 export const TABLE_ACT = {
   /* Tables: row click = full details (crud rows: view; any other table: row), pager, clear filters */
+  view: t => { if (String(getSelection())) return; const o = cur[t.dataset.col]; o?.view ? o.view(t.dataset.id) : view_row(t.dataset.col, t.dataset.id); },   /* a table may have its own view (tasks) */
