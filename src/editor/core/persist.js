@@ -39,3 +39,4 @@ export function restore_doc() {
   if (!tabs.length) return false;
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
   state.title = String(d.title || 'Untitled document');
+  state.setup = Object.assign(default_setup(), s, { margins: Object.assign(default_setup().margins, s.margins || {}) });
