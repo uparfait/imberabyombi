@@ -57,3 +57,4 @@ function format_items() {
 function tools_items() {
   return [
     cmd('Word count', 'numbers', () => word_count_dialog(), 'Ctrl+Shift+C'),
+    { label: 'Spelling check', icon: 'spellcheck', checked: !!state.spell, no_preview: true, action: () => toggle_spell() },
