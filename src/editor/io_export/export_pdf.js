@@ -12,3 +12,4 @@ export async function export_pdf(scope, name, scale = 2) {
   const { win, hin } = dims(), land = win > hin, bg = state.setup.page_color || '#ffffff';
   const pdf = new window.jspdf.jsPDF({ unit: 'in', format: [win, hin], orientation: land ? 'landscape' : 'portrait', compress: true });
   const holder = el('div', { style: 'position:absolute;left:-30000px;top:0' }); document.body.appendChild(holder);
+  const orig = state.active, ids = scope === 'all' && state.tabs.length > 1 ? state.tabs.map(t => t.id) : [orig];
