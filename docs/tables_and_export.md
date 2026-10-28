@@ -14,3 +14,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 - Full screen (right): the table fills the tab (not the browser's full screen), header and actions stay pinned.
 - A row click opens the details view: a COLUMN NAME / VALUE table grouped by category.
 - Add, edit and delete with a generated form, validation, and a flash on the saved row; deleted rows slide out.
+- A loading row on the first view of a page, like a real API; empty and no-result states.
