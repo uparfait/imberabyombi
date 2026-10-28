@@ -11,3 +11,4 @@ export const parking_schema = {
   f: [
     field_spec('plate', 'Plate number', 'text', 0, 1), field_spec('driver', 'Driver'), field_spec('slot', 'Slot', 'select', slot_ids, 1),
     field_spec('in', 'Checked in', 'datetime-local', 0, 1, { def: () => now_dt() }), field_spec('out', 'Checked out', 'datetime-local'),
+    field_spec('fee', 'Fee', 'number', 0, 0, { min: 0 }), field_spec('status', 'Status', 'select', STATUS.park, 1, { def: () => 'Parked' })
