@@ -34,3 +34,4 @@ export const EDITOR_TEXT_PATHS = {
   short_text: 'M4 9h16M4 15h10',
   spellcheck: 'M3 14 6.5 4l3.5 10M4.4 10h4.2M13 4v10M13 9.5h2a2.25 2.25 0 0 1 0 4.5h-2M11 18l3 3 7-7',
   style: 'M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2.5a1.5 1.5 0 0 0-1 2.6c.4.4.6.9.6 1.4 0 1.1-.9 2-2 2zM7.5 11.5h.01M10 7.5h.01M15 7.5h.01',
+  horizontal_rule: 'M3 12h18',
