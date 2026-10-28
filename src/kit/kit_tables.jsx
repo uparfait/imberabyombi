@@ -5,3 +5,4 @@ import { badge, person, bar_cell } from '../ui/index.js';
 import { crud } from '../table/index.js';
 
 const DATA_HELP = 'Every admin list uses this: search inside each column, sort by a header, long text trimmed (hover for the full text), '
+  + 'click a row for full details, Back · n of n · Next at the bottom. The settings icon sets rows per page and columns, the corner icon opens '
