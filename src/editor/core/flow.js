@@ -26,3 +26,4 @@ export function normalize_body(b) {
     if (is_abs(n)) continue;
     if (n.nodeType === 1 && BLOCK_RE.test(n.tagName)) {
       p = null;
+      if (n.tagName === 'DIV' && !is_break(n)) div_to_block(n);
