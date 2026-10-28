@@ -39,3 +39,5 @@
 /* Pageless: one long sheet with side lines; page breaks show as a dashed line */
 .pageless .page_wrap > .page { outline: 0; border-left: 1px solid rgb(var(--line)); border-right: 1px solid rgb(var(--line)); }
 .pageless .doc_content .page_break { height: auto; margin: 10px 0; border-top: 1px dashed #9aa0a6; }
+
+/* Find and replace marks (CSS Custom Highlight API, names set by ui/find.js) */
