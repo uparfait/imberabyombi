@@ -34,3 +34,5 @@ export function run_after_render({ keep, anim }) {
   AFTER.splice(0).forEach(f => { try { f(); } catch (e) { console.error(e); } });
   ui.flash = null; render_flags.nav_fetched = false; enhance(); show_next();
   if (ui.scroll_flash) { ui.scroll_flash = false; qs('#main .row_flash')?.scrollIntoView({ block: 'center' }); }   /* a task opened from the calendar */
+  if (ui.pending_form && schemas[ui.pending_form]) { const c = ui.pending_form; ui.pending_form = null; open_form(c); }   /* "Add …" chosen on another page */
+}
