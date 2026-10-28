@@ -48,3 +48,4 @@ function rewrite(m, mark) {
 /* move section k before block `to` (blocks.length: to the end); m: a model taken before (drag start) */
 export function move_section(k, to, m = section_model()) {
   if (!can_edit()) return null;
+  const h = m.heads[k]; if (!h || to < 0 || to > m.blocks.length || (to >= h.i && to <= h.end)) return null;
