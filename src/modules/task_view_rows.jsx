@@ -31,3 +31,4 @@ export function tv_rows(r, st) {
   const status = <div data-tv-status={r.id}><div className="pick max-w-[16rem]">
     <select data-status-pick="" aria-label="Status" defaultValue={r.status}>{STATUS.task.map(x => <option key={x}>{x}</option>)}</select></div>
     <div className="tv_status_more" hidden={!st.more}>{st.more ? status_more() : null}</div></div>;
+  return <>
