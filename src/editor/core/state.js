@@ -39,3 +39,4 @@ export function move_tab(from, to) {
 }
 /* a copy of tab t: every field (folded headings, …) deep-copied, but a fresh id and empty undo / redo stacks.
    html defaults to t.html; pass the live html (collect_html()) when t is the active tab. Not inserted: the caller places it. */
+export function duplicate_tab(t, name = t.name + ' (copy)', html = t.html) {
