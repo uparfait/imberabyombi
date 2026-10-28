@@ -35,3 +35,4 @@ VIEWS.calendar = () => {
 /* Move the main calendar to a date. When the shown week/month changes, its title and grid slide in from that
    direction; when the month changes, the sidebar mini calendar slides too (played after the render). */
 export function cal_go(k) {
+  const old = ui.cal_date, shown = s => { const d = parse_d(s); return ui.cal_view === 'month' ? s.slice(0, 7) : ymd(add_d(d, -d.getDay())); };
