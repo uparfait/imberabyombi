@@ -13,3 +13,4 @@ import { render_comments } from './comment_cards.js';
 import { activate_comment } from './comments.js';
 
 /* is there text right under the point? (a click there is for the text, not for an image behind it) */
+function on_text(x, y) {
