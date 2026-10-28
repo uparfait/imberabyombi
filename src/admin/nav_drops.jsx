@@ -4,3 +4,4 @@ import { Fragment } from 'react';
 import { lorem, hash_str, qs } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { ui, route } from '../store/index.js';
+import { NAVTREE, slug } from './nav_tree.js';
