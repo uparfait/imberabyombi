@@ -11,3 +11,4 @@ import { set_text, set_icon, scaled } from './ui_dom.js';
 let own_rule = null;
 export function page_rule_el() {
   let r = document.getElementById('page_rule');
+  if (!r) { r = own_rule = el('style', { id: 'page_rule' }); document.head.appendChild(r); }
