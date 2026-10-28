@@ -18,3 +18,5 @@ npm run preview    # serves dist/ locally to check the build
 ```
 `dist/` is a static site: upload it to any host (GitHub Pages, Netlify, Vercel, a plain web server).
 Asset paths are relative (`base: './'` in `vite.config.js`), so it also works from a sub-folder.
+
+## First tour
