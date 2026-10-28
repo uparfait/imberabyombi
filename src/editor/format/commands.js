@@ -11,3 +11,4 @@ export function exec(cmd, val) {
   const host = restore_focus(); begin_op();
   document.execCommand('styleWithCSS', false, true);
   document.execCommand(cmd, false, val);
+  if (host && host.classList.contains('pg_body')) schedule_reflow(body_index(host));
