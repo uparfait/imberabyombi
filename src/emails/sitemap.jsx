@@ -3,3 +3,5 @@
 import { i3 } from '../icons/index.js';
 import { lorem } from '../lib/index.js';
 import { PUB, PAGES } from '../site/index.js';
+
+export function sitemap() {
