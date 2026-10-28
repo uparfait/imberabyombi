@@ -19,3 +19,4 @@ function Adjust_body({ src, v }) {
       <div className="img_preview"><img alt="" src={src} style={{ filter, opacity: 1 - s.transparency / 100 }} /></div>
       {ROWS.map(([k, l, a, b]) => (
         <div className="slider_row" key={k}>
+          <label htmlFor={'adj_' + k}>{l}</label>
