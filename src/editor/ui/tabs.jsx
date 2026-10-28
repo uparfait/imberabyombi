@@ -66,3 +66,4 @@ export function start_rename(t) {
   const done = save => {
     if (over) return; over = true;
     const v = inp.value.trim(); if (save && v && v !== t.name) { t.name = v; save_soon(); }
+    render_sidebar();
