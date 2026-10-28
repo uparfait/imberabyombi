@@ -16,3 +16,4 @@ export const FORMATS = [
   { key: 'pdf', ext: 'pdf', name: 'PDF', desc: 'Looks the same everywhere; best for sharing and printing', color: '#d93025', icon: 'picture_as_pdf', tabs: true },
   { key: 'html', ext: 'html', name: 'Web page', desc: 'One file that opens in any browser', color: '#e8710a', icon: 'html', tabs: true },
   { key: 'md', ext: 'md', name: 'Markdown', desc: 'Plain text with simple formatting marks', color: '#3c4043', icon: 'markdown', tabs: true },
+  { key: 'txt', ext: 'txt', name: 'Plain text', desc: 'Just the words, no formatting', color: '#80868b', icon: 'text_snippet', tabs: true },
