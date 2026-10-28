@@ -14,3 +14,4 @@ export function staff_dir() {
         <button key={i} className="chip_btn" aria-pressed={i === 0} data-act="team" data-v={i ? t : ''}>{t}</button>
       ))}</div>
       {search_box({ 'data-filter': '.filter_card' }, 'Search staff', 'ml-auto w-full sm:w-72')}</div>
+      <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
