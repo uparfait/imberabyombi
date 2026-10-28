@@ -13,3 +13,4 @@ export const bar_cell = (v, max) => (
 );
 export const stock_cell = (v, r) => (
   <div className="min-w-[9rem]">
+    <div className="flex justify-between text-xs"><b>{+v}</b><span className="text-muted">{`min ${+r.min || 0}`}</span></div>
