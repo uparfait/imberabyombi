@@ -39,3 +39,4 @@ export function r_pr(f) {
   let x = '';
   if (f.link) x += '<w:rStyle w:val="Hyperlink"/>';
   if (f.font) x += `<w:rFonts w:ascii="${xesc(f.font)}" w:hAnsi="${xesc(f.font)}" w:cs="${xesc(f.font)}"/>`;
+  if (f.b) x += '<w:b/>'; if (f.i) x += '<w:i/>'; if (f.s) x += '<w:strike/>';
