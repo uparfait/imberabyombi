@@ -62,3 +62,5 @@ function tools_items() {
   ];
 }
 function help_items() { return [cmd('Keyboard shortcuts', 'keyboard', () => shortcuts_dialog(), 'Ctrl+/')]; }
+
+export const MENUS = { file: file_items, edit: edit_items, view: view_items, insert: insert_items, format: format_items, tools: tools_items, help: help_items };
