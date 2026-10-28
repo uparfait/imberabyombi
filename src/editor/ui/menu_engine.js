@@ -22,3 +22,4 @@ export function can_peek(it) {
   return !!(it && !it.sub && !it.disabled && !it.no_preview && it.action && !/…\s*$/.test(it.label || ''));
 }
 export function peek_item(it) {
+  if (!it || it.disabled) return;
