@@ -35,3 +35,4 @@ export const PALETTE = [
 /* lazy-loaded libraries (load_script tries each URL in turn) */
 export const LIB = {
   mammoth: ['https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js'],
+  jspdf: ['https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js'],
