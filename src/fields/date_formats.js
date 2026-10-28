@@ -7,3 +7,4 @@ import { pad, h24 } from '../lib/index.js';
    A first digit that cannot start a valid value is padded (9 → 09), a digit that would overflow is refused (13 in 12-hour).
    Shown values keep ISO order; saved values are always ISO 24-hour (form_obj): time "HH:MM", date & time "YYYY-MM-DDTHH:MM". */
 export const DTF = {
+  date: { ph: 'YYYY-MM-DD', re: '\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])', mask: '####-##-##', parts: ['y', 'mo', 'd'] },
