@@ -7,3 +7,4 @@ import { img_op } from './img_ops.js';
 import { img_max, img_now } from './img_sel.js';
 
 export function image_size_dialog(img) {
+  img = img_now(img); if (!img || previewing()) return;
