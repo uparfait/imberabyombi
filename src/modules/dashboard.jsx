@@ -23,8 +23,7 @@ VIEWS.dashboard = () => {
   const stats = STATS.filter(x => auth.can(x[0]));
   const W = dash_widgets(u);
   return <>
-    <section aria-label="Welcome">{hero_shell(<div className="relative flex flex-wrap items-end gap-6 px-6 pb-16 pt-8 sm:px-10 sm:pb-20">
-      <div className="hero_in min-w-0 flex-1"><p className="text-sm text-fg/60">
+    <section aria-label="Welcome" className="flex flex-wrap items-end gap-4">
         {new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
         <h2 className="mt-1 text-3xl text-fg sm:text-5xl">{`Welcome, ${first}`}</h2><p className="mt-2 max-w-xl text-fg/70">{lorem.s()}</p></div>
       <span className="chip bg-fg/15 px-3 py-1 text-fg">{ic('shield', 'h-3.5 w-3.5')}{r.name}</span></div>)}</section>
