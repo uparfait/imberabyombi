@@ -7,3 +7,4 @@
   .cal_task.is_late { border-color: rgb(var(--bad) / .4); background: rgb(var(--bad) / .1); color: rgb(var(--bad)); }
   .cal_task.is_done { opacity: .6; text-decoration: line-through; }
   .due_tag { display: inline-flex; align-items: center; gap: .25rem; font-size: .75rem; white-space: nowrap; color: rgb(var(--muted)); }
+  .due_tag.late { color: rgb(var(--bad)); font-weight: 500; }
