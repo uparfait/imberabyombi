@@ -59,3 +59,4 @@ export function push_overflow(b, next) {
     if ((is_list(last) || is_table(last)) && items_of(last).length > 1) { split_container(last, b, next); continue; }
     if (is_splittable_text(last) && split_text(last, b, next)) continue;
     if (flow_kids(b).length > 1) { insert_at_start(next, [last]); continue; }
+    break;
