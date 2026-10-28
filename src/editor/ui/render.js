@@ -31,3 +31,4 @@ export function render_all() {
 }
 export function new_document() {
   confirm_dialog('Start a new blank document? Anything you have not downloaded will be lost.', 'New document').then(ok => {
+    if (!ok) return;
