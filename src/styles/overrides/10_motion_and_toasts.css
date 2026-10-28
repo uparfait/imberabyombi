@@ -16,3 +16,4 @@
     padding: .9rem .75rem 1.05rem 1rem; border-radius: calc(var(--radius) * 1.15); background: rgb(var(--surface)); color: rgb(var(--fg));
     border: 1px solid rgb(var(--line)); box-shadow: var(--shadow); animation: toast_in .45s var(--ease) both; }
   .toast[data-tone=bad] { --t: var(--bad); } .toast[data-tone=warn] { --t: var(--warn); } .toast[data-tone=info] { --t: var(--info); }
+  .toast [data-ico] { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: var(--pill); background: rgb(var(--t) / .14); color: rgb(var(--t)); }
