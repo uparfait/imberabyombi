@@ -22,3 +22,4 @@ export const dt_spec = t => { const s = DTF[t]; if (h24() || !/time/.test(t)) re
 export const dt_attrs = (t, ph) => { const s = dt_spec(t); return { type: 'text', 'data-type': t, inputMode: /time/.test(t) && !h24() ? 'text' : 'numeric',
   autoComplete: 'off', spellCheck: false, pattern: s.re, maxLength: s.max || s.mask.length, placeholder: ph ?? s.ph }; };
 export const to24 = v => { const m = /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i.exec(String(v).trim()); if (!m) return String(v).trim(); return `${pad(+m[1] % 12 + (/p/i.test(m[3]) ? 12 : 0))}:${m[2]}`; };
+export const to12 = v => { const [h, m] = String(v).split(':').map(Number); return isNaN(h) || isNaN(m) ? v : `${pad(h % 12 || 12)}:${pad(m)} ${h < 12 ? 'AM' : 'PM'}`; };
