@@ -41,3 +41,4 @@ export function row_drag(e, o) {
     removeEventListener('keydown', esc, true); cancelAnimationFrame(raf);
     if (!on) return;
     o.row.classList.remove('dragging'); if (o.list && o.cls) o.list.classList.remove(o.cls); if (line) line.remove();
+    const stop = c => { c.stopPropagation(); c.preventDefault(); };
