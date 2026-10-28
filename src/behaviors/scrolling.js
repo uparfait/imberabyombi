@@ -2,3 +2,4 @@
    docked menu row (header_line), what scrolling and resizing close or move, and the debounced resize work (RZ). */
 import { qs, qsa } from '../lib/index.js';
 import { ui } from '../store/index.js';
+import { pick, tip } from '../overlays/index.js';
