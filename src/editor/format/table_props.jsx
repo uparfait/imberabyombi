@@ -16,3 +16,4 @@ const apply_props = (v, n_rows, n_cols) => ch => {
   if (n_rows > rows.length) insert_rows(rows[rows.length - 1], n_rows - rows.length, true); else rows.slice(n_rows).forEach(r => r.remove());
   const alive = ch.filter(t => t.rows.length), w = table_width_cols(alive);
   if (n_cols !== w || v.dist) alive.forEach(t => { const g = t.querySelector(':scope > colgroup'); if (g) g.remove(); });
+  if (n_cols > w) insert_cols(alive, w - 1, n_cols - w, 'right'); else for (let k = w; k > n_cols; k--) delete_col(alive, k - 1);
