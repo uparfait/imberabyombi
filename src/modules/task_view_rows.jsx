@@ -16,3 +16,4 @@ const sec = t => <tr className="kv_group"><th scope="colgroup" colSpan={2}>{t}</
 const pen = f => <button type="button" className="kv_pen" data-act="tv_edit" data-f={f} aria-label="Edit">{ic('edit', 'h-4 w-4')}</button>;
 
 /* one subtask with its items; ticking an item (data-sub-tick) saves at once */
+const sub = (r, mine) => (g, gi) => <div key={gi} className="tv_sub"><div className="flex flex-wrap items-center justify-between gap-2">
