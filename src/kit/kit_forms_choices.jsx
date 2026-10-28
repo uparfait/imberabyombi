@@ -16,3 +16,4 @@ export function kit_forms_choices(brand_hex) {
   );
   const suggest = (
     <div className="field"><label htmlFor="demo_list">Input with suggestions</label>
+      <input id="demo_list" data-list="demo_list_options" placeholder="Type to search" autoComplete="off" />
