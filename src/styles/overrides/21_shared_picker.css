@@ -8,3 +8,4 @@
   .pk_search { position: relative; display: block; border-bottom: 1px solid rgb(var(--line)); cursor: text; }
   .pk_search input { padding-top: .75rem; padding-bottom: .75rem; font-size: .9rem; border: 0; outline: 0; background-color: transparent; }
   .pk_none { padding: .75rem 1rem; font-size: .85rem; color: rgb(var(--muted)); }
+  .pk_box { width: 1.125rem; height: 1.125rem; flex-shrink: 0; border: 2px solid rgb(var(--muted)); border-radius: calc(var(--radius) * .125); background: center / 85% no-repeat; }
