@@ -15,3 +15,5 @@ let seeder = null;
 export const set_seeder = fn => { seeder = fn; };
 const storage_full = () => import('../feedback/index.js')
   .then(m => m.notify('Export a backup, then reset demo data in Settings to free space.', 'bad', 'Browser storage is full'));
+
+export const db = {
