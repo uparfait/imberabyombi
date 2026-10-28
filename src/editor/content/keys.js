@@ -12,3 +12,4 @@ export function handle_tab(e, r, host) {
   const n = el_of(r.startContainer), td = n.closest('td,th');
   if (td && host.contains(td)) {
     const cells = qsa('td,th', td.closest('table')), i = cells.indexOf(td) + (e.shiftKey ? -1 : 1);
+    if (i >= cells.length) { set_last_range(r.cloneRange()); tbl_op('row_below'); return; }
