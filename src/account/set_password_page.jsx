@@ -6,3 +6,4 @@ import { PW_RULES } from './pw_rules.js';
 
 export function set_password_page() {
   return auth_shell('Set a new password', 'Choose a strong password that you do not use anywhere else.', <>
+    <form data-form="setpw" className="on_bg mt-8 grid gap-6" noValidate><div data-msg-slot="" className="empty:hidden"></div>
