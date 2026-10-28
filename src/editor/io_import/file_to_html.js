@@ -53,3 +53,5 @@ export async function file_to_html(file) {
         + `Save it as .${/ppt|key/.test(ext) ? 'pptx' : 'docx'} to edit it here.` };
   }
   if (file.type.startsWith('text/') || (file.size < 2e6 && await looks_like_text(file))) return { html: text_to_html(await file.text()) };
+  const chip = await attachment_html(file); return { kind: 'file', html: `<p>${chip}</p>`, inline: chip };
+}
