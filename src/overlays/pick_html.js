@@ -37,3 +37,4 @@ export const PK = {
   foot: now => `<div class="pk_foot"><button type="button" class="btn btn_ghost btn_sm" data-act="pk_set" data-v="">Clear</button>`
     + `<button type="button" class="btn btn_ghost btn_sm text-accent" data-act="pk_today">${now}</button></div>`,
   cal(a) {
+    const wk = kind_of(a) === 'week', sel = wk ? a.value : a.value.slice(0, 10), b = pick.view, f = new Date(b.getFullYear(), b.getMonth(), 1);
