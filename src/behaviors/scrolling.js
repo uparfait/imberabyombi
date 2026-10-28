@@ -20,3 +20,4 @@ export const glide = { y: 0, last: 0, raf: 0,
     const before = scrollY; scrollTo({ top: before + (Math.abs(dy) * .2 < 1 ? Math.sign(dy) : dy * .2), behavior: 'instant' }); g.last = scrollY;
     g.raf = scrollY === before ? 0 : requestAnimationFrame(g.step); } };   /* could not move (page end): stop */
 export function chain_wheel(e) {
+  const el = e.currentTarget; if (e.ctrlKey || !e.deltaY || e.defaultPrevented) return;
