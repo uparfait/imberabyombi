@@ -23,3 +23,4 @@ export function insert_block_at_caret(node) {
     if (o === 0 && !block.querySelector('img')) block.before(node);
     else if (o >= len) block.after(node);
     else {
+      const r2 = document.createRange(); r2.setStart(r.startContainer, r.startOffset); r2.setEnd(block, block.childNodes.length);
