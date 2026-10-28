@@ -7,3 +7,4 @@ import { SHELL_ACT } from './act_shell.js';
 import { TABLE_ACT } from './act_tables.jsx';
 import { PICKER_ACT } from './act_picker.js';
 import { FILE_ACT } from './act_files.js';
+import { ADMIN_ACT } from './act_admin.js';
