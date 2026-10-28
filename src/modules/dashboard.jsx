@@ -23,3 +23,4 @@ VIEWS.dashboard = () => {
   const stats = STATS.filter(x => auth.can(x[0]));
   const W = dash_widgets(u);
   return <>
+    <section aria-label="Welcome">{hero_shell(<div className="relative flex flex-wrap items-end gap-6 px-6 pb-16 pt-8 sm:px-10 sm:pb-20">
