@@ -25,3 +25,4 @@
 
   /* Checkbox, radio, switch: Imberabyombi shapes in brand colours */
   :where(input[type=checkbox], input[type=radio]) {
+    appearance: none; width: 1.125rem; height: 1.125rem; flex-shrink: 0; cursor: pointer; vertical-align: middle;
