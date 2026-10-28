@@ -60,3 +60,5 @@ export function push_overflow(b, next) {
     if (is_splittable_text(last) && split_text(last, b, next)) continue;
     if (flow_kids(b).length > 1) { insert_at_start(next, [last]); continue; }
     break;
+  }
+  const last = last_flow(b);   // keep headings with the text that follows them
