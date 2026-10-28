@@ -29,3 +29,4 @@ export const VIZ_REL_A = {
     const days = Array.from({ length: 7 }, (_, i) => new Date(2026, 9, 25 + i).toLocaleDateString(undefined, { weekday: 'short' }));
     const hrs = Array.from({ length: 12 }, (_, i) => 8 + i);
     const v = days.map((_, d) => hrs.map(h => Math.max(0, Math.round((d % 6 ? 1 : .3) * (20 + 30 * Math.sin((h - 8) / 11 * Math.PI)) + rnd(-8, 8)))));
+    const mx = Math.max(...v.flat());
