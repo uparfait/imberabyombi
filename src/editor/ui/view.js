@@ -43,3 +43,4 @@ export function set_mode(mode) {
   toast(mode === 'edit' ? 'Editing: you can make changes' : 'Viewing: the document is read-only', 1800);
 }
 export function toggle_menus() {
+  state.menus = !state.menus;
