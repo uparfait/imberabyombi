@@ -40,3 +40,4 @@ function open_section_menu(row, btn, kb) {
 }
 
 function on_key(e, row) {
+  if (e.target !== row) return;
