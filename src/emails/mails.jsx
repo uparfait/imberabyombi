@@ -7,3 +7,4 @@ export const MAILS = {
 };
 export const mail_btn = (l, c = 'btn_primary', href = '#/admin/emails') => <a href={href} className={`btn ${c}`}>{l}</a>;
 /* a calendar tile: month, day, weekday; strike = the old date of a moved event */
+export const mail_date = (d, strike) => (
