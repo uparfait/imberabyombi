@@ -22,3 +22,4 @@
 /* Table style presets: small previews in outlined cards, the chosen one ringed in brand */
 .preset_grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; }
 @media (max-width: 479.98px) { .preset_grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.preset {
