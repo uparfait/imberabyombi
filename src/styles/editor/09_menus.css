@@ -5,3 +5,4 @@
 .ed_menu:not([hidden]) { animation: fade .12s var(--ease); }   /* opacity only: submenus measure rows right away */
 .ed_menu .ed_mi { gap: .625rem; min-height: 2.125rem; padding: .3125rem .75rem .3125rem .5rem; border-radius: calc(var(--radius) * .625); cursor: pointer; }
 .ed_menu .ed_mi:focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: -2px; }
+.ed_menu .ed_mi[aria-checked="true"] .mi_label { font-weight: 500; }
