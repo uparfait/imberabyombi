@@ -6,3 +6,4 @@ import { initials } from '../ui/index.js';
 import { hero_shell } from '../site/index.js';
 
 /* o = { routed, title, kicker, node, kids, path, to } from nav_drops */
+const head = (o, icon, text, extra = null) => !o.routed
