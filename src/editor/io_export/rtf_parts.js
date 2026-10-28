@@ -30,3 +30,4 @@ const rtf_pict = (rx, img) => {
   const mm = (img.getAttribute('src') || '').match(/^data:image\/(png|jpe?g);base64,(.*)$/i); if (!mm) return '';
   const b = b64bytes(mm[2]), parts = [];
   for (let i = 0; i < b.length; i += 64) { let line = ''; for (let k = i; k < Math.min(i + 64, b.length); k++) line += HEX[b[k]]; parts.push(line); }
+  const nw = +img.dataset.nw || 300, nh = +img.dataset.nh || 200;
