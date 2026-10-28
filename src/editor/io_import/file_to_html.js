@@ -12,3 +12,4 @@ import { docx_to_html } from './docx.js';
 import { pptx_to_html } from './pptx.js';
 import { odf_to_html } from './odf.js';
 import { epub_to_html } from './epub.js';
+import { rtf_to_html } from './rtf.js';
