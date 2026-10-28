@@ -43,3 +43,4 @@
   .kpi_split i { transition: opacity .15s; }
   .kpi_bars:has(i:hover) i:not(:hover), .kpi_split:has(i:hover) i:not(:hover) { opacity: .4; }
   .kpi .kpi_part { margin-inline: -.375rem; padding: .125rem .375rem; border-radius: .5rem; transition: background-color .15s; }
+  .kpi .kpi_part:hover { background: rgb(var(--fg) / .05); }
