@@ -6,3 +6,4 @@ import { file_badge } from './file_helpers.js';
 const PAGE = 'relative flex h-8 w-[26px] flex-none items-end justify-center rounded-[3px_8px_3px_3px] pb-1 text-[7.5px] font-bold leading-none '
   + 'tracking-[.02em] text-white';
 const CORNER = 'absolute right-0 top-0 h-2 w-2 rounded-bl-[3px] bg-white/40';   /* the folded corner */
+const PILL ='rounded-full px-1.5 py-1 text-[10.5px] font-semibold leading-none text-white';
