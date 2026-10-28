@@ -9,3 +9,4 @@ export const compact_num = v => { const a = Math.abs(v); return a >= 1e6 ? round
 export const num = v => Math.round(v).toLocaleString();
 export const linear = (d0, d1, a, b) => v => a + (v - d0) / ((d1 - d0) || 1) * (b - a);
 export const nice_step = x => { const e = 10 ** Math.floor(Math.log10(x || 1)), f = x / e; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * e; };
+export const ticks = (lo, hi, n = 4) => {
