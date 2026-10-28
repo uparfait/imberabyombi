@@ -5,3 +5,4 @@ Two small objects stand between the screens and the data, so a real API replaces
 
 ## 1. The data store: `db` (src/store/db.js)
 | Method                      | Demo behaviour                         | With an API                         |
+|-----------------------------|----------------------------------------|-------------------------------------|
