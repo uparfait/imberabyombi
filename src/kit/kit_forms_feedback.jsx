@@ -6,3 +6,4 @@ export const kit_forms_feedback = () => (
   <fieldset className="grid gap-5 sm:grid-cols-2"><legend>Feedback</legend>
     <div className="grid gap-2"><p className="text-sm font-medium">Progress (known amount)</p><progress max="100" value="64"></progress></div>
     <div className="grid gap-2"><p className="text-sm font-medium">Loading (one spinner everywhere)</p>
+      <div className="flex flex-wrap items-center gap-5">{spinner()}{spinner('!h-8 !w-8')}
