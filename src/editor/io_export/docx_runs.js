@@ -51,3 +51,4 @@ export function text_runs(t, f) {
   let out = ''; const rp = r_pr(f);
   t.split(/(\t|\n)/).forEach(part => {
     if (part === '\t') out += `<w:r>${rp}<w:tab/></w:r>`; else if (part === '\n') out += `<w:r>${rp}<w:br/></w:r>`;
+    else if (part) out += `<w:r>${rp}<w:t xml:space="preserve">${xesc(part)}</w:t></w:r>`;
