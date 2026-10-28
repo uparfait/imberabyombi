@@ -43,7 +43,7 @@ const DROPS = {
 
 export function install_toolbar(offs) {
   const tb = refs.toolbar;
-  listen(offs, tb, 'mousedown', e => { if (!e.target.closest('input')) e.preventDefault(); });
+  listen(offs, tb, 'mousedown', e => { if (!e.target.closest('input')) e.preventDefault(); }); side_wheel(offs, tb);
   if (tb) qsa('[data-ed]', tb).forEach(b => {
     const k = b.dataset.ed, key = 'ed_' + k, fn = () => { if (ACTIONS[k]) ACTIONS[k](); };
     if (LIVE_ED.includes(k)) {
