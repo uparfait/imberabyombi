@@ -22,3 +22,4 @@ function Editor_view() {
       {toolbar()}
       {workspace()}
       {link_bubble()}
+      {file_inputs()}
