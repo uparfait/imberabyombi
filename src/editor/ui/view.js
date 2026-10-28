@@ -34,3 +34,5 @@ export function zoom_fit() {
   if (!scroller) return;
   const avail = scroller.clientWidth - (parseFloat(scroller.style.paddingLeft) || 0) - (parseFloat(scroller.style.paddingRight) || 0) - scaled(56);
   set_zoom(Math.floor(avail / dims().w * 100) / 100);
+}
+export function set_mode(mode) {
