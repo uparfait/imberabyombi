@@ -5,3 +5,4 @@ import { auth_shell, auth_links, pw_field } from './auth_shell.jsx';
 import { PW_RULES } from './pw_rules.js';
 
 export function set_password_page() {
+  return auth_shell('Set a new password', 'Choose a strong password that you do not use anywhere else.', <>
