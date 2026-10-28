@@ -4,3 +4,4 @@ const DB_NAME = (window.NS || 'loremds:v1:') + 'editor', STORE = 'docs';
 let opening = null;
 
 const open = () => opening || (opening = new Promise((resolve, reject) => {
+  const req = indexedDB.open(DB_NAME, 1);
