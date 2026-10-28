@@ -45,3 +45,6 @@ export function hoist_nested(b) {
     while (inner.nextSibling) after.appendChild(inner.nextSibling);
     p.before(before); p.after(after); p.replaceWith(inner);
     [before, after].forEach(x => { if (!x.textContent.replace(/\u200b/g, '').trim() && !x.querySelector('img')) x.remove(); });
+  }
+}
+export function div_to_block(d) {
