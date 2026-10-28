@@ -8,3 +8,5 @@ import { cap, css_var, rgb2hex } from '../lib/index.js';
 import { cfg } from '../config/index.js';
 import { ic } from '../icons/index.js';
 import { to } from '../router/index.js';
+
+const FONTS = ['Figtree', 'Bricolage Grotesque', 'system-ui'];
