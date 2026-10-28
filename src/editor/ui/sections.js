@@ -50,3 +50,4 @@ export function move_section(k, to, m = section_model()) {
   if (!can_edit()) return null;
   const h = m.heads[k]; if (!h || to < 0 || to > m.blocks.length || (to >= h.i && to <= h.end)) return null;
   const part = m.blocks.slice(h.i, h.end), ref = m.blocks[to] || null;
+  part.forEach(b => m.c.insertBefore(b, ref));
