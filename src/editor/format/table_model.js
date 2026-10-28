@@ -45,3 +45,4 @@ export function restyle_table(chain) {
 export function row_slots(row) { let c = 0; return Array.from(row.cells).map(cell => { const s = c; c += cell.colSpan || 1; return { cell, start: s, end: c - 1 }; }); }
 export function cell_at_col(row, col) {
   if (!row) return null; const s = row_slots(row).find(x => col >= x.start && col <= x.end);
+  return s ? s.cell : row.cells[row.cells.length - 1] || null;
