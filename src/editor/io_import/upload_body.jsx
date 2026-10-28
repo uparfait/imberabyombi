@@ -73,3 +73,5 @@ export function show_failed(failed, any_done) {
   if (qs('#modal')?.classList.contains('closing')) return after_close(() => show_failed(failed, any_done));
   modal({ title: any_done ? 'Some files could not be added' : 'The files could not be added',
     body: <ul className="list-disc pl-[18px] text-muted sm:col-span-2">{failed.map((f, i) => <li key={i} className="my-1">{f}</li>)}</ul>,
+    actions: <button type="button" className="btn btn_primary" data-act="close_modal">OK</button> });
+}
