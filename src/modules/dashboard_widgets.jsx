@@ -38,3 +38,4 @@ export function dash_widgets(u) {
     const open = mine.filter(x => x.status !== 'Done').slice(0, 4);
     W.push(<section key="tasks" className="card p-5">{head('My tasks', '#/admin/tasks', 'Open')}<p className="mt-1 text-sm text-muted">
       {`${done} of ${mine.length} done`}</p>
+      <progress className="mt-3" max={mine.length || 1} value={done}></progress>
