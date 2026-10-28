@@ -9,6 +9,7 @@ import { bodies } from './dom.js';
 import { collect_html } from './collect.js';
 import { live_busy } from './live.js';
 import { toast } from './toast.js';
+import { idb_get, idb_set } from './idb.js';
 
 export const DOC_KEY = 'editor_doc';
 let save_timer = null, too_big = 0;
