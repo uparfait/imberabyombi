@@ -27,3 +27,4 @@
   .kv_pen { display: grid; flex: none; place-items: center; width: 2rem; height: 2rem; margin: -.25rem 0; border-radius: var(--pill); color: rgb(var(--muted)); opacity: 0; transition: opacity .15s, background-color .15s, color .15s; }
   .kv tr:hover .kv_pen, .kv_pen:focus-visible { opacity: 1; }
   .kv_pen:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
+  @media (hover: none) { .kv_pen { opacity: 1; } }
