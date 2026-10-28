@@ -33,3 +33,4 @@ export function data_table(p) {
 function Viz_data() {
   const [p, set_p] = useState(SHOWN?.p || 1);
   useLayoutEffect(() => { PAGER.set = set_p; return () => { if (PAGER.set === set_p) PAGER.set = null; }; }, []);
+  return <div id="viz_data" className="sm:col-span-2">{data_table(p)}</div>;
