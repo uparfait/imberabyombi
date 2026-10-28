@@ -43,3 +43,4 @@ export function image_menu_items(img) {
     { label: 'Corners', icon: 'rounded_corner', sub: () => [['Square', ''], ['Rounded', '8px'], ['Very rounded', '24px'], ['Circle or oval', '50%']].map(([l, v]) => ({
       label: l, checked: (img_now(img).style.borderRadius || '') === v, action: () => img_op(img, x => { x.style.borderRadius = v; }) })) },
     { label: 'Drop shadow', icon: 'shadow', checked: !!img.style.boxShadow,
+      action: () => img_op(img, x => { x.style.boxShadow = x.style.boxShadow ? '' : '0 2px 10px rgba(0,0,0,.35)'; }) },
