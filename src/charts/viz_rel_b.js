@@ -39,3 +39,4 @@ export const VIZ_REL_B = {
       + nodes.map((o, i) => mark_group(o.k, [[deg[i], 'Links', o.g]], `<circle class="hit_area" cx="${round1(o.x)}" cy="${round1(o.y)}" r="14"/>`
         + `<circle class="mark" cx="${round1(o.x)}" cy="${round1(o.y)}" r="${round1(4 + deg[i] * 1.3)}"`
         + ` style="fill:${scale_color(o.g)};stroke:rgb(var(--surface));stroke-width:2"/>`))
+        .join(''), 'Network graph'),
