@@ -16,3 +16,4 @@ export function prev_flow(e) { e = e && e.previousElementSibling; while (e && is
 export function bodies() { return pages_el ? qsa('.pg_body', pages_el) : []; }
 export function page_wraps() { return pages_el ? qsa('.page_wrap', pages_el) : []; }
 export function body_index(b) { return bodies().indexOf(b); }
+export function editable_of(n) {
