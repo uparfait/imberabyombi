@@ -5,3 +5,4 @@ import { lorem, qs, rgb2hex, css_var } from '../lib/index.js';
 import { after_render } from '../store/index.js';
 import { draw_chart } from '../charts/index.js';
 import { page_hero } from '../site/index.js';
+import { kit_block } from './kit_block.jsx';
