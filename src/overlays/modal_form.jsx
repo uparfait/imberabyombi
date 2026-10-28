@@ -19,3 +19,4 @@ export function Modal_form({ m }) {
     setTimeout(() => f.querySelector('input:not([type=hidden]),select,textarea')?.focus(), 50);
   }, []);
   const body = run_view(m.body), actions = run_view(m.actions), plain = blank(body), { title, help, submit, danger } = m;
+  const on_submit = async e => {
