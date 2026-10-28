@@ -9,3 +9,4 @@ export * from './img_box_events.js';
 export * from './img_adjust.jsx';
 export * from './img_crop.jsx';
 export * from './img_size.jsx';
+export * from './img_io.js';
