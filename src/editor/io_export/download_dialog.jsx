@@ -34,3 +34,4 @@ const fmt_card = (f, on, pick) => (
   <button key={f.key} type="button" role="radio" aria-checked={String(on)} aria-pressed={String(on)} data-f={f.key} onClick={() => pick(f.key)}
     onDoubleClick={e => { pick(f.key); const fm = e.currentTarget.form; if (fm && !fm.querySelector('[aria-busy]')) fm.requestSubmit(); }}
     className={`flex items-center gap-3 rounded-2xl border px-3 py-2.5 text-left text-fg transition ${on
+      ? 'border-brand bg-brand/10 outline outline-1 outline-offset-[-2px] outline-brand' : 'border-line bg-surface hover:bg-fg/5'}`}>
