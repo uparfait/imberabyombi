@@ -4,3 +4,5 @@ import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { lorem } from '../lib/index.js';
 import { sec_head, spy_attrs } from './site_bits.jsx';
+
+export function contact_form() {
