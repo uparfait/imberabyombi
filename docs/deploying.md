@@ -5,3 +5,4 @@ Asset paths are relative (`base: './'` in `vite.config.js`) and routes are hash-
 from the domain root or any sub-folder without server rules.
 
 ## GitHub Pages
+1. Build: `npm run build`.
