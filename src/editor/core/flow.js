@@ -35,3 +35,4 @@ export function normalize_body(b) {
   }
 }
 export function hoist_nested(b) {
+  const NEST = /^(UL|OL|TABLE|HR|P|H[1-6]|BLOCKQUOTE|PRE)$/;
