@@ -24,3 +24,5 @@ function on_card_click(e, c, card) {
     if (e.target.closest('input,textarea')) return;
     activate_comment(c.id); const sp = qs(`.cmt[data-cid="${c.id}"]`, pages_el); if (sp) sp.scrollIntoView({ block: 'center', behavior: 'smooth' });
     return;
+  }
+  if (x.dataset.x === 'save') {
