@@ -21,3 +21,4 @@ export function pages_paste(e) {
   begin_op();
   if (!body || paste_plain || !html) document.execCommand('insertText', false, text);
   else { document.execCommand('insertHTML', false, sanitize_html(html)); adopt_abs(host); }
+  paste_plain = false;
