@@ -24,3 +24,4 @@ export function table_xml(t, ctx) {
     const hdr_row = ri === 0 && Array.from(r.cells).some(c => c.hasAttribute('data-hdr') || c.tagName === 'TH');
     out += `<w:tr>${hdr_row ? '<w:trPr><w:tblHeader/></w:trPr>' : ''}`; let col = 0;
     Array.from(r.cells).forEach(c => {
+      const span = c.colSpan || 1, w = widths.slice(col, col + span).reduce((a, b) => a + b, 0); col += span;
