@@ -48,3 +48,4 @@ async function docx_blocks(cx, nodes, container) {
     stack[lvl].appendChild(li);
   };
   const page_break = () => container.insertAdjacentHTML('beforeend', PB);
+  for (const n of nodes) {
