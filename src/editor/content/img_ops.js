@@ -28,3 +28,5 @@ export const CROSS_MSG = 'This image comes from another website, so it can’t b
 function draw(img, im, render) {
   const c = document.createElement('canvas'), alpha = render(c, im) === 'alpha', jpg = !alpha && /^data:image\/jpe?g/i.test(img.getAttribute('src'));
   return c.toDataURL(jpg ? 'image/jpeg' : 'image/png', 0.92);
+}
+function put(img, url, width_fn, msg) {
