@@ -38,3 +38,4 @@ function install_panels(offs) {
   listen(offs, refs.add_page_btn, 'click', () => add_blank_page(current_page()));
 }
 function install_view(offs) {
+  let raf = 0;
