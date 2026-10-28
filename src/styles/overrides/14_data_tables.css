@@ -6,3 +6,4 @@
   /* Action Buttons: first column, pinned to the left edge while the table scrolls sideways */
   .table_data .table_acts { position: sticky; left: 0; z-index: 1; min-width: 0; background: rgb(var(--surface)); border-right: 1px solid rgb(var(--line)); }
   .table_data thead .table_acts { z-index: 2; background: rgb(var(--surface_2)); }
+  .table_data tbody tr:hover:not(:has(:is(button, a, input, select, label, [data-act]):hover)) > .table_acts { background: color-mix(in srgb, rgb(var(--brand)) 4%, rgb(var(--surface))); }
