@@ -70,3 +70,5 @@ export function transform_case(mode) {
     if (b > a) t.replaceData(a, b - a, conv(t.data.slice(a, b)));
   });
   const nr = mk_range(...saved); if (nr) { s.removeAllRanges(); s.addRange(nr); }
+  end_op(body_index(host));
+}
