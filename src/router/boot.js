@@ -39,3 +39,5 @@ export function boot() {
   migrate_task_dates();
   raise_top();   /* #toasts and #loader join the top layer */
   document.documentElement.classList.toggle('allow_select', !!db.get('allowSelect'));   /* the right-click menu's text-selection switch */
+  navigate();
+}
