@@ -20,3 +20,4 @@ export const account_mails = () => ({
     <h1 className="mail_h">Your sign-in code</h1><p>Use this code to finish signing in. It expires in <b>10 minutes</b>.</p>
     {copy_box(String(lorem.int(100000, 999999)), 'Code', true)}<p className="text-sm text-muted">Never share this code. {cfg.name} will never ask for it by phone or chat.</p>
     <div>{mail_btn('Open 2-step verification', 'btn_outline', '#/verify')}</div></> },
+  token: { s: 'Your new access token', t: <>
