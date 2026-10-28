@@ -2,3 +2,4 @@
    pictures, tables, speaker notes), slides separated by page breaks. PB = the page break markup every import uses. */
 import { esc_html, clamp } from '../core/index.js';
 import { unzip } from './unzip.js';
+import { parse_xml, by_tag, kids, dir_of, resolve_path, rels_of } from './xml_helpers.js';
