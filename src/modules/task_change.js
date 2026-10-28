@@ -9,3 +9,5 @@ import { sync_when } from '../table/index.js';
 import { subs_of, files_of, read_files } from './task_data.js';
 import { task_refresh } from './task_view.jsx';
 import { tv_api } from './tv_state.js';
+
+/* tick item i of subtask g (saved at once) */
