@@ -29,3 +29,4 @@ export function open_link_dialog(existing) {
     if (!url) { show_err(qs('#lk_url'), 'Enter a link address'); qs('#lk_url').focus(); return false; }
     /* the page is inert while the dialog is open: close it at once, put the selection back, then edit */
     qs('#modal')?.close();
+    if (range && range.startContainer.isConnected) { const s = getSelection(); s.removeAllRanges(); s.addRange(range); }
