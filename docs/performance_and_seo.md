@@ -28,6 +28,7 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 - Each route updates `<title>`, the meta description, `og:title` and the canonical link (`set_meta()` in src/router).
 - `public/robots.txt` and `public/sitemap.xml` tell crawlers what to read; update the domain before publishing.
 - The host must answer every address with `index.html` (see [deploying](deploying.md)), so a crawler that opens
+  `/about` directly gets the page.
 - Images carry `alt` text; headings follow one `h1` per page; links are real `<a href>` elements.
 - A `<noscript>` message explains that the site needs JavaScript.
 
