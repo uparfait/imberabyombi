@@ -38,3 +38,5 @@ export function editor_start(root) {
     }, true);
     /* a key pressed in the document ends a running preview first */
     on(pages_el, 'keydown', () => { if (live.active) live.cancel(); }, true);
+  }
+  const title_saved = e => { if (e.target && e.target.id === 'doc_title') save_soon(); };
