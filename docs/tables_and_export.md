@@ -35,3 +35,5 @@ The Export menu offers CSV, JSON and Excel. The dialog then asks for:
 - the **columns** to include and what each is called in the file. An unticked column cannot be renamed, and with no column
   ticked the download is turned off.
 Rows follow the table's current search, then the dialog's range and filters. Files are named `<collection>-<date>.<ext>`.
+
+## Under the hood
