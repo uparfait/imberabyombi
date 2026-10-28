@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { after_render } from '../store/index.js';
 import { auth_shell, auth_links } from './auth_shell.jsx';
+import { otp_boxes } from './otp_boxes.jsx';
