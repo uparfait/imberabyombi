@@ -14,3 +14,4 @@ export function authenticator_page() {
       <input type="hidden" name="setup" defaultValue="1" />
       <ol className="auth_steps">
         <li><p><b className="font-medium">Scan this QR code</b> with the app.</p>
+          <div className="mt-3 flex justify-center" dangerouslySetInnerHTML={{ __html: qr_svg(key) }}></div></li>
