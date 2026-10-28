@@ -19,3 +19,5 @@ export function table_chain(t) {
   while (first.hasAttribute('data-cont')) {
     const b = editable_of(first), i = bs.indexOf(b); if (i <= 0 || b.firstElementChild !== first) break;
     const p = bs[i - 1].lastElementChild; if (is_table(p)) first = p; else break;
+  }
+  const chain = [first]; let cur = first;
