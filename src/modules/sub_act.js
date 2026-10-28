@@ -8,3 +8,4 @@ const fade_out = (el, frames, ms, rm) => { if (reduced()) return rm(); el.animat
 
 export const SUB_ACT = {
   sub_add: t => { const list = t.previousElementSibling; sub_api(list)?.add_group(); const g = list.lastElementChild; g.querySelector('.sub_title').focus();
+    if (!reduced()) g.animate([{ opacity: 0, transform: 'translateY(-.25rem)' }, { opacity: 1, transform: 'none' }], { duration: 200 }); },
