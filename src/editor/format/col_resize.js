@@ -11,3 +11,4 @@ export function ensure_colgroup(t, chain) {
   let cg = t.querySelector(':scope > colgroup');
   const n = Math.max(1, ...Array.from(t.rows).map(r => Array.from(r.cells).reduce((a, c) => a + (c.colSpan || 1), 0)));
   if (!cg || cg.children.length !== n) {
+    const tw = t.offsetWidth || 1, first = t.rows[0];
