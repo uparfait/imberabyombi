@@ -9,3 +9,4 @@ export const auth = {
   get user() { return db.get('session') || (ss && JSON.parse(ss.getItem(cfg.ns + 'session') || 'null')); },
   login(u) { if (u.remember || !ss) db.set('session', u); else ss.setItem(cfg.ns + 'session', JSON.stringify(u)); },
   logout() { db.del('session'); ss && ss.removeItem(cfg.ns + 'session'); },
+  role() { return roles().find(r => r.id === auth.user?.role); },
