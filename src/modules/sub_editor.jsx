@@ -28,3 +28,4 @@ export function Sub_editor({ groups }) {
   const put = fn => flushSync(() => set_gs(fn));
   const api = {
     add_group: () => { const [g] = keyed([{ items: [{}] }]); put(a => [...a, g]); },
+    add_item: gk => { const k = ++seq; put(a => a.map(g => g.key !== gk ? g : { ...g, items: [...g.items, { key: k }] })); },
