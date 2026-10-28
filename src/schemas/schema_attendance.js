@@ -15,3 +15,7 @@ export const attendance_schema = {
     const st = lorem.pick(['Present', 'Present', 'Present', 'Late', 'Absent', 'Excused']), kind = lorem.pick(['Staff', 'Student']), off = st === 'Absent';
     return {
       person: lorem.pick(db.list(kind === 'Staff' ? 'staff' : 'students')).name, kind, date: ymd(add_d(new Date(), -(i % 7))),
+      in: off ? '' : `0${st === 'Late' ? 8 : 7}:${pad(lorem.int(5, 55))}`, out: off ? '' : `${lorem.int(15, 17)}:${pad(lorem.int(0, 59))}`, status: st
+    };
+  }
+};
