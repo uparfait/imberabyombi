@@ -25,3 +25,4 @@ export function palette_el(on_pick, none_label) {
     mi('add_circle', 'h-4 w-4 shrink-0 text-muted') + 'Custom color<input type="color" style="position:absolute;opacity:0;width:0;height:0">');
   const inp = lab.querySelector('input');
   inp.addEventListener('input', () => peek('custom' + inp.value, () => on_pick(inp.value)));
+  inp.addEventListener('change', () => {
