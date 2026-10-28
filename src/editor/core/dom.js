@@ -19,3 +19,5 @@ export function body_index(b) { return bodies().indexOf(b); }
 export function editable_of(n) {
   if (!n) return null; if (n.nodeType !== 1) n = n.parentElement;
   return n ? n.closest('.pg_body,.pg_header,.pg_footer_text') : null;
+}
+export function el_of(n) { return n && n.nodeType === 1 ? n : (n ? n.parentElement : null); }
