@@ -23,3 +23,5 @@ export function table_full(c, on) {
   }
   const ph = card.previousElementSibling?.classList.contains('table_ph') ? card.previousElementSibling : null, done = () => set(false);
   if (reduced() || !ph) return done();
+  card.animate([{ clipPath: 'inset(0 0 0 0 round 0)' }, { clipPath: box(ph.getBoundingClientRect()) }], { duration: 260, easing: ease }).finished.then(done);
+}
