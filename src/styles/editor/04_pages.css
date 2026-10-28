@@ -13,3 +13,5 @@
 .r_handle { cursor: ew-resize; }
 .r_handle.v { cursor: ns-resize; }
 .r_handle path, .r_handle .knob { fill: rgb(var(--brand)); }
+
+#pages { display: flex; flex-direction: column; align-items: center; gap: .75rem; width: max-content; margin: 0 auto; padding: .75rem 1.5rem 5rem; }
