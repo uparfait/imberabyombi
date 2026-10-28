@@ -10,3 +10,4 @@ import { set_img_pos, set_img_align } from './img_pos.js';
 import { crop_dialog } from './img_crop.jsx';
 import { adjust_dialog } from './img_adjust.jsx';
 import { image_size_dialog, alt_text_dialog } from './img_size.jsx';
+import { copy_image, download_image } from './img_io.js';
