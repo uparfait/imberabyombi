@@ -30,3 +30,4 @@ export function start_img_drag(e, img, through = false) {
   addEventListener('pointermove', on_move); addEventListener('pointerup', on_up); addEventListener('pointercancel', cancel); addEventListener('keydown', on_key, true);
 }
 function on_move(ev) {
+  const d = drag; if (!d || ev.pointerId !== d.id) return;
