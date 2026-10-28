@@ -44,3 +44,4 @@ Help → Keyboard shortcuts lists them all.
 - `ui/`: menus, dialogs, toolbar state, tabs and outline, rulers, shortcuts.
 - `io_import/` and `io_export/`: the file formats (PDF, old Word and spreadsheets use small libraries loaded on demand).
 Dialogs use the template's `modal()`, messages use `notify()`, and colours come from the design tokens, so the editor
+follows light and dark mode with the rest of the template.
