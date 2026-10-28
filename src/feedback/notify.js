@@ -6,3 +6,4 @@ import { reduced, TICON, TTITLE, staff_page } from './basics.js';
 import { show_msg, slot_of, new_slot } from './messages.jsx';
 
 export function inline_note(text, tone = 'ok', title) {
+  const at = document.activeElement?.closest?.('form, section, article') || qs('#main'); if (!at) return;
