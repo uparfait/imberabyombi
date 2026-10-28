@@ -46,3 +46,4 @@ export function install_toolbar(offs) {
   listen(offs, tb, 'mousedown', e => { if (!e.target.closest('input')) e.preventDefault(); });
   if (tb) qsa('[data-ed]', tb).forEach(b => {
     const k = b.dataset.ed, key = 'ed_' + k, fn = () => { if (ACTIONS[k]) ACTIONS[k](); };
+    if (LIVE_ED.includes(k)) {
