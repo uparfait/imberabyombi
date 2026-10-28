@@ -13,3 +13,4 @@
   .btn_outline { @apply border border-muted/50 text-fg hover:bg-fg/5; }
   .btn_ghost { @apply text-fg hover:bg-fg/5; }
   .btn_soft { @apply bg-brand/10 text-accent hover:bg-brand/20; }
+  .btn_danger { @apply bg-bad/10 text-bad hover:bg-bad hover:text-white; }
