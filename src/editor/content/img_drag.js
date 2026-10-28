@@ -24,3 +24,4 @@ function hide_caret() { if (caret_el) caret_el.remove(); }
    image that does not move places the caret in the text above it */
 export function start_img_drag(e, img, through = false) {
   if (!img || e.button > 0 || state.mode !== 'edit' || drag) return;
+  e.preventDefault(); e.stopPropagation(); swallow_until = 0;
