@@ -15,3 +15,5 @@ export function table_grid_el() {
   }
   const more = el('button', { type: 'button', class: 'pal_reset', style: 'margin-top:8px' }, ic_html('tune', 'h-5 w-5') + 'Custom size and style…');
   more.addEventListener('click', () => { close_menus(0); custom_table_dialog(); });
+  box.append(g, lbl, more); return box;
+}
