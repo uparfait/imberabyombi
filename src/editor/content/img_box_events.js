@@ -33,3 +33,4 @@ function on_pointerdown(e) {
 let hover_b = null, hover_img = null, hover_fn = null;
 const run = (img, a) => { const [k, v] = a.split(':'); if (k === 'pos') set_img_pos(img, v); else set_img_align(img, v); };
 function settle(kept) {
+  freeze_img_box(false); const img = kept && img_sel?.isConnected ? img_sel : img_now(hover_img); hover_b = hover_img = hover_fn = null;
