@@ -18,3 +18,4 @@ export function render_sidebar() {
   const old = list.querySelector('.tab_scroll'), top = old ? old.scrollTop : 0;
   const typing = !!list.querySelector('.tab_filter') && list.querySelector('.tab_filter') === document.activeElement;
   const many = state.tabs.length > MANY; if (!many) tab_q = '';
+  list.innerHTML = '';
