@@ -24,3 +24,4 @@ export function active_tab() { return state.tabs.find(t => t.id === state.active
 export function file_base() { return (state.title || 'document').replace(/[\\/:*?"<>|]+/g, '').trim() || 'document'; }
 
 export function dims() {
+  const p = PAPER[state.setup.paper] || PAPER.letter; let w = p.w, h = p.h;
