@@ -41,3 +41,4 @@ export function load_script(urls) {
   return script_cache[key];
 }
 export function read_as_data_url(f) {
+  return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; r.readAsDataURL(f); });
