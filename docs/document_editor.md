@@ -18,3 +18,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Links, comments, find and replace, word count, special characters, spelling check, zoom, editing / viewing modes.**
 - **Document tabs**: add, rename, duplicate, delete, drag to reorder, filter when there are many; each tab has its own
   outline of headings (fold, drag a heading to move its whole section, Move up / down, Delete section).
+- **Import** (Upload): DOCX, PPTX, XLSX / CSV / TSV, ODT, EPUB, RTF, PDF, HTML, Markdown, JSON, text and code files.
