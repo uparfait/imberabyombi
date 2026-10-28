@@ -8,3 +8,5 @@ import { prepare_images, abstract_xml } from './docx_image.js';
 import { DOCX_STYLES } from './docx_styles.js';
 import { docx_types, DOCX_RELS, docx_core, docx_numbering, docx_doc_rels, docx_header, docx_footer } from './docx_parts.js';
 import { zip_store } from './zip_store.js';
+
+const tw = v => Math.round(v * 1440);   /* inches → twentieths of a point */
