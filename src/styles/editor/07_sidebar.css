@@ -3,3 +3,4 @@
    the pages; narrower, it covers them on a surface (container query on #workspace, the width apply_panels() measures). Rows are pills like the admin sidebar links; drags fade the row and show a 2px brand drop line.
    #sidebar is scoped to #editor: the admin shell owns another #sidebar. */
 #editor #sidebar {
+  position: absolute; left: 0; top: var(--ed_hr); bottom: 0; z-index: 4; width: var(--ed_side); max-width: 100%; padding: 0 .75rem 1.5rem;
