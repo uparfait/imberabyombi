@@ -11,3 +11,4 @@ export const TABLE_PRESETS = [
   { key: 'header', label: 'Header', bw: 1, bc: '#9aa0a6', header: true, striped: false, style: '' },
   { key: 'striped', label: 'Striped', bw: 1, bc: '#dadce0', header: true, striped: true, style: '' },
   { key: 'minimal', label: 'Lines', bw: 1, bc: '#9aa0a6', header: true, striped: false, style: 'minimal' },
+  { key: 'none', label: 'No borders', bw: 0, bc: '#000000', header: false, striped: false, style: '' }
