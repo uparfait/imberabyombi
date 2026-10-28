@@ -5,3 +5,5 @@
 import { el, qsa, is_abs, flow_kids, offset_in, editable_of, caret_from_point } from '../core/index.js';
 import { img_op } from './img_ops.js';
 import { img_box, pos_of } from './img_sel.js';
+
+export const ABS_Z = { front: '3', behind: '-1' };
