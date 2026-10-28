@@ -13,3 +13,4 @@
   .status_dot { width: .625rem; height: .625rem; flex: none; border-radius: var(--pill); background: rgb(var(--muted) / .5); }
   .status_dot[data-s="In progress"] { background: rgb(var(--info)); } .status_dot[data-s="Done"] { background: rgb(var(--ok)); }
   .sub_group { display: grid; gap: .5rem; padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; }
+  .sub_group .sub_title { min-width: 0; flex: 1; height: 2.5rem; font-weight: 500; }
