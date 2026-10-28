@@ -63,3 +63,5 @@ export function editor_start(root) {
     offs.reverse().forEach(f => { try { f(); } catch (e) { console.error(e); } });
     toast_cleanup();
     clear_refs();
+  }
+  running = stop;
