@@ -17,3 +17,4 @@ export const VIZ_PART_B = {
       parts += mark_group(groups[gi], [[num(gv), pct(gv / tot) + ' of total', gi]], ring(arc(cx, cy, rad * .22, rad * .6, g0, a), scale_color(gi))); });
     return { svg: svg(f, parts, 'Sunburst chart'), legend: legend(groups),
       table: [['Group', 'Part', 'Value'], kids.flatMap((ch, gi) => ch.map(o => [groups[gi], o.k, num(o.v)]))] }; } },
+  waffle: { t: 'Waffle chart', g: 'part', d: '100 squares, one per percent: easy to count.', f(w) {
