@@ -40,3 +40,4 @@ export function row_drag(e, o) {
     removeEventListener('pointermove', move); removeEventListener('pointerup', up); removeEventListener('pointercancel', cancel);
     removeEventListener('keydown', esc, true); cancelAnimationFrame(raf);
     if (!on) return;
+    o.row.classList.remove('dragging'); if (o.list && o.cls) o.list.classList.remove(o.cls); if (line) line.remove();
