@@ -28,3 +28,4 @@ inside its own box. Nested scroll areas hand the wheel back to the page at their
 ## Themes: light, dark or system
 - The choice is stored under the `theme` key. A tiny script in `index.html` applies it before the first paint,
   so there is never a light/dark flash. `set_theme()` (src/actions) switches it at runtime.
+- Dark mode is the `.dark` class on `<html>`; it swaps the token values (surfaces, text, lines, status colours,
