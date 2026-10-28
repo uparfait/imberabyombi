@@ -26,3 +26,4 @@ export const table_menu = c => { const v = tview(c);
       <p className="px-3 pb-1 pt-2 text-xs font-medium uppercase tracking-wider text-muted">Columns</p>
       {schemas[c].cols.map(k => (
         <label key={k} className="menu_item"><input type="checkbox" data-table-col={c} value={k} defaultChecked={!v.hide.includes(k)} />{` ${label(c, k)}`}</label>))}
+      <hr className="my-1" /><button type="button" className="menu_item" data-act="table_cols_all" data-col={c}>Show all columns</button>
