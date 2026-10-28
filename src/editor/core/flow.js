@@ -48,3 +48,4 @@ export function hoist_nested(b) {
   }
 }
 export function div_to_block(d) {
+  if (Array.from(d.children).some(c => BLOCK_RE.test(c.tagName))) { d.replaceWith(...d.childNodes); return; }
