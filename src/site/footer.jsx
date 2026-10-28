@@ -23,3 +23,4 @@ export function footer() {
           <a key={i} href="#/contact" className={SOCIAL_CLS} aria-label={l}>{ic(i, 'h-4 w-4')}</a>
         ))}</div></div>
         {col('Explore', PUB.map(([k, l]) => [k, l]))}
+        {col('Platform', [['login', 'Sign in'], ['admin', 'Dashboard'], ['intro', 'Overview'], ['ui', 'Design system'], ['sitemap', 'Site map']])}
