@@ -38,3 +38,4 @@ export function restore_doc() {
   const tabs = d && Array.isArray(d.tabs) ? d.tabs.filter(t => t && typeof t === 'object') : [];
   if (!tabs.length) return false;
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
+  state.title = String(d.title || 'Untitled document');
