@@ -17,3 +17,4 @@ export function image_size_dialog(img) {
       <input type="number" id="sz_h" name="h" min="16" defaultValue={h0} placeholder=" " onInput={linked('#sz_h', '#sz_w', h => h * ratio)} /></div>
     <label className="flex items-center gap-2 sm:col-span-2"><input type="checkbox" id="sz_lock" name="lock" defaultChecked /> Keep proportions</label>
     <p className="text-xs text-muted sm:col-span-2">The widest this image can be here is {max}px. Original size: {img.naturalWidth} × {img.naturalHeight}px.</p>
+  </>, on_submit: () => {
