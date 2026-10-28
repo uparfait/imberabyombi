@@ -20,3 +20,5 @@ export function menu_key(e) {
     close_menus(0);
     if (inside) { if (a && a.isConnected && a.focus) a.focus(); else restore_focus(); }
     return true;
+  }
+  if (k === 'Tab') { close_menus(0); return false; }
