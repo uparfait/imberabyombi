@@ -23,3 +23,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--bg` … `--line`  | per theme           | Surfaces, text, muted text, borders (light and `.dark` sets)     |
 | `--ok` `--warn` `--bad` `--info` | per theme | Status badges, meters, alerts                               |
 | `--shadow`         | `none`              | Kept for compatibility: the system is flat, borders carry depth  |
+| `--pattern`        | SVG data URI        | Diamond lattice from the brand artwork (used as a CSS mask)      |
