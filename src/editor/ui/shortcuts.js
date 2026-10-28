@@ -21,3 +21,4 @@ function global_key(e, k) {
   if (k === 'p' && !e.shiftKey) return do_print;
   if ((k === 'f' && !e.shiftKey) || k === 'h') return open_find;
   if (k === 'f' && e.shiftKey) return toggle_menus;
+  if (k === 'o') return () => open_upload_dialog();
