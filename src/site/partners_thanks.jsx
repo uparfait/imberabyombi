@@ -7,3 +7,4 @@ import { sec_head, more, spy_attrs } from './site_bits.jsx';
 
 export const partner_logo = i => {
   const sh = [<circle cx="16" cy="16" r="13" />, <path d="M16 2 30 16 16 30 2 16z" />, <rect x="3" y="3" width="26" height="26" rx="8" />,
+    <path d="M16 2 29 9.5v13L16 30 3 22.5v-13z" />];
