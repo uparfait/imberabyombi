@@ -29,3 +29,4 @@ export const tasks_schema = {
       title: lorem.t(4), assignee: lorem.pick(p), by: lorem.pick(p), start: `${ymd(add_d(new Date(), lorem.int(-12, -1)))}T${lorem.pick(['08:00', '09:00', '09:30'])}`,
       due, end: st === 'Done' ? due : '', priority: lorem.pick(STATUS.prio), status: st, notes: lorem.s(),
       subs: Array.from({ length: lorem.int(0, 2) }, () => ({
+        t: lorem.t(2), items: Array.from({ length: lorem.int(1, 3) }, () => ({ t: lorem.t(3), done: lorem.r() < .4 }))
