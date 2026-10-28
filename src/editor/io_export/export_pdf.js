@@ -9,3 +9,4 @@ export async function export_pdf(scope, name, scale = 2) {
   try { await Promise.all([load_script(LIB.jspdf), load_script(LIB.h2c)]); }
   catch (e) { throw new Error('The PDF tools could not be downloaded. Check your internet connection, or use File, then Print, and choose “Save as PDF”.'); }
   if (document.fonts) await document.fonts.ready;
+  const { win, hin } = dims(), land = win > hin, bg = state.setup.page_color || '#ffffff';
