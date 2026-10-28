@@ -17,3 +17,4 @@ export function refresh_toolbar() {
     const k = b.dataset.state; let on = false;
     if (k === 'bold' || k === 'italic' || k === 'underline') on = q(k);
     else {
+      const li = n.closest('li'), l = li && li.parentElement;
