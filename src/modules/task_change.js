@@ -27,3 +27,4 @@ export function task_change(t) {
   if (t.dataset?.subTick) { tick(t.dataset.subTick, +t.dataset.g, +t.dataset.i, t.checked); return true; }
   if (t.matches?.('[data-status-pick]')) { status_pick(t); return true; }
   if (t.name === 'status' && t.form?.querySelector('[data-when]')) { sync_when(t.form); return true; }
+  if (t.dataset?.taskFiles) { const id = t.dataset.taskFiles, list = [...t.files]; if (!list.length) return true;
