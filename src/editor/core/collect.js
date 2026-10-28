@@ -27,3 +27,5 @@ export function collect_html() {
   qsa('[data-cont]', c).forEach(e => e.removeAttribute('data-cont'));
   qsa('ol[data-cont],ol', c).forEach(o => { if (o.getAttribute('start') === '1') o.removeAttribute('start'); });
   return c.innerHTML;
+}
+/* absolute images loaded from collected html go back to their page (or the last page); pageless: one page */
