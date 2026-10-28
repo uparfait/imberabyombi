@@ -44,3 +44,6 @@ export const declarations_schema = {
   ],
   g: () => ({
     book: lorem.pick(db.list('books')).title, type: lorem.pick(['Lost', 'Damaged', 'Found', 'Donated']), by: lorem.pick(db.list('students')).name,
+    date: ymd(add_d(new Date(), -lorem.int(0, 30))), note: lorem.s()
+  })
+};
