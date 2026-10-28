@@ -56,3 +56,4 @@ export const VIZ_TIME_B = {
     const weeks = Math.max(8, Math.min(53, Math.floor((w - 40) / 12) - 1)), f = frame(w, 150, { l: 30, t: 22, b: 10, r: 10 });
     const cell = Math.min(16, (f.iw - (weeks + 1) * 2) / (weeks + 1)), start = add_d(new Date(), -weeks * 7 + 1);
     const v = Array.from({ length: weeks * 7 }, (_, i) => { const d = add_d(start, i); return Math.max(0, Math.round(rnd(-2, 8) + (d.getDay() % 6 ? 3 : -2))); });
+    const mx = Math.max(...v);
