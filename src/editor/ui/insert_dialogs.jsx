@@ -36,3 +36,4 @@ export function special_chars_dialog() {
 export function image_url_dialog(target) {
   if (target && target.tagName !== 'IMG') target = null;
   modal({
+    title: target ? 'Replace image by URL' : 'Insert image by URL', submit: target ? 'Replace image' : 'Insert image',
