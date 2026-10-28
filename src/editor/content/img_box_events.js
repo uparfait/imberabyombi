@@ -55,3 +55,5 @@ const EVENTS = [['mousedown', on_mousedown], ['pointerdown', on_pointerdown], ['
 export function install_img_box() {
   const box = ensure_img_box();
   EVENTS.forEach(([k, f]) => box.addEventListener(k, f));
+  return () => { if (hover_b) { live.cancel(); settle(false); } hide_img_sel(); EVENTS.forEach(([k, f]) => box.removeEventListener(k, f)); };
+}
