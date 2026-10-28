@@ -14,3 +14,4 @@ export const EDITOR_DOC_PATHS = {
   file_download: FILE + 'M12 11v7M9 15l3 3 3-3',
   cloud_upload: 'M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 9.5a4.5 4.5 0 0 1-1 8.5M12 12v9M9 15l3-3 3 3',
   description: FILE + 'M8 13h8M8 17h8',
+  note_add: FILE + 'M12 11v7M8.5 14.5h7',
