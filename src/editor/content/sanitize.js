@@ -24,3 +24,4 @@ const abs_img = (c, tag) => tag === 'IMG' && /^(front|behind)$/.test(c.getAttrib
 /* the styles kept on one element */
 function keep_style(c, tag) {
   const out = [];
+  (abs_img(c, tag) ? [...KEEP_STYLE, ...ABS_STYLE] : KEEP_STYLE).forEach(p => {
