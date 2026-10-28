@@ -4,3 +4,4 @@
   .kv thead th { position: sticky; top: 0; z-index: 1; }
   .kv thead th { padding-block: .6rem; }
   .kv tbody th { width: 38%; font-size: .8rem; font-weight: 500; color: rgb(var(--muted)); background: rgb(var(--surface_2) / .5); white-space: normal; vertical-align: top; }
+  .kv tbody td { white-space: normal; overflow-wrap: anywhere; }
