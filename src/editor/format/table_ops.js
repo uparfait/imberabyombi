@@ -62,3 +62,4 @@ export function tbl_op(op, arg) {
     case 'border_color': chain.forEach(t => t.style.setProperty('--bc', arg || '#000000')); break;
     case 'header': { const on = !chain[0].hasAttribute('data-header'); chain.forEach(t => t.toggleAttribute('data-header', on)); break; }
     case 'striped': { const on = !chain[0].hasAttribute('data-striped'); chain.forEach(t => t.toggleAttribute('data-striped', on)); break; }
+    case 'preset': apply_preset(chain, arg); break;
