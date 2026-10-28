@@ -13,3 +13,5 @@ export function normalize_url(u) {
   return 'https://' + u;
 }
 export function link_at_caret() { const n = last_range && el_of(last_range.startContainer); return n ? n.closest('.pg_body a') : null; }
+
+export function open_link_dialog(existing) {
