@@ -41,3 +41,4 @@ export function tv_rows(r, st) {
       {mine ? <label className="task_add_file">{ic('plus', 'h-4 w-4')}<span>Add files</span>
         <input type="file" multiple className="sr-only" data-task-files={r.id} /></label> : null}
       <div className="task_preview" data-task-preview="" hidden={!st.prev}>{preview}</div></td></tr>
+    {sec('Assignment')}{row('assignee', 'Assigned to', person_you(r.assignee), own)}<tr><th scope="row">Assigned by</th><td>{person_you(r.by)}</td></tr>
