@@ -2,3 +2,4 @@
    and the legal texts (privacy, terms, cookies) as collapsible sections. */
 import { i3 } from '../icons/index.js';
 import { lorem } from '../lib/index.js';
+import { PUB, PAGES } from '../site/index.js';
