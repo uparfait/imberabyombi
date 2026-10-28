@@ -2,3 +2,5 @@
 /* =====================================================================
    5. MOTION + THEME RULES
    ===================================================================== */
+
+/* Runtime-state + motion rules: kept outside Tailwind layers so classes that only JS adds are always styled. */
