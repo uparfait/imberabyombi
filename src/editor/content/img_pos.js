@@ -52,3 +52,4 @@ function from_abs(img) {
 }
 export function set_img_pos(img, pos) {
   img_op(img, x => {
+    if (pos === 'front' || pos === 'behind') { to_abs(x, pos); return; }
