@@ -12,3 +12,4 @@ export const ph_height = c => PH[c] ? `${PH[c]}px` : '24rem';
 
 /* on: true = open, false = close, undefined = toggle. The card, its button and the placeholder redraw from ui.table_full. */
 export function table_full(c, on) {
+  const card = qs(`#table_card_${c}`); if (!card) return; on ??= !card.classList.contains('table_full');
