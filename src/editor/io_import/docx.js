@@ -51,3 +51,4 @@ async function docx_blocks(cx, nodes, container) {
   for (const n of nodes) {
     const ln = n.localName;
     if (ln === 'p') {
+      const pr = kids(n, 'pPr')[0], style = val(pr && kids(pr, 'pStyle')[0]) || '', num_pr = pr && kids(pr, 'numPr')[0];
