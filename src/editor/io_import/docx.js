@@ -79,3 +79,5 @@ async function docx_blocks(cx, nodes, container) {
           row.appendChild(td);
         }
         tb.appendChild(row);
+      }
+      container.appendChild(t);
