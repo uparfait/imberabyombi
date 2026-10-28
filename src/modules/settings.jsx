@@ -32,3 +32,4 @@ function appearance(tk, th) {
 }
 
 function data_card() {
+  const used = db.bytes(), pct = Math.min(100, Math.round(used / cfg.storage_cap * 100));
