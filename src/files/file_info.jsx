@@ -2,3 +2,5 @@
    the file's name, a short explanation, and Open (new tab) + Download. */
 import { ic, i3 } from '../icons/index.js';
 import { furl } from './file_utils.js';
+
+export const file_info = f => (
