@@ -24,3 +24,4 @@ export async function export_docx(root, name) {
     const ctx = {
       content_tw: Math.round((win - m.left - m.right) * 1440), content_px: (win - m.left - m.right) * DPI,
       add_link(href) {
+        const id = 'rId' + (++rid); rels.push(`<Relationship Id="${id}" Type="${RELNS}/hyperlink" Target="${xesc(href)}" TargetMode="External"/>`); return id;
