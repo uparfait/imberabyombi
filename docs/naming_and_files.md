@@ -33,3 +33,4 @@ Each file starts with a short comment: what it holds and how it is used. Functio
 above them. The `docs/` folder explains the techniques; the code comments explain the details.
 
 ## 5. Imports go through folder barrels
+Each folder has an `index.js` that re-exports its files. Import from the folder, not from a file inside another folder:
