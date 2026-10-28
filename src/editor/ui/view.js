@@ -18,3 +18,4 @@ export function drop_page_rule() { if (own_rule) own_rule.remove(); own_rule = n
 
 export function apply_setup(full) {
   if (!pages_el) return;
+  const { win, hin } = dims(), s = state.setup, m = s.margins;
