@@ -38,3 +38,4 @@ export function load_script(urls) {
     }
     delete script_cache[key]; throw err;
   })();
+  return script_cache[key];
