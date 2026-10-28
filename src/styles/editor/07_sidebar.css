@@ -24,3 +24,4 @@ input.tab_filter, .tab_filter input {
 }
 .tab_scroll.many { max-height: min(55dvh, 30rem); overflow-y: auto; overscroll-behavior: contain; }
 .tab_row {
+  position: relative; display: flex; align-items: center; gap: .625rem; min-height: 2.75rem; padding: 0 .25rem 0 1rem;
