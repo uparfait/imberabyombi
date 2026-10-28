@@ -28,3 +28,4 @@ export const kpi_cards_a = k => {
     kpi_card('', 'Uptime', 'Time the system was available, and the state of each service right now.',
       <><p className="kpi_value">99.95%</p><p className="kpi_status ok">{ic('check', 'h-4 w-4')}Healthy</p>
         <ul className="mt-3 grid gap-1 text-sm">{services.map(([n, s, l]) => (
+          <li key={n} className="kpi_part flex items-center justify-between gap-2" {...tip_attr(n, [[l, 'Status', null]])}>
