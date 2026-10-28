@@ -35,3 +35,4 @@ export const VIZ_PART_B = {
         + `<rect class="mark" x="${round1(cx - x(v[i]) / 2)}" y="${round1(y(i) - h / 2)}" width="${round1(Math.max(2, x(v[i])))}" height="${round1(h)}" rx="4"`
         + ` style="fill:color-mix(in oklab, rgb(var(--brand)) ${100 - i * 15}%, rgb(var(--surface)))"/>`)
         + `<text x="${f.l - 8}" y="${round1(y(i) + 4)}" text-anchor="end">${k}</text>`
+        + `<text class="value_label" x="${f.w - f.r + 8}" y="${round1(y(i) + 4)}">${compact_num(v[i])}${i ? ` · ${Math.round(v[i] / v[i - 1] * 100)}%` : ''}</text>`).join(''),
