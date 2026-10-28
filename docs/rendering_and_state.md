@@ -52,3 +52,4 @@ firing events, use `set_native_value(input, value)` (src/fields), so React notic
 
 ## Errors
 An error while building a page shows "Something went wrong" with a link home; an error inside a component is caught by
+an error boundary and shows the same page, so one broken widget never blanks the app.
