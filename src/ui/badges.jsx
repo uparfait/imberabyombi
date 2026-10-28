@@ -19,3 +19,4 @@ export const avatar = (n, c = 'h-8 w-8 text-xs') =>
 /* "You" when it is the signed-in person (tasks: assigned to / by) */
 export const person_you = n => n && n === me()
   ? <span className="flex min-w-0 items-center gap-2.5 whitespace-nowrap">{avatar(n)}<span className="font-medium">You</span></span>
+  : person(n);
