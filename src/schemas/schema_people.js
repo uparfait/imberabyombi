@@ -14,3 +14,7 @@ export const staff_schema = {
   g: () => {
     const n = lorem.name();
     return { name: n, email: mail(n), role: lorem.pick(ROLES0.slice(1)).id, phone: tel(), status: lorem.pick(['Active', 'Active', 'Active', 'On leave', 'Inactive']) };
+  }
+};
+
+export const employees_schema = {
