@@ -67,3 +67,4 @@ export function inline_xml(node, f, ctx) {
     if (t === 'IMG') { out += image_xml(n, ctx); return; }
     if (is_list(n) || is_table(n)) return;
     const g = fmt_of(n, f);
+    if (t === 'A' && n.getAttribute('href') && !/^data:/i.test(n.getAttribute('href')) && ctx.add_link) {
