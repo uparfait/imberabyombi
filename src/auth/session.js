@@ -3,3 +3,5 @@
 import { cfg } from '../config/index.js';
 import { db } from '../store/index.js';
 import { roles } from './roles.jsx';
+
+export const ss = (() => { try { sessionStorage.setItem('_t', 1); sessionStorage.removeItem('_t'); return sessionStorage; } catch { return null; } })();
