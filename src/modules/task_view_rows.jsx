@@ -13,3 +13,4 @@ import { tv_cell } from './tv_editor.jsx';
 
 const dash = () => <span className="text-muted">—</span>;
 const sec = t => <tr className="kv_group"><th scope="colgroup" colSpan={2}>{t}</th></tr>;
+const pen = f => <button type="button" className="kv_pen" data-act="tv_edit" data-f={f} aria-label="Edit">{ic('edit', 'h-4 w-4')}</button>;
