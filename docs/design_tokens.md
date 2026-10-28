@@ -27,3 +27,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 
 ## Examples
 ```css
+:root { --brand: 37 99 235; }     /* every orange becomes blue */
