@@ -28,3 +28,4 @@ export function text_nodes(root) {
   return a;
 }
 export function offset_within(block, node, off) {
+  const r = document.createRange(); r.setStart(block, 0);
