@@ -3,3 +3,4 @@
 import { useLayoutEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { qs } from '../lib/index.js';
+import { ic } from '../icons/index.js';
