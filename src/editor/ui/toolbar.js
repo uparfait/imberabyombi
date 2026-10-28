@@ -42,3 +42,4 @@ const DROPS = {
 };
 
 export function install_toolbar(offs) {
+  const tb = refs.toolbar;
