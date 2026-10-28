@@ -12,6 +12,7 @@ const head = (o, icon, text, extra = null) => !o.routed
   : <section className="flex flex-wrap items-end gap-6" aria-label={o.title}>
       <div className="hero_in min-w-0 flex-1"><p className="text-sm text-muted">{o.kicker}</p><h2 className="mt-1 text-3xl text-fg sm:text-5xl">{o.title}</h2>
         <p className="mt-2 max-w-xl text-muted">{text}</p>{extra}</div>
+      <span className="hero_in" style={{ '--d': '.1s' }}>{i3(icon, 'h-16 w-16 sm:h-20 sm:w-20')}</span></section>;
 
 const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a' : 'button';
   return <Tag key={i} className="card card_hover group grid justify-items-center gap-3 p-5 text-center" {...(t.href ? { href: t.href } : t.attrs)}>
