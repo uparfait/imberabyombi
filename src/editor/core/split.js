@@ -46,3 +46,4 @@ export function break_with_rest(b) {
   return flow_kids(b).find(c => { if (!is_break(c)) return false; for (let n = c.nextSibling; n; n = n.nextSibling) if (!is_abs(n)) return true; return false; }) || null;
 }
 export function push_overflow(b, next) {
+  const pb = break_with_rest(b);
