@@ -82,3 +82,5 @@ export function open_menu(anchor, items, opts = {}) {
 export function toggle_menu(anchor, items_fn, opts) {
   if (anchor.classList.contains('open') && menu_stack.length && menu_stack[0].anchor === anchor) { close_menus(0); return; }
   open_menu(anchor, items_fn(), opts);
+}
+/* the rows a keyboard can reach in menu m */
