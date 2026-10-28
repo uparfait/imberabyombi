@@ -11,3 +11,5 @@
   .choice_pill:has(input:disabled) { @apply cursor-not-allowed opacity-40; }
   .choice_pill:has(input:focus-visible) { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   .hero_title { font-family: var(--font_display); font-weight: 500; font-size: clamp(3rem, 1.4rem + 6.4vw, 7.25rem); line-height: .95; letter-spacing: -.035em; }
+
+  /* Long-form article typography */
