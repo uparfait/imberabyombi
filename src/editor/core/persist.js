@@ -26,11 +26,7 @@ export function doc_data() {
 export function save_doc(force) {
   clearTimeout(save_timer); save_timer = null;
   if (force !== true && live_busy()) { save_soon(); return false; }   // never save a preview
-  const d = doc_data();
-  /* the browser refused a copy this big: do not repeat the "storage is full" notice on every edit */
-  if (too_big && JSON.stringify(d).length >= too_big) return false;
-  if (db.set(DOC_KEY, d)) { too_big = 0; return true; }
-  too_big = JSON.stringify(d).length; return false;
+  if (!ready) return false;
 }
 export function save_soon() { clearTimeout(save_timer); save_timer = setTimeout(save_doc, 600); }
 set_on_change(save_soon);
