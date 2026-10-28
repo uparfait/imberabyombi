@@ -35,3 +35,5 @@ export function row_drag(e, o) {
       document.body.appendChild(line); tick();
     }
     ev.preventDefault();
+  };
+  const end = ok => {
