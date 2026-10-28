@@ -55,3 +55,5 @@ export function to_hex(c) {
   if (v[0] === '#') return v.slice(1).toUpperCase();
   const m = v.match(/rgba?\(([^)]+)\)/); if (!m) return null;
   const p = m[1].split(',').map(parseFloat); if (p.length > 3 && p[3] === 0) return null;
+  return p.slice(0, 3).map(n => Math.round(n).toString(16).padStart(2, '0')).join('').toUpperCase();
+}
