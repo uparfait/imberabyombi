@@ -4,3 +4,5 @@
 import { pages_el, scroller } from './refs.js';
 import { bodies, body_index, editable_of, node_len, text_nodes, is_break, is_empty_block, last_non_break } from './dom.js';
 import { sel_remap } from './flow.js';
+
+export let last_range = null, last_host = null;
