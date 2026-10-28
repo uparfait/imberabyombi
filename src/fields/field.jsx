@@ -30,3 +30,7 @@ export function field(f, v) {
   return (
     <div key={f.k} className={f.t === 'textarea' ? 'field sm:col-span-2' : 'field'} data-when={f.when || undefined}>
       <label htmlFor={id}>{f.l}{f.req ? <>{' '}<span className="text-accent" aria-hidden="true">*</span></> : null}</label>
+      {ctl}
+    </div>
+  );
+}
