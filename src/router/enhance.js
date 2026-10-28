@@ -25,3 +25,4 @@ export function typer(el) {
 let spy = null;   /* the home page's section spy (one at a time: React keeps the sections across redraws) */
 export function enhance() {
   const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }),
+    { threshold: .12, rootMargin: '0px 0px -6% 0px' }) : null;
