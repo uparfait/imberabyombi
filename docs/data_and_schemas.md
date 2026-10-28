@@ -22,3 +22,4 @@ and resets the demo data.
 import { field_spec as F } from './fields.js';
 import { lorem } from '../lib/index.js';
 import { person } from '../ui/index.js';
+export const buses_schema = {
