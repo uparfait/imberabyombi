@@ -9,3 +9,4 @@ export function init_player(w) {
   if (tr) tr.src = URL.createObjectURL(new Blob([`WEBVTT\n\n00:00.000 --> 00:02.500\n${lorem.t(4)}\n\n00:02.500 --> 00:05.000\n${lorem.t(3)}\n`], { type: 'text/vtt' }));
   const fmt = s => `${Math.floor(s / 60)}:${pad(Math.floor(s % 60))}`;
   m.addEventListener('timeupdate', () => { if (m.duration) { seek.value = m.currentTime / m.duration * 100; fill_range(seek); } out.value = fmt(m.currentTime); });
+  m.addEventListener('play', () => w.classList.add('playing')); m.addEventListener('pause', () => w.classList.remove('playing'));
