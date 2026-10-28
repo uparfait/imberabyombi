@@ -31,3 +31,4 @@ async function slide_html(z, sp, i) {
       if (!paras.length) continue;
       if ((type === 'title' || type === 'ctrTitle') && !title) { title = paras.join(' '); continue; }
       if (type === 'subTitle') body += paras.map(p => `<p class="subtitle">${p}</p>`).join('');
+      else if (type === 'body' || type === 'obj') body += `<ul>${paras.map(p => `<li>${p}</li>`).join('')}</ul>`;
