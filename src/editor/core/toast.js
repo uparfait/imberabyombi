@@ -24,3 +24,4 @@ function status_line() {
 export function toast(msg, ms = 2800) {
   if (sink) { sink.push([msg, ms]); return; }
   if (!staff_page()) {
+    const n = status_line(); n.textContent = msg; n.style.display = 'block';
