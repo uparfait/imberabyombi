@@ -11,3 +11,4 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   [data-reveal] { opacity: 1; translate: none; }
   /* Loading must stay visible: a calm, steady rotation with a fixed arc instead of the pulsing dash */
   .spinner_segmented_svg { animation: spin_rotate 2s linear infinite !important; }
+  .spinner_segmented_dash { animation: none !important; stroke-dasharray: 90, 200; }
