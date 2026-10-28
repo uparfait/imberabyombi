@@ -52,3 +52,6 @@ function format_items() {
     { label: 'Table', icon: 'table', sub: table_menu_items },
     { sep: true }, { label: 'Clear formatting', icon: 'format_clear', shortcut: 'Ctrl+\\', action: () => clear_formatting() },
     { sep: true }, cmd('Page setup', 'description', () => page_setup_dialog())
+  ];
+}
+function tools_items() {
