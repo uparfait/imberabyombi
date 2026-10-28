@@ -34,7 +34,7 @@ function place_uploads(done, mode, failed) {
   } else { save_tab(); state.tabs.push(...tabs); state.active = tabs[0].id; render_tab(); render_sidebar(); render_comments(); }
 }
 
-/* mode: 'insert' (at the cursor), 'tab' (new tabs) or 'replace' (asks first unless the document is empty) */
+/* mode: 'insert' (at the cursor), 'tab' (new tabs) or 'replace' (the tab on screen; asks first unless it is empty) */
 export async function process_uploads(files, mode) {
   if (!can_edit()) return;
   if (mode === 'replace' && !is_doc_empty() && !(await confirm_dialog('Replace everything in this document with the uploaded files?', 'Replace'))) return;
