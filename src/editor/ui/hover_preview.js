@@ -38,3 +38,5 @@ export function pick(key, fn, done) {
   const kept = keep(key); if (!kept) unpeek();
   if (done) done();
   if (!kept) fn();
+}
+/* hover (mouse / pen) previews, leaving restores, a click keeps: for elements that live as long as their menu */
