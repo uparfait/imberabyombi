@@ -25,3 +25,4 @@
   :is(.field, input:not([type=checkbox],[type=radio],[type=hidden],[type=range])) ~ .btn:not(.btn_sm) { min-height: calc(3.25rem + 2px); padding-inline: 1.5rem; }
   /* Multiple select: the native <select multiple> stays in the form (invisible, on top of the box); .multi_value is the visible field */
   .field > select[multiple] { position: absolute; left: 0; top: 0; width: 100%; height: calc(3.25rem + 2px); opacity: 0; }
+  .multi_value { display: block; min-height: calc(3.25rem + 2px); padding: .875rem 2.75rem .875rem 1rem; line-height: 1.5rem; border: 1px solid rgb(var(--muted) / .6); border-radius: calc(var(--radius) * .75);
