@@ -15,3 +15,4 @@ import { show_failed } from './upload_body.jsx';
 function place_uploads(done, mode, failed) {
   const projects = done.filter(r => r.project), content = done.filter(r => !r.project);
   if (mode === 'insert') {
+    if (content.length) {
