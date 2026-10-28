@@ -16,3 +16,4 @@
      Background follows --field, so a label notched into the border always matches the surface behind it. */
   input:where(:not([type=checkbox],[type=radio],[type=range],[type=color],[type=file],[type=hidden],[type=submit],[type=button],[type=reset])), select, textarea {
     width: 100%; appearance: none; background-color: rgb(var(--field, var(--surface))); color: rgb(var(--fg));
+    border: 1px solid rgb(var(--muted) / .6); border-radius: calc(var(--radius) * .75);
