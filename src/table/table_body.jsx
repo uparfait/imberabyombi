@@ -47,3 +47,4 @@ export function table_body(c) {
   const p = ui.page[c] = Math.min(Math.max(1, ui.page[c] || 1), n), filtered = Object.values(ui.q[c] || {}).some(Boolean);
   /* Action Buttons: the first column, pinned while the table scrolls sideways; left out when no row on this page has any */
   const shown = rows.slice((p - 1) * per, p * per), acts = shown.map(r => row_acts(c, o, r, can)), with_acts = acts.some(Boolean), span = cols.length + (with_acts ? 1 : 0);
+  return {
