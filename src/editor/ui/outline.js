@@ -54,3 +54,4 @@ export function toggle_fold(row, open) {
 export function mark_outline() {
   const rows = outline_rows(outline_el()); if (!rows.length) return;
   const r = last_range, n = r && r.startContainer.isConnected ? r.startContainer : null, in_body = n && el_of(n) && el_of(n).closest('.pg_body');
+  let at = -1;
