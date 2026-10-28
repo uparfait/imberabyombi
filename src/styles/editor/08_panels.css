@@ -41,3 +41,4 @@
 textarea.c_input { border-radius: calc(var(--radius) * .75); }
 
 /* Find and replace: under the toolbar, at the right of the workspace */
+.find_panel {
