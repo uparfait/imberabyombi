@@ -15,7 +15,7 @@ import { mode_items } from './menus_main.js';
 import { image_items } from './menus.js';
 import { open_find } from './find.js';
 import { toggle_spell, toggle_menus, do_print } from './view.js';
-import { listen } from './ui_dom.js';
+import { listen, side_wheel } from './ui_dom.js';
 
 export const ACTIONS = {
   find: () => open_find(), undo: () => undo(), redo: () => redo(), print: () => do_print(), upload: () => open_upload_dialog(),
