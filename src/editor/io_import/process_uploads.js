@@ -42,3 +42,4 @@ export async function process_uploads(files, mode) {
   if (hist_timer) commit();
   const done = [], failed = [], notes = [];
   for (let i = 0; i < files.length; i++) {
+    const f = files[i];
