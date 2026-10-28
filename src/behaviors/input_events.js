@@ -27,3 +27,4 @@ function on_input(e) {
   if (t.dataset.filter) { const q = t.value.toLowerCase().trim(); qsa(t.dataset.filter).forEach(el => el.hidden = !!q && !el.textContent.toLowerCase().includes(q)); }
   if (t.dataset.token && t.type !== 'select-one') set_token(t.dataset.token, t.value);
   if (t.form?.dataset.calc != null && t.form.sum) t.form.sum.value = (+t.form.a.value || 0) + (+t.form.b.value || 0);
+  if (t.getAttribute?.('aria-invalid') === 'true' && t.checkValidity()) clear_err(t);
