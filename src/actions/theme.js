@@ -9,3 +9,4 @@ export function set_theme(mode) {
   db.set('theme', mode);
   const h = document.documentElement; h.classList.add('theme_switch');
   h.classList.toggle('dark', mode === 'dark' || (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches));
+  void h.offsetWidth; requestAnimationFrame(() => requestAnimationFrame(() => h.classList.remove('theme_switch')));
