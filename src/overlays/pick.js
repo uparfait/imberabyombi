@@ -51,3 +51,4 @@ export const pick = {
     el.querySelectorAll('.pk_list, .pk_years').forEach(box => { const s = box.querySelector('[aria-selected=true]') || box.querySelector('[data-near]'); if (s) box.scrollTop = s.offsetTop - (box.clientHeight - s.offsetHeight) / 2; });
   },
   place() {
+    const p = this.el, a = this.a; if (!a || p.hidden) return;
