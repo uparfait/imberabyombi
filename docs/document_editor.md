@@ -39,3 +39,4 @@ Help → Keyboard shortcuts lists them all.
 
 ## How it is built
 - `chrome/` + `editor_page.jsx`: the frame as React (title bar, toolbar, workspace, panels); it calls `editor_start(root)`.
+- `core/`: state, pages and pagination, selection, undo history, live preview (`live`), saving.
