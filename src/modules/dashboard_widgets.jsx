@@ -31,3 +31,4 @@ export function dash_widgets(u) {
     const lab = days.map(d => d.toLocaleDateString(undefined, { weekday: 'short' }));
     const val = days.map(d => att.filter(a => a.date === ymd(d) && a.status !== 'Absent').length);
     after_render(() => draw_chart(qs('#chart_week'), lab, val));
+    W.push(<section key="att" className="card p-5 lg:col-span-2">{head('Attendance this week', '#/admin/attendance', 'Open')}
