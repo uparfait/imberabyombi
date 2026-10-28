@@ -14,3 +14,4 @@ function page_lines(tc) {
     if (it.hasEOL) { lines.push(cur); cur = { text: '', y: null, h: 0 }; }
   }
   if (cur.text) lines.push(cur);
+  return lines;
