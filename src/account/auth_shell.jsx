@@ -30,3 +30,4 @@ export const auth_links = cur => (
 /* a password field (id = name) with a show/hide button (data-act="pwd"); attr: extra input props, e.g. { 'data-pw': '' } */
 export const pw_field = (id, l, ac, attr = {}) => (
   <div className="field"><label htmlFor={id}>{l}</label><div className="relative">
+    <input id={id} name={id} type="password" autoComplete={ac} required className="pr-12" placeholder=" " {...attr} />
