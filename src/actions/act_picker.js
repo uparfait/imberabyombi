@@ -10,3 +10,4 @@ export const PICKER_ACT = {
     if (a.multiple) { o.selected = !o.selected; t.setAttribute('aria-selected', o.selected); pick.emit(); } else { a.selectedIndex = o.index; pick.emit(); pick.close(pick.kb || FINE()); } },
   pk_clear: () => { const a = pick.a; if (!a) return; [...a.options].forEach(o => o.selected = false); qsa('[data-act=pk_opt]', pick.el).forEach(b => b.setAttribute('aria-selected', 'false')); pick.emit(); },
   pk_done: () => pick.close(pick.kb || FINE()),
+  pk_set: t => pick.set(t.dataset.v),
