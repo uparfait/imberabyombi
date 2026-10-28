@@ -15,3 +15,4 @@ export const file_chip = (f, id, i, own, on = false) => { const k = file_kind(f)
       {ic('x', 'h-4 w-4')}</button> : null}</div>; };
 
 /* a text attachment: "…" until its first 20 000 characters are read */
+function Text_pre({ url }) {
