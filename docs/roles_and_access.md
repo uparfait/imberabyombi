@@ -23,3 +23,5 @@ Every role manages its own tasks and opens Settings (theme, profile).
 Each role has a landing page ("Lands on after sign-in"), set on the role or when creating it. People with that role
 arrive there after signing in (`landing(role_id)`). The choices only list pages the role can open and follow the access
 matrix as it changes: if a page is taken away, the role moves to the first page it can still open.
+
+## Roles & access page
