@@ -24,3 +24,4 @@ const comment = (r, c, on) => <li key={c.id} className="flex gap-3">{avatar(c.by
 export function tv_comments(r, st) {
   const cm = comments_of(r);
   return <section aria-label="Comments"><h3 className="flex items-center gap-2 text-base">Comments <span className="chip bg-surface-2 text-muted">{cm.length}</span></h3>
+    {cm.length ? <ul className="mt-3 grid gap-3">{cm.map(c => comment(r, c, !!st.cedit[c.id]))}</ul> : <p className="mt-2 text-sm text-muted">No comments yet.</p>}
