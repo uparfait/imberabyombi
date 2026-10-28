@@ -32,11 +32,7 @@ export const PAGES = {
   sitemap: { t: 'Site map', i: 'grid', top: () => sitemap() }
 };
 
-export const page_hero = (crumb, title, lead, icon) => (
-  <section className="wrap pt-3 sm:pt-6">{hero_shell(
-    <div className="relative grid items-center gap-8 px-6 pb-20 pt-10 sm:px-12 sm:pb-24 sm:pt-14 md:grid-cols-[1fr_auto]">
-      <div className="hero_in"><nav aria-label="Breadcrumb"><ol className="flex items-center gap-2 text-sm text-fg/60">
-        <li><a href="#/" className="hover:text-fg">Home</a></li><li aria-hidden="true">{ic('chev_r', 'h-3.5 w-3.5')}</li>
+/* the top of a detail page: breadcrumb, title and lead as plain text (the brand hero is only on the home page) */
         <li aria-current="page" className="text-fg">{crumb}</li></ol></nav>
         <h1 className="mt-4 text-4xl text-fg sm:text-6xl">{title}</h1><p className="mt-4 max-w-2xl text-lg text-fg/70">{lead}</p></div>
       <div className="hero_in hidden md:block" style={{ '--d': '.15s' }}>{i3(icon, 'float h-32 w-32 lg:h-40 lg:w-40')}</div></div>
