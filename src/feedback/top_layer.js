@@ -5,3 +5,4 @@ import { qsa } from '../lib/index.js';
 
 export function raise_top() {
   for (const el of [document.getElementById('toasts'), document.getElementById('loader')]) { if (!el?.showPopover) continue;
+    const bars = qsa('.toast', el).map(n => [n, new DOMMatrix(getComputedStyle(n.querySelector('.bar')).transform).a]);
