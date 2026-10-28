@@ -18,3 +18,4 @@ export async function export_epub(scope, name) {
   for (let i = 0; i < tabs.length; i++) {
     const t = tabs[i], d = el('div'); d.innerHTML = t.html; unwrap_comments(d);
     qsa('.file_chip', d).forEach(a => a.replaceWith(document.createTextNode(a.textContent)));
+    qsa('[contenteditable]', d).forEach(x => x.removeAttribute('contenteditable'));
