@@ -39,3 +39,4 @@ export async function sheet_to_html(file, ext) {
     sheets = wb.SheetNames.map(n => ({ name: n, rows: window.XLSX.utils.sheet_to_json(wb.Sheets[n], { header: 1, raw: false, defval: '', blankrows: false }) }));
   } catch (err) { if (ext === 'xlsx' || ext === 'xlsm') sheets = await xlsx_native(buf); else throw err; }
   let note = '';
+  const html = sheets.map(s => {
