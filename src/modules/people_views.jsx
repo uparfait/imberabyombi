@@ -23,3 +23,4 @@ VIEWS.staff = () => <>
 </>;
 
 VIEWS.employees = () => { const t = ui.tab.emp || 'All', rows = db.list('employees');
+  return <>{tabs('emp', [['All', 'All', rows.length], ...DEPTS.map(x => [x, x, rows.filter(r => r.dept === x).length])], t)}
