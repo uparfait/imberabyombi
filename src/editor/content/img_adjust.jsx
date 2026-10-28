@@ -35,3 +35,4 @@ function Adjust_body({ src, v }) {
 export function adjust_dialog(img) {
   img = img_now(img); if (!img || previewing() || !can_edit()) return;
   const v = { ...START };
+  modal({ title: 'Image adjustments', submit: 'Apply', body: <Adjust_body src={img.getAttribute('src')} v={v} />, on_submit: () => {
