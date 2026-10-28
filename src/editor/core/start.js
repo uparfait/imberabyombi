@@ -43,3 +43,5 @@ export function editor_start(root) {
   if (root) { on(root, 'input', title_saved); on(root, 'change', title_saved); }
   on(window, 'pagehide', () => save_doc());
   on(document, 'visibilitychange', () => { if (document.visibilityState === 'hidden') save_doc(); });
+
+  /* ================= start ================= */
