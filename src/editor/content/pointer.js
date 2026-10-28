@@ -59,3 +59,4 @@ export function pages_pointerdown(e) {
   select_image(img); start_img_drag(e, img);
 }
 /* images move with img_drag, never with the browser's drag and drop (that would copy them) */
+export function pages_dragstart(e) { if (e.target && e.target.tagName === 'IMG' && e.target.closest('.pg_body')) e.preventDefault(); }
