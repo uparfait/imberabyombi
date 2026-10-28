@@ -12,3 +12,4 @@
   /* Text can be selected only where people copy: fields, table cells, details, code, copy boxes, notes, contact details */
   body, dialog { -webkit-user-select: none; user-select: none; }   /* dialogs too: the browser makes open dialogs selectable */
   html.allow_select body, html.allow_select dialog { -webkit-user-select: text; user-select: text; }   /* switched on from the right-click menu */
+  #ctx { position: fixed; z-index: 260; width: 15rem; margin: 0; }
