@@ -48,3 +48,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content .file_chip{display:inline-block;max-width:100%;padding:2px 10px;margin:1px 0;border:1px solid #dadce0;border-radius:14px;background:#f1f3f4;'
     + 'color:#1f1f1f;text-decoration:none;font-size:10pt;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}',
   '.doc_content .file_chip:hover{background:#e8eaed}'
+].join('\n') + '\n';
