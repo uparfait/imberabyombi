@@ -8,3 +8,4 @@ export const viz_tip = { el: null, cur: null,
     if (this.cur !== t) { this.cur = t; let d; try { d = JSON.parse(t.dataset.tt); } catch { return; } el.replaceChildren();
       const h = document.createElement('p'); h.className = 'viz_tip_title'; h.textContent = d[0]; el.append(h);
       d.slice(1).forEach(([v, n, s]) => {
+        const row = document.createElement('p'), key = document.createElement('i'), b = document.createElement('b'), sp = document.createElement('span');
