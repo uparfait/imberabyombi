@@ -23,3 +23,4 @@ export function apply_setup(full) {
   pages_el.classList.toggle('pageless', !!s.pageless);
   page_wraps().forEach(w => { layout_page(w); qs('.pg_header', w).innerHTML = s.header_html || ''; qs('.pg_footer_text', w).innerHTML = s.footer_html || ''; });
   if (full) reflow(0, true); else layout_after();
+  update_rulers();
