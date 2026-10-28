@@ -22,3 +22,4 @@ export function set_route(next) { for (const k of Object.keys(route)) delete rou
 export const render_flags = { keep: false, anim: false, nav_fetched: false };
 export const AFTER = [];      /* run once after the next render (charts drawing, focus…); views push into it while rendering */
 export const TIMERS = [];     /* intervals that belong to the current page; cleared before every render */
+const BEFORE = [];            /* cleanups every module registers once (close the picker, hide tooltips…) */
