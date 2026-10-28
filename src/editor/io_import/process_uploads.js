@@ -23,3 +23,5 @@ function place_uploads(done, mode, failed) {
     }
     if (projects.length) { save_tab(); projects.forEach(r => state.tabs.push(...project_tabs(r.project))); render_sidebar(); }
     return;
+  }
+  const tabs = [];
