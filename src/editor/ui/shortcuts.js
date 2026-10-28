@@ -59,3 +59,4 @@ export function on_key(e) {
     if (find_state.open) { close_find(); closed = true; }
     if (paint) { stop_paint(); closed = true; }
     if (closed) e.stopPropagation();
+    return;
