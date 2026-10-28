@@ -31,3 +31,4 @@ export function about_sec(full) {
     <section {...spy_attrs('about', full)} className="wrap section grid items-center gap-14 lg:grid-cols-2">
       <div>{sec_head('About', lorem.t(4), lorem.p(2))}
         <ul className="mt-8 grid gap-5">{['users', 'target', 'sparkle'].map((x, i) => (
+          <li key={x} className="flex gap-4" data-reveal="" style={{ '--d': `${i * .08}s` }}>{i3(x, 'h-12 w-12')}
