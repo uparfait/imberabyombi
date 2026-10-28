@@ -38,3 +38,4 @@ export function cal_go(k) {
   const old = ui.cal_date, shown = s => { const d = parse_d(s); return ui.cal_view === 'month' ? s.slice(0, 7) : ymd(add_d(d, -d.getDay())); };
   const moved = shown(k) !== shown(old), month = k.slice(0, 7) !== (ui.mini || old).slice(0, 7), n = Math.sign(parse_d(k) - parse_d(old)) || 1;
   ui.cal_date = k; ui.mini = null;
+  const sel = [moved && '.date_title, .date_body', month && '#date_mini .date_mini_title, #date_mini .date_mini_grid'].filter(Boolean).join(', ');
