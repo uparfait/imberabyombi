@@ -64,3 +64,4 @@ export function pages_mouseup() { if (paint) setTimeout(apply_paint, 0); }
 export function pages_mousedown(e) {
   if (e.button !== 0) return;
   if (state.mode === 'edit' && e.target.closest('.pg_body img')) { e.preventDefault(); return; }
+  const page = e.target.closest('.page'); if (!page || e.target.closest('.pg_body,.pg_header,.pg_footer_text,.img_sel')) return;
