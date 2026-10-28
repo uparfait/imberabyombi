@@ -19,3 +19,4 @@ export const VIZ_TIME_A = {
     const m = MONTHS(); let a = 40; const v = m.map(() => (a = Math.max(8, a + rnd(-9, 11))) * MARGIN()), f = frame(w, 240), ax = y_axis(f, Math.max(...v));
     const x = band(m.length, f.l, f.w - f.r), pts = v.map((val, i) => [x(i), ax.y(val)]);
     return { svg: svg(f, ax.g + `<path d="${path_of(pts)}L${round1(x(11))} ${round1(ax.y(0))}L${round1(x(0))} ${round1(ax.y(0))}Z" style="fill:var(--series_1);opacity:.1"/>`
+        + `<path class="series_line" d="${path_of(pts)}" style="stroke:var(--series_1)"/>${dot(x(11), ax.y(v[11]), 'var(--series_1)')}`
