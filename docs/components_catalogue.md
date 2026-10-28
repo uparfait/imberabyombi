@@ -17,3 +17,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.panel` / `.memo` / `.check_row`       | side panel beside the content / note card / checklist row        |
 | `.scroll_hover`                         | scrollbar visible only while hovered (admin sidebar)             |
 | `.fold`                                 | smooth collapsible section (sidebar groups, mini calendar)       |
+| `.table_data` / `.table_acts` / `.table_filter` / `.pick` / `.trunc` / `.pager` | data table / pinned Action Buttons / column filter / filter wrapper / trimmed cell / pager |
