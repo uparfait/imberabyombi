@@ -28,3 +28,7 @@ const col_head = (c, k, st, hide) => (
     <div className="grid gap-2"><button className="inline-flex items-center gap-1 justify-self-start hover:text-fg" data-act="sort" data-col={c} data-k={k}>
       {label(c, k)}{st?.k === k ? ic(st.d > 0 ? 'chev_u' : 'chev_d', 'w-3.5 h-3.5') : null}</button>
       <div className="pick">{col_filter(c, k)}</div></div>
+  </th>
+);
+
+export function crud(c, o = {}) {
