@@ -15,3 +15,4 @@ VIEWS.tasks = () => {
   const n = me(), t = ui.tab.tasks || 'mine', all = db.list('tasks');
   const FL = { mine: r => r.assignee === n && r.by === n, assigned: r => r.assignee === n && r.by !== n,
     delegated: r => r.by === n && r.assignee !== n, all: () => true };
+  const list = [['mine', 'My own tasks', all.filter(FL.mine).length], ['assigned', 'Assigned to me', all.filter(FL.assigned).length],
