@@ -20,3 +20,4 @@ const drop = d => { if (!d.open && DIALOGS[d.id]) set_dialog(d.id, null); };
 export const snap = f => JSON.stringify([...new FormData(f)].map(([k, v]) => [k, v instanceof File ? `${v.name}:${v.size}` : v]));
 export function request_close(d) {
   const f = d?.id === 'modal' && d.querySelector('form');
+  if (f && f._init != null && snap(f) !== f._init) return confirm_discard(() => close_dialog(d));
