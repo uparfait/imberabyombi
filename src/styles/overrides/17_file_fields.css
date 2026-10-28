@@ -12,7 +12,7 @@
   @media (min-width: 1280px) { .viz_grid > .viz_card:last-child:nth-child(odd) { grid-column: span 2; } }   /* an odd last chart takes the full row */
   .viz_plot { min-width: 0; overflow: hidden; }
   .viz_plot svg { display: block; max-width: 100%; height: auto; overflow: visible; font-family: var(--font_sans); }
-  .viz_plot text { font-size: 11px; fill: rgb(var(--muted)); }
+  .viz_plot text { font-size: .6875rem; fill: rgb(var(--muted)); }
   .viz_plot text.value_label { fill: rgb(var(--fg)); font-weight: 500; }
   .viz_plot text.inner_label { fill: #fff; font-weight: 600; }
   .viz_plot text.center_value { font-family: var(--font_display); font-size: 22px; font-weight: 700; fill: rgb(var(--fg)); }
