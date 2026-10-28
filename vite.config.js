@@ -15,9 +15,11 @@ const spa_fallback = () => {
     apply: 'build',
     configResolved(c) { out = resolve(c.root, c.build.outDir); },
     closeBundle() { copyFileSync(resolve(out, 'index.html'), resolve(out, '404.html')); }
+  };
+};
+
 export default defineConfig({
-  base: './',
-  plugins: [react()],
+  base: process.env.BASE_PATH || '/',
   build: {
     target: 'es2020',          /* modern browsers, including older phones still in use */
     cssCodeSplit: true,        /* lazy pages bring only their own CSS */
