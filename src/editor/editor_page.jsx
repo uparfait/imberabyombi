@@ -15,3 +15,4 @@ function Editor_view() {
     return () => { if (typeof stop === 'function') stop(); };
   }, []);
   return (
+    <div id="editor" ref={root}>
