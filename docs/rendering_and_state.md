@@ -11,3 +11,4 @@ There is one redraw switch, in [`src/store/app_state.js`](../src/store/app_state
    the typing effect, scroll position, messages that followed a navigation.
 
 `render()` and `rerender()` redraw **synchronously** (React `flushSync`), so the next line can already use the new DOM:
+```js
