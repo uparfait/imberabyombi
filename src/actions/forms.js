@@ -13,7 +13,7 @@ export const FORMS = {
   login: d => { const email = d.email.trim().toLowerCase(), name = (d.name || '').trim() || email.split('@')[0].replace(/[._-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()), role = d.role || 'super';
     if (!db.list('staff').some(s => s.email === email)) db.upsert('staff', { name, email, role, phone: '', status: 'Active' });
     auth.login({ name, email, role, remember: !!d.remember, at: Date.now() }); db.set('lastRole', role); ensure_mine(name);
-    notify_next(`You are signed in as ${role_name(role)}.`, 'ok', `Welcome, ${name.split(' ')[0]}`); location.hash = route.q.next || landing(role); },
+    notify_next(`You are signed in as ${role_name(role)}.`, 'ok', `Welcome, ${name.split(' ')[0]}`); go(route.q.next || landing(role)); },
   contact: (d, f) => { db.set('messages', [...db.get('messages', []), { ...d, at: Date.now() }]); f.reset(); form_msg(f, 'ok', 'Message sent', 'We reply within two working days.'); },
   news: (d, f) => { f.reset(); form_msg(f, 'ok', 'You are subscribed', 'Check your inbox to confirm.'); },
   note: d => { db.set('notes', [{ id: uid(), title: d.title, body: d.body, at: Date.now() }, ...db.get('notes', [])]); refresh_panel(); qs('#side_panel article')?.classList.add('row_flash'); },
