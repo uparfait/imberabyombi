@@ -23,3 +23,5 @@ const split = (ed, icon, tip, dd_id, dd_tip) => (
   </span>
 );
 const sep = () => <div className="tb_sep"></div>;
+
+export const toolbar = () => (
