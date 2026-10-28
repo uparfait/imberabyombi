@@ -21,6 +21,7 @@
   ::-webkit-scrollbar { width: .6rem; height: .6rem; }
   ::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
   ::-webkit-scrollbar-track { background: transparent; margin: calc(var(--radius) * .75); }
+  ::-webkit-scrollbar-corner { background: transparent; }
   ::-webkit-scrollbar-thumb { background: rgb(var(--brand) / .4); border-radius: var(--pill); border: .15rem solid transparent; background-clip: padding-box; }
 
   h1, h2, h3, h4, h5, h6 { font-family: var(--font_display); font-weight: 500; letter-spacing: -.01em; line-height: 1.15; text-wrap: balance; }
