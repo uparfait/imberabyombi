@@ -30,3 +30,4 @@ export function export_dialog(c, fmt) {
       <Export_cols c={c} />
     </>,
     submit: `Download ${name}`,
+    on_submit: (d, f) => { const cols = s.cols.filter(k => d['col_' + k]);
