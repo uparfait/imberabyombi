@@ -22,3 +22,4 @@ export function build_table(rows, cols, opts = {}) {
   return t;
 }
 export const chain_rows = chain => chain.flatMap(t => Array.from(t.rows));
+export function apply_preset(chain, key) {
