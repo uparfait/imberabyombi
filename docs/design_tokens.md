@@ -9,3 +9,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--brand`          | `224 102 27`        | Primary orange: buttons, links, active states, charts, icons     |
 | `--brand_2`        | `150 62 14`         | Deep rust: gradients, hover, 3D icon depth                       |
 | `--ink`            | `26 18 12`          | Brand black: hero, footer, vision band, ink buttons              |
+| `--radius`         | `1rem`              | Corners of larger surfaces: fields, cards, menus, dialogs, tiles |
