@@ -1,3 +1,4 @@
 /* overrides/25_export_dialog.css: rules that come after the utilities, as in the reference */
   /* Export dialog: a column row = include tick + its name in the file */
   .export_col { display: flex; align-items: center; gap: .75rem; }
+  .export_col input[type=text], .export_col input:not([type]) { min-width: 0; flex: 1; height: 2.5rem; }
