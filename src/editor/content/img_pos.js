@@ -56,3 +56,6 @@ export function set_img_pos(img, pos) {
     if (is_abs(x)) from_abs(x);
     if (pos === 'inline') { x.removeAttribute('data-pos'); x.removeAttribute('data-align'); }
     else { x.setAttribute('data-pos', pos); if (pos !== 'break') x.removeAttribute('data-align'); }
+  });
+}
+export function set_img_align(img, a) {
