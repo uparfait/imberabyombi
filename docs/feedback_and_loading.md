@@ -24,3 +24,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
   `show_dialog()` lifts them back on top whenever a dialog opens.
 
 ## Loading: one segmented spinner everywhere
+- `request(fn, { btn, delay })` spins `btn` in place (its text hidden) or, without a button, shows `#loader` after
