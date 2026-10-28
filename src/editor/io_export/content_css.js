@@ -30,3 +30,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content ul.checklist>li{position:relative}',
   '.doc_content ul.checklist>li::before{content:"";position:absolute;left:-22px;top:.18em;width:12px;height:12px;border:1.5px solid #5f6368;'
     + 'border-radius:2px;background:#fff;cursor:pointer}',
+  '.doc_content ul.checklist>li[data-checked="true"]::before{background:#1a73e8 url("data:image/svg+xml;utf8,'
