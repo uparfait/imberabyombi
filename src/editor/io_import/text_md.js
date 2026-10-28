@@ -39,3 +39,4 @@ export function md_to_html(md) {
     if (ROW_RE.test(l)) { const rows = []; while (i < lines.length && ROW_RE.test(lines[i])) rows.push(lines[i++]); out += md_table(rows); continue; }
     if (LIST_RE.test(l)) {
       const ordered = /^\s*\d/.test(l); const items = []; let task = false;
+      while (i < lines.length && LIST_RE.test(lines[i])) {
