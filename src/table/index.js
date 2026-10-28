@@ -10,3 +10,4 @@ export * from './table_full.js';
 export * from './crud.jsx';
 export * from './kv_table.jsx';
 export * from './view_row.jsx';
+export * from './open_form.jsx';
