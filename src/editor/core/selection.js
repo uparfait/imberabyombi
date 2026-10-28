@@ -30,3 +30,4 @@ export function restore_sel(sel) {
   }
   if (moved) host.focus({ preventScroll: true });
   const r = mk_range(sc, so, ec, eo); if (!r) return;
+  s.removeAllRanges(); s.addRange(r);
