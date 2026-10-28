@@ -6,3 +6,5 @@
 
 const ALIAS = { pages_el: 'pages' };
 const store = Object.create(null);
+
+export let pages_el = null, scroller = null, hruler = null, vruler = null;
