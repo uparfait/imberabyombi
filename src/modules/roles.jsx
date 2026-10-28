@@ -29,3 +29,4 @@ VIEWS.roles = () => {
         <span className="flex-1 truncate text-left">{r.name}</span><span className="chip bg-surface-2 text-muted" data-tip="People with this role">{cnt(r.id)}
           </span></button></li>)}</ul></section>
     <section key={sel.id} className="card overflow-hidden"><header className="flex flex-wrap items-start gap-4 border-b border-line p-5">
+      {i3(full ? 'shield' : 'key', 'h-12 w-12')}
