@@ -23,3 +23,4 @@ function moved(f, kb) {
 }
 function section_items(row, kb) {
   const k = row._ti, mv = section_moves(k), text = clean_text(row._h);
+  return [
