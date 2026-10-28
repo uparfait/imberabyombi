@@ -13,3 +13,4 @@ import { VIZ_REL_B } from './viz_rel_b.js';
 import { VIZ_MAP } from './viz_map.js';
 
 export const VIZ = {
+  /* Comparison */ ...VIZ_CMP_A, ...VIZ_CMP_B,
