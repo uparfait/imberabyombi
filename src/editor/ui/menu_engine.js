@@ -68,3 +68,4 @@ export function open_menu(anchor, items, opts = {}) {
     else m.appendChild(row_of(it, level));
   }
   document.body.appendChild(m);
+  let x, y; const g = scaled(8);   // g: the room kept to the screen's edges
