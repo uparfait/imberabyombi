@@ -16,3 +16,5 @@ export function peek(key, fn) {
   unpeek();
   cur = { key, undo: () => live.cancel(), keep: () => live.keep(fn) };
   live.preview(fn);
+}
+export function peek_view(key, apply) {
