@@ -33,3 +33,4 @@ export function pages_click(e) {
   if (take_drag_click()) return;
   const chip = e.target.closest('.pg_body .file_chip');
   if (chip) {
+    e.preventDefault();
