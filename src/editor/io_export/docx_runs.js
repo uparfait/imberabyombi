@@ -46,3 +46,5 @@ export function r_pr(f) {
   if (f.hl) x += `<w:shd w:val="clear" w:color="auto" w:fill="${f.hl}"/>`;
   if (f.sup) x += '<w:vertAlign w:val="superscript"/>'; else if (f.sub) x += '<w:vertAlign w:val="subscript"/>';
   return x ? `<w:rPr>${x}</w:rPr>` : '';
+}
+export function text_runs(t, f) {
