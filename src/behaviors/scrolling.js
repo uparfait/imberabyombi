@@ -33,3 +33,5 @@ export const header_line = () => { qsa('#site_header, #app_header').forEach(h =>
     h.style.setProperty('--dock_x', Math.max(0, Math.round(edge + 12 - left)) + 'px');
     h.style.setProperty('--dock_max', Math.max(120, Math.round(tools - 8 - left)) + 'px'); }   /* all the room up to the header tools */
   h.classList.toggle('nav_docked', docked); };   /* system pages: the menu row sits in the header, beside its left item */
+
+/* the resize timer: the heavy work waits until resizing pauses */
