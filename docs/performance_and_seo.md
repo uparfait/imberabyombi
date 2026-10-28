@@ -16,3 +16,4 @@ The template is meant to run well on low-end phones, slow CPUs and small bandwid
 
 ## Measuring
 ```bash
+npm run build      # prints every file with its gzip size
