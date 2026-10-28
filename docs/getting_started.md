@@ -8,3 +8,5 @@
 ```bash
 npm install        # installs React, Vite and Tailwind (exact versions from package.json)
 npm run dev        # starts the dev server; open the address it prints (usually http://localhost:5173)
+```
+The page reloads as you save files. Nothing else is needed: there is no backend, data lives in the browser.
