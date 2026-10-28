@@ -35,3 +35,6 @@ export function reflow(cur = 0, full = false) {
         pull_up(b, next);
         if (is_blank_body(next)) { drop_page(next, b); bs = bodies(); next = bs[i + 1] || null; continue; }
         break;
+      }
+    }
+    if (!full && i >= cur && same_sig(before, sig(b))) break;
