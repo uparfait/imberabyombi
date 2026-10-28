@@ -31,3 +31,4 @@ export function menu_key(e) {
   if (k === 'Home' || k === 'End') { if (n) focus_row(m, rows[k === 'Home' ? 0 : n - 1]); return true; }
   if (k === 'ArrowRight') {
     if (m._cur && m._cur._it.sub) { m._cur._open(true); return true; }
+    return bar_step(1);
