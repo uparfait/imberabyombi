@@ -13,3 +13,4 @@
   .copy_btn.done { background: rgb(var(--ok)); }
   /* Colour token hex (design system): click to copy */
   .hex_btn { padding: .1rem .4rem; border-radius: var(--pill); font-family: var(--font_mono); font-size: .7rem; color: rgb(var(--muted)); transition: background-color .2s, color .2s; }
+  .hex_btn:hover { background: rgb(var(--brand) / .12); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); }
