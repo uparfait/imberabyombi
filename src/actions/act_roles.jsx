@@ -11,3 +11,7 @@ const new_role_body = () => (
     <div className="field"><label htmlFor="new_role_name">Role name</label><input id="new_role_name" name="name" required placeholder=" " /></div>
     <div className="field"><label htmlFor="new_role_desc">Description</label><input id="new_role_desc" name="d" placeholder=" " /></div>
     <div className="field"><label htmlFor="new_role_land">Lands on after sign-in</label><select id="new_role_land" name="land" defaultValue="tasks">{MODS.map(m => <option value={m.k} key={m.k}>{m.l}</option>)}</select></div>
+  </>
+);
+
+export const ROLE_ACT = {
