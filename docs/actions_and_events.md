@@ -16,3 +16,4 @@ component needs its own click handler for app actions, and buttons inside dialog
 
 ```js
 /* src/actions/act_example.js */
+import { db, rerender } from '../store/index.js';
