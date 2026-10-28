@@ -56,3 +56,6 @@ export function crop_dialog(img) {
     if (!rect || rect.w < 4 || rect.h < 4) { toast('Drag across the picture to choose an area first'); return false; }
     const k = pic.naturalWidth / pic.clientWidth, sx = Math.round(rect.x * k), sy = Math.round(rect.y * k);
     const sw = Math.max(1, Math.round(rect.w * k)), sh = Math.max(1, Math.round(rect.h * k)), frac = rect.w / pic.clientWidth;
+    return bake_image(img, (c, im) => { c.width = sw; c.height = sh; c.getContext('2d').drawImage(im, sx, sy, sw, sh, 0, 0, sw, sh); }, w => w * frac, 'Image cropped');
+  } });
+}
