@@ -13,3 +13,4 @@ import { mail_body } from './mail_body.jsx';
 export const mail_view = k => {
   const m = mail_body(k);
   return (
+    <article key={k} className="card overflow-hidden" aria-label={`${MAILS[k].l} email`}>
