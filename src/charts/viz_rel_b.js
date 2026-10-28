@@ -32,3 +32,4 @@ export const VIZ_REL_B = {
     for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) if ((nodes[i].g === nodes[j].g ? .42 : .07) > lorem.r()) edges.push([i, j]);
     const f = frame(w, 270, { l: 10, r: 10, t: 10, b: 10 }), deg = nodes.map((_, i) => edges.filter(e => e.includes(i)).length), cx = f.w / 2, cy = f.t + f.ih / 2;
     const rad = Math.min(f.iw, f.ih) / 2 - 28;
+    nodes.forEach((o, i) => { const ga = o.g / 3 * Math.PI * 2 + .5, gx = cx + Math.cos(ga) * rad * .55, gy = cy + Math.sin(ga) * rad * .55;
