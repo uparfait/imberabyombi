@@ -15,3 +15,4 @@ export function refresh_toolbar() {
   const cs = getComputedStyle(n);
   qsa('[data-state]', tb).forEach(b => {
     const k = b.dataset.state; let on = false;
+    if (k === 'bold' || k === 'italic' || k === 'underline') on = q(k);
