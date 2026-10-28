@@ -2,3 +2,5 @@
    remove one (faded out, then gone). Part of TASK_ACT. */
 import { reduced } from '../feedback/index.js';
 import { sub_api, sub_key } from './sub_editor.jsx';
+
+/* fade an element out, then drop it from the editor's state (at once with reduced motion) */
