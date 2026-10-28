@@ -12,3 +12,4 @@ import { dt_in } from './task_dates.jsx';
 const assignees = () => uniq([me(), ...people()]).map(n => [n, n === me() ? n + ' (You)' : n]);
 
 /* inline editors for one row of the task view */
+export function tv_editor(f, r) {
