@@ -20,3 +20,5 @@ function place_uploads(done, mode, failed) {
       const host = restore_focus();
       if (host && host.classList.contains('pg_body')) { begin_op(); document.execCommand('insertHTML', false, sanitize_html(html)); end_op(body_index(host), true); }
       else failed.push('Click in the main text of the document first, then try again.');
+    }
+    if (projects.length) { save_tab(); projects.forEach(r => state.tabs.push(...project_tabs(r.project))); render_sidebar(); }
