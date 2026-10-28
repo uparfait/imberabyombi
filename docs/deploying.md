@@ -62,6 +62,7 @@ In a folder, use `RewriteBase /my-site/` and `RewriteRule . /my-site/index.html 
 
 ## Caching and compression
 Cache `assets/*` for a long time (their names contain a content hash) and keep `index.html` uncached so updates
+show at once. Enable gzip or brotli compression for `.js`, `.css`, `.svg`, `.xml` and `.txt` files.
 ## Checklist
 - Replace `example.com` in `index.html`, `public/robots.txt` and `public/sitemap.xml`.
 - Run `npm run preview` and click through the public site, the sign-in and one admin module.
