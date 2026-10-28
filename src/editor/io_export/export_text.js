@@ -19,3 +19,4 @@ export function export_txt(root, name) {
   const host = el('div', { class: 'doc_content', style: 'position:absolute;left:-99999px;top:0;width:800px;white-space:pre-wrap' });
   host.innerHTML = root.innerHTML;
   qsa('.page_break', host).forEach(p => p.replaceWith(document.createTextNode('\n\f\n')));
+  qsa('img', host).forEach(i => i.replaceWith(document.createTextNode(i.getAttribute('alt') ? `[image: ${i.getAttribute('alt')}]` : '[image]')));
