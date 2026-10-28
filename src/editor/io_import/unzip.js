@@ -22,3 +22,4 @@ export async function unzip(buf) {
     const start = en.off + 30 + dv.getUint16(en.off + 26, true) + dv.getUint16(en.off + 28, true), raw = u8.subarray(start, start + en.csize); let out;
     if (en.method === 0) out = raw;
     else if (en.method === 8) {
+      if (typeof DecompressionStream === 'undefined') throw new Error('this browser can’t unpack it. Try the latest Chrome, Edge, Firefox or Safari');
