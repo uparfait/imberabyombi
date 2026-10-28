@@ -27,3 +27,4 @@ export function md_to_html(md) {
     const l = lines[i];
     if (/^```/.test(l)) {
       const buf = []; i++; while (i < lines.length && !/^```/.test(lines[i])) buf.push(lines[i++]); i++;
+      out += `<pre>${esc_html(buf.join('\n'))}</pre>`; continue;
