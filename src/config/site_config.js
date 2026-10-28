@@ -5,3 +5,4 @@ export const cfg = {
   currency: 'USD', latency: 450 /* ms of simulated network time per request (saving, loading a table); set 0 or swap for fetch() */,
   page_size: 10 /* table rows per page */, parking_slots: 24, parking_rate: 2, work_start: '08:00', storage_cap: 5 * 1024 * 1024,
   img: (seed, w = 900, h = 650) => `https://picsum.photos/seed/${seed}/${w}/${h}`,
+  face: n => `https://i.pravatar.cc/320?img=${(n % 70) + 1}`,
