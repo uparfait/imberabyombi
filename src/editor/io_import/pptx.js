@@ -68,3 +68,4 @@ export async function pptx_to_html(file) {
       .map(s => { const r = prels[s.getAttribute('r:id')]; return r && resolve_path('ppt/', r.target); }).filter(Boolean)
     : [];
   const num = n => parseInt(n.match(/(\d+)\.xml/)[1]);
+  if (!slides.length) slides = z.names().filter(n => /^ppt\/slides\/slide\d+\.xml$/i.test(n)).sort((a, b) => num(a) - num(b));
