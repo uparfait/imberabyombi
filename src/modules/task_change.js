@@ -17,3 +17,4 @@ const tick = (id, g, i, on) => request(() => {
 
 /* the status picked: the current one hides Cancel / Save (nothing to save), another shows them */
 function status_pick(t) {
+  const box = t.closest('[data-tv-status]'), v = tv_api(t), r = db.find('tasks', box.dataset.tvStatus);
