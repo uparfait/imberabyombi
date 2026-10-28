@@ -18,3 +18,4 @@ export function word_count_dialog() {
   const row = (l, a, b) => <tr key={l}><td className={TD}>{l}</td><td className={NUM}>{a}</td>{sel ? <td className={NUM}>{b}</td> : null}</tr>;
   const n = v => v.toLocaleString();
   modal({
+    title: 'Word count',
