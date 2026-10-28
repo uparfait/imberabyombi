@@ -40,3 +40,5 @@ export function draw_h_ruler() {
     + `<rect class="r_margin" x="0" y="${y}" width="${lx}" height="${h}"/><rect class="r_margin" x="${rx}" y="${y}" width="${W - rx}" height="${h}"/>${ruler_ticks(win, m.left, true, z)}`
     + `<g class="r_handle" data-handle="left" transform="translate(${lx} 0)"><rect class="knob" x="${-u(6)}" y="${u(1)}" width="${u(12)}" height="${u(4)}" rx="${u(1)}"/>${tri}</g>`
     + `<g class="r_handle" data-handle="right" transform="translate(${rx} 0)">${tri}</g></svg>`;
+}
+export function draw_v_ruler() {
