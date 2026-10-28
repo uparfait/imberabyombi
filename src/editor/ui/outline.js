@@ -18,3 +18,4 @@ export function render_outline() {
   const t = active_tab(), folds = new Set((t && t.folds) || []), seen = {};
   let ti = 0, refocus = null;
   ol.innerHTML = '';
+  hs.forEach((h, i) => {
