@@ -20,3 +20,4 @@ export default {
         brand: token_color('brand'), 'brand-2': token_color('brand_2'), ink: token_color('ink'),
         bg: token_color('bg'), surface: token_color('surface'), 'surface-2': token_color('surface_2'), 'surface-3': token_color('surface_3'),
         fg: token_color('fg'), muted: token_color('muted'), line: token_color('line'),
+        ok: token_color('ok'), warn: token_color('warn'), bad: token_color('bad'), info: token_color('info'),
