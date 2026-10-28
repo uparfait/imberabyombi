@@ -16,7 +16,7 @@ export function upload_store(files, m) {
 }
 const use_up = up => useSyncExternalStore(up.sub, up.get);
 const CHIPS = ['docx', 'pdf', 'xlsx', 'xls', 'ods', 'csv', 'json', 'pptx', 'odt', 'odp', 'rtf', 'epub', 'html', 'md', 'txt'];
-const MODES = [['insert', 'At the cursor'], ['tab', 'In new tabs'], ['replace', 'Replace document']];
+const MODES = [['insert', 'At the cursor'], ['tab', 'In new tabs'], ['replace', 'Replace this tab']];
 const ZONE = 'drop_zone cursor-pointer rounded-2xl border-2 border-dashed px-4 py-6 text-center text-muted transition hover:border-brand hover:bg-brand/10';
 const FLD = 'fld mb-1.5 mt-3 block text-sm text-muted', SEG_ON = 'bg-brand/15 text-accent', SEG_OFF = 'text-fg/80 hover:bg-fg/5';
 
