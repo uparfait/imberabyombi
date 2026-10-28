@@ -60,3 +60,4 @@ export const VIZ_TIME_B = {
     return { svg: svg(f, ['Mon', 'Wed', 'Fri'].map((k, j) => `<text x="${f.l - 6}" y="${round1(f.t + (j * 2 + 1) * (cell + 2) + cell - 2)}" text-anchor="end">${k}</text>`)
       .join('')
       + v.map((n, i) => { const d = add_d(start, i), wk_i = Math.floor((i + start.getDay()) / 7), x = f.l + wk_i * (cell + 2), y = f.t + d.getDay() * (cell + 2);
+        return (d.getDate() === 1 && x < f.w - 20 ? `<text x="${round1(x)}" y="${f.t - 8}">${d.toLocaleDateString(undefined, { month: 'short' })}</text>` : '')
