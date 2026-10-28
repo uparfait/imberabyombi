@@ -22,3 +22,5 @@ export const services_sec = (page = 0) => (
   </section>);
 ```
 Use the existing helpers (`sec_head`, `more`, `hero_shell`, `kicker` styles) so the page matches the others.
+
+## 2. Register the page
