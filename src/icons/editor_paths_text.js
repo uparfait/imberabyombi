@@ -22,3 +22,4 @@ export const EDITOR_TEXT_PATHS = {
   format_align_justify: 'M3 5h18M3 10h18M3 15h18M3 20h18',
   format_indent_increase: 'M3 5h18M11 10h10M11 14h10M3 19h18M4 9l3 3-3 3',
   format_indent_decrease: 'M3 5h18M11 10h10M11 14h10M3 19h18M7 9l-3 3 3 3',
+  format_line_spacing: 'M6 4v16M3 7l3-3 3 3M3 17l3 3 3-3M12 6h9M12 12h9M12 18h9',
