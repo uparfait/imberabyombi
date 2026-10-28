@@ -41,3 +41,5 @@ export function move_tab(from, to) {
    html defaults to t.html; pass the live html (collect_html()) when t is the active tab. Not inserted: the caller places it. */
 export function duplicate_tab(t, name = t.name + ' (copy)', html = t.html) {
   const { undo, redo, id, ...rest } = t;
+  return { ...JSON.parse(JSON.stringify(rest)), id: uid(), name, html: html || '<p><br></p>', undo: [], redo: [] };
+}
