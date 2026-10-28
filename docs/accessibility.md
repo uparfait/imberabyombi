@@ -17,3 +17,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 
 ## Dialogs and overlays
 - One native `<dialog>` per kind (`#modal`, `#confirm`, `#drawer`, `#viewer`): focus is trapped by the browser,
+  the page behind is inert, and the title labels the dialog (`aria-labelledby`).
