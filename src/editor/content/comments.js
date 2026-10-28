@@ -33,3 +33,4 @@ export function activate_comment(id, focus) {
   qsa(`.cmt[data-cid="${id}"]`, pages_el).forEach(x => x.classList.add('active'));
   qsa('.c_card').forEach(c => c.classList.toggle('active', c.dataset.id === id));
   const card = qs(`.c_card[data-id="${id}"]`);
+  if (card) { card.scrollIntoView({ block: 'nearest' }); if (focus) { const t = qs('textarea', card); if (t) t.focus(); } }
