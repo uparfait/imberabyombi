@@ -43,3 +43,4 @@ export const EDITOR_MEDIA_PATHS = {
   calendar_today: 'M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM8 14h3v3H8z',
   zoom_in: 'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.3-4.3M11 8v6M8 11h6',
   fullscreen: 'M3 8V3h5M16 3h5v5M21 16v5h-5M8 21H3v-5',
+  tune: 'M3 6h11M18 6h3M3 12h3M10 12h11M3 18h9M16 18h5M16 4v4M8 10v4M14 16v4',
