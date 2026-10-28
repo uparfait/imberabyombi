@@ -64,3 +64,4 @@ export function Upload_actions({ up }) {
   return (
     <>
       <button type="button" className="btn btn_ghost" data-act="close_modal">Cancel</button>
+      <button className="btn btn_primary">{files.length > 1 ? `Add ${files.length} files` : 'Add file'}</button>
