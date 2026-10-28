@@ -7,3 +7,4 @@ import { peek, peek_on, keep, unpeek } from './hover_preview.js';
 import { mi } from './ui_dom.js';
 
 /* on_pick(colour or null); none_label: the text of the reset choice ('Reset', 'None', 'Black'…) */
+export function palette_el(on_pick, none_label) {
