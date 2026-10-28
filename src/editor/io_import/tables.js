@@ -47,3 +47,4 @@ export function csv_parse(text, delim) {
   const rows = []; let row = [], f = '', q = false;
   for (let i = 0; i < text.length; i++) {
     const ch = text[i];
+    if (q) { if (ch === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += ch; continue; }
