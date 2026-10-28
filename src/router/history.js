@@ -33,3 +33,4 @@ export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
    (redirects). Going to the address already on screen does nothing. */
 export function go(path, { replace = false } = {}) {
   const u = new URL(to(path), location.href);
+  if (!replace && u.pathname + u.search === here()) return;
