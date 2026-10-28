@@ -9,3 +9,4 @@
   input[type=number] { -moz-appearance: textfield; }
   input[type=search]::-webkit-search-cancel-button { -webkit-appearance: none; }
   /* Every search field: a clickable search button on the left and a clear button on the right (searchUI()); text never runs under them */
+  input:where([type=search]) { padding-left: 2.75rem; padding-right: 2.75rem; }
