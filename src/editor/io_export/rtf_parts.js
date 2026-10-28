@@ -5,3 +5,4 @@ import { b64bytes } from '../io_import/index.js';
 import { fmt_of } from './docx_runs.js';
 
 export const RTF_P = '\\pard\\plain\\f0\\fs22';
+export const rtf_ci = (rx, hex) => {
