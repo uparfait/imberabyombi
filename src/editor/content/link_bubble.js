@@ -12,3 +12,4 @@ export function update_link_bubble() {
   if (!a || !lb) { hide_link_bubble(); return; }
   bubble_link = a; const r = a.getBoundingClientRect(), link = qs('#lb_url'); link.href = a.href; link.textContent = a.getAttribute('href');
   lb.style.display = 'flex';
+  const u = rem();   /* gaps in rem: they scale with the interface */
