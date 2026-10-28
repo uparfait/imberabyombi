@@ -4,3 +4,5 @@ import { esc, fmt_d, ymd, add_d } from '../lib/index.js';
 import { round1, linear, ticks, rnd, uwords, sequential, fit, pct, spread, tip_text } from './viz_math.js';
 import { frame, svg, band, x_labels, dot, mark_group, hit_col, hit_row, row_label } from './viz_svg.js';
 import { legend, scale_legend } from './viz_legend.jsx';
+
+export const VIZ_TIME_B = {
