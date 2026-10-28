@@ -25,3 +25,8 @@ export function word_count_dialog() {
       {row('Words', n(all.words), sel && n(sel.words))}
       {row('Characters', n(all.chars), sel && n(sel.chars))}
       {row('Characters excluding spaces', n(all.no_space), sel && n(sel.no_space))}
+    </tbody></table>
+  });
+}
+
+const KEYS = [['Bold / Italic / Underline', 'Ctrl+B / I / U'], ['Strikethrough', 'Ctrl+Shift+X'], ['Superscript / Subscript', 'Ctrl+. / Ctrl+,'],
