@@ -26,3 +26,4 @@ export const VIZ_REL_B = {
       return `<rect x="${round1(x)}" y="${round1(o.y)}" width="${nw}" height="${round1(o.h)}" rx="3" style="fill:${c ? 'rgb(var(--fg))' : scale_color(i)}"/>`
         + `<text x="${round1(last ? x - 6 : x + nw + 6)}" y="${round1(o.y + o.h / 2 + 4)}" text-anchor="${last ? 'end' : 'start'}" class="value_label">${k}</text>`; })
       .join('')).join(''), 'Sankey diagram'),
+      legend: legend(cols[0], 'rect'), table: [['From', 'To', 'People'], links.map(([c, a, b, v]) => [cols[c][a], cols[c + 1][b], v])] }; } },
