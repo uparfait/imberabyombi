@@ -73,6 +73,7 @@ function settle(s, g) {
   if (cur === s && s.dirty) { s.dirty = false; put(s.snap); run(s); }
 }
 
+const mark = on => refs.root?.classList.toggle('ed_previewing', on);   /* hides the selection highlight (04_pages.css) */
 export const live = {
   get active() { return !!cur; },
   busy: live_busy,
