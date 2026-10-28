@@ -7,3 +7,5 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - A "Skip to content" link is the first focusable element (`index.html`).
 - `aria-current` marks the current link in every navigation; tables set `aria-sort` on sorted headers.
 - Every control has a label: visible labels for fields, `aria-label` for icon buttons (also used as their tooltip).
+
+## Keyboard
