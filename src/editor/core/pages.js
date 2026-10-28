@@ -44,3 +44,4 @@ export function set_editable(wrap) {
   qs('.pg_body', wrap).spellcheck = state.spell;
 }
 export function add_page_after(body) { const w = create_page(); body.closest('.page_wrap').after(w); return qs('.pg_body', w); }
+export function remove_page(body) { body.closest('.page_wrap').remove(); }
