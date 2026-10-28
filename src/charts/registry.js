@@ -22,3 +22,5 @@ export function draw_chart(cv, labels, vals, anim = true) {
       g.addColorStop(0, col('--brand')); g.addColorStop(1, col('--brand_2')); x.fillStyle = g; x.beginPath();
       x.roundRect ? x.roundRect(bx, by, bw, h, [8, 8, 2, 2]) : x.rect(bx, by, bw, h); x.fill();
       x.fillStyle = col('--muted'); x.textAlign = 'center'; x.fillText(labels[i], bx + bw / 2, ht - fs * .4);
+    });
+    if (t < 1) requestAnimationFrame(step);
