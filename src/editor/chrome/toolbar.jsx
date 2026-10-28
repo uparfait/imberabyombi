@@ -38,3 +38,4 @@ export const toolbar = () => (
     {dd('zoom_btn', 'zoom_label', '100%', 'Zoom', '4.5rem', false)}
     {sep()}
     {dd('style_btn', 'style_label', 'Normal text', 'Styles', '7.5rem', true)}
+    {sep()}
