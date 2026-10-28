@@ -20,3 +20,4 @@ export const kpi_cards_a = k => {
         <p className="mt-2 text-sm text-muted">{`${num(Math.max(0, 1000 - enr))} to go · ${reached} reached`}</p></>,
       [['Measure', 'Value'], [['Enrolled', num(enr)], ['Goal', '1,000'], ['To go', num(Math.max(0, 1000 - enr))], ['Reached', reached]]]),
     kpi_card('', 'Storage used', 'Share of the storage space in use: amber from 70%, red from 85%.',
+      <><div className="kpi_gauge"><svg viewBox="0 0 120 70" aria-hidden="true">
