@@ -11,3 +11,4 @@ export const VIZ_TIME_A = {
     const m = MONTHS(), s = SER.slice(0, 3), v = s.map((_, j) => { let a = rnd(30, 60); return m.map(() => (a = Math.max(5, a + rnd(-8, 10) + j))).map(x => x * MARGIN()); });
     const f = frame(w, 260, { r: 58 }), ax = y_axis(f, Math.max(...v.flat())), x = band(m.length, f.l, f.w - f.r);
     const ly = spread(v.map(r => ax.y(r[11]) + 4));
+    return { svg: svg(f, ax.g + chart_base(f, ax.y(0)) + v.map((r, j) => `<path class="series_line" d="${path_of(r.map((val, i) => [x(i), ax.y(val)]))}"`
