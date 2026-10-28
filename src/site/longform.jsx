@@ -10,3 +10,4 @@ const TOC_CLS = 'w-full rounded-lg px-2 py-1.5 text-left text-muted transition h
 const REL_CLS = 'flex items-center justify-between rounded-lg px-2 py-1.5 text-muted transition hover:bg-fg/5 hover:text-accent';
 
 export function longform(k) {
+  const secs = Array.from({ length: 4 }, (_, i) => ({ id: `${k}_${i + 1}`, t: lorem.t(3) }));
