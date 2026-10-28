@@ -58,3 +58,4 @@ export function caret_to_end(e) {
 }
 export function caret_rect(r) {
   const rs = r.getClientRects(); if (rs.length) return rs[rs.length - 1];
+  let n = r.startContainer; const c = n.childNodes[r.startOffset];
