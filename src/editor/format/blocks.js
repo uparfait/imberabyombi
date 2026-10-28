@@ -36,3 +36,5 @@ export function set_block_style(key) {
     b.replaceWith(nb); sel_remap.set(b, nb);
   }));
   const l = refs.style_label; if (l) l.textContent = st.label;
+}
+export function set_line_height(v) { with_blocks(bs => bs.forEach(b => { b.style.lineHeight = v; })); }
