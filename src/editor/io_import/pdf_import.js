@@ -21,3 +21,4 @@ export async function pdf_to_html(buf) {
   const pdf = await lib.getDocument({ data: buf }).promise; let html = '';
   for (let p = 1; p <= pdf.numPages; p++) {
     toast(`Reading PDF page ${p} of ${pdf.numPages}…`, 0);
+    const page = await pdf.getPage(p), tc = await page.getTextContent();
