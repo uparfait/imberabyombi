@@ -54,3 +54,4 @@ export function tab_menu(t) {
     { label: 'Move up', icon: 'arrow_upward', disabled: i === 0, no_preview: true, action: () => { move_tab(i, i - 1); render_sidebar(); } },
     { label: 'Move down', icon: 'arrow_downward', disabled: i === state.tabs.length - 1, no_preview: true, action: () => { move_tab(i, i + 1); render_sidebar(); } },
     { sep: true },
+    { label: 'Delete', icon: 'delete', disabled: state.tabs.length < 2, no_preview: true, action: () => delete_tab(t) }
