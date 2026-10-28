@@ -20,3 +20,4 @@ export const STYLES = [
   { key: 'h1', label: 'Heading 1', tag: 'H1', css: 'font-size:20px' },
   { key: 'h2', label: 'Heading 2', tag: 'H2', css: 'font-size:17px' },
   { key: 'h3', label: 'Heading 3', tag: 'H3', css: 'font-size:15px;color:#434343' },
+  { key: 'h4', label: 'Heading 4', tag: 'H4', css: 'font-size:14px;color:#666' }
