@@ -34,3 +34,4 @@ function take() {
 }
 function put(sn) {
   if (!pages_el || sn.tab !== state.active) return;
+  hide_img_sel();
