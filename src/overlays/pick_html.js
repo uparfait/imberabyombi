@@ -39,3 +39,4 @@ export const PK = {
   cal(a) {
     const wk = kind_of(a) === 'week', sel = wk ? a.value : a.value.slice(0, 10), b = pick.view, f = new Date(b.getFullYear(), b.getMonth(), 1);
     const s = add_d(f, -f.getDay()), td = ymd();
+    return `<div class="pk_cal">${PK.head(f.toLocaleDateString(undefined, { month: 'long', year: 'numeric' }), 'month')}<div class="pk_grid">`
