@@ -36,3 +36,4 @@
      Images/videos = square thumbnails, other files = compact chips. x removes, click opens #viewer. Row scrolls on x. */
   .filebox { display: grid; gap: .25rem; min-width: 0; padding: .375rem; border: 1px dashed rgb(var(--muted) / .6); border-radius: calc(var(--radius) * .75); background: rgb(var(--field, var(--surface))); transition: border-color .2s; }
   .filebox:hover, .filebox:focus-within, .filebox.picking { border-color: rgb(var(--brand)); }
+  .filebox > input[type=file] { border: 0; padding: .125rem; background: transparent; }
