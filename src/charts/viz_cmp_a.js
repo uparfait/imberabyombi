@@ -25,3 +25,4 @@ export const VIZ_CMP_A = {
     const c = uwords(6), s = SER.slice(0, 3), v = c.map(() => s.map(() => rnd(10, 40) * MARGIN())), tot = v.map(r => r.reduce((a, b) => a + b));
     const f = frame(w, 250), ax = y_axis(f, Math.max(...tot)), x = band(c.length, f.l, f.w - f.r), bw = Math.min(24, x.bw * .6);
     const seg = (i) => { let acc = 0; return v[i].map((val, j) => {
+      const y0 = ax.y(acc), y1v = ax.y(acc + val); acc += val; const top = j === v[i].length - 1, gap = j ? 1 : 0;
