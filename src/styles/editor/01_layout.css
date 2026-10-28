@@ -1,3 +1,5 @@
 /* styles/editor/01_layout.css: the editor page frame (Imberabyombi card) and the source's colour names.
    #editor fills the whole window (the module opens without the admin shell), so the page
    itself never scrolls; the heading (title + menus, toolbar) stays and the workspace scrolls inside itself. */
+
+/* The source's colour variables under snake names, mapped to template tokens (for inline styles ported from the source:
