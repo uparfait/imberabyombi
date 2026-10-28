@@ -12,3 +12,4 @@ const HL = { yellow: '#ffff00', green: '#00ff00', cyan: '#00ffff', magenta: '#ff
 const val = docx_val, HEX6 = /^[0-9a-f]{6}$/i;
 
 export async function docx_run(cx, r) {
+  const pr = kids(r, 'rPr')[0], css = []; let open = '', close = '';
