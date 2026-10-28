@@ -29,6 +29,7 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Export** (Download): DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT, and a project file that keeps every tab.
 - **Saving**: the document is kept in the browser's IndexedDB (`editor_doc` key) a moment after each change, so
   documents with many images are kept whole. A copy left in localStorage by an older version is moved over on load.
+- **Small screens**: the title bar's menus and the toolbar stay one row and scroll sideways (swipe or mouse wheel).
 
 ## Live preview
 Hover any formatting choice (toolbar buttons, menu items, colours, fonts, sizes, styles, alignment, spacing, list
