@@ -14,3 +14,4 @@ export const search_box = (attrs, ph = 'Search', c = '') => (
 /* Search field buttons: .ss runs the search (left), .sx clears it (right, shown only while there is text) */
 /* Help icon: the explanation shows as a tooltip on hover, keyboard focus or tap, instead of a paragraph under a title */
 export const help_tip = (text, about = 'this') => (
+  <button type="button" className="help_tip" data-act="help_tip" data-tip={text} aria-label={`About ${about}. ${text}`}>{ic('help', 'h-4 w-4')}</button>
