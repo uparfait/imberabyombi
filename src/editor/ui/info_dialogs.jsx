@@ -36,3 +36,4 @@ const KEYS = [['Bold / Italic / Underline', 'Ctrl+B / I / U'], ['Strikethrough',
   ['Clear formatting', 'Ctrl+\\'], ['Undo / Redo', 'Ctrl+Z / Ctrl+Y'], ['Paste without formatting', 'Ctrl+Shift+V'], ['Find and replace', 'Ctrl+F / Ctrl+H'],
   ['Print', 'Ctrl+P'], ['Upload files', 'Ctrl+O'], ['Save project file', 'Ctrl+S'], ['Show / hide menus', 'Ctrl+Shift+F'], ['Open a link', 'Ctrl+Click'],
   ['Next / previous tab', 'Ctrl+PageDown / PageUp'], ['Move a section (outline row)', 'Alt+Shift+↑ / ↓'], ['Word count', 'Ctrl+Shift+C'],
+  ['Keyboard shortcuts', 'Ctrl+/']];
