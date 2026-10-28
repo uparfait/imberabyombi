@@ -18,3 +18,4 @@ export function kpi_data() {
   const src = ['Search', 'Social', 'Email'], split = [rnd(30, 50), rnd(20, 35), rnd(10, 25)], st = split.reduce((a, b) => a + b);
   const share = i => `${Math.round(split[i] / st * 100)}%`;
   const lead = uwords(5).map(k => [k, rnd(20, 100) * m]).sort((a, b) => b[1] - a[1]), live = to(trend(), Math.round(128 * m)).map(Math.round), ring = rnd(.55, .9);
+  const rate = rnd(3.9, 4.8), conv = to(trend().reverse(), 3.8 / Math.sqrt(m)), d_conv = -rnd(1, 6);
