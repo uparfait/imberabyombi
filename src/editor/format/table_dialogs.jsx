@@ -44,3 +44,4 @@ export function custom_table_dialog() {
       <div className="sm:col-span-2"><p className="mb-2 text-sm font-medium">Style</p><Preset_grid start="header" /></div>
     </>,
     on_submit: v => {
+      const C = clamp(parseInt(v.ct_c) || 3, 1, 30), R = clamp(parseInt(v.ct_r) || 1, 1, 500), W = clamp(parseInt(v.ct_w) || 100, 10, 100), A = v.ct_a, preset = v.preset;
