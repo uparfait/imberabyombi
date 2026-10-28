@@ -40,3 +40,4 @@ export async function sheet_to_html(file, ext) {
   } catch (err) { if (ext === 'xlsx' || ext === 'xlsm') sheets = await xlsx_native(buf); else throw err; }
   let note = '';
   const html = sheets.map(s => {
+    const { rows, cut } = trim_rows(s.rows); if (cut) note = 'Large sheets were shortened to 2,000 rows and 40 columns.';
