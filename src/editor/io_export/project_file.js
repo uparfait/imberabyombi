@@ -23,3 +23,5 @@ export function export_root(scope) {
   if (hist_timer) commit(); save_tab(); const d = el('div');
   d.innerHTML = scope === 'all' && state.tabs.length > 1 ? state.tabs.map(t => t.html).join(PB) : active_tab().html;
   flatten_abs_images(d);   /* images in front of / behind the text go in line at their place in the text */
+  return unwrap_comments(d);
+}
