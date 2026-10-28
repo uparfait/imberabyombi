@@ -8,3 +8,4 @@ import { can_edit, exec } from './commands.js';
 export function selected_blocks() {
   const r = last_range; if (!r) return [];
   const host = editable_of(r.startContainer); if (!host) return [];
+  const cand = qsa('p,h1,h2,h3,h4,h5,h6,li,blockquote,pre', host).filter(b => r.intersectsNode(b));
