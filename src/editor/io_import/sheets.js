@@ -3,3 +3,4 @@
 import { load_script, LIB, esc_html } from '../core/index.js';
 import { unzip } from './unzip.js';
 import { parse_xml, by_tag, resolve_path, rels_of } from './xml_helpers.js';
+import { rows_to_table, trim_rows } from './tables.js';
