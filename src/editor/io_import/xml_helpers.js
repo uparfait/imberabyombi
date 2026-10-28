@@ -14,3 +14,6 @@ export function rels_of(text) {
   const m = {}; if (!text) return m;
   by_tag(parse_xml(text), 'Relationship').forEach(r => {
     m[r.getAttribute('Id')] = { target: r.getAttribute('Target') || '', type: r.getAttribute('Type') || '', external: r.getAttribute('TargetMode') === 'External' };
+  });
+  return m;
+}
