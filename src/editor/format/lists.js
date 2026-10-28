@@ -23,3 +23,4 @@ export function set_list_type(tag, type) {
     take_sel(); l = closest_list();
   }
   if (!l) return;
+  begin_op(); l.style.listStyleType = type; end_op();
