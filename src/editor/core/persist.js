@@ -27,3 +27,4 @@ export function save_doc(force) {
   /* the browser refused a copy this big: do not repeat the "storage is full" notice on every edit */
   if (too_big && JSON.stringify(d).length >= too_big) return false;
   if (db.set(DOC_KEY, d)) { too_big = 0; return true; }
+  too_big = JSON.stringify(d).length; return false;
