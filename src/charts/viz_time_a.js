@@ -23,3 +23,4 @@ export const VIZ_TIME_A = {
         + `<text class="value_label" x="${round1(x(11))}" y="${round1(ax.y(v[11]) - 10)}" text-anchor="end">${num(v[11])}</text>`
       + chart_base(f, ax.y(0)) + x_labels(f, m, x) + cross_bands(f, m, x, i => [[num(v[i]), 'Value', 0]]), 'Area chart'),
       table: [['Month', 'Value'], m.map((k, i) => [k, num(v[i])])] }; } },
+  stacked_area: { t: 'Stacked area chart', g: 'time', d: 'Parts of a total over time; the top edge is the total.', seed: 'stackedArea', f(w) {
