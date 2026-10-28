@@ -5,3 +5,5 @@ import { ui, db, rerender } from '../store/index.js';
 import { MODS, roles, perm_map } from '../auth/index.js';
 import { notify, show_msg } from '../feedback/index.js';
 import { modal, ask } from '../overlays/index.js';
+
+const new_role_body = () => (
