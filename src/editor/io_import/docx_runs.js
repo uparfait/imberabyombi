@@ -47,3 +47,4 @@ export async function docx_runs(cx, n) {
   let h = '';
   for (const c of Array.from(n.children)) {
     const ln = c.localName;
+    if (ln === 'r') h += await docx_run(cx, c);
