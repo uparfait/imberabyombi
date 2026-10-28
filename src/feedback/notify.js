@@ -3,3 +3,4 @@
 import { qs, esc } from '../lib/index.js';
 import { ic_html } from '../icons/index.js';
 import { reduced, TICON, TTITLE, staff_page } from './basics.js';
+import { show_msg, slot_of, new_slot } from './messages.jsx';
