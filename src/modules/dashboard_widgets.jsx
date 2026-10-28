@@ -40,3 +40,4 @@ export function dash_widgets(u) {
     W.push(<section key="tasks" className="card p-5">{head('My tasks', '/admin/tasks', 'Open')}<p className="mt-1 text-sm text-muted">
       {`${done} of ${mine.length} done`}</p>
       <progress className="mt-3" max={mine.length || 1} value={done}></progress>
+      <ul className="mt-4 grid gap-3">{open.length ? open.map(task_li) : none('All tasks complete.')}</ul></section>); }
