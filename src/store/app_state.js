@@ -38,3 +38,4 @@ export function render(keep = false, anim = false) {
   if (!keep) { loaded.clear(); ui.table_full = null; }
   render_flags.keep = keep; render_flags.anim = anim; version++;
   const emit = () => listeners.forEach(fn => fn());
+  try { flushSync(emit); } catch { emit(); }
