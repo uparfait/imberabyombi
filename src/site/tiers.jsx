@@ -2,3 +2,4 @@
    partners table (rows open a detail view through data-act="row"). */
 import { ic } from '../icons/index.js';
 import { lorem, cap } from '../lib/index.js';
+import { tag } from '../ui/index.js';
