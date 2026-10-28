@@ -24,3 +24,4 @@
   .page_wrap { width: auto !important; height: auto !important; margin: 0 !important; break-after: page; page-break-after: always; }
   .page_wrap:last-child { break-after: auto; page-break-after: auto; }
   .page_wrap > .page { position: relative !important; transform: none !important; outline: 0 !important; border: 0 !important; }
+  .pg_header:empty, .pg_footer_text:empty { visibility: hidden; }
