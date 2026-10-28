@@ -40,3 +40,4 @@ export const TASK_ACT = {
   comment_del: t => comments(t, t.dataset.id, a => a.filter(c => c.id !== t.dataset.c), 'Your comment was deleted.'),
   /* your own comments: the pen swaps the text for an editor (Save / Cancel) */
   comment_edit: t => { const box = comment_box(t), v = tv_api(t);
+    const c = comments_of(db.find('tasks', t.closest('[data-task]').dataset.task)).find(x => x.id === box.dataset.comment);
