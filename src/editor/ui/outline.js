@@ -30,3 +30,4 @@ export function render_outline() {
     if (kids) { const f = folds.has(row._key); row.classList.toggle('folded', f); row.setAttribute('aria-expanded', String(!f)); }
     if (had && had._h === h) refocus = row;
     wire_outline_row(row);
+    ol.appendChild(row);
