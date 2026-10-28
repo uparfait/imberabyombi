@@ -39,3 +39,4 @@ const decide = (r, can) => can && r.status === 'Pending' ? <><button className="
   <button className="btn btn_ghost btn_sm" data-act="res" data-v="Rejected" data-id={r.id}>Reject</button></> : null;
 VIEWS.inventory = () => {
   const t = ui.tab.inv || 'res', low = db.list('inventory').filter(i => +i.qty < +i.min);
+  const banner = low.length ? <div className="mb-6 flex items-start gap-4 rounded-3xl border border-warn/30 bg-warn/10 p-5">{i3('box', 'h-11 w-11', 'warn')}
