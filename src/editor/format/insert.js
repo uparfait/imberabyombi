@@ -3,3 +3,5 @@
 import { TEXT_BLOCK_RE, el, editable_of, restore_focus, top_block, is_empty_block, is_list, is_table, is_break, offset_within,
   caret_to_start, body_index, toast, begin_op, end_op, scroll_caret_into_view } from '../core/index.js';
 import { can_edit } from './commands.js';
+
+/* ================= block insertion ================= */
