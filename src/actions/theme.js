@@ -23,3 +23,5 @@ export function apply_tokens() {
   if (t.space != null) s.setProperty('--space', t.space + 'rem');
   if (t.font) s.setProperty('--font_sans', `"${t.font}", system-ui, sans-serif`);
   redraw_charts(); hex_refresh();
+}
+/* #token_<k>_out is an <output> with one text child: setting its value replaces that text */
