@@ -9,3 +9,5 @@ import { rows_of } from './rows.js';
 
 export const EXPORTS = [['csv', 'CSV', 'file'], ['json', 'JSON', 'note'], ['xls', 'Excel', 'grid']];
 export const date_key = c => schemas[c].f.find(f => /^date/.test(f.t))?.k;
+
+/* cols: [[key, name in the file], …] · from, to: ISO date or date-time ('' = open) · flt: { column: value } */
