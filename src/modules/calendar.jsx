@@ -23,3 +23,4 @@ VIEWS.calendar = () => {
       <button className="btn btn_outline" data-act="cal_today">Today</button>
       <button className="icon_btn" data-act="cal_nav" data-n="-1" aria-label="Previous">{ic('chev_l')}</button>
       <button className="icon_btn" data-act="cal_nav" data-n="1" aria-label="Next">{ic('chev_r')}</button>
+      <h2 className="date_title font-sans text-xl font-normal sm:text-2xl">{d.toLocaleDateString(undefined, { month: 'long', year: 'numeric' })}</h2>
