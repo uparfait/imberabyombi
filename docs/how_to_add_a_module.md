@@ -42,3 +42,4 @@ In `src/auth/roles.jsx`, add `transport:2` (manage) or `transport:1` (view) to t
 later on the Roles & access page. Super Admin sees every module.
 
 That is all: the sidebar, apps grid, Create menu, command palette, permissions, page title and route follow from `MODS`.
+Reset the demo data (Settings → Data) once so the new collection is seeded.
