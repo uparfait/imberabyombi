@@ -8,3 +8,4 @@ export const VIZ_MAP = {
   choropleth: { t: 'Choropleth map (tile map)', g: 'map', d: 'A value per region on equal-size tiles. Darker = more.', f(w) {
     const rows = ['..XXX..', '.XXXXX.', 'XXXXXXX', 'XXXXXXX', '.XXXXX.', '..XXX..'], tiles = [];
     rows.forEach((r, y) => [...r].forEach((c, x) => c === 'X' && tiles.push({ x, y, k: 'R' + (tiles.length + 1), v: Math.round(rnd(5, 100)) })));
+    const f = frame(w, 260, { l: 0, r: 0, t: 8, b: 8 }), s = Math.min((f.iw - 20) / 7.6, f.ih / (6 * .88 + .3)) / 1.0, hw = s * .5, x0 = (f.w - s * 7.5) / 2;
