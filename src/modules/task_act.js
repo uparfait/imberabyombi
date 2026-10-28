@@ -44,3 +44,4 @@ export const TASK_ACT = {
     const c = comments_of(db.find('tasks', t.closest('[data-task]').dataset.task)).find(x => x.id === box.dataset.comment);
     if (!c || !v) return; v.put(s => ({ cedit: { ...s.cedit, [c.id]: true } }));
     const ta = box.querySelector('[data-comment-editor] textarea'); ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); fade_in(ta.parentElement, 200); },
+  comment_cancel: t => { const cid = comment_box(t).dataset.comment; tv_api(t)?.put(s => ({ cedit: { ...s.cedit, [cid]: false } })); },
