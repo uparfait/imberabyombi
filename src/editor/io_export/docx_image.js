@@ -51,3 +51,4 @@ export function abstract_xml(kind, id) {
     let fmt, text;
     if (NUMFMT[kind]) { fmt = NUMFMT[kind]; text = `%${l + 1}.`; }
     else { fmt = 'bullet'; const arr = bullets[kind] || [kind.replace(/^['"]|['"]$/g, '').trim() || '•']; text = arr[l % arr.length]; }
+    lv += `<w:lvl w:ilvl="${l}"><w:start w:val="1"/><w:numFmt w:val="${fmt}"/><w:lvlText w:val="${xesc(text)}"/><w:lvlJc w:val="left"/>`
