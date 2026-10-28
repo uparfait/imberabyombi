@@ -65,3 +65,4 @@ export async function pptx_to_html(file) {
   const prels = rels_of(z.has('ppt/_rels/presentation.xml.rels') ? await z.text('ppt/_rels/presentation.xml.rels') : '');
   let slides = z.has('ppt/presentation.xml')
     ? by_tag(parse_xml(await z.text('ppt/presentation.xml')), 'sldId')
+      .map(s => { const r = prels[s.getAttribute('r:id')]; return r && resolve_path('ppt/', r.target); }).filter(Boolean)
