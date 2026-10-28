@@ -22,3 +22,5 @@ export function open_dialog({ title, content, buttons = [], width = 440, on_open
     body: <div className="grid gap-4 sm:col-span-2">{content}</div>,
     submit: p ? p.label : undefined,
     on_submit: p ? (v, f) => (p.action ? p.action(f, v) : undefined) : undefined
+  });
+  if (on_open) on_open(qs('#modal form'));
