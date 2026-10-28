@@ -43,3 +43,4 @@ export async function process_uploads(files, mode) {
   const done = [], failed = [], notes = [];
   for (let i = 0; i < files.length; i++) {
     const f = files[i];
+    toast(`Converting ${f.name}${files.length > 1 ? ` (${i + 1} of ${files.length})` : ''}…`, 0);
