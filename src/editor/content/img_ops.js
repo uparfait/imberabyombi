@@ -13,3 +13,4 @@ export function img_op(img, fn) {
 }
 export function set_img_width(img, w) {
   img_op(img, x => {
+    x.style.width = clamp(Math.round(typeof w === 'function' ? w(x) : w), 16, img_max(x)) + 'px'; x.style.height = ''; x.removeAttribute('width'); x.removeAttribute('height');
