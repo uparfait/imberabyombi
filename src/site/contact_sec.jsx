@@ -10,3 +10,4 @@ export function contact_form() {
     <form data-form="contact" className="card grid gap-5 p-6 sm:grid-cols-2 sm:p-8" data-reveal="" style={{ '--d': '.1s' }} noValidate>
       <div data-msg-slot="" className="empty:hidden sm:col-span-2"></div>
       <div className="field"><label htmlFor="contact_name">Full name</label>
+        <input id="contact_name" name="name" autoComplete="name" required placeholder="Lorem Ipsum" /></div>
