@@ -12,3 +12,4 @@ const TONE_CLASS = { ok: 'bg-ok/15 text-ok', warn: 'bg-warn/15 text-warn', info:
 export const dash = () => <span className="text-muted">—</span>;
 
 export const badge = v => v ? <span className={`chip ${TONE_CLASS[TONE[v] || 'muted']}`}>{v}</span> : dash();
+export const tag = v => v ? <span className="chip bg-surface-2 text-fg/80">{v}</span> : dash();
