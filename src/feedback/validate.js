@@ -3,3 +3,4 @@
    and removed again by clear_err(). */
 import { esc, uid } from '../lib/index.js';
 import { ic_html } from '../icons/index.js';
+import { form_msg } from './messages.jsx';
