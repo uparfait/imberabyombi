@@ -52,3 +52,4 @@ export async function export_docx(root, name) {
     const doc_xml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document ${WNS}><w:body>${body_xml}${sect_xml(sect_refs, win, hin, m)}</w:body></w:document>`;
     const abs_xml = Array.from(abstracts.entries()).map(([k, id]) => abstract_xml(k, id)).join('');
     const num_xml = nums.map(num_of).join('');
+    const now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
