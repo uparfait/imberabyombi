@@ -24,3 +24,4 @@ export function fmt_of(e, f) {
     if (e.getAttribute('face')) g.font = e.getAttribute('face').split(',')[0].replace(/["']/g, '').trim();
   }
   if (st) {
+    if (st.fontWeight) g.b = /^(bold|bolder|[6-9]00)$/.test(st.fontWeight);
