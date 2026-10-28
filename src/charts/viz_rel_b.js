@@ -44,3 +44,4 @@ export const VIZ_REL_B = {
   dendrogram: { t: 'Dendrogram', g: 'rel', d: 'Items grouped by similarity, merged step by step.', f(w) {
     const leaves = uwords(8), f = frame(w, 260, { l: 10, r: 92, t: 10, b: 10 }), y = band(leaves.length, f.t, f.t + f.ih), x = linear(0, 4, f.w - f.r, f.l);
     /* merges: [a, b, height]; nodes 0-7 are leaves, then 8.. */
+    const merges = [[0, 1, .8], [2, 3, 1.1], [4, 5, .6], [6, 7, 1.4], [8, 9, 2.1], [10, 11, 2.6], [12, 13, 3.6]], pos = leaves.map((_, i) => ({ y: y(i), h: 0 }));
