@@ -28,3 +28,4 @@ export function validate(f) {
   f.noValidate = true;
   const els = [...f.elements], bad = els.filter(el => el.willValidate && !el.disabled && el.type !== 'hidden' && !el.checkValidity());
   els.forEach(el => el.getAttribute?.('aria-invalid') && clear_err(el));
+  const seen = new Set(); bad.forEach(el => { if (el.type === 'radio') { if (seen.has(el.name)) return; seen.add(el.name); } show_err(el, err_text(el)); });
