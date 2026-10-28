@@ -27,3 +27,5 @@ Use the existing helpers (`sec_head`, `more`, `hero_shell`, `kicker` styles) so 
 In `src/site/pages.jsx` add an entry to `PAGES`:
 ```js
 services: { t: 'Services', i: 'layers', top: () => services_sec(1) },
+```
+- `t` is the title (tab title, hero, menus), `i` an icon name from `src/icons/paths.js`, `top` the content above the
