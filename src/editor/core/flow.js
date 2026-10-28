@@ -51,3 +51,4 @@ export function div_to_block(d) {
   if (Array.from(d.children).some(c => BLOCK_RE.test(c.tagName))) { d.replaceWith(...d.childNodes); return; }
   const p = document.createElement('p');
   if (d.getAttribute('style')) p.setAttribute('style', d.getAttribute('style'));
+  while (d.firstChild) p.appendChild(d.firstChild);
