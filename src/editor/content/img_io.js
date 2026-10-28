@@ -33,3 +33,4 @@ export async function insert_image(src) {
   let w = Math.min(im.naturalWidth, host.clientWidth);
   if (im.naturalHeight * w / im.naturalWidth > host.clientHeight * 0.9) w = Math.floor(host.clientHeight * 0.9 * im.naturalWidth / im.naturalHeight);
   begin_op();
+  const img = el('img', { src, style: `width:${w}px`, alt: '', draggable: 'false' });
