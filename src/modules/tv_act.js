@@ -33,3 +33,4 @@ export const TV_ACT = {
     const err = date_err(k, v, db.find('tasks', id)); if (err) { show_err(inp, err); inp.focus(); return; }
     request(() => { db.upsert('tasks', { id, [k]: v }); task_refresh(id, 'Saved.'); }, { btn: t }); },
   tv_status_cancel: t => { const box = status_box(t), sel = box.querySelector('[data-status-pick]');
+    set_native_value(sel, db.find('tasks', box.dataset.tvStatus).status); sel.dispatchEvent(new Event('change', { bubbles: true })); },
