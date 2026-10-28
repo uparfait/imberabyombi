@@ -10,3 +10,4 @@ import { mini_draw } from '../admin/index.js';
 
 export const CALENDAR_ACT = {
   cal_today: () => cal_go(ymd()),
+  cal_nav: t => { const d = parse_d(ui.cal_date), n = +t.dataset.n; cal_go(ymd(ui.cal_view === 'month' ? new Date(d.getFullYear(), d.getMonth() + n, 1) : add_d(d, 7 * n))); },
