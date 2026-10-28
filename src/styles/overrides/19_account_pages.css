@@ -42,3 +42,4 @@
   .tile_pop { position: fixed; margin: 0; max-height: min(30rem, calc(100dvh - 9rem)); }   /* placed by placeTile() */
   .tile_pop > div { display: flex; min-height: 0; flex-direction: column; }
   .tile_grid { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+  .nav_avatar { display: grid; flex: none; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: var(--pill); background: rgb(var(--brand) / .15); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); font-size: .8125rem; font-weight: 600; }
