@@ -40,3 +40,4 @@ export function html_to_md(root) {
   const blocks = [];
   Array.from(root.children).forEach(b => {
     const t = b.tagName;
+    if (/^H[1-6]$/.test(t)) blocks.push('#'.repeat(+t[1]) + ' ' + inline(b).trim());
