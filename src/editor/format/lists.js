@@ -34,3 +34,5 @@ export function toggle_checklist(strike) {
   if (!l) return;
   begin_op(); l.classList.add('checklist'); l.style.listStyleType = '';
   if (strike) l.setAttribute('data-strike', ''); else if (strike === false) l.removeAttribute('data-strike');
+  end_op();
+}
