@@ -4,3 +4,4 @@ Every class below lives in [`src/styles/`](../src/styles/) and is used the same 
 one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 
 | Class                                   | Use                                                              |
+|-----------------------------------------|------------------------------------------------------------------|
