@@ -4,3 +4,5 @@
 import { clamp, toast, begin_op, end_op, body_index } from '../core/index.js';
 import { can_edit, previewing } from '../format/index.js';
 import { img_max, select_image, img_now } from './img_sel.js';
+
+/* fn(img) gets the image as it is in the document now */
