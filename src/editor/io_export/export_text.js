@@ -15,3 +15,4 @@ export function export_html(root, name) {
 }
 
 /* innerText needs the copy on the page (off screen); white-space:pre-wrap as in the document's styles keeps spaces */
+export function export_txt(root, name) {
