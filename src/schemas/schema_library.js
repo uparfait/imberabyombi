@@ -26,3 +26,4 @@ export const rentals_schema = {
     field_spec('returned', 'Returned on', 'date'), field_spec('status', 'Status', 'select', STATUS.rent, 1, { def: () => 'Rented' })
   ],
   r: { status: (v, row) => badge(v === 'Rented' && row.due < ymd() ? 'Overdue' : v) },
+  g: () => {
