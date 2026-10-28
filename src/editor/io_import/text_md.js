@@ -34,3 +34,4 @@ export function md_to_html(md) {
     if (/^\s*([-*_])(\s*\1){2,}\s*$/.test(l)) { out += '<hr>'; i++; continue; }
     if (/^\s*>/.test(l)) {
       const buf = []; while (i < lines.length && /^\s*>/.test(lines[i])) buf.push(lines[i++].replace(/^\s*>\s?/, ''));
+      out += `<blockquote>${buf.map(x => `<p>${md_inline(x) || '<br>'}</p>`).join('')}</blockquote>`; continue;
