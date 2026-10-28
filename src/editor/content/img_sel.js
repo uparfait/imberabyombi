@@ -37,3 +37,6 @@ export function img_now(img) {
   const w = where.get(img), b = w && w.path && bodies()[w.i], n = b && node_at(b, w.path);
   if (!n || n.tagName !== 'IMG') return img;
   where.set(n, w); return n;
+}
+
+export const pos_of = img => img.getAttribute('data-pos') || 'inline';
