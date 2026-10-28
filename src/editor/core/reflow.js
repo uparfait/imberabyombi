@@ -9,3 +9,4 @@ import { cur_sel, set_cur_sel, overflows, normalize_body, hoist_nested } from '.
 import { push_overflow, pull_up, sig, same_sig, is_blank_body, break_with_rest } from './split.js';
 import { fix_list_starts, join_conts, place_abs } from './collect.js';
 import { save_sel, restore_sel } from './selection.js';
+import { schedule_ui } from './schedule.js';
