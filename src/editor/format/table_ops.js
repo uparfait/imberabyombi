@@ -71,3 +71,5 @@ export function tbl_op(op, arg) {
   if (!target && !c.td.isConnected && alive.length) target = alive[0].rows[0] && alive[0].rows[0].cells[0];
   if (!c.host.firstElementChild) c.host.innerHTML = '<p><br></p>';
   end_op(body_index(c.host), full);
+  if (target && target.isConnected) caret_to_start(target);
+}
