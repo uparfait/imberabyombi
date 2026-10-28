@@ -42,3 +42,4 @@ export function end_op(pi, full = false) { reflow(pi == null ? current_page() : 
 export function apply_snap(s) {
   if (!pages_el) return;
   hide_img_sel();
+  let ws = page_wraps();
