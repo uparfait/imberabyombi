@@ -18,3 +18,4 @@ export function layout_page(wrap) {
   const { w, h } = dims(), s = state.setup, m = s.margins, z = state.zoom;
   const page = wrap.firstElementChild, body = qs('.pg_body', page), hd = qs('.pg_header', page), ft = qs('.pg_footer', page);
   page.style.width = w + 'px';
+  page.style.background = s.page_color || '#fff';
