@@ -28,3 +28,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
       shown.current = list; set_view(v => ({ files: list, quiet, gen: v.gen + 1 }));
     };
     /* File dialog closed without choosing: stop the waiting spinner (cancel event, plus a focus fallback for older browsers) */
+    let blurred = false;
