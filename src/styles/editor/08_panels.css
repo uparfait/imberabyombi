@@ -56,3 +56,4 @@ textarea.c_input { border-radius: calc(var(--radius) * .75); }
 
 /* Link bubble: shown and placed under the caret by the engine (display flex) */
 #link_bubble {
+  position: fixed; z-index: 45; display: none; align-items: center; gap: .25rem; max-width: min(22.5rem, calc(100vw - 1rem));
