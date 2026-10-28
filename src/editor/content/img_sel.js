@@ -23,3 +23,4 @@ export let img_sel = null;
 export let replace_target = null;
 export const set_replace_target = img => { replace_target = img; };
 /* the box is made on first use (never at module load) */
+export const ensure_img_box = () => img_box || (img_box = el('div', { class: 'img_sel' }, BOX_HTML()));
