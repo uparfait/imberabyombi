@@ -33,3 +33,4 @@ export function layout_page(wrap) {
       top: Math.max(12, m.top * DPI / 2 - 9) + 'px' });
     Object.assign(ft.style, { display: (s.footer || s.page_numbers) ? 'flex' : 'none', left: m.left * DPI + 'px', right: m.right * DPI + 'px',
       bottom: Math.max(12, m.bottom * DPI / 2 - 9) + 'px' });
+    qs('.pg_footer_text', page).style.visibility = s.footer ? 'visible' : 'hidden';
