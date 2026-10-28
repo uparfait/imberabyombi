@@ -10,3 +10,4 @@ export const auth_shell = (title, text, body) => (
   <main id="main" className="flex min-h-[100dvh] flex-col">
     <div className="flex justify-end p-2 sm:p-4">{theme_btn()}</div>
     <section className="mx-auto flex w-full max-w-[28rem] flex-1 flex-col px-6 pb-8 pt-4 sm:my-auto sm:flex-none sm:rounded-3xl sm:border sm:border-line sm:px-10 sm:py-12">
+      {logo()}
