@@ -25,3 +25,4 @@ export function public_page(r) {
 }
 
 /* Signed out: to sign-in (then back here). A session whose role is gone: signed out. Both return null (the page stays) */
+export function admin_page(r) {
