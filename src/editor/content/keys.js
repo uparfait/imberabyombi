@@ -35,3 +35,4 @@ export function pages_keydown(e) {
   const bs = bodies(), pi = bs.indexOf(host);
   if (e.key === 'Tab') { e.stopPropagation(); handle_tab(e, r, host); return; }
   if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { done(e); set_last(r.cloneRange(), host); insert_page_break(); return; }
+  if (!r.collapsed || e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
