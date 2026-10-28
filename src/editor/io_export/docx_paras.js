@@ -29,3 +29,5 @@ export function para_xml(e, ctx) { const base = e.tagName === 'PRE' ? { font: 'C
 export const NUMFMT = {
   'decimal': 'decimal', 'decimal-leading-zero': 'decimalZero', 'lower-alpha': 'lowerLetter', 'lower-latin': 'lowerLetter', 'upper-alpha': 'upperLetter',
   'upper-latin': 'upperLetter', 'lower-roman': 'lowerRoman', 'upper-roman': 'upperRoman'
+};
+export function list_kind(l) { const t = (l.style.listStyleType || '').trim(); if (l.tagName === 'OL') return NUMFMT[t] ? t : 'decimal'; return t || 'disc'; }
