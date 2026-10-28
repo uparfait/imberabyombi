@@ -52,3 +52,4 @@ arrows in menus) · pointer and focus (tooltips, chart hover) · scroll and resi
 
 ## Keyboard shortcuts
 `Esc` closes the top layer (picker, menu, then dialog) · `Ctrl K` / `⌘K` opens the command palette · `Alt + ↓` or `F4`
+opens a picker · arrows move in menus and pickers · `Enter` picks.
