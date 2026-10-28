@@ -11,3 +11,4 @@ import { skip_after_render } from './render_hooks.js';
 class Page_guard extends Component {
   state = { err: null, v: null };
   static getDerivedStateFromError(err) { return { err }; }
+  static getDerivedStateFromProps(p, s) { return p.v !== s.v ? { err: null, v: p.v } : null; }   /* React logs the error */
