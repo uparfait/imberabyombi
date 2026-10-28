@@ -34,3 +34,6 @@ export function new_document() {
     if (!ok) return;
     state.title = 'Untitled document'; state.setup = default_setup(); state.comments = [];
     state.tabs = [new_tab('Tab 1')]; state.active = state.tabs[0].id;
+    render_all(); save_soon();
+  });
+}
