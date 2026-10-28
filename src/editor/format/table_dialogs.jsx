@@ -26,3 +26,4 @@ function Preset_grid({ start }) {
   const [preset, set_preset] = useState(start);
   return (<>
     <input type="hidden" name="preset" value={preset} />
+    <div className="preset_grid">{TABLE_PRESETS.map(p => (
