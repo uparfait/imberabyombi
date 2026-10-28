@@ -25,3 +25,4 @@ Use the existing helpers (`sec_head`, `more`, `hero_shell`, `kicker` styles) so 
 
 ## 2. Register the page
 In `src/site/pages.jsx` add an entry to `PAGES`:
+```js
