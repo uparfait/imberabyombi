@@ -13,3 +13,4 @@ export function header_tools(n = '') {
   return <><button className="icon_btn" data-act="cmdk" aria-label={`Search${key_hint('K') ? ` (${key_hint('K')})` : ''}`}>{ic('search')}</button>
       <a className="icon_btn hidden sm:inline-grid" href="#/ui" aria-label="Design system">{ic('layers')}</a>
       {theme_btn()}
+      <div className="relative">
