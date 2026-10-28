@@ -27,3 +27,4 @@
   .pg_header:empty, .pg_footer_text:empty { visibility: hidden; }
   .doc_content .cmt { background: none !important; border: 0 !important; }
   .pageless .page_wrap > .page { height: auto !important; min-height: 0 !important; }
+  .pageless .pg_body { margin: 0 !important; min-height: 0 !important; }
