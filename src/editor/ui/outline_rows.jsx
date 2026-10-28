@@ -44,3 +44,5 @@ function on_key(e, row) {
   const rows = outline_rows(row.parentElement).filter(r => !r.hidden), i = rows.indexOf(row), k = e.key, lvl = +row.dataset.lvl;
   if (e.altKey && e.shiftKey && (k === 'ArrowUp' || k === 'ArrowDown')) {
     e.preventDefault(); if (row._ti >= 0) moved(move_section_by(row._ti, k === 'ArrowUp' ? -1 : 1), true); return;
+  }
+  if ((k === 'F10' && e.shiftKey) || k === 'ContextMenu') { e.preventDefault(); open_section_menu(row, null, true); return; }
