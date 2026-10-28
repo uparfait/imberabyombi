@@ -31,3 +31,4 @@ export function refresh_toolbar() {
   let label = 'Normal text';
   if (blk) {
     const plain = !blk.classList.contains('title') && !blk.classList.contains('subtitle');
+    const st = STYLES.find(s => s.tag === blk.tagName && (s.cls ? blk.classList.contains(s.cls) : plain));
