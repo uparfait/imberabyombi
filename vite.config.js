@@ -14,5 +14,8 @@ export default defineConfig({
     rolldownOptions: {
       output: {
         /* React in its own file: it rarely changes, so returning visitors keep it cached when the site is updated */
+        codeSplitting: { groups: [{ name: 'react', test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/ }] }
+      }
+    }
   }
 });
