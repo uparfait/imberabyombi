@@ -18,3 +18,4 @@ export function image_size_dialog(img) {
     <label className="flex items-center gap-2 sm:col-span-2"><input type="checkbox" id="sz_lock" name="lock" defaultChecked /> Keep proportions</label>
     <p className="text-xs text-muted sm:col-span-2">The widest this image can be here is {max}px. Original size: {img.naturalWidth} × {img.naturalHeight}px.</p>
   </>, on_submit: () => {
+    const lock = qs('#sz_lock').checked, w = clamp(parseInt(qs('#sz_w').value) || w0, 16, max), h = Math.max(16, parseInt(qs('#sz_h').value) || h0);
