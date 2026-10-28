@@ -5,3 +5,5 @@ import { PATHS } from './paths.js';
 /* names are snake_case PATHS keys ('chev_d'); a reference-style name ('chevD') still finds its icon */
 export const icon_key = n => PATHS[n] ? n : String(n ?? '').replace(/[A-Z]/g, c => '_' + c.toLowerCase());
 export const icon_path = n => PATHS[icon_key(n)] || PATHS.diamond;
+
+export const ic = (n, c = 'w-5 h-5') => (
