@@ -22,3 +22,4 @@ export const bulletins_schema = {
   l: 'bulletin entry', n: 40, cols: ['student', 'term', 'subject', 'score', 'remark'],
   f: [
     field_spec('student', 'Student', 'list', () => names('students'), 1), field_spec('term', 'Term', 'select', TERMS, 1),
+    field_spec('subject', 'Subject', 'select', SUBJECTS, 1), field_spec('score', 'Score (0–100)', 'number', 0, 1, { min: 0, max: 100 }), field_spec('remark', 'Remark')
