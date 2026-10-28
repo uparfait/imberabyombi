@@ -6,3 +6,4 @@ text, spacing, radii and layout together. The rules live in
 [`src/styles/base/02_scaling.css`](../src/styles/base/02_scaling.css):
 
 ```css
+html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /* phones */
