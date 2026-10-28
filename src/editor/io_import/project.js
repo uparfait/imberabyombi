@@ -31,6 +31,7 @@ export function replace_tab(tabs, title) {
   if (state.tabs.length === 1 && state.title === 'Untitled document') state.title = title;
   cur.html = first.html; if (/^Tab \d+$/.test(cur.name)) cur.name = first.name;
   state.comments = state.comments.filter(c => c.tab !== cur.id);
+  state.tabs.splice(state.tabs.indexOf(cur) + 1, 0, ...rest);
 }
 /* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
 export function project_tabs(d) {
