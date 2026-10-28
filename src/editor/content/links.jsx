@@ -30,3 +30,4 @@ export function open_link_dialog(existing) {
     /* the page is inert while the dialog is open: close it at once, put the selection back, then edit */
     qs('#modal')?.close();
     if (range && range.startContainer.isConnected) { const s = getSelection(); s.removeAllRanges(); s.addRange(range); }
+    const host = restore_focus(); begin_op();
