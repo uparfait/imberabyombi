@@ -55,3 +55,4 @@ export function rotate_image(img, dir) {
   }, (w, h) => h);
 }
 export function flip_image(img, axis) {
+  return bake_image(img, (c, im) => {
