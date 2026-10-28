@@ -53,3 +53,4 @@ export async function export_docx(root, name) {
     const abs_xml = Array.from(abstracts.entries()).map(([k, id]) => abstract_xml(k, id)).join('');
     const num_xml = nums.map(num_of).join('');
     const now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
+    files.unshift(
