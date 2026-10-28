@@ -29,3 +29,4 @@ export async function unzip(buf) {
     cache.set(name, out); return out;
   }
   return {
+    names: () => Array.from(entries.keys()), has: n => !!find(n), bytes,
