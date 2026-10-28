@@ -31,3 +31,4 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
 .img_sel .se { right: -.3125rem; bottom: -.3125rem; cursor: nwse-resize; }
 
 /* The quick bar under a selected picture: position, alignment, all options, size */
+.img_bar {
