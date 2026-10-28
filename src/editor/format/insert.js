@@ -30,3 +30,5 @@ export function insert_block_at_caret(node) {
   const nx = node.nextElementSibling;
   if (!nx || !TEXT_BLOCK_RE.test(nx.tagName) || is_break(nx)) node.after(el('p', {}, '<br>'));
   return node;
+}
+export function insert_page_break() {
