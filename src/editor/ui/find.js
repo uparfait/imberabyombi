@@ -17,3 +17,4 @@ export function open_find() {
   i.focus(); i.select(); run_find();
 }
 export function close_find() {
+  if (refs.find_panel) refs.find_panel.classList.remove('show');
