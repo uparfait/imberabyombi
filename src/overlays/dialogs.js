@@ -25,3 +25,4 @@ export function request_close(d) {
 }
 /* "Discard changes?" in #confirm (drawn by <Dialog_hosts/>). yes runs on Discard: ACT.confirm_discard reads #confirm._yes */
 export function confirm_discard(yes) {
+  const c = qs('#confirm'); pick.close(); tip.hide(); c._yes = yes;
