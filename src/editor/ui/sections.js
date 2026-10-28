@@ -19,3 +19,4 @@ export function section_model() {
   const c = document.createElement('div'); c.innerHTML = collect_html();
   const blocks = Array.from(c.children), heads = [];
   blocks.forEach((b, i) => { if (b.matches(HEAD) && clean_text(b)) heads.push({ i, lvl: level_of(b) }); });
+  heads.forEach((h, k) => { const n = heads.slice(k + 1).find(x => x.lvl <= h.lvl); h.end = n ? n.i : blocks.length; });
