@@ -54,3 +54,4 @@ export function pages_click(e) {
 export function pages_pointerdown(e) {
   const img = e.target.closest && e.target.closest('.pg_body img'); if (!img || e.button > 0 || state.mode !== 'edit') return;
   const host = editable_of(img);
+  if (is_abs(img)) { if (document.activeElement !== host) host.focus({ preventScroll: true }); }
