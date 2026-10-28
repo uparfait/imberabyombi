@@ -4,3 +4,4 @@
    its command palette) do not also run. Keys inside a template dialog are left to it. */
 import { pages_el, editable_of, undo, redo } from '../core/index.js';
 import { hide_link_bubble, open_link_dialog, add_comment, set_paste_plain } from '../content/index.js';
+import { paint, stop_paint, clear_formatting, set_block_style, toggle_list, toggle_checklist, exec, bump_size, indent } from '../format/index.js';
