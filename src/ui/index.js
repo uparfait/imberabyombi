@@ -5,3 +5,4 @@ export * from './cells.jsx';
 export * from './player.jsx';
 export * from './widgets.jsx';
 export * from './search.jsx';
+export * from './search_html.js';
