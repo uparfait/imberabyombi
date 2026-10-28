@@ -17,3 +17,4 @@ function page_lines(tc) {
   return lines;
 }
 export async function pdf_to_html(buf) {
+  await load_script(LIB.pdfjs); const lib = window.pdfjsLib; lib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
