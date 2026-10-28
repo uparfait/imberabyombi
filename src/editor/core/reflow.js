@@ -26,3 +26,4 @@ export function reflow(cur = 0, full = false) {
     const b = bs[i];
     normalize_body(b); hoist_nested(b);
     const before = sig(b);
+    let next = bs[i + 1] || null;
