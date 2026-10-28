@@ -72,3 +72,4 @@ async function docx_blocks(cx, nodes, container) {
       for (const tr of kids(n, 'tr')) {
         const row = document.createElement('tr');
         for (const tc of kids(tr, 'tc')) {
+          const td = document.createElement('td'), tc_pr = kids(tc, 'tcPr')[0], span = +(val(tc_pr && kids(tc_pr, 'gridSpan')[0]) || 1);
