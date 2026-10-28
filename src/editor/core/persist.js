@@ -36,9 +36,7 @@ export function save_doc(force) {
 export function save_soon() { clearTimeout(save_timer); save_timer = setTimeout(save_doc, 600); }
 set_on_change(save_soon);
 
-/* fill state from db; false when nothing (valid) is saved */
-export function restore_doc() {
-  const d = db.get(DOC_KEY);
+/* the saved document: IndexedDB first; a copy saved earlier in localStorage moves there */
   const tabs = d && Array.isArray(d.tabs) ? d.tabs.filter(t => t && typeof t === 'object') : [];
   if (!tabs.length) return false;
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
