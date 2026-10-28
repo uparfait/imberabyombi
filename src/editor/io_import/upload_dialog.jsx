@@ -3,3 +3,4 @@
    closed, with the cursor put back where it was when the dialog opened. */
 import { modal } from '../../overlays/index.js';
 import { state, qs, toast, last_range, last_host, set_last } from '../core/index.js';
+import { after_close } from '../format/index.js';
