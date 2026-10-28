@@ -6,3 +6,4 @@ export * from './qr_svg.js';
 export * from './otp_boxes.jsx';
 export * from './verify_page.jsx';
 export * from './authenticator_page.jsx';
+export * from './resend_in.js';
