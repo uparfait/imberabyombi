@@ -7,3 +7,4 @@ export * from './hover_preview.js';
 export * from './menu_engine.js';
 export * from './menu_keys.js';
 export * from './palette.js';
+export * from './dialogs.jsx';
