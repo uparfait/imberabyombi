@@ -39,3 +39,4 @@ export function layout_page(wrap) {
   wrap.style.height = (s.pageless ? page.offsetHeight : h) * z + 'px';
 }
 export function set_editable(wrap) {
+  const on = state.mode === 'edit' ? 'true' : 'false';
