@@ -28,3 +28,5 @@ Asset paths are relative (`base: './'` in `vite.config.js`), so it also works fr
 
 Internet access is used for fonts, sample photos (picsum.photos, i.pravatar.cc), the sample video and audio
 and the map embed. Broken images fall back to a branded placeholder.
+
+## Reset the demo
