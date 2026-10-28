@@ -15,3 +15,4 @@ export const DOCX_STYLES = `${XML}<w:styles xmlns:w="http://schemas.openxmlforma
   + sty('Heading1', 'heading 1', '<w:keepNext/><w:spacing w:before="400" w:after="120"/><w:outlineLvl w:val="0"/>', '<w:sz w:val="40"/><w:szCs w:val="40"/>')
   + sty('Heading2', 'heading 2', '<w:keepNext/><w:spacing w:before="360" w:after="120"/><w:outlineLvl w:val="1"/>', '<w:sz w:val="32"/><w:szCs w:val="32"/>')
   + sty('Heading3', 'heading 3', '<w:keepNext/><w:spacing w:before="320" w:after="80"/><w:outlineLvl w:val="2"/>',
+    '<w:color w:val="434343"/><w:sz w:val="28"/><w:szCs w:val="28"/>')
