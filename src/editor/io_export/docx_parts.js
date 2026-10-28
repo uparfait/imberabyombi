@@ -35,3 +35,4 @@ export const docx_doc_rels = rels => `${XML}<Relationships xmlns="${PR}"><Relati
 export const docx_header = (html, plain) => { const d = el('div'); d.innerHTML = html; return `${XML}<w:hdr ${WNS}>${blocks_xml(d, plain) || '<w:p/>'}</w:hdr>`; };
 export const docx_footer = (s, plain) => {
   const d = el('div'); d.innerHTML = s.footer ? s.footer_html : '';
+  return `${XML}<w:ftr ${WNS}><w:p><w:pPr><w:tabs><w:tab w:val="right" w:pos="${plain.content_tw}"/></w:tabs></w:pPr>${inline_xml(d, {}, plain)}`
