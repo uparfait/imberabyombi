@@ -18,3 +18,5 @@ export const tasks_schema = {
     field_spec('end', 'Completed on', 'datetime-local', 0, 0, { when: 'Done', def: () => now_dt() }),
     field_spec('priority', 'Priority', 'select', STATUS.prio), field_spec('notes', 'Notes', 'textarea'), field_spec('subs', 'Subtasks', 'subtasks'),
     field_spec('files', 'Attachments', 'files')
+  ],
+  r: { assignee: v => person_you(v), by: v => person_you(v), due: (v, r) => due_tag(r), subs: (v, r) => sub_progress(r) },
