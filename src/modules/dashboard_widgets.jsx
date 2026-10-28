@@ -43,3 +43,4 @@ export function dash_widgets(u) {
       <ul className="mt-4 grid gap-3">{open.length ? open.map(task_li) : none('All tasks complete.')}</ul></section>); }
   if (auth.can('calendar')) { const up = cal_items().filter(i => i.date >= ymd()).sort((a, b) => (a.date + a.start).localeCompare(b.date + b.start)).slice(0, 5);
     W.push(<section key="cal" className="card p-5">{head('Coming up', '/admin/calendar', 'Calendar')}<ol className="mt-4 grid gap-3">
+      {up.length ? up.map(up_li) : none('Nothing scheduled.')}</ol></section>); }
