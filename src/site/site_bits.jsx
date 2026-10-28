@@ -6,3 +6,4 @@ export const PUB = [['about', 'About'], ['mission', 'Mission'], ['vision', 'Visi
   ['partners', 'Partners'], ['thanks', 'Thanks'], ['contact', 'Contact']];
 
 /* Brand artwork shell: used by home hero, page heroes, login and admin greeting */
+export const wave = () => (
