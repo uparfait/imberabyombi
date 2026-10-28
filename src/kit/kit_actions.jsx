@@ -4,3 +4,5 @@ import { Fragment } from 'react';
 import { ic } from '../icons/index.js';
 import { badge, tag, tabs } from '../ui/index.js';
 import { cfg } from '../config/index.js';
+
+export const kit_actions = () => (
