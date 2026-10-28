@@ -10,3 +10,4 @@ import { media_err } from './media.js';
 const TITLES = { ok: 'Saved', bad: 'Could not save', warn: 'Check this first', info: 'Good to know' };
 
 export const DEMO_ACT = {
+  mp_play: t => { const w = t.closest('[data-mp]'), m = w?._m; if (m) m.paused ? m.play().catch(() => media_err(w)) : m.pause(); },
