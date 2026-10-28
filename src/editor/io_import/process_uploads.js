@@ -66,3 +66,4 @@ export function pick_any(cb) {
 }
 /* each file as a downloadable chip at the cursor (one undo step) */
 export async function attach_files(files) {
+  if (!files.length || !can_edit()) return;
