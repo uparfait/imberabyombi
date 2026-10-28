@@ -19,3 +19,4 @@ export function tiers() {
         ))}</ul></article>
     ))}</div>
       <div className="card mt-10 overflow-x-auto p-2"><table><caption className="px-4 pt-3">{lorem.t(3)}</caption>
+        <colgroup><col /><col /><col className="hl" /><col /></colgroup>
