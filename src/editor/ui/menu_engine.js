@@ -62,3 +62,4 @@ export function open_menu(anchor, items, opts = {}) {
   m._out = 'editor';   // the template's close_pops() leaves a .pop with _out set alone: this engine closes its own menus
   m.addEventListener('mousedown', e => { if (!e.target.closest('input,select,textarea,label')) e.preventDefault(); });
   for (const it of items.filter(Boolean)) {
+    if (it.sep) m.appendChild(el('hr', { class: 'my-1' }));
