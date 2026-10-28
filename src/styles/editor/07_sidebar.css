@@ -22,6 +22,7 @@ input.tab_filter, .tab_filter input {
   display: block; width: 100%; min-height: 0; margin: 0 0 .5rem; padding: .375rem .875rem; border-radius: var(--pill);
   font-size: .8125rem; line-height: 1.25rem;
 }
+.tab_scroll { display: flex; flex-direction: column; gap: .375rem; }   /* room between the tabs */
 .tab_scroll.many { max-height: min(55dvh, 30rem); overflow-y: auto; overscroll-behavior: contain; }
 .tab_row {
   position: relative; display: flex; align-items: center; gap: .625rem; min-height: 2.75rem; padding: 0 .25rem 0 1rem;
