@@ -32,3 +32,5 @@ export function load_script(urls) {
         await new Promise((res, rej) => {
           const s = document.createElement('script'); s.src = u; s.onload = res;
           s.onerror = () => { s.remove(); rej(new Error('load failed: ' + u)); }; document.head.appendChild(s);
+        });
+        return;
