@@ -10,3 +10,4 @@ const icon_btn = (id, icon, tip, cls = 'icon_btn') => (
 );
 
 export const workspace = () => (
+  <div id="workspace">
