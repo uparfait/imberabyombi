@@ -36,3 +36,4 @@ export function list_xml(l, lvl, ctx, num_id) {
   if (num_id == null && !l.classList.contains('checklist')) num_id = ctx.new_num(l);
   let out = '';
   const sub_id = sub => sub.tagName === l.tagName && list_kind(sub) === list_kind(l) ? num_id : undefined;
+  Array.from(l.children).forEach(li => {
