@@ -8,3 +8,4 @@ import { viz_tip } from '../charts/index.js';
 export const viz_point = e => { const v = e.target.closest?.('.viz_plot [data-tt], .kpi [data-tt]'); v ? viz_tip.show(v, e.clientX, e.clientY) : viz_tip.cur && viz_tip.hide(); };
 
 function on_focusin(e) {
+  const t = e.target;
