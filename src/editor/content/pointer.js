@@ -10,3 +10,4 @@ import { data_ur_lto_blob } from '../io_import/index.js';
 import { select_image, hide_img_sel } from './img_sel.js';
 import { start_img_drag, take_drag_click } from './img_drag.js';
 import { render_comments } from './comment_cards.js';
+import { activate_comment } from './comments.js';
