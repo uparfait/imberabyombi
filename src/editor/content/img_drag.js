@@ -56,3 +56,4 @@ function finish() {
 function on_up(ev) {
   if (!drag || ev.pointerId !== drag.id) return;
   const d = finish(), img = d.img; swallow();   // the press already selected the image: the click that follows is not a click
+  if (!d.moved) { if (d.through) { hide_img_sel(); const p = drop_point(ev.clientX, ev.clientY, img); if (p) set_caret(p.node, p.off); } return; }
