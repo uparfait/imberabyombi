@@ -54,3 +54,4 @@ export function draw_v_ruler() {
     + `<g class="r_handle v" data-handle="top" transform="translate(0 ${ty})">${knob}</g><g class="r_handle v" data-handle="bottom" transform="translate(0 ${by})">${knob}</g></svg>`;
 }
 /* the dragged margin's value next to the pointer: a label drawn like the template tooltip (#tip itself is hidden by the
+   template's hover handling whenever the ruler redraws under the pointer) */
