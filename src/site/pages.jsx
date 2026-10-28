@@ -30,3 +30,6 @@ export const PAGES = {
   thanks: { t: 'Thanks', i: 'heart', top: () => thanks_sec(1) },
   contact: { t: 'Contact', i: 'mail', top: () => contact_sec(1) },
   sitemap: { t: 'Site map', i: 'grid', top: () => sitemap() }
+};
+
+export const page_hero = (crumb, title, lead, icon) => (
