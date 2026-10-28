@@ -7,3 +7,4 @@ import { menu_stack, open_menu, toggle_menu, close_menus, on_outside_down } from
 import { unpeek } from './hover_preview.js';
 import { MENUS } from './menus.js';
 import { install_find } from './find.js';
+import { on_selection, stop_sel_timer } from './toolbar_state.js';
