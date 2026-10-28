@@ -14,3 +14,4 @@ export function contact_form() {
       <div className="field"><label htmlFor="contact_email">Email</label>
         <input id="contact_email" name="email" type="email" autoComplete="email" required placeholder="you@lorem.io" /></div>
       <div className="field"><label htmlFor="contact_phone">Phone</label>
+        <input id="contact_phone" name="phone" type="tel" autoComplete="tel" placeholder="+250 7xx xxx xxx" /></div>
