@@ -36,3 +36,4 @@ export function restyle_table(chain) {
   const hdr = chain[0].hasAttribute('data-header'), str = chain[0].hasAttribute('data-striped');
   chain_rows(chain).forEach((r, i) => Array.from(r.cells).forEach(c => {
     if (i === 0 && hdr) c.setAttribute('data-hdr', ''); else c.removeAttribute('data-hdr');
+    if (c.style.backgroundColor && !c.hasAttribute('data-autobg')) return;
