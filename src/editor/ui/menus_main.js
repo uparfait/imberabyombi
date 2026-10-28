@@ -26,3 +26,4 @@ export function file_items() {
     cmd('Upload files…', 'upload_file', () => open_upload_dialog(), 'Ctrl+O'),
     cmd('Open and replace document…', 'folder_open', () => pick_file('open')),
     cmd('Import into new tab…', 'tab', () => pick_file('tab')),
+    cmd('Insert file at cursor…', 'input', () => pick_file('insert')),
