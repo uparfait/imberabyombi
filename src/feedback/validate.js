@@ -26,3 +26,4 @@ export function show_err(el, msg) {
 }
 export function validate(f) {
   f.noValidate = true;
+  const els = [...f.elements], bad = els.filter(el => el.willValidate && !el.disabled && el.type !== 'hidden' && !el.checkValidity());
