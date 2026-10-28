@@ -34,3 +34,4 @@ export const PAGES = {
 
 export const page_hero = (crumb, title, lead, icon) => (
   <section className="wrap pt-3 sm:pt-6">{hero_shell(
+    <div className="relative grid items-center gap-8 px-6 pb-20 pt-10 sm:px-12 sm:pb-24 sm:pt-14 md:grid-cols-[1fr_auto]">
