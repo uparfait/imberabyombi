@@ -27,8 +27,7 @@
 .title_input:hover { border-color: rgb(var(--line)); }
 .title_input:focus { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
 
-/* Menu bar: pill buttons like the template's nav links; the open menu's button is tinted */
-#menubar { display: flex; flex-wrap: wrap; gap: .0625rem; margin-left: -.25rem; }
+/* Menu bar: pill buttons like the template's nav links; the open menu's button is tinted. One row: on a narrow screen it
 .menubar_btn {
   padding: .1875rem .625rem; border-radius: var(--pill); font-size: .875rem; font-weight: 500; line-height: 1.25rem;
   color: rgb(var(--fg) / .8); transition: background-color .15s, color .15s;
