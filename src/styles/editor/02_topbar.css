@@ -7,3 +7,4 @@
   transition: grid-template-rows .3s var(--ease), opacity .25s var(--ease), visibility 0s linear .3s;
 }
 #topbar.show {
+  grid-template-rows: 1fr; opacity: 1; visibility: visible;
