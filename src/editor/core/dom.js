@@ -37,3 +37,5 @@ export function position_at(root, k) {
   for (const t of ts) { if (k <= acc + t.length) return { node: t, offset: Math.max(0, k - acc) }; acc += t.length; }
   if (ts.length) { const t = ts[ts.length - 1]; return { node: t, offset: t.length }; }
   return { node: root, offset: 0 };
+}
+export function top_block(host, n) { if (!n || n === host) return null; while (n && n.parentNode !== host) n = n.parentNode; return n; }
