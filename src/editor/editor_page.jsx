@@ -12,3 +12,4 @@ function Editor_view() {
   const root = useRef(null);
   useEffect(() => {
     const stop = editor_start(root.current);
+    return () => { if (typeof stop === 'function') stop(); };
