@@ -8,3 +8,4 @@ export const cfg = {
   face: n => `https://i.pravatar.cc/320?img=${(n % 70) + 1}`,
   hero: 'https://uparfait.github.io/uparfait/favicon.ico' /* home hero portrait */,
   video: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+  audio: 'https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3',
