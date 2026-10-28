@@ -17,3 +17,4 @@ export const KEEP_ATTR = new Set(['colspan', 'rowspan', 'start', 'alt', 'width',
   'data-align', 'data-hdr', 'data-autobg', 'data-header', 'data-striped', 'data-style', 'download', 'title']);
 /* an image in front of / behind the text keeps its place on the page (and the page it is on, data-page) */
 const ABS_STYLE = ['position', 'left', 'top', 'z-index'];
+/* data-pos of the original editor: left / right are now wrap_left / wrap_right */
