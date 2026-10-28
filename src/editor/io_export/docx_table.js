@@ -5,3 +5,4 @@ import { inline_xml, parse_pt } from './docx_runs.js';
 import { p_pr_xml, para_xml, list_xml } from './docx_paras.js';
 
 export function table_xml(t, ctx) {
+  const rows = Array.from(t.rows); if (!rows.length) return '';
