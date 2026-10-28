@@ -8,3 +8,4 @@ import { legend } from './viz_legend.jsx';
 
 export const VIZ_TIME_A = {
   line: { t: 'Line graph', g: 'time', d: 'Trends over time. Lines are labelled at their ends.', f(w) {
+    const m = MONTHS(), s = SER.slice(0, 3), v = s.map((_, j) => { let a = rnd(30, 60); return m.map(() => (a = Math.max(5, a + rnd(-8, 10) + j))).map(x => x * MARGIN()); });
