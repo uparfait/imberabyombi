@@ -32,3 +32,4 @@ export function wrap_selection(cls, attrs = {}) {
   document.execCommand('fontName', false, marker);
   document.execCommand('styleWithCSS', false, true);
   const out = [];
+  qsa('font', host).filter(f => f.getAttribute('face') === marker).forEach(f => {
