@@ -4,3 +4,5 @@
 import { qsa } from './utils.js';
 import { bodies, is_abs, same_kind, first_flow, last_flow, prev_flow } from './dom.js';
 import { merge_into } from './flow.js';
+
+export function fix_list_starts() {
