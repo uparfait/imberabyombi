@@ -15,3 +15,4 @@ export function render_tab() {
   if (!pages_el) return;
   hide_img_sel(); close_menus(0); pages_el.innerHTML = '';
   const t = active_tab(); if (!t) return;
+  if (!Array.isArray(t.undo)) t.undo = []; if (!Array.isArray(t.redo)) t.redo = [];
