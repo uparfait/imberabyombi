@@ -19,3 +19,4 @@ export const sub_item = (x = {}) => <div key={x.key} ref={tie(x.key)} className=
 export const sub_group = (g = {}) => <div key={g.key} ref={tie(g.key)} className="sub_group" data-sub-group="">
   <div className="flex items-center gap-2"><input className="sub_title" defaultValue={g.t || ''} placeholder="Subtask title" aria-label="Subtask title" />
     <button type="button" className="icon_btn h-9 w-9 shrink-0" data-act="sub_rm_group" aria-label="Remove subtask">{ic('trash', 'h-4 w-4')}</button></div>
+  <div className="grid gap-1.5 pl-2" data-sub-items="">{(g.items || []).map(x => sub_item(x))}</div>
