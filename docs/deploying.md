@@ -11,6 +11,8 @@ By default the site is built for the domain root (`https://example.com/`). To se
 ```bash
 BASE_PATH=/my-site/ npm run build          # macOS, Linux, Git Bash
 $env:BASE_PATH='/my-site/'; npm run build  # Windows PowerShell
+```
+Asset paths and every link in the app follow it.
 ## GitHub Pages
 1. Build: `npm run build`.
 2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` and
