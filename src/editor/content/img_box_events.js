@@ -9,3 +9,4 @@ import { image_menu_items } from './img_menu.js';
 import { start_img_drag } from './img_drag.js';
 
 function resize(e, h) {
+  e.preventDefault(); e.stopPropagation();
