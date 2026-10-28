@@ -50,3 +50,4 @@ export function draw_v_ruler() {
   const ty = m.top * DPI * z, by = (hin - m.bottom) * DPI * z, x = u(2), w = u(17);
   const knob = `<rect class="knob" x="${x}" y="${-u(2)}" width="${w}" height="${u(4)}" rx="${u(1)}"/><rect x="0" y="${-u(6)}" width="${u(20)}" height="${u(12)}" fill="transparent"/>`;
   vruler.innerHTML = `<svg width="${u(20)}" height="${H}" style="position:absolute;left:0;top:${top}px;overflow:visible"><rect class="r_bg" x="${x}" y="0" width="${w}" height="${H}"/>`
+    + `<rect class="r_margin" x="${x}" y="0" width="${w}" height="${ty}"/><rect class="r_margin" x="${x}" y="${by}" width="${w}" height="${H - by}"/>${ruler_ticks(hin, m.top, false, z)}`
