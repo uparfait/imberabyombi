@@ -57,3 +57,4 @@ export function push_overflow(b, next) {
   while (overflows(b) && g++ < 500) {
     const last = last_flow(b);
     if ((is_list(last) || is_table(last)) && items_of(last).length > 1) { split_container(last, b, next); continue; }
+    if (is_splittable_text(last) && split_text(last, b, next)) continue;
