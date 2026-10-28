@@ -24,3 +24,4 @@ export function download(blob, name) {
 export const script_cache = {};
 export function load_script(urls) {
   const key = urls[0];
+  if (script_cache[key]) return script_cache[key];
