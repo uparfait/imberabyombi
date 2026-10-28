@@ -10,3 +10,7 @@ export const pager = (c, p, n) => (
     <button className="btn btn_ghost btn_sm" data-act="page" data-col={c} data-n="-1" disabled={p <= 1}>{ic('chev_l', 'h-4 w-4')}Back</button>
     <span className="text-sm tabular-nums text-muted" aria-live="polite">{`${p} of ${n}`}</span>
     <button className="btn btn_ghost btn_sm" data-act="page" data-col={c} data-n="1" disabled={p >= n}>Next{ic('chev_r', 'h-4 w-4')}</button>
+  </>
+);
+
+/* Table tools. Settings (left): rows per page (10, 20, 50) and which columns show, remembered per table in this browser.
