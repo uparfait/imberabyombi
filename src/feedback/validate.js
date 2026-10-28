@@ -13,3 +13,4 @@ export function err_text(el) {
   if (v.rangeUnderflow) return `Use ${el.min} or more.`;
   if (v.rangeOverflow) return `Use ${el.max} or less.`;
   if (v.tooShort) return `Use at least ${el.minLength} characters.`;
+  if (v.badInput) return 'Enter a number.';
