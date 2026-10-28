@@ -4,3 +4,4 @@ import { xesc } from './docx_runs.js';
 
 export const XL_NS = 'http://schemas.openxmlformats.org/spreadsheetml/2006/main';
 export const XL_R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';
+export const XL_PR = 'http://schemas.openxmlformats.org/package/2006/relationships';
