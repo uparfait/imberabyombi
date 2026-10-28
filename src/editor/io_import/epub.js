@@ -3,3 +3,5 @@
 import { unzip } from './unzip.js';
 import { parse_xml, by_tag, dir_of, resolve_path } from './xml_helpers.js';
 import { PB } from './pptx.js';
+
+export async function epub_to_html(file) {
