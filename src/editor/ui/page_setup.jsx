@@ -49,3 +49,5 @@ export function page_setup_dialog() {
       const nm = {}; for (const k of SIDES) nm[k] = clamp(parseFloat(v['ps_' + k]) || 0, 0, 5);
       if (nm.left + nm.right > win - 1 || nm.top + nm.bottom > hin - 1) {
         form_msg(f, 'warn', 'Margins too large', 'Those margins leave no room for text. Make them smaller.'); return false;
+      }
+      const next = { pageless: v.fmt === 'pageless', orientation: v.ori === 'landscape' ? 'landscape' : 'portrait', paper: v.paper, margins: nm,
