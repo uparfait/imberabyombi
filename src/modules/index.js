@@ -11,3 +11,4 @@ export * from './tv_editor.jsx';
 export * from './tv_state.js';
 export * from './task_view_rows.jsx';
 export * from './task_comments.jsx';
+export * from './task_view.jsx';
