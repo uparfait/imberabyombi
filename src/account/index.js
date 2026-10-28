@@ -7,3 +7,4 @@ export * from './otp_boxes.jsx';
 export * from './verify_page.jsx';
 export * from './authenticator_page.jsx';
 export * from './resend_in.js';
+export * from './pw_rules.js';
