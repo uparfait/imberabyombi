@@ -21,3 +21,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.kv`                                   | COLUMN NAME / VALUE details table with category rows             |
 | `.tile_trigger` / `.tile_pop`           | "Your modules" style menu: a button dropping a grid of 3D tiles  |
 | `.viz_card` / `.kpi`                    | chart card / KPI card                                            |
+| `.selectable`                           | lets people select (copy) the text inside it                     |
