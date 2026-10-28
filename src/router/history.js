@@ -17,3 +17,4 @@ export const in_base = p => !BASE || p === BASE || p.startsWith(BASE + '/');
 export const app_path = (u = location) => (in_base(u.pathname) ? u.pathname.slice(BASE.length) : u.pathname) || '/';
 
 const here = () => location.pathname + location.search;
+let shown = null;   /* the address of the page on screen (parse() records it on every draw) */
