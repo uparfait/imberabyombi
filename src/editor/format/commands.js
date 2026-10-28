@@ -45,3 +45,4 @@ export function wrap_selection(cls, attrs = {}) {
   return out;
 }
 export function apply_inline_style(prop, value) {
+  if (!can_edit()) return;
