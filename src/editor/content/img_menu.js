@@ -13,3 +13,4 @@ import { image_size_dialog, alt_text_dialog } from './img_size.jsx';
 import { copy_image, download_image } from './img_io.js';
 
 const off = fn => () => { if (!previewing()) fn(); };
+function delete_image(img) {
