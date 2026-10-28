@@ -10,3 +10,4 @@ export function exec(cmd, val) {
   if (!can_edit()) return;
   const host = restore_focus(); begin_op();
   document.execCommand('styleWithCSS', false, true);
+  document.execCommand(cmd, false, val);
