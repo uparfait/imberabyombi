@@ -12,3 +12,4 @@ export function p_pr_xml(e, extra = '') {
   let x = style ? `<w:pStyle w:val="${style}"/>` : '';
   x += extra;
   const lh = parseFloat(st.lineHeight), pt = parse_pt(st.paddingTop), pb = parse_pt(st.paddingBottom);
+  if (lh || pt || pb) {
