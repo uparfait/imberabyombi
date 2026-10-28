@@ -9,3 +9,5 @@ import { kv_table } from '../table/index.js';
 import { VIZ } from './viz_charts.js';
 import { KPIS } from './kpi_parts.jsx';
 import { VIZ_OUT } from './viz_view.jsx';
+
+export const VIZ_PER = 20;
