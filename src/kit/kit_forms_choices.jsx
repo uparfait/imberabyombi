@@ -32,3 +32,7 @@ export function kit_forms_choices(brand_hex) {
         <input id="demo_range" type="range" defaultValue="40" data-out="#demo_range_out" /></div>
       <div className="grid content-start gap-3"><p className="text-sm font-semibold">Checkboxes</p>{[1, 0].map((c, i) => choice(c, i, 'checkbox'))}</div>
       <div className="grid content-start gap-3"><p className="text-sm font-semibold">Radios</p>{[1, 0].map((c, i) => choice(c, i, 'radio', 'krad'))}</div>
+      <div className="grid content-start gap-3"><p className="text-sm font-semibold">Switch</p>{[1, 0].map((c, i) => choice(c, i, 'checkbox', undefined, 'switch'))}</div>
+    </fieldset>
+  );
+}
