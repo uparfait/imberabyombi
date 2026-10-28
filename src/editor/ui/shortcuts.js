@@ -11,3 +11,4 @@ import { menu_key } from './menu_keys.js';
 import { find_state, open_find, close_find } from './find.js';
 import { word_count_dialog, shortcuts_dialog } from './info_dialogs.jsx';
 import { toggle_menus, do_print } from './view.js';
+import { step_tab } from './tabs.jsx';
