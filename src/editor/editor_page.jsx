@@ -13,3 +13,4 @@ function Editor_view() {
   useEffect(() => {
     const stop = editor_start(root.current);
     return () => { if (typeof stop === 'function') stop(); };
+  }, []);
