@@ -37,3 +37,4 @@ Small orange text uses `text-accent`: 80% brand mixed with 20% text colour. It s
 both themes and follows any brand change automatically. Use it instead of `text-brand` for small text.
 
 ## Changing tokens while the app runs
+Settings → Appearance edits brand, radius, spacing and font live. The overrides are stored (`tokens` key) and written as
