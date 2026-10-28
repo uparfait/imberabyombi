@@ -68,3 +68,4 @@ async function docx_blocks(cx, nodes, container) {
       if (pb) page_break();
     } else if (ln === 'tbl') {
       stack = [];
+      const t = document.createElement('table'); t.className = 'doc_table'; const tb = document.createElement('tbody'); t.appendChild(tb);
