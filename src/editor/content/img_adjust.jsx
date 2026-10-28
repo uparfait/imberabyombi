@@ -37,3 +37,4 @@ export function adjust_dialog(img) {
   const v = { ...START };
   modal({ title: 'Image adjustments', submit: 'Apply', body: <Adjust_body src={img.getAttribute('src')} v={v} />, on_submit: () => {
     if (!v.brightness && !v.contrast && v.saturation === 100 && !v.transparency) return;
+    const B = 1 + v.brightness / 100, C = 1 + v.contrast / 100, S = v.saturation / 100, A = 1 - v.transparency / 100;
