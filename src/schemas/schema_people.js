@@ -27,3 +27,6 @@ export const employees_schema = {
   ],
   g: () => ({
     name: lorem.name(), dept: lorem.pick(DEPTS), position: lorem.t(2), shift: lorem.pick(['Morning', 'Day', 'Evening']), phone: tel(),
+    salary: lorem.int(30, 90) * 10, status: lorem.pick(['Active', 'Active', 'On leave'])
+  })
+};
