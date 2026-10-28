@@ -38,3 +38,4 @@ export function enhance() {
   qsa('[data-type]:not(input)').forEach(typer);
   qsa('[data-mp]').forEach(init_player);
   spy?.disconnect(); spy = null;
+  if (route.path === '/' && io) {
