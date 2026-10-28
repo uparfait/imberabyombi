@@ -35,3 +35,4 @@
   .mail_event, .mail_move { display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * .75); }
   .mail_date { display: grid; flex: none; place-items: center; width: 4rem; padding: .375rem 0; border-radius: calc(var(--radius) * .75); line-height: 1.15; text-align: center;
     color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); background: rgb(var(--brand) / .1); }
+  .mail_date b { font-family: var(--font_display); font-size: 1.5rem; }
