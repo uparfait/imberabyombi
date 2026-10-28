@@ -19,3 +19,4 @@ const H12_RE = '(0[1-9]|1[0-2]):[0-5]\\d';
 export const dt_spec = t => { const s = DTF[t]; if (h24() || !/time/.test(t)) return s;
   return { ...s, ph: s.ph + ' AM', re: s.re.replace('([01]\\d|2[0-3]):[0-5]\\d', H12_RE) + H12, max: s.mask.length + 3 }; };
 /* The props of a text date/time input, spread on it: <input {...dt_attrs('date')} /> (the reference returned an attribute string) */
+export const dt_attrs = (t, ph) => { const s = dt_spec(t); return { type: 'text', 'data-type': t, inputMode: /time/.test(t) && !h24() ? 'text' : 'numeric',
