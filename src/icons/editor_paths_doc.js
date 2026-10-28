@@ -7,3 +7,4 @@ const BIN = 'M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6';
 const dot = (x, y) => `M${x} ${y + 1}a1 1 0 1 0 0-2 1 1 0 0 0 0 2z`;
 
 export const EDITOR_DOC_PATHS = {
+  undo: 'M9 5 4 10l5 5M4 10h11a5 5 0 0 1 0 10h-3',
