@@ -56,3 +56,4 @@ export function editor_start(root) {
     stopped = true; if (running === stop) running = null;
     clearTimeout(t0);
     live.cancel();
+    if (hist_timer) commit();
