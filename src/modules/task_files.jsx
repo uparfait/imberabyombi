@@ -38,3 +38,4 @@ export function file_preview(f) {
   return <>{media ? media(f) : <div className="grid justify-items-center gap-2 py-4 text-center">{i3('file', 'h-12 w-12')}
     <p className="text-sm text-muted">This type of file opens in the full viewer.</p></div>}
     <div className="mt-2 flex flex-wrap items-center justify-between gap-2"><span className="min-w-0 truncate text-sm font-medium">{f.name}</span>
+      <span className="flex gap-1"><button type="button" className="btn btn_ghost btn_sm" data-act="task_file_full">{ic('external', 'h-4 w-4')}Full view</button>
