@@ -15,3 +15,4 @@ The template is a complete front end with demo data in the browser. Before real 
 
 ## SEO and sharing
 - Update `index.html`: title, description, keywords, author, canonical URL, Open Graph image, JSON-LD values.
+- Update the domain in `public/robots.txt` and `public/sitemap.xml`.
