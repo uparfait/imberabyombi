@@ -59,3 +59,6 @@ function on_key(e, row) {
     if (row.querySelector('.outline_fold') && !row.classList.contains('folded')) { e.preventDefault(); toggle_fold(row, false); }
     else to(rows.slice(0, i).reverse().find(r => +r.dataset.lvl < lvl));
   } else if (k === 'Enter' || k === ' ') { e.preventDefault(); go(row); }
+}
+
+/* drag a section: the model is taken once (the document does not change during a drag) */
