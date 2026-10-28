@@ -37,6 +37,7 @@ export function save_soon() { clearTimeout(save_timer); save_timer = setTimeout(
 set_on_change(save_soon);
 
 /* the saved document: IndexedDB first; a copy saved earlier in localStorage moves there */
+export async function load_doc() {
   const tabs = d && Array.isArray(d.tabs) ? d.tabs.filter(t => t && typeof t === 'object') : [];
   if (!tabs.length) return false;
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
