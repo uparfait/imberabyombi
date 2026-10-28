@@ -24,3 +24,4 @@ export function table_menu_items() {
     { label: 'Merge with the cell on the right', icon: 'call_merge', action: () => tbl_op('merge') },
     { label: 'Unmerge cell', icon: 'call_split', action: () => tbl_op('split') },
     { label: 'Make columns equal width', icon: 'view_column', action: () => tbl_op('distribute') },
+    { sep: true },
