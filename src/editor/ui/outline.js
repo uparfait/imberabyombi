@@ -17,3 +17,4 @@ export function render_outline() {
   if (!hs.length) { ol.innerHTML = '<p class="outline_hint">Headings you add to the document will appear here.</p>'; return; }
   const t = active_tab(), folds = new Set((t && t.folds) || []), seen = {};
   let ti = 0, refocus = null;
+  ol.innerHTML = '';
