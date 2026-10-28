@@ -12,3 +12,4 @@ import { close_menus } from './menu_engine.js';
 import { confirm_dialog } from './dialogs.jsx';
 
 export function render_tab() {
+  if (!pages_el) return;
