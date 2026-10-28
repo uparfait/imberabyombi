@@ -5,3 +5,4 @@ import { DTF, dt_attrs } from '../fields/index.js';
 import { search_ui } from '../ui/index.js';
 
 const TYPES = [['text', 'Text'], ['email', 'Email'], ['password', 'Password'], ['number', 'Number'], ['tel', 'Phone'], ['url', 'URL'], ['search', 'Search'],
+  ['date', 'Date'], ['time', 'Time'], ['datetime-local', 'Date & time'], ['month', 'Month'], ['week', 'Week']];
