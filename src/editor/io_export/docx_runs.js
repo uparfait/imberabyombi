@@ -41,3 +41,4 @@ export function r_pr(f) {
   if (f.font) x += `<w:rFonts w:ascii="${xesc(f.font)}" w:hAnsi="${xesc(f.font)}" w:cs="${xesc(f.font)}"/>`;
   if (f.b) x += '<w:b/>'; if (f.i) x += '<w:i/>'; if (f.s) x += '<w:strike/>';
   if (f.color) x += `<w:color w:val="${f.color}"/>`;
+  if (f.size) x += `<w:sz w:val="${Math.round(f.size * 2)}"/><w:szCs w:val="${Math.round(f.size * 2)}"/>`;
