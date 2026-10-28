@@ -5,3 +5,4 @@ import { auth } from '../auth/index.js';
 /* =====================================================================
    7b. FEEDBACK SYSTEM
        Inline (instant, on the component): field errors, form results, blocked actions, media errors.
+       notify() bottom-right: completed background actions (saved, deleted, copied…) + system issues.
