@@ -23,3 +23,5 @@ const up_li = i => <li key={i.c + i.id} className="flex gap-3">
     <b className="font-display text-lg">{parse_d(i.date).getDate()}</b><small className="text-[10px]">
       {parse_d(i.date).toLocaleDateString(undefined, { month: 'short' })}</small></time>
   <div className="min-w-0"><p className="truncate text-sm font-medium">{i.title}</p><p className="text-xs text-muted">{`${i.start} – ${i.end}`}</p></div></li>;
+
+/* u: the signed-in person. Returns the cards as a list (each keyed) */
