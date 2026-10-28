@@ -29,3 +29,6 @@ export const buses_schema = {
   f: [F('plate', 'Plate', 'text', 0, 1), F('driver', 'Driver'), F('route', 'Route')],   // form fields
   r: { driver: v => person(v) },           // optional cell renderers (return JSX)
   g: () => ({ plate: 'RAB 100 A', driver: lorem.name(), route: lorem.t(2) })            // one demo row
+};
+```
+Register it in `src/schemas/schemas.js` (`buses: buses_schema` in `schemas`). Tables, forms, validation, details view, export, search and seed data follow.
