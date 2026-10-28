@@ -47,3 +47,4 @@ export function rtf_to_html(rtf) {
       continue;
     }
     if (ch === '\r' || ch === '\n') { i++; continue; }
+    let j = i; while (j < L && !'\\{}\r\n'.includes(rtf[j])) j++;
