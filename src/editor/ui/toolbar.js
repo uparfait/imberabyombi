@@ -62,3 +62,4 @@ export function install_toolbar(offs) {
   });
   listen(offs, si, 'focus', () => si.select());
   listen(offs, si, 'click', e => toggle_menu(si, size_items, { focus: e.detail === 0 }));
+  listen(offs, refs.image_open, 'change', e => { Array.from(e.target.files || []).forEach(f => insert_image_file(f)); e.target.value = ''; });
