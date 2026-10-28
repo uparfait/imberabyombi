@@ -10,3 +10,4 @@
   /* ── FEEDBACK SYSTEM ────────────────────────────────────────────────
      A. Bottom-right notifications: completed background actions + system issues */
   /* #toasts and #loader are manual popovers: the top layer keeps them above open dialogs (see raiseTop()) */
+  #toasts { position: fixed; z-index: 250; inset: auto; width: auto; height: auto; margin: 0; padding: 0; border: 0; background: none; overflow: visible; color: inherit; right: 1rem; left: 1rem; bottom: max(1rem, env(safe-area-inset-bottom)); display: grid; gap: .6rem; pointer-events: none; }
