@@ -14,8 +14,7 @@ export function ctx_menu() {
   const u = auth.user, on = document.documentElement.classList.contains('allow_select'), mi = i => ic_html(i, 'h-4 w-4 text-muted');
   const item = (h, l, i) => `<a class="menu_item" role="menuitem" href="${to(h)}">${mi(i)}${esc(l)}</a>`;
   const groups = u
-    ? [['Quick links', ['tasks', 'calendar'].map(k => MODS.find(m => m.k === k)).filter(m => m && auth.can(m.k)).map(m => ['#/admin/' + m.k, m.l, m.i])]].filter(([, l]) => l.length)
-    : [['Pages', [['#/', 'Home', 'home'], ...PUB.map(([k, l]) => ['#/' + k, l, PAGES[k].i]), ['#/login', 'Sign in', 'lock']]]];
+    ? [['Quick links', ['tasks', 'calendar'].map(k => MODS.find(m => m.k === k)).filter(m => m && auth.can(m.k)).map(m => ['/admin/' + m.k, m.l, m.i])]].filter(([, l]) => l.length)
   const kbd = key_hint('K') ? `<kbd class="ml-auto">${key_hint('K')}</kbd>` : '';
   const search = `<button type="button" class="menu_item" role="menuitem" data-act="cmdk">${mi('search')}Search${kbd}</button>`;
   const head = groups.map(([g, l]) => `<p class="ctx_label">${esc(g)}</p>${l.map(x => item(...x)).join('')}`).join('');
