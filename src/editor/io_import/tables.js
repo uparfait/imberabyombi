@@ -11,3 +11,4 @@ export async function fit_img_html(url, alt, inline) {
   try {
     const im = await load_img(url), { h } = dims(), m = state.setup.margins, max_h = (h - (m.top + m.bottom) * DPI) * 0.9;
     if (im.naturalWidth) {
+      w = Math.min(im.naturalWidth, content_width_px());
