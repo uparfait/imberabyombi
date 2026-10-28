@@ -23,3 +23,4 @@ export async function looks_like_text(file) {
 const json_lines = text => JSON.stringify(text.split(/\r?\n/).filter(l => l.trim()).map(l => { try { return JSON.parse(l); } catch { return null; } }).filter(x => x != null));
 
 export async function file_to_html(file) {
+  const name = file.name, ext = ext_of(name);
