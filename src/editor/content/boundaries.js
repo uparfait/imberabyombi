@@ -37,3 +37,4 @@ export function backspace_across(host, pi) {
   if (!last) { end_op(pi); return; }
   if (is_empty_block(first)) { first.remove(); caret_to_end(last); }
   else if (TEXT_BLOCK_RE.test(last.tagName) && TEXT_BLOCK_RE.test(first.tagName)) {
+    const cont = first.hasAttribute('data-cont') && same_kind(last, first);
