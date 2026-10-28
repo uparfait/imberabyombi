@@ -19,3 +19,5 @@ state.tabs.push(new_tab('Tab 1')); state.active = state.tabs[0].id;
 let on_change = () => {};
 export function set_on_change(fn) { on_change = fn; }
 export function state_changed() { on_change(); }
+
+export function active_tab() { return state.tabs.find(t => t.id === state.active); }
