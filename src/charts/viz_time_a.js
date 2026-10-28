@@ -37,3 +37,4 @@ export const VIZ_TIME_A = {
   step: { t: 'Step line chart', g: 'time', d: 'Values that change in jumps (prices, plans, levels).', f(w) {
     const m = MONTHS(); let a = 20; const v = m.map(() => (a = lorem.r() < .45 ? a : Math.max(5, a + Math.round(rnd(-6, 9)))));
     const f = frame(w, 230), ax = y_axis(f, Math.max(...v)), x = band(m.length, f.l, f.w - f.r);
+    const d = v.map((val, i) => `${i ? `H${round1(x(i))}V${round1(ax.y(val))}` : `M${round1(x(0))} ${round1(ax.y(val))}`}`).join('');
