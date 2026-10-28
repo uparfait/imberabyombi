@@ -2,3 +2,5 @@
    progress ring, rating, falling rate. k = kpi_data(); each card registers its table in KPIS. */
 import { num, scale_color, tip_attr } from './viz_math.js';
 import { spark, delta, kpi_card } from './kpi_parts.jsx';
+
+export const kpi_cards_b = k => {
