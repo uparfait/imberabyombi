@@ -1,0 +1,1 @@
+/* icons/paths.js: ICONS. One path dictionary feeds flat icons ic() and 3D icons i3() (24×24 stroke paths).
