@@ -11,3 +11,4 @@ import './editor_styles.css';
 function Editor_view() {
   const root = useRef(null);
   useEffect(() => {
+    const stop = editor_start(root.current);
