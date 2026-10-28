@@ -33,3 +33,4 @@ export function tv_rows(r, st) {
     <div className="tv_status_more" hidden={!st.more}>{st.more ? status_more() : null}</div></div>;
   return <>
     {sec('Details')}{row('title', 'Title', <span className="font-medium">{r.title}</span>, own)}
+    {row('notes', 'Notes', r.notes ? <p className="whitespace-pre-line">{r.notes}</p> : dash(), own)}
