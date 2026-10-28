@@ -28,3 +28,4 @@ export function layout_page(wrap) {
   } else {
     page.style.height = h + 'px'; page.style.minHeight = '';
     Object.assign(body.style, { position: 'absolute', margin: '', minHeight: '', top: m.top * DPI + 'px', bottom: m.bottom * DPI + 'px',
+      left: m.left * DPI + 'px', right: m.right * DPI + 'px' });
