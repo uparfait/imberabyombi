@@ -59,3 +59,4 @@ export function img_align_of(img) {
   return a === 'center' ? 'center' : (a === 'right' || a === 'end') ? 'right' : 'left';
 }
 export function position_img_box() {
+  if (!img_sel || frozen) return; if (!img_sel.isConnected) { hide_img_sel(); return; }
