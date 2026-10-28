@@ -50,3 +50,5 @@ function row_of(it, level) {
     });
     r.addEventListener('pointerleave', () => unpeek_key(it));
     r.addEventListener('click', () => { if (!it.disabled) pick(it, () => { if (it.action) it.action(); }, () => close_menus(0)); });
+  }
+  return r;
