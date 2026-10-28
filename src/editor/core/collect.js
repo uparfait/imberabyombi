@@ -8,3 +8,4 @@ import { merge_into } from './flow.js';
 export function fix_list_starts() {
   const bs = bodies();
   for (let i = 1; i < bs.length; i++) {
+    const f = first_flow(bs[i]);
