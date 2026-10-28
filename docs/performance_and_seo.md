@@ -10,3 +10,4 @@ The template is meant to run well on low-end phones, slow CPUs and small bandwid
   placeholder when they fail. Video and audio load only when played.
 - One render per change: views read data directly while they draw; the router redraws once per navigation.
 - Events are delegated: a handful of document listeners serve every button, so pages create no listeners per row.
+- Work that needs the screen (charts, reveal animations, count-ups) runs after the draw and only for what is visible.
