@@ -28,3 +28,4 @@ const event_card = (e, i) => <article key={e.id} className="card overflow-hidden
     <small className="text-[11px]">{parse_d(e.date).toLocaleDateString(undefined, { month: 'short' })}</small></time></figcaption></figure>
   <div className="p-5"><div className="flex items-center justify-between gap-2">{badge(e.status)}<span className="text-xs text-muted">{e.start || ''}</span>
     </div><h3 className="mt-3 text-lg">{e.title}</h3>
+    <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">{ic('pin', 'h-4 w-4')}{e.venue || '—'}</p><div className="mt-4">
