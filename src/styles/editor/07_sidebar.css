@@ -47,3 +47,4 @@ input.tab_filter, .tab_filter input {
   cursor: pointer; font-size: .8125rem; color: rgb(var(--fg) / .78); transition: background-color .15s, color .15s, opacity .15s;
 }
 .outline_item { padding-left: .625rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.outline_row:hover, .outline_item:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
