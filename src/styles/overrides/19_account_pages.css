@@ -9,3 +9,4 @@
   /* Design-system specimen of a notification (it never moves or times out) */
   .toast_still { animation: none; }
   .toast_still .bar { animation: none; transform: scaleX(.62); }
+  /* "Your modules" style menus (tileMenu): a button that drops a grid of 3D-icon tiles (nested navigation, email designs) */
