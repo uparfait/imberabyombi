@@ -9,3 +9,4 @@ export const masked = (t, s) => {
   const lim = { mo: [1, 12, 1], d: [3, 31, 1], w: [5, 53, 1], h: twelve ? [1, 12, 1] : [2, 23, 0], mi: [5, 59, 0] };   /* [max first digit, max value, min value] */
   let d = String(s).replace(/\D/g, ''), o = '', mins = '';
   for (let gi = 0; gi < groups.length && d; gi++) {
+    const [n, sep] = groups[gi], L = lim[spec.parts[gi]], raw = d.slice(0, n); let g = raw, used = raw.length;
