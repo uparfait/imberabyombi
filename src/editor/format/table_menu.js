@@ -28,3 +28,4 @@ export function table_menu_items() {
     { label: 'Table style', icon: 'style', sub: () => TABLE_PRESETS.map(p => ({ label: p.label, action: () => tbl_op('preset', p.key) })) },
     { label: 'Cell background', icon: 'format_color_fill', sub: () => [{ render: () => palette_el(col => tbl_op('cell_bg', col), 'None') }] },
     { label: 'Vertical alignment', icon: 'vertical_align_center', sub: () => VALIGN_ITEMS.map(([l, v, i]) => ({ label: l, icon: i, action: () => tbl_op('valign', v) })) },
+    { label: 'Border width', icon: 'border_style', sub: () => [0, 1, 2, 3].map(w => ({ label: w ? w + ' px' : 'No border', action: () => tbl_op('border', w) })) },
