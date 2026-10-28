@@ -24,3 +24,4 @@ export const scale_color = i => `var(--series_${(i % 8) + 1})`;
 export const sequential = p => `color-mix(in oklab, rgb(var(--brand)) ${Math.round(12 + p * 88)}%, rgb(var(--surface)))`;
 export const diverging = t => t >= 0
   ? `color-mix(in oklab, var(--series_1) ${Math.round(Math.min(1, t) * 100)}%, rgb(var(--surface_2)))`
+  : `color-mix(in oklab, var(--series_2) ${Math.round(Math.min(1, -t) * 100)}%, rgb(var(--surface_2)))`;
