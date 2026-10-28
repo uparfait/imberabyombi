@@ -18,3 +18,4 @@ Extras: `def` (default), `when` (`'Done'` / `'!Done'`, shown by status), `min`, 
 <form data-form="note" noValidate className="grid gap-4">
   <div data-msg-slot="" className="empty:hidden" />
   {field(F('title', 'Title', 'text', 0, 1), '')}
+  <button className="btn btn-primary">Save</button>
