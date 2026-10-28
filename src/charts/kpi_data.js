@@ -14,3 +14,4 @@ export function kpi_data() {
   const gauge_p = rnd(.45, .92), gauge_c = gauge_p > .85 ? 'rgb(var(--bad))' : gauge_p > .7 ? 'rgb(var(--warn))' : 'var(--series_1)';
   const gauge_s = gauge_p > .85 ? 'Almost full' : gauge_p > .7 ? 'Getting full' : 'Plenty of space';
   const services = [['API', 'ok', 'Operational'], ['Email', 'warn', 'Slower than usual'], ['Storage', 'ok', 'Operational']], o1 = 3480 * m, o2 = 3120 * m;
+  const visits = to(trend(), 18400 * m), vmax = Math.max(...visits);
