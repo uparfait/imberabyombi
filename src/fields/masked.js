@@ -20,3 +20,4 @@ export const masked = (t, s) => {
   return o;
 };
 export const kind_of = a => a.dataset.type || a.type;
+/* Show the rest of the format while typing (2026-1 → 2026-1M-DD, 09:30 → 09:30 AM); hidden when empty, complete or not focused */
