@@ -10,3 +10,4 @@ const choice = (c, i, type, name, role) => (
 
 export function kit_forms_choices(brand_hex) {
   const groups = (
+    <div className="field"><label htmlFor="demo_select">Select with groups</label><select id="demo_select">
