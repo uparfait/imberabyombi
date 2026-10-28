@@ -13,3 +13,4 @@
 .side_head { display: flex; align-items: center; height: 3rem; padding-left: .25rem; }
 .side_between { justify-content: space-between; }
 .side_row { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin: .5rem 0 .625rem; padding: 0 .25rem 0 .75rem; }
+.side_gap { margin-top: 1.5rem; }
