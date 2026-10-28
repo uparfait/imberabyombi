@@ -46,3 +46,4 @@ function on_over(e) {
 function on_out(e) { if (hover_b && !hover_b.contains(e.relatedTarget)) { live.cancel(); settle(false); } }
 function on_click(e) {
   const b = e.target.closest('[data-a]'); if (!b || !img_sel) return;
+  if (b === hover_b) { live.keep(hover_fn); settle(true); return; }
