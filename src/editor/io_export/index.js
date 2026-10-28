@@ -17,3 +17,4 @@ export * from './download_dialog.jsx';
 export * from './zip_store.js';
 export * from './docx_runs.js';
 export * from './docx_paras.js';
+export * from './docx_table.js';
