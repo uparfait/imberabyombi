@@ -20,3 +20,4 @@ and resets the demo data.
 ```js
 /* src/schemas/schema_transport.js */
 import { field_spec as F } from './fields.js';
+import { lorem } from '../lib/index.js';
