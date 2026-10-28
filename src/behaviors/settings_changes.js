@@ -18,6 +18,7 @@ export function role_land_change(t) {
 }
 
 /* A permission change saves the role (moving its landing page if that page was taken away), then the whole page redraws: the menus
+   and the role's landing <select> follow the data (the roles view keys that select by the role's landing page and access). */
 export function perm_change(t) {
   const rs = roles(), r = rs.find(x => x.id === t.dataset.role);
   if (r && r.perms !== '*') request(() => { const was = r.land; r.perms = { ...r.perms, [t.dataset.perm]: +t.value };
