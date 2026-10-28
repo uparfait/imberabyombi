@@ -37,3 +37,5 @@ export const VIZ_PART_B = {
         + `<text x="${f.l - 8}" y="${round1(y(i) + 4)}" text-anchor="end">${k}</text>`
         + `<text class="value_label" x="${f.w - f.r + 8}" y="${round1(y(i) + 4)}">${compact_num(v[i])}${i ? ` · ${Math.round(v[i] / v[i - 1] * 100)}%` : ''}</text>`).join(''),
       'Funnel chart'),
+      table: [['Step', 'People', 'From step before'], st.map((k, i) => [k, num(v[i]), i ? pct(v[i] / v[i - 1]) : '—'])] }; } }
+};
