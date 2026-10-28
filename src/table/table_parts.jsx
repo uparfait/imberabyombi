@@ -21,3 +21,4 @@ export const table_menu = c => { const v = tview(c);
       <p className="px-3 pb-1.5 pt-2 text-xs font-medium uppercase tracking-wider text-muted">Rows per page</p>
       <div className="seg mx-2 mb-2 flex">{[10, 20, 50].map(n => (
         <label key={n} className="flex-1">
+          <input type="radio" className="sr-only" name={`per_${c}`} value={n} data-table-per={c} defaultChecked={v.per === n} /><span className="text-center">{n}</span></label>))}
