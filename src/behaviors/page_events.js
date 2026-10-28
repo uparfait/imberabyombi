@@ -19,3 +19,4 @@ const FALLBACK = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent('<svg 
    so it is skipped here. Any other broken image gets the brand placeholder once. */
 function on_error(e) {
   const t = e.target;
+  if (t.matches?.('[data-view] :is(img, video, audio)')) return;
