@@ -10,3 +10,4 @@ is blocked (private mode, sandboxes).
 | `db.list(collection)`        | all rows of a collection; seeds it once from its schema     |
 | `db.find(collection, id)`    | one row                                                     |
 | `db.upsert(collection, row)` | insert or update (by `id`), returns the id                  |
+| `db.remove(collection, id)`  | delete a row                                                |
