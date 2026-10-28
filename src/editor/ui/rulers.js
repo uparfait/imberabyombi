@@ -59,3 +59,4 @@ const VALUE_CSS = 'position:fixed;z-index:400;padding:.25rem .5rem;border-radius
   + 'color:rgb(var(--bg));background:rgb(var(--fg) / .92);pointer-events:none;white-space:nowrap';
 let value_el = null;
 function show_value(text, x, y) {
+  if (!value_el) { value_el = document.createElement('div'); value_el.className = 'ruler_value'; value_el.setAttribute('role', 'status'); value_el.style.cssText = VALUE_CSS; }
