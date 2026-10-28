@@ -5,3 +5,5 @@ import { rem } from '../../lib/index.js';
 
 /* n px at the default 16px root font, scaled with the root font (interface sizes follow the app-wide scaling) */
 export function scaled(n) { return n * rem() / 16; }
+
+/* add a listener and remember how to remove it (offs: the cleanup list of an installer) */
