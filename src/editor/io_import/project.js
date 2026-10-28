@@ -20,6 +20,7 @@ export function load_project(d) {
 }
 
 /* the tab on screen has no text, image, table or attachment; the document is empty when that is its only tab */
+export const is_tab_empty = () => bodies().every(b => !b.textContent.replace(/\u200b/g, '').trim() && !b.querySelector('img,table,hr,.file_chip'));
 }
 /* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
 export function project_tabs(d) {
