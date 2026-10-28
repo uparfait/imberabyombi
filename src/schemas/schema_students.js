@@ -36,3 +36,4 @@ export const payments_schema = {
     field_spec('date', 'Date', 'date', 0, 1, { def: () => ymd() }), field_spec('status', 'Status', 'select', STATUS.pay, 1)
   ],
   g: () => ({
+    student: lorem.pick(db.list('students')).name, item: lorem.pick(['Tuition', 'Tuition', 'Transport', 'Meals', 'Uniform']), amount: lorem.int(5, 60) * 10,
