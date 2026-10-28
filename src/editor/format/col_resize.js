@@ -23,3 +23,4 @@ export function start_col_drag(e) {
   const { table, ci } = col_hover; const chain = table_chain(table); const cg = ensure_colgroup(table, chain);
   const tw = table.offsetWidth, widths = Array.from(cg.children).map(c => parseFloat(c.style.width) / 100 * tw);
   begin_op(); const sx = e.clientX;
+  const move = ev => {
