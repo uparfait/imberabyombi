@@ -26,3 +26,7 @@ function install_menubar(offs) {
     listen(offs, b, 'mouseenter', () => {
       const a = menu_stack.length && menu_stack[0].anchor;
       if (a && a.closest && a.closest('#menubar') && a !== b) open_menu(b, items());
+    });
+  });
+}
+function install_panels(offs) {
