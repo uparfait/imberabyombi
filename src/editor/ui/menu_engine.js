@@ -40,3 +40,4 @@ function row_of(it, level) {
   r._it = it;
   if (it.sub) {
     r._open = focus => { const b = r.getBoundingClientRect(), s = typeof it.sub === 'function' ? it.sub() : it.sub;
+      open_menu(r, s, { level: level + 1, x: b.right - scaled(2), y: b.top - scaled(6), side: b.left, focus }); };
