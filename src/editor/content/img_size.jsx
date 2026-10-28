@@ -14,3 +14,4 @@ export function image_size_dialog(img) {
     <div className="field"><label htmlFor="sz_w">Width (px)</label>
       <input type="number" id="sz_w" name="w" min="16" max={max} defaultValue={w0} placeholder=" " onInput={linked('#sz_w', '#sz_h', w => w / ratio)} /></div>
     <div className="field"><label htmlFor="sz_h">Height (px)</label>
+      <input type="number" id="sz_h" name="h" min="16" defaultValue={h0} placeholder=" " onInput={linked('#sz_h', '#sz_w', h => h * ratio)} /></div>
