@@ -14,3 +14,4 @@ export const kpi_cards_b = k => {
             <span className="legend_rect" style={{ '--c': scale_color(i) }}></span>{n}<b className="ml-auto font-medium">{share(i)}</b></li>))}</ul></>,
       [['Source', 'Share'], src.map((n, i) => [n, share(i)])]),
     kpi_card('sm:col-span-2', 'Top performers', 'The five highest values this period, ranked.',
+      <ol className="mt-3 grid gap-1">{lead.map(([n, v], i) => (
