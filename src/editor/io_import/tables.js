@@ -28,3 +28,5 @@ export function rows_to_table(rows, header) {
       h += `<td${hd ? ` data-hdr="" data-autobg="" style="background-color:${HDR_BG}"` : ''}><p>${v ? esc_html(v).replace(/\n/g, '<br>') : '<br>'}</p></td>`;
     }
     h += '</tr>';
+  });
+  return h + '</table>';
