@@ -4,3 +4,4 @@
 import { db } from '../../store/index.js';
 import { uid } from './utils.js';
 import { state, default_setup, new_tab, set_on_change } from './state.js';
+import { pages_el } from './refs.js';
