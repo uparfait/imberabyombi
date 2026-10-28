@@ -19,3 +19,4 @@ export const route = { path: '/', q: {} };
 export function set_route(next) { for (const k of Object.keys(route)) delete route[k]; Object.assign(route, next); }
 
 /* what the next render is: keep = same page (rerender), anim = keep the page-enter animation, nav_fetched = data already waited for */
+export const render_flags = { keep: false, anim: false, nav_fetched: false };
