@@ -40,3 +40,4 @@ export const kpi_cards_a = k => {
       [['Period', 'Orders'], [['This month', num(o1)], ['Last month', num(o2)], ['Change', '+11.5%']]]),
     kpi_card('', 'Weekly visits', 'Visits per week over the last 12 weeks; this week in colour.',
       <><p className="kpi_value">{compact_num(visits[11])}</p><div className="kpi_bars">{visits.map((n, i) => (
+        <i key={i} style={{ height: `${Math.round(n / vmax * 100)}%`, background: i === 11 ? 'var(--series_1)' : 'rgb(var(--muted) / .35)' }}
