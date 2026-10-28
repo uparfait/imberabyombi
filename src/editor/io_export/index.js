@@ -12,3 +12,4 @@ export * from './export_epub.js';
 export * from './export_data.js';
 export * from './xlsx_parts.js';
 export * from './export_xlsx.js';
+export * from './formats.js';
