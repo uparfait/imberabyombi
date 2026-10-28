@@ -36,3 +36,4 @@ All storage keys start with `loremds:v1:` (`window.NS` in `index.html`); change 
 ## Next
 - [Project structure](project_structure.md): where everything lives.
 - [Design tokens](design_tokens.md): make it your brand in a few lines.
+- [How to add a module](how_to_add_a_module.md) and [how to add a public page](how_to_add_a_public_page.md).
