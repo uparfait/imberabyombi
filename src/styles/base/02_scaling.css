@@ -17,3 +17,4 @@
   @media (min-width: 430px) { html { font-size: calc(16px + (640px - 100vw) * (430 * 16 / var(--scale_phone) - 16) / 210); } }
   @media (min-width: 640px) { html { font-size: 16px; } }
   @media (min-width: 1024px) { html { font-size: max(var(--scale_desk) * 1px, 100vw * var(--scale_desk) / var(--scale_ref)); } }
+  /* Pages never scroll sideways (clip, not hidden, so sticky headers and sidebars keep working).
