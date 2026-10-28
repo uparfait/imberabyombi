@@ -21,3 +21,4 @@ export const rtf_esc = s => {
 };
 const rtf_codes = (rx, f) => {
   let s = `\\f${rtf_fi(rx, f.font || 'Arial')}\\fs${Math.round((f.size || 11) * 2)}`;
+  if (f.b) s += '\\b'; if (f.i) s += '\\i'; if (f.u || f.link) s += '\\ul'; if (f.s) s += '\\strike'; if (f.sup) s += '\\super'; if (f.sub) s += '\\sub';
