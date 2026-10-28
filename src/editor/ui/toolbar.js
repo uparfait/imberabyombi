@@ -26,3 +26,5 @@ export const ACTIONS = {
 };
 /* the [data-ed] buttons whose effect shows on hover */
 export const LIVE_ED = ['size_down', 'size_up', 'bold', 'italic', 'underline', 'checklist', 'bullets', 'numbers', 'outdent', 'indent', 'clear'];
+
+const font_items = () => FONTS.map(f => ({ label: f, label_style: `font-family:'${f}'`, checked: (refs.font_label ? refs.font_label.textContent : '') === f, action: () => set_font(f) }));
