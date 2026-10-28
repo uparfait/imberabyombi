@@ -43,3 +43,4 @@ export function text_items() {
   return [
     { label: 'Bold', icon: 'format_bold', shortcut: 'Ctrl+B', action: () => exec('bold') },
     { label: 'Italic', icon: 'format_italic', shortcut: 'Ctrl+I', action: () => exec('italic') },
+    { label: 'Underline', icon: 'format_underlined', shortcut: 'Ctrl+U', action: () => exec('underline') },
