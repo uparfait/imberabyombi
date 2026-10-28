@@ -8,3 +8,4 @@ import { redraw_charts } from '../charts/index.js';
 export function set_theme(mode) {
   db.set('theme', mode);
   const h = document.documentElement; h.classList.add('theme_switch');
+  h.classList.toggle('dark', mode === 'dark' || (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches));
