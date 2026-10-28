@@ -46,3 +46,4 @@ export function toggle_para_space(which) {
 export function indent(dir) {
   if (!can_edit()) return;
   restore_focus();
+  const n = last_range && el_of(last_range.startContainer);
