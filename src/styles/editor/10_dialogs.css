@@ -29,3 +29,4 @@
 .preset:hover { border-color: rgb(var(--muted) / .6); }
 .preset[aria-pressed="true"] { border-color: rgb(var(--brand)); outline: 2px solid rgb(var(--brand)); outline-offset: 1px; }
 .preset table { width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; }
+.preset td { height: .5625rem; padding: 0; white-space: normal; }
