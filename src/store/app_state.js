@@ -36,3 +36,4 @@ export function render(keep = false, anim = false) {
   TIMERS.splice(0).forEach(clearInterval); AFTER.length = 0; ui.side = false;
   for (const fn of BEFORE) { try { fn(keep); } catch (e) { console.error(e); } }
   if (!keep) { loaded.clear(); ui.table_full = null; }
+  render_flags.keep = keep; render_flags.anim = anim; version++;
