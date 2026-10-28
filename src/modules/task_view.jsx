@@ -48,3 +48,4 @@ function hold_scroll(top) {
 export function task_refresh(id, msg) {
   const top = qs('#modal form > div.overflow-y-auto')?.scrollTop || 0;
   rerender();
+  if (qs('#modal')?.open && qs('#modal [data-task]')?.dataset.task === id) { task_view(id); hold_scroll(top); }
