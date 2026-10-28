@@ -75,3 +75,7 @@ function on_down(e, row) {
       return to < 0 || (to >= h.i && to <= h.end) ? null : to;
     },
     drop: to => moved(move_section(row._ti, to, model()), false)
+  });
+}
+
+export function wire_outline_row(row) {
