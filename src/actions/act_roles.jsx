@@ -19,3 +19,4 @@ export const ROLE_ACT = {
   role_new: () => modal({ title: 'New role', submit: 'Create role', body: new_role_body(),
     on_submit: d => { const rs = roles(), base = d.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'role'; let id = base, i = 2; while (rs.some(r => r.id === id)) id = base + '-' + i++;
       const perms = perm_map('tasks:2,settings:1'); if (d.land) perms[d.land] = Math.max(perms[d.land] || 0, 1);   /* landing there means it can at least view it */
+      rs.push({ id, name: d.name, d: d.d, land: d.land, perms }); db.set('roles', rs); ui.role = id; rerender(); notify('Set its access levels in the matrix.', 'ok', 'Role created'); } }),
