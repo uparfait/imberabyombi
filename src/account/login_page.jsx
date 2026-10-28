@@ -27,3 +27,5 @@ export function login_page(r) {
         <input id="signin_password" name="password" type="password" autoComplete="current-password" required minLength={1} className="pr-12"
           placeholder="Any password" />
         <button type="button" className="icon_btn absolute right-1 top-1/2 h-10 w-10 -translate-y-1/2" data-act="pwd" aria-label="Show password">{ic('eye', 'h-5 w-5')}</button>
+      </div></div>
+      <a href="#/forgot" className="-mt-3 justify-self-end text-sm font-medium text-accent hover:underline">Forgot password?</a>
