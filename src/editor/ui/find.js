@@ -58,3 +58,5 @@ export function paint_find(scroll) {
   if (has_hl) {
     CSS.highlights.set('find_all', new Highlight(...matches));
     if (idx >= 0) CSS.highlights.set('find_cur', new Highlight(matches[idx])); else CSS.highlights.delete('find_cur');
+  }
+  if (scroll && idx >= 0 && scroller) {
