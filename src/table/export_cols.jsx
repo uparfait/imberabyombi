@@ -13,3 +13,4 @@ export function Export_cols({ c }) {
   const tick = k => e => { const v = e.target.checked; set_on(o => ({ ...o, [k]: v })); };
   return (
     <fieldset ref={ref} className="sm:col-span-2" data-export-cols=""><legend className="mb-2 text-sm font-medium">Columns to include</legend>
+      <div className="grid gap-2">{cols.map(k => (
