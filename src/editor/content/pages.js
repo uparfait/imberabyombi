@@ -8,3 +8,4 @@ export function add_blank_page(i) {
   if (previewing() || !can_edit()) return;
   if (state.setup.pageless) { toast('Turn off Pageless in Page setup to manage pages'); return; }
   begin_op(); const bs = bodies(), b = bs[i], has_next = !!bs[i + 1];
+  const nf = has_next && first_flow(bs[i + 1]); if (nf && nf.hasAttribute('data-cont')) nf.removeAttribute('data-cont');
