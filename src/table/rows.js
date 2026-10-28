@@ -6,3 +6,4 @@ import { schemas } from '../schemas/index.js';
 import { plain } from '../ui/index.js';
 
 export function rows_of(c) {
+  const o = cur[c] || {}, s = schemas[c]; let rows = db.list(c); if (o.filter) rows = rows.filter(o.filter);
