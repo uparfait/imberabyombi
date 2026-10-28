@@ -5,3 +5,5 @@
 import { flushSync } from 'react-dom';
 import { db } from './db.js';
 import { ymd } from '../lib/index.js';
+
+/* UI state that is not data: open tabs, table pages, sorting, column searches, sidebar, calendar view… */
