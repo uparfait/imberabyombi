@@ -10,3 +10,4 @@ const GO_CLS = 'grid h-8 w-8 place-items-center rounded-full bg-white text-brand
 export function hero_sec() {
   return (
     <section id="s_hero" className="wrap pt-3 sm:pt-6" aria-label="Introduction">{hero_shell(
+      <div className="relative grid w-full items-end gap-10 px-6 pb-20 pt-14 sm:px-12 sm:pb-28 sm:pt-20 lg:grid-cols-[1.2fr_.8fr] xl:px-20">
