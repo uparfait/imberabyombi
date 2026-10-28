@@ -2,3 +2,5 @@
    copy_box() is the copyable value (code, key, link, token) with its Copy button (data-act="copy"). */
 import { ic } from '../icons/index.js';
 import { notify } from '../feedback/index.js';
+
+export async function copy(text, what = 'Link', quiet = false) {
