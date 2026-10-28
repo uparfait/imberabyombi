@@ -41,3 +41,4 @@ export const VIZ_DIST = {
       const d = dens(a), med = median(a), pts = ys.map((y0, j) => [x(i) + d[j] * half, ax.y(y0)]), back = ys.map((y0, j) => [x(i) - d[j] * half, ax.y(y0)]).reverse();
       return mark_group(g[i], [[round1(med), 'Median', i]], hit_col(f, x, i) + `<path class="mark" d="${path_of([...pts, ...back])}Z"`
         + ` style="fill:color-mix(in srgb, ${scale_color(i)} 22%, transparent);stroke:${scale_color(i)};stroke-width:1.5"/>` + dot(x(i), ax.y(med), scale_color(i)));
+    }).join('') + x_labels(f, g, x), 'Violin plot'),
