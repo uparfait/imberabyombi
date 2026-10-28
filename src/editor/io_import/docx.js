@@ -67,3 +67,4 @@ async function docx_blocks(cx, nodes, container) {
       container.insertAdjacentHTML('beforeend', `<${tag}${cls ? ` class="${cls}"` : ''}${attrs}>${html || '<br>'}</${tag}>`);
       if (pb) page_break();
     } else if (ln === 'tbl') {
+      stack = [];
