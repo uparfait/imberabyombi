@@ -29,3 +29,4 @@ function section_items(row, kb) {
     { sep: true },
     { label: 'Delete section', icon: 'delete', no_preview: true, action: () => confirm_dialog(
       <>Delete the section <strong>{text}</strong>? The heading and everything under it are removed. You can undo this with Ctrl+Z.</>, 'Delete')
+      .then(ok => { if (ok) { delete_section(k); render_outline(); } }) }
