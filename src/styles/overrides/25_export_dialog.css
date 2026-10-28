@@ -16,3 +16,4 @@
   .mp .i_pause { display: none; } .mp.playing .i_pause { display: inline; } .mp.playing .i_play { display: none; } .mp.playing .mp_big { opacity: 0; pointer-events: none; }
 
   .page_enter { animation: page .45s var(--ease) backwards; }   /* backwards: nothing stays applied afterwards (a kept transform would trap fixed overlays such as a full-screen table) */
+  .hero_in { animation: rise .9s var(--ease) both; animation-delay: var(--d, 0s); }
