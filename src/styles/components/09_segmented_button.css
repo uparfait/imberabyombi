@@ -33,3 +33,4 @@
   .hero { --h0: rgb(var(--surface)); --h1: color-mix(in srgb, rgb(var(--brand)) 14%, rgb(var(--surface))); --h2: color-mix(in srgb, rgb(var(--brand)) 42%, rgb(var(--surface))); --glow: .16;
     border: 1px solid rgb(var(--line));
     background:
+      radial-gradient(42% 55% at 34% 16%, rgb(var(--brand) / var(--glow)), transparent 70%),
