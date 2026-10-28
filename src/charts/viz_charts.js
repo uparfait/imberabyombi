@@ -19,3 +19,5 @@ export const VIZ = {
   /* Part-to-whole */ ...VIZ_PART_A, ...VIZ_PART_B,
   /* Relationships */ ...VIZ_REL_A, ...VIZ_REL_B,
   /* Maps */ ...VIZ_MAP
+};
+export const VIZGROUPS = [['kpi', 'KPIs', 'target'], ['cmp', 'Comparison', 'chart'], ['dist', 'Distribution', 'layers'], ['time', 'Change over time', 'activity'],
