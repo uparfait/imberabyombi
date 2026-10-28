@@ -8,3 +8,4 @@ import { loading } from '../feedback/index.js';
 import { cell, empty } from '../ui/index.js';
 import { tview } from './table_view.js';
 import { pager } from './table_parts.jsx';
+import { rows_of, wait_load } from './rows.js';
