@@ -33,3 +33,4 @@ function section_items(row, kb) {
   ];
 }
 function open_section_menu(row, btn, kb) {
+  if (row._ti < 0) return;
