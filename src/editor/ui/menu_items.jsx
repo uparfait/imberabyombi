@@ -14,3 +14,4 @@ export function align_items() {
     .map(([l, i, c, k]) => ({ label: l[0].toUpperCase() + l.slice(1), icon: i, shortcut: k, action: () => exec(c) }));
 }
 function custom_spacing_dialog() {
+  modal({
