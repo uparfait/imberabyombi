@@ -30,3 +30,4 @@ export function cell(c, k, row) {
   const s = schemas[c], v = row[k], f = s.f.find(x => x.k === k);
   if (s.r?.[k]) return s.r[k](v, row);
   if (k === 'role') return <span className="chip bg-brand/10 text-accent">{role_name(v)}</span>;
+  if (['name', 'person', 'student', 'assignee', 'borrower', 'driver', 'by', 'guardian'].includes(k)) return person(v);
