@@ -16,3 +16,4 @@ export function html_to_md(root) {
       if (t === 'A') { s += /^data:/i.test(c.getAttribute('href') || '') ? inner : `[${inner}](${c.getAttribute('href')})`; return; }
       if (t === 'CODE') { s += '`' + c.textContent + '`'; return; }
       const bold = /^(B|STRONG)$/.test(t) || /^(bold|[6-9]00)$/.test(st.fontWeight), ital = /^(I|EM)$/.test(t) || st.fontStyle === 'italic';
+      const strike = /^(S|DEL|STRIKE)$/.test(t) || /line-through/.test(st.textDecoration || '');
