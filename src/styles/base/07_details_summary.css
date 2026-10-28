@@ -6,3 +6,4 @@
   :where(summary):hover { background: rgb(var(--fg) / .03); }
   summary::-webkit-details-marker { display: none; }
   :where(summary)::after { content: ""; flex-shrink: 0; width: .55rem; height: .55rem; border-right: 2px solid rgb(var(--muted)); border-bottom: 2px solid rgb(var(--muted)); transform: rotate(45deg) translateY(-25%); transition: transform .3s var(--ease); }
+  :where(details[open] > summary)::after { transform: rotate(-135deg); }
