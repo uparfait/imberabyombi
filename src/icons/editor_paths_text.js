@@ -12,3 +12,4 @@ export const EDITOR_TEXT_PATHS = {
   superscript: 'M3 9l8 9M11 9l-8 9M15 5a1.75 1.75 0 1 1 3 1.2L15 10h3.5',
   subscript: 'M3 6l8 9M11 6l-8 9M15 16a1.75 1.75 0 1 1 3 1.2L15 21h3.5',
   format_clear: 'M5 6V4h13v2M11 4 8 20M6 20h5M15 14l6 6M21 14l-6 6',
+  format_paint: 'M5 3h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM18 5.5h2a1 1 0 0 1 1 1V10a1 1 0 0 1-1 1h-8v3M11 14h2v7h-2z',
