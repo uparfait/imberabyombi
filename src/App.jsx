@@ -7,6 +7,7 @@ import { subscribe, get_version, render_flags } from './store/index.js';
 import { render_route, run_after_render } from './router/index.js';
 import { Dialog_hosts } from './overlays/index.js';
 
+export default function App() {
   return (
     <>
       <section id="center">
