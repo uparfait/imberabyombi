@@ -29,3 +29,4 @@ In `src/site/pages.jsx` add an entry to `PAGES`:
 services: { t: 'Services', i: 'layers', top: () => services_sec(1) },
 ```
 - `t` is the title (tab title, hero, menus), `i` an icon name from `src/icons/paths.js`, `top` the content above the
+  long-form text. The route `#/services` works at once, with its own `<title>` and description.
