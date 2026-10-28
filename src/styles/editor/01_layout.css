@@ -9,3 +9,4 @@
   --hover: rgb(var(--fg) / .06); --press: rgb(var(--fg) / .1); --sep: rgb(var(--line)); --border: rgb(var(--line));
   --active_bg: rgb(var(--brand) / .15); --active_fg: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg)));
   --accent: rgb(var(--brand)); --accent_fg: #fff; --panel: rgb(var(--surface)); --menu: rgb(var(--surface));
+  --menu_hover: rgb(var(--fg) / .06); --input_bg: rgb(var(--surface));
