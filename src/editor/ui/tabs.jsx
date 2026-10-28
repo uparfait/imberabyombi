@@ -48,3 +48,4 @@ export function delete_tab(t) {
 }
 export function tab_menu(t) {
   const i = state.tabs.indexOf(t);
+  return [
