@@ -2,3 +2,4 @@
    absolute image keeps its opposite corner still), drag to move from the move area, the quick bar (click; hovering a
    position / alignment button previews it live), and the box's context menu (all image options). */
 import { clamp, state, live, is_abs, begin_op, end_op, body_index } from '../core/index.js';
+import { open_menu } from '../ui/index.js';
