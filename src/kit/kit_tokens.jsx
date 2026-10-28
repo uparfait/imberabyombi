@@ -2,3 +2,4 @@
    by hex_refresh() in actions, so React renders it empty), the radius scale and the one-line token override. */
 
 /* colour tokens (CSS variable names, snake_case) */
+const TOKS = ['brand', 'brand_2', 'ink', 'bg', 'surface', 'surface_2', 'surface_3', 'fg', 'muted', 'line', 'ok', 'warn', 'bad', 'info'];
