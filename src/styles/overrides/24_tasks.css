@@ -30,3 +30,4 @@
   @media (hover: none) { .kv_pen { opacity: 1; } }
   .tv_sub + .tv_sub { margin-top: .75rem; padding-top: .75rem; border-top: 1px dashed rgb(var(--line)); }
   .task_preview { margin-top: .75rem; padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; background: rgb(var(--surface_2) / .5); }
+  .task_pre { max-height: 15rem; overflow-y: auto; margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .8125rem; }
