@@ -50,3 +50,4 @@ export function blocks_xml(container, ctx, cell_fmt) {
       else if (is_list(n)) { flush(); out += list_xml(n, 0, ctx); }
       else if (is_table(n)) { flush(); out += table_xml(n, ctx); }
       else if (t === 'HR') { flush(); out += HR_XML; }
+      else buf.push(n);
