@@ -1,5 +1,6 @@
 /* editor/io_import/docx.js: Word → HTML. The built-in reader (docx_native) first: headings, title / subtitle, quotes,
    alignment, nested bullet / numbered lists, tables (spans, cell colours), content controls, page breaks, images, links,
+   and the text's colours, fonts, sizes and highlights; it needs no download. If it fails or finds nothing, mammoth (loaded
 import { load_script, LIB } from '../core/index.js';
 import { unzip } from './unzip.js';
 import { parse_xml, by_tag, kids, rels_of } from './xml_helpers.js';
