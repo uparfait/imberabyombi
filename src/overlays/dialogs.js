@@ -34,3 +34,4 @@ export function confirm_discard(yes) {
 export function show_in_dialog(id, render) {
   const d = document.getElementById(id); set_dialog(id, { render });
   if (!d.open) show_dialog(d);
+  return d;
