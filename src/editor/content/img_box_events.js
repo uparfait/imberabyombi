@@ -15,3 +15,4 @@ function resize(e, h) {
   begin_op();
   const move = ev => {
     const w = clamp(Math.round(sw + (ev.clientX - sx) / state.zoom * sign), 16, max_w);
+    img.style.width = w + 'px'; img.style.height = ''; img.removeAttribute('width'); img.removeAttribute('height');
