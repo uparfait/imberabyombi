@@ -14,3 +14,4 @@ import { EXPORTS } from './export_file.js';
 import { ph_height } from './table_full.js';
 
 /* Export ▾: CSV, JSON, Excel */
+const export_menu = c => (
