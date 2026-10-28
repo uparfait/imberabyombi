@@ -36,3 +36,4 @@ export function layout_page(wrap) {
     qs('.pg_footer_text', page).style.visibility = s.footer ? 'visible' : 'hidden';
   }
   wrap.style.width = w * z + 'px';
+  wrap.style.height = (s.pageless ? page.offsetHeight : h) * z + 'px';
