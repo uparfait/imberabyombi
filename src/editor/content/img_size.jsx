@@ -10,3 +10,4 @@ export function image_size_dialog(img) {
   img = img_now(img); if (!img || previewing()) return;
   const w0 = img.offsetWidth, h0 = img.offsetHeight, ratio = w0 / (h0 || 1), max = img_max(img);
   const linked = (from, to, f) => () => { if (qs('#sz_lock').checked) qs(to).value = Math.round(f(+qs(from).value)); };
+  modal({ title: 'Image size', submit: 'Apply', body: <>
