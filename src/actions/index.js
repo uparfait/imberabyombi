@@ -3,3 +3,4 @@
 export * from './pops.js';
 export * from './theme.js';
 export * from './media.js';
+export * from './open_cmd.jsx';
