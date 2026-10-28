@@ -71,3 +71,5 @@ export async function pptx_to_html(file) {
   if (!slides.length) slides = z.names().filter(n => /^ppt\/slides\/slide\d+\.xml$/i.test(n)).sort((a, b) => num(a) - num(b));
   const parts = [];
   for (let i = 0; i < slides.length; i++) { const sp = slides[i]; if (!z.has(sp)) continue; parts.push(await slide_html(z, sp, i)); }
+  return parts.join(PB) || '<p><br></p>';
+}
