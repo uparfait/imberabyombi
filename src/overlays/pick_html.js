@@ -32,3 +32,4 @@ export const PK = {
         + `${fmt_time(t)}</button>`; }).join('')}</div></div>`;
   },
   head: (title, unit) => `<div class="pk_head"><button type="button" class="pk_title" data-act="pk_years" aria-label="${title}, choose a year">`
+    + `${title}${ic_html('chev_d', 'h-4 w-4 text-muted')}</button><div class="flex"><button type="button" class="icon_btn h-8 w-8" data-act="pk_nav" data-n="-1" aria-label="Previous ${unit}">${ic_html('chev_l', 'h-4 w-4')}</button>`
