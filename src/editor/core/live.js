@@ -87,3 +87,5 @@ export const live = {
     const s = cur; if (!s) return;
     cur = null; s.cancelled = true; s.epoch = keeps; put(s.snap); extras(s);
     if (s.pending) zombies++;
+  },
+  /* keep the preview as one history step; with a different fn (or no preview) run fn normally */
