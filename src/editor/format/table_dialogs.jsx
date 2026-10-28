@@ -25,3 +25,4 @@ export function preset_preview(p) {
 function Preset_grid({ start }) {
   const [preset, set_preset] = useState(start);
   return (<>
+    <input type="hidden" name="preset" value={preset} />
