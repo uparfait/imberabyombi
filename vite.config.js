@@ -8,3 +8,4 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   build: {
+    target: 'es2020',          /* modern browsers, including older phones still in use */
