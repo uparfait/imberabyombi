@@ -24,3 +24,4 @@ const LINK_CLS = 'grid h-9 w-9 place-items-center rounded-full bg-white/90 text-
 export const staff_card = (i, team) => {
   const n = lorem.name();
   return (
+    <article key={i} className="filter_card group text-center" data-team={team || ''} data-reveal="" style={{ '--d': `${(i % 4) * .06}s` }}>
