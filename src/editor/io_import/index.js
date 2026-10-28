@@ -4,3 +4,4 @@
 export * from './file_helpers.js';
 export * from './xml_helpers.js';
 export * from './unzip.js';
+export * from './text_md.js';
