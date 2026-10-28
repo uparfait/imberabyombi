@@ -23,3 +23,4 @@ export const tasks_schema = {
   /* the form's subtasks and new files become part of the record (files are read before saving); comments are kept */
   before: async (d, row, form) => ({ ...d, subs: read_subs(form), end: d.status === 'Done' ? d.end || now_dt() : '', comments: comments_of(row),
     files: [...files_of(row), ...await read_files(form.querySelector('[data-new-files]')?.files)] }),
+  g: () => {
