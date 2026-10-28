@@ -11,3 +11,4 @@ export function export_html(root, name) {
     + '@media print{body{background:none}.sheet{box-shadow:none;margin:0;padding:0;max-width:none}.doc_content .page_break{border:0;margin:0}}';
   const doc = '<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
     + `<title>${esc_html(state.title)}</title><style>${css}</style></head><body><div class="sheet doc_content">${root.innerHTML}</div></body></html>`;
+  download(new Blob([doc], { type: 'text/html' }), name + '.html');
