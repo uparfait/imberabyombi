@@ -25,3 +25,4 @@ export const EDITOR_MEDIA_PATHS = {
   crop: 'M6 2v14a2 2 0 0 0 2 2h14M18 22V8a2 2 0 0 0-2-2H2',
   flip: 'M12 3v3M12 10.5v3M12 18v3M9 7v11H3zM15 7v11h6z',
   swap_vert: 'M7 20V4M3 8l4-4 4 4M17 4v16M13 16l4 4 4-4',
+  rotate_left: 'M3 4v5h5M4.5 14.9A8.5 8.5 0 1 0 6.5 6L3 9',
