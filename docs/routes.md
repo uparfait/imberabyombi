@@ -31,3 +31,5 @@ Write normal anchors and build the address with `to()`, so it carries the base p
 ```jsx
 import { to, go } from '../router/index.js';
 <a href={to('/about')}>About</a>
+```
+One delegated click listener (`src/behaviors/link_clicks.js`) turns clicks on internal links into `go()`, so the page
