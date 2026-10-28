@@ -44,3 +44,4 @@ function put(sn) {
   layout_after();
   const s = sn.sel, sc = s && find(s.a), ec = s && find(s.b), r = sc && ec ? mk_range(sc, s.so, ec, s.eo) : null;
   if (r) {
+    const h = editable_of(sc), ae = document.activeElement;
