@@ -19,3 +19,4 @@ export function open_upload_dialog(initial = [], mode) {
   const saved = last_range && last_range.cloneRange(), saved_host = last_host;
   modal({ title: 'Upload files', body: <Upload_body up={up} />, actions: <Upload_actions up={up} />, on_submit: () => {
     const { files, m } = up.get();
+    if (!files.length) { toast('Choose at least one file'); return false; }
