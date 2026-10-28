@@ -14,7 +14,7 @@ export function tiers() {
         <h3 className="mt-1 text-2xl">{lorem.t(2)}</h3><span className="chip mt-3 bg-surface-2 text-muted">{ic('box', 'h-3.5 w-3.5')}{s}</span>
         <p className="mt-6 flex items-baseline gap-2">{o ? null : <small className="text-muted">From</small>}<data value={p}
           className="font-display text-4xl font-bold text-ok">${p}</data><span className="text-muted">/mo</span>{o ? <s>${o}</s> : null}</p>
-        <a href="#/contact" className="btn btn_primary mt-6 w-full">Become a partner</a>
+        <a href={to('/contact')} className="btn btn_primary mt-6 w-full">Become a partner</a>
         <ul className="mt-6 grid gap-3 text-sm">{[0, 1, 2, 3].map(j => (
           <li key={j} className="flex gap-3">{ic('check', 'mt-0.5 h-4 w-4 shrink-0 text-accent')}<span>{lorem.s(5, 9)}</span></li>
         ))}</ul></article>
