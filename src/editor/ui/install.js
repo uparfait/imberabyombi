@@ -30,3 +30,4 @@ function install_menubar(offs) {
   });
 }
 function install_panels(offs) {
+  listen(offs, refs.sidebar_close, 'click', () => { state.sidebar = false; apply_panels(); });
