@@ -4,3 +4,4 @@
 import { useEffect, useState } from 'react';
 import { ic } from '../../icons/index.js';
 import { modal } from '../../overlays/index.js';
+import { state, qs, file_base, toast, hist_timer, commit } from '../core/index.js';
