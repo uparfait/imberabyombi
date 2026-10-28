@@ -9,7 +9,7 @@ import { save_tab, render_tab, render_sidebar, confirm_dialog } from '../ui/inde
 import { base_of } from './file_helpers.js';
 import { attachment_html } from './json_attach.js';
 import { file_to_html } from './file_to_html.js';
-import { load_project, is_doc_empty, project_tabs } from './project.js';
+import { load_project, is_doc_empty, is_tab_empty, project_tabs, replace_tab } from './project.js';
 import { show_failed } from './upload_body.jsx';
 
 /* done: the converted files ({ html, inline?, project?, file }); a problem met while placing them is added to failed */
