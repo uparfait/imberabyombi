@@ -29,3 +29,4 @@ export function partners_sec(full) {
 
 export function thanks_sec(full) {
   return (
+    <section {...spy_attrs('thanks', full)} className="wrap section">
