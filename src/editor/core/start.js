@@ -49,6 +49,7 @@ export function editor_start(root) {
   root?.classList.add('ed_loading'); render_all();
   let stopped = false, t0 = 0;
   load_doc().then(found => {
+    if (stopped) return;
 
   function stop() {
     if (stopped) return;
