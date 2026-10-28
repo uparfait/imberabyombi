@@ -30,3 +30,4 @@ function row_of(it, level) {
   const chk = 'checked' in it, r = el('div', { class: 'menu_item ed_mi whitespace-nowrap outline-none [&.cur]:bg-fg/5 [&.open]:bg-fg/5'
     + (it.disabled ? ' disabled pointer-events-none opacity-40' : ''),
     role: chk ? 'menuitemcheckbox' : 'menuitem', tabindex: '-1' });
+  if (chk) r.setAttribute('aria-checked', String(!!it.checked));
