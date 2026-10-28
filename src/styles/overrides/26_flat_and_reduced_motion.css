@@ -15,3 +15,4 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
   /* Where text stays selectable (to copy): fields, table cells, details, code, copy boxes, notes, contact links. Kept outside the
      Tailwind block above, whose parser drops this selector list. */
+  :where(input, textarea, [contenteditable], td, .kv th[scope=row], .viz_data th[scope=row], code, pre, kbd, samp, .copy_val, .memo p, address, a[href^="mailto:"], a[href^="tel:"], .selectable) { -webkit-user-select: text; user-select: text; }
