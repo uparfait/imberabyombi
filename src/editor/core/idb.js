@@ -6,3 +6,4 @@ let opening = null;
 const open = () => opening || (opening = new Promise((resolve, reject) => {
   const req = indexedDB.open(DB_NAME, 1);
   req.onupgradeneeded = () => req.result.createObjectStore(STORE);
+  req.onsuccess = () => resolve(req.result);
