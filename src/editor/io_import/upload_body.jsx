@@ -6,3 +6,4 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { ic } from '../../icons/index.js';
 import { modal } from '../../overlays/index.js';
 import { qs } from '../core/index.js';
+import { after_close } from '../format/index.js';
