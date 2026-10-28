@@ -51,3 +51,4 @@ export function toggle_menus() {
   requestAnimationFrame(update_rulers);
 }
 export function toggle_spell() {
+  state.spell = !state.spell; bodies().forEach(b => { b.spellcheck = state.spell; });
