@@ -62,3 +62,4 @@ export function inline_xml(node, f, ctx) {
   node.childNodes.forEach(n => {
     if (n.nodeType === 3) { out += text_runs(n.data.replace(/\u200b/g, ''), f); return; }
     if (n.nodeType !== 1) return;
+    const t = n.tagName;
