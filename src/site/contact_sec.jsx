@@ -19,3 +19,4 @@ export function contact_form() {
         <optgroup label={lorem.t(1)}><option>{lorem.t(2)}</option><option>{lorem.t(2)}</option></optgroup>
         <optgroup label={lorem.t(1)}><option>{lorem.t(2)}</option><option>{lorem.t(2)}</option></optgroup></select></div>
       <div className="field sm:col-span-2"><label htmlFor="contact_message">Message</label>
+        <textarea id="contact_message" name="message" rows="5" required placeholder={lorem.s()}></textarea></div>
