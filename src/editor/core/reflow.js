@@ -38,3 +38,5 @@ export function reflow(cur = 0, full = false) {
       }
     }
     if (!full && i >= cur && same_sig(before, sig(b))) break;
+  }
+  bs = bodies();
