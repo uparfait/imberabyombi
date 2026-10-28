@@ -5,3 +5,4 @@ import { state, refs, el, qsa, uid, clamp, editable_of, restore_focus, set_caret
 import { refresh_toolbar } from '../ui/index.js';
 
 /* ================= formatting commands ================= */
+export function can_edit() { if (state.mode !== 'edit') { toast('Switch to Editing mode to make changes'); return false; } return true; }
