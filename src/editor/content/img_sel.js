@@ -11,3 +11,4 @@ export const IMG_POSITIONS = [['inline', 'In line', 'short_text'], ['wrap_left',
 const BAR = [...IMG_POSITIONS.map(([v, l, i]) => ['pos:' + v, l, i]), null,
   ['align:left', 'Align left', 'format_align_left'], ['align:center', 'Align center', 'format_align_center'], ['align:right', 'Align right', 'format_align_right'], null,
   ['more', 'All image options', 'more_vert']];
+const bar_btn = ([a, t, i]) => `<button type="button" data-a="${a}" data-tip="${t}" aria-label="${t}">${ic_html(i, 'h-[1.125rem] w-[1.125rem]')}</button>`;
