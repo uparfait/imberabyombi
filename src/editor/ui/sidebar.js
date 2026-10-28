@@ -26,3 +26,4 @@ export function render_sidebar() {
     const active = t.id === state.active;
     const row = el('div', { class: 'tab_row select-none' + (active ? ' active' : ''), 'data-id': t.id, role: 'button', tabindex: '0' });
     if (active) row.setAttribute('aria-current', 'true');
+    row.innerHTML = mi('description', 'h-5 w-5 shrink-0') + '<span class="tab_name min-w-0 flex-1 truncate"></span>'
