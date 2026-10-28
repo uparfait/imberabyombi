@@ -40,3 +40,4 @@ export function open_link_dialog(existing) {
 }
 
 export function remove_link(a) {
+  if (!a || previewing() || !can_edit()) return;
