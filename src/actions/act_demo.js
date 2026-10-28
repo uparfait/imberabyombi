@@ -8,3 +8,5 @@ import { modal } from '../overlays/index.js';
 import { media_err } from './media.js';
 
 const TITLES = { ok: 'Saved', bad: 'Could not save', warn: 'Check this first', info: 'Good to know' };
+
+export const DEMO_ACT = {
