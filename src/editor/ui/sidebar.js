@@ -45,3 +45,5 @@ function wire_row(row, t, box) {
     if (e.key === 'Enter') switch_tab(t.id);
     else if (e.key === 'F2') { e.preventDefault(); start_rename(t); }
     else if ((e.key === 'F10' && e.shiftKey) || e.key === 'ContextMenu') { e.preventDefault(); const b = row.querySelector('.tab_more'); toggle_menu(b, () => tab_menu(t), { focus: true }); }
+  });
+  row.addEventListener('dblclick', e => { if (!e.target.closest('.tab_more')) start_rename(t); });
