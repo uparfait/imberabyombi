@@ -24,3 +24,4 @@ export function image_xml(img, ctx) {
   if (pos === 'left' || pos === 'right') {
     return `<w:r><w:drawing><wp:anchor distT="0" distB="91440" distL="${pos === 'right' ? 182880 : 0}" distR="${pos === 'left' ? 182880 : 0}" simplePos="0" `
       + `relativeHeight="${251658240 + n}" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"><wp:simplePos x="0" y="0"/>`
+      + `<wp:positionH relativeFrom="column"><wp:align>${pos}</wp:align></wp:positionH><wp:positionV relativeFrom="paragraph"><wp:posOffset>0</wp:posOffset>`
