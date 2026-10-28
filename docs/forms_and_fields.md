@@ -39,3 +39,4 @@ the format, or click to open the mini calendar (dates, weeks, months) and the 15
 a tile opens the file viewer (images, video, audio, PDF and text inside; other types get Open and Download).
 
 ## Validation
+- Forms carry `noValidate`; browser bubbles never show. `validate(form)` checks required fields, types, patterns, ranges
