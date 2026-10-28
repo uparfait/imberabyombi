@@ -8,3 +8,6 @@ const open = () => opening || (opening = new Promise((resolve, reject) => {
   req.onupgradeneeded = () => req.result.createObjectStore(STORE);
   req.onsuccess = () => resolve(req.result);
   req.onerror = () => { opening = null; reject(req.error); };
+}));
+
+/* the value saved under key (undefined when there is none or IndexedDB is not available) */
