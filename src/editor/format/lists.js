@@ -17,3 +17,4 @@ export function toggle_list(tag) {
 /* type: a list-style-type value ('disc', 'lower-roman', "'★  '", …); makes the list first when needed */
 export function set_list_type(tag, type) {
   if (!can_edit()) return;
+  restore_focus(); let l = closest_list();
