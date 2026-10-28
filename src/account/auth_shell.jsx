@@ -13,3 +13,5 @@ export const auth_shell = (title, text, body) => (
       {logo()}
       <h1 className="mt-8 text-[2rem] leading-tight">{title}</h1><p className="mt-2 text-muted">{text}</p>
       {body}
+    </section>
+    <p className="px-6 py-4 text-center text-xs text-muted">© {new Date().getFullYear()} {cfg.name} · <a href="#/sitemap" className="hover:text-accent">Privacy</a>
