@@ -34,3 +34,6 @@ export function contact_sec(full) {
           <p key={i} className="flex items-center gap-4">{i3(i, 'h-11 w-11')}<span className="font-medium">{t}</span></p>
         ))}</address>
         <iframe className="map mt-8 aspect-[4/3]" src={cfg.map} title="Map showing our location" loading="lazy" referrerPolicy="no-referrer"></iframe></div>
+      {contact_form()}</div></section>
+  );
+}
