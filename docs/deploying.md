@@ -22,3 +22,5 @@ Upload the contents of `dist/`. Serve `index.html` for `/`. Let the server cache
 ```nginx
 location /assets/ { add_header Cache-Control "public, max-age=31536000, immutable"; }
 location = /index.html { add_header Cache-Control "no-cache"; }
+```
+Enable gzip or brotli compression for `.js`, `.css`, `.svg`, `.xml` and `.txt` files.
