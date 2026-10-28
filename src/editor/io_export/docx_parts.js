@@ -15,3 +15,4 @@ export const docx_types = (has_header, has_footer) => `${XML}<Types xmlns="http:
   + `<Override PartName="/word/numbering.xml" ContentType="${WP}.numbering+xml"/>`
   + `${has_header ? `<Override PartName="/word/header1.xml" ContentType="${WP}.header+xml"/>` : ''}`
   + `${has_footer ? `<Override PartName="/word/footer1.xml" ContentType="${WP}.footer+xml"/>` : ''}`
+  + '<Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/></Types>';
