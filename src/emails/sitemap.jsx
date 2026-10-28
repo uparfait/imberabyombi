@@ -10,3 +10,4 @@ export function sitemap() {
     ['set-password', 'Set password', 'lock'], ['admin', 'Dashboard', 'chart']];
   return (
     <section className="wrap section"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{all.map(([k, l, i]) => (
+      <a key={k} href={`#/${k}`} className="card card_hover group flex items-center gap-4 p-5">{i3(i, 'h-11 w-11')}<span className="font-semibold">{l}</span></a>
