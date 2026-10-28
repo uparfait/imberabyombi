@@ -30,3 +30,4 @@ function Page_setup_body() {
       <fieldset className="border-0 p-0"><legend className="mb-2 px-0 text-sm">Orientation</legend>
         {seg('ori', [['portrait', 'Portrait'], ['landscape', 'Landscape']], s.orientation, null)}</fieldset>
       <div className="field"><label htmlFor="ps_paper">Paper size</label>
+        <select id="ps_paper" name="paper" defaultValue={s.paper}>{Object.entries(PAPER).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}</select></div>
