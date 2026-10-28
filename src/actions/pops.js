@@ -10,3 +10,4 @@ export function toggle_pop(id) { const p = document.getElementById(id); if (!p) 
 /* "Your modules" style menus open like the account menu: right under their button (8px gap), kept 8px inside the screen,
    as tall as the room below allows (the tiles scroll inside) */
 export function place_tile(p) {
+  const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
