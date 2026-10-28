@@ -13,3 +13,6 @@ class Page_guard extends Component {
   static getDerivedStateFromError(err) { return { err }; }
   static getDerivedStateFromProps(p, s) { return p.v !== s.v ? { err: null, v: p.v } : null; }   /* React logs the error */
   render() { return this.state.err ? error_page() : this.props.children; }
+}
+
+let page_key = 0, last = null;
