@@ -41,3 +41,4 @@ import { notify, request } from '../feedback/index.js';
 Import paths always carry the extension (`.js` / `.jsx`), as Vite and browsers expect.
 
 ## 6. Lock file and linting
+`package-lock.json` is not committed (it is always longer than 100 lines); `.npmrc` sets `save-exact=true`, so
