@@ -2,6 +2,7 @@
    draws the page for the current hash route, and mounts the shared dialogs (modal, confirm, drawer, file viewer).
    After every draw, run_after_render() does what the page needs once it is on screen (charts, reveal animations,
    messages that follow a navigation, scrolling), like enhance() in the reference. */
+import { useLayoutEffect, useSyncExternalStore } from 'react';
 
   return (
     <>
