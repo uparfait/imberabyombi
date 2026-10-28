@@ -29,3 +29,4 @@ function Page_setup_body() {
     <div id="ps_pages" className="grid gap-5 transition-opacity sm:col-span-2 sm:grid-cols-2" style={{ opacity: pageless ? 0.45 : 1 }}>
       <fieldset className="border-0 p-0"><legend className="mb-2 px-0 text-sm">Orientation</legend>
         {seg('ori', [['portrait', 'Portrait'], ['landscape', 'Landscape']], s.orientation, null)}</fieldset>
+      <div className="field"><label htmlFor="ps_paper">Paper size</label>
