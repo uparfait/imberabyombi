@@ -17,3 +17,4 @@ function cell_value(c, strings) {
   return val;
 }
 export async function xlsx_native(buf) {
+  const z = await unzip(buf);
