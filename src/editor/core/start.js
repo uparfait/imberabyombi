@@ -9,7 +9,7 @@ import { caret_to_start } from './selection.js';
 import { hist_timer, commit } from './history.js';
 import { schedule_reflow, cancel_scheduled } from './schedule.js';
 import { live } from './live.js';
-import { restore_doc, reset_doc, save_doc, save_soon } from './persist.js';
+import { load_doc, reset_doc, save_doc, save_soon, set_ready } from './persist.js';
 import { toast_cleanup } from './toast.js';
 import { install_content, img_sel, position_img_box } from '../content/index.js';
 import { install_ui, render_all, update_rulers } from '../ui/index.js';
