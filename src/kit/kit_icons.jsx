@@ -2,3 +2,5 @@
 import { PATHS, i3 } from '../icons/index.js';
 
 const TONES5 = ['brand', 'ink', 'ok', 'info', 'warn'];
+
+export const kit_icons = () => (
