@@ -2,3 +2,4 @@
 @layer base {
   /* =====================================================================
      3. EVERY NATIVE ELEMENT, RESTYLED. :where() keeps specificity at 0,
+        so any Tailwind utility on an element still wins.
