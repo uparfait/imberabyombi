@@ -18,3 +18,4 @@ export const staff_schema = {
 };
 
 export const employees_schema = {
+  l: 'employee', n: 16, cols: ['name', 'dept', 'position', 'shift', 'phone', 'status'],
