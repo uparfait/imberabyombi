@@ -28,3 +28,4 @@ export const pick = {
     this.a = a; this.kb = kb; this.mode = 'days'; this.view = this.from(a); a.dataset.open = ''; a.setAttribute('aria-expanded', 'true');
     (a.closest('dialog[open]') || document.body).append(this.el);
     this.draw(); if (this.el.hidden) return;
+    const q = this.el.querySelector('[data-pk-q]');
