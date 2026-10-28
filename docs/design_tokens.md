@@ -15,3 +15,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--font_sans`      | Figtree             | Body text                                                        |
 | `--font_display`   | Bricolage Grotesque | Headings, numbers, logo                                          |
 | `--font_mono`      | JetBrains Mono      | `code`, `kbd`, `samp`, `pre`, `var`                              |
+| `--series_1..8`    | brand, blue, …      | Chart colours in a fixed order (dark mode has its own steps)     |
