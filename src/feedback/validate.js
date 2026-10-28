@@ -6,3 +6,4 @@ import { ic_html } from '../icons/index.js';
 import { form_msg } from './messages.jsx';
 
 export const field_label = el => (el.labels?.[0]?.textContent || el.placeholder || el.name || 'this field').replace(/\*/g, '').trim();
+export function err_text(el) {
