@@ -12,3 +12,4 @@ export const event_mails = ({ ev, place, who, d1, d2, tm, event, rsvp, cal }) =>
     <p className="text-sm font-medium">Join online</p>{copy_box('https://meet.imberabyombi.com/' + lorem.w(1) + '-' + lorem.int(100, 999), 'Meeting link')}{cal}</> },
   update: { s: `Updated: ${ev}`, t: <>
     <h1 className="mail_h">This event was updated</h1><p>{who} changed some details of <b>{ev}</b>.</p>
+    <div className="mail_diff">{[['Place', `${lorem.t(2)} room`, place], ['Agenda', lorem.t(3), lorem.t(4)], ['Guests', '24 people', '31 people']].map(([f, a, b]) => (
