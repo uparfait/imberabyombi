@@ -28,3 +28,5 @@
   .doc_content .cmt { background: none !important; border: 0 !important; }
   .pageless .page_wrap > .page { height: auto !important; min-height: 0 !important; }
   .pageless .pg_body { margin: 0 !important; min-height: 0 !important; }
+  .pageless .doc_content .page_break { border: 0; margin: 0; break-after: page; }
+}
