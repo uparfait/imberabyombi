@@ -33,3 +33,4 @@ export function pages_keydown(e) {
   if (!host.classList.contains('pg_body') || state.mode !== 'edit') return;
   const s = getSelection(); if (!s.rangeCount) return; const r = s.getRangeAt(0);
   const bs = bodies(), pi = bs.indexOf(host);
+  if (e.key === 'Tab') { e.stopPropagation(); handle_tab(e, r, host); return; }
