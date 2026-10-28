@@ -7,3 +7,4 @@ import { auth, MODS } from '../auth/index.js';
 import { key_hint } from '../feedback/index.js';
 import { tip } from '../overlays/index.js';
 import { PUB, PAGES } from '../site/index.js';
+import { close_pops } from '../actions/index.js';
