@@ -11,3 +11,4 @@ export const DROP = new Set('SCRIPT STYLE META LINK TITLE NOSCRIPT IFRAME OBJECT
 export const KEEP_CLS = new Set(['title', 'subtitle', 'checklist', 'page_break', 'cmt', 'doc_table', 'file_chip']);
 export const KEEP_STYLE = ['color', 'background-color', 'font-weight', 'font-style', 'text-decoration', 'text-decoration-line', 'font-size', 'font-family',
   'text-align', 'line-height', 'margin-left', 'margin-right', 'vertical-align', 'width', 'list-style-type', 'padding-top', 'padding-bottom', 'border',
+  'border-radius', 'box-shadow', 'height', '--bw', '--bc', '--pad'];
