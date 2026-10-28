@@ -13,3 +13,4 @@ import { epub_chapter, EPUB_CONTAINER, epub_opf, epub_nav } from './epub_parts.j
 export async function export_epub(scope, name) {
   if (hist_timer) commit(); save_tab();
   const tabs = scope === 'all' ? state.tabs : [active_tab()], ser = new XMLSerializer(), files = [], manifest = [], spine = [], nav = [], imgs = [];
+  let img_n = 0;
