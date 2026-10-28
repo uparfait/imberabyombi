@@ -8,6 +8,7 @@
   overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scrollbar-width: none;
 }
 #toolbar::-webkit-scrollbar { display: none; }
+@media (max-width: 639.98px) {   /* phones: a tighter bar */
   #toolbar { margin: .375rem .5rem; padding: .1875rem .25rem; }
   #toolbar .tb_sep { display: none; }
   #toolbar .tb_fill { min-width: 0; }
