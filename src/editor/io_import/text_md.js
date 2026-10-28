@@ -40,3 +40,4 @@ export function md_to_html(md) {
     if (LIST_RE.test(l)) {
       const ordered = /^\s*\d/.test(l); const items = []; let task = false;
       while (i < lines.length && LIST_RE.test(lines[i])) {
+        const t = lines[i++].replace(LIST_RE, ''); const tm = t.match(/^\[([ xX])\]\s+(.*)$/);
