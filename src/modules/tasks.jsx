@@ -13,3 +13,4 @@ const status_btn = r => task_mine(r) ? <button className="btn btn_soft btn_sm wh
 
 VIEWS.tasks = () => {
   const n = me(), t = ui.tab.tasks || 'mine', all = db.list('tasks');
+  const FL = { mine: r => r.assignee === n && r.by === n, assigned: r => r.assignee === n && r.by !== n,
