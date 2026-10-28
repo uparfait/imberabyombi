@@ -11,3 +11,4 @@ import { task_refresh } from './task_view.jsx';
 import { tv_api } from './tv_state.js';
 
 const row_of = t => t.closest('[data-tv-row]');
+const set_edit = (t, on) => { const k = row_of(t).dataset.tvRow; tv_api(t)?.put(s => ({ edit: { ...s.edit, [k]: on } })); };
