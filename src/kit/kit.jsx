@@ -20,3 +20,4 @@ import { kit_icons } from './kit_icons.jsx';
 
 /* side navigation: [section id, title] */
 const SECS = [['tokens', 'Tokens'], ['type', 'Typography'], ['lists', 'Lists'], ['actions', 'Actions'], ['forms', 'Forms'], ['media', 'Media'], ['data', 'Tables'],
+  ['overlays', 'Disclosure & overlays'], ['nav', 'Nested navigation'], ['wc', 'Web component'], ['icons', '3D icons']];
