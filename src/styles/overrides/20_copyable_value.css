@@ -3,3 +3,4 @@
   .copy_box { display: flex; align-items: center; gap: .5rem; padding: .375rem .375rem .375rem .875rem; border: 1px dashed rgb(var(--brand) / .55); border-radius: calc(var(--radius) * .75);
     background: rgb(var(--brand) / .06); animation: attn 1.4s var(--ease) .35s 2; }
   @keyframes attn { 50% { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .16); } }
+  .copy_val { flex: 1; min-width: 0; padding: 0; border: 0; background: none; font-size: .85rem; overflow-wrap: anywhere; color: rgb(var(--fg)); }
