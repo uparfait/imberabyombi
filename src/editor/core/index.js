@@ -16,3 +16,4 @@ export * from './reflow.js';
 export * from './schedule.js';
 export * from './history.js';
 export * from './live.js';
+export * from './persist.js';
