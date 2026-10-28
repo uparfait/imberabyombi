@@ -14,9 +14,11 @@ const changed = m => { const d = default_setup().margins; return Object.keys(d).
 export function reset_margins() {
   if (state.mode !== 'edit') return;
   begin_op(); state.setup.margins = { ...default_setup().margins }; apply_setup(true); commit(); save_soon();
+}
 
 export function update_rulers() {
   if (!hruler || !vruler) return;
+  refs.root?.classList.toggle('no_ruler', !state.show_ruler);   /* hidden by default (View › Show ruler): panels move up */
   hruler.style.display = state.show_ruler ? '' : 'none';
   vruler.style.display = state.show_ruler && !state.setup.pageless ? '' : 'none';
   if (!state.show_ruler) return;
