@@ -50,3 +50,4 @@ function edit_key(e, k, code) {
 }
 
 export function on_key(e) {
+  const t = e.target, done = () => { e.preventDefault(); e.stopPropagation(); };
