@@ -9,3 +9,4 @@ export async function epub_to_html(file) {
   const rf = by_tag(parse_xml(await z.text('META-INF/container.xml')), 'rootfile')[0]; if (!rf) throw new Error('the book’s table of contents is missing');
   const opf_path = rf.getAttribute('full-path'), opf = parse_xml(await z.text(opf_path)), base = dir_of(opf_path), man = {};
   by_tag(opf, 'item').forEach(it => { man[it.getAttribute('id')] = { href: it.getAttribute('href'), type: it.getAttribute('media-type') || '' }; });
+  const spine = by_tag(opf, 'itemref').map(r => man[r.getAttribute('idref')]).filter(x => x && /html/.test(x.type)), parts = [];
