@@ -59,3 +59,4 @@ export async function export_docx(root, name) {
       { name: 'docProps/core.xml', data: docx_core(state.title, now) },
       { name: 'word/document.xml', data: doc_xml },
       { name: 'word/styles.xml', data: DOCX_STYLES },
+      { name: 'word/numbering.xml', data: docx_numbering(abs_xml, num_xml) },
