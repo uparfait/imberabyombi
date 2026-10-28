@@ -69,3 +69,4 @@ export function tbl_op(op, arg) {
   chain.forEach(t => { if (t.isConnected && !t.rows.length) t.remove(); });
   const alive = chain.filter(t => t.isConnected); if (alive.length) restyle_table(alive);
   if (!target && !c.td.isConnected && alive.length) target = alive[0].rows[0] && alive[0].rows[0].cells[0];
+  if (!c.host.firstElementChild) c.host.innerHTML = '<p><br></p>';
