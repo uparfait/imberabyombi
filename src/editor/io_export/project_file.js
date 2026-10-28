@@ -1,1 +1,2 @@
 /* editor/io_export/project_file.js: the project file (.json with every tab, the page setup and the comments) and the
+   helpers every export shares: the export file name, the content without comment marks, and the root an export reads. */
