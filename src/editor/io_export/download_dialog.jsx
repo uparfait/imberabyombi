@@ -32,3 +32,4 @@ const seg = (label, opts, cur, pick) => (
 );
 const fmt_card = (f, on, pick) => (
   <button key={f.key} type="button" role="radio" aria-checked={String(on)} aria-pressed={String(on)} data-f={f.key} onClick={() => pick(f.key)}
+    onDoubleClick={e => { pick(f.key); const fm = e.currentTarget.form; if (fm && !fm.querySelector('[aria-busy]')) fm.requestSubmit(); }}
