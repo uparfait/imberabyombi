@@ -36,3 +36,4 @@ export function backspace_across(host, pi) {
   if (is_break(last)) { last.remove(); end_op(pi - 1); return; }
   if (!last) { end_op(pi); return; }
   if (is_empty_block(first)) { first.remove(); caret_to_end(last); }
+  else if (TEXT_BLOCK_RE.test(last.tagName) && TEXT_BLOCK_RE.test(first.tagName)) {
