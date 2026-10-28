@@ -32,3 +32,4 @@ export const kpi_cards_a = k => {
             <span>{n}</span><span className={`kpi_status ${s}`}>{ic(s === 'ok' ? 'check' : 'bell', 'h-3.5 w-3.5')}{l}</span></li>))}</ul></>,
       [['Service', 'Status'], [['All services', 'Healthy · 99.95% uptime'], ...services.map(([n, , l]) => [n, l])]]),
     kpi_card('', 'Orders: this month vs last', 'Orders placed this month compared with last month.',
+      <><div className="mt-2 grid grid-cols-2 gap-3">
