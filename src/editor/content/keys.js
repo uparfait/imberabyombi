@@ -47,3 +47,4 @@ export function pages_keydown(e) {
   }
 }
 export function pages_beforeinput(e) {
+  if (e.inputType === 'historyUndo') { e.preventDefault(); undo(); }
