@@ -21,3 +21,4 @@ export function table_menu_items() {
     { label: 'Delete column', icon: 'delete', action: () => tbl_op('del_col') },
     { label: 'Delete table', icon: 'delete_forever', action: () => tbl_op('del_table') },
     { sep: true },
+    { label: 'Merge with the cell on the right', icon: 'call_merge', action: () => tbl_op('merge') },
