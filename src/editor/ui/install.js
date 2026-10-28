@@ -41,3 +41,4 @@ function install_view(offs) {
   let raf = 0;
   listen(offs, hruler, 'pointerdown', ruler_drag); listen(offs, vruler, 'pointerdown', ruler_drag);
   listen(offs, scroller, 'scroll', () => {
+    hide_link_bubble();
