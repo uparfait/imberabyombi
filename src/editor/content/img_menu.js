@@ -39,3 +39,4 @@ export function image_menu_items(img) {
     { label: 'Border', icon: 'border_style', sub: () => [
       ...[0, 1, 2, 4, 6].map(w => ({
         label: w ? w + ' px' : 'No border', checked: (parseFloat(img_now(img).style.borderWidth) || 0) === w, action: () => set_img_border(img, w) })), { sep: true },
+      { label: 'Border color', icon: 'border_color', sub: () => [{ render: () => palette_el(c => set_img_border_color(img, c), 'Black') }] }] },
