@@ -38,3 +38,4 @@ export function start_col_drag(e) {
 /* the pointer within 4px of a cell's inner border (not the table's outer edges) */
 function on_hover(e) {
   if (state.mode !== 'edit' || e.buttons) return;
+  const t = e.target, cell = pages_el && pages_el.contains(t) && t.closest('.pg_body td, .pg_body th'); let h = null;
