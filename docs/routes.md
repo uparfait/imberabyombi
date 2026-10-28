@@ -11,3 +11,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
 | Nested  | `#/admin/nav/...`: System 2 and System 3 pages (three levels of navigation in all)               |
 
 - Unknown routes show "Page not found".
+- Admin routes without a session redirect to `#/login?next=...` and return there after sign-in.
