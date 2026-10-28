@@ -3,3 +3,4 @@
 
 export const parse_xml = t => new DOMParser().parseFromString(t, 'application/xml');
 export const by_tag = (n, local) => n ? Array.from(n.getElementsByTagNameNS('*', local)) : [];
+export const kids = (n, local) => n ? Array.from(n.children).filter(c => !local || c.localName === local) : [];
