@@ -15,3 +15,4 @@ export const reservations_schema = {
     const h = lorem.int(8, 15);
     return {
       resource: lorem.pick(['Main hall', 'Science lab', 'Computer room', 'School bus', 'Projector']), by: lorem.pick(people()),
+      date: ymd(add_d(new Date(), lorem.int(0, 10))), from: `${pad(h)}:00`, to: `${pad(h + 2)}:00`, purpose: lorem.s(), status: lorem.pick(STATUS.res)
