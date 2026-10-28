@@ -64,3 +64,5 @@ VIEWS.parking = () => {
       {can ? <button className="btn btn_primary btn_sm ml-auto" data-act="park_in">{ic('plus', 'h-4 w-4')}Check in a car</button> : null}</header>
         <div id="tiles_msg" className="mb-4 empty:hidden"></div>
       <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-3 md:grid-cols-6 xl:grid-cols-8">{slot_ids().map(tile)}</div></section>
+    {crud('parking', { title: 'Movement log', acts: check_out })}</>;
+};
