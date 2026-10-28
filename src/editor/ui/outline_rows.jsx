@@ -57,3 +57,4 @@ function on_key(e, row) {
     else if (rows[i + 1] && +rows[i + 1].dataset.lvl > lvl) to(rows[i + 1]);
   } else if (k === 'ArrowLeft') {
     if (row.querySelector('.outline_fold') && !row.classList.contains('folded')) { e.preventDefault(); toggle_fold(row, false); }
+    else to(rows.slice(0, i).reverse().find(r => +r.dataset.lvl < lvl));
