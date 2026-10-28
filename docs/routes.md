@@ -39,3 +39,5 @@ On the home page, header links with `data-sec` scroll to their section instead.
 
 To navigate from code: `go('/admin/tasks')`. A redirect that should not leave a history entry:
 `go('/login', { replace: true })`. Going to the address already on screen does nothing.
+
+## Base path
