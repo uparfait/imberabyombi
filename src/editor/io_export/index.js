@@ -15,3 +15,4 @@ export * from './export_xlsx.js';
 export * from './formats.js';
 export * from './download_dialog.jsx';
 export * from './zip_store.js';
+export * from './docx_runs.js';
