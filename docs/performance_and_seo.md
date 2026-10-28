@@ -25,6 +25,7 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 - `index.html` holds a real title, description, keywords, robots, author and canonical link, Open Graph and Twitter
   card tags, theme colours for light and dark, a favicon and JSON-LD structured data (Organization).
 - Every page has a real address (`/about`, `/contact`), so each one can be crawled, shared and indexed on its own.
+- Each route updates `<title>`, the meta description, `og:title` and the canonical link (`set_meta()` in src/router).
 - `public/robots.txt` and `public/sitemap.xml` tell crawlers what to read; update the domain before publishing.
 - Images carry `alt` text; headings follow one `h1` per page; links are real `<a href>` elements.
 - A `<noscript>` message explains that the site needs JavaScript.
