@@ -18,3 +18,4 @@ export const pager = (c, p, n) => (
 export const table_menu = c => { const v = tview(c);
   return (
     <>
+      <p className="px-3 pb-1.5 pt-2 text-xs font-medium uppercase tracking-wider text-muted">Rows per page</p>
