@@ -6,3 +6,5 @@ import { hide_img_sel } from '../content/index.js';
 import { close_menus } from './menu_engine.js';
 import { update_rulers } from './rulers.js';
 import { set_text, set_icon, scaled } from './ui_dom.js';
+
+/* the print page size lives in a <style id="page_rule"> (created in <head> when the chrome has none; removed on stop) */
