@@ -21,3 +21,5 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Import** (Upload): DOCX, PPTX, XLSX / CSV / TSV, ODT, EPUB, RTF, PDF, HTML, Markdown, JSON, text and code files.
 - **Export** (Download): DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT, and a project file that keeps every tab.
 - **Saving**: the document is kept in the browser (`editor_doc` key) a moment after each change.
+
+## Live preview
