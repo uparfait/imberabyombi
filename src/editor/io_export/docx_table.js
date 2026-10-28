@@ -8,3 +8,4 @@ export function table_xml(t, ctx) {
   const rows = Array.from(t.rows); if (!rows.length) return '';
   const n = Math.max(1, ...rows.map(r => Array.from(r.cells).reduce((a, c) => a + (c.colSpan || 1), 0)));
   const wp = clamp(parseFloat(t.style.width) || 100, 10, 100), total = Math.round(ctx.content_tw * wp / 100), cg = t.querySelector(':scope > colgroup');
+  const pct = cg && cg.children.length === n ? Array.from(cg.children).map(c => parseFloat(c.style.width) || 100 / n) : Array(n).fill(100 / n);
