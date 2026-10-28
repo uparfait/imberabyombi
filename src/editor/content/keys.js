@@ -8,3 +8,4 @@ import { img_sel, hide_img_sel } from './img_sel.js';
 import { at_body_start, at_body_end, on_first_line, on_last_line, backspace_across, delete_across } from './boundaries.js';
 
 export function handle_tab(e, r, host) {
+  e.preventDefault();
