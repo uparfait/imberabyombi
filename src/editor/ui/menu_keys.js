@@ -13,3 +13,4 @@ function bar_step(d) {
 }
 
 export function menu_key(e) {
+  if (!menu_stack.length) return false;
