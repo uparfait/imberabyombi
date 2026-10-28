@@ -17,3 +17,4 @@ export function table_xml(t, ctx) {
   const pad_pt = parse_pt(t.style.getPropertyValue('--pad').trim()), pad = Math.round((pad_pt == null ? 5 : pad_pt) * 20);
   const jc = t.style.marginLeft === 'auto' ? (t.style.marginRight === 'auto' ? 'center' : 'right') : '';
   let out = `<w:tbl><w:tblPr><w:tblW w:w="${total}" w:type="dxa"/>${jc ? `<w:jc w:val="${jc}"/>` : ''}`
+    + `<w:tblBorders>${['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map(bdr).join('')}</w:tblBorders><w:tblLayout w:type="fixed"/>`
