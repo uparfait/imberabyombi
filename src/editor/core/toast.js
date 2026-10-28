@@ -17,3 +17,5 @@ const LINE_CSS = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%)
 function status_line() {
   if (!line || !line.isConnected) {
     line = el('div', { class: 'ed_status no_print', role: 'status', 'aria-live': 'polite', style: LINE_CSS }); document.body.appendChild(line);
+  }
+  return line;
