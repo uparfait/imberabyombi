@@ -46,3 +46,4 @@ export function custom_table_dialog() {
     on_submit: v => {
       const C = clamp(parseInt(v.ct_c) || 3, 1, 30), R = clamp(parseInt(v.ct_r) || 1, 1, 500), W = clamp(parseInt(v.ct_w) || 100, 10, 100), A = v.ct_a, preset = v.preset;
       const t = build_table(R, C, { preset, width: W });
+      if (A !== 'left' && W < 100) { t.style.marginLeft = 'auto'; if (A === 'center') t.style.marginRight = 'auto'; }
