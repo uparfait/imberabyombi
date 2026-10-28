@@ -6,3 +6,5 @@ import { ms_sync, slide_in } from '../overlays/index.js';
 import { file_box } from '../files/index.js';
 import { fill_range, hex_refresh, init_player } from '../actions/index.js';
 import { header_line, chain_wheel } from '../behaviors/index.js';
+
+export function count_up(el) {
