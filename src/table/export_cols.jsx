@@ -12,3 +12,4 @@ export function Export_cols({ c }) {
   useLayoutEffect(() => { const b = ref.current?.form?.querySelector('footer button:not([type=button])'); if (b) b.disabled = !any; }, [any]);
   const tick = k => e => { const v = e.target.checked; set_on(o => ({ ...o, [k]: v })); };
   return (
+    <fieldset ref={ref} className="sm:col-span-2" data-export-cols=""><legend className="mb-2 text-sm font-medium">Columns to include</legend>
