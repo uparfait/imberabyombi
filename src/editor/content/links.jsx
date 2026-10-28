@@ -25,3 +25,4 @@ export function open_link_dialog(existing) {
       <input type="text" inputMode="url" id="lk_url" name="url" defaultValue={a ? a.getAttribute('href') : ''} placeholder="Paste a link or type an address"
         autoComplete="off" /></div>
   </>, on_submit: () => {
+    const url = normalize_url(qs('#lk_url').value), text = qs('#lk_text').value;
