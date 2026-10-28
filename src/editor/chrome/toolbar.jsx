@@ -25,3 +25,4 @@ const split = (ed, icon, tip, dd_id, dd_tip) => (
 const sep = () => <div className="tb_sep"></div>;
 
 export const toolbar = () => (
+  <div id="toolbar" className="toolbar no_print" role="toolbar" aria-label="Formatting">
