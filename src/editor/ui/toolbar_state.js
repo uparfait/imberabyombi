@@ -3,3 +3,4 @@
    the heading the caret is in. on_selection() remembers every selection made inside the pages. */
 import { refs, pages_el, last_range, set_last, el_of, editable_of, qsa, STYLES } from '../core/index.js';
 import { update_link_bubble } from '../content/index.js';
+import { set_text, set_icon } from './ui_dom.js';
