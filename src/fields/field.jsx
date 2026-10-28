@@ -18,3 +18,4 @@ export function field(f, v) {
   if (f.t === 'select') ctl = <select id={id} name={f.k} required={req} defaultValue={String(val)}><option value="">Choose…</option>{options(f, v)}</select>;
   else if (f.t === 'textarea') ctl = <textarea id={id} name={f.k} rows={3} placeholder=" " required={req} defaultValue={val} />;
   else if (f.t === 'list') ctl = <>
+    <input id={id} name={f.k} data-list={'list_' + f.k} defaultValue={val} placeholder=" " autoComplete="off" required={req} />
