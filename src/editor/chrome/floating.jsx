@@ -12,3 +12,4 @@ export const find_panel = () => (
     <div className="find_line">
       <input type="text" id="find_input" placeholder="Find in document" aria-label="Find" />
       <span id="find_count" className="find_count">0 of 0</span>
+      {small_btn('find_prev', 'keyboard_arrow_up', 'Previous (Shift+Enter)')}
