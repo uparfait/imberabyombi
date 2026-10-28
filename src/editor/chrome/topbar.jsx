@@ -12,3 +12,4 @@ export const topbar = () => (
       <span className="doc_logo" aria-hidden="true">{i3('file', 'h-10 w-10')}</span>
       <div className="topbar_main">
         <input id="doc_title" className="title_input" defaultValue="Untitled document" spellCheck={false} aria-label="Document title" />
+        <nav id="menubar" aria-label="Menus">
