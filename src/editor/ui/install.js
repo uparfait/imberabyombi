@@ -46,3 +46,4 @@ function install_view(offs) {
   });
   offs.push(() => cancelAnimationFrame(raf));
   listen(offs, window, 'resize', () => { apply_panels(); close_menus(0); });
+  /* the editor's room also changes when the template's own sidebar opens or closes */
