@@ -51,3 +51,5 @@ export const VIZ_TIME_A = {
           + `<text x="0" y="${round1(y(i) + 4)}">${esc(fit(k, lw - 8))}</text>`
           + `<path class="series_line" d="${path_of(pts)}" style="stroke:rgb(var(--muted) / .7);stroke-width:1.5"/>${dot(...pts.at(-1), 'var(--series_1)', 3.5)}`
           + `<text class="value_label" x="${f.w}" y="${round1(y(i) + 4)}" text-anchor="end">${num(last * MARGIN())}</text>`); }).join(''), 'Sparklines'),
+      table: [['Item', 'First', 'Latest'], rows.map(([k, v]) => [k, num(v[0] * MARGIN()), num(v.at(-1) * MARGIN())])] }; } }
+};
