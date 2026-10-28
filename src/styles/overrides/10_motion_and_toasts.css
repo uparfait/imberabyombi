@@ -1,4 +1,4 @@
-/* overrides/10_motion_and_toasts.css: rules that come after the utilities, as in the reference */
+/* overrides/10_motion_and_toasts.css: rules that come after Tailwind's utilities, so they win at equal specificity */
 /* =====================================================================
    5. MOTION + THEME RULES
    ===================================================================== */
