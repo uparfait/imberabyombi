@@ -30,3 +30,4 @@ export function render_sidebar() {
       + `<button type="button" class="icon_btn tab_more h-8 w-8" aria-label="Tab options" aria-haspopup="menu">${mi('more_vert')}</button>`;
     row.querySelector('.tab_name').textContent = t.name;
     wire_row(row, t, box);
+    box.appendChild(row);
