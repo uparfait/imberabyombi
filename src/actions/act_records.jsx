@@ -8,3 +8,5 @@ import { SUBJECTS, TERMS, slot_ids } from '../schemas/index.js';
 import { notify, show_msg } from '../feedback/index.js';
 import { modal, ask } from '../overlays/index.js';
 import { open_form } from '../table/index.js';
+
+/* a student's average per subject and term, and per term over every subject */
