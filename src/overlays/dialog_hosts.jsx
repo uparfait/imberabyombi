@@ -8,3 +8,4 @@ import { Modal_form } from './modal_form.jsx';
 
 /* "Discard changes?": the unsaved-changes check of request_close() */
 const confirm_view = () => (
+  <>
