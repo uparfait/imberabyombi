@@ -22,3 +22,5 @@ export function dt_refresh() {
 export function set_native_value(el, v) {
   const proto = el instanceof HTMLSelectElement ? HTMLSelectElement.prototype : el instanceof HTMLTextAreaElement ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
   const set = Object.getOwnPropertyDescriptor(proto, 'value')?.set;
+  if (set) set.call(el, v); else el.value = v;
+}
