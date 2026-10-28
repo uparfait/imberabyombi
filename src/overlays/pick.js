@@ -61,3 +61,4 @@ export const pick = {
     p.style.top = (h <= below || below >= above ? r.bottom + 4 : Math.max(8, r.top - 4 - h)) + 'px';
   },
   slide(n) { slide_in(this.el.querySelectorAll('.pk_title, .pk_grid, .pk_years, .pk_cal > .grid'), n); },
+  filter(q) {
