@@ -83,3 +83,4 @@ export function replace_all() {
   end_op(0, true); run_find(); toast(`Replaced ${n} ${n === 1 ? 'match' : 'matches'}`);
 }
 /* the find panel's own listeners (source lines after replaceAll) */
+export function install_find(offs) {
