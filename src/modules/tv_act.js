@@ -14,3 +14,5 @@ const row_of = t => t.closest('[data-tv-row]');
 const set_edit = (t, on) => { const k = row_of(t).dataset.tvRow; tv_api(t)?.put(s => ({ edit: { ...s.edit, [k]: on } })); };
 const fresh = () => { const f = qs('#modal form'); if (f) f._init = snap(f); };   /* closing now asks nothing */
 const status_box = t => t.closest('[data-tv-status]');
+
+/* a date row's value against the other date: the start never comes after the due / completed time */
