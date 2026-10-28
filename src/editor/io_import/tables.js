@@ -62,3 +62,5 @@ export function csv_to_html(text, delim) {
 }
 /* the file name (small grey line, document styling) above the code in a code block */
 export function code_to_html(text, name) {
+  return `<p style="font-size:9pt;color:#5f6368">${esc_html(name || '')}</p><pre>${esc_html(text.replace(/\r\n?/g, '\n')) || '<br>'}</pre>`;
+}
