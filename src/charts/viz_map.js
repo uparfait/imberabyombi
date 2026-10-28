@@ -6,3 +6,4 @@ import { scale_legend } from './viz_legend.jsx';
 
 export const VIZ_MAP = {
   choropleth: { t: 'Choropleth map (tile map)', g: 'map', d: 'A value per region on equal-size tiles. Darker = more.', f(w) {
+    const rows = ['..XXX..', '.XXXXX.', 'XXXXXXX', 'XXXXXXX', '.XXXXX.', '..XXX..'], tiles = [];
