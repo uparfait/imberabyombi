@@ -27,3 +27,4 @@ The template is a complete front end with demo data in the browser. Before real 
 
 ## Data
 - The storage prefix `loremds:v1:` (`window.NS` in `index.html`) separates datasets; change it when your data shape
+  changes so old browser data is not read by the new version.
