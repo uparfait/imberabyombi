@@ -14,3 +14,4 @@ const val = docx_val, HEX6 = /^[0-9a-f]{6}$/i;
 export async function docx_run(cx, r) {
   const pr = kids(r, 'rPr')[0], css = []; let open = '', close = '';
   const wrap = t => { open += `<${t}>`; close = `</${t}>` + close; };
+  if (pr) {
