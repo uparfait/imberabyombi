@@ -37,3 +37,6 @@ input.tab_filter, .tab_filter input {
 .tab_rename {
   width: 100%; min-width: 0; min-height: 0; padding: .125rem .5rem; border: 1px solid rgb(var(--brand)); border-radius: calc(var(--radius) * .5);
   background: rgb(var(--surface)); font-size: .875rem; line-height: 1.5; outline: 1px solid rgb(var(--brand)); outline-offset: -2px;
+}
+
+/* Outline under the active tab: heading rows (indent set inline per level), fold chevrons, the heading the caret is in */
