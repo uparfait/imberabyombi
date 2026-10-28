@@ -39,3 +39,4 @@
   .kpi_ring circle + circle { stroke: var(--series_1); stroke-linecap: round; }
   .kpi_ring b { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font_display); font-size: 1.25rem; font-weight: 700; }
   .kpi_bars { display: flex; align-items: flex-end; gap: 3px; height: 3rem; margin-top: .75rem; }
+  .kpi_bars i { flex: 1; min-height: 2px; border-radius: 3px 3px 0 0; transition: opacity .15s; }
