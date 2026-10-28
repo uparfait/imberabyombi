@@ -44,3 +44,5 @@ function rewrite(m, mark) {
   const f = bs[0].querySelector('[data-sec]'); if (f) f.removeAttribute('data-sec');
   end_op(0, true);
   return f && f.isConnected ? f : null;
+}
+/* move section k before block `to` (blocks.length: to the end); m: a model taken before (drag start) */
