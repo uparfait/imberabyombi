@@ -13,3 +13,4 @@
   datalist { display: none; }
 
   /* Autofill lock: browsers may NOT recolour filled fields (wins over the dark no-shadow rule by specificity). */
+  input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus,
