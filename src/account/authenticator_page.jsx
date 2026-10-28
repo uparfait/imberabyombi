@@ -11,3 +11,4 @@ export function authenticator_page() {
   const key = 'JBSW Y3DP EHPK 3PXP';
   return auth_shell('Set up an authenticator app', TEXT, <>
     <form data-form="otp" className="on_bg mt-8 grid gap-6" noValidate><div data-msg-slot="" className="empty:hidden"></div>
+      <input type="hidden" name="setup" defaultValue="1" />
