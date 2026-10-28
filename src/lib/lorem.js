@@ -11,3 +11,4 @@ export const lorem = {
   r() { SEED = SEED * 16807 % 2147483647; return (SEED - 1) / 2147483646; },
   int(a, b) { return a + Math.floor(lorem.r() * (b - a + 1)); },
   pick(a) { return a[Math.floor(lorem.r() * a.length)]; },
+  w(n = 1) { return Array.from({ length: n }, () => lorem.pick(WORDS)).join(' '); },
