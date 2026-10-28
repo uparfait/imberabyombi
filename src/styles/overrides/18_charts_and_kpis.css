@@ -34,3 +34,4 @@
   .kpi_gauge svg { display: block; width: 100%; height: auto; }
   .kpi_gauge .kpi_value { position: absolute; inset: auto 0 0; text-align: center; }
   .kpi_ring { position: relative; width: 6rem; height: 6rem; margin: .5rem auto; }
+  .kpi_ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
