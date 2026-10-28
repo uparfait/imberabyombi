@@ -30,3 +30,4 @@ export function start_col_drag(e) {
     chain.forEach(t => { const g = t.querySelector(':scope > colgroup'); g && Array.from(g.children).forEach((c, k) => { c.style.width = (nw[k] / tw * 100).toFixed(3) + '%'; }); });
   };
   const up = () => {
+    removeEventListener('mousemove', move); removeEventListener('mouseup', up); drag_stop = null;
