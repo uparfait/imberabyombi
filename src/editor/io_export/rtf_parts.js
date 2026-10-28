@@ -26,3 +26,4 @@ const rtf_codes = (rx, f) => {
   return s;
 };
 const HEX = Array.from({ length: 256 }, (_, i) => i.toString(16).padStart(2, '0'));
+const rtf_pict = (rx, img) => {
