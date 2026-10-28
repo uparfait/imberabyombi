@@ -21,3 +21,4 @@ export const account_mails = () => ({
     {copy_box(String(lorem.int(100000, 999999)), 'Code', true)}<p className="text-sm text-muted">Never share this code. {cfg.name} will never ask for it by phone or chat.</p>
     <div>{mail_btn('Open 2-step verification', 'btn_outline', '#/verify')}</div></> },
   token: { s: 'Your new access token', t: <>
+    <h1 className="mail_h">Your new access token</h1><p>A token named <b>{lorem.t(2)}</b> was created for your account.</p>
