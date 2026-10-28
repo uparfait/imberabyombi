@@ -9,7 +9,7 @@ const listeners = new Set();
 export const subscribe_dialogs = fn => { listeners.add(fn); return () => listeners.delete(fn); };
 export const get_dialog_version = () => version;
 
-/* content: the dialog's options (or null = empty). Each call gets a new key, so the dialog's DOM is new (like innerHTML) */
+/* content: the dialog's options (or null = empty). Each call gets a new key, so the dialog's DOM is new (animations and local state start over) */
 export function set_dialog(id, content) {
   DIALOGS[id] = content ? { ...content, key: ++n } : null; version++;
   const emit = () => listeners.forEach(fn => fn());
