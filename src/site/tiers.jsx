@@ -23,3 +23,4 @@ export function tiers() {
         <thead><tr><th scope="col">Partner</th><th scope="col">Since</th><th scope="col">Tier</th><th scope="col" className="text-right">Projects</th></tr></thead>
         <tbody>{[0, 1, 2, 3, 4].map(i => {
           const n = cap(lorem.w(1));
+          return (
