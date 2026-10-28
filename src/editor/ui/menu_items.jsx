@@ -45,3 +45,4 @@ export function text_items() {
     { label: 'Italic', icon: 'format_italic', shortcut: 'Ctrl+I', action: () => exec('italic') },
     { label: 'Underline', icon: 'format_underlined', shortcut: 'Ctrl+U', action: () => exec('underline') },
     { label: 'Strikethrough', icon: 'strikethrough_s', shortcut: 'Ctrl+Shift+X', action: () => exec('strikeThrough') },
+    { label: 'Superscript', icon: 'superscript', shortcut: 'Ctrl+.', action: () => exec('superscript') },
