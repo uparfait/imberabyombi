@@ -24,3 +24,4 @@ export function render_sidebar() {
   list.appendChild(box);
   state.tabs.forEach(t => {
     const active = t.id === state.active;
+    const row = el('div', { class: 'tab_row select-none' + (active ? ' active' : ''), 'data-id': t.id, role: 'button', tabindex: '0' });
