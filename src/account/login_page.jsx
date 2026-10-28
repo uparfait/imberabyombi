@@ -15,3 +15,4 @@ const role_part = (inv, rs, sel) => inv ? <>
 
 export function login_page(r) {
   const rs = roles(), inv = r.q.role && rs.find(x => x.id === r.q.role), sel = inv?.id || db.get('lastRole') || 'super';
+  return auth_shell('Sign in', 'Use any details. Your data stays in this browser.', <>
