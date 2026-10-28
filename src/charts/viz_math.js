@@ -12,3 +12,4 @@ export const nice_step = x => { const e = 10 ** Math.floor(Math.log10(x || 1)), 
 export const ticks = (lo, hi, n = 4) => {
   const s = nice_step((hi - lo) / n), a = Math.floor(lo / s) * s, out = [];
   for (let v = a; v <= Math.ceil(hi / s) * s + s / 2; v += s) out.push(round1(v));
+  return out;
