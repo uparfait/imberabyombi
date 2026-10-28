@@ -21,3 +21,4 @@ export function insert_block_at_caret(node) {
   else {
     const o = offset_within(block, r.startContainer, r.startOffset), len = block.textContent.length;
     if (o === 0 && !block.querySelector('img')) block.before(node);
+    else if (o >= len) block.after(node);
