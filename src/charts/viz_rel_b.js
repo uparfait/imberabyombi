@@ -19,3 +19,4 @@ export const VIZ_REL_B = {
     const flows = links.map(([c, a, b, v]) => {
       const na = pos[c][a], nb = pos[c + 1][b], h = v * na.k, x0 = col_x(c) + nw, x1 = col_x(c + 1), y0 = na.out + h / 2, y1 = nb.in + h / 2;
       na.out += h; nb.in += h; const mx = (x0 + x1) / 2;
+      return mark_group(`${cols[c][a]} → ${cols[c + 1][b]}`, [[v, 'People', c ? null : a]],
