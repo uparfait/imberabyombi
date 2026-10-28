@@ -21,3 +21,4 @@ function delete_image(img) {
 export function image_menu_items(img) {
   const pos = pos_of(img), pct = p => () => set_img_width(img, x => img_max(x) * p);
   return [
+    { label: 'Position', icon: 'picture_in_picture', sub: () => IMG_POSITIONS.map(([v, l, i]) => ({
