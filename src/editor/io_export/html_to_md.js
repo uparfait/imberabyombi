@@ -10,3 +10,4 @@ export function html_to_md(root) {
       if (c.nodeType !== 1) return;
       const t = c.tagName, st = c.style;
       if (t === 'BR') { s += c.nextSibling ? '  \n' : ''; return; }
+      if (t === 'IMG') { s += `![${c.getAttribute('alt') || ''}](${c.getAttribute('src')})`; return; }
