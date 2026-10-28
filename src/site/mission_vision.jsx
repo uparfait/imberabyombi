@@ -27,3 +27,7 @@ export function vision_sec(full) {
             <span className="flex flex-col items-center pt-1.5"><span className="h-4 w-4 rounded-full border-4 border-brand bg-surface dark:bg-ink"></span>
               {i < 3 ? <span className="mt-2 w-px flex-1 bg-line"></span> : null}</span>
             <div className="pb-8"><time dateTime={y} className="text-sm font-semibold text-brand">{y}</time><h3 className="mt-1 text-xl">{lorem.t(3)}</h3>
+              <p className="mt-1 text-muted">{lorem.s()}</p></div></li>
+        ))}</ol></div></section>
+  );
+}
