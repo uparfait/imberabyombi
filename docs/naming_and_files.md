@@ -14,3 +14,4 @@ Short files are easy to review, easy to replace and load only what a page needs.
 | Functions, variables, props  | snake_case                     | `format_date`, `open_form`, `on_submit`  |
 | Constant tables              | UPPER_SNAKE                    | `MODS`, `STATUS`, `PW_RULES`             |
 | React components             | Capital first, then snake_case | `Task_view`, `File_box`, `Dialog_hosts`  |
+| CSS classes and ids          | snake_case                     | `.icon_btn`, `.table_data`, `#side_panel`|
