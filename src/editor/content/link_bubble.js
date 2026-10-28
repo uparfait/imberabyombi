@@ -26,3 +26,4 @@ const on_down = e => { if (!e.target.closest('a')) e.preventDefault(); };
 export function install_link_bubble() {
   const ls = [['#lb_copy', 'click', on_copy], ['#lb_edit', 'click', on_edit], ['#lb_remove', 'click', on_remove], ['#link_bubble', 'mousedown', on_down]]
     .map(([s, k, f]) => [qs(s), k, f]).filter(([n]) => n);
+  ls.forEach(([n, k, f]) => n.addEventListener(k, f));
