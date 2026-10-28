@@ -28,3 +28,4 @@ export function partners_sec(full) {
 }
 
 export function thanks_sec(full) {
+  return (
