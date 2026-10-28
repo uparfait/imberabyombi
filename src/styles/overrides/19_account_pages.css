@@ -31,3 +31,4 @@
   .tile_trigger > span { min-width: 0; }
   .tile_trigger { overflow: hidden; }   /* nothing inside ever spills over its neighbour */
   .nav_row.is_pinned > .relative { min-width: 4.75rem; }   /* short on room: names trim, but icon + arrow always fit */
+  .nav_row.is_pinned > .relative:last-child:not(:first-child) { flex-shrink: 12; }   /* the deepest (usually the longest) name trims first */
