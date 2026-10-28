@@ -14,3 +14,4 @@ export function close_menus(from = 0) {
   if (from === 0) { clearTimeout(sub_timer); unpeek(); }
   while (menu_stack.length > from) {
     const m = menu_stack.pop(); m.el.remove();
+    if (m.anchor) { m.anchor.classList.remove('open'); if (m.anchor.hasAttribute('aria-expanded')) m.anchor.setAttribute('aria-expanded', 'false'); }
