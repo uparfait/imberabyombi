@@ -14,3 +14,4 @@ export const EDITOR_MEDIA_PATHS = {
   add_column_left: 'M10 4h9a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-9zM15 4v16M10 12h10M5 9v6M2 12h6',
   add_column_right: 'M14 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h9zM9 4v16M4 12h10M19 9v6M16 12h6',
   call_merge: 'M12 3v8l-6 8M12 11l6 8M8 7l4-4 4 4',
+  call_split: 'M12 21v-8L4 5M12 13l8-8M4 10V5h5M20 10V5h-5',
