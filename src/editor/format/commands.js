@@ -16,3 +16,4 @@ export function exec(cmd, val) {
 }
 /* wrap the selected text in spans (class cls, attributes attrs) and select them; returns the spans */
 /* the font each selected piece of text has now (the marker in wrap_selection would erase it) */
+function fonts_in(host, r) {
