@@ -6,3 +6,4 @@ export function html_to_md(root) {
   const inline = n => {
     let s = '';
     n.childNodes.forEach(c => {
+      if (c.nodeType === 3) { s += c.data.replace(/\u200b/g, '').replace(/([*_`\\[\]])/g, '\\$1'); return; }
