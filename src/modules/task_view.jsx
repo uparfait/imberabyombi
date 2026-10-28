@@ -32,3 +32,4 @@ export function task_view(id) {
   const r = db.find('tasks', id); if (!r) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Task not found');
   const own = task_own(r), mine = task_mine(r);
   modal({ title: r.title, wide: true, help: own ? HELP.own : mine ? HELP.mine : HELP.view, body: () => <Task_view id={id} />,
+    actions: own ? <><button type="button" className="btn btn_danger order-first mr-auto" data-act="del" data-col="tasks" data-id={r.id}>
