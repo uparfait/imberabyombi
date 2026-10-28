@@ -5,3 +5,4 @@ import { qsa, uid } from '../lib/index.js';
 import { auth, me } from '../auth/index.js';
 
 /* Subtasks: [{ t: title, items: [{ t, done }] }] (an older flat list reads as one group) */
+export const subs_of = r => { const a = Array.isArray(r?.subs) ? r.subs : []; return a.length && !Array.isArray(a[0]?.items) ? [{ t: 'Checklist', items: a }] : a; };
