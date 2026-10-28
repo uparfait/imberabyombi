@@ -41,3 +41,4 @@ export function viz_open(card, e) {
   const title = k ? VIZ[k].t : o.t, help = k ? VIZ[k].d : o.d, [head, rows] = k ? o.table : [o.head, o.rows], m = e?.target?.closest?.('[data-tt]');
   if (m && card.contains(m)) {
     let d = null; try { d = JSON.parse(m.dataset.tt); } catch { /* not a mark */ }
+    if (d) { const hit = rows.filter(r => String(r[0]) === String(d[0]));   /* the mark's own row when its label is unique, else what its tooltip shows */
