@@ -7,7 +7,7 @@ import { PANELS } from './panels.jsx';
 import { redraw_slot } from './live_slot.jsx';
 
 export const panel_html = k => <><header className="sticky top-0 z-[1] flex items-center gap-1 bg-surface px-4 pb-3 pt-4">
-    <div className="min-w-0 flex-1"><p className="text-[11px] font-semibold uppercase tracking-wider text-muted">{cfg.name}</p>
+    <div className="min-w-0 flex-1"><p className="text-[0.6875rem] font-semibold uppercase tracking-wider text-muted">{cfg.name}</p>
       <h2 className="truncate font-sans text-lg font-medium">{PANELS[k].t}</h2></div>
     {PANELS[k].tools?.() || null}<button className="icon_btn" data-act="panel" data-k={k} aria-label="Close panel">{ic('x')}</button></header>
   <div className="px-4 pb-6">{PANELS[k].h()}</div></>;
