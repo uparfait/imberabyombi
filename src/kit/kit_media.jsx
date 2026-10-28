@@ -21,3 +21,4 @@ export const kit_media = brand_hex => (
       <object type="image/svg+xml" data={svg_uri('#1A120C')} className="h-36" aria-label="SVG through object"><p>Your browser cannot show this object.</p></object></div>
     <div className="card p-4"><canvas id="chart_demo" className="h-56 w-full" role="img" aria-label="Sample bar chart drawn on canvas"></canvas></div>
     <div className="card grid place-items-center gap-6 p-6"><svg viewBox="0 0 200 60" className="w-full max-w-xs" aria-label="Inline SVG wave" role="img">
+      <path d="M0 40 C 50 70 120 10 200 30" fill="none" style={{ stroke: 'rgb(var(--brand))' }} strokeWidth="5" strokeLinecap="round" /></svg>
