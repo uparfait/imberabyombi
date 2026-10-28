@@ -14,3 +14,4 @@ import { zoom_items, style_items, align_items, spacing_items, bullet_items, numb
 import { mode_items } from './menus_main.js';
 import { image_items } from './menus.js';
 import { open_find } from './find.js';
+import { toggle_spell, toggle_menus, do_print } from './view.js';
