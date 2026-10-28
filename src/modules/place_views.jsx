@@ -54,3 +54,4 @@ VIEWS.parking = () => {
   const tile = s => { const p = occ[s], a = can ? { 'data-act': p ? 'park_out' : 'park_in', 'data-id': p?.id || '', 'data-slot': s } : { disabled: true };
     return <button key={s} className={`tile ${p ? 'is_on' : ''}`} {...a} aria-label={`Slot ${s}, ${p ? 'occupied by ' + p.plate : 'free'}`}>
       <span className="text-xs font-semibold">{s}</span>
+      {p ? <>{ic('car', 'h-6 w-6')}<span className="w-full truncate font-mono text-[11px]">{p.plate}</span>
