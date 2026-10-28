@@ -30,3 +30,5 @@ function on_card_click(e, c, card) {
     c.text = v; c.draft = false; save_soon(); render_comments();
   }
   else if (x.dataset.x === 'cancel' || x.dataset.x === 'resolve' || x.dataset.x === 'delete') { remove_comment(c.id); if (x.dataset.x === 'resolve') toast('Comment resolved'); }
+}
+function card_of(c) {
