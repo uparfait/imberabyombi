@@ -13,3 +13,4 @@ const slices = (v, tot, cx, cy, r0, rad, tip) => { let a = 0; return v.map((val,
 export const VIZ_PART_A = {
   pie: { t: 'Pie chart', g: 'part', d: 'A few parts of a whole (keep it to 6 or fewer).', f(w) {
     const s = SER.slice(0, 4), v = s.map(() => rnd(10, 40)), tot = v.reduce((a, b) => a + b), f = frame(w, 240, { l: 0, r: 0, t: 10, b: 10 });
+    const rad = Math.min(105, f.ih / 2), cx = f.w / 2, cy = f.t + f.ih / 2;
