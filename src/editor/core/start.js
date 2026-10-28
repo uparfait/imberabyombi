@@ -5,3 +5,4 @@ import { fill_refs, clear_refs, pages_el } from './refs.js';
 import { bodies, body_index, first_flow } from './dom.js';
 import { reflow } from './reflow.js';
 import { collect_html } from './collect.js';
+import { caret_to_start } from './selection.js';
