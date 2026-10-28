@@ -25,3 +25,4 @@ HTML attributes keep HTML's (`aria-label`, `data-tip`), and custom elements need
 
 ## 3. Generic names, subject words only in data
 Class names and ids describe what a thing IS or DOES, never a business subject, so the template fits any website:
+`table_body_<collection>`, `table_filter`, `field_<key>`, `side_panel`, `tile`, `check_row`, `memo`, `choice_pill`.
