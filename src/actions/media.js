@@ -12,3 +12,5 @@ export function init_player(w) {
   m.addEventListener('play', () => w.classList.add('playing')); m.addEventListener('pause', () => w.classList.remove('playing'));
   seek.addEventListener('input', () => { if (m.duration) m.currentTime = seek.value / 100 * m.duration; });
   w.querySelector('source')?.addEventListener('error', () => media_err(w));
+}
+/* <details> dropdowns (FAQ, help, legal) open and close with a smooth height animation */
