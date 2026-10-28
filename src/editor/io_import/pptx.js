@@ -17,3 +17,5 @@ function para_html(p) {
     } else if (c.localName === 'br') h += '<br>';
   }
   return h;
+}
+/* one slide: '<h2>title</h2>' + its shapes in order + the speaker notes */
