@@ -3,3 +3,4 @@
 import { lorem } from '../lib/index.js';
 import { player } from '../ui/index.js';
 import { cfg } from '../config/index.js';
+import { svg_uri } from './kit_block.jsx';
