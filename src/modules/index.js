@@ -13,3 +13,4 @@ export * from './task_view_rows.jsx';
 export * from './task_comments.jsx';
 export * from './task_view.jsx';
 export * from './tv_act.js';
+export * from './task_act.js';
