@@ -13,3 +13,4 @@ export function split_text(block, b, next) {
   if (total < 2) return false;
   const limit = b.getBoundingClientRect().bottom - 1;
   const rng = document.createRange();
+  const char_bottom = i => {
