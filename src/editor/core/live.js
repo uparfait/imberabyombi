@@ -27,3 +27,4 @@ function doc_range() {
   return last_range && last_range.startContainer.isConnected ? last_range : null;
 }
 function take() {
+  const r = doc_range(), a = r && where(r.startContainer), b = r && where(r.endContainer), bar = refs.toolbar;
