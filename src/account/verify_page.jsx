@@ -2,3 +2,4 @@
    device", a resend button that counts down (resend_in; data-act="otp_resend" sends again) and a way to the authenticator set-up. */
 import { ic } from '../icons/index.js';
 import { after_render } from '../store/index.js';
+import { auth_shell, auth_links } from './auth_shell.jsx';
