@@ -25,3 +25,4 @@ function File_view({ f, n }) {
   useEffect(() => () => { if (VIEW.n === n) VIEW.f = null; }, [n]);   /* the viewer closed (not another file opened) */
   let body;   /* media the browser cannot play shows Open + Download instead */
   if (failed || k === 'file') body = file_info(f);
+  else if (k === 'image') body = <img src={u} alt={f.name} className="mx-auto block max-h-[78dvh] w-auto bg-transparent object-contain" onError={err} />;
