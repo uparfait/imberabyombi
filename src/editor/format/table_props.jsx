@@ -30,3 +30,4 @@ export function table_props_dialog() {
   const c = table_ctx(); if (!c) { toast('Place the cursor inside a table first'); return; }
   const chain = table_chain(c.table), t0 = chain[0];
   const bw = parseFloat(t0.style.getPropertyValue('--bw')), pad = parseFloat(t0.style.getPropertyValue('--pad'));
+  const al = t0.style.marginLeft === 'auto' ? (t0.style.marginRight === 'auto' ? 'center' : 'right') : 'left';
