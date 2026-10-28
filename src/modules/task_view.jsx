@@ -30,3 +30,4 @@ const HELP = { own: 'You created this task: hover a row and use the pen to chang
 
 export function task_view(id) {
   const r = db.find('tasks', id); if (!r) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Task not found');
+  const own = task_own(r), mine = task_mine(r);
