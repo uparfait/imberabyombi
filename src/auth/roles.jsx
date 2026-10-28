@@ -20,7 +20,7 @@ export const ROLES0 = [
   { id: 'cleaner', name: 'Cleaner', d: 'Own tasks and attendance.', perms: perm_map('calendar:1,tasks:2,docs:2,attendance:1,settings:1') },
   { id: 'security', name: 'Parking officer', d: 'Car check-in, check-out and monitoring.', perms: perm_map('dashboard:1,tasks:2,docs:2,attendance:1,parking:2,settings:1') },
   { id: 'coordinator', name: 'Event coordinator', d: 'Events, calendar and reservations.',
-    perms: perm_map('dashboard:1,calendar:2,tasks:2,events:2,inventory:2,settings:1') }
+    perms: perm_map('dashboard:1,calendar:2,tasks:2,docs:2,events:2,inventory:2,settings:1') }
 ];
 export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !r.length) { r = ROLES0; db.set('roles', r); } return r; };
 /* Landing page: where people with a role arrive after signing in (set on Roles & access). It falls back to the
