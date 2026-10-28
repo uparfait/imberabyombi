@@ -51,3 +51,4 @@ export function page_setup_dialog() {
         form_msg(f, 'warn', 'Margins too large', 'Those margins leave no room for text. Make them smaller.'); return false;
       }
       const next = { pageless: v.fmt === 'pageless', orientation: v.ori === 'landscape' ? 'landscape' : 'portrait', paper: v.paper, margins: nm,
+        header: !!v.header, footer: !!v.footer, page_numbers: !!v.page_numbers, page_color: v.page_color || '#ffffff' };
