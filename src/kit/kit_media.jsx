@@ -17,3 +17,4 @@ export const kit_media = brand_hex => (
       <figcaption>{'<img> inside <figure>'}</figcaption></figure>
     <div className="grid gap-4">{player('video', cfg.video, cfg.img('kit-poster', 900, 506))}{player('audio', cfg.audio)}</div>
     <iframe className="map aspect-video" src={cfg.map} title="Map embedded with an iframe" loading="lazy"></iframe>
+    <div className="grid gap-4"><embed type="image/svg+xml" src={svg_uri(brand_hex)} title="SVG through embed" className="h-36" />
