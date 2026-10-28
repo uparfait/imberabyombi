@@ -16,3 +16,4 @@ export function Export_cols({ c }) {
       <div className="grid gap-2">{cols.map(k => (
         <div key={k} className="export_col">
           <label className="flex w-36 shrink-0 cursor-pointer items-center gap-2 text-sm">
+            <input type="checkbox" name={`col_${k}`} value="1" defaultChecked onChange={tick(k)} /><span className="truncate">{label(c, k)}</span></label>
