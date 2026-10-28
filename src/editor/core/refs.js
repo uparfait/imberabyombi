@@ -28,3 +28,4 @@ export function fill_refs(root) {
   clear_refs();
   store.root = root;
   if (root) for (const e of root.querySelectorAll('[id]')) if (!(e.id in store)) store[e.id] = e;
+  for (const k in ALIAS) store[k] = store[ALIAS[k]] || null;
