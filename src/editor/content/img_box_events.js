@@ -39,3 +39,4 @@ function settle(kept) {
 function on_over(e) {
   const b = e.target.closest('[data-a]'); if (b === hover_b) return;
   if (hover_b) { live.cancel(); settle(false); }
+  if (!b || !img_sel || e.pointerType !== 'mouse' || !/^(pos|align):/.test(b.dataset.a)) return;
