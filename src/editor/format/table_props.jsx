@@ -14,3 +14,4 @@ const VALIGN = [['top', 'Top'], ['middle', 'Middle'], ['bottom', 'Bottom']];
 const apply_props = (v, n_rows, n_cols) => ch => {
   const rows = chain_rows(ch);
   if (n_rows > rows.length) insert_rows(rows[rows.length - 1], n_rows - rows.length, true); else rows.slice(n_rows).forEach(r => r.remove());
+  const alive = ch.filter(t => t.rows.length), w = table_width_cols(alive);
