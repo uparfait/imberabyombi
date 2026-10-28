@@ -24,3 +24,4 @@ export function start_col_drag(e) {
   const tw = table.offsetWidth, widths = Array.from(cg.children).map(c => parseFloat(c.style.width) / 100 * tw);
   begin_op(); const sx = e.clientX;
   const move = ev => {
+    const dx = (ev.clientX - sx) / state.zoom; let a = widths[ci] + dx, b = widths[ci + 1] - dx;
