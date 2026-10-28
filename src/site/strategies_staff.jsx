@@ -29,3 +29,5 @@ export const staff_card = (i, team) => {
         width="320" height="400" loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
         <div className={LINKS_CLS}>{['mail', 'globe', 'send'].map(x => (
           <a key={x} href="#/contact" className={LINK_CLS} aria-label={`Contact ${n}`}>{ic(x, 'h-4 w-4')}</a>
+        ))}</div></div>
+      <h3 className="mt-4 text-lg">{n}</h3><p className="text-sm text-muted">{team || lorem.t(2)}</p></article>
