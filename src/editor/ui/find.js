@@ -67,3 +67,4 @@ export function paint_find(scroll) {
 /* d: +1 / -1; select: also make the match the remembered selection (always without CSS highlights) */
 export function find_step(d, select) {
   const n = find_state.matches.length; if (!n) return;
+  find_state.idx = (find_state.idx + d + n) % n; paint_find(true);
