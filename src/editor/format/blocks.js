@@ -38,3 +38,4 @@ export function set_block_style(key) {
   const l = refs.style_label; if (l) l.textContent = st.label;
 }
 export function set_line_height(v) { with_blocks(bs => bs.forEach(b => { b.style.lineHeight = v; })); }
+export function toggle_para_space(which) {
