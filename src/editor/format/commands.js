@@ -40,3 +40,5 @@ export function wrap_selection(cls, attrs = {}) {
   qsa('[style]', host).filter(x => x.style.fontFamily && x.style.fontFamily.includes(marker)).forEach(x => {
     x.style.fontFamily = font_of(x, fonts); if (!x.getAttribute('style')) x.removeAttribute('style');   /* keeps its own font */
     if (cls) x.classList.add(cls); for (const k in attrs) x.setAttribute(k, attrs[k]); out.push(x);
+  });
+  if (out.length) { const r = document.createRange(); r.setStartBefore(out[0]); r.setEndAfter(out[out.length - 1]); s.removeAllRanges(); s.addRange(r); }
