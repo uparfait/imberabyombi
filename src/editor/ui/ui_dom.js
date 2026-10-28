@@ -11,6 +11,7 @@ export function listen(offs, t, type, fn, o) {
   if (!t) return;
   t.addEventListener(type, fn, o); offs.push(() => t.removeEventListener(type, fn, o));
 }
+/* a one-row bar that scrolls sideways (toolbar, menu bar): the mouse wheel scrolls it too while it has more to show */
 /* run every cleanup of a list, newest first */
 export function run_offs(offs) { while (offs.length) { try { offs.pop()(); } catch (e) { console.error(e); } } }
 
