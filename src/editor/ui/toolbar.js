@@ -37,3 +37,4 @@ const DROPS = {
   color_btn: () => [{ render: () => palette_el(set_text_color, 'Reset') }], hilite_btn: () => [{ render: () => palette_el(set_hilite, 'None') }],
   align_btn: () => [...align_items(), { sep: true }, ...indent_items()],
   check_dd: () => [{ label: 'Checklist', icon: 'checklist', action: () => toggle_checklist(false) },
+    { label: 'Checklist with strikethrough', icon: 'checklist_rtl', action: () => toggle_checklist(true) }],
