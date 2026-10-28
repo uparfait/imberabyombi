@@ -39,3 +39,4 @@ export function start_col_drag(e) {
 function on_hover(e) {
   if (state.mode !== 'edit' || e.buttons) return;
   const t = e.target, cell = pages_el && pages_el.contains(t) && t.closest('.pg_body td, .pg_body th'); let h = null;
+  if (cell) {
