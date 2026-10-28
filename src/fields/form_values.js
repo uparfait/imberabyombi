@@ -19,3 +19,4 @@ export function dt_refresh() {
 /* Set a value on an input / select / textarea that React owns, through the native prototype setter, so React's
    value tracker sees the change when an input/change event is dispatched right after:
    set_native_value(el, v); el.dispatchEvent(new Event('input', { bubbles: true })); */
+export function set_native_value(el, v) {
