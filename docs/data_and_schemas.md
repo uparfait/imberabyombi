@@ -35,3 +35,5 @@ Register it in `src/schemas/schemas.js` (`buses: buses_schema` in `schemas`). Ta
 
 Optional keys: `before(values, row, form)` adjusts values before saving (may be async, e.g. to read files),
 `sec` groups fields into categories in the details view.
+
+## Lorem ipsum that does not change
