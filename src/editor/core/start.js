@@ -41,3 +41,4 @@ export function editor_start(root) {
   }
   const title_saved = e => { if (e.target && e.target.id === 'doc_title') save_soon(); };
   if (root) { on(root, 'input', title_saved); on(root, 'change', title_saved); }
+  on(window, 'pagehide', () => save_doc());
