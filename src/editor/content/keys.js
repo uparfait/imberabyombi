@@ -49,3 +49,5 @@ export function pages_keydown(e) {
 export function pages_beforeinput(e) {
   if (e.inputType === 'historyUndo') { e.preventDefault(); undo(); }
   else if (e.inputType === 'historyRedo') { e.preventDefault(); redo(); }
+}
+/* the header / footer is the same on every page */
