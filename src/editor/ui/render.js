@@ -16,3 +16,4 @@ export function render_tab() {
   hide_img_sel(); close_menus(0); pages_el.innerHTML = '';
   const t = active_tab(); if (!t) return;
   if (!Array.isArray(t.undo)) t.undo = []; if (!Array.isArray(t.redo)) t.redo = [];
+  const w = create_page(); pages_el.appendChild(w);
