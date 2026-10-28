@@ -69,3 +69,4 @@ export function insert_cols(chain, col, n, side) {
     const s = row_slots(row).find(x => col >= x.start && col <= x.end);
     if (!s) { const last = row.cells[row.cells.length - 1]; row.appendChild(last ? new_cell_like(last) : el('td', {}, '<p><br></p>')); return; }
     if (side === 'left' ? s.start === col : s.end === col) { const nc = new_cell_like(s.cell); if (side === 'left') s.cell.before(nc); else s.cell.after(nc); }
+    else s.cell.colSpan = (s.cell.colSpan || 1) + 1;
