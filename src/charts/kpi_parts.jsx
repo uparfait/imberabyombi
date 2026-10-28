@@ -18,3 +18,7 @@ export function spark(v, hi = true, labels = null, fmt = num, name = 'Value', w 
         <i key={i} className="kpi_spark_hit" style={{ left: `${round1((x(i) - step / 2) / w * 100)}%`, width: `${round1(step / w * 100)}%` }}
           {...tip_attr(labels[i], [[fmt(n), name, 0]])}></i>
       )) : null}
+    </div>
+  );
+}
+/* the change against the previous period: green when it goes the good way (good_up: a rise is good), red otherwise */
