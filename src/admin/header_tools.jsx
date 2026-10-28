@@ -20,8 +20,7 @@ export function header_tools(n = '') {
           <div className="flex items-center gap-3 rounded-3xl bg-surface-2 p-4">{avatar(u.name, 'h-14 w-14 text-lg')}
             <div className="min-w-0"><p className="truncate font-semibold">{u.name}</p><p className="truncate text-sm text-muted">{u.email}</p>
               <span className="chip mt-1 bg-brand/15 text-accent">{r.name}</span></div></div>
-          <div className="mt-2 grid gap-0.5"><a href="#/admin/settings" className="menu_item">{ic('sliders', 'h-4 w-4 text-muted')}Settings</a>
-            <a href="#/" className="menu_item">{ic('globe', 'h-4 w-4 text-muted')}Public website</a>
+          <div className="mt-2 grid gap-0.5"><a href={to('/admin/settings')} className="menu_item">{ic('sliders', 'h-4 w-4 text-muted')}Settings</a>
             <button className="menu_item menu_danger" data-act="logout">{ic('logout', 'h-4 w-4 text-muted')}Sign out</button></div>
           <div className="mt-2 rounded-2xl bg-surface-2 p-4">
             <p className="flex items-center gap-2 text-sm">{ic('box', 'h-4 w-4 text-muted')}{`${pct}% of 5 MB browser storage used`}</p>
