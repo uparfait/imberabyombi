@@ -29,3 +29,4 @@ export const EDITOR_MEDIA_PATHS = {
   rotate_right: 'M21 4v5h-5M19.5 14.9A8.5 8.5 0 1 1 17.5 6L21 9',
   restart_alt: 'M5.1 8A8 8 0 1 1 4 12M4 3v5h5M12 12h.01',
   straighten: 'M2 8h20v8H2zM6 8v3M10 8v4M14 8v3M18 8v4',
+  photo_size_select_large: 'M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3M7 16l3-4 2.5 3 1.5-2 3 3',
