@@ -4,3 +4,4 @@
 import { refs, pages_el, last_range, set_last, el_of, editable_of, qsa, STYLES } from '../core/index.js';
 import { update_link_bubble } from '../content/index.js';
 import { set_text, set_icon } from './ui_dom.js';
+import { mark_outline } from './outline.js';
