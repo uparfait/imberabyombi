@@ -32,7 +32,7 @@ lives in the browser and can be reset from Settings.
 | Data tables      | Column search, sort, pages, row settings, hide columns, full screen, details view, add / edit / delete, export to CSV, JSON or Excel |
 | Feedback         | Inline messages, notifications, one spinner for every request, custom validation    |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The full feature list is in [whet-it-document.md](whet-it-document.md).
 
 ## Expanding the Oxlint configuration
 
