@@ -4,3 +4,5 @@
    are collected instead of shown (quiet), and shown if the preview is kept. */
 import { notify, staff_page } from '../../feedback/index.js';
 import { qs, el } from './utils.js';
+
+let sink = null, prog = null, line = null, timer = null;
