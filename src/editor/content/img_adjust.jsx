@@ -41,3 +41,4 @@ export function adjust_dialog(img) {
     return bake_image(img, (c, im) => {
       c.width = im.naturalWidth; c.height = im.naturalHeight; const x = c.getContext('2d'); x.drawImage(im, 0, 0);
       const d = x.getImageData(0, 0, c.width, c.height), p = d.data;
+      for (let i = 0; i < p.length; i += 4) {
