@@ -27,3 +27,4 @@ export function export_xlsx(root, name) {
       + `${sheets.map((s, i) => `<Relationship Id="rId${i + 1}" Type="${XL_R}/worksheet" Target="worksheets/sheet${i + 1}.xml"/>`).join('')}`
       + `<Relationship Id="rId${sheets.length + 1}" Type="${XL_R}/styles" Target="styles.xml"/></Relationships>` },
     { name: 'xl/styles.xml', data: XLSX_STYLES },
+    ...sheets.map((s, i) => ({ name: `xl/worksheets/sheet${i + 1}.xml`, data: sheet_xml(s) }))
