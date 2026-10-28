@@ -49,3 +49,4 @@ function row_of(it, level) {
       if (e.pointerType !== 'touch') peek_item(it);
     });
     r.addEventListener('pointerleave', () => unpeek_key(it));
+    r.addEventListener('click', () => { if (!it.disabled) pick(it, () => { if (it.action) it.action(); }, () => close_menus(0)); });
