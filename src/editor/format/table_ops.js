@@ -34,3 +34,4 @@ export function sel_cells(c) { const r = last_range; const cells = r && !r.colla
    border (px), header, striped (toggles), preset (key), distribute (equal widths), props (arg: fn(chain)) */
 export function tbl_op(op, arg) {
   if (!can_edit()) return;
+  const c = table_ctx(); if (!c) { toast('Place the cursor inside a table first'); return; }
