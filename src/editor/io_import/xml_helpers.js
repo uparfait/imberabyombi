@@ -9,3 +9,5 @@ export function resolve_path(dir, rel) {
   rel = (rel || '').split('#')[0]; const parts = rel.startsWith('/') ? [] : dir.split('/').filter(Boolean);
   rel.split('/').forEach(p => { if (p === '..') parts.pop(); else if (p && p !== '.') parts.push(p); });
   return parts.join('/');
+}
+export function rels_of(text) {
