@@ -2,3 +2,4 @@
    Save / Cancel beside it (tv_cell); the fields are named tv_<row> (tv_title, tv_due…) and saved by TASK_ACT.tv_save. */
 import { ic } from '../icons/index.js';
 import { uniq } from '../lib/index.js';
+import { me } from '../auth/index.js';
