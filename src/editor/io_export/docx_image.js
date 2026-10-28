@@ -11,3 +11,4 @@ export function image_xml(img, ctx) {
   const m = (img.getAttribute('src') || '').match(/^data:image\/(png|jpe?g|gif);base64,(.*)$/i); if (!m) return '';
   const ext = m[1].toLowerCase() === 'jpg' ? 'jpeg' : m[1].toLowerCase(), bytes = b64bytes(m[2]);
   const nw = +img.dataset.nw || 300, nh = +img.dataset.nh || 200;
+  let w = parseFloat(img.style.width) || parseFloat(img.getAttribute('width')) || nw; w = Math.min(w, ctx.content_px);
