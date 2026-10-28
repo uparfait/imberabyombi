@@ -29,3 +29,4 @@ export function set_list_type(tag, type) {
 export function toggle_checklist(strike) {
   if (!can_edit()) return;
   restore_focus(); let l = closest_list();
+  if (l && l.classList.contains('checklist') && strike === undefined) { exec('insertUnorderedList'); return; }
