@@ -8,3 +8,4 @@ import { countdown } from '../modules/index.js';
 import { redraw_slot } from './live_slot.jsx';
 
 const event_item = e => ({ id: e.id, title: e.title, date: e.date, start: e.start || '09:00', end: add_time(e.start || '09:00', 120), c: 'events', tone: 'ink' });
+const task_item = t => ({ id: t.id, title: t.title, date: String(t.due).slice(0, 10), due: t.due, all_day: true, c: 'tasks', status: t.status });
