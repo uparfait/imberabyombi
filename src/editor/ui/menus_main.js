@@ -42,3 +42,4 @@ export function edit_items() {
     { sep: true },
     cmd('Select all on this page', 'select_all', () => {
       const h = restore_focus(); if (!h) return;
+      const r = document.createRange(); r.selectNodeContents(h); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
