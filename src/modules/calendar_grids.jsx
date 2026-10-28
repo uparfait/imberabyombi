@@ -24,7 +24,7 @@ export function week_grid(d, items) {
     return <div key={ymd(x)} className="min-w-0 border-l border-line p-1">{its.slice(0, 2).map(cal_task)}{more(its.length - 2, 'px-1')}</div>; };
   const now_line = <span className="pointer-events-none absolute inset-x-0 z-[2] h-0.5 bg-bad" style={{ top: `${(now.getHours() * 60 + now.getMinutes()) / 20}rem` }}>
     <span className="absolute -left-1.5 -top-1 h-2.5 w-2.5 rounded-full bg-bad"></span></span>;
-  const hour = h => <span key={h} className="absolute right-2 -translate-y-1/2 text-[11px] text-muted" style={{ top: `${(h + 1) * 3}rem` }}>{fmt_hour(h + 1)}</span>;
+  const hour = h => <span key={h} className="absolute right-2 -translate-y-1/2 text-[0.6875rem] text-muted" style={{ top: `${(h + 1) * 3}rem` }}>{fmt_hour(h + 1)}</span>;
   const day = x => { const k = ymd(x);
     return <div key={k} className={`hour_lines relative border-l border-line ${k === td ? 'bg-brand/[.03]' : ''}`} data-act="slot" data-d={k}>
       {items.filter(i => i.date === k && !i.all_day).map(chip)}{k === td ? now_line : null}</div>; };
