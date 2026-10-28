@@ -20,3 +20,4 @@ export const col_name = i => { let s = ''; i++; while (i > 0) { const r = (i - 1
 const FROZEN = '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>';
 
 export const sheet_xml = s => {
+  const width = Math.max(1, ...s.rows.map(r => r.length));
