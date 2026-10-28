@@ -31,3 +31,4 @@ function draw(img, im, render) {
 }
 function put(img, url, width_fn, msg) {
   const w0 = img.offsetWidth, h0 = img.offsetHeight;
+  img_op(img, x => {
