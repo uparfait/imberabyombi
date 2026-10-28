@@ -16,3 +16,5 @@ export function row_drag(e, o) {
     if (val == null) { line.hidden = true; return; }
     const b = rs[Math.min(g, rs.length - 1)].getBoundingClientRect(), y = g < rs.length ? b.top : b.bottom;
     Object.assign(line.style, { left: b.left + 'px', width: b.width + 'px', top: Math.round(y - 1) + 'px' }); line.hidden = false;
+  };
+  const edge = () => {
