@@ -32,3 +32,4 @@ export function Upload_body({ up }) {
       <div ref={zone} className={`${ZONE} ${over ? 'over border-brand bg-brand/10' : 'border-line'}`} tabIndex={0} role="button" aria-label="Choose files to upload"
         onClick={() => input.current.click()} onKeyDown={key} onDragEnter={drag_in} onDragOver={drag_in} onDragLeave={drag_out} onDrop={drag_out}>
         {ic('cloud_upload', 'mx-auto h-10 w-10 text-brand')}
+        <div className="mt-1.5 text-[15px] text-fg">Drag files here or <span className="font-medium text-accent">browse your computer</span></div>
