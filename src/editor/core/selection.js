@@ -67,3 +67,5 @@ export function scroll_caret_into_view() {
   const rect = caret_rect(s.getRangeAt(0)); const sc = scroller.getBoundingClientRect();
   if (rect.top < sc.top + 16) scroller.scrollTop += rect.top - sc.top - 48;
   else if (rect.bottom > sc.bottom - 16) scroller.scrollTop += rect.bottom - sc.bottom + 48;
+}
+export function caret_from_point(x, y) {
