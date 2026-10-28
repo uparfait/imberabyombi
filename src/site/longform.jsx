@@ -13,3 +13,4 @@ export function longform(k) {
   const secs = Array.from({ length: 4 }, (_, i) => ({ id: `${k}_${i + 1}`, t: lorem.t(3) }));
   const li = n => Array.from({ length: n }, (_, j) => <li key={j}>{lorem.s(6, 12)}</li>);
   /* like the reference, every call builds all four variants (same lorem sequence) and returns the i-th */
+  const extra = i => [
