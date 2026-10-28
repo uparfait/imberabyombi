@@ -58,3 +58,4 @@ function row_of(it, level) {
    opts.side: the parent row's left edge (a submenu flips to that side when it has no room); opts.focus: keyboard open */
 export function open_menu(anchor, items, opts = {}) {
   const level = opts.level || 0; close_menus(level);
+  const m = el('div', { class: 'pop ed_menu min-w-[12rem]', role: 'menu', style: 'position:fixed;margin:0;z-index:70' });
