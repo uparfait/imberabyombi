@@ -14,3 +14,7 @@ export function file_tile(f, i, gen = 0) {
         ? (k === 'image' ? <img src={u} alt="" /> : <><video src={`${u}#t=0.5`} muted preload="metadata" playsInline></video>{ic('play', 'file_play')}</>)
         : <><span className="file_ico">{ic(FICON[k], 'h-5 w-5')}</span>
           <span className="file_meta"><span className="truncate font-medium">{f.name}</span><small>{`${(ext_of(f) || k).toUpperCase()} · ${fmt_size(f.size)}`}</small></span></>}
+      <button type="button" className="file_x" data-act="file_rm" data-i={i} aria-label={`Remove ${f.name}`}>{ic('x', 'h-3 w-3')}</button>
+    </div>
+  );
+}
