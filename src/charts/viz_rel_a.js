@@ -40,3 +40,4 @@ export const VIZ_REL_A = {
       legend: scale_legend('0', [.1, .3, .5, .7, 1].map(sequential), mx), table: [['Day', ...hrs.map(fmt_hour)], days.map((k, d) => [k, ...v[d]])] }; } },
   correlogram: { t: 'Correlogram', g: 'rel', d: 'How strongly each pair of measures moves together (−1 to +1).', f(w) {
     const k = ['Visits', 'Signups', 'Revenue', 'Costs', 'Tickets', 'Churn'], n = k.length, m = k.map((_, i) => k.map((__, j) => i === j ? 1 : null));
+    for (let i = 0; i < n; i++) for (let j = 0; j < i; j++) m[i][j] = m[j][i] = round1(Math.max(-1, Math.min(1, (i + j) % 3 ? rnd(-.9, .95) : rnd(-.3, .3))) * 100) / 100;
