@@ -36,3 +36,5 @@ export function notify(text, tone = 'ok', title) {
   n.addEventListener('mouseleave', run);
   n.querySelector('[data-close]').addEventListener('click', close);
   host.append(n); while (host.children.length > 4) host.firstElementChild.remove(); run();
+}
+export const toast = notify;
