@@ -16,6 +16,7 @@ Asset paths and every link in the app follow it.
 
 ## GitHub Pages
 1. Build for the repository folder: `BASE_PATH=/<repository>/ npm run build` (skip it for a custom domain or a
+   `<user>.github.io` repository, which are served from the root).
 3. In the repository settings, set Pages to deploy from that branch or from GitHub Actions.
 The site is then served at `https://<user>.github.io/<repository>/`.
 
