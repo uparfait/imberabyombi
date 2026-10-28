@@ -22,3 +22,4 @@ export async function docx_native(buf) {
   const rels = rels_of(z.has('word/_rels/document.xml.rels') ? await z.text('word/_rels/document.xml.rels') : ''), num_fmt = {};
   if (z.has('word/numbering.xml')) {
     const nd = parse_xml(await z.text('word/numbering.xml')), abs = {};
+    by_tag(nd, 'abstractNum').forEach(a => { const f = by_tag(a, 'numFmt')[0]; abs[a.getAttribute('w:abstractNumId')] = f ? f.getAttribute('w:val') : 'bullet'; });
