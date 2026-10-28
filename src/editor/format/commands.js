@@ -55,3 +55,4 @@ export function apply_inline_style(prop, value) {
     wrap_selection('', {}).forEach(sp => { qsa('[style]', sp).forEach(x => { x.style[prop] = ''; if (!x.getAttribute('style')) x.removeAttribute('style'); }); sp.style[prop] = value; });
   }
   if (host && host.classList.contains('pg_body')) schedule_reflow(body_index(host));
+  commit_soon(); refresh_toolbar();
