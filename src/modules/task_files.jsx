@@ -13,3 +13,5 @@ export const file_chip = (f, id, i, own, on = false) => { const k = file_kind(f)
         <small className="text-muted">{fmt_size(f.size)}</small></span></button>
     {own ? <button type="button" className="icon_btn h-8 w-8 shrink-0" data-act="task_file_rm" data-id={id} data-i={i} aria-label={`Remove ${f.name}`}>
       {ic('x', 'h-4 w-4')}</button> : null}</div>; };
+
+/* a text attachment: "…" until its first 20 000 characters are read */
