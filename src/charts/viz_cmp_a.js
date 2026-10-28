@@ -8,3 +8,4 @@ export const VIZ_CMP_A = {
   bar: { t: 'Bar chart', g: 'cmp', d: 'One measure across categories. The highest bar is labelled.', f(w) {
     const c = uwords(8), v = c.map(() => rnd(20, 100) * MARGIN()), f = frame(w, 250), ax = y_axis(f, Math.max(...v)), x = band(c.length, f.l, f.w - f.r);
     const bw = Math.min(24, x.bw * .6), top = v.indexOf(Math.max(...v));
+    return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [[num(v[i]), 'Value', 0]], hit_col(f, x, i)
