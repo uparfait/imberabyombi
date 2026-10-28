@@ -53,3 +53,4 @@ export const toolbar = () => (
     {tb({ icon: 'ink_highlighter', tip: 'Highlight color', id: 'hilite_btn' })}
     {sep()}
     {tb({ ed: 'link', icon: 'link', tip: 'Insert link (Ctrl+K)' })}
+    {tb({ ed: 'comment', icon: 'add_comment', tip: 'Add comment (Ctrl+Alt+M)' })}
