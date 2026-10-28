@@ -42,3 +42,4 @@ export const VIZ_DIST = {
       return mark_group(g[i], [[round1(med), 'Median', i]], hit_col(f, x, i) + `<path class="mark" d="${path_of([...pts, ...back])}Z"`
         + ` style="fill:color-mix(in srgb, ${scale_color(i)} 22%, transparent);stroke:${scale_color(i)};stroke-width:1.5"/>` + dot(x(i), ax.y(med), scale_color(i)));
     }).join('') + x_labels(f, g, x), 'Violin plot'),
+      table: [['Group', 'Median', 'Count'], sets.map((a, i) => [g[i], round1(median(a)), a.length])] }; } },
