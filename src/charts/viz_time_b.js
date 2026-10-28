@@ -28,3 +28,4 @@ export const VIZ_TIME_B = {
     const top = b.map((v, i) => v - a[i]).reduce((m, d, i, arr) => Math.abs(d) > Math.abs(arr[m]) ? i : m, 0);
     const la = spread(a.map(v => y(v) + 4)), lb = spread(b.map(v => y(v) + 4));
     const ab = i => `x1="${xa}" x2="${xb}" y1="${round1(y(a[i]))}" y2="${round1(y(b[i]))}"`;
+    return { svg: svg(f, `<text x="${xa}" y="14" text-anchor="middle">2025</text><text x="${xb}" y="14" text-anchor="middle">2026</text>`
