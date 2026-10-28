@@ -43,3 +43,5 @@ async function odf_table(cx, c) {
       r += `<td${span > 1 ? ` colspan="${span}"` : ''}>${sub.join('') || '<p><br></p>'}</td>`;
     }
     rows.push(`<tr>${r}</tr>`);
+  }
+  return `<table class="doc_table"><tbody>${rows.join('')}</tbody></table>`;
