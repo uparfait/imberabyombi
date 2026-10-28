@@ -10,3 +10,4 @@
 .ed_menu .mi_check svg { width: 1rem; height: 1rem; }
 .ed_menu .mi_label { overflow: hidden; text-overflow: ellipsis; }
 .ed_menu .mi_short { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ed_menu > hr { height: 1px; margin: .25rem .5rem; border: 0; background: rgb(var(--line)); }
