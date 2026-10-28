@@ -19,3 +19,4 @@ export async function fit_img_html(url, alt, inline) {
   return inline ? tag : `<p>${tag}</p>`;
 }
 export function rows_to_table(rows, header) {
+  const width = Math.max(1, ...rows.map(r => r.length));
