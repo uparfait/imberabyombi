@@ -33,3 +33,4 @@ export function toast(msg, ms = 2800) {
   notify(msg, 'info');
   if (ms === 0) {   // progress: keep it open (a paused notification) until hide_toast()
     prog = qs('#toasts')?.lastElementChild || null;
+    prog?.dispatchEvent(new Event('mouseenter'));
