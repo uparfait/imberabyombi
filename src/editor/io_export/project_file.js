@@ -8,3 +8,4 @@ import { PROJECT_APP } from './content_css.js';
 
 /* ================= export ================= */
 export function save_project(name = file_base()) {
+  if (hist_timer) commit(); save_tab();
