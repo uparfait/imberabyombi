@@ -33,3 +33,4 @@ function edit_key(e, k, code) {
   if (k === 'k') return () => open_link_dialog();
   if (k === '\\') return clear_formatting;
   if (e.altKey && code === 'KeyM') return add_comment;
+  if (e.altKey && /^Digit[0-4]$/.test(code)) return () => set_block_style(code === 'Digit0' ? 'p' : 'h' + code.slice(-1));
