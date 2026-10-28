@@ -8,3 +8,4 @@ export async function unzip(buf) {
   if (e < 0) throw new Error('the file is damaged, or it is not really the format its name says');
   const count = dv.getUint16(e + 10, true); let p = dv.getUint32(e + 16, true);
   const dec = new TextDecoder(), entries = new Map();
+  for (let k = 0; k < count && p + 46 <= u8.length; k++) {
