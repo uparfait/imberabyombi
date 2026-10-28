@@ -33,3 +33,4 @@ export function md_to_html(md) {
     if ((m = l.match(/^(#{1,6})\s+(.*)$/))) { const n = Math.min(m[1].length, 4); out += `<h${n}>${md_inline(m[2])}</h${n}>`; i++; continue; }
     if (/^\s*([-*_])(\s*\1){2,}\s*$/.test(l)) { out += '<hr>'; i++; continue; }
     if (/^\s*>/.test(l)) {
+      const buf = []; while (i < lines.length && /^\s*>/.test(lines[i])) buf.push(lines[i++].replace(/^\s*>\s?/, ''));
