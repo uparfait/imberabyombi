@@ -22,3 +22,4 @@ VIEWS.tasks = () => {
   return <>
     <section className="card mb-6 flex flex-wrap items-center gap-5 p-5">{i3('tasks', 'h-14 w-14')}<div className="min-w-[12rem] flex-1">
       <h2 className="text-lg">Your progress</h2>
+      <p className="text-sm text-muted">{`${done} of ${mine.length} tasks on your plate are done.`}</p>
