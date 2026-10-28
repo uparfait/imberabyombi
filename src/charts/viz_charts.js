@@ -11,3 +11,5 @@ import { VIZ_PART_B } from './viz_part_b.js';
 import { VIZ_REL_A } from './viz_rel_a.js';
 import { VIZ_REL_B } from './viz_rel_b.js';
 import { VIZ_MAP } from './viz_map.js';
+
+export const VIZ = {
