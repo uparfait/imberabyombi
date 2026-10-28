@@ -20,3 +20,4 @@ const reply_html = r => `<div class="text-xs font-medium">You <span class="font-
 
 function on_card_click(e, c, card) {
   const x = e.target.closest('[data-x]');
+  if (!x) {
