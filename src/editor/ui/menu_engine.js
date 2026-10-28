@@ -52,3 +52,6 @@ function row_of(it, level) {
     r.addEventListener('click', () => { if (!it.disabled) pick(it, () => { if (it.action) it.action(); }, () => close_menus(0)); });
   }
   return r;
+}
+
+/* anchor: the button the menu hangs from (null for a menu at a point: opts.x / opts.y). opts.level: submenu depth;
