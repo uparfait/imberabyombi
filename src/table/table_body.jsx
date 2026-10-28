@@ -24,3 +24,4 @@ function row_acts(c, o, r, can) {
 }
 
 /* the empty row: no matches (with Clear filters) or no records yet (with Add … for managers) */
+function none_row(c, s, can, filtered, span) {
