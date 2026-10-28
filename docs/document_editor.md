@@ -17,6 +17,7 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Tables**: grid picker, presets, rows and columns, merge and split, borders, cell colour, column resizing by drag.
 - **Images**: insert from file or URL, resize, crop, rotate, flip, adjust, alt text, border, and positions:
   in line, wrap text left or right, break text, in front of text, behind text. Drag an image to move it. The quick bar
+  under a selected image shows its alt text ("Add alt text" when there is none) and opens the alt text dialog.
 - **Links, comments, find and replace, word count, special characters, spelling check, zoom, editing / viewing modes.**
 - **Document tabs**: add, rename, duplicate, delete, drag to reorder, filter when there are many; each tab has its own
   outline of headings (fold, drag a heading to move its whole section, Move up / down, Delete section).
