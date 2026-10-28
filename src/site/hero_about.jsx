@@ -35,3 +35,4 @@ export function about_sec(full) {
             <div><h3 className="text-lg">{lorem.t(3)}</h3><p className="mt-1 text-sm text-muted">{lorem.s()}</p></div></li>
         ))}</ul>
         {full ? null : more('about')}</div>
+      <div className="grid grid-cols-2 gap-4" data-reveal="" style={{ '--d': '.1s' }}>
