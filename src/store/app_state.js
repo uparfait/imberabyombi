@@ -2,3 +2,4 @@
    Views read data (db, ui, route) while they render. After changing anything, call rerender() (same page)
    or render() (a new page: dialogs close, the page scrolls to the top). Both redraw synchronously, so code
    right after them can already query the new DOM, exactly like the reference's innerHTML rendering. */
+import { flushSync } from 'react-dom';
