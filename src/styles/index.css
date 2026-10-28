@@ -1,2 +1,3 @@
 /* styles/index.css: the stylesheet entry. Order matters and follows the reference design:
    1. the base layer (tokens, scaling, native elements)  2. the component classes  3. Tailwind's own layers.
+   Rules that must come after the utilities live in overrides.css, imported right after this file. */
