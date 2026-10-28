@@ -6,3 +6,6 @@ import { File_box } from '../files/index.js';
 
 const choice = (c, i, type, name, role) => (
   <label key={i} className="flex items-center gap-3 font-normal"><input type={type} name={name} role={role} defaultChecked={!!c} /> {lorem.t(2)}</label>
+);
+
+export function kit_forms_choices(brand_hex) {
