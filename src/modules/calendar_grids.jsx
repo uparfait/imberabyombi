@@ -13,3 +13,5 @@ const CHIP = 'absolute inset-x-1 z-[1] overflow-hidden rounded-lg px-2 py-1 text
 const chip = i => { const a = to_min(i.start), b = Math.max(to_min(i.end), a + 30);
   return <button key={i.c + i.id} className={`${CHIP} ${i.tone === 'ink' ? INK : 'bg-brand text-white'}`} style={{ top: `${a / 20}rem`, height: `${(b - a) / 20}rem` }}
     data-act="ev" data-c={i.c} data-id={i.id}><b className="block truncate">{i.title}</b>{`${i.start} – ${i.end}`}</button>; };
+
+export function week_grid(d, items) {
