@@ -13,3 +13,4 @@ The site is then served at `https://<user>.github.io/<repository>/`.
 
 ## Netlify, Vercel, Cloudflare Pages
 - Build command: `npm run build`
+- Output folder: `dist`
