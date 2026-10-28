@@ -37,3 +37,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
 
 ## Examples
 ```js
+import { request, notify } from '../feedback/index.js';
