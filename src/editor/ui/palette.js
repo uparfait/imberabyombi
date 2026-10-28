@@ -11,3 +11,4 @@ export function palette_el(on_pick, none_label) {
   const box = el('div', { class: 'palette px-1 pb-1' }), done = () => close_menus(0);
   const reset = el('button', { type: 'button', class: 'menu_item pal_reset' }, mi('format_color_reset', 'h-4 w-4 shrink-0 text-muted') + esc_html(none_label));
   peek_on(reset, 'pal_none', () => on_pick(null), done);
+  box.appendChild(reset);
