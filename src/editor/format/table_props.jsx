@@ -20,3 +20,4 @@ const apply_props = (v, n_rows, n_cols) => ch => {
   ch.forEach(t => {
     t.style.setProperty('--bw', v.bw + 'px'); t.style.setProperty('--bc', v.bc); t.style.setProperty('--pad', v.pad + 'pt');
     t.style.width = v.w < 100 ? v.w + '%' : ''; t.style.marginLeft = v.al === 'left' || v.w >= 100 ? '' : 'auto'; t.style.marginRight = v.al === 'center' && v.w < 100 ? 'auto' : '';
+    t.toggleAttribute('data-header', v.hdr); t.toggleAttribute('data-striped', v.str);
