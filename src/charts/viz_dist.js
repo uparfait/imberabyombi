@@ -29,3 +29,4 @@ export const VIZ_DIST = {
         + ` style="fill:color-mix(in srgb, var(--series_1) 16%, transparent);stroke:var(--series_1);stroke-width:1.5"/>`
         + ln(x(i) - bw / 2, x(i) + bw / 2, ax.y(o.med), ax.y(o.med), 2.5)
         + o.out.map(v => `<circle cx="${round1(x(i))}" cy="${round1(ax.y(v))}" r="3" style="fill:rgb(var(--surface));stroke:var(--series_1);stroke-width:1.5"/>`).join('')))
+        .join('') + x_labels(f, g, x), 'Box plot'),
