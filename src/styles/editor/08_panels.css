@@ -47,3 +47,4 @@ textarea.c_input { border-radius: calc(var(--radius) * .75); }
 }
 .find_panel.show { display: block; animation: pop .2s var(--ease); }
 @media (max-width: 639.98px) { .find_panel { right: .75rem; } }
+.find_line { display: flex; align-items: center; gap: .5rem; }
