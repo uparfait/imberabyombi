@@ -19,8 +19,7 @@
   .date_hint i { font-style: normal; visibility: hidden; }
   .pick > .date_hint { height: auto; bottom: 0; padding: 0 .75rem; font-size: .875rem; }
   /* Scrollbar that shows only while the pointer is over the area (admin sidebar) */
-  .scroll_hover { scrollbar-color: transparent transparent; scrollbar-gutter: stable; }
-  .scroll_hover:hover, .scroll_hover:focus-within { scrollbar-color: rgb(var(--brand) / .45) transparent; }
+  .scroll_hover { scrollbar-gutter: stable; }
   /* A button that sits beside a field (newsletter, inline forms) matches the field height */
   :is(.field, input:not([type=checkbox],[type=radio],[type=hidden],[type=range])) ~ .btn:not(.btn_sm) { min-height: calc(3.25rem + 2px); padding-inline: 1.5rem; }
   /* Multiple select: the native <select multiple> stays in the form (invisible, on top of the box); .multi_value is the visible field */
