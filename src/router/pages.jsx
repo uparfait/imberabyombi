@@ -29,3 +29,4 @@ export function admin_page(r) {
   if (!auth.user) { location.replace('#/login?next=' + encodeURIComponent('#' + r.path)); return null; }
   if (!auth.role()) { auth.logout(); location.replace('#/login'); return null; }
   const mod = r.path.split('/')[2] || MODS.find(m => auth.can(m.k))?.k || 'settings', m = MODS.find(x => x.k === mod);
+  route.mod = mod; lorem.seed(hash_str(mod));
