@@ -15,3 +15,4 @@ The template is meant to run well on low-end phones, slow CPUs and small bandwid
 - `vite build` minifies JS and CSS, splits CSS per chunk and reports the gzip size of every file.
 
 ## Measuring
+```bash
