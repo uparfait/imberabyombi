@@ -9,3 +9,4 @@ export function strategies_sec(full) {
   return (
     <section {...spy_attrs('strategies', full)} className="wrap section"><div className="flex flex-wrap items-end justify-between gap-6">
       {sec_head('Strategies', lorem.t(4), lorem.s())}{full ? null : more('strategies', 'btn_outline')}</div>
+      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{['compass', 'layers', 'chart', 'shield', 'users', 'bulb'].map((x, i) => (
