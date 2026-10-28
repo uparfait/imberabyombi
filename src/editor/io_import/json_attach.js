@@ -9,3 +9,4 @@ export function json_to_html(text, name) {
   let data; try { data = JSON.parse(text.replace(/^\ufeff/, '')); }
   catch { return { html: code_to_html(text, name), note: `${name} has JSON errors, so it was added as plain text.` }; }
   if (data && data.app === PROJECT_APP && Array.isArray(data.tabs)) return { project: data };
+  const fv = v => v == null ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v);
