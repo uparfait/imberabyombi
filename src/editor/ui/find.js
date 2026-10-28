@@ -22,3 +22,4 @@ export function close_find() {
   if (has_hl) { CSS.highlights.delete('find_all'); CSS.highlights.delete('find_cur'); }
 }
 /* keep: stay on the same match number (after a replace or an edit) instead of the first one */
+export function run_find(keep) {
