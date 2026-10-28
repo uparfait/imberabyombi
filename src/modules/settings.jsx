@@ -60,3 +60,5 @@ const design = () => <section className="card p-6"><h2 className="text-lg">Desig
 
 VIEWS.settings = () => {
   const tk = db.get('tokens', {}), th = db.get('theme', 'system'), u = auth.user;
+  return <div className="grid gap-6 lg:grid-cols-2">{appearance(tk, th)}{data_card()}{profile(u)}{design()}</div>;
+};
