@@ -43,3 +43,4 @@ export const VIZ_TIME_A = {
       table: [['Month', 'Level'], m.map((k, i) => [k, v[i]])] }; } },
   sparkline: { t: 'Sparklines', g: 'time', d: 'Tiny trend lines beside a number, one per row. No axes: the shape is the message.', f(w) {
     const rows = uwords(5).map(k => { let a = rnd(20, 60); return [k, Array.from({ length: 20 }, () => (a = Math.max(5, a + rnd(-6, 6)) * 1))]; });
+    const f = frame(w, 220, { l: 0, r: 0, t: 0, b: 0 }), y = band(rows.length, 0, f.h), lw = Math.min(110, w * .3), sx = linear(0, 19, lw, f.w - 64);
