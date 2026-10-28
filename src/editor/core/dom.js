@@ -33,3 +33,4 @@ export function offset_within(block, node, off) {
   return r.toString().length;
 }
 export function position_at(root, k) {
+  const ts = text_nodes(root); let acc = 0;
