@@ -23,3 +23,4 @@ export function kit_forms_choices(brand_hex) {
   return (
     <fieldset className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><legend>Choices</legend>
       {groups}{suggest}
+      <div className="field"><label htmlFor="demo_multi">Multiple select (searchable)</label>
