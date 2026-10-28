@@ -44,3 +44,4 @@ export function table_props_dialog() {
       {sel_field('tp_al', 'Position', POSITIONS, al)}
       <div className="flex flex-wrap gap-x-5 gap-y-2 sm:col-span-2">
         {check_field('tp_hdr', 'Header row', t0.hasAttribute('data-header'))}
+        {check_field('tp_str', 'Striped rows', t0.hasAttribute('data-striped'))}
