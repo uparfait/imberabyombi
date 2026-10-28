@@ -46,3 +46,4 @@
   .side_link .side_spin { width: 1.25rem; height: 1.25rem; flex: none; }   /* the clicked sidebar link while its page loads */
   /* Attachments rise in one after another (not when the row is only re-drawn after a removal) */
   .files:not(.quiet) > .file { animation: file_in .35s var(--ease) both; animation-delay: calc(var(--i, 0) * 60ms); }
+  @keyframes file_in { from { opacity: 0; transform: translateY(.5rem) scale(.88); } }
