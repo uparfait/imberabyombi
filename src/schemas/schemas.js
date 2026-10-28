@@ -20,3 +20,5 @@ export const schemas = {
 
 /* the first rows of a collection: seeded with the collection's name, so every browser starts with the same demo data */
 export function seed(c) { const s = schemas[c]; if (!s) return []; lorem.seed(hash_str(c)); return Array.from({ length: s.n }, (_, i) => ({ id: uid(), ...s.g(i) })); }
+
+/* db.list(c) seeds an empty collection through this (store/db.js does not import the schemas itself) */
