@@ -12,3 +12,4 @@ export function json_to_html(text, name) {
   const fv = v => v == null ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v);
   const is_obj = x => x && typeof x === 'object' && !Array.isArray(x);
   let arr = Array.isArray(data) ? data : null;
+  if (!arr && is_obj(data)) { const k = Object.keys(data).find(k => Array.isArray(data[k]) && data[k].length && data[k].every(is_obj)); if (k) arr = data[k]; }
