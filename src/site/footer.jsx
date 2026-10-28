@@ -22,6 +22,8 @@ export function footer() {
       <div className="wrap grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.5fr]">
         <div>{logo()}<p className="mt-4 max-w-xs text-sm">{lorem.s()}</p><div className="mt-6 flex gap-2">{soc.map(([i, l]) => (
           <a key={i} href={to('/contact')} className={SOCIAL_CLS} aria-label={l}>{ic(i, 'h-4 w-4')}</a>
+        ))}</div>
+        <iframe className="map mt-6 aspect-[4/3] w-full max-w-xs" src={cfg.map} title="Map showing our location" loading="lazy" referrerPolicy="no-referrer"></iframe></div>
         {col('Explore', PUB.map(([k, l]) => [k, l]))}
         {col('Platform', [['login', 'Sign in'], ['admin', 'Dashboard'], ['intro', 'Overview'], ['ui', 'Design system'], ['sitemap', 'Site map']])}
         <div><h2 className="text-sm font-semibold text-fg">Newsletter</h2><p className="mt-4 text-sm">{lorem.s(8, 12)}</p>
