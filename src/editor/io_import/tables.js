@@ -24,3 +24,4 @@ export function rows_to_table(rows, header) {
   rows.forEach((r, i) => {
     h += '<tr>';
     for (let c = 0; c < width; c++) {
+      const v = r[c] == null ? '' : String(r[c]), hd = header && i === 0;
