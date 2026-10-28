@@ -26,3 +26,4 @@ function Adjust_body({ src, v }) {
       ))}
       <div className="mt-2 flex flex-wrap gap-2">
         <button type="button" className="btn btn_outline btn_sm" id="adj_gray" onClick={() => put({ saturation: 0 })}>Black and white</button>
+        <button type="button" className="btn btn_outline btn_sm" id="adj_reset" onClick={() => put(START)}>Reset sliders</button>
