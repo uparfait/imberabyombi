@@ -18,3 +18,4 @@ export function contact_form() {
       <div className="field"><label htmlFor="contact_topic">Topic</label><select id="contact_topic" name="topic" required><option value="">Choose a topic</option>
         <optgroup label={lorem.t(1)}><option>{lorem.t(2)}</option><option>{lorem.t(2)}</option></optgroup>
         <optgroup label={lorem.t(1)}><option>{lorem.t(2)}</option><option>{lorem.t(2)}</option></optgroup></select></div>
+      <div className="field sm:col-span-2"><label htmlFor="contact_message">Message</label>
