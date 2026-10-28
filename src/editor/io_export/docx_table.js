@@ -18,3 +18,4 @@ export function table_xml(t, ctx) {
   const jc = t.style.marginLeft === 'auto' ? (t.style.marginRight === 'auto' ? 'center' : 'right') : '';
   let out = `<w:tbl><w:tblPr><w:tblW w:w="${total}" w:type="dxa"/>${jc ? `<w:jc w:val="${jc}"/>` : ''}`
     + `<w:tblBorders>${['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map(bdr).join('')}</w:tblBorders><w:tblLayout w:type="fixed"/>`
+    + `<w:tblCellMar><w:top w:w="${pad}" w:type="dxa"/><w:left w:w="${pad}" w:type="dxa"/><w:bottom w:w="${pad}" w:type="dxa"/>`
