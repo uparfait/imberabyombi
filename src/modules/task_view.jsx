@@ -29,3 +29,4 @@ const HELP = { own: 'You created this task: hover a row and use the pen to chang
   mine: 'Assigned to you: change its status and dates, tick items, add files and comment. Only the person who created it can change the rest.' };
 
 export function task_view(id) {
+  const r = db.find('tasks', id); if (!r) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Task not found');
