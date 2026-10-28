@@ -23,3 +23,4 @@ export function render_route() {
   try { html = r.path === '/admin' || r.path.startsWith('/admin/') ? admin_page(r)
     : AUTH_ROUTES[r.path] ? (set_meta(AUTH_ROUTES[r.path][0]), AUTH_ROUTES[r.path][1](r)) : public_page(r); }
   catch (err) { console.error(err); html = error_page(); }
+  if (html == null) { skip_after_render(); return last; }   /* redirected (location.replace): the old page stays until the next one */
