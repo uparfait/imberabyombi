@@ -28,3 +28,4 @@ export const PK = {
     return `<div class="flex min-h-0 flex-col"><div class="pk_clock" role="group" aria-label="Clock format">${[[0, '12h'], [1, '24h']]
       .map(([n, l]) => `<button type="button" data-act="pk_h24" data-v="${n}" aria-pressed="${!!n === on}">${l}</button>`).join('')}</div>
     <div class="pk_list pk_times" role="listbox">${Array.from({ length: 96 }, (_, i) => { const t = `${pad(i >> 2)}:${pad(i % 4 * 15)}`;
+      return `<button type="button" class="pk_item" role="option" aria-selected="${t === v}" ${i === near ? 'data-near' : ''} data-act="pk_time" data-v="${t}">`
