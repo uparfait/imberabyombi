@@ -69,3 +69,5 @@ export function pages_mousedown(e) {
   const b = qs('.pg_body', page), br = b.getBoundingClientRect();
   const pos = caret_from_point(clamp(e.clientX, br.left + 2, br.right - 2), clamp(e.clientY, br.top + 2, br.bottom - 2));
   if (pos && b.contains(pos.node)) set_caret(pos.node, pos.off); else caret_to_end(last_non_break(b));
+}
+export function pages_dblclick(e) {
