@@ -86,3 +86,4 @@ export function wire_outline_row(row) {
     else go(row);
   });
   row.addEventListener('keydown', e => on_key(e, row));
+  row.addEventListener('pointerdown', e => on_down(e, row));
