@@ -4,3 +4,4 @@
 export * from './guards.js';
 export * from './commands.js';
 export * from './blocks.js';
+export * from './paint.js';
