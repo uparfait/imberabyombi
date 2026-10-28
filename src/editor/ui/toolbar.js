@@ -61,3 +61,4 @@ export function install_toolbar(offs) {
     if (e.key === 'Enter') { e.preventDefault(); const v = parseFloat(si.value); if (v > 0) set_font_size(v); } else if (e.key === 'Escape') restore_focus();
   });
   listen(offs, si, 'focus', () => si.select());
+  listen(offs, si, 'click', e => toggle_menu(si, size_items, { focus: e.detail === 0 }));
