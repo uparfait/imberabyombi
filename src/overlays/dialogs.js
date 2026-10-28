@@ -30,3 +30,4 @@ export function confirm_discard(yes) {
   show_dialog(c); c.querySelector('[data-act=confirm_keep]')?.focus();
 }
 /* #drawer and #viewer: render() returns the dialog's JSX and is called on every draw (rerender() refreshes it).
+   Each call is a fresh dialog content (like the reference's innerHTML); it opens the dialog if it is closed. */
