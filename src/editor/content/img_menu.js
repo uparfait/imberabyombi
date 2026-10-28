@@ -29,3 +29,4 @@ export function image_menu_items(img) {
       { label: 'Small (25% of the line)', action: pct(.25) }, { label: 'Medium (50%)', action: pct(.5) }, { label: 'Large (75%)', action: pct(.75) },
       { label: 'Full width', action: pct(1) }, { sep: true },
       { label: 'Original size', action: () => set_img_width(img, img.naturalWidth) },
+      { label: 'Custom size…', icon: 'straighten', no_preview: true, action: off(() => image_size_dialog(img)) }] },
