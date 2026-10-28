@@ -57,3 +57,4 @@ export async function export_docx(root, name) {
       { name: '[Content_Types].xml', data: docx_types(has_header, has_footer) },
       { name: '_rels/.rels', data: DOCX_RELS },
       { name: 'docProps/core.xml', data: docx_core(state.title, now) },
+      { name: 'word/document.xml', data: doc_xml },
