@@ -41,3 +41,8 @@ function File_view({ f, n }) {
         <button type="button" className="icon_btn" data-act="close_viewer" aria-label="Close">{ic('x')}</button>
       </header>
       <div className="min-h-0 flex-1 overflow-auto" data-view="">{body}</div>
+    </>
+  );
+}
+
+/* open a File (a chosen file, or one rebuilt from a saved attachment) in #viewer */
