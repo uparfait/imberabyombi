@@ -28,3 +28,4 @@ export const sheet_xml = s => {
   s.rows.forEach((r, ri) => {
     x += `<row r="${ri + 1}">`;
     r.forEach((v, ci) => {
+      v = v == null ? '' : String(v); if (!v) return;
