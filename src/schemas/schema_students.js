@@ -25,3 +25,6 @@ export const bulletins_schema = {
     field_spec('subject', 'Subject', 'select', SUBJECTS, 1), field_spec('score', 'Score (0–100)', 'number', 0, 1, { min: 0, max: 100 }), field_spec('remark', 'Remark')
   ],
   g: () => ({ student: lorem.pick(db.list('students')).name, term: lorem.pick(TERMS), subject: lorem.pick(SUBJECTS), score: lorem.int(42, 99), remark: lorem.t(2) })
+};
+
+export const payments_schema = {
