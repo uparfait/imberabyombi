@@ -69,3 +69,4 @@ export async function reset_image(img) {
   img_op(img, x => {
     x.setAttribute('src', o); x.removeAttribute('data-orig');
     ['border', 'borderRadius', 'boxShadow', 'height', 'position', 'left', 'top', 'zIndex'].forEach(p => { x.style[p] = ''; });
+    x.removeAttribute('data-pos'); x.removeAttribute('data-align'); x.style.width = clamp(w, 16, img_max(x)) + 'px';
