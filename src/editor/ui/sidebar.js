@@ -49,3 +49,4 @@ function wire_row(row, t, box) {
   row.addEventListener('dblclick', e => { if (!e.target.closest('.tab_more')) start_rename(t); });
   const more = row.querySelector('.tab_more');
   more.addEventListener('click', e => { e.stopPropagation(); toggle_menu(more, () => tab_menu(t), { focus: e.detail === 0 }); });
+  row.addEventListener('pointerdown', e => {
