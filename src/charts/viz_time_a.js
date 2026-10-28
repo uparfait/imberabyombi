@@ -18,3 +18,4 @@ export const VIZ_TIME_A = {
   area: { t: 'Area chart', g: 'time', d: 'One series over time, filled lightly to its baseline.', f(w) {
     const m = MONTHS(); let a = 40; const v = m.map(() => (a = Math.max(8, a + rnd(-9, 11))) * MARGIN()), f = frame(w, 240), ax = y_axis(f, Math.max(...v));
     const x = band(m.length, f.l, f.w - f.r), pts = v.map((val, i) => [x(i), ax.y(val)]);
+    return { svg: svg(f, ax.g + `<path d="${path_of(pts)}L${round1(x(11))} ${round1(ax.y(0))}L${round1(x(0))} ${round1(ax.y(0))}Z" style="fill:var(--series_1);opacity:.1"/>`
