@@ -22,3 +22,4 @@ export function on_context_menu(e) {
   const in_table = !!table_ctx();
   open_menu(null, [
     cmd('Cut', 'content_cut', native('cut'), 'Ctrl+X'), cmd('Copy', 'content_copy', native('copy'), 'Ctrl+C'),
+    cmd('Paste', 'content_paste', () => paste_from_clipboard(false), 'Ctrl+V'),
