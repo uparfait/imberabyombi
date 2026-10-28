@@ -9,3 +9,4 @@ from the domain root or any sub-folder without server rules.
 2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` and
    uploads `dist/` with the official Pages actions (`actions/upload-pages-artifact`, `actions/deploy-pages`).
 3. In the repository settings, set Pages to deploy from that branch or from GitHub Actions.
+The site is then served at `https://<user>.github.io/<repository>/`.
