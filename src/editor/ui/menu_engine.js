@@ -5,3 +5,4 @@
    it. peek: a view-only preview, () => undo function (zoom). */
 import { el, esc_html } from '../core/index.js';
 import { peek, peek_view, unpeek, unpeek_key, pick } from './hover_preview.js';
+import { mi, scaled } from './ui_dom.js';
