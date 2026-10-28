@@ -37,3 +37,4 @@ export function insert_page_break() {
   if (after && after.isConnected) { caret_to_start(after); scroll_caret_into_view(); }
 }
 export function insert_hr() { const hr = insert_block_at_caret(el('hr')); if (!hr) return; const a = hr.nextElementSibling; end_op(); if (a) caret_to_start(a); }
+export function insert_text_at_caret(t) { if (!can_edit()) return; restore_focus(); document.execCommand('insertText', false, t); }
