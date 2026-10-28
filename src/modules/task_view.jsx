@@ -18,3 +18,4 @@ export function Task_view({ id }) {
   const [st, set_st] = useState({ edit: {}, more: false, prev: null, cedit: {} });
   const r = db.find('tasks', id); if (!r) return null;
   const api = { id, st, put: p => flushSync(() => set_st(s => ({ ...s, ...(typeof p === 'function' ? p(s) : p) }))) };
+  return <div className="grid min-w-0 gap-6 sm:col-span-2" data-task={r.id} ref={tv_tie(api)}>
