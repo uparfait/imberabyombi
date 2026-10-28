@@ -51,3 +51,5 @@ body.col_resize, body.col_resize * { cursor: col-resize !important; }
 /* The source's small spinner (a button busy state) */
 .spinner { display: inline-block; width: .875rem; height: .875rem; margin-right: .375rem; vertical-align: -.125rem; border: 2px solid currentColor;
   border-right-color: transparent; border-radius: var(--pill); animation: spin_rotate .7s linear infinite; }
+
+/* The editor's own status line (core/toast.js) never prints */
