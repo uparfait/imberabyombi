@@ -13,3 +13,4 @@ export function i3(n, c = 'w-14 h-14', tone = 'brand') {
       <defs>
         <linearGradient id={`${id}f`} x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" style={{ stopColor: `color-mix(in srgb, rgb(var(--${a})) 55%, white)` }} />
+          <stop offset="1" style={{ stopColor: `rgb(var(--${a}))` }} />
