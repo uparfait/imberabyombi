@@ -50,3 +50,4 @@ export const VIZ_TIME_B = {
         + `${i === t.length - 1 ? `<path d="M${round1(x(d[i].e) + 9)} ${round1(y(i) - 6)}l6 6-6 6-6-6z" style="fill:rgb(var(--fg))"/>` : ''}`) + row_label(f, y, i, k)).join('')
       + `<line x1="${round1(x(today))}" x2="${round1(x(today))}" y1="${f.t - 6}" y2="${f.t + f.ih}" style="stroke:rgb(var(--fg));stroke-width:1.5;stroke-dasharray:3 3"/>`
       + `<text class="value_label" x="${round1(x(today))}" y="${f.t - 8}" text-anchor="middle">Today</text>`, 'Gantt chart'),
+      legend: legend(['Planned', 'Done', 'Milestone'], 'rect', ['color-mix(in srgb, var(--series_1) 22%, transparent)', 'var(--series_1)', 'rgb(var(--fg))']),
