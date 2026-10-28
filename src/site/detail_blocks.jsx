@@ -15,3 +15,4 @@ export function staff_dir() {
       ))}</div>
       {search_box({ 'data-filter': '.filter_card' }, 'Search staff', 'ml-auto w-full sm:w-72')}</div>
       <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
+        {Array.from({ length: 12 }, (_, i) => staff_card(i, teams[i % 4]))}</div></section>
