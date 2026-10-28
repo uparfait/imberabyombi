@@ -23,3 +23,4 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 Make your own computer the reference: open the browser console, type `innerWidth`, and set `--scale_ref` to it.
 
 Pages never scroll sideways (`overflow-x: clip` on `html` and `body`); wide content (tables, tab strips) scrolls
+inside its own box. Nested scroll areas hand the wheel back to the page at their end.
