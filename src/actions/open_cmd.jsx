@@ -10,3 +10,4 @@ export function open_cmd() {
   const items = [...MODS.filter(m => auth.can(m.k)).map(m => [`#/admin/${m.k}`, m.l, m.i]), ['#/', 'Public website', 'globe'], ['#/ui', 'Design system', 'layers'], ...PUB.map(([k, l]) => [`#/${k}`, `${l} page`, PAGES[k].i])];
   modal({ title: 'Go to', body: (
     <div className="sm:col-span-2">
+      {search_box({ 'data-filter': '.cmd_item', 'data-cmd': '', autoFocus: true }, 'Type a module or page name')}
