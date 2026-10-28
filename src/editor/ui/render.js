@@ -26,3 +26,4 @@ export function render_tab() {
 }
 export function render_all() {
   if (refs.doc_title) refs.doc_title.value = state.title;
+  document.title = state.title;
