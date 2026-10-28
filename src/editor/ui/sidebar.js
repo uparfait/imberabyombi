@@ -62,3 +62,4 @@ function wire_row(row, t, box) {
 }
 
 function filter_box(focus) {
+  const inp = el('input', { type: 'search', class: 'tab_filter', placeholder: 'Filter tabs', 'aria-label': 'Filter tabs', autocomplete: 'off' });
