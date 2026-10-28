@@ -24,3 +24,4 @@ export function image_size_dialog(img) {
 }
 
 export function alt_text_dialog(img) {
+  img = img_now(img); if (!img || previewing()) return;
