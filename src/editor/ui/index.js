@@ -27,3 +27,4 @@ export * from './menus_main.js';
 export * from './menus.js';
 export * from './context_menu.js';
 export * from './toolbar.js';
+export * from './shortcuts.js';
