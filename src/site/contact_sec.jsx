@@ -16,3 +16,4 @@ export function contact_form() {
       <div className="field"><label htmlFor="contact_phone">Phone</label>
         <input id="contact_phone" name="phone" type="tel" autoComplete="tel" placeholder="+250 7xx xxx xxx" /></div>
       <div className="field"><label htmlFor="contact_topic">Topic</label><select id="contact_topic" name="topic" required><option value="">Choose a topic</option>
+        <optgroup label={lorem.t(1)}><option>{lorem.t(2)}</option><option>{lorem.t(2)}</option></optgroup>
