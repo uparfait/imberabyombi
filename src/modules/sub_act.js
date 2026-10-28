@@ -12,3 +12,4 @@ export const SUB_ACT = {
   sub_add_item: t => { const list = t.previousElementSibling; sub_api(t)?.add_item(sub_key(t.closest('[data-sub-group]')));
     const row = list.lastElementChild; row.querySelector('.sub_text').focus();
     if (!reduced()) row.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 180 }); },
+  sub_rm_group: t => { const g = t.closest('[data-sub-group]'), api = sub_api(t), k = sub_key(g);
