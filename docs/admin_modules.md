@@ -13,6 +13,7 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Students                 | `/admin/students`      | Registration, bulletins (a report card per student), payments summary |
 | Library                  | `/admin/library`       | Books, rentals (return, overdue), declarations, monitoring tiles |
 | Events                   | `/admin/events`        | Upcoming cards with capacity progress, the full event list       |
+| Reservations & inventory | `/admin/inventory`     | Approve / reject reservations, stock with minimum-level meters   |
 
 ## The admin shell ([`src/admin/`](../src/admin/))
 - **Sidebar**: full height, collapsible on desktop (the logo turns into "open sidebar" on hover), a drawer on phones;
