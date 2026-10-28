@@ -69,3 +69,6 @@ export function set_img_align(img, a) {
     }
     else if (pos === 'break') { if (a === 'left') x.removeAttribute('data-align'); else x.setAttribute('data-align', a); }
     else { const blk = x.closest('p,h1,h2,h3,h4,h5,h6,li,td,th'); if (blk) blk.style.textAlign = a === 'left' ? '' : a; }
+  });
+}
+/* Exports (and any copy that leaves the editor): absolute images become in-line images at their place in the text
