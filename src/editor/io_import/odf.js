@@ -25,3 +25,4 @@ async function odf_inline(cx, n) {
     else if (ln === 'note' || ln === 'annotation') continue;
     else if (ln === 'span') {
       const s = cx.sty[c.getAttribute('text:style-name')] || {}; let x = await odf_inline(cx, c);
+      if (s.b) x = `<b>${x}</b>`; if (s.i) x = `<i>${x}</i>`; if (s.u) x = `<u>${x}</u>`; if (s.color && s.color !== '#000000') x = `<span style="color:${s.color}">${x}</span>`;
