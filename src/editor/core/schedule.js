@@ -12,3 +12,4 @@ export function schedule_reflow(i) {
   if (!reflow_raf) reflow_raf = requestAnimationFrame(() => { reflow_raf = 0; const f = reflow_from; reflow_from = null; reflow(f); });
 }
 export let ui_timer = null;
+export function schedule_ui() {
