@@ -13,3 +13,5 @@ The template is meant to run well on low-end phones, slow CPUs and small bandwid
 - Work that needs the screen (charts, reveal animations, count-ups) runs after the draw and only for what is visible.
 - `prefers-reduced-motion` skips animations entirely, which also saves CPU on slow devices.
 - `vite build` minifies JS and CSS, splits CSS per chunk and reports the gzip size of every file.
+
+## Measuring
