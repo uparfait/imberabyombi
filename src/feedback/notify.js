@@ -27,3 +27,4 @@ export function notify(text, tone = 'ok', title) {
   const n = tpl.content.firstElementChild.cloneNode(true), life = tone === 'bad' ? 7000 : 4500;
   n.dataset.tone = tone; n.setAttribute('role', tone === 'bad' ? 'alert' : 'status'); n.style.setProperty('--life', life + 'ms');
   n.querySelector('[data-ico]').innerHTML = ic_html(TICON[tone] || 'check', 'h-4 w-4');
+  n.querySelector('[data-title]').textContent = title || TTITLE[tone] || TTITLE.ok;
