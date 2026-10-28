@@ -46,3 +46,4 @@ export async function prepare_images(root) {
 /* the nine levels of one list kind: numbers ("1.", "a.", "i." per NUMFMT) or bullets (• ◦ ▪, or the list's own mark) */
 export function abstract_xml(kind, id) {
   const bullets = { disc: ['•', '◦', '▪'], circle: ['◦'], square: ['▪'] };
+  let lv = '';
