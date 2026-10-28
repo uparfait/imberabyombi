@@ -12,3 +12,4 @@ export function resolve_path(dir, rel) {
 }
 export function rels_of(text) {
   const m = {}; if (!text) return m;
+  by_tag(parse_xml(text), 'Relationship').forEach(r => {
