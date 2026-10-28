@@ -16,3 +16,4 @@ import { activate_comment } from './comments.js';
 function on_text(x, y) {
   const p = caret_from_point(x, y); if (!p || p.node.nodeType !== 3) return false;
   const r = document.createRange();
+  for (const o of [p.off - 1, p.off]) {
