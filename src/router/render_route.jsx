@@ -21,3 +21,4 @@ export function render_route() {
   if (get_version() === 0) { skip_after_render(); return null; }   /* before boot's first navigate() draws: #app stays empty */
   set_route(parse()); const r = route; let html;
   try { html = r.path === '/admin' || r.path.startsWith('/admin/') ? admin_page(r)
+    : AUTH_ROUTES[r.path] ? (set_meta(AUTH_ROUTES[r.path][0]), AUTH_ROUTES[r.path][1](r)) : public_page(r); }
