@@ -64,3 +64,4 @@ export function layout_after() {
   if (!pages_el) return;
   update_page_numbers();
   if (state.setup.pageless) { const w = page_wraps()[0]; if (w) w.style.height = w.firstElementChild.offsetHeight * state.zoom + 'px'; }
+  position_img_box();
