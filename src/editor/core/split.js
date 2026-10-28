@@ -6,3 +6,5 @@ import { cur_sel, overflows, items_of, insert_at_start, merge_into, split_contai
 
 export function is_splittable_text(e) {
   return TEXT_BLOCK_RE.test(e.tagName) && !/^H[1-6]$/.test(e.tagName) && !is_break(e) && e.textContent.replace(/\u200b/g, '').length > 1;
+}
+export function split_text(block, b, next) {
