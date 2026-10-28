@@ -26,3 +26,4 @@ export function peek_view(key, apply) {
 /* put back what the preview changed */
 export function unpeek() { const c = cur; cur = null; if (c) c.undo(); }
 /* leaving key's element: only its own preview goes (keyboard focus may already preview another choice) */
+export function unpeek_key(key) { if (cur && cur.key === key) unpeek(); }
