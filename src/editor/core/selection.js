@@ -39,3 +39,4 @@ export function mk_range(sc, so, ec, eo) {
   return r;
 }
 export function set_caret(node, off) {
+  const host = editable_of(node); if (host && document.activeElement !== host) host.focus({ preventScroll: true });
