@@ -38,3 +38,5 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
     return () => {
       BOXES.delete(inp); inp.removeEventListener('cancel', stop); removeEventListener('blur', on_blur); removeEventListener('focus', on_focus);
       document.removeEventListener('reset', on_reset);
+    };
+  }, []);
