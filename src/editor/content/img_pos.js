@@ -19,3 +19,4 @@ export function anchor_abs(img) {
 }
 /* absolute images that came in nested (paste, drop) go to the top level of their page body, where core keeps them */
 export function adopt_abs(host) {
+  if (!host || !host.classList.contains('pg_body')) return;
