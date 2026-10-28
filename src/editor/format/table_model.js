@@ -20,3 +20,5 @@ export function build_table(rows, cols, opts = {}) {
   if (opts.width && opts.width < 100) t.style.width = opts.width + '%';
   if (opts.preset) apply_preset([t], opts.preset);
   return t;
+}
+export const chain_rows = chain => chain.flatMap(t => Array.from(t.rows));
