@@ -4,3 +4,4 @@
    Scoped with :has(#editor), so the rules do nothing on other pages after the editor's styles have loaded. */
 @media print {
   html:has(#editor), html:has(#editor) body {
+    height: auto !important; min-width: 0 !important; min-height: 0 !important; overflow: visible !important; background: #fff !important;
