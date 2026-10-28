@@ -29,3 +29,4 @@ export const MAX_ATTACH = 25 * 1024 * 1024;
 /* a file chip in the document: the file itself as a data URL, downloaded on click (content's click handler) */
 export async function attachment_html(file) {
   if (file.size > MAX_ATTACH) throw new Error(`it is ${fmt_size(file.size)}; attachments can be up to 25 MB`);
+  const url = await read_as_data_url(file);
