@@ -41,3 +41,4 @@ export const AUTH_ROUTES = {
 };
 
 export const error_page = () => (
+  <main id="main" className="wrap py-20">
