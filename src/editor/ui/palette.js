@@ -30,3 +30,5 @@ export function palette_el(on_pick, none_label) {
     done(); if (!kept) on_pick(v);
   });
   box.appendChild(lab);
+  return box;
+}
