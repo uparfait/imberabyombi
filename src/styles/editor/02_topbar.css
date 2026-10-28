@@ -13,3 +13,4 @@
 @media (prefers-reduced-motion: reduce) { #topbar, #topbar.show { transition: none; } }
 .topbar_in { min-height: 0; overflow: hidden; }
 .topbar_row { display: flex; align-items: center; gap: .625rem; padding: .625rem .75rem .125rem; }
+.doc_logo { display: grid; flex: none; place-items: center; }
