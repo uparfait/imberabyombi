@@ -31,3 +31,4 @@ export function apply_panels() {
   const area = refs.workspace || refs.root, wide = (area && area.clientWidth ? area.clientWidth : innerWidth) >= scaled(1000);
   sb.classList.toggle('closed', !state.sidebar);
   const room = p => Math.round(p.getBoundingClientRect().width || scaled(300)) + 'px';   // the panel's own width (rem-sized in the CSS)
+  if (refs.sidebar_open) refs.sidebar_open.classList.toggle('show', !state.sidebar);
