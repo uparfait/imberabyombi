@@ -8,3 +8,4 @@ export const VIZ_CMP_B = {
   lollipop: { t: 'Lollipop chart', g: 'cmp', d: 'A lighter bar chart: a hairline stem and a dot.', f(w) {
     const c = uwords(9), v = c.map(() => rnd(10, 100) * MARGIN()), f = frame(w, 240), ax = y_axis(f, Math.max(...v)), x = band(c.length, f.l, f.w - f.r);
     return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [[num(v[i]), 'Value', 0]], hit_col(f, x, i)
+        + `<line class="mark" x1="${round1(x(i))}" x2="${round1(x(i))}" y1="${round1(ax.y(0))}" y2="${round1(ax.y(v[i]))}"`
