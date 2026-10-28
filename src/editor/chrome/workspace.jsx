@@ -27,3 +27,5 @@ export const workspace = () => (
           {icon_btn('add_page_btn', 'note_add', 'Add blank page after current page', 'icon_btn sm')}
         </div>
         <div id="page_list"></div>
+      </aside>
+      {icon_btn('sidebar_open', 'toc', 'Show tabs & outlines', 'icon_btn no_print')}
