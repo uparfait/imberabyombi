@@ -20,3 +20,6 @@ export function load_img(src) {
   return new Promise((res, rej) => {
     const im = new Image(); if (!/^(data|blob):/i.test(src)) im.crossOrigin = 'anonymous';
     im.onload = () => res(im); im.onerror = () => rej(new Error('The image could not be loaded')); im.src = src;
+  });
+}
+export const CROSS_MSG = 'This image comes from another website, so it can’t be edited here. Download it, then upload it instead.';
