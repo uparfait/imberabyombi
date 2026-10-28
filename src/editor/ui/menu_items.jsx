@@ -65,3 +65,4 @@ export function download_items() {
 }
 /* a zoom step previews the view itself (not the document): peek returns how to go back */
 const zoom_peek = fn => () => { const z0 = state.zoom; fn(); return () => set_zoom(z0); };
+export function zoom_items() {
