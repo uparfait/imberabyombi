@@ -68,3 +68,4 @@ export function pull_up(b, next) {
   let g = 0;
   while (g++ < 1000) {
     const last = last_flow(b); if (last && is_break(last)) return;
+    const f = first_flow(next); if (!f) return;
