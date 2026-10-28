@@ -36,3 +36,4 @@ export const toolbar = () => (
     {tb({ ed: 'spell', icon: 'spellcheck', tip: 'Spelling check on/off', edit: false, id: 'spell_btn' })}
     {tb({ ed: 'paint', icon: 'format_paint', tip: 'Paint format', id: 'paint_btn' })}
     {dd('zoom_btn', 'zoom_label', '100%', 'Zoom', '4.5rem', false)}
+    {sep()}
