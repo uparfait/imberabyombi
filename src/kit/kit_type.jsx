@@ -8,3 +8,4 @@ export const kit_type = () => (
       <abbr title="Lorem Ipsum Dolor">LID</abbr> <data value="42">quadraginta duo</data> <time dateTime="2026-11-04">4 Nov</time> <code>tempor()</code>{' '}
       <var>x</var> <samp>incididunt ok</samp> <kbd>Ctrl</kbd> + <kbd>K</kbd>, H<sub>2</sub>O, E = mc<sup>2</sup>, <mark>magna aliqua</mark>.<br />
       Ut enim <span className="font-semibold text-accent">ad minim</span> <a href="#/" className="text-accent underline underline-offset-4">veniam</a>.</p>
+    <blockquote><p>{lorem.s(14, 20)}</p><footer className="mt-2 text-sm text-muted"><cite className="text-fg">{lorem.name()}</cite></footer></blockquote><hr />
