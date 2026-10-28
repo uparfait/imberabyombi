@@ -1,3 +1,4 @@
 /* styles/editor/07_sidebar.css: the sidebar (document tabs with the active tab's outline, pages), var(--ed_side) wide (the
    source's 300px in rem). When the workspace is 62.5rem or wider the engine pads #scroller by that width so it sits beside
    the pages; narrower, it covers them on a surface (container query on #workspace, the width apply_panels() measures). Rows are pills like the admin sidebar links; drags fade the row and show a 2px brand drop line.
+   #sidebar is scoped to #editor: the admin shell owns another #sidebar. */
