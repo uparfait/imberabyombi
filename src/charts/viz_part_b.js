@@ -21,3 +21,4 @@ export const VIZ_PART_B = {
     const s = SER.slice(0, 3), raw = [rnd(25, 45), rnd(15, 30), rnd(8, 20)], p = raw.map(Math.round), rest = 100 - p.reduce((a, b) => a + b);
     const f = frame(w, 230, { l: 0, r: 0, t: 6, b: 6 }), cell = Math.min(19, (f.ih - 18) / 10), x0 = (f.w - cell * 10 - 18) / 2;
     const who = i => { let acc = 0; for (let j = 0; j < p.length; j++) { acc += p[j]; if (i < acc) return j; } return -1; };
+    return { svg: svg(f, Array.from({ length: 100 }, (_, i) => { const j = who(i), col = j < 0 ? 'rgb(var(--surface_2))' : scale_color(j);
