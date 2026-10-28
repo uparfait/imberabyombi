@@ -25,3 +25,4 @@ export function html_to_md(root) {
   const list = (l, depth) => {
     let k = parseInt(l.getAttribute('start')) || 1; const out = [];
     Array.from(l.children).forEach(li => {
+      if (is_list(li)) { out.push(list(li, depth + 1)); return; }
