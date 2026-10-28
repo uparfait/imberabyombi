@@ -52,3 +52,4 @@ export const arc = (cx, cy, r0, r1, a0, a1) => {
 /* shorthands for repeated markup (same output as writing it out): a mark group with its tooltip, the hit area of
    one column (x band) or one row (y band), and a row label at the left edge */
 export const mark_group = (title, rows, body) => `<g class="mark_group" ${tip_text(title, rows)}>${body}</g>`;
+export const hit_col = (f, x, i) => `<rect class="hit_area" x="${round1(x(i) - x.bw / 2)}" y="${f.t}" width="${round1(x.bw)}" height="${f.ih}"/>`;
