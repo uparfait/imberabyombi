@@ -4,3 +4,4 @@
   .cal_task { display: flex; width: 100%; min-width: 0; align-items: center; gap: .25rem; margin-bottom: .125rem; padding: .125rem .375rem; border: 1px solid rgb(var(--info) / .35); border-radius: .375rem;
     background: rgb(var(--info) / .1); color: rgb(var(--info)); font-size: 11px; line-height: 1.35; text-align: left; transition: background-color .2s; }
   .cal_task:hover { background: rgb(var(--info) / .18); }
+  .cal_task.is_late { border-color: rgb(var(--bad) / .4); background: rgb(var(--bad) / .1); color: rgb(var(--bad)); }
