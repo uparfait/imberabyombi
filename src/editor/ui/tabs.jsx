@@ -20,3 +20,4 @@ export function switch_tab(id) {
 /* "Tab n": n from the tab count up, the first one not taken */
 export function next_tab_name() {
   const names = new Set(state.tabs.map(t => t.name));
+  for (let n = state.tabs.length + 1; ; n++) if (!names.has('Tab ' + n)) return 'Tab ' + n;
