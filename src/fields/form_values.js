@@ -9,3 +9,4 @@ export const field_val = i => i.dataset.type === 'time' ? to24(i.value) : i.data
 export const form_obj = f => { const d = Object.fromEntries(new FormData(f));
   f.querySelectorAll('[data-type=time][name]').forEach(i => { if (d[i.name]) d[i.name] = to24(d[i.name]); });
   f.querySelectorAll('[data-type=datetime-local][name]').forEach(i => { if (d[i.name]) d[i.name] = dt_iso(d[i.name]); });
+  return d; };
