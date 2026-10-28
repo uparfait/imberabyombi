@@ -34,3 +34,7 @@ export async function export_pdf(scope, name, scale = 2) {
           ctx.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h);
           if (!first) pdf.addPage([win, hin], land ? 'landscape' : 'portrait'); first = false;
           pdf.addImage(part.toDataURL('image/jpeg', scale >= 3 ? 0.95 : 0.9), 'JPEG', 0, 0, win, hin);
+        }
+      }
+    }
+    pdf.save(name + '.pdf');
