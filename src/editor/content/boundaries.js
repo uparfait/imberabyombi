@@ -7,3 +7,4 @@ import { state, TEXT_BLOCK_RE, bodies, el_of, is_break, is_table, is_empty_block
 const no_text = rr => rr.toString().replace(/\u200b/g, '') === '' && !rr.cloneContents().querySelector('img');
 export function at_body_start(host, r) {
   const f = first_flow(host); if (!f) return true;
+  if (r.startContainer !== host && !f.contains(r.startContainer)) return false;
