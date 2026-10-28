@@ -58,3 +58,4 @@ export function install_ui() {
   listen(offs, document, 'keydown', on_key, true);
   listen(offs, document, 'selectionchange', on_selection);
   listen(offs, pages_el, 'contextmenu', on_context_menu);
+  install_menubar(offs); install_find(offs); install_panels(offs); install_view(offs); install_toolbar(offs);
