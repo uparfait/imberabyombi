@@ -37,3 +37,4 @@ export const VIZ_REL_B = {
     return { svg: svg(f, edges.map(([a, b]) => `<line x1="${round1(nodes[a].x)}" y1="${round1(nodes[a].y)}" x2="${round1(nodes[b].x)}" y2="${round1(nodes[b].y)}"`
         + ` style="stroke:rgb(var(--muted) / .45);stroke-width:1"/>`).join('')
       + nodes.map((o, i) => mark_group(o.k, [[deg[i], 'Links', o.g]], `<circle class="hit_area" cx="${round1(o.x)}" cy="${round1(o.y)}" r="14"/>`
+        + `<circle class="mark" cx="${round1(o.x)}" cy="${round1(o.y)}" r="${round1(4 + deg[i] * 1.3)}"`
