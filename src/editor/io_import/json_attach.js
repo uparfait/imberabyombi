@@ -6,3 +6,4 @@ import { fmt_size } from './file_helpers.js';
 import { rows_to_table, trim_rows, code_to_html } from './tables.js';
 
 export function json_to_html(text, name) {
+  let data; try { data = JSON.parse(text.replace(/^\ufeff/, '')); }
