@@ -21,3 +21,4 @@
 .tb_btn:hover, .tb_dd:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
 .tb_btn:active { background: rgb(var(--fg) / .1); }
 .tb_btn.open, .tb_dd.open { background: rgb(var(--fg) / .1); color: rgb(var(--fg)); }
+.tb_btn.active { background: rgb(var(--brand) / .15); color: var(--active_fg); }
