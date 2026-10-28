@@ -7,3 +7,4 @@ import { label } from '../ui/index.js';
 
 export function Export_cols({ c }) {
   const cols = schemas[c].cols, ref = useRef(null), [on, set_on] = useState(() => Object.fromEntries(cols.map(k => [k, true])));
+  const any = cols.some(k => on[k]);
