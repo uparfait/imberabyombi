@@ -6,3 +6,4 @@ export const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;'
 export const pad = n => String(n).padStart(2, '0');
 export const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
 export const uniq = a => [...new Set(a.filter(Boolean))];
+export const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
