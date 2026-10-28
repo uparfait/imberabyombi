@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { lorem, fmt_d, ymd, add_d } from '../lib/index.js';
+import { copy_box } from '../overlays/index.js';
