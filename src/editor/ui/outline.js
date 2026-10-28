@@ -14,3 +14,4 @@ export const outline_rows = ol => (ol ? qsa(':scope > .outline_row', ol) : []);
 export function render_outline() {
   const ol = outline_el(); if (!ol) return;
   const hs = heading_els(), had = document.activeElement && document.activeElement.closest && document.activeElement.closest('.outline_row');
+  if (!hs.length) { ol.innerHTML = '<p class="outline_hint">Headings you add to the document will appear here.</p>'; return; }
