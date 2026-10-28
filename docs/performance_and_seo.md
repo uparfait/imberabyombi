@@ -33,6 +33,7 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 - A `<noscript>` message explains that the site needs JavaScript.
 
 ## Pre-rendering
+Search engines render JavaScript pages. If the public pages must also show their text before any script runs, pre-render
 
 ## Before publishing
 Replace the canonical URL, the JSON-LD values, the social image and the sample media. See
