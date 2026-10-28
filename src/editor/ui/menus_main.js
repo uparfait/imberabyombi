@@ -18,3 +18,4 @@ import { new_document } from './render.js';
 export function cmd(label, icon, action, shortcut) { return { label, icon, action, shortcut, no_preview: true }; }
 const flip = (label, on, action, shortcut) => ({ label, checked: !!on, action, shortcut, no_preview: true });
 /* a native editing command (cut, copy, delete) on the remembered selection */
+export function native(c) { return () => { restore_focus(); document.execCommand(c); }; }
