@@ -78,3 +78,4 @@ export function move_items(c, items, next) {
   let f = first_flow(next);
   if (!(f && f.hasAttribute('data-cont') && same_kind(f, c))) { f = shallow_clone(c); f.setAttribute('data-cont', '1'); next.insertBefore(f, next.firstChild); }
   const p = item_parent(f); const frag = document.createDocumentFragment(); items.forEach(i => frag.appendChild(i));
+  p.insertBefore(frag, p.firstChild);
