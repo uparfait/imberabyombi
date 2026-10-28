@@ -38,3 +38,5 @@
     width: 3.25rem; height: 2rem; border-radius: 999px; border-width: 2px; border-color: rgb(var(--muted)); background-color: rgb(var(--surface_3));
     background-image: radial-gradient(circle, rgb(var(--muted)) 0 .5rem, transparent .53rem);
     background-size: 1.75rem 1.75rem; background-position: 0 center;
+  }
+  input[type=checkbox][role=switch]:checked {
