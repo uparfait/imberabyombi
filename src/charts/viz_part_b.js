@@ -26,3 +26,4 @@ export const VIZ_PART_B = {
         + ` height="${round1(cell)}" rx="3" style="fill:${col}" ${tip_text(j < 0 ? 'Other' : s[j], [[(j < 0 ? rest : p[j]) + '%', 'Share', j < 0 ? null : j]])}/>`; }).join(''),
       'Waffle chart'),
       legend: legend([...s, 'Other'], 'rect', [0, 1, 2, 'rgb(var(--surface_2))']),
+      table: [['Part', 'Share'], [...s.map((n, j) => [n, p[j] + '%']), ['Other', rest + '%']]] }; } },
