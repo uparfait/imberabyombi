@@ -9,6 +9,7 @@ import { Dialog_hosts } from './overlays/index.js';
 import { spinner } from './feedback/index.js';
 
 /* admin pages draw a little larger on laptops and desktops (html.staff_page → --scale_staff in src/styles/base) */
+const mark_staff_page = () => document.documentElement.classList.toggle('staff_page', /^\/admin(\/|$)/.test(route.path || ''));
 export default function App() {
   const version = useSyncExternalStore(subscribe, get_version);
   const page = render_route();
