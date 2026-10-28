@@ -32,3 +32,4 @@ function Crop_body({ src, st }) {
   const shown = rect && rect.w >= 4 && rect.h >= 4;
   return (
     <div className="grid gap-3 sm:col-span-2">
+      <p className="text-muted">Drag across the picture to choose the part to keep.</p>
