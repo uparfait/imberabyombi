@@ -2,3 +2,4 @@
    area's listeners, draws everything, then the source's start steps. Returns stop(): saves and removes every listener. */
 import { state, active_tab } from './state.js';
 import { fill_refs, clear_refs, pages_el } from './refs.js';
+import { bodies, body_index, first_flow } from './dom.js';
