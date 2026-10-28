@@ -30,3 +30,4 @@ export function partners_sec(full) {
 export function thanks_sec(full) {
   return (
     <section {...spy_attrs('thanks', full)} className="wrap section">
+      <div className="relative isolate overflow-hidden rounded-4xl bg-brand px-6 py-16 text-center text-white sm:px-14 sm:py-20" data-reveal="">
