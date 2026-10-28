@@ -9,3 +9,4 @@ import { ic } from '../icons/index.js';
 import { notify } from '../feedback/index.js';
 import { modal, snap } from '../overlays/index.js';
 import { task_own, task_mine } from './task_data.js';
+import { tv_rows } from './task_view_rows.jsx';
