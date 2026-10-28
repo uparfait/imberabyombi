@@ -20,3 +20,4 @@ function Crop_body({ src, st }) {
   const pick = v => { const r = v === 'free' ? null : +v; set_ratio(r); if (r) centered(r); else set_rect(null); };
   const down = e => {
     e.preventDefault(); const stage = e.currentTarget, p = pic.current; stage.setPointerCapture(e.pointerId);
+    const r0 = stage.getBoundingClientRect(), sx = clamp(e.clientX - r0.left, 0, p.clientWidth), sy = clamp(e.clientY - r0.top, 0, p.clientHeight);
