@@ -43,3 +43,4 @@ export function crud(c, o = {}) {
           <div className="relative"><button className="icon_btn" data-act="pop" data-pop={`pop_table_${c}`} aria-haspopup="true" aria-label="Table settings">{ic('sliders')}</button>
             <div id={`pop_table_${c}`} className="pop left-0 w-72" hidden>{table_menu(c)}</div></div>
           <h2 id={`table_title_${c}`} className="text-lg">{o.title || cap(s.l) + 's'}</h2>
+          <span className="chip bg-surface-2 text-muted" id={`table_count_${c}`}>{b.count}</span>
