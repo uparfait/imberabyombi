@@ -32,3 +32,5 @@ In `src/auth/mods.js`, add an entry to `MODS` (key, label, short label, icon, si
 /* modules/transport.jsx: the Transport module: the bus list */
 import { VIEWS } from './views.js';
 import { crud } from '../table/index.js';
+
+VIEWS.transport = () => crud('buses', { title: 'Buses' });
