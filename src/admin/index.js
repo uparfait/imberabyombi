@@ -11,3 +11,4 @@ export * from './sidebar.jsx';
 export * from './header_tools.jsx';
 export * from './admin_shell.jsx';
 export * from './panels.jsx';
+export * from './panel_html.jsx';
