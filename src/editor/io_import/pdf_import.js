@@ -7,3 +7,4 @@ import { PB } from './pptx.js';
 function page_lines(tc) {
   const lines = []; let cur = { text: '', y: null, h: 0 };
   for (const it of tc.items) {
+    if (!('str' in it)) continue;
