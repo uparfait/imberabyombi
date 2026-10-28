@@ -27,3 +27,4 @@ function Preset_grid({ start }) {
   return (<>
     <input type="hidden" name="preset" value={preset} />
     <div className="preset_grid">{TABLE_PRESETS.map(p => (
+      <button key={p.key} type="button" className="preset" aria-pressed={String(p.key === preset)} onClick={() => set_preset(p.key)}>
