@@ -11,3 +11,4 @@ export const find_panel = () => (
   <div id="find_panel" className="find_panel no_print" role="dialog" aria-label="Find and replace">
     <div className="find_line">
       <input type="text" id="find_input" placeholder="Find in document" aria-label="Find" />
+      <span id="find_count" className="find_count">0 of 0</span>
