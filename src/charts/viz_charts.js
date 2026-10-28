@@ -3,3 +3,4 @@
    VIZGROUPS: [group key, heading, icon] — the KPI designs come first, then one section per chart group. */
 import { VIZ_CMP_A } from './viz_cmp_a.js';
 import { VIZ_CMP_B } from './viz_cmp_b.js';
+import { VIZ_DIST } from './viz_dist.js';
