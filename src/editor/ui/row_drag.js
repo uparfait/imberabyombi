@@ -9,3 +9,4 @@ export function row_drag(e, o) {
   if (e.button !== 0 || e.pointerType === 'touch') return;
   const x0 = e.clientX, y0 = e.clientY, EDGE = scaled(36), START = scaled(5);
   let on = false, py = y0, val = null, line = null, raf = 0;
+  const place = () => {
