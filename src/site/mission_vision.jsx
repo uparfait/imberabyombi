@@ -24,3 +24,4 @@ export function vision_sec(full) {
       <div className="wrap grid gap-14 lg:grid-cols-2"><div>{sec_head('Vision', lorem.t(4), lorem.p(2))}{full ? null : more('vision')}</div>
         <ol className="grid gap-2">{[2027, 2028, 2030, 2032].map((y, i) => (
           <li key={y} className="grid grid-cols-[1.25rem_1fr] gap-5" data-reveal="" style={{ '--d': `${i * .1}s` }}>
+            <span className="flex flex-col items-center pt-1.5"><span className="h-4 w-4 rounded-full border-4 border-brand bg-surface dark:bg-ink"></span>
