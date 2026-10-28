@@ -17,3 +17,4 @@ export function handle_tab(e, r, host) {
   }
   if (n.closest('li')) { document.execCommand(e.shiftKey ? 'outdent' : 'indent'); return; }
   if (e.shiftKey) { indent(-1); return; }
+  document.execCommand('insertText', false, '\t');
