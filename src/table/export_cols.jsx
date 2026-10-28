@@ -19,3 +19,6 @@ export function Export_cols({ c }) {
             <input type="checkbox" name={`col_${k}`} value="1" defaultChecked onChange={tick(k)} /><span className="truncate">{label(c, k)}</span></label>
           <span className="shrink-0 text-xs text-muted">shown as</span>
           <input name={`as_${k}`} defaultValue={label(c, k)} aria-label={`${label(c, k)} is shown as`} disabled={!on[k]} />
+        </div>))}
+      </div>
+      <p className="mt-2 text-sm text-bad" data-export-none="" hidden={any}>Tick at least one column to export.</p>
