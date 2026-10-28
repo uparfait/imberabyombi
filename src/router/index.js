@@ -1,6 +1,4 @@
-/* router: hash routes and progressive enhancement. The hash route, meta tags per route, the page for each route (render_route),
-   the work after each draw (run_after_render, enhance), navigation and boot.
-   Import from here: import { navigate, set_meta, enhance } from '../router/index.js' */
+/* router: path routes (History API) and progressive enhancement. Addresses and navigation (to, go, navigate), the route and
 export * from './parse.js';
 export * from './pages.jsx';
 export * from './enhance.js';
