@@ -50,3 +50,4 @@ export function apply_snap(s) {
   layout_after(); refresh_toolbar();
 }
 export function undo() {
+  if (state.mode !== 'edit') return; live.cancel();
