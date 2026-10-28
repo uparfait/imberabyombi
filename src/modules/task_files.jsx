@@ -24,3 +24,4 @@ function Text_pre({ url }) {
 
 /* how each kind shows inside the view; a kind not listed opens in the full viewer */
 const MEDIA = {
+  image: f => <img src={f.url} alt={f.name} className="mx-auto max-h-72 w-auto rounded-xl bg-transparent" />,
