@@ -10,3 +10,4 @@ import { docx_types, DOCX_RELS, docx_core, docx_numbering, docx_doc_rels, docx_h
 import { zip_store } from './zip_store.js';
 
 const tw = v => Math.round(v * 1440);   /* inches → twentieths of a point */
+const sect_xml = (refs, win, hin, m) => `<w:sectPr>${refs}<w:pgSz w:w="${tw(win)}" w:h="${tw(hin)}"${win > hin ? ' w:orient="landscape"' : ''}/>`
