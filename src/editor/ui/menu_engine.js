@@ -39,3 +39,4 @@ function row_of(it, level) {
   const lab = r.querySelector('.mi_label'); lab.textContent = it.label; if (it.label_style) lab.style.cssText = it.label_style;
   r._it = it;
   if (it.sub) {
+    r._open = focus => { const b = r.getBoundingClientRect(), s = typeof it.sub === 'function' ? it.sub() : it.sub;
