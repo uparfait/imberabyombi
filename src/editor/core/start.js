@@ -22,6 +22,7 @@ export function editor_start(root) {
   if (running) running();
   fill_refs(root);
   reset_doc(); set_ready(false);   // the saved document loads below (IndexedDB is asynchronous)
+  Object.assign(state, { zoom: 1, mode: 'edit', menus: true, spell: true });   // fresh markup: title bar open
   const offs = [];
   const on = (t, ev, fn, opt) => { t.addEventListener(ev, fn, opt); offs.push(() => t.removeEventListener(ev, fn, opt)); };
   for (const install of [install_content, install_ui, format.install_format, io_import.install_import]) {
