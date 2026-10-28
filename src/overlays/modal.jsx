@@ -23,3 +23,4 @@ export function modal({ title, help = '', body = '', submit, on_submit, danger, 
 const text_of = n => n == null || typeof n === 'boolean' ? '' : Array.isArray(n) ? n.map(text_of).join('') : typeof n === 'object' ? text_of(n.props?.children) : String(n);
 /* "Delete this record? You cannot undo this." → [the question, the rest as text]. A JSX message keeps its markup
    (<strong>…</strong>) in the question: <>Check out <strong>{plate}</strong> from slot {n}? {more}</> */
+function split_q(msg, cta) {
