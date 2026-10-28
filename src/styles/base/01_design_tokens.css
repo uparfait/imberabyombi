@@ -23,3 +23,4 @@
     --scale_desk: 15;        /* root size in px on laptops and desktops (1024px and up) */
     --scale_ref: 1920;       /* your desktop's width: any wider screen shows that same view, scaled up */
     /* Light theme surfaces */
+    --bg: 250 250 250; --surface: 255 255 255; --surface_2: 243 242 241; --surface_3: 231 229 227;
