@@ -25,3 +25,4 @@ export function apply_tokens() {
   redraw_charts(); hex_refresh();
 }
 /* #token_<k>_out is an <output> with one text child: setting its value replaces that text */
+export function set_token(k, v) { const t = db.get('tokens', {}); t[k] = k === 'radius' || k === 'space' ? +v : v; db.set('tokens', t); apply_tokens(); const o = qs('#token_' + k + '_out'); if (o) o.value = k === 'brand' ? v : v + 'rem'; }
