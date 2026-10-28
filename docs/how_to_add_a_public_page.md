@@ -9,3 +9,4 @@ Create a section in `src/site/`, for example `src/site/services_sec.jsx`:
 import { sec_head, spy_attrs } from './site_bits.jsx';
 
 export const services_sec = (page = 0) => (
+  <section className="section" {...spy_attrs('services', page)}>
