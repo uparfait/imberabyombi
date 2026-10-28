@@ -7,3 +7,4 @@ export const kids = (n, local) => n ? Array.from(n.children).filter(c => !local 
 export const dir_of = p => p.replace(/[^/]*$/, '');
 export function resolve_path(dir, rel) {
   rel = (rel || '').split('#')[0]; const parts = rel.startsWith('/') ? [] : dir.split('/').filter(Boolean);
+  rel.split('/').forEach(p => { if (p === '..') parts.pop(); else if (p && p !== '.') parts.push(p); });
