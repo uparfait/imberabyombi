@@ -6,3 +6,4 @@
         · phones, up to 430px: the 360px design scaled to the screen, so a
           320px and a 430px phone look exactly like a 360px one
         · 430–640px: eases from the phone size down to 16px (no jump)
+        · tablets, 640–1023px: 16px, normal responsive layout
