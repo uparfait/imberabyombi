@@ -46,3 +46,4 @@ export function blocks_xml(container, ctx, cell_fmt) {
     if (n.nodeType === 1) {
       const t = n.tagName;
       if (/^(P|H[1-6]|BLOCKQUOTE|PRE)$/.test(t)) { flush(); out += cell_fmt ? `<w:p>${p_pr_xml(n)}${inline_xml(n, cell_fmt, ctx)}</w:p>` : para_xml(n, ctx); }
+      else if (t === 'DIV') { flush(); out += is_break(n) ? '<w:p><w:r><w:br w:type="page"/></w:r></w:p>' : blocks_xml(n, ctx, cell_fmt); }
