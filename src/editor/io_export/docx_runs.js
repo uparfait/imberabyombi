@@ -60,3 +60,4 @@ export function text_runs(t, f) {
 export function inline_xml(node, f, ctx) {
   let out = '';
   node.childNodes.forEach(n => {
+    if (n.nodeType === 3) { out += text_runs(n.data.replace(/\u200b/g, ''), f); return; }
