@@ -79,3 +79,4 @@ function apply_filter(list) {
   qsa('.tab_row', list).forEach(r => { const t = state.tabs[idx(r)]; r.hidden = !!q && !!t && !t.name.toLowerCase().includes(q); if (!r.hidden) shown++; });
   const ol = list.querySelector('#outline'); if (ol) ol.hidden = !!(ol.previousElementSibling && ol.previousElementSibling.hidden);
   let none = list.querySelector('.tab_none');
+  if (!shown && !none) { none = el('p', { class: 'tab_none outline_hint' }, 'No tab matches this filter.'); list.querySelector('.tab_scroll')?.appendChild(none); }
