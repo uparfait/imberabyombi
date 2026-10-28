@@ -31,6 +31,7 @@ let redirecting = 0;
 const redirect = path => { if (!redirecting) redirecting = setTimeout(() => { redirecting = 0; go(path, { replace: true }); }); return null; };
 export function admin_page(r) {
   if (!auth.user) return redirect('/login?next=' + encodeURIComponent(r.path));
+  if (!auth.role()) { auth.logout(); return redirect('/login'); }
   const mod = r.path.split('/')[2] || MODS.find(m => auth.can(m.k))?.k || 'settings', m = MODS.find(x => x.k === mod);
   route.mod = mod; lorem.seed(hash_str(mod));
   const body = !m ? not_found(true) : !auth.can(mod) ? forbidden() : VIEWS[mod]();
