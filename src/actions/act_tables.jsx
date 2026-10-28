@@ -23,3 +23,4 @@ export const TABLE_ACT = {
   add: t => open_form(t.dataset.col),
   edit: t => open_form(t.dataset.col, t.dataset.id),
   /* the row fades out first; after the redraw its node loses .row_out in case React reuses it for another row */
+  del: t => ask('Delete this record? It will be removed from this browser. You cannot undo this.', async () => {
