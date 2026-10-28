@@ -25,3 +25,4 @@ function Viz_card({ k, c }) {
   return (
     <article className="card viz_card" data-chart={k} data-act="viz_open" tabIndex="0" aria-label={`${c.t}: press Enter to see its data in a table`}>
       <header className="flex items-center gap-1"><h3 className="min-w-0 truncate text-base">{c.t}</h3>{help_tip(c.d, c.t)}</header>
+      <div className="viz_plot" data-plot="" dangerouslySetInnerHTML={{ __html: o ? o.svg : '' }}></div>
