@@ -73,3 +73,4 @@ export function find_step(d, select) {
 export function replace_one() {
   if (!can_edit()) return; const r = find_state.matches[find_state.idx]; if (!r) return;
   begin_op(); const h = editable_of(r.startContainer); r.deleteContents();
+  const rep = refs.replace_input ? refs.replace_input.value : ''; if (rep) r.insertNode(document.createTextNode(rep));
