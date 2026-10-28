@@ -6,3 +6,5 @@ import { field_spec } from '../schemas/index.js';
 import { show_msg, form_msg, request } from '../feedback/index.js';
 import { modal } from '../overlays/index.js';
 import { media_err } from './media.js';
+
+const TITLES = { ok: 'Saved', bad: 'Could not save', warn: 'Check this first', info: 'Good to know' };
