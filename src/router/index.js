@@ -4,3 +4,4 @@
 export * from './parse.js';
 export * from './pages.jsx';
 export * from './enhance.js';
+export * from './render_hooks.js';
