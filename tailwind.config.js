@@ -31,3 +31,4 @@ export default {
         '3xl': 'calc(var(--radius) * 1.5)', '4xl': 'calc(var(--radius) * 2.25)', full: 'var(--pill)'
       },
       boxShadow: { soft: 'var(--shadow)' },
+      padding: spacing, margin: spacing, gap: spacing, space: spacing,
