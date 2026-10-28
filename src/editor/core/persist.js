@@ -25,3 +25,4 @@ export function save_doc(force) {
   if (force !== true && live_busy()) { save_soon(); return false; }   // never save a preview
   const d = doc_data();
   /* the browser refused a copy this big: do not repeat the "storage is full" notice on every edit */
+  if (too_big && JSON.stringify(d).length >= too_big) return false;
