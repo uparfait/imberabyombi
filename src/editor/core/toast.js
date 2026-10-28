@@ -23,3 +23,4 @@ function status_line() {
 
 export function toast(msg, ms = 2800) {
   if (sink) { sink.push([msg, ms]); return; }
+  if (!staff_page()) {
