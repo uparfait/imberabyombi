@@ -1,5 +1,5 @@
 /* kit/kit_type.jsx: the Typography specimen: headings, every inline text element, a quote, an address and code.
-   Lorem calls keep the reference's order. */
+   Lorem calls run in a fixed order, so the sample text stays the same. */
 import { lorem } from '../lib/index.js';
 
 export const kit_type = () => (
