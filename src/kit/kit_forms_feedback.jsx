@@ -11,3 +11,5 @@ export const kit_forms_feedback = () => (
         <button type="button" className="btn btn_outline" data-act="demo_busy">Busy outline</button></div></div>
     <div className="grid gap-2"><p className="text-sm font-semibold">Meter (good, fair, poor)</p>{[90, 55, 15].map(v => (
       <meter key={v} min="0" max="100" low="30" high="70" optimum="100" value={v}></meter>
+    ))}</div>
+    <div className="flex flex-wrap items-center gap-2 sm:col-span-2"><label className="sr-only" htmlFor="demo_a">A</label>
