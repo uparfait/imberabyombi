@@ -8,3 +8,4 @@ import { refresh_comment_states } from '../content/index.js';
 export let reflow_raf = 0;
 let reflow_from = null;
 export function schedule_reflow(i) {
+  reflow_from = reflow_from == null ? i : Math.min(reflow_from, i);
