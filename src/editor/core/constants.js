@@ -15,3 +15,4 @@ export const FONTS = ['Arial', 'Bricolage Grotesque', 'Comic Sans MS', 'Courier 
 export const ZOOMS = [50, 75, 90, 100, 125, 150, 200];
 export const STYLES = [
   { key: 'p', label: 'Normal text', tag: 'P', css: 'font-size:14px' },
+  { key: 'title', label: 'Title', tag: 'P', cls: 'title', css: 'font-size:24px' },
