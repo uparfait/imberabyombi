@@ -22,3 +22,4 @@
   .kpi_delta b { font-weight: 600; }
   .kpi_delta.up > svg, .kpi_delta.up b { color: rgb(var(--ok)); }
   .kpi_delta.down > svg, .kpi_delta.down b { color: rgb(var(--bad)); }
+  .kpi_delta span { color: rgb(var(--muted)); }
