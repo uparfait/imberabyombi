@@ -20,3 +20,4 @@ export function render_tab() {
   const b = qs('.pg_body', w); b.innerHTML = t.html || '<p><br></p>';
   reflow(0, true);
   if (!t.undo.length) commit();
+  const f = deepest(first_flow(b) || b, true), r = document.createRange(); r.setStart(f, 0); r.collapse(true); set_last(r, b);
