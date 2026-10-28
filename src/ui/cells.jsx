@@ -18,3 +18,4 @@ export const stock_cell = (v, r) => (
   </div>
 );
 export const label = (c, k) => schemas[c].f.find(f => f.k === k)?.l || cap(k);
+/* Searchable text of a value (what the column filters match against) */
