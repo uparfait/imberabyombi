@@ -50,6 +50,7 @@ Every feature below is working code. Each line says what it is and where it live
 
 ## Document editor (`src/editor/`, `/admin/docs`)
 - A full word processor in the whole window with a Back button: paper sizes, margins, headers, footers, page numbers.
+- Styles, fonts, sizes, colours, highlight, lists, checklists, tables, images with positions (in line, wrap, break,
 ## Data tables (`src/table/`, `src/schemas/`)
 - Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
   Action Buttons column pinned first, details view (COLUMN NAME / VALUE), add, edit, delete.
