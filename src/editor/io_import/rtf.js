@@ -20,3 +20,4 @@ export function rtf_to_html(rtf) {
   let i = 0; const L = rtf.length;
   while (i < L) {
     const ch = rtf[i];
+    if (ch === '{') { stack.push({ ...st }); i++; continue; }
