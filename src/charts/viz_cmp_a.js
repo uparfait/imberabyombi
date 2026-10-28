@@ -40,3 +40,4 @@ export const VIZ_CMP_A = {
     return { svg: svg(f, [0, .25, .5, .75, 1].map(t => `<line class="grid_line" y1="${f.t}" y2="${f.t + f.ih}" x1="${round1(x(t))}" x2="${round1(x(t))}"/>`
         + `<text x="${round1(x(t))}" y="${f.h - 8}" text-anchor="middle">${t * 100}%</text>`).join('')
       + c.map((k, i) => { let acc = 0; return mark_group(k, s.map((n, j) => [pct(v[i][j]), n, j]), hit_row(f, y, i)
+        + v[i].map((p, j) => { const a = x(acc), b = x(acc + p); acc += p; return seg(i, j, a, b); }).join('')) + row_label(f, y, i, k); }).join(''),
