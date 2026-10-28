@@ -6,6 +6,7 @@ import { resolve } from 'node:path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
+/* Single-page fallback: dist/404.html is a copy of dist/index.html, so hosts that serve 404.html for unknown paths
 export default defineConfig({
   base: './',
   plugins: [react()],
