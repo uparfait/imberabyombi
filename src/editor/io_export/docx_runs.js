@@ -69,3 +69,4 @@ export function inline_xml(node, f, ctx) {
     const g = fmt_of(n, f);
     if (t === 'A' && n.getAttribute('href') && !/^data:/i.test(n.getAttribute('href')) && ctx.add_link) {
       const rid = ctx.add_link(n.getAttribute('href'));
+      out += `<w:hyperlink r:id="${rid}" w:history="1">${inline_xml(n, Object.assign({}, g, { link: true, color: null, u: false }), ctx)}</w:hyperlink>`; return;
