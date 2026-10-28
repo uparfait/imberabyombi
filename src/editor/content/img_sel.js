@@ -61,3 +61,4 @@ export function img_align_of(img) {
 export function position_img_box() {
   if (!img_sel || frozen) return; if (!img_sel.isConnected) { hide_img_sel(); return; }
   const box = ensure_img_box(), page = img_sel.closest('.page'); if (box.parentNode !== page) page.appendChild(box);
+  const { x, y } = offset_in(img_sel, page);
