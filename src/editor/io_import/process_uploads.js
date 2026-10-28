@@ -47,3 +47,4 @@ export async function process_uploads(files, mode) {
     try { const r = await file_to_html(f); r.file = f; if (r.note) notes.push(r.note); done.push(r); }
     catch (err) {
       console.error(err);
+      const why = /load failed/.test(err.message || '') ? 'the converter couldn’t be downloaded. Check your internet connection.'
