@@ -27,3 +27,4 @@ export function longform(k) {
       ))}</article>
       <aside className="grid content-start gap-6 lg:sticky lg:top-24 lg:self-start">
         <nav className="card p-5" aria-label="On this page"><h2 className="text-sm font-semibold">On this page</h2><ol className="mt-3 grid gap-1 text-sm">{secs.map(s => (
+          <li key={s.id}><button className={TOC_CLS} data-act="scroll" data-to={s.id}>{s.t}</button></li>
