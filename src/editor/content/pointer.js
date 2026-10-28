@@ -38,3 +38,4 @@ export function pages_click(e) {
     return;
   }
   const img = e.target.closest('.pg_body img');
+  if (img) { select_image(img); return; }
