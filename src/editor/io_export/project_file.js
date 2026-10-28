@@ -16,3 +16,4 @@ export function save_project(name = file_base()) {
 export function export_name() { return state.tabs.length > 1 ? `${file_base()} - ${active_tab().name}` : file_base(); }
 export function clean_content() { const d = el('div'); d.innerHTML = collect_html(); qsa('.cmt', d).forEach(s => s.replaceWith(...s.childNodes)); return d; }
 export function unwrap_comments(d) {
+  qsa('.cmt', d).forEach(s => s.replaceWith(...s.childNodes)); qsa('img[data-orig]', d).forEach(i => i.removeAttribute('data-orig')); return d;
