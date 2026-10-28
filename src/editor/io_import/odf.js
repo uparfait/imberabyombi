@@ -29,3 +29,5 @@ async function odf_inline(cx, n) {
       h += x;
     }
     else h += await odf_inline(cx, c);
+  }
+  return h;
