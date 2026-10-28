@@ -32,3 +32,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 The Export menu offers CSV, JSON and Excel. The dialog then asks for:
 - a **From / To** range (date and time) on the table's first date column;
 - **filters** for every fixed-choice column (status, priority, assigned to…), "All" by default;
+- the **columns** to include and what each is called in the file. An unticked column cannot be renamed, and with no column
