@@ -18,3 +18,4 @@
   color: rgb(var(--fg) / .78); transition: background-color .15s, color .15s;
 }
 .tb_btn { justify-content: center; min-width: 1.875rem; padding: 0 .25rem; }
+.tb_btn:hover, .tb_dd:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
