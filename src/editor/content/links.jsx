@@ -19,3 +19,4 @@ export function open_link_dialog(existing) {
   const a = existing || link_at_caret();
   const sel_text = a ? a.textContent : (last_range ? last_range.toString() : '');
   const range = last_range && last_range.cloneRange();
+  modal({ title: a ? 'Edit link' : 'Insert link', submit: 'Apply', body: <>
