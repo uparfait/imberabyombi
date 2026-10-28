@@ -21,3 +21,4 @@ function Editor_view() {
       {topbar()}
       {toolbar()}
       {workspace()}
+      {link_bubble()}
