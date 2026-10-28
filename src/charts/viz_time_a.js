@@ -16,3 +16,4 @@ export const VIZ_TIME_A = {
       + x_labels(f, m, x) + cross_bands(f, m, x, i => s.map((n, j) => [num(v[j][i]), n, j])), 'Line graph'),
       legend: legend(s, 'line'), table: [['Month', ...s], m.map((k, i) => [k, ...v.map(r => num(r[i]))])] }; } },
   area: { t: 'Area chart', g: 'time', d: 'One series over time, filled lightly to its baseline.', f(w) {
+    const m = MONTHS(); let a = 40; const v = m.map(() => (a = Math.max(8, a + rnd(-9, 11))) * MARGIN()), f = frame(w, 240), ax = y_axis(f, Math.max(...v));
