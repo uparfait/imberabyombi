@@ -14,3 +14,4 @@ import { confirm_dialog } from './dialogs.jsx';
 export function render_tab() {
   if (!pages_el) return;
   hide_img_sel(); close_menus(0); pages_el.innerHTML = '';
+  const t = active_tab(); if (!t) return;
