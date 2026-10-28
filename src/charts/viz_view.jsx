@@ -10,3 +10,4 @@ import { kpis } from './kpi_view.jsx';
 
 /* Draws every chart at its real width; on resize only the charts whose width changed are redrawn. VIZ_OUT keeps each chart's data. */
 export const VIZ_OUT = {};
+const DRAWN = new Map();   /* chart key -> its card's setter: the card shows VIZ_OUT[key] (SVG string + legend JSX) */
