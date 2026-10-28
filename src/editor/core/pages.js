@@ -37,3 +37,5 @@ export function layout_page(wrap) {
   }
   wrap.style.width = w * z + 'px';
   wrap.style.height = (s.pageless ? page.offsetHeight : h) * z + 'px';
+}
+export function set_editable(wrap) {
