@@ -19,3 +19,6 @@ export function Live_slot({ name, first, draw, fresh = true }) {
   });
   const v = get_version(), mine = !!own && own.v === v;   /* a page draw since the last own draw wins */
   return <Fragment key={!fresh ? 'slot' : mine ? 'r' + own.n : 'v' + v}>{mine ? own.jsx : first}</Fragment>;
+}
+
+/* draw one slot again, synchronously (code right after can query the new DOM). false = that slot is not on screen */
