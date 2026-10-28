@@ -6,3 +6,4 @@ export * from './modal.jsx';
 export * from './modal_form.jsx';
 export * from './dialog_hosts.jsx';
 export * from './copy.jsx';
+export * from './pick.js';
