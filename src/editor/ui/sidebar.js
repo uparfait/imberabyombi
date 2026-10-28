@@ -71,3 +71,5 @@ function filter_box(focus) {
   });
   if (focus) setTimeout(() => { inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length); }, 0);
   return inp;
+}
+/* rows whose name does not contain the filter text hide (the outline goes with its tab) */
