@@ -26,3 +26,4 @@ export const TV_ACT = {
   tv_edit: t => { const cell = row_of(t).querySelector('.kv_cell'); set_edit(t, true);
     cell.querySelector('input:not([type=checkbox]), textarea, select')?.focus(); if (!reduced()) cell.animate([{ opacity: .4 }, { opacity: 1 }], { duration: 180 }); },
   tv_cancel: t => { set_edit(t, false); fresh(); },
+  tv_save: t => { const tr = row_of(t), k = tr.dataset.tvRow, id = t.closest('[data-task]').dataset.task;
