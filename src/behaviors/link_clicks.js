@@ -11,3 +11,6 @@ function on_link(e) {
   if (u.origin !== location.origin || !in_base(u.pathname) || /\.[a-z0-9]+$/i.test(u.pathname)) return;
   if (u.hash && u.pathname + u.search === location.pathname + location.search) return;   /* a #fragment of this page */
   e.preventDefault(); go(app_path(u) + u.search + u.hash);
+}
+
+export const install_links = () => document.addEventListener('click', on_link);
