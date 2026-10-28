@@ -40,3 +40,4 @@ export function custom_table_dialog() {
       {num_field('ct_c', 'Columns', { min: 1, max: 30, defaultValue: 3 })}
       {num_field('ct_r', 'Rows', { min: 1, max: 500, defaultValue: 4 })}
       {num_field('ct_w', 'Width (% of the line)', { min: 10, max: 100, defaultValue: 100 })}
+      {sel_field('ct_a', 'Position', POSITIONS, 'left')}
