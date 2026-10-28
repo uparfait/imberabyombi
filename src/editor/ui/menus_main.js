@@ -56,3 +56,5 @@ function full_screen() {
   if (document.fullscreenElement) document.exitFullscreen();
   else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(() => toast('Full screen is not available here'));
   else toast('Full screen is not available here');
+}
+/* Editing / Viewing (View menu and the toolbar's mode button) */
