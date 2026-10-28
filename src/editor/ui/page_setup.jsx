@@ -48,3 +48,4 @@ export function page_setup_dialog() {
       const p = PAPER[v.paper] || PAPER.letter, land = v.ori === 'landscape', win = land ? p.h : p.w, hin = land ? p.w : p.h;
       const nm = {}; for (const k of SIDES) nm[k] = clamp(parseFloat(v['ps_' + k]) || 0, 0, 5);
       if (nm.left + nm.right > win - 1 || nm.top + nm.bottom > hin - 1) {
+        form_msg(f, 'warn', 'Margins too large', 'Those margins leave no room for text. Make them smaller.'); return false;
