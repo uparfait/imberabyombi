@@ -50,3 +50,4 @@ export async function file_to_html(file) {
     const chip = await attachment_html(file);
     return { kind: 'file', html: `<p>${chip}</p>`, inline: chip,
       note: `${name} uses an older format that can’t be turned into editable text, so it was attached as a file. `
+        + `Save it as .${/ppt|key/.test(ext) ? 'pptx' : 'docx'} to edit it here.` };
