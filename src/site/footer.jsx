@@ -1,0 +1,1 @@
+/* site/footer.jsx: the public footer: logo, a line of text and social links, the Explore and Platform link lists,
