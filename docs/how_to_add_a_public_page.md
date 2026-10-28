@@ -39,3 +39,4 @@ list it. To also show the section on the home page, add `{services_sec()}` to `h
 Add `<url><loc>https://example.com/#/services</loc></url>` to `public/sitemap.xml`.
 
 ## Tips
+- Keep each file under 100 lines: one section per file.
