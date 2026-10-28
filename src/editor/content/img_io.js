@@ -19,3 +19,4 @@ export async function copy_image(img) {
 export async function download_image(img) {
   img = img_now(img); if (!img || previewing()) return;
   try {
+    const src = img.getAttribute('src'), m = src.match(/^data:image\/([a-z+]+)[;,]/i);
