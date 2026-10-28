@@ -44,3 +44,4 @@ export function set_mode(mode) {
 }
 export function toggle_menus() {
   state.menus = !state.menus;
+  if (refs.topbar) refs.topbar.classList.toggle('show', state.menus);
