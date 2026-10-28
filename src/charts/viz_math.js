@@ -16,3 +16,4 @@ export const ticks = (lo, hi, n = 4) => {
 };
 export const rnd = (a, b) => a + lorem.r() * (b - a);
 export const gauss = () => (lorem.r() + lorem.r() + lorem.r() + lorem.r() - 2) * .87;
+export const MONTHS = () => Array.from({ length: 12 }, (_, i) => new Date(2026, i, 1).toLocaleDateString(undefined, { month: 'short' }));
