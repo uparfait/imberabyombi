@@ -18,3 +18,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
 ## Notifications
 - Staff pages only. On public and account pages `notify()` shows the same message inline, in the form or section the
   user is working in. `notify_next()` carries a message to the page a form goes to next (signed in, signed out…).
+- Slide in from the right, stack up to 4, pause on hover, close button, a line shows the time left.
