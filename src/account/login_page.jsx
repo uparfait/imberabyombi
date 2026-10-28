@@ -18,3 +18,4 @@ export function login_page(r) {
   return auth_shell('Sign in', 'Use any details. Your data stays in this browser.', <>
     <form data-form="login" className="on_bg mt-8 grid gap-6" noValidate>
       <div data-msg-slot="" className="empty:hidden"></div>
+      {role_part(inv, rs, sel)}
