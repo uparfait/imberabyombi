@@ -33,3 +33,5 @@ export function export_data(root) {
     else { const s = b.textContent.replace(/\u200b/g, '').trim(); if (s) lines.push(s); }
   });
   return [{ name: 'Text', hdr: false, rows: lines.map(l => [l]) }];
+}
+export function export_csv(root, name) {
