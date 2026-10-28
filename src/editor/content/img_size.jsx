@@ -8,3 +8,4 @@ import { img_max, img_now } from './img_sel.js';
 
 export function image_size_dialog(img) {
   img = img_now(img); if (!img || previewing()) return;
+  const w0 = img.offsetWidth, h0 = img.offsetHeight, ratio = w0 / (h0 || 1), max = img_max(img);
