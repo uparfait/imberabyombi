@@ -69,3 +69,4 @@ export const toolbar = () => (
     <button type="button" className="tb_dd mode_btn" id="mode_btn" data-tip="Editing mode" aria-haspopup="menu">
       <span className="ic_slot" id="mode_icon">{ic('edit')}</span><span className="lbl hidden md:inline" id="mode_label">Editing</span>{ic('arrow_drop_down')}</button>
     {sep()}
+    <button type="button" className="tb_btn" id="menus_toggle" data-tip="Hide menus (Ctrl+Shift+F)" aria-label="Show or hide the menus">
