@@ -36,3 +36,4 @@ VIEWS.events = () => {
 };
 
 const decide = (r, can) => can && r.status === 'Pending' ? <><button className="btn btn_soft btn_sm" data-act="res" data-v="Approved" data-id={r.id}>Approve</button>
+  <button className="btn btn_ghost btn_sm" data-act="res" data-v="Rejected" data-id={r.id}>Reject</button></> : null;
