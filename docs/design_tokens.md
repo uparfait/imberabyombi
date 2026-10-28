@@ -12,3 +12,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--radius`         | `1rem`              | Corners of larger surfaces: fields, cards, menus, dialogs, tiles |
 | `--pill`           | `999px`             | Small things fully round: buttons, chips, badges, avatars, toggles |
 | `--space`          | `1rem`              | Every `p-*`, `m-*`, `gap-*`, `space-*` utility (`p-4` = 1 × `--space`) |
+| `--font_sans`      | Figtree             | Body text                                                        |
