@@ -17,3 +17,4 @@ export function set_theme(mode) {
 export const hex_refresh = () => qsa('[data-hex]').forEach(b => { const h = rgb2hex(css_var('--' + b.dataset.hex)).toUpperCase(); b.textContent = h; b.dataset.text = h; });
 export function apply_tokens() {
   const t = db.get('tokens', {}), s = document.documentElement.style;
+  ['--brand', '--brand_2', '--radius', '--space', '--font_sans'].forEach(p => s.removeProperty(p));
