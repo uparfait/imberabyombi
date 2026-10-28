@@ -17,3 +17,5 @@ export function ensure_colgroup(t, chain) {
     chain.forEach(tb => { const o = tb.querySelector(':scope > colgroup'); if (o) o.remove(); tb.insertBefore(cg.cloneNode(true), tb.firstChild); });
   }
   return t.querySelector(':scope > colgroup');
+}
+let drag_stop = null;   /* ends a drag in progress (also run by the cleanup) */
