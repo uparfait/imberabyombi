@@ -4,3 +4,5 @@ import { cfg } from '../config/index.js';
 import { db, ui, cur, loaded, before_render, rerender } from '../store/index.js';
 import { schemas } from '../schemas/index.js';
 import { plain } from '../ui/index.js';
+
+export function rows_of(c) {
