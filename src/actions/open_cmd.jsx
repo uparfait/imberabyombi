@@ -2,3 +2,4 @@
    website, the design system and every public page, filtered as you type ([data-filter=".cmd_item"]). */
 import { ic } from '../icons/index.js';
 import { MODS, auth } from '../auth/index.js';
+import { PUB, PAGES } from '../site/index.js';
