@@ -18,3 +18,4 @@ VIEWS.library = () => {
       ['Overdue', over, 'clock', 'bad'], ['Declared lost', db.list('declarations').filter(d => d.type === 'Lost').length, 'flag', 'warn']])}
     {tabs('lib', [['books', 'Books'], ['rentals', 'Rentals', out.length], ['decl', 'Declarations']], t)}
     {t === 'books' ? crud('books', { title: 'Registered books' })
+      : t === 'rentals' ? crud('rentals', { title: 'Rentals', acts: returned }) : crud('declarations', { title: 'Declarations' })}</>;
