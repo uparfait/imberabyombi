@@ -8,3 +8,4 @@ import { field_spec, option_list, STATUS, names, ABC } from './fields.js';
 export const books_schema = {
   l: 'book', n: 14, cols: ['title', 'author', 'isbn', 'category', 'copies', 'shelf'],
   f: [
+    field_spec('title', 'Title', 'text', 0, 1), field_spec('author', 'Author'), field_spec('isbn', 'ISBN'),
