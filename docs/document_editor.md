@@ -28,6 +28,7 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
   colours, fonts, sizes, highlights and images; mammoth (structure only) is the fallback.
 - **Export** (Download): DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT, and a project file that keeps every tab.
 - **Saving**: the document is kept in the browser's IndexedDB (`editor_doc` key) a moment after each change, so
+  documents with many images are kept whole. A copy left in localStorage by an older version is moved over on load.
 
 ## Live preview
 Hover any formatting choice (toolbar buttons, menu items, colours, fonts, sizes, styles, alignment, spacing, list
