@@ -5,3 +5,5 @@ import { cfg } from '../config/index.js';
 import { sleep, staff_page } from './basics.js';
 import { spinner_html } from './spinner.jsx';
 import { notify } from './notify.js';
+
+/* D. Loading: a busy button spins in place. On staff (admin) pages every request (delete, update, get) also shows the
