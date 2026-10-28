@@ -46,3 +46,4 @@ const help = () => <>{search_box({ 'data-filter': '.accordion_item' }, 'Search h
   <p className="mt-6 text-sm text-muted">Still need help? <a href="#/contact" className="text-accent underline underline-offset-4">Contact us</a></p></>;
 
 export const PANELS = {
+  notes: { t: 'Notes', h: notes },
