@@ -41,3 +41,4 @@ export const toolbar = () => (
     {sep()}
     {dd('font_btn', 'font_label', 'Arial', 'Font', '6.75rem', true)}
     {sep()}
+    {tb({ ed: 'size_down', icon: 'remove', tip: 'Decrease font size (Ctrl+Shift+,)' })}
