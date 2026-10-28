@@ -31,3 +31,4 @@ function insert_items() {
     cmd('Comment', 'add_comment', () => add_comment(), 'Ctrl+Alt+M'),
     { sep: true }, cmd('Horizontal line', 'horizontal_rule', () => insert_hr()),
     cmd('Page break', 'insert_page_break', () => insert_page_break(), 'Ctrl+Enter'),
+    cmd('Blank page after this one', 'note_add', () => add_blank_page(current_page())),
