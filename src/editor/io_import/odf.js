@@ -8,3 +8,4 @@ import { PB } from './pptx.js';
 
 /* a frame's image, as wide as the frame (cm / mm / in / pt → px, 16–650) */
 async function odf_img(cx, fr) {
+  const im = by_tag(fr, 'image')[0], href = im && im.getAttribute('xlink:href'); if (!href || !cx.z.has(href)) return '';
