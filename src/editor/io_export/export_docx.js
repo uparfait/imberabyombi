@@ -31,3 +31,4 @@ export async function export_docx(root, name) {
         rels.push(`<Relationship Id="${id}" Type="${RELNS}/image" Target="media/image${n}.${ext}"/>`); return { rid: id, n };
       },
       new_num(l) {
+        const kind = list_kind(l); if (!abstracts.has(kind)) abstracts.set(kind, abstracts.size); const num_id = nums.length + 1;
