@@ -22,3 +22,4 @@ export function editor_start(root) {
   if (running) running();
   fill_refs(root);
   if (!restore_doc()) reset_doc();
+  Object.assign(state, { zoom: 1, mode: 'edit', menus: false, spell: true });   // fresh markup = the source's start view
