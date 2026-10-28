@@ -57,3 +57,5 @@ export function img_align_of(img) {
   }
   const blk = img.closest('p,h1,h2,h3,h4,h5,h6,li,td,th'), a = blk ? getComputedStyle(blk).textAlign : 'left';
   return a === 'center' ? 'center' : (a === 'right' || a === 'end') ? 'right' : 'left';
+}
+export function position_img_box() {
