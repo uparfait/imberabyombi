@@ -21,3 +21,4 @@ function fonts_in(host, r) {
   for (let n = w.nextNode(); n; n = w.nextNode()) { if (!r.intersectsNode(n)) continue; let e = n.parentElement;
     while (e && e !== host && !e.style?.fontFamily && !e.getAttribute?.('face')) e = e.parentElement;
     if (e && e !== host) m.set(n, e.style.fontFamily || e.getAttribute('face')); }
+  return m;
