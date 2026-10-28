@@ -23,3 +23,4 @@ function install_menubar(offs) {
     const items = () => (MENUS[b.dataset.menu] ? MENUS[b.dataset.menu]() : []);
     listen(offs, b, 'mousedown', e => e.preventDefault());
     listen(offs, b, 'click', e => toggle_menu(b, items, { focus: e.detail === 0 }));
+    listen(offs, b, 'mouseenter', () => {
