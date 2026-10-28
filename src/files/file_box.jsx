@@ -26,3 +26,5 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
       const list = [...(inp.files || [])], quiet = !!inp._quiet; inp._quiet = false; stop();
       if (same(list, shown.current)) return;
       shown.current = list; set_view(v => ({ files: list, quiet, gen: v.gen + 1 }));
+    };
+    /* File dialog closed without choosing: stop the waiting spinner (cancel event, plus a focus fallback for older browsers) */
