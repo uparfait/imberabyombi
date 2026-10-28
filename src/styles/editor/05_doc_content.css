@@ -16,3 +16,4 @@
 .doc_content ul,.doc_content ol{margin:0;padding-left:.5in}
 .doc_content li{padding-left:2px}
 .doc_content blockquote{margin:0 0 0 .5in;padding:0}
+.doc_content pre{margin:0;font-family:'JetBrains Mono','Courier New',monospace;font-size:10pt;background:#f8f9fa;padding:6pt}
