@@ -35,3 +35,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
     inp.parentElement._input = inp; BOXES.set(inp, sync);   /* _input: what the tiles' data-act handlers read */
     inp.addEventListener('cancel', stop); addEventListener('blur', on_blur); addEventListener('focus', on_focus);
     document.addEventListener('reset', on_reset);
+    return () => {
