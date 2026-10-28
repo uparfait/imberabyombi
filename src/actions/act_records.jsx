@@ -22,3 +22,4 @@ const bulletin = n => { const rows = db.list('bulletins').filter(b => b.student 
 };
 
 export const RECORD_ACT = {
+  clock: t => { const n = me(), td = ymd(), rows = db.list('attendance'), mine = rows.find(r => r.person === n && r.date === td);
