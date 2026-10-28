@@ -52,3 +52,6 @@ export function image_menu_items(img) {
     { label: 'Copy image', icon: 'content_copy', no_preview: true, action: off(() => copy_image(img)) },
     { label: 'Download image', icon: 'download', no_preview: true, action: off(() => download_image(img)) },
     { label: 'Reset image', icon: 'restart_alt', no_preview: true, action: off(() => reset_image(img)) },
+    { label: 'Delete image', icon: 'delete', no_preview: true, action: off(() => delete_image(img)) }
+  ];
+}
