@@ -14,3 +14,4 @@ export function verify_page() {
       <label className="flex cursor-pointer items-center gap-3 justify-self-start text-sm font-normal">
         <input type="checkbox" name="trust" />Trust this device for 30 days</label>
       <button className="btn btn_primary w-full">Verify</button>
+      <button type="button" className="btn btn_ghost -mt-3 w-full" data-act="otp_resend" id="otp_resend" disabled>Resend code</button>
