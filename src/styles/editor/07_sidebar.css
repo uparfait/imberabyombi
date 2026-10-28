@@ -9,3 +9,4 @@
 #editor #sidebar.closed { display: none; }
 @container ed_ws (max-width: 62.49rem) { #editor #sidebar { border-right: 1px solid rgb(var(--line)); background: rgb(var(--surface)); } }
 #sidebar_open { position: absolute; left: .75rem; top: calc(var(--ed_hr) + .75rem); z-index: 4; display: none; border: 1px solid rgb(var(--line)); background: rgb(var(--surface)); }
+#sidebar_open.show { display: inline-grid; }
