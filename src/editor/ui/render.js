@@ -9,3 +9,4 @@ import { update_rulers } from './rulers.js';
 import { render_sidebar } from './sidebar.js';
 import { apply_panels } from './pages_panel.js';
 import { close_menus } from './menu_engine.js';
+import { confirm_dialog } from './dialogs.jsx';
