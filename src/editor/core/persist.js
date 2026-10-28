@@ -30,3 +30,4 @@ export function save_doc(force) {
   too_big = JSON.stringify(d).length; return false;
 }
 export function save_soon() { clearTimeout(save_timer); save_timer = setTimeout(save_doc, 600); }
+set_on_change(save_soon);
