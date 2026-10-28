@@ -18,3 +18,4 @@
   .tile_link { display: grid; justify-items: center; gap: .5rem; padding: .625rem; border-radius: 1rem; text-align: center; font-size: .75rem; transition: background-color .2s; }
   .tile_link:hover { background: rgb(var(--surface)); }
   .tile_link.active { background: rgb(var(--surface)); outline: 2px solid rgb(var(--brand) / .45); outline-offset: -2px; font-weight: 600; }
+  /* The row of level menus stays pinned under the header while the page scrolls, so another level is always one click away */
