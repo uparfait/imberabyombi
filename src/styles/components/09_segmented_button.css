@@ -26,3 +26,4 @@
   .prose_x li::marker { color: rgb(var(--brand)); font-weight: 700; font-size: .8em; }
   .prose_x :where(dd) { margin: 0 0 .9rem; }
   .prose_x :where(img) { border-radius: var(--radius); width: 100%; }
+  .prose_x :where(a) { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
