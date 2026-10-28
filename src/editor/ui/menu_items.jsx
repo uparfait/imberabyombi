@@ -15,3 +15,4 @@ export function align_items() {
 }
 function custom_spacing_dialog() {
   modal({
+    title: 'Custom spacing', submit: 'Apply',
