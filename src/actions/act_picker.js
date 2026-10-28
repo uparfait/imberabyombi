@@ -17,3 +17,4 @@ export const PICKER_ACT = {
     pick.set(v); },
   pk_time: t => { const a = pick.a; if (a) pick.set(kind_of(a) === 'datetime-local' ? `${a.value.slice(0, 10) || ymd()} ${dt_show('time', t.dataset.v)}` : dt_show('time', t.dataset.v)); },
   pk_nav: t => { const v = pick.view, n = +t.dataset.n; pick.view = pick.a && kind_of(pick.a) === 'month' ? new Date(v.getFullYear() + n, 0, 1) : new Date(v.getFullYear(), v.getMonth() + n, 1); pick.draw(); pick.slide(n); },
+  pk_h24: t => { db.set('h24', t.dataset.v === '1'); dt_refresh(); pick.draw(); },
