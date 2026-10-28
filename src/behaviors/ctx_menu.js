@@ -23,3 +23,4 @@ export function ctx_menu() {
     <hr class="my-1"><button type="button" class="menu_item" role="menuitem" data-act="ctx_back">${mi('arrowL')}Back</button>`
     + `<button type="button" class="menu_item" role="menuitem" data-act="ctx_reload">${mi('refresh')}Reload</button>
     <hr class="my-1"><label class="menu_item justify-between" role="menuitemcheckbox" aria-checked="${on}">Allow text selection`
+    + `<input type="checkbox" role="switch" data-allow-select ${on ? 'checked' : ''}></label>`;
