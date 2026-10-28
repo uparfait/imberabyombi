@@ -35,3 +35,4 @@
 }
 .menubar_btn:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
 .menubar_btn.open { background: rgb(var(--brand) / .15); color: var(--active_fg); }
+@media (max-width: 639.98px) { .topbar_row { gap: .375rem; padding-inline: .5rem; } .doc_logo { display: none; } }
