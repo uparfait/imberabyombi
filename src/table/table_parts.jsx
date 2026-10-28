@@ -19,3 +19,4 @@ export const table_menu = c => { const v = tview(c);
   return (
     <>
       <p className="px-3 pb-1.5 pt-2 text-xs font-medium uppercase tracking-wider text-muted">Rows per page</p>
+      <div className="seg mx-2 mb-2 flex">{[10, 20, 50].map(n => (
