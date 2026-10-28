@@ -16,3 +16,4 @@ export async function export_epub(scope, name) {
   let img_n = 0;
   const css = CONTENT_CSS.replace(/white-space:pre-wrap;?/, '') + 'body{margin:0 4%}.doc_content .page_break{page-break-after:always}';
   for (let i = 0; i < tabs.length; i++) {
+    const t = tabs[i], d = el('div'); d.innerHTML = t.html; unwrap_comments(d);
