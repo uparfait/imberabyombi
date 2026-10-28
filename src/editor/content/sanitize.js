@@ -63,3 +63,4 @@ function clean(node) {
     const keep = keep_attrs(c, tag);
     for (const a of Array.from(c.attributes)) c.removeAttribute(a.name);
     for (const k in keep) c.setAttribute(k, keep[k]);
+    if (tag === 'IMG' && !keep.src) { c.remove(); continue; }
