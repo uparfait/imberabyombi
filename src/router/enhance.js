@@ -19,3 +19,4 @@ export function typer(el) {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = w[0]; return; }
   let i = 0, j = 0, del = false, hold = 0;
   TIMERS.push(setInterval(() => { if (hold) { hold--; return; } const s = w[i]; j += del ? -1 : 1; el.textContent = s.slice(0, j);
+    if (!del && j === s.length) { del = true; hold = 22; } else if (del && j === 0) { del = false; i = (i + 1) % w.length; hold = 4; } }, 75));
