@@ -21,3 +21,5 @@ export function kpi_data() {
   const rate = rnd(3.9, 4.8), conv = to(trend().reverse(), 3.8 / Math.sqrt(m)), d_conv = -rnd(1, 6);
   const pct_fmt = v => v.toFixed(1) + '%';
   return { m, mo, weeks, mins, users, d_users, rev, d_rev, enr, gauge_p, gauge_c, gauge_s, services, o1, o2, visits, vmax, src, split, share, lead, live, ring, rate,
+    conv, d_conv, pct_fmt };
+}
