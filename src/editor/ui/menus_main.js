@@ -15,3 +15,4 @@ import { apply_panels } from './pages_panel.js';
 import { new_document } from './render.js';
 
 /* a command: never previewed */
+export function cmd(label, icon, action, shortcut) { return { label, icon, action, shortcut, no_preview: true }; }
