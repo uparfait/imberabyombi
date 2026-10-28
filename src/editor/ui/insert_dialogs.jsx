@@ -38,3 +38,4 @@ export function image_url_dialog(target) {
   modal({
     title: target ? 'Replace image by URL' : 'Insert image by URL', submit: target ? 'Replace image' : 'Insert image',
     body: <div className="field sm:col-span-2"><label htmlFor="img_url">Image address</label>
+      <input id="img_url" name="img_url" type="url" placeholder="https://…" autoComplete="off" /></div>,
