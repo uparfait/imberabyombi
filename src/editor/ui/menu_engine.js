@@ -79,3 +79,4 @@ export function open_menu(anchor, items, opts = {}) {
   return m;
 }
 /* a second click on the anchor of the open menu closes it */
+export function toggle_menu(anchor, items_fn, opts) {
