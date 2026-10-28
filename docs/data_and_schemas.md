@@ -7,3 +7,4 @@ is blocked (private mode, sandboxes).
 |------------------------------|-------------------------------------------------------------|
 | `db.get(key, fallback)`      | a setting (`theme`, `tokens`, `session`, `sideMin` …)       |
 | `db.set(key, value)`         | save a setting (a full storage shows a notification)        |
+| `db.list(collection)`        | all rows of a collection; seeds it once from its schema     |
