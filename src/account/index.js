@@ -8,3 +8,4 @@ export * from './verify_page.jsx';
 export * from './authenticator_page.jsx';
 export * from './resend_in.js';
 export * from './pw_rules.js';
+export * from './set_password_page.jsx';
