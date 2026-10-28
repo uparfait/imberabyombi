@@ -16,6 +16,8 @@ export function side_wheel(offs, t) {
   listen(offs, t, 'wheel', e => {
     if (t.scrollWidth <= t.clientWidth + 1 || Math.abs(e.deltaX) >= Math.abs(e.deltaY)) return;
     t.scrollLeft += e.deltaY; e.preventDefault();
+  }, { passive: false });
+}
 /* run every cleanup of a list, newest first */
 export function run_offs(offs) { while (offs.length) { try { offs.pop()(); } catch (e) { console.error(e); } } }
 
