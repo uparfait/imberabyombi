@@ -14,3 +14,4 @@ import { tiers } from './tiers.jsx';
 import { longform } from './longform.jsx';
 
 export function home() {
+  lorem.seed(11);
