@@ -9,3 +9,7 @@ export const file_info = f => (
     <p className="max-w-sm text-sm text-muted">This type of file cannot be shown inside the browser. Open it in a new tab, or download it and open it with an app.</p>
     <div className="mt-2 flex flex-wrap justify-center gap-2">
       <a className="btn btn_outline btn_sm" href={furl(f)} target="_blank" rel="noopener">{ic('external', 'h-4 w-4')}Open</a>
+      <a className="btn btn_primary btn_sm" href={furl(f)} download={f.name}>{ic('download', 'h-4 w-4')}Download</a>
+    </div>
+  </div>
+);
