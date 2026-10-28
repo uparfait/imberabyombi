@@ -2,3 +2,4 @@
    the container of .docx, .xlsx and .epub files. files: [{ name, data: string | Uint8Array }]. */
 
 /* ---------- DOCX writer (Office Open XML, no external library) ---------- */
+export const CRC_T = (() => {
