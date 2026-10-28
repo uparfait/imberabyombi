@@ -9,3 +9,4 @@ const GO_CLS = 'grid h-8 w-8 place-items-center rounded-full bg-white text-brand
 
 export function hero_sec() {
   return (
+    <section id="s_hero" className="wrap pt-3 sm:pt-6" aria-label="Introduction">{hero_shell(
