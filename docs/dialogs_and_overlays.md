@@ -17,3 +17,6 @@ modal({
   danger: false,                       // red submit button
   actions: <button …>Delete</button>,  // extra footer buttons
   wide: true                           // at least 70% of a large screen (the task view)
+});
+```
+- Submitting validates the form, runs `on_submit` inside `request()` (the button spins), then closes.
