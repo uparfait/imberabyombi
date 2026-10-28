@@ -11,3 +11,4 @@ export const masked = (t, s) => {
   for (let gi = 0; gi < groups.length && d; gi++) {
     const [n, sep] = groups[gi], L = lim[spec.parts[gi]], raw = d.slice(0, n); let g = raw, used = raw.length;
     if (L && +raw[0] > L[0]) { g = '0' + raw[0]; used = 1; }
+    else if (L && raw.length === 2 && (+raw > L[1] || +raw < L[2])) { g = raw[0]; used = 2; }
