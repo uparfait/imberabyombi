@@ -8,3 +8,4 @@ import { peek, peek_view, unpeek, unpeek_key, pick } from './hover_preview.js';
 import { mi, scaled } from './ui_dom.js';
 
 export const menu_stack = [];
+let sub_timer = null;
