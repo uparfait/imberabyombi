@@ -26,3 +26,4 @@
 
   /* Email designs: client header + an email "paper" in the brand */
   .mail_canvas { padding: 1rem; background: rgb(var(--surface_2)); }
+  @media (min-width: 640px) { .mail_canvas { padding: 2rem; } }
