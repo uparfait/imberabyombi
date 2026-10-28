@@ -4,3 +4,4 @@
    directly in a page (not in a table or quote) carry a section. */
 import { pages_el, bodies, qsa, collect_html, begin_op, end_op, caret_to_start } from '../core/index.js';
 import { can_edit } from '../format/index.js';
+import { clean_text } from './ui_dom.js';
