@@ -52,3 +52,4 @@ export function editor_start(root) {
   if (document.fonts) document.fonts.ready.then(() => { if (!stopped) { reflow(0, true); update_rulers(); } });
 
   function stop() {
+    if (stopped) return;
