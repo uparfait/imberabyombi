@@ -40,3 +40,4 @@ export function kit() {
           {kit_block('type', 'Typography', kit_type())}
           {kit_block('lists', 'Lists', kit_lists())}
           {kit_block('actions', 'Actions', kit_actions())}
+          {kit_block('forms', 'Forms', kit_forms(brand_hex))}
