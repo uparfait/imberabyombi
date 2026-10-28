@@ -50,3 +50,4 @@ export function tbl_op(op, arg) {
     case 'merge': {
       const nx = c.td.nextElementSibling; if (!nx) { toast('There’s no cell to the right to merge with'); break; }
       if (nx.textContent.replace(/\u200b/g, '').trim() || nx.querySelector('img,table')) Array.from(nx.childNodes).forEach(n => c.td.appendChild(n));
+      c.td.colSpan = (c.td.colSpan || 1) + (nx.colSpan || 1); nx.remove(); target = c.td; break;
