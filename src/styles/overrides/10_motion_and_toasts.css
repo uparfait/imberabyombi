@@ -23,3 +23,4 @@
   .toast [data-close]:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
   .toast .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: rgb(var(--t)); transform-origin: left; animation: shrink var(--life, 4.5s) linear forwards; }
   .toast:hover .bar { animation-play-state: paused; }
+  .toast.out { animation: toast_out .35s var(--ease) forwards; }
