@@ -5,3 +5,4 @@ import { save_tab, render_tab, render_sidebar } from '../ui/index.js';
 import { hide_img_sel, render_comments } from '../content/index.js';
 
 export async function export_pdf(scope, name, scale = 2) {
+  hide_img_sel();
