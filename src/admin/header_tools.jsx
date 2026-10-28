@@ -20,3 +20,4 @@ export function header_tools(n = '') {
             <div className="min-w-0"><p className="truncate font-semibold">{u.name}</p><p className="truncate text-sm text-muted">{u.email}</p>
               <span className="chip mt-1 bg-brand/15 text-accent">{r.name}</span></div></div>
           <div className="mt-2 grid gap-0.5"><a href="#/admin/settings" className="menu_item">{ic('sliders', 'h-4 w-4 text-muted')}Settings</a>
+            <a href="#/" className="menu_item">{ic('globe', 'h-4 w-4 text-muted')}Public website</a>
