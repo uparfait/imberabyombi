@@ -59,7 +59,7 @@ Every feature below is working code. Each line says what it is and where it live
   hover values, and a click on a card (or a mark) that opens its data in a table, 20 rows a page.
 
 ## Platform
-- Hash router with per-page title and description, redirects to sign-in and back, not-found and no-access views.
+- Path routes (`/about`, `/admin/tasks`) on the History API: per-page title, description and canonical link, Back /
 - Role-based access on every module, button, widget and route; landing page per role.
 - Storage in the browser with a memory fallback; deterministic lorem ipsum and seed data.
 - Accessibility (landmarks, keyboard, focus, live regions, reduced motion) and SEO (meta, Open Graph, JSON-LD,
