@@ -2,3 +2,4 @@
    editor while st.edit[row] is on; the attachment preview and the status' Cancel / Save follow st.prev and st.more. */
 import { Fragment } from 'react';
 import { fmt_dt } from '../lib/index.js';
+import { ic } from '../icons/index.js';
