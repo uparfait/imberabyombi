@@ -4,3 +4,4 @@
 import { state, new_tab, el, toast, hide_toast, hist_timer, commit, begin_op, end_op, restore_focus, body_index, last_range, set_last_range } from '../core/index.js';
 import { sanitize_html, render_comments } from '../content/index.js';
 import { can_edit } from '../format/index.js';
+import { save_tab, render_tab, render_sidebar, render_all, confirm_dialog } from '../ui/index.js';
