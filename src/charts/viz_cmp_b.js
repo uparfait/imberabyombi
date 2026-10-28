@@ -20,3 +20,4 @@ export const VIZ_CMP_B = {
         + row_label(f, y, i, k)).join(''), 'Dumbbell chart'),
       legend: legend(['2025', '2026'], 'dot', [1, 0]),
       table: [['Category', '2025', '2026', 'Change'], c.map((k, i) => [k, num(a[i]), num(b[i]), (b[i] >= a[i] ? '+' : '') + num(b[i] - a[i])])] }; } },
+  bullet: { t: 'Bullet chart', g: 'cmp', d: 'Actual against a target, over poor / fair / good bands.', f(w) {
