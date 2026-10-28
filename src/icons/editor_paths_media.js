@@ -11,3 +11,4 @@ export const EDITOR_MEDIA_PATHS = {
   view_agenda: 'M4 4h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM4 13h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z',
   add_row_above: 'M4 10h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zM4 15h16M12 10v10M12 2v6M9 5h6',
   add_row_below: 'M4 14h16V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1zM4 9h16M12 4v10M12 16v6M9 19h6',
+  add_column_left: 'M10 4h9a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-9zM15 4v16M10 12h10M5 9v6M2 12h6',
