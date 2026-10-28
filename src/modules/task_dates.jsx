@@ -26,3 +26,4 @@ setInterval(() => qsa('[data-due]').forEach(e => { const r = { due: e.dataset.du
 export const dt_in = (s, k) => !s ? '' : /T\d/.test(s) ? String(s).slice(0, 16) : `${s}T${k === 'start' ? '09:00' : '17:00'}`;
 /* when a comment was written: "just now", "5m ago", "3h ago", then the date */
 export const ago = t => { const m = Math.round((Date.now() - t) / 6e4);
+  return m < 1 ? 'just now' : m < 60 ? `${m}m ago` : m < 1440 ? `${Math.round(m / 60)}h ago` : fmt_d(ymd(new Date(t))); };
