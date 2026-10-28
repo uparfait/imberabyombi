@@ -8,3 +8,5 @@ export function raise_top() {
     const bars = qsa('.toast', el).map(n => [n, new DOMMatrix(getComputedStyle(n.querySelector('.bar')).transform).a]);
     if (el.matches(':popover-open')) el.hidePopover(); el.showPopover();
     bars.forEach(([n, s]) => { n.classList.add('raised'); n.querySelector('.bar').style.animationDelay = `-${(1 - s) * parseFloat(n.style.getPropertyValue('--life'))}ms`; }); }
+}
+export const show_dialog = d => { d.showModal(); raise_top(); };
