@@ -1,3 +1,4 @@
 /* overrides/11_inline_messages.css: rules that come after the utilities, as in the reference */
   .toast.raised:not(.out) { animation: none; }   /* stacked again above a dialog that just opened: it does not slide in twice */
   /* B. Inline messages: appear instantly inside the component that caused them */
+  .msg { --t: var(--info); display: flex; gap: .75rem; align-items: flex-start; padding: .8rem .9rem; font-size: .875rem; line-height: 1.45; text-align: left;
