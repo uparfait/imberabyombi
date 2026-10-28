@@ -50,3 +50,4 @@ Reset the demo data (Settings → Data) once so the new collection is seeded.
   and a handler `bus_service` in an `ACT` file (src/actions), see [actions and events](actions_and_events.md).
 - Dashboard widget: add a card to `src/modules/dashboard_widgets.jsx`, guarded by `auth.can('transport')`.
 - A custom page without a table: return any JSX from the view, using the components in the
+  [catalogue](components_catalogue.md); push work that needs the DOM into `after_render()`.
