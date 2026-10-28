@@ -1,2 +1,3 @@
 /* base/04_tables.css: base layer */
 @layer base {
+  /* Tables: cells never wrap. Wrappers scroll on x (header included); long text is trimmed (see .trunc) */
