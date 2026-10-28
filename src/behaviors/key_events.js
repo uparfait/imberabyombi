@@ -22,3 +22,4 @@ function on_keydown(e) {
     if (k === 'ArrowLeft' && i > 0) { e.preventDefault(); bs[i - 1].focus(); } if (k === 'ArrowRight' && i < bs.length - 1) { e.preventDefault(); bs[i + 1].focus(); } }
   if (k === 'Escape' && pick.a) { e.preventDefault(); pick.close(true); pick.esc = true; setTimeout(() => pick.esc = false); return; }
   if (pick.a && t.closest?.('#picker')) return pick.keys(e);
+  if (pick.a && k === 'Tab') pick.close();
