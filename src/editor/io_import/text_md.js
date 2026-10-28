@@ -30,3 +30,4 @@ export function md_to_html(md) {
       out += `<pre>${esc_html(buf.join('\n'))}</pre>`; continue;
     }
     let m;
+    if ((m = l.match(/^(#{1,6})\s+(.*)$/))) { const n = Math.min(m[1].length, 4); out += `<h${n}>${md_inline(m[2])}</h${n}>`; i++; continue; }
