@@ -11,3 +11,4 @@ export function save_project(name = file_base()) {
   if (hist_timer) commit(); save_tab();
   const data = { app: PROJECT_APP, version: 1, title: state.title, setup: state.setup, active: state.active,
     tabs: state.tabs.map(t => ({ id: t.id, name: t.name, html: t.html })), comments: state.comments.filter(c => !c.draft) };
+  download(new Blob([JSON.stringify(data)], { type: 'application/json' }), name + '.json'); toast('Project file saved with all tabs');
