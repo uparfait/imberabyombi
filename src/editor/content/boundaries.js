@@ -8,3 +8,4 @@ const no_text = rr => rr.toString().replace(/\u200b/g, '') === '' && !rr.cloneCo
 export function at_body_start(host, r) {
   const f = first_flow(host); if (!f) return true;
   if (r.startContainer !== host && !f.contains(r.startContainer)) return false;
+  const rr = document.createRange(); rr.setStart(f, 0); try { rr.setEnd(r.startContainer, r.startOffset); } catch (e) { return false; }
