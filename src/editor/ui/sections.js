@@ -55,3 +55,4 @@ export function move_section(k, to, m = section_model()) {
   return f;
 }
 /* d: -1 up, +1 down */
+export function move_section_by(k, d) {
