@@ -24,3 +24,4 @@ function resize(e, h) {
 }
 const on_mousedown = e => e.preventDefault();
 function on_pointerdown(e) {
+  if (!img_sel) return;
