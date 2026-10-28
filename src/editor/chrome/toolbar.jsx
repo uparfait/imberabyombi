@@ -65,3 +65,4 @@ export const toolbar = () => (
     {tb({ ed: 'outdent', icon: 'format_indent_decrease', tip: 'Decrease indent (Ctrl+[)' })}
     {tb({ ed: 'indent', icon: 'format_indent_increase', tip: 'Increase indent (Ctrl+])' })}
     {tb({ ed: 'clear', icon: 'format_clear', tip: 'Clear formatting (Ctrl+\\)' })}
+    <div className="tb_fill"></div>
