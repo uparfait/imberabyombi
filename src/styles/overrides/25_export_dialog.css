@@ -38,3 +38,4 @@
 @keyframes shrink { to { transform: scaleX(0); } }
 @keyframes spin_rotate { 100% { transform: rotate(360deg); } }
 @keyframes dash_pulse {
+  0% { stroke-dasharray: 1, 200; stroke-dashoffset: 0; }
