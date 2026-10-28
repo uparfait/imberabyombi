@@ -47,3 +47,4 @@ export function row_drag(e, o) {
   };
   const up = () => end(true), cancel = () => end(false);
   const esc = ev => { if (ev.key === 'Escape') { ev.preventDefault(); ev.stopPropagation(); end(false); } };
+  addEventListener('pointermove', move); addEventListener('pointerup', up); addEventListener('pointercancel', cancel);
