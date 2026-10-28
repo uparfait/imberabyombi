@@ -60,3 +60,8 @@ function Download_body({ opt }) {
         {scope_on ? seg('Content', [['tab', 'This tab'], ['all', `All ${state.tabs.length} tabs`]], opt.scope, set('scope')) : null}
         {opt.fmt === 'pdf' ? seg('Quality', [[1.5, 'Standard'], [2, 'High'], [3, 'Best']], opt.quality, set('quality')) : null}</div> : null}
       <p className="text-sm">{summary(opt.fmt, s)}</p>
+    </div>
+  );
+}
+
+export function open_download_dialog(pre) {
