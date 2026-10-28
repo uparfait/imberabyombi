@@ -14,3 +14,4 @@ const swallow = () => { swallow_until = Date.now() + 400; };
 function show_caret(p) {
   const r = document.createRange(); try { r.setStart(p.node, p.off); } catch (e) { hide_caret(); return; } r.collapse(true);
   const rc = caret_rect(r), page = editable_of(p.node).closest('.page'), pr = page.getBoundingClientRect(), z = state.zoom;
+  caret_el = caret_el || el('div', { class: 'img_drop_caret', style: 'position:absolute;width:0.125rem;pointer-events:none;z-index:6;background:rgb(var(--brand))' });
