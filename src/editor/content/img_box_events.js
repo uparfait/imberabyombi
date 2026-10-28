@@ -32,3 +32,4 @@ function on_pointerdown(e) {
 /* quick bar hover preview: the box stays put while the pointer is on the bar (a preview may move the image) */
 let hover_b = null, hover_img = null, hover_fn = null;
 const run = (img, a) => { const [k, v] = a.split(':'); if (k === 'pos') set_img_pos(img, v); else set_img_align(img, v); };
+function settle(kept) {
