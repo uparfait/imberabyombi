@@ -22,3 +22,4 @@ export const CONTENT_CSS = '\n' + [
   ".doc_content pre{margin:0;font-family:'Source Code Pro','Courier New',monospace;font-size:10pt;background:#f8f9fa;padding:6pt}",
   '.doc_content hr{border:0;border-top:1px solid #9aa0a6;margin:6pt 0}',
   '.doc_content a{color:#1155cc;text-decoration:underline}',
+  '.doc_content img{max-width:100%;height:auto;vertical-align:bottom;box-sizing:border-box}',
