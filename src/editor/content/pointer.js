@@ -17,3 +17,4 @@ function on_text(x, y) {
   const p = caret_from_point(x, y); if (!p || p.node.nodeType !== 3) return false;
   const r = document.createRange();
   for (const o of [p.off - 1, p.off]) {
+    if (o < 0 || o >= p.node.length) continue; r.setStart(p.node, o); r.setEnd(p.node, o + 1);
