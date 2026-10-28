@@ -34,3 +34,4 @@ Settings → Data → **Reset demo data** restores the sample records. Theme, se
 All storage keys start with `loremds:v1:` (`window.NS` in `index.html`); change it to start a fresh dataset.
 
 ## Next
+- [Project structure](project_structure.md): where everything lives.
