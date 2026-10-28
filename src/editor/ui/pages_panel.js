@@ -35,3 +35,4 @@ export function apply_panels() {
   cp.classList.toggle('show', !!state.show_comments);
   sc.style.paddingLeft = state.sidebar && wide ? room(sb) : '';
   sc.style.paddingRight = state.show_comments && wide ? room(cp) : '';
+  sb.style.background = wide ? '' : 'rgb(var(--surface))'; cp.style.background = wide ? '' : 'rgb(var(--surface))';
