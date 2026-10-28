@@ -18,3 +18,4 @@ export const sel_field = (id, label, opts, value) => (
     <select id={id} name={id} defaultValue={value}>{opts.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
 );
 export const color_field = (id, label, value) => (
+  <div className="field"><label htmlFor={id}>{label}</label><input id={id} name={id} type="color" defaultValue={value} /></div>
