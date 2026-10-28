@@ -12,3 +12,4 @@ function para_html(p) {
   let h = '';
   for (const c of Array.from(p.children)) {
     if (c.localName === 'r' || c.localName === 'fld') {
+      const pr = kids(c, 'rPr')[0]; let s = esc_html(by_tag(c, 't').map(x => x.textContent).join(''));
