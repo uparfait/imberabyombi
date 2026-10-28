@@ -31,3 +31,4 @@ export function install_page() {
   ['modal', 'drawer', 'viewer', 'confirm'].forEach(id => { const d = document.getElementById(id);
     d?.addEventListener('cancel', e => { e.preventDefault(); if (!pick.esc) request_close(d); }); });
   /* File dialog closed without choosing: stop the waiting spinner (cancel event, plus a focus fallback for older browsers) */
+  document.addEventListener('cancel', e => { if (e.target.type === 'file') e.target.closest('.filebox')?.classList.remove('picking'); }, true);
