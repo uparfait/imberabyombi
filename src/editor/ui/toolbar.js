@@ -15,3 +15,4 @@ import { mode_items } from './menus_main.js';
 import { image_items } from './menus.js';
 import { open_find } from './find.js';
 import { toggle_spell, toggle_menus, do_print } from './view.js';
+import { listen } from './ui_dom.js';
