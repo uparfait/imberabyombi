@@ -2,6 +2,7 @@
    the page in view (vertical), the margins shaded, and handles that drag a margin (sixteenths of an inch; the value shows
    next to the pointer while dragging; one history step when let go). Lengths along the page are page units
    (inches × 96 × zoom); the ruler's own thickness, ticks and handles scale with the root font (u()). Once a margin differs
+   from the default, "Reset margins" shows at the end of the ruler. */
 import { tip } from '../../overlays/index.js';
 import { apply_setup } from './view.js';
 import { scaled } from './ui_dom.js';
