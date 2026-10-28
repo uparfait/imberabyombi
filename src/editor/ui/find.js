@@ -29,3 +29,4 @@ export function run_find(keep) {
     let text = ''; const segs = [];
     bodies().forEach(b => {
       const w = document.createTreeWalker(b, NodeFilter.SHOW_TEXT); let last_blk = null;
+      while (w.nextNode()) {
