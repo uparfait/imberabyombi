@@ -65,3 +65,4 @@ function filter_box(focus) {
   const inp = el('input', { type: 'search', class: 'tab_filter', placeholder: 'Filter tabs', 'aria-label': 'Filter tabs', autocomplete: 'off' });
   inp.value = tab_q;
   inp.addEventListener('input', () => { tab_q = inp.value; apply_filter(refs.tab_list); });
+  inp.addEventListener('keydown', e => {
