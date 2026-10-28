@@ -20,3 +20,4 @@ The site is then served at `https://<user>.github.io/<repository>/`.
 Upload the contents of `dist/`. Serve `index.html` for `/`. Let the server cache `assets/*` files for a long time
 (their names contain a content hash) and keep `index.html` uncached so updates show at once:
 ```nginx
+location /assets/ { add_header Cache-Control "public, max-age=31536000, immutable"; }
