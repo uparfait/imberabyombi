@@ -33,3 +33,4 @@ inside its own box. Nested scroll areas hand the wheel back to the page at their
 - Theme switches are instant: `.theme_switch` turns all transitions off for two frames.
 - No shadows in any theme: every `box-shadow` and `text-shadow` is removed; borders carry depth.
 - Charts are redrawn after a theme or token change because they read colours when they draw.
+- Autofill: browsers are blocked from recolouring filled fields. Fields on dark surfaces add `.field_dark`.
