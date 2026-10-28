@@ -5,3 +5,4 @@ import { modal } from '../../overlays/index.js';
 import { clamp, toast } from '../core/index.js';
 import { can_edit, previewing } from '../format/index.js';
 import { bake_image } from './img_ops.js';
+import { img_now } from './img_sel.js';
