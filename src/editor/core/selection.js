@@ -74,3 +74,4 @@ export function caret_from_point(x, y) {
   return null;
 }
 export function restore_focus() {
+  const cs = getSelection();
