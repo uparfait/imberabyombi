@@ -24,3 +24,5 @@ export const employees_schema = {
     field_spec('name', 'Full name', 'text', 0, 1), field_spec('dept', 'Department', 'select', DEPTS, 1), field_spec('position', 'Position'),
     field_spec('shift', 'Shift', 'select', option_list('Morning|Day|Evening|Night')), field_spec('phone', 'Phone', 'tel'),
     field_spec('salary', 'Monthly salary', 'number', 0, 0, { min: 0 }), field_spec('status', 'Status', 'select', STATUS.staff)
+  ],
+  g: () => ({
