@@ -11,3 +11,6 @@ const confirm_view = () => (
   <>
     <div className="p-6 pb-4"><h2 id="confirm_title" className="text-xl">Discard changes?</h2><p className="mt-2 text-muted">You changed this form. If you close it now, your changes are lost.</p></div>
     <footer className="flex flex-wrap justify-end gap-2 px-6 pb-5"><button type="button" className="btn btn_ghost" data-act="confirm_keep">Keep editing</button><button type="button" className="btn btn_danger" data-act="confirm_discard">Discard</button></footer>
+  </>
+);
+const portal = (id, child) => { const at = document.getElementById(id); return at && child ? createPortal(child, at) : null; };
