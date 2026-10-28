@@ -22,3 +22,4 @@ export function item_parent(c) { return is_table(c) ? (c.tBodies[0] || c) : c; }
 export function normalize_body(b) {
   let p = null;
   for (const n of Array.from(b.childNodes)) {
+    if (n.nodeType === 8) { n.remove(); continue; }
