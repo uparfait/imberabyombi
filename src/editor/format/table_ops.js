@@ -65,3 +65,5 @@ export function tbl_op(op, arg) {
     case 'preset': apply_preset(chain, arg); break;
     case 'distribute': drop_cols(); break;
     case 'props': arg(chain); full = true; break;
+  }
+  chain.forEach(t => { if (t.isConnected && !t.rows.length) t.remove(); });
