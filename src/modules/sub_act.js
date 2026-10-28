@@ -13,3 +13,4 @@ export const SUB_ACT = {
     const row = list.lastElementChild; row.querySelector('.sub_text').focus();
     if (!reduced()) row.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 180 }); },
   sub_rm_group: t => { const g = t.closest('[data-sub-group]'), api = sub_api(t), k = sub_key(g);
+    fade_out(g, [{ opacity: 1 }, { opacity: 0, transform: 'scale(.98)' }], 180, () => api?.rm_group(k)); },
