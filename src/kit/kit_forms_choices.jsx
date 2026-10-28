@@ -20,3 +20,4 @@ export function kit_forms_choices(brand_hex) {
       <datalist id="demo_list_options">{Array.from({ length: 8 }, (_, i) => <option key={i} value={lorem.t(2)}></option>)}</datalist></div>
   );
   const multi = Array.from({ length: 10 }, () => lorem.t(2));   /* the first two start selected */
+  return (
