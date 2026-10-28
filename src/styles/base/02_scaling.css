@@ -12,3 +12,4 @@
      ===================================================================== */
   html {
     font-size: calc(100vw * 16 / var(--scale_phone));
+    scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
