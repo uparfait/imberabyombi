@@ -22,3 +22,4 @@ qs('#main .row_flash')?.scrollIntoView({ block: 'center' });
 `ui` holds what the screen shows: column searches (`q`), table pages (`page`), sorting (`sort`), open tabs (`tab`),
 sidebar (`side`, `side_min`), calendar (`cal_date`, `cal_view`), side panel (`panel`), chart range (`viz_range`),
 table settings (`tview`), the table in full screen (`table_full`), the row to flash (`flash`).
+Change it, then call `rerender()`. Things that must survive a reload go to `db` instead (`db.set('sideMin', true)`).
