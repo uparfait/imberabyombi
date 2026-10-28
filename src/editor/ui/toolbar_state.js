@@ -26,3 +26,4 @@ export function refresh_toolbar() {
   });
   set_text(refs.font_label, cs.fontFamily.split(',')[0].replace(/["']/g, '').trim());
   const si = refs.size_input;
+  if (si && document.activeElement !== si) si.value = Math.round(parseFloat(cs.fontSize) * 0.75 * 2) / 2;
