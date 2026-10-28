@@ -11,3 +11,4 @@ export const DTF = {
   time: { ph: 'HH:MM', re: '([01]\\d|2[0-3]):[0-5]\\d', mask: '##:##', parts: ['h', 'mi'] },
   'datetime-local': { ph: 'YYYY-MM-DD HH:MM', re: '\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01]) ([01]\\d|2[0-3]):[0-5]\\d', mask: '####-##-## ##:##', parts: ['y', 'mo', 'd', 'h', 'mi'] },
   month: { ph: 'YYYY-MM', re: '\\d{4}-(0[1-9]|1[0-2])', mask: '####-##', parts: ['y', 'mo'] },
+  week: { ph: 'YYYY-Www', re: '\\d{4}-W(0[1-9]|[1-4]\\d|5[0-3])', mask: '####-W##', parts: ['y', 'w'] }
