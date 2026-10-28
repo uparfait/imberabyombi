@@ -26,3 +26,4 @@ const text_of = n => n == null || typeof n === 'boolean' ? '' : Array.isArray(n)
 function split_q(msg, cta) {
   if (msg == null || typeof msg !== 'object') {
     const [, q, more] = String(msg).match(/^([^?]*\?)\s*([\s\S]*)$/) || [, `${cta}?`, String(msg)];
+    return [q, more.replace(/<[^>]+>/g, '').trim()];
