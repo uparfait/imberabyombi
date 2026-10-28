@@ -45,3 +45,4 @@ export const toolbar = () => (
     <input id="size_input" className="size_box tb_edit" defaultValue="11" inputMode="decimal" aria-label="Font size" data-tip="Font size" />
     {tb({ ed: 'size_up', icon: 'add', tip: 'Increase font size (Ctrl+Shift+.)' })}
     {sep()}
+    {tb({ ed: 'bold', icon: 'format_bold', tip: 'Bold (Ctrl+B)', state: 'bold' })}
