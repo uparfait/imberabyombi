@@ -43,3 +43,5 @@ export function wrap_selection(cls, attrs = {}) {
   });
   if (out.length) { const r = document.createRange(); r.setStartBefore(out[0]); r.setEndAfter(out[out.length - 1]); s.removeAllRanges(); s.addRange(r); }
   return out;
+}
+export function apply_inline_style(prop, value) {
