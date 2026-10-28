@@ -28,3 +28,4 @@ export function bytes_to_b64(u8) { let s = ''; for (let i = 0; i < u8.length; i 
 export function b64bytes(b) { const s = atob(b), a = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) a[i] = s.charCodeAt(i); return a; }
 export function data_ur_lto_blob(u) {
   const k = u.indexOf(','), h = u.slice(0, k), b = u.slice(k + 1);
+  const mime = (h.match(/^data:([^;,]+)/) || [])[1] || 'application/octet-stream';
