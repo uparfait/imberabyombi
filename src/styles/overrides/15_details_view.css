@@ -9,3 +9,4 @@
   .kv tbody tr:last-child > * { border-bottom: 0; }
   .kv :is(.truncate, .trunc, .whitespace-nowrap) { white-space: normal; overflow: visible; text-overflow: clip; }
   /* Horizontal scrollers scroll on x only (no stray y scrollbar from tab underlines or focus rings) */
+  .overflow-x-auto { overflow-y: hidden; }
