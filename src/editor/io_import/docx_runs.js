@@ -21,3 +21,4 @@ export async function docx_run(cx, r) {
     const col = val(kids(pr, 'color')[0]); if (col && HEX6.test(col) && col !== '000000') css.push('color:#' + col);
     const sz = val(kids(pr, 'sz')[0]); if (sz) css.push(`font-size:${+sz / 2}pt`);
     const fn = kids(pr, 'rFonts')[0], fa = fn && (fn.getAttribute('w:ascii') || fn.getAttribute('w:hAnsi')); if (fa) css.push(`font-family:'${fa.replace(/['"]/g, '')}'`);
+    const hl = val(kids(pr, 'highlight')[0]), shd = kids(pr, 'shd')[0], fill = shd && shd.getAttribute('w:fill');
