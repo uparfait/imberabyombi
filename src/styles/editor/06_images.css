@@ -10,3 +10,4 @@
 .doc_content img[data-pos="break"][data-align="right"] { margin-left: auto; margin-right: 0; }
 .doc_content img:is([data-pos="front"], [data-pos="behind"]) { position: absolute; display: block; float: none; margin: 0; }
 .doc_content img[data-pos="front"] { z-index: 3; }
+.doc_content img[data-pos="behind"] { z-index: -1; }
