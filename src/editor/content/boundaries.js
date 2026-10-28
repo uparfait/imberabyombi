@@ -20,3 +20,4 @@ export function at_body_end(host, r) {
 export function line_h(r) { const e = el_of(r.startContainer); return parseFloat(getComputedStyle(e).fontSize) * 1.2 * state.zoom; }
 export function on_first_line(host, r) {
   const f = first_flow(host); if (!f || is_table(f)) return false;
+  if (r.startContainer !== host && !f.contains(r.startContainer)) return false;
