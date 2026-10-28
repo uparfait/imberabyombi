@@ -13,3 +13,5 @@ export function listen(offs, t, type, fn, o) {
 }
 /* run every cleanup of a list, newest first */
 export function run_offs(offs) { while (offs.length) { try { offs.pop()(); } catch (e) { console.error(e); } } }
+
+/* the text of a label (a React text node keeps its identity; an empty element just gets the text) */
