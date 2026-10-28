@@ -33,3 +33,4 @@ function on_input(e) {
 /* Pasting a code into any box fills all six */
 function on_paste(e) {
   const t = e.target; if (!t.matches?.('.otp_box')) return;
+  const v = (e.clipboardData?.getData('text') || '').replace(/\D/g, '').slice(0, 6); if (!v) return; e.preventDefault();
