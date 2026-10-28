@@ -18,3 +18,4 @@ const storage_full = () => import('../feedback/index.js')
 
 export const db = {
   get(k, d = null) { try { const v = ls.getItem(cfg.ns + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { ls.setItem(cfg.ns + k, JSON.stringify(v)); return true; } catch { storage_full(); return false; } },
