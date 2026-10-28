@@ -32,3 +32,4 @@ export function on_last_line(host, r) {
 }
 export function backspace_across(host, pi) {
   const prev = bodies()[pi - 1], first = first_flow(host), last = last_flow(prev);
+  begin_op();
