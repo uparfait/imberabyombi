@@ -50,3 +50,4 @@ function put(sn) {
   }
   const im = find(sn.img); if (im) select_image(im);
   const bar = refs.toolbar;
+  if (bar) { qsa('.active', bar).forEach(e => { if (!sn.on.includes(e)) e.classList.remove('active'); }); sn.on.forEach(e => e.classList.add('active')); }
