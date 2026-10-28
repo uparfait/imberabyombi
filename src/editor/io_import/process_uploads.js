@@ -45,3 +45,4 @@ export async function process_uploads(files, mode) {
     const f = files[i];
     toast(`Converting ${f.name}${files.length > 1 ? ` (${i + 1} of ${files.length})` : ''}…`, 0);
     try { const r = await file_to_html(f); r.file = f; if (r.note) notes.push(r.note); done.push(r); }
+    catch (err) {
