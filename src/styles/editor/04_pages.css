@@ -5,3 +5,4 @@
 #hruler { position: relative; flex: none; height: var(--ed_hr); overflow: hidden; }
 #vruler { position: relative; flex: none; width: var(--ed_vr); overflow: hidden; }
 #hruler > svg { margin-top: calc((var(--ed_hr) - 24px) / 2); }
+#vruler > svg { margin-left: calc((var(--ed_vr) - 20px) / 2); }
