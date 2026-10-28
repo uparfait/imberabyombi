@@ -38,3 +38,4 @@ both themes and follows any brand change automatically. Use it instead of `text-
 
 ## Changing tokens while the app runs
 Settings → Appearance edits brand, radius, spacing and font live. The overrides are stored (`tokens` key) and written as
+inline styles on `<html>`; **Reset to stylesheet values** removes them so the CSS file applies again.
