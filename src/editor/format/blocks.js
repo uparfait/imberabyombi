@@ -7,3 +7,4 @@ import { can_edit, exec } from './commands.js';
 /* the top-most text blocks the last selection touches */
 export function selected_blocks() {
   const r = last_range; if (!r) return [];
+  const host = editable_of(r.startContainer); if (!host) return [];
