@@ -1,1 +1,2 @@
 /* styles/editor/11_print.css: printing (File > Print, Ctrl+P) while the editor is on screen: only the pages print, one
+   paper page per page (the page setup's @page rule is written into <style id="page_rule"> by the engine). Everything
