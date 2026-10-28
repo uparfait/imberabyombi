@@ -8,3 +8,4 @@ export function html_to_md(root) {
     n.childNodes.forEach(c => {
       if (c.nodeType === 3) { s += c.data.replace(/\u200b/g, '').replace(/([*_`\\[\]])/g, '\\$1'); return; }
       if (c.nodeType !== 1) return;
+      const t = c.tagName, st = c.style;
