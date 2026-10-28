@@ -27,3 +27,4 @@ VIEWS.dashboard = () => {
       <div className="hero_in min-w-0 flex-1"><p className="text-sm text-fg/60">
         {new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
         <h2 className="mt-1 text-3xl text-fg sm:text-5xl">{`Welcome, ${first}`}</h2><p className="mt-2 max-w-xl text-fg/70">{lorem.s()}</p></div>
+      <span className="chip bg-fg/15 px-3 py-1 text-fg">{ic('shield', 'h-3.5 w-3.5')}{r.name}</span></div>)}</section>
