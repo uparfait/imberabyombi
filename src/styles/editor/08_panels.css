@@ -61,3 +61,4 @@ textarea.c_input { border-radius: calc(var(--radius) * .75); }
   background: rgb(var(--surface)); color: rgb(var(--fg)); font-size: .8125rem;
 }
 #link_bubble .lb_globe { flex: none; width: 1.125rem; height: 1.125rem; margin-right: .125rem; color: rgb(var(--muted)); }
+#link_bubble a { max-width: 13.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--active_fg); text-decoration: underline; text-underline-offset: .1875rem; }
