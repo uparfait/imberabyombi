@@ -8,3 +8,4 @@ export const kit_forms_feedback = () => (
     <div className="grid gap-2"><p className="text-sm font-medium">Loading (one spinner everywhere)</p>
       <div className="flex flex-wrap items-center gap-5">{spinner()}{spinner('!h-8 !w-8')}
         <button type="button" className="btn btn_primary" data-act="demo_busy">Busy button</button>
+        <button type="button" className="btn btn_outline" data-act="demo_busy">Busy outline</button></div></div>
