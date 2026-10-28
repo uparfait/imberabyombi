@@ -28,3 +28,4 @@ export async function export_pdf(scope, name, scale = 2) {
         /* html2canvas's own option names */
         const canvas = await window.html2canvas(c, { scale, useCORS: true, backgroundColor: bg, logging: false });
         const slice_h = Math.round(canvas.width * hin / win);
+        for (let y = 0; y < canvas.height - 4; y += slice_h) {
