@@ -20,3 +20,4 @@ export * from './project.js';
 export * from './badge.jsx';
 export * from './upload_body.jsx';
 export * from './process_uploads.js';
+export * from './upload_dialog.jsx';
