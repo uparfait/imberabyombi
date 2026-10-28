@@ -19,3 +19,4 @@ export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
 function define_callout() {
   if (customElements.get('ds-callout')) return;
   customElements.define('ds-callout', class extends HTMLElement {
+    constructor() { super(); this.attachShadow({ mode: 'open' }).append(document.getElementById('tpl_callout').content.cloneNode(true)); }
