@@ -19,3 +19,6 @@ function status_line() {
     line = el('div', { class: 'ed_status no_print', role: 'status', 'aria-live': 'polite', style: LINE_CSS }); document.body.appendChild(line);
   }
   return line;
+}
+
+export function toast(msg, ms = 2800) {
