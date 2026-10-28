@@ -9,3 +9,4 @@ export const CODE_EXT = new Set(('js mjs cjs ts jsx tsx py java c h cpp cc hpp c
 export const ext_of = n => { const m = /\.([^.]+)$/.exec(n || ''); return m ? m[1].toLowerCase() : ''; };
 export const base_of = n => (n || 'Untitled').replace(/\.[^.]+$/, '');
 export const fmt_size = n => n < 1024 ? n + ' B' : n < 1048576 ? (n / 1024).toFixed(n < 10240 ? 1 : 0) + ' KB' : (n / 1048576).toFixed(1) + ' MB';
+export const BADGES = {
