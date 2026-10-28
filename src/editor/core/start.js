@@ -53,3 +53,4 @@ export function editor_start(root) {
 
   function stop() {
     if (stopped) return;
+    stopped = true; if (running === stop) running = null;
