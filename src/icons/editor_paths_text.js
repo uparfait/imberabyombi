@@ -40,3 +40,5 @@ export const EDITOR_TEXT_PATHS = {
   numbers: 'M5 8l3-2v12M5 18h6M13 9a3 3 0 1 1 5.3 1.9L13 18h6',
   tag: 'M4 9h16M4 15h16M10 3 8 21M16 3l-2 18',
   emoji_symbols: 'M7 3v6M4 6h6M14 4l6 6M20 4l-6 6M4 20l6-6M4.5 14.5h.01M9.5 19.5h.01M17 20a3 3 0 1 0 0-6 3 3 0 0 0 0 6z',
+  keyboard: 'M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zM6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8'
+};
