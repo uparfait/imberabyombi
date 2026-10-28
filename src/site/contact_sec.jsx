@@ -11,3 +11,4 @@ export function contact_form() {
       <div data-msg-slot="" className="empty:hidden sm:col-span-2"></div>
       <div className="field"><label htmlFor="contact_name">Full name</label>
         <input id="contact_name" name="name" autoComplete="name" required placeholder="Lorem Ipsum" /></div>
+      <div className="field"><label htmlFor="contact_email">Email</label>
