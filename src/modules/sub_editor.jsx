@@ -7,3 +7,4 @@ import { ic } from '../icons/index.js';
 
 const API = new WeakMap(), KEYS = new WeakMap();
 let seq = 0;
+const tie = k => el => { if (el) KEYS.set(el, k); };
