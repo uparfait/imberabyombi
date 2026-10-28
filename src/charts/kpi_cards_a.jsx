@@ -24,3 +24,4 @@ export const kpi_cards_a = k => {
         <path d={arc(60, 62, 44, 56, -Math.PI / 2, Math.PI / 2)} style={{ fill: `color-mix(in srgb, ${gauge_c} 16%, transparent)` }} />
         <path d={arc(60, 62, 44, 56, -Math.PI / 2, -Math.PI / 2 + Math.PI * gauge_p)} style={{ fill: gauge_c }} /></svg>
         <p className="kpi_value">{`${used}%`}</p></div><p className="text-sm text-muted">{gauge_s}</p></>,
+      [['Measure', 'Value'], [['Used', `${used}%`], ['Free', `${100 - used}%`], ['Status', gauge_s]]]),
