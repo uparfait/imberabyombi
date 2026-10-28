@@ -5,3 +5,5 @@ import { can_edit, previewing } from '../format/index.js';
 import { data_ur_lto_blob } from '../io_import/index.js';
 import { load_img, img_op, CROSS_MSG } from './img_ops.js';
 import { img_now, replace_target, set_replace_target } from './img_sel.js';
+
+export async function image_blob(img) {
