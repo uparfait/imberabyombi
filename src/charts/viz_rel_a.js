@@ -59,3 +59,4 @@ export const VIZ_REL_A = {
           + `<text x="${round1(lx)}" y="${round1(ly + 4)}" text-anchor="${Math.abs(lx - cx) < 4 ? 'middle' : lx > cx ? 'start' : 'end'}">${k}</text>`; }).join('')
       + v.map((r, j) => mark_group(s[j], ax.map((k, i) => [Math.round(r[i]), k, j]), `<path class="mark" d="${path_of(r.map((val, i) => p(i, rad * val / 100)))}Z"`
         + ` style="fill:color-mix(in srgb, ${scale_color(j)} 12%, transparent);stroke:${scale_color(j)};stroke-width:2"/>`
+        + r.map((val, i) => { const [x, y] = p(i, rad * val / 100); return dot(x, y, scale_color(j), 3.5); }).join(''))).join(''), 'Radar chart'),
