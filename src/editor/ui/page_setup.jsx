@@ -10,3 +10,4 @@ import { apply_setup } from './view.js';
 import { after_close } from './dialogs.jsx';
 
 const SIDES = ['top', 'bottom', 'left', 'right'];
+const cap = s => s[0].toUpperCase() + s.slice(1);
