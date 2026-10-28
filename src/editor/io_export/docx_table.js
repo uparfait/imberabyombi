@@ -44,3 +44,4 @@ export function blocks_xml(container, ctx, cell_fmt) {
   };
   container.childNodes.forEach(n => {
     if (n.nodeType === 1) {
+      const t = n.tagName;
