@@ -26,3 +26,4 @@ export const PAGES = {
   vision: { t: 'Vision', i: 'eye', top: () => vision_sec(1) },
   strategies: { t: 'Strategies', i: 'compass', top: () => <>{strategies_sec(1)}{faq()}</> },
   staff: { t: 'Staff', i: 'users', top: () => staff_dir() },
+  partners: { t: 'Partners', i: 'link', top: () => <>{partners_sec(1)}{tiers()}</> },
