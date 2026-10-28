@@ -7,3 +7,4 @@ import { event_mails } from './event_mails.jsx';
 import { account_mails } from './account_mails.jsx';
 
 export function mail_body(k) {
+  lorem.seed(hash_str('mail-' + k));
