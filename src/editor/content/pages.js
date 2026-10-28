@@ -15,3 +15,4 @@ export function add_blank_page(i) {
   end_op(i, true); if (p.isConnected) { caret_to_start(p); p.closest('.page_wrap').scrollIntoView({ block: 'start', behavior: 'smooth' }); }
 }
 export function delete_page(i) {
+  if (previewing() || !can_edit()) return;
