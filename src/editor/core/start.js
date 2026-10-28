@@ -48,6 +48,7 @@ export function editor_start(root) {
   try { document.execCommand('defaultParagraphSeparator', false, 'p'); } catch { /* not supported */ }
   root?.classList.add('ed_loading'); render_all();
   let stopped = false, t0 = 0;
+  load_doc().then(found => {
 
   function stop() {
     if (stopped) return;
