@@ -17,3 +17,4 @@ export function dt_refresh() {
     i.pattern = s.re; i.maxLength = s.max || s.mask.length; i.inputMode = /time/.test(t) && !h24() ? 'text' : 'numeric'; if (!/^Date$/.test(i.placeholder)) i.placeholder = s.ph; });
 }
 /* Set a value on an input / select / textarea that React owns, through the native prototype setter, so React's
+   value tracker sees the change when an input/change event is dispatched right after:
