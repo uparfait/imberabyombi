@@ -79,3 +79,5 @@ export function move_items(c, items, next) {
   if (!(f && f.hasAttribute('data-cont') && same_kind(f, c))) { f = shallow_clone(c); f.setAttribute('data-cont', '1'); next.insertBefore(f, next.firstChild); }
   const p = item_parent(f); const frag = document.createDocumentFragment(); items.forEach(i => frag.appendChild(i));
   p.insertBefore(frag, p.firstChild);
+}
+export function split_container(c, b, next) {
