@@ -39,3 +39,4 @@ export async function export_pdf(scope, name, scale = 2) {
     }
     pdf.save(name + '.pdf');
   } finally {
+    holder.remove();
