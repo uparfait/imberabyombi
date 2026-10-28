@@ -4,3 +4,5 @@
    o: { row, list, cls, rows() → visible rows, target(gap, rows) → drop value or null, drop(value), scrollers: [els] } */
 import { el } from '../core/index.js';
 import { scaled } from './ui_dom.js';
+
+export function row_drag(e, o) {
