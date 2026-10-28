@@ -25,3 +25,4 @@ export function spacing_items() {
   const line = () => { const b = selected_blocks()[0]; return b ? b.style.lineHeight || '1.15' : ''; };
   return [
     ...[['Single', '1'], ['1.15', '1.15'], ['1.5', '1.5'], ['Double', '2']].map(([l, v]) => ({ label: l, checked: line() === v, action: () => set_line_height(v) })),
+    { sep: true },
