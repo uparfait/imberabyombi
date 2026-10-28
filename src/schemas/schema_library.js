@@ -13,3 +13,4 @@ export const books_schema = {
     field_spec('copies', 'Copies', 'number', 0, 1, { min: 1, def: () => 1 }), field_spec('shelf', 'Shelf')
   ],
   g: () => ({
+    title: lorem.t(3), author: lorem.name(), isbn: `978-${lorem.int(1, 9)}-${lorem.int(1000, 9999)}-${lorem.int(1000, 9999)}-${lorem.int(0, 9)}`,
