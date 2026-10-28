@@ -30,3 +30,5 @@
 
 /* While a table column is dragged */
 body.col_resize, body.col_resize * { cursor: col-resize !important; }
+
+/* Small round icon buttons inside the editor (template .icon_btn is 2.5rem) */
