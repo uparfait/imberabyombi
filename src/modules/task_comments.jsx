@@ -11,3 +11,4 @@ const editor = c => <div className="mt-2 grid gap-2" data-comment-editor=""><tex
     <button type="button" className="btn btn_primary btn_sm" data-act="comment_save">{ic('check', 'h-4 w-4')}Save</button></div></div>;
 
 /* r: the task, c: the comment, on: its editor is open */
+const comment = (r, c, on) => <li key={c.id} className="flex gap-3">{avatar(c.by)}
