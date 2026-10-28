@@ -6,3 +6,4 @@ import { flushSync } from 'react-dom';
 import { ic } from '../icons/index.js';
 
 const API = new WeakMap(), KEYS = new WeakMap();
+let seq = 0;
