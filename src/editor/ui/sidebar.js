@@ -42,6 +42,7 @@ export function render_sidebar() {
 
 function wire_row(row, t, box) {
   row.addEventListener('click', e => { if (e.target.closest('.tab_more, .tab_rename, .tab_fold')) return; switch_tab(t.id); });
+  row.querySelector('.tab_fold')?.addEventListener('click', e => { e.stopPropagation(); fold_tab(row, t); });
   row.addEventListener('keydown', e => {
     if (e.target !== row) return;
     if (e.key === 'Enter') switch_tab(t.id);
