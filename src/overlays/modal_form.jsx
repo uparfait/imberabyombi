@@ -31,3 +31,4 @@ export function Modal_form({ m }) {
         <button type="button" className="icon_btn" data-act="close_modal" aria-label="Close">{ic('x')}</button>
       </header>
       {plain
+        ? <div className="grid gap-3 px-5 sm:px-6"><div data-msg-slot="" className="empty:hidden"></div>{help ? <p className="text-muted">{help}</p> : null}</div>
