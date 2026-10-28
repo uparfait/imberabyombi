@@ -18,6 +18,7 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 | 430–640px           | Eases down to 16px, so resizing never jumps                                     |
 | 640–1023px (tablets) | 16px with the normal responsive layout (Tailwind `sm`, `md`)                   |
 | 1024px up to `--scale_ref` | 15px (`--scale_desk`; admin pages 16.5px, `--scale_staff`), with `lg` / `xl` layouts |
+| wider than `--scale_ref` | The reference desktop view scaled up: a larger screen or a zoomed-out browser shows the same layout, never smaller |
 
 Make your own computer the reference: open the browser console, type `innerWidth`, and set `--scale_ref` to it.
 
