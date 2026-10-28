@@ -22,3 +22,4 @@ export const TABLE_ACT = {
   q_clear: t => { ui.q[t.dataset.col] = {}; ui.page[t.dataset.col] = 1; rerender(); },
   add: t => open_form(t.dataset.col),
   edit: t => open_form(t.dataset.col, t.dataset.id),
+  /* the row fades out first; after the redraw its node loses .row_out in case React reuses it for another row */
