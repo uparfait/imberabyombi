@@ -9,3 +9,5 @@ import { ic, i3 } from '../icons/index.js';
 import { badge, bar_cell, tabs, stat_row } from '../ui/index.js';
 import { slot_ids } from '../schemas/index.js';
 import { crud } from '../table/index.js';
+
+const returned = (r, can) => can && r.status === 'Rented' ? <button className="btn btn_soft btn_sm" data-act="return" data-id={r.id}>Mark returned</button> : null;
