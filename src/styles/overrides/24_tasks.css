@@ -10,3 +10,4 @@
   .due_tag.late { color: rgb(var(--bad)); font-weight: 500; }
   .task_row { display: flex; width: 100%; align-items: center; gap: .75rem; padding: .625rem .5rem; border-radius: 1rem; text-align: left; transition: background-color .2s; }
   .task_row:hover { background: rgb(var(--fg) / .05); }
+  .status_dot { width: .625rem; height: .625rem; flex: none; border-radius: var(--pill); background: rgb(var(--muted) / .5); }
