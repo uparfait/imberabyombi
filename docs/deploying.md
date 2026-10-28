@@ -15,3 +15,5 @@ The site is then served at `https://<user>.github.io/<repository>/`.
 - Build command: `npm run build`
 - Output folder: `dist`
 - No redirects are needed (hash routes).
+
+## Any web server (Apache, Nginx, IIS, a shared host)
