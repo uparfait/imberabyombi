@@ -55,3 +55,4 @@ async function slide_html(z, sp, i) {
     if (z.has(np)) {
       const t = by_tag(parse_xml(await z.text(np)), 'sp').filter(s => { const ph = by_tag(s, 'ph')[0]; return ph && ph.getAttribute('type') === 'body'; })
         .flatMap(s => by_tag(s, 'p').map(p => p.textContent.trim())).filter(Boolean);
+      if (t.length) notes = `<blockquote><p><i>Speaker notes:</i> ${esc_html(t.join(' '))}</p></blockquote>`;
