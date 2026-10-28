@@ -3,3 +3,4 @@
    so editing ONE token there restyles every page, public and admin. */
 
 /* spacing scale: Tailwind's steps, each a multiple of --space (default 1rem ÷ 4 per step) */
+const spacing = { 0: '0px', px: '1px', auto: 'auto' };
