@@ -35,3 +35,4 @@ export function thanks_sec(full) {
         {i3('heart', 'mx-auto h-16 w-16 float', 'ink')}
         <h2 className="mx-auto mt-6 max-w-3xl text-4xl text-white sm:text-6xl">{lorem.t(3)}</h2><p className="mx-auto mt-4 max-w-xl text-white/85">{lorem.p(2)}</p>
         <div className="mt-12 grid gap-4 text-left md:grid-cols-3">{[0, 1, 2].map(i => (
+          <figure key={i} className="m-0 rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur">
