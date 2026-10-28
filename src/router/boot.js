@@ -16,3 +16,4 @@ export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
     { delay: get ? cfg.latency : 0 }); };
 
 /* Web component: <ds-callout> clones #tpl_callout into its shadow root */
+function define_callout() {
