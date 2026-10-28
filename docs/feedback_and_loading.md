@@ -33,3 +33,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
   `fetch()` inside `fn`, when you connect a backend (see [connecting a backend](connecting_a_backend.md)).
 - `REQ` (src/actions) lists which `data-act` buttons count as requests: `1` = a change (the button spins),
   `2` = a get (open details, page, sort, tab…). Typing in search, theme switches, menus and timers never show it.
+- The spinner colour follows `--spin` (brand by default, white on filled buttons).
