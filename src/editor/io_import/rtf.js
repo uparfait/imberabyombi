@@ -32,3 +32,4 @@ export function rtf_to_html(rtf) {
       const m = /^([a-zA-Z]{1,32})(-?\d{1,10})? ?/.exec(rtf.slice(i + 1, i + 48));
       if (!m) { i += 2; continue; }
       i += 1 + m[0].length; const w = m[1], arg = m[2] != null ? parseInt(m[2]) : null;
+      if (DEST.has(w)) { st.skip = 1; continue; }
