@@ -4,3 +4,4 @@ export * from './basics.js';
 export * from './spinner.jsx';
 export * from './messages.jsx';
 export * from './notify.js';
+export * from './validate.js';
