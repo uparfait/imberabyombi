@@ -1,2 +1,3 @@
 /* base/05_native_option_list.css: base layer */
 @layer base {
+  /* Native option list (only seen if the picker cannot run): follows the theme in light and dark */
