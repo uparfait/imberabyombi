@@ -14,3 +14,4 @@ export function hero_sec() {
         <div className="hero_in">
           <h1 className="hero_title">{lorem.t(1)}<br />{lorem.t(2)}</h1>
           <p className="mt-6 font-display text-2xl text-brand sm:text-3xl"><span>{lorem.t(1)} </span><span className="caret"
+            data-type={JSON.stringify([lorem.w(2), lorem.w(1), lorem.w(2)])}></span></p>
