@@ -36,3 +36,4 @@ export function Modal_form({ m }) {
       {submit || !blank(actions)
         ? <footer className={`flex flex-wrap justify-end gap-2 ${plain ? '' : 'border-t border-line'} px-5 py-4 sm:px-6`}>
             {submit ? <button type="button" className="btn btn_ghost" data-act="close_modal">Cancel</button> : null}
+            {actions}
