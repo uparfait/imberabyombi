@@ -60,3 +60,4 @@ export function style_items() {
   return STYLES.map(s => ({ label: s.label, label_style: s.css, checked: cur === s.label, action: () => set_block_style(s.key) }));
 }
 export function download_items() {
+  return [...FORMATS.map(f => ({ label: `${f.name} (.${f.ext})`, icon: f.icon, shortcut: f.key === 'json' ? 'Ctrl+S' : '', no_preview: true, action: () => open_download_dialog(f.key) })),
