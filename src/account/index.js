@@ -4,3 +4,4 @@ export * from './auth_shell.jsx';
 export * from './forgot_page.jsx';
 export * from './qr_svg.js';
 export * from './otp_boxes.jsx';
+export * from './verify_page.jsx';
