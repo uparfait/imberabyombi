@@ -64,3 +64,4 @@ export function tbl_op(op, arg) {
     case 'striped': { const on = !chain[0].hasAttribute('data-striped'); chain.forEach(t => t.toggleAttribute('data-striped', on)); break; }
     case 'preset': apply_preset(chain, arg); break;
     case 'distribute': drop_cols(); break;
+    case 'props': arg(chain); full = true; break;
