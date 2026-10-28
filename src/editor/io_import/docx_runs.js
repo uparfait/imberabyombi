@@ -16,3 +16,4 @@ export async function docx_run(cx, r) {
   const wrap = t => { open += `<${t}>`; close = `</${t}>` + close; };
   if (pr) {
     if (on(kids(pr, 'b')[0])) wrap('b'); if (on(kids(pr, 'i')[0])) wrap('i'); if (on(kids(pr, 'u')[0])) wrap('u');
+    if (on(kids(pr, 'strike')[0]) || on(kids(pr, 'dstrike')[0])) wrap('s');
