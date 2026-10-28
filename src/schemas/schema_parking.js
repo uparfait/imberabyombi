@@ -24,3 +24,7 @@ export const parking_schema = {
     return {
       plate: `R${lorem.pick(ABC)}${lorem.pick(ABC)} ${lorem.int(100, 999)} ${lorem.pick(ABC)}`, driver: lorem.name(),
       slot: 'P' + pad(parked ? i * 3 + 1 : lorem.int(1, 24)), in: now_dt(in_d), out: parked ? '' : now_dt(out),
+      fee: parked ? 0 : Math.ceil((out - in_d) / 3.6e6) * cfg.parking_rate, status: parked ? 'Parked' : 'Exited'
+    };
+  }
+};
