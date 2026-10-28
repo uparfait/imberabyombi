@@ -80,3 +80,4 @@ export function open_menu(anchor, items, opts = {}) {
 }
 /* a second click on the anchor of the open menu closes it */
 export function toggle_menu(anchor, items_fn, opts) {
+  if (anchor.classList.contains('open') && menu_stack.length && menu_stack[0].anchor === anchor) { close_menus(0); return; }
