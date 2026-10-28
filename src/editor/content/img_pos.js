@@ -33,3 +33,4 @@ function to_abs(img, pos) {
 }
 /* the text position under a screen point (the box and the image itself ignored), or null outside a page body */
 export function drop_point(x, y, img) {
+  const hide = [img_box, img].filter(Boolean), vis = hide.map(e => e.style.visibility);
