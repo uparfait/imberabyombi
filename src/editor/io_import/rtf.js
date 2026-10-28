@@ -25,3 +25,4 @@ export function rtf_to_html(rtf) {
     if (ch === '\\') {
       const nx = rtf[i + 1];
       if (nx === '\\' || nx === '{' || nx === '}') { if (skip_n > 0) skip_n--; else emit(nx); i += 2; continue; }
+      if (nx === "'") { const code = parseInt(rtf.substr(i + 2, 2), 16); i += 4; if (skip_n > 0) { skip_n--; continue; } if (!isNaN(code)) emit(cp(code)); continue; }
