@@ -36,3 +36,4 @@
   /* dialogs never scroll sideways: their content wraps or shrinks instead */
   dialog, dialog form, dialog form > div, .kv_wrap { overflow-x: hidden; }
   /* Attachments: one list (a divider between rows) that scrolls inside itself once it is long */
+  .task_files { display: grid; max-height: 15.5rem; overflow-y: auto; border: 1px solid rgb(var(--line)); border-radius: 1rem; }
