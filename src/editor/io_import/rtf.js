@@ -38,3 +38,4 @@ export function rtf_to_html(rtf) {
         case 'page': if (!in_tbl) { flush_table(); if (para) { out.push(`<p>${para}</p>`); para = ''; } out.push(PB); } break;
         case 'b': st.b = arg !== 0 ? 1 : 0; break; case 'i': st.i = arg !== 0 ? 1 : 0; break; case 'ul': st.u = arg !== 0 ? 1 : 0; break;
         case 'ulnone': st.u = 0; break; case 'plain': st.b = st.i = st.u = 0; break;
+        case 'uc': uc = arg || 0; break; case 'u': if (arg != null) { emit(String.fromCharCode(arg < 0 ? arg + 65536 : arg)); skip_n = uc; } break;
