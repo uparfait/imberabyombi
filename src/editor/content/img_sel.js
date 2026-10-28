@@ -44,3 +44,5 @@ export const img_max = img => (is_abs(img) ? img.closest('.pg_body') : img.close
 export function select_image(img) {
   if (state.mode !== 'edit' || !img) return;
   img_sel = img; img.setAttribute('draggable', 'false'); remember(img); position_img_box();
+}
+export function hide_img_sel() { if (frozen) return; img_sel = null; if (!img_box) return; img_box.style.display = 'none'; if (img_box.parentNode) img_box.remove(); }
