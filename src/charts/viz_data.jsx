@@ -14,3 +14,5 @@ export const VIZ_PER = 20;
 export let SHOWN = null;   /* { head, rows, p } of the open data table */
 const PAGER = { set: null, n: 0 };   /* the open table's page setter; n numbers each opening (a fresh table starts on page 1) */
 const str = v => String(v ?? '');
+
+export function data_table(p) {
