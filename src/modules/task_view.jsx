@@ -17,3 +17,4 @@ import { tv_tie } from './tv_state.js';
 export function Task_view({ id }) {
   const [st, set_st] = useState({ edit: {}, more: false, prev: null, cedit: {} });
   const r = db.find('tasks', id); if (!r) return null;
+  const api = { id, st, put: p => flushSync(() => set_st(s => ({ ...s, ...(typeof p === 'function' ? p(s) : p) }))) };
