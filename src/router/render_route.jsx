@@ -25,3 +25,5 @@ export function render_route() {
   catch (err) { console.error(err); html = error_page(); }
   if (html == null) { skip_after_render(); return last; }   /* redirected (location.replace): the old page stays until the next one */
   if (!render_flags.keep) page_key = get_version();
+  return (last = <Page_guard key={page_key} v={get_version()}>{html}</Page_guard>);
+}
