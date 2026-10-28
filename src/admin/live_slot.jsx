@@ -26,3 +26,5 @@ export const redraw_slot = name => { const fn = SLOTS[name]; if (fn) fn(); retur
 
 /* ref={sync_ref(el => …)}: a new function on every draw, so React calls it after every draw of that element */
 export const sync_ref = fn => el => { if (el) fn(el); };
+
+/* menus (.pop) are closed on every draw, as the reference's fresh HTML was (an open menu never survives a redraw) */
