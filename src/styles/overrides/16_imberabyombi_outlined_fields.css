@@ -34,3 +34,4 @@
 
   /* File field (Imberabyombi style): chosen files sit inside the field as small attachments above the button.
      Images/videos = square thumbnails, other files = compact chips. x removes, click opens #viewer. Row scrolls on x. */
+  .filebox { display: grid; gap: .25rem; min-width: 0; padding: .375rem; border: 1px dashed rgb(var(--muted) / .6); border-radius: calc(var(--radius) * .75); background: rgb(var(--field, var(--surface))); transition: border-color .2s; }
