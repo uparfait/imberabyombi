@@ -2,3 +2,4 @@
    exactly where the reference stylesheet puts them. Imported by src/main.jsx right after index.css. */
 @import './overrides/10_motion_and_toasts.css';
 @import './overrides/11_inline_messages.css';
+@import './overrides/12_loading_spinner.css';
