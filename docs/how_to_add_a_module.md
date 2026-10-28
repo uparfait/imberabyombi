@@ -45,3 +45,4 @@ That is all: the sidebar, apps grid, Create menu, command palette, permissions, 
 Reset the demo data (Settings → Data) once so the new collection is seeded.
 
 ## Going further
+- Several tables on one page: `tabs()` (src/ui) with `ui.tab.<key>` and `crud(c, { filter })` per tab.
