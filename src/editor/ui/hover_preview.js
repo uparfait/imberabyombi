@@ -29,3 +29,4 @@ export function unpeek() { const c = cur; cur = null; if (c) c.undo(); }
 export function unpeek_key(key) { if (cur && cur.key === key) unpeek(); }
 /* make key's preview final; false when key was not on screen */
 export function keep(key) {
+  if (!cur || cur.key !== key) return false;
