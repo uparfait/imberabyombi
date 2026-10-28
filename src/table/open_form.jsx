@@ -13,3 +13,4 @@ export function open_form(c, id, preset = {}) {
   if (!row) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Record not found');
   const before = qs('#modal form');
   modal({ title: `${id ? 'Edit' : 'New'} ${s.l}`, body: s.f.map(f => field(f, row[f.k])), submit: id ? 'Save changes' : `Add ${s.l}`,
+    on_submit: async (d, form) => {
