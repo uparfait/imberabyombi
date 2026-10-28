@@ -33,3 +33,4 @@ export function commit() {
   const t = active_tab(); if (!t || !pages_el) return;
   const s = snapshot(), top = t.undo[t.undo.length - 1];
   if (top && top.html.length === s.html.length && top.html.every((h, i) => h === s.html[i])) { top.caret = s.caret; return; }
+  t.undo.push(s); if (t.undo.length > 300) t.undo.shift(); t.redo = [];
