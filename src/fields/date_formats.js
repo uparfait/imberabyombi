@@ -15,3 +15,4 @@ export const DTF = {
 };
 export const H12 = ' (AM|PM)';
 const H12_RE = '(0[1-9]|1[0-2]):[0-5]\\d';
+/* The spec in effect: time fields switch to "HH:MM AM" in 12-hour mode */
