@@ -56,3 +56,4 @@ export function move_section(k, to, m = section_model()) {
 }
 /* d: -1 up, +1 down */
 export function move_section_by(k, d) {
+  const m = section_model(), to = d < 0 ? up_to(m, k) : down_to(m, k);
