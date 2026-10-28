@@ -16,3 +16,4 @@ export function show_msg(slot, tone, title, text, autohide = tone === 'ok') {
 /* A new slot at the top of a form or section that has none (as in the reference). Views should render their own empty
    [data-msg-slot]; React leaves this extra first child alone. */
 export const new_slot = at => { const s = document.createElement('div'); s.dataset.msgSlot = ''; s.className = 'mb-4'; at.prepend(s); return s; };
+export const slot_of = f => f.querySelector('[data-msg-slot]') || (f.nextElementSibling?.matches('[data-msg-slot]') ? f.nextElementSibling : null) || new_slot(f);
