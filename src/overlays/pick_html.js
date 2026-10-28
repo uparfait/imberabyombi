@@ -13,3 +13,4 @@ export const PK = {
     return `<label class="pk_search"><span class="sr-only">Search options</span><input type="search" data-pk-q placeholder="Search" autocomplete="off">${search_ui_html()}</label>
     <div class="pk_list" role="listbox" ${a.multiple ? 'aria-multiselectable="true"' : ''}>${[...a.children].map(n => n.tagName === 'OPTGROUP'
       ? `<p class="pk_group">${esc(n.label)}</p>${[...n.children].map(row).join('')}` : row(n)).join('')}<p class="pk_none" hidden>No matches</p></div>
+    ${a.multiple ? `<div class="pk_foot mx-2 mb-2"><button type="button" class="btn btn_ghost btn_sm" data-act="pk_clear">Clear</button>`
