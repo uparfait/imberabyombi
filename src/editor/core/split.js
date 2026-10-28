@@ -22,3 +22,4 @@ export function split_text(block, b, next) {
   };
   let lo = 0, hi = total - 1, best = -1;
   while (lo <= hi) { const mid = (lo + hi) >> 1; if (char_bottom(mid) <= limit) { best = mid; lo = mid + 1; } else hi = mid - 1; }
+  if (best < 0) return false;
