@@ -10,3 +10,4 @@
   .toast_still { animation: none; }
   .toast_still .bar { animation: none; transform: scaleX(.62); }
   /* "Your modules" style menus (tileMenu): a button that drops a grid of 3D-icon tiles (nested navigation, email designs) */
+  .tile_trigger { display: inline-flex; max-width: 16rem; align-items: center; gap: .5rem; height: 2.75rem; padding: 0 .75rem 0 .5rem; border: 1px solid rgb(var(--line)); border-radius: var(--pill);
