@@ -32,3 +32,5 @@ export function clean_text(n) { return (n ? n.textContent : '').replace(/​/g, 
 /* a name not used yet among names: base, else "base (2)", "base (3)"… (base may already carry its own number) */
 export function unique_name(base, names) {
   const used = new Set(names); if (!used.has(base)) return base;
+  for (let n = 2; ; n++) if (!used.has(`${base} (${n})`)) return `${base} (${n})`;
+}
