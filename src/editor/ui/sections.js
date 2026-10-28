@@ -30,3 +30,4 @@ function up_to(m, k) {
 }
 function down_to(m, k) {
   const h = m.heads[k], n = h && m.heads.find(x => x.i === h.end); if (!n) return -1;
+  if (n.lvl >= h.lvl) return n.end;   // past the next section of the same level
