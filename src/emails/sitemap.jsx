@@ -9,3 +9,4 @@ export function sitemap() {
     ['login', 'Sign in', 'lock'], ['forgot', 'Forgot password', 'key'], ['verify', '2-step verification', 'shield'], ['authenticator', 'Authenticator app', 'shield'],
     ['set-password', 'Set password', 'lock'], ['admin', 'Dashboard', 'chart']];
   return (
+    <section className="wrap section"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{all.map(([k, l, i]) => (
