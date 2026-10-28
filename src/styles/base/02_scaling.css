@@ -26,3 +26,4 @@
   html:has(dialog[open]), html:has(#sidebar_scrim.on) { overflow: hidden; }
   :where(dialog, dialog *, #picker, #sidebar_scroll, .panel_in) { overscroll-behavior: contain; }
   body {
+    min-width: 22.5rem; background: rgb(var(--bg)); color: rgb(var(--fg));
