@@ -34,3 +34,4 @@ export function install_page() {
   document.addEventListener('cancel', e => { if (e.target.type === 'file') e.target.closest('.filebox')?.classList.remove('picking'); }, true);
   addEventListener('blur', () => { file_blur = !!qs('.filebox.picking'); });
   addEventListener('focus', () => { if (!file_blur) return; file_blur = false; setTimeout(() => qsa('.filebox.picking').forEach(b => b.classList.remove('picking')), 800); });
+  document.addEventListener('error', on_error, true);
