@@ -12,3 +12,4 @@ export function quiet(fn, into) { const prev = sink; sink = into; try { return f
 
 const alive = () => !!(prog && prog.isConnected && !prog.classList.contains('out'));
 const LINE_CSS = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:95;display:none;max-width:calc(100vw - 32px);'
+  + 'padding:.55rem 1rem;border:1px solid rgb(var(--line));border-radius:var(--pill);background:rgb(var(--surface));color:rgb(var(--fg));'
