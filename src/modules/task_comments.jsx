@@ -8,3 +8,4 @@ import { ago } from './task_dates.jsx';
 
 const editor = c => <div className="mt-2 grid gap-2" data-comment-editor=""><textarea rows={3} aria-label="Edit your comment" defaultValue={c.text}></textarea>
   <div className="flex justify-end gap-2"><button type="button" className="btn btn_ghost btn_sm" data-act="comment_cancel">Cancel</button>
+    <button type="button" className="btn btn_primary btn_sm" data-act="comment_save">{ic('check', 'h-4 w-4')}Save</button></div></div>;
