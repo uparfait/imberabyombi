@@ -14,3 +14,4 @@ import { copy_image, download_image } from './img_io.js';
 
 const off = fn => () => { if (!previewing()) fn(); };
 function delete_image(img) {
+  img = img_now(img); if (!img?.isConnected) return;
