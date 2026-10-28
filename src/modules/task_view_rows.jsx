@@ -25,3 +25,4 @@ const sub = (r, mine) => (g, gi) => <div key={gi} className="tv_sub"><div classN
 export function tv_rows(r, st) {
   const own = task_own(r), mine = task_mine(r), done = r.status === 'Done', subs = subs_of(r), files = files_of(r);
   const row = (f, l, html, can) => <tr data-tv-row={f}><th scope="row">{l}</th><td><div className="kv_cell">
+    {st.edit[f] ? tv_cell(f, r) : <><div className="min-w-0 flex-1">{html}</div>{can ? pen(f) : null}</>}</div></td></tr>;
