@@ -19,3 +19,4 @@ function para_html(p) {
   return h;
 }
 /* one slide: '<h2>title</h2>' + its shapes in order + the speaker notes */
+async function slide_html(z, sp, i) {
