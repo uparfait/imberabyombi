@@ -53,3 +53,4 @@ export const VIZ_TIME_B = {
       legend: legend(['Planned', 'Done', 'Milestone'], 'rect', ['color-mix(in srgb, var(--series_1) 22%, transparent)', 'var(--series_1)', 'rgb(var(--fg))']),
       table: [['Task', 'Start', 'End', 'Done'], t.map((k, i) => [k, `W${d[i].s + 1}`, `W${d[i].e}`, pct(d[i].done)])] }; } },
   calendar: { t: 'Calendar heatmap', g: 'time', d: 'Daily activity over a year. Darker = more.', f(w) {
+    const weeks = Math.max(8, Math.min(53, Math.floor((w - 40) / 12) - 1)), f = frame(w, 150, { l: 30, t: 22, b: 10, r: 10 });
