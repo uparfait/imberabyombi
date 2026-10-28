@@ -22,3 +22,5 @@ React needs a capital first letter to tell a component from an HTML tag, so comp
 Names the tools require keep their own spelling: `index.html`, `package.json`, `vite.config.js`,
 `tailwind.config.js`, `postcss.config.js`, `README.md`. Tailwind utilities keep Tailwind's names (`bg-surface-2`),
 HTML attributes keep HTML's (`aria-label`, `data-tip`), and custom elements need a hyphen (`<ds-callout>`).
+
+## 3. Generic names, subject words only in data
