@@ -7,3 +7,5 @@ import { blocks_xml } from './docx_table.js';
 const XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
 const PR = 'http://schemas.openxmlformats.org/package/2006/relationships';
 const WP = 'application/vnd.openxmlformats-officedocument.wordprocessingml';
+
+export const docx_types = (has_header, has_footer) => `${XML}<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">`
