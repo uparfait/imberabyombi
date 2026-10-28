@@ -19,3 +19,4 @@ export function word_count_dialog() {
   const n = v => v.toLocaleString();
   modal({
     title: 'Word count',
+    body: <table className="w-full sm:col-span-2"><tbody>
