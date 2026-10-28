@@ -7,3 +7,4 @@ import { hide_link_bubble, open_link_dialog, add_comment, set_paste_plain } from
 import { paint, stop_paint, clear_formatting, set_block_style, toggle_list, toggle_checklist, exec, bump_size, indent } from '../format/index.js';
 import { open_upload_dialog } from '../io_import/index.js';
 import { save_project } from '../io_export/index.js';
+import { menu_key } from './menu_keys.js';
