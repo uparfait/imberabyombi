@@ -33,3 +33,5 @@ export async function pdf_to_html(buf) {
       if (!para || para.tag !== tag || tag !== 'p' || gap > Math.max(l.h, prev_h) * 1.75) { flush(); para = { tag, text: l.text }; }
       else para.text = para.text.endsWith('-') ? para.text.slice(0, -1) + l.text : para.text + ' ' + l.text;
       prev_y = l.y; prev_h = l.h;
+    }
+    flush();
