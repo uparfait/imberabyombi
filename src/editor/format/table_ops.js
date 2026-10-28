@@ -21,3 +21,4 @@ export function table_chain(t) {
     const p = bs[i - 1].lastElementChild; if (is_table(p)) first = p; else break;
   }
   const chain = [first]; let cur = first;
+  while (true) {
