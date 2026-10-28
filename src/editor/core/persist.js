@@ -43,6 +43,7 @@ export async function load_doc() {
   if (await idb_set(DOC_KEY, old)) db.del(DOC_KEY); return true;
 }
 /* fill state from a saved document; false when it is not a valid one */
+export function apply_doc(d) {
   const tabs = d && Array.isArray(d.tabs) ? d.tabs.filter(t => t && typeof t === 'object') : [];
   if (!tabs.length) return false;
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
