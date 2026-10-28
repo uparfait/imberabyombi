@@ -14,3 +14,4 @@ export function html_to_md(root) {
       if (/^(UL|OL)$/.test(t)) return;
       let inner = inline(c);
       if (t === 'A') { s += /^data:/i.test(c.getAttribute('href') || '') ? inner : `[${inner}](${c.getAttribute('href')})`; return; }
+      if (t === 'CODE') { s += '`' + c.textContent + '`'; return; }
