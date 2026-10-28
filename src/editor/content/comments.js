@@ -26,3 +26,4 @@ export function remove_comment(id) {
     if (spans.length) { begin_op(); spans.forEach(sp => sp.replaceWith(...sp.childNodes)); end_op(0, true); }
   }
   else { const t = state.tabs.find(x => x.id === c.tab); if (t) t.html = strip_comment(t.html, id); }
+  save_soon(); render_comments();
