@@ -3,3 +3,4 @@
 import { qs, qsa, css_var, rgb2hex } from '../lib/index.js';
 import { db } from '../store/index.js';
 import { pick, ms_sync, request_close } from '../overlays/index.js';
+import { file_tiles } from '../files/index.js';
