@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { logo } from '../ui/index.js';
 import { cfg } from '../config/index.js';
+import { lorem } from '../lib/index.js';
