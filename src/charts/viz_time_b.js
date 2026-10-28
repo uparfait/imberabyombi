@@ -64,3 +64,5 @@ export const VIZ_TIME_B = {
           + `<rect class="mark mark_cell" x="${round1(x)}" y="${round1(y)}" width="${round1(cell)}" height="${round1(cell)}" rx="2"`
           + ` style="fill:${n ? sequential(n / mx) : 'rgb(var(--surface_2))'}" ${tip_text(fmt_d(ymd(d)), [[n, 'Activities', null]])}/>`; }).join(''), 'Calendar heatmap'),
       legend: scale_legend('Less', [0, .25, .5, .75, 1].map(p => p ? sequential(p) : 'rgb(var(--surface_2))'), 'More'),
+      table: [['Week', 'Activities'], Array.from({ length: weeks }, (_, k) => [fmt_d(ymd(add_d(start, k * 7))), v.slice(k * 7, k * 7 + 7).reduce((a, b) => a + b, 0)])] }; } }
+};
