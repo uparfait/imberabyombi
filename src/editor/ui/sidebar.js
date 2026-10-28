@@ -77,3 +77,4 @@ function apply_filter(list) {
   if (!list) return;
   const q = tab_q.trim().toLowerCase(); let shown = 0;
   qsa('.tab_row', list).forEach(r => { const t = state.tabs[idx(r)]; r.hidden = !!q && !!t && !t.name.toLowerCase().includes(q); if (!r.hidden) shown++; });
+  const ol = list.querySelector('#outline'); if (ol) ol.hidden = !!(ol.previousElementSibling && ol.previousElementSibling.hidden);
