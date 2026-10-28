@@ -4,3 +4,4 @@
 import { VIEWS } from './views.js';
 import { db, ui } from '../store/index.js';
 import { auth, roles, MODS, land_opts, land_value, invite_link } from '../auth/index.js';
+import { ic, i3 } from '../icons/index.js';
