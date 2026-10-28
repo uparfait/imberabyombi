@@ -34,3 +34,6 @@ export const sheet_xml = s => {
       else x += `<c r="${ref}" t="inlineStr"${sty}><is><t xml:space="preserve">${xesc(v)}</t></is></c>`;
     });
     x += '</row>';
+  });
+  return x + '</sheetData></worksheet>';
+};
