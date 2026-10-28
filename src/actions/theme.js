@@ -15,3 +15,4 @@ export function set_theme(mode) {
 /* Colour tokens shown as hex (design system swatches) follow the theme and brand changes.
    The [data-hex] buttons are rendered empty on purpose: this fills them. */
 export const hex_refresh = () => qsa('[data-hex]').forEach(b => { const h = rgb2hex(css_var('--' + b.dataset.hex)).toUpperCase(); b.textContent = h; b.dataset.text = h; });
+export function apply_tokens() {
