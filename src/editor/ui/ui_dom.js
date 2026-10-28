@@ -2,3 +2,5 @@
    changes on nodes React rendered (only a text node's value or a <path>'s d attribute change: React keeps its nodes). */
 import { icon_path, ic_html } from '../../icons/index.js';
 import { rem } from '../../lib/index.js';
+
+/* n px at the default 16px root font, scaled with the root font (interface sizes follow the app-wide scaling) */
