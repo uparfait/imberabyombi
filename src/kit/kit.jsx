@@ -30,3 +30,4 @@ export function kit() {
   return (
     <>
       {page_hero('Design system', 'Lorem design system', LEAD, 'layers')}
+      <div className="wrap grid gap-10 py-14 lg:grid-cols-[13rem_minmax(0,1fr)]">
