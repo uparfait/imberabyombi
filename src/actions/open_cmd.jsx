@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { MODS, auth } from '../auth/index.js';
 import { PUB, PAGES } from '../site/index.js';
+import { search_box } from '../ui/index.js';
