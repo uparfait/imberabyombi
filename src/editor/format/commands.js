@@ -58,3 +58,4 @@ export function apply_inline_style(prop, value) {
   commit_soon(); refresh_toolbar();
 }
 const size_input = () => refs.size_input;
+export function set_font_size(pt) { pt = clamp(Math.round(pt * 2) / 2, 1, 400); const i = size_input(); if (i) i.value = pt; apply_inline_style('fontSize', pt + 'pt'); }
