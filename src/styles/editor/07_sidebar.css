@@ -44,7 +44,7 @@ input.tab_filter, .tab_filter input {
 }
 
 /* Outline under the active tab: heading rows (indent set inline per level), fold chevrons, the heading the caret is in */
-#outline, #editor .outline { padding: .25rem 0 .5rem 1rem; outline: 0; }
+#outline, #editor .outline { padding: .125rem 0 .375rem 1rem; outline: 0; }
 .outline_hint { padding: .25rem .625rem .25rem .75rem; font-size: .8125rem; font-style: italic; line-height: 1.45; color: rgb(var(--muted)); }
 .outline_row, .outline_item {
   display: flex; align-items: center; gap: .125rem; min-height: 2rem; padding-right: .25rem; border-radius: var(--pill);
