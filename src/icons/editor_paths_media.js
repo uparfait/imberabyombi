@@ -9,3 +9,4 @@ export const EDITOR_MEDIA_PATHS = {
   table_view: BOX + 'M3 9h18M9 9v11M3 14.5h18',
   view_column: BOX + 'M9 4v16M15 4v16',
   view_agenda: 'M4 4h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM4 13h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z',
+  add_row_above: 'M4 10h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zM4 15h16M12 10v10M12 2v6M9 5h6',
