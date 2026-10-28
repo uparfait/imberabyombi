@@ -35,3 +35,4 @@ export function tv_rows(r, st) {
     {sec('Details')}{row('title', 'Title', <span className="font-medium">{r.title}</span>, own)}
     {row('notes', 'Notes', r.notes ? <p className="whitespace-pre-line">{r.notes}</p> : dash(), own)}
     {row('subs', 'Subtasks', subs.length ? subs.map(sub(r, mine)) : <span className="text-muted">No subtasks</span>, own)}
+    {row('priority', 'Priority', r.priority ? badge(r.priority) : dash(), own)}
