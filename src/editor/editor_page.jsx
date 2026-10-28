@@ -16,3 +16,4 @@ function Editor_view() {
   }, []);
   return (
     <div id="editor" ref={root}>
+      {/* the @page rule of the page setup (size, margins): rendered empty, written by apply_setup() */}
