@@ -51,3 +51,4 @@ control must follow data after a redraw, give it a `key` that changes with that 
 firing events, use `set_native_value(input, value)` (src/fields), so React notices the change.
 
 ## Errors
+An error while building a page shows "Something went wrong" with a link home; an error inside a component is caught by
