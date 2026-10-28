@@ -13,3 +13,4 @@ export function insert_block_at_caret(node) {
   const r = s.getRangeAt(0); const host = editable_of(r.startContainer);
   if (!host || !host.classList.contains('pg_body')) { toast('Place the cursor in the document body first'); return null; }
   begin_op(); r.deleteContents();
+  let block = top_block(host, r.startContainer);
