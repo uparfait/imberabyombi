@@ -15,3 +15,4 @@ export function create_page() {
   return wrap;
 }
 export function layout_page(wrap) {
+  const { w, h } = dims(), s = state.setup, m = s.margins, z = state.zoom;
