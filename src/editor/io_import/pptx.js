@@ -42,3 +42,4 @@ async function slide_html(z, sp, i) {
       }
     } else {
       const tbl = by_tag(s, 'tbl')[0];
+      if (tbl) {
