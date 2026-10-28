@@ -20,3 +20,4 @@ export function restore_sel(sel) {
   if (!sel) { sel_remap.clear(); return; }
   let sc = sel_remap.get(sel.sc) || sel.sc, ec = sel_remap.get(sel.ec) || sel.ec; sel_remap.clear();
   if (!sc || !sc.isConnected) return;
+  const so = Math.min(sel.so, node_len(sc)); let eo;
