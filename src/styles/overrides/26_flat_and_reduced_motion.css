@@ -14,3 +14,4 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .spinner_segmented_dash { animation: none !important; stroke-dasharray: 90, 200; }
 }
   /* Where text stays selectable (to copy): fields, table cells, details, code, copy boxes, notes, contact links. Kept outside the
+     Tailwind block above, whose parser drops this selector list. */
