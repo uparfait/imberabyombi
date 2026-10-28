@@ -14,3 +14,4 @@
 #toolbar.viewing .tb_edit { opacity: .38; pointer-events: none; }
 
 .tb_btn, .tb_dd {
+  position: relative; display: inline-flex; flex: none; align-items: center; height: 1.875rem; border-radius: var(--pill);
