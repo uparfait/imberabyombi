@@ -16,3 +16,5 @@ export function Live_slot({ name, first, draw, fresh = true }) {
     const fn = () => { const jsx = latest.current(); flushSync(() => set_own({ v: get_version(), n: ++count.current, jsx })); };
     SLOTS[name] = fn;
     return () => { if (SLOTS[name] === fn) delete SLOTS[name]; };
+  });
+  const v = get_version(), mine = !!own && own.v === v;   /* a page draw since the last own draw wins */
