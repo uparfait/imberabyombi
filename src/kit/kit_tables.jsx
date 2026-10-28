@@ -3,3 +3,5 @@
 import { lorem, money } from '../lib/index.js';
 import { badge, person, bar_cell } from '../ui/index.js';
 import { crud } from '../table/index.js';
+
+const DATA_HELP = 'Every admin list uses this: search inside each column, sort by a header, long text trimmed (hover for the full text), '
