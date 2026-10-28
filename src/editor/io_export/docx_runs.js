@@ -42,3 +42,4 @@ export function r_pr(f) {
   if (f.b) x += '<w:b/>'; if (f.i) x += '<w:i/>'; if (f.s) x += '<w:strike/>';
   if (f.color) x += `<w:color w:val="${f.color}"/>`;
   if (f.size) x += `<w:sz w:val="${Math.round(f.size * 2)}"/><w:szCs w:val="${Math.round(f.size * 2)}"/>`;
+  if (f.u) x += '<w:u w:val="single"/>';
