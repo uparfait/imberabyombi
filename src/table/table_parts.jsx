@@ -15,3 +15,4 @@ export const pager = (c, p, n) => (
 
 /* Table tools. Settings (left): rows per page (10, 20, 50) and which columns show, remembered per table in this browser.
    Full screen (right): the table grows from its place to fill the tab (not the browser's fullscreen) and shrinks back. */
+export const table_menu = c => { const v = tview(c);
