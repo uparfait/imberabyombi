@@ -12,3 +12,4 @@ export function image_xml(img, ctx) {
   const ext = m[1].toLowerCase() === 'jpg' ? 'jpeg' : m[1].toLowerCase(), bytes = b64bytes(m[2]);
   const nw = +img.dataset.nw || 300, nh = +img.dataset.nh || 200;
   let w = parseFloat(img.style.width) || parseFloat(img.getAttribute('width')) || nw; w = Math.min(w, ctx.content_px);
+  const h = parseFloat(img.style.height) || w * nh / nw, cx = Math.round(w * EMU), cy = Math.round(h * EMU);
