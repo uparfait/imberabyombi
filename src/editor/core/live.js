@@ -35,3 +35,4 @@ function take() {
 function put(sn) {
   if (!pages_el || sn.tab !== state.active) return;
   hide_img_sel();
+  if (JSON.stringify(state.setup) !== sn.setup) { state.setup = JSON.parse(sn.setup); apply_setup(false); }
