@@ -27,3 +27,6 @@ export const drawer_content = () => (
     <button className="icon_btn" data-act="close_drawer" aria-label="Close menu">{ic('x')}</button></div>
     <nav className="mt-8 min-h-0 flex-1 overflow-y-auto" aria-label="Mobile"><ul className="grid gap-1">{[['', 'Home'], ...PUB].map(([k, l]) => (
       <li key={k}><a href={`#/${k}`} data-sec={k || undefined} className={`side_link ${route.path === '/' + k ? 'active' : ''}`}>{l}</a></li>
+    ))}</ul></nav>
+    <div className="mt-auto grid gap-2"><a href="#/login" className="btn btn_primary">Sign in</a><a href="#/ui" className="btn btn_outline">Design system</a></div></div>
+);
