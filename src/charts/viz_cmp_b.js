@@ -10,3 +10,4 @@ export const VIZ_CMP_B = {
     return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [[num(v[i]), 'Value', 0]], hit_col(f, x, i)
         + `<line class="mark" x1="${round1(x(i))}" x2="${round1(x(i))}" y1="${round1(ax.y(0))}" y2="${round1(ax.y(v[i]))}"`
         + ` style="stroke:var(--series_1);stroke-width:2"/>` + dot(x(i), ax.y(v[i]), 'var(--series_1)', 5))).join('')
+      + chart_base(f, ax.y(0)) + x_labels(f, c, x), 'Lollipop chart'), table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
