@@ -4,3 +4,4 @@
    wires the engine (refs are looked up inside #editor); on unmount its stop() saves and removes every listener.
    The page fills the admin content area (styles/editor/01_layout.css) and scrolls inside itself. */
 import { memo, useEffect, useRef } from 'react';
+import { editor_start } from './core/index.js';
