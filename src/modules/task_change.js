@@ -31,3 +31,5 @@ export function task_change(t) {
     request(async () => { const add = await read_files(list); db.upsert('tasks', { id, files: [...files_of(db.find('tasks', id)), ...add] });
       task_refresh(id, `${add.length} file${add.length === 1 ? '' : 's'} added.`); }, { btn: t.closest('.task_add_file') });
     return true; }
+  return false;
+}
