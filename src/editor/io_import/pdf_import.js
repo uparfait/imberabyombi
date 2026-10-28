@@ -27,3 +27,4 @@ export async function pdf_to_html(buf) {
     let para = null, prev_y = null, prev_h = 0;
     const flush = () => { if (para) { html += `<${para.tag}>${esc_html(para.text.trim())}</${para.tag}>`; para = null; } };
     for (const l of lines) {
+      if (!l.text.trim()) { flush(); prev_y = l.y; continue; }
