@@ -21,3 +21,5 @@ export function install_pointer() {
   document.addEventListener('pointerdown', viz_point, { passive: true });
   document.addEventListener('pointerout', e => { if (tip.on && !tip.on.contains(e.relatedTarget)) tip.hide(); });
   document.addEventListener('focusin', on_focusin);
+  document.addEventListener('focusout', e => { tip.hide(); if (DTF[e.target.dataset?.type]) ghost(e.target, false); });
+}
