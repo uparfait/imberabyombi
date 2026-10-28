@@ -68,3 +68,5 @@ export function transform_case(mode) {
   text_nodes(root).filter(t => r.intersectsNode(t)).forEach(t => {
     const a = t === r.startContainer ? r.startOffset : 0, b = t === r.endContainer ? r.endOffset : t.length;
     if (b > a) t.replaceData(a, b - a, conv(t.data.slice(a, b)));
+  });
+  const nr = mk_range(...saved); if (nr) { s.removeAllRanges(); s.addRange(nr); }
