@@ -22,3 +22,4 @@ export async function download_image(img) {
     const src = img.getAttribute('src'), m = src.match(/^data:image\/([a-z+]+)[;,]/i);
     const blob = m ? data_ur_lto_blob(src) : await image_blob(img), ext = m ? m[1].toLowerCase().replace('jpeg', 'jpg').replace('svg+xml', 'svg') : 'png';
     download(blob, ((img.getAttribute('alt') || 'image').replace(/[\\/:*?"<>|]+/g, '').slice(0, 60) || 'image') + '.' + ext);
+  } catch (e) { toast(CROSS_MSG, 5500); }
