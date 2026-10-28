@@ -3,3 +3,4 @@
   /* Segmented button (Imberabyombi): one outlined pill, dividers between segments, tinted selection */
   .seg { @apply inline-flex overflow-hidden rounded-full border border-muted/50; }
   .seg span { @apply block cursor-pointer px-4 py-2 text-sm font-medium text-fg/80 transition hover:bg-fg/5; }
+  .seg label + label span { border-left: 1px solid rgb(var(--muted) / .5); }
