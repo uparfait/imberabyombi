@@ -28,3 +28,5 @@ export function open_dialog({ title, content, buttons = [], width = 440, on_open
 
 /* a yes / no question: resolves true on the confirm button (the dialog's x / Cancel simply close it) */
 export function confirm_dialog(msg, ok_label = 'OK', danger = /^Delete/.test(ok_label)) {
+  return new Promise(res => ask(msg, () => { after_close(() => res(true)); }, ok_label, danger));
+}
