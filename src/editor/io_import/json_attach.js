@@ -19,3 +19,4 @@ export function json_to_html(text, name) {
       note: arr.length > 3000 ? 'Only the first 3,000 records were added.' : '' };
   }
   if (arr && arr.length && arr.every(Array.isArray)) return { html: rows_to_table(trim_rows(arr.map(r => r.map(fv)), 3000, 40).rows, false) };
+  if (is_obj(data) && Object.values(data).every(v => v == null || typeof v !== 'object')) {
