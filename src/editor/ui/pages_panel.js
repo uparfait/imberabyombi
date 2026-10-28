@@ -21,3 +21,4 @@ export function render_pages_panel() {
       b.closest('.page_wrap').scrollIntoView({ block: 'start', behavior: 'smooth' }); caret_to_start(first_flow(b));
     });
     row.addEventListener('keydown', e => { if (e.target === row && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); row.click(); } });
+    box.appendChild(row);
