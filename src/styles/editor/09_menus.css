@@ -23,3 +23,5 @@
   transition: transform .12s var(--ease); }
 .pal_sw:hover, .pal_sw:focus-visible { transform: scale(1.2); }
 .pal_custom { display: flex; align-items: center; gap: .625rem; padding: .375rem .5rem; border-radius: calc(var(--radius) * .625); font-size: .8125rem; color: rgb(var(--fg) / .8); }
+
+/* Table size grid (Insert > Table): hover cells to pick rows × columns */
