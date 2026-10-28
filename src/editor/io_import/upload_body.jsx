@@ -29,3 +29,4 @@ export function Upload_body({ up }) {
   const key = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); input.current.click(); } };
   return (
     <div className="sm:col-span-2">
+      <div ref={zone} className={`${ZONE} ${over ? 'over border-brand bg-brand/10' : 'border-line'}`} tabIndex={0} role="button" aria-label="Choose files to upload"
