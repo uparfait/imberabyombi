@@ -12,3 +12,4 @@ const same = (a, b) => a.length === b.length && a.every((f, i) => f === b[i]);
 export const file_box = inp => inp?.closest?.('.filebox') || null;
 /* Redraw a File_box's tiles from input.files (after a change, an x or a form reset). The tiles fade in, except right after
    an x (input._quiet). Safe to call twice for one change, and a no-op for other file inputs. */
+export const file_tiles = inp => { BOXES.get(inp)?.(); };
