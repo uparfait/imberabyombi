@@ -23,3 +23,8 @@ function Editor_view() {
       {workspace()}
       {link_bubble()}
       {file_inputs()}
+    </div>
+  );
+}
+
+export const Editor_page = memo(Editor_view);
