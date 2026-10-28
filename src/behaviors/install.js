@@ -10,3 +10,4 @@ import { install_scroll } from './scrolling.js';
 import { install_ctx } from './ctx_menu.js';
 
 let installed = false;
+export function install_listeners() {
