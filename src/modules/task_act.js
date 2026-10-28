@@ -36,3 +36,4 @@ export const TASK_ACT = {
   /* the task view: a pen opens a row's editor (Save / Cancel); status shows Cancel / Save; comments */
   ...TV_ACT,
   task_comment: t => { const box = qs('#modal [data-comment-box]'), text = box?.value.trim(), id = t.dataset.id; if (!text) return box?.focus();
+    comments(t, id, a => [...a, { id: uid(), by: me(), at: Date.now(), text }], 'Your comment was added.'); },
