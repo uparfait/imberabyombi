@@ -16,3 +16,4 @@ const idx = r => state.tabs.findIndex(t => t.id === r.dataset.id);
 export function render_sidebar() {
   const list = refs.tab_list; if (!list) return;
   const old = list.querySelector('.tab_scroll'), top = old ? old.scrollTop : 0;
+  const typing = !!list.querySelector('.tab_filter') && list.querySelector('.tab_filter') === document.activeElement;
