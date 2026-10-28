@@ -14,3 +14,5 @@ export const fmt_chip = (label, color, key = label) => <span key={key} className
 export function badge(ext, cls = 'fmt_badge') {
   const [l, c] = file_badge(ext);
   if (cls === 'fmt_chip') return fmt_chip(l, c, ext);
+  return <span key={ext} className={`fmt_badge ${PAGE}`} style={{ background: c }}><span className={CORNER}></span>{l}</span>;
+}
