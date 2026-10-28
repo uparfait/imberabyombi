@@ -33,3 +33,4 @@ export function task_view(id) {
   const own = task_own(r), mine = task_mine(r);
   modal({ title: r.title, wide: true, help: own ? HELP.own : mine ? HELP.mine : HELP.view, body: () => <Task_view id={id} />,
     actions: own ? <><button type="button" className="btn btn_danger order-first mr-auto" data-act="del" data-col="tasks" data-id={r.id}>
+      {ic('trash', 'h-4 w-4')}Delete</button>
