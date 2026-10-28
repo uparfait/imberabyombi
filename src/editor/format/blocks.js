@@ -61,3 +61,4 @@ export function clear_formatting() {
 /* mode: 'upper' | 'lower' | 'title' */
 export function transform_case(mode) {
   if (!can_edit()) return;
+  const host = restore_focus(); const s = getSelection(); if (!s.rangeCount || s.isCollapsed) { toast('Select text first'); return; }
