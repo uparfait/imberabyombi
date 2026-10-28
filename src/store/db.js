@@ -13,3 +13,4 @@ export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.r
    (or feedback) at the top: they reach every view, and the store, app_state included, must be ready before any view runs. */
 let seeder = null;
 export const set_seeder = fn => { seeder = fn; };
+const storage_full = () => import('../feedback/index.js')
