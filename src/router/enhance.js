@@ -34,3 +34,4 @@ export function enhance() {
   hex_refresh();
   qsa('[data-chain]').forEach(el => { if (!el._chain) { el._chain = 1; el.addEventListener('wheel', chain_wheel, { passive: false }); } });
   if (ui.slide) { slide_in(qsa(ui.slide.sel), ui.slide.n); ui.slide = null; }
+  qsa('input[type=file]:not([data-import])').forEach(file_box);
