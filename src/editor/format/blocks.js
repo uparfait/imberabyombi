@@ -59,3 +59,4 @@ export function clear_formatting() {
   }));
 }
 /* mode: 'upper' | 'lower' | 'title' */
+export function transform_case(mode) {
