@@ -34,6 +34,7 @@ export const PAGES = {
 
 /* the top of a detail page: breadcrumb, title and lead as plain text (the brand hero is only on the home page) */
 export const page_hero = (crumb, title, lead) => (
+  <section className="wrap pt-8 sm:pt-12">
         <li aria-current="page" className="text-fg">{crumb}</li></ol></nav>
         <h1 className="mt-4 text-4xl text-fg sm:text-6xl">{title}</h1><p className="mt-4 max-w-2xl text-lg text-fg/70">{lead}</p></div>
       <div className="hero_in hidden md:block" style={{ '--d': '.15s' }}>{i3(icon, 'float h-32 w-32 lg:h-40 lg:w-40')}</div></div>
