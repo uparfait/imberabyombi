@@ -46,3 +46,4 @@ export function tbl_op(op, arg) {
     case 'col_right': drop_cols(); insert_cols(chain, slot.end, arg || 1, 'right'); target = cell_at_col(c.tr, slot.end + 1); break;
     case 'del_row': { const nx = c.tr.nextElementSibling || c.tr.previousElementSibling; c.tr.remove(); target = nx && nx.cells[0]; full = true; break; }
     case 'del_col': drop_cols(); delete_col(chain, slot.start); full = true; break;
+    case 'del_table': target = chain[chain.length - 1].nextElementSibling; chain.forEach(t => t.remove()); full = true; break;
