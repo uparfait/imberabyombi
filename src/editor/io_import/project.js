@@ -26,6 +26,7 @@ export const is_doc_empty = () => state.tabs.length === 1 && is_tab_empty();
 /* tabs: the uploads as tabs. The tab on screen takes the first one's content (and its name while it still has a "Tab n"
    name); the rest follow it as new tabs. Every other tab stays as it was, and Undo brings the old content back. */
 export function replace_tab(tabs, title) {
+  save_tab();
 }
 /* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
 export function project_tabs(d) {
