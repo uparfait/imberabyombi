@@ -17,3 +17,4 @@ export const VIZ = {
   /* Distribution */ ...VIZ_DIST,
   /* Change over time */ ...VIZ_TIME_A, ...VIZ_TIME_B,
   /* Part-to-whole */ ...VIZ_PART_A, ...VIZ_PART_B,
+  /* Relationships */ ...VIZ_REL_A, ...VIZ_REL_B,
