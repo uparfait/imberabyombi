@@ -10,3 +10,8 @@ export const kv_table = groups => (
     <table className="kv"><thead><tr><th scope="col">Column name</th><th scope="col">Value</th></tr></thead><tbody>{groups.map(([g, rows], gi) => (
       <Fragment key={gi}>
         {g ? <tr className="kv_group"><th scope="colgroup" colSpan={2}>{g}</th></tr> : null}
+        {rows.map(([n, v], i) => <tr key={i}><th scope="row">{n}</th><td>{blank(v) ? dash() : v}</td></tr>)}
+      </Fragment>
+    ))}</tbody></table>
+  </div>
+);
