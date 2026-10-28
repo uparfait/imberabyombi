@@ -22,3 +22,5 @@ export const FORMATS = [
   { key: 'xlsx', ext: 'xlsx', name: 'Excel tables', desc: 'Each table becomes its own worksheet', color: '#107c41', icon: 'table_view', tabs: true },
   { key: 'csv', ext: 'csv', name: 'CSV', desc: 'Table data as comma-separated values', color: '#12a4af', icon: 'csv', tabs: true },
   { key: 'json', ext: 'json', name: 'Project file', desc: 'Reopen here later with every tab and comment', color: '#5f6368', icon: 'data_object', tabs: false }
+];
+/* { words, tables, images, pages } of what scope exports; pages is null for all tabs or a pageless document */
