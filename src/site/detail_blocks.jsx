@@ -11,3 +11,4 @@ export function staff_dir() {
   return (
     <section className="wrap section"><div className="flex flex-wrap items-center gap-3">
       <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by team">{['All', ...teams].map((t, i) => (
+        <button key={i} className="chip_btn" aria-pressed={i === 0} data-act="team" data-v={i ? t : ''}>{t}</button>
