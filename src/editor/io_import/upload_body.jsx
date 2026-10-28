@@ -53,3 +53,4 @@ export function Upload_body({ up }) {
       </div>
       <label className={FLD}>Turned into editable text, tables and images</label>
       <div className="fmt_chips flex flex-wrap gap-1">{CHIPS.map(e => badge(e, 'fmt_chip'))}{fmt_chip('IMAGES', '#9334e6')}{fmt_chip('CODE', '#1a73e8')}</div>
+      <p className="mt-2 text-xs text-muted">Any other file, such as a zip, audio or video, is added as an attachment that can be downloaded from the document.</p>
