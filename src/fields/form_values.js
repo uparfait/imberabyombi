@@ -11,3 +11,4 @@ export const form_obj = f => { const d = Object.fromEntries(new FormData(f));
   f.querySelectorAll('[data-type=datetime-local][name]').forEach(i => { if (d[i.name]) d[i.name] = dt_iso(d[i.name]); });
   return d; };
 /* After switching 12h ↔ 24h: every time field on screen converts its value and its format hints */
+export function dt_refresh() {
