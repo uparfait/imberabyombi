@@ -8,3 +8,4 @@ import { img_op, set_img_width, rotate_image, flip_image, set_img_border, set_im
 import { IMG_POSITIONS, img_max, img_align_of, img_now, hide_img_sel, set_replace_target, pos_of } from './img_sel.js';
 import { set_img_pos, set_img_align } from './img_pos.js';
 import { crop_dialog } from './img_crop.jsx';
+import { adjust_dialog } from './img_adjust.jsx';
