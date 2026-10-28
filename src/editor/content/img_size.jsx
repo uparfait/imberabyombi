@@ -2,3 +2,4 @@
    (alt_text_dialog). Both save as one undo step. */
 import { qs, clamp } from '../core/index.js';
 import { modal } from '../../overlays/index.js';
+import { previewing } from '../format/index.js';
