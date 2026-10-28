@@ -20,3 +20,4 @@ function on_keydown(e) {
   if (t.matches?.('.otp_box')) { const bs = qsa('.otp_box', t.closest('[data-otp]')), i = bs.indexOf(t);
     if (k === 'Backspace' && !t.value && i > 0) { e.preventDefault(); bs[i - 1].value = ''; bs[i - 1].focus(); }
     if (k === 'ArrowLeft' && i > 0) { e.preventDefault(); bs[i - 1].focus(); } if (k === 'ArrowRight' && i < bs.length - 1) { e.preventDefault(); bs[i + 1].focus(); } }
+  if (k === 'Escape' && pick.a) { e.preventDefault(); pick.close(true); pick.esc = true; setTimeout(() => pick.esc = false); return; }
