@@ -61,3 +61,4 @@ VIEWS.parking = () => {
     <section className="card mb-6 p-5"><header className="mb-5 flex flex-wrap items-center gap-3"><h2 className="text-lg">Live slots</h2>
       <meter className="w-40" min="0" max={N} low={N * .6} high={N * .85} optimum="0" value={parked.length} aria-label="Occupancy"></meter>
         <span className="text-sm text-muted">{`${Math.round(parked.length / N * 100)}% full`}</span>
+      {can ? <button className="btn btn_primary btn_sm ml-auto" data-act="park_in">{ic('plus', 'h-4 w-4')}Check in a car</button> : null}</header>
