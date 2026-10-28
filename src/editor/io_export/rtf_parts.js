@@ -43,3 +43,4 @@ export function rtf_inline(rx, node, f) {
     const t = n.tagName;
     if (t === 'BR') { o += '\\line '; return; } if (t === 'IMG') { o += rtf_pict(rx, n); return; } if (is_list(n) || is_table(n)) return;
     const g = fmt_of(n, f), href = n.getAttribute('href');
+    if (t === 'A' && href && !/^data:/i.test(href)) {
