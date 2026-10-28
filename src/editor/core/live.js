@@ -67,3 +67,4 @@ function finish(s) { commit(); refresh_toolbar(); s.msgs.forEach(m => toast(...m
 function settle(s, g) {
   s.pending--;
   if (g !== s.gen) s.dirty = true;
+  if (s.pending) return;
