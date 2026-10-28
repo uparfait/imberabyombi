@@ -8,3 +8,4 @@ export const CRC_T = (() => {
   return t;
 })();
 export function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_T[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+export function zip_store(files, mime) {
