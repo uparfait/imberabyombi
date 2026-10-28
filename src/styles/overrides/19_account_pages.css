@@ -27,3 +27,4 @@
   html.nav_docked .nav_row.is_pinned { padding-left: var(--dock_x, 0px); }   /* padding, not translate: a transform would trap the menus' fixed sheet */
   .nav_row.is_pinned { pointer-events: none; }   /* its empty (padding) area lets the header icon under it be hovered and clicked */
   .nav_row.is_pinned > * { min-width: 0; pointer-events: auto; }
+  .nav_row.is_pinned .tile_trigger { max-width: 100%; }   /* short on space (phones): buttons shrink and trim their names */
