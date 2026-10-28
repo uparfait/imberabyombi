@@ -9,3 +9,4 @@ export function col_show(c, k, on) {
   const th = qs(`#table_${c} th[data-k="${k}"]`), cells = () => qsa(`#table_${c} [data-k="${k}"]`);
   if (on) { if (th) th.hidden = false; refresh(c);
     if (!reduced()) cells().forEach(e => e.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 240, easing: 'ease-out' })); return; }
+  if (ui.q[c]?.[k]) ui.q[c] = { ...ui.q[c], [k]: '' };   /* a hidden column no longer filters the rows */
