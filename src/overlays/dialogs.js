@@ -35,3 +35,5 @@ export function show_in_dialog(id, render) {
   const d = document.getElementById(id); set_dialog(id, { render });
   if (!d.open) show_dialog(d);
   return d;
+}
+/* A new page (render(), not rerender()) closes the confirm, the modal and the file viewer, and drops their content
