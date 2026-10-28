@@ -37,3 +37,4 @@ export const kpi_cards_b = k => {
         <p className="text-center text-sm text-muted">{`${Math.round(ring * 50)} of 50 this week`}</p></>,
       [['Measure', 'Value'], [['Done', Math.round(ring * 50)], ['Total', 50], ['Share', `${done}%`]]]),
     kpi_card('', 'Satisfaction', 'Average rating out of 5 from all reviews this period.',
+      <><p className="kpi_value">{`${rate.toFixed(1)} `}<span className="kpi_of">/ 5</span></p>
