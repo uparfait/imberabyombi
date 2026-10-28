@@ -24,3 +24,4 @@ export function reflow(cur = 0, full = false) {
   let bs = bodies();
   for (let i = Math.max(0, cur - 1); i < bs.length; i++) {
     const b = bs[i];
+    normalize_body(b); hoist_nested(b);
