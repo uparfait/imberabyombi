@@ -27,3 +27,6 @@ export function dims() {
   const p = PAPER[state.setup.paper] || PAPER.letter; let w = p.w, h = p.h;
   if (state.setup.orientation === 'landscape') [w, h] = [h, w];
   return { w: Math.round(w * DPI), h: Math.round(h * DPI), win: w, hin: h };
+}
+
+/* tab order helpers (sidebar drag-reorder, Move up / down). move_tab returns the moved tab (or null). */
