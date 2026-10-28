@@ -6,3 +6,4 @@ export * from './img_ops.js';
 export * from './img_pos.js';
 export * from './img_drag.js';
 export * from './img_box_events.js';
+export * from './img_adjust.jsx';
