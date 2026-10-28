@@ -26,3 +26,4 @@ function insert_items() {
   return [
     { label: 'Image', icon: 'image', sub: image_items },
     { label: 'Table', icon: 'table', sub: () => [{ render: table_grid_el }] },
+    cmd('File attachment…', 'attach_file', () => pick_any(attach_files)),
