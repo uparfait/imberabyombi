@@ -11,3 +11,4 @@ const tile = (t, i) => { const Tag = t.href ? 'a' : 'button';
     {i3(t.icon, 'h-11 w-11')}<span className="line-clamp-2 w-full leading-tight">{t.label}</span></Tag>; };
 
 export const tile_menu = o => <div className="relative">
+  <button className={`tile_trigger ${o.set ? 'is_set' : ''}`} data-act="pop" data-pop={o.id} aria-haspopup="true">
