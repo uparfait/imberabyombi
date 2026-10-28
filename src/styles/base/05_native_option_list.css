@@ -11,3 +11,5 @@
   /* Every search field: a clickable search button on the left and a clear button on the right (searchUI()); text never runs under them */
   input:where([type=search]) { padding-left: 2.75rem; padding-right: 2.75rem; }
   datalist { display: none; }
+
+  /* Autofill lock: browsers may NOT recolour filled fields (wins over the dark no-shadow rule by specificity). */
