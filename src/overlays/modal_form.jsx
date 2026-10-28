@@ -23,3 +23,5 @@ export function Modal_form({ m }) {
     e.preventDefault(); const f = e.currentTarget; if (!m.on_submit) return; if (!validate(f)) return;   /* a view (no submit) never closes on Enter */
     const ok = await request(() => m.on_submit?.(form_obj(f), f), { btn: f.querySelector('footer button:not([type=button])') });
     if (ok !== false) close_dialog(document.getElementById('modal'));
+  };
+  return (
