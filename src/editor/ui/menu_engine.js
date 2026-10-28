@@ -92,3 +92,4 @@ export function focus_row(m, r, preview = true) {
   if (!r) return;
   set_cur(r, m); unpeek();
   r.focus({ preventScroll: false });
+  if (preview && !r._it.sub) { peek_item(r._it); if (document.activeElement !== r) r.focus({ preventScroll: true }); }
