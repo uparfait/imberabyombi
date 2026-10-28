@@ -28,3 +28,4 @@ export const diverging = t => t >= 0
 /* the date range scales every amount: 7, 30 or 90 days */
 export const RANGE = { 7: .3, 30: 1, 90: 2.6 };
 export const MARGIN = () => RANGE[ui.viz_range || 30];
+export const fit = (s, px) => { const n = Math.max(1, Math.floor(px / 6.4)); return s.length > n ? s.slice(0, Math.max(1, n - 1)) + '…' : s; };
