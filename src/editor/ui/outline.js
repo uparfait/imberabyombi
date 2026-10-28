@@ -39,3 +39,4 @@ export function render_outline() {
 /* hide the rows inside a folded heading */
 export function apply_folds(ol) {
   let hide = Infinity;
+  outline_rows(ol).forEach(r => { const l = +r.dataset.lvl; if (l <= hide) hide = Infinity; r.hidden = hide !== Infinity; if (!r.hidden && r.classList.contains('folded')) hide = l; });
