@@ -38,3 +38,5 @@ export function cell(c, k, row) {
   if (['amount', 'fee', 'salary'].includes(k)) return <data value={+v || 0} className="tabular-nums">{money(v)}</data>;
   if (k === 'score') return bar_cell(v, 100);
   if (k === 'regno' || k === 'plate' || k === 'isbn') return <code>{String(v ?? '')}</code>;
+  return v === '' || v == null ? dash() : String(v);
+}
