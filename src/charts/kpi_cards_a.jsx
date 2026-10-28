@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { compact_num, num, tip_attr } from './viz_math.js';
 import { arc } from './viz_svg.js';
+import { spark, delta, signed, kpi_card } from './kpi_parts.jsx';
