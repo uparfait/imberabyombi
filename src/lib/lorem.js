@@ -7,3 +7,4 @@ export const WORDS = ('lorem ipsum dolor sit amet consectetur adipiscing elit se
   'voluptate velit esse cillum fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa officia deserunt mollit anim laborum').split(' ');
 export let SEED = 1;
 export const lorem = {
+  seed(n) { SEED = (Math.abs(n) % 2147483646) + 1; },
