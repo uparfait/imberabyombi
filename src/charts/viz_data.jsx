@@ -44,3 +44,5 @@ export function viz_open(card, e) {
     if (d) { const hit = rows.filter(r => String(r[0]) === String(d[0]));   /* the mark's own row when its label is unique, else what its tooltip shows */
       const pairs = hit.length === 1 ? head.map((h, i) => [h, str(hit[0][i])]) : [['Selected', str(d[0])], ...d.slice(1).map(([v, n]) => [n, str(v)])];
       return modal({ title: `${title} · ${d[0]}`, help, body: kv_table([['', pairs]]) }); }
+  }
+  SHOWN = { head, rows, p: 1 };
