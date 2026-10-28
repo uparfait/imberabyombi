@@ -28,3 +28,4 @@ export function hero_sec() {
 }
 export function about_sec(full) {
   return (
+    <section {...spy_attrs('about', full)} className="wrap section grid items-center gap-14 lg:grid-cols-2">
