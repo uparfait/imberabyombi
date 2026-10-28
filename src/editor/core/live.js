@@ -49,3 +49,4 @@ function put(sn) {
     set_last(r.cloneRange(), h);
   }
   const im = find(sn.img); if (im) select_image(im);
+  const bar = refs.toolbar;
