@@ -14,3 +14,4 @@ export const rtf_esc = s => {
   for (const ch of String(s).replace(/\u200b/g, '')) {
     const c = ch.codePointAt(0);
     if (ch === '\\' || ch === '{' || ch === '}') o += '\\' + ch; else if (ch === '\t') o += '\\tab '; else if (ch === '\n') o += '\\line ';
+    else if (c < 128) o += ch; else if (c < 0x10000) o += `\\u${c > 32767 ? c - 65536 : c}?`;
