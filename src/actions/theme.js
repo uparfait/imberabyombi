@@ -16,3 +16,4 @@ export function set_theme(mode) {
    The [data-hex] buttons are rendered empty on purpose: this fills them. */
 export const hex_refresh = () => qsa('[data-hex]').forEach(b => { const h = rgb2hex(css_var('--' + b.dataset.hex)).toUpperCase(); b.textContent = h; b.dataset.text = h; });
 export function apply_tokens() {
+  const t = db.get('tokens', {}), s = document.documentElement.style;
