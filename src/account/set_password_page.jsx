@@ -2,3 +2,4 @@
    confirm. FORMS.setpw (actions) checks the rules and the match; fields are named pw_new and pw_confirm. */
 import { ic } from '../icons/index.js';
 import { auth_shell, auth_links, pw_field } from './auth_shell.jsx';
+import { PW_RULES } from './pw_rules.js';
