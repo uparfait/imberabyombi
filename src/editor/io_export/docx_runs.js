@@ -14,3 +14,4 @@ export function parse_pt(v) {
   if (/pt$/.test(v)) return n; if (/px$/.test(v)) return n * 0.75; if (/em$/.test(v)) return n * 11; return null;
 }
 /* f: the formatting so far ({ b, i, u, s, sup, sub, font, size, color, hl, link }); returns it plus what element e adds */
+export function fmt_of(e, f) {
