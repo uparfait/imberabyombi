@@ -25,3 +25,4 @@ export function close_find() {
 export function run_find(keep) {
   const q = refs.find_input ? refs.find_input.value : '', mc = !!(refs.find_case && refs.find_case.checked), prev = find_state.idx;
   find_state.matches = []; find_state.idx = -1;
+  if (q) {
