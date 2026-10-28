@@ -21,3 +21,4 @@ export function render_outline() {
   hs.forEach((h, i) => {
     const lvl = level_of(h), kids = i + 1 < hs.length && level_of(hs[i + 1]) > lvl, top = is_top_head(h);
     const row = el('div', { class: 'outline_row select-none', role: 'treeitem', tabindex: '-1', 'aria-level': String(lvl + 1), 'data-lvl': String(lvl),
+      style: `padding-left:${0.25 + lvl * 0.875}rem` });
