@@ -20,3 +20,6 @@ VIEWS.staff = () => <>
       + 'Copy a personal access link from any row.'}</p></div>
     {auth.can('roles') ? <a href={to('/admin/roles')} className="btn btn_outline btn_sm">Manage roles</a> : null}</section>
   {crud('staff', { acts: copy_link })}
+</>;
+
+VIEWS.employees = () => { const t = ui.tab.emp || 'All', rows = db.list('employees');
