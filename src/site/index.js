@@ -3,3 +3,4 @@
 export * from './site_bits.jsx';
 export * from './pub_header.jsx';
 export * from './footer.jsx';
+export * from './hero_about.jsx';
