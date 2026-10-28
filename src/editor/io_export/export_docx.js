@@ -54,3 +54,4 @@ export async function export_docx(root, name) {
     const num_xml = nums.map(num_of).join('');
     const now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
     files.unshift(
+      { name: '[Content_Types].xml', data: docx_types(has_header, has_footer) },
