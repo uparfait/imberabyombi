@@ -9,3 +9,4 @@ import { cmd, native } from './menus_main.js';
 
 export function on_context_menu(e) {
   const at = { x: e.clientX, y: e.clientY }, img = e.target.closest && e.target.closest('.pg_body img');
+  if (img) {
