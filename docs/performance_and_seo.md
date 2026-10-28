@@ -22,3 +22,4 @@ npm run preview    # then run Lighthouse in Chrome DevTools on the preview addre
 Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Network "Slow 4G") to see the low-end experience.
 
 ## SEO
+- `index.html` holds a real title, description, keywords, robots, author and canonical link, Open Graph and Twitter
