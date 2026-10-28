@@ -5,3 +5,4 @@ import { nav_drops } from '../admin/index.js';
 export const kit_nav = () => (
   <>
     <p className="max-w-prose text-sm text-muted">Three levels in all: this system, System 2 (4 pages and System 3) and System 3 (its own pages).
+      Every system has a home page with tiles; each open system gets a menu like Your modules (3D tiles).</p>
