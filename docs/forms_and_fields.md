@@ -15,3 +15,4 @@ Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `t
 Extras: `def` (default), `when` (`'Done'` / `'!Done'`, shown by status), `min`, `max`.
 
 ```jsx
+<form data-form="note" noValidate className="grid gap-4">
