@@ -16,3 +16,4 @@
 .doc_logo { display: grid; flex: none; place-items: center; }
 .topbar_main { display: flex; flex-direction: column; min-width: 0; }
 .top_btns { display: flex; flex: none; align-items: center; gap: .25rem; margin-left: auto; }
+.pill_btn svg { flex: none; }
