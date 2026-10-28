@@ -20,3 +20,6 @@ export function typer(el) {
   let i = 0, j = 0, del = false, hold = 0;
   TIMERS.push(setInterval(() => { if (hold) { hold--; return; } const s = w[i]; j += del ? -1 : 1; el.textContent = s.slice(0, j);
     if (!del && j === s.length) { del = true; hold = 22; } else if (del && j === 0) { del = false; i = (i + 1) % w.length; hold = 4; } }, 75));
+}
+
+let spy = null;   /* the home page's section spy (one at a time: React keeps the sections across redraws) */
