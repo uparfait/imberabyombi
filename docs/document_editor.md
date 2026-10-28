@@ -23,3 +23,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Saving**: the document is kept in the browser (`editor_doc` key) a moment after each change.
 
 ## Live preview
+Hover any formatting choice (toolbar buttons, menu items, colours, fonts, sizes, styles, alignment, spacing, list
