@@ -9,3 +9,4 @@ const SLOTS = {};   /* name → redraw function of the slot on screen */
 
 /* first = what the page drew (computed in order with the page, so lorem text matches); draw = how to draw it again.
    Each draw gives fresh DOM like innerHTML did (fresh = false: patched in place, so a clicked link stays connected). */
+export function Live_slot({ name, first, draw, fresh = true }) {
