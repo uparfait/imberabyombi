@@ -8,3 +8,4 @@ const small_btn = (id, icon, tip) => (
 );
 
 export const find_panel = () => (
+  <div id="find_panel" className="find_panel no_print" role="dialog" aria-label="Find and replace">
