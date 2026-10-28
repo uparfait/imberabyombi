@@ -24,3 +24,4 @@ function on_input(e) {
   else if (!pick.mute && t.dataset.list != null) pick.open(t);
   if (t.type === 'range') fill_range(t);
   if (t.dataset.out) { const o = qs(t.dataset.out); if (o) o.value = t.value; }
+  if (t.dataset.filter) { const q = t.value.toLowerCase().trim(); qsa(t.dataset.filter).forEach(el => el.hidden = !!q && !el.textContent.toLowerCase().includes(q)); }
