@@ -20,3 +20,7 @@ export function image_size_dialog(img) {
   </>, on_submit: () => {
     const lock = qs('#sz_lock').checked, w = clamp(parseInt(qs('#sz_w').value) || w0, 16, max), h = Math.max(16, parseInt(qs('#sz_h').value) || h0);
     img_op(img, x => { x.style.width = w + 'px'; x.style.height = lock ? '' : h + 'px'; x.removeAttribute('width'); x.removeAttribute('height'); });
+  } });
+}
+
+export function alt_text_dialog(img) {
