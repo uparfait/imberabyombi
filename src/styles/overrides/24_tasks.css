@@ -37,3 +37,4 @@
   dialog, dialog form, dialog form > div, .kv_wrap { overflow-x: hidden; }
   /* Attachments: one list (a divider between rows) that scrolls inside itself once it is long */
   .task_files { display: grid; max-height: 15.5rem; overflow-y: auto; border: 1px solid rgb(var(--line)); border-radius: 1rem; }
+  .task_file { display: flex; min-width: 0; align-items: center; gap: .625rem; padding: .5rem .5rem .5rem .75rem; border-bottom: 1px solid rgb(var(--line)); text-align: left; transition: background-color .2s; }
