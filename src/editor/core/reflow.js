@@ -19,3 +19,4 @@ function ensure_para(b) { if (first_flow(b)) return; Array.from(b.childNodes).fo
 
 export function reflow(cur = 0, full = false) {
   if (!pages_el || !bodies().length) return;
+  if (state.setup.pageless) { reflow_pageless(); return; }
