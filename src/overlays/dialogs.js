@@ -9,3 +9,4 @@ import { tip } from './tip.js';
 
 /* E. One dialog for every form, confirm and detail view (animated open + close).
       Closing lives in the header x. The footer only appears for actions: Cancel + submit on forms/confirms, or custom actions. */
+export function close_dialog(d) {
