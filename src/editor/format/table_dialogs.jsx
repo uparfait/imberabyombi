@@ -56,3 +56,4 @@ const WHERE = [['row_above', 'Rows above'], ['row_below', 'Rows below'], ['col_l
 export function insert_multiple_dialog() {
   if (previewing() || !can_edit()) return; if (!table_ctx()) { toast('Place the cursor inside a table first'); return; }
   modal({
+    title: 'Insert rows or columns', submit: 'Insert',
