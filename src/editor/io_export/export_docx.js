@@ -3,3 +3,4 @@
 import { state, dims, DPI, toast, download } from '../core/index.js';
 import { xesc, RELNS, WNS } from './docx_runs.js';
 import { list_kind } from './docx_paras.js';
+import { blocks_xml } from './docx_table.js';
