@@ -7,3 +7,4 @@ import { refresh } from './rows.js';
 
 export function col_show(c, k, on) {
   const th = qs(`#table_${c} th[data-k="${k}"]`), cells = () => qsa(`#table_${c} [data-k="${k}"]`);
+  if (on) { if (th) th.hidden = false; refresh(c);
