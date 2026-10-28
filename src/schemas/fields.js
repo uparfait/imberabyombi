@@ -7,3 +7,4 @@ import { db } from '../store/index.js';
 export const field_spec = (k, l, t = 'text', o = null, req = false, x = {}) => ({ k, l, t, o, req, ...x });
 export const option_list = s => s.split('|');
 export const STATUS = {
+  staff: option_list('Active|On leave|Inactive'), att: option_list('Present|Late|Absent|Excused'), task: option_list('To do|In progress|Done'),
