@@ -10,3 +10,4 @@ import { request, staff_page, reduced } from '../feedback/index.js';
 const BASE = new URL(import.meta.env.BASE_URL || '/', location.origin).pathname.replace(/\/+$/, '');
 
 /* to('/admin/tasks') → '/admin/tasks' (or '/repo/admin/tasks'): use it for every href */
+export const to = (path = '/') => BASE + '/' + String(path).replace(/^\/+/, '');
