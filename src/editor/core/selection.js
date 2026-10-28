@@ -21,3 +21,4 @@ export function restore_sel(sel) {
   let sc = sel_remap.get(sel.sc) || sel.sc, ec = sel_remap.get(sel.ec) || sel.ec; sel_remap.clear();
   if (!sc || !sc.isConnected) return;
   const so = Math.min(sel.so, node_len(sc)); let eo;
+  if (!ec || !ec.isConnected || editable_of(ec) !== editable_of(sc)) { ec = sc; eo = so; } else eo = Math.min(sel.eo, node_len(ec));
