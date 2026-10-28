@@ -27,3 +27,5 @@ export function tv_comments(r, st) {
     {cm.length ? <ul className="mt-3 grid gap-3">{cm.map(c => comment(r, c, !!st.cedit[c.id]))}</ul> : <p className="mt-2 text-sm text-muted">No comments yet.</p>}
     <div className="mt-3 flex items-end gap-2"><div className="field min-w-0 flex-1"><label htmlFor="tv_comment">Add a comment</label>
       <textarea id="tv_comment" rows={2} placeholder=" " data-comment-box=""></textarea></div>
+      <button type="button" className="btn btn_primary btn_sm mb-1" data-act="task_comment" data-id={r.id}>Comment</button></div></section>;
+}
