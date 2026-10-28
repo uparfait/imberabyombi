@@ -9,3 +9,4 @@ import { legend, scale_legend } from './viz_legend.jsx';
 const x_ticks = (f, xs) => [0, 25, 50, 75, 100].map(t => `<text x="${round1(xs(t))}" y="${f.h - 8}" text-anchor="middle">${t}</text>`).join('');
 
 export const VIZ_REL_A = {
+  scatter: { t: 'Scatter plot', g: 'rel', d: 'How two measures move together, by group (3 groups max).', f(w) {
