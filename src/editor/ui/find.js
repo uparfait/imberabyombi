@@ -32,3 +32,4 @@ export function run_find(keep) {
       while (w.nextNode()) {
         const t = w.currentNode, blk = t.parentElement.closest(BLOCK) || b;
         if (last_blk && blk !== last_blk) text += '\u0000';
+        last_blk = blk; segs.push({ node: t, start: text.length }); text += t.data;
