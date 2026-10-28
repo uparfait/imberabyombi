@@ -1,1 +1,2 @@
 /* editor/io_import/file_to_html.js: one file → { html, inline?, kind?, note?, project? } by its type: images, Word,
+   PDF, spreadsheets, CSV / TSV, JSON (+ lines), PowerPoint, OpenDocument, RTF, EPUB, web pages, Markdown, text, code;
