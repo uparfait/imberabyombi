@@ -25,3 +25,4 @@ export function section_model() {
 /* where section k goes one step up / down (a block index), -1 when it cannot move */
 function up_to(m, k) {
   const h = m.heads[k]; if (!h) return -1;
+  for (let j = k - 1; j >= 0; j--) if (m.heads[j].lvl <= h.lvl) return m.heads[j].i;
