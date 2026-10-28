@@ -96,3 +96,5 @@ export function focus_row(m, r, preview = true) {
 }
 /* a mousedown outside every menu (and outside the anchor of the open one) closes them */
 export function on_outside_down(e) {
+  if (menu_stack.length && !e.target.closest?.('.ed_menu') && !e.target.closest?.('.open')) close_menus(0);
+}
