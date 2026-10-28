@@ -30,3 +30,4 @@ export function add_tab() {
 export function step_tab(d) {
   const n = state.tabs.length; if (n < 2) return;
   const i = state.tabs.findIndex(t => t.id === state.active);
+  switch_tab(state.tabs[(i + d + n) % n].id);
