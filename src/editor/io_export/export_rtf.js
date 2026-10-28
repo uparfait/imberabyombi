@@ -30,3 +30,4 @@ function rtf_table(rx, t) {
     o += '\n';
     Array.from(r.cells).forEach(c => {
       const f = c.tagName === 'TH' || c.hasAttribute('data-hdr') ? { b: true } : {}, parts = [];
+      c.childNodes.forEach(nd => {
