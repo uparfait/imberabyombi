@@ -13,3 +13,4 @@ const assignees = () => uniq([me(), ...people()]).map(n => [n, n === me() ? n + 
 
 /* inline editors for one row of the task view */
 export function tv_editor(f, r) {
+  if (f === 'title') return field(field_spec('tv_title', 'Title', 'text', 0, 1), r.title);
