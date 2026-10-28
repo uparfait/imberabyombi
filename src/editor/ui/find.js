@@ -90,3 +90,4 @@ export function install_find(offs) {
   listen(offs, refs.find_input, 'keydown', keys(e => find_step(e.shiftKey ? -1 : 1)));
   listen(offs, refs.replace_input, 'keydown', keys(() => replace_one()));
   listen(offs, refs.find_next, 'click', () => find_step(1)); listen(offs, refs.find_prev, 'click', () => find_step(-1));
+  listen(offs, refs.find_close, 'click', () => close_find());
