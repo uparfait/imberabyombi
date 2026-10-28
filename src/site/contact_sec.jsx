@@ -6,3 +6,4 @@ import { lorem } from '../lib/index.js';
 import { sec_head, spy_attrs } from './site_bits.jsx';
 
 export function contact_form() {
+  return (
