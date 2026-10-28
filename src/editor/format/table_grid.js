@@ -8,3 +8,4 @@ import { custom_table_dialog } from './table_dialogs.jsx';
 
 export function table_grid_el() {
   const box = el('div', { class: 'grid_picker' }), g = el('div', { class: 'g' }), lbl = el('div', { class: 'lbl' }, '1 × 1'), cells = [];
+  for (let r = 0; r < 8; r++) for (let c = 0; c < 10; c++) {
