@@ -49,3 +49,5 @@
   .arch { @apply relative overflow-hidden border-2 border-brand/50; aspect-ratio: 4 / 5; border-radius: var(--pill) var(--pill) calc(var(--radius) * 1.75) calc(var(--radius) * 1.75); background: linear-gradient(180deg, rgb(var(--brand) / .18), rgb(var(--brand) / .55)); }
   .dark .arch { background: linear-gradient(180deg, rgb(var(--brand) / .5), rgb(var(--ink))); }
   .hour_lines { background-image: repeating-linear-gradient(to bottom, transparent 0, transparent calc(3rem - 1px), rgb(var(--line)) calc(3rem - 1px), rgb(var(--line)) 3rem); }
+  .field_dark { --field: var(--ink); --field_fg: 255 255 255; }
+}
