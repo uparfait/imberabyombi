@@ -10,6 +10,8 @@ import { spinner } from './feedback/index.js';
 
 /* admin pages draw a little larger on laptops and desktops (html.staff_page → --scale_staff in src/styles/base) */
 const mark_staff_page = () => document.documentElement.classList.toggle('staff_page', /^\/admin(\/|$)/.test(route.path || ''));
+
+/* the same spinner index.html shows while the app loads, kept until the first page is drawn */
 export default function App() {
   const version = useSyncExternalStore(subscribe, get_version);
   const page = render_route();
