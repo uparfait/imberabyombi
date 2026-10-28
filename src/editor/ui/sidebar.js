@@ -53,3 +53,4 @@ function wire_row(row, t, box) {
     if (e.target.closest('button, input')) return;
     const from = state.tabs.indexOf(t);
     row_drag(e, {
+      row, list: box, cls: 'tab_drag_over', scrollers: [box, refs.sidebar],
