@@ -22,6 +22,7 @@ Open `#/login`, pick a role, type any email and password, and explore the admin.
 lives in the browser and can be reset from Settings.
 
 ## What is inside
+| Area             | Highlights                                                                          |
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
