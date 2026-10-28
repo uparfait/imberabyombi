@@ -75,3 +75,4 @@ async function docx_blocks(cx, nodes, container) {
           const td = document.createElement('td'), tc_pr = kids(tc, 'tcPr')[0], span = +(val(tc_pr && kids(tc_pr, 'gridSpan')[0]) || 1);
           const shd = tc_pr && kids(tc_pr, 'shd')[0], fill = shd && shd.getAttribute('w:fill');
           if (span > 1) td.colSpan = span; if (fill && HEX6.test(fill) && fill.toUpperCase() !== 'FFFFFF') td.style.backgroundColor = '#' + fill;
+          await docx_blocks(cx, kids(tc).filter(x => x.localName === 'p' || x.localName === 'tbl'), td); if (!td.firstChild) td.innerHTML = '<p><br></p>';
