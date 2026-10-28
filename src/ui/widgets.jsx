@@ -31,3 +31,4 @@ export const empty = (title, text, act = null) => (
 );
 export const logo = light => (
   <a href="#/" className="font-display text-xl font-extrabold tracking-wide sm:text-2xl" aria-label={`${cfg.name}, home`}>
+    <span className="text-brand">{cfg.logo[0]}</span><span className={light ? 'text-white' : 'text-fg'}>{cfg.logo[1]}</span>
