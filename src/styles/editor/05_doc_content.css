@@ -59,3 +59,4 @@
 .doc_content small{font-size:smaller}
 .doc_content s{text-decoration-color:currentColor;text-decoration-thickness:auto;opacity:1}
 .doc_content mark{background:#ffff00;color:inherit;padding:0;border-radius:0}
+.doc_content img{display:inline;background:none}
