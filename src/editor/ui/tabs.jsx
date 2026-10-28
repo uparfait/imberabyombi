@@ -13,3 +13,4 @@ export function save_tab() { const t = active_tab(); if (t) t.html = collect_htm
 
 function show(id) { state.active = id; render_tab(); render_sidebar(); render_comments(); save_soon(); }
 export function switch_tab(id) {
+  if (id === state.active || !state.tabs.some(t => t.id === id)) return;
