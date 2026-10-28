@@ -17,3 +17,4 @@ export const VIZ_DIST = {
   box: { t: 'Box plot', g: 'dist', d: 'Median, middle half (box), range (whiskers) and outliers.', f(w) {
     const g = uwords(5), sets = g.map(() => { const m = rnd(35, 65), s = rnd(6, 16); return Array.from({ length: 60 }, () => m + gauss() * s).sort((a, b) => a - b); });
     const q = (a, p) => a[Math.floor((a.length - 1) * p)], st = sets.map(a => {
+      const q1 = q(a, .25), q3 = q(a, .75), iq = q3 - q1, lo = a.find(v => v >= q1 - 1.5 * iq), hi = [...a].reverse().find(v => v <= q3 + 1.5 * iq);
