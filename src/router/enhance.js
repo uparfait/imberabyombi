@@ -32,3 +32,4 @@ export function enhance() {
   qsa('input[type=range]').forEach(fill_range); header_line();
   qsa('select[multiple]').forEach(ms_sync);
   hex_refresh();
+  qsa('[data-chain]').forEach(el => { if (!el._chain) { el._chain = 1; el.addEventListener('wheel', chain_wheel, { passive: false }); } });
