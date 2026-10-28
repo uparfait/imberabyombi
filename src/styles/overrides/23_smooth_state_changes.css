@@ -31,3 +31,4 @@
   .fold > div { min-height: 0; overflow: hidden; }
   .chev { transition: rotate .3s var(--ease); }
   [aria-expanded=true] > .chev { rotate: 180deg; }
+  /* Side panel sits beside the content (the page shrinks); it slides open by width */
