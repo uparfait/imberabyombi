@@ -43,3 +43,4 @@
     background: radial-gradient(circle, var(--sun_0, rgb(var(--brand))) 0 9%, var(--sun_1, rgb(var(--brand) / .45)) 16%, rgb(var(--brand) / .28) 42%, transparent 70%); animation: glow 7s ease-in-out infinite, fade 1.4s var(--ease) both; }
   .dark .sun { --sun_0: #fff; --sun_1: rgb(255 232 208 / .9); }   /* light theme: an orange sun (white would vanish on white) */
   .pattern_layer.fixed { will-change: transform; }   /* own GPU layer: the page scrolls over it without repainting it */
+  .pattern_layer { position: absolute; inset: 0; z-index: -1; pointer-events: none;
