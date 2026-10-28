@@ -15,3 +15,4 @@
     --space:  1rem;          /* every p-*, m-*, gap-*, space-* scales from this */
     --font_sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
     --font_display: "Bricolage Grotesque", var(--font_sans);
+    --font_mono: "JetBrains Mono", ui-monospace, monospace;
