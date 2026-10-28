@@ -2,3 +2,4 @@
    address #lb_url, Copy #lb_copy, Edit #lb_edit, Remove #lb_remove). The engine fills and places it. */
 import { rem } from '../../lib/index.js';
 import { qs, clamp, toast, last_range } from '../core/index.js';
+import { link_at_caret, open_link_dialog, remove_link } from './links.jsx';
