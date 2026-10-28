@@ -27,3 +27,4 @@
   :where(input, select, textarea, button):disabled { opacity: .5; cursor: not-allowed; }
   input::placeholder, textarea::placeholder { color: rgb(var(--muted) / .75); opacity: 1; }
   textarea { min-height: 7rem; resize: vertical; }
+  select { cursor: pointer; padding-right: 2.75rem; background-repeat: no-repeat; background-position: right .6rem center; background-size: 1.5rem;
