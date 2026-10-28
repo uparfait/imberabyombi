@@ -5,3 +5,4 @@
 import * as modules from '../modules/index.js';
 import { SHELL_ACT } from './act_shell.js';
 import { TABLE_ACT } from './act_tables.jsx';
+import { PICKER_ACT } from './act_picker.js';
