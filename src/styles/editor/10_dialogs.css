@@ -34,3 +34,4 @@
 .preset_lbl { margin-top: .3125rem; text-align: center; font-size: .72rem; line-height: 1.2; color: #3c4043; }
 
 /* The source's shortcut table class, should a dialog use it */
+.kbd_table td { padding: .3125rem .5rem; border-bottom: 1px solid rgb(var(--line)); font-size: .8125rem; white-space: normal; }
