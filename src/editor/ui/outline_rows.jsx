@@ -65,3 +65,4 @@ function on_key(e, row) {
 function on_down(e, row) {
   if (row._ti < 0 || e.target.closest('button')) return;
   const ol = row.parentElement; let m = null;
+  const model = () => m || (m = section_model());
