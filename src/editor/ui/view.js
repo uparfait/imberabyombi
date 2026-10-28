@@ -19,3 +19,4 @@ export function drop_page_rule() { if (own_rule) own_rule.remove(); own_rule = n
 export function apply_setup(full) {
   if (!pages_el) return;
   const { win, hin } = dims(), s = state.setup, m = s.margins;
+  page_rule_el().textContent = s.pageless ? `@page{size:${win}in ${hin}in;margin:${m.top}in ${m.right}in ${m.bottom}in ${m.left}in}` : `@page{size:${win}in ${hin}in;margin:0}`;
