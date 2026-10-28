@@ -35,3 +35,5 @@ export function run_find(keep) {
         last_blk = blk; segs.push({ node: t, start: text.length }); text += t.data;
       }
       text += '\u0000';
+    });
+    const hay = mc ? text : text.toLowerCase(), needle = mc ? q : q.toLowerCase();
