@@ -7,3 +7,4 @@ export const CHARTS = new Map();
 export function draw_chart(cv, labels, vals, anim = true) {
   if (!cv) return; CHARTS.set(cv.id, [labels, vals]);
   const dpr = devicePixelRatio || 1, wd = cv.clientWidth, ht = cv.clientHeight; if (!wd || !ht) return;
+  cv.width = wd * dpr; cv.height = ht * dpr; const x = cv.getContext('2d'); x.setTransform(dpr, 0, 0, dpr, 0, 0);
