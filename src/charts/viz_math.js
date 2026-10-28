@@ -34,3 +34,4 @@ export const tip_text = (title, rows) => `data-tt="${esc(JSON.stringify([title, 
 export const tip_attr = (title, rows) => ({ 'data-tt': JSON.stringify([title, ...rows]) });
 export const pct = v => `${round1(v * 100)}%`;
 /* Label positions pushed apart (top to bottom) so stacked end labels never overlap */
+export const spread = (ys, gap = 13) => {
