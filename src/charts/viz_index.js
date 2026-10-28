@@ -5,3 +5,4 @@ export * from './viz_svg.js';
 export * from './viz_legend.jsx';
 export * from './viz_charts.js';
 export * from './kpi_parts.jsx';
+export * from './kpi_view.jsx';
