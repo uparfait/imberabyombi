@@ -20,3 +20,6 @@ export const help_tip = (text, about = 'this') => (
 export const page_title = (title, text) => (
   <div className="mb-5 flex items-center gap-1">
     <p className="font-display text-2xl font-medium tracking-tight" aria-hidden="true">{title}</p>{help_tip(text, title)}
+  </div>
+);
+export const clear_x = () => (
