@@ -10,6 +10,7 @@ const head = (o, icon, text, extra = null) => !o.routed
       <div className="min-w-0 flex-1"><p className="text-sm text-muted">{o.kicker}</p><h3 className="mt-0.5 text-2xl">{o.title}</h3>
         <p className="mt-1 text-muted">{text}</p>{extra}</div></section>   /* the design-system demo: a light header */
   : <section className="flex flex-wrap items-end gap-6" aria-label={o.title}>
+      <div className="hero_in min-w-0 flex-1"><p className="text-sm text-muted">{o.kicker}</p><h2 className="mt-1 text-3xl text-fg sm:text-5xl">{o.title}</h2>
 
 const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a' : 'button';
   return <Tag key={i} className="card card_hover group grid justify-items-center gap-3 p-5 text-center" {...(t.href ? { href: t.href } : t.attrs)}>
