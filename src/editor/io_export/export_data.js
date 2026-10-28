@@ -26,3 +26,4 @@ export function export_data(root) {
   }));
   const lines = [];
   Array.from(root.children).forEach(b => {
+    if (is_break(b)) return;
