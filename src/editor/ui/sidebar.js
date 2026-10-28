@@ -31,3 +31,4 @@ export function render_sidebar() {
     row.querySelector('.tab_name').textContent = t.name;
     wire_row(row, t, box);
     box.appendChild(row);
+    if (active) box.appendChild(el('div', { class: 'outline', id: 'outline', role: 'tree', 'aria-label': 'Document outline' }));
