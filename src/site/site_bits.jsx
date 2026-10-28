@@ -13,3 +13,4 @@ export const wave = () => (
   </svg>
 );
 /* inner: the JSX inside the shell; c: extra classes on the shell */
+export const hero_shell = (inner, c = '') => (
