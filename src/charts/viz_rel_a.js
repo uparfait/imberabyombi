@@ -18,3 +18,4 @@ export const VIZ_REL_A = {
       legend: legend(gr, 'dot'), table: [['Group', 'x', 'y'], pts.map(p => [gr[p.g], round1(p.x), round1(p.y)])] }; } },
   bubble: { t: 'Bubble chart', g: 'rel', d: 'A scatter plot where dot size shows a third measure.', f(w) {
     const gr = SER.slice(0, 2), pts = gr.flatMap((_, g) => Array.from({ length: 8 }, () => ({ g, x: rnd(8, 92), y: rnd(10, 90), s: rnd(5, 100) })));
+    const f = frame(w, 260), ax = y_axis(f, 100), xs = linear(0, 100, f.l, f.l + f.iw), rs = s => 4 + Math.sqrt(s) * 2.2;
