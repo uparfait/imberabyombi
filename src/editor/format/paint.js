@@ -7,3 +7,4 @@ import { exec, set_font_size } from './commands.js';
 export let paint = null;
 const btn = on => refs.paint_btn?.classList.toggle('active', on);
 export function stop_paint() { paint = null; btn(false); }
+export function start_paint() {
