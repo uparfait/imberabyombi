@@ -15,3 +15,4 @@ export function err_text(el) {
   if (v.tooShort) return `Use at least ${el.minLength} characters.`;
   if (v.badInput) return 'Enter a number.';
   if (v.patternMismatch) return `Use the format ${el.placeholder}.`;
+  return el.validationMessage || 'Check this field.';
