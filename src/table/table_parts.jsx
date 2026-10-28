@@ -32,3 +32,5 @@ export const table_menu = c => { const v = tview(c);
 
 export const full_btn = (c, on) => (
   <button className="icon_btn" data-act="table_full" data-col={c} aria-pressed={on} aria-label={on ? 'Exit full screen' : 'Open full screen'}>
+    {ic(on ? 'shrink' : 'expand')}</button>
+);
