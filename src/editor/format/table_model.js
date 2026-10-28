@@ -58,3 +58,4 @@ export function insert_rows(row, n, below) {
   let ref = row, first = null;
   for (let k = 0; k < n; k++) {
     const nr = row.cloneNode(false); Array.from(row.cells).forEach(x => nr.appendChild(new_cell_like(x, true)));
+    if (below) { ref.after(nr); ref = nr; } else row.before(nr);
