@@ -15,3 +15,5 @@ export function rtf_to_html(rtf) {
   const flush_table = () => {
     if (!rows.length) return;
     out.push(`<table class="doc_table"><tbody>${rows.map(r => `<tr>${r.map(c => `<td><p>${c || '<br>'}</p></td>`).join('')}</tr>`).join('')}</tbody></table>`); rows = [];
+  };
+  const end_para = () => { if (in_tbl) { para += '<br>'; return; } flush_table(); out.push(`<p>${para || '<br>'}</p>`); para = ''; };
