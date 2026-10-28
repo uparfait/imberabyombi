@@ -37,3 +37,4 @@ export const VIZ_TIME_B = {
           + `<text x="${xb + 10}" y="${round1(lb[i])}">${round1(b[i])}</text>`; }).join(''), 'Slope chart'),
       table: [['Item', '2025', '2026'], c.map((k, i) => [k, round1(a[i]), round1(b[i])])] }; } },
   gantt: { t: 'Gantt chart', g: 'time', d: 'Tasks on a timeline, with a today line and milestones.', f(w) {
+    const t = uwords(6), wk = 10, d = t.map((_, i) => {
