@@ -19,3 +19,4 @@ export function toggle_details(d, e) {
   const s = d.querySelector(':scope > summary'), open = !d.open, from = d.getBoundingClientRect().height;
   if (open) d.open = true;
   const to = open ? d.getBoundingClientRect().height : s.getBoundingClientRect().height + d.offsetHeight - d.clientHeight;
+  d._a?.cancel(); d._a = d.animate([{ height: from + 'px' }, { height: to + 'px' }], { duration: 300, easing: 'cubic-bezier(.22,.8,.22,1)' });
