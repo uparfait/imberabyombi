@@ -27,3 +27,5 @@ function split_q(msg, cta) {
   if (msg == null || typeof msg !== 'object') {
     const [, q, more] = String(msg).match(/^([^?]*\?)\s*([\s\S]*)$/) || [, `${cta}?`, String(msg)];
     return [q, more.replace(/<[^>]+>/g, '').trim()];
+  }
+  const kids = Children.toArray(Array.isArray(msg) ? msg : msg.type === Fragment ? msg.props.children : [msg]), q = [];
