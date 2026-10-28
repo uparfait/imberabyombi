@@ -2,3 +2,4 @@
    (menus, theme and tokens, range fill, media player, <details> animation, command palette). Import from here. */
 export * from './pops.js';
 export * from './theme.js';
+export * from './media.js';
