@@ -20,3 +20,4 @@ export function hide_link_bubble() { const lb = link_bubble(); if (lb) lb.style.
 
 /* the bubble's buttons (added by install_content; the returned function removes them) */
 const on_copy = () => { if (bubble_link) navigator.clipboard?.writeText(bubble_link.href).then(() => toast('Link copied'), () => toast('Copy failed')); };
+const on_edit = () => { const a = bubble_link; hide_link_bubble(); open_link_dialog(a); };
