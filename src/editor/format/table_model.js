@@ -62,3 +62,5 @@ export function insert_rows(row, n, below) {
     if (!first) first = nr;
   }
   return first;
+}
+/* n columns on side 'left' | 'right' of grid column col (a merged cell spanning past col grows instead) */
