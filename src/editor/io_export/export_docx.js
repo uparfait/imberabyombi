@@ -37,3 +37,4 @@ export async function export_docx(root, name) {
     };
     let body_xml = blocks_xml(root, ctx) || '<w:p/>'; if (body_xml.endsWith('</w:tbl>')) body_xml += '<w:p/>';
     const has_header = s.header && !s.pageless && s.header_html.replace(/<[^>]*>/g, '').trim();
+    const has_footer = !s.pageless && ((s.footer && s.footer_html.replace(/<[^>]*>/g, '').trim()) || s.page_numbers);
