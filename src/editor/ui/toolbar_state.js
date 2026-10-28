@@ -45,3 +45,4 @@ export function on_selection() {
   const s = getSelection(); if (!s.rangeCount) return;
   const r = s.getRangeAt(0), h = editable_of(r.startContainer);
   if (h && pages_el && pages_el.contains(h)) {
+    set_last(r.cloneRange(), h);
