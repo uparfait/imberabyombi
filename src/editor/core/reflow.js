@@ -31,3 +31,4 @@ export function reflow(cur = 0, full = false) {
       if (!next) { next = add_page_after(b); bs = bodies(); }
       push_overflow(b, next);
     } else {
+      while (next) {
