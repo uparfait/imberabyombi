@@ -18,3 +18,4 @@ export function peek(key, fn) {
   live.preview(fn);
 }
 export function peek_view(key, apply) {
+  if (cur && cur.key === key) return;
