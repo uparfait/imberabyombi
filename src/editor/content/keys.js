@@ -10,3 +10,4 @@ import { at_body_start, at_body_end, on_first_line, on_last_line, backspace_acro
 export function handle_tab(e, r, host) {
   e.preventDefault();
   const n = el_of(r.startContainer), td = n.closest('td,th');
+  if (td && host.contains(td)) {
