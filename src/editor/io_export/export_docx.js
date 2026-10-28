@@ -27,3 +27,4 @@ export async function export_docx(root, name) {
         const id = 'rId' + (++rid); rels.push(`<Relationship Id="${id}" Type="${RELNS}/hyperlink" Target="${xesc(href)}" TargetMode="External"/>`); return id;
       },
       add_media(bytes, ext) {
+        const n = ++img_n, id = 'rId' + (++rid); media.push({ name: `word/media/image${n}.${ext}`, data: bytes });
