@@ -40,3 +40,4 @@ function card_of(c) {
   card.addEventListener('click', e => on_card_click(e, c, card));
   const inp = qs('input.c_input', card);
   if (inp) inp.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && inp.value.trim()) { c.replies.push({ text: inp.value.trim(), time: Date.now() }); save_soon(); render_comments(); activate_comment(c.id); }
