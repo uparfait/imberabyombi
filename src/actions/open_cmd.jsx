@@ -8,3 +8,4 @@ import { modal } from '../overlays/index.js';
 
 export function open_cmd() {
   const items = [...MODS.filter(m => auth.can(m.k)).map(m => [`#/admin/${m.k}`, m.l, m.i]), ['#/', 'Public website', 'globe'], ['#/ui', 'Design system', 'layers'], ...PUB.map(([k, l]) => [`#/${k}`, `${l} page`, PAGES[k].i])];
+  modal({ title: 'Go to', body: (
