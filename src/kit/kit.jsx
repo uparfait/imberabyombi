@@ -10,3 +10,4 @@ import { kit_tokens } from './kit_tokens.jsx';
 import { kit_type } from './kit_type.jsx';
 import { kit_lists } from './kit_lists.jsx';
 import { kit_actions } from './kit_actions.jsx';
+import { kit_forms } from './kit_forms.jsx';
