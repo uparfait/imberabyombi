@@ -7,3 +7,4 @@ export function parse() {
 }
 
 export function set_meta(title, desc) {
+  document.title = title;   /* the browser tab shows only the active page */
