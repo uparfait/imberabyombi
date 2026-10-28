@@ -61,3 +61,4 @@ export const toolbar = () => (
     {tb({ icon: 'format_line_spacing', tip: 'Line & paragraph spacing', id: 'spacing_btn' })}
     {split('checklist', 'checklist', 'Checklist (Ctrl+Shift+9)', 'check_dd', 'Checklist menu')}
     {split('bullets', 'format_list_bulleted', 'Bulleted list (Ctrl+Shift+8)', 'bullet_dd', 'Bullet styles')}
+    {split('numbers', 'format_list_numbered', 'Numbered list (Ctrl+Shift+7)', 'number_dd', 'Numbering styles')}
