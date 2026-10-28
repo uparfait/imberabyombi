@@ -6,3 +6,4 @@
 
 ## Install and run
 ```bash
+npm install        # installs React, Vite and Tailwind (exact versions from package.json)
