@@ -31,3 +31,5 @@ export async function export_epub(scope, name) {
     files.push({ name: `OEBPS/ch${i + 1}.xhtml`, data: epub_chapter(title, xb) });
     manifest.push(`<item id="ch${i + 1}" href="ch${i + 1}.xhtml" media-type="application/xhtml+xml"/>`); spine.push(`<itemref idref="ch${i + 1}"/>`);
     nav.push(`<li><a href="ch${i + 1}.xhtml">${xesc(title)}</a></li>`);
+  }
+  const id = (crypto.randomUUID && crypto.randomUUID()) || uid() + uid(), now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
