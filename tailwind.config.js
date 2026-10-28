@@ -23,3 +23,5 @@ export default {
         ok: token_color('ok'), warn: token_color('warn'), bad: token_color('bad'), info: token_color('info'),
         /* accessible orange for small text: brand mixed toward the text colour (≥ 4.5:1 in both themes) */
         accent: 'color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg)))'
+      },
+      fontFamily: { sans: ['var(--font_sans)'], display: ['var(--font_display)'], mono: ['var(--font_mono)'] },
