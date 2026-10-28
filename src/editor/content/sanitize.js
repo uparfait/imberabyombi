@@ -8,3 +8,4 @@ import { qsa, BLOCK_RE } from '../core/index.js';
 export const ALLOWED = new Set(('P H1 H2 H3 H4 H5 H6 UL OL LI TABLE THEAD TBODY TFOOT TR TD TH COLGROUP COL B STRONG I EM U S STRIKE DEL INS SUB SUP A IMG BR HR '
   + 'SPAN FONT BLOCKQUOTE PRE CODE DIV MARK SMALL').split(' '));
 export const DROP = new Set('SCRIPT STYLE META LINK TITLE NOSCRIPT IFRAME OBJECT EMBED SVG CANVAS FORM INPUT BUTTON SELECT TEXTAREA HEAD VIDEO AUDIO TEMPLATE'.split(' '));
+export const KEEP_CLS = new Set(['title', 'subtitle', 'checklist', 'page_break', 'cmt', 'doc_table', 'file_chip']);
