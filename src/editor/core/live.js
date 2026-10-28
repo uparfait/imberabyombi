@@ -74,3 +74,4 @@ function settle(s, g) {
 }
 
 export const live = {
+  get active() { return !!cur; },
