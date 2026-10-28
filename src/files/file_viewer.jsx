@@ -14,3 +14,4 @@ function Text_view({ f }) {
   useEffect(() => {
     let live = true;
     f.slice(0, 512e3).text().then(s => { if (live) set_text(s + (f.size > 512e3 ? '\n\n… The preview shows the first 512 KB.' : '')); });
+    return () => { live = false; };
