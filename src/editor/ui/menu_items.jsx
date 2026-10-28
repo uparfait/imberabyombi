@@ -56,3 +56,4 @@ export function text_items() {
   ];
 }
 export function style_items() {
+  const cur = refs.style_label ? refs.style_label.textContent : '';
