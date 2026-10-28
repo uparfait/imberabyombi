@@ -5,3 +5,4 @@ All tokens live in `:root` in [`src/styles/base/01_design_tokens.css`](../src/st
 or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opacity modifiers work (`bg-brand/15`).
 
 | Token              | Default             | Drives                                                           |
+|--------------------|---------------------|------------------------------------------------------------------|
