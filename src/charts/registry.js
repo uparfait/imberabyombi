@@ -24,3 +24,5 @@ export function draw_chart(cv, labels, vals, anim = true) {
       x.fillStyle = col('--muted'); x.textAlign = 'center'; x.fillText(labels[i], bx + bw / 2, ht - fs * .4);
     });
     if (t < 1) requestAnimationFrame(step);
+  };
+  step();
