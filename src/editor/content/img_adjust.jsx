@@ -20,3 +20,4 @@ function Adjust_body({ src, v }) {
       {ROWS.map(([k, l, a, b]) => (
         <div className="slider_row" key={k}>
           <label htmlFor={'adj_' + k}>{l}</label>
+          <input type="range" id={'adj_' + k} name={k} min={a} max={b} value={s[k]} onChange={e => put({ [k]: +e.target.value })} />
