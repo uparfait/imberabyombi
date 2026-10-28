@@ -37,3 +37,5 @@ function rtf_table(rx, t) {
       o += `${RTF_P}\\intbl ${parts.join('\\par ')}\\cell\n`;
     });
     o += '\\row\n';
+  });
+  return o + RTF_P + '\n';
