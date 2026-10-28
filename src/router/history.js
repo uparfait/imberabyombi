@@ -18,3 +18,4 @@ export const app_path = (u = location) => (in_base(u.pathname) ? u.pathname.slic
 
 const here = () => location.pathname + location.search;
 let shown = null;   /* the address of the page on screen (parse() records it on every draw) */
+export const mark_shown = () => { shown = here(); };
