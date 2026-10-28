@@ -10,3 +10,4 @@
     --brand_2: 150 62 14;    /* deep rust for gradients #963E0E */
     --ink:     26 18 12;     /* brand black-brown #1A120C */
     /* Shape, rhythm, type, motion */
+    --radius: 1rem;          /* corners of larger surfaces (fields, cards, menus, dialogs) scale from this */
