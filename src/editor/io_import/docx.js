@@ -14,3 +14,4 @@ export async function docx_to_html(file) {
     const res = await window.mammoth.convertToHtml({ arrayBuffer: buf.slice(0) },
       { styleMap: ["p[style-name='Title'] => p.title:fresh", "p[style-name='Subtitle'] => p.subtitle:fresh"] });
     if (res.value && res.value.trim()) return { html: res.value };
+  } catch (e) { console.warn('Using the built-in Word reader', e); }
