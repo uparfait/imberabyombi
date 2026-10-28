@@ -18,3 +18,4 @@ export function p_pr_xml(e, extra = '') {
   }
   const ml = parseFloat(st.marginLeft); if (ml && !extra.includes('numPr')) x += `<w:ind w:left="${Math.round(ml * 15)}"/>`;
   if (e.tagName === 'BLOCKQUOTE') x += '<w:ind w:left="720"/>';
+  let alv = st.textAlign || (e.getAttribute && e.getAttribute('align'));
