@@ -7,3 +7,4 @@ import { img_max, select_image, img_now } from './img_sel.js';
 
 /* fn(img) gets the image as it is in the document now */
 export function img_op(img, fn) {
+  img = img_now(img); if (!img || !can_edit() || !img.isConnected) return;
