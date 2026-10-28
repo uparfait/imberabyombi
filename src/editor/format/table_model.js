@@ -74,3 +74,4 @@ export function insert_cols(chain, col, n, side) {
 }
 export function delete_col(chain, col) {
   chain_rows(chain).forEach(row => {
+    const s = row_slots(row).find(x => col >= x.start && col <= x.end); if (!s) return;
