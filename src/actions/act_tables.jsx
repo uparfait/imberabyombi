@@ -30,3 +30,4 @@ export const TABLE_ACT = {
   sort: t => { const c = t.dataset.col, k = t.dataset.k, s = ui.sort[c]; ui.sort[c] = { k, d: s?.k === k ? -s.d : 1 }; ui.page[c] = 1; rerender(); },
   tab: t => { ui.tab[t.dataset.key] = t.dataset.v; ui.page = {}; render(true, true); },
   create: t => { close_pops(); if (route.mod !== t.dataset.mod) { ui.pending_form = t.dataset.col; location.hash = '#/admin/' + t.dataset.mod; } else open_form(t.dataset.col); },
+  /* Table tools */
