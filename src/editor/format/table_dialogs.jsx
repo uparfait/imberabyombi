@@ -15,3 +15,4 @@ export function preset_preview(p) {
   const line = p.bw ? `1px solid ${p.bc}` : '1px dashed #dadce0';
   const side = p.style === 'minimal' ? { borderLeftColor: 'transparent', borderRightColor: 'transparent' } : {};
   return (
+    <table><tbody>{[0, 1, 2, 3].map(r => <tr key={r}>{[0, 1, 2].map(k => {
