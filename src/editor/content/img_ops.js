@@ -18,3 +18,4 @@ export function set_img_width(img, w) {
 }
 export function load_img(src) {
   return new Promise((res, rej) => {
+    const im = new Image(); if (!/^(data|blob):/i.test(src)) im.crossOrigin = 'anonymous';
