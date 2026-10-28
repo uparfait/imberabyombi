@@ -16,3 +16,4 @@ export const GRADES = option_list('Grade 1|Grade 2|Grade 3|Grade 4|Grade 5|Grade
 export const SUBJECTS = option_list('Mathematics|Languages|Sciences|History|Arts|Sports');
 export const TERMS = option_list('Term 1|Term 2|Term 3');
 export const names = (...cs) => uniq(cs.flatMap(c => db.list(c).map(r => r.name)));
+export const people = () => uniq([...names('staff'), ...names('employees')]);
