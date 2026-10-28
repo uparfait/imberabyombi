@@ -38,6 +38,7 @@ function place_uploads(done, mode, failed) {
 export async function process_uploads(files, mode) {
   if (!can_edit()) return;
   if (mode === 'replace' && !is_tab_empty()
+    && !(await confirm_dialog('Replace everything in “' + active_tab().name + '” with the uploaded files? Your other tabs stay as they are.', 'Replace'))) return;
   if (hist_timer) commit();
   const done = [], failed = [], notes = [];
   for (let i = 0; i < files.length; i++) {
