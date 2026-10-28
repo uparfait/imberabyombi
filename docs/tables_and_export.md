@@ -12,3 +12,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 - **Action Buttons** as the first column, pinned while the table scrolls sideways (left out when no row has actions).
 - A settings menu (left): rows per page (10, 20, 50) and which columns to show, remembered per table.
 - Full screen (right): the table fills the tab (not the browser's full screen), header and actions stay pinned.
+- A row click opens the details view: a COLUMN NAME / VALUE table grouped by category.
