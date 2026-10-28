@@ -33,3 +33,4 @@ export function image_menu_items(img) {
     { label: 'Rotate and flip', icon: 'rotate_right', sub: () => [
       { label: 'Rotate right 90°', icon: 'rotate_right', action: () => rotate_image(img, 1) },
       { label: 'Rotate left 90°', icon: 'rotate_left', action: () => rotate_image(img, -1) },
+      { label: 'Flip horizontally', icon: 'flip', action: () => flip_image(img, 'h') }, { label: 'Flip vertically', icon: 'swap_vert', action: () => flip_image(img, 'v') }] },
