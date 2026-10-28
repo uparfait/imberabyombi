@@ -19,3 +19,5 @@ export const refs = new Proxy(store, {
     const f = find(ALIAS[k] || k);
     if (f) o[k] = f;
     return f || v || null;
+  },
+  set(o, k, v) { o[k] = v; return true; }
