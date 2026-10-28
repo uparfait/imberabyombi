@@ -2,3 +2,4 @@
    and the sidebar mini calendar; mini_draw() pages it in place (the reference swapped #date-mini's innerHTML). */
 import { ymd, add_d, parse_d, fmt_d, fmt_dt, add_time } from '../lib/index.js';
 import { ic } from '../icons/index.js';
+import { db, ui } from '../store/index.js';
