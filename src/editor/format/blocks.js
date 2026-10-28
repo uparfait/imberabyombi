@@ -12,3 +12,4 @@ export function selected_blocks() {
   return cand.filter(b => !cand.some(o => o !== b && b.contains(o)));
 }
 /* run fn(blocks) as one undo step; a table cell with bare text gets a <p> first so it has a block to style */
+export function with_blocks(fn) {
