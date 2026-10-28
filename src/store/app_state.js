@@ -39,3 +39,5 @@ export function render(keep = false, anim = false) {
   render_flags.keep = keep; render_flags.anim = anim; version++;
   const emit = () => listeners.forEach(fn => fn());
   try { flushSync(emit); } catch { emit(); }
+}
+export const rerender = () => render(true);
