@@ -49,3 +49,4 @@ function on_hover(e) {
 /* capture on window: runs before the pages' own mousedown (caret placement), which never sees a resize drag */
 function on_down(e) {
   if (e.button !== 0 || !col_hover || !pages_el || !pages_el.contains(e.target)) return;
+  e.preventDefault(); e.stopPropagation(); start_col_drag(e);
