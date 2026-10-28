@@ -18,3 +18,4 @@ export function with_blocks(fn) {
   const sel = save_sel(); let blocks = selected_blocks();
   if (!blocks.length && last_range) {
     const td = el_of(last_range.startContainer).closest('td,th');
+    if (td) { const p = el('p'); while (td.firstChild) p.appendChild(td.firstChild); if (!p.firstChild) p.innerHTML = '<br>'; td.appendChild(p); blocks = [p]; }
