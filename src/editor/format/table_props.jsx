@@ -38,3 +38,4 @@ export function table_props_dialog() {
       {num_field('tp_cols', 'Columns', num_props(table_width_cols(chain), 1, 30))}
       {num_field('tp_bw', 'Border width (px)', num_props(isNaN(bw) ? 1 : bw, 0, 10, 0.5))}
       {color_field('tp_bc', 'Border color', '#' + (to_hex(t0.style.getPropertyValue('--bc')) || '000000').toLowerCase())}
+      {num_field('tp_pad', 'Cell padding (pt)', num_props(isNaN(pad) ? 5 : pad, 0, 30, 0.5))}
