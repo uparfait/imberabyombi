@@ -43,3 +43,4 @@ export function blocks_xml(container, ctx, cell_fmt) {
     out += `<w:p>${inline_xml(p, cell_fmt || {}, ctx)}</w:p>`; buf = [];
   };
   container.childNodes.forEach(n => {
+    if (n.nodeType === 1) {
