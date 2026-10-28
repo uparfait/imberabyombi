@@ -39,3 +39,4 @@ export async function prepare_images(root) {
       try {
         const c = document.createElement('canvas'); c.width = im.naturalWidth; c.height = im.naturalHeight; c.getContext('2d').drawImage(im, 0, 0);
         img.setAttribute('src', c.toDataURL('image/png'));
+      } catch (e) { img.remove(); }
