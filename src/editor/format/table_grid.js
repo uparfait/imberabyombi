@@ -2,3 +2,4 @@
    hover to size the table, click to insert it; "Custom size and style…" opens the table dialog. */
 import { ic_html } from '../../icons/index.js';
 import { el } from '../core/index.js';
+import { close_menus } from '../ui/index.js';
