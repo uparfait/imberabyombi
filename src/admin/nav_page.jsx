@@ -13,3 +13,4 @@ const head = (o, icon, text, extra = null) => !o.routed
   : <section aria-label={o.title}>{hero_shell(<div className="relative flex flex-wrap items-end gap-6 px-6 pb-16 pt-8 sm:px-10 sm:pb-20">
       <div className="hero_in min-w-0 flex-1"><p className="text-sm text-fg/60">{o.kicker}</p><h2 className="mt-1 text-3xl text-fg sm:text-5xl">{o.title}</h2>
         <p className="mt-2 max-w-xl text-fg/70">{text}</p>{extra}</div>
+      <span className="hero_in" style={{ '--d': '.1s' }}>{i3(icon, 'h-16 w-16 sm:h-20 sm:w-20')}</span></div>)}</section>;
