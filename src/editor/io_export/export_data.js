@@ -28,3 +28,4 @@ export function export_data(root) {
   Array.from(root.children).forEach(b => {
     if (is_break(b)) return;
     if (is_list(b)) qsa('li', b).forEach(li => {
+      const x = li.cloneNode(true); qsa('ul,ol', x).forEach(n => n.remove()); const s = x.textContent.replace(/\u200b/g, '').trim(); if (s) lines.push(s);
