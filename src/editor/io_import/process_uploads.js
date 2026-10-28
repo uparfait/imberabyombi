@@ -57,3 +57,6 @@ export async function process_uploads(files, mode) {
   if (failed.length) show_failed(failed, done.length);
   else if (notes.length) toast(notes.join(' '), 7000);
   else if (done.length) toast(done.length === 1 ? `Added ${done[0].file.name}` : `Added ${done.length} files`);
+}
+
+/* the system file dialog (any file, several at once); cb gets the chosen files */
