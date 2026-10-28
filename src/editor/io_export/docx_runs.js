@@ -32,3 +32,5 @@ export function fmt_of(e, f) {
     const pt = parse_pt(st.fontSize); if (pt) g.size = pt;
     if (st.fontFamily) g.font = st.fontFamily.split(',')[0].replace(/["']/g, '').trim();
     if (st.verticalAlign === 'super') g.sup = true; if (st.verticalAlign === 'sub') g.sub = true;
+  }
+  return g;
