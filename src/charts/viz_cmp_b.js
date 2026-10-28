@@ -15,3 +15,4 @@ export const VIZ_CMP_B = {
     const c = uwords(6), a = c.map(() => rnd(20, 70) * MARGIN()), b = a.map(x => x + rnd(-15, 35) * MARGIN()), f = frame(w, 230, { l: 82, b: 28 });
     const ax = x_axis(f, Math.max(...a, ...b)), y = band(c.length, f.t, f.t + f.ih);
     return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [[num(a[i]), '2025', 1], [num(b[i]), '2026', 0]], hit_row(f, y, i)
+        + `<line class="mark" x1="${round1(ax.x(a[i]))}" x2="${round1(ax.x(b[i]))}" y1="${round1(y(i))}" y2="${round1(y(i))}"`
