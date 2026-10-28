@@ -39,3 +39,4 @@ export const VIZ_TIME_B = {
   gantt: { t: 'Gantt chart', g: 'time', d: 'Tasks on a timeline, with a today line and milestones.', f(w) {
     const t = uwords(6), wk = 10, d = t.map((_, i) => {
       const s = Math.min(wk - 2, Math.round(i * 1.3 + rnd(0, 1.5))); return { s, e: Math.min(wk, s + Math.round(rnd(2, 4))), done: rnd(0, 1) }; });
+    const f = frame(w, 250, { l: 92, b: 28 }), x = linear(0, wk, f.l, f.l + f.iw), y = band(t.length, f.t, f.t + f.ih), bh = Math.min(18, y.bw * .55), today = 4.4;
