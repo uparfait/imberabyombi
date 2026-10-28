@@ -26,3 +26,4 @@ export const TABLE_ACT = {
   del: t => ask('Delete this record? It will be removed from this browser. You cannot undo this.', async () => {
     close_dialog(qs('#modal')); const tr = document.querySelector(`tr[data-row="${t.dataset.id}"]`);
     if (tr && !reduced()) { await sleep(180); tr.classList.add('row_out'); await sleep(260); }
+    db.remove(t.dataset.col, t.dataset.id); rerender(); tr?.classList.remove('row_out'); notify(`The ${schemas[t.dataset.col].l} was removed.`, 'ok', 'Deleted'); }),
