@@ -45,3 +45,4 @@ function put(sn) {
   const s = sn.sel, sc = s && find(s.a), ec = s && find(s.b), r = sc && ec ? mk_range(sc, s.so, ec, s.eo) : null;
   if (r) {
     const h = editable_of(sc), ae = document.activeElement;
+    if (!ae || ae === document.body || pages_el.contains(ae)) { if (ae !== h) h.focus({ preventScroll: true }); const g = getSelection(); g.removeAllRanges(); g.addRange(r); }
