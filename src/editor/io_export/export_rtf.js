@@ -61,3 +61,5 @@ export async function export_rtf(root, name) {
   const rtf = `{\\rtf1\\ansi\\ansicpg1252\\deff0\\uc1{\\fonttbl${fonts}}{\\colortbl;${colors}}{\\info{\\title ${rtf_esc(state.title)}}}`
     + `\\paperw${tw(win)}\\paperh${tw(hin)}\\margl${tw(m.left)}\\margr${tw(m.right)}\\margt${tw(m.top)}\\margb${tw(m.bottom)}`
     + `${win > hin ? '\\landscape' : ''}\\viewkind4\n${body}}`;
+  download(new Blob([rtf], { type: 'application/rtf' }), name + '.rtf');
+}
