@@ -18,3 +18,4 @@
 /* Comments panel (the engine toggles .show); in a workspace under 62.5rem it covers the pages on a surface */
 #comments_panel {
   position: absolute; right: 0; top: var(--ed_hr); bottom: 0; z-index: 4; display: none; flex-direction: column; width: var(--ed_side); max-width: 100%;
+  padding: 0 .75rem 1.5rem; overflow-y: auto; overscroll-behavior: contain; background: rgb(var(--surface_2));
