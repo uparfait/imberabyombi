@@ -45,3 +45,4 @@
   .kpi .kpi_part { margin-inline: -.375rem; padding: .125rem .375rem; border-radius: .5rem; transition: background-color .15s; }
   .kpi .kpi_part:hover { background: rgb(var(--fg) / .05); }
   .kpi_spark_hit { position: absolute; top: -.25rem; bottom: -.25rem; }
+  .kpi_spark_hit:hover { background: linear-gradient(rgb(var(--muted) / .5), rgb(var(--muted) / .5)) center / 1px 100% no-repeat; }
