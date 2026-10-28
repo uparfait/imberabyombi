@@ -7,3 +7,4 @@ import { hide_img_sel, render_comments } from '../content/index.js';
 export async function export_pdf(scope, name, scale = 2) {
   hide_img_sel();
   try { await Promise.all([load_script(LIB.jspdf), load_script(LIB.h2c)]); }
+  catch (e) { throw new Error('The PDF tools could not be downloaded. Check your internet connection, or use File, then Print, and choose “Save as PDF”.'); }
