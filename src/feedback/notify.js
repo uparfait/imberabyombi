@@ -2,3 +2,4 @@
    the same message inline elsewhere (inline_note), and the message a form leaves for the next page (notify_next). */
 import { qs, esc } from '../lib/index.js';
 import { ic_html } from '../icons/index.js';
+import { reduced, TICON, TTITLE, staff_page } from './basics.js';
