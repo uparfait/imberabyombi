@@ -31,3 +31,4 @@ export async function export_pdf(scope, name, scale = 2) {
         for (let y = 0; y < canvas.height - 4; y += slice_h) {
           const part = document.createElement('canvas'); part.width = canvas.width; part.height = slice_h;
           const ctx = part.getContext('2d'), h = Math.min(slice_h, canvas.height - y); ctx.fillStyle = bg; ctx.fillRect(0, 0, part.width, part.height);
+          ctx.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h);
