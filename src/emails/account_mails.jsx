@@ -10,3 +10,4 @@ const chars = (n, set) => Array.from({ length: n }, () => lorem.pick(set.split('
 
 export const account_mails = () => ({
   reset: { s: 'Reset your password', t: <>
+    <h1 className="mail_h">Reset your password</h1><p>We received a request to reset the password for <b>you@lorem.io</b>. This link works once
