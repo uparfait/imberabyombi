@@ -21,7 +21,7 @@ npm run preview    # check the production build
 Open `#/login`, pick a role, type any email and password, and explore the admin. No backend is needed: demo data
 lives in the browser and can be reset from Settings.
 
-## React Compiler
+## What is inside
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
