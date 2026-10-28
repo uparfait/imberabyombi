@@ -32,3 +32,4 @@ export function data_ur_lto_blob(u) {
   return new Blob([/;base64/i.test(h) ? b64bytes(b) : new TextEncoder().encode(decodeURIComponent(b))], { type: mime });
 }
 export const MIME = { png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif', bmp: 'image/bmp', svg: 'image/svg+xml',
+  webp: 'image/webp', avif: 'image/avif', ico: 'image/x-icon' };
