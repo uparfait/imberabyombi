@@ -1,3 +1,4 @@
 /* base/03_native_elements.css: base layer */
 @layer base {
   /* =====================================================================
+     3. EVERY NATIVE ELEMENT, RESTYLED. :where() keeps specificity at 0,
