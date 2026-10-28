@@ -61,3 +61,4 @@ export function merge_into(a, b) {
 }
 export function insert_at_start(next, nodes) {
   if (!nodes.length) return;
+  const old = first_flow(next);
