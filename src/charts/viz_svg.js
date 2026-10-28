@@ -3,3 +3,5 @@
    Every piece of text goes through esc(); the chart cards insert the finished SVG with dangerouslySetInnerHTML. */
 import { esc } from '../lib/index.js';
 import { round1, compact_num, linear, ticks, fit, tip_text } from './viz_math.js';
+
+/* frame + axes */
