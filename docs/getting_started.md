@@ -22,3 +22,4 @@ Asset paths are relative (`base: './'` in `vite.config.js`), so it also works fr
 ## First tour
 1. The public website opens at `#/` (home, about, mission, vision, strategies, staff, partners, thanks, contact).
 2. The design-system page is at `#/ui`: every component, field, picker and feedback pattern in one place.
+3. Press **Sign in** (or go to `#/login`). Pick a role, type any email and any password, press **Continue**.
