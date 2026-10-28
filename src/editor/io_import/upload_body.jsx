@@ -12,3 +12,4 @@ import { badge, fmt_chip } from './badge.jsx';
 
 export function upload_store(files, m) {
   let s = { files, m }; const subs = new Set();
+  return { get: () => s, set: p => { s = { ...s, ...p }; subs.forEach(f => f()); }, sub: f => { subs.add(f); return () => subs.delete(f); } };
