@@ -36,3 +36,4 @@ export function enhance() {
   if (ui.slide) { slide_in(qsa(ui.slide.sel), ui.slide.n); ui.slide = null; }
   qsa('input[type=file]:not([data-import])').forEach(file_box);
   qsa('[data-type]:not(input)').forEach(typer);
+  qsa('[data-mp]').forEach(init_player);
