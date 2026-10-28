@@ -8,3 +8,4 @@ import { schemas } from '../schemas/index.js';
 import { notify } from '../feedback/index.js';
 import { label, cell } from '../ui/index.js';
 import { modal } from '../overlays/index.js';
+import { kv_table } from './kv_table.jsx';
