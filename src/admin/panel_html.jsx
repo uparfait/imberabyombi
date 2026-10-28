@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { ui } from '../store/index.js';
 import { cfg } from '../config/index.js';
+import { PANELS } from './panels.jsx';
