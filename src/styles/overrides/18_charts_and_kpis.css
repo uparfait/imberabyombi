@@ -10,3 +10,4 @@
   #viz_tip .viz_tip_title { margin-bottom: .25rem; font-size: .75rem; color: rgb(var(--muted)); }
   #viz_tip p:not(.viz_tip_title) { display: flex; align-items: center; gap: .5rem; }
   #viz_tip i { width: .75rem; height: 2.5px; flex: none; border-radius: var(--pill); }
+  #viz_tip b { font-weight: 600; }
