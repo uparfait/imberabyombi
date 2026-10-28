@@ -49,3 +49,4 @@ export function table_props_dialog() {
       </div>
     </>,
     on_submit: f => {
+      const n_rows = clamp(parseInt(f.tp_rows) || 1, 1, 500), n_cols = clamp(parseInt(f.tp_cols) || 1, 1, 30);
