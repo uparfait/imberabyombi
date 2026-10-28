@@ -16,3 +16,5 @@ export const docx_types = (has_header, has_footer) => `${XML}<Types xmlns="http:
   + `${has_header ? `<Override PartName="/word/header1.xml" ContentType="${WP}.header+xml"/>` : ''}`
   + `${has_footer ? `<Override PartName="/word/footer1.xml" ContentType="${WP}.footer+xml"/>` : ''}`
   + '<Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/></Types>';
+
+export const DOCX_RELS = `${XML}<Relationships xmlns="${PR}"><Relationship Id="rId1" Type="${RELNS}/officeDocument" Target="word/document.xml"/>`
