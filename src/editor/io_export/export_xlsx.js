@@ -23,3 +23,4 @@ export function export_xlsx(root, name) {
     { name: '_rels/.rels', data: `${XML}<Relationships xmlns="${XL_PR}"><Relationship Id="rId1" Type="${XL_R}/officeDocument" Target="xl/workbook.xml"/></Relationships>` },
     { name: 'xl/workbook.xml', data: `${XML}<workbook xmlns="${XL_NS}" xmlns:r="${XL_R}"><sheets>`
       + `${sheets.map((s, i) => `<sheet name="${xesc(s.name)}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join('')}</sheets></workbook>` },
+    { name: 'xl/_rels/workbook.xml.rels', data: `${XML}<Relationships xmlns="${XL_PR}">`
