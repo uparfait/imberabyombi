@@ -43,3 +43,4 @@ const DROPS = {
 
 export function install_toolbar(offs) {
   const tb = refs.toolbar;
+  listen(offs, tb, 'mousedown', e => { if (!e.target.closest('input')) e.preventDefault(); });
