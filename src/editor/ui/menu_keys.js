@@ -8,3 +8,4 @@ import { menu_stack, close_menus, menu_rows, focus_row } from './menu_engine.js'
 function bar_step(d) {
   const a = menu_stack[0] && menu_stack[0].anchor, bar = a && a.closest && a.closest('#menubar'); if (!bar) return false;
   const bs = Array.from(bar.querySelectorAll('[data-menu]')), i = bs.indexOf(a), b = bs[(i + d + bs.length) % bs.length];
+  close_menus(0); b.focus(); b.click();
