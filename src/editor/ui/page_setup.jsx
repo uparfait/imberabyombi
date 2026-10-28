@@ -8,3 +8,5 @@ import { modal } from '../../overlays/index.js';
 import { form_msg } from '../../feedback/index.js';
 import { apply_setup } from './view.js';
 import { after_close } from './dialogs.jsx';
+
+const SIDES = ['top', 'bottom', 'left', 'right'];
