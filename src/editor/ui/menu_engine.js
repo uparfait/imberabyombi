@@ -76,3 +76,4 @@ export function open_menu(anchor, items, opts = {}) {
   menu_stack.push({ el: m, anchor, level });
   if (anchor) { anchor.classList.add('open'); if (anchor.hasAttribute('aria-haspopup') || anchor.hasAttribute('aria-expanded')) anchor.setAttribute('aria-expanded', 'true'); }
   if (opts.focus) focus_row(m, menu_rows(m)[0], false);
+  return m;
