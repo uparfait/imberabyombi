@@ -12,3 +12,4 @@ export const STATUS = {
   res: option_list('Pending|Approved|Rejected'), ev: option_list('Planned|Open|Closed|Done'), park: option_list('Parked|Exited')
 };
 export const DEPTS = option_list('Teachers|Kitchen|Cleaners|Security|Administration');
+export const GRADES = option_list('Grade 1|Grade 2|Grade 3|Grade 4|Grade 5|Grade 6');
