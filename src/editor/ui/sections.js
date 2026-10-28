@@ -42,3 +42,4 @@ function rewrite(m, mark) {
   if (mark) mark.setAttribute('data-sec', '');
   const bs = bodies(); bs.forEach((b, i) => { b.innerHTML = i ? '' : m.c.innerHTML; });
   const f = bs[0].querySelector('[data-sec]'); if (f) f.removeAttribute('data-sec');
+  end_op(0, true);
