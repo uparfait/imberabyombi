@@ -22,3 +22,4 @@ const toast_demo = (
 
 export const kit_overlays = () => (
   <>
+    <div className="grid max-w-2xl gap-3">{[0, 1].map(i => (
