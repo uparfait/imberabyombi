@@ -5,3 +5,4 @@
   @keyframes attn { 50% { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .16); } }
   .copy_val { flex: 1; min-width: 0; padding: 0; border: 0; background: none; font-size: .85rem; overflow-wrap: anywhere; color: rgb(var(--fg)); }
   .copy_big { justify-content: space-between; padding: .625rem .625rem .625rem 1.25rem; }
+  .copy_big .copy_val { font-size: 1.875rem; font-weight: 600; letter-spacing: .28em; }
