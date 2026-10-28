@@ -22,3 +22,4 @@
     --scale_phone: 360;      /* every phone (up to 430px wide) shows the 360px design, scaled to its width */
     --scale_desk: 15;        /* root size in px on laptops and desktops (1024px and up) */
     --scale_ref: 1920;       /* your desktop's width: any wider screen shows that same view, scaled up */
+    /* Light theme surfaces */
