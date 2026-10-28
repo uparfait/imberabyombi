@@ -19,3 +19,4 @@ async function odf_inline(cx, n) {
   for (const c of Array.from(n.childNodes)) {
     if (c.nodeType === 3) { h += esc_html(c.data); continue; } if (c.nodeType !== 1) continue;
     const ln = c.localName;
+    if (ln === 's') h += ' '.repeat(+(c.getAttribute('text:c') || 1)); else if (ln === 'tab') h += '\t'; else if (ln === 'line-break') h += '<br>';
