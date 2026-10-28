@@ -22,3 +22,4 @@ export const SER = ['Lorem', 'Ipsum', 'Dolor', 'Amet', 'Elit', 'Magna', 'Sed', '
 export const scale_color = i => `var(--series_${(i % 8) + 1})`;
 /* 0..1 -> light..full brand */
 export const sequential = p => `color-mix(in oklab, rgb(var(--brand)) ${Math.round(12 + p * 88)}%, rgb(var(--surface)))`;
+export const diverging = t => t >= 0
