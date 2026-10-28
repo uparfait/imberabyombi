@@ -17,3 +17,4 @@
   :focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   * { scrollbar-width: thin; scrollbar-color: rgb(var(--brand) / .45) transparent; }
   ::-webkit-scrollbar { width: .6rem; height: .6rem; }
+  ::-webkit-scrollbar-track { background: transparent; }
