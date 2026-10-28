@@ -52,6 +52,8 @@ export function editor_start(root) {
     if (stopped) return;
     set_ready(true); root?.classList.remove('ed_loading'); if (found) render_all();
     t0 = setTimeout(() => { const b = bodies()[0]; if (b) caret_to_start(first_flow(b)); }, 60);
+    if (document.fonts) document.fonts.ready.then(() => { if (!stopped) { reflow(0, true); update_rulers(); } });
+  });
 
   function stop() {
     if (stopped) return;
