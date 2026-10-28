@@ -9,3 +9,4 @@ export const tview_save = c => db.set('tview', { ...db.get('tview', {}), [c]: ui
 
 /* React keeps the column search inputs and the settings ticks across redraws (the reference drew them again), so after a
    draw their values follow ui again: a cleared filter (Clear filters, a hidden column) empties its box. */
+export function sync_tools(c) {
