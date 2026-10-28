@@ -9,3 +9,5 @@ import { num_field, num_props, sel_field, color_field, check_field, POSITIONS } 
 import { refocus_after_close, previewing } from './guards.js';
 
 const VALIGN = [['top', 'Top'], ['middle', 'Middle'], ['bottom', 'Bottom']];
+
+/* applies the dialog values v to the table parts ch (inside tbl_op('props')) */
