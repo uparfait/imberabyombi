@@ -55,3 +55,4 @@ export function mark_outline() {
   const rows = outline_rows(outline_el()); if (!rows.length) return;
   const r = last_range, n = r && r.startContainer.isConnected ? r.startContainer : null, in_body = n && el_of(n) && el_of(n).closest('.pg_body');
   let at = -1;
+  if (in_body) rows.forEach((row, i) => { const h = row._h; if (h === n || (h.compareDocumentPosition(n) & Node.DOCUMENT_POSITION_FOLLOWING)) at = i; });
