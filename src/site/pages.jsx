@@ -33,3 +33,4 @@ export const PAGES = {
 };
 
 export const page_hero = (crumb, title, lead, icon) => (
+  <section className="wrap pt-3 sm:pt-6">{hero_shell(
