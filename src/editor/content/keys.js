@@ -22,3 +22,4 @@ export function handle_tab(e, r, host) {
 
 /* the key was handled: no other listener (template shortcuts) sees it */
 const done = e => { e.preventDefault(); e.stopPropagation(); };
+export function pages_keydown(e) {
