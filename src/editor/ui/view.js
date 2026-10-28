@@ -37,3 +37,4 @@ export function zoom_fit() {
 }
 export function set_mode(mode) {
   state.mode = mode; page_wraps().forEach(set_editable); hide_img_sel();
+  if (refs.toolbar) refs.toolbar.classList.toggle('viewing', mode !== 'edit');
