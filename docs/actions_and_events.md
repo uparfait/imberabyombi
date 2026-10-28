@@ -51,3 +51,4 @@ arrows in menus) · pointer and focus (tooltips, chart hover) · scroll and resi
 · contextmenu (the right-click menu). They are installed once by `boot()`.
 
 ## Keyboard shortcuts
+`Esc` closes the top layer (picker, menu, then dialog) · `Ctrl K` / `⌘K` opens the command palette · `Alt + ↓` or `F4`
