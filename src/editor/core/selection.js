@@ -60,3 +60,4 @@ export function caret_rect(r) {
   const rs = r.getClientRects(); if (rs.length) return rs[rs.length - 1];
   let n = r.startContainer; const c = n.childNodes[r.startOffset];
   if (n.nodeType === 3) n = n.parentElement; else if (c && c.nodeType === 1 && c.tagName !== 'BR') n = c;
+  return n.getBoundingClientRect();
