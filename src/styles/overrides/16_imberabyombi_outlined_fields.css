@@ -13,3 +13,4 @@
   .field:has(> label:not(.sr-only)) :is(input, textarea):not(:focus)::placeholder { color: transparent; }
   .field > select:not(:focus, [data-open]):has(option[value=""]:checked) { color: transparent; }
   .on_bg { --field: var(--bg); }
+  /* Typing hint of date/time fields: what is typed (invisible, keeps the place) + the rest of the format in grey */
