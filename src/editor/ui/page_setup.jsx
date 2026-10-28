@@ -31,3 +31,4 @@ function Page_setup_body() {
         {seg('ori', [['portrait', 'Portrait'], ['landscape', 'Landscape']], s.orientation, null)}</fieldset>
       <div className="field"><label htmlFor="ps_paper">Paper size</label>
         <select id="ps_paper" name="paper" defaultValue={s.paper}>{Object.entries(PAPER).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}</select></div>
+      {SIDES.map(k => <div className="field" key={k}><label htmlFor={'ps_' + k}>{cap(k)} margin (inches)</label>
