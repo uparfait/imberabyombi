@@ -27,3 +27,4 @@ export function layout_page(wrap) {
     hd.style.display = 'none'; ft.style.display = 'none';
   } else {
     page.style.height = h + 'px'; page.style.minHeight = '';
+    Object.assign(body.style, { position: 'absolute', margin: '', minHeight: '', top: m.top * DPI + 'px', bottom: m.bottom * DPI + 'px',
