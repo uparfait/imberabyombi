@@ -21,3 +21,5 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 | wider than `--scale_ref` | The reference desktop view scaled up: a 4K screen looks like the reference, only bigger |
 
 Make your own computer the reference: open the browser console, type `innerWidth`, and set `--scale_ref` to it.
+
+Pages never scroll sideways (`overflow-x: clip` on `html` and `body`); wide content (tables, tab strips) scrolls
