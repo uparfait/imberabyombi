@@ -32,6 +32,9 @@ Build command `npm run build`, output folder `dist`. Add `public/_redirects` (it
 Build command `npm run build`, output folder `dist`. Add `vercel.json` at the project root:
 ```json
 { "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
+```
+
+## Nginx
 ```nginx
 location /assets/ { add_header Cache-Control "public, max-age=31536000, immutable"; }
 location = /index.html { add_header Cache-Control "no-cache"; }
