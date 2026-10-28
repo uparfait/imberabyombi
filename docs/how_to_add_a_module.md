@@ -39,3 +39,4 @@ and add `export * from './transport.jsx';` to `src/modules/index.js` so the file
 
 ## 4. Give roles access
 In `src/auth/roles.jsx`, add `transport:2` (manage) or `transport:1` (view) to the roles in `ROLES0`, or set the levels
+later on the Roles & access page. Super Admin sees every module.
