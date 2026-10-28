@@ -2,3 +2,4 @@
   /* The table scrolls inside the dialog; its COLUMN NAME / VALUE header row stays in place */
   .kv_wrap { overflow: auto; overscroll-behavior: contain; max-height: min(30rem, calc(90dvh - 14rem)); }
   .kv thead th { position: sticky; top: 0; z-index: 1; }
+  .kv thead th { padding-block: .6rem; }
