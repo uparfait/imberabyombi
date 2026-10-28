@@ -45,3 +45,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content img[data-pos="break"][data-align="right"]{margin-left:auto;margin-right:0}',
   '.doc_content td[data-hdr],.doc_content th[data-hdr]{font-weight:700}',
   '.doc_content table[data-style="minimal"] td,.doc_content table[data-style="minimal"] th{border-left-color:transparent;border-right-color:transparent}',
+  '.doc_content .file_chip{display:inline-block;max-width:100%;padding:2px 10px;margin:1px 0;border:1px solid #dadce0;border-radius:14px;background:#f1f3f4;'
