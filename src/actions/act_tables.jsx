@@ -36,3 +36,5 @@ export const TABLE_ACT = {
   export: t => { close_pops(); export_dialog(t.dataset.col, t.dataset.fmt); },
   /* Charts & KPIs: a card opens all its data, a mark only its own; the data table pages 20 rows at a time */
   viz_open: (t, e) => viz.open(t, e),
+  viz_page: t => viz.page(t)
+};
