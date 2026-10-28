@@ -8,3 +8,4 @@ import { pick_any, attach_files } from '../io_import/index.js';
 import { cmd, file_items, edit_items, view_items } from './menus_main.js';
 import { align_items, spacing_items, bullet_items, number_items, text_items, style_items } from './menu_items.jsx';
 import { page_setup_dialog } from './page_setup.jsx';
+import { word_count_dialog, shortcuts_dialog } from './info_dialogs.jsx';
