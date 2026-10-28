@@ -55,3 +55,4 @@ function Download_body({ opt }) {
           <span className="flex items-center border-l border-line bg-surface-2 px-3 text-muted">{'.' + f.ext}</span></div></div>
       <div className="grid gap-1.5"><span className="text-sm text-muted">Format</span>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(12.25rem,1fr))] gap-2" role="radiogroup" aria-label="Format">
+          {FORMATS.map(x => fmt_card(x, x.key === opt.fmt, set('fmt')))}</div></div>
