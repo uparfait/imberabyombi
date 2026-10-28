@@ -9,3 +9,5 @@
   :where(details[open] > summary)::after { transform: rotate(-135deg); }
   :where(details[open] > summary) { border-bottom: 1px solid rgb(var(--line)); }
   details[open] > :not(summary) { animation: rise .35s var(--ease); }
+
+  /* Dialog */
