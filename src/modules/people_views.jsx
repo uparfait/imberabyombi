@@ -24,3 +24,4 @@ VIEWS.staff = () => <>
 
 VIEWS.employees = () => { const t = ui.tab.emp || 'All', rows = db.list('employees');
   return <>{tabs('emp', [['All', 'All', rows.length], ...DEPTS.map(x => [x, x, rows.filter(r => r.dept === x).length])], t)}
+    {crud('employees', { filter: t === 'All' ? null : r => r.dept === t, preset: t === 'All' ? {} : { dept: t }, title: t === 'All' ? 'All employees' : t })}</>; };
