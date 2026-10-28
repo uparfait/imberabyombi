@@ -7,3 +7,4 @@ import { render, render_flags } from '../store/index.js';
 import { request, staff_page, reduced } from '../feedback/index.js';
 
 /* the base path without its last slash: '' when the site sits at the domain root, '/repo' under https://host/repo/ */
+const BASE = new URL(import.meta.env.BASE_URL || '/', location.origin).pathname.replace(/\/+$/, '');
