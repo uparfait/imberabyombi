@@ -20,3 +20,4 @@ export * from './outline_rows.jsx';
 export * from './tabs.jsx';
 export * from './sidebar.js';
 export * from './pages_panel.js';
+export * from './rulers.js';
