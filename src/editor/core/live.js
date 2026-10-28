@@ -41,3 +41,4 @@ function put(sn) {
   while (ws.length < sn.html.length) { pages_el.appendChild(create_page()); ws = page_wraps(); }
   while (ws.length > sn.html.length) ws.pop().remove();
   bodies().forEach((b, i) => { if (b.innerHTML !== sn.html[i]) b.innerHTML = sn.html[i]; });
+  layout_after();
