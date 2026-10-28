@@ -33,3 +33,4 @@ export const EDITOR_MEDIA_PATHS = {
   picture_in_picture: WIDE + 'M12 11h6v5h-6z',
   flip_to_front: 'M10 10h10v10H10zM14 10V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h5',
   flip_to_back: 'M4 4h10v10H4zM14 10h5a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1v-5',
+  format_image_left: 'M3 4h8v8H3zM14 5h7M14 8.5h7M14 12h7M3 16h18M3 20h12',
