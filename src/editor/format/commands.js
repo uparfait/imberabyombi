@@ -13,3 +13,5 @@ export function exec(cmd, val) {
   document.execCommand(cmd, false, val);
   if (host && host.classList.contains('pg_body')) schedule_reflow(body_index(host));
   commit_soon(); refresh_toolbar();
+}
+/* wrap the selected text in spans (class cls, attributes attrs) and select them; returns the spans */
