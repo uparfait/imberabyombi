@@ -60,3 +60,4 @@ export async function process_uploads(files, mode) {
 }
 
 /* the system file dialog (any file, several at once); cb gets the chosen files */
+export function pick_any(cb) {
