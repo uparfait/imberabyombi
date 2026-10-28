@@ -4,3 +4,4 @@ export * from './table_view.js';
 export * from './col_filter.jsx';
 export * from './table_parts.jsx';
 export * from './rows.js';
+export * from './table_body.jsx';
