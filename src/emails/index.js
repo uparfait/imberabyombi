@@ -2,3 +2,4 @@
    picker) and the Site map page block. Import from here: import { emails_view, MAILS } from '../emails/index.js' */
 export * from './mails.jsx';
 export * from './mail_body.jsx';
+export * from './mail_view.jsx';
