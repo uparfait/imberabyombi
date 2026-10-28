@@ -25,3 +25,4 @@ export function table_menu_items() {
     { label: 'Unmerge cell', icon: 'call_split', action: () => tbl_op('split') },
     { label: 'Make columns equal width', icon: 'view_column', action: () => tbl_op('distribute') },
     { sep: true },
+    { label: 'Table style', icon: 'style', sub: () => TABLE_PRESETS.map(p => ({ label: p.label, action: () => tbl_op('preset', p.key) })) },
