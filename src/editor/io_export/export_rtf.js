@@ -18,3 +18,4 @@ function rtf_table(rx, t) {
   const rows = Array.from(t.rows); if (!rows.length) return '';
   const n = Math.max(1, ...rows.map(r => Array.from(r.cells).reduce((a, c) => a + (c.colSpan || 1), 0)));
   const col_w = Math.round(rx.content_tw * (parseFloat(t.style.width) || 100) / 100 / n);
+  const bw = parseFloat(t.style.getPropertyValue('--bw')), bwv = isNaN(bw) ? 1 : bw;
