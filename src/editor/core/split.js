@@ -12,3 +12,4 @@ export function split_text(block, b, next) {
   const cum = []; let total = 0; tn.forEach(t => { cum.push(total); total += t.length; });
   if (total < 2) return false;
   const limit = b.getBoundingClientRect().bottom - 1;
+  const rng = document.createRange();
