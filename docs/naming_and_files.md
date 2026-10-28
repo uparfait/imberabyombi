@@ -19,3 +19,4 @@ Short files are easy to review, easy to replace and load only what a page needs.
 | Action and form names        | snake_case                     | `data-act="task_open"`, `data-form="login"` |
 
 React needs a capital first letter to tell a component from an HTML tag, so components are `Capital_snake`.
+Names the tools require keep their own spelling: `index.html`, `package.json`, `vite.config.js`,
