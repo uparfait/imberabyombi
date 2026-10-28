@@ -10,3 +10,4 @@ const XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
 const OX = 'application/vnd.openxmlformats-officedocument.spreadsheetml';
 
 export function export_xlsx(root, name) {
+  const sheets = export_data(root), used = new Set();
