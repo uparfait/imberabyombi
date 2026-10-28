@@ -14,3 +14,4 @@ export function load_project(d) {
   state.setup = Object.assign(default_setup(), setup_of(d.setup)); state.setup.margins = Object.assign(default_setup().margins, (d.setup || {}).margins || {});
   state.tabs = d.tabs.map(t => Object.assign(new_tab(String(t.name || 'Tab'), sanitize_html(String(t.html || ''))), { id: t.id || uid() }));
   state.active = state.tabs.some(t => t.id === d.active) ? d.active : state.tabs[0].id;
+  state.comments = Array.isArray(d.comments) ? d.comments.filter(c => c && c.id).map(c => Object.assign({ replies: [] }, c, { draft: false })) : [];
