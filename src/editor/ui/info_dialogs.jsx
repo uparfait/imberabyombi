@@ -41,3 +41,4 @@ const KEYS = [['Bold / Italic / Underline', 'Ctrl+B / I / U'], ['Strikethrough',
 export function shortcuts_dialog() {
   modal({
     title: 'Keyboard shortcuts',
+    body: <div className="sm:col-span-2"><table className="w-full"><tbody>{KEYS.map(([a, b]) =>
