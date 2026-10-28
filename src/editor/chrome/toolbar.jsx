@@ -52,3 +52,4 @@ export const toolbar = () => (
       <span className="color_a"><span className="a">A</span><span className="bar" id="color_bar" style={{ background: '#000' }}></span></span></button>
     {tb({ icon: 'ink_highlighter', tip: 'Highlight color', id: 'hilite_btn' })}
     {sep()}
+    {tb({ ed: 'link', icon: 'link', tip: 'Insert link (Ctrl+K)' })}
