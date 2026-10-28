@@ -12,3 +12,4 @@ import { login_page, forgot_page, verify_page, authenticator_page, set_password_
 import { set_meta } from './parse.js';
 
 export function public_page(r) {
+  const k = r.path.slice(1); let inner, title;
