@@ -29,3 +29,4 @@ export function fmt_of(e, f) {
     const td = st.textDecorationLine || st.textDecoration || ''; if (/underline/.test(td)) g.u = true; if (/line-through/.test(td)) g.s = true;
     if (st.color) g.color = to_hex(st.color) || g.color;
     if (st.backgroundColor) { const h = to_hex(st.backgroundColor); g.hl = h; }
+    const pt = parse_pt(st.fontSize); if (pt) g.size = pt;
