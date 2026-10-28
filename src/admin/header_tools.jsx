@@ -14,3 +14,4 @@ export function header_tools(n = '') {
       <a className="icon_btn hidden sm:inline-grid" href="#/ui" aria-label="Design system">{ic('layers')}</a>
       {theme_btn()}
       <div className="relative">
+        <button className="ml-1 rounded-full" data-act="pop" data-pop={`pop_account${n}`} aria-label="Account">{avatar(u.name, 'h-9 w-9 text-sm')}</button>
