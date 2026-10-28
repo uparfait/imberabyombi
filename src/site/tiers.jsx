@@ -24,3 +24,4 @@ export function tiers() {
         <tbody>{[0, 1, 2, 3, 4].map(i => {
           const n = cap(lorem.w(1));
           return (
+            <tr key={i} data-act="row" data-title={n} tabIndex={0} className="cursor-pointer">
