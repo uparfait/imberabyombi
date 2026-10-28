@@ -31,3 +31,4 @@ export function perm_change(t) {
 }
 
 export function import_change(t) {
+  request(() => t.files[0].text().then(txt => {
