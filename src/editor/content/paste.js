@@ -43,3 +43,4 @@ export async function paste_from_clipboard(plain) {
 }
 /* files dropped anywhere while the editor is on screen (a dialog's own drop zone handles its drops) */
 export function drop_handler(e) {
+  const files = Array.from((e.dataTransfer && e.dataTransfer.files) || []); if (!files.length) return;
