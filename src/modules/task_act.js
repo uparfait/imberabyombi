@@ -12,3 +12,5 @@ import { task_view, task_refresh } from './task_view.jsx';
 import { tv_api } from './tv_state.js';
 import { SUB_ACT } from './sub_act.js';
 import { TV_ACT } from './tv_act.js';
+
+let shown = 0;   /* each preview is new content (its text is read again, its media start over) */
