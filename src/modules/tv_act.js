@@ -17,3 +17,4 @@ const status_box = t => t.closest('[data-tv-status]');
 
 /* a date row's value against the other date: the start never comes after the due / completed time */
 function date_err(k, v, r) {
+  const s = k === 'start' ? v : r.start, e = k === 'due' || k === 'end' ? v : r.status === 'Done' ? r.end : r.due;
