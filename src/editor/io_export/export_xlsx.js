@@ -14,3 +14,5 @@ export function export_xlsx(root, name) {
   sheets.forEach(s => {
     let n = s.name.replace(/[\\/?*\[\]:]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 31) || 'Sheet'; const b = n.slice(0, 26); let k = 2;
     while (used.has(n.toLowerCase())) n = `${b} (${k++})`; used.add(n.toLowerCase()); s.name = n;
+  });
+  const files = [
