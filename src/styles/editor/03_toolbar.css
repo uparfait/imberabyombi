@@ -47,3 +47,5 @@
   width: 2.375rem; height: 1.5rem; min-height: 0; margin: 0 .125rem; padding: 0; border: 1px solid rgb(var(--muted) / .6);
   border-radius: calc(var(--radius) * .375); background: transparent; color: rgb(var(--fg));
   font: 500 .8125rem/1 var(--font_sans); text-align: center; text-overflow: clip;
+}
+.size_box:hover { border-color: rgb(var(--fg) / .8); }
