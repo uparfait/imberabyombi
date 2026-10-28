@@ -13,3 +13,4 @@ export function authenticator_page() {
     <form data-form="otp" className="on_bg mt-8 grid gap-6" noValidate><div data-msg-slot="" className="empty:hidden"></div>
       <input type="hidden" name="setup" defaultValue="1" />
       <ol className="auth_steps">
+        <li><p><b className="font-medium">Scan this QR code</b> with the app.</p>
