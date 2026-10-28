@@ -9,3 +9,4 @@ function on_link(e) {
   if (!href || href.startsWith('#') || a.hasAttribute('download') || (target && target !== '_self')) return;
   const u = new URL(href, location.href);
   if (u.origin !== location.origin || !in_base(u.pathname) || /\.[a-z0-9]+$/i.test(u.pathname)) return;
+  if (u.hash && u.pathname + u.search === location.pathname + location.search) return;   /* a #fragment of this page */
