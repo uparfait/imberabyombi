@@ -13,3 +13,4 @@ export const form_obj = f => { const d = Object.fromEntries(new FormData(f));
 /* After switching 12h ↔ 24h: every time field on screen converts its value and its format hints */
 export function dt_refresh() {
   qsa('input[data-type=time], input[data-type=datetime-local]').forEach(i => { const t = i.dataset.type, s = dt_spec(t);
+    if (i.value) i.value = t === 'time' ? dt_show(t, to24(i.value)) : (([dd, ...tm]) => tm.length ? `${dd} ${dt_show('time', to24(tm.join(' ')))}` : dd)(i.value.trim().split(' '));
