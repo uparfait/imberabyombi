@@ -14,6 +14,7 @@ export function rows_of(c) {
 }
 
 /* Draw the table again from data + ui: rows, count, pager, Action Buttons column. The whole page redraws (rerender)
+   and React keeps every node that did not change, so only what changed in the table reaches the DOM. No table on screen: nothing. */
 export function refresh(c) { if (!document.getElementById('table_body_' + c)) return; rerender(); }
 
 /* First view: one timer per collection. It survives redraws of the same page (so a second table's spinner is not
