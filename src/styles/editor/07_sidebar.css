@@ -60,3 +60,4 @@ input.tab_filter, .tab_filter input {
   color: rgb(var(--muted)); opacity: 0; transition: opacity .15s, background-color .15s; }
 .outline_more svg { width: 1rem; height: 1rem; }
 .outline_more:hover { background: rgb(var(--fg) / .08); color: rgb(var(--fg)); }
+.outline_row:hover .outline_more, .outline_row:focus-within .outline_more, .outline_row:focus .outline_more, .outline_more.open { opacity: 1; }
