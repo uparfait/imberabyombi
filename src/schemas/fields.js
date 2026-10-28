@@ -19,3 +19,4 @@ export const names = (...cs) => uniq(cs.flatMap(c => db.list(c).map(r => r.name)
 export const people = () => uniq([...names('staff'), ...names('employees')]);
 export const mail = n => n.toLowerCase().replace(/\s+/g, '.') + '@lorem.io';
 export const tel = () => `+250 7${lorem.int(2, 9)}${lorem.int(0, 9)} ${lorem.int(100, 999)} ${lorem.int(100, 999)}`;
+export const slot_ids = () => Array.from({ length: cfg.parking_slots }, (_, i) => 'P' + pad(i + 1));
