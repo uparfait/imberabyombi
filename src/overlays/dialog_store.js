@@ -20,3 +20,4 @@ export function set_dialog(id, content) {
 export const run_view = v => { try { return typeof v === 'function' ? v() : v; } catch (e) { console.error(e); return null; } };
 
 /* A dialog that has closed drops its content (the reference emptied #viewer; the others are refilled when they open) */
+for (const id of Object.keys(DIALOGS)) document.getElementById(id)?.addEventListener('close', e => { if (!e.target.open && DIALOGS[id]) set_dialog(id, null); });
