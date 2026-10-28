@@ -12,3 +12,4 @@ const row = i => {
   const n = lorem.name();
   return (
     <tr key={i} data-act="row" data-title={n} tabIndex={0} className="cursor-pointer"><td>{person(n)}</td><td>{badge(lorem.pick(['Active', 'Pending', 'Closed']))}</td>
+      <td>{bar_cell(lorem.int(10, 90), 100)}</td><td className="text-right tabular-nums">{money(lorem.int(100, 900))}</td></tr>
