@@ -17,3 +17,4 @@ export const VIZ_CMP_B = {
     return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [[num(a[i]), '2025', 1], [num(b[i]), '2026', 0]], hit_row(f, y, i)
         + `<line class="mark" x1="${round1(ax.x(a[i]))}" x2="${round1(ax.x(b[i]))}" y1="${round1(y(i))}" y2="${round1(y(i))}"`
         + ` style="stroke:rgb(var(--muted));stroke-width:2"/>` + dot(ax.x(a[i]), y(i), 'var(--series_2)') + dot(ax.x(b[i]), y(i), 'var(--series_1)'))
+        + row_label(f, y, i, k)).join(''), 'Dumbbell chart'),
