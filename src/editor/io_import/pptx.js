@@ -45,3 +45,7 @@ async function slide_html(z, sp, i) {
       if (tbl) {
         const rows = kids(tbl, 'tr').map(tr => kids(tr, 'tc').map(tc => by_tag(tc, 'p').map(p => p.textContent).join('\n')));
         if (rows.length) body += rows_to_table(rows, true);
+      }
+    }
+  }
+  let notes = '';
