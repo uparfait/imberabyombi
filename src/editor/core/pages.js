@@ -11,3 +11,4 @@ export function create_page() {
     + '<div class="pg_footer"><div class="pg_footer_text" data-ph="Footer"></div><span class="pg_num"></span></div></div>';
   qs('.pg_header', wrap).innerHTML = state.setup.header_html;
   qs('.pg_footer_text', wrap).innerHTML = state.setup.footer_html;
+  layout_page(wrap); set_editable(wrap);
