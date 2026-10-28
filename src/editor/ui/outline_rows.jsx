@@ -17,3 +17,4 @@ function go(row) {
 /* after a move: the outline now; the keyboard stays on the moved heading's row when the move came from it */
 function moved(f, kb) {
   if (!f) return;
+  render_outline();
