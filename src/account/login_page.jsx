@@ -21,3 +21,4 @@ export function login_page(r) {
       {role_part(inv, rs, sel)}
       <div className="field"><label htmlFor="signin_name">Full name</label>
         <input id="signin_name" name="name" autoComplete="name" defaultValue={r.q.name || ''} placeholder="Lorem Ipsum" /></div>
+      <div className="field"><label htmlFor="signin_email">Email</label>
