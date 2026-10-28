@@ -64,3 +64,4 @@ export function flip_image(img, axis) {
 /* back to the uploaded picture at its natural width (it loads the original first, so it is never previewed) */
 export async function reset_image(img) {
   img = img_now(img); if (!img || previewing()) return;
+  const o = img.getAttribute('data-orig') || img.getAttribute('src'); let w = img.offsetWidth;
