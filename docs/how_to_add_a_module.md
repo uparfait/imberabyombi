@@ -36,3 +36,5 @@ import { crud } from '../table/index.js';
 VIEWS.transport = () => crud('buses', { title: 'Buses' });
 ```
 and add `export * from './transport.jsx';` to `src/modules/index.js` so the file loads.
+
+## 4. Give roles access
