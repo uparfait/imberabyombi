@@ -65,3 +65,4 @@ export function insert_at_start(next, nodes) {
   const frag = document.createDocumentFragment(); nodes.forEach(n => frag.appendChild(n));
   next.insertBefore(frag, next.firstChild);
   if (old && old.hasAttribute('data-cont')) {
+    const prev = prev_flow(old);
