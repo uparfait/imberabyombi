@@ -46,3 +46,4 @@ export function html_to_md(root) {
     else if (is_list(b)) blocks.push(list(b, 0));
     else if (is_table(b)) blocks.push(table(b));
     else if (t === 'HR') blocks.push('---');
+    else if (is_break(b)) blocks.push('<div style="page-break-after: always"></div>');
