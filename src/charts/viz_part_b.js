@@ -12,3 +12,4 @@ export const VIZ_PART_B = {
     const f = frame(w, 260, { l: 0, r: 0, t: 6, b: 6 }), rad = Math.min(120, f.ih / 2), cx = f.w / 2, cy = f.t + f.ih / 2; let a = 0, parts = '';
     kids.forEach((ch, gi) => { const gv = ch.reduce((s, o) => s + o.v, 0), g0 = a;
       ch.forEach((o, j) => { const a0 = a; a += o.v / tot * Math.PI * 2;
+        parts += mark_group(o.k, [[num(o.v), groups[gi], gi]], ring(arc(cx, cy, rad * .62, rad, a0, a),
