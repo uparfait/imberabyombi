@@ -22,3 +22,4 @@ export function apply_tokens() {
   if (t.radius != null) s.setProperty('--radius', t.radius + 'rem');
   if (t.space != null) s.setProperty('--space', t.space + 'rem');
   if (t.font) s.setProperty('--font_sans', `"${t.font}", system-ui, sans-serif`);
+  redraw_charts(); hex_refresh();
