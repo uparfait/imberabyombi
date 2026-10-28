@@ -6,3 +6,5 @@ import { route, set_route, render_flags, get_version } from '../store/index.js';
 import { parse, set_meta } from './parse.js';
 import { public_page, admin_page, AUTH_ROUTES, error_page } from './pages.jsx';
 import { skip_after_render } from './render_hooks.js';
+
+/* A view that fails while React draws it (a component inside the page) shows the same error page; the next draw tries again */
