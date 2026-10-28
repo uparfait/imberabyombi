@@ -22,3 +22,4 @@ export function export_dialog(c, fmt) {
   const sels = s.cols.map(k => s.f.find(f => f.k === k)).filter(f => f?.t === 'select');   /* fixed-choice columns (status, priority…) become filters */
   const help = `Rows that match the table's search${dk ? `, with ${label(c, dk).toLowerCase()} between the two times (leave them empty for all)` : ''}`
     + `${sels.length ? ' and the filters (All keeps every value)' : ''}. Tick the columns to include and change what each is shown as in the file.`;
+  modal({ title: `Export as ${name}`, help,
