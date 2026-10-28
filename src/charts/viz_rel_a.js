@@ -42,3 +42,4 @@ export const VIZ_REL_A = {
     const k = ['Visits', 'Signups', 'Revenue', 'Costs', 'Tickets', 'Churn'], n = k.length, m = k.map((_, i) => k.map((__, j) => i === j ? 1 : null));
     for (let i = 0; i < n; i++) for (let j = 0; j < i; j++) m[i][j] = m[j][i] = round1(Math.max(-1, Math.min(1, (i + j) % 3 ? rnd(-.9, .95) : rnd(-.3, .3))) * 100) / 100;
     const f = frame(w, 270, { l: 64, t: 12, b: 50, r: 10 }), cs = Math.min(f.iw, f.ih) / n, x0 = f.l, y0 = f.t;
+    return { svg: svg(f, m.map((r, i) => r.map((c, j) => mark_group(`${k[i]} × ${k[j]}`, [[c.toFixed(2), 'Correlation', null]],
