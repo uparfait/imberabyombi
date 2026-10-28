@@ -28,3 +28,4 @@ function keep_style(c, tag) {
     if (IMG_ONLY_STYLE.has(p) && tag !== 'IMG') return;
     if (p.startsWith('--') && tag !== 'TABLE') return;
     const val = c.style.getPropertyValue(p);
+    if (val && !/expression|url\(/i.test(val)) out.push(`${p}:${val.trim()}`);
