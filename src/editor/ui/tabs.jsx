@@ -25,3 +25,5 @@ export function next_tab_name() {
 export function add_tab() {
   save_tab(); const t = new_tab(next_tab_name()); state.tabs.push(t); show(t.id);
   setTimeout(() => { const b = bodies()[0]; if (b) caret_to_start(first_flow(b)); }, 30);
+}
+/* d: +1 next, -1 previous (wraps around) */
