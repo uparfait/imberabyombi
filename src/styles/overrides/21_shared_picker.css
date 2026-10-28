@@ -10,3 +10,4 @@
   .pk_none { padding: .75rem 1rem; font-size: .85rem; color: rgb(var(--muted)); }
   .pk_box { width: 1.125rem; height: 1.125rem; flex-shrink: 0; border: 2px solid rgb(var(--muted)); border-radius: calc(var(--radius) * .125); background: center / 85% no-repeat; }
   .pk_item[aria-selected=true] .pk_box { border-color: rgb(var(--brand)); background-color: rgb(var(--brand));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E"); }
