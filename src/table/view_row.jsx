@@ -16,3 +16,4 @@ export function view_row(c, id) {
   const sec = Object.entries(s.sec || {}).map(([g, ks]) => [g, ks.split(',')]), seen = new Set(sec.flatMap(([, ks]) => ks)), rest = s.f.map(f => f.k).filter(k => !seen.has(k));
   const groups = [...(rest.length ? [[sec.length ? 'Other' : '', rest]] : []), ...sec].map(([g, ks]) => [g, ks.map(k => [label(c, k), cell(c, k, r)])]);
   if (rest.length && sec.length) groups.push(groups.shift());
+  modal({ title: String(r[k0] || cap(s.l)), help: `${cap(s.l)}: every detail of this record, grouped by section.`, body: kv_table(groups),
