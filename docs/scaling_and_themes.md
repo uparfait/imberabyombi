@@ -26,3 +26,4 @@ Pages never scroll sideways (`overflow-x: clip` on `html` and `body`); wide cont
 inside its own box. Nested scroll areas hand the wheel back to the page at their end.
 
 ## Themes: light, dark or system
+- The choice is stored under the `theme` key. A tiny script in `index.html` applies it before the first paint,
