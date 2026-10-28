@@ -13,3 +13,4 @@ export const tasks_schema = {
     field_spec('assignee', 'Assigned to', 'select', () => uniq([me(), ...people()]).map(n => [n, n === me() ? n + ' (You)' : n]), 1),
     field_spec('by', 'Assigned by', 'hidden', 0, 0, { def: () => me() }),
     field_spec('status', 'Status', 'select', STATUS.task, 1, { def: () => 'To do' }),
+    field_spec('start', 'Start', 'datetime-local', 0, 0, { def: () => now_dt() }),
