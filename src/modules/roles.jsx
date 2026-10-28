@@ -14,3 +14,4 @@ const matrix = (sel, edit) => <div className="overflow-x-auto"><table><thead><tr
   {LV.map(x => <th key={x} scope="col" className="text-center">{x}</th>)}</tr></thead>
   <tbody>{MODS.map(m => <tr key={m.k}><th scope="row" className="bg-transparent text-sm font-medium text-fg"><span className="flex items-center gap-3">
     {ic(m.i, 'h-4 w-4 text-muted')}{m.l}</span></th>
+    {[0, 1, 2].map(v => <td key={v} className="text-center">
