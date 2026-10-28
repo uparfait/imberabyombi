@@ -42,3 +42,4 @@ export function restyle_table(chain) {
   }));
 }
 /* each cell of a row with the grid columns it covers: [{ cell, start, end }] */
+export function row_slots(row) { let c = 0; return Array.from(row.cells).map(cell => { const s = c; c += cell.colSpan || 1; return { cell, start: s, end: c - 1 }; }); }
