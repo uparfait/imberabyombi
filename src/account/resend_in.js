@@ -6,3 +6,4 @@ import { TIMERS } from '../store/index.js';
 
 export function resend_in(n) {
   const b = qs('#otp_resend'); if (!b) return; let s = n; b.disabled = true;
+  const tick = () => { if (!b.isConnected) return; b.textContent = s > 0 ? `Resend in ${s}s` : 'Resend code'; b.disabled = s > 0; s--; };
