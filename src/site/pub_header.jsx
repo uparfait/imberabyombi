@@ -4,6 +4,7 @@ import { ic } from '../icons/index.js';
 import { logo, theme_btn } from '../ui/index.js';
 import { route } from '../store/index.js';
 import { PUB } from './site_bits.jsx';
+import { to } from '../router/index.js';
 
 export function pub_header() {
   const cur = route.path.slice(1);
