@@ -21,3 +21,4 @@ export const ACTIONS = {
   find: () => open_find(), undo: () => undo(), redo: () => redo(), print: () => do_print(), upload: () => open_upload_dialog(),
   download: () => open_download_dialog(), spell: () => toggle_spell(), paint: () => start_paint(),
   size_down: () => bump_size(-1), size_up: () => bump_size(1), bold: () => exec('bold'), italic: () => exec('italic'), underline: () => exec('underline'),
+  link: () => open_link_dialog(), comment: () => add_comment(), checklist: () => toggle_checklist(), bullets: () => toggle_list('UL'),
