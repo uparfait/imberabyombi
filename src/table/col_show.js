@@ -11,3 +11,5 @@ export function col_show(c, k, on) {
     if (!reduced()) cells().forEach(e => e.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 240, easing: 'ease-out' })); return; }
   if (ui.q[c]?.[k]) ui.q[c] = { ...ui.q[c], [k]: '' };   /* a hidden column no longer filters the rows */
   const anims = reduced() ? [] : cells().map(e => e.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, easing: 'ease-in', fill: 'forwards' }));
+  Promise.all(anims.map(a => a.finished)).then(() => { if (th) th.hidden = true; anims.forEach(a => a.cancel()); refresh(c); });
+}
