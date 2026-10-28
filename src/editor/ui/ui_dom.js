@@ -10,3 +10,5 @@ export function scaled(n) { return n * rem() / 16; }
 export function listen(offs, t, type, fn, o) {
   if (!t) return;
   t.addEventListener(type, fn, o); offs.push(() => t.removeEventListener(type, fn, o));
+}
+/* run every cleanup of a list, newest first */
