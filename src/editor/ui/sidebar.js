@@ -70,3 +70,4 @@ function filter_box(focus) {
     else if (e.key === 'Enter') { e.preventDefault(); const r = qsa('.tab_row', refs.tab_list).find(x => !x.hidden); if (r) switch_tab(r.dataset.id); }
   });
   if (focus) setTimeout(() => { inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length); }, 0);
+  return inp;
