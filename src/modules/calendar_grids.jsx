@@ -47,3 +47,4 @@ export function month_grid(d, items) {
   const cell = i => { const x = add_d(s, i), k = ymd(x), its = items.filter(it => it.date === k);
     const out = x.getMonth() !== d.getMonth() ? 'bg-surface-2/60' : '';
     return <div key={k} className={`min-h-[6.5rem] min-w-0 border-b border-r border-line p-1 sm:p-1.5 ${out}`} data-act="slot" data-d={k}>
+      <span className={`mx-auto mb-1 grid h-7 w-7 place-items-center rounded-full text-xs ${k === td ? 'bg-brand text-white' : 'text-muted'}`}>{x.getDate()}</span>
