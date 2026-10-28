@@ -81,3 +81,4 @@ export function restore_focus() {
   }
   if (last_range && last_host && last_host.isConnected && last_range.startContainer.isConnected) {
     if (document.activeElement !== last_host) last_host.focus({ preventScroll: true });
+    const s = getSelection(); s.removeAllRanges(); s.addRange(last_range.cloneRange()); return last_host;
