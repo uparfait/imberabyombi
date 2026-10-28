@@ -20,3 +20,4 @@ export function x_axis(f, hi, lo = 0, fmt = compact_num) {
     + `<text x="${round1(x(v))}" y="${f.h - 8}" text-anchor="middle">${fmt(v)}</text>`).join('') };
 }
 export const chart_base = (f, y) => `<line class="base_line" x1="${f.l}" x2="${f.w - f.r}" y1="${round1(y)}" y2="${round1(y)}"/>`;
+export const band = (n, a, b) => { const bw = (b - a) / n; const x = i => a + bw * i + bw / 2; x.bw = bw; return x; };
