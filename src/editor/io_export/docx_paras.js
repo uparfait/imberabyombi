@@ -21,3 +21,5 @@ export function p_pr_xml(e, extra = '') {
   let alv = st.textAlign || (e.getAttribute && e.getAttribute('align'));
   if (!alv && e.querySelector) {
     const im = e.querySelector(':scope > img[data-pos="break"]'); if (im && !e.textContent.replace(/\u200b/g, '').trim()) alv = im.getAttribute('data-align') || '';
+  }
+  const al = JC[alv]; if (al) x += `<w:jc w:val="${al}"/>`;
