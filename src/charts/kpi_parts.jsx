@@ -11,3 +11,4 @@ export function spark(v, hi = true, labels = null, fmt = num, name = 'Value', w 
   const mx = Math.max(...v), mn = Math.min(...v), x = linear(0, v.length - 1, 2, w - 4), y = linear(mn, mx || 1, h - 4, 4), pts = v.map((n, i) => [x(i), y(n)]);
   const [ex, ey] = pts.at(-1), step = (w - 6) / (v.length - 1);
   return (
+    <div className="kpi_spark">
