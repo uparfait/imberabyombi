@@ -12,3 +12,4 @@ const BASE = new URL(import.meta.env.BASE_URL || '/', location.origin).pathname.
 /* to('/admin/tasks') → '/admin/tasks' (or '/repo/admin/tasks'): use it for every href */
 export const to = (path = '/') => BASE + '/' + String(path).replace(/^\/+/, '');
 /* is this pathname inside the site (under the base path)? */
+export const in_base = p => !BASE || p === BASE || p.startsWith(BASE + '/');
