@@ -33,3 +33,4 @@ export const PALETTE = [
   ['#5b0f00', '#660000', '#783f04', '#7f6000', '#274e13', '#0c343d', '#1c4587', '#073763', '#20124d', '#4c1130']
 ];
 /* lazy-loaded libraries (load_script tries each URL in turn) */
+export const LIB = {
