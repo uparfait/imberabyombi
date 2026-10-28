@@ -23,3 +23,4 @@ function Text_pre({ url }) {
 }
 
 /* how each kind shows inside the view; a kind not listed opens in the full viewer */
+const MEDIA = {
