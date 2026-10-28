@@ -18,3 +18,4 @@ export function longform(k) {
     <><figure><img src={cfg.img(k + i, 1200, 700)} alt={lorem.t(4)} width="1200" height="700" loading="lazy" /><figcaption>{lorem.s(6, 10)}</figcaption></figure>
       <p>{lorem.p(3)}</p></>,
     <><blockquote><p>{lorem.s(14, 22)}</p><footer className="mt-2 text-sm"><cite>{lorem.name()}</cite></footer></blockquote><h4>{lorem.t(3)}</h4><p>{lorem.p(2)}</p>
+      <dl>{[0, 1, 2].map(j => <Fragment key={j}><dt>{lorem.t(2)}</dt><dd>{lorem.s()}</dd></Fragment>)}</dl></>,
