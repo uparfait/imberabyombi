@@ -31,3 +31,4 @@ it was; click to keep it (one undo step). The selection stays selected while you
 | Keys | Action | Keys | Action |
 |---|---|---|---|
 | Ctrl B / I / U | bold / italic / underline | Ctrl K | insert link |
+| Ctrl Z / Y | undo / redo | Ctrl F | find and replace |
