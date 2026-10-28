@@ -11,3 +11,4 @@
 .slider_row input[type=range] { width: 100%; accent-color: rgb(var(--brand)); }
 
 /* Crop: drag a rectangle over the picture; outside it is dimmed (a wide outline, not a shadow) */
+.crop_stage {
