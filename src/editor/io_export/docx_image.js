@@ -48,3 +48,4 @@ export function abstract_xml(kind, id) {
   const bullets = { disc: ['•', '◦', '▪'], circle: ['◦'], square: ['▪'] };
   let lv = '';
   for (let l = 0; l < 9; l++) {
+    let fmt, text;
