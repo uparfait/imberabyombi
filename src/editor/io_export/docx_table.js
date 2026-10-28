@@ -29,3 +29,5 @@ export function table_xml(t, ctx) {
       let inner = blocks_xml(c, ctx, (c.tagName === 'TH' || c.hasAttribute('data-hdr')) ? { b: true } : null); if (!/<\/w:p>$|<w:p\/>$/.test(inner)) inner += '<w:p/>';
       out += `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/>${span > 1 ? `<w:gridSpan w:val="${span}"/>` : ''}`
         + `${bg ? `<w:shd w:val="clear" w:color="auto" w:fill="${bg}"/>` : ''}${va ? `<w:vAlign w:val="${va}"/>` : ''}</w:tcPr>${inner}</w:tc>`;
+    });
+    out += '</w:tr>';
