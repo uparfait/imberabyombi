@@ -27,3 +27,6 @@ export async function docx_native(buf) {
   }
   const out = document.createElement('div'); await docx_blocks({ z, rels, num_fmt }, kids(by_tag(doc, 'body')[0]), out);
   return out.innerHTML || '<p><br></p>';
+}
+
+const JCM = { center: 'center', right: 'right', end: 'right', both: 'justify', distribute: 'justify' };
