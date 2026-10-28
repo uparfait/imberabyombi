@@ -10,3 +10,4 @@ import { viz } from '../charts/index.js';
 import { close_pops } from './pops.js';
 
 /* A cell shown again in the row's details: copies of the cell's nodes go into a wrapper React renders empty on purpose
+   (display: contents, so the value cell lays out like the reference, where the cell's HTML went straight in) */
