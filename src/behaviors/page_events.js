@@ -12,3 +12,4 @@ export const tab_icon = c => 'data:image/svg+xml,' + encodeURIComponent(`<svg xm
 /* the file dialog took focus away while a file box was waiting */
 export let file_blur = false;
 const FALLBACK = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 3">'
+  + '<rect width="4" height="3" fill="#E0661B" opacity=".18"/>'
