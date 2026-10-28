@@ -55,3 +55,4 @@ export function editor_start(root) {
     if (stopped) return;
     stopped = true; if (running === stop) running = null;
     clearTimeout(t0);
+    live.cancel();
