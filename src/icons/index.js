@@ -2,3 +2,4 @@
    Import from here: import { ic, i3 } from '../icons/index.js' */
 export * from './paths.js';
 export * from './icon.jsx';
+export * from './icon_3d.jsx';
