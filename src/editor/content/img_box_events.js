@@ -52,3 +52,4 @@ function on_click(e) {
 function on_ctx(e) { if (!img_sel) return; e.preventDefault(); e.stopPropagation(); open_menu(null, image_menu_items(img_sel), { x: e.clientX, y: e.clientY }); }
 
 const EVENTS = [['mousedown', on_mousedown], ['pointerdown', on_pointerdown], ['pointerover', on_over], ['pointerout', on_out], ['click', on_click], ['contextmenu', on_ctx]];
+export function install_img_box() {
