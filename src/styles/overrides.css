@@ -1,1 +1,2 @@
 /* styles/overrides.css: rules that come after Tailwind's utilities (so they win at equal specificity),
+   exactly where the reference stylesheet puts them. Imported by src/main.jsx right after index.css. */
