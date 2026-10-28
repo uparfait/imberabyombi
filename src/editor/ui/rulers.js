@@ -71,3 +71,4 @@ export function ruler_drag(e) {
   e.preventDefault();
   const side = g.dataset.handle, horiz = side === 'left' || side === 'right', m = state.setup.margins, orig = m[side];
   const start = horiz ? e.clientX : e.clientY, { win, hin } = dims();
+  const move = ev => {
