@@ -22,3 +22,4 @@ function insert_char(c) {
 }
 
 export function special_chars_dialog() {
+  modal({
