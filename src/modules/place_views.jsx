@@ -56,3 +56,4 @@ VIEWS.parking = () => {
       <span className="text-xs font-semibold">{s}</span>
       {p ? <>{ic('car', 'h-6 w-6')}<span className="w-full truncate font-mono text-[11px]">{p.plate}</span>
         </> : <span className="text-[11px] text-muted">Free</span>}</button>; };
+  return <>{stat_row([['Capacity', N, 'car', 'ink'], ['Occupied', parked.length, 'car'], ['Free', N - parked.length, 'check', 'ok'],
