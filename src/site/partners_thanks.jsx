@@ -21,3 +21,4 @@ export function partners_sec(full) {
   const logos = Array.from({ length: 8 }, (_, i) => partner_logo(i));
   return (
     <section {...spy_attrs('partners', full)} className="section"><div className="wrap flex flex-wrap items-end justify-between gap-6">
+      {sec_head('Partners', lorem.t(4), lorem.s())}{full ? null : more('partners', 'btn_outline')}</div>
