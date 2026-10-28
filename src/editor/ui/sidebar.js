@@ -54,3 +54,4 @@ function wire_row(row, t, box) {
     const from = state.tabs.indexOf(t);
     row_drag(e, {
       row, list: box, cls: 'tab_drag_over', scrollers: [box, refs.sidebar],
+      rows: () => qsa(':scope > .tab_row', box).filter(r => !r.hidden),
