@@ -18,3 +18,4 @@ function Crop_body({ src, st }) {
     if (h > H) { h = H; w = h * r; } set_rect({ x: (W - w) / 2, y: (H - h) / 2, w, h });
   };
   const pick = v => { const r = v === 'free' ? null : +v; set_ratio(r); if (r) centered(r); else set_rect(null); };
+  const down = e => {
