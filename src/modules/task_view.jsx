@@ -12,3 +12,5 @@ import { task_own, task_mine } from './task_data.js';
 import { tv_rows } from './task_view_rows.jsx';
 import { tv_comments } from './task_comments.jsx';
 import { tv_tie } from './tv_state.js';
+
+/* st: edit = rows in their editor, more = the status' Cancel / Save shown, prev = the attachment previewed, cedit = comments being edited */
