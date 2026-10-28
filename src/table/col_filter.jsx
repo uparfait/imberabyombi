@@ -6,3 +6,4 @@ import { label, options, search_ui } from '../ui/index.js';
 import { dt_attrs } from '../fields/index.js';
 
 export function col_filter(c, k) {
+  const f = schemas[c].f.find(x => x.k === k), v = ui.q[c]?.[k] || '';
