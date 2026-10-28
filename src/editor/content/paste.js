@@ -15,3 +15,4 @@ export function set_paste_plain(v) { paste_plain = !!v; }
 export function pages_paste(e) {
   const host = editable_of(e.target); if (!host) return;
   e.preventDefault(); if (state.mode !== 'edit') return;
+  const cd = e.clipboardData, files = Array.from(cd.files || []).filter(f => f.type.startsWith('image/')), body = host.classList.contains('pg_body');
