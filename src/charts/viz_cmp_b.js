@@ -31,3 +31,4 @@ export const VIZ_CMP_B = {
         + `<path class="mark" style="fill:var(--series_1)" d="${hbar(y(i), h * .38, f.l, x(d[i].a))}"/>`
         + `<line x1="${round1(x(d[i].t))}" x2="${round1(x(d[i].t))}" y1="${round1(y(i) - h / 2 - 2)}" y2="${round1(y(i) + h / 2 + 2)}"`
         + ` style="stroke:rgb(var(--fg));stroke-width:2"/>`)
+        + `<text x="${f.l - 8}" y="${round1(y(i) + 4)}" text-anchor="end">${k}</text>`; }).join(''), 'Bullet chart'),
