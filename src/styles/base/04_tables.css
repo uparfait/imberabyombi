@@ -11,3 +11,5 @@
   :where(tbody tr:hover:not(:has(:is(button, a, input, select, label, [data-act]):hover))) { background: rgb(var(--brand) / .04); }
   :where(tfoot td, tfoot th) { font-weight: 700; background: rgb(var(--surface_2)); border-bottom: 0; color: rgb(var(--fg)); }
   :where(col.hl) { background: rgb(var(--brand) / .05); }
+
+  /* Text fields, selects, textareas: Imberabyombi outlined fields (4px corners, 1px outline, 2px brand ring on focus, no shadow).
