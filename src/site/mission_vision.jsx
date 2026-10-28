@@ -13,3 +13,5 @@ export function mission_sec(full) {
           className="text-fg">{lorem.name()}</cite>, {lorem.t(2)}</footer></blockquote>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">{[0, 1, 2].map(i => (
           <article key={i} className="rounded-2xl bg-surface-2 p-5"><h3 className="text-base">{lorem.t(2)}</h3><p className="mt-2 text-sm text-muted">{lorem.s()}</p></article>
+        ))}</div>
+        {full ? null : more('mission')}</div></div></section>
