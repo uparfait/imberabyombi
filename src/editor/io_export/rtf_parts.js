@@ -51,3 +51,4 @@ export function rtf_inline(rx, node, f) {
   return o;
 }
 const HS = { H1: [20, ''], H2: [16, ''], H3: [14, '434343'], H4: [12, '666666'], H5: [11, '666666'], H6: [11, '666666'] };
+export function rtf_para(rx, e) {
