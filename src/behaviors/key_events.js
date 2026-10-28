@@ -18,3 +18,4 @@ function on_submit(e) {
 function on_keydown(e) {
   const t = e.target, k = e.key; tip.hide();
   if (t.matches?.('.otp_box')) { const bs = qsa('.otp_box', t.closest('[data-otp]')), i = bs.indexOf(t);
+    if (k === 'Backspace' && !t.value && i > 0) { e.preventDefault(); bs[i - 1].value = ''; bs[i - 1].focus(); }
