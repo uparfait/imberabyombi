@@ -73,3 +73,6 @@ export function pull_up(b, next) {
     if (f.hasAttribute('data-cont') && last && same_kind(last, f)) merge_into(last, f); else b.appendChild(f);
     if (overflows(b)) { push_overflow(b, next); return; }
     if (is_break(f)) return;
+  }
+}
+export function sig(b) { return [b.childElementCount, last_flow(b), b.textContent.length]; }
