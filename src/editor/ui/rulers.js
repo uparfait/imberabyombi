@@ -42,3 +42,4 @@ export function draw_h_ruler() {
     + `<g class="r_handle" data-handle="right" transform="translate(${rx} 0)">${tri}</g></svg>`;
 }
 export function draw_v_ruler() {
+  if (state.setup.pageless || !vruler || !scroller) return;
