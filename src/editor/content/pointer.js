@@ -43,3 +43,4 @@ export function pages_click(e) {
   if (bh) { select_image(bh); return; }
   if (out) hide_img_sel();
   const li = e.target.closest('ul.checklist > li');
+  if (li && e.target === li && e.clientX < li.getBoundingClientRect().left && state.mode === 'edit') {
