@@ -17,3 +17,5 @@ const card_html = (c, orphan) => '<div class="flex items-center gap-2"><span cla
   + '<div class="c_text mt-1 whitespace-pre-wrap"></div><div class="c_replies"></div>' + (c.draft ? DRAFT : REPLY);
 const reply_html = r => `<div class="text-xs font-medium">You <span class="font-normal text-muted">${fmt_time(r.time)}</span></div>`
   + '<div class="whitespace-pre-wrap"></div>';
+
+function on_card_click(e, c, card) {
