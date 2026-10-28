@@ -27,3 +27,4 @@ function global_key(e, k) {
   return null;
 }
 /* shortcuts that edit: only with the caret in the document */
+function edit_key(e, k, code) {
