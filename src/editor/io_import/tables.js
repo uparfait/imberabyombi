@@ -22,3 +22,4 @@ export function rows_to_table(rows, header) {
   const width = Math.max(1, ...rows.map(r => r.length));
   let h = `<table class="doc_table"${header ? ' data-header=""' : ''} style="--bw:1px;--bc:#9aa0a6">`;
   rows.forEach((r, i) => {
+    h += '<tr>';
