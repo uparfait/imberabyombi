@@ -46,3 +46,4 @@ export const PK = {
       + `${kind_of(a) === 'datetime-local' ? '' : PK.foot(wk ? 'This week' : 'Today')}</div>`;
   },
   months(a) {
+    const y = pick.view.getFullYear(), cur = ymd().slice(0, 7);
