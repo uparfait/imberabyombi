@@ -2,3 +2,4 @@
    a fixed ratio: Square, 4:3, 16:9, 3:4); Crop redraws the image to that part (one undo step). */
 import { useState, useRef } from 'react';
 import { modal } from '../../overlays/index.js';
+import { clamp, toast } from '../core/index.js';
