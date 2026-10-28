@@ -14,3 +14,4 @@
     --pill: 999px;           /* small things are fully round: buttons, chips, badges, avatars, icon buttons, 3D icons, toggles */
     --space:  1rem;          /* every p-*, m-*, gap-*, space-* scales from this */
     --font_sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+    --font_display: "Bricolage Grotesque", var(--font_sans);
