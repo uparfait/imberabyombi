@@ -3,3 +3,4 @@
    of what is saved. Download (or Enter) writes the file; on an error the message shows and the dialog stays open. */
 import { useEffect, useState } from 'react';
 import { ic } from '../../icons/index.js';
+import { modal } from '../../overlays/index.js';
