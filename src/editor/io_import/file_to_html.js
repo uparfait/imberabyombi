@@ -26,3 +26,4 @@ export async function file_to_html(file) {
   const name = file.name, ext = ext_of(name);
   if (file.type.startsWith('image/') || IMG_EXT.has(ext)) {
     if (file.size > MAX_ATTACH) throw new Error(`it is ${fmt_size(file.size)}; images can be up to 25 MB`);
+    let url = await read_as_data_url(file); if (!/^data:image\//.test(url) && MIME[ext]) url = url.replace(/^data:[^;,]*/, 'data:' + MIME[ext]);
