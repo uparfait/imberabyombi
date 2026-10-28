@@ -20,3 +20,4 @@ export function modal({ title, help = '', body = '', submit, on_submit, danger, 
 }
 
 /* the text of a JSX message (the confirm's text is plain: the reference stripped its tags) */
+const text_of = n => n == null || typeof n === 'boolean' ? '' : Array.isArray(n) ? n.map(text_of).join('') : typeof n === 'object' ? text_of(n.props?.children) : String(n);
