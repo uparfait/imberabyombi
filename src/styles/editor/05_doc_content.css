@@ -44,3 +44,4 @@
 .doc_content ul ul{list-style-type:circle}
 .doc_content ul ul ul{list-style-type:square}
 .doc_content ol{list-style-type:decimal}
+.doc_content ul.checklist{list-style-type:none}
