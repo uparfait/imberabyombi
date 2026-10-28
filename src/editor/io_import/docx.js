@@ -54,3 +54,4 @@ async function docx_blocks(cx, nodes, container) {
       const pr = kids(n, 'pPr')[0], style = val(pr && kids(pr, 'pStyle')[0]) || '', num_pr = pr && kids(pr, 'numPr')[0];
       let html = await docx_runs(cx, n); const pb = html.includes('\u0001'); html = html.replace(/\u0001/g, '');
       const jc = JCM[val(pr && kids(pr, 'jc')[0])], attrs = jc ? ` style="text-align:${jc}"` : '';
+      const num_id = num_pr && val(kids(num_pr, 'numId')[0]);
