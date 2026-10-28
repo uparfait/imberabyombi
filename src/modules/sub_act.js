@@ -15,3 +15,5 @@ export const SUB_ACT = {
   sub_rm_group: t => { const g = t.closest('[data-sub-group]'), api = sub_api(t), k = sub_key(g);
     fade_out(g, [{ opacity: 1 }, { opacity: 0, transform: 'scale(.98)' }], 180, () => api?.rm_group(k)); },
   sub_rm: t => { const row = t.closest('[data-sub-item]'), api = sub_api(t), gk = sub_key(row.closest('[data-sub-group]')), k = sub_key(row);
+    fade_out(row, [{ opacity: 1 }, { opacity: 0, transform: 'translateX(.5rem)' }], 160, () => api?.rm_item(gk, k)); }
+};
