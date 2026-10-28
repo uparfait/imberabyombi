@@ -36,3 +36,5 @@ export function html_to_md(root) {
     const rows = Array.from(b.rows).map(r => '| ' + Array.from(r.cells).map(c => inline(c).replace(/\|/g, '\\|').replace(/\n/g, ' ').trim()).join(' | ') + ' |');
     if (rows.length) { const n = b.rows[0].cells.length; rows.splice(1, 0, '|' + ' --- |'.repeat(n)); }
     return rows.join('\n');
+  };
+  const blocks = [];
