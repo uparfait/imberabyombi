@@ -37,3 +37,4 @@ export function fmt_of(e, f) {
 }
 export function r_pr(f) {
   let x = '';
+  if (f.link) x += '<w:rStyle w:val="Hyperlink"/>';
