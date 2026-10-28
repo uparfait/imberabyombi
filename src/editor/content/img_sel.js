@@ -63,3 +63,4 @@ export function position_img_box() {
   const box = ensure_img_box(), page = img_sel.closest('.page'); if (box.parentNode !== page) page.appendChild(box);
   const { x, y } = offset_in(img_sel, page);
   Object.assign(box.style, { left: x + 'px', top: y + 'px', width: img_sel.offsetWidth + 'px', height: img_sel.offsetHeight + 'px', display: 'block', transform: '' });
+  const bar = qs('.img_bar', box), pos = pos_of(img_sel), al = img_align_of(img_sel);
