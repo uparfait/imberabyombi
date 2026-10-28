@@ -19,3 +19,4 @@ export const VIZ_TIME_B = {
         + `<line x1="${round1(x(i))}" x2="${round1(x(i))}" y1="${round1(y(d.hi))}" y2="${round1(y(d.lo))}" style="stroke:${col};stroke-width:1.5"/>`
         + `<rect class="mark" x="${round1(x(i) - bw / 2)}" y="${round1(y(Math.max(d.o, d.c)))}" width="${round1(bw)}"`
         + ` height="${round1(Math.max(1.5, Math.abs(y(d.o) - y(d.c))))}" rx="2" style="fill:${up ? 'rgb(var(--surface))' : col};stroke:${col};stroke-width:1.5"/>`); }).join('')
+      + x_labels(f, days.map(d => d.k), x), 'Candlestick chart'),
