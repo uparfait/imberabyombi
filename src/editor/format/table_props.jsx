@@ -12,3 +12,4 @@ const VALIGN = [['top', 'Top'], ['middle', 'Middle'], ['bottom', 'Bottom']];
 
 /* applies the dialog values v to the table parts ch (inside tbl_op('props')) */
 const apply_props = (v, n_rows, n_cols) => ch => {
+  const rows = chain_rows(ch);
