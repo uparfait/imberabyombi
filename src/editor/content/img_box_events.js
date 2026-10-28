@@ -35,3 +35,5 @@ const run = (img, a) => { const [k, v] = a.split(':'); if (k === 'pos') set_img_
 function settle(kept) {
   freeze_img_box(false); const img = kept && img_sel?.isConnected ? img_sel : img_now(hover_img); hover_b = hover_img = hover_fn = null;
   if (img?.isConnected) select_image(img); else hide_img_sel();
+}
+function on_over(e) {
