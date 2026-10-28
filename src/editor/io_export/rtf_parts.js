@@ -54,3 +54,4 @@ const HS = { H1: [20, ''], H2: [16, ''], H3: [14, '434343'], H4: [12, '666666'],
 export function rtf_para(rx, e) {
   const st = e.style || {}; let pre = RTF_P, f = {};
   if (HS[e.tagName]) { f = { size: HS[e.tagName][0], color: HS[e.tagName][1] || null }; pre += '\\sb240\\sa80\\keepn'; }
+  else if (e.classList.contains('title')) { f = { size: 26 }; pre += '\\sa60'; }
