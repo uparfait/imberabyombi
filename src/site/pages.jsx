@@ -12,3 +12,5 @@ import { contact_sec } from './contact_sec.jsx';
 import { staff_dir, faq, intro_top } from './detail_blocks.jsx';
 import { tiers } from './tiers.jsx';
 import { longform } from './longform.jsx';
+
+export function home() {
