@@ -7,3 +7,4 @@
 import { qsa } from './utils.js';
 import { state } from './state.js';
 import { refs, pages_el, scroller } from './refs.js';
+import { bodies, page_wraps, editable_of } from './dom.js';
