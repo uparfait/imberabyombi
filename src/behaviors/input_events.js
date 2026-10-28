@@ -10,3 +10,4 @@ import { pw_check } from '../account/index.js';
 import { fill_range, set_token } from '../actions/index.js';
 
 function on_input(e) {
+  const t = e.target;
