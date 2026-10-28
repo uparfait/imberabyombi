@@ -50,6 +50,7 @@ function on_click(e) {
   const b = e.target.closest('[data-a]'); if (!b || !img_sel) return;
   if (b === hover_b) { live.keep(hover_fn); settle(true); return; }
   if (b.dataset.a === 'more') open_menu(b, image_menu_items(img_sel));
+  else if (b.dataset.a === 'alt') alt_text_dialog(img_sel); else run(img_sel, b.dataset.a);
 }
 function on_ctx(e) { if (!img_sel) return; e.preventDefault(); e.stopPropagation(); open_menu(null, image_menu_items(img_sel), { x: e.clientX, y: e.clientY }); }
 
