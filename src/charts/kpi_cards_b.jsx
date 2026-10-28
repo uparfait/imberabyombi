@@ -28,3 +28,4 @@ export const kpi_cards_b = k => {
         <p className="mt-2 text-sm text-muted">Target 400 ms · under target</p></>,
       [['Measure', 'Value'], [['Response time', '320 ms'], ['Target', '400 ms'], ['Result', 'Under target']]]),
     kpi_card('', 'Active right now', 'People using the system this minute, and over the last 12 minutes.',
+      <><p className="kpi_value flex items-center gap-2"><span className="kpi_live" aria-hidden="true"></span><span data-count={live[11]}>0</span></p>
