@@ -19,3 +19,4 @@ import { listen, run_offs } from './ui_dom.js';
 
 function install_menubar(offs) {
   const bar = refs.menubar; if (!bar) return;
+  qsa('[data-menu]', bar).forEach(b => {
