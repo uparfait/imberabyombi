@@ -8,3 +8,4 @@ export * from './dialog_hosts.jsx';
 export * from './copy.jsx';
 export * from './pick.js';
 export * from './pick_html.js';
+export * from './tip.js';
