@@ -17,3 +17,5 @@ const matrix = (sel, edit) => <div className="overflow-x-auto"><table><thead><tr
     {[0, 1, 2].map(v => <td key={v} className="text-center">
       <input type="radio" name={`p_${m.k}`} value={v} data-perm={m.k} data-role={sel.id} aria-label={`${m.l}: ${LV[v]}`}
       defaultChecked={(sel.perms[m.k] || 0) === v} disabled={!edit} /></td>)}</tr>)}</tbody></table></div>;
+
+VIEWS.roles = () => {
