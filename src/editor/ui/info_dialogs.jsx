@@ -8,3 +8,4 @@ export function doc_text() {
     .join(' ').replace(/​/g, '');
 }
 function count(t) {
+  t = t.replace(/​/g, '');
