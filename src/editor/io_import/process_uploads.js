@@ -17,3 +17,4 @@ function place_uploads(done, mode, failed) {
   if (mode === 'insert') {
     if (content.length) {
       const html = content.length === 1 && content[0].inline ? content[0].inline : content.map(r => r.html).join('');
+      const host = restore_focus();
