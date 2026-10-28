@@ -71,3 +71,4 @@ export function find_step(d, select) {
   if (select || !has_hl) { const r = find_state.matches[find_state.idx]; set_last(r.cloneRange(), editable_of(r.startContainer)); }
 }
 export function replace_one() {
+  if (!can_edit()) return; const r = find_state.matches[find_state.idx]; if (!r) return;
