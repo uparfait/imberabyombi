@@ -30,3 +30,5 @@ export function on_context_menu(e) {
     { label: 'Insert table', icon: 'table', sub: () => [{ render: table_grid_el }] },
     in_table ? { sep: true } : null, ...(in_table ? table_menu_items() : []),
     { sep: true }, { label: 'Clear formatting', icon: 'format_clear', shortcut: 'Ctrl+\\', action: () => clear_formatting() }
+  ], at);
+}
