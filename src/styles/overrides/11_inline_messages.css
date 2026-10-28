@@ -8,3 +8,4 @@
   .msg .msg_x { margin: -.2rem -.2rem 0 auto; display: grid; place-items: center; width: 1.75rem; height: 1.75rem; flex-shrink: 0; border-radius: var(--pill); color: rgb(var(--muted)); }
   .msg .msg_x:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
   .msg.msg_out { opacity: 0; transform: translateY(-.25rem); transition: opacity .3s, transform .3s; }
+  .field_err { display: flex; align-items: center; gap: .35rem; margin-top: .1rem; font-size: .8rem; font-weight: 500; color: rgb(var(--bad)); animation: rise .25s var(--ease); }
