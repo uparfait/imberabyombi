@@ -7,3 +7,4 @@ import { load_img, img_op, CROSS_MSG } from './img_ops.js';
 import { img_now, replace_target, set_replace_target } from './img_sel.js';
 
 export async function image_blob(img) {
+  const im = await load_img(img.getAttribute('src')); const c = document.createElement('canvas');
