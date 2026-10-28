@@ -9,3 +9,4 @@ import { base_of } from './file_helpers.js';
 import { attachment_html } from './json_attach.js';
 import { file_to_html } from './file_to_html.js';
 import { load_project, is_doc_empty, project_tabs } from './project.js';
+import { show_failed } from './upload_body.jsx';
