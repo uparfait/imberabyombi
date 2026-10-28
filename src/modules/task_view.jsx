@@ -16,3 +16,4 @@ import { tv_tie } from './tv_state.js';
 /* st: edit = rows in their editor, more = the status' Cancel / Save shown, prev = the attachment previewed, cedit = comments being edited */
 export function Task_view({ id }) {
   const [st, set_st] = useState({ edit: {}, more: false, prev: null, cedit: {} });
+  const r = db.find('tasks', id); if (!r) return null;
