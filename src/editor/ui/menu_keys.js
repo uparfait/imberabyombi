@@ -10,3 +10,6 @@ function bar_step(d) {
   const bs = Array.from(bar.querySelectorAll('[data-menu]')), i = bs.indexOf(a), b = bs[(i + d + bs.length) % bs.length];
   close_menus(0); b.focus(); b.click();
   return true;
+}
+
+export function menu_key(e) {
