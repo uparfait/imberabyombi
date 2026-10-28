@@ -26,3 +26,4 @@ export function md_to_html(md) {
   while (i < lines.length) {
     const l = lines[i];
     if (/^```/.test(l)) {
+      const buf = []; i++; while (i < lines.length && !/^```/.test(lines[i])) buf.push(lines[i++]); i++;
