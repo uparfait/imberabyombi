@@ -12,3 +12,4 @@ export const lorem = {
   int(a, b) { return a + Math.floor(lorem.r() * (b - a + 1)); },
   pick(a) { return a[Math.floor(lorem.r() * a.length)]; },
   w(n = 1) { return Array.from({ length: n }, () => lorem.pick(WORDS)).join(' '); },
+  t(n = 3) { return cap(lorem.w(n)); },
