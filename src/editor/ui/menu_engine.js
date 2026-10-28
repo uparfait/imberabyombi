@@ -63,3 +63,4 @@ export function open_menu(anchor, items, opts = {}) {
   m.addEventListener('mousedown', e => { if (!e.target.closest('input,select,textarea,label')) e.preventDefault(); });
   for (const it of items.filter(Boolean)) {
     if (it.sep) m.appendChild(el('hr', { class: 'my-1' }));
+    else if (it.render) m.appendChild(it.render());
