@@ -15,3 +15,4 @@ export function heading_els() {
 export function is_top_head(h) { return !!(h.parentElement && h.parentElement.classList.contains('pg_body')); }
 
 /* { c: the joined document, blocks: its top-level elements, heads: [{ i: block index, lvl, end: block index after the section }] } */
+export function section_model() {
