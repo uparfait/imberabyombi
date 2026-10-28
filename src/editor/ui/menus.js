@@ -55,3 +55,4 @@ function format_items() {
   ];
 }
 function tools_items() {
+  return [
