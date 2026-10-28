@@ -54,3 +54,4 @@ export function push_overflow(b, next) {
   if (idx < 0) idx = kids.length - 1;
   if (idx < kids.length - 1) insert_at_start(next, kids.slice(idx + 1));
   let g = 0;
+  while (overflows(b) && g++ < 500) {
