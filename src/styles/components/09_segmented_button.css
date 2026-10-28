@@ -40,3 +40,4 @@
   .theme_band { background: color-mix(in srgb, rgb(var(--brand)) 6%, rgb(var(--surface))); }
   .dark .theme_band { background: rgb(var(--ink)); }
   .sun { position: absolute; z-index: -1; left: 36%; top: 10%; width: 9rem; aspect-ratio: 1; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle, var(--sun_0, rgb(var(--brand))) 0 9%, var(--sun_1, rgb(var(--brand) / .45)) 16%, rgb(var(--brand) / .28) 42%, transparent 70%); animation: glow 7s ease-in-out infinite, fade 1.4s var(--ease) both; }
