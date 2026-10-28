@@ -56,3 +56,4 @@ export function rtf_para(rx, e) {
   if (HS[e.tagName]) { f = { size: HS[e.tagName][0], color: HS[e.tagName][1] || null }; pre += '\\sb240\\sa80\\keepn'; }
   else if (e.classList.contains('title')) { f = { size: 26 }; pre += '\\sa60'; }
   else if (e.classList.contains('subtitle')) { f = { size: 15, color: '666666' }; pre += '\\sa320'; }
+  else if (e.tagName === 'PRE') f = { font: 'Courier New', size: 10 };
