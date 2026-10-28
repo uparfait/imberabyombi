@@ -11,3 +11,4 @@ export function file_tile(f, i, gen = 0) {
     <div key={`${gen}_${i}`} className={`file ${media ? 'media' : 'doc'}`} style={{ '--i': i }} data-act="file_view" data-i={i} tabIndex="0" role="button"
       aria-label={`Open ${f.name}`} data-tip={media ? f.name : undefined}>
       {media
+        ? (k === 'image' ? <img src={u} alt="" /> : <><video src={`${u}#t=0.5`} muted preload="metadata" playsInline></video>{ic('play', 'file_play')}</>)
