@@ -17,3 +17,4 @@ export const find_panel = () => (
       {small_btn('find_close', 'close', 'Close (Esc)')}
     </div>
     <div className="find_line">
+      <input type="text" id="replace_input" placeholder="Replace with" aria-label="Replace with" />
