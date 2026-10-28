@@ -33,3 +33,4 @@ export const VIZ_CMP_B = {
         + ` style="stroke:rgb(var(--fg));stroke-width:2"/>`)
         + `<text x="${f.l - 8}" y="${round1(y(i) + 4)}" text-anchor="end">${k}</text>`; }).join(''), 'Bullet chart'),
       legend: legend(['Actual', 'Target'], 'rect', [0, 'rgb(var(--fg))']),
+      table: [['Measure', 'Actual', 'Target'], c.map((k, i) => [k, round1(d[i].a), round1(d[i].t)])] }; } },
