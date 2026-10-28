@@ -15,3 +15,6 @@ export const stock_cell = (v, r) => (
   <div className="min-w-[9rem]">
     <div className="flex justify-between text-xs"><b>{+v}</b><span className="text-muted">{`min ${+r.min || 0}`}</span></div>
     <meter className="mt-1" min="0" max={Math.max((+r.min || 1) * 3, +v)} low={+r.min || 0} high={(+r.min || 0) * 2} optimum={Math.max((+r.min || 1) * 3, +v)} value={+v}></meter>
+  </div>
+);
+export const label = (c, k) => schemas[c].f.find(f => f.k === k)?.l || cap(k);
