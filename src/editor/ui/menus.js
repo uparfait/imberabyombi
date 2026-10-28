@@ -43,3 +43,4 @@ function insert_items() {
 function format_items() {
   return [
     { label: 'Text', icon: 'format_bold', sub: text_items }, { label: 'Paragraph styles', icon: 'title', sub: style_items },
+    { label: 'Align & indent', icon: 'format_align_left', sub: () => [...align_items(), { sep: true },
