@@ -34,3 +34,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 |------------------|----------------------------------------------------------------------------|
 | `after_render(fn)` / `AFTER` | run once after the next draw (draw a chart, focus a field)     |
 | `TIMERS`         | intervals that belong to the current page (`TIMERS.push(setInterval(...))`); cleared on every draw |
+| `before_render(fn)` | a cleanup that runs before every draw (close the picker, hide tooltips) |
