@@ -26,3 +26,4 @@ The template is a complete front end with demo data in the browser. Before real 
 - Run `npm run build` and check the sizes it prints; run Lighthouse on `npm run preview`.
 
 ## Data
+- The storage prefix `loremds:v1:` (`window.NS` in `index.html`) separates datasets; change it when your data shape
