@@ -49,3 +49,4 @@ Every feature below is working code. Each line says what it is and where it live
   (theme, live tokens, storage, backup export/import, demo reset, profile).
 
 ## Data tables (`src/table/`, `src/schemas/`)
+- Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
