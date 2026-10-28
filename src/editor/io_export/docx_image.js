@@ -16,3 +16,4 @@ export function image_xml(img, ctx) {
   const { rid, n } = ctx.add_media(bytes, ext), alt = xesc(img.getAttribute('alt') || '');
   const bw = parseFloat(img.style.borderWidth) || 0;
   const ln = bw ? `<a:ln w="${Math.round(bw * EMU)}"><a:solidFill><a:srgbClr val="${to_hex(img.style.borderColor) || '000000'}"/></a:solidFill></a:ln>` : '';
+  const graphic = '<a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic><pic:nvPicPr>'
