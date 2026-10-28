@@ -45,3 +45,4 @@ a tile opens the file viewer (images, video, audio, PDF and text inside; other t
 - `show_err(input, text)` / `clear_err(input)` mark one field from your own checks (e.g. "Use a time after the start").
 
 ## Reading values
+`form_obj(form)` returns `{ name: value }` with date and time values already in ISO form. Inputs are uncontrolled, so
