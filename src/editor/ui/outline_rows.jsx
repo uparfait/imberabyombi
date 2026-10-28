@@ -58,3 +58,4 @@ function on_key(e, row) {
   } else if (k === 'ArrowLeft') {
     if (row.querySelector('.outline_fold') && !row.classList.contains('folded')) { e.preventDefault(); toggle_fold(row, false); }
     else to(rows.slice(0, i).reverse().find(r => +r.dataset.lvl < lvl));
+  } else if (k === 'Enter' || k === ' ') { e.preventDefault(); go(row); }
