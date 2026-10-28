@@ -36,3 +36,4 @@ the format, or click to open the mini calendar (dates, weeks, months) and the 15
 
 ## Files
 `<File_box id="photos" name="photos" multiple />` (src/files) shows chosen files as tiles above the button: × removes one,
+a tile opens the file viewer (images, video, audio, PDF and text inside; other types get Open and Download).
