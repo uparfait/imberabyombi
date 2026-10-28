@@ -38,3 +38,8 @@ export function Modal_form({ m }) {
             {submit ? <button type="button" className="btn btn_ghost" data-act="close_modal">Cancel</button> : null}
             {actions}
             {submit ? <button className={`btn ${danger ? 'btn_danger' : 'btn_primary'}`}>{submit}</button> : null}
+          </footer>
+        : null}
+    </form>
+  );
+}
