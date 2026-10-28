@@ -18,3 +18,4 @@ function Adjust_body({ src, v }) {
     <div className="grid gap-2 sm:col-span-2">
       <div className="img_preview"><img alt="" src={src} style={{ filter, opacity: 1 - s.transparency / 100 }} /></div>
       {ROWS.map(([k, l, a, b]) => (
+        <div className="slider_row" key={k}>
