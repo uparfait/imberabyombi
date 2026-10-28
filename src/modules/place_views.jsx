@@ -13,3 +13,4 @@ import { crud } from '../table/index.js';
 const returned = (r, can) => can && r.status === 'Rented' ? <button className="btn btn_soft btn_sm" data-act="return" data-id={r.id}>Mark returned</button> : null;
 VIEWS.library = () => {
   const t = ui.tab.lib || 'books', b = db.list('books'), rn = db.list('rentals');
+  const out = rn.filter(r => r.status === 'Rented'), over = out.filter(r => r.due < ymd()).length;
