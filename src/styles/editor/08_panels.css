@@ -24,3 +24,4 @@
 @container ed_ws (max-width: 62.49rem) { #comments_panel { border-left: 1px solid rgb(var(--line)); background: rgb(var(--surface)); } }
 #comment_list { display: flex; flex-direction: column; gap: .75rem; }
 .c_card {
+  padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface));
