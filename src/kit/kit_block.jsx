@@ -5,3 +5,7 @@
 export const kit_block = (id, t, body) => (
   <section id={`section_${id}`} className="scroll-mt-24 border-t border-line py-12 first:border-0 first:pt-0">
     <h2 className="text-2xl sm:text-3xl">{t}</h2><div className="mt-6">{body}</div>
+  </section>
+);
+
+/* a rounded tile with a diamond, as a data URI */
