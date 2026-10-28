@@ -22,3 +22,4 @@ export function node_at(root, path) { let n = root; for (const i of path) { if (
 export function snapshot() {
   const bs = bodies(), s = getSelection(); let caret = null;
   if (s.rangeCount) {
+    const r = s.getRangeAt(0), h = editable_of(r.startContainer), i = bs.indexOf(h);
