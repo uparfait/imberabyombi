@@ -26,3 +26,4 @@ export function export_dialog(c, fmt) {
     body: <>
       {dk ? <>{field(field_spec('from', 'From', 'datetime-local'), '')}{field(field_spec('to', 'To', 'datetime-local'), '')}</>
         : <p className="text-sm text-muted sm:col-span-2">This table has no dates to pick a range from.</p>}
+      {sels.length ? filters(c, sels) : null}
