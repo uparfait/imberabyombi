@@ -23,3 +23,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
   const head = cols.map(([, n]) => n), body = rows.map(r => cols.map(([k]) => val(r, k)));
   if (fmt === 'json') dl(`${c}-${ymd()}.json`, JSON.stringify(rows.map((r, i) => Object.fromEntries(head.map((h, j) => [h, body[i][j]]))), null, 2),
     'application/json');
+  else if (fmt === 'xls') { const x = v => String(v).replace(/[<>&"]/g, m => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[m]));
