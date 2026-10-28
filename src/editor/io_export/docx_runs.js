@@ -43,3 +43,4 @@ export function r_pr(f) {
   if (f.color) x += `<w:color w:val="${f.color}"/>`;
   if (f.size) x += `<w:sz w:val="${Math.round(f.size * 2)}"/><w:szCs w:val="${Math.round(f.size * 2)}"/>`;
   if (f.u) x += '<w:u w:val="single"/>';
+  if (f.hl) x += `<w:shd w:val="clear" w:color="auto" w:fill="${f.hl}"/>`;
