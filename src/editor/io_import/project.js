@@ -28,6 +28,7 @@ export const is_doc_empty = () => state.tabs.length === 1 && is_tab_empty();
 export function replace_tab(tabs, title) {
   save_tab();
   const cur = active_tab(), [first, ...rest] = tabs;
+  if (state.tabs.length === 1 && state.title === 'Untitled document') state.title = title;
 }
 /* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
 export function project_tabs(d) {
