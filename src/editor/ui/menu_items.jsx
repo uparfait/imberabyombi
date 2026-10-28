@@ -64,3 +64,4 @@ export function download_items() {
     { sep: true }, { label: 'All download options…', icon: 'tune', no_preview: true, action: () => open_download_dialog() }];
 }
 /* a zoom step previews the view itself (not the document): peek returns how to go back */
+const zoom_peek = fn => () => { const z0 = state.zoom; fn(); return () => set_zoom(z0); };
