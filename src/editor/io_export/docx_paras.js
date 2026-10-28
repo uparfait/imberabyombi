@@ -7,3 +7,4 @@ export const JC = { left: 'left', start: 'left', center: 'center', right: 'right
 export function p_pr_xml(e, extra = '') {
   const st = e.style || {}; let style = '';
   if (/^H[1-6]$/.test(e.tagName)) style = 'Heading' + Math.min(+e.tagName[1], 4);
+  else if (e.classList && e.classList.contains('title')) style = 'Title';
