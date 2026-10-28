@@ -38,3 +38,4 @@ export function run_find(keep) {
     });
     const hay = mc ? text : text.toLowerCase(), needle = mc ? q : q.toLowerCase();
     const loc = (pos, end) => {
+      let lo = 0, hi = segs.length - 1;
