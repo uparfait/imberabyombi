@@ -72,3 +72,4 @@ export async function odf_to_html(file) {
       u: (tp.getAttribute('style:text-underline-style') || 'none') !== 'none', color: tp.getAttribute('fo:color') };
   });
   const body = by_tag(doc, 'body')[0], out = [];
+  if (body) await odf_blocks({ z, sty }, body, out);
