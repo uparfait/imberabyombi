@@ -44,3 +44,4 @@ export function apply_snap(s) {
   hide_img_sel();
   let ws = page_wraps();
   while (ws.length < s.html.length) { pages_el.appendChild(create_page()); ws = page_wraps(); }
+  while (ws.length > s.html.length) { ws.pop().remove(); }
