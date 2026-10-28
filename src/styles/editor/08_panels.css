@@ -28,3 +28,4 @@
   font-size: .8125rem; color: rgb(var(--fg)); cursor: pointer; transition: border-color .15s;
 }
 .c_card:hover { border-color: rgb(var(--muted) / .5); }
+.c_card.active { border-color: #fbbc04; outline: 1px solid #fbbc04; outline-offset: -2px; }   /* the comment mark's colour */
