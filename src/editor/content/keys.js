@@ -44,3 +44,6 @@ export function pages_keydown(e) {
   }
   if ((e.key === 'ArrowDown' && pi < bs.length - 1 && on_last_line(host, r)) || (e.key === 'ArrowRight' && pi < bs.length - 1 && at_body_end(host, r))) {
     done(e); caret_to_start(first_flow(bs[pi + 1])); scroll_caret_into_view();
+  }
+}
+export function pages_beforeinput(e) {
