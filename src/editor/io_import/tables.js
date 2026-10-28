@@ -40,3 +40,4 @@ export function trim_rows(rows, max_r = 2000, max_c = 40) {
 }
 export function csv_parse(text, delim) {
   text = text.replace(/^\ufeff/, '');
+  if (!delim) {
