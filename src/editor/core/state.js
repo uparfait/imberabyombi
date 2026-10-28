@@ -14,3 +14,5 @@ export const state = {
   sidebar: typeof innerWidth === 'number' ? innerWidth >= 1000 : true, show_comments: false, show_ruler: true, menus: true
 };
 state.tabs.push(new_tab('Tab 1')); state.active = state.tabs[0].id;
+
+/* persist.js registers its debounced save here (state.js stays free of imports that reach other areas) */
