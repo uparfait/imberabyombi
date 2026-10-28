@@ -36,3 +36,4 @@
   .kpi_ring { position: relative; width: 6rem; height: 6rem; margin: .5rem auto; }
   .kpi_ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
   .kpi_ring circle { fill: none; stroke: rgb(var(--surface_3)); stroke-width: 8; }
+  .kpi_ring circle + circle { stroke: var(--series_1); stroke-linecap: round; }
