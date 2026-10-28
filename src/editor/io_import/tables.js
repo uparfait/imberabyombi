@@ -55,3 +55,5 @@ export function csv_parse(text, delim) {
   }
   if (f !== '' || row.length) { row.push(f); rows.push(row); }
   return rows;
+}
+export function csv_to_html(text, delim) {
