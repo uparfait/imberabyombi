@@ -5,3 +5,4 @@ import { state, refs, qsa, FONTS, undo, redo, restore_focus } from '../core/inde
 import { start_paint, bump_size, exec, toggle_checklist, toggle_list, indent, clear_formatting, set_font_size, set_font, set_text_color,
   set_hilite } from '../format/index.js';
 import { open_link_dialog, add_comment, insert_image_file } from '../content/index.js';
+import { open_upload_dialog } from '../io_import/index.js';
