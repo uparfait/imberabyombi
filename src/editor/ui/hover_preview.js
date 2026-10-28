@@ -24,3 +24,4 @@ export function peek_view(key, apply) {
   cur = { key, undo: typeof back === 'function' ? back : () => {}, keep: () => {} };
 }
 /* put back what the preview changed */
+export function unpeek() { const c = cur; cur = null; if (c) c.undo(); }
