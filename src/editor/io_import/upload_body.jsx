@@ -69,3 +69,4 @@ export function Upload_actions({ up }) {
   );
 }
 /* the files that failed, one per line, with an OK button (after the confirm, if that is still closing) */
+export function show_failed(failed, any_done) {
