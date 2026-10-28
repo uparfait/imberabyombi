@@ -9,6 +9,7 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Tasks                    | `/admin/tasks`         | Own / assigned / delegated / all tabs; dates with times by status; live countdown (red when overdue); subtasks with progress; attachments with previews; comments (edit and delete your own); a details view with a pen per row; status Save / Cancel (Done records the time); only the creator edits or deletes |
 | Staff                    | `/admin/staff`         | System users with roles, personal access links                   |
 | Employees                | `/admin/employees`     | Teachers, kitchen, cleaners, security and administration tabs    |
+| Attendance               | `/admin/attendance`    | Live clock, check in / out (late after `cfg.work_start`), staff and student logs |
 
 ## The admin shell ([`src/admin/`](../src/admin/))
 - **Sidebar**: full height, collapsible on desktop (the logo turns into "open sidebar" on hover), a drawer on phones;
