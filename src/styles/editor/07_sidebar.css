@@ -29,3 +29,4 @@ input.tab_filter, .tab_filter input {
   transition: background-color .15s, color .15s, opacity .15s;
 }
 .tab_row:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
+.tab_row.active { background: rgb(var(--brand) / .15); color: var(--active_fg); font-weight: 600; }
