@@ -33,3 +33,5 @@ export function dash_widgets(u) {
     after_render(() => draw_chart(qs('#chart_week'), lab, val));
     W.push(<section key="att" className="card p-5 lg:col-span-2">{head('Attendance this week', '#/admin/attendance', 'Open')}
       <canvas id="chart_week" className="mt-4 h-64 w-full" role="img" aria-label={`People present per day, last 7 days: ${val.join(', ')}`}></canvas></section>);
+  }
+  { const mine = db.list('tasks').filter(x => x.assignee === u.name), done = mine.filter(x => x.status === 'Done').length;
