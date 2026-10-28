@@ -20,3 +20,5 @@ export const workspace = () => (
         <div className="side_head">{icon_btn('sidebar_close', 'arrow_back', 'Hide tabs & outlines')}</div>
         <div className="side_row">
           <span className="side_title">Document tabs</span>{icon_btn('add_tab_btn', 'add', 'Add tab', 'icon_btn sm')}
+        </div>
+        <div id="tab_list"></div>
