@@ -73,3 +73,4 @@ export function insert_cols(chain, col, n, side) {
   });
 }
 export function delete_col(chain, col) {
+  chain_rows(chain).forEach(row => {
