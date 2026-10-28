@@ -23,3 +23,5 @@ export function with_blocks(fn) {
   fn(blocks);
   restore_sel(sel);
   end_op(host && host.classList.contains('pg_body') ? body_index(host) : 0);
+}
+export function set_block_style(key) {
