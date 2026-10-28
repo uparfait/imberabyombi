@@ -32,3 +32,5 @@ export function start_col_drag(e) {
   const up = () => {
     removeEventListener('mousemove', move); removeEventListener('mouseup', up); drag_stop = null;
     document.body.classList.remove('col_resize'); col_hover = null; if (table.isConnected) end_op(body_index(editable_of(table)));
+  };
+  addEventListener('mousemove', move); addEventListener('mouseup', up); drag_stop = up;
