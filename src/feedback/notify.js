@@ -9,3 +9,4 @@ export function inline_note(text, tone = 'ok', title) {
   const at = document.activeElement?.closest?.('form, section, article') || qs('#main'); if (!at) return;
   const slot = at.matches('form') ? slot_of(at) : at.querySelector(':scope > [data-msg-slot]') || new_slot(at);
   show_msg(slot, tone, esc(title || TTITLE[tone] || TTITLE.ok), esc(text));
+  const r = slot.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) slot.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
