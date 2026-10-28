@@ -30,6 +30,7 @@
 /* Menu bar: pill buttons like the template's nav links; the open menu's button is tinted. One row: on a narrow screen it
    scrolls sideways (swipe or wheel, no scrollbar) instead of wrapping */
 #menubar {
+  display: flex; flex-wrap: nowrap; gap: .0625rem; margin-left: -.25rem; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none;
 .menubar_btn {
   padding: .1875rem .625rem; border-radius: var(--pill); font-size: .875rem; font-weight: 500; line-height: 1.25rem;
   color: rgb(var(--fg) / .8); transition: background-color .15s, color .15s;
