@@ -37,3 +37,4 @@ export function list_xml(l, lvl, ctx, num_id) {
   let out = '';
   const sub_id = sub => sub.tagName === l.tagName && list_kind(sub) === list_kind(l) ? num_id : undefined;
   Array.from(l.children).forEach(li => {
+    if (is_list(li)) { out += list_xml(li, lvl + 1, ctx, sub_id(li)); return; }
