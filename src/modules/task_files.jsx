@@ -6,3 +6,4 @@ import { file_kind, FICON, fmt_size } from '../files/index.js';
 
 /* f: the file, id: the task, i: its place in the list, own: may remove it, on: it is the one being previewed */
 export const file_chip = (f, id, i, own, on = false) => { const k = file_kind(f);
+  return <div key={i} className="task_file">
