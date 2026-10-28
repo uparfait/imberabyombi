@@ -10,3 +10,4 @@ export function insert_block_at_caret(node) {
   if (!can_edit()) return null;
   restore_focus();
   const s = getSelection(); if (!s.rangeCount) return null;
+  const r = s.getRangeAt(0); const host = editable_of(r.startContainer);
