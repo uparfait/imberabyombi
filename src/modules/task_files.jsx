@@ -36,3 +36,4 @@ export function file_preview(f) {
   if (!f.url) return <p className="text-sm text-muted">{`${f.name} is larger than 1 MB, so this demo kept only its name.`}</p>;
   const media = MEDIA[file_kind(f)];
   return <>{media ? media(f) : <div className="grid justify-items-center gap-2 py-4 text-center">{i3('file', 'h-12 w-12')}
+    <p className="text-sm text-muted">This type of file opens in the full viewer.</p></div>}
