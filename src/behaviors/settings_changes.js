@@ -21,3 +21,4 @@ export function role_land_change(t) {
    always runs and does both (the roles view keys that select by the role's landing page and access, so it follows the data). */
 export function perm_change(t) {
   const rs = roles(), r = rs.find(x => x.id === t.dataset.role);
+  if (r && r.perms !== '*') request(() => { const was = r.land; r.perms = { ...r.perms, [t.dataset.perm]: +t.value };
