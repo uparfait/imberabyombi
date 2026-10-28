@@ -24,3 +24,4 @@ export async function request(fn, { btn = null, delay = cfg.latency } = {}) {
   const top = staff_page();   /* read once, so start and done always pair up even if fn changes the page */
   if (btn) busy(btn, true); if (top) req.start();
   try { if (delay) await sleep(delay); return await fn(); }
+  catch (e) { console.error(e); notify('The request could not be completed. Check your connection and try again.', 'bad'); return false; }
