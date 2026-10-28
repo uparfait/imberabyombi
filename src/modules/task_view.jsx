@@ -5,3 +5,4 @@ import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import { db, rerender } from '../store/index.js';
 import { qs } from '../lib/index.js';
+import { ic } from '../icons/index.js';
