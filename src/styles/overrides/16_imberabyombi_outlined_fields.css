@@ -15,3 +15,4 @@
   .on_bg { --field: var(--bg); }
   /* Typing hint of date/time fields: what is typed (invisible, keeps the place) + the rest of the format in grey */
   .date_hint { position: absolute; left: 0; top: 0; display: flex; align-items: center; height: calc(3.25rem + 2px); padding: 0 1rem; border: 1px solid transparent;
+    font-size: 1rem; font-weight: 400; letter-spacing: normal; text-transform: none; white-space: pre; color: rgb(var(--muted) / .75); pointer-events: none; }
