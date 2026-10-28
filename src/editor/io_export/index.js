@@ -6,3 +6,4 @@ export * from './export_text.js';
 export * from './html_to_md.js';
 export * from './export_pdf.js';
 export * from './rtf_parts.js';
+export * from './export_rtf.js';
