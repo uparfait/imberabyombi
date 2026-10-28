@@ -25,3 +25,6 @@ export function insert_block_at_caret(node) {
     else {
       const r2 = document.createRange(); r2.setStart(r.startContainer, r.startOffset); r2.setEnd(block, block.childNodes.length);
       const nb = block.cloneNode(false); nb.removeAttribute('data-cont'); nb.appendChild(r2.extractContents()); block.after(nb); block.after(node);
+    }
+  }
+  const nx = node.nextElementSibling;
