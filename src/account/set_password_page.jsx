@@ -12,3 +12,6 @@ export function set_password_page() {
         <p className="text-xs text-muted" data-pw-label="">Type a password</p></div>
       <ul className="pw_rules -mt-2 grid gap-1.5 text-sm">{PW_RULES.map(([k, l]) => <li key={k} data-rule={k}>{ic('check', 'h-4 w-4 shrink-0')}{l}</li>)}</ul>
       {pw_field('pw_confirm', 'Confirm password', 'new-password')}
+      <button className="btn btn_primary mt-2 w-full">Save password</button></form>{auth_links('set-password')}
+  </>);
+}
