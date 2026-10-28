@@ -23,3 +23,4 @@ function on_keydown(e) {
   if (k === 'Escape' && pick.a) { e.preventDefault(); pick.close(true); pick.esc = true; setTimeout(() => pick.esc = false); return; }
   if (pick.a && t.closest?.('#picker')) return pick.keys(e);
   if (pick.a && k === 'Tab') pick.close();
+  if (t.matches?.(PICK)) { /* open the picker from the keyboard; on a select, typing a letter opens it with the search filled in */
