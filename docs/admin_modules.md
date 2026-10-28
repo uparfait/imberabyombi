@@ -4,22 +4,7 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 
 | Module                   | Route                  | Features                                                         |
 |--------------------------|------------------------|------------------------------------------------------------------|
-| Dashboard                | `#/admin/dashboard`    | Welcome hero, counts, attendance chart, my tasks, agenda, low stock, parking |
-| Calendar & activities    | `#/admin/calendar`     | Week (hour grid, now line) and month views, mini calendar, click a slot to add; your tasks on their due day (a click opens Tasks with it highlighted) |
-| Tasks                    | `#/admin/tasks`        | Own / assigned / delegated / all tabs; dates with times by status; live countdown (red when overdue); subtasks with progress; attachments with previews; comments (edit and delete your own); a details view with a pen per row; status Save / Cancel (Done records the time); only the creator edits or deletes |
-| Staff                    | `#/admin/staff`        | System users with roles, personal access links                   |
-| Employees                | `#/admin/employees`    | Teachers, kitchen, cleaners, security and administration tabs    |
-| Attendance               | `#/admin/attendance`   | Live clock, check in / out (late after `cfg.work_start`), staff and student logs |
-| Students                 | `#/admin/students`     | Registration, bulletins (a report card per student), payments summary |
-| Library                  | `#/admin/library`      | Books, rentals (return, overdue), declarations, monitoring tiles |
-| Events                   | `#/admin/events`       | Upcoming cards with capacity progress, the full event list       |
-| Reservations & inventory | `#/admin/inventory`    | Approve / reject reservations, stock with minimum-level meters   |
-| Smart parking            | `#/admin/parking`      | Live slot grid, check-in, check-out with a fee (`cfg.parking_rate` per hour), movement log |
-| Roles & access           | `#/admin/roles`        | Permission matrix, landing page per role, invite links           |
-| Email designs            | `#/admin/emails`       | Invite, update, time change, reset link, sign-in code, access token in the brand |
-| System 2 (nested)        | `#/admin/nav`          | Three navigation levels: this system (sidebar) › System 2 (4 pages + System 3) › System 3 (14 pages) |
-| Charts & KPIs            | `#/admin/charts`       | Thirty chart types and KPI designs, a date range, hover values; a click on a card (or a mark) opens its data, 20 rows a page |
-| Settings                 | `#/admin/settings`     | Theme, live design tokens, storage use, backup export / import, demo reset, profile |
+| Dashboard                | `/admin/dashboard`     | Welcome hero, counts, attendance chart, my tasks, agenda, low stock, parking |
 
 ## The admin shell ([`src/admin/`](../src/admin/))
 - **Sidebar**: full height, collapsible on desktop (the logo turns into "open sidebar" on hover), a drawer on phones;
