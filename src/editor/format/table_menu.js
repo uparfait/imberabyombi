@@ -26,3 +26,4 @@ export function table_menu_items() {
     { label: 'Make columns equal width', icon: 'view_column', action: () => tbl_op('distribute') },
     { sep: true },
     { label: 'Table style', icon: 'style', sub: () => TABLE_PRESETS.map(p => ({ label: p.label, action: () => tbl_op('preset', p.key) })) },
+    { label: 'Cell background', icon: 'format_color_fill', sub: () => [{ render: () => palette_el(col => tbl_op('cell_bg', col), 'None') }] },
