@@ -12,3 +12,5 @@ export const msg_box_html = (tone, title, text = '') => `<div class="msg" data-t
 export function show_msg(slot, tone, title, text, autohide = tone === 'ok') {
   if (!slot) return; slot.innerHTML = msg_box_html(tone, title, text); const m = slot.firstElementChild;
   if (autohide) setTimeout(() => { if (!slot.contains(m)) return; m.classList.add('msg_out'); setTimeout(() => m.remove(), 300); }, 7000);
+}
+/* A new slot at the top of a form or section that has none (as in the reference). Views should render their own empty
