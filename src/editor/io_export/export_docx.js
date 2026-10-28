@@ -63,3 +63,4 @@ export async function export_docx(root, name) {
       { name: 'word/_rels/document.xml.rels', data: docx_doc_rels(rels) }
     );
     media.forEach(f => files.push(f));
+    download(zip_store(files, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'), name + '.docx');
