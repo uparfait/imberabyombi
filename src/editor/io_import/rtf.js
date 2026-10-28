@@ -33,3 +33,4 @@ export function rtf_to_html(rtf) {
       if (!m) { i += 2; continue; }
       i += 1 + m[0].length; const w = m[1], arg = m[2] != null ? parseInt(m[2]) : null;
       if (DEST.has(w)) { st.skip = 1; continue; }
+      switch (w) {
