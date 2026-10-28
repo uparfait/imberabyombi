@@ -39,3 +39,5 @@ body.col_resize, body.col_resize * { cursor: col-resize !important; }
 #editor :is(.btn_primary, .btn_text, .btn_outline):not(.btn) {
   display: inline-flex; align-items: center; justify-content: center; gap: .375rem; min-height: 2.25rem; padding: 0 1.125rem;
   border-radius: var(--pill); font-size: .875rem; font-weight: 500; white-space: nowrap; transition: background-color .2s, color .2s;
+}
+#editor .btn_primary:not(.btn) { background: rgb(var(--brand)); color: #fff; }
