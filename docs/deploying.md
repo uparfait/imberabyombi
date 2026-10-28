@@ -12,3 +12,4 @@ from the domain root or any sub-folder without server rules.
 The site is then served at `https://<user>.github.io/<repository>/`.
 
 ## Netlify, Vercel, Cloudflare Pages
+- Build command: `npm run build`
