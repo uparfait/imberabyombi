@@ -31,3 +31,4 @@ Replace `auth.login()` with a call to your sign-in endpoint and keep the returne
 session. `auth.can()` keeps working for the interface; check permissions on the server too.
 
 ## 4. Seed data
+`schemas.<collection>.g()` generates demo rows and `n` sets how many. With an API, remove `g` and `n`, or keep them for
