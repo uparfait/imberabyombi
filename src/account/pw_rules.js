@@ -5,3 +5,4 @@ export const PW_RULES = [['len', 'At least 8 characters', v => v.length >= 8], [
   ['num', 'A number', v => /\d/.test(v)], ['sym', 'A symbol, such as ! ? # @', v => /[^\w\s]/.test(v)]];
 
 export function pw_check(i) {
+  const f = i.form, v = i.value;
