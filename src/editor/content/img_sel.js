@@ -2,3 +2,4 @@
    four resize handles, a move area (drag to move), the quick bar (position, alignment, more options) and the size
    readout; select / hide / place it. img_now() finds an image again after a preview restore replaced the DOM. */
 import { ic_html } from '../../icons/index.js';
+import { rem } from '../../lib/index.js';
