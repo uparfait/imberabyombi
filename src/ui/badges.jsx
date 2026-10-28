@@ -16,3 +16,4 @@ export const tag = v => v ? <span className="chip bg-surface-2 text-fg/80">{v}</
 export const initials = n => String(n || '?').split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
 export const avatar = (n, c = 'h-8 w-8 text-xs') =>
   <span className={`grid ${c} shrink-0 place-items-center rounded-full bg-brand/15 font-semibold text-accent`} aria-hidden="true">{initials(n)}</span>;
+/* "You" when it is the signed-in person (tasks: assigned to / by) */
