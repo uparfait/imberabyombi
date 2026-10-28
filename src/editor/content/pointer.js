@@ -62,3 +62,4 @@ export function pages_pointerdown(e) {
 export function pages_dragstart(e) { if (e.target && e.target.tagName === 'IMG' && e.target.closest('.pg_body')) e.preventDefault(); }
 export function pages_mouseup() { if (paint) setTimeout(apply_paint, 0); }
 export function pages_mousedown(e) {
+  if (e.button !== 0) return;
