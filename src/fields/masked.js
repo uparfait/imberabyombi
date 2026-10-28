@@ -13,3 +13,4 @@ export const masked = (t, s) => {
     if (L && +raw[0] > L[0]) { g = '0' + raw[0]; used = 1; }
     else if (L && raw.length === 2 && (+raw > L[1] || +raw < L[2])) { g = raw[0]; used = 2; }
     d = d.slice(used); o += g; if (spec.parts[gi] === 'mi') mins = g;
+    if (g.length < n) break; if (d) o += sep;
