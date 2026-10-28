@@ -44,3 +44,4 @@ export function run_find(keep) {
     };
     let i = 0;
     while ((i = hay.indexOf(needle, i)) !== -1) {
+      const s = loc(i, false), e = loc(i + needle.length, true), r = document.createRange();
