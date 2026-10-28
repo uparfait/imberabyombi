@@ -2,3 +2,4 @@
    everything else. It sits under each column title; typing filters the rows at once (the input listener → refresh). */
 import { schemas } from '../schemas/index.js';
 import { ui } from '../store/index.js';
+import { label, options, search_ui } from '../ui/index.js';
