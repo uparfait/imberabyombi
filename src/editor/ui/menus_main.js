@@ -8,3 +8,4 @@ import { set_theme } from '../../actions/index.js';
 import { db } from '../../store/index.js';
 import { download_items, zoom_items } from './menu_items.jsx';
 import { page_setup_dialog } from './page_setup.jsx';
+import { open_find } from './find.js';
