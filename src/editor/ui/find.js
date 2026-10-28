@@ -39,3 +39,4 @@ export function run_find(keep) {
     const hay = mc ? text : text.toLowerCase(), needle = mc ? q : q.toLowerCase();
     const loc = (pos, end) => {
       let lo = 0, hi = segs.length - 1;
+      while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (end ? segs[mid].start < pos : segs[mid].start <= pos) lo = mid; else hi = mid - 1; }
