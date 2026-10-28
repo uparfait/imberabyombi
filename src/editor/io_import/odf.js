@@ -47,3 +47,4 @@ async function odf_table(cx, c) {
   return `<table class="doc_table"><tbody>${rows.join('')}</tbody></table>`;
 }
 async function odf_blocks(cx, n, out) {
+  for (const c of Array.from(n.children)) {
