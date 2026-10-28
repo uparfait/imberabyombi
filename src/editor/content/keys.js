@@ -24,3 +24,4 @@ export function handle_tab(e, r, host) {
 const done = e => { e.preventDefault(); e.stopPropagation(); };
 export function pages_keydown(e) {
   const host = editable_of(e.target); if (!host) return;
+  if (img_sel) {
