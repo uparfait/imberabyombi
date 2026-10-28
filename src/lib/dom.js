@@ -12,3 +12,5 @@ export const hex2rgb = h => { const x = h.replace('#', ''); return [0, 2, 4].map
 export const rgb2hex = s => '#' + s.split(/\s+/).map(v => pad((+v).toString(16))).join('');
 export const dl = (name, text, type = 'text/plain') => {
   const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 500);
+};
