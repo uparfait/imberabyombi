@@ -26,3 +26,4 @@ export const kit_overlays = () => (
       <details key={i} open={!i}><summary>{lorem.t(4)}?</summary><p className="px-5 pb-5 pt-3 text-muted">{lorem.p(2)}</p></details>
     ))}</div>
     <h3 className="mt-10 text-xl">Feedback</h3><p className="mt-1 max-w-prose text-sm text-muted">{FEEDBACK_HELP}</p>
+    <div className="mt-4 flex flex-wrap gap-2">{['ok', 'bad', 'warn', 'info'].map(v => (
