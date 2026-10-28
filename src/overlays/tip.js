@@ -4,3 +4,4 @@ import { before_render } from '../store/index.js';
 
 /* G. TOOLTIPS (Imberabyombi style): icon buttons (from aria-label), [data-tip], and trimmed .truncate / .trunc text (only when cut) */
 export const TIPS = '[data-tip], .icon_btn[aria-label], .truncate, .trunc';
+export const tip = {
