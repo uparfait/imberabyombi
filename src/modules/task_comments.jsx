@@ -26,3 +26,4 @@ export function tv_comments(r, st) {
   return <section aria-label="Comments"><h3 className="flex items-center gap-2 text-base">Comments <span className="chip bg-surface-2 text-muted">{cm.length}</span></h3>
     {cm.length ? <ul className="mt-3 grid gap-3">{cm.map(c => comment(r, c, !!st.cedit[c.id]))}</ul> : <p className="mt-2 text-sm text-muted">No comments yet.</p>}
     <div className="mt-3 flex items-end gap-2"><div className="field min-w-0 flex-1"><label htmlFor="tv_comment">Add a comment</label>
+      <textarea id="tv_comment" rows={2} placeholder=" " data-comment-box=""></textarea></div>
