@@ -36,3 +36,4 @@ above them. The `docs/` folder explains the techniques; the code comments explai
 Each folder has an `index.js` that re-exports its files. Import from the folder, not from a file inside another folder:
 ```js
 import { fmt_d, esc } from '../lib/index.js';
+import { notify, request } from '../feedback/index.js';
