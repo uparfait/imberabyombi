@@ -30,3 +30,4 @@ VIEWS.roles = () => {
           </span></button></li>)}</ul></section>
     <section key={sel.id} className="card overflow-hidden"><header className="flex flex-wrap items-start gap-4 border-b border-line p-5">
       {i3(full ? 'shield' : 'key', 'h-12 w-12')}
+      <div className="min-w-[10rem] flex-1"><h2 className="text-xl">{sel.name}</h2><p className="text-sm text-muted">{sel.d || 'Custom role.'}</p></div>
