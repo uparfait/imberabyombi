@@ -22,3 +22,4 @@ export const ROLES0 = [
     perms: perm_map('dashboard:1,calendar:2,tasks:2,events:2,inventory:2,settings:1') }
 ];
 export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !r.length) { r = ROLES0; db.set('roles', r); } return r; };
+/* Landing page: where people with a role arrive after signing in (set on Roles & access). It falls back to the
