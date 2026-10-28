@@ -20,3 +20,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
   user is working in. `notify_next()` carries a message to the page a form goes to next (signed in, signed out…).
 - Slide in from the right, stack up to 4, pause on hover, close button, a line shows the time left.
 - Tones: `ok`, `bad`, `warn`, `info`. Errors stay 7 s, others 4.5 s. Errors use `role="alert"`.
+- `#toasts` and `#loader` are manual popovers in the browser's top layer, so they also show above open dialogs;
