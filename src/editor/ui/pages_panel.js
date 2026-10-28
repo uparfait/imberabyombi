@@ -36,3 +36,5 @@ export function apply_panels() {
   sc.style.paddingLeft = state.sidebar && wide ? room(sb) : '';
   sc.style.paddingRight = state.show_comments && wide ? room(cp) : '';
   sb.style.background = wide ? '' : 'rgb(var(--surface))'; cp.style.background = wide ? '' : 'rgb(var(--surface))';
+  requestAnimationFrame(update_rulers);
+}
