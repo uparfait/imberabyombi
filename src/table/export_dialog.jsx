@@ -12,3 +12,4 @@ import { EXPORTS, date_key, export_file } from './export_file.js';
 /* fixed-choice columns (status, priority…) become filters; All keeps every value */
 const filters = (c, sels) => (
   <fieldset className="grid gap-4 sm:col-span-2 sm:grid-cols-2"><legend className="mb-2 text-sm font-medium">Filters</legend>{sels.map(f => (
+    <div key={f.k} className="field"><label htmlFor={`field_flt_${f.k}`}>{label(c, f.k)}</label>
