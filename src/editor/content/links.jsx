@@ -31,3 +31,4 @@ export function open_link_dialog(existing) {
     qs('#modal')?.close();
     if (range && range.startContainer.isConnected) { const s = getSelection(); s.removeAllRanges(); s.addRange(range); }
     const host = restore_focus(); begin_op();
+    if (a) { a.setAttribute('href', url); if (text && text !== a.textContent) a.textContent = text; }
