@@ -42,3 +42,4 @@ function rtf_table(rx, t) {
 }
 function rtf_blocks(rx, c) {
   let o = '';
+  c.childNodes.forEach(n => {
