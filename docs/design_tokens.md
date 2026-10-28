@@ -11,3 +11,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--ink`            | `26 18 12`          | Brand black: hero, footer, vision band, ink buttons              |
 | `--radius`         | `1rem`              | Corners of larger surfaces: fields, cards, menus, dialogs, tiles |
 | `--pill`           | `999px`             | Small things fully round: buttons, chips, badges, avatars, toggles |
+| `--space`          | `1rem`              | Every `p-*`, `m-*`, `gap-*`, `space-*` utility (`p-4` = 1 × `--space`) |
