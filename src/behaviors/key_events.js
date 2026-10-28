@@ -30,3 +30,4 @@ function on_keydown(e) {
       e.preventDefault(); pick.open(t, true); const q = pick.el.querySelector('[data-pk-q]'); if (q) { q.value = k; pick.filter(k); } }
   }
   if (t.dataset?.list != null && pick.a === t && k === 'ArrowDown') { e.preventDefault(); pick.el.querySelector('.pk_item')?.focus(); }
+  if ((k === 'Enter' || k === ' ') && t.matches?.('[data-act][tabindex]:not(button, a, input, select, textarea)')) { e.preventDefault(); t.click(); }
