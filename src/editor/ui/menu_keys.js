@@ -17,3 +17,4 @@ export function menu_key(e) {
   const k = e.key, top = menu_stack[menu_stack.length - 1], m = top.el, in_field = e.target.closest?.('input, textarea, select');
   if (k === 'Escape') {
     const a = menu_stack[0].anchor, inside = m.contains(document.activeElement) || menu_stack.some(x => x.el.contains(document.activeElement));
+    close_menus(0);
