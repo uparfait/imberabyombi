@@ -1,3 +1,4 @@
 /* table/view_row.jsx: Full details of one record (row click): every schema field (grouped by the schema's sec categories),
    values unclipped; Edit + Delete for managers */
 import { cap } from '../lib/index.js';
+import { ic } from '../icons/index.js';
