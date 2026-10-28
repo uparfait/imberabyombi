@@ -17,3 +17,4 @@ const toast_demo = (
     <div className="toast toast_still" data-tone="ok"><span data-ico="">{ic('check', 'h-4 w-4')}</span>
       <div><p data-title="">Saved</p><p data-msg="">Lorem ipsum dolor sit amet, consectetur.</p></div>
       <span className="grid h-[1.9rem] w-[1.9rem] place-items-center text-muted" aria-hidden="true">{ic('x', 'h-4 w-4')}</span>
+      <span className="bar" aria-hidden="true"></span></div></div>
