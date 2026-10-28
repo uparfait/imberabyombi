@@ -14,3 +14,5 @@ import { to } from '../router/index.js';
 const head = (title, path, link) => <header className="flex items-center justify-between"><h2 className="text-lg">{title}</h2>
   <a href={to(path)} className="btn btn_ghost btn_sm">{link}</a></header>;
 const none = text => <li className="text-sm text-muted">{text}</li>;
+
+const task_li = x => <li key={x.id}><button type="button" className="task_row" data-act="task_open" data-id={x.id}>
