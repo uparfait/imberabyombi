@@ -20,3 +20,5 @@ The template is a complete front end with demo data in the browser. Before real 
 ## Accessibility
 - White text on the default brand orange is about 3.4:1. For strict WCAG AA on small button text, use a darker
   `--brand` (around `184 74 12`) or switch primary buttons to `text-ink`.
+
+## Performance
