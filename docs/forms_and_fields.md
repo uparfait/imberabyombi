@@ -26,3 +26,5 @@ Extras: `def` (default), `when` (`'Done'` / `'!Done'`, shown by status), `min`, 
 Dates and times are text inputs with a mask: type freely (`20261028` becomes `2026-10-28`), a grey hint shows the rest of
 the format, or click to open the mini calendar (dates, weeks, months) and the 15-minute time list. The clock follows the
 12/24-hour setting. Saved values are ISO: `YYYY-MM-DD`, `HH:MM` and `YYYY-MM-DDTHH:MM` (`form_obj()` converts them).
+
+## Selects and suggestions: one shared picker
