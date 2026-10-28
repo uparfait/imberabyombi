@@ -43,3 +43,5 @@ a tile opens the file viewer (images, video, audio, PDF and text inside; other t
   and date formats, writes a short message under each bad field (`aria-invalid`), focuses the first one, and puts a
   summary in the form's `[data-msg-slot]`. Messages clear while the user fixes the field.
 - `show_err(input, text)` / `clear_err(input)` mark one field from your own checks (e.g. "Use a time after the start").
+
+## Reading values
