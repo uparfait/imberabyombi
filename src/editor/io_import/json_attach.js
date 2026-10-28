@@ -21,3 +21,5 @@ export function json_to_html(text, name) {
   if (arr && arr.length && arr.every(Array.isArray)) return { html: rows_to_table(trim_rows(arr.map(r => r.map(fv)), 3000, 40).rows, false) };
   if (is_obj(data) && Object.values(data).every(v => v == null || typeof v !== 'object')) {
     return { html: rows_to_table([['Key', 'Value'], ...Object.entries(data).map(([k, v]) => [k, fv(v)])], true) };
+  }
+  return { html: code_to_html(JSON.stringify(data, null, 2), name) };
