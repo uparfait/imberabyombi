@@ -28,3 +28,5 @@ export const ensure_img_box = () => img_box || (img_box = el('div', { class: 'im
 /* While the pointer is on a quick-bar button its preview may move the image: the box stays where it is (frozen) */
 let frozen = false;
 export const freeze_img_box = on => { frozen = on; };
+
+/* where each selected image sat (body index + node path), to find it again after a snapshot restore replaced it */
