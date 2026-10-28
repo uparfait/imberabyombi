@@ -5,3 +5,5 @@ import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { lorem } from '../lib/index.js';
 import { PUB } from './site_bits.jsx';
+
+const TOC_CLS = 'w-full rounded-lg px-2 py-1.5 text-left text-muted transition hover:bg-fg/5 hover:text-accent';
