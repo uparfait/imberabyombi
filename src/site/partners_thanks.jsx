@@ -19,3 +19,4 @@ export const partner_logo = i => {
 const MASK = 'linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)';
 export function partners_sec(full) {
   const logos = Array.from({ length: 8 }, (_, i) => partner_logo(i));
+  return (
