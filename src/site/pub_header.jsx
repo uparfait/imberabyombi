@@ -9,3 +9,4 @@ export function pub_header() {
   const cur = route.path.slice(1);
   return (
     <header id="site_header" className="hdr sticky top-0 z-40 bg-bg">
+      <nav className="wrap flex h-16 items-center gap-4 sm:h-20" aria-label="Primary">{logo()}
