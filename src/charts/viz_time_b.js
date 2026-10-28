@@ -54,3 +54,4 @@ export const VIZ_TIME_B = {
       table: [['Task', 'Start', 'End', 'Done'], t.map((k, i) => [k, `W${d[i].s + 1}`, `W${d[i].e}`, pct(d[i].done)])] }; } },
   calendar: { t: 'Calendar heatmap', g: 'time', d: 'Daily activity over a year. Darker = more.', f(w) {
     const weeks = Math.max(8, Math.min(53, Math.floor((w - 40) / 12) - 1)), f = frame(w, 150, { l: 30, t: 22, b: 10, r: 10 });
+    const cell = Math.min(16, (f.iw - (weeks + 1) * 2) / (weeks + 1)), start = add_d(new Date(), -weeks * 7 + 1);
