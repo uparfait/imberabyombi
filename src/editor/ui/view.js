@@ -54,3 +54,5 @@ export function toggle_spell() {
   state.spell = !state.spell; bodies().forEach(b => { b.spellcheck = state.spell; });
   if (refs.spell_btn) refs.spell_btn.classList.toggle('active', !state.spell);
   toast(state.spell ? 'Spelling check on' : 'Spelling check off', 1500);
+}
+export function do_print() { if (hist_timer) commit(); hide_img_sel(); close_menus(0); setTimeout(() => window.print(), 50); }
