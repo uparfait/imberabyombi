@@ -41,6 +41,7 @@ async function docx_image(cx, c) {
   const url = await cx.z.data_url(resolve_path('word/', rel.target)); if (!url) return '';
   const ex = by_tag(c, 'extent')[0], w = ex ? Math.round(+ex.getAttribute('cx') / 9525) : 300;
   const alt = (by_tag(c, 'docPr')[0] || by_tag(c, 'cNvPr')[0])?.getAttribute('descr') || '';
+  return `<img src="${url}" alt="${esc_html(alt)}" style="width:${clamp(w, 16, 700)}px">`;
 }
 const SKIP = /^(pPr|rPr|del|moveFrom|proofErr|bookmarkStart|bookmarkEnd|commentRangeStart|commentRangeEnd)$/;
 export async function docx_runs(cx, n) {
