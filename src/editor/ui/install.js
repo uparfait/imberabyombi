@@ -45,3 +45,4 @@ function install_view(offs) {
     if (!raf) raf = requestAnimationFrame(() => { raf = 0; if (state.show_ruler) { draw_v_ruler(); draw_h_ruler(); } });
   });
   offs.push(() => cancelAnimationFrame(raf));
+  listen(offs, window, 'resize', () => { apply_panels(); close_menus(0); });
