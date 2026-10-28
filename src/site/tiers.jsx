@@ -15,3 +15,4 @@ export function tiers() {
           className="font-display text-4xl font-bold text-ok">${p}</data><span className="text-muted">/mo</span>{o ? <s>${o}</s> : null}</p>
         <a href="#/contact" className="btn btn_primary mt-6 w-full">Become a partner</a>
         <ul className="mt-6 grid gap-3 text-sm">{[0, 1, 2, 3].map(j => (
+          <li key={j} className="flex gap-3">{ic('check', 'mt-0.5 h-4 w-4 shrink-0 text-accent')}<span>{lorem.s(5, 9)}</span></li>
