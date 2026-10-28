@@ -7,3 +7,4 @@ import { frame, svg, y_axis, chart_base, band, x_labels, path_of, dot, cross_ban
 import { legend } from './viz_legend.jsx';
 
 export const VIZ_TIME_A = {
+  line: { t: 'Line graph', g: 'time', d: 'Trends over time. Lines are labelled at their ends.', f(w) {
