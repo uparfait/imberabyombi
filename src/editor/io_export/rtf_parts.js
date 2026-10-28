@@ -60,3 +60,5 @@ export function rtf_para(rx, e) {
   const al = { center: '\\qc', right: '\\qr', end: '\\qr', justify: '\\qj' }[st.textAlign]; if (al) pre += al;
   const ml = parseFloat(st.marginLeft); if (ml) pre += `\\li${Math.round(ml * 15)}`; if (e.tagName === 'BLOCKQUOTE') pre += '\\li720';
   const lh = parseFloat(st.lineHeight); if (lh && !/px|pt/.test(st.lineHeight)) pre += `\\sl${Math.round(lh * 240)}\\slmult1`;
+  return `${pre} ${rtf_inline(rx, e, f)}\\par\n`;
+}
