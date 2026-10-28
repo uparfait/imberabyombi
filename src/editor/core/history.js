@@ -17,3 +17,5 @@ export function path_to(root, node) {
   const p = [];
   while (node && node !== root) { if (!node.parentNode) return null; p.unshift(Array.prototype.indexOf.call(node.parentNode.childNodes, node)); node = node.parentNode; }
   return node === root ? p : null;
+}
+export function node_at(root, path) { let n = root; for (const i of path) { if (!n || !n.childNodes[i]) return null; n = n.childNodes[i]; } return n; }
