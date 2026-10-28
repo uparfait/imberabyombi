@@ -23,3 +23,4 @@ export function week_grid(d, items) {
   const all_day = x => { const its = items.filter(i => i.all_day && i.date === ymd(x));
     return <div key={ymd(x)} className="min-w-0 border-l border-line p-1">{its.slice(0, 2).map(cal_task)}{more(its.length - 2, 'px-1')}</div>; };
   const now_line = <span className="pointer-events-none absolute inset-x-0 z-[2] h-0.5 bg-bad" style={{ top: `${(now.getHours() * 60 + now.getMinutes()) / 20}rem` }}>
+    <span className="absolute -left-1.5 -top-1 h-2.5 w-2.5 rounded-full bg-bad"></span></span>;
