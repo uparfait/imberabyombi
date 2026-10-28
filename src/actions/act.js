@@ -26,3 +26,4 @@ export const ACT = new Proxy(OWN, {
 });
 
 /* data-act buttons that are requests. 1 = a change (delete, update, export…): the button spins; 2 = a get (open details,
+   page, sort, switch tab, week or template…). Both show the top #loader on staff pages. On public and sign-in pages a get
