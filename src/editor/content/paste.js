@@ -18,3 +18,4 @@ export function pages_paste(e) {
   const cd = e.clipboardData, files = Array.from(cd.files || []).filter(f => f.type.startsWith('image/')), body = host.classList.contains('pg_body');
   if (body && files.length) { files.forEach(insert_image_file); return; }
   const html = cd.getData('text/html'), text = cd.getData('text/plain');
+  begin_op();
