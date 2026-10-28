@@ -23,3 +23,4 @@
   /* System pages: the row slides up into the dashboard header and stays there, so there is only one header bar. It sits just
      right of the header's own left item (the system logo when the sidebar is closed, the menu icon on phones), which stays;
      the tools on the right (search, theme, modules, profile) stay too. --dock_x is measured in headerLine(). */
+  .nav_row.is_pinned { position: sticky; top: 0; z-index: 41; flex-wrap: nowrap; width: fit-content; max-width: var(--dock_max, calc(100% - 13rem)); height: 4rem; transition: padding-left .25s var(--ease); }
