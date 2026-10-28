@@ -12,3 +12,4 @@ export function file_tile(f, i, gen = 0) {
       aria-label={`Open ${f.name}`} data-tip={media ? f.name : undefined}>
       {media
         ? (k === 'image' ? <img src={u} alt="" /> : <><video src={`${u}#t=0.5`} muted preload="metadata" playsInline></video>{ic('play', 'file_play')}</>)
+        : <><span className="file_ico">{ic(FICON[k], 'h-5 w-5')}</span>
