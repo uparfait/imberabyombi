@@ -12,3 +12,4 @@ const START = { brightness: 0, contrast: 0, saturation: 100, transparency: 0 };
 /* v: the values Apply reads (kept in step with the sliders) */
 function Adjust_body({ src, v }) {
   const [s, set_s] = useState({ ...v });
+  const put = next => { Object.assign(v, next); set_s({ ...v }); };
