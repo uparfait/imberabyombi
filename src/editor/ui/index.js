@@ -5,3 +5,4 @@
 export * from './ui_dom.js';
 export * from './hover_preview.js';
 export * from './menu_engine.js';
+export * from './menu_keys.js';
