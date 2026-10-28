@@ -43,3 +43,4 @@ export function is_empty_block(b) {
   return !!b && b.nodeType === 1 && !is_break(b) && !is_list(b) && !is_table(b) && !b.querySelector('img,table,hr') && b.textContent.replace(/\u200b/g, '') === '';
 }
 export function last_non_break(b) { let l = b.lastElementChild; while (l && (is_break(l) || is_abs(l))) l = l.previousElementSibling; return l || b; }
+export function same_kind(a, b) { return !!(a && b && a.tagName === b.tagName); }
