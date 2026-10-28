@@ -8,3 +8,4 @@ import { DTF, dt_attrs, dt_show } from './date_formats.js';
 
 /* Form field generated from a schema field */
 export function field(f, v) {
+  const id = 'field_' + f.k, req = !!f.req, val = v ?? '', opts = typeof f.o === 'function' ? f.o() : (f.o || []);
