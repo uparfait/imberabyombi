@@ -42,3 +42,4 @@ export function row_drag(e, o) {
     if (!on) return;
     o.row.classList.remove('dragging'); if (o.list && o.cls) o.list.classList.remove(o.cls); if (line) line.remove();
     const stop = c => { c.stopPropagation(); c.preventDefault(); };
+    addEventListener('click', stop, { capture: true, once: true }); setTimeout(() => removeEventListener('click', stop, true), 0);
