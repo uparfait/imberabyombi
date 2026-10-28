@@ -13,3 +13,5 @@ export function close_dialog(d) {
   if (!d?.open || d.classList.contains('closing')) return;
   pick.close(); tip.hide();
   d.classList.add('closing'); setTimeout(() => { d.classList.remove('closing'); d.close(); drop(d); }, reduced() ? 0 : 200);
+}
+/* a closed dialog's content goes at once (the 'close' event in dialog_store.js covers closes that bypass close_dialog) */
