@@ -20,3 +20,4 @@ export function hero_sec() {
             className={GO_CLS}>{ic('arrow_r', 'h-4 w-4')}</span></a><a href="#/intro" className="btn btn_glass">Read the overview</a></div>
         </div>
         <figure className="hero_in relative mx-auto w-full max-w-[19rem] lg:mr-6" style={{ '--d': '.2s' }}>
+          <div className="arch"><img src={cfg.hero} alt="Illustrated portrait" width="408" height="438"
