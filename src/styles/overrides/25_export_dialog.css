@@ -13,3 +13,4 @@
   .i3 { transition: transform .5s var(--ease); }
   .group:hover .i3, .i3:hover { transform: translateY(-4px) rotate(-5deg) scale(1.04); }
   .dark .map { filter: invert(.9) hue-rotate(180deg) saturate(.6); }
+  .mp .i_pause { display: none; } .mp.playing .i_pause { display: inline; } .mp.playing .i_play { display: none; } .mp.playing .mp_big { opacity: 0; pointer-events: none; }
