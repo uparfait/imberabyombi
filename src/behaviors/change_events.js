@@ -23,3 +23,4 @@ function on_change(e) {
   /* export: an unticked column cannot be renamed; with no column ticked the download is off (the export dialog's state) */
   if (t.closest?.('[data-export-cols]') && t.type === 'checkbox') { table.export_change?.(t); return; }
   if (t.dataset.tablePer) { const c = t.dataset.tablePer; table.tview(c).per = +t.value; table.tview_save(c); ui.page[c] = 1;
+    return request(() => table.refresh(c), { delay: staff_page() ? cfg.latency : 0 }); }
