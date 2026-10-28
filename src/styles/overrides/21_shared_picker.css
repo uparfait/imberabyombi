@@ -2,3 +2,4 @@
   /* H. Shared picker (#picker): Imberabyombi menus for selects + suggestions, Imberabyombi mini calendar for date/week/month, 15-minute time list */
   #picker { position: fixed; z-index: 350; display: flex; flex-direction: column; min-width: 12rem; max-width: calc(100vw - 1rem); overflow: hidden;
     color: rgb(var(--fg)); background: rgb(var(--surface)); border: 1px solid rgb(var(--line)); border-radius: var(--radius); animation: pop .15s var(--ease); }
+  #picker[hidden] { display: none; }
