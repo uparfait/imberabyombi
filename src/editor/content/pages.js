@@ -16,3 +16,4 @@ export function add_blank_page(i) {
 }
 export function delete_page(i) {
   if (previewing() || !can_edit()) return;
+  const bs = bodies(), b = bs[i];
