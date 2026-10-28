@@ -16,3 +16,4 @@ export * from './toolbar_state.js';
 export * from './sections.js';
 export * from './row_drag.js';
 export * from './outline.js';
+export * from './outline_rows.jsx';
