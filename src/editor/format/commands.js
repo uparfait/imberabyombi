@@ -29,3 +29,4 @@ export function wrap_selection(cls, attrs = {}) {
   const host = editable_of(s.anchorNode); if (!host) return [];
   const marker = 'wrapmark' + uid(), fonts = fonts_in(host, s.getRangeAt(0));
   document.execCommand('styleWithCSS', false, false);
+  document.execCommand('fontName', false, marker);
