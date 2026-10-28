@@ -13,3 +13,4 @@ function resize(e, h) {
   const img = img_sel, sx = e.clientX, sw = img.offsetWidth, sh = img.offsetHeight, max_w = img_max(img), c = h.dataset.c, sign = c.includes('e') ? 1 : -1;
   const abs = is_abs(img), l0 = img.offsetLeft, t0 = img.offsetTop;
   begin_op();
+  const move = ev => {
