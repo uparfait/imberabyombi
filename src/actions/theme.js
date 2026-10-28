@@ -2,3 +2,4 @@
    spacing, font) and the filled part of range inputs. */
 import { qs, qsa, css_var, hex2rgb, rgb2hex } from '../lib/index.js';
 import { db } from '../store/index.js';
+import { redraw_charts } from '../charts/index.js';
