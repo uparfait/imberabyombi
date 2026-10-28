@@ -12,7 +12,7 @@ const REL_CLS = 'flex items-center justify-between rounded-lg px-2 py-1.5 text-m
 export function longform(k) {
   const secs = Array.from({ length: 4 }, (_, i) => ({ id: `${k}_${i + 1}`, t: lorem.t(3) }));
   const li = n => Array.from({ length: n }, (_, j) => <li key={j}>{lorem.s(6, 12)}</li>);
-  /* like the reference, every call builds all four variants (same lorem sequence) and returns the i-th */
+  /* every call builds all four variants (the same lorem sequence, so each variant's text is stable) and returns the i-th */
   const extra = i => [
     <><h3>{lorem.t(3)}</h3><p>{lorem.p(3)}</p><ul>{li(4)}</ul></>,
     <><figure><img src={cfg.img(k + i, 1200, 700)} alt={lorem.t(4)} width="1200" height="700" loading="lazy" /><figcaption>{lorem.s(6, 10)}</figcaption></figure>
