@@ -33,3 +33,4 @@ export function editor_start(root) {
     /* a picture that finishes loading reflows its page */
     on(pages_el, 'load', e => {
       if (e.target.tagName !== 'IMG') return;
+      const b = e.target.closest('.pg_body'); if (b) schedule_reflow(Math.max(0, body_index(b)));
