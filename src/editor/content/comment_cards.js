@@ -1,2 +1,3 @@
 /* editor/content/comment_cards.js: the comment cards in #comment_list (rendered empty by the chrome, filled here) in
    the order of their text in the page: draft (Comment / Cancel, Ctrl+Enter saves), saved (Resolve, Delete, replies). */
+import { ic_html } from '../../icons/index.js';
