@@ -8,3 +8,4 @@ import { request, reduced } from '../feedback/index.js';
 import { view_file } from '../files/index.js';
 import { close_pops } from '../actions/index.js';
 import { go } from '../router/index.js';
+import { files_of, comments_of } from './task_data.js';
