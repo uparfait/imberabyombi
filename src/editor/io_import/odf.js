@@ -21,3 +21,4 @@ async function odf_inline(cx, n) {
     const ln = c.localName;
     if (ln === 's') h += ' '.repeat(+(c.getAttribute('text:c') || 1)); else if (ln === 'tab') h += '\t'; else if (ln === 'line-break') h += '<br>';
     else if (ln === 'a') h += `<a href="${esc_html(c.getAttribute('xlink:href') || '')}">${await odf_inline(cx, c)}</a>`;
+    else if (ln === 'frame') h += await odf_img(cx, c);
