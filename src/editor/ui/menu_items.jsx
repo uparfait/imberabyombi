@@ -33,3 +33,4 @@ export function spacing_items() {
 }
 export function bullet_items() {
   return [['Disc', 'disc', '●'], ['Circle', 'circle', '○'], ['Square', 'square', '■'], ['Arrow', "'➔  '", '➔'], ['Star', "'★  '", '★'], ['Dash', "'–  '", '–']]
+    .map(([l, v, g]) => ({ label: `${g}   ${l}`, action: () => set_list_type('UL', v) }));
