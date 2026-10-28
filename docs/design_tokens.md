@@ -19,7 +19,7 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--ease` / `--speed` | curve / `.3s`     | Transitions everywhere                                           |
 | `--scale_phone`    | `360`               | Phone design width (see [scaling](scaling_and_themes.md))        |
 | `--scale_desk`     | `15`                | Root size in px on laptops and desktops                          |
-| `--scale_ref`      | `1920`              | Reference desktop width; wider screens show it scaled up         |
+| `--scale_ref`      | `1536`              | Reference desktop width; wider views show it scaled up, never smaller |
 | `--bg` … `--line`  | per theme           | Surfaces, text, muted text, borders (light and `.dark` sets)     |
 | `--ok` `--warn` `--bad` `--info` | per theme | Status badges, meters, alerts                               |
 | `--shadow`         | `none`              | Kept for compatibility: the system is flat, borders carry depth  |
