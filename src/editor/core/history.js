@@ -11,3 +11,5 @@ import { live, live_busy } from './live.js';
 import { save_soon } from './persist.js';
 import { refresh_toolbar } from '../ui/index.js';
 import { hide_img_sel } from '../content/index.js';
+
+export let hist_timer = null;
