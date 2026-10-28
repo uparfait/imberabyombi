@@ -29,3 +29,4 @@ export function collect_html() {
   return c.innerHTML;
 }
 /* absolute images loaded from collected html go back to their page (or the last page); pageless: one page */
+export function place_abs(pageless) {
