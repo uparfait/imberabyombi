@@ -1,6 +1,6 @@
 # Imberabyombi template
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A complete, ready-to-brand **website + admin** template built with **React, Tailwind CSS and Vite**.
 
 Currently, two official plugins are available:
 
