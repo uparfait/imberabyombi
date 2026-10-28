@@ -4,3 +4,5 @@ import { esc } from '../lib/index.js';
 import { round1, compact_num, num, rnd, uwords, SER, scale_color, MARGIN, fit, pct } from './viz_math.js';
 import { frame, svg, arc, mark_group } from './viz_svg.js';
 import { legend } from './viz_legend.jsx';
+
+/* one ring of slices (r0 = 0: a pie), each a mark group with its own tooltip rows */
