@@ -40,3 +40,4 @@ export const EDITOR_MEDIA_PATHS = {
   add_circle: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 8v8M8 12h8',
   input: 'M3 12h11M10 8l4 4-4 4M8 5V4a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-1',
   tab: WIDE + 'M13 5v4h9',
+  calendar_today: 'M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM8 14h3v3H8z',
