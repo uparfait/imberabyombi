@@ -34,3 +34,4 @@ function install_panels(offs) {
   listen(offs, refs.sidebar_open, 'click', () => { state.sidebar = true; apply_panels(); });
   listen(offs, refs.comments_close, 'click', () => { state.show_comments = false; apply_panels(); });
   listen(offs, refs.top_comments, 'click', () => { state.show_comments = !state.show_comments; apply_panels(); render_comments(); });
+  listen(offs, refs.add_tab_btn, 'click', () => add_tab());
