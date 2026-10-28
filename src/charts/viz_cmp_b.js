@@ -38,3 +38,4 @@ export const VIZ_CMP_B = {
     const steps = [['Start', 120, 'total'], ['Sales', 48], ['Services', 22], ['Refunds', -18], ['Costs', -36], ['Tax', -14], ['End', 0, 'total']]
       .map(([k, v, t]) => [k, v * MARGIN(), t]); let run = 0;
     const bars = steps.map(([k, v, t], i) => {
+      if (t && i) v = run; const a = t ? 0 : run, b = t ? v : run + v; if (!t || !i) run = t ? v : run + v; return { k, v, a, b, t }; });
