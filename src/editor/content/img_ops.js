@@ -30,3 +30,4 @@ function draw(img, im, render) {
   return c.toDataURL(jpg ? 'image/jpeg' : 'image/png', 0.92);
 }
 function put(img, url, width_fn, msg) {
+  const w0 = img.offsetWidth, h0 = img.offsetHeight;
