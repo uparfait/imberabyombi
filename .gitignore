@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 # The lock file is always longer than 100 lines (repository rule); versions are pinned in package.json instead
+package-lock.json
