@@ -22,3 +22,8 @@ export function i3(n, c = 'w-14 h-14', tone = 'brand') {
       <rect x="7" y="9" width="50" height="46" rx="23" fill={`url(#${id}f)`} />
       <rect x="7" y="9" width="50" height="46" rx="23" fill={`url(#${id}g)`} />
       <g transform="translate(20 20)" fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d={d} /></g>
+    </svg>
+  );
+}
+
+export function i3_html(n, c = 'w-14 h-14', tone = 'brand') {
