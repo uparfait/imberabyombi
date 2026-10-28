@@ -16,3 +16,4 @@
   .tile_trigger:hover { background: rgb(var(--fg) / .04); }
   .tile_trigger.is_set { border-color: rgb(var(--brand) / .35); }
   .tile_link { display: grid; justify-items: center; gap: .5rem; padding: .625rem; border-radius: 1rem; text-align: center; font-size: .75rem; transition: background-color .2s; }
+  .tile_link:hover { background: rgb(var(--surface)); }
