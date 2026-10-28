@@ -8,3 +8,4 @@ export const tview = c => (ui.tview[c] ||= { per: cfg.page_size, hide: [], ...(d
 export const tview_save = c => db.set('tview', { ...db.get('tview', {}), [c]: ui.tview[c] });
 
 /* React keeps the column search inputs and the settings ticks across redraws (the reference drew them again), so after a
+   draw their values follow ui again: a cleared filter (Clear filters, a hidden column) empties its box. */
