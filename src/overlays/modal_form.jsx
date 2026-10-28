@@ -12,3 +12,4 @@ import { close_dialog, snap } from './dialogs.js';
 const blank = v => v == null || v === false || v === '' || (Array.isArray(v) && !v.length);
 
 /* m: modal()'s options. A new modal() call is a new key, so a new form (its fields start from their defaults) */
+export function Modal_form({ m }) {
