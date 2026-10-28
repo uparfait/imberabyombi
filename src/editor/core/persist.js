@@ -40,6 +40,7 @@ set_on_change(save_soon);
 export async function load_doc() {
   if (apply_doc(await idb_get(DOC_KEY))) return true;
   const old = db.get(DOC_KEY); if (!apply_doc(old)) return false;
+  if (await idb_set(DOC_KEY, old)) db.del(DOC_KEY); return true;
   const tabs = d && Array.isArray(d.tabs) ? d.tabs.filter(t => t && typeof t === 'object') : [];
   if (!tabs.length) return false;
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
