@@ -77,3 +77,4 @@ export const pick = {
       return this.el.querySelector(`.pk_day[data-v="${ymd(d)}"]`)?.focus();
     }
     if (k === 'ArrowDown' || k === 'ArrowUp') {
+      e.preventDefault(); const b = items(), n = b.indexOf(t) + (k === 'ArrowDown' ? 1 : -1);
