@@ -11,3 +11,4 @@ export function split_text(block, b, next) {
   const tn = text_nodes(block); if (!tn.length) return false;
   const cum = []; let total = 0; tn.forEach(t => { cum.push(total); total += t.length; });
   if (total < 2) return false;
+  const limit = b.getBoundingClientRect().bottom - 1;
