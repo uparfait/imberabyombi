@@ -7,3 +7,5 @@ import { auth, role_name, landing } from '../auth/index.js';
 import { notify_next, form_msg, show_err } from '../feedback/index.js';
 import { refresh_panel, ensure_mine } from '../admin/index.js';
 import { PW_RULES } from '../account/index.js';
+
+export const FORMS = {
