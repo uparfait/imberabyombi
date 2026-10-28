@@ -40,3 +40,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content img[data-pos="wrap_left"]{float:left;margin:2px 14px 8px 0}',
   '.doc_content img[data-pos="wrap_right"]{float:right;margin:2px 0 8px 14px}',
   '.doc_content img[data-pos="break"]{display:block;margin:8px auto}',
+  '.doc_content img[data-pos="break"]{display:block;margin:6px auto 6px 0}',
