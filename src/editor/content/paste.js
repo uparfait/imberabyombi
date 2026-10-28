@@ -48,3 +48,4 @@ export function drop_handler(e) {
   const pos = caret_from_point(e.clientX, e.clientY), host = pos && editable_of(pos.node);
   if (host && host.classList.contains('pg_body')) set_caret(pos.node, pos.off);
   const imgs = files.filter(f => f.type.startsWith('image/')), rest = files.filter(f => !f.type.startsWith('image/'));
+  imgs.forEach(insert_image_file);
