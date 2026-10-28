@@ -51,3 +51,4 @@ export function dash_widgets(u) {
   if (auth.can('parking')) { const n = db.list('parking').filter(p => p.status === 'Parked').length, N = cfg.parking_slots;
     W.push(<section key="park" className="card p-5">{head('Parking', '/admin/parking', 'Open')}
       <div className="mt-4 flex items-center gap-4">{i3('car', 'h-14 w-14')}<p><b className="font-display text-3xl">{n}</b><span className="text-muted">
+        {` / ${N} slots`}</span></p></div>
