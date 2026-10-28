@@ -16,3 +16,4 @@ export function fix_list_starts() {
   }
 }
 export function join_conts(root) {
+  qsa(':scope > [data-cont]', root).forEach(e => { const p = prev_flow(e); if (p && same_kind(p, e)) merge_into(p, e); else e.removeAttribute('data-cont'); });
