@@ -21,3 +21,5 @@ export function set_list_type(tag, type) {
   if (!l || l.tagName !== tag || l.classList.contains('checklist')) {
     if (l && l.classList.contains('checklist') && tag === 'UL') l.classList.remove('checklist'); else toggle_list(tag);
     take_sel(); l = closest_list();
+  }
+  if (!l) return;
