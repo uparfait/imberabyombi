@@ -26,3 +26,4 @@ input.tab_filter, .tab_filter input {
 .tab_row {
   position: relative; display: flex; align-items: center; gap: .625rem; min-height: 2.75rem; padding: 0 .25rem 0 1rem;
   border-radius: var(--pill); cursor: pointer; font-size: .875rem; font-weight: 500; color: rgb(var(--fg) / .8);
+  transition: background-color .15s, color .15s, opacity .15s;
