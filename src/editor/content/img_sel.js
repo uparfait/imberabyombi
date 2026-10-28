@@ -30,3 +30,4 @@ let frozen = false;
 export const freeze_img_box = on => { frozen = on; };
 
 /* where each selected image sat (body index + node path), to find it again after a snapshot restore replaced it */
+const where = new WeakMap();
