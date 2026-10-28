@@ -76,3 +76,4 @@ export function pull_up(b, next) {
   }
 }
 export function sig(b) { return [b.childElementCount, last_flow(b), b.textContent.length]; }
+export function same_sig(a, b) { return a[0] === b[0] && a[1] === b[1] && a[2] === b[2]; }
