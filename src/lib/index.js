@@ -2,3 +2,4 @@
    Import from here: import { esc, fmt_d, lorem } from '../lib/index.js' */
 export * from './text.js';
 export * from './dates.js';
+export * from './dom.js';
