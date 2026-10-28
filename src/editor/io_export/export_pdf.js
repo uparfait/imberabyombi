@@ -22,3 +22,4 @@ export async function export_pdf(scope, name, scale = 2) {
       for (let i = 0; i < pages.length; i++) {
         toast(`Making PDF: ${ids.length > 1 ? `tab ${ti + 1} of ${ids.length}, ` : ''}page ${i + 1} of ${pages.length}`, 0);
         const c = pages[i].cloneNode(true); c.style.transform = 'none'; c.style.boxShadow = 'none'; c.style.border = '0';
+        qsa('.cmt', c).forEach(x => { x.style.background = 'none'; x.style.borderBottom = '0'; }); qsa('.img_sel', c).forEach(x => x.remove());
