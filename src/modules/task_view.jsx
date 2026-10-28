@@ -10,3 +10,4 @@ import { notify } from '../feedback/index.js';
 import { modal, snap } from '../overlays/index.js';
 import { task_own, task_mine } from './task_data.js';
 import { tv_rows } from './task_view_rows.jsx';
+import { tv_comments } from './task_comments.jsx';
