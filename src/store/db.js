@@ -14,8 +14,7 @@ export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.r
    included, must be ready before any view runs. */
 let seeder = null, storage_full = () => {};
 export const set_seeder = fn => { seeder = fn; };
-const storage_full = () => import('../feedback/index.js')
-  .then(m => m.notify('Export a backup, then reset demo data in Settings to free space.', 'bad', 'Browser storage is full'));
+export const set_storage_full = fn => { storage_full = fn; };
 
 export const db = {
   get(k, d = null) { try { const v = ls.getItem(cfg.ns + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
