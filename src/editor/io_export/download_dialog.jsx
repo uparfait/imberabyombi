@@ -49,3 +49,4 @@ function Download_body({ opt }) {
   const s = doc_stats(f.tabs ? opt.scope : 'all'), scope_on = opt.multi && f.tabs;
   return (
     <div className="grid gap-4 sm:col-span-2">
+      <div className="grid gap-1.5"><label className="text-sm text-muted" htmlFor="dl_name">File name</label>
