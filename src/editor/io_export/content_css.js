@@ -39,3 +39,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content .cmt.active{background:rgba(251,188,4,.65)}',
   '.doc_content img[data-pos="wrap_left"]{float:left;margin:2px 14px 8px 0}',
   '.doc_content img[data-pos="wrap_right"]{float:right;margin:2px 0 8px 14px}',
+  '.doc_content img[data-pos="break"]{display:block;margin:8px auto}',
