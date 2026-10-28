@@ -18,3 +18,4 @@ export const TTITLE = { ok: 'Done', bad: 'Something went wrong', warn: 'Heads up
 
 /* Bottom-right notifications belong to staff (admin) pages. Public and account pages get the same message inline
    instead: in the form or section that caused it (or at the top of the page). */
+export const staff_page = () => { try { return location.hash.startsWith('#/admin') && !!auth.user; } catch { return false; } };
