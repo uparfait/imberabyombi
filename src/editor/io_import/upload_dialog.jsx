@@ -4,7 +4,7 @@
 import { modal } from '../../overlays/index.js';
 import { state, qs, toast, last_range, last_host, set_last } from '../core/index.js';
 import { after_close } from '../format/index.js';
-import { is_doc_empty } from './project.js';
+import { is_tab_empty } from './project.js';
 import { process_uploads } from './process_uploads.js';
 import { upload_store, Upload_body, Upload_actions } from './upload_body.jsx';
 
