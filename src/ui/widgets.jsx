@@ -4,3 +4,4 @@ import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 
 /* Generic pieces */
+export const tabs = (key, items, cur) => (
