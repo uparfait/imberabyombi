@@ -41,3 +41,5 @@ export function open_link_dialog(existing) {
 
 export function remove_link(a) {
   if (!a || previewing() || !can_edit()) return;
+  begin_op(); const host = editable_of(a); a.replaceWith(...a.childNodes); end_op(body_index(host)); hide_link_bubble();
+}
