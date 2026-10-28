@@ -36,3 +36,6 @@ export function go(path, { replace = false } = {}) {
   if (!replace && u.pathname + u.search === here()) return;
   history[replace ? 'replaceState' : 'pushState'](null, '', u.pathname + u.search + u.hash);
   return navigate();
+}
+
+/* Back / Forward. A jump to an in-page #fragment keeps the address of the page, so nothing is drawn again */
