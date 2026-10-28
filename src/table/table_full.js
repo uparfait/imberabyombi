@@ -14,3 +14,4 @@ export const ph_height = c => PH[c] ? `${PH[c]}px` : '24rem';
 export function table_full(c, on) {
   const card = qs(`#table_card_${c}`); if (!card) return; on ??= !card.classList.contains('table_full');
   const set = v => { ui.table_full = v ? c : null; if (!v) delete PH[c]; rerender(); };
+  const box = r => `inset(${r.top}px ${innerWidth - r.right}px ${innerHeight - r.bottom}px ${r.left}px round 1.5rem)`, ease = 'cubic-bezier(.22,.8,.22,1)';
