@@ -6,3 +6,4 @@ import { pages_el } from './refs.js';
 import { bodies, page_wraps, editable_of } from './dom.js';
 import { create_page } from './pages.js';
 import { reflow, layout_after } from './reflow.js';
+import { set_caret, scroll_caret_into_view, current_page } from './selection.js';
