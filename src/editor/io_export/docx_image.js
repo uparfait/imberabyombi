@@ -27,3 +27,5 @@ export function image_xml(img, ctx) {
       + `<wp:positionH relativeFrom="column"><wp:align>${pos}</wp:align></wp:positionH><wp:positionV relativeFrom="paragraph"><wp:posOffset>0</wp:posOffset>`
       + `</wp:positionV><wp:extent cx="${cx}" cy="${cy}"/><wp:effectExtent l="0" t="0" r="0" b="0"/><wp:wrapSquare wrapText="bothSides"/>`
       + `${doc_pr}<wp:cNvGraphicFramePr/>${graphic}</wp:anchor></w:drawing></w:r>`;
+  }
+  return `<w:r><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${cx}" cy="${cy}"/>${doc_pr}${graphic}</wp:inline></w:drawing></w:r>`;
