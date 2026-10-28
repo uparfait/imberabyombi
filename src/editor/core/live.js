@@ -77,3 +77,4 @@ export const live = {
   get active() { return !!cur; },
   busy: live_busy,
   preview(fn, restore) {
+    if (typeof fn !== 'function' || state.mode !== 'edit' || !pages_el) return;
