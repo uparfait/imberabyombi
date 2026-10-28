@@ -16,3 +16,4 @@ export function export_html(root, name) {
 
 /* innerText needs the copy on the page (off screen); white-space:pre-wrap as in the document's styles keeps spaces */
 export function export_txt(root, name) {
+  const host = el('div', { class: 'doc_content', style: 'position:absolute;left:-99999px;top:0;width:800px;white-space:pre-wrap' });
