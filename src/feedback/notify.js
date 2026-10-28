@@ -12,3 +12,4 @@ export function inline_note(text, tone = 'ok', title) {
   const r = slot.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) slot.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
 }
 /* A message for the page a form goes to next (sign in, sign out, verified, password saved): shown once that page is drawn */
+export let NEXT_MSG = null;
