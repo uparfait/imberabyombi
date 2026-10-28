@@ -8,3 +8,4 @@ import { TONE, badge, tag, person, dash } from './badges.jsx';
 export const bar_cell = (v, max) => (
   <div className="flex min-w-[9rem] items-center gap-2">
     <progress max={+max || 1} value={+v || 0} aria-label={`${+v || 0} of ${+max || 0}`}></progress>
+    <span className="text-xs tabular-nums text-muted">{`${+v || 0}/${+max || 0}`}</span>
