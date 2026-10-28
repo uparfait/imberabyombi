@@ -24,3 +24,4 @@ export const AFTER = [];      /* run once after the next render (charts drawing,
 export const TIMERS = [];     /* intervals that belong to the current page; cleared before every render */
 const BEFORE = [];            /* cleanups every module registers once (close the picker, hide tooltips…) */
 export const before_render = fn => BEFORE.push(fn);
+export const after_render = fn => AFTER.push(fn);
