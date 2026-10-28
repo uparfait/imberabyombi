@@ -59,3 +59,4 @@ export function Upload_body({ up }) {
   );
 }
 /* the footer: Cancel and the submit button, whose label follows the number of files */
+export function Upload_actions({ up }) {
