@@ -4,3 +4,4 @@
 import { VIZ_CMP_A } from './viz_cmp_a.js';
 import { VIZ_CMP_B } from './viz_cmp_b.js';
 import { VIZ_DIST } from './viz_dist.js';
+import { VIZ_TIME_A } from './viz_time_a.js';
