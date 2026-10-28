@@ -54,3 +54,4 @@ export function to_hex(c) {
   if (v === '#010203' && c.toLowerCase() !== '#010203') return null;
   if (v[0] === '#') return v.slice(1).toUpperCase();
   const m = v.match(/rgba?\(([^)]+)\)/); if (!m) return null;
+  const p = m[1].split(',').map(parseFloat); if (p.length > 3 && p[3] === 0) return null;
