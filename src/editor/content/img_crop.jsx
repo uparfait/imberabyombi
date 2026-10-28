@@ -15,3 +15,4 @@ function Crop_body({ src, st }) {
   const set_rect = r => { st.rect = r; set_rect_s(r); };
   const centered = r => {
     const W = pic.current.clientWidth, H = pic.current.clientHeight; let w = W, h = w / r;
+    if (h > H) { h = H; w = h * r; } set_rect({ x: (W - w) / 2, y: (H - h) / 2, w, h });
