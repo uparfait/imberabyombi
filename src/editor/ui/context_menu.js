@@ -25,3 +25,4 @@ export function on_context_menu(e) {
     cmd('Paste', 'content_paste', () => paste_from_clipboard(false), 'Ctrl+V'),
     cmd('Paste without formatting', 'content_paste_go', () => paste_from_clipboard(true), 'Ctrl+Shift+V'),
     { sep: true },
+    cmd('Comment', 'add_comment', () => add_comment(), 'Ctrl+Alt+M'),
