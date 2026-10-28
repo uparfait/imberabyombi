@@ -11,3 +11,4 @@ export const tip = {
   show(x) {
     if (x === this.on) return; this.hide(); this.on = x;
     this.t = setTimeout(() => {
+      const el = this.el, s = x.isConnected && this.on === x ? this.text(x) : ''; if (!s) return;
