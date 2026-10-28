@@ -49,3 +49,4 @@
   .kpi_split { display: flex; gap: 2px; height: .75rem; margin-top: .75rem; overflow: hidden; border-radius: var(--pill); }
   .kpi_track { display: block; height: .5rem; overflow: hidden; border-radius: var(--pill); background: rgb(var(--surface_3)); }
   .kpi_track i { display: block; height: 100%; border-radius: var(--pill); }
+  .kpi_bullet { position: relative; display: flex; height: 1rem; margin-top: .75rem; }
