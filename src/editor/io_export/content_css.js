@@ -44,3 +44,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content img[data-pos="break"][data-align="center"]{margin-left:auto;margin-right:auto}',
   '.doc_content img[data-pos="break"][data-align="right"]{margin-left:auto;margin-right:0}',
   '.doc_content td[data-hdr],.doc_content th[data-hdr]{font-weight:700}',
+  '.doc_content table[data-style="minimal"] td,.doc_content table[data-style="minimal"] th{border-left-color:transparent;border-right-color:transparent}',
