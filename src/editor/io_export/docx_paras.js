@@ -31,3 +31,4 @@ export const NUMFMT = {
   'upper-latin': 'upperLetter', 'lower-roman': 'lowerRoman', 'upper-roman': 'upperRoman'
 };
 export function list_kind(l) { const t = (l.style.listStyleType || '').trim(); if (l.tagName === 'OL') return NUMFMT[t] ? t : 'decimal'; return t || 'disc'; }
+/* a nested list of the same tag and kind continues its parent's numbering (same num_id, one level deeper) */
