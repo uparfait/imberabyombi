@@ -20,3 +20,4 @@
   .float { animation: float 6s ease-in-out infinite; }
   .caret::after { content: ""; display: inline-block; width: 2px; height: .95em; margin-left: 3px; vertical-align: -.1em; background: currentColor; animation: blink 1s steps(1) infinite; }
   .marquee_track { animation: marquee 42s linear infinite; }
+  .marquee:hover .marquee_track { animation-play-state: paused; }
