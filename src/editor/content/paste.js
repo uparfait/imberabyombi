@@ -19,3 +19,4 @@ export function pages_paste(e) {
   if (body && files.length) { files.forEach(insert_image_file); return; }
   const html = cd.getData('text/html'), text = cd.getData('text/plain');
   begin_op();
+  if (!body || paste_plain || !html) document.execCommand('insertText', false, text);
