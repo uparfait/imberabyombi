@@ -12,3 +12,5 @@ export function on_context_menu(e) {
   if (img) {
     if (state.mode !== 'edit') return;
     e.preventDefault(); select_image(img); open_menu(null, image_menu_items(img), at); return;
+  }
+  const host = editable_of(e.target); if (!host || !host.classList.contains('pg_body')) return;
