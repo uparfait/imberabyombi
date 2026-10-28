@@ -34,3 +34,4 @@ export function split_text(block, b, next) {
     if (n && block.contains(n)) { const off = offset_within(block, n, o); if (off >= k) remap.push([key, off - k]); }
   }
   const p = position_at(block, k);
+  const r = document.createRange(); r.setStart(p.node, p.offset); r.setEnd(block, block.childNodes.length);
