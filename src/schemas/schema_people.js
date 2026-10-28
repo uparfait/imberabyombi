@@ -22,3 +22,4 @@ export const employees_schema = {
   sec: { Person: 'name,phone', Job: 'dept,position,shift', Employment: 'salary,status' },
   f: [
     field_spec('name', 'Full name', 'text', 0, 1), field_spec('dept', 'Department', 'select', DEPTS, 1), field_spec('position', 'Position'),
+    field_spec('shift', 'Shift', 'select', option_list('Morning|Day|Evening|Night')), field_spec('phone', 'Phone', 'tel'),
