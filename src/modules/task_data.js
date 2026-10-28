@@ -19,3 +19,5 @@ export const read_subs = root => qsa('[data-sub-group]', root)
 export const read_files = list => Promise.all([...(list || [])].map(f => new Promise(res => { const meta = { id: uid(), name: f.name, size: f.size, type: f.type || '' };
   if (f.size > 1048576) return res(meta);
   const rd = new FileReader(); rd.onload = () => res({ ...meta, url: rd.result }); rd.onerror = () => res(meta); rd.readAsDataURL(f); })));
+
+export const task_own = r => r.by === me() || (auth.boss() && r.assignee !== me());   /* may edit everything / delete */
