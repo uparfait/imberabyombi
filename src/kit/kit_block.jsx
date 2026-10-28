@@ -11,3 +11,4 @@ export const kit_block = (id, t, body) => (
 /* a rounded tile with a diamond, as a data URI */
 export const svg_uri = fill => 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160">`
   + `<rect width="320" height="160" rx="24" fill="${fill}"/><path d="M160 22 218 80 160 138 102 80Z" fill="none" stroke="#fff" stroke-width="6"/>`
+  + `<path d="M160 54 186 80 160 106 134 80Z" fill="#fff"/></svg>`);
