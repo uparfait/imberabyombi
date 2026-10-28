@@ -29,3 +29,4 @@ Add the object to `ACT` in `src/actions/act.js`, and `archive: 1` to `REQ` if it
 with the submit button busy. Validation (required, email, patterns, date formats) runs first and writes messages inline.
 
 ## Attributes the listeners understand
+| Attribute                       | Effect                                                             |
