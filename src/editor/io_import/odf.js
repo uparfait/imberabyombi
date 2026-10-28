@@ -35,3 +35,4 @@ async function odf_inline(cx, n) {
 /* the rows of table t itself (not those of tables nested in its cells) */
 const own_rows = t => by_tag(t, 'table-row').filter(r => { let p = r.parentNode; while (p && p.localName !== 'table') p = p.parentNode; return p === t; });
 async function odf_table(cx, c) {
+  const rows = [];
