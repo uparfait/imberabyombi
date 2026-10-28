@@ -37,3 +37,5 @@ list it. To also show the section on the home page, add `{services_sec()}` to `h
 
 ## 4. Tell search engines
 Add `<url><loc>https://example.com/#/services</loc></url>` to `public/sitemap.xml`.
+
+## Tips
