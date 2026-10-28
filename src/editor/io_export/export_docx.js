@@ -42,3 +42,4 @@ export async function export_docx(root, name) {
     let sect_refs = '';
     const files = [];
     if (has_header) {
+      rels.push(`<Relationship Id="rIdH1" Type="${RELNS}/header" Target="header1.xml"/>`); sect_refs += '<w:headerReference w:type="default" r:id="rIdH1"/>';
