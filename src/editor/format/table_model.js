@@ -50,3 +50,4 @@ export function cell_at_col(row, col) {
 export const table_width_cols = chain => Math.max(1, ...chain_rows(chain).map(r => row_slots(r).reduce((a, s) => Math.max(a, s.end + 1), 0)));
 /* an empty cell shaped like c (same tag and style, no automatic background) */
 export function new_cell_like(c, keep_span) {
+  const n = c.cloneNode(false); if (!keep_span) n.removeAttribute('colspan'); n.removeAttribute('rowspan'); n.removeAttribute('data-hdr'); n.removeAttribute('data-autobg');
