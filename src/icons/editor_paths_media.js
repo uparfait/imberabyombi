@@ -37,3 +37,4 @@ export const EDITOR_MEDIA_PATHS = {
   format_image_right: 'M13 4h8v8h-8zM3 5h7M3 8.5h7M3 12h7M3 16h18M3 20h12',
   insert_page_break: 'M6 3v5h12V3M6 21v-5h12v5M2 12h3M8 12h3M13 12h3M19 12h3',
   library_add: 'M8 2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM2 7v13a2 2 0 0 0 2 2h13M14 6v8M10 10h8',
+  add_circle: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 8v8M8 12h8',
