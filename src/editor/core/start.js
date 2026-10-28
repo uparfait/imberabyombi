@@ -45,3 +45,4 @@ export function editor_start(root) {
   on(document, 'visibilitychange', () => { if (document.visibilityState === 'hidden') save_doc(); });
 
   /* ================= start ================= */
+  try { document.execCommand('defaultParagraphSeparator', false, 'p'); } catch { /* not supported */ }
