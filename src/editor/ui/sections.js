@@ -65,3 +65,5 @@ export function delete_section(k) {
   const next = m.blocks[h.end] || m.blocks[h.i - 1] || null;
   m.blocks.slice(h.i, h.end).forEach(b => b.remove());
   const f = rewrite(m, next), b0 = bodies()[0];
+  caret_to_start(f || (b0 && b0.firstElementChild));
+}
