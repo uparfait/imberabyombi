@@ -13,3 +13,4 @@ const open = () => opening || (opening = new Promise((resolve, reject) => {
 /* the value saved under key (undefined when there is none or IndexedDB is not available) */
 export const idb_get = key => open().then(db => new Promise((resolve, reject) => {
   const req = db.transaction(STORE).objectStore(STORE).get(key);
+  req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error);
