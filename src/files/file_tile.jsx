@@ -8,3 +8,4 @@ import { furl, fmt_size, ext_of, file_kind, FICON } from './file_utils.js';
 export function file_tile(f, i, gen = 0) {
   const k = file_kind(f), media = k === 'image' || k === 'video', u = media ? furl(f) : '';
   return (
+    <div key={`${gen}_${i}`} className={`file ${media ? 'media' : 'doc'}`} style={{ '--i': i }} data-act="file_view" data-i={i} tabIndex="0" role="button"
