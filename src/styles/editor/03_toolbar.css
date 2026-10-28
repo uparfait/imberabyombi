@@ -5,6 +5,7 @@
 #toolbar {
   display: flex; flex: none; flex-wrap: nowrap; align-items: center; margin: .5rem .75rem; padding: .25rem .375rem;
   border: 1px solid rgb(var(--line)); border-radius: 1.25rem; background: rgb(var(--fg) / .03); user-select: none;
+  overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scrollbar-width: none;
 }
 @media (max-width: 639.98px) {   /* phones: tighter rows, no separators (the bar wraps instead of scrolling sideways) */
   #toolbar { margin: .375rem .5rem; padding: .1875rem .25rem; }
