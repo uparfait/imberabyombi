@@ -26,7 +26,7 @@ let booted = false;
 export function boot() {
   if (booted) return; booted = true;
   install_listeners(); before_render(before_page); define_callout();
-  addEventListener('hashchange', navigate);
+  install_history();   /* Back / Forward */
   apply_tokens();
   migrate_task_dates();
   raise_top();   /* #toasts and #loader join the top layer */
