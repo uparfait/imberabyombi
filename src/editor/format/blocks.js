@@ -17,3 +17,4 @@ export function with_blocks(fn) {
   const host = restore_focus(); begin_op();
   const sel = save_sel(); let blocks = selected_blocks();
   if (!blocks.length && last_range) {
+    const td = el_of(last_range.startContainer).closest('td,th');
