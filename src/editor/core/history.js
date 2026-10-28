@@ -14,3 +14,4 @@ import { hide_img_sel } from '../content/index.js';
 
 export let hist_timer = null;
 export function path_to(root, node) {
+  const p = [];
