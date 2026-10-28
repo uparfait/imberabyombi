@@ -11,3 +11,4 @@ const ALIGN = { center: 'format_align_center', right: 'format_align_right', end:
 
 export function refresh_toolbar() {
   const r = last_range; if (!r || !r.startContainer.isConnected) return;
+  const n = el_of(r.startContainer), tb = refs.toolbar; if (!n || !tb) return;
