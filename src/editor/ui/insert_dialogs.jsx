@@ -9,3 +9,5 @@ import { after_close } from './dialogs.jsx';
 
 const CHARS = ('© ® ™ § ¶ † ‡ • · – — … ‰ ′ ″ « » ‹ › “ ” ‘ ’ € £ ¥ ¢ ₹ ₩ ₽ ° ± × ÷ ≈ ≠ ≤ ≥ ∞ √ ∑ ∏ ∫ ∂ ∆ π µ Ω α β γ δ ε θ λ σ φ ψ ω '
   + '← → ↑ ↓ ↔ ⇒ ⇔ ★ ☆ ✓ ✗ ☐ ☑ ♠ ♣ ♥ ♦ ½ ⅓ ¼ ¾ ¹ ² ³ ⁿ').split(' ');
+
+/* the open modal makes the page inert (no focus there), so the character goes in through the DOM at the remembered caret */
