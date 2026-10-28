@@ -21,3 +21,4 @@ const matrix = (sel, edit) => <div className="overflow-x-auto"><table><thead><tr
 VIEWS.roles = () => {
   const rs = roles(), sel = rs.find(r => r.id === ui.role) || rs[0], can = auth.can('roles', 2), st = db.list('staff'), cnt = id => st.filter(s => s.role === id).length;
   const full = sel.perms === '*', edit = can && !full, land = land_value(sel);
+  return <div className="grid gap-6 xl:grid-cols-[20rem_minmax(0,1fr)]">
