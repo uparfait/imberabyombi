@@ -39,3 +39,5 @@ export function notify(text, tone = 'ok', title) {
   host.append(n); while (host.children.length > 4) host.firstElementChild.remove(); run();
 }
 export const toast = notify;
+
+/* the store's "storage is full" notice (store/db.js calls it when the browser refuses to save) */
