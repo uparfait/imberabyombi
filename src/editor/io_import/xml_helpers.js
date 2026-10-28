@@ -11,3 +11,4 @@ export function resolve_path(dir, rel) {
   return parts.join('/');
 }
 export function rels_of(text) {
+  const m = {}; if (!text) return m;
