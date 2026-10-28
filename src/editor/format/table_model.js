@@ -37,3 +37,4 @@ export function restyle_table(chain) {
   chain_rows(chain).forEach((r, i) => Array.from(r.cells).forEach(c => {
     if (i === 0 && hdr) c.setAttribute('data-hdr', ''); else c.removeAttribute('data-hdr');
     if (c.style.backgroundColor && !c.hasAttribute('data-autobg')) return;
+    const bg = (i === 0 && hdr) ? HDR_BG : (str && (i - (hdr ? 1 : 0)) % 2 === 1) ? STRIPE_BG : '';
