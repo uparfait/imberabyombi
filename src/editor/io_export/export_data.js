@@ -35,3 +35,4 @@ export function export_data(root) {
   return [{ name: 'Text', hdr: false, rows: lines.map(l => [l]) }];
 }
 export function export_csv(root, name) {
+  const sheets = export_data(root), q = v => /[",\n\r]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
