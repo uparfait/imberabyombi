@@ -22,3 +22,4 @@ function on_input(e) {
   if (t.dataset.pw != null) pw_check(t);
   if (!pick.mute && pick.a === t) { if (t.dataset.list == null && t.value) pick.view = pick.from(t); pick.draw(); }
   else if (!pick.mute && t.dataset.list != null) pick.open(t);
+  if (t.type === 'range') fill_range(t);
