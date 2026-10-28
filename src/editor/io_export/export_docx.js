@@ -5,3 +5,4 @@ import { xesc, RELNS, WNS } from './docx_runs.js';
 import { list_kind } from './docx_paras.js';
 import { blocks_xml } from './docx_table.js';
 import { prepare_images, abstract_xml } from './docx_image.js';
+import { DOCX_STYLES } from './docx_styles.js';
