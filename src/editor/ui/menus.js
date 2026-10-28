@@ -34,3 +34,4 @@ function insert_items() {
     cmd('Blank page after this one', 'note_add', () => add_blank_page(current_page())),
     cmd('Date', 'calendar_today', () => insert_text_at_caret(new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }))),
     cmd('Special characters', 'emoji_symbols', () => special_chars_dialog()),
+    { sep: true },
