@@ -27,3 +27,4 @@
     --fg: 24 22 21; --muted: 105 100 96; --line: 228 226 223;
     --ok: 21 128 61; --warn: 180 100 0; --bad: 200 40 40; --info: 30 100 210;
     /* Chart series: a fixed order, checked for colour-blind separation on both surfaces. Series 1 is the brand.
+       If you change --brand to another hue, re-check the order (series 2 is blue). */
