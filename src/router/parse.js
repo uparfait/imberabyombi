@@ -5,6 +5,7 @@ import { app_path, mark_shown } from './history.js';
 
 export function parse() {
   mark_shown();
+  return { path: app_path().replace(/\/+$/, '') || '/', q: Object.fromEntries(new URLSearchParams(location.search)) };
 }
 
 export function set_meta(title, desc) {
