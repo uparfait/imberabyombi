@@ -40,3 +40,4 @@ function Crop_body({ src, st }) {
         </div>
       </div>
       <div className="flex flex-wrap gap-2">
+        {RATIOS.map(([v, l]) => (
