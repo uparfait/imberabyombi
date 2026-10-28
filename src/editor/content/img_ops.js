@@ -74,3 +74,4 @@ export async function reset_image(img) {
 }
 export function set_img_border(img, w) { img_op(img, x => { x.style.border = w ? `${w}px solid ${x.style.borderColor || '#000000'}` : ''; }); }
 export function set_img_border_color(img, c) { img_op(img, x => { x.style.border = `${parseFloat(x.style.borderWidth) || 2}px solid ${c || '#000000'}`; }); }
+export const cap = s => s[0].toUpperCase() + s.slice(1);
