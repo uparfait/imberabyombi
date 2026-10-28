@@ -8,3 +8,4 @@ import { paint, stop_paint, clear_formatting, set_block_style, toggle_list, togg
 import { open_upload_dialog } from '../io_import/index.js';
 import { save_project } from '../io_export/index.js';
 import { menu_key } from './menu_keys.js';
+import { find_state, open_find, close_find } from './find.js';
