@@ -11,3 +11,4 @@ export function draw_chart(cv, labels, vals, anim = true) {
   const col = v => `rgb(${css_var(v)})`, fs = rem() * .72, max = Math.max(...vals, 1) * 1.15, pl = fs * 2.6, pb = fs * 2.2, cw = (wd - pl) / vals.length, bw = Math.min(cw * .5, 38);
   let t = anim && !matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1;
   const step = () => {
+    t = Math.min(1, t + .05); const e = 1 - Math.pow(1 - t, 3);
