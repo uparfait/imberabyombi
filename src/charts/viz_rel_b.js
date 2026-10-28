@@ -3,3 +3,4 @@
 import { esc, cap, lorem } from '../lib/index.js';
 import { round1, linear, uwords, scale_color, fit } from './viz_math.js';
 import { frame, svg, band, dot, mark_group } from './viz_svg.js';
+import { legend } from './viz_legend.jsx';
