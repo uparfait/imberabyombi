@@ -17,3 +17,4 @@ function insert_char(c) {
   if (!r || !h || !h.isConnected || !r.startContainer.isConnected) return;
   begin_op();
   const at = r.cloneRange(); at.deleteContents(); const t = document.createTextNode(c); at.insertNode(t);
+  end_op(Math.max(0, body_index(h)));
