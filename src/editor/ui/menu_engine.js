@@ -32,3 +32,4 @@ function row_of(it, level) {
     role: chk ? 'menuitemcheckbox' : 'menuitem', tabindex: '-1' });
   if (chk) r.setAttribute('aria-checked', String(!!it.checked));
   if (it.disabled) r.setAttribute('aria-disabled', 'true');
+  if (it.sub) r.setAttribute('aria-haspopup', 'menu');
