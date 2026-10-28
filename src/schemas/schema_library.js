@@ -41,3 +41,5 @@ export const declarations_schema = {
     field_spec('book', 'Book', 'list', () => db.list('books').map(b => b.title), 1), field_spec('type', 'Type', 'select', option_list('Lost|Damaged|Found|Donated'), 1),
     field_spec('by', 'Declared by', 'list', () => names('students', 'staff')), field_spec('date', 'Date', 'date', 0, 1, { def: () => ymd() }),
     field_spec('note', 'Note', 'textarea')
+  ],
+  g: () => ({
