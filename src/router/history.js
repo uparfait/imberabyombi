@@ -26,3 +26,4 @@ export const mark_shown = () => { shown = here(); };
 /* A navigation that starts during a cross-fade skips the old one (its ready promise rejects: expected, so it is caught). */
 export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
   return request(() => { render_flags.nav_fetched = get;
+    if (!document.startViewTransition || reduced()) return render();
