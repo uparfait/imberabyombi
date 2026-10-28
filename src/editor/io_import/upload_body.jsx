@@ -3,3 +3,4 @@
    Add file / Add N files). Body and footer share a small store: up.get() → { files, m }, up.set(patch).
    Also the "could not be added" dialog (show_failed). */
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { ic } from '../../icons/index.js';
