@@ -77,3 +77,6 @@ export function flatten_abs_images(root) {
   qsa('img[data-pos="front"],img[data-pos="behind"]', root).forEach(img => {
     img.removeAttribute('data-pos'); img.removeAttribute('data-page'); clear_abs(img); if (!img.getAttribute('style')) img.removeAttribute('style');
     if (img.parentNode === root || img.parentNode?.classList?.contains('pg_body')) { const p = img.ownerDocument.createElement('p'); img.replaceWith(p); p.appendChild(img); }
+  });
+  return root;
+}
