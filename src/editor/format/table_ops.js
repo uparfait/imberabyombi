@@ -22,3 +22,4 @@ export function table_chain(t) {
   }
   const chain = [first]; let cur = first;
   while (true) {
+    const b = editable_of(cur), i = bs.indexOf(b); if (b.lastElementChild !== cur) break;
