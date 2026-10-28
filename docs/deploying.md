@@ -41,6 +41,7 @@ location /assets/ { add_header Cache-Control "public, max-age=31536000, immutabl
 location = /index.html { add_header Cache-Control "no-cache"; }
 ```
 
+## Apache (`.htaccess` next to `index.html`)
 ## Checklist
 - Replace `example.com` in `index.html`, `public/robots.txt` and `public/sitemap.xml`.
 - Run `npm run preview` and click through the public site, the sign-in and one admin module.
