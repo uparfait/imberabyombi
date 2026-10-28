@@ -19,3 +19,4 @@
   .toast [data-ico] { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: var(--pill); background: rgb(var(--t) / .14); color: rgb(var(--t)); }
   .toast [data-title] { font-weight: 600; font-size: .9rem; line-height: 1.3; }
   .toast [data-msg] { margin-top: .15rem; font-size: .84rem; line-height: 1.45; color: rgb(var(--muted)); }
+  .toast [data-close] { display: grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: var(--pill); color: rgb(var(--muted)); transition: background-color .2s, color .2s; }
