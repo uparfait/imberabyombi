@@ -36,3 +36,4 @@ async function slide_html(z, sp, i) {
     } else if (s.localName === 'pic') {
       const blip = by_tag(s, 'blip')[0], rel = blip && rels[blip.getAttribute('r:embed')];
       if (rel && !rel.external) {
+        const url = await z.data_url(resolve_path(dir_of(sp), rel.target)), ex = by_tag(s, 'ext').find(e => e.hasAttribute('cx'));
