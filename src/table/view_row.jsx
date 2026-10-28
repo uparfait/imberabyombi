@@ -15,3 +15,4 @@ export function view_row(c, id) {
   if (!r) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Record not found');
   const sec = Object.entries(s.sec || {}).map(([g, ks]) => [g, ks.split(',')]), seen = new Set(sec.flatMap(([, ks]) => ks)), rest = s.f.map(f => f.k).filter(k => !seen.has(k));
   const groups = [...(rest.length ? [[sec.length ? 'Other' : '', rest]] : []), ...sec].map(([g, ks]) => [g, ks.map(k => [label(c, k), cell(c, k, r)])]);
+  if (rest.length && sec.length) groups.push(groups.shift());
