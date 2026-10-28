@@ -17,3 +17,5 @@ export async function fit_img_html(url, alt, inline) {
   } catch { /* keep 320 px */ }
   const tag = `<img src="${url}" alt="${esc_html(alt || '')}" style="width:${Math.max(16, w)}px">`;
   return inline ? tag : `<p>${tag}</p>`;
+}
+export function rows_to_table(rows, header) {
