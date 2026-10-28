@@ -35,3 +35,4 @@ export function offset_within(block, node, off) {
 export function position_at(root, k) {
   const ts = text_nodes(root); let acc = 0;
   for (const t of ts) { if (k <= acc + t.length) return { node: t, offset: Math.max(0, k - acc) }; acc += t.length; }
+  if (ts.length) { const t = ts[ts.length - 1]; return { node: t, offset: t.length }; }
