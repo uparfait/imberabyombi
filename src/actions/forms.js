@@ -11,3 +11,4 @@ import { PW_RULES } from '../account/index.js';
 export const FORMS = {
   login: d => { const email = d.email.trim().toLowerCase(), name = (d.name || '').trim() || email.split('@')[0].replace(/[._-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()), role = d.role || 'super';
     if (!db.list('staff').some(s => s.email === email)) db.upsert('staff', { name, email, role, phone: '', status: 'Active' });
+    auth.login({ name, email, role, remember: !!d.remember, at: Date.now() }); db.set('lastRole', role); ensure_mine(name);
