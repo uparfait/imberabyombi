@@ -10,3 +10,4 @@ import './editor_styles.css';
 
 function Editor_view() {
   const root = useRef(null);
+  useEffect(() => {
