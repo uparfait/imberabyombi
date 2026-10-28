@@ -22,5 +22,5 @@ export function toggle_details(d, e) {
   d._a?.cancel(); d._a = d.animate([{ height: from + 'px' }, { height: to + 'px' }], { duration: 300, easing: 'cubic-bezier(.22,.8,.22,1)' });
   d._a.onfinish = () => { if (!open) d.open = false; d._a = null; };
 }
-/* the message goes in a trailing box after the player's own (static) children, as in the reference */
+/* the message goes in a trailing box after the player's own (static) children, which stay as they are */
 export function media_err(w) { if (!w || w.querySelector('.msg')) return; const s = document.createElement('div'); s.className = 'px-3 pb-3'; w.append(s); show_msg(s, 'bad', 'This media could not load', 'Check your connection, then reload the page.', false); }
