@@ -21,3 +21,4 @@ const has = (o, k) => Object.hasOwn(o, k);
 export const ACT = new Proxy(OWN, {
   get: (o, k) => (has(o, k) ? o[k] : has(task(), k) ? task()[k] : undefined),
   has: (o, k) => has(o, k) || has(task(), k),
+  ownKeys: o => [...new Set([...Reflect.ownKeys(o), ...Reflect.ownKeys(task())])],
