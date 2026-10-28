@@ -63,3 +63,9 @@ export function charts_view() {
         {VIZGROUPS.slice(1).map(([g, l]) => (
           <section key={g} id={`viz_${g}`} className="scroll-mt-20"><h2 className="mb-4 text-xl">{l}</h2>
             <div className="viz_grid grid gap-4 xl:grid-cols-2">{by(g).map(([k, c]) => <Viz_card key={k} k={k} c={c} />)}</div></section>))}
+      </div>
+    </>
+  );
+}
+
+/* Date range: every KPI and chart is redrawn for the new range (the KPI grid is keyed by the range, so its count-up restarts) */
