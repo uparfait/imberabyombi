@@ -15,3 +15,5 @@
   /* inside the editor: no chrome */
   #editor :is(.no_print, #topbar, #toolbar, #hruler, #vruler, #sidebar, #sidebar_open, #comments_panel, #find_panel, #link_bubble, .img_sel, .img_drop_caret) {
     display: none !important;
+  }
+  #editor, #workspace, #main_col, #scroller {
