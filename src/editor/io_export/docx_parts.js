@@ -33,3 +33,4 @@ export const docx_doc_rels = rels => `${XML}<Relationships xmlns="${PR}"><Relati
 
 /* plain: { content_tw, content_px } only, so header / footer links stay text and images are left out */
 export const docx_header = (html, plain) => { const d = el('div'); d.innerHTML = html; return `${XML}<w:hdr ${WNS}>${blocks_xml(d, plain) || '<w:p/>'}</w:hdr>`; };
+export const docx_footer = (s, plain) => {
