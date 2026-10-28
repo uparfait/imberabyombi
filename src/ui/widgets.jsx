@@ -24,3 +24,4 @@ export const stat_row = items => (
   </div>
 );
 /* act: JSX (a button or link) shown under the text */
+export const empty = (title, text, act = null) => (
