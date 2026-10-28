@@ -32,3 +32,4 @@ export const RECORD_ACT = {
   park_in: t => { const busy = new Set(db.list('parking').filter(p => p.status === 'Parked').map(p => p.slot)), free = slot_ids().find(s => !busy.has(s));
     if (!t.dataset.slot && !free) return show_msg(qs('#tiles_msg'), 'warn', 'Every slot is taken', 'Check a car out before checking another one in.'); open_form('parking', null, { slot: t.dataset.slot || free, status: 'Parked', in: now_dt(), out: '', fee: 0 }); },
   park_out: t => { const r = db.find('parking', t.dataset.id); if (!r) return; const hrs = Math.max(1, Math.ceil((Date.now() - new Date(r.in)) / 3.6e6)), fee = hrs * cfg.parking_rate;
+    ask(<>Check out <strong>{r.plate}</strong>{` from slot ${r.slot}? ${hrs} hour${hrs > 1 ? 's' : ''} parked, fee ${money(fee)}.`}</>, () => {
