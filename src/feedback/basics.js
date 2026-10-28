@@ -8,3 +8,4 @@ import { auth } from '../auth/index.js';
        notify() bottom-right: completed background actions (saved, deleted, copied…) + system issues.
        Loading: ONE segmented spinner everywhere (busy buttons, tables, the floating #loader).
    ===================================================================== */
+export const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
