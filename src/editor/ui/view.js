@@ -26,3 +26,4 @@ export function apply_setup(full) {
   update_rulers();
 }
 export function set_zoom(z) {
+  state.zoom = clamp(z, 0.25, 3); set_text(refs.zoom_label, Math.round(state.zoom * 100) + '%');
