@@ -46,3 +46,4 @@ export function last_non_break(b) { let l = b.lastElementChild; while (l && (is_
 export function same_kind(a, b) { return !!(a && b && a.tagName === b.tagName); }
 export function pad_bottom(e) { return parseFloat(getComputedStyle(e).paddingBottom) || 0; }
 export function top_in(e, anc) { let y = 0; while (e && e !== anc) { y += e.offsetTop; e = e.offsetParent; } return y; }
+export function offset_in(e, anc) { let x = 0, y = 0; while (e && e !== anc) { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent; } return { x, y }; }
