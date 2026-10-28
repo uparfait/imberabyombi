@@ -21,3 +21,4 @@ export const color_field = (id, label, value) => (
   <div className="field"><label htmlFor={id}>{label}</label><input id={id} name={id} type="color" defaultValue={value} /></div>
 );
 export const check_field = (id, label, on) => (
+  <label className="flex cursor-pointer items-center gap-2 text-sm font-normal"><input type="checkbox" id={id} name={id} defaultChecked={on} />{label}</label>
