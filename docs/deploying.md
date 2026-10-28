@@ -24,3 +24,5 @@ location /assets/ { add_header Cache-Control "public, max-age=31536000, immutabl
 location = /index.html { add_header Cache-Control "no-cache"; }
 ```
 Enable gzip or brotli compression for `.js`, `.css`, `.svg`, `.xml` and `.txt` files.
+
+## Checklist
