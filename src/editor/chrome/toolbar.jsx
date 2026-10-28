@@ -11,3 +11,4 @@ const tb = ({ ed, icon, tip, edit = true, state, id }) => (
     aria-label={name_of(tip)}>{ic(icon)}</button>
 );
 /* a drop-down with a text label (zoom, styles, font) */
+const dd = (id, label_id, label, tip, width, edit) => (
