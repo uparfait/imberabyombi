@@ -35,3 +35,5 @@ export function load_script(urls) {
         });
         return;
       } catch (e) { err = e; }
+    }
+    delete script_cache[key]; throw err;
