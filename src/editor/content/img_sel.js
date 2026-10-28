@@ -19,3 +19,4 @@ const BOX_HTML = () => `<div class="img_move" style="${MOVE_CSS}"></div>`
 
 export let img_box = null;
 export let img_sel = null;
+/* the image a "Replace image › Upload from computer" is for (read by the #image_replace change listener) */
