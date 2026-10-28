@@ -9,3 +9,4 @@ import { hero_shell } from '../site/index.js';
 const head = (o, icon, text, extra = null) => !o.routed
   ? <section className="card flex flex-wrap items-center gap-4 p-5 sm:p-6" aria-label={o.title}>{i3(icon, 'h-14 w-14')}
       <div className="min-w-0 flex-1"><p className="text-sm text-muted">{o.kicker}</p><h3 className="mt-0.5 text-2xl">{o.title}</h3>
+        <p className="mt-1 text-muted">{text}</p>{extra}</div></section>   /* the design-system demo: a light header */
