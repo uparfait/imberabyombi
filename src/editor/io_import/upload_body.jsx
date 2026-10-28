@@ -34,3 +34,5 @@ export function Upload_body({ up }) {
         {ic('cloud_upload', 'mx-auto h-10 w-10 text-brand')}
         <div className="mt-1.5 text-[15px] text-fg">Drag files here or <span className="font-medium text-accent">browse your computer</span></div>
         <div className="mt-1 text-xs">Add as many as you like, up to 25 MB each</div>
+      </div>
+      <div className="up_list mt-2 max-h-[190px] overflow-auto">
