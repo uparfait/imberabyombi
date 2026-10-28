@@ -49,3 +49,5 @@ with the submit button busy. Validation (required, email, patterns, date formats
 click · input (masks, suggestions, live search) · change (selects, ticks, files) · submit · keydown (Esc, Ctrl K,
 arrows in menus) · pointer and focus (tooltips, chart hover) · scroll and resize (header line, pinned rows, wheel hand-off)
 · contextmenu (the right-click menu). They are installed once by `boot()`.
+
+## Keyboard shortcuts
