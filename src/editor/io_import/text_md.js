@@ -6,3 +6,4 @@ import { esc_html } from '../core/index.js';
 export const text_to_html = t => t.replace(/\r\n?/g, '\n').split('\n').map(l => `<p>${l ? esc_html(l) : '<br>'}</p>`).join('');
 export function md_inline(s) {
   s = esc_html(s);
+  return s.replace(/`([^`]+)`/g, '<code>$1</code>')
