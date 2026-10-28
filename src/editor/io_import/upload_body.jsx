@@ -4,3 +4,4 @@
    Also the "could not be added" dialog (show_failed). */
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { ic } from '../../icons/index.js';
+import { modal } from '../../overlays/index.js';
