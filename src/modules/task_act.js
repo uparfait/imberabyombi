@@ -30,3 +30,4 @@ export const TASK_ACT = {
     if (!v || !box || !f) return; v.put({ prev: { f, i, n: ++shown } }); fade_in(box, 220); },
   task_file_full: t => { const f = tv_api(t)?.st.prev?.f;
     if (f?.url) fetch(f.url).then(x => x.blob()).then(b => view_file(new File([b], f.name, { type: f.type || b.type }))); },
+  task_file_close: t => tv_api(t)?.put({ prev: null }),
