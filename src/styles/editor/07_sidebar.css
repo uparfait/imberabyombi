@@ -56,3 +56,4 @@ input.tab_filter, .tab_filter input {
 .outline_fold svg { width: 1rem; height: 1rem; transition: rotate .2s var(--ease); }
 .outline_row.folded .outline_fold svg, .outline_fold[aria-expanded="false"] svg { rotate: -90deg; }
 .outline_text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: .125rem; }
+.outline_more { display: inline-grid; flex: none; place-items: center; width: 1.625rem; height: 1.625rem; border-radius: var(--pill);
