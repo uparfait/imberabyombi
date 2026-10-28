@@ -38,3 +38,4 @@ export function about_sec(full) {
       <div className="grid grid-cols-2 gap-4" data-reveal="" style={{ '--d': '.1s' }}>
         <figure className="row-span-2 m-0"><img src={cfg.img('about-a', 600, 820)} alt={lorem.t(4)} width="600" height="820" loading="lazy"
           className="h-full w-full rounded-3xl object-cover" /><figcaption>{lorem.t(3)}</figcaption></figure>
+        <img src={cfg.img('about-b', 600, 600)} alt={lorem.t(3)} width="600" height="600" loading="lazy" className="aspect-square w-full rounded-3xl object-cover" />
