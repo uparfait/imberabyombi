@@ -27,3 +27,4 @@ export async function export_pdf(scope, name, scale = 2) {
         holder.innerHTML = ''; holder.appendChild(c);
         /* html2canvas's own option names */
         const canvas = await window.html2canvas(c, { scale, useCORS: true, backgroundColor: bg, logging: false });
+        const slice_h = Math.round(canvas.width * hin / win);
