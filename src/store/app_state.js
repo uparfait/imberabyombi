@@ -14,7 +14,7 @@ export const ui = {
 export const cur = {};              /* per collection: the filter the current page applies (crud) */
 export const loaded = new Set();    /* collections fetched during this page visit (the first view shows the loading spinner) */
 
-/* the parsed hash route: { path, q } plus what the admin page adds (mod, title) */
+/* the parsed route (the address): { path, q } plus what the admin page adds (mod, title) */
 export const route = { path: '/', q: {} };
 export function set_route(next) { for (const k of Object.keys(route)) delete route[k]; Object.assign(route, next); }
 
