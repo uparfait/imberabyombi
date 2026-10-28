@@ -35,3 +35,4 @@ export const VIZ_TIME_A = {
         + cross_bands(f, m, x, i => [...s.map((n, j) => [num(v[j][i]), n, j]).reverse(), [num(cum[i].at(-1)), 'Total', null]]), 'Stacked area chart'),
       legend: legend(s), table: [['Month', ...s, 'Total'], m.map((k, i) => [k, ...v.map(r => num(r[i])), num(cum[i].at(-1))])] }; } },
   step: { t: 'Step line chart', g: 'time', d: 'Values that change in jumps (prices, plans, levels).', f(w) {
+    const m = MONTHS(); let a = 20; const v = m.map(() => (a = lorem.r() < .45 ? a : Math.max(5, a + Math.round(rnd(-6, 9)))));
