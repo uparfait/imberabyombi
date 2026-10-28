@@ -16,3 +16,4 @@ export function split_text(block, b, next) {
   const char_bottom = i => {
     let lo = 0, hi = tn.length - 1;
     while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (cum[mid] <= i) lo = mid; else hi = mid - 1; }
+    const t = tn[lo], o = i - cum[lo]; if (o >= t.length) return -Infinity;
