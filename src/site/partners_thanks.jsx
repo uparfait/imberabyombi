@@ -39,3 +39,8 @@ export function thanks_sec(full) {
             <blockquote className="border-0 bg-transparent p-0 text-base text-white"><p>{lorem.s(12, 18)}</p></blockquote>
             <figcaption className="mt-5 flex items-center gap-3 text-white/80"><img src={cfg.face(40 + i * 5)} alt="" width="40" height="40" loading="lazy"
               className="h-10 w-10 rounded-full object-cover" /><span><cite className="block text-white">{lorem.name()}</cite><small>{lorem.t(2)}</small></span></figcaption>
+          </figure>
+        ))}</div>
+        {full ? null : more('thanks', 'btn_ink')}</div></section>
+  );
+}
