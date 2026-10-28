@@ -39,3 +39,4 @@ function put(sn) {
   if (state.zoom !== sn.zoom) set_zoom(sn.zoom);
   let ws = page_wraps();
   while (ws.length < sn.html.length) { pages_el.appendChild(create_page()); ws = page_wraps(); }
+  while (ws.length > sn.html.length) ws.pop().remove();
