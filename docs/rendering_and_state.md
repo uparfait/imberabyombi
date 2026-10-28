@@ -38,3 +38,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 
 ## Where state lives
 | Kind                         | Where                                            |
+|------------------------------|--------------------------------------------------|
