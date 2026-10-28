@@ -59,3 +59,4 @@
   .kpi_score i { flex: 1; height: .5rem; border-radius: var(--pill); background: linear-gradient(90deg, var(--series_1) var(--p), rgb(var(--surface_3)) var(--p)); }
   .kpi_live { position: relative; width: .625rem; height: .625rem; flex: none; border-radius: var(--pill); background: rgb(var(--ok)); }
   .kpi_live::after { content: ""; position: absolute; inset: -4px; border: 2px solid rgb(var(--ok)); border-radius: inherit; animation: kpi_live 1.8s var(--ease) infinite; }
+  @keyframes kpi_live { from { opacity: .8; transform: scale(.6); } to { opacity: 0; transform: scale(1.5); } }
