@@ -37,3 +37,4 @@ export function custom_table_dialog() {
   modal({
     title: 'Insert table', submit: 'Insert table',
     body: <>
+      {num_field('ct_c', 'Columns', { min: 1, max: 30, defaultValue: 3 })}
