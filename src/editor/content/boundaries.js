@@ -23,3 +23,5 @@ export function on_first_line(host, r) {
   if (r.startContainer !== host && !f.contains(r.startContainer)) return false;
   const cr = caret_rect(r), fr = f.getBoundingClientRect(), pt = (parseFloat(getComputedStyle(f).paddingTop) || 0) * state.zoom;
   return cr.top - (fr.top + pt) < line_h(r) * 0.8;
+}
+export function on_last_line(host, r) {
