@@ -18,3 +18,4 @@ export function Live_slot({ name, first, draw, fresh = true }) {
     return () => { if (SLOTS[name] === fn) delete SLOTS[name]; };
   });
   const v = get_version(), mine = !!own && own.v === v;   /* a page draw since the last own draw wins */
+  return <Fragment key={!fresh ? 'slot' : mine ? 'r' + own.n : 'v' + v}>{mine ? own.jsx : first}</Fragment>;
