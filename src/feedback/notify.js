@@ -30,3 +30,4 @@ export function notify(text, tone = 'ok', title) {
   n.querySelector('[data-title]').textContent = title || TTITLE[tone] || TTITLE.ok;
   n.querySelector('[data-msg]').textContent = text;
   let left = life, t0 = 0, tm;
+  const close = () => { clearTimeout(tm); n.classList.add('out'); setTimeout(() => n.remove(), reduced() ? 0 : 350); };
