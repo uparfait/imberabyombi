@@ -36,3 +36,4 @@ export function refresh_toolbar() {
   }
   set_text(refs.style_label, label);
   set_icon(refs.align_icon, ALIGN[blk ? getComputedStyle(blk).textAlign : 'left'] || 'format_align_left');
+  mark_outline();
