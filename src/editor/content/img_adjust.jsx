@@ -44,3 +44,5 @@ export function adjust_dialog(img) {
       for (let i = 0; i < p.length; i += 4) {
         const r = (p[i] * B - 128) * C + 128, g = (p[i + 1] * B - 128) * C + 128, b = (p[i + 2] * B - 128) * C + 128, l = 0.2126 * r + 0.7152 * g + 0.0722 * b;
         p[i] = l + (r - l) * S; p[i + 1] = l + (g - l) * S; p[i + 2] = l + (b - l) * S; p[i + 3] *= A;
+      }
+      x.putImageData(d, 0, 0); return A < 1 ? 'alpha' : '';
