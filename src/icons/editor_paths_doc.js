@@ -17,3 +17,4 @@ export const EDITOR_DOC_PATHS = {
   note_add: FILE + 'M12 11v7M8.5 14.5h7',
   picture_as_pdf: FILE + 'M8 18v-5h1.5a1.5 1.5 0 0 1 0 3H8M13 13v5h1a2.5 2.5 0 0 0 0-5z',
   csv: FILE + 'M8 13v2.5L7 17M12 13v2.5L11 17M16 13v2.5L15 17',
+  article: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM7 8h10M7 12h10M7 16h6',
