@@ -80,3 +80,4 @@ export function restore_focus() {
     if (h && pages_el && pages_el.contains(h) && document.activeElement === h) { last_range = cs.getRangeAt(0).cloneRange(); last_host = h; return h; }
   }
   if (last_range && last_host && last_host.isConnected && last_range.startContainer.isConnected) {
+    if (document.activeElement !== last_host) last_host.focus({ preventScroll: true });
