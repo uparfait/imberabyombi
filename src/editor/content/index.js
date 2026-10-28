@@ -12,3 +12,4 @@ export * from './img_size.jsx';
 export * from './img_io.js';
 export * from './img_menu.js';
 export * from './links.jsx';
+export * from './link_bubble.js';
