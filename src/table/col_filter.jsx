@@ -9,3 +9,4 @@ export function col_filter(c, k) {
   const f = schemas[c].f.find(x => x.k === k), v = ui.q[c]?.[k] || '';
   const a = { className: 'table_filter', 'data-search': c, 'data-k': k, 'aria-label': `Filter by ${label(c, k)}` };
   if (f?.t === 'select') return <select {...a} defaultValue={v}><option value="">All</option>{options(f, v)}</select>;
+  if (/^date/.test(f?.t || '')) return <><input {...dt_attrs('date', 'Date')} {...a} defaultValue={v} /><span className="date_hint" aria-hidden="true"></span></>;
