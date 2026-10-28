@@ -26,3 +26,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 | `preset`        | values a new record starts with                                                |
 | `acts(row, can)`| extra Action Buttons for a row (JSX or nothing)                                |
 | `can_row(row)`  | whether this row can be edited or deleted                                      |
+| `view(id)`      | open your own details view instead of the generic one                          |
