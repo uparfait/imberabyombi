@@ -33,3 +33,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - Status is never shown by colour alone: badges carry words, charts carry legends and labels.
 
 ## Text selection
+Pages are not text-selectable by default (it keeps taps and drags clean), except where people copy things: fields,
