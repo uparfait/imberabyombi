@@ -73,3 +73,5 @@ export async function odf_to_html(file) {
   });
   const body = by_tag(doc, 'body')[0], out = [];
   if (body) await odf_blocks({ z, sty }, body, out);
+  return out.join('') || '<p><br></p>';
+}
