@@ -31,3 +31,6 @@ export const auth_links = cur => (
 export const pw_field = (id, l, ac, attr = {}) => (
   <div className="field"><label htmlFor={id}>{l}</label><div className="relative">
     <input id={id} name={id} type="password" autoComplete={ac} required className="pr-12" placeholder=" " {...attr} />
+    <button type="button" className="icon_btn absolute right-1 top-1/2 h-10 w-10 -translate-y-1/2" data-act="pwd" aria-label="Show password">{ic('eye', 'h-5 w-5')}</button>
+  </div></div>
+);
