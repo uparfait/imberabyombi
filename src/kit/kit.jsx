@@ -16,3 +16,4 @@ import { kit_tables } from './kit_tables.jsx';
 import { kit_overlays } from './kit_overlays.jsx';
 import { kit_nav } from './kit_nav.jsx';
 import { kit_web_component } from './kit_web_component.jsx';
+import { kit_icons } from './kit_icons.jsx';
