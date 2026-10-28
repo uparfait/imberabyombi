@@ -15,3 +15,4 @@ export const VIZ_REL_A = {
     const f = frame(w, 260), ax = y_axis(f, 100), xs = linear(0, 100, f.l, f.l + f.iw);
     return { svg: svg(f, ax.g + x_ticks(f, xs) + pts.map(p => mark_group(gr[p.g], [[`${round1(p.x)}, ${round1(p.y)}`, 'x, y', p.g]],
       `<circle class="hit_area" cx="${round1(xs(p.x))}" cy="${round1(ax.y(p.y))}" r="12"/>${dot(xs(p.x), ax.y(p.y), scale_color(p.g))}`)).join(''), 'Scatter plot'),
+      legend: legend(gr, 'dot'), table: [['Group', 'x', 'y'], pts.map(p => [gr[p.g], round1(p.x), round1(p.y)])] }; } },
