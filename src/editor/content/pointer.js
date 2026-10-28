@@ -6,3 +6,4 @@ import { qs, qsa, clamp, toast, download, state, DPI, dims, is_abs, editable_of,
   begin_op, end_op } from '../core/index.js';
 import { paint, apply_paint } from '../format/index.js';
 import { apply_panels, apply_setup } from '../ui/index.js';
+import { data_ur_lto_blob } from '../io_import/index.js';
