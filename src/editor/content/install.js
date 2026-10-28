@@ -12,3 +12,4 @@ export function install_content() {
   const offs = [install_img_box(), install_link_bubble()];
   const on = (t, k, f, o) => { if (!t) return; t.addEventListener(k, f, o); offs.push(() => t.removeEventListener(k, f, o)); };
   on(qs('#image_replace'), 'change', on_image_replace);
+  const p = pages_el;
