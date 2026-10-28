@@ -7,3 +7,4 @@ import { hide_img_sel, render_comments } from '../content/index.js';
 import { apply_setup } from './view.js';
 import { update_rulers } from './rulers.js';
 import { render_sidebar } from './sidebar.js';
+import { apply_panels } from './pages_panel.js';
