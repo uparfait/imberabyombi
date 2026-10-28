@@ -51,3 +51,4 @@ export function img_align_of(img) {
   if (pos === 'wrap_left' || pos === 'wrap_right') return pos.slice(5);
   if (pos === 'break') return img.getAttribute('data-align') || 'left';
   if (pos === 'front' || pos === 'behind') {
+    const body = img.closest('.pg_body'); if (!body) return 'left';
