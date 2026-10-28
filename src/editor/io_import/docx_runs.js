@@ -30,3 +30,5 @@ export async function docx_run(cx, r) {
     if (ln === 't') inner += esc_html(c.textContent); else if (ln === 'tab') inner += '\t'; else if (ln === 'cr') inner += '<br>'; else if (ln === 'noBreakHyphen') inner += '-';
     else if (ln === 'br') inner += c.getAttribute('w:type') === 'page' ? '\u0001' : '<br>';
     else if (ln === 'drawing' || ln === 'pict') inner += await docx_image(cx, c);
+  }
+  if (!inner) return '';
