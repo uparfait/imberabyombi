@@ -9,3 +9,4 @@ is blocked (private mode, sandboxes).
 | `db.set(key, value)`         | save a setting (a full storage shows a notification)        |
 | `db.list(collection)`        | all rows of a collection; seeds it once from its schema     |
 | `db.find(collection, id)`    | one row                                                     |
+| `db.upsert(collection, row)` | insert or update (by `id`), returns the id                  |
