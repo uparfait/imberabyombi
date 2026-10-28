@@ -5,3 +5,5 @@ import { me } from '../auth/index.js';
 import { person_you } from '../ui/index.js';
 import { due_tag, sub_progress, read_subs, read_files, files_of, comments_of } from '../modules/index.js';
 import { field_spec, STATUS, people } from './fields.js';
+
+export const tasks_schema = {
