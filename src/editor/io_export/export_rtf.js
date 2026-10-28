@@ -13,3 +13,5 @@ function rtf_list(rx, l, lvl) {
     Array.from(li.children).filter(is_list).forEach(s => { o += rtf_list(rx, s, lvl + 1); });
   });
   return o;
+}
+function rtf_table(rx, t) {
