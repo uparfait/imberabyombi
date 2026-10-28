@@ -44,3 +44,4 @@ function keep_attrs(c, tag) {
     }
     else if (n === 'src' && tag === 'IMG') { if (/^(data:image\/|https?:|blob:)/i.test(v)) keep.src = v; }
     else if (n === 'data-orig' && tag === 'IMG') { if (/^data:image\//i.test(v)) keep[n] = v; }
+    else if (n === 'data-pos') keep[n] = Object.hasOwn(POS_OLD, v) ? POS_OLD[v] : v;
