@@ -7,3 +7,4 @@ const FEEDBACK_HELP = 'Inline messages appear instantly on the component that ca
   + 'on staff pages only; public and account pages show the same message inline. Loading always shows the same spinner: inside a busy button, '
   + 'inside a loading table, or in the round loader at the top for other requests.';
 const TONE_WORD = { ok: 'success', bad: 'error', warn: 'warning', info: 'info' };
+const POP_VIEWS = [['Day', 'D'], ['Week', 'W'], ['Month', 'M'], ['Year', 'Y'], ['Schedule', 'A']];
