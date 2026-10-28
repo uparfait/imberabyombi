@@ -15,7 +15,7 @@ export function pick_file(mode) { open_upload_dialog([], mode === 'open' ? 'repl
    it is empty, else at the cursor) */
 export function open_upload_dialog(initial = [], mode) {
   if (state.mode !== 'edit') { toast('Switch to Editing mode to add files'); return; }
-  const up = upload_store(Array.from(initial), mode || (is_doc_empty() ? 'replace' : 'insert'));
+  const up = upload_store(Array.from(initial), mode || (is_tab_empty() ? 'replace' : 'insert'));
   const saved = last_range && last_range.cloneRange(), saved_host = last_host;
   modal({ title: 'Upload files', body: <Upload_body up={up} />, actions: <Upload_actions up={up} />, on_submit: () => {
     const { files, m } = up.get();
