@@ -4,6 +4,7 @@
    messages that follow a navigation, scrolling), like enhance() in the reference. */
 import { useLayoutEffect, useSyncExternalStore } from 'react';
 import { subscribe, get_version, render_flags } from './store/index.js';
+import { render_route, run_after_render } from './router/index.js';
 
   return (
     <>
