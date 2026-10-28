@@ -40,3 +40,4 @@
     background-size: 1.75rem 1.75rem; background-position: 0 center;
   }
   input[type=checkbox][role=switch]:checked {
+    background-color: rgb(var(--brand)); border-color: rgb(var(--brand));
