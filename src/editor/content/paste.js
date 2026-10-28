@@ -50,3 +50,5 @@ export function drop_handler(e) {
   const imgs = files.filter(f => f.type.startsWith('image/')), rest = files.filter(f => !f.type.startsWith('image/'));
   imgs.forEach(insert_image_file);
   if (rest.length) open_upload_dialog(rest, 'insert');
+}
+export function window_dragover(e) { if (e.dataTransfer && Array.from(e.dataTransfer.types || []).includes('Files')) e.preventDefault(); }
