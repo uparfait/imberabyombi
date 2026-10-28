@@ -51,3 +51,8 @@ export function crud(c, o = {}) {
           <thead><tr><th scope="col" id={`table_acts_${c}`} className="table_acts whitespace-nowrap" hidden={!b.acts}>Action Buttons</th>
             {s.cols.map(k => col_head(c, k, st, hide))}</tr></thead>
           <tbody id={`table_body_${c}`}>{b.rows}</tbody></table></div>
+        <footer id={`table_pager_${c}`} className="pager">{b.pager}</footer>
+      </section>
+    </>
+  );
+}
