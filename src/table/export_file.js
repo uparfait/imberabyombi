@@ -27,3 +27,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
     const cell_x = (v, h) => `<Cell${h ? ' ss:StyleID="h"' : ''}><Data ss:Type="${typeof v === 'number' ? 'Number' : 'String'}">${x(v)}</Data></Cell>`;
     dl(`${c}-${ymd()}.xls`, '<?xml version="1.0"?><?mso-application progid="Excel.Sheet"?>'
       + '<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">'
+      + `<Styles><Style ss:ID="h"><Font ss:Bold="1"/></Style></Styles><Worksheet ss:Name="${x(cap(c).slice(0, 31))}"><Table><Row>${head.map(h => cell_x(h, 1)).join('')}</Row>`
