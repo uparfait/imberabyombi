@@ -27,3 +27,4 @@ export function enhance() {
   const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }),
     { threshold: .12, rootMargin: '0px 0px -6% 0px' }) : null;
   qsa('[data-reveal]').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+  const ioc = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { count_up(en.target); ioc.unobserve(en.target); } })) : null;
