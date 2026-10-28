@@ -23,3 +23,4 @@ export async function xlsx_native(buf) {
   const out = [];
   for (const s of by_tag(wb, 'sheet')) {
     const r = rels[s.getAttribute('r:id') || s.getAttributeNS(R_NS, 'id')]; if (!r) continue;
+    const path = r.target.startsWith('/') ? r.target.slice(1) : resolve_path('xl/', r.target), rows = [];
