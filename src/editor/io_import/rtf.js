@@ -42,3 +42,4 @@ export function rtf_to_html(rtf) {
         case 'pard': in_tbl = false; break; case 'intbl': in_tbl = true; break;
         case 'cell': cells.push(para.replace(/(<br>)+$/, '')); para = ''; break; case 'row': rows.push(cells); cells = []; break;
         case 'emdash': emit('—'); break; case 'endash': emit('–'); break; case 'bullet': emit('•'); break;
+        case 'lquote': emit('‘'); break; case 'rquote': emit('’'); break; case 'ldblquote': emit('“'); break; case 'rdblquote': emit('”'); break;
