@@ -23,3 +23,4 @@ export function render_sidebar() {
   const box = el('div', { class: 'tab_scroll' + (many ? ' many' : '') });
   list.appendChild(box);
   state.tabs.forEach(t => {
+    const active = t.id === state.active;
