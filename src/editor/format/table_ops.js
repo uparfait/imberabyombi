@@ -25,3 +25,5 @@ export function table_chain(t) {
     const b = editable_of(cur), i = bs.indexOf(b); if (b.lastElementChild !== cur) break;
     const nb = bs[i + 1], f = nb && nb.firstElementChild;
     if (is_table(f) && f.hasAttribute('data-cont')) { chain.push(f); cur = f; } else break;
+  }
+  return chain;
