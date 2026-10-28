@@ -32,3 +32,4 @@ export function apply_preset(chain, key) {
   restyle_table(chain);
 }
 /* header row flag + automatic backgrounds (cells with a colour the user chose keep it) */
+export function restyle_table(chain) {
