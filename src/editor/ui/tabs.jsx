@@ -63,3 +63,4 @@ export function start_rename(t) {
   const name = row.querySelector('.tab_name'), inp = el('input', { class: 'tab_rename min-w-0 flex-1', 'aria-label': 'Tab name', maxlength: '120' });
   inp.value = t.name; name.replaceWith(inp); inp.focus(); inp.select();
   let over = false;
+  const done = save => {
