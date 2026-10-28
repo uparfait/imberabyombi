@@ -3,3 +3,4 @@
 import { ic_html } from '../icons/index.js';
 
 export const clear_x_html = () => `<button type="button" class="clear_btn" data-act="clear_search" aria-label="Clear search" data-tip="Clear">${ic_html('x', 'h-4 w-4')}</button>`;
+export const search_ui_html = () => `<button type="button" class="search_btn" data-act="run_search" aria-label="Search" data-tip="Search">${ic_html('search', 'h-[1.125rem] w-[1.125rem]')}</button>${clear_x_html()}`;
