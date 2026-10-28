@@ -27,3 +27,4 @@ export function editor_start(root) {
   const on = (t, ev, fn, opt) => { t.addEventListener(ev, fn, opt); offs.push(() => t.removeEventListener(ev, fn, opt)); };
   for (const install of [install_content, install_ui, format.install_format, io_import.install_import]) {
     if (typeof install !== 'function') continue;
+    try { const off = install(); if (typeof off === 'function') offs.push(off); } catch (e) { console.error(e); }
