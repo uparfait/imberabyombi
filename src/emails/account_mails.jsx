@@ -14,3 +14,4 @@ export const account_mails = () => ({
       and expires in <b>30 minutes</b>.</p>
     <div>{mail_btn('Set a new password', 'btn_primary', '#/set-password')}</div>
     <p className="text-sm text-muted">If the button does not work, copy this link into your browser:</p>
+    {copy_box('https://imberabyombi.com/reset?token=' + chars(24, 'abcdefghjkmnpqrstuvwxyz23456789'), 'Reset link')}
