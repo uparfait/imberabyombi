@@ -31,3 +31,4 @@ function migrate_task_dates() {
 }
 
 let booted = false;
+export function boot() {
