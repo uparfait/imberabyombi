@@ -28,3 +28,4 @@ export const EDITOR_TEXT_PATHS = {
   checklist: 'M11 7h10M11 17h10M3 7l2 2 3-4M3 17l2 2 3-4',
   checklist_rtl: 'M3 7h10M3 17h10M15 7l2 2 3-4M15 17l2 2 3-4',
   text_increase: 'M2 19 7.5 5 13 19M4 14h7M16 12h6M19 9v6',
+  text_decrease: 'M2 19 7.5 5 13 19M4 14h7M16 12h6',
