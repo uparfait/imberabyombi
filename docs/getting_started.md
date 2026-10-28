@@ -16,8 +16,7 @@ The page reloads as you save files. Nothing else is needed: there is no backend,
 npm run build      # writes the optimised site to dist/
 npm run preview    # serves dist/ locally to check the build
 ```
-`dist/` is a static site: upload it to any host (GitHub Pages, Netlify, Vercel, a plain web server).
-Asset paths are relative (`base: './'` in `vite.config.js`), so it also works from a sub-folder.
+`dist/` is a static site: upload it to any host (GitHub Pages, Netlify, Vercel, a plain web server). The host answers
 
 ## First tour
 1. The public website opens at `#/` (home, about, mission, vision, strategies, staff, partners, thanks, contact).
