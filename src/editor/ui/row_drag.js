@@ -28,3 +28,4 @@ export function row_drag(e, o) {
   const tick = () => { edge(); place(); raf = requestAnimationFrame(tick); };
   const move = ev => {
     py = ev.clientY;
+    if (!on) {
