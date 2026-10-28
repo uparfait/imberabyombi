@@ -30,3 +30,4 @@ Internet access is used for fonts, sample photos (picsum.photos, i.pravatar.cc),
 and the map embed. Broken images fall back to a branded placeholder.
 
 ## Reset the demo
+Settings → Data → **Reset demo data** restores the sample records. Theme, session and tokens stay.
