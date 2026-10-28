@@ -5,3 +5,4 @@ import { parse_d, fmt_dt, fmt_d, ymd, qsa } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 
 /* a task date as a Date: "YYYY-MM-DDTHH:MM" (an older bare date counts as the end of that day) */
+export const when_d = s => { if (/T\d/.test(s)) return new Date(s); const d = parse_d(s); d.setHours(23, 59, 59, 999); return d; };
