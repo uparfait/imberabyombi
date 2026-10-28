@@ -12,3 +12,4 @@ import { fill_range, set_token } from '../actions/index.js';
 function on_input(e) {
   const t = e.target;
   /* date & time text fields: add the separators while typing at the end (2026-10-28, 09:30, 2026-W44…) */
+  if (DTF[t.dataset?.type] && e.inputType?.startsWith('insert') && t.selectionStart === t.value.length) t.value = masked(t.dataset.type, t.value);
