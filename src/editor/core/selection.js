@@ -52,3 +52,4 @@ export function deepest(e, first) {
   return e;
 }
 export function caret_to_start(e) { if (!e) return; const t = text_nodes(e)[0]; if (t) set_caret(t, 0); else set_caret(deepest(e, true), 0); }
+export function caret_to_end(e) {
