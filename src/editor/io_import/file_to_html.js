@@ -17,3 +17,4 @@ import { rtf_to_html } from './rtf.js';
 /* the first 4 KB: no zero bytes and under 2% control characters */
 export async function looks_like_text(file) {
   const b = new Uint8Array(await file.slice(0, 4096).arrayBuffer()); if (!b.length) return true;
+  let bad = 0; for (const x of b) { if (x === 0) return false; if (x < 9 || (x > 13 && x < 32)) bad++; }
