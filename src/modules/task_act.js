@@ -31,3 +31,4 @@ export const TASK_ACT = {
   task_file_full: t => { const f = tv_api(t)?.st.prev?.f;
     if (f?.url) fetch(f.url).then(x => x.blob()).then(b => view_file(new File([b], f.name, { type: f.type || b.type }))); },
   task_file_close: t => tv_api(t)?.put({ prev: null }),
+  task_file_rm: t => { const id = t.dataset.id, i = +t.dataset.i;
