@@ -6,3 +6,4 @@
 import { memo, useEffect, useRef } from 'react';
 import { editor_start } from './core/index.js';
 import { topbar, toolbar, workspace, link_bubble, file_inputs } from './chrome/index.js';
+import './editor_styles.css';
