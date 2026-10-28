@@ -70,3 +70,4 @@ function on_down(e, row) {
     row, list: ol, cls: 'outline_drag_over', scrollers: [ol.closest('.tab_scroll'), refs.sidebar],
     rows: () => outline_rows(ol).filter(r => !r.hidden),
     target: (g, rs) => {
+      const md = model(), h = md.heads[row._ti]; if (!h) return null;
