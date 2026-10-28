@@ -3,3 +3,4 @@
 
 /* Pages list: number badge, a snippet, a delete button on hover */
 .page_row {
+  display: flex; align-items: center; gap: .625rem; min-height: 2.25rem; padding: 0 .25rem 0 .75rem; border-radius: var(--pill);
