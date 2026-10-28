@@ -53,3 +53,4 @@ export function indent(dir) {
 export function clear_formatting() {
   if (!can_edit()) return;
   exec('removeFormat');
+  with_blocks(bs => bs.forEach(b => {
