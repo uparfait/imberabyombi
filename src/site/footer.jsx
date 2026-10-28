@@ -13,3 +13,6 @@ export function footer() {
   const col = (t, items) => (
     <nav aria-label={t}><h2 className="text-sm font-semibold text-fg">{t}</h2><ul className="mt-4 grid gap-2.5 text-sm">{items.map(([h, l]) => (
       <li key={h}><a href={`#/${h}`} className="transition hover:text-accent">{l}</a></li>
+    ))}</ul></nav>
+  );
+  return (
