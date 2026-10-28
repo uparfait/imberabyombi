@@ -21,3 +21,5 @@ function on_text(x, y) {
     if (Array.from(r.getClientRects()).some(c => x >= c.left - 2 && x <= c.right + 2 && y >= c.top && y <= c.bottom)) return true;
   }
   return false;
+}
+function behind_at(e) {
