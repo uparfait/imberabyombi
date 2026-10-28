@@ -15,3 +15,4 @@ export function on_context_menu(e) {
   }
   const host = editable_of(e.target); if (!host || !host.classList.contains('pg_body')) return;
   e.preventDefault();
+  const s = getSelection();
