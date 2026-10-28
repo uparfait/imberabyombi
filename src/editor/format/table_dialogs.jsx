@@ -16,3 +16,4 @@ export function preset_preview(p) {
   const side = p.style === 'minimal' ? { borderLeftColor: 'transparent', borderRightColor: 'transparent' } : {};
   return (
     <table><tbody>{[0, 1, 2, 3].map(r => <tr key={r}>{[0, 1, 2].map(k => {
+      const bg = r === 0 && p.header ? HDR_BG : (p.striped && (r - (p.header ? 1 : 0)) % 2 === 1) ? STRIPE_BG : '#fff';
