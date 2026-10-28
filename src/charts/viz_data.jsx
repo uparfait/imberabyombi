@@ -11,3 +11,4 @@ import { KPIS } from './kpi_parts.jsx';
 import { VIZ_OUT } from './viz_view.jsx';
 
 export const VIZ_PER = 20;
+export let SHOWN = null;   /* { head, rows, p } of the open data table */
