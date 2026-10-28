@@ -44,3 +44,4 @@ export function list_xml(l, lvl, ctx, num_id) {
       const on = li.getAttribute('data-checked') === 'true';
       const struck = on && l.hasAttribute('data-strike')
         ? runs.replace(/<w:rPr>/g, '<w:rPr><w:strike/>').replace(/<w:r>(?!<w:rPr>)/g, '<w:r><w:rPr><w:strike/></w:rPr>') : runs;
+      out += `<w:p><w:pPr><w:ind w:left="${720 * (lvl + 1)}" w:hanging="360"/></w:pPr><w:r><w:t xml:space="preserve">${on ? '☑' : '☐'} </w:t></w:r>${struck}</w:p>`;
