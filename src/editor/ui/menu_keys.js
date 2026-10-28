@@ -22,3 +22,4 @@ export function menu_key(e) {
     return true;
   }
   if (k === 'Tab') { close_menus(0); return false; }
+  if (in_field || e.ctrlKey || e.metaKey || e.altKey) return false;
