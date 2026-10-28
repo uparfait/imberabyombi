@@ -39,3 +39,4 @@ export function set_block_style(key) {
 }
 export function set_line_height(v) { with_blocks(bs => bs.forEach(b => { b.style.lineHeight = v; })); }
 export function toggle_para_space(which) {
+  const prop = which === 'before' ? 'paddingTop' : 'paddingBottom';
