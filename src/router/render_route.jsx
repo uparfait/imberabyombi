@@ -4,3 +4,4 @@
 import { Component } from 'react';
 import { route, set_route, render_flags, get_version } from '../store/index.js';
 import { parse, set_meta } from './parse.js';
+import { public_page, admin_page, AUTH_ROUTES, error_page } from './pages.jsx';
