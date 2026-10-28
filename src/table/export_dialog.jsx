@@ -14,3 +14,7 @@ const filters = (c, sels) => (
   <fieldset className="grid gap-4 sm:col-span-2 sm:grid-cols-2"><legend className="mb-2 text-sm font-medium">Filters</legend>{sels.map(f => (
     <div key={f.k} className="field"><label htmlFor={`field_flt_${f.k}`}>{label(c, f.k)}</label>
       <select id={`field_flt_${f.k}`} name={`flt_${f.k}`} defaultValue={ui.q[c]?.[f.k] || ''}><option value="">All</option>{options(f, ui.q[c]?.[f.k] || '')}</select></div>))}
+  </fieldset>
+);
+
+export function export_dialog(c, fmt) {
