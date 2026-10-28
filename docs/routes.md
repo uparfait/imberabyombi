@@ -8,3 +8,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
 | Public  | `#/intro` (hero detail), `#/sitemap` (footer detail, legal), `#/ui` (design system)              |
 | Account | `#/login` `#/forgot` `#/verify` `#/authenticator` `#/set-password` (one shared account shell)     |
 | Admin   | `#/admin` and `#/admin/<module>`: dashboard, calendar, tasks, staff, employees, attendance, students, library, events, inventory, parking, roles, emails, charts, nav, settings |
+| Nested  | `#/admin/nav/...`: System 2 and System 3 pages (three levels of navigation in all)               |
