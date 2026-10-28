@@ -14,3 +14,4 @@ Code: [`src/auth/`](../src/auth/). Each role has a level per module: `0` = no ac
 | Store keeper      | Reservations and inventory                                     |
 | Kitchen staff     | Own tasks, attendance, view inventory                          |
 | Cleaner           | Own tasks, attendance                                          |
+| Parking officer   | Smart parking                                                  |
