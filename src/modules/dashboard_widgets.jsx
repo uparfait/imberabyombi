@@ -6,3 +6,4 @@ import { add_d, ymd, parse_d, qs } from '../lib/index.js';
 import { cfg } from '../config/index.js';
 import { i3 } from '../icons/index.js';
 import { badge, stock_cell } from '../ui/index.js';
+import { draw_chart } from '../charts/index.js';
