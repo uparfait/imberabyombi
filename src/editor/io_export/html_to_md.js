@@ -12,3 +12,4 @@ export function html_to_md(root) {
       if (t === 'BR') { s += c.nextSibling ? '  \n' : ''; return; }
       if (t === 'IMG') { s += `![${c.getAttribute('alt') || ''}](${c.getAttribute('src')})`; return; }
       if (/^(UL|OL)$/.test(t)) return;
+      let inner = inline(c);
