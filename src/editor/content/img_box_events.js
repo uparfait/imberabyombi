@@ -20,3 +20,4 @@ function resize(e, h) {
     position_img_box();
   };
   const up = () => { removeEventListener('pointermove', move); removeEventListener('pointerup', up); end_op(body_index(img.closest('.pg_body'))); select_image(img); };
+  addEventListener('pointermove', move); addEventListener('pointerup', up);
