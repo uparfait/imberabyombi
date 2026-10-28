@@ -37,3 +37,4 @@
 .doc_content .file_chip:hover{background:#e8eaed}
 
 /* ---- template base styles undone inside the document ---- */
+.doc_content :is(h1,h2,h3,h4,h5,h6){font-family:inherit;letter-spacing:normal;text-wrap:wrap}
