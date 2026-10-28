@@ -53,3 +53,4 @@ function put(sn) {
   if (bar) { qsa('.active', bar).forEach(e => { if (!sn.on.includes(e)) e.classList.remove('active'); }); sn.on.forEach(e => e.classList.add('active')); }
   if (refs.color_bar && sn.color != null) refs.color_bar.style.background = sn.color;
   if (refs.size_input && sn.size != null) refs.size_input.value = sn.size;
+  refresh_toolbar();
