@@ -1,2 +1,3 @@
 /* base/06_range.css: base layer */
 @layer base {
+  /* Range (fill width is set by JS through --val) */
