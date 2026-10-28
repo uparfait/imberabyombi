@@ -26,3 +26,4 @@
   .pk_mon { height: 2.5rem; font-size: .85rem; }
   .pk_day:hover, .pk_mon:hover, .pk_day:focus-visible, .pk_mon:focus-visible { background: rgb(var(--fg) / .06); }
   .pk_day.out { color: rgb(var(--muted) / .6); }
+  .pk_day.today, .pk_mon.today { font-weight: 600; color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); outline: 1px solid rgb(var(--brand)); outline-offset: -1px; }
