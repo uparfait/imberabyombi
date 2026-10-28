@@ -5,3 +5,4 @@ import { state, pages_el, el, begin_op, end_op, body_index, editable_of } from '
 import { table_chain } from './table_ops.js';
 
 /* { table, ci } while the pointer is on the border right of column ci, else null */
+export let col_hover = null;
