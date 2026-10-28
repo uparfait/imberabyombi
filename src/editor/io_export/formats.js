@@ -25,3 +25,4 @@ export const FORMATS = [
 ];
 /* { words, tables, images, pages } of what scope exports; pages is null for all tabs or a pageless document */
 export function doc_stats(scope) {
+  const root = export_root(scope), tables = top_tables(root).length, images = qsa('img', root).length;
