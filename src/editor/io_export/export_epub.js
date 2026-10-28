@@ -8,3 +8,4 @@ import { unwrap_comments } from './project_file.js';
 import { prepare_images } from './docx_image.js';
 import { xesc } from './docx_runs.js';
 import { zip_store } from './zip_store.js';
+import { epub_chapter, EPUB_CONTAINER, epub_opf, epub_nav } from './epub_parts.js';
