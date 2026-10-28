@@ -4,3 +4,4 @@
    striped / nowrap table cells, dark pre, brand hr, quote bars, bullet-less lists, no shadows…), so a page looks like the
    source and like its exports (io_export keeps its own copy of the first half). */
 .doc_content{font-family:Arial,sans-serif;font-size:11pt;line-height:1.15;color:#000;white-space:pre-wrap;overflow-wrap:break-word;word-wrap:break-word;tab-size:4;-moz-tab-size:4}
+.doc_content p{margin:0}
