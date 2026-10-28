@@ -40,3 +40,4 @@ export function commit_soon() { if (live_busy()) return; clearTimeout(hist_timer
 export function begin_op() { if (hist_timer) commit(); }
 export function end_op(pi, full = false) { reflow(pi == null ? current_page() : pi, full); commit(); refresh_toolbar(); }
 export function apply_snap(s) {
+  if (!pages_el) return;
