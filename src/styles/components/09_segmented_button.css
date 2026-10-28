@@ -45,3 +45,4 @@
   .pattern_layer.fixed { will-change: transform; }   /* own GPU layer: the page scrolls over it without repainting it */
   .pattern_layer { position: absolute; inset: 0; z-index: -1; pointer-events: none;
     background-color: rgb(var(--pc, var(--brand)) / var(--pa, .06));
+    -webkit-mask: var(--pattern) 0 0 / 5rem 5rem repeat; mask: var(--pattern) 0 0 / 5rem 5rem repeat; }
