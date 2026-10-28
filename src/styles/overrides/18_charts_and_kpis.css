@@ -31,3 +31,4 @@
   .kpi_spark path { fill: none; stroke: rgb(var(--muted) / .6); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
   .kpi_spark span { position: absolute; width: .5rem; height: .5rem; margin: -.25rem 0 0 -.25rem; border-radius: var(--pill); background: var(--series_1); }
   .kpi_gauge { position: relative; width: 100%; max-width: 11rem; margin: .5rem auto 0; }
+  .kpi_gauge svg { display: block; width: 100%; height: auto; }
