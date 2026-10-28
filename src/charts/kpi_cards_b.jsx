@@ -17,3 +17,4 @@ export const kpi_cards_b = k => {
       <ol className="mt-3 grid gap-1">{lead.map(([n, v], i) => (
         <li key={i} className="kpi_part grid grid-cols-[1.5rem_6rem_1fr_auto] items-center gap-2 py-1 text-sm"
           {...tip_attr(n, [[num(v), 'Value', i ? null : 0], [`#${i + 1}`, 'Rank', null]])}>
+          <span className="text-muted">{i + 1}</span><span className="truncate">{n}</span>
