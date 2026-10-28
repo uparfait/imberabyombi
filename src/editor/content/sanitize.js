@@ -36,3 +36,4 @@ function keep_style(c, tag) {
 /* the attributes kept on one element (name → value) */
 function keep_attrs(c, tag) {
   const keep = {}, orig_cls = c.getAttribute('class') || '';
+  for (const a of Array.from(c.attributes)) {
