@@ -17,3 +17,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
   const q0 = ui.q[c]; ui.q[c] = { ...q0, ...flt }; let rows; try { rows = rows_of(c); } finally { ui.q[c] = q0; }
   if (to && to.length === 10) to += 'T23:59';   /* a bare To date covers that whole day */
   /* a row with only a date is compared by day */
+  if (dk && (from || to)) rows = rows.filter(r => { const v = String(r[dk] || '').slice(0, 16), day = v.length <= 10, cut = s => day ? s.slice(0, 10) : s;
