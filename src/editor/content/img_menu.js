@@ -5,3 +5,4 @@ import { qs, begin_op, end_op, body_index } from '../core/index.js';
 import { palette_el, image_url_dialog } from '../ui/index.js';
 import { previewing } from '../format/index.js';
 import { img_op, set_img_width, rotate_image, flip_image, set_img_border, set_img_border_color, reset_image, cap } from './img_ops.js';
+import { IMG_POSITIONS, img_max, img_align_of, img_now, hide_img_sel, set_replace_target, pos_of } from './img_sel.js';
