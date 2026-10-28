@@ -34,3 +34,4 @@ export function load_script(urls) {
           s.onerror = () => { s.remove(); rej(new Error('load failed: ' + u)); }; document.head.appendChild(s);
         });
         return;
+      } catch (e) { err = e; }
