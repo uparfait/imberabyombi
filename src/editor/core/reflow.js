@@ -18,3 +18,4 @@ function drop_page(b, prev) { if (prev) Array.from(b.children).filter(is_abs).fo
 function ensure_para(b) { if (first_flow(b)) return; Array.from(b.childNodes).forEach(n => { if (!is_abs(n)) n.remove(); }); b.prepend(el('p', {}, '<br>')); }
 
 export function reflow(cur = 0, full = false) {
+  if (!pages_el || !bodies().length) return;
