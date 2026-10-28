@@ -4,3 +4,4 @@ import { qsa, download, is_list, is_table, is_break } from '../core/index.js';
 
 export function cell_text(c) {
   const ps = qsa('p,h1,h2,h3,h4,h5,h6,li,pre,blockquote', c).filter(p => !p.querySelector('p,li'));
+  return (ps.length ? ps.map(p => p.textContent).join('\n') : c.textContent).replace(/\u200b/g, '').trim();
