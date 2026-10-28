@@ -22,3 +22,4 @@ export function table_full(c, on) {
     return;
   }
   const ph = card.previousElementSibling?.classList.contains('table_ph') ? card.previousElementSibling : null, done = () => set(false);
+  if (reduced() || !ph) return done();
