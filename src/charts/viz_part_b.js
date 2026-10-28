@@ -23,3 +23,4 @@ export const VIZ_PART_B = {
     const who = i => { let acc = 0; for (let j = 0; j < p.length; j++) { acc += p[j]; if (i < acc) return j; } return -1; };
     return { svg: svg(f, Array.from({ length: 100 }, (_, i) => { const j = who(i), col = j < 0 ? 'rgb(var(--surface_2))' : scale_color(j);
       return `<rect class="mark mark_cell" x="${round1(x0 + (i % 10) * (cell + 2))}" y="${round1(f.t + Math.floor(i / 10) * (cell + 2))}" width="${round1(cell)}"`
+        + ` height="${round1(cell)}" rx="3" style="fill:${col}" ${tip_text(j < 0 ? 'Other' : s[j], [[(j < 0 ? rest : p[j]) + '%', 'Share', j < 0 ? null : j]])}/>`; }).join(''),
