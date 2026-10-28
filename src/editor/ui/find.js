@@ -88,3 +88,4 @@ export function install_find(offs) {
   listen(offs, refs.find_input, 'input', () => run_find());
   listen(offs, refs.find_case, 'change', () => run_find());
   listen(offs, refs.find_input, 'keydown', keys(e => find_step(e.shiftKey ? -1 : 1)));
+  listen(offs, refs.replace_input, 'keydown', keys(() => replace_one()));
