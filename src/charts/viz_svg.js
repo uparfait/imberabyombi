@@ -16,3 +16,4 @@ export function y_axis(f, hi, lo = 0, fmt = compact_num) {
 }
 export function x_axis(f, hi, lo = 0, fmt = compact_num) {
   const ts = ticks(Math.min(lo, 0), hi), x = linear(ts[0], ts.at(-1), f.l, f.l + f.iw);
+  return { x, g: ts.map(v => `<line class="grid_line" y1="${f.t}" y2="${f.t + f.ih}" x1="${round1(x(v))}" x2="${round1(x(v))}"/>`
