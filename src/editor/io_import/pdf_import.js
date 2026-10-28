@@ -15,3 +15,5 @@ function page_lines(tc) {
   }
   if (cur.text) lines.push(cur);
   return lines;
+}
+export async function pdf_to_html(buf) {
