@@ -30,3 +30,4 @@ export function login_page(r) {
       </div></div>
       <a href="#/forgot" className="-mt-3 justify-self-end text-sm font-medium text-accent hover:underline">Forgot password?</a>
       <label className="flex cursor-pointer items-center gap-3 justify-self-start text-sm font-normal">
+        <input type="checkbox" name="remember" defaultChecked />Keep me signed in</label>
