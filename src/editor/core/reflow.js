@@ -34,3 +34,4 @@ export function reflow(cur = 0, full = false) {
       while (next) {
         pull_up(b, next);
         if (is_blank_body(next)) { drop_page(next, b); bs = bodies(); next = bs[i + 1] || null; continue; }
+        break;
