@@ -37,3 +37,5 @@ const KEYS = [['Bold / Italic / Underline', 'Ctrl+B / I / U'], ['Strikethrough',
   ['Print', 'Ctrl+P'], ['Upload files', 'Ctrl+O'], ['Save project file', 'Ctrl+S'], ['Show / hide menus', 'Ctrl+Shift+F'], ['Open a link', 'Ctrl+Click'],
   ['Next / previous tab', 'Ctrl+PageDown / PageUp'], ['Move a section (outline row)', 'Alt+Shift+↑ / ↓'], ['Word count', 'Ctrl+Shift+C'],
   ['Keyboard shortcuts', 'Ctrl+/']];
+
+export function shortcuts_dialog() {
