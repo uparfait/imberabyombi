@@ -63,3 +63,4 @@ export function tbl_op(op, arg) {
     case 'header': { const on = !chain[0].hasAttribute('data-header'); chain.forEach(t => t.toggleAttribute('data-header', on)); break; }
     case 'striped': { const on = !chain[0].hasAttribute('data-striped'); chain.forEach(t => t.toggleAttribute('data-striped', on)); break; }
     case 'preset': apply_preset(chain, arg); break;
+    case 'distribute': drop_cols(); break;
