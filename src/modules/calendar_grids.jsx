@@ -36,3 +36,7 @@ export function week_grid(d, items) {
     <div id="date_hours" className="max-h-[34rem] overflow-y-auto" data-chain=""><div className={`relative ${cols}`} style={{ height: '72rem' }}>
       <div className="relative">{Array.from({ length: 23 }, (_, h) => hour(h))}</div>
       {days.map(day)}
+    </div></div></div></div>;
+}
+
+export function month_grid(d, items) {
