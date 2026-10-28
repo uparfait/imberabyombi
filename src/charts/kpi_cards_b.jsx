@@ -7,3 +7,4 @@ export const kpi_cards_b = k => {
   const { m, mo, mins, src, split, share, lead, live, ring, rate, conv, d_conv, pct_fmt } = k;
   const done = Math.round(ring * 100);
   return [
+    kpi_card('', 'Traffic sources', 'Where visitors came from, as a share of all visits.',
