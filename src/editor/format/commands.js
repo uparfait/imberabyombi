@@ -48,3 +48,4 @@ export function apply_inline_style(prop, value) {
   if (!can_edit()) return;
   const host = restore_focus(); begin_op();
   const s = getSelection(); if (!s.rangeCount) return;
+  if (s.isCollapsed) {
