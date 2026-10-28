@@ -4,8 +4,7 @@ import { qs } from '../lib/index.js';
 import { app_path, mark_shown } from './history.js';
 
 export function parse() {
-  const raw = location.hash.replace(/^#/, '') || '/', [p, query = ''] = raw.split('?');
-  return { path: p.replace(/\/+$/, '') || '/', q: Object.fromEntries(new URLSearchParams(query)) };
+  mark_shown();
 }
 
 export function set_meta(title, desc) {
