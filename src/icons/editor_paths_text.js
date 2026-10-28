@@ -30,3 +30,4 @@ export const EDITOR_TEXT_PATHS = {
   text_increase: 'M2 19 7.5 5 13 19M4 14h7M16 12h6M19 9v6',
   text_decrease: 'M2 19 7.5 5 13 19M4 14h7M16 12h6',
   match_case: 'M2 18 7 6l5 12M3.7 14h6.6M21 12v6M21 15a3 3 0 1 1-6 0 3 3 0 0 1 6 0z',
+  title: 'M4 7V4h16v3M12 4v16M9 20h6',
