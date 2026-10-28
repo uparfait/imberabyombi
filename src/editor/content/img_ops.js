@@ -56,3 +56,4 @@ export function rotate_image(img, dir) {
 }
 export function flip_image(img, axis) {
   return bake_image(img, (c, im) => {
+    c.width = im.naturalWidth; c.height = im.naturalHeight; const x = c.getContext('2d');
