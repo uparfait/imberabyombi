@@ -32,3 +32,4 @@ export function week_grid(d, items) {
     <div className={`${cols} border-b border-line`}>
       <div className="self-end pb-1 pl-1 text-[10px] text-muted">{`GMT${o >= 0 ? '+' : '-'}${pad(Math.abs(o))}`}</div>{days.map(head)}</div>
     {items.some(i => i.all_day && days.some(x => ymd(x) === i.date)) ? <div className={`${cols} border-b border-line`}>
+      <div className="self-center pr-2 text-right text-[10px] text-muted">Tasks</div>{days.map(all_day)}</div> : null}
