@@ -20,3 +20,4 @@
 .crop_rect { position: absolute; border: 2px solid #fff; outline: 100rem solid rgb(0 0 0 / .5); pointer-events: none; }
 
 /* Table style presets: small previews in outlined cards, the chosen one ringed in brand */
+.preset_grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; }
