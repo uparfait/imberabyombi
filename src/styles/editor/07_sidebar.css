@@ -23,3 +23,4 @@ input.tab_filter, .tab_filter input {
   font-size: .8125rem; line-height: 1.25rem;
 }
 .tab_scroll.many { max-height: min(55dvh, 30rem); overflow-y: auto; overscroll-behavior: contain; }
+.tab_row {
