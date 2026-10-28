@@ -9,3 +9,5 @@ export let last_range = null, last_host = null;
 export function set_last(r, host) { last_range = r || null; last_host = host === undefined ? (r ? editable_of(r.startContainer) : null) : host; }
 export function set_last_range(r) { last_range = r || null; }
 export function set_last_host(h) { last_host = h || null; }
+
+export function save_sel() {
