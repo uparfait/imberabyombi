@@ -35,3 +35,5 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `actions/`   | every `data-act` handler (`ACT`), which ones are requests (`REQ`), every `data-form` handler (`FORMS`) |
 | `behaviors/` | the delegated document listeners: click, input, change, keys, pointer, scroll, right-click menu |
 | `router/`    | hash parsing, page meta, `render_route()`, what runs after each draw, `boot()`              |
+
+## How the pieces talk
