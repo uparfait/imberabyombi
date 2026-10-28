@@ -3,3 +3,5 @@
    tb_edit (greyed out while viewing). The engine updates the labels (#zoom_label, #style_label, #font_label, #mode_label),
    #size_input, #color_bar and the icon slots #align_icon, #mode_icon, #menus_icon. */
 import { ic } from '../../icons/index.js';
+
+const name_of = tip => tip.replace(/ \(.+\)$/, '');
