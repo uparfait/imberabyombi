@@ -72,3 +72,4 @@ function clean(node) {
 
 export function sanitize_html(html) {
   const doc = new DOMParser().parseFromString(html, 'text/html');
+  clean(doc.body);
