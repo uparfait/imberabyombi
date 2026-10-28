@@ -3,3 +3,4 @@
 import { esc_html } from '../core/index.js';
 
 /* ---------- file helpers ---------- */
+export const IMG_EXT = new Set('png jpg jpeg gif webp bmp svg avif ico'.split(' '));
