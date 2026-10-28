@@ -8,3 +8,4 @@ export const kpi_cards_b = k => {
   const done = Math.round(ring * 100);
   return [
     kpi_card('', 'Traffic sources', 'Where visitors came from, as a share of all visits.',
+      <><div className="kpi_split">{split.map((v, i) => <i key={i} style={{ flex: v, background: scale_color(i) }} {...tip_attr(src[i], [[share(i), 'Share', i]])}></i>)}</div>
