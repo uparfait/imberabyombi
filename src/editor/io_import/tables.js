@@ -45,3 +45,4 @@ export function csv_parse(text, delim) {
     const best = [',', ';', '\t', '|'].map(d => [d, first.split(d).length]).sort((a, b) => b[1] - a[1])[0]; delim = best[1] > 1 ? best[0] : ',';
   }
   const rows = []; let row = [], f = '', q = false;
+  for (let i = 0; i < text.length; i++) {
