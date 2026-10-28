@@ -53,3 +53,4 @@ export function tab_menu(t) {
     { label: 'Duplicate', icon: 'content_copy', no_preview: true, action: () => duplicate(t) },
     { label: 'Move up', icon: 'arrow_upward', disabled: i === 0, no_preview: true, action: () => { move_tab(i, i - 1); render_sidebar(); } },
     { label: 'Move down', icon: 'arrow_downward', disabled: i === state.tabs.length - 1, no_preview: true, action: () => { move_tab(i, i + 1); render_sidebar(); } },
+    { sep: true },
