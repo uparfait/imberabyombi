@@ -42,3 +42,4 @@ export function split_text(block, b, next) {
   return true;
 }
 /* the page break that has flow content after it (absolute images after a break stay on their page) */
+export function break_with_rest(b) {
