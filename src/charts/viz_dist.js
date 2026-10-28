@@ -10,3 +10,4 @@ export const VIZ_DIST = {
     vals.forEach(v => { const b = Math.min(bins - 1, Math.max(0, Math.floor((v - lo) / step))); cnt[b]++; });
     const f = frame(w, 240), ax = y_axis(f, Math.max(...cnt)), x = linear(lo, hi, f.l, f.l + f.iw), bin = i => `${i * step}–${(i + 1) * step}`;
     return { svg: svg(f, ax.g + cnt.map((n, i) => mark_group(bin(i), [[n, 'Count', 0]],
+        `<rect class="hit_area" x="${round1(x(i * step))}" y="${f.t}" width="${round1(x(step) - x(0))}" height="${f.ih}"/>`
