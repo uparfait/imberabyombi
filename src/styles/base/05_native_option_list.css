@@ -41,3 +41,6 @@
   }
   input[type=checkbox][role=switch]:checked {
     background-color: rgb(var(--brand)); border-color: rgb(var(--brand));
+    background-image: radial-gradient(circle, #fff 0 .75rem, transparent .78rem); background-position: 100% center;
+  }
+}
