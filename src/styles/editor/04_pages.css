@@ -42,3 +42,4 @@
 
 /* Find and replace marks (CSS Custom Highlight API, names set by ui/find.js) */
 ::highlight(find_all) { background-color: #fde293; color: #000; }
+::highlight(find_cur) { background-color: #f9ab00; color: #000; }
