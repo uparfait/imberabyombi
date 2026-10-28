@@ -37,3 +37,4 @@ function down_to(m, k) {
 export function section_moves(k) { const m = section_model(); return { up: up_to(m, k) >= 0, down: down_to(m, k) >= 0 }; }
 
 /* the model back into the pages (all in the first page, the reflow spreads it); returns the marked element */
+function rewrite(m, mark) {
