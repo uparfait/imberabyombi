@@ -18,3 +18,4 @@ export function close_dialog(d) {
 const drop = d => { if (!d.open && DIALOGS[d.id]) set_dialog(d.id, null); };
 /* Overlays close only from their own Close / x button (or Esc). A form with unsaved edits asks first. */
 export const snap = f => JSON.stringify([...new FormData(f)].map(([k, v]) => [k, v instanceof File ? `${v.name}:${v.size}` : v]));
+export function request_close(d) {
