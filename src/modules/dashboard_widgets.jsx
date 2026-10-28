@@ -37,3 +37,4 @@ export function dash_widgets(u) {
   { const mine = db.list('tasks').filter(x => x.assignee === u.name), done = mine.filter(x => x.status === 'Done').length;
     const open = mine.filter(x => x.status !== 'Done').slice(0, 4);
     W.push(<section key="tasks" className="card p-5">{head('My tasks', '#/admin/tasks', 'Open')}<p className="mt-1 text-sm text-muted">
+      {`${done} of ${mine.length} done`}</p>
