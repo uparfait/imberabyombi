@@ -22,3 +22,4 @@ export async function docx_run(cx, r) {
     const sz = val(kids(pr, 'sz')[0]); if (sz) css.push(`font-size:${+sz / 2}pt`);
     const fn = kids(pr, 'rFonts')[0], fa = fn && (fn.getAttribute('w:ascii') || fn.getAttribute('w:hAnsi')); if (fa) css.push(`font-family:'${fa.replace(/['"]/g, '')}'`);
     const hl = val(kids(pr, 'highlight')[0]), shd = kids(pr, 'shd')[0], fill = shd && shd.getAttribute('w:fill');
+    if (hl && HL[hl]) css.push('background-color:' + HL[hl]); else if (fill && HEX6.test(fill) && fill.toUpperCase() !== 'FFFFFF') css.push('background-color:#' + fill);
