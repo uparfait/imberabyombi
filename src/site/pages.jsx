@@ -21,3 +21,4 @@ export function home() {
 /* Add a public page: add an entry here { t: title, i: icon, top: () => JSX } (and to PUB to show it in the menus) */
 export const PAGES = {
   intro: { t: 'Overview', i: 'layers', top: () => intro_top() },
+  about: { t: 'About', i: 'users', top: () => about_sec(1) },
