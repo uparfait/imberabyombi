@@ -31,3 +31,4 @@
   #picker[data-type=week] .pk_day[aria-selected=true] { background: rgb(var(--brand) / .15); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); }
   .pk_years, .pk_times { position: relative; }
   .pk_years { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .25rem; max-height: 16rem; overflow-y: auto; }
+  .pk_foot { display: flex; justify-content: flex-end; gap: .25rem; margin-top: .5rem; padding-top: .5rem; border-top: 1px solid rgb(var(--line)); }
