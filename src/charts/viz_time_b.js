@@ -52,3 +52,4 @@ export const VIZ_TIME_B = {
       + `<text class="value_label" x="${round1(x(today))}" y="${f.t - 8}" text-anchor="middle">Today</text>`, 'Gantt chart'),
       legend: legend(['Planned', 'Done', 'Milestone'], 'rect', ['color-mix(in srgb, var(--series_1) 22%, transparent)', 'var(--series_1)', 'rgb(var(--fg))']),
       table: [['Task', 'Start', 'End', 'Done'], t.map((k, i) => [k, `W${d[i].s + 1}`, `W${d[i].e}`, pct(d[i].done)])] }; } },
+  calendar: { t: 'Calendar heatmap', g: 'time', d: 'Daily activity over a year. Darker = more.', f(w) {
