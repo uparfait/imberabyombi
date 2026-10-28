@@ -43,3 +43,4 @@ export const PK = {
       + `${'SMTWTFS'.split('').map(d => `<span aria-hidden="true">${d}</span>`).join('')}${Array.from({ length: 42 }, (_, i) => { const x = add_d(s, i), k = ymd(x);
       return `<button type="button" class="pk_day ${x.getMonth() !== f.getMonth() ? 'out' : ''} ${k === td ? 'today' : ''}" aria-selected="${wk ? iso_week(x) === sel : k === sel}"`
         + ` aria-label="${fmt_d(k)}" data-act="pk_day" data-v="${k}">${x.getDate()}</button>`; }).join('')}</div>`
+      + `${kind_of(a) === 'datetime-local' ? '' : PK.foot(wk ? 'This week' : 'Today')}</div>`;
