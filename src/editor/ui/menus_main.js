@@ -64,3 +64,4 @@ export function mode_items() {
 }
 export function view_items() {
   return [
+    ...mode_items(), { sep: true },
