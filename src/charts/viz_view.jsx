@@ -56,3 +56,6 @@ export function charts_view() {
         </div>
         <nav aria-label="Chart groups" className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
           {VIZGROUPS.map(([k, l]) => <button key={k} className="chip_btn whitespace-nowrap" data-act="scroll" data-to={`viz_${k}`}>{l}</button>)}
+        </nav>
+      </div>
+      <div id="viz_all" className="viz_all grid gap-10">
