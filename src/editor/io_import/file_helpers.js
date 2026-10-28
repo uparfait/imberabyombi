@@ -13,3 +13,4 @@ export const BADGES = {
   docx: ['DOCX', '#2b579a'], docm: ['DOCX', '#2b579a'], dotx: ['DOTX', '#2b579a'], doc: ['DOC', '#2b579a'], odt: ['ODT', '#2b579a'],
   rtf: ['RTF', '#8430ce'], pdf: ['PDF', '#d93025'], xlsx: ['XLSX', '#107c41'], xlsm: ['XLSM', '#107c41'], xls: ['XLS', '#107c41'],
   ods: ['ODS', '#107c41'], csv: ['CSV', '#12a4af'], tsv: ['TSV', '#12a4af'], json: ['JSON', '#5f6368'], pptx: ['PPTX', '#c43e1c'],
+  odp: ['ODP', '#c43e1c'], ppt: ['PPT', '#c43e1c'], epub: ['EPUB', '#188038'], md: ['MD', '#3c4043'], markdown: ['MD', '#3c4043'],
