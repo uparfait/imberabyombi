@@ -8,3 +8,4 @@ export * from './menu_engine.js';
 export * from './menu_keys.js';
 export * from './palette.js';
 export * from './dialogs.jsx';
+export * from './page_setup.jsx';
