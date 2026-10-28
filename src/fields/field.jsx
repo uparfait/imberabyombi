@@ -24,3 +24,5 @@ export function field(f, v) {
   else if (DTF[f.t]) ctl = <>
     <input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={dt_show(f.t, val)} required={req} />
     <span className="date_hint" aria-hidden="true"></span>
+  </>;
+  else ctl = <input id={id} name={f.k} type={f.t} defaultValue={val} placeholder=" " min={f.min ?? undefined} max={f.max ?? undefined}
