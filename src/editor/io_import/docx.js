@@ -35,3 +35,4 @@ async function docx_blocks(cx, nodes, container) {
   let stack = [];
   const add_li = (li, lvl, tag) => {
     while (stack.length > lvl + 1) stack.pop();
+    if (stack.length === lvl + 1 && stack[lvl].tagName !== tag) stack.pop();
