@@ -7,3 +7,4 @@ import { ic } from '../../icons/index.js';
 import { modal } from '../../overlays/index.js';
 import { qs } from '../core/index.js';
 import { after_close } from '../format/index.js';
+import { ext_of, fmt_size } from './file_helpers.js';
