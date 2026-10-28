@@ -35,3 +35,4 @@ export const EDITOR_DOC_PATHS = {
   drive_file_rename_outline: 'M5 19h3L18.5 8.5a2.1 2.1 0 0 0-3-3L5 16zM13.5 7.5l3 3M13 20h8',
   delete: BIN + 'M10 11v5M14 11v5',
   delete_forever: BIN + 'M10 10l4 6M14 10l-4 6',
+  close: 'M18 6 6 18M6 6l12 12',
