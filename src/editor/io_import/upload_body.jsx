@@ -11,3 +11,4 @@ import { ext_of, fmt_size } from './file_helpers.js';
 import { badge, fmt_chip } from './badge.jsx';
 
 export function upload_store(files, m) {
+  let s = { files, m }; const subs = new Set();
