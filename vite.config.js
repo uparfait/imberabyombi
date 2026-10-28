@@ -11,6 +11,7 @@ import { defineConfig } from 'vite';
 const spa_fallback = () => {
   let out = 'dist';
   return {
+    name: 'spa_fallback',
 export default defineConfig({
   base: './',
   plugins: [react()],
