@@ -12,3 +12,5 @@ is blocked (private mode, sandboxes).
 | `db.upsert(collection, row)` | insert or update (by `id`), returns the id                  |
 | `db.remove(collection, id)`  | delete a row                                                |
 | `db.bytes()`                 | how much storage the app uses (Settings shows it)           |
+
+Collections are stored as `c:<collection>` (`c:tasks`, `c:staff`…). Settings → Data exports and imports a JSON backup
