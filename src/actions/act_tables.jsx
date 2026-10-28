@@ -20,3 +20,4 @@ export const TABLE_ACT = {
     modal({ title: t.dataset.title || 'Details', body: kv_table([['', [...t.cells].map((x, i) => [hs[i] || '', x.innerHTML ? dom_copy(x) : ''])]]) }); },
   page: t => { const c = t.dataset.col; ui.page[c] = (ui.page[c] || 1) + +t.dataset.n; refresh(c); },
   q_clear: t => { ui.q[t.dataset.col] = {}; ui.page[t.dataset.col] = 1; rerender(); },
+  add: t => open_form(t.dataset.col),
