@@ -37,3 +37,4 @@
 @keyframes toast_out { to { opacity: 0; transform: translateX(calc(100% + 1rem)); } }
 @keyframes shrink { to { transform: scaleX(0); } }
 @keyframes spin_rotate { 100% { transform: rotate(360deg); } }
+@keyframes dash_pulse {
