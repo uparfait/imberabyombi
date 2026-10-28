@@ -34,3 +34,4 @@
 @keyframes blink { 50% { opacity: 0; } }
 @keyframes marquee { to { transform: translateX(-50%); } }
 @keyframes toast_in { from { opacity: 0; transform: translateX(calc(100% + 1rem)); } }
+@keyframes toast_out { to { opacity: 0; transform: translateX(calc(100% + 1rem)); } }
