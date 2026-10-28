@@ -65,3 +65,4 @@ export function set_img_align(img, a) {
       const room = x.closest('.pg_body').clientWidth - x.offsetWidth; x.style.left = Math.round(a === 'left' ? 0 : a === 'center' ? room / 2 : room) + 'px';
     }
     else if (pos === 'wrap_left' || pos === 'wrap_right') {
+      if (a === 'center') { x.setAttribute('data-pos', 'break'); x.setAttribute('data-align', 'center'); } else x.setAttribute('data-pos', 'wrap_' + a);
