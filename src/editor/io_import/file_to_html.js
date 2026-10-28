@@ -44,3 +44,5 @@ export async function file_to_html(file) {
     case 'html': case 'htm': case 'xhtml': return { html: await file.text() };
     case 'md': case 'markdown': case 'mdown': return { html: md_to_html(await file.text()) };
     case 'txt': case 'text': return { html: text_to_html(await file.text()) };
+  }
+  if (CODE_EXT.has(ext) || /^(dockerfile|makefile|readme|license|changelog)$/i.test(name)) return { html: code_to_html(await file.text(), name) };
