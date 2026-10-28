@@ -1,1 +1,2 @@
 /* behaviors/ctx_menu.js: the right-click menu (#ctx, outside React, filled as an HTML string like the reference).
+   Right-click menu on the page body: quick links (signed in: Tasks and Calendar; visitors: the public pages), back / reload and the
