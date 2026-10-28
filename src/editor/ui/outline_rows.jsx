@@ -49,3 +49,4 @@ function on_key(e, row) {
   if (e.ctrlKey || e.metaKey || e.altKey) return;
   const to = r => { e.preventDefault(); if (r) r.focus(); };
   if (k === 'ArrowDown') to(rows[i + 1]);
+  else if (k === 'ArrowUp') to(rows[i - 1]);
