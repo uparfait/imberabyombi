@@ -41,3 +41,5 @@ export function blocks_xml(container, ctx, cell_fmt) {
   const flush = () => {
     if (!buf.length) return; const p = document.createElement('p'); buf.forEach(n => p.appendChild(n.cloneNode(true)));
     out += `<w:p>${inline_xml(p, cell_fmt || {}, ctx)}</w:p>`; buf = [];
+  };
+  container.childNodes.forEach(n => {
