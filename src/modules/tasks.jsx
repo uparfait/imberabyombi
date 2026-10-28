@@ -16,3 +16,4 @@ VIEWS.tasks = () => {
   const FL = { mine: r => r.assignee === n && r.by === n, assigned: r => r.assignee === n && r.by !== n,
     delegated: r => r.by === n && r.assignee !== n, all: () => true };
   const list = [['mine', 'My own tasks', all.filter(FL.mine).length], ['assigned', 'Assigned to me', all.filter(FL.assigned).length],
+    ['delegated', 'Delegated by me', all.filter(FL.delegated).length], ...(auth.boss() ? [['all', 'All tasks', all.length]] : [])];
