@@ -1,1 +1,2 @@
 /* editor/content/install.js: install_content(): the source's top-level listeners of this area (images, links, editor
+   events, paste & drop). Called by core's editor_start after the refs are filled; returns the cleanup. */
