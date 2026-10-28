@@ -38,3 +38,4 @@ function on_move(ev) {
   }
   ev.preventDefault();
   if (d.abs) {
+    if (ev.shiftKey) { if (Math.abs(dx) > Math.abs(dy)) dy = 0; else dx = 0; }
