@@ -35,3 +35,4 @@ export function image_menu_items(img) {
       { label: 'Rotate left 90°', icon: 'rotate_left', action: () => rotate_image(img, -1) },
       { label: 'Flip horizontally', icon: 'flip', action: () => flip_image(img, 'h') }, { label: 'Flip vertically', icon: 'swap_vert', action: () => flip_image(img, 'v') }] },
     { label: 'Crop…', icon: 'crop', no_preview: true, action: off(() => crop_dialog(img)) },
+    { label: 'Adjustments…', icon: 'tune', no_preview: true, action: off(() => adjust_dialog(img)) },
