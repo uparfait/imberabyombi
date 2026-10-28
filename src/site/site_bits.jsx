@@ -4,3 +4,5 @@ import { ic } from '../icons/index.js';
 
 export const PUB = [['about', 'About'], ['mission', 'Mission'], ['vision', 'Vision'], ['strategies', 'Strategies'], ['staff', 'Staff'],
   ['partners', 'Partners'], ['thanks', 'Thanks'], ['contact', 'Contact']];
+
+/* Brand artwork shell: used by home hero, page heroes, login and admin greeting */
