@@ -30,3 +30,4 @@ export function data_table(p) {
   );
 }
 /* the dialog body of a full table: its page is local state, changed by viz_page() */
+function Viz_data() {
