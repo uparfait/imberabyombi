@@ -36,3 +36,4 @@
   .pk_dt .pk_cal { width: min(17rem, calc(100vw - 10rem)); }
   .pk_dt .pk_times { max-height: 16.5rem; overflow-y: auto; }
   .pk_dt > div:last-child { border-left: 1px solid rgb(var(--line)); }
+  .pk_clock { display: flex; justify-content: center; gap: .25rem; padding: .5rem; border-bottom: 1px solid rgb(var(--line)); }
