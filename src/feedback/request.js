@@ -11,3 +11,4 @@ import { notify } from './notify.js';
       sign-in pages never show #loader: there only the busy button spins. */
 export const req = {
   n: 0, t: null,
+  start() { if (this.n++ > 0) return; clearTimeout(this.t); this.t = setTimeout(() => qs('#loader')?.classList.add('on'), 150); },
