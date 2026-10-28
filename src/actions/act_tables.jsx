@@ -8,3 +8,5 @@ import { schemas } from '../schemas/index.js';
 import { view_row, refresh, open_form, kv_table, table_full, tview, tview_save, col_show, export_dialog } from '../table/index.js';
 import { viz } from '../charts/index.js';
 import { close_pops } from './pops.js';
+
+/* A cell shown again in the row's details: copies of the cell's nodes go into a wrapper React renders empty on purpose
