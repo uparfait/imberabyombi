@@ -38,3 +38,4 @@ export function html_to_md(root) {
     return rows.join('\n');
   };
   const blocks = [];
+  Array.from(root.children).forEach(b => {
