@@ -23,3 +23,4 @@ export function login_page(r) {
         <input id="signin_name" name="name" autoComplete="name" defaultValue={r.q.name || ''} placeholder="Lorem Ipsum" /></div>
       <div className="field"><label htmlFor="signin_email">Email</label>
         <input id="signin_email" name="email" type="email" autoComplete="email" required defaultValue={r.q.email || ''} placeholder="you@lorem.io" /></div>
+      <div className="field"><label htmlFor="signin_password">Password</label><div className="relative">
