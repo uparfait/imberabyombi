@@ -27,3 +27,4 @@ export const TABLE_ACT = {
     close_dialog(qs('#modal')); const tr = document.querySelector(`tr[data-row="${t.dataset.id}"]`);
     if (tr && !reduced()) { await sleep(180); tr.classList.add('row_out'); await sleep(260); }
     db.remove(t.dataset.col, t.dataset.id); rerender(); tr?.classList.remove('row_out'); notify(`The ${schemas[t.dataset.col].l} was removed.`, 'ok', 'Deleted'); }),
+  sort: t => { const c = t.dataset.col, k = t.dataset.k, s = ui.sort[c]; ui.sort[c] = { k, d: s?.k === k ? -s.d : 1 }; ui.page[c] = 1; rerender(); },
