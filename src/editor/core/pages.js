@@ -26,3 +26,4 @@ export function layout_page(wrap) {
       margin: `${m.top * DPI}px ${m.right * DPI}px ${m.bottom * DPI}px ${m.left * DPI}px`, minHeight: (h - (m.top + m.bottom) * DPI) + 'px' });
     hd.style.display = 'none'; ft.style.display = 'none';
   } else {
+    page.style.height = h + 'px'; page.style.minHeight = '';
