@@ -25,3 +25,4 @@ export function Upload_body({ up }) {
   const add = fl => up.set({ files: [...up.get().files, ...Array.from(fl || [])] });
   useEffect(() => { const t = setTimeout(() => zone.current?.focus(), 60); return () => clearTimeout(t); }, []);
   const drag_in = e => { e.preventDefault(); e.stopPropagation(); set_over(true); };
+  const drag_out = e => { e.preventDefault(); e.stopPropagation(); set_over(false); if (e.type === 'drop') add(e.dataTransfer.files); };
