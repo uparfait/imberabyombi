@@ -3,3 +3,4 @@
    text is the same on every visit; the canvas chart is drawn once the page is on screen. */
 import { lorem, qs, rgb2hex, css_var } from '../lib/index.js';
 import { after_render } from '../store/index.js';
+import { draw_chart } from '../charts/index.js';
