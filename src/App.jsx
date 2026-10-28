@@ -10,6 +10,7 @@ import { Dialog_hosts } from './overlays/index.js';
 export default function App() {
   const version = useSyncExternalStore(subscribe, get_version);
   const page = render_route();
+  useLayoutEffect(() => { run_after_render({ ...render_flags }); }, [version]);
   return (
     <>
       <section id="center">
