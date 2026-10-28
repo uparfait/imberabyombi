@@ -30,3 +30,4 @@ export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
     document.startViewTransition(() => render()).ready.catch(() => {}); }, { delay: get ? cfg.latency : 0 }); };
 
 /* go('/admin/tasks'): a new history entry, then the page draws. { replace: true } replaces the current entry instead
+   (redirects). Going to the address already on screen does nothing. */
