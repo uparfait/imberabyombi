@@ -13,3 +13,4 @@ import { activities_schema, events_schema } from './schema_events.js';
 import { parking_schema } from './schema_parking.js';
 
 export const schemas = {
+  staff: staff_schema, employees: employees_schema, attendance: attendance_schema, tasks: tasks_schema, students: students_schema,
