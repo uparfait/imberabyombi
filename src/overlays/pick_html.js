@@ -38,3 +38,4 @@ export const PK = {
     + `<button type="button" class="btn btn_ghost btn_sm text-accent" data-act="pk_today">${now}</button></div>`,
   cal(a) {
     const wk = kind_of(a) === 'week', sel = wk ? a.value : a.value.slice(0, 10), b = pick.view, f = new Date(b.getFullYear(), b.getMonth(), 1);
+    const s = add_d(f, -f.getDay()), td = ymd();
