@@ -19,3 +19,4 @@ const status_box = t => t.closest('[data-tv-status]');
 function date_err(k, v, r) {
   const s = k === 'start' ? v : r.start, e = k === 'due' || k === 'end' ? v : r.status === 'Done' ? r.end : r.due;
   if (!(/^(start|due|end)$/.test(k) && s && e && when_d(e) < when_d(s))) return '';
+  return k === 'start' ? `Use a time on or before the ${r.status === 'Done' ? 'completed' : 'due'} time.` : 'Use a time on or after the start.';
