@@ -5,3 +5,4 @@ import { frame, svg, y_axis, x_axis, chart_base, band, x_labels, vbar, hbar, dot
 import { legend } from './viz_legend.jsx';
 
 export const VIZ_CMP_B = {
+  lollipop: { t: 'Lollipop chart', g: 'cmp', d: 'A lighter bar chart: a hairline stem and a dot.', f(w) {
