@@ -27,3 +27,4 @@ VIEWS.employees = () => { const t = ui.tab.emp || 'All', rows = db.list('employe
     {crud('employees', { filter: t === 'All' ? null : r => r.dept === t, preset: t === 'All' ? {} : { dept: t }, title: t === 'All' ? 'All employees' : t })}</>; };
 
 VIEWS.attendance = () => {
+  const n = me(), td = ymd(), rows = db.list('attendance'), mine = rows.find(r => r.person === n && r.date === td), t = ui.tab.att || 'Staff';
