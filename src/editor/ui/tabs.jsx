@@ -2,3 +2,4 @@
    Ctrl+PageDown / PageUp, the tab menu (Rename, Duplicate, Move up / down, Delete: never the last tab) and renaming in
    place. Every change is saved with the document (save_soon; move_tab saves by itself). */
 import { state, refs, active_tab, new_tab, duplicate_tab, move_tab, collect_html, hist_timer, commit, bodies, first_flow, caret_to_start,
+  el, save_soon } from '../core/index.js';
