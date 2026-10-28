@@ -31,3 +31,4 @@
 @keyframes fade { from { opacity: 0; } }
 @keyframes glow { 50% { transform: scale(1.12); opacity: .82; } }
 @keyframes float { 50% { translate: 0 -.5rem; } }
+@keyframes blink { 50% { opacity: 0; } }
