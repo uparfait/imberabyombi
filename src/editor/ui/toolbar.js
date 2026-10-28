@@ -25,3 +25,4 @@ export const ACTIONS = {
   numbers: () => toggle_list('OL'), outdent: () => indent(-1), indent: () => indent(1), clear: () => clear_formatting()
 };
 /* the [data-ed] buttons whose effect shows on hover */
+export const LIVE_ED = ['size_down', 'size_up', 'bold', 'italic', 'underline', 'checklist', 'bullets', 'numbers', 'outdent', 'indent', 'clear'];
