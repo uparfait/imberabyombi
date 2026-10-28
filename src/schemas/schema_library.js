@@ -38,3 +38,4 @@ export const rentals_schema = {
 export const declarations_schema = {
   l: 'declaration', n: 5, cols: ['book', 'type', 'by', 'date', 'note'],
   f: [
+    field_spec('book', 'Book', 'list', () => db.list('books').map(b => b.title), 1), field_spec('type', 'Type', 'select', option_list('Lost|Damaged|Found|Donated'), 1),
