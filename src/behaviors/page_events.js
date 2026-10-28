@@ -33,3 +33,4 @@ export function install_page() {
   /* File dialog closed without choosing: stop the waiting spinner (cancel event, plus a focus fallback for older browsers) */
   document.addEventListener('cancel', e => { if (e.target.type === 'file') e.target.closest('.filebox')?.classList.remove('picking'); }, true);
   addEventListener('blur', () => { file_blur = !!qs('.filebox.picking'); });
+  addEventListener('focus', () => { if (!file_blur) return; file_blur = false; setTimeout(() => qsa('.filebox.picking').forEach(b => b.classList.remove('picking')), 800); });
