@@ -14,3 +14,4 @@ export function insert_block_at_caret(node) {
   if (!host || !host.classList.contains('pg_body')) { toast('Place the cursor in the document body first'); return null; }
   begin_op(); r.deleteContents();
   let block = top_block(host, r.startContainer);
+  if (block && block.nodeType !== 1) block = null;
