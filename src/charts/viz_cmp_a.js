@@ -42,3 +42,5 @@ export const VIZ_CMP_A = {
       + c.map((k, i) => { let acc = 0; return mark_group(k, s.map((n, j) => [pct(v[i][j]), n, j]), hit_row(f, y, i)
         + v[i].map((p, j) => { const a = x(acc), b = x(acc + p); acc += p; return seg(i, j, a, b); }).join('')) + row_label(f, y, i, k); }).join(''),
       '100% stacked bar chart'),
+      legend: legend(s), table: [['Category', ...s], c.map((k, i) => [k, ...v[i].map(pct)])] }; } }
+};
