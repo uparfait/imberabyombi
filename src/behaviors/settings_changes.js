@@ -5,3 +5,5 @@ import { db, rerender } from '../store/index.js';
 import { request, toast, show_msg } from '../feedback/index.js';
 import { MODS, roles, role_opens } from '../auth/index.js';
 import { apply_tokens } from '../actions/index.js';
+
+export function allow_select_change(t) {
