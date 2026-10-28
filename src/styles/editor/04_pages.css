@@ -25,3 +25,4 @@
    position inline (absolute between the margins; relative when pageless); isolation keeps behind-text pictures on the paper */
 .pg_body { position: relative; overflow: visible; outline: 0; caret-color: #000; isolation: isolate; }
 .pg_body:focus, .pg_body:focus-visible { outline: 0; }
+.pg_header, .pg_footer { position: absolute; outline: 0; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.15; color: #000; }
