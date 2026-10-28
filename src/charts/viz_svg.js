@@ -23,3 +23,5 @@ export const chart_base = (f, y) => `<line class="base_line" x1="${f.l}" x2="${f
 export const band = (n, a, b) => { const bw = (b - a) / n; const x = i => a + bw * i + bw / 2; x.bw = bw; return x; };
 export const x_labels = (f, labels, x, every = Math.ceil(labels.length / Math.max(1, Math.floor(f.iw / 46)))) =>
   labels.map((k, i) => i % every ? '' : `<text x="${round1(x(i))}" y="${f.h - 8}" text-anchor="middle">${esc(fit(k, x.bw * every - 4))}</text>`).join('');
+
+/* marks: bars with a 4px rounded data-end, square at the baseline */
