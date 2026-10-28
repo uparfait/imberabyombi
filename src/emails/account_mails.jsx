@@ -22,3 +22,4 @@ export const account_mails = () => ({
     <div>{mail_btn('Open 2-step verification', 'btn_outline', '#/verify')}</div></> },
   token: { s: 'Your new access token', t: <>
     <h1 className="mail_h">Your new access token</h1><p>A token named <b>{lorem.t(2)}</b> was created for your account.</p>
+    <p className="flex items-start gap-2 rounded-xl bg-warn/10 p-3 text-sm">{ic('bell', 'h-4 w-4 mt-0.5 shrink-0 text-warn')}
