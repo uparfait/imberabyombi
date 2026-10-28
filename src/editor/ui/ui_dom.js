@@ -18,3 +18,5 @@ export function run_offs(offs) { while (offs.length) { try { offs.pop()(); } cat
 export function set_text(e, s) {
   if (!e) return; const f = e.firstChild; s = String(s);
   if (f && f.nodeType === 3 && !f.nextSibling) { if (f.nodeValue !== s) f.nodeValue = s; } else e.textContent = s;
+}
+/* swap an icon: e is the icon's svg, its <path> or an element around it (rendered EMPTY: it gets the icon markup) */
