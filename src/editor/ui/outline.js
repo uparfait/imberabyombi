@@ -34,3 +34,6 @@ export function render_outline() {
   });
   apply_folds(ol); mark_outline();
   if (refocus && !refocus.hidden) refocus.focus({ preventScroll: true });
+}
+
+/* hide the rows inside a folded heading */
