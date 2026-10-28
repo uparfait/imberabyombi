@@ -10,3 +10,4 @@ export const PAPER = {
   a5: { label: 'A5 (5.83" × 8.27")', w: 5.83, h: 8.27 }, b5: { label: 'B5 (6.93" × 9.84")', w: 6.93, h: 9.84 }
 };
 /* the site's own fonts (already served with the template) + web-safe fonts; the document default stays Arial */
+export const FONTS = ['Arial', 'Bricolage Grotesque', 'Comic Sans MS', 'Courier New', 'Figtree', 'Georgia', 'Impact', 'JetBrains Mono',
