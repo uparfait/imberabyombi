@@ -34,3 +34,4 @@ set_on_change(save_soon);
 
 /* fill state from db; false when nothing (valid) is saved */
 export function restore_doc() {
+  const d = db.get(DOC_KEY);
