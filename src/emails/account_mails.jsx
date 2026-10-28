@@ -25,3 +25,4 @@ export const account_mails = () => ({
     <p className="flex items-start gap-2 rounded-xl bg-warn/10 p-3 text-sm">{ic('bell', 'h-4 w-4 mt-0.5 shrink-0 text-warn')}
       <span>Copy it now. For your safety it is shown only once.</span></p>
     {copy_box('imb_live_' + chars(32, 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789'), 'Token')}
+    <div className="flex flex-wrap gap-2">{['read:events', 'write:events', 'read:people'].map(x => <span key={x} className="chip bg-surface-2 text-muted">{x}</span>)}</div>
