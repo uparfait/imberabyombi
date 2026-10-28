@@ -13,3 +13,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - `Esc` closes the open menu, picker or dialog (one layer at a time: the picker first, then the dialog).
 - `Ctrl K` / `⌘K` opens the command palette; the hint shows the right key for the device (none on touch-only devices).
 - Pickers: `Alt + ↓` or `F4` opens, arrows move, `Enter` picks, `Esc` closes only the picker.
+- Focus is always visible (focus rings follow the brand colour) and returns to the trigger when a menu closes.
