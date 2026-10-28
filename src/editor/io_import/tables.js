@@ -52,3 +52,5 @@ export function csv_parse(text, delim) {
     else if (ch === delim) { row.push(f); f = ''; }
     else if (ch === '\n' || ch === '\r') { if (ch === '\r' && text[i + 1] === '\n') i++; row.push(f); rows.push(row); row = []; f = ''; }
     else f += ch;
+  }
+  if (f !== '' || row.length) { row.push(f); rows.push(row); }
