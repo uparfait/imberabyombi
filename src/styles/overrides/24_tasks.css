@@ -18,3 +18,4 @@
   .sub_item .sub_text { min-width: 0; flex: 1; height: 2.25rem; }
   /* Task view: details table with a pen per editable row (on hover / focus; always shown on touch screens) */
   .kv.tv { table-layout: fixed; }
+  .kv.tv td, .kv.tv th { overflow-wrap: break-word; white-space: normal; }
