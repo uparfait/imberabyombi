@@ -48,3 +48,4 @@ export function custom_table_dialog() {
       const t = build_table(R, C, { preset, width: W });
       if (A !== 'left' && W < 100) { t.style.marginLeft = 'auto'; if (A === 'center') t.style.marginRight = 'auto'; }
       refocus_after_close();
+      const ins = insert_block_at_caret(t); if (!ins) return; end_op(body_index(editable_of(ins))); caret_to_start(ins.rows[0].cells[0]);
