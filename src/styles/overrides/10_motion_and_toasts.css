@@ -17,3 +17,4 @@
     border: 1px solid rgb(var(--line)); box-shadow: var(--shadow); animation: toast_in .45s var(--ease) both; }
   .toast[data-tone=bad] { --t: var(--bad); } .toast[data-tone=warn] { --t: var(--warn); } .toast[data-tone=info] { --t: var(--info); }
   .toast [data-ico] { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: var(--pill); background: rgb(var(--t) / .14); color: rgb(var(--t)); }
+  .toast [data-title] { font-weight: 600; font-size: .9rem; line-height: 1.3; }
