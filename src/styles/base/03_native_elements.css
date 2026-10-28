@@ -56,3 +56,4 @@
   :where(figcaption) { font-size: .85rem; color: rgb(var(--muted)); margin-top: .6rem; }
   :where(img, video, canvas, svg, iframe, embed, object) { max-width: 100%; }
   :where(img) { background: rgb(var(--surface_2)); }
+  :where(iframe, embed, object) { border: 0; border-radius: var(--radius); background: rgb(var(--surface_2)); display: block; width: 100%; }
