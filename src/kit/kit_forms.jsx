@@ -7,3 +7,4 @@ import { kit_forms_feedback } from './kit_forms_feedback.jsx';
 
 export const kit_forms = brand_hex => (
   <form className="on_bg grid gap-6" data-calc="" onSubmit={e => e.preventDefault()}>
+    {kit_forms_text()}
