@@ -52,3 +52,4 @@ export function charts_view() {
         <div className="seg max-w-full justify-self-start overflow-x-auto" role="radiogroup" aria-label="Date range">
           {[['7', '7 days'], ['30', '30 days'], ['90', '90 days']].map(([v, l]) => (
             <label key={v}><input type="radio" className="sr-only" name="viz_range" value={v} data-viz-range="" defaultChecked={String(ui.viz_range || 30) === v} />
+              <span className="whitespace-nowrap">{l}</span></label>))}
