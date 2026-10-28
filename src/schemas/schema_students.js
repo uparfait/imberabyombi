@@ -15,3 +15,7 @@ export const students_schema = {
   g: i => ({
     name: lorem.name(), regno: `LRM-2026-${pad(i + 1)}0`, grade: lorem.pick(GRADES), dob: ymd(new Date(lorem.int(2012, 2019), lorem.int(0, 11), lorem.int(1, 28))),
     guardian: lorem.name(), phone: tel(), status: lorem.pick(['Active', 'Active', 'Active', 'Graduated'])
+  })
+};
+
+export const bulletins_schema = {
