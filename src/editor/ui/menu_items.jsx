@@ -44,3 +44,4 @@ export function text_items() {
     { label: 'Bold', icon: 'format_bold', shortcut: 'Ctrl+B', action: () => exec('bold') },
     { label: 'Italic', icon: 'format_italic', shortcut: 'Ctrl+I', action: () => exec('italic') },
     { label: 'Underline', icon: 'format_underlined', shortcut: 'Ctrl+U', action: () => exec('underline') },
+    { label: 'Strikethrough', icon: 'strikethrough_s', shortcut: 'Ctrl+Shift+X', action: () => exec('strikeThrough') },
