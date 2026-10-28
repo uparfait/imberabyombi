@@ -33,3 +33,4 @@ export function open_link_dialog(existing) {
     const host = restore_focus(); begin_op();
     if (a) { a.setAttribute('href', url); if (text && text !== a.textContent) a.textContent = text; }
     else if (range && !range.collapsed && (!text || text === sel_text)) document.execCommand('createLink', false, url);
+    else document.execCommand('insertHTML', false, `<a href="${esc_html(url)}">${esc_html(text || url)}</a>`);
