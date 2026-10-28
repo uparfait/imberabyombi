@@ -39,3 +39,4 @@ function edit_key(e, k, code) {
   if (e.shiftKey && code === 'Digit9') return () => toggle_checklist();
   if (e.shiftKey && code === 'KeyX') return () => exec('strikeThrough');
   if (e.shiftKey && code === 'KeyC') return word_count_dialog;
+  if (e.shiftKey && code === 'Period') return () => bump_size(1);
