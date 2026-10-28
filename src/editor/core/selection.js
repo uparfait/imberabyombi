@@ -6,3 +6,4 @@ import { bodies, body_index, editable_of, node_len, text_nodes, is_break, is_emp
 import { sel_remap } from './flow.js';
 
 export let last_range = null, last_host = null;
+export function set_last(r, host) { last_range = r || null; last_host = host === undefined ? (r ? editable_of(r.startContainer) : null) : host; }
