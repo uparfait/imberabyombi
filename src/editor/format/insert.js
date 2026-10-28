@@ -35,3 +35,5 @@ export function insert_page_break() {
   const pb = insert_block_at_caret(el('div', { class: 'page_break', contenteditable: 'false' })); if (!pb) return;
   const after = pb.nextElementSibling; end_op(body_index(editable_of(pb)));
   if (after && after.isConnected) { caret_to_start(after); scroll_caret_into_view(); }
+}
+export function insert_hr() { const hr = insert_block_at_caret(el('hr')); if (!hr) return; const a = hr.nextElementSibling; end_op(); if (a) caret_to_start(a); }
