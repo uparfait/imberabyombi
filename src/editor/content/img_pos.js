@@ -7,3 +7,4 @@ import { img_op } from './img_ops.js';
 import { img_box, pos_of } from './img_sel.js';
 
 export const ABS_Z = { front: '3', behind: '-1' };
+const clear_abs = img => { ['position', 'left', 'top', 'zIndex'].forEach(p => { img.style[p] = ''; }); };
