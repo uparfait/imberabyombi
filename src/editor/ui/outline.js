@@ -44,3 +44,4 @@ export function apply_folds(ol) {
 /* open: true unfold, false fold, undefined toggle */
 export function toggle_fold(row, open) {
   if (!row.querySelector('.outline_fold')) return;
+  const t = active_tab(), f = open === undefined ? !row.classList.contains('folded') : !open;
