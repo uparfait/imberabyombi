@@ -27,3 +27,4 @@ export function render_outline() {
       + (top ? `<button type="button" class="outline_more" tabindex="-1" aria-label="Section options" data-tip="Section options" aria-haspopup="menu">${mi('more_vert')}</button>` : '');
     row.querySelector('.outline_text').textContent = clean_text(h);
     row._h = h; row._ti = top ? ti++ : -1; row._key = fold_key(h, seen);
+    if (kids) { const f = folds.has(row._key); row.classList.toggle('folded', f); row.setAttribute('aria-expanded', String(!f)); }
