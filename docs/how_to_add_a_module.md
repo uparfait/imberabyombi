@@ -12,3 +12,4 @@ import { lorem } from '../lib/index.js';
 import { person } from '../ui/index.js';
 
 export const buses_schema = {
+  l: 'bus', n: 6, cols: ['plate', 'driver', 'route', 'seats'],
