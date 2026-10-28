@@ -1,0 +1,1 @@
+# robots.txt: lets every search engine read the public site. Replace example.com with your domain before publishing.
