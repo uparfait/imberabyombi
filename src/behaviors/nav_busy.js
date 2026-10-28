@@ -10,3 +10,4 @@ const subscribe = fn => { subs.add(fn); return () => subs.delete(fn); };
 export const set_nav_busy = href => { busy_href = href; subs.forEach(fn => fn()); };
 /* called before every render (no notify: the redraw that follows reads the cleared value) */
 export const clear_nav_busy = () => { busy_href = null; };
+export const use_nav_busy = href => useSyncExternalStore(subscribe, () => busy_href === href);
