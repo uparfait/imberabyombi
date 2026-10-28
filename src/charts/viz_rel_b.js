@@ -12,3 +12,4 @@ export const VIZ_REL_B = {
     const f = frame(w, 260, { l: 8, r: 8, t: 10, b: 10 }), nw = 12, col_x = i => f.l + (f.iw - nw) * i / (cols.length - 1), gap = 14;
     const val = (c, i) => Math.max(links.filter(l => l[0] === c && l[1] === i).reduce((s, l) => s + l[3], 0),
       links.filter(l => l[0] === c - 1 && l[2] === i).reduce((s, l) => s + l[3], 0));
+    /* one scale for every column (so a flow is equally thick at both ends), each column centred */
