@@ -23,3 +23,4 @@ export const VIZ_PART_A = {
       + `<text class="center_value" x="${cx}" y="${cy + 4}" text-anchor="middle">${compact_num(tot)}</text><text x="${cx}" y="${cy + 22}" text-anchor="middle">Total</text>`,
       'Donut chart'), legend: legend(s), table: [['Part', 'Value', 'Share'], s.map((k, i) => [k, num(v[i]), pct(v[i] / tot)])] }; } },
   treemap: { t: 'Treemap', g: 'part', d: 'Nested parts sized by value, coloured by group.', f(w) {
+    const groups = SER.slice(0, 3), items = groups.flatMap((gname, gi) => uwords(4).map(k => ({ k, g: gi, v: rnd(5, 40) }))).sort((a, b) => b.v - a.v);
