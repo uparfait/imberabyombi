@@ -31,3 +31,6 @@ export const staff_card = (i, team) => {
           <a key={x} href="#/contact" className={LINK_CLS} aria-label={`Contact ${n}`}>{ic(x, 'h-4 w-4')}</a>
         ))}</div></div>
       <h3 className="mt-4 text-lg">{n}</h3><p className="text-sm text-muted">{team || lorem.t(2)}</p></article>
+  );
+};
+export function staff_sec() {
