@@ -40,3 +40,5 @@ export function split_text(block, b, next) {
   insert_at_start(next, [nb]);
   remap.forEach(([key, off]) => { const q = position_at(nb, off); cur_sel[key + 'c'] = q.node; cur_sel[key + 'o'] = q.offset; });
   return true;
+}
+/* the page break that has flow content after it (absolute images after a break stay on their page) */
