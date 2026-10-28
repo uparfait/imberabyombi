@@ -2,3 +2,5 @@
    and the status row's Cancel / Save buttons. */
 import { ic } from '../icons/index.js';
 import { items_of } from './task_data.js';
+
+export const bar = (d, n) => <span className="inline-flex items-center gap-2 whitespace-nowrap">
