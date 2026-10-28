@@ -44,3 +44,4 @@ export function is_empty_block(b) {
 }
 export function last_non_break(b) { let l = b.lastElementChild; while (l && (is_break(l) || is_abs(l))) l = l.previousElementSibling; return l || b; }
 export function same_kind(a, b) { return !!(a && b && a.tagName === b.tagName); }
+export function pad_bottom(e) { return parseFloat(getComputedStyle(e).paddingBottom) || 0; }
