@@ -11,3 +11,4 @@ export const PICKER_ACT = {
   pk_clear: () => { const a = pick.a; if (!a) return; [...a.options].forEach(o => o.selected = false); qsa('[data-act=pk_opt]', pick.el).forEach(b => b.setAttribute('aria-selected', 'false')); pick.emit(); },
   pk_done: () => pick.close(pick.kb || FINE()),
   pk_set: t => pick.set(t.dataset.v),
+  pk_day: t => { const a = pick.a, v = t.dataset.v; if (!a) return;
