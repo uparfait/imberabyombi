@@ -1,2 +1,3 @@
 /* base/00_fonts.css: the three typefaces, served with the site from src/assets/fonts (no third-party font service):
    a faster first visit, no extra connection, and it works offline. Latin and Latin Extended only, variable weights.
+   font-display: swap shows text at once in a fallback font, then swaps in. Licence: src/assets/fonts/ofl_license.txt */
