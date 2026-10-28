@@ -41,3 +41,4 @@ function insert_items() {
   ];
 }
 function format_items() {
+  return [
