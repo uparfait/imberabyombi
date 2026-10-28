@@ -4,3 +4,4 @@ import { ic_html } from '../../icons/index.js';
 import { el } from '../core/index.js';
 import { close_menus } from '../ui/index.js';
 import { insert_table } from './table_ops.js';
+import { custom_table_dialog } from './table_dialogs.jsx';
