@@ -33,3 +33,5 @@ export function refresh_toolbar() {
     const plain = !blk.classList.contains('title') && !blk.classList.contains('subtitle');
     const st = STYLES.find(s => s.tag === blk.tagName && (s.cls ? blk.classList.contains(s.cls) : plain));
     if (st) label = st.label; else if (/^H[56]$/.test(blk.tagName)) label = 'Heading ' + blk.tagName[1];
+  }
+  set_text(refs.style_label, label);
