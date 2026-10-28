@@ -8,3 +8,4 @@ import { section_model, section_moves, move_section, move_section_by, delete_sec
 import { outline_el, outline_rows, toggle_fold, render_outline } from './outline.js';
 import { row_drag } from './row_drag.js';
 import { confirm_dialog } from './dialogs.jsx';
+import { clean_text, scaled } from './ui_dom.js';
