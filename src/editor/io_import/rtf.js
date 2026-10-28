@@ -37,3 +37,4 @@ export function rtf_to_html(rtf) {
         case 'par': end_para(); break; case 'line': para += '<br>'; break; case 'tab': emit('\t'); break;
         case 'page': if (!in_tbl) { flush_table(); if (para) { out.push(`<p>${para}</p>`); para = ''; } out.push(PB); } break;
         case 'b': st.b = arg !== 0 ? 1 : 0; break; case 'i': st.i = arg !== 0 ? 1 : 0; break; case 'ul': st.u = arg !== 0 ? 1 : 0; break;
+        case 'ulnone': st.u = 0; break; case 'plain': st.b = st.i = st.u = 0; break;
