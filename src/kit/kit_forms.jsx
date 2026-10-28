@@ -3,3 +3,4 @@
 import { lorem } from '../lib/index.js';
 import { kit_forms_text } from './kit_forms_text.jsx';
 import { kit_forms_choices } from './kit_forms_choices.jsx';
+import { kit_forms_feedback } from './kit_forms_feedback.jsx';
