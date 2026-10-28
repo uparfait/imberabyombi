@@ -16,3 +16,5 @@ export function anchor_abs(img) {
   const body = img.closest('.pg_body'); if (!body || img.parentNode !== body) return;
   const top = img.offsetTop, blk = flow_kids(body).find(b => b.offsetTop + b.offsetHeight > top) || null;
   if (blk !== img.nextElementSibling) body.insertBefore(img, blk);
+}
+/* absolute images that came in nested (paste, drop) go to the top level of their page body, where core keeps them */
