@@ -16,3 +16,4 @@ export function install_content() {
   on(p, 'keydown', pages_keydown); on(p, 'beforeinput', pages_beforeinput); on(p, 'input', pages_input);
   on(p, 'click', pages_click); on(p, 'pointerdown', pages_pointerdown); on(p, 'dragstart', pages_dragstart);
   on(p, 'mouseup', pages_mouseup); on(p, 'mousedown', pages_mousedown, true); on(p, 'dblclick', pages_dblclick);
+  on(p, 'paste', pages_paste);
