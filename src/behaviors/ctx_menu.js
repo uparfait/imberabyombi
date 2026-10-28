@@ -8,6 +8,7 @@ import { key_hint } from '../feedback/index.js';
 import { tip } from '../overlays/index.js';
 import { PUB, PAGES } from '../site/index.js';
 import { close_pops } from '../actions/index.js';
+import { to } from '../router/index.js';
 
 export function ctx_menu() {
   const u = auth.user, on = document.documentElement.classList.contains('allow_select'), mi = i => ic_html(i, 'h-4 w-4 text-muted');
