@@ -54,3 +54,4 @@ function put(sn) {
   if (refs.color_bar && sn.color != null) refs.color_bar.style.background = sn.color;
   if (refs.size_input && sn.size != null) refs.size_input.value = sn.size;
   refresh_toolbar();
+  if (scroller) scroller.scrollTop = sn.top;
