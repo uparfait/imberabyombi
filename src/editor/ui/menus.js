@@ -35,3 +35,4 @@ function insert_items() {
     cmd('Date', 'calendar_today', () => insert_text_at_caret(new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }))),
     cmd('Special characters', 'emoji_symbols', () => special_chars_dialog()),
     { sep: true },
+    { label: 'Header', icon: 'vertical_align_top', checked: !!state.setup.header, no_preview: true, action: () => page_part('header', '.pg_header') },
