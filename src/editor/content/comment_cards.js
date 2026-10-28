@@ -50,3 +50,4 @@ function card_of(c) {
 export function render_comments() {
   const list = qs('#comment_list'); if (!list) return; list.innerHTML = '';
   const mine = state.comments.filter(c => c.tab === state.active);
+  if (!mine.length) { list.innerHTML = '<p class="outline_hint">Select text and choose <b>Add comment</b> to start a discussion.</p>'; return; }
