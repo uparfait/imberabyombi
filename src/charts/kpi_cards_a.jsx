@@ -42,3 +42,4 @@ export const kpi_cards_a = k => {
       <><p className="kpi_value">{compact_num(visits[11])}</p><div className="kpi_bars">{visits.map((n, i) => (
         <i key={i} style={{ height: `${Math.round(n / vmax * 100)}%`, background: i === 11 ? 'var(--series_1)' : 'rgb(var(--muted) / .35)' }}
           {...tip_attr(weeks[i], [[num(n), 'Visits', i === 11 ? 0 : null]])}></i>))}</div>
+        <p className="mt-1 text-xs text-muted">Last 12 weeks · this week in colour</p></>,
