@@ -13,3 +13,4 @@ export const get_dialog_version = () => version;
 export function set_dialog(id, content) {
   DIALOGS[id] = content ? { ...content, key: ++n } : null; version++;
   const emit = () => listeners.forEach(fn => fn());
+  try { flushSync(emit); } catch { emit(); }
