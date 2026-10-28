@@ -13,3 +13,4 @@ export function row_drag(e, o) {
     const rs = o.rows(); let g = rs.length;
     for (let i = 0; i < rs.length; i++) { const b = rs[i].getBoundingClientRect(); if (py < b.top + b.height / 2) { g = i; break; } }
     val = rs.length ? o.target(g, rs) : null;
+    if (val == null) { line.hidden = true; return; }
