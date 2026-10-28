@@ -11,3 +11,4 @@ import { tip } from './tip.js';
    Reuses the dialog if it is already open.
    title: text or JSX · help: text · body, actions: JSX or a function returning JSX (called on every draw, so rerender()
    refreshes an open view) · on_submit(values, form): values = form_obj(form); return false to keep the dialog open. */
+export function modal({ title, help = '', body = '', submit, on_submit, danger, actions = '', wide = false }) {
