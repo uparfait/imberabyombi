@@ -29,3 +29,4 @@
   .pk_day.today, .pk_mon.today { font-weight: 600; color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); outline: 1px solid rgb(var(--brand)); outline-offset: -1px; }
   .pk_day[aria-selected=true], .pk_mon[aria-selected=true] { background: rgb(var(--brand)); color: #fff; outline: 0; }
   #picker[data-type=week] .pk_day[aria-selected=true] { background: rgb(var(--brand) / .15); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); }
+  .pk_years, .pk_times { position: relative; }
