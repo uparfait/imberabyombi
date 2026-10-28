@@ -14,3 +14,4 @@ export const form_obj = f => { const d = Object.fromEntries(new FormData(f));
 export function dt_refresh() {
   qsa('input[data-type=time], input[data-type=datetime-local]').forEach(i => { const t = i.dataset.type, s = dt_spec(t);
     if (i.value) i.value = t === 'time' ? dt_show(t, to24(i.value)) : (([dd, ...tm]) => tm.length ? `${dd} ${dt_show('time', to24(tm.join(' ')))}` : dd)(i.value.trim().split(' '));
+    i.pattern = s.re; i.maxLength = s.max || s.mask.length; i.inputMode = /time/.test(t) && !h24() ? 'text' : 'numeric'; if (!/^Date$/.test(i.placeholder)) i.placeholder = s.ph; });
