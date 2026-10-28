@@ -30,3 +30,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 
 ## Export
 The Export menu offers CSV, JSON and Excel. The dialog then asks for:
+- a **From / To** range (date and time) on the table's first date column;
