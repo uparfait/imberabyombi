@@ -6,3 +6,4 @@ import { schemas } from '../schemas/index.js';
 import { TONE, badge, tag, person, dash } from './badges.jsx';
 
 export const bar_cell = (v, max) => (
+  <div className="flex min-w-[9rem] items-center gap-2">
