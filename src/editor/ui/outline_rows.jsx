@@ -3,3 +3,4 @@
    auto-scroll, reflow, one undo step). Keys: ↑ ↓ Home End move between rows, → unfold / first sub-heading, ← fold /
    parent, Enter / Space go to the heading, Alt+Shift+↑ / ↓ move the section. */
 import { refs, caret_to_start } from '../core/index.js';
+import { toggle_menu, open_menu } from './menu_engine.js';
