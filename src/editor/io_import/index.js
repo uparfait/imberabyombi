@@ -17,3 +17,4 @@ export * from './epub.js';
 export * from './rtf.js';
 export * from './file_to_html.js';
 export * from './project.js';
+export * from './badge.jsx';
