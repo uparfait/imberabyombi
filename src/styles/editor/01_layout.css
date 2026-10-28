@@ -43,3 +43,4 @@ body.col_resize, body.col_resize * { cursor: col-resize !important; }
 #editor .btn_primary:not(.btn) { background: rgb(var(--brand)); color: #fff; }
 #editor .btn_primary:not(.btn):hover { background: rgb(var(--brand_2)); }
 #editor .btn_primary:disabled { opacity: .7; cursor: progress; }
+.btn_text { color: var(--active_fg); }
