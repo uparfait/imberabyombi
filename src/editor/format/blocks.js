@@ -51,3 +51,4 @@ export function indent(dir) {
   with_blocks(bs => bs.forEach(b => { const cur = parseFloat(b.style.marginLeft) || 0; const v = Math.max(0, cur + dir * 48); b.style.marginLeft = v ? v + 'px' : ''; }));
 }
 export function clear_formatting() {
+  if (!can_edit()) return;
