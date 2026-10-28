@@ -75,3 +75,4 @@ export function open_menu(anchor, items, opts = {}) {
   if (y + h > innerHeight - g) y = Math.max(g, innerHeight - h - g); m.style.left = x + 'px'; m.style.top = y + 'px';
   menu_stack.push({ el: m, anchor, level });
   if (anchor) { anchor.classList.add('open'); if (anchor.hasAttribute('aria-haspopup') || anchor.hasAttribute('aria-expanded')) anchor.setAttribute('aria-expanded', 'true'); }
+  if (opts.focus) focus_row(m, menu_rows(m)[0], false);
