@@ -3,3 +3,5 @@
    Tab closes them and moves on. menu_key(e) returns true when it handled the key. */
 import { restore_focus } from '../core/index.js';
 import { menu_stack, close_menus, menu_rows, focus_row } from './menu_engine.js';
+
+/* ← → on a menu-bar menu: open the neighbouring menu of the bar from the keyboard */
