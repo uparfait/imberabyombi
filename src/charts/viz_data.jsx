@@ -24,3 +24,4 @@ export function data_table(p) {
         <tr key={j}>{r.map((v, i) => i ? <td key={i}>{str(v)}</td> : <th key={i} scope="row">{str(v)}</th>)}</tr>))}</tbody></table></div>
       <footer className="pager">
         <button type="button" className="btn btn_ghost btn_sm" data-act="viz_page" data-n="-1" disabled={p <= 1}>{ic('chev_l', 'h-4 w-4')}Back</button>
+        <span className="text-sm text-muted">{`${p} of ${n}`}</span>
