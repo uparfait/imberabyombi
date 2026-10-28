@@ -27,3 +27,4 @@ export function apply_preset(chain, key) {
   chain.forEach(t => {
     t.style.setProperty('--bw', p.bw + 'px'); t.style.setProperty('--bc', p.bc);
     if (p.style) t.setAttribute('data-style', p.style); else t.removeAttribute('data-style');
+    t.toggleAttribute('data-header', p.header); t.toggleAttribute('data-striped', p.striped);
