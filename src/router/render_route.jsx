@@ -16,3 +16,5 @@ class Page_guard extends Component {
 }
 
 let page_key = 0, last = null;
+
+export function render_route() {
