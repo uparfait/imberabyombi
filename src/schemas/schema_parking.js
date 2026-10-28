@@ -21,3 +21,4 @@ export const parking_schema = {
   },
   g: i => {
     const parked = i < 7, in_d = new Date(Date.now() - lorem.int(1, parked ? 5 : 30) * 3.6e6), out = new Date(in_d.getTime() + lorem.int(1, 4) * 3.6e6);
+    return {
