@@ -18,3 +18,5 @@ export function hero_sec() {
           <p className="mt-5 max-w-lg text-fg/70">{lorem.p(2)}</p>
           <div className="mt-9 flex flex-wrap gap-3"><a href="#/login" className="btn btn_primary group py-2 pl-6 pr-2">Get started<span
             className={GO_CLS}>{ic('arrow_r', 'h-4 w-4')}</span></a><a href="#/intro" className="btn btn_glass">Read the overview</a></div>
+        </div>
+        <figure className="hero_in relative mx-auto w-full max-w-[19rem] lg:mr-6" style={{ '--d': '.2s' }}>
