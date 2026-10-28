@@ -51,3 +51,4 @@ export function blocks_xml(container, ctx, cell_fmt) {
       else if (is_table(n)) { flush(); out += table_xml(n, ctx); }
       else if (t === 'HR') { flush(); out += HR_XML; }
       else buf.push(n);
+    } else if (n.nodeType === 3 && (n.data.trim() || buf.length)) buf.push(n);
