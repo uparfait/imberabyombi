@@ -9,3 +9,5 @@ import { outline_el, outline_rows, toggle_fold, render_outline } from './outline
 import { row_drag } from './row_drag.js';
 import { confirm_dialog } from './dialogs.jsx';
 import { clean_text, scaled } from './ui_dom.js';
+
+function go(row) {
