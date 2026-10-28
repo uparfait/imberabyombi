@@ -5,3 +5,4 @@ import { state, editable_of, caret_from_point, set_caret, set_last } from '../co
 import { select_image, image_menu_items, open_link_dialog, add_comment, paste_from_clipboard } from '../content/index.js';
 import { table_ctx, table_menu_items, table_grid_el, clear_formatting } from '../format/index.js';
 import { open_menu } from './menu_engine.js';
+import { cmd, native } from './menus_main.js';
