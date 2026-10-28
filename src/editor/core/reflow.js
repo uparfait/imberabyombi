@@ -32,3 +32,4 @@ export function reflow(cur = 0, full = false) {
       push_overflow(b, next);
     } else {
       while (next) {
+        pull_up(b, next);
