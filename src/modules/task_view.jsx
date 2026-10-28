@@ -22,3 +22,7 @@ export function Task_view({ id }) {
     <div className="kv_wrap relative min-w-0 rounded-2xl border border-line"><table className="kv tv">
       <thead><tr><th scope="col">Column name</th><th scope="col">Value</th></tr></thead><tbody>{tv_rows(r, st)}</tbody></table></div>
     {tv_comments(r, st)}
+  </div>;
+}
+
+const HELP = { own: 'You created this task: hover a row and use the pen to change it.', view: 'You can view this task and comment on it.',
