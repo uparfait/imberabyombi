@@ -12,3 +12,5 @@ function count(t) {
   return { words: (t.match(/[\p{L}\p{N}][\p{L}\p{N}'’\-]*/gu) || []).length, chars: t.replace(/[\n\r]/g, '').length, no_space: t.replace(/\s/g, '').length };
 }
 const TD = 'border-b border-line px-2 py-1.5 text-sm', NUM = TD + ' text-right tabular-nums';
+
+export function word_count_dialog() {
