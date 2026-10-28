@@ -8,3 +8,4 @@
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: .25s; }
   .side { transition: transform .35s var(--ease); }
   .side[data-open=true] { transform: translateX(0); }
+  /* Desktop: the menu button slides the sidebar closed/open by width (content keeps its width while it slides) */
