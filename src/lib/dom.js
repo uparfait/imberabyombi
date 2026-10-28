@@ -9,3 +9,4 @@ export const rem = () => parseFloat(getComputedStyle(document.documentElement).f
 const var_name = v => String(v).startsWith('--') ? '--' + String(v).slice(2).replace(/-/g, '_') : v;
 export const css_var = v => getComputedStyle(document.documentElement).getPropertyValue(var_name(v)).trim();
 export const hex2rgb = h => { const x = h.replace('#', ''); return [0, 2, 4].map(i => parseInt(x.slice(i, i + 2), 16)); };
+export const rgb2hex = s => '#' + s.split(/\s+/).map(v => pad((+v).toString(16))).join('');
