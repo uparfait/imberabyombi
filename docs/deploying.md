@@ -18,6 +18,7 @@ Asset paths and every link in the app follow it.
 1. Build for the repository folder: `BASE_PATH=/<repository>/ npm run build` (skip it for a custom domain or a
    `<user>.github.io` repository, which are served from the root).
 2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` (with
+   `BASE_PATH` set) and uploads `dist/` with `actions/upload-pages-artifact` and `actions/deploy-pages`.
 3. In the repository settings, set Pages to deploy from that branch or from GitHub Actions.
 The site is then served at `https://<user>.github.io/<repository>/`.
 
