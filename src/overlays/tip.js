@@ -18,3 +18,5 @@ export const tip = {
     }, 450);
   },
   hide() { clearTimeout(this.t); this.on = null; this.el?.classList.remove('on'); }
+};
+before_render(() => tip.hide());
