@@ -10,3 +10,4 @@ export const kit_actions = () => (
     <div className="flex flex-wrap items-center gap-3"><button className="btn btn_primary">Primary</button><button className="btn btn_ink">Ink</button>
       <button className="btn btn_outline">Outline</button><button className="btn btn_soft">Soft</button><button className="btn btn_ghost">Ghost</button>
       <button className="btn btn_danger">Danger</button><button className="btn btn_primary" disabled>Disabled</button>
+      <button className="icon_btn" aria-label="Notifications">{ic('bell')}</button></div>
