@@ -40,3 +40,6 @@ export async function export_pdf(scope, name, scale = 2) {
     pdf.save(name + '.pdf');
   } finally {
     holder.remove();
+    if (state.active !== orig) { state.active = orig; render_tab(); render_sidebar(); render_comments(); }
+  }
+}
