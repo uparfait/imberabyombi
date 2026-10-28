@@ -59,3 +59,4 @@ function row_of(it, level) {
 export function open_menu(anchor, items, opts = {}) {
   const level = opts.level || 0; close_menus(level);
   const m = el('div', { class: 'pop ed_menu min-w-[12rem]', role: 'menu', style: 'position:fixed;margin:0;z-index:70' });
+  m._out = 'editor';   // the template's close_pops() leaves a .pop with _out set alone: this engine closes its own menus
