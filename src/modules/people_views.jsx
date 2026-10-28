@@ -19,3 +19,4 @@ VIEWS.staff = () => <>
     <p className="text-sm text-muted">{'Each person signs in with a role. The role decides which modules they can view or manage. '
       + 'Copy a personal access link from any row.'}</p></div>
     {auth.can('roles') ? <a href={to('/admin/roles')} className="btn btn_outline btn_sm">Manage roles</a> : null}</section>
+  {crud('staff', { acts: copy_link })}
