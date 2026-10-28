@@ -70,3 +70,6 @@ export async function reset_image(img) {
     x.setAttribute('src', o); x.removeAttribute('data-orig');
     ['border', 'borderRadius', 'boxShadow', 'height', 'position', 'left', 'top', 'zIndex'].forEach(p => { x.style[p] = ''; });
     x.removeAttribute('data-pos'); x.removeAttribute('data-align'); x.style.width = clamp(w, 16, img_max(x)) + 'px';
+  });
+}
+export function set_img_border(img, w) { img_op(img, x => { x.style.border = w ? `${w}px solid ${x.style.borderColor || '#000000'}` : ''; }); }
