@@ -30,3 +30,8 @@ export const tasks_schema = {
       due, end: st === 'Done' ? due : '', priority: lorem.pick(STATUS.prio), status: st, notes: lorem.s(),
       subs: Array.from({ length: lorem.int(0, 2) }, () => ({
         t: lorem.t(2), items: Array.from({ length: lorem.int(1, 3) }, () => ({ t: lorem.t(3), done: lorem.r() < .4 }))
+      })),
+      files: [], comments: []
+    };
+  }
+};
