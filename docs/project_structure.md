@@ -14,3 +14,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | Folder       | Holds                                                                                       |
 |--------------|---------------------------------------------------------------------------------------------|
 | `config/`    | `cfg`: brand name and logo parts, storage prefix, currency, latency, page size, business rules, media URLs |
+| `lib/`       | small helpers (`esc`, `qs`, `uid`, `pad`), dates (`ymd`, `fmt_d`, `add_d`, `iso_week`), money, colours, download, `lorem` |
