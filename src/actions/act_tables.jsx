@@ -4,3 +4,4 @@ import { qs, qsa } from '../lib/index.js';
 import { ui, cur, route, db, render, rerender } from '../store/index.js';
 import { reduced, sleep, notify } from '../feedback/index.js';
 import { modal, ask, close_dialog } from '../overlays/index.js';
+import { schemas } from '../schemas/index.js';
