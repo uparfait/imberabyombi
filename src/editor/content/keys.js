@@ -16,3 +16,4 @@ export function handle_tab(e, r, host) {
     if (i >= 0) caret_to_start(cells[i]); return;
   }
   if (n.closest('li')) { document.execCommand(e.shiftKey ? 'outdent' : 'indent'); return; }
+  if (e.shiftKey) { indent(-1); return; }
