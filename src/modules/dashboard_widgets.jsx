@@ -15,3 +15,4 @@ const head = (title, href, link) => <header className="flex items-center justify
 const none = text => <li className="text-sm text-muted">{text}</li>;
 
 const task_li = x => <li key={x.id}><button type="button" className="task_row" data-act="task_open" data-id={x.id}>
+  <span className="status_dot" data-s={x.status} aria-hidden="true"></span>
