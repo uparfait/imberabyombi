@@ -27,3 +27,4 @@ VIEWS.calendar = () => {
       <div className="ml-auto flex items-center gap-2">{views(wk)}
         {can ? <button className="btn btn_primary" data-act="add" data-col="activities">{ic('plus', 'h-4 w-4')}
           <span className="hidden sm:inline">Activity</span></button> : null}</div>
+    </header><div className="date_body">{grid}</div></section>
