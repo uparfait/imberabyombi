@@ -6,3 +6,4 @@ import { uid } from '../lib/index.js';
 export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.removeItem('_t'); return localStorage; } catch {
   const m = new Map();
   return { getItem: k => m.has(k) ? m.get(k) : null, setItem: (k, v) => m.set(k, String(v)), removeItem: k => m.delete(k),
+    key: i => [...m.keys()][i], get length() { return m.size; } };
