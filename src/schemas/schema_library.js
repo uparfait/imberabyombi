@@ -31,3 +31,8 @@ export const rentals_schema = {
     return {
       book: lorem.pick(db.list('books')).title, borrower: lorem.pick(db.list('students')).name, out: ymd(o), due: ymd(add_d(o, 14)),
       returned: st === 'Returned' ? ymd(add_d(o, lorem.int(3, 13))) : '', status: st
+    };
+  }
+};
+
+export const declarations_schema = {
