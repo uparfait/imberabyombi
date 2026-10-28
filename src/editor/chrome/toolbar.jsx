@@ -8,3 +8,4 @@ const name_of = tip => tip.replace(/ \(.+\)$/, '');
 /* an icon button: ed = data-ed action, edit = only while editing (tb_edit), state = data-state, id for the menu buttons */
 const tb = ({ ed, icon, tip, edit = true, state, id }) => (
   <button type="button" id={id} className={edit ? 'tb_btn tb_edit' : 'tb_btn'} data-ed={ed} data-state={state} data-tip={tip}
+    aria-label={name_of(tip)}>{ic(icon)}</button>
