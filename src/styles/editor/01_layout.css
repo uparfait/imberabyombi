@@ -21,3 +21,4 @@
   background: rgb(var(--surface)); color: rgb(var(--fg)); font-family: var(--font_sans); line-height: 1.5;
 }
 #editor .tb_back { display: none; }   /* Back in the toolbar only while the title bar is folded away */
+#editor #topbar:not(.show) + #toolbar .tb_back { display: inline-grid; }
