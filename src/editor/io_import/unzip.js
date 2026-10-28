@@ -20,3 +20,4 @@ export async function unzip(buf) {
     const name = find(n), en = name && entries.get(name); if (!en) throw new Error('a part of the file is missing: ' + n);
     if (cache.has(name)) return cache.get(name);
     const start = en.off + 30 + dv.getUint16(en.off + 26, true) + dv.getUint16(en.off + 28, true), raw = u8.subarray(start, start + en.csize); let out;
+    if (en.method === 0) out = raw;
