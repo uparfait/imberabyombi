@@ -46,3 +46,4 @@ export function restore_doc() {
   return true;
 }
 /* a fresh blank document (nothing saved yet) */
+export function reset_doc() {
