@@ -35,3 +35,4 @@
   .task_file:has(.task_file_open.active) { background: rgb(var(--brand) / .08); }
   /* dialogs never scroll sideways: their content wraps or shrinks instead */
   dialog, dialog form, dialog form > div, .kv_wrap { overflow-x: hidden; }
+  /* Attachments: one list (a divider between rows) that scrolls inside itself once it is long */
