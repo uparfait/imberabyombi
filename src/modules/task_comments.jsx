@@ -22,3 +22,4 @@ const comment = (r, c, on) => <li key={c.id} className="flex gap-3">{avatar(c.by
   <p className="mt-0.5 whitespace-pre-line text-sm [overflow-wrap:anywhere]" data-comment-text="" hidden={on}>{c.text}</p>{on ? editor(c) : null}</div></li>;
 
 export function tv_comments(r, st) {
+  const cm = comments_of(r);
