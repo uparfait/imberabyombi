@@ -27,7 +27,7 @@ export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !
 export const role_opens = r => MODS.filter(m => r && (r.perms === '*' || (r.perms[m.k] || 0) > 0));
 export const landing = id => {
   const r = roles().find(x => x.id === id), ok = role_opens(r), k = ok.some(m => m.k === r?.land) ? r.land : ok[0]?.k;
-  return k ? `#/admin/${k}` : '#/admin';
+  return k ? `/admin/${k}` : '/admin';
 };
 /* the "Lands on" choices: only the pages the role can open (they follow the access matrix as it changes).
    The chosen one is the select's value: <select defaultValue={land_value(r)} key={land_value(r)}>{land_opts(r)}</select> */
