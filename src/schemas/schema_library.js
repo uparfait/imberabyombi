@@ -36,3 +36,4 @@ export const rentals_schema = {
 };
 
 export const declarations_schema = {
+  l: 'declaration', n: 5, cols: ['book', 'type', 'by', 'date', 'note'],
