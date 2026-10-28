@@ -41,3 +41,4 @@ export async function export_docx(root, name) {
     const plain = { content_tw: ctx.content_tw, content_px: ctx.content_px };
     let sect_refs = '';
     const files = [];
+    if (has_header) {
