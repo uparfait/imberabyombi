@@ -44,3 +44,4 @@ export function edit_items() {
       const h = restore_focus(); if (!h) return;
       const r = document.createRange(); r.selectNodeContents(h); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
     }, 'Ctrl+A'),
+    cmd('Delete', 'delete', native('delete')),
