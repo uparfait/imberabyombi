@@ -17,3 +17,4 @@ export const BADGES = {
   txt: ['TXT', '#80868b'], html: ['HTML', '#e8710a'], htm: ['HTML', '#e8710a']
 };
 export function file_badge(ext) {
+  if (BADGES[ext]) return BADGES[ext];
