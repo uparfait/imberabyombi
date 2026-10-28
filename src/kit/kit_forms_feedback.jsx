@@ -13,3 +13,4 @@ export const kit_forms_feedback = () => (
       <meter key={v} min="0" max="100" low="30" high="70" optimum="100" value={v}></meter>
     ))}</div>
     <div className="flex flex-wrap items-center gap-2 sm:col-span-2"><label className="sr-only" htmlFor="demo_a">A</label>
+      <input id="demo_a" name="a" type="number" defaultValue="4" className="w-28" /> + <label className="sr-only" htmlFor="demo_b">B</label>
