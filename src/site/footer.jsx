@@ -16,3 +16,4 @@ export function footer() {
     ))}</ul></nav>
   );
   return (
+    <footer className="relative isolate mt-10 overflow-hidden border-t border-line bg-surface-2 text-muted">
