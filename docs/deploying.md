@@ -26,3 +26,4 @@ location = /index.html { add_header Cache-Control "no-cache"; }
 Enable gzip or brotli compression for `.js`, `.css`, `.svg`, `.xml` and `.txt` files.
 
 ## Checklist
+- Replace `example.com` in `index.html`, `public/robots.txt` and `public/sitemap.xml`.
