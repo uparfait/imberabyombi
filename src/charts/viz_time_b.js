@@ -17,3 +17,4 @@ export const VIZ_TIME_B = {
       const up = d.c >= d.o, col = up ? 'var(--series_2)' : 'var(--series_1)';
       return mark_group(d.k, [[round1(d.o), 'Open', null], [round1(d.hi), 'High', null], [round1(d.lo), 'Low', null], [round1(d.c), 'Close', null]], hit_col(f, x, i)
         + `<line x1="${round1(x(i))}" x2="${round1(x(i))}" y1="${round1(y(d.hi))}" y2="${round1(y(d.lo))}" style="stroke:${col};stroke-width:1.5"/>`
+        + `<rect class="mark" x="${round1(x(i) - bw / 2)}" y="${round1(y(Math.max(d.o, d.c)))}" width="${round1(bw)}"`
