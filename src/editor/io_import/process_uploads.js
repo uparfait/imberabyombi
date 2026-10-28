@@ -7,3 +7,4 @@ import { can_edit } from '../format/index.js';
 import { save_tab, render_tab, render_sidebar, render_all, confirm_dialog } from '../ui/index.js';
 import { base_of } from './file_helpers.js';
 import { attachment_html } from './json_attach.js';
+import { file_to_html } from './file_to_html.js';
