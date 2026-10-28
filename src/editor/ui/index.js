@@ -22,3 +22,4 @@ export * from './sidebar.js';
 export * from './pages_panel.js';
 export * from './rulers.js';
 export * from './view.js';
+export * from './menu_items.jsx';
