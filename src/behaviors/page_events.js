@@ -7,3 +7,4 @@ import { file_tiles } from '../files/index.js';
 import { set_theme } from '../actions/index.js';
 
 /* Tab icon: brand colour while this tab is in front, black (brand ink) while the user is on another tab (a data: URL string) */
+export const tab_icon = c => 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="${c}"/>`
