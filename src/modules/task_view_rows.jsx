@@ -18,3 +18,4 @@ const pen = f => <button type="button" className="kv_pen" data-act="tv_edit" dat
 /* one subtask with its items; ticking an item (data-sub-tick) saves at once */
 const sub = (r, mine) => (g, gi) => <div key={gi} className="tv_sub"><div className="flex flex-wrap items-center justify-between gap-2">
   <b className="min-w-0 text-sm font-medium">{g.t}</b>{bar(g.items.filter(x => x.done).length, g.items.length)}</div>
+  <ul className="mt-1 grid">{g.items.map((x, i) => <li key={i}><label className="check_row cursor-pointer py-1.5">
