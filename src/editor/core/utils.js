@@ -7,3 +7,4 @@ export function qsa(s, r = document) { return Array.from(r.querySelectorAll(s));
 export function uid() { return Math.random().toString(36).slice(2, 10); }
 export function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
 export function esc_html(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
