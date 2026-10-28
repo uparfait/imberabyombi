@@ -14,3 +14,4 @@ export const refs = new Proxy(store, {
   get(o, k) {
     if (typeof k !== 'string') return o[k];
     const v = o[k];
+    if (k === 'root' || (v && (!(v instanceof Node) || v.isConnected))) return v ?? null;
