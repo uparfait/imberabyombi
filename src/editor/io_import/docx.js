@@ -24,3 +24,5 @@ export async function docx_native(buf) {
     const nd = parse_xml(await z.text('word/numbering.xml')), abs = {};
     by_tag(nd, 'abstractNum').forEach(a => { const f = by_tag(a, 'numFmt')[0]; abs[a.getAttribute('w:abstractNumId')] = f ? f.getAttribute('w:val') : 'bullet'; });
     by_tag(nd, 'num').forEach(n => { const a = by_tag(n, 'abstractNumId')[0]; num_fmt[n.getAttribute('w:numId')] = a ? abs[a.getAttribute('w:val')] : 'bullet'; });
+  }
+  const out = document.createElement('div'); await docx_blocks({ z, rels, num_fmt }, kids(by_tag(doc, 'body')[0]), out);
