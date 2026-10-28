@@ -3,3 +3,4 @@
 import { spinner } from '../feedback/index.js';
 
 export const kit_forms_feedback = () => (
+  <fieldset className="grid gap-5 sm:grid-cols-2"><legend>Feedback</legend>
