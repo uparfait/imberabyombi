@@ -59,3 +59,5 @@ export function csv_parse(text, delim) {
 export function csv_to_html(text, delim) {
   const { rows, cut } = trim_rows(csv_parse(text, delim), 3000, 40);
   return { html: rows.length ? rows_to_table(rows, true) : '<p><br></p>', note: cut ? 'Large tables were shortened to 3,000 rows and 40 columns.' : '' };
+}
+/* the file name (small grey line, document styling) above the code in a code block */
