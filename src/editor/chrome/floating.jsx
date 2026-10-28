@@ -15,3 +15,5 @@ export const find_panel = () => (
       {small_btn('find_prev', 'keyboard_arrow_up', 'Previous (Shift+Enter)')}
       {small_btn('find_next', 'keyboard_arrow_down', 'Next (Enter)')}
       {small_btn('find_close', 'close', 'Close (Esc)')}
+    </div>
+    <div className="find_line">
