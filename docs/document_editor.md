@@ -42,3 +42,4 @@ Help → Keyboard shortcuts lists them all.
 - `core/`: state, pages and pagination, selection, undo history, live preview (`live`), saving.
 - `format/`: formatting commands, lists, tables. `content/`: images, links, comments, keys, paste and drop.
 - `ui/`: menus, dialogs, toolbar state, tabs and outline, rulers, shortcuts.
+- `io_import/` and `io_export/`: the file formats (PDF, old Word and spreadsheets use small libraries loaded on demand).
