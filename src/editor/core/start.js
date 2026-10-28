@@ -20,3 +20,4 @@ let running = null;   // the stop() of the editor on screen (one at a time)
 
 export function editor_start(root) {
   if (running) running();
+  fill_refs(root);
