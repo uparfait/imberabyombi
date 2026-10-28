@@ -25,3 +25,4 @@ export function fmt_of(e, f) {
   }
   if (st) {
     if (st.fontWeight) g.b = /^(bold|bolder|[6-9]00)$/.test(st.fontWeight);
+    if (st.fontStyle) g.i = st.fontStyle === 'italic';
