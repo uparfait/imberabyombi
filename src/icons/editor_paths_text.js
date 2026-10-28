@@ -26,3 +26,4 @@ export const EDITOR_TEXT_PATHS = {
   format_list_bulleted: 'M9 6h12M9 12h12M9 18h12' + dot(4.5, 6) + dot(4.5, 12) + dot(4.5, 18),
   format_list_numbered: 'M10 7h11M10 17h11M4 5.5 5.5 4.5v5M4 15a1.6 1.6 0 1 1 2.8 1.1L4 19.5h3.2',
   checklist: 'M11 7h10M11 17h10M3 7l2 2 3-4M3 17l2 2 3-4',
+  checklist_rtl: 'M3 7h10M3 17h10M15 7l2 2 3-4M15 17l2 2 3-4',
