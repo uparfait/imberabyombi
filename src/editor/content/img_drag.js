@@ -59,3 +59,4 @@ function on_up(ev) {
   if (!d.moved) { if (d.through) { hide_img_sel(); const p = drop_point(ev.clientX, ev.clientY, img); if (p) set_caret(p.node, p.off); } return; }
   const i0 = body_index(img.closest('.pg_body'));
   if (d.abs) anchor_abs(img); else if (d.p && img.isConnected) place_at(img, d.p);
+  const i1 = body_index(img.closest('.pg_body'));
