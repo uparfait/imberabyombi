@@ -2,3 +2,4 @@
    Excel, CSV and Word writers, the download dialog. Import from here: import { open_download_dialog } from '../io_export/index.js' */
 export * from './content_css.js';
 export * from './project_file.js';
+export * from './export_text.js';
