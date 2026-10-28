@@ -23,3 +23,4 @@ export function rtf_to_html(rtf) {
     if (ch === '{') { stack.push({ ...st }); i++; continue; }
     if (ch === '}') { st = stack.pop() || st; i++; continue; }
     if (ch === '\\') {
+      const nx = rtf[i + 1];
