@@ -27,6 +27,7 @@ export const is_doc_empty = () => state.tabs.length === 1 && is_tab_empty();
    name); the rest follow it as new tabs. Every other tab stays as it was, and Undo brings the old content back. */
 export function replace_tab(tabs, title) {
   save_tab();
+  const cur = active_tab(), [first, ...rest] = tabs;
 }
 /* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
 export function project_tabs(d) {
