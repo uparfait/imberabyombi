@@ -20,3 +20,4 @@ export function layout_page(wrap) {
   page.style.width = w + 'px';
   page.style.background = s.page_color || '#fff';
   page.style.transform = z === 1 ? '' : `scale(${z})`;
+  if (s.pageless) {
