@@ -34,3 +34,4 @@ export function restore_sel(sel) {
   if (moved || sel.host !== host) scroll_caret_into_view();
 }
 export function mk_range(sc, so, ec, eo) {
+  const r = document.createRange();
