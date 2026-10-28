@@ -74,3 +74,5 @@ export function pages_dblclick(e) {
   const page = e.target.closest('.page'); if (!page || state.setup.pageless || e.target.closest('.pg_body,.pg_header,.pg_footer')) return;
   const rel_y = (e.clientY - page.getBoundingClientRect().top) / state.zoom, m = state.setup.margins;
   if (rel_y < m.top * DPI) { state.setup.header = true; apply_setup(false); qs('.pg_header', page).focus(); }
+  else if (rel_y > dims().h - m.bottom * DPI) { state.setup.footer = true; apply_setup(false); qs('.pg_footer_text', page).focus(); }
+}
