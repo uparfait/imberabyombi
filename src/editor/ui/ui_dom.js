@@ -28,3 +28,4 @@ export function set_icon(e, name, cls = 'h-5 w-5') {
 export function mi(name, cls = 'h-4 w-4 shrink-0') { return ic_html(name, cls); }
 
 /* the clean text of a node (no zero-width spaces), trimmed */
+export function clean_text(n) { return (n ? n.textContent : '').replace(/​/g, '').trim(); }
