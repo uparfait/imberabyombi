@@ -29,3 +29,4 @@ export function snapshot() {
 }
 export function commit() {
   if (live_busy()) return;   // previews never enter the undo stack
+  clearTimeout(hist_timer); hist_timer = null;
