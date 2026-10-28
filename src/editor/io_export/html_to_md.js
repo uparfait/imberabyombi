@@ -33,3 +33,4 @@ export function html_to_md(root) {
     return out.join('\n');
   };
   const table = b => {
+    const rows = Array.from(b.rows).map(r => '| ' + Array.from(r.cells).map(c => inline(c).replace(/\|/g, '\\|').replace(/\n/g, ' ').trim()).join(' | ') + ' |');
