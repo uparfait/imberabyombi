@@ -43,3 +43,4 @@ export function hoist_nested(b) {
     const before = p.cloneNode(false), after = p.cloneNode(false); after.removeAttribute('data-cont');
     while (p.firstChild !== inner) before.appendChild(p.firstChild);
     while (inner.nextSibling) after.appendChild(inner.nextSibling);
+    p.before(before); p.after(after); p.replaceWith(inner);
