@@ -28,3 +28,4 @@ export const PAGES = {
   staff: { t: 'Staff', i: 'users', top: () => staff_dir() },
   partners: { t: 'Partners', i: 'link', top: () => <>{partners_sec(1)}{tiers()}</> },
   thanks: { t: 'Thanks', i: 'heart', top: () => thanks_sec(1) },
+  contact: { t: 'Contact', i: 'mail', top: () => contact_sec(1) },
