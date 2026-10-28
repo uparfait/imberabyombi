@@ -3,3 +3,4 @@
    cx = { z (the unzipped file), sty (text styles by name) }. */
 import { esc_html, clamp } from '../core/index.js';
 import { unzip } from './unzip.js';
+import { parse_xml, by_tag, kids } from './xml_helpers.js';
