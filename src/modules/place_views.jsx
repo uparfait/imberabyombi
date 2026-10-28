@@ -55,3 +55,4 @@ VIEWS.parking = () => {
     return <button key={s} className={`tile ${p ? 'is_on' : ''}`} {...a} aria-label={`Slot ${s}, ${p ? 'occupied by ' + p.plate : 'free'}`}>
       <span className="text-xs font-semibold">{s}</span>
       {p ? <>{ic('car', 'h-6 w-6')}<span className="w-full truncate font-mono text-[11px]">{p.plate}</span>
+        </> : <span className="text-[11px] text-muted">Free</span>}</button>; };
