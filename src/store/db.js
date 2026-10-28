@@ -26,3 +26,4 @@ export const db = {
   find(c, id) { return db.list(c).find(r => r.id === id); },
   upsert(c, row) {
     const rows = db.list(c), id = row.id || uid(), i = rows.findIndex(r => r.id === id);
+    if (i > -1) rows[i] = { ...rows[i], ...row }; else rows.unshift({ ...row, id }); db.save(c, rows); return id;
