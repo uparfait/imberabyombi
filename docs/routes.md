@@ -27,4 +27,4 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
    shows any message that followed the navigation (signed in, signed out…).
 
 ## Links
-Use plain anchors: `<a href="#/about">About</a>`. To navigate from code: `location.hash = '#/admin/tasks'`.
+Write normal anchors and build the address with `to()`, so it carries the base path:
