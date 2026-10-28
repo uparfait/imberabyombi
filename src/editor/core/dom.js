@@ -7,3 +7,4 @@ import { pages_el } from './refs.js';
 
 export function is_break(n) { return !!(n && n.nodeType === 1 && n.classList.contains('page_break')); }
 export function is_list(n) { return !!(n && (n.tagName === 'UL' || n.tagName === 'OL')); }
+export function is_table(n) { return !!(n && n.tagName === 'TABLE'); }
