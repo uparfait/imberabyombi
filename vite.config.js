@@ -13,6 +13,7 @@ const spa_fallback = () => {
   return {
     name: 'spa_fallback',
     apply: 'build',
+    configResolved(c) { out = resolve(c.root, c.build.outDir); },
 export default defineConfig({
   base: './',
   plugins: [react()],
