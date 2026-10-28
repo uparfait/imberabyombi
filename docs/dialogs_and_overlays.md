@@ -8,3 +8,4 @@ React draws the dialog contents through portals (`Dialog_hosts`, src/overlays); 
 ## modal()
 ```jsx
 import { modal } from '../overlays/index.js';
+modal({
