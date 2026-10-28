@@ -32,3 +32,4 @@ export function cell(c, k, row) {
   if (k === 'role') return <span className="chip bg-brand/10 text-accent">{role_name(v)}</span>;
   if (['name', 'person', 'student', 'assignee', 'borrower', 'driver', 'by', 'guardian'].includes(k)) return person(v);
   if (TONE[v]) return badge(v);
+  if (['dept', 'kind', 'category', 'grade', 'term', 'subject', 'type', 'item', 'resource', 'shift', 'method'].includes(k)) return tag(v);
