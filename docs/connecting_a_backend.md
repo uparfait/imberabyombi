@@ -24,3 +24,6 @@ request(async () => {
   if (!res.ok) throw new Error('save failed');          // shown as "The request could not be completed"
   db.upsert('tasks', await res.json()); rerender(); notify('Saved.', 'ok');
 }, { btn });
+```
+
+## 3. Sign-in: `auth` (src/auth)
