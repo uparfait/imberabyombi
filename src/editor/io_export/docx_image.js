@@ -36,3 +36,4 @@ export async function prepare_images(root) {
     try { await im.decode(); } catch (e) { img.remove(); continue; }
     img.dataset.nw = im.naturalWidth; img.dataset.nh = im.naturalHeight;
     if (!/^data:image\/(png|jpe?g|gif);base64,/i.test(src)) {
+      try {
