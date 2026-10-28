@@ -29,3 +29,4 @@
   .fold { display: grid; grid-template-rows: 1fr; opacity: 1; transition: grid-template-rows .3s var(--ease), opacity .25s var(--ease); }
   .fold[data-closed=true] { grid-template-rows: 0fr; opacity: 0; }
   .fold > div { min-height: 0; overflow: hidden; }
+  .chev { transition: rotate .3s var(--ease); }
