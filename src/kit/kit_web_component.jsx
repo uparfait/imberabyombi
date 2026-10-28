@@ -4,3 +4,4 @@ import { lorem } from '../lib/index.js';
 
 export const kit_web_component = () => (
   <>
+    <ds-callout><h4 slot="title">{lorem.t(3)}</h4>{lorem.s(12, 18)}</ds-callout>
