@@ -19,3 +19,4 @@ export const students_schema = {
 };
 
 export const bulletins_schema = {
+  l: 'bulletin entry', n: 40, cols: ['student', 'term', 'subject', 'score', 'remark'],
