@@ -39,3 +39,4 @@ export function row_drag(e, o) {
   const end = ok => {
     removeEventListener('pointermove', move); removeEventListener('pointerup', up); removeEventListener('pointercancel', cancel);
     removeEventListener('keydown', esc, true); cancelAnimationFrame(raf);
+    if (!on) return;
