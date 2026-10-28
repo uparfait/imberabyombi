@@ -34,3 +34,4 @@ export async function xlsx_native(buf) {
 }
 export async function sheet_to_html(file, ext) {
   const buf = await file.arrayBuffer(); let sheets;
+  try {
