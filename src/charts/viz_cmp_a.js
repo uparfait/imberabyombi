@@ -32,3 +32,4 @@ export const VIZ_CMP_A = {
     return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [...s.map((n, j) => [num(v[i][j]), n, j]), [num(tot[i]), 'Total', null]], hit_col(f, x, i) + seg(i))).join('')
       + chart_base(f, ax.y(0)) + x_labels(f, c, x), 'Stacked bar chart'),
       legend: legend(s), table: [['Category', ...s, 'Total'], c.map((k, i) => [k, ...v[i].map(num), num(tot[i])])] }; } },
+  stacked100: { t: '100% stacked bar chart', g: 'cmp', d: 'Shares within each row, all rows the same length.', f(w) {
