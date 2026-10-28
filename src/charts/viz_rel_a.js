@@ -45,3 +45,4 @@ export const VIZ_REL_A = {
     return { svg: svg(f, m.map((r, i) => r.map((c, j) => mark_group(`${k[i]} × ${k[j]}`, [[c.toFixed(2), 'Correlation', null]],
         `<rect class="mark mark_cell" x="${round1(x0 + j * cs + 1)}" y="${round1(y0 + i * cs + 1)}" width="${round1(cs - 2)}" height="${round1(cs - 2)}" rx="3"`
         + ` style="fill:${diverging(c)}"/>${cs > 30 ? `<text class="${Math.abs(c) > .55 ? 'inner_label' : ''}" x="${round1(x0 + j * cs + cs / 2)}"`
+        + ` y="${round1(y0 + i * cs + cs / 2 + 4)}" text-anchor="middle">${c.toFixed(1)}</text>` : ''}`)).join('')
