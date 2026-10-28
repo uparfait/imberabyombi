@@ -24,3 +24,4 @@ export const VIZ_PART_A = {
       'Donut chart'), legend: legend(s), table: [['Part', 'Value', 'Share'], s.map((k, i) => [k, num(v[i]), pct(v[i] / tot)])] }; } },
   treemap: { t: 'Treemap', g: 'part', d: 'Nested parts sized by value, coloured by group.', f(w) {
     const groups = SER.slice(0, 3), items = groups.flatMap((gname, gi) => uwords(4).map(k => ({ k, g: gi, v: rnd(5, 40) }))).sort((a, b) => b.v - a.v);
+    const f = frame(w, 260, { l: 0, r: 0, t: 0, b: 0 });
