@@ -14,3 +14,4 @@ const role_part = (inv, rs, sel) => inv ? <>
     {rs.map(x => <option key={x.id} value={x.id}>{x.name}</option>)}</select></div>;
 
 export function login_page(r) {
+  const rs = roles(), inv = r.q.role && rs.find(x => x.id === r.q.role), sel = inv?.id || db.get('lastRole') || 'super';
