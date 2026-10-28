@@ -25,3 +25,4 @@
 
 /* Workspace: rulers + the scrolling pages, on a tinted surface so the white pages stand out (flat: a line, no shadow) */
 #workspace { position: relative; display: flex; flex: 1; min-height: 0; container: ed_ws / inline-size; border-top: 1px solid rgb(var(--line)); background: rgb(var(--surface_2)); }
+#main_col { position: relative; display: flex; flex: 1; flex-direction: column; min-width: 0; }
