@@ -16,3 +16,4 @@ import { Live_slot, redraw_slot } from './live_slot.jsx';
 /* routed = true: real pages (#/admin/nav, #/admin/nav/<i-slug>, #/admin/nav/4-system-3/<i-slug>), so moving around works like any
    page: address, tab title, Back / Forward, refresh, the top loader. routed = false: the design-system demo, in place. */
 function nav_markup(routed) {
+  const tree = NAVTREE(), ROOT = 'System 2';
