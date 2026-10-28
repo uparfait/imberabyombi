@@ -33,3 +33,4 @@ export function render_outline() {
     ol.appendChild(row);
   });
   apply_folds(ol); mark_outline();
+  if (refocus && !refocus.hidden) refocus.focus({ preventScroll: true });
