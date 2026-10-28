@@ -8,3 +8,4 @@ import { redraw_slot } from './live_slot.jsx';
 
 export const panel_html = k => <><header className="sticky top-0 z-[1] flex items-center gap-1 bg-surface px-4 pb-3 pt-4">
     <div className="min-w-0 flex-1"><p className="text-[11px] font-semibold uppercase tracking-wider text-muted">{cfg.name}</p>
+      <h2 className="truncate font-sans text-lg font-medium">{PANELS[k].t}</h2></div>
