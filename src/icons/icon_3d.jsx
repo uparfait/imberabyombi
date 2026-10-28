@@ -11,3 +11,4 @@ export function i3(n, c = 'w-14 h-14', tone = 'brand') {
   return (
     <svg viewBox="0 0 64 64" className={`i3 shrink-0 ${c}`} aria-hidden="true">
       <defs>
+        <linearGradient id={`${id}f`} x1="0" y1="0" x2="1" y2="1">
