@@ -18,3 +18,4 @@ export const file_tiles = inp => { BOXES.get(inp)?.(); };
 export function File_box({ id, name, multiple, accept, onClick, onChange, ...rest }) {
   const ref = useRef(null), shown = useRef([]), picking_now = useRef(false);
   const [view, set_view] = useState({ files: [], quiet: false, gen: 0 });
+  const [picking, set_picking] = useState(false);
