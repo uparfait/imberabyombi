@@ -61,3 +61,4 @@ async function odf_blocks(cx, n, out) {
       const tb = by_tag(c, 'text-box')[0]; if (tb) await odf_blocks(cx, tb, out); else { const i = await odf_img(cx, c); if (i) out.push(`<p>${i}</p>`); }
     }
     else if (ln === 'page') { if (out.length) out.push(PB); out.push(`<h2>${esc_html(c.getAttribute('draw:name') || 'Slide')}</h2>`); await odf_blocks(cx, c, out); }
+    else if (/^(section|text|presentation|index-body|table-of-content|custom-shape|g)$/.test(ln)) await odf_blocks(cx, c, out);
