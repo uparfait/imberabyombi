@@ -26,3 +26,4 @@ export const FORMS = {
     location.hash = auth.user ? '#/admin' : '#/login'; },
   /* the two password fields are named pw_new and pw_confirm (pw_field uses its id as the name) */
   setpw: (d, f) => {
+    if (PW_RULES.some(([, , t]) => !t(d.pw_new))) { form_msg(f, 'bad', 'Choose a stronger password', 'Meet every rule in the list.', false); f.elements.pw_new.focus(); return false; }
