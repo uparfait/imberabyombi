@@ -10,3 +10,4 @@ export function stop_paint() { paint = null; btn(false); }
 export function start_paint() {
   if (paint) { stop_paint(); return; }
   if (!last_range) { toast('Click into text first'); return; }
+  const n = el_of(last_range.startContainer), cs = getComputedStyle(n);
