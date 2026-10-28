@@ -16,3 +16,6 @@ export const buses_schema = {
   f: [F('plate', 'Plate number', 'text', 0, 1), F('driver', 'Driver'), F('route', 'Route'), F('seats', 'Seats', 'number', 0, 1, { min: 1 })],
   r: { driver: v => person(v) },
   g: () => ({ plate: `RAB ${lorem.int(100, 999)} A`, driver: lorem.name(), route: lorem.t(2), seats: lorem.int(20, 60) })
+};
+```
+Register it in `src/schemas/schemas.js`: import it and add `buses: buses_schema` to `schemas`.
