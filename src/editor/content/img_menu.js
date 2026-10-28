@@ -32,3 +32,4 @@ export function image_menu_items(img) {
       { label: 'Custom size…', icon: 'straighten', no_preview: true, action: off(() => image_size_dialog(img)) }] },
     { label: 'Rotate and flip', icon: 'rotate_right', sub: () => [
       { label: 'Rotate right 90°', icon: 'rotate_right', action: () => rotate_image(img, 1) },
+      { label: 'Rotate left 90°', icon: 'rotate_left', action: () => rotate_image(img, -1) },
