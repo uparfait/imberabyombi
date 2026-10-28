@@ -68,6 +68,7 @@ function wire_row(row, t, box) {
 /* on: true folds the outline away, false shows it (the row and its focus stay put) */
 function fold_tab(row, t, on = !t.folded) {
   t.folded = on; save_soon();
+  const b = row.querySelector('.tab_fold'); if (b) { b.setAttribute('aria-expanded', String(!on)); b.setAttribute('aria-label', fold_label(t)); b.dataset.tip = fold_label(t); }
 function filter_box(focus) {
   const inp = el('input', { type: 'search', class: 'tab_filter', placeholder: 'Filter tabs', 'aria-label': 'Filter tabs', autocomplete: 'off' });
   inp.value = tab_q;
