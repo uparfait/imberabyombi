@@ -27,3 +27,4 @@ function on_card_click(e, c, card) {
   }
   if (x.dataset.x === 'save') {
     const v = qs('textarea', card).value.trim(); if (!v) { toast('Write a comment first'); return; }
+    c.text = v; c.draft = false; save_soon(); render_comments();
