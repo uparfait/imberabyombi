@@ -59,3 +59,6 @@ function tools_items() {
     cmd('Word count', 'numbers', () => word_count_dialog(), 'Ctrl+Shift+C'),
     { label: 'Spelling check', icon: 'spellcheck', checked: !!state.spell, no_preview: true, action: () => toggle_spell() },
     cmd('Find and replace', 'find_replace', () => open_find(), 'Ctrl+H')
+  ];
+}
+function help_items() { return [cmd('Keyboard shortcuts', 'keyboard', () => shortcuts_dialog(), 'Ctrl+/')]; }
