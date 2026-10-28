@@ -3,3 +3,4 @@
    Ctrl+Shift+F) opens it smoothly by height and opacity, and closes it the same way. The engine redraws the rulers on
    #topbar's transitionend. Reduced motion: it opens and closes at once. */
 #topbar {
+  display: grid; grid-template-rows: 0fr; flex: none; opacity: 0; visibility: hidden; user-select: none;
