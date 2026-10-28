@@ -6,6 +6,7 @@ import { auth } from '../auth/index.js';
 import { lorem } from '../lib/index.js';
 import { ic, i3 } from '../icons/index.js';
 import { dash_widgets } from './dashboard_widgets.jsx';
+import { to } from '../router/index.js';
 
 /* [module, label, icon, collection, filter?]: the numbers a role may open */
 const STATS = [['staff', 'Staff', 'users', 'staff'], ['students', 'Students', 'cap', 'students'], ['employees', 'Employees', 'briefcase', 'employees'],
