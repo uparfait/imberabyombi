@@ -27,3 +27,4 @@
   transition: border-color .15s;
 }
 .preset:hover { border-color: rgb(var(--muted) / .6); }
+.preset[aria-pressed="true"] { border-color: rgb(var(--brand)); outline: 2px solid rgb(var(--brand)); outline-offset: 1px; }
