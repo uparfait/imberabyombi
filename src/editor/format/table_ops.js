@@ -49,3 +49,4 @@ export function tbl_op(op, arg) {
     case 'del_table': target = chain[chain.length - 1].nextElementSibling; chain.forEach(t => t.remove()); full = true; break;
     case 'merge': {
       const nx = c.td.nextElementSibling; if (!nx) { toast('There’s no cell to the right to merge with'); break; }
+      if (nx.textContent.replace(/\u200b/g, '').trim() || nx.querySelector('img,table')) Array.from(nx.childNodes).forEach(n => c.td.appendChild(n));
