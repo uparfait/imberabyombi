@@ -20,3 +20,4 @@ export function mission_sec(full) {
 export function vision_sec(full) {
   return (
     <section {...spy_attrs('vision', full)} className="theme_band relative isolate overflow-hidden border-y border-line py-20 sm:py-28">
+      <div className="pattern_layer" aria-hidden="true"></div>
