@@ -15,3 +15,4 @@ export function after_close(fn) {
    primary button; an action returning false keeps the dialog open. A dialog with no primary button is a view (closed
    by its x or Esc, like every template overlay). The action runs while the modal is open: use after_close() for work
    that needs the caret. */
+export function open_dialog({ title, content, buttons = [], width = 440, on_open }) {
