@@ -13,3 +13,4 @@ export function schedule_reflow(i) {
 }
 export let ui_timer = null;
 export function schedule_ui() {
+  clearTimeout(ui_timer);
