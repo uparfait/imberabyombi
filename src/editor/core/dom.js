@@ -40,3 +40,4 @@ export function position_at(root, k) {
 }
 export function top_block(host, n) { if (!n || n === host) return null; while (n && n.parentNode !== host) n = n.parentNode; return n; }
 export function is_empty_block(b) {
+  return !!b && b.nodeType === 1 && !is_break(b) && !is_list(b) && !is_table(b) && !b.querySelector('img,table,hr') && b.textContent.replace(/\u200b/g, '') === '';
