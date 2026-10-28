@@ -19,3 +19,4 @@ const filters = (c, sels) => (
 
 export function export_dialog(c, fmt) {
   const s = schemas[c], dk = date_key(c), name = EXPORTS.find(x => x[0] === fmt)?.[1] || 'CSV';
+  const sels = s.cols.map(k => s.f.find(f => f.k === k)).filter(f => f?.t === 'select');   /* fixed-choice columns (status, priority…) become filters */
