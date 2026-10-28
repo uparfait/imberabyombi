@@ -18,3 +18,4 @@ import { drop_page_rule, page_rule_el } from './view.js';
 import { listen, run_offs } from './ui_dom.js';
 
 function install_menubar(offs) {
+  const bar = refs.menubar; if (!bar) return;
