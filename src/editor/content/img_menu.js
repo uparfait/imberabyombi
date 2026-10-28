@@ -51,3 +51,4 @@ export function image_menu_items(img) {
       { label: 'By URL', icon: 'link', no_preview: true, action: off(() => image_url_dialog(img_now(img))) }] },
     { label: 'Copy image', icon: 'content_copy', no_preview: true, action: off(() => copy_image(img)) },
     { label: 'Download image', icon: 'download', no_preview: true, action: off(() => download_image(img)) },
+    { label: 'Reset image', icon: 'restart_alt', no_preview: true, action: off(() => reset_image(img)) },
