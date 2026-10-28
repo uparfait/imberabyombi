@@ -1,3 +1,4 @@
 /* icons: the path dictionary, flat icons (ic / ic_html) and 3D clay-tile icons (i3 / i3_html).
    Import from here: import { ic, i3 } from '../icons/index.js' */
 export * from './paths.js';
+export * from './icon.jsx';
