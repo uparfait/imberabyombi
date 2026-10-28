@@ -9,3 +9,4 @@ Two small objects stand between the screens and the data, so a real API replaces
 | `db.list(collection)`       | reads `c:<collection>` (seeds it once) | return the rows you fetched         |
 | `db.find(collection, id)`   | one row                                | from the fetched rows or a request  |
 | `db.upsert(collection, row)`| insert or update, returns the id       | `POST` / `PATCH`, then update cache |
+| `db.remove(collection, id)` | delete                                 | `DELETE`, then update cache         |
