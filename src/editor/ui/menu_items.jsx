@@ -29,3 +29,6 @@ export function spacing_items() {
     { label: 'Add / remove space before paragraph', action: () => toggle_para_space('before') },
     { label: 'Add / remove space after paragraph', action: () => toggle_para_space('after') },
     { label: 'Custom spacing…', no_preview: true, action: custom_spacing_dialog }
+  ];
+}
+export function bullet_items() {
