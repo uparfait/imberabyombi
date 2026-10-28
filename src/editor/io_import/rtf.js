@@ -9,3 +9,4 @@ const DEST = new Set(('fonttbl colortbl stylesheet info pict header footer heade
   'bkmkstart bkmkend').split(' '));
 
 export function rtf_to_html(rtf) {
+  const out = []; let para = '', st = { b: 0, i: 0, u: 0, skip: 0 }, uc = 1, skip_n = 0, in_tbl = false, cells = [], rows = [];
