@@ -39,3 +39,4 @@ export function adjust_dialog(img) {
     if (!v.brightness && !v.contrast && v.saturation === 100 && !v.transparency) return;
     const B = 1 + v.brightness / 100, C = 1 + v.contrast / 100, S = v.saturation / 100, A = 1 - v.transparency / 100;
     return bake_image(img, (c, im) => {
+      c.width = im.naturalWidth; c.height = im.naturalHeight; const x = c.getContext('2d'); x.drawImage(im, 0, 0);
