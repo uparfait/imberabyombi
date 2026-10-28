@@ -71,3 +71,4 @@ export function Upload_actions({ up }) {
 /* the files that failed, one per line, with an OK button (after the confirm, if that is still closing) */
 export function show_failed(failed, any_done) {
   if (qs('#modal')?.classList.contains('closing')) return after_close(() => show_failed(failed, any_done));
+  modal({ title: any_done ? 'Some files could not be added' : 'The files could not be added',
