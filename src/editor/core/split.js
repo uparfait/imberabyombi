@@ -43,3 +43,4 @@ export function split_text(block, b, next) {
 }
 /* the page break that has flow content after it (absolute images after a break stay on their page) */
 export function break_with_rest(b) {
+  return flow_kids(b).find(c => { if (!is_break(c)) return false; for (let n = c.nextSibling; n; n = n.nextSibling) if (!is_abs(n)) return true; return false; }) || null;
