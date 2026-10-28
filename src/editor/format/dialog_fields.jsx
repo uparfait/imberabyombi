@@ -4,3 +4,4 @@
 import { clamp } from '../core/index.js';
 
 /* number field props for a current value v: clamped into [min, max]; step 'any' when v is off the step grid */
+export function num_props(v, min, max, step = 1) {
