@@ -23,3 +23,5 @@ export function refresh_toolbar() {
       else if (k === 'numbers') on = !!(l && l.tagName === 'OL');
     }
     b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on));
+  });
+  set_text(refs.font_label, cs.fontFamily.split(',')[0].replace(/["']/g, '').trim());
