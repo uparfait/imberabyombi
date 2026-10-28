@@ -53,3 +53,4 @@ function on_key(e, row) {
   else if (k === 'Home') to(rows[0]);
   else if (k === 'End') to(rows[rows.length - 1]);
   else if (k === 'ArrowRight') {
+    if (row.classList.contains('folded')) { e.preventDefault(); toggle_fold(row, true); }
