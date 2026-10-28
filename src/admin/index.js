@@ -4,3 +4,4 @@ export * from './live_slot.jsx';
 export * from './tile_menu.jsx';
 export * from './nav_tree.js';
 export * from './nav_drops.jsx';
+export * from './ensure_mine.js';
