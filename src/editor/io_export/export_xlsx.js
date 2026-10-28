@@ -16,3 +16,4 @@ export function export_xlsx(root, name) {
     while (used.has(n.toLowerCase())) n = `${b} (${k++})`; used.add(n.toLowerCase()); s.name = n;
   });
   const files = [
+    { name: '[Content_Types].xml', data: `${XML}<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">`
