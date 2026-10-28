@@ -27,3 +27,4 @@ const font_of = (x, fonts) => { const w = document.createTreeWalker(x, NodeFilte
 export function wrap_selection(cls, attrs = {}) {
   const s = getSelection(); if (!s.rangeCount || s.isCollapsed) return [];
   const host = editable_of(s.anchorNode); if (!host) return [];
+  const marker = 'wrapmark' + uid(), fonts = fonts_in(host, s.getRangeAt(0));
