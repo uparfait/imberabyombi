@@ -32,3 +32,4 @@ export const kpi_cards_b = k => {
         <p className="mt-1 text-sm text-muted">People using the system this minute</p>{spark(live, false, mins, num, 'People')}</>,
       [['Time', 'People'], mins.map((x, i) => [x, num(live[i])])]),
     kpi_card('', 'Tasks done', 'Tasks completed this week out of all tasks due this week.',
+      <><div className="kpi_ring"><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="32" />
