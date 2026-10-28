@@ -65,3 +65,7 @@ export function Upload_actions({ up }) {
     <>
       <button type="button" className="btn btn_ghost" data-act="close_modal">Cancel</button>
       <button className="btn btn_primary">{files.length > 1 ? `Add ${files.length} files` : 'Add file'}</button>
+    </>
+  );
+}
+/* the files that failed, one per line, with an OK button (after the confirm, if that is still closing) */
