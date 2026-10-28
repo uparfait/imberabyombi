@@ -55,3 +55,6 @@ export function tab_menu(t) {
     { label: 'Move down', icon: 'arrow_downward', disabled: i === state.tabs.length - 1, no_preview: true, action: () => { move_tab(i, i + 1); render_sidebar(); } },
     { sep: true },
     { label: 'Delete', icon: 'delete', disabled: state.tabs.length < 2, no_preview: true, action: () => delete_tab(t) }
+  ];
+}
+/* the tab's name becomes a field in its row: Enter / leaving saves, Esc cancels */
