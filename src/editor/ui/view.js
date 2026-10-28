@@ -46,3 +46,4 @@ export function toggle_menus() {
   state.menus = !state.menus;
   if (refs.topbar) refs.topbar.classList.toggle('show', state.menus);
   set_icon(refs.menus_icon, state.menus ? 'expand_less' : 'expand_more');
+  const b = refs.menus_toggle;
