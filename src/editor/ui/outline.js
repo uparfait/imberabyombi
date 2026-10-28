@@ -62,3 +62,5 @@ export function mark_outline() {
     if (i === at) row.setAttribute('aria-current', 'location'); else row.removeAttribute('aria-current');
   });
   const tab_row = rows.find(x => x === document.activeElement) || rows[at] || rows.find(x => !x.hidden);
+  rows.forEach(x => { x.tabIndex = x === tab_row ? 0 : -1; });
+}
