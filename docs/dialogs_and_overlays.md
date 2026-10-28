@@ -9,3 +9,4 @@ React draws the dialog contents through portals (`Dialog_hosts`, src/overlays); 
 ```jsx
 import { modal } from '../overlays/index.js';
 modal({
+  title: 'Add a task',                 // text or JSX
