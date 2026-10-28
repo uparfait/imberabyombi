@@ -27,3 +27,5 @@ export function table_chain(t) {
     if (is_table(f) && f.hasAttribute('data-cont')) { chain.push(f); cur = f; } else break;
   }
   return chain;
+}
+export function sel_cells(c) { const r = last_range; const cells = r && !r.collapsed ? qsa('td,th', c.table).filter(x => r.intersectsNode(x)) : []; return cells.length ? cells : [c.td]; }
