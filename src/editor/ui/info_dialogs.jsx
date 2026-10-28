@@ -43,3 +43,6 @@ export function shortcuts_dialog() {
     title: 'Keyboard shortcuts',
     body: <div className="sm:col-span-2"><table className="w-full"><tbody>{KEYS.map(([a, b]) =>
       <tr key={a}><td className={TD}>{a}</td><td className={TD + ' whitespace-nowrap text-muted'}>{b}</td></tr>)}</tbody></table>
+      <p className="mt-3 text-xs text-muted">On a Mac, use ⌘ instead of Ctrl.</p></div>
+  });
+}
