@@ -31,3 +31,5 @@ Subject words (staff, parking, students…) belong only in data: schema keys, mo
 ## 4. Every file explains itself
 Each file starts with a short comment: what it holds and how it is used. Functions that are not obvious get one line
 above them. The `docs/` folder explains the techniques; the code comments explain the details.
+
+## 5. Imports go through folder barrels
