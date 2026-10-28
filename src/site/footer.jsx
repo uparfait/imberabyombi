@@ -9,3 +9,4 @@ import { PUB } from './site_bits.jsx';
 const SOCIAL_CLS = 'grid h-10 w-10 place-items-center rounded-full border border-line text-fg/80 transition hover:border-brand hover:bg-brand hover:text-white';
 
 export function footer() {
+  const y = new Date().getFullYear(), soc = [['mail', 'Email'], ['globe', 'Website'], ['send', 'Telegram'], ['link', 'LinkedIn']];
