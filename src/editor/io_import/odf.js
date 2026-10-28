@@ -69,3 +69,4 @@ export async function odf_to_html(file) {
   by_tag(doc, 'style').forEach(s => {
     const tp = kids(s, 'text-properties')[0];
     if (tp) sty[s.getAttribute('style:name')] = { b: /bold|[6-9]00/.test(tp.getAttribute('fo:font-weight') || ''), i: tp.getAttribute('fo:font-style') === 'italic',
+      u: (tp.getAttribute('style:text-underline-style') || 'none') !== 'none', color: tp.getAttribute('fo:color') };
