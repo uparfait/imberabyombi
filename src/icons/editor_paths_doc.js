@@ -19,3 +19,4 @@ export const EDITOR_DOC_PATHS = {
   csv: FILE + 'M8 13v2.5L7 17M12 13v2.5L11 17M16 13v2.5L15 17',
   article: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM7 8h10M7 12h10M7 16h6',
   text_snippet: 'M4 4h16v10l-6 6H4zM14 20v-6h6M8 9h8M8 13h4',
+  html: 'M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16',
