@@ -47,3 +47,4 @@ function on_hover(e) {
   if (h || col_hover) set_col_hover(h);
 }
 /* capture on window: runs before the pages' own mousedown (caret placement), which never sees a resize drag */
+function on_down(e) {
