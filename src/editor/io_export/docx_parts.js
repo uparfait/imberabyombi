@@ -12,3 +12,4 @@ export const docx_types = (has_header, has_footer) => `${XML}<Types xmlns="http:
   + '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>'
   + '<Default Extension="png" ContentType="image/png"/><Default Extension="jpeg" ContentType="image/jpeg"/><Default Extension="gif" ContentType="image/gif"/>'
   + `<Override PartName="/word/document.xml" ContentType="${WP}.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="${WP}.styles+xml"/>`
+  + `<Override PartName="/word/numbering.xml" ContentType="${WP}.numbering+xml"/>`
