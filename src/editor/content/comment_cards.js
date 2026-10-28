@@ -35,3 +35,4 @@ function card_of(c) {
   const card = el('div', { class: 'c_card', 'data-id': c.id }), orphan = !qs(`.cmt[data-cid="${c.id}"]`, pages_el);
   card.innerHTML = card_html(c, orphan);
   qs('.c_quote', card).textContent = c.quote; qs('.c_text', card).textContent = c.text;
+  const rep = qs('.c_replies', card);
