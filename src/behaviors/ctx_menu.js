@@ -15,3 +15,4 @@ export function ctx_menu() {
   const groups = u
     ? [['Quick links', ['tasks', 'calendar'].map(k => MODS.find(m => m.k === k)).filter(m => m && auth.can(m.k)).map(m => ['#/admin/' + m.k, m.l, m.i])]].filter(([, l]) => l.length)
     : [['Pages', [['#/', 'Home', 'home'], ...PUB.map(([k, l]) => ['#/' + k, l, PAGES[k].i]), ['#/login', 'Sign in', 'lock']]]];
+  const kbd = key_hint('K') ? `<kbd class="ml-auto">${key_hint('K')}</kbd>` : '';
