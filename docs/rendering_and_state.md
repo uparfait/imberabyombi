@@ -27,3 +27,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 ## New page vs same page
 - `render()` (a navigation): clears the page's timers, closes open dialogs, forgets which tables already loaded,
   scrolls to the top and draws a fresh tree (a new React key), like a full page load.
+- `rerender()`: the same page updates in place; scroll positions, open menus and typed text stay.
