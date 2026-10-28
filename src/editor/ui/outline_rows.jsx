@@ -7,3 +7,4 @@ import { toggle_menu, open_menu } from './menu_engine.js';
 import { section_model, section_moves, move_section, move_section_by, delete_section } from './sections.js';
 import { outline_el, outline_rows, toggle_fold, render_outline } from './outline.js';
 import { row_drag } from './row_drag.js';
+import { confirm_dialog } from './dialogs.jsx';
