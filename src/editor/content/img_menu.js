@@ -27,3 +27,4 @@ export function image_menu_items(img) {
       label: cap(a), icon: 'format_align_' + a, checked: img_align_of(img_now(img)) === a, action: () => set_img_align(img, a) })) },
     { label: 'Size', icon: 'photo_size_select_large', sub: () => [
       { label: 'Small (25% of the line)', action: pct(.25) }, { label: 'Medium (50%)', action: pct(.5) }, { label: 'Large (75%)', action: pct(.75) },
+      { label: 'Full width', action: pct(1) }, { sep: true },
