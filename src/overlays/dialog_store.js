@@ -16,3 +16,4 @@ export function set_dialog(id, content) {
   try { flushSync(emit); } catch { emit(); }
 }
 /* body / actions / render: JSX, or a function returning JSX (called on every draw, so rerender() refreshes an open view).
+   An error there is logged and leaves the part empty instead of taking the page down. */
