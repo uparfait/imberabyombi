@@ -6,3 +6,4 @@ import { install_link_bubble } from './link_bubble.js';
 import { on_image_replace } from './img_io.js';
 import { pages_keydown, pages_beforeinput, pages_input } from './keys.js';
 import { pages_click, pages_pointerdown, pages_dragstart, pages_mouseup, pages_mousedown, pages_dblclick } from './pointer.js';
+import { pages_paste, drop_handler, window_dragover } from './paste.js';
