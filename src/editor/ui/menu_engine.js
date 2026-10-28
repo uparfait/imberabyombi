@@ -84,3 +84,4 @@ export function toggle_menu(anchor, items_fn, opts) {
   open_menu(anchor, items_fn(), opts);
 }
 /* the rows a keyboard can reach in menu m */
+export function menu_rows(m) { return Array.from(m.querySelectorAll(':scope > .ed_mi:not(.disabled)')); }
