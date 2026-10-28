@@ -50,3 +50,4 @@ export function rtf_to_html(rtf) {
     let j = i; while (j < L && !'\\{}\r\n'.includes(rtf[j])) j++;
     let text = rtf.slice(i, j); i = j;
     if (skip_n > 0) { const k = Math.min(skip_n, text.length); text = text.slice(k); skip_n -= k; }
+    emit(text);
