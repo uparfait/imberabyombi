@@ -13,3 +13,4 @@ import { show_failed } from './upload_body.jsx';
 
 /* done: the converted files ({ html, inline?, project?, file }); a problem met while placing them is added to failed */
 function place_uploads(done, mode, failed) {
+  const projects = done.filter(r => r.project), content = done.filter(r => !r.project);
