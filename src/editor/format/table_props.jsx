@@ -41,3 +41,4 @@ export function table_props_dialog() {
       {num_field('tp_pad', 'Cell padding (pt)', num_props(isNaN(pad) ? 5 : pad, 0, 30, 0.5))}
       {sel_field('tp_va', 'Vertical alignment', VALIGN, c.td.style.verticalAlign || 'top')}
       {num_field('tp_w', 'Width (% of the line)', num_props(parseFloat(t0.style.width) || 100, 10, 100))}
+      {sel_field('tp_al', 'Position', POSITIONS, al)}
