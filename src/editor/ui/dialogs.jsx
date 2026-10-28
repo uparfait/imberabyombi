@@ -17,3 +17,4 @@ export function after_close(fn) {
    that needs the caret. */
 export function open_dialog({ title, content, buttons = [], width = 440, on_open }) {
   const p = buttons.find(b => b.primary);
+  modal({
