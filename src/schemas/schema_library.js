@@ -21,3 +21,4 @@ export const books_schema = {
 export const rentals_schema = {
   l: 'rental', n: 10, cols: ['book', 'borrower', 'out', 'due', 'status'],
   f: [
+    field_spec('book', 'Book', 'list', () => db.list('books').map(b => b.title), 1), field_spec('borrower', 'Borrower', 'list', () => names('students', 'staff'), 1),
