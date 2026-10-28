@@ -6,3 +6,4 @@ import { scale_color } from './viz_math.js';
 export const legend = (names, kind = 'rect', idx = names.map((_, i) => i)) => (
   <ul className="viz_legend">
     {names.map((n, i) => (
+      <li key={i}><span className={`legend_${kind}`} style={{ '--c': typeof idx[i] === 'string' ? idx[i] : scale_color(idx[i]) }}></span>{n}</li>
