@@ -28,3 +28,4 @@ export function install_page() {
   document.addEventListener('reset', e => setTimeout(() => {
     qsa('input[type=file]', e.target).forEach(i => i.closest('.filebox') && file_tiles(i)); qsa('select[multiple]', e.target).forEach(ms_sync); }));
   /* Clicking outside an overlay never closes it; Esc acts like its Close button (with the unsaved-changes check) */
+  ['modal', 'drawer', 'viewer', 'confirm'].forEach(id => { const d = document.getElementById(id);
