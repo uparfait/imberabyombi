@@ -6,3 +6,4 @@ import { label } from '../ui/index.js';
 import { tview } from './table_view.js';
 
 export const pager = (c, p, n) => (
+  <>
