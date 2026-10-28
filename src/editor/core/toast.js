@@ -11,3 +11,4 @@ let sink = null, prog = null, line = null, timer = null;
 export function quiet(fn, into) { const prev = sink; sink = into; try { return fn(); } finally { sink = prev; } }
 
 const alive = () => !!(prog && prog.isConnected && !prog.classList.contains('out'));
+const LINE_CSS = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:95;display:none;max-width:calc(100vw - 32px);'
