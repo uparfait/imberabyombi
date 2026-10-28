@@ -36,3 +36,4 @@ export function kit() {
           <li key={id}><button className="side_link whitespace-nowrap" data-act="scroll" data-to={`section_${id}`}>{t}</button></li>
         ))}</ul></nav>
         <div className="min-w-0">
+          {kit_block('tokens', 'Tokens', kit_tokens())}
