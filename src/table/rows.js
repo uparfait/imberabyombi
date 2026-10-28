@@ -18,3 +18,4 @@ export function rows_of(c) {
 export function refresh(c) { if (!document.getElementById('table_body_' + c)) return; rerender(); }
 
 /* First view: one timer per collection. It survives redraws of the same page (so a second table's spinner is not
+   restarted by the first one's redraw) and is dropped when a new page draws. */
