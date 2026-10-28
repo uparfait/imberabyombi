@@ -1,8 +1,7 @@
 # Deploying
 
 `npm run build` writes a static site to `dist/`. Any static host can serve it; no server code is needed.
-Asset paths are relative (`base: './'` in `vite.config.js`) and routes are hash-based (`#/about`), so the site works
-from the domain root or any sub-folder without server rules.
+Pages have real addresses (`/about`, `/admin/tasks`), so the host must answer every route with `index.html`
 
 ## GitHub Pages
 1. Build: `npm run build`.
