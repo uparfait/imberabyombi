@@ -20,3 +20,4 @@ Every user action already goes through `request(fn, { btn, delay })`: the button
 error becomes a notification. Put your `fetch()` inside `fn` and set `cfg.latency` to `0`:
 ```js
 request(async () => {
+  const res = await fetch('/api/tasks', { method: 'POST', body: JSON.stringify(row), headers: { 'Content-Type': 'application/json' } });
