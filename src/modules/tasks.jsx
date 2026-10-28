@@ -19,3 +19,4 @@ VIEWS.tasks = () => {
     ['delegated', 'Delegated by me', all.filter(FL.delegated).length], ...(auth.boss() ? [['all', 'All tasks', all.length]] : [])];
   const mine = all.filter(r => r.assignee === n), done = mine.filter(r => r.status === 'Done').length;
   const preset = t === 'mine' ? { assignee: n, by: n } : t === 'delegated' ? { by: n } : {};
+  return <>
