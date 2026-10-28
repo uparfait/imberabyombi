@@ -9,3 +9,4 @@ export function p_pr_xml(e, extra = '') {
   if (/^H[1-6]$/.test(e.tagName)) style = 'Heading' + Math.min(+e.tagName[1], 4);
   else if (e.classList && e.classList.contains('title')) style = 'Title';
   else if (e.classList && e.classList.contains('subtitle')) style = 'Subtitle';
+  let x = style ? `<w:pStyle w:val="${style}"/>` : '';
