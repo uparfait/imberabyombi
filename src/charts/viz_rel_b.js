@@ -49,3 +49,4 @@ export const VIZ_REL_B = {
     merges.forEach(([a, b, h], m) => { const na = pos[a], nb = pos[b], xm = x(h);
       paths += `<path d="M${round1(x(na.h))} ${round1(na.y)}H${round1(xm)}V${round1(nb.y)}H${round1(x(nb.h))}"`
         + ` style="fill:none;stroke:${m < 4 ? scale_color(Math.floor(m / 2)) : 'rgb(var(--muted))'};stroke-width:1.5"/>`; pos.push({ y: (na.y + nb.y) / 2, h }); });
+    return { svg: svg(f, [0, 1, 2, 3, 4].map(t => `<line class="grid_line" x1="${round1(x(t))}" x2="${round1(x(t))}" y1="${f.t}" y2="${f.t + f.ih}"/>`).join('') + paths
