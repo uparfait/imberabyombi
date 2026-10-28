@@ -22,3 +22,4 @@ export function editable_of(n) {
 }
 export function el_of(n) { return n && n.nodeType === 1 ? n : (n ? n.parentElement : null); }
 export function node_len(n) { return n.nodeType === 3 ? n.length : n.childNodes.length; }
+export function text_nodes(root) {
