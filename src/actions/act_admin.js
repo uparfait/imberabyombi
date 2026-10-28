@@ -3,3 +3,4 @@
 import { qs, qsa, ymd, dl } from '../lib/index.js';
 import { ui, db, rerender } from '../store/index.js';
 import { me } from '../auth/index.js';
+import { reduced, notify } from '../feedback/index.js';
