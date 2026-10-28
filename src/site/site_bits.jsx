@@ -14,3 +14,4 @@ export const wave = () => (
 );
 /* inner: the JSX inside the shell; c: extra classes on the shell */
 export const hero_shell = (inner, c = '') => (
+  <div className={`hero relative isolate overflow-hidden rounded-4xl text-fg ${c}`}>
