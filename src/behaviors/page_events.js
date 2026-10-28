@@ -17,3 +17,4 @@ const FALLBACK = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent('<svg 
 
 /* Media that fails inside the file viewer shows the file's details instead: the viewer (React) does that with onError,
    so it is skipped here. Any other broken image gets the brand placeholder once. */
+function on_error(e) {
