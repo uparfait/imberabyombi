@@ -20,7 +20,7 @@ export const account_mails = () => ({
   code: { s: `${lorem.int(100, 999)} ${lorem.int(100, 999)} is your sign-in code`, t: <>
     <h1 className="mail_h">Your sign-in code</h1><p>Use this code to finish signing in. It expires in <b>10 minutes</b>.</p>
     {copy_box(String(lorem.int(100000, 999999)), 'Code', true)}<p className="text-sm text-muted">Never share this code. {cfg.name} will never ask for it by phone or chat.</p>
-    <div>{mail_btn('Open 2-step verification', 'btn_outline', '#/verify')}</div></> },
+    <div>{mail_btn('Open 2-step verification', 'btn_outline', '/verify')}</div></> },
   token: { s: 'Your new access token', t: <>
     <h1 className="mail_h">Your new access token</h1><p>A token named <b>{lorem.t(2)}</b> was created for your account.</p>
     <p className="flex items-start gap-2 rounded-xl bg-warn/10 p-3 text-sm">{ic('bell', 'h-4 w-4 mt-0.5 shrink-0 text-warn')}
