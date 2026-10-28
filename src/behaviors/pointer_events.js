@@ -16,3 +16,4 @@ function on_focusin(e) {
 
 export function install_pointer() {
   /* Tooltips + suggestion lists: hover (mouse/pen only) and keyboard focus */
+  document.addEventListener('pointerover', e => { if (e.pointerType === 'touch') return; const x = tip.find(e.target); x ? tip.show(x) : tip.hide(); });
