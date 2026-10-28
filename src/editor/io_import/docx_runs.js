@@ -41,3 +41,5 @@ async function docx_image(cx, c) {
   const url = await cx.z.data_url(resolve_path('word/', rel.target)); if (!url) return '';
   const ex = by_tag(c, 'extent')[0], w = ex ? Math.round(+ex.getAttribute('cx') / 9525) : 300;
   return `<img src="${url}" alt="" style="width:${clamp(w, 16, 700)}px">`;
+}
+const SKIP = /^(pPr|rPr|del|moveFrom|proofErr|bookmarkStart|bookmarkEnd|commentRangeStart|commentRangeEnd)$/;
