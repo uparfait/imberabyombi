@@ -13,3 +13,4 @@ import { kv_table } from './kv_table.jsx';
 export function view_row(c, id) {
   const s = schemas[c], r = db.find(c, id), can = auth.can(cur[c]?.mod, 2), k0 = s.cols[0];
   if (!r) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Record not found');
+  const sec = Object.entries(s.sec || {}).map(([g, ks]) => [g, ks.split(',')]), seen = new Set(sec.flatMap(([, ks]) => ks)), rest = s.f.map(f => f.k).filter(k => !seen.has(k));
