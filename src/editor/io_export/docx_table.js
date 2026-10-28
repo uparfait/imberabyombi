@@ -22,3 +22,4 @@ export function table_xml(t, ctx) {
     + `<w:right w:w="${pad}" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map(w => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>`;
   rows.forEach((r, ri) => {
     const hdr_row = ri === 0 && Array.from(r.cells).some(c => c.hasAttribute('data-hdr') || c.tagName === 'TH');
+    out += `<w:tr>${hdr_row ? '<w:trPr><w:tblHeader/></w:trPr>' : ''}`; let col = 0;
