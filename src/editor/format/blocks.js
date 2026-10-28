@@ -34,3 +34,5 @@ export function set_block_style(key) {
     while (b.firstChild) nb.appendChild(b.firstChild);
     if (!nb.firstChild) nb.innerHTML = '<br>';
     b.replaceWith(nb); sel_remap.set(b, nb);
+  }));
+  const l = refs.style_label; if (l) l.textContent = st.label;
