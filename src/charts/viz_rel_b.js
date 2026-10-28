@@ -51,3 +51,4 @@ export const VIZ_REL_B = {
         + ` style="fill:none;stroke:${m < 4 ? scale_color(Math.floor(m / 2)) : 'rgb(var(--muted))'};stroke-width:1.5"/>`; pos.push({ y: (na.y + nb.y) / 2, h }); });
     return { svg: svg(f, [0, 1, 2, 3, 4].map(t => `<line class="grid_line" x1="${round1(x(t))}" x2="${round1(x(t))}" y1="${f.t}" y2="${f.t + f.ih}"/>`).join('') + paths
       + leaves.map((k, i) => mark_group(k, [['Group ' + (i < 4 ? 1 : 2), 'Cluster', i < 4 ? 0 : 1]],
+        `<circle class="hit_area" cx="${round1(x(0))}" cy="${round1(y(i))}" r="12"/>`
