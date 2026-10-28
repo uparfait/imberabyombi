@@ -39,3 +39,4 @@ async function docx_image(cx, c) {
   const blip = by_tag(c, 'blip')[0] || by_tag(c, 'imagedata')[0], rid = blip && (blip.getAttribute('r:embed') || blip.getAttribute('r:id')), rel = rid && cx.rels[rid];
   if (!rel || rel.external) return '';
   const url = await cx.z.data_url(resolve_path('word/', rel.target)); if (!url) return '';
+  const ex = by_tag(c, 'extent')[0], w = ex ? Math.round(+ex.getAttribute('cx') / 9525) : 300;
