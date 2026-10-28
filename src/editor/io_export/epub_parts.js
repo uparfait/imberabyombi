@@ -22,3 +22,4 @@ export const epub_opf = (id, title, now, manifest, imgs, spine) => '<?xml versio
   + `<spine>${spine.join('')}</spine></package>`;
 
 export const epub_nav = (title, nav) => XHTML_HEAD + `><head><meta charset="UTF-8"/><title>${xesc(title)}</title></head>`
+  + `<body><nav epub:type="toc" id="toc"><h1>Contents</h1><ol>${nav.join('')}</ol></nav></body></html>`;
