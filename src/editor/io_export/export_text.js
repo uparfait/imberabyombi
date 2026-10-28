@@ -23,3 +23,5 @@ export function export_txt(root, name) {
   qsa('.file_chip', host).forEach(a => a.replaceWith(document.createTextNode(`[attachment: ${a.getAttribute('download') || a.textContent}]`)));
   qsa('ul.checklist > li', host).forEach(li => li.prepend(li.getAttribute('data-checked') === 'true' ? '[x] ' : '[ ] '));
   document.body.appendChild(host); const t = host.innerText.replace(/\u200b/g, ''); host.remove();
+  download(new Blob([t], { type: 'text/plain;charset=utf-8' }), name + '.txt');
+}
