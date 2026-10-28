@@ -41,3 +41,4 @@ export const pick = {
   /* the control is React's: its value goes in through the native setter, so React sees the change */
   set(v, done = true) { if (!this.a) return; set_native_value(this.a, v); this.emit(); done ? this.close(this.kb || FINE()) : this.draw(); },
   draw() {
+    const a = this.a, el = this.el, t = kind_of(a); let h = '', kind = 'menu';
