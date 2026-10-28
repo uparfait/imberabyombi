@@ -42,3 +42,4 @@ inline styles on `<html>`; **Reset to stylesheet values** removes them so the CS
 
 ## Rules
 - Never hard-code a colour in a component: use `brand`, `ink`, `fg`, `muted`, `line`, `surface*` or a status colour.
+- Variables are snake_case (`--surface_2`); the Tailwind colour names keep Tailwind's style (`bg-surface-2`).
