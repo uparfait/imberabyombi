@@ -5,3 +5,4 @@
 /* The source's colour variables under snake names, mapped to template tokens (for inline styles ported from the source:
    style="color:var(--fg3)", "var(--app_bg)"…). They follow the theme: .dark on <html> changes the tokens they read. */
 :root {
+  --app_bg: rgb(var(--surface_2)); --bar_bg: rgb(var(--surface)); --fg2: rgb(var(--fg) / .78); --fg3: rgb(var(--muted));
