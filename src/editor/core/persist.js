@@ -8,3 +8,5 @@ import { pages_el } from './refs.js';
 import { bodies } from './dom.js';
 import { collect_html } from './collect.js';
 import { live_busy } from './live.js';
+
+export const DOC_KEY = 'editor_doc';
