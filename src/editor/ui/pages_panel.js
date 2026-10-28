@@ -22,3 +22,7 @@ export function render_pages_panel() {
     });
     row.addEventListener('keydown', e => { if (e.target === row && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); row.click(); } });
     box.appendChild(row);
+  });
+}
+
+/* the panels take room beside the pages when the editor is wide; on a narrow editor they cover the pages */
