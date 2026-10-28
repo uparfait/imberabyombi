@@ -14,3 +14,4 @@ export function table_ctx() {
   return { td, tr: td.parentElement, table: td.closest('table'), host };
 }
 /* every part of table t, first to last */
+export function table_chain(t) {
