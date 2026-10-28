@@ -7,3 +7,5 @@ import { lorem } from '../lib/index.js';
 import { ic, i3 } from '../icons/index.js';
 import { hero_shell } from '../site/index.js';
 import { dash_widgets } from './dashboard_widgets.jsx';
+
+/* [module, label, icon, collection, filter?]: the numbers a role may open */
