@@ -65,3 +65,4 @@ function run(s) {
 function finish(s) { commit(); refresh_toolbar(); s.msgs.forEach(m => toast(...m)); }
 /* an async action (image bake, …) finished: keep the result only if it belongs to what is on screen */
 function settle(s, g) {
+  s.pending--;
