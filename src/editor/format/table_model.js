@@ -39,3 +39,6 @@ export function restyle_table(chain) {
     if (c.style.backgroundColor && !c.hasAttribute('data-autobg')) return;
     const bg = (i === 0 && hdr) ? HDR_BG : (str && (i - (hdr ? 1 : 0)) % 2 === 1) ? STRIPE_BG : '';
     c.style.backgroundColor = bg; c.toggleAttribute('data-autobg', !!bg); if (!c.getAttribute('style')) c.removeAttribute('style');
+  }));
+}
+/* each cell of a row with the grid columns it covers: [{ cell, start, end }] */
