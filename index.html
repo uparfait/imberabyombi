@@ -48,6 +48,7 @@
   .skip_link { position: fixed; z-index: 300; left: 1rem; top: -5rem; padding: .5rem 1rem; border: 0; border-radius: 999px;
     background: #E0661B; color: #fff; font: 600 .875rem/1.4 var(--font_sans, sans-serif); transition: top .2s; }
   .skip_link:focus { top: 1rem; outline: 2px solid #fff; outline-offset: 2px; }
+</style>
 
 <!-- Structured data for search engines -->
 <script type="application/ld+json">
@@ -61,7 +62,7 @@
   <p style="padding:2rem;font-family:sans-serif">Turn on JavaScript to use this site.</p>
 </noscript>
 
-<button class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-brand focus:px-4 focus:py-2 focus:text-white" data-act="scroll" data-to="main">Skip to content</button>
+<button class="skip_link" data-act="scroll" data-to="main">Skip to content</button>
 
 <!-- App root: every route renders here (src/main.jsx) -->
 <div id="app"></div>
