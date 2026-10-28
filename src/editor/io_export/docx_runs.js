@@ -48,3 +48,4 @@ export function r_pr(f) {
   return x ? `<w:rPr>${x}</w:rPr>` : '';
 }
 export function text_runs(t, f) {
+  let out = ''; const rp = r_pr(f);
