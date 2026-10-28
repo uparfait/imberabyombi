@@ -34,3 +34,4 @@ export function backspace_across(host, pi) {
   const prev = bodies()[pi - 1], first = first_flow(host), last = last_flow(prev);
   begin_op();
   if (is_break(last)) { last.remove(); end_op(pi - 1); return; }
+  if (!last) { end_op(pi); return; }
