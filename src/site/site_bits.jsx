@@ -20,3 +20,4 @@ export const hero_shell = (inner, c = '') => (
 );
 export const sec_head = (label, title, text, light) => (
   <header className="max-w-2xl" data-reveal="">
+    <p className={`kicker ${light ? 'text-brand' : ''}`}>{ic('diamond', 'h-3.5 w-3.5')}{label}</p>
