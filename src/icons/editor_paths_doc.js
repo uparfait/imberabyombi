@@ -31,3 +31,4 @@ export const EDITOR_DOC_PATHS = {
   content_paste: CLIP + 'h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3M9 3h6v3H9z',
   content_paste_go: CLIP + 'h5M15 4h3a2 2 0 0 1 2 2v6M9 3h6v3H9zM15 18h7M19 15l3 3-3 3',
   select_all: 'M4 4h2M10 4h4M18 4h2v2M20 10v4M20 18v2h-2M14 20h-4M6 20H4v-2M4 14v-4M4 6V4M9 9h6v6H9z',
+  find_replace: 'M13 14a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM16.5 12.5 21 17M3 19h8M8 16l3 3-3 3',
