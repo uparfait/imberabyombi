@@ -48,3 +48,4 @@ export function indent(dir) {
   restore_focus();
   const n = last_range && el_of(last_range.startContainer);
   if (n && n.closest('li')) { exec(dir > 0 ? 'indent' : 'outdent'); return; }
+  with_blocks(bs => bs.forEach(b => { const cur = parseFloat(b.style.marginLeft) || 0; const v = Math.max(0, cur + dir * 48); b.style.marginLeft = v ? v + 'px' : ''; }));
