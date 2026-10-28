@@ -15,3 +15,4 @@ import { apply_setup, toggle_spell } from './view.js';
 
 /* Insert › Image and the toolbar's image button */
 export function image_items() {
+  return [cmd('Upload from computer', 'upload', () => { if (refs.image_open) refs.image_open.click(); }), cmd('By URL', 'link', () => image_url_dialog())];
