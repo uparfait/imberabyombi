@@ -12,3 +12,4 @@ export function at_body_start(host, r) {
   return no_text(rr);
 }
 export function at_body_end(host, r) {
+  const l = last_non_break(host); if (l === host) return true;
