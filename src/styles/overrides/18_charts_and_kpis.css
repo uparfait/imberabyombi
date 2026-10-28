@@ -54,3 +54,4 @@
   .kpi_bullet i:nth-child(2) { background: rgb(var(--fg) / .07); }
   .kpi_bullet i:nth-child(3) { background: rgb(var(--fg) / .035); border-radius: 0 4px 4px 0; }
   .kpi_bullet b { position: absolute; left: 0; top: 30%; height: 40%; border-radius: 0 4px 4px 0; background: var(--series_1); }
+  .kpi_bullet s { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: rgb(var(--fg)); }
