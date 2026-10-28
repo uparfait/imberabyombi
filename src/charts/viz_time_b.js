@@ -62,3 +62,4 @@ export const VIZ_TIME_B = {
       + v.map((n, i) => { const d = add_d(start, i), wk_i = Math.floor((i + start.getDay()) / 7), x = f.l + wk_i * (cell + 2), y = f.t + d.getDay() * (cell + 2);
         return (d.getDate() === 1 && x < f.w - 20 ? `<text x="${round1(x)}" y="${f.t - 8}">${d.toLocaleDateString(undefined, { month: 'short' })}</text>` : '')
           + `<rect class="mark mark_cell" x="${round1(x)}" y="${round1(y)}" width="${round1(cell)}" height="${round1(cell)}" rx="2"`
+          + ` style="fill:${n ? sequential(n / mx) : 'rgb(var(--surface_2))'}" ${tip_text(fmt_d(ymd(d)), [[n, 'Activities', null]])}/>`; }).join(''), 'Calendar heatmap'),
