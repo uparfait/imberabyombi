@@ -6,3 +6,4 @@ import { kpi_cards_a } from './kpi_cards_a.jsx';
 import { kpi_cards_b } from './kpi_cards_b.jsx';
 
 export function kpis() {
+  const k = kpi_data();
