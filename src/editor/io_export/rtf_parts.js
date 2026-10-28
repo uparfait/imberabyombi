@@ -34,3 +34,5 @@ const rtf_pict = (rx, img) => {
   const w = Math.min(parseFloat(img.style.width) || nw, rx.content_tw / 15), h = parseFloat(img.style.height) || w * nh / nw;
   return `{\\pict${/png/i.test(mm[1]) ? '\\pngblip' : '\\jpegblip'}\\picw${nw}\\pich${nh}\\picwgoal${Math.round(w * 15)}\\pichgoal${Math.round(h * 15)}`
     + `\n${parts.join('\n')}}`;
+};
+export function rtf_inline(rx, node, f) {
