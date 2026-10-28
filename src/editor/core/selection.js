@@ -76,3 +76,4 @@ export function caret_from_point(x, y) {
 export function restore_focus() {
   const cs = getSelection();
   if (cs.rangeCount) {
+    const h = editable_of(cs.getRangeAt(0).startContainer);
