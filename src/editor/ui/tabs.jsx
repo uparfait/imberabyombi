@@ -64,3 +64,4 @@ export function start_rename(t) {
   inp.value = t.name; name.replaceWith(inp); inp.focus(); inp.select();
   let over = false;
   const done = save => {
+    if (over) return; over = true;
