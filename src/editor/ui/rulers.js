@@ -8,3 +8,5 @@ import { apply_setup } from './view.js';
 import { scaled } from './ui_dom.js';
 
 const u = n => +scaled(n).toFixed(2);
+
+export function update_rulers() {
