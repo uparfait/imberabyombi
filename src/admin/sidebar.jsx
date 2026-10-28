@@ -19,3 +19,4 @@ const link = (m, mod) => { const on = m.k === mod, href = `#/admin/${m.k}`, busy
   return <li key={m.k}><a href={href} className={`side_link ${on ? 'active' : ''}`} aria-current={on ? 'page' : undefined} aria-busy={busy ? 'true' : undefined}>
     {busy ? spinner('side_spin') : ic(m.i)}<span className="truncate">{m.l}</span></a></li>; };
 const groups = mod => uniq(MODS.map(m => m.g)).map(g => { const items = MODS.filter(m => m.g === g && auth.can(m.k)); if (!items.length) return null;
+  return side_section(g, g, <ul className="mt-0.5 grid gap-0.5">{items.map(m => link(m, mod))}</ul>); });
