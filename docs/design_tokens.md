@@ -18,3 +18,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--series_1..8`    | brand, blue, …      | Chart colours in a fixed order (dark mode has its own steps)     |
 | `--ease` / `--speed` | curve / `.3s`     | Transitions everywhere                                           |
 | `--scale_phone`    | `360`               | Phone design width (see [scaling](scaling_and_themes.md))        |
+| `--scale_desk`     | `15`                | Root size in px on laptops and desktops                          |
