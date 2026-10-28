@@ -3,3 +3,4 @@
 import { palette_el } from '../ui/index.js';
 import { TABLE_PRESETS } from './table_model.js';
 import { table_ctx, table_chain, tbl_op } from './table_ops.js';
+import { insert_multiple_dialog } from './table_dialogs.jsx';
