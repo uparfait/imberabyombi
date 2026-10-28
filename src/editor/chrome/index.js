@@ -3,3 +3,4 @@
 export * from './topbar.jsx';
 export * from './toolbar.jsx';
 export * from './workspace.jsx';
+export * from './floating.jsx';
