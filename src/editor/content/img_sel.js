@@ -65,3 +65,4 @@ export function position_img_box() {
   Object.assign(box.style, { left: x + 'px', top: y + 'px', width: img_sel.offsetWidth + 'px', height: img_sel.offsetHeight + 'px', display: 'block', transform: '' });
   const bar = qs('.img_bar', box), pos = pos_of(img_sel), al = img_align_of(img_sel);
   qsa('[data-a]', bar).forEach(b => { const [k, v] = b.dataset.a.split(':'); b.classList.toggle('on', (k === 'pos' && v === pos) || (k === 'align' && v === al)); });
+  qs('.sz', box).textContent = `${img_sel.offsetWidth} × ${img_sel.offsetHeight}px`;
