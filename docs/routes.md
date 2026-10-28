@@ -22,3 +22,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
    takes more than 150 ms, and the page waits `cfg.latency` for its data like a real API would.
 3. `render()` (src/store/app_state.js) clears the page's timers and overlays, then React draws the new page
    (`render_route()`), inside a View Transition where the browser supports it.
+4. `run_after_render()` scrolls to the top, starts reveal animations, counters, charts and the typing effect, and
