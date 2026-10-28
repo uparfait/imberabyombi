@@ -37,3 +37,4 @@
     color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); background: rgb(var(--brand) / .1); }
   .mail_date b { font-family: var(--font_display); font-size: 1.5rem; }
   .mail_date small { font-size: .65rem; font-weight: 600; letter-spacing: .06em; }
+  .mail_date.mail_old { color: rgb(var(--muted)); background: rgb(var(--surface_2)); text-decoration: line-through; }
