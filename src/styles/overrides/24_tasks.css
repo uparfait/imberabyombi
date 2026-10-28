@@ -24,3 +24,4 @@
   .kv.tv thead th, .kv.tv .kv_group th { position: static; }   /* the task view scrolls as one page: no pinned rows overlapping */
   .kv_wrap:has(> .kv.tv) { max-height: none; overflow: clip; }   /* the task view: one scroll (the dialog) */
   .kv_cell { display: flex; min-width: 0; align-items: flex-start; gap: .5rem; }
+  .kv_pen { display: grid; flex: none; place-items: center; width: 2rem; height: 2rem; margin: -.25rem 0; border-radius: var(--pill); color: rgb(var(--muted)); opacity: 0; transition: opacity .15s, background-color .15s, color .15s; }
