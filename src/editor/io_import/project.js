@@ -9,3 +9,4 @@ const OLD_KEYS = { pageColor: 'page_color', pageNumbers: 'page_numbers', headerH
 const setup_of = s => Object.fromEntries(Object.entries(s || {}).map(([k, v]) => [OLD_KEYS[k] || k, v]));
 
 export function load_project(d) {
+  if (!d || !Array.isArray(d.tabs) || !d.tabs.length) throw new Error('bad project');
