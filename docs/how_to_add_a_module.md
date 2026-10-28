@@ -4,3 +4,4 @@ A module is a page in the admin (`#/admin/<key>`) with its own sidebar link, per
 `crud()`, a full table (search, sort, pages, forms, details, export, seed data) takes about twenty lines.
 
 ## 1. Describe the data: a schema
+`src/schemas/schema_transport.js`:
