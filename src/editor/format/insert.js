@@ -11,3 +11,4 @@ export function insert_block_at_caret(node) {
   restore_focus();
   const s = getSelection(); if (!s.rangeCount) return null;
   const r = s.getRangeAt(0); const host = editable_of(r.startContainer);
+  if (!host || !host.classList.contains('pg_body')) { toast('Place the cursor in the document body first'); return null; }
