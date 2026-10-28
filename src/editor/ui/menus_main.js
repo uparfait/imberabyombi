@@ -4,3 +4,4 @@ import { state, refs, undo, redo, restore_focus, begin_op, commit, save_soon, to
 import { paste_from_clipboard, render_comments } from '../content/index.js';
 import { open_upload_dialog, pick_file } from '../io_import/index.js';
 import { open_download_dialog } from '../io_export/index.js';
+import { set_theme } from '../../actions/index.js';
