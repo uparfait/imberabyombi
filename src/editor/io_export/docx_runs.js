@@ -68,3 +68,4 @@ export function inline_xml(node, f, ctx) {
     if (is_list(n) || is_table(n)) return;
     const g = fmt_of(n, f);
     if (t === 'A' && n.getAttribute('href') && !/^data:/i.test(n.getAttribute('href')) && ctx.add_link) {
+      const rid = ctx.add_link(n.getAttribute('href'));
