@@ -25,3 +25,4 @@ export function perm_change(t) {
     if (!role_opens(r).some(m => m.k === r.land)) r.land = role_opens(r)[0]?.k || '';   /* its landing page was taken away: the first page it can still open */
     db.set('roles', rs);
     const name = k => MODS.find(m => m.k === k)?.l || k, moved = was && was !== r.land;
+    toast(moved ? `${name(was)} is no longer open to this role, so it now lands on ${r.land ? name(r.land) : 'no page yet'}.` : 'Access updated', 'ok',
