@@ -12,3 +12,4 @@ export function allow_select_change(t) {
 }
 
 export function role_land_change(t) {
+  const rs = roles(), r = rs.find(x => x.id === t.dataset.roleLand);
