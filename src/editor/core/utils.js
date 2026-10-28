@@ -53,3 +53,4 @@ export function to_hex(c) {
   _cctx.fillStyle = '#010203'; _cctx.fillStyle = c; const v = _cctx.fillStyle;
   if (v === '#010203' && c.toLowerCase() !== '#010203') return null;
   if (v[0] === '#') return v.slice(1).toUpperCase();
+  const m = v.match(/rgba?\(([^)]+)\)/); if (!m) return null;
