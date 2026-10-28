@@ -33,3 +33,4 @@ function put(img, url, width_fn, msg) {
   const w0 = img.offsetWidth, h0 = img.offsetHeight;
   img_op(img, x => {
     const src = x.getAttribute('src'); if (!x.hasAttribute('data-orig') && src.length < 6e6) x.setAttribute('data-orig', src);
+    x.setAttribute('src', url); x.style.height = '';
