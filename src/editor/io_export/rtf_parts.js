@@ -13,3 +13,4 @@ export const rtf_esc = s => {
   let o = '';
   for (const ch of String(s).replace(/\u200b/g, '')) {
     const c = ch.codePointAt(0);
+    if (ch === '\\' || ch === '{' || ch === '}') o += '\\' + ch; else if (ch === '\t') o += '\\tab '; else if (ch === '\n') o += '\\line ';
