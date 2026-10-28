@@ -3,7 +3,6 @@
 import { ic } from '../icons/index.js';
 import { lorem, hash_str } from '../lib/index.js';
 import { sitemap } from '../emails/index.js';
-import { hero_shell } from './site_bits.jsx';
 import { hero_sec, about_sec } from './hero_about.jsx';
 import { mission_sec, vision_sec } from './mission_vision.jsx';
 import { strategies_sec, staff_sec } from './strategies_staff.jsx';
