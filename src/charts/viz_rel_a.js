@@ -19,3 +19,4 @@ export const VIZ_REL_A = {
   bubble: { t: 'Bubble chart', g: 'rel', d: 'A scatter plot where dot size shows a third measure.', f(w) {
     const gr = SER.slice(0, 2), pts = gr.flatMap((_, g) => Array.from({ length: 8 }, () => ({ g, x: rnd(8, 92), y: rnd(10, 90), s: rnd(5, 100) })));
     const f = frame(w, 260), ax = y_axis(f, 100), xs = linear(0, 100, f.l, f.l + f.iw), rs = s => 4 + Math.sqrt(s) * 2.2;
+    return { svg: svg(f, ax.g + x_ticks(f, xs) + pts.sort((a, b) => b.s - a.s).map(p => mark_group(gr[p.g],
