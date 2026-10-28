@@ -4,3 +4,4 @@ import { ic } from '../icons/index.js';
 import { notify } from '../feedback/index.js';
 
 export async function copy(text, what = 'Link', quiet = false) {
+  const done = () => quiet || notify('Paste it anywhere you need it.', 'ok', `${what} copied`);
