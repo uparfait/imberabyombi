@@ -47,3 +47,4 @@ function format_items() {
       { label: 'Increase indent', icon: 'format_indent_increase', shortcut: 'Ctrl+]', action: () => indent(1) },
       { label: 'Decrease indent', icon: 'format_indent_decrease', shortcut: 'Ctrl+[', action: () => indent(-1) }] },
     { label: 'Line & paragraph spacing', icon: 'format_line_spacing', sub: spacing_items },
+    { label: 'Bullets & numbering', icon: 'format_list_bulleted', sub: () => [{ label: 'Checklist', icon: 'checklist', action: () => toggle_checklist() },
