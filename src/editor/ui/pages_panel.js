@@ -7,3 +7,4 @@ import { set_text, mi, scaled } from './ui_dom.js';
 
 export function render_pages_panel() {
   const box = refs.page_list; if (!box) return;
+  const bs = bodies();
