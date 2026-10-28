@@ -11,3 +11,4 @@ import { auth } from '../auth/index.js';
 export const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 /* Shortcut label for this device: ⌘K on Apple (Mac, iPhone, iPad), Ctrl K on Windows / Linux, nothing on touch-only devices
    (no keyboard to press it on). The shortcut itself works with either key. */
+export const key_hint = k => !matchMedia('(any-pointer: fine)').matches ? '' : /Mac|iPhone|iPad|iPod/i.test(navigator.userAgentData?.platform || navigator.platform || navigator.userAgent) ? '⌘' + k : 'Ctrl ' + k;
