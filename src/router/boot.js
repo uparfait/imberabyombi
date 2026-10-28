@@ -17,3 +17,4 @@ export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
 
 /* Web component: <ds-callout> clones #tpl_callout into its shadow root */
 function define_callout() {
+  if (customElements.get('ds-callout')) return;
