@@ -70,3 +70,4 @@ export function pull_up(b, next) {
     const last = last_flow(b); if (last && is_break(last)) return;
     const f = first_flow(next); if (!f) return;
     if (last && b.clientHeight - content_bottom(b) < 4) return;
+    if (f.hasAttribute('data-cont') && last && same_kind(last, f)) merge_into(last, f); else b.appendChild(f);
