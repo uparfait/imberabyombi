@@ -23,3 +23,4 @@ export function word_count_dialog() {
       <tr><td className={TD}></td><td className={NUM + ' text-muted'}>Document</td>{sel ? <td className={NUM + ' text-muted'}>Selection</td> : null}</tr>
       {row('Pages', state.setup.pageless ? '—' : bodies().length, '')}
       {row('Words', n(all.words), sel && n(sel.words))}
+      {row('Characters', n(all.chars), sel && n(sel.chars))}
