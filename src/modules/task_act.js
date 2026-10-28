@@ -24,3 +24,4 @@ export const TASK_ACT = {
   task_open: t => { close_pops(); task_view(t.dataset.id); },
   cal_task: t => { const r = db.find('tasks', t.dataset.id); if (!r) return;
     ui.tab.tasks = r.by === me() ? 'mine' : 'assigned'; ui.page = {}; ui.flash = r.id; ui.scroll_flash = true; go('/admin/tasks'); },
+  ...SUB_ACT,
