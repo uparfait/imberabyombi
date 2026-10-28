@@ -10,3 +10,4 @@ export * from './partners_thanks.jsx';
 export * from './contact_sec.jsx';
 export * from './detail_blocks.jsx';
 export * from './tiers.jsx';
+export * from './longform.jsx';
