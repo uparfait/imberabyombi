@@ -10,3 +10,4 @@ import { cal_items } from '../admin/index.js';
 import { week_grid, month_grid } from './calendar_grids.jsx';
 
 /* Week / Month: a segmented choice (the change listener sets ui.cal_view) */
+const views = wk => <div className="seg" role="radiogroup" aria-label="Calendar view">{['week', 'month'].map(v => <label key={v}>
