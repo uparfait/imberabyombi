@@ -36,3 +36,4 @@ export function export_data(root) {
 }
 export function export_csv(root, name) {
   const sheets = export_data(root), q = v => /[",\n\r]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
+  const txt = sheets.map(s => (sheets.length > 1 ? q(s.name) + '\r\n' : '') + s.rows.map(r => r.map(q).join(',')).join('\r\n')).join('\r\n\r\n');
