@@ -26,3 +26,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
 ## Loading: one segmented spinner everywhere
 - `request(fn, { btn, delay })` spins `btn` in place (its text hidden) or, without a button, shows `#loader` after
   150 ms (instant work never flashes it), waits `delay` ms, runs `fn`, then stops. A thrown error becomes a
+  "The request could not be completed" notification.
