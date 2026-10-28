@@ -38,5 +38,6 @@ The full feature list is in [whet-it-document.md](whet-it-document.md).
 ```
 index.html       SEO head, theme boot, overlay elements      src/styles/    tokens + stylesheet (≤100 lines per file)
 src/main.jsx     entry: styles, app, router boot             src/store/     storage (db) and redraw (render, rerender)
+src/app.jsx      root: current page + dialogs                src/router/    hash routes, page meta, after-draw work
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
