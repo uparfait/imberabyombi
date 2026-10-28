@@ -25,3 +25,4 @@ export const FORMS = {
     else notify_next(d.trust ? 'This device is trusted for 30 days.' : 'You are signed in.', 'ok', 'Verified');
     location.hash = auth.user ? '#/admin' : '#/login'; },
   /* the two password fields are named pw_new and pw_confirm (pw_field uses its id as the name) */
+  setpw: (d, f) => {
