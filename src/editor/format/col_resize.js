@@ -19,3 +19,4 @@ export function ensure_colgroup(t, chain) {
   return t.querySelector(':scope > colgroup');
 }
 let drag_stop = null;   /* ends a drag in progress (also run by the cleanup) */
+export function start_col_drag(e) {
