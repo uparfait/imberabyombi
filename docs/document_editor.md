@@ -36,3 +36,5 @@ it was; click to keep it (one undo step). The selection stays selected while you
 | Ctrl Enter | page break | Ctrl Shift F | show / hide the menus |
 | Ctrl Page Up / Down | previous / next tab | Alt Shift ↑ / ↓ | move a section (outline) |
 Help → Keyboard shortcuts lists them all.
+
+## How it is built
