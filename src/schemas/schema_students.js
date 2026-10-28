@@ -32,3 +32,4 @@ export const payments_schema = {
   f: [
     field_spec('student', 'Student', 'list', () => names('students'), 1),
     field_spec('item', 'For', 'select', option_list('Tuition|Transport|Meals|Uniform|Library fine'), 1),
+    field_spec('amount', 'Amount', 'number', 0, 1, { min: 0 }), field_spec('method', 'Method', 'select', option_list('Cash|Mobile money|Bank|Card')),
