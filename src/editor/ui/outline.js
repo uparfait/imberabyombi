@@ -29,3 +29,4 @@ export function render_outline() {
     row._h = h; row._ti = top ? ti++ : -1; row._key = fold_key(h, seen);
     if (kids) { const f = folds.has(row._key); row.classList.toggle('folded', f); row.setAttribute('aria-expanded', String(!f)); }
     if (had && had._h === h) refocus = row;
+    wire_outline_row(row);
