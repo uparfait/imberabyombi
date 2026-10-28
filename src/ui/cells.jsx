@@ -12,3 +12,4 @@ export const bar_cell = (v, max) => (
   </div>
 );
 export const stock_cell = (v, r) => (
+  <div className="min-w-[9rem]">
