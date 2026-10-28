@@ -13,3 +13,4 @@ export function p_pr_xml(e, extra = '') {
   x += extra;
   const lh = parseFloat(st.lineHeight), pt = parse_pt(st.paddingTop), pb = parse_pt(st.paddingBottom);
   if (lh || pt || pb) {
+    x += `<w:spacing${pt ? ` w:before="${Math.round(pt * 20)}"` : ''}${pb ? ` w:after="${Math.round(pb * 20)}"` : ''}`
