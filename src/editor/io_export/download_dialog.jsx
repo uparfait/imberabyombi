@@ -45,3 +45,4 @@ const fmt_card = (f, on, pick) => (
 function Download_body({ opt }) {
   const [, set_n] = useState(0), f = FORMATS.find(x => x.key === opt.fmt);
   const set = k => v => { opt[k] = v; set_n(n => n + 1); };
+  useEffect(() => { const t = setTimeout(() => { const n = qs('#dl_name'); if (n) { n.focus(); n.select(); } }, 60); return () => clearTimeout(t); }, []);
