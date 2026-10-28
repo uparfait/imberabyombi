@@ -4,3 +4,4 @@ export * from './dialog_store.js';
 export * from './dialogs.js';
 export * from './modal.jsx';
 export * from './modal_form.jsx';
+export * from './dialog_hosts.jsx';
