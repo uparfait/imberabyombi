@@ -19,3 +19,4 @@ export function Task_view({ id }) {
   const r = db.find('tasks', id); if (!r) return null;
   const api = { id, st, put: p => flushSync(() => set_st(s => ({ ...s, ...(typeof p === 'function' ? p(s) : p) }))) };
   return <div className="grid min-w-0 gap-6 sm:col-span-2" data-task={r.id} ref={tv_tie(api)}>
+    <div className="kv_wrap relative min-w-0 rounded-2xl border border-line"><table className="kv tv">
