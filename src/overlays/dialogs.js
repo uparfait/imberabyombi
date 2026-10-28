@@ -37,3 +37,4 @@ export function show_in_dialog(id, render) {
   return d;
 }
 /* A new page (render(), not rerender()) closes the confirm, the modal and the file viewer, and drops their content
+   before the page draws (so a view of the old page is not drawn again) */
