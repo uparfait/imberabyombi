@@ -35,3 +35,4 @@ export function draw_h_ruler() {
   const { win } = dims(), z = state.zoom, m = state.setup.margins, W = win * DPI * z;
   const left = w0.getBoundingClientRect().left - hruler.getBoundingClientRect().left;
   const lx = m.left * DPI * z, rx = (win - m.right) * DPI * z, y = u(3), h = u(18);
+  const tri = `<path d="M${-u(6)} ${u(7)} L${u(6)} ${u(7)} L0 ${u(14)} Z"/><rect x="${-u(8)}" y="0" width="${u(16)}" height="${u(22)}" fill="transparent"/>`;
