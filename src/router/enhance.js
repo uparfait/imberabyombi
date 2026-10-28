@@ -40,3 +40,4 @@ export function enhance() {
   spy?.disconnect(); spy = null;
   if (route.path === '/' && io) {
     spy = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { const k = en.target.id.slice(2);
+      qsa('.nav_link').forEach(a => { const on = a.dataset.sec === k; a.classList.toggle('active', on); on ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'); });
