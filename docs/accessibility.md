@@ -20,3 +20,5 @@ The template is built so that keyboard, screen-reader and low-vision users get t
   the page behind is inert, and the title labels the dialog (`aria-labelledby`).
 - Overlays close only from their own Close / × button or `Esc`, never by a stray click outside.
 - A form with unsaved edits asks "Discard changes?" before closing.
+
+## Messages
