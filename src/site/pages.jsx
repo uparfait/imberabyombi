@@ -23,3 +23,4 @@ export const PAGES = {
   intro: { t: 'Overview', i: 'layers', top: () => intro_top() },
   about: { t: 'About', i: 'users', top: () => about_sec(1) },
   mission: { t: 'Mission', i: 'flag', top: () => mission_sec(1) },
+  vision: { t: 'Vision', i: 'eye', top: () => vision_sec(1) },
