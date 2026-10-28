@@ -4,3 +4,4 @@
     border-radius: var(--pill); background: rgb(var(--surface)); border: 1px solid rgb(var(--line)); opacity: 0; translate: -50% -.75rem; scale: .6; pointer-events: none;
     transition: opacity .2s, translate .3s var(--ease), scale .3s var(--ease); }
   #loader.on { opacity: 1; translate: -50% 0; scale: 1; }
+  #loader .spinner_segmented_svg { width: 2rem; height: 2rem; }
