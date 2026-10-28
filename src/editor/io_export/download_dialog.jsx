@@ -31,3 +31,4 @@ const seg = (label, opts, cur, pick) => (
     </div></div>
 );
 const fmt_card = (f, on, pick) => (
+  <button key={f.key} type="button" role="radio" aria-checked={String(on)} aria-pressed={String(on)} data-f={f.key} onClick={() => pick(f.key)}
