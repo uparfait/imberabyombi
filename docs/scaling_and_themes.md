@@ -16,3 +16,4 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 |---------------------|---------------------------------------------------------------------------------|
 | up to 430px (phones) | The 360px design scaled to the screen: a 320px and a 430px phone look the same |
 | 430–640px           | Eases down to 16px, so resizing never jumps                                     |
+| 640–1023px (tablets) | 16px with the normal responsive layout (Tailwind `sm`, `md`)                   |
