@@ -2,3 +2,4 @@
    Import from here: import { login_page, resend_in, pw_check } from '../account/index.js' */
 export * from './auth_shell.jsx';
 export * from './forgot_page.jsx';
+export * from './qr_svg.js';
