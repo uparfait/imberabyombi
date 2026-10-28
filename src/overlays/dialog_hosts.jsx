@@ -23,3 +23,7 @@ export function Dialog_hosts() {
       {portal('modal', m && <Modal_form key={m.key} m={m} />)}
       {portal('confirm', c && <Fragment key={c.key}>{confirm_view()}</Fragment>)}
       {portal('drawer', dr && <Fragment key={dr.key}>{run_view(dr.render)}</Fragment>)}
+      {portal('viewer', v && <Fragment key={v.key}>{run_view(v.render)}</Fragment>)}
+    </>
+  );
+}
