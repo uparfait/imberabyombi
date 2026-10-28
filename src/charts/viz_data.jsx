@@ -47,3 +47,5 @@ export function viz_open(card, e) {
   }
   SHOWN = { head, rows, p: 1 };
   modal({ title, help, body: <Viz_data key={++PAGER.n} /> });
+}
+/* Back / Next in the open table (data-n = -1 or 1) */
