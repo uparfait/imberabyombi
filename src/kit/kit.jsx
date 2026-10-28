@@ -46,3 +46,9 @@ export function kit() {
           {kit_block('overlays', 'Disclosure & overlays', kit_overlays())}
           {kit_block('nav', 'Nested navigation', kit_nav())}
           {kit_block('wc', 'Web component', kit_web_component())}
+          {kit_block('icons', '3D icons', kit_icons())}
+        </div>
+      </div>
+    </>
+  );
+}
