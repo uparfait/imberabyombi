@@ -47,3 +47,4 @@ export function list_xml(l, lvl, ctx, num_id) {
       out += `<w:p><w:pPr><w:ind w:left="${720 * (lvl + 1)}" w:hanging="360"/></w:pPr><w:r><w:t xml:space="preserve">${on ? '☑' : '☐'} </w:t></w:r>${struck}</w:p>`;
     }
     else out += `<w:p>${p_pr_xml(li, `<w:pStyle w:val="ListParagraph"/><w:numPr><w:ilvl w:val="${Math.min(lvl, 8)}"/><w:numId w:val="${num_id}"/></w:numPr>`)}${runs}</w:p>`;
+    Array.from(li.children).filter(is_list).forEach(sub => { out += list_xml(sub, lvl + 1, ctx, sub_id(sub)); });
