@@ -63,3 +63,4 @@ export function Upload_actions({ up }) {
   const { files } = use_up(up);
   return (
     <>
+      <button type="button" className="btn btn_ghost" data-act="close_modal">Cancel</button>
