@@ -37,3 +37,5 @@
 .c_input {
   display: block; width: 100%; min-height: 0; padding: .4375rem .75rem; border-radius: var(--pill); background: rgb(var(--surface));
   font-size: .8125rem; line-height: 1.4; resize: none;
+}
+textarea.c_input { border-radius: calc(var(--radius) * .75); }
