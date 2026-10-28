@@ -21,3 +21,4 @@ export function x_axis(f, hi, lo = 0, fmt = compact_num) {
 }
 export const chart_base = (f, y) => `<line class="base_line" x1="${f.l}" x2="${f.w - f.r}" y1="${round1(y)}" y2="${round1(y)}"/>`;
 export const band = (n, a, b) => { const bw = (b - a) / n; const x = i => a + bw * i + bw / 2; x.bw = bw; return x; };
+export const x_labels = (f, labels, x, every = Math.ceil(labels.length / Math.max(1, Math.floor(f.iw / 46)))) =>
