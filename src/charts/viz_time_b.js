@@ -20,3 +20,4 @@ export const VIZ_TIME_B = {
         + `<rect class="mark" x="${round1(x(i) - bw / 2)}" y="${round1(y(Math.max(d.o, d.c)))}" width="${round1(bw)}"`
         + ` height="${round1(Math.max(1.5, Math.abs(y(d.o) - y(d.c))))}" rx="2" style="fill:${up ? 'rgb(var(--surface))' : col};stroke:${col};stroke-width:1.5"/>`); }).join('')
       + x_labels(f, days.map(d => d.k), x), 'Candlestick chart'),
+      legend: legend(['Up (hollow)', 'Down (filled)'], 'rect', ['var(--series_2)', 'var(--series_1)']),
