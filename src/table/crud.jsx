@@ -24,3 +24,4 @@ const export_menu = c => (
 
 /* a column title: sort button (with its direction) + the column search */
 const col_head = (c, k, st, hide) => (
+  <th key={k} scope="col" data-k={k} hidden={hide.includes(k)} aria-sort={st?.k === k ? (st.d > 0 ? 'ascending' : 'descending') : 'none'}>
