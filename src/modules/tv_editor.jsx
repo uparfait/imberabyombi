@@ -15,3 +15,4 @@ const assignees = () => uniq([me(), ...people()]).map(n => [n, n === me() ? n + 
 export function tv_editor(f, r) {
   if (f === 'title') return field(field_spec('tv_title', 'Title', 'text', 0, 1), r.title);
   if (f === 'notes') return field({ ...field_spec('tv_notes', 'Notes', 'textarea') }, r.notes);
+  if (f === 'priority') return field(field_spec('tv_priority', 'Priority', 'select', STATUS.prio), r.priority);
