@@ -19,6 +19,7 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Email designs            | `/admin/emails`        | Invite, update, time change, reset link, sign-in code, access token in the brand |
 | System 2 (nested)        | `/admin/nav`           | Three navigation levels: this system (sidebar) › System 2 (4 pages + System 3) › System 3 (14 pages) |
 | Charts & KPIs            | `/admin/charts`        | Thirty chart types and KPI designs, a date range, hover values; a click on a card (or a mark) opens its data, 20 rows a page |
+| Settings                 | `/admin/settings`      | Theme, live design tokens, storage use, backup export / import, demo reset, profile |
 
 ## The admin shell ([`src/admin/`](../src/admin/))
 - **Sidebar**: full height, collapsible on desktop (the logo turns into "open sidebar" on hover), a drawer on phones;
