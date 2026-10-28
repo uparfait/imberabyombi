@@ -5,3 +5,4 @@ import { STYLES, refs, el, qsa, el_of, editable_of, text_nodes, mk_range, restor
 import { can_edit, exec } from './commands.js';
 
 /* the top-most text blocks the last selection touches */
+export function selected_blocks() {
