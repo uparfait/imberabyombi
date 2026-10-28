@@ -11,3 +11,4 @@ export const tview_save = c => db.set('tview', { ...db.get('tview', {}), [c]: ui
    draw their values follow ui again: a cleared filter (Clear filters, a hidden column) empties its box. */
 export function sync_tools(c) {
   const q = ui.q[c] || {}, v = tview(c);
+  qsa(`[data-search="${c}"]`).forEach(el => { const want = q[el.dataset.k] || ''; if (el.value !== want) el.value = want; });
