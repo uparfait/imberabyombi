@@ -29,3 +29,4 @@ export const VIZ_REL_B = {
       legend: legend(cols[0], 'rect'), table: [['From', 'To', 'People'], links.map(([c, a, b, v]) => [cols[c][a], cols[c + 1][b], v])] }; } },
   network: { t: 'Network graph', g: 'rel', d: 'Who connects to whom; size = number of links, colour = community.', f(w) {
     const n = 14, nodes = Array.from({ length: n }, (_, i) => ({ k: cap(lorem.w(1)), g: i % 3 })), edges = [];
+    for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) if ((nodes[i].g === nodes[j].g ? .42 : .07) > lorem.r()) edges.push([i, j]);
