@@ -44,3 +44,4 @@
 }
 @keyframes flash { from { background-color: rgb(var(--brand) / .2); } }
 @keyframes pop_out { to { opacity: 0; transform: translateY(.6rem) scale(.98); } }
+@keyframes slide_out { to { transform: translateX(100%); } }
