@@ -16,3 +16,4 @@ export function upload_store(files, m) {
 }
 const use_up = up => useSyncExternalStore(up.sub, up.get);
 const CHIPS = ['docx', 'pdf', 'xlsx', 'xls', 'ods', 'csv', 'json', 'pptx', 'odt', 'odp', 'rtf', 'epub', 'html', 'md', 'txt'];
+const MODES = [['insert', 'At the cursor'], ['tab', 'In new tabs'], ['replace', 'Replace document']];
