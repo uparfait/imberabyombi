@@ -16,3 +16,4 @@ export function run_offs(offs) { while (offs.length) { try { offs.pop()(); } cat
 
 /* the text of a label (a React text node keeps its identity; an empty element just gets the text) */
 export function set_text(e, s) {
+  if (!e) return; const f = e.firstChild; s = String(s);
