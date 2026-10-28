@@ -39,3 +39,6 @@ export async function export_epub(scope, name) {
     { name: 'OEBPS/content.opf', data: epub_opf(id, state.title, now, manifest, imgs, spine) },
     { name: 'OEBPS/nav.xhtml', data: epub_nav(state.title, nav) },
     { name: 'OEBPS/style.css', data: css }, ...files, ...imgs.map(im => ({ name: im.name, data: im.data }))
+  ];
+  download(zip_store(out, 'application/epub+zip'), name + '.epub');
+}
