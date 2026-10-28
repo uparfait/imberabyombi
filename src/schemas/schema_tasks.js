@@ -14,3 +14,4 @@ export const tasks_schema = {
     field_spec('by', 'Assigned by', 'hidden', 0, 0, { def: () => me() }),
     field_spec('status', 'Status', 'select', STATUS.task, 1, { def: () => 'To do' }),
     field_spec('start', 'Start', 'datetime-local', 0, 0, { def: () => now_dt() }),
+    field_spec('due', 'Due', 'datetime-local', 0, 0, { when: '!Done' }),
