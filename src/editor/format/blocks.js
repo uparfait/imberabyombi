@@ -26,3 +26,4 @@ export function with_blocks(fn) {
 }
 export function set_block_style(key) {
   const st = STYLES.find(s => s.key === key) || STYLES[0];
+  with_blocks(blocks => blocks.forEach(b => {
