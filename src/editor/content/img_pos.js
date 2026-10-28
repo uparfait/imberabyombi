@@ -18,3 +18,4 @@ export function anchor_abs(img) {
   if (blk !== img.nextElementSibling) body.insertBefore(img, blk);
 }
 /* absolute images that came in nested (paste, drop) go to the top level of their page body, where core keeps them */
+export function adopt_abs(host) {
