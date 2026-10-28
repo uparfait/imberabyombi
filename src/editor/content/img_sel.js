@@ -16,3 +16,5 @@ const MOVE_CSS = 'position:absolute;inset:0;pointer-events:auto;touch-action:non
 const BOX_HTML = () => `<div class="img_move" style="${MOVE_CSS}"></div>`
   + ['nw', 'ne', 'sw', 'se'].map(c => `<div class="h ${c}" data-c="${c}" style="touch-action:none"></div>`).join('')
   + '<div class="img_bar">' + BAR.map(b => b ? bar_btn(b) : '<span class="sep"></span>').join('') + '<span class="sz"></span></div>';
+
+export let img_box = null;
