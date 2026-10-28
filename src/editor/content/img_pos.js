@@ -26,3 +26,4 @@ export function adopt_abs(host) {
 }
 function to_abs(img, pos) {
   const body = img.closest('.pg_body'), par = img.parentNode, { x, y } = is_abs(img) ? { x: img.offsetLeft, y: img.offsetTop } : offset_in(img, body);
+  img.removeAttribute('data-align'); img.setAttribute('data-pos', pos);
