@@ -11,3 +11,4 @@ export function json_to_html(text, name) {
   if (data && data.app === PROJECT_APP && Array.isArray(data.tabs)) return { project: data };
   const fv = v => v == null ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v);
   const is_obj = x => x && typeof x === 'object' && !Array.isArray(x);
+  let arr = Array.isArray(data) ? data : null;
