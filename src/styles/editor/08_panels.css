@@ -26,3 +26,5 @@
 .c_card {
   padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface));
   font-size: .8125rem; color: rgb(var(--fg)); cursor: pointer; transition: border-color .15s;
+}
+.c_card:hover { border-color: rgb(var(--muted) / .5); }
