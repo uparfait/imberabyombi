@@ -7,6 +7,7 @@ import { auth, role_name, landing } from '../auth/index.js';
 import { notify_next, form_msg, show_err } from '../feedback/index.js';
 import { refresh_panel, ensure_mine } from '../admin/index.js';
 import { PW_RULES } from '../account/index.js';
+import { go } from '../router/index.js';
 
 export const FORMS = {
   login: d => { const email = d.email.trim().toLowerCase(), name = (d.name || '').trim() || email.split('@')[0].replace(/[._-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()), role = d.role || 'super';
