@@ -36,3 +36,4 @@ export function Sub_editor({ groups }) {
     <button type="button" className="btn btn_ghost btn_sm -ml-3 mt-1" data-act="sub_add">{ic('plus', 'h-4 w-4')}Add a subtask</button></>;
 }
 /* the editor for a list of subtasks; a different list (another record) is a new editor */
+export const sub_editor = groups => <Sub_editor key={JSON.stringify(groups)} groups={groups} />;
