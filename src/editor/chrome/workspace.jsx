@@ -6,3 +6,4 @@ import { ic } from '../../icons/index.js';
 import { find_panel } from './floating.jsx';
 
 const icon_btn = (id, icon, tip, cls = 'icon_btn') => (
+  <button type="button" id={id} className={cls} data-tip={tip} aria-label={tip}>{ic(icon)}</button>
