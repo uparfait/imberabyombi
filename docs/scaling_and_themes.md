@@ -7,3 +7,4 @@ text, spacing, radii and layout together. The rules live in
 
 ```css
 html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /* phones */
+@media (min-width: 430px)  { … eases from the phone size down to 16px … }      /* hand-off */
