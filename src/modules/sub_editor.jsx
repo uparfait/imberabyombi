@@ -27,3 +27,4 @@ export function Sub_editor({ groups }) {
   const [gs, set_gs] = useState(() => keyed(groups));
   const put = fn => flushSync(() => set_gs(fn));
   const api = {
+    add_group: () => { const [g] = keyed([{ items: [{}] }]); put(a => [...a, g]); },
