@@ -3,3 +3,4 @@
    Swaps on React nodes change attributes or a single text only (an icon is one <path>: its d changes). */
 import { qs, qsa } from '../lib/index.js';
 import { PATHS } from '../icons/index.js';
+import { ui, db } from '../store/index.js';
