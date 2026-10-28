@@ -21,3 +21,5 @@
   #viewer[open] { display: flex; flex-direction: column; }
   #confirm { width: min(26rem, calc(100% - 1.5rem)); max-width: none; }
   dialog.drawer { margin: 0 0 0 auto; height: 100dvh; max-height: none; width: min(20rem, 88vw); max-width: none; border-radius: var(--radius) 0 0 var(--radius); border-width: 0 0 0 1px; }
+  dialog.drawer[open] { animation: slide .35s var(--ease); }
+}
