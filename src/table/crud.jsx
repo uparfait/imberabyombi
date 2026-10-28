@@ -41,3 +41,4 @@ export function crud(c, o = {}) {
       <section id={`table_card_${c}`} className={`card ${full ? 'table_full' : ''}`} aria-labelledby={`table_title_${c}`}>
         <header className="flex flex-wrap items-center gap-3 border-b border-line p-4">
           <div className="relative"><button className="icon_btn" data-act="pop" data-pop={`pop_table_${c}`} aria-haspopup="true" aria-label="Table settings">{ic('sliders')}</button>
+            <div id={`pop_table_${c}`} className="pop left-0 w-72" hidden>{table_menu(c)}</div></div>
