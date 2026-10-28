@@ -11,7 +11,7 @@ export function new_tab(name, html) { return { id: uid(), name, html: html || '<
 
 export const state = {
   title: 'Untitled document', setup: default_setup(), tabs: [], active: null, zoom: 1, mode: 'edit', spell: true, comments: [],
-  sidebar: typeof innerWidth === 'number' ? innerWidth >= 1000 : true, show_comments: false, show_ruler: true, menus: true
+  sidebar: typeof innerWidth === 'number' ? innerWidth >= 1000 : true, show_comments: false, show_ruler: false, menus: true
 };
 state.tabs.push(new_tab('Tab 1')); state.active = state.tabs[0].id;
 
