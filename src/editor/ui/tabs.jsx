@@ -5,3 +5,4 @@ import { state, refs, active_tab, new_tab, duplicate_tab, move_tab, collect_html
   el, save_soon } from '../core/index.js';
 import { render_comments } from '../content/index.js';
 import { render_tab } from './render.js';
+import { render_sidebar } from './sidebar.js';
