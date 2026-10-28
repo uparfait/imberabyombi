@@ -79,3 +79,7 @@ export function sanitize_html(html) {
     else {
       const p = doc.createElement('p'); if (d.getAttribute('style')) p.setAttribute('style', d.getAttribute('style'));
       while (d.firstChild) p.appendChild(d.firstChild); d.replaceWith(p);
+    }
+  });
+  return doc.body.innerHTML;
+}
