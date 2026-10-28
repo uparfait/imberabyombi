@@ -54,3 +54,4 @@ export function csv_parse(text, delim) {
     else f += ch;
   }
   if (f !== '' || row.length) { row.push(f); rows.push(row); }
+  return rows;
