@@ -45,3 +45,4 @@
   .nav_avatar { display: grid; flex: none; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: var(--pill); background: rgb(var(--brand) / .15); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); font-size: .8125rem; font-weight: 600; }
   .side_link .side_spin { width: 1.25rem; height: 1.25rem; flex: none; }   /* the clicked sidebar link while its page loads */
   /* Attachments rise in one after another (not when the row is only re-drawn after a removal) */
+  .files:not(.quiet) > .file { animation: file_in .35s var(--ease) both; animation-delay: calc(var(--i, 0) * 60ms); }
