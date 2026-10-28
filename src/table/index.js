@@ -12,3 +12,4 @@ export * from './kv_table.jsx';
 export * from './view_row.jsx';
 export * from './open_form.jsx';
 export * from './export_file.js';
+export * from './export_cols.jsx';
