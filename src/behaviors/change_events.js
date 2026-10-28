@@ -9,3 +9,4 @@ import { ms_sync } from '../overlays/index.js';
 import { file_tiles } from '../files/index.js';
 import { viz_range } from '../charts/index.js';
 import { task_change } from '../modules/index.js';
+import * as table from '../table/index.js';
