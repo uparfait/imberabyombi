@@ -23,3 +23,4 @@ function where(n) { const bs = bodies(), h = editable_of(n), i = bs.indexOf(h), 
 function find(w) { const b = w && bodies()[w.i]; return b ? node_at(b, w.p) : null; }
 function doc_range() {
   const s = getSelection();
+  if (s.rangeCount) { const r = s.getRangeAt(0); if (where(r.startContainer)) return r; }
