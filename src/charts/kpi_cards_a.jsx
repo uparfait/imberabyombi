@@ -11,3 +11,4 @@ export const kpi_cards_a = k => {
   return [
     kpi_card('', 'Active users', 'People who used the system each month, over the last 12 months.',
       <><p className="kpi_value">{compact_num(users[11])}</p>{delta(d_users)}{spark(users, true, mo, num, 'Active users')}</>,
+      [['Month', 'Active users'], mo.map((x, i) => [x, num(users[i])])]),
