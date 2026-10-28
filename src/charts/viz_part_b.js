@@ -18,3 +18,4 @@ export const VIZ_PART_B = {
     return { svg: svg(f, parts, 'Sunburst chart'), legend: legend(groups),
       table: [['Group', 'Part', 'Value'], kids.flatMap((ch, gi) => ch.map(o => [groups[gi], o.k, num(o.v)]))] }; } },
   waffle: { t: 'Waffle chart', g: 'part', d: '100 squares, one per percent: easy to count.', f(w) {
+    const s = SER.slice(0, 3), raw = [rnd(25, 45), rnd(15, 30), rnd(8, 20)], p = raw.map(Math.round), rest = 100 - p.reduce((a, b) => a + b);
