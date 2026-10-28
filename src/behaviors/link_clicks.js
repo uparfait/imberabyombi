@@ -7,3 +7,4 @@ function on_link(e) {
   if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
   const a = e.target.closest?.('a[href]'), href = a?.getAttribute('href'), target = a?.getAttribute('target');
   if (!href || href.startsWith('#') || a.hasAttribute('download') || (target && target !== '_self')) return;
+  const u = new URL(href, location.href);
