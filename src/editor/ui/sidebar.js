@@ -75,3 +75,4 @@ function filter_box(focus) {
 /* rows whose name does not contain the filter text hide (the outline goes with its tab) */
 function apply_filter(list) {
   if (!list) return;
+  const q = tab_q.trim().toLowerCase(); let shown = 0;
