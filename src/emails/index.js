@@ -3,3 +3,4 @@
 export * from './mails.jsx';
 export * from './mail_body.jsx';
 export * from './mail_view.jsx';
+export * from './sitemap.jsx';
