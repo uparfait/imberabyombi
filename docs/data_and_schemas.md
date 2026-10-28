@@ -37,3 +37,4 @@ Optional keys: `before(values, row, form)` adjusts values before saving (may be 
 `sec` groups fields into categories in the details view.
 
 ## Lorem ipsum that does not change
+`lorem` (src/lib) is deterministic: the same seed gives the same text every time, so a page looks the same on every visit
