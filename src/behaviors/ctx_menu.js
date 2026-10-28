@@ -28,3 +28,4 @@ export function ctx_menu() {
 
 function on_contextmenu(e) {
   const t = e.target;
+  if (t.closest?.('input, textarea, select, [contenteditable], table, pre, code, .copy_box, dialog, a[href^="mailto:"], a[href^="tel:"]') || String(getSelection())) return;
