@@ -11,3 +11,4 @@ export const kit_tokens = () => (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 xl:grid-cols-7">{TOKS.map(k => (
       <div key={k} className="overflow-hidden rounded-2xl border border-line"><div className="h-16" style={{ background: `rgb(var(--${k}))` }}></div>
         <p className="flex flex-wrap items-center justify-between gap-1 px-3 py-2 text-xs"><code>{`--${k}`}</code>
+          <button className="hex_btn" data-act="copy" data-what="Colour" data-hex={k} aria-label={`Copy the --${k} colour`}></button></p></div>
