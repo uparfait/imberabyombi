@@ -25,3 +25,4 @@ export const VIZ_PART_B = {
       return `<rect class="mark mark_cell" x="${round1(x0 + (i % 10) * (cell + 2))}" y="${round1(f.t + Math.floor(i / 10) * (cell + 2))}" width="${round1(cell)}"`
         + ` height="${round1(cell)}" rx="3" style="fill:${col}" ${tip_text(j < 0 ? 'Other' : s[j], [[(j < 0 ? rest : p[j]) + '%', 'Share', j < 0 ? null : j]])}/>`; }).join(''),
       'Waffle chart'),
+      legend: legend([...s, 'Other'], 'rect', [0, 1, 2, 'rgb(var(--surface_2))']),
