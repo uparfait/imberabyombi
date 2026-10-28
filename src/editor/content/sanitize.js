@@ -58,3 +58,4 @@ function clean(node) {
     if (c.nodeType !== 1) continue;
     const tag = c.tagName;
     if (DROP.has(tag)) { c.remove(); continue; }
+    clean(c);
