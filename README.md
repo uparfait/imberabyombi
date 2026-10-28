@@ -8,6 +8,7 @@ charts and KPIs, all sharing one set of design tokens. Start any new website fro
   desktop design scaled up, and nothing ever scrolls sideways.
 - **Light, dark or system theme**, switched instantly, with no flash on load.
 - **One design language**: Imberabyombi-style fields, menus, pickers and tooltips, flat (no shadows), brand orange and ink.
+- **Light and fast**: React is the only runtime dependency, lazy media, small CSS, works on low-end phones and slow networks.
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
