@@ -30,3 +30,5 @@ export function data_ur_lto_blob(u) {
   const k = u.indexOf(','), h = u.slice(0, k), b = u.slice(k + 1);
   const mime = (h.match(/^data:([^;,]+)/) || [])[1] || 'application/octet-stream';
   return new Blob([/;base64/i.test(h) ? b64bytes(b) : new TextEncoder().encode(decodeURIComponent(b))], { type: mime });
+}
+export const MIME = { png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif', bmp: 'image/bmp', svg: 'image/svg+xml',
