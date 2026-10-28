@@ -31,3 +31,4 @@ export function set_block_style(key) {
     const nb = document.createElement(st.tag);
     if (st.cls) nb.className = st.cls;
     if (b.getAttribute('style')) nb.setAttribute('style', b.getAttribute('style'));
+    while (b.firstChild) nb.appendChild(b.firstChild);
