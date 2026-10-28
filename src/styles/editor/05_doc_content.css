@@ -32,3 +32,4 @@
 .doc_content .cmt{background:rgba(251,188,4,.3);border-bottom:2px solid #fbbc04}
 .doc_content .cmt.active{background:rgba(251,188,4,.65)}
 .doc_content td[data-hdr],.doc_content th[data-hdr]{font-weight:700}
+.doc_content table[data-style="minimal"] td,.doc_content table[data-style="minimal"] th{border-left-color:transparent;border-right-color:transparent}
