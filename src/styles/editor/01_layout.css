@@ -47,3 +47,5 @@ body.col_resize, body.col_resize * { cursor: col-resize !important; }
 .btn_text:hover { background: rgb(var(--fg) / .06); }
 #editor .btn_outline:not(.btn) { min-height: 2rem; padding: 0 .875rem; border: 1px solid rgb(var(--muted) / .5); color: rgb(var(--fg)); font-size: .8125rem; }
 #editor .btn_outline:not(.btn):hover { background: rgb(var(--fg) / .05); }
+
+/* The source's small spinner (a button busy state) */
