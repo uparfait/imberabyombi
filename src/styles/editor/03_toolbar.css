@@ -15,3 +15,4 @@
 
 .tb_btn, .tb_dd {
   position: relative; display: inline-flex; flex: none; align-items: center; height: 1.875rem; border-radius: var(--pill);
+  color: rgb(var(--fg) / .78); transition: background-color .15s, color .15s;
