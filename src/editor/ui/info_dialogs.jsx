@@ -21,3 +21,4 @@ export function word_count_dialog() {
     title: 'Word count',
     body: <table className="w-full sm:col-span-2"><tbody>
       <tr><td className={TD}></td><td className={NUM + ' text-muted'}>Document</td>{sel ? <td className={NUM + ' text-muted'}>Selection</td> : null}</tr>
+      {row('Pages', state.setup.pageless ? '—' : bodies().length, '')}
