@@ -17,3 +17,4 @@ export function login_page(r) {
   const rs = roles(), inv = r.q.role && rs.find(x => x.id === r.q.role), sel = inv?.id || db.get('lastRole') || 'super';
   return auth_shell('Sign in', 'Use any details. Your data stays in this browser.', <>
     <form data-form="login" className="on_bg mt-8 grid gap-6" noValidate>
+      <div data-msg-slot="" className="empty:hidden"></div>
