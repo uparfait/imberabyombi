@@ -28,3 +28,4 @@ function doc_range() {
 }
 function take() {
   const r = doc_range(), a = r && where(r.startContainer), b = r && where(r.endContainer), bar = refs.toolbar;
+  return { tab: state.active, html: bodies().map(x => x.innerHTML), sel: a && b ? { a, so: r.startOffset, b, eo: r.endOffset } : null,
