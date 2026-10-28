@@ -3,3 +3,4 @@
    holds their toasts); an image that a preview restore replaced is found again (img_now). */
 import { clamp, toast, begin_op, end_op, body_index } from '../core/index.js';
 import { can_edit, previewing } from '../format/index.js';
+import { img_max, select_image, img_now } from './img_sel.js';
