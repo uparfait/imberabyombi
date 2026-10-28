@@ -51,3 +51,4 @@
 .doc_content pre,.dark .doc_content pre{color:inherit;border:0;border-radius:0;overflow:visible;line-height:inherit;white-space:pre-wrap}
 .doc_content hr{height:0;background:none}
 .doc_content blockquote{border:0;background:none;border-radius:0;font-size:inherit}
+.doc_content :is(code,kbd,samp){font-family:'JetBrains Mono','Courier New',monospace;font-size:inherit;color:inherit;background:none;border:0;padding:0;border-radius:0}
