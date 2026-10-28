@@ -8,3 +8,4 @@ import { pick } from './pick.js';
 import { tip } from './tip.js';
 
 /* actions: extra footer buttons (e.g. Edit / Delete on the details view); wide: at least 70% of a large screen (the task view).
+   Reuses the dialog if it is already open.
