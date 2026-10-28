@@ -2,3 +2,4 @@
    one-time code) and access token (shown once, scopes, expiry). Codes, links and tokens can be copied. */
 import { ic } from '../icons/index.js';
 import { cfg } from '../config/index.js';
+import { lorem, fmt_d, ymd, add_d } from '../lib/index.js';
