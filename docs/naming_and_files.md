@@ -42,3 +42,4 @@ Import paths always carry the extension (`.js` / `.jsx`), as Vite and browsers e
 
 ## 6. Lock file and linting
 `package-lock.json` is not committed (it is always longer than 100 lines); `.npmrc` sets `save-exact=true`, so
+`package.json` pins every version and installs stay reproducible. No linter is installed: the React hook lint rules expect
