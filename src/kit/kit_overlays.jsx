@@ -35,3 +35,6 @@ export const kit_overlays = () => (
         <div id="pop_demo" ref={closed_pop()} className="pop left-0 w-56" hidden>
           {POP_VIEWS.map(([l, k]) => <button key={k} className="menu_item justify-between">{l}<kbd>{k}</kbd></button>)}
           <hr className="my-1" /><label className="menu_item"><input type="checkbox" defaultChecked /> Show weekends</label></div></div></div>
+    {toast_demo}
+  </>
+);
