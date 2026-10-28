@@ -2,3 +2,4 @@
    confirm_discard) and show_in_dialog() for #drawer and #viewer. Opening is show_dialog() (feedback/top_layer.js). */
 import { qs } from '../lib/index.js';
 import { reduced, show_dialog } from '../feedback/index.js';
+import { before_render } from '../store/index.js';
