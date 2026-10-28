@@ -3,3 +3,5 @@
 
 /* the "app" mark of a project file (.json); the import side recognises project files by it */
 export const PROJECT_APP = 'document-editor';
+
+export const CONTENT_CSS = '\n' + [
