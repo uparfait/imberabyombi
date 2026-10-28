@@ -23,3 +23,4 @@ export const VIZ_CMP_B = {
   bullet: { t: 'Bullet chart', g: 'cmp', d: 'Actual against a target, over poor / fair / good bands.', f(w) {
     const c = ['Revenue', 'Profit', 'New users', 'Satisfaction'], f = frame(w, 200, { l: 92, r: 18, b: 10 }), y = band(c.length, f.t, f.t + f.ih);
     const d = c.map(() => { const max = 100, t = rnd(60, 90); return { max, t, a: rnd(40, 98), bands: [50, 75, 100] }; });
+    return { svg: svg(f, c.map((k, i) => {
