@@ -31,3 +31,4 @@ export const EDITOR_MEDIA_PATHS = {
   straighten: 'M2 8h20v8H2zM6 8v3M10 8v4M14 8v3M18 8v4',
   photo_size_select_large: 'M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3M7 16l3-4 2.5 3 1.5-2 3 3',
   picture_in_picture: WIDE + 'M12 11h6v5h-6z',
+  flip_to_front: 'M10 10h10v10H10zM14 10V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h5',
