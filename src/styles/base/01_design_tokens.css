@@ -19,3 +19,4 @@
     --ease: cubic-bezier(.22,.8,.22,1);
     --speed: .3s;
     /* Device scaling: 360px minimum layout; desktops (1024px and up) a little denser, growing slowly past 1920px */
+    --scale_phone: 360;      /* every phone (up to 430px wide) shows the 360px design, scaled to its width */
