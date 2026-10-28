@@ -23,3 +23,5 @@ export function render_tab() {
   const f = deepest(first_flow(b) || b, true), r = document.createRange(); r.setStart(f, 0); r.collapse(true); set_last(r, b);
   if (scroller) scroller.scrollTop = 0;
   update_rulers(); schedule_ui();
+}
+export function render_all() {
