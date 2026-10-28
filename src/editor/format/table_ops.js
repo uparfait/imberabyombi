@@ -55,3 +55,5 @@ export function tbl_op(op, arg) {
     case 'split': {
       const n = c.td.colSpan || 1; if (n < 2) { toast('This cell isn’t merged'); break; }
       c.td.removeAttribute('colspan'); for (let k = 1; k < n; k++) c.td.after(new_cell_like(c.td)); target = c.td; break;
+    }
+    case 'cell_bg': sel_cells(c).forEach(x => { x.style.backgroundColor = arg || ''; x.removeAttribute('data-autobg'); }); break;
