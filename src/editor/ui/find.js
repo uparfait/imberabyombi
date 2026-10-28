@@ -53,3 +53,4 @@ export function run_find(keep) {
   paint_find(!keep);
 }
 export function paint_find(scroll) {
+  const { matches, idx } = find_state;
