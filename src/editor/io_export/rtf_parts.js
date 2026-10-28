@@ -32,3 +32,4 @@ const rtf_pict = (rx, img) => {
   for (let i = 0; i < b.length; i += 64) { let line = ''; for (let k = i; k < Math.min(i + 64, b.length); k++) line += HEX[b[k]]; parts.push(line); }
   const nw = +img.dataset.nw || 300, nh = +img.dataset.nh || 200;
   const w = Math.min(parseFloat(img.style.width) || nw, rx.content_tw / 15), h = parseFloat(img.style.height) || w * nh / nw;
+  return `{\\pict${/png/i.test(mm[1]) ? '\\pngblip' : '\\jpegblip'}\\picw${nw}\\pich${nh}\\picwgoal${Math.round(w * 15)}\\pichgoal${Math.round(h * 15)}`
