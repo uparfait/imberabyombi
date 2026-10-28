@@ -28,6 +28,7 @@ export function public_page(r) {
 /* Signed out: to sign-in (then back here). A session whose role is gone: signed out. Both return null (the page stays) and
    replace the address once this draw is over (a draw cannot start the next one) */
 let redirecting = 0;
+const redirect = path => { if (!redirecting) redirecting = setTimeout(() => { redirecting = 0; go(path, { replace: true }); }); return null; };
 export function admin_page(r) {
   if (!auth.user) { location.replace('#/login?next=' + encodeURIComponent('#' + r.path)); return null; }
   if (!auth.role()) { auth.logout(); location.replace('#/login'); return null; }
