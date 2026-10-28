@@ -34,3 +34,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 
 ## The accent colour
 Small orange text uses `text-accent`: 80% brand mixed with 20% text colour. It stays at or above 4.5:1 contrast in
+both themes and follows any brand change automatically. Use it instead of `text-brand` for small text.
