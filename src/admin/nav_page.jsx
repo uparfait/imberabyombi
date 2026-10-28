@@ -22,3 +22,5 @@ const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a
 
 const number = ([k, v, i]) => <div key={k} className="card flex items-center gap-4 p-4 sm:p-5">{i3(i, 'h-11 w-11')}
   <div className="min-w-0"><p className="truncate text-sm text-muted">{k}</p><p className="truncate font-display text-xl font-bold">{v}</p></div></div>;
+
+const activity = i => { const n = lorem.name();
