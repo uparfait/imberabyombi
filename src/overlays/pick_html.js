@@ -29,3 +29,4 @@ export const PK = {
       .map(([n, l]) => `<button type="button" data-act="pk_h24" data-v="${n}" aria-pressed="${!!n === on}">${l}</button>`).join('')}</div>
     <div class="pk_list pk_times" role="listbox">${Array.from({ length: 96 }, (_, i) => { const t = `${pad(i >> 2)}:${pad(i % 4 * 15)}`;
       return `<button type="button" class="pk_item" role="option" aria-selected="${t === v}" ${i === near ? 'data-near' : ''} data-act="pk_time" data-v="${t}">`
+        + `${fmt_time(t)}</button>`; }).join('')}</div></div>`;
