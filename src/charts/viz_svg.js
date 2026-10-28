@@ -2,3 +2,4 @@
    Method: one axis per chart, thin marks (bars <= 24px, 4px rounded data-end, 2px lines, >= 8px dots), hairline grid.
    Every piece of text goes through esc(); the chart cards insert the finished SVG with dangerouslySetInnerHTML. */
 import { esc } from '../lib/index.js';
+import { round1, compact_num, linear, ticks, fit, tip_text } from './viz_math.js';
