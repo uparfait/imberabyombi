@@ -12,3 +12,4 @@ const RATIOS = [['free', 'Free'], ['1', 'Square'], ['1.3333', '4:3'], ['1.7778',
 /* st: what Crop reads ({ rect, pic }) */
 function Crop_body({ src, st }) {
   const [rect, set_rect_s] = useState(null), [ratio, set_ratio] = useState(null), pic = useRef(null);
+  const set_rect = r => { st.rect = r; set_rect_s(r); };
