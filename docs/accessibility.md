@@ -9,3 +9,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - Every control has a label: visible labels for fields, `aria-label` for icon buttons (also used as their tooltip).
 
 ## Keyboard
+- Every action works from the keyboard: `Enter` / `Space` on anything with `data-act` and a `tabIndex`.
