@@ -15,3 +15,5 @@ import { resend_in } from '../account/index.js';
 import { set_theme } from './theme.js';
 import { close_pops, toggle_pop } from './pops.js';
 import { open_cmd } from './open_cmd.jsx';
+
+/* a node React draws (it carries React's fiber key) is hidden instead of removed */
