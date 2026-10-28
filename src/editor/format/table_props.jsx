@@ -3,3 +3,4 @@
 import { modal } from '../../overlays/index.js';
 import { clamp, to_hex, toast } from '../core/index.js';
 import { can_edit } from './commands.js';
+import { chain_rows, table_width_cols, insert_rows, insert_cols, delete_col } from './table_model.js';
