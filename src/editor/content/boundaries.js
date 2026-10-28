@@ -16,3 +16,5 @@ export function at_body_end(host, r) {
   if (!l.contains(r.endContainer)) return false;
   const rr = document.createRange(); try { rr.setStart(r.endContainer, r.endOffset); } catch (e) { return false; } rr.setEnd(l, l.childNodes.length);
   return no_text(rr);
+}
+export function line_h(r) { const e = el_of(r.startContainer); return parseFloat(getComputedStyle(e).fontSize) * 1.2 * state.zoom; }
