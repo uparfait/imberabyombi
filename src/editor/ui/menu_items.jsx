@@ -51,3 +51,4 @@ export function text_items() {
     { label: 'Increase font size', icon: 'text_increase', shortcut: 'Ctrl+Shift+.', action: () => bump_size(1) },
     { label: 'Decrease font size', icon: 'text_decrease', shortcut: 'Ctrl+Shift+,', action: () => bump_size(-1) },
     { sep: true },
+    { label: 'Capitalization', icon: 'match_case', sub: () => [{ label: 'lowercase', action: () => transform_case('lower') },
