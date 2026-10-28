@@ -30,3 +30,4 @@ export function Sub_editor({ groups }) {
     add_group: () => { const [g] = keyed([{ items: [{}] }]); put(a => [...a, g]); },
     add_item: gk => { const k = ++seq; put(a => a.map(g => g.key !== gk ? g : { ...g, items: [...g.items, { key: k }] })); },
     rm_group: gk => put(a => a.filter(g => g.key !== gk)),
+    rm_item: (gk, ik) => put(a => a.map(g => g.key !== gk ? g : { ...g, items: g.items.filter(x => x.key !== ik) }))
