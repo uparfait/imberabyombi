@@ -2,3 +2,4 @@
    The header cell stays in the table (hidden); the body cells are left out while the column is hidden. */
 import { qs, qsa } from '../lib/index.js';
 import { ui } from '../store/index.js';
+import { reduced } from '../feedback/index.js';
