@@ -22,3 +22,5 @@ export const ROLE_ACT = {
       rs.push({ id, name: d.name, d: d.d, land: d.land, perms }); db.set('roles', rs); ui.role = id; rerender(); notify('Set its access levels in the matrix.', 'ok', 'Role created'); } }),
   role_del: t => { const n = db.list('staff').filter(s => s.role === t.dataset.id).length;
     if (n) return show_msg(qs('#matrix_msg'), 'bad', 'This role is still in use', `Move the ${n} staff member${n > 1 ? 's' : ''} with this role to another role, then delete it.`, false);
+    ask('Delete this role? Invite links for it will stop working.', () => { db.set('roles', roles().filter(r => r.id !== t.dataset.id)); ui.role = null; rerender(); notify('Its invite links no longer work.', 'ok', 'Role deleted'); }); }
+};
