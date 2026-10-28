@@ -15,3 +15,4 @@ export const VIZ_PART_B = {
         parts += mark_group(o.k, [[num(o.v), groups[gi], gi]], ring(arc(cx, cy, rad * .62, rad, a0, a),
           `color-mix(in oklab, ${scale_color(gi)} ${80 - j * 18}%, rgb(var(--surface)))`)); });
       parts += mark_group(groups[gi], [[num(gv), pct(gv / tot) + ' of total', gi]], ring(arc(cx, cy, rad * .22, rad * .6, g0, a), scale_color(gi))); });
+    return { svg: svg(f, parts, 'Sunburst chart'), legend: legend(groups),
