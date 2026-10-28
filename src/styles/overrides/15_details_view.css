@@ -1,3 +1,4 @@
 /* overrides/15_details_view.css: rules that come after the utilities, as in the reference */
   /* The table scrolls inside the dialog; its COLUMN NAME / VALUE header row stays in place */
   .kv_wrap { overflow: auto; overscroll-behavior: contain; max-height: min(30rem, calc(90dvh - 14rem)); }
+  .kv thead th { position: sticky; top: 0; z-index: 1; }
