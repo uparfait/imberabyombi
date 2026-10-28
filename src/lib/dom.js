@@ -11,3 +11,4 @@ export const css_var = v => getComputedStyle(document.documentElement).getProper
 export const hex2rgb = h => { const x = h.replace('#', ''); return [0, 2, 4].map(i => parseInt(x.slice(i, i + 2), 16)); };
 export const rgb2hex = s => '#' + s.split(/\s+/).map(v => pad((+v).toString(16))).join('');
 export const dl = (name, text, type = 'text/plain') => {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; a.click();
