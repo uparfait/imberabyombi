@@ -10,3 +10,4 @@ export function default_setup() {
 export function new_tab(name, html) { return { id: uid(), name, html: html || '<p><br></p>', undo: [], redo: [] }; }
 
 export const state = {
+  title: 'Untitled document', setup: default_setup(), tabs: [], active: null, zoom: 1, mode: 'edit', spell: true, comments: [],
