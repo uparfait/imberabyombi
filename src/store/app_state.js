@@ -27,3 +27,4 @@ export const before_render = fn => BEFORE.push(fn);
 export const after_render = fn => AFTER.push(fn);
 
 let version = 0;
+const listeners = new Set();
