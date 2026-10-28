@@ -29,3 +29,4 @@ export function reflow(cur = 0, full = false) {
     let next = bs[i + 1] || null;
     if (break_with_rest(b) || overflows(b)) {
       if (!next) { next = add_page_after(b); bs = bodies(); }
+      push_overflow(b, next);
