@@ -51,3 +51,4 @@ export const EDITOR_DOC_PATHS = {
   expand_less: 'm18 15-6-6-6 6',
   keyboard_arrow_down: 'm6 9 6 6 6-6',
   keyboard_arrow_up: 'm18 15-6-6-6 6',
+  more_vert: dot(12, 5) + dot(12, 12) + dot(12, 19),
