@@ -8,3 +8,5 @@ import { field } from '../fields/index.js';
 import { sub_editor } from './sub_editor.jsx';
 import { subs_of } from './task_data.js';
 import { dt_in } from './task_dates.jsx';
+
+const assignees = () => uniq([me(), ...people()]).map(n => [n, n === me() ? n + ' (You)' : n]);
