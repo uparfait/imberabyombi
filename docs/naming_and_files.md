@@ -16,3 +16,4 @@ Short files are easy to review, easy to replace and load only what a page needs.
 | React components             | Capital first, then snake_case | `Task_view`, `File_box`, `Dialog_hosts`  |
 | CSS classes and ids          | snake_case                     | `.icon_btn`, `.table_data`, `#side_panel`|
 | CSS variables and keyframes  | snake_case                     | `--surface_2`, `toast_in`                |
+| Action and form names        | snake_case                     | `data-act="task_open"`, `data-form="login"` |
