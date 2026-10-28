@@ -2,3 +2,5 @@
    with .show), the link bubble (#link_bubble, positioned and shown by the engine; #lb_url filled by it) and the hidden file
    inputs the menus click (#file_open, #image_open, #image_replace). */
 import { ic } from '../../icons/index.js';
+
+const small_btn = (id, icon, tip) => (
