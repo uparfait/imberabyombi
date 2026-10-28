@@ -8,3 +8,4 @@ import { can_edit } from './commands.js';
 /* inserts node as a top-level block at the caret and returns it (null when it could not). The caller ends the op. */
 export function insert_block_at_caret(node) {
   if (!can_edit()) return null;
+  restore_focus();
