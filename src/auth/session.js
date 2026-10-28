@@ -2,6 +2,7 @@
    otherwise in sessionStorage (ss; null when the browser blocks it). Plus the sign-in links shared with new people. */
 import { cfg } from '../config/index.js';
 import { db } from '../store/index.js';
+import { to } from '../router/index.js';
 import { roles } from './roles.jsx';
 
 export const ss = (() => { try { sessionStorage.setItem('_t', 1); sessionStorage.removeItem('_t'); return sessionStorage; } catch { return null; } })();
