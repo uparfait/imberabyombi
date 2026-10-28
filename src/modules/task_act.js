@@ -24,3 +24,4 @@ export const TASK_ACT = {
   cal_task: t => { const r = db.find('tasks', t.dataset.id); if (!r) return;
     ui.tab.tasks = r.by === me() ? 'mine' : 'assigned'; ui.page = {}; ui.flash = r.id; ui.scroll_flash = true; location.hash = '#/admin/tasks'; },
   ...SUB_ACT,
+  /* an attachment previews inside the task view; Full view opens the file viewer */
