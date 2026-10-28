@@ -15,3 +15,4 @@ function on_focusin(e) {
 }
 
 export function install_pointer() {
+  /* Tooltips + suggestion lists: hover (mouse/pen only) and keyboard focus */
