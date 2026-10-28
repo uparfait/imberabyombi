@@ -28,3 +28,4 @@ export function footer() {
           <form data-form="news" className="mt-4 flex items-start gap-2" noValidate><div className="field min-w-0 flex-1">
             <label className="sr-only" htmlFor="newsletter_email">Email address</label>
             <input id="newsletter_email" name="email" type="email" required autoComplete="email" placeholder="you@lorem.io" /></div>
+            <button className="btn btn_primary">Subscribe</button></form><div data-msg-slot="" className="mt-3 empty:hidden"></div></div>
