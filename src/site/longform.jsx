@@ -26,3 +26,4 @@ export function longform(k) {
         <Fragment key={s.id}>{i ? <hr /> : null}<section id={s.id} className="scroll-mt-28"><h2>{s.t}</h2><p>{lorem.p(4)}</p>{extra(i)}</section></Fragment>
       ))}</article>
       <aside className="grid content-start gap-6 lg:sticky lg:top-24 lg:self-start">
+        <nav className="card p-5" aria-label="On this page"><h2 className="text-sm font-semibold">On this page</h2><ol className="mt-3 grid gap-1 text-sm">{secs.map(s => (
