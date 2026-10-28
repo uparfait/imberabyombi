@@ -7,3 +7,4 @@ import { spinner_html } from './spinner.jsx';
 import { notify } from './notify.js';
 
 /* D. Loading: a busy button spins in place. On staff (admin) pages every request (delete, update, get) also shows the
+      floating #loader at the top (after 150 ms, so instant work such as navigation never flashes it). Public and
