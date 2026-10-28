@@ -15,3 +15,4 @@ function on_input(e) {
   if (DTF[t.dataset?.type] && e.inputType?.startsWith('insert') && t.selectionStart === t.value.length) t.value = masked(t.dataset.type, t.value);
   if (DTF[t.dataset?.type]) ghost(t);
   if (t.dataset.search != null) { const c = t.dataset.search; ui.q[c] = { ...ui.q[c], [t.dataset.k]: t.value }; ui.page[c] = 1; refresh(c); }
+  if (t.dataset.pkQ != null) pick.filter(t.value);
