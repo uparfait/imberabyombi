@@ -13,3 +13,4 @@
   #viz_tip b { font-weight: 600; }
   #viz_tip span { color: rgb(var(--muted)); }
   /* KPI designs */
+  .kpi { display: flex; min-width: 0; flex-direction: column; gap: .25rem; padding: 1.25rem; }
