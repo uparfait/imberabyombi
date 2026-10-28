@@ -8,3 +8,4 @@ import { paint, apply_paint } from '../format/index.js';
 import { apply_panels, apply_setup } from '../ui/index.js';
 import { data_ur_lto_blob } from '../io_import/index.js';
 import { select_image, hide_img_sel } from './img_sel.js';
+import { start_img_drag, take_drag_click } from './img_drag.js';
