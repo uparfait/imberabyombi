@@ -35,3 +35,4 @@ export const tip_attr = (title, rows) => ({ 'data-tt': JSON.stringify([title, ..
 export const pct = v => `${round1(v * 100)}%`;
 /* Label positions pushed apart (top to bottom) so stacked end labels never overlap */
 export const spread = (ys, gap = 13) => {
+  const o = ys.map((y, i) => [y, i]).sort((a, b) => a[0] - b[0]), out = [...ys];
