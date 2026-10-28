@@ -48,3 +48,6 @@ export function list_xml(l, lvl, ctx, num_id) {
     }
     else out += `<w:p>${p_pr_xml(li, `<w:pStyle w:val="ListParagraph"/><w:numPr><w:ilvl w:val="${Math.min(lvl, 8)}"/><w:numId w:val="${num_id}"/></w:numPr>`)}${runs}</w:p>`;
     Array.from(li.children).filter(is_list).forEach(sub => { out += list_xml(sub, lvl + 1, ctx, sub_id(sub)); });
+  });
+  return out;
+}
