@@ -26,3 +26,4 @@ export function Modal_form({ m }) {
   };
   return (
     <form ref={ref} className="flex flex-col" noValidate onSubmit={on_submit}>
+      <header className={`flex items-center justify-between gap-4 ${plain ? '' : 'border-b border-line'} px-5 py-4 sm:px-6`}>
