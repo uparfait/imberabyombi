@@ -21,3 +21,4 @@ export async function export_epub(scope, name) {
     qsa('[contenteditable]', d).forEach(x => x.removeAttribute('contenteditable'));
     await prepare_images(d);
     qsa('img', d).forEach(img => {
+      const m = (img.getAttribute('src') || '').match(/^data:image\/(png|jpe?g|gif|webp|svg\+xml);base64,(.*)$/i); if (!m) { img.remove(); return; }
