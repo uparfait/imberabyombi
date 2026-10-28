@@ -41,3 +41,5 @@ export function set_mode(mode) {
   set_icon(refs.mode_icon, mode === 'edit' ? 'edit' : 'visibility');
   set_text(refs.mode_label, mode === 'edit' ? 'Editing' : 'Viewing');
   toast(mode === 'edit' ? 'Editing: you can make changes' : 'Viewing: the document is read-only', 1800);
+}
+export function toggle_menus() {
