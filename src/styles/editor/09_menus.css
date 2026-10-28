@@ -22,3 +22,4 @@
 .pal_sw { display: block; width: 1.125rem; height: 1.125rem; flex: none; border: 1px solid rgb(var(--fg) / .15); border-radius: var(--pill);
   transition: transform .12s var(--ease); }
 .pal_sw:hover, .pal_sw:focus-visible { transform: scale(1.2); }
+.pal_custom { display: flex; align-items: center; gap: .625rem; padding: .375rem .5rem; border-radius: calc(var(--radius) * .625); font-size: .8125rem; color: rgb(var(--fg) / .8); }
