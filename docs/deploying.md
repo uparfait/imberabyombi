@@ -26,10 +26,9 @@ GitHub Pages serves `404.html` for every unknown path, so deep links and reloads
 Build command `npm run build`, output folder `dist`. Add `public/_redirects` (it is copied into `dist/`):
 ```
 /*  /index.html  200
+```
 
-## Any web server (Apache, Nginx, IIS, a shared host)
-Upload the contents of `dist/`. Serve `index.html` for `/`. Let the server cache `assets/*` files for a long time
-(their names contain a content hash) and keep `index.html` uncached so updates show at once:
+## Vercel
 ```nginx
 location /assets/ { add_header Cache-Control "public, max-age=31536000, immutable"; }
 location = /index.html { add_header Cache-Control "no-cache"; }
