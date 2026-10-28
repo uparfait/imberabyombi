@@ -18,3 +18,4 @@ export const kit_media = brand_hex => (
     <div className="grid gap-4">{player('video', cfg.video, cfg.img('kit-poster', 900, 506))}{player('audio', cfg.audio)}</div>
     <iframe className="map aspect-video" src={cfg.map} title="Map embedded with an iframe" loading="lazy"></iframe>
     <div className="grid gap-4"><embed type="image/svg+xml" src={svg_uri(brand_hex)} title="SVG through embed" className="h-36" />
+      <object type="image/svg+xml" data={svg_uri('#1A120C')} className="h-36" aria-label="SVG through object"><p>Your browser cannot show this object.</p></object></div>
