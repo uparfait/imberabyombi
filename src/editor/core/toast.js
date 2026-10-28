@@ -40,3 +40,5 @@ export function hide_toast() {
   if (alive()) prog.querySelector('[data-close]')?.click();
   prog = null;
   clearTimeout(timer); if (line) line.style.display = 'none';
+}
+/* editor_start's stop(): remove the status line */
