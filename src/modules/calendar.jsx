@@ -19,3 +19,4 @@ VIEWS.calendar = () => {
   after_render(() => { const s = qs('#date_hours'); if (s) s.scrollTop = 7 * 3 * rem(); });
   const grid = wk ? week_grid(d, items) : month_grid(d, items);
   return <>
+    <section className="card overflow-hidden"><header className="flex flex-wrap items-center gap-2 border-b border-line p-3 sm:p-4">
