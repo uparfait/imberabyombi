@@ -64,3 +64,4 @@ function clean(node) {
     for (const a of Array.from(c.attributes)) c.removeAttribute(a.name);
     for (const k in keep) c.setAttribute(k, keep[k]);
     if (tag === 'IMG' && !keep.src) { c.remove(); continue; }
+    if (c.classList.contains('page_break') || c.classList.contains('file_chip')) c.setAttribute('contenteditable', 'false');
