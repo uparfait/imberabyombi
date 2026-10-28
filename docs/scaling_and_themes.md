@@ -19,3 +19,5 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 | 640–1023px (tablets) | 16px with the normal responsive layout (Tailwind `sm`, `md`)                   |
 | 1024px up to `--scale_ref` | 15px (`--scale_desk`), with `lg` / `xl` layouts                          |
 | wider than `--scale_ref` | The reference desktop view scaled up: a 4K screen looks like the reference, only bigger |
+
+Make your own computer the reference: open the browser console, type `innerWidth`, and set `--scale_ref` to it.
