@@ -6,3 +6,4 @@
   :where(th) { text-align: left; font-weight: 600; font-size: .8rem; color: rgb(var(--muted)); padding: .8rem 1rem; background: rgb(var(--surface_2)); border-bottom: 1px solid rgb(var(--line)); white-space: nowrap; }
   :where(thead th) { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
   :where(td) { padding: .75rem 1rem; border-bottom: 1px solid rgb(var(--line)); vertical-align: middle; white-space: nowrap; }
+  :where(tbody tr) { transition: background-color .2s; }
