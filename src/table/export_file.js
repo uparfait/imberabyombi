@@ -24,3 +24,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
   if (fmt === 'json') dl(`${c}-${ymd()}.json`, JSON.stringify(rows.map((r, i) => Object.fromEntries(head.map((h, j) => [h, body[i][j]]))), null, 2),
     'application/json');
   else if (fmt === 'xls') { const x = v => String(v).replace(/[<>&"]/g, m => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[m]));
+    const cell_x = (v, h) => `<Cell${h ? ' ss:StyleID="h"' : ''}><Data ss:Type="${typeof v === 'number' ? 'Number' : 'String'}">${x(v)}</Data></Cell>`;
