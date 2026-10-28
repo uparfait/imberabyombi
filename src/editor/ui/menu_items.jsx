@@ -48,3 +48,4 @@ export function text_items() {
     { label: 'Superscript', icon: 'superscript', shortcut: 'Ctrl+.', action: () => exec('superscript') },
     { label: 'Subscript', icon: 'subscript', shortcut: 'Ctrl+,', action: () => exec('subscript') },
     { sep: true },
+    { label: 'Increase font size', icon: 'text_increase', shortcut: 'Ctrl+Shift+.', action: () => bump_size(1) },
