@@ -7,3 +7,4 @@ import { ic } from '../icons/index.js';
 export const search_box = (attrs, ph = 'Search', c = '') => (
   <label className={c ? `relative block ${c}` : 'relative block'}>
     <span className="sr-only">{ph}</span>
+    <input type="search" placeholder={ph} className="h-11 rounded-full border-transparent bg-surface-2 py-2 hover:border-transparent hover:bg-surface-3 focus:bg-surface" {...attrs} />
