@@ -48,6 +48,6 @@ const help = () => <>{search_box({ 'data-filter': '.accordion_item' }, 'Search h
 
 export const PANELS = {
   notes: { t: 'Notes', h: notes },
-  tasks: { t: 'My tasks', tools: () => <a href="#/admin/tasks" className="icon_btn" aria-label="Open Tasks">{ic('external')}</a>, h: my_tasks },
+  tasks: { t: 'My tasks', tools: () => <a href={to('/admin/tasks')} className="icon_btn" aria-label="Open Tasks">{ic('external')}</a>, h: my_tasks },
   help: { t: 'Help', h: help }
 };
