@@ -29,3 +29,4 @@ export function row_drag(e, o) {
   const move = ev => {
     py = ev.clientY;
     if (!on) {
+      if (Math.abs(py - y0) < START && Math.abs(ev.clientX - x0) < START) return;
