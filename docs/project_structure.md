@@ -5,3 +5,4 @@ index.html            SEO head, theme boot (no flash), overlay elements (#modal,
 public/               favicon.svg, robots.txt, sitemap.xml (copied as they are into dist/)
 src/main.jsx          entry: stylesheet (in order), mounts <App/> in #app, starts the router (boot)
 src/app.jsx           root component: the page for the current route + the shared dialogs
+src/styles/           the stylesheet: base/ (fonts, tokens, scaling, native elements), components/ (@layer components),
