@@ -23,3 +23,4 @@ export const pick = {
   el: document.getElementById('picker'), a: null, kb: false, mute: false, esc: false, mode: 'days', view: new Date(),
   from(a) { const v = a.value; return kind_of(a) === 'week' && /W\d/.test(v) ? week_date(v) : /^\d{4}-\d{2}/.test(v) ? parse_d(v) : new Date(); },
   open(a, kb = false) {
+    if (!a || a.disabled) return;
