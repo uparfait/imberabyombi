@@ -24,3 +24,4 @@ function fonts_in(host, r) {
   return m;
 }
 const font_of = (x, fonts) => { const w = document.createTreeWalker(x, NodeFilter.SHOW_TEXT); for (let n = w.nextNode(); n; n = w.nextNode()) if (fonts.get(n)) return fonts.get(n); return ''; };
+export function wrap_selection(cls, attrs = {}) {
