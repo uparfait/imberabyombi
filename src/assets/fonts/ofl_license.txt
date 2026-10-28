@@ -1,2 +1,3 @@
 Copyright 2022 The Figtree Project Authors (https://github.com/erikdkennedy/figtree)
 Copyright 2022 The Bricolage Grotesque Project Authors (https://github.com/ateliertriay/bricolage)
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
