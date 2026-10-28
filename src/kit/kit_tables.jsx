@@ -9,3 +9,4 @@ const DATA_HELP = 'Every admin list uses this: search inside each column, sort b
   + 'it full screen, and Action Buttons stay first while it scrolls. It loads with the same spinner as everything else.';
 
 const row = i => {
+  const n = lorem.name();
