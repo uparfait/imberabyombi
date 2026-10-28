@@ -8,3 +8,4 @@ import { apply_setup } from './view.js';
 import { update_rulers } from './rulers.js';
 import { render_sidebar } from './sidebar.js';
 import { apply_panels } from './pages_panel.js';
+import { close_menus } from './menu_engine.js';
