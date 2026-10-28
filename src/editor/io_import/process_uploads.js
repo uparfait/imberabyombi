@@ -12,3 +12,4 @@ import { load_project, is_doc_empty, project_tabs } from './project.js';
 import { show_failed } from './upload_body.jsx';
 
 /* done: the converted files ({ html, inline?, project?, file }); a problem met while placing them is added to failed */
+function place_uploads(done, mode, failed) {
