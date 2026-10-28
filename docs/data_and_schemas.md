@@ -15,3 +15,5 @@ is blocked (private mode, sandboxes).
 
 Collections are stored as `c:<collection>` (`c:tasks`, `c:staff`…). Settings → Data exports and imports a JSON backup
 and resets the demo data.
+
+## Schemas: one object per data type ([src/schemas/](../src/schemas/))
