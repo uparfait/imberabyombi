@@ -6,3 +6,4 @@ import { live, pages_el, restore_focus, qs } from '../core/index.js';
 export const previewing = () => !!(live && live.active);
 
 /* fn runs once, when #modal has closed (its close event; at once when there is no #modal) */
+export function after_close(fn) { const d = qs('#modal'); if (d) d.addEventListener('close', () => fn(), { once: true }); else fn(); }
