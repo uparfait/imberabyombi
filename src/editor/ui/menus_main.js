@@ -21,3 +21,4 @@ const flip = (label, on, action, shortcut) => ({ label, checked: !!on, action, s
 export function native(c) { return () => { restore_focus(); document.execCommand(c); }; }
 
 export function file_items() {
+  return [
