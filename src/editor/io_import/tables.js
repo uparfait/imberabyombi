@@ -23,3 +23,4 @@ export function rows_to_table(rows, header) {
   let h = `<table class="doc_table"${header ? ' data-header=""' : ''} style="--bw:1px;--bc:#9aa0a6">`;
   rows.forEach((r, i) => {
     h += '<tr>';
+    for (let c = 0; c < width; c++) {
