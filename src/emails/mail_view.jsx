@@ -7,3 +7,4 @@ import { route, ui } from '../store/index.js';
 import { page_title } from '../ui/index.js';
 import { tile_menu } from '../admin/index.js';
 import { MAILS } from './mails.jsx';
+import { mail_body } from './mail_body.jsx';
