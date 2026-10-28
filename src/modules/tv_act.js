@@ -28,3 +28,4 @@ export const TV_ACT = {
   tv_cancel: t => { set_edit(t, false); fresh(); },
   tv_save: t => { const tr = row_of(t), k = tr.dataset.tvRow, id = t.closest('[data-task]').dataset.task;
     const cell = tr.querySelector('.kv_cell'), inp = cell.querySelector('[name^="tv_"]');
+    let v; if (k === 'subs') v = read_subs(cell);
