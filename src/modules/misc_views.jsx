@@ -8,7 +8,7 @@ import { empty } from '../ui/index.js';
 import { page_hero } from '../site/index.js';
 
 VIEWS.emails = () => emails_view();   /* Email designs (built with the other page builders) */
-VIEWS.charts = () => viz.view();      /* Charts & KPIs (section 11b) */
+VIEWS.charts = () => viz.view();      /* Charts & KPIs */
 /* Nested navigation: a system of its own pages inside the dashboard (#/admin/nav/…), see nav_drops() */
 VIEWS.nav = () => <div id="nav_demo">{nav_drops(true)}</div>;
 
