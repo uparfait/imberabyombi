@@ -11,3 +11,4 @@
     font-size: .8125rem; font-weight: 500; color: #fff; background: rgb(var(--brand)); transition: background-color .2s; }
   .copy_btn:hover { background: rgb(var(--brand_2)); }
   .copy_btn.done { background: rgb(var(--ok)); }
+  /* Colour token hex (design system): click to copy */
