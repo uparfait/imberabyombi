@@ -42,3 +42,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
   }, []);
   return (
     <div className={picking ? 'filebox picking' : 'filebox'}>
+      <div className={view.quiet ? 'files quiet' : 'files'}>{view.files.map((f, i) => file_tile(f, i, view.gen))}</div>
