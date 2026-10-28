@@ -1,6 +1,6 @@
 # Routes
 
-The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on every static host without rules.
+Every page has its own address: `/path?key=value`. The router ([`src/router/`](../src/router/)) reads `location.pathname`
 
 | Area    | Routes                                                                                          |
 |---------|-------------------------------------------------------------------------------------------------|
