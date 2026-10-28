@@ -33,3 +33,4 @@ export const freeze_img_box = on => { frozen = on; };
 const where = new WeakMap();
 function remember(img) { const b = img.closest('.pg_body'); if (b) where.set(img, { i: body_index(b), path: path_to(b, img) }); }
 export function img_now(img) {
+  if (!img || img.isConnected) return img;
