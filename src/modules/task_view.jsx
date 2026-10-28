@@ -42,3 +42,6 @@ export function task_view(id) {
 function hold_scroll(top) {
   const b = qs('#modal form > div.overflow-y-auto'); if (!b) return;
   const pin = () => { b.scrollTop = top; }; pin(); b.addEventListener('scroll', pin); setTimeout(() => b.removeEventListener('scroll', pin), 300);
+}
+
+/* after a change in the task view: redraw the page behind and the view (same scroll), without "discard changes?" on close */
