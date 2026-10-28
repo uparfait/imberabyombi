@@ -7,3 +7,4 @@ import { field_spec, option_list, STATUS, GRADES, SUBJECTS, TERMS, names, tel } 
 export const students_schema = {
   l: 'student', n: 18, cols: ['name', 'regno', 'grade', 'guardian', 'phone', 'status'], sec: { Student: 'name,regno,grade,dob,status', Guardian: 'guardian,phone' },
   f: [
+    field_spec('name', 'Full name', 'text', 0, 1),
