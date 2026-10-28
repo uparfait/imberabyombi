@@ -15,3 +15,4 @@ import { hide_img_sel } from '../content/index.js';
 export let hist_timer = null;
 export function path_to(root, node) {
   const p = [];
+  while (node && node !== root) { if (!node.parentNode) return null; p.unshift(Array.prototype.indexOf.call(node.parentNode.childNodes, node)); node = node.parentNode; }
