@@ -9,3 +9,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
 | Loading (one spinner)     | Every request the user asked for: in the busy button when there is one; on staff pages also the round `#loader` at the top, above open dialogs too | `request(fn, { btn, delay })`, `spinner()`, `loading()` |
 
 ## Inline messages
+- Forms use custom validation; browser error bubbles never show (forms carry `noValidate`).
