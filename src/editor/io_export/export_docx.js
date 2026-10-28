@@ -46,3 +46,4 @@ export async function export_docx(root, name) {
       files.push({ name: 'word/header1.xml', data: docx_header(s.header_html, plain) });
     }
     if (has_footer) {
+      rels.push(`<Relationship Id="rIdF1" Type="${RELNS}/footer" Target="footer1.xml"/>`); sect_refs += '<w:footerReference w:type="default" r:id="rIdF1"/>';
