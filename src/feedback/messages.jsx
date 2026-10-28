@@ -2,3 +2,5 @@
    React renders EMPTY on purpose, e.g. <div data-msg-slot className="empty:hidden" />) with the same box as HTML. */
 import { ic, ic_html } from '../icons/index.js';
 import { TICON } from './basics.js';
+
+/* B. Inline messages (title, text: JSX or text) */
