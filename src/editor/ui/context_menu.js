@@ -11,3 +11,4 @@ export function on_context_menu(e) {
   const at = { x: e.clientX, y: e.clientY }, img = e.target.closest && e.target.closest('.pg_body img');
   if (img) {
     if (state.mode !== 'edit') return;
+    e.preventDefault(); select_image(img); open_menu(null, image_menu_items(img), at); return;
