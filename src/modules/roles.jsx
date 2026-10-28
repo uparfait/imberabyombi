@@ -24,3 +24,4 @@ VIEWS.roles = () => {
   return <div className="grid gap-6 xl:grid-cols-[20rem_minmax(0,1fr)]">
     <section className="card p-3"><header className="flex items-center justify-between p-2"><h2 className="text-lg">Roles</h2>
       {can ? <button className="btn btn_primary btn_sm" data-act="role_new">{ic('plus', 'h-4 w-4')}New role</button> : null}</header>
+      <ul className="grid gap-1">{rs.map(r => <li key={r.id}>
