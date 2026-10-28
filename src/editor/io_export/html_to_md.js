@@ -1,1 +1,2 @@
 /* editor/io_export/html_to_md.js: Markdown (.md): headings, bold / italic / strike marks, links, images, nested and
+   check lists, pipe tables, rules, quotes, code blocks; a page break stays as an HTML page-break div. */
