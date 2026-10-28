@@ -24,3 +24,4 @@
   .brand_toggle:is(:hover, :focus-visible) .bt_open { opacity: 1; scale: 1; }
   @media (min-width: 1024px) { body:has(#sidebar[data-min=true]) .brand_toggle { display: grid; } }
   .scrim { opacity: 0; pointer-events: none; transition: opacity .3s var(--ease); }
+  .scrim.on { opacity: 1; pointer-events: auto; }
