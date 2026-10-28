@@ -13,3 +13,5 @@ export function page_rule_el() {
   let r = document.getElementById('page_rule');
   if (!r) { r = own_rule = el('style', { id: 'page_rule' }); document.head.appendChild(r); }
   return r;
+}
+export function drop_page_rule() { if (own_rule) own_rule.remove(); own_rule = null; }
