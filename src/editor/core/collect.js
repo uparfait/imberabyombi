@@ -10,3 +10,4 @@ export function fix_list_starts() {
   for (let i = 1; i < bs.length; i++) {
     const f = first_flow(bs[i]);
     if (f && f.tagName === 'OL' && f.hasAttribute('data-cont')) {
+      const p = last_flow(bs[i - 1]);
