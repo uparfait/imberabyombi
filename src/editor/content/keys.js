@@ -55,3 +55,4 @@ function same_everywhere(sel, host) { qsa(sel, pages_el).forEach(x => { if (x !=
 export function pages_input(e) {
   const host = editable_of(e.target) || e.target; hide_img_sel();
   if (host.classList.contains('pg_body')) { schedule_reflow(body_index(host)); commit_soon(); }
+  else if (host.classList.contains('pg_header')) { state.setup.header_html = host.innerHTML; same_everywhere('.pg_header', host); }
