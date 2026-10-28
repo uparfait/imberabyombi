@@ -41,3 +41,4 @@ export function tbl_op(op, arg) {
   const drop_cols = () => chain.forEach(t => { const g = t.querySelector(':scope > colgroup'); if (g) g.remove(); });
   let target = null, full = false;
   switch (op) {
+    case 'row_above': case 'row_below': target = cell_at_col(insert_rows(c.tr, arg || 1, op === 'row_below'), slot.start); break;
