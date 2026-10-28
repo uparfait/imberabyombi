@@ -3,3 +3,4 @@
    icon, label, shortcut and submenu arrow on one row, plain line separators. Also the colour palette and the table grid. */
 .ed_menu { max-width: calc(100vw - 1rem); padding: .375rem; border-radius: var(--radius); font-family: var(--font_sans); user-select: none; }
 .ed_menu:not([hidden]) { animation: fade .12s var(--ease); }   /* opacity only: submenus measure rows right away */
+.ed_menu .ed_mi { gap: .625rem; min-height: 2.125rem; padding: .3125rem .75rem .3125rem .5rem; border-radius: calc(var(--radius) * .625); cursor: pointer; }
