@@ -36,3 +36,4 @@ ranking of individual pages matters, switch to path routes (`/about`) with a ser
 pre-render the public pages at build time; the public pages only read static data, so both are straightforward.
 
 ## Before publishing
+Replace the canonical URL, the JSON-LD values, the social image and the sample media. See
