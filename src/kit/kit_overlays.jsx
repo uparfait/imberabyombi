@@ -10,3 +10,4 @@ const TONE_WORD = { ok: 'success', bad: 'error', warn: 'warning', info: 'info' }
 const POP_VIEWS = [['Day', 'D'], ['Week', 'W'], ['Month', 'M'], ['Year', 'Y'], ['Schedule', 'A']];
 
 /* the menu starts closed on every draw, as the reference's fresh markup did (a new ref function, so React calls it each time) */
+const closed_pop = () => el => { if (!el) return; el.hidden = true; el._out?.cancel?.(); el._out = null; };
