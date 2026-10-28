@@ -48,3 +48,4 @@ function card_of(c) {
 }
 
 export function render_comments() {
+  const list = qs('#comment_list'); if (!list) return; list.innerHTML = '';
