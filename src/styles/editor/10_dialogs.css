@@ -7,3 +7,4 @@
   background: repeating-conic-gradient(rgb(var(--surface_3)) 0 25%, rgb(var(--surface)) 0 50%) 0 0 / 1rem 1rem;
 }
 .img_preview img { display: block; max-width: 100%; max-height: 13.75rem; background: none; }
+.slider_row { display: grid; grid-template-columns: 6.25rem minmax(0, 1fr) 2.75rem; align-items: center; gap: .625rem; margin: .25rem 0; font-size: .8125rem; }
