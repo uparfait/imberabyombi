@@ -34,3 +34,4 @@ export function apply_panels() {
   if (refs.sidebar_open) refs.sidebar_open.classList.toggle('show', !state.sidebar);
   cp.classList.toggle('show', !!state.show_comments);
   sc.style.paddingLeft = state.sidebar && wide ? room(sb) : '';
+  sc.style.paddingRight = state.show_comments && wide ? room(cp) : '';
