@@ -8,3 +8,4 @@ export function qr_svg(seed) {
     const box = [[0, 0], [n - 7, 0], [0, n - 7]].find(([a, b]) => x >= a - 1 && x < a + 8 && y >= b - 1 && y < b + 8);
     if (box) {
       const fx = x - box[0], fy = y - box[1]; if (fx < 0 || fy < 0 || fx > 6 || fy > 6) continue;
+      if (Math.max(Math.abs(fx - 3), Math.abs(fy - 3)) !== 2) out.push([x, y]);
