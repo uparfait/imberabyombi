@@ -48,6 +48,7 @@ Every feature below is working code. Each line says what it is and where it live
   grid, check-in/out with fees), roles and access (matrix, landing pages, invite links), email designs, settings
   (theme, live tokens, storage, backup export/import, demo reset, profile).
 
+## Document editor (`src/editor/`, `/admin/docs`)
 ## Data tables (`src/table/`, `src/schemas/`)
 - Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
   Action Buttons column pinned first, details view (COLUMN NAME / VALUE), add, edit, delete.
