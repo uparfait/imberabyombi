@@ -11,3 +11,4 @@
   .task_row { display: flex; width: 100%; align-items: center; gap: .75rem; padding: .625rem .5rem; border-radius: 1rem; text-align: left; transition: background-color .2s; }
   .task_row:hover { background: rgb(var(--fg) / .05); }
   .status_dot { width: .625rem; height: .625rem; flex: none; border-radius: var(--pill); background: rgb(var(--muted) / .5); }
+  .status_dot[data-s="In progress"] { background: rgb(var(--info)); } .status_dot[data-s="Done"] { background: rgb(var(--ok)); }
