@@ -16,3 +16,4 @@
   .sub_group .sub_title { min-width: 0; flex: 1; height: 2.5rem; font-weight: 500; }
   .sub_item { display: flex; align-items: center; gap: .5rem; }
   .sub_item .sub_text { min-width: 0; flex: 1; height: 2.25rem; }
+  /* Task view: details table with a pen per editable row (on hover / focus; always shown on touch screens) */
