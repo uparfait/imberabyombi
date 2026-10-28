@@ -16,3 +16,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Images**: insert from file or URL, resize, crop, rotate, flip, adjust, alt text, border, and positions:
   in line, wrap text left or right, break text, in front of text, behind text. Drag an image to move it.
 - **Links, comments, find and replace, word count, special characters, spelling check, zoom, editing / viewing modes.**
+- **Document tabs**: add, rename, duplicate, delete, drag to reorder, filter when there are many; each tab has its own
