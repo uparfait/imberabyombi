@@ -51,3 +51,4 @@ export const SHELL_ACT = {
   go: t => { close_dialog(qs('#modal')); location.hash = t.dataset.href; },
   cmdk: () => open_cmd(),
   ctx_back: () => history.back(),
+  ctx_reload: () => location.reload(),
