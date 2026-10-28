@@ -3,3 +3,4 @@
    #hruler, #vruler, #tab_list, #page_list, #page_count, #comment_list; it toggles .closed / .show on the panels.
    #sidebar resolves inside the editor root (refs.sidebar): the admin shell has its own #sidebar. */
 import { ic } from '../../icons/index.js';
+import { find_panel } from './floating.jsx';
