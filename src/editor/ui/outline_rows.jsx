@@ -25,3 +25,4 @@ function section_items(row, kb) {
   const k = row._ti, mv = section_moves(k), text = clean_text(row._h);
   return [
     { label: 'Move section up', icon: 'arrow_upward', disabled: !mv.up, no_preview: true, action: () => moved(move_section_by(k, -1), kb) },
+    { label: 'Move section down', icon: 'arrow_downward', disabled: !mv.down, no_preview: true, action: () => moved(move_section_by(k, 1), kb) },
