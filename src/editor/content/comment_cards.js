@@ -52,3 +52,4 @@ export function render_comments() {
   const mine = state.comments.filter(c => c.tab === state.active);
   if (!mine.length) { list.innerHTML = '<p class="outline_hint">Select text and choose <b>Add comment</b> to start a discussion.</p>'; return; }
   const order = qsa('.cmt[data-cid]', pages_el).map(x => x.dataset.cid);
+  mine.sort((a, b) => (order.indexOf(a.id) + 1 || 1e9) - (order.indexOf(b.id) + 1 || 1e9));
