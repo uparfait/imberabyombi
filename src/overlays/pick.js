@@ -59,3 +59,5 @@ export const pick = {
     const w = p.offsetWidth, h = p.offsetHeight;
     p.style.left = Math.max(8, Math.min(r.left, vw - w - 8)) + 'px';
     p.style.top = (h <= below || below >= above ? r.bottom + 4 : Math.max(8, r.top - 4 - h)) + 'px';
+  },
+  slide(n) { slide_in(this.el.querySelectorAll('.pk_title, .pk_grid, .pk_years, .pk_cal > .grid'), n); },
