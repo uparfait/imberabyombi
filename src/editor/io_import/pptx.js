@@ -30,3 +30,4 @@ async function slide_html(z, sp, i) {
       const paras = tx ? kids(tx, 'p').map(para_html).filter(h => h.replace(/<[^>]+>/g, '').trim()) : [];
       if (!paras.length) continue;
       if ((type === 'title' || type === 'ctrTitle') && !title) { title = paras.join(' '); continue; }
+      if (type === 'subTitle') body += paras.map(p => `<p class="subtitle">${p}</p>`).join('');
