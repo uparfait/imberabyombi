@@ -32,7 +32,7 @@ export function contact_sec(full) {
           ['clock', 'Mon to Fri, 08:00 to 17:00']].map(([i, t]) => (
           <p key={i} className="flex items-center gap-4">{i3(i, 'h-11 w-11')}<span className="font-medium">{t}</span></p>
         ))}</address>
-        <iframe className="map mt-8 aspect-[4/3]" src={cfg.map} title="Map showing our location" loading="lazy" referrerPolicy="no-referrer"></iframe></div>
+        </div>
       {contact_form()}</div></section>
   );
 }
