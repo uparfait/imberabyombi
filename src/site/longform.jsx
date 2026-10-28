@@ -17,3 +17,4 @@ export function longform(k) {
     <><h3>{lorem.t(3)}</h3><p>{lorem.p(3)}</p><ul>{li(4)}</ul></>,
     <><figure><img src={cfg.img(k + i, 1200, 700)} alt={lorem.t(4)} width="1200" height="700" loading="lazy" /><figcaption>{lorem.s(6, 10)}</figcaption></figure>
       <p>{lorem.p(3)}</p></>,
+    <><blockquote><p>{lorem.s(14, 22)}</p><footer className="mt-2 text-sm"><cite>{lorem.name()}</cite></footer></blockquote><h4>{lorem.t(3)}</h4><p>{lorem.p(2)}</p>
