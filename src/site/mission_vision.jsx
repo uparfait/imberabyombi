@@ -11,3 +11,4 @@ export function mission_sec(full) {
       <div><p className="kicker">{ic('diamond', 'h-3.5 w-3.5')}Mission</p><h2 className="mt-3 text-3xl sm:text-5xl">{lorem.t(5)}</h2>
         <blockquote className="mt-8"><p>{lorem.s(14, 20)}</p><footer className="mt-3 text-sm text-muted"><cite
           className="text-fg">{lorem.name()}</cite>, {lorem.t(2)}</footer></blockquote>
+        <div className="mt-8 grid gap-4 sm:grid-cols-3">{[0, 1, 2].map(i => (
