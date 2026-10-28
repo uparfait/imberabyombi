@@ -10,3 +10,5 @@ import { task_own, task_mine } from './task_data.js';
 import { task_view } from './task_view.jsx';
 
 const status_btn = r => task_mine(r) ? <button className="btn btn_soft btn_sm whitespace-nowrap" data-act="task_open" data-id={r.id}>Change status</button> : null;
+
+VIEWS.tasks = () => {
