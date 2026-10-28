@@ -11,3 +11,5 @@ export function normalize_url(u) {
   if (/^[a-z][a-z0-9+.-]*:/i.test(u) || u.startsWith('#')) return u;
   if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(u)) return 'mailto:' + u;
   return 'https://' + u;
+}
+export function link_at_caret() { const n = last_range && el_of(last_range.startContainer); return n ? n.closest('.pg_body a') : null; }
