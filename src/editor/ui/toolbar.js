@@ -47,3 +47,4 @@ export function install_toolbar(offs) {
   if (tb) qsa('[data-ed]', tb).forEach(b => {
     const k = b.dataset.ed, key = 'ed_' + k, fn = () => { if (ACTIONS[k]) ACTIONS[k](); };
     if (LIVE_ED.includes(k)) {
+      listen(offs, b, 'pointerenter', e => { if (e.pointerType !== 'touch' && !menu_stack.length && !b.disabled && !field_has_focus()) peek(key, fn); });
