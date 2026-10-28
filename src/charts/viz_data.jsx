@@ -20,3 +20,4 @@ export function data_table(p) {
   return (
     <div className="relative overflow-hidden rounded-2xl border border-line"><div className="overflow-x-auto"><table className="viz_data">
       <thead><tr>{head.map((h, i) => <th key={i} scope="col">{h}</th>)}</tr></thead>
+      <tbody>{rows.slice((p - 1) * VIZ_PER, p * VIZ_PER).map((r, j) => (
