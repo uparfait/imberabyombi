@@ -7,3 +7,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | Token              | Default             | Drives                                                           |
 |--------------------|---------------------|------------------------------------------------------------------|
 | `--brand`          | `224 102 27`        | Primary orange: buttons, links, active states, charts, icons     |
+| `--brand_2`        | `150 62 14`         | Deep rust: gradients, hover, 3D icon depth                       |
