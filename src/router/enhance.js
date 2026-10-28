@@ -37,3 +37,4 @@ export function enhance() {
   qsa('input[type=file]:not([data-import])').forEach(file_box);
   qsa('[data-type]:not(input)').forEach(typer);
   qsa('[data-mp]').forEach(init_player);
+  spy?.disconnect(); spy = null;
