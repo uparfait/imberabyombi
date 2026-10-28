@@ -34,3 +34,5 @@ export function Sub_editor({ groups }) {
   };
   return <><div className="grid gap-3" data-subs="" ref={el => { if (el) API.set(el, api); }}>{gs.map(g => sub_group(g))}</div>
     <button type="button" className="btn btn_ghost btn_sm -ml-3 mt-1" data-act="sub_add">{ic('plus', 'h-4 w-4')}Add a subtask</button></>;
+}
+/* the editor for a list of subtasks; a different list (another record) is a new editor */
