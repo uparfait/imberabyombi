@@ -34,3 +34,4 @@ export function insert_block_at_caret(node) {
 export function insert_page_break() {
   const pb = insert_block_at_caret(el('div', { class: 'page_break', contenteditable: 'false' })); if (!pb) return;
   const after = pb.nextElementSibling; end_op(body_index(editable_of(pb)));
+  if (after && after.isConnected) { caret_to_start(after); scroll_caret_into_view(); }
