@@ -24,3 +24,4 @@ export function footer() {
         ))}</div></div>
         {col('Explore', PUB.map(([k, l]) => [k, l]))}
         {col('Platform', [['login', 'Sign in'], ['admin', 'Dashboard'], ['intro', 'Overview'], ['ui', 'Design system'], ['sitemap', 'Site map']])}
+        <div><h2 className="text-sm font-semibold text-fg">Newsletter</h2><p className="mt-4 text-sm">{lorem.s(8, 12)}</p>
