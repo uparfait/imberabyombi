@@ -30,3 +30,4 @@ export function apply_panels() {
   const sb = refs.sidebar, cp = refs.comments_panel, sc = scroller; if (!sb || !cp || !sc) return;
   const area = refs.workspace || refs.root, wide = (area && area.clientWidth ? area.clientWidth : innerWidth) >= scaled(1000);
   sb.classList.toggle('closed', !state.sidebar);
+  const room = p => Math.round(p.getBoundingClientRect().width || scaled(300)) + 'px';   // the panel's own width (rem-sized in the CSS)
