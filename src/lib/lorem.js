@@ -14,3 +14,4 @@ export const lorem = {
   w(n = 1) { return Array.from({ length: n }, () => lorem.pick(WORDS)).join(' '); },
   t(n = 3) { return cap(lorem.w(n)); },
   s(a = 8, b = 16) { return cap(lorem.w(lorem.int(a, b))) + '.'; },
+  p(n = 3) { return Array.from({ length: n }, () => lorem.s()).join(' '); },
