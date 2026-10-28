@@ -48,3 +48,4 @@ export function editor_start(root) {
   try { document.execCommand('defaultParagraphSeparator', false, 'p'); } catch { /* not supported */ }
   render_all();
   let stopped = false;
+  const t0 = setTimeout(() => { const b = bodies()[0]; if (b) caret_to_start(first_flow(b)); }, 60);
