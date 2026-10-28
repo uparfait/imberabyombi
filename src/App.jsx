@@ -16,7 +16,7 @@ export default function App() {
       {page}
       <Dialog_hosts />
     </>
-  )
+  );
 }
 
 export default App
