@@ -6,3 +6,4 @@ import { inline_xml, parse_pt } from './docx_runs.js';
 export const JC = { left: 'left', start: 'left', center: 'center', right: 'right', end: 'right', justify: 'both' };
 export function p_pr_xml(e, extra = '') {
   const st = e.style || {}; let style = '';
+  if (/^H[1-6]$/.test(e.tagName)) style = 'Heading' + Math.min(+e.tagName[1], 4);
