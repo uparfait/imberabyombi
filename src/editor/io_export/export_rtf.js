@@ -47,3 +47,4 @@ function rtf_blocks(rx, c) {
     const t = n.tagName;
     if (/^(P|H[1-6]|BLOCKQUOTE|PRE)$/.test(t)) o += rtf_para(rx, n); else if (t === 'DIV') o += is_break(n) ? '\\page\n' : rtf_blocks(rx, n);
     else if (is_list(n)) o += rtf_list(rx, n, 0); else if (is_table(n)) o += rtf_table(rx, n);
+    else if (t === 'HR') o += `${RTF_P}\\brdrb\\brdrs\\brdrw10\\brsp20 \\par\n`; else o += `${RTF_P} ${rtf_inline(rx, n, {})}\\par\n`;
