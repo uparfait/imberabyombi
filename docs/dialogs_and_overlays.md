@@ -45,3 +45,4 @@ On pages (not in fields, tables, code or dialogs, which keep the browser's menu)
 signed-in role can open, Back, Reload and an "Allow text selection" switch (remembered).
 
 ## Command palette
+`Ctrl K` / `⌘K` (or the search button in the admin header) opens a searchable list of every page the role can open.
