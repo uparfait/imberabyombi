@@ -3,3 +3,4 @@
 import { qsa, el_of, editable_of, bodies, is_table, last_range, caret_to_start, body_index, toast, begin_op, end_op } from '../core/index.js';
 import { can_edit } from './commands.js';
 import { insert_block_at_caret } from './insert.js';
+import { build_table, apply_preset, restyle_table, row_slots, cell_at_col, new_cell_like, insert_rows, insert_cols, delete_col } from './table_model.js';
