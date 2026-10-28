@@ -62,3 +62,5 @@ function on_up(ev) {
   const i1 = body_index(img.closest('.pg_body'));
   end_op(Math.max(0, Math.min(i0, i1)), !d.abs);
   select_image(img); position_img_box();
+}
+/* Esc (or a cancelled touch): everything goes back as it was */
