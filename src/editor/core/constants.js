@@ -14,3 +14,4 @@ export const FONTS = ['Arial', 'Bricolage Grotesque', 'Comic Sans MS', 'Courier 
   'Times New Roman', 'Trebuchet MS', 'Verdana'];
 export const ZOOMS = [50, 75, 90, 100, 125, 150, 200];
 export const STYLES = [
+  { key: 'p', label: 'Normal text', tag: 'P', css: 'font-size:14px' },
