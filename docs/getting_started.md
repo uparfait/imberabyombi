@@ -7,3 +7,4 @@
 ## Install and run
 ```bash
 npm install        # installs React, Vite and Tailwind (exact versions from package.json)
+npm run dev        # starts the dev server; open the address it prints (usually http://localhost:5173)
