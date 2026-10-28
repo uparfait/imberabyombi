@@ -68,3 +68,4 @@ export function set_img_align(img, a) {
       if (a === 'center') { x.setAttribute('data-pos', 'break'); x.setAttribute('data-align', 'center'); } else x.setAttribute('data-pos', 'wrap_' + a);
     }
     else if (pos === 'break') { if (a === 'left') x.removeAttribute('data-align'); else x.setAttribute('data-align', a); }
+    else { const blk = x.closest('p,h1,h2,h3,h4,h5,h6,li,td,th'); if (blk) blk.style.textAlign = a === 'left' ? '' : a; }
