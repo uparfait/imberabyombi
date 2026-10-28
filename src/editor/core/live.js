@@ -84,3 +84,4 @@ export const live = {
     run(cur);
   },
   cancel() {
+    const s = cur; if (!s) return;
