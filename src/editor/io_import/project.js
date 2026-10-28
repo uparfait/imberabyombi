@@ -21,3 +21,5 @@ export function load_project(d) {
 export function is_doc_empty() {
   const bs = bodies();
   return state.tabs.length === 1 && bs.length === 1 && !bs[0].textContent.replace(/\u200b/g, '').trim() && !bs[0].querySelector('img,table,hr,.file_chip');
+}
+/* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
