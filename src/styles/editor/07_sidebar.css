@@ -15,3 +15,4 @@
 .side_row { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin: .5rem 0 .625rem; padding: 0 .25rem 0 .75rem; }
 .side_gap { margin-top: 1.5rem; }
 .side_title { font: 600 1rem/1.4 var(--font_display); color: rgb(var(--fg)); }
+.side_count { font: 400 .8125rem var(--font_sans); color: rgb(var(--muted)); }
