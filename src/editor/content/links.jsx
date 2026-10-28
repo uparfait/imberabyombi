@@ -21,3 +21,4 @@ export function open_link_dialog(existing) {
   const range = last_range && last_range.cloneRange();
   modal({ title: a ? 'Edit link' : 'Insert link', submit: 'Apply', body: <>
     <div className="field sm:col-span-2"><label htmlFor="lk_text">Text</label><input type="text" id="lk_text" name="text" defaultValue={sel_text} placeholder=" " /></div>
+    <div className="field sm:col-span-2"><label htmlFor="lk_url">Link</label>
