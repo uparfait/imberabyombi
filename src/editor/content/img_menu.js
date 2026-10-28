@@ -30,3 +30,4 @@ export function image_menu_items(img) {
       { label: 'Full width', action: pct(1) }, { sep: true },
       { label: 'Original size', action: () => set_img_width(img, img.naturalWidth) },
       { label: 'Custom size…', icon: 'straighten', no_preview: true, action: off(() => image_size_dialog(img)) }] },
+    { label: 'Rotate and flip', icon: 'rotate_right', sub: () => [
