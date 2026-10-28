@@ -27,3 +27,4 @@ export function ctx_menu() {
 }
 
 function on_contextmenu(e) {
+  const t = e.target;
