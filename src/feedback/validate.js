@@ -31,3 +31,5 @@ export function validate(f) {
   const seen = new Set(); bad.forEach(el => { if (el.type === 'radio') { if (seen.has(el.name)) return; seen.add(el.name); } show_err(el, err_text(el)); });
   if (bad.length) { bad[0].focus(); form_msg(f, 'bad', bad.length > 1 ? `${bad.length} fields need attention` : 'One field needs attention', `Fix the highlighted field${bad.length > 1 ? 's' : ''} and try again.`, false); }
   else { const s = f.querySelector('[data-msg-slot]'); if (s?.querySelector('.msg[data-tone=bad]')) s.innerHTML = ''; }
+  return !bad.length;
+}
