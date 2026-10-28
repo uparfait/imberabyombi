@@ -12,3 +12,4 @@ export function img_op(img, fn) {
   if (img.isConnected) select_image(img);
 }
 export function set_img_width(img, w) {
+  img_op(img, x => {
