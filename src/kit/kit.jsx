@@ -31,3 +31,4 @@ export function kit() {
     <>
       {page_hero('Design system', 'Lorem design system', LEAD, 'layers')}
       <div className="wrap grid gap-10 py-14 lg:grid-cols-[13rem_minmax(0,1fr)]">
+        <nav aria-label="Design system sections" className="lg:sticky lg:top-24 lg:self-start">
