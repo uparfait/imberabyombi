@@ -32,3 +32,4 @@ export function dims() {
 /* tab order helpers (sidebar drag-reorder, Move up / down). move_tab returns the moved tab (or null). */
 export function move_tab(from, to) {
   const n = state.tabs.length;
+  if (from < 0 || from >= n) return null;
