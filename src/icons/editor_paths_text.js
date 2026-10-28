@@ -39,3 +39,4 @@ export const EDITOR_TEXT_PATHS = {
   toc: 'M3 6h12M3 12h12M3 18h12M19 6h2M19 12h2M19 18h2',
   numbers: 'M5 8l3-2v12M5 18h6M13 9a3 3 0 1 1 5.3 1.9L13 18h6',
   tag: 'M4 9h16M4 15h16M10 3 8 21M16 3l-2 18',
+  emoji_symbols: 'M7 3v6M4 6h6M14 4l6 6M20 4l-6 6M4 20l6-6M4.5 14.5h.01M9.5 19.5h.01M17 20a3 3 0 1 0 0-6 3 3 0 0 0 0 6z',
