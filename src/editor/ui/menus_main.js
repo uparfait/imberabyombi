@@ -60,3 +60,4 @@ function full_screen() {
 /* Editing / Viewing (View menu and the toolbar's mode button) */
 export function mode_items() {
   return [{ label: 'Editing', icon: 'edit', checked: state.mode === 'edit', no_preview: true, action: () => set_mode('edit') },
+    { label: 'Viewing', icon: 'visibility', checked: state.mode !== 'edit', no_preview: true, action: () => set_mode('view') }];
