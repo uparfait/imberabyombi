@@ -53,3 +53,4 @@ export function reflow_pageless() {
   const bs = bodies(); const b0 = bs[0]; if (!b0) return;
   if (bs.length > 1) {
     const s = save_sel();
+    for (let j = 1; j < bs.length; j++) { Array.from(bs[j].childNodes).forEach(n => b0.appendChild(n)); remove_page(bs[j]); }
