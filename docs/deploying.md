@@ -46,6 +46,7 @@ location = /index.html { add_header Cache-Control "no-cache"; }
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
 ## Checklist
 - Replace `example.com` in `index.html`, `public/robots.txt` and `public/sitemap.xml`.
 - Run `npm run preview` and click through the public site, the sign-in and one admin module.
