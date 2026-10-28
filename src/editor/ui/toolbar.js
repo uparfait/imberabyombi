@@ -48,3 +48,4 @@ export function install_toolbar(offs) {
     const k = b.dataset.ed, key = 'ed_' + k, fn = () => { if (ACTIONS[k]) ACTIONS[k](); };
     if (LIVE_ED.includes(k)) {
       listen(offs, b, 'pointerenter', e => { if (e.pointerType !== 'touch' && !menu_stack.length && !b.disabled && !field_has_focus()) peek(key, fn); });
+      listen(offs, b, 'pointerleave', () => unpeek_key(key));
