@@ -13,3 +13,4 @@ export function set_last_host(h) { last_host = h || null; }
 export function save_sel() {
   const s = getSelection(); if (!s.rangeCount || !pages_el) return null;
   const r = s.getRangeAt(0); const host = editable_of(r.startContainer);
+  if (!host || !host.classList.contains('pg_body') || !pages_el.contains(host)) return null;
