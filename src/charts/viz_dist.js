@@ -22,3 +22,4 @@ export const VIZ_DIST = {
     const f = frame(w, 250), ax = y_axis(f, 100), x = band(g.length, f.l, f.w - f.r), bw = Math.min(36, x.bw * .5);
     const ln = (x1, x2, y1, y2, sw = 1.5) => `<line x1="${round1(x1)}" x2="${round1(x2)}" y1="${round1(y1)}" y2="${round1(y2)}"`
       + ` style="stroke:var(--series_1);stroke-width:${sw}"/>`;
+    return { svg: svg(f, ax.g + st.map((o, i) => mark_group(g[i],
