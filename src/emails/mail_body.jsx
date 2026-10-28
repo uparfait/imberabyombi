@@ -5,6 +5,7 @@ import { lorem, hash_str, add_d, fmt_time } from '../lib/index.js';
 import { mail_btn, mail_date } from './mails.jsx';
 import { event_mails } from './event_mails.jsx';
 import { account_mails } from './account_mails.jsx';
+import { to } from '../router/index.js';
 
 export function mail_body(k) {
   lorem.seed(hash_str('mail-' + k));
