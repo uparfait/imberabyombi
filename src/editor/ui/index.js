@@ -3,3 +3,4 @@
    (tabs, outline with folding and section moves, pages), rulers, setup / zoom / mode, rendering and install_ui().
    Import from here: import { open_menu, render_all, install_ui } from '../ui/index.js' */
 export * from './ui_dom.js';
+export * from './hover_preview.js';
