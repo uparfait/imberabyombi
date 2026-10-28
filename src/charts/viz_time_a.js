@@ -28,3 +28,4 @@ export const VIZ_TIME_A = {
     const f = frame(w, 260), cum = m.map((_, i) => s.map((__, j) => v.slice(0, j + 1).reduce((t, r) => t + r[i], 0)));
     const ax = y_axis(f, Math.max(...cum.map(r => r.at(-1)))), x = band(m.length, f.l, f.w - f.r);
     const layer = j => {
+      const top = m.map((_, i) => [x(i), ax.y(cum[i][j])]), bot = m.map((_, i) => [x(i), ax.y(j ? cum[i][j - 1] : 0)]).reverse();
