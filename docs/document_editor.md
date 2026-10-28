@@ -6,3 +6,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 [`src/styles/editor/`](../src/styles/editor/), icons in `src/icons/editor_paths*.js`.
 
 ## What it does
+- **Pages**: real paper sizes (Letter, Legal, Tabloid, Executive, A3, A4, A5, B5), portrait or landscape, margins,
