@@ -14,3 +14,5 @@ Two small objects stand between the screens and the data, so a real API replaces
 
 A simple pattern: keep `db` as a cache. Fetch a collection when a page opens, put the rows in the cache, call
 `rerender()`. On save, send the request inside `request()` and update the cache when it answers.
+
+## 2. Requests: `request()` (src/feedback)
