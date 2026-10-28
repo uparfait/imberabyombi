@@ -14,3 +14,4 @@ export const VIZ_PART_B = {
       ch.forEach((o, j) => { const a0 = a; a += o.v / tot * Math.PI * 2;
         parts += mark_group(o.k, [[num(o.v), groups[gi], gi]], ring(arc(cx, cy, rad * .62, rad, a0, a),
           `color-mix(in oklab, ${scale_color(gi)} ${80 - j * 18}%, rgb(var(--surface)))`)); });
+      parts += mark_group(groups[gi], [[num(gv), pct(gv / tot) + ' of total', gi]], ring(arc(cx, cy, rad * .22, rad * .6, g0, a), scale_color(gi))); });
