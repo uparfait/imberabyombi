@@ -26,3 +26,4 @@ export async function docx_run(cx, r) {
   }
   let inner = '';
   for (const c of Array.from(r.children)) {
+    const ln = c.localName;
