@@ -40,3 +40,4 @@ export function number_items() {
     ['i. ii. iii.', 'lower-roman'], ['I. II. III.', 'upper-roman']].map(([l, v]) => ({ label: l, action: () => set_list_type('OL', v) }));
 }
 export function text_items() {
+  return [
