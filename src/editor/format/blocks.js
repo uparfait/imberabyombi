@@ -66,3 +66,4 @@ export function transform_case(mode) {
   const root = el_of(r.commonAncestorContainer);
   const conv = t => mode === 'upper' ? t.toUpperCase() : mode === 'lower' ? t.toLowerCase() : t.toLowerCase().replace(/(^|[\s(\-"'])(\p{L})/gu, (m, a, b) => a + b.toUpperCase());
   text_nodes(root).filter(t => r.intersectsNode(t)).forEach(t => {
+    const a = t === r.startContainer ? r.startOffset : 0, b = t === r.endContainer ? r.endOffset : t.length;
