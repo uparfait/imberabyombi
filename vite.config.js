@@ -13,5 +13,6 @@ export default defineConfig({
     reportCompressedSize: true, /* shows the gzip size of every file after a build */
     rolldownOptions: {
       output: {
+        /* React in its own file: it rarely changes, so returning visitors keep it cached when the site is updated */
   }
 });
