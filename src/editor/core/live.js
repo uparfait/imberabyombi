@@ -91,3 +91,4 @@ export const live = {
   /* keep the preview as one history step; with a different fn (or no preview) run fn normally */
   keep(fn) {
     const s = cur;
+    if (s && (!fn || fn === s.fn)) { keeps++; cur = null; s.kept = true; s.restores = []; if (!s.pending) finish(s); return; }
