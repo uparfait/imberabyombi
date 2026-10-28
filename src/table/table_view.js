@@ -13,3 +13,5 @@ export function sync_tools(c) {
   const q = ui.q[c] || {}, v = tview(c);
   qsa(`[data-search="${c}"]`).forEach(el => { const want = q[el.dataset.k] || ''; if (el.value !== want) el.value = want; });
   qsa(`[data-table-per="${c}"]`).forEach(el => { el.checked = +el.value === v.per; });
+  qsa(`[data-table-col="${c}"]`).forEach(el => { el.checked = !v.hide.includes(el.value); });
+}
