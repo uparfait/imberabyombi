@@ -37,3 +37,4 @@ The Export menu offers CSV, JSON and Excel. The dialog then asks for:
 Rows follow the table's current search, then the dialog's range and filters. Files are named `<collection>-<date>.<ext>`.
 
 ## Under the hood
+- Rows come from `rows_of(c)`: the schema's data, the page's filter, the column searches, then the sort.
