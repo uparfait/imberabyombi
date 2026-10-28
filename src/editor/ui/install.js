@@ -21,3 +21,4 @@ function install_menubar(offs) {
   const bar = refs.menubar; if (!bar) return;
   qsa('[data-menu]', bar).forEach(b => {
     const items = () => (MENUS[b.dataset.menu] ? MENUS[b.dataset.menu]() : []);
+    listen(offs, b, 'mousedown', e => e.preventDefault());
