@@ -21,3 +21,4 @@ export function Task_view({ id }) {
   return <div className="grid min-w-0 gap-6 sm:col-span-2" data-task={r.id} ref={tv_tie(api)}>
     <div className="kv_wrap relative min-w-0 rounded-2xl border border-line"><table className="kv tv">
       <thead><tr><th scope="col">Column name</th><th scope="col">Value</th></tr></thead><tbody>{tv_rows(r, st)}</tbody></table></div>
+    {tv_comments(r, st)}
