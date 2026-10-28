@@ -57,3 +57,4 @@ export function draw_v_ruler() {
    template's hover handling whenever the ruler redraws under the pointer) */
 const VALUE_CSS = 'position:fixed;z-index:400;padding:.25rem .5rem;border-radius:calc(var(--radius) * .5);font:500 .75rem/1rem var(--font_sans);'
   + 'color:rgb(var(--bg));background:rgb(var(--fg) / .92);pointer-events:none;white-space:nowrap';
+let value_el = null;
