@@ -1,3 +1,4 @@
 /* styles/editor/11_print.css: printing (File > Print, Ctrl+P) while the editor is on screen: only the pages print, one
    paper page per page (the page setup's @page rule is written into <style id="page_rule"> by the engine). Everything
    around the editor (admin sidebar, header, panels, menus, notifications) and the editor's own chrome is left out.
+   Scoped with :has(#editor), so the rules do nothing on other pages after the editor's styles have loaded. */
