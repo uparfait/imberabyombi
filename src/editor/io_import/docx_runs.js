@@ -46,3 +46,4 @@ const SKIP = /^(pPr|rPr|del|moveFrom|proofErr|bookmarkStart|bookmarkEnd|commentR
 export async function docx_runs(cx, n) {
   let h = '';
   for (const c of Array.from(n.children)) {
+    const ln = c.localName;
