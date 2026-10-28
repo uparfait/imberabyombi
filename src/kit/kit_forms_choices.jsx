@@ -18,3 +18,5 @@ export function kit_forms_choices(brand_hex) {
     <div className="field"><label htmlFor="demo_list">Input with suggestions</label>
       <input id="demo_list" data-list="demo_list_options" placeholder="Type to search" autoComplete="off" />
       <datalist id="demo_list_options">{Array.from({ length: 8 }, (_, i) => <option key={i} value={lorem.t(2)}></option>)}</datalist></div>
+  );
+  const multi = Array.from({ length: 10 }, () => lorem.t(2));   /* the first two start selected */
