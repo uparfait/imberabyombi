@@ -66,3 +66,4 @@ function clean(node) {
     if (tag === 'IMG' && !keep.src) { c.remove(); continue; }
     if (c.classList.contains('page_break') || c.classList.contains('file_chip')) c.setAttribute('contenteditable', 'false');
     if (tag === 'TABLE') c.classList.add('doc_table');
+    if (tag === 'B' && /font-weight:\s*(normal|400)/.test(keep.style || '')) c.replaceWith(...c.childNodes);
