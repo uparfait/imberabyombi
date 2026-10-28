@@ -40,3 +40,4 @@ export function pick(key, fn, done) {
   if (!kept) fn();
 }
 /* hover (mouse / pen) previews, leaving restores, a click keeps: for elements that live as long as their menu */
+export function peek_on(node, key, fn, done) {
