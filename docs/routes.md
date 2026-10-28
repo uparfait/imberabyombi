@@ -6,3 +6,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
 |---------|-------------------------------------------------------------------------------------------------|
 | Public  | `#/` `#/about` `#/mission` `#/vision` `#/strategies` `#/staff` `#/partners` `#/thanks` `#/contact` |
 | Public  | `#/intro` (hero detail), `#/sitemap` (footer detail, legal), `#/ui` (design system)              |
+| Account | `#/login` `#/forgot` `#/verify` `#/authenticator` `#/set-password` (one shared account shell)     |
