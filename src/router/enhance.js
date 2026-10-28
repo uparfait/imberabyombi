@@ -23,3 +23,4 @@ export function typer(el) {
 }
 
 let spy = null;   /* the home page's section spy (one at a time: React keeps the sections across redraws) */
+export function enhance() {
