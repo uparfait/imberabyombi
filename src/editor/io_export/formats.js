@@ -5,3 +5,4 @@ import { save_project, export_root } from './project_file.js';
 import { export_html, export_txt } from './export_text.js';
 import { export_md } from './html_to_md.js';
 import { export_pdf } from './export_pdf.js';
+import { export_rtf } from './export_rtf.js';
