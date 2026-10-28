@@ -24,3 +24,4 @@ export function Upload_body({ up }) {
   const { files, m } = use_up(up), zone = useRef(null), input = useRef(null), [over, set_over] = useState(false);
   const add = fl => up.set({ files: [...up.get().files, ...Array.from(fl || [])] });
   useEffect(() => { const t = setTimeout(() => zone.current?.focus(), 60); return () => clearTimeout(t); }, []);
+  const drag_in = e => { e.preventDefault(); e.stopPropagation(); set_over(true); };
