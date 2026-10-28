@@ -17,3 +17,4 @@ export function count_up(el) {
 export function typer(el) {
   let w; try { w = JSON.parse(el.dataset.type); } catch { return; }
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = w[0]; return; }
+  let i = 0, j = 0, del = false, hold = 0;
