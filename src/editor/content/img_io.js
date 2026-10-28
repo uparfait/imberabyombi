@@ -44,3 +44,5 @@ export async function on_image_replace(e) {
   const f = e.target.files[0]; e.target.value = ''; const img = replace_target; set_replace_target(null);
   if (!f || !img || !img.isConnected) return;
   const url = await read_as_data_url(f);
+  img_op(img, x => { x.setAttribute('src', url); x.removeAttribute('data-orig'); x.style.height = ''; });
+}
