@@ -17,3 +17,4 @@ const none = text => <li className="text-sm text-muted">{text}</li>;
 const task_li = x => <li key={x.id}><button type="button" className="task_row" data-act="task_open" data-id={x.id}>
   <span className="status_dot" data-s={x.status} aria-hidden="true"></span>
   <span className="min-w-0 flex-1"><span className="block truncate text-sm">{x.title}</span>{x.due ? due_tag(x) : null}</span>{badge(x.priority)}</button></li>;
+const up_li = i => <li key={i.c + i.id} className="flex gap-3">
