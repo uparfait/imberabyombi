@@ -23,3 +23,4 @@ const toast_demo = (
 export const kit_overlays = () => (
   <>
     <div className="grid max-w-2xl gap-3">{[0, 1].map(i => (
+      <details key={i} open={!i}><summary>{lorem.t(4)}?</summary><p className="px-5 pb-5 pt-3 text-muted">{lorem.p(2)}</p></details>
