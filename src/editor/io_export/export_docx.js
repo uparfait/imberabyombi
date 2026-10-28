@@ -18,3 +18,4 @@ const num_of = n => `<w:num w:numId="${n.num_id}"><w:abstractNumId w:val="${n.ab
 export async function export_docx(root, name) {
   toast('Preparing Word document…', 0);
   try {
+    await prepare_images(root);
