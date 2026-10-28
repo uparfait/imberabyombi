@@ -20,3 +20,4 @@
   .tile_link.active { background: rgb(var(--surface)); outline: 2px solid rgb(var(--brand) / .45); outline-offset: -2px; font-weight: 600; }
   /* The row of level menus stays pinned under the header while the page scrolls, so another level is always one click away */
   .nav_row { display: flex; flex-wrap: wrap; align-items: center; gap: .375rem; }
+  /* System pages: the row slides up into the dashboard header and stays there, so there is only one header bar. It sits just
