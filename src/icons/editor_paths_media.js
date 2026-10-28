@@ -20,3 +20,4 @@ export const EDITOR_MEDIA_PATHS = {
   vertical_align_bottom: 'M4 21h16M12 3v13M8 12l4 4 4-4',
   border_style: 'M4 20V4h16M8 20h2M14 20h2M20 20h.01M20 14v2M20 8v2',
   border_color: 'M4 21h16M14.5 4.5l3 3L9 16H6v-3z',
+  rounded_corner: 'M20 4h-6A10 10 0 0 0 4 14v6M20 12v.01M20 20h.01M12 20h.01',
