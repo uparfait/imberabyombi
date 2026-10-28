@@ -21,3 +21,4 @@ export const employees_schema = {
   l: 'employee', n: 16, cols: ['name', 'dept', 'position', 'shift', 'phone', 'status'],
   sec: { Person: 'name,phone', Job: 'dept,position,shift', Employment: 'salary,status' },
   f: [
+    field_spec('name', 'Full name', 'text', 0, 1), field_spec('dept', 'Department', 'select', DEPTS, 1), field_spec('position', 'Position'),
