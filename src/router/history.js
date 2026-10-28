@@ -27,3 +27,4 @@ export const mark_shown = () => { shown = here(); };
 export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
   return request(() => { render_flags.nav_fetched = get;
     if (!document.startViewTransition || reduced()) return render();
+    document.startViewTransition(() => render()).ready.catch(() => {}); }, { delay: get ? cfg.latency : 0 }); };
