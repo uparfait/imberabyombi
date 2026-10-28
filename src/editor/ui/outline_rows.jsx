@@ -67,3 +67,4 @@ function on_down(e, row) {
   const ol = row.parentElement; let m = null;
   const model = () => m || (m = section_model());
   row_drag(e, {
+    row, list: ol, cls: 'outline_drag_over', scrollers: [ol.closest('.tab_scroll'), refs.sidebar],
