@@ -8,3 +8,4 @@ export function content_width_px() { const { w } = dims(), m = state.setup.margi
 /* an image as wide as it is (at most the text width, and 90% of the text height), in its own paragraph unless inline */
 export async function fit_img_html(url, alt, inline) {
   let w = 320;
+  try {
