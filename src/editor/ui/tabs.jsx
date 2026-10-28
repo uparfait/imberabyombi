@@ -21,3 +21,5 @@ export function switch_tab(id) {
 export function next_tab_name() {
   const names = new Set(state.tabs.map(t => t.name));
   for (let n = state.tabs.length + 1; ; n++) if (!names.has('Tab ' + n)) return 'Tab ' + n;
+}
+export function add_tab() {
