@@ -25,3 +25,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 | `filter(row)`   | show only some rows (e.g. a tab of the same collection)                        |
 | `preset`        | values a new record starts with                                                |
 | `acts(row, can)`| extra Action Buttons for a row (JSX or nothing)                                |
+| `can_row(row)`  | whether this row can be edited or deleted                                      |
