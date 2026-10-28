@@ -14,3 +14,4 @@
 
   /* Text fields, selects, textareas: Imberabyombi outlined fields (4px corners, 1px outline, 2px brand ring on focus, no shadow).
      Background follows --field, so a label notched into the border always matches the surface behind it. */
+  input:where(:not([type=checkbox],[type=radio],[type=range],[type=color],[type=file],[type=hidden],[type=submit],[type=button],[type=reset])), select, textarea {
