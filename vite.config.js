@@ -2,6 +2,7 @@
    base './' keeps every asset path relative, so the built site works from any folder:
    GitHub Pages, a sub-path on a server, or any static host, without changing a setting. */
 import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
