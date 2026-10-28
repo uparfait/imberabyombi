@@ -3,3 +3,4 @@
 import { esc_html, read_as_data_url } from '../core/index.js';
 import { PROJECT_APP } from '../io_export/index.js';
 import { fmt_size } from './file_helpers.js';
+import { rows_to_table, trim_rows, code_to_html } from './tables.js';
