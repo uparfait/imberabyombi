@@ -2,13 +2,5 @@
 <!-- sitemap.xml: the public pages for search engines. Replace example.com with your domain before publishing. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://example.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://example.com/#/about</loc></url>
-  <url><loc>https://example.com/#/mission</loc></url>
-  <url><loc>https://example.com/#/vision</loc></url>
-  <url><loc>https://example.com/#/strategies</loc></url>
-  <url><loc>https://example.com/#/staff</loc></url>
-  <url><loc>https://example.com/#/partners</loc></url>
-  <url><loc>https://example.com/#/thanks</loc></url>
-  <url><loc>https://example.com/#/contact</loc></url>
-  <url><loc>https://example.com/#/ui</loc><priority>0.5</priority></url>
+  <url><loc>https://example.com/about</loc></url>
 </urlset>
