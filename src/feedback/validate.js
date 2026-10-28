@@ -18,3 +18,4 @@ export function err_text(el) {
   return el.validationMessage || 'Check this field.';
 }
 export function clear_err(el) { el.removeAttribute('aria-invalid'); const id = el.getAttribute('aria-describedby'); if (id?.startsWith('err_')) { document.getElementById(id)?.remove(); el.removeAttribute('aria-describedby'); } }
+export function show_err(el, msg) {
