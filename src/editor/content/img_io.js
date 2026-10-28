@@ -34,3 +34,4 @@ export async function insert_image(src) {
   if (im.naturalHeight * w / im.naturalWidth > host.clientHeight * 0.9) w = Math.floor(host.clientHeight * 0.9 * im.naturalWidth / im.naturalHeight);
   begin_op();
   const img = el('img', { src, style: `width:${w}px`, alt: '', draggable: 'false' });
+  const s = getSelection(), r = s.getRangeAt(0); r.deleteContents(); r.insertNode(img); r.setStartAfter(img); r.collapse(true); s.removeAllRanges(); s.addRange(r);
