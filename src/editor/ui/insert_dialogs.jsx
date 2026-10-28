@@ -43,3 +43,4 @@ export function image_url_dialog(target) {
       const u = String(v.img_url || '').trim();
       if (!/^https?:\/\//i.test(u)) { show_err(f.querySelector('#img_url'), 'Enter an address that starts with http:// or https://'); return false; }
       after_close(() => {
+        if (target) img_op(target, () => { target.setAttribute('src', u); target.removeAttribute('data-orig'); target.style.height = ''; });
