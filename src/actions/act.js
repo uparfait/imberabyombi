@@ -8,3 +8,4 @@ import { TABLE_ACT } from './act_tables.jsx';
 import { PICKER_ACT } from './act_picker.js';
 import { FILE_ACT } from './act_files.js';
 import { ADMIN_ACT } from './act_admin.js';
+import { ROLE_ACT } from './act_roles.jsx';
