@@ -44,3 +44,4 @@ async function docx_image(cx, c) {
 }
 const SKIP = /^(pPr|rPr|del|moveFrom|proofErr|bookmarkStart|bookmarkEnd|commentRangeStart|commentRangeEnd)$/;
 export async function docx_runs(cx, n) {
+  let h = '';
