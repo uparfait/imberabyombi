@@ -3,3 +3,4 @@
    the actions flip in place (React only writes an attribute when its value changes; the reference drew fresh HTML). */
 import { Fragment, useLayoutEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
+import { get_version } from '../store/index.js';
