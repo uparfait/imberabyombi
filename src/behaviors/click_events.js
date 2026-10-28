@@ -22,7 +22,7 @@ function on_click(e) {
   /* Sidebar: the clicked link shows the spinner in place of its icon while the page loads (the redraw brings the icon back).
      React owns the link, so the spinner is state (use_nav_busy); aria-busy is set at once, the redraw clears it. */
   const sl = e.target.closest('#sidebar a.side_link[href]');
-  if (sl && sl.getAttribute('href') !== location.hash && !e.ctrlKey && !e.metaKey && !e.shiftKey) { sl.setAttribute('aria-busy', 'true'); set_nav_busy(sl.getAttribute('href')); }
+  if (sl && sl.getAttribute('href') !== location.pathname + location.search && !e.ctrlKey && !e.metaKey && !e.shiftKey) { sl.setAttribute('aria-busy', 'true'); set_nav_busy(sl.getAttribute('href')); }
   const sec = e.target.closest('a[data-sec]');
   if (sec) { const el = qs('#s_' + sec.dataset.sec); close_dialog(qs('#drawer')); if (route.path === '/' && el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } }
   else if (e.target.closest('#drawer a')) close_dialog(qs('#drawer'));
