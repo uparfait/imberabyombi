@@ -27,3 +27,4 @@ function Crop_body({ src, st }) {
       set_rect({ x: Math.min(sx, x), y: Math.min(sy, y), w, h });
     };
     const up = () => { stage.removeEventListener('pointermove', move); stage.removeEventListener('pointerup', up); };
+    stage.addEventListener('pointermove', move); stage.addEventListener('pointerup', up);
