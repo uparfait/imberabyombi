@@ -10,3 +10,4 @@ export const tip = {
   find(n) { for (let x = n?.closest?.(TIPS); x; x = x.parentElement?.closest(TIPS)) if (this.text(x)) return x; return null; },
   show(x) {
     if (x === this.on) return; this.hide(); this.on = x;
+    this.t = setTimeout(() => {
