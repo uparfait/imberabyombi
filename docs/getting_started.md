@@ -35,3 +35,4 @@ All storage keys start with `loremds:v1:` (`window.NS` in `index.html`); change 
 
 ## Next
 - [Project structure](project_structure.md): where everything lives.
+- [Design tokens](design_tokens.md): make it your brand in a few lines.
