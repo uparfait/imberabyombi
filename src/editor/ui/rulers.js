@@ -6,7 +6,7 @@
 import { state, refs, hruler, vruler, scroller, DPI, dims, page_wraps, layout_page, clamp, begin_op, commit, save_soon, default_setup } from '../core/index.js';
 import { tip } from '../../overlays/index.js';
 import { apply_setup } from './view.js';
-import { scaled } from './ui_dom.js';
+import { scaled, mi } from './ui_dom.js';
 
 const u = n => +scaled(n).toFixed(2);
 
