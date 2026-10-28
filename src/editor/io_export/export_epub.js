@@ -20,3 +20,4 @@ export async function export_epub(scope, name) {
     qsa('.file_chip', d).forEach(a => a.replaceWith(document.createTextNode(a.textContent)));
     qsa('[contenteditable]', d).forEach(x => x.removeAttribute('contenteditable'));
     await prepare_images(d);
+    qsa('img', d).forEach(img => {
