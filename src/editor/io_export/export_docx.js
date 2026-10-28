@@ -32,3 +32,4 @@ export async function export_docx(root, name) {
       },
       new_num(l) {
         const kind = list_kind(l); if (!abstracts.has(kind)) abstracts.set(kind, abstracts.size); const num_id = nums.length + 1;
+        nums.push({ num_id, abs: abstracts.get(kind), start: parseInt(l.getAttribute('start')) || 1 }); return num_id;
