@@ -37,3 +37,4 @@
 }
 
 /* Pageless: one long sheet with side lines; page breaks show as a dashed line */
+.pageless .page_wrap > .page { outline: 0; border-left: 1px solid rgb(var(--line)); border-right: 1px solid rgb(var(--line)); }
