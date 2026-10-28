@@ -24,3 +24,4 @@ export const VIZ_TIME_B = {
       table: [['Day', 'Open', 'High', 'Low', 'Close'], days.map(d => [d.k, round1(d.o), round1(d.hi), round1(d.lo), round1(d.c)])] }; } },
   slope: { t: 'Slope chart', g: 'time', d: 'Change between two moments for each item.', f(w) {
     const c = uwords(6), a = c.map(() => rnd(20, 80)), b = a.map(v => Math.max(5, v + rnd(-25, 25))), f = frame(w, 260, { l: 92, r: 92, t: 30, b: 16 });
+    const y = linear(0, 100, f.t + f.ih, f.t), xa = f.l + 10, xb = f.w - f.r - 10;
