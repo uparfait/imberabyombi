@@ -15,3 +15,4 @@ export function kpi_data() {
   const gauge_s = gauge_p > .85 ? 'Almost full' : gauge_p > .7 ? 'Getting full' : 'Plenty of space';
   const services = [['API', 'ok', 'Operational'], ['Email', 'warn', 'Slower than usual'], ['Storage', 'ok', 'Operational']], o1 = 3480 * m, o2 = 3120 * m;
   const visits = to(trend(), 18400 * m), vmax = Math.max(...visits);
+  const src = ['Search', 'Social', 'Email'], split = [rnd(30, 50), rnd(20, 35), rnd(10, 25)], st = split.reduce((a, b) => a + b);
