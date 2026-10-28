@@ -28,3 +28,4 @@
 @keyframes page { from { opacity: 0; transform: translateY(.5rem); } }
 @keyframes pop { from { opacity: 0; transform: translateY(.6rem) scale(.98); } }
 @keyframes slide { from { transform: translateX(100%); } }
+@keyframes fade { from { opacity: 0; } }
