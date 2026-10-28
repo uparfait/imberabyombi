@@ -9,3 +9,4 @@ const ring = (d, fill) => `<path class="mark" d="${d}" style="fill:${fill};strok
 export const VIZ_PART_B = {
   sunburst: { t: 'Sunburst chart', g: 'part', d: 'A hierarchy as rings: groups inside, their parts outside.', f(w) {
     const groups = SER.slice(0, 3), kids = groups.map(() => uwords(3).map(k => ({ k, v: rnd(5, 30) }))), tot = kids.flat().reduce((s, o) => s + o.v, 0);
+    const f = frame(w, 260, { l: 0, r: 0, t: 6, b: 6 }), rad = Math.min(120, f.ih / 2), cx = f.w / 2, cy = f.t + f.ih / 2; let a = 0, parts = '';
