@@ -7,3 +7,4 @@ export function raise_top() {
   for (const el of [document.getElementById('toasts'), document.getElementById('loader')]) { if (!el?.showPopover) continue;
     const bars = qsa('.toast', el).map(n => [n, new DOMMatrix(getComputedStyle(n.querySelector('.bar')).transform).a]);
     if (el.matches(':popover-open')) el.hidePopover(); el.showPopover();
+    bars.forEach(([n, s]) => { n.classList.add('raised'); n.querySelector('.bar').style.animationDelay = `-${(1 - s) * parseFloat(n.style.getPropertyValue('--life'))}ms`; }); }
