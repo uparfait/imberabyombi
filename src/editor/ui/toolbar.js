@@ -23,3 +23,5 @@ export const ACTIONS = {
   size_down: () => bump_size(-1), size_up: () => bump_size(1), bold: () => exec('bold'), italic: () => exec('italic'), underline: () => exec('underline'),
   link: () => open_link_dialog(), comment: () => add_comment(), checklist: () => toggle_checklist(), bullets: () => toggle_list('UL'),
   numbers: () => toggle_list('OL'), outdent: () => indent(-1), indent: () => indent(1), clear: () => clear_formatting()
+};
+/* the [data-ed] buttons whose effect shows on hover */
