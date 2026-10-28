@@ -14,3 +14,4 @@
   #viz_tip span { color: rgb(var(--muted)); }
   /* KPI designs */
   .kpi { display: flex; min-width: 0; flex-direction: column; gap: .25rem; padding: 1.25rem; }
+  .kpi_label { font-size: .875rem; color: rgb(var(--muted)); }
