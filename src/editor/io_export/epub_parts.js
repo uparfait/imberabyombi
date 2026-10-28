@@ -11,3 +11,4 @@ export const epub_chapter = (title, xb) => XHTML_HEAD + ' xml:lang="en"><head><m
   + `<body><section class="doc_content">${xb}</section></body></html>`;
 
 export const EPUB_CONTAINER = '<?xml version="1.0" encoding="UTF-8"?><container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">'
+  + '<rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/></rootfiles></container>';
