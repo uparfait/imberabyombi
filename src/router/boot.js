@@ -14,3 +14,5 @@ import { before_page } from './render_hooks.js';
 export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
   return request(() => { render_flags.nav_fetched = get; document.startViewTransition && !reduced() ? document.startViewTransition(() => render()) : render(); },
     { delay: get ? cfg.latency : 0 }); };
+
+/* Web component: <ds-callout> clones #tpl_callout into its shadow root */
