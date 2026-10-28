@@ -63,3 +63,4 @@ export function caret_rect(r) {
   return n.getBoundingClientRect();
 }
 export function scroll_caret_into_view() {
+  const s = getSelection(); if (!s.rangeCount || !scroller) return;
