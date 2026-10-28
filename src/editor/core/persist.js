@@ -38,6 +38,7 @@ set_on_change(save_soon);
 
 /* the saved document: IndexedDB first; a copy saved earlier in localStorage moves there */
 export async function load_doc() {
+  if (apply_doc(await idb_get(DOC_KEY))) return true;
   const tabs = d && Array.isArray(d.tabs) ? d.tabs.filter(t => t && typeof t === 'object') : [];
   if (!tabs.length) return false;
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
