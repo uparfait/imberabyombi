@@ -59,3 +59,4 @@ function clean(node) {
     const tag = c.tagName;
     if (DROP.has(tag)) { c.remove(); continue; }
     clean(c);
+    if (!ALLOWED.has(tag) || (tag === 'B' && /^docs-internal-guid/.test(c.id || ''))) { c.replaceWith(...c.childNodes); continue; }
