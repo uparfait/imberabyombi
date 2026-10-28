@@ -1,1 +1,2 @@
 /* editor/io_import/unzip.js: a small zip reader (stored and deflate entries, the browser's DecompressionStream) for
+   the office formats: names(), has(name), bytes(name), text(name), data_url(name) (images only). Names match case-insensitively. */
