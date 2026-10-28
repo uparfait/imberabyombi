@@ -6,3 +6,4 @@ export * from './pages.jsx';
 export * from './enhance.js';
 export * from './render_hooks.js';
 export * from './render_route.jsx';
+export * from './boot.js';
