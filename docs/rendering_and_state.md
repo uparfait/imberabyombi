@@ -33,3 +33,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 | Name             | Use                                                                        |
 |------------------|----------------------------------------------------------------------------|
 | `after_render(fn)` / `AFTER` | run once after the next draw (draw a chart, focus a field)     |
+| `TIMERS`         | intervals that belong to the current page (`TIMERS.push(setInterval(...))`); cleared on every draw |
