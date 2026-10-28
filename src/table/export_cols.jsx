@@ -9,3 +9,4 @@ export function Export_cols({ c }) {
   const cols = schemas[c].cols, ref = useRef(null), [on, set_on] = useState(() => Object.fromEntries(cols.map(k => [k, true])));
   const any = cols.some(k => on[k]);
   /* the Download button is the dialog's footer submit (drawn by modal()): its disabled flag follows the ticks */
+  useLayoutEffect(() => { const b = ref.current?.form?.querySelector('footer button:not([type=button])'); if (b) b.disabled = !any; }, [any]);
