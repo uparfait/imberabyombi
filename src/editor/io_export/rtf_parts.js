@@ -57,3 +57,4 @@ export function rtf_para(rx, e) {
   else if (e.classList.contains('title')) { f = { size: 26 }; pre += '\\sa60'; }
   else if (e.classList.contains('subtitle')) { f = { size: 15, color: '666666' }; pre += '\\sa320'; }
   else if (e.tagName === 'PRE') f = { font: 'Courier New', size: 10 };
+  const al = { center: '\\qc', right: '\\qr', end: '\\qr', justify: '\\qj' }[st.textAlign]; if (al) pre += al;
