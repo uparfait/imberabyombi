@@ -22,3 +22,5 @@ function fonts_in(host, r) {
     while (e && e !== host && !e.style?.fontFamily && !e.getAttribute?.('face')) e = e.parentElement;
     if (e && e !== host) m.set(n, e.style.fontFamily || e.getAttribute('face')); }
   return m;
+}
+const font_of = (x, fonts) => { const w = document.createTreeWalker(x, NodeFilter.SHOW_TEXT); for (let n = w.nextNode(); n; n = w.nextNode()) if (fonts.get(n)) return fonts.get(n); return ''; };
