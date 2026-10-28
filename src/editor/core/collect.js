@@ -22,3 +22,5 @@ export function collect_html() {
   const c = document.createElement('div');
   bodies().forEach((b, i) => Array.from(b.childNodes).forEach(n => {
     const k = n.cloneNode(true); if (is_abs(k)) k.setAttribute('data-page', String(i)); c.appendChild(k);
+  }));
+  join_conts(c);
