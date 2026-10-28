@@ -29,3 +29,4 @@ export function notify(text, tone = 'ok', title) {
   n.querySelector('[data-ico]').innerHTML = ic_html(TICON[tone] || 'check', 'h-4 w-4');
   n.querySelector('[data-title]').textContent = title || TTITLE[tone] || TTITLE.ok;
   n.querySelector('[data-msg]').textContent = text;
+  let left = life, t0 = 0, tm;
