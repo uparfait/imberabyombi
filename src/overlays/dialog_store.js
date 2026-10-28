@@ -17,3 +17,4 @@ export function set_dialog(id, content) {
 }
 /* body / actions / render: JSX, or a function returning JSX (called on every draw, so rerender() refreshes an open view).
    An error there is logged and leaves the part empty instead of taking the page down. */
+export const run_view = v => { try { return typeof v === 'function' ? v() : v; } catch (e) { console.error(e); return null; } };
