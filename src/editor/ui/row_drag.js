@@ -11,3 +11,4 @@ export function row_drag(e, o) {
   let on = false, py = y0, val = null, line = null, raf = 0;
   const place = () => {
     const rs = o.rows(); let g = rs.length;
+    for (let i = 0; i < rs.length; i++) { const b = rs[i].getBoundingClientRect(); if (py < b.top + b.height / 2) { g = i; break; } }
