@@ -28,3 +28,4 @@ In `src/auth/mods.js`, add an entry to `MODS` (key, label, short label, icon, si
 
 ## 3. Draw the view
 `src/modules/transport.jsx`:
+```jsx
