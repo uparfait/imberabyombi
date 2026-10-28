@@ -4,3 +4,4 @@
 import { qs, begin_op, end_op, body_index } from '../core/index.js';
 import { palette_el, image_url_dialog } from '../ui/index.js';
 import { previewing } from '../format/index.js';
+import { img_op, set_img_width, rotate_image, flip_image, set_img_border, set_img_border_color, reset_image, cap } from './img_ops.js';
