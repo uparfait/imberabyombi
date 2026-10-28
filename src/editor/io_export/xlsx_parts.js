@@ -29,3 +29,4 @@ export const sheet_xml = s => {
     x += `<row r="${ri + 1}">`;
     r.forEach((v, ci) => {
       v = v == null ? '' : String(v); if (!v) return;
+      const ref = col_name(ci) + (ri + 1), hd = s.hdr && ri === 0, sty = hd ? ' s="1"' : v.includes('\n') ? ' s="2"' : '', tv = v.trim();
