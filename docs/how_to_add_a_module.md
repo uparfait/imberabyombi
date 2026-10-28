@@ -22,3 +22,4 @@ Register it in `src/schemas/schemas.js`: import it and add `buses: buses_schema`
 
 ## 2. Add the module
 In `src/auth/mods.js`, add an entry to `MODS` (key, label, short label, icon, sidebar group):
+```js
