@@ -40,3 +40,4 @@ export function task_view(id) {
 /* the redrawn view opens at the same scroll; its form focuses its first field 50 ms later, which would scroll that field into
    view, so the position is held for that moment */
 function hold_scroll(top) {
+  const b = qs('#modal form > div.overflow-y-auto'); if (!b) return;
