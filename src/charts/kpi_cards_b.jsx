@@ -29,3 +29,4 @@ export const kpi_cards_b = k => {
       [['Measure', 'Value'], [['Response time', '320 ms'], ['Target', '400 ms'], ['Result', 'Under target']]]),
     kpi_card('', 'Active right now', 'People using the system this minute, and over the last 12 minutes.',
       <><p className="kpi_value flex items-center gap-2"><span className="kpi_live" aria-hidden="true"></span><span data-count={live[11]}>0</span></p>
+        <p className="mt-1 text-sm text-muted">People using the system this minute</p>{spark(live, false, mins, num, 'People')}</>,
