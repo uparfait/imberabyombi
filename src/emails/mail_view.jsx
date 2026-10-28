@@ -32,3 +32,4 @@ export const mail_view = k => {
 };
 
 /* the design shown: ?t= in the address, else the last one picked (ui.mail), else the invite */
+export function emails_view() {
