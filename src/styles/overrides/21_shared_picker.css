@@ -23,3 +23,4 @@
   .pk_grid > span { padding: .375rem 0; font-size: .7rem; color: rgb(var(--muted)); }
   .pk_day, .pk_mon { display: grid; place-items: center; border-radius: var(--pill); font-size: .8rem; transition: background-color .15s; }
   .pk_day { width: 2.25rem; height: 2.25rem; max-width: 100%; margin: 1px auto; }
+  .pk_mon { height: 2.5rem; font-size: .85rem; }
