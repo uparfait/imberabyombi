@@ -34,3 +34,4 @@ export const EDITOR_DOC_PATHS = {
   find_replace: 'M13 14a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM16.5 12.5 21 17M3 19h8M8 16l3 3-3 3',
   drive_file_rename_outline: 'M5 19h3L18.5 8.5a2.1 2.1 0 0 0-3-3L5 16zM13.5 7.5l3 3M13 20h8',
   delete: BIN + 'M10 11v5M14 11v5',
+  delete_forever: BIN + 'M10 10l4 6M14 10l-4 6',
