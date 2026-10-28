@@ -21,3 +21,4 @@ export function refresh(c) { if (!document.getElementById('table_body_' + c)) re
    restarted by the first one's redraw) and is dropped when a new page draws. */
 const WAIT = new Map();
 before_render(keep => { if (!keep) { WAIT.forEach(clearTimeout); WAIT.clear(); } });
+export function wait_load(c) {
