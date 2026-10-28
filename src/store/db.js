@@ -24,3 +24,4 @@ export const db = {
   list(c) { let v = db.get('c:' + c); if (!Array.isArray(v)) { if (!seeder) return []; v = seeder(c); db.set('c:' + c, v); } return v; },
   save(c, rows) { db.set('c:' + c, rows); },
   find(c, id) { return db.list(c).find(r => r.id === id); },
+  upsert(c, row) {
