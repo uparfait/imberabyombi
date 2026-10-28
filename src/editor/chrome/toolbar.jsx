@@ -56,3 +56,4 @@ export const toolbar = () => (
     {tb({ ed: 'comment', icon: 'add_comment', tip: 'Add comment (Ctrl+Alt+M)' })}
     {tb({ icon: 'image', tip: 'Insert image', id: 'image_btn' })}
     {sep()}
+    <button type="button" className="tb_btn tb_edit" id="align_btn" data-tip="Align & indent" aria-label="Align & indent" aria-haspopup="menu">
