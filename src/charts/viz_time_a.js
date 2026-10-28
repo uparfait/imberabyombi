@@ -12,3 +12,4 @@ export const VIZ_TIME_A = {
     const f = frame(w, 260, { r: 58 }), ax = y_axis(f, Math.max(...v.flat())), x = band(m.length, f.l, f.w - f.r);
     const ly = spread(v.map(r => ax.y(r[11]) + 4));
     return { svg: svg(f, ax.g + chart_base(f, ax.y(0)) + v.map((r, j) => `<path class="series_line" d="${path_of(r.map((val, i) => [x(i), ax.y(val)]))}"`
+        + ` style="stroke:${scale_color(j)}"/>${dot(x(11), ax.y(r[11]), scale_color(j))}<text x="${round1(x(11) + 9)}" y="${round1(ly[j])}">${s[j]}</text>`).join('')
