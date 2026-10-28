@@ -24,3 +24,4 @@ export function file_badge(ext) {
 }
 /* the badge as an HTML string (the upload dialog draws the JSX twin, badge() in badge.jsx) */
 export const badge_html = (ext, cls = 'fmt_badge') => { const [l, c] = file_badge(ext); return `<span class="${cls}" style="background:${c}">${esc_html(l)}</span>`; };
+export function bytes_to_b64(u8) { let s = ''; for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000)); return btoa(s); }
