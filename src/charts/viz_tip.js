@@ -12,3 +12,4 @@ export const viz_tip = { el: null, cur: null,
         key.style.background = s == null ? 'rgb(var(--muted))' : scale_color(s); b.textContent = v; sp.textContent = n; row.append(key, b, sp); el.append(row); });
       el.classList.add('on'); }
     const w = el.offsetWidth, hh = el.offsetHeight; el.style.left = Math.min(innerWidth - w - 8, x + 14) + 'px'; el.style.top = Math.max(8, y - hh - 12) + 'px'; },
+  hide() { this.cur = null; this.el?.classList.remove('on'); } };
