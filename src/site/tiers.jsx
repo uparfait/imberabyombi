@@ -25,3 +25,4 @@ export function tiers() {
           const n = cap(lorem.w(1));
           return (
             <tr key={i} data-act="row" data-title={n} tabIndex={0} className="cursor-pointer">
+              <th scope="row" className="bg-transparent text-sm font-semibold text-fg">{n}</th><td><time dateTime={2019 + i}>{2019 + i}</time></td>
