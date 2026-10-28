@@ -28,3 +28,5 @@ export function normalize_body(b) {
       p = null;
       if (n.tagName === 'DIV' && !is_break(n)) div_to_block(n);
       continue;
+    }
+    if (n.nodeType === 3 && !p && /^[\s]*$/.test(n.data) && !(cur_sel && (cur_sel.sc === n || cur_sel.ec === n))) { n.remove(); continue; }
