@@ -24,3 +24,4 @@ const bulletin = n => { const rows = db.list('bulletins').filter(b => b.student 
 export const RECORD_ACT = {
   clock: t => { const n = me(), td = ymd(), rows = db.list('attendance'), mine = rows.find(r => r.person === n && r.date === td);
     if (t.dataset.v === 'in') db.upsert('attendance', { person: n, kind: 'Staff', date: td, in: hm(), out: '', status: hm() > cfg.work_start ? 'Late' : 'Present' });
+    else if (mine) db.upsert('attendance', { id: mine.id, out: hm() });
