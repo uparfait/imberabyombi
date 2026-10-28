@@ -1,1 +1,2 @@
 /* editor/editor_styles.css: the Document editor's stylesheet, imported by editor_page.jsx only, so it loads with the
+   editor (after the template's styles: at equal specificity these rules win). Colours come from the template tokens, so
