@@ -50,3 +50,4 @@ export function to_hex(c) {
   if (!c) return null; c = String(c).trim();
   if (!c || /^(transparent|inherit|initial|unset|currentcolor)$/i.test(c)) return null;
   if (!_cctx) _cctx = document.createElement('canvas').getContext('2d');
+  _cctx.fillStyle = '#010203'; _cctx.fillStyle = c; const v = _cctx.fillStyle;
