@@ -17,3 +17,4 @@ export default {
   theme: {
     extend: {
       colors: {
+        brand: token_color('brand'), 'brand-2': token_color('brand_2'), ink: token_color('ink'),
