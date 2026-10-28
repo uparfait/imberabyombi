@@ -12,3 +12,4 @@ export function mail_body(k) {
   const tm = (a, b) => `${fmt_time(a)} – ${fmt_time(b)}`;
   const event = (d, strike) => (
     <div className="mail_event">{mail_date(d, strike)}<div className="min-w-0"><p className="font-medium">{ev}</p>
+      <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">{ic('clock', 'h-4 w-4 shrink-0')}
