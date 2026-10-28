@@ -22,3 +22,4 @@ export const VIZ_PART_A = {
     return { svg: svg(f, slices(v, tot, cx, cy, rad * .62, rad, (val, i) => [s[i], [[num(val), pct(val / tot) + ' of total', i]]])
       + `<text class="center_value" x="${cx}" y="${cy + 4}" text-anchor="middle">${compact_num(tot)}</text><text x="${cx}" y="${cy + 22}" text-anchor="middle">Total</text>`,
       'Donut chart'), legend: legend(s), table: [['Part', 'Value', 'Share'], s.map((k, i) => [k, num(v[i]), pct(v[i] / tot)])] }; } },
+  treemap: { t: 'Treemap', g: 'part', d: 'Nested parts sized by value, coloured by group.', f(w) {
