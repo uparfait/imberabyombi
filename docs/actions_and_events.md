@@ -11,3 +11,4 @@ component needs its own click handler for app actions, and buttons inside dialog
   [`src/actions/`](../src/actions/). `Enter` / `Space` do the same on any element with `data-act` and a `tabIndex`.
 - `REQ` decides which actions are requests: `1` = a change (the button spins, the top loader shows on staff pages),
   `2` = a get (open details, change page, sort, switch tab…). Others run at once.
+- Handlers read their data from the element (`t.dataset.id`, `t.closest('[data-task]')`), change data or `ui`, and call
