@@ -41,3 +41,4 @@ export const TASK_ACT = {
   /* your own comments: the pen swaps the text for an editor (Save / Cancel) */
   comment_edit: t => { const box = comment_box(t), v = tv_api(t);
     const c = comments_of(db.find('tasks', t.closest('[data-task]').dataset.task)).find(x => x.id === box.dataset.comment);
+    if (!c || !v) return; v.put(s => ({ cedit: { ...s.cedit, [c.id]: true } }));
