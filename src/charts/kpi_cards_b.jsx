@@ -27,3 +27,4 @@ export const kpi_cards_b = k => {
           <b style={{ width: `${Math.round(320 / 600 * 100)}%` }}></b><s style={{ left: `${Math.round(400 / 600 * 100)}%` }}></s></div>
         <p className="mt-2 text-sm text-muted">Target 400 ms · under target</p></>,
       [['Measure', 'Value'], [['Response time', '320 ms'], ['Target', '400 ms'], ['Result', 'Under target']]]),
+    kpi_card('', 'Active right now', 'People using the system this minute, and over the last 12 minutes.',
