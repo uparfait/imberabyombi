@@ -16,3 +16,4 @@
     --font_sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
     --font_display: "Bricolage Grotesque", var(--font_sans);
     --font_mono: "JetBrains Mono", ui-monospace, monospace;
+    --ease: cubic-bezier(.22,.8,.22,1);
