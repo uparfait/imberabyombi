@@ -7,3 +7,4 @@ import { request, reduced } from '../feedback/index.js';
 import { snap } from '../overlays/index.js';
 import { sync_when } from '../table/index.js';
 import { subs_of, files_of, read_files } from './task_data.js';
+import { task_refresh } from './task_view.jsx';
