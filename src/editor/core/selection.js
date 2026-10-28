@@ -57,3 +57,4 @@ export function caret_to_end(e) {
   if (t) set_caret(t, t.length); else { const d = deepest(e, false); set_caret(d, is_empty_block(d) ? 0 : d.childNodes.length); }
 }
 export function caret_rect(r) {
+  const rs = r.getClientRects(); if (rs.length) return rs[rs.length - 1];
