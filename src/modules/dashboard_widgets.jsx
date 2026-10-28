@@ -51,3 +51,4 @@ export function dash_widgets(u) {
     W.push(<section key="park" className="card p-5">{head('Parking', '#/admin/parking', 'Open')}
       <div className="mt-4 flex items-center gap-4">{i3('car', 'h-14 w-14')}<p><b className="font-display text-3xl">{n}</b><span className="text-muted">
         {` / ${N} slots`}</span></p></div>
+      <meter className="mt-4" min="0" max={N} low={N * .6} high={N * .85} optimum="0" value={n}></meter></section>); }
