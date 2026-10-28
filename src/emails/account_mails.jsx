@@ -16,3 +16,4 @@ export const account_mails = () => ({
     <p className="text-sm text-muted">If the button does not work, copy this link into your browser:</p>
     {copy_box('https://imberabyombi.com/reset?token=' + chars(24, 'abcdefghjkmnpqrstuvwxyz23456789'), 'Reset link')}
     <p className="text-sm text-muted">Did not ask for this? You can ignore this email. Your password stays the same.</p></> },
+  code: { s: `${lorem.int(100, 999)} ${lorem.int(100, 999)} is your sign-in code`, t: <>
