@@ -7,3 +7,4 @@ import { can_edit } from '../format/index.js';
 import { clean_text } from './ui_dom.js';
 
 const HEAD = 'h1, h2, h3, h4, p.title';
+export function level_of(h) { return h.tagName === 'P' ? 0 : +h.tagName[1] - 1; }
