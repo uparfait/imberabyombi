@@ -36,3 +36,5 @@ function split_q(msg, cta) {
     return [q, (String(k).slice(at + 1) + text_of(kids.slice(i + 1))).trim()];
   }
   return [`${cta}?`, text_of(msg).trim()];
+}
+/* Confirm: the question is the title; anything after it ("You cannot undo this.") is the dialog's text */
