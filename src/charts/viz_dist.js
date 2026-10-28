@@ -13,3 +13,4 @@ export const VIZ_DIST = {
         `<rect class="hit_area" x="${round1(x(i * step))}" y="${f.t}" width="${round1(x(step) - x(0))}" height="${f.ih}"/>`
         + `<path class="mark" style="fill:var(--series_1)" d="${vbar((x(i * step) + x((i + 1) * step)) / 2, x(step) - x(0) - 2, ax.y(0), ax.y(n))}"/>`)).join('')
       + chart_base(f, ax.y(0)) + [0, 25, 50, 75, 100].map(t => `<text x="${round1(x(t))}" y="${f.h - 8}" text-anchor="middle">${t}</text>`).join(''), 'Histogram'),
+      table: [['Range', 'Count'], cnt.map((n, i) => [bin(i), n])] }; } },
