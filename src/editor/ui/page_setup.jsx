@@ -33,3 +33,4 @@ function Page_setup_body() {
         <select id="ps_paper" name="paper" defaultValue={s.paper}>{Object.entries(PAPER).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}</select></div>
       {SIDES.map(k => <div className="field" key={k}><label htmlFor={'ps_' + k}>{cap(k)} margin (inches)</label>
         <input id={'ps_' + k} name={'ps_' + k} type="number" placeholder=" " {...num_props(s.margins[k], 0, 5, 0.05)} /></div>)}
+      <fieldset className="border-0 p-0 sm:col-span-2"><legend className="mb-2 px-0 text-sm">Headers, footers and page numbers</legend>
