@@ -7,3 +7,4 @@ Two small objects stand between the screens and the data, so a real API replaces
 | Method                      | Demo behaviour                         | With an API                         |
 |-----------------------------|----------------------------------------|-------------------------------------|
 | `db.list(collection)`       | reads `c:<collection>` (seeds it once) | return the rows you fetched         |
+| `db.find(collection, id)`   | one row                                | from the fetched rows or a request  |
