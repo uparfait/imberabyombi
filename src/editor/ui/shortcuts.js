@@ -28,3 +28,4 @@ function global_key(e, k) {
 }
 /* shortcuts that edit: only with the caret in the document */
 function edit_key(e, k, code) {
+  if (k === 'z' && !e.shiftKey) return undo;
