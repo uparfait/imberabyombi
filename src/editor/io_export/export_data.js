@@ -22,3 +22,6 @@ export function export_data(root) {
     name: table_name(t, i), hdr: t.hasAttribute('data-header') || !!(t.rows[0] && t.rows[0].querySelector('th,[data-hdr]')),
     rows: Array.from(t.rows).map(r => {
       const a = []; Array.from(r.cells).forEach(c => { a.push(cell_text(c)); for (let k = 1; k < (c.colSpan || 1); k++) a.push(''); }); return a;
+    })
+  }));
+  const lines = [];
