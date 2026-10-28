@@ -12,3 +12,5 @@ function page_lines(tc) {
     if (cur.y !== null && Math.abs(y - cur.y) > h * 0.5 && cur.text) { lines.push(cur); cur = { text: '', y: null, h: 0 }; }
     if (cur.y === null) cur.y = y; cur.text += it.str; cur.h = Math.max(cur.h, h);
     if (it.hasEOL) { lines.push(cur); cur = { text: '', y: null, h: 0 }; }
+  }
+  if (cur.text) lines.push(cur);
