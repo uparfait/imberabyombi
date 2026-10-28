@@ -25,3 +25,4 @@ export function refresh_toolbar() {
     b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on));
   });
   set_text(refs.font_label, cs.fontFamily.split(',')[0].replace(/["']/g, '').trim());
+  const si = refs.size_input;
