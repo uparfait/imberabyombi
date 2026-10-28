@@ -21,3 +21,5 @@ export function section_model() {
   blocks.forEach((b, i) => { if (b.matches(HEAD) && clean_text(b)) heads.push({ i, lvl: level_of(b) }); });
   heads.forEach((h, k) => { const n = heads.slice(k + 1).find(x => x.lvl <= h.lvl); h.end = n ? n.i : blocks.length; });
   return { c, blocks, heads };
+}
+/* where section k goes one step up / down (a block index), -1 when it cannot move */
