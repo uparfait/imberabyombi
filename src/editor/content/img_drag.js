@@ -34,3 +34,4 @@ function on_move(ev) {
   let dx = ev.clientX - d.sx, dy = ev.clientY - d.sy; const z = state.zoom;
   if (!d.moved) {
     if (Math.hypot(dx, dy) < 4) return;
+    d.moved = true; begin_op(); img_box?.classList.add('img_dragging'); document.body.classList.add('img_dragging');
