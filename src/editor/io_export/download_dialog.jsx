@@ -50,3 +50,4 @@ function Download_body({ opt }) {
   return (
     <div className="grid gap-4 sm:col-span-2">
       <div className="grid gap-1.5"><label className="text-sm text-muted" htmlFor="dl_name">File name</label>
+        <div className={NAME_BOX}>
