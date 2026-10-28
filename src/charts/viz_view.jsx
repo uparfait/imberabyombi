@@ -36,3 +36,4 @@ export let resize_observer = null;
 export const watch = () => {
   resize_observer?.disconnect(); if (!('ResizeObserver' in window)) return;
   let t; resize_observer = new ResizeObserver(() => { clearTimeout(t); t = setTimeout(() => viz_draw_all(false), 60); });
+  qsa('.viz_card [data-plot]').forEach(p => resize_observer.observe(p));
