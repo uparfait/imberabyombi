@@ -5,3 +5,4 @@ import { pad, uniq, lorem } from '../lib/index.js';
 import { db } from '../store/index.js';
 
 export const field_spec = (k, l, t = 'text', o = null, req = false, x = {}) => ({ k, l, t, o, req, ...x });
+export const option_list = s => s.split('|');
