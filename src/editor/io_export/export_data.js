@@ -29,3 +29,5 @@ export function export_data(root) {
     if (is_break(b)) return;
     if (is_list(b)) qsa('li', b).forEach(li => {
       const x = li.cloneNode(true); qsa('ul,ol', x).forEach(n => n.remove()); const s = x.textContent.replace(/\u200b/g, '').trim(); if (s) lines.push(s);
+    });
+    else { const s = b.textContent.replace(/\u200b/g, '').trim(); if (s) lines.push(s); }
