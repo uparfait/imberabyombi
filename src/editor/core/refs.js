@@ -21,3 +21,6 @@ export const refs = new Proxy(store, {
     return f || v || null;
   },
   set(o, k, v) { o[k] = v; return true; }
+});
+
+/* fill from the root: every element with an id, the root itself and the aliases */
