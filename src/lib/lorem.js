@@ -8,3 +8,4 @@ export const WORDS = ('lorem ipsum dolor sit amet consectetur adipiscing elit se
 export let SEED = 1;
 export const lorem = {
   seed(n) { SEED = (Math.abs(n) % 2147483646) + 1; },
+  r() { SEED = SEED * 16807 % 2147483647; return (SEED - 1) / 2147483646; },
