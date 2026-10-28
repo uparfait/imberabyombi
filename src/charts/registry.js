@@ -18,3 +18,4 @@ export function draw_chart(cv, labels, vals, anim = true) {
       x.fillStyle = col('--muted'); x.textAlign = 'left'; x.fillText(Math.round(max * (1 - i / 4)), 0, y + fs * .35);
     }
     vals.forEach((v, i) => {
+      const h = (ht - pb) * (v / max) * e, bx = pl + cw * i + (cw - bw) / 2, by = ht - pb - h, g = x.createLinearGradient(0, by, 0, ht - pb);
