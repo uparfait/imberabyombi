@@ -23,3 +23,5 @@ export function pages_paste(e) {
   else { document.execCommand('insertHTML', false, sanitize_html(html)); adopt_abs(host); }
   paste_plain = false;
   if (body) end_op(body_index(host));
+}
+export async function paste_from_clipboard(plain) {
