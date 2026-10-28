@@ -20,3 +20,4 @@ export function Modal_form({ m }) {
   }, []);
   const body = run_view(m.body), actions = run_view(m.actions), plain = blank(body), { title, help, submit, danger } = m;
   const on_submit = async e => {
+    e.preventDefault(); const f = e.currentTarget; if (!m.on_submit) return; if (!validate(f)) return;   /* a view (no submit) never closes on Enter */
