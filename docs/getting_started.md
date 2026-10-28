@@ -20,3 +20,4 @@ npm run preview    # serves dist/ locally to check the build
 Asset paths are relative (`base: './'` in `vite.config.js`), so it also works from a sub-folder.
 
 ## First tour
+1. The public website opens at `#/` (home, about, mission, vision, strategies, staff, partners, thanks, contact).
