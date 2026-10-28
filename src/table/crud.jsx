@@ -48,3 +48,4 @@ export function crud(c, o = {}) {
             {can ? <button className="btn btn_primary btn_sm" data-act="add" data-col={c}>{ic('plus', 'w-4 h-4')}{`Add ${s.l}`}</button> : null}{full_btn(c, full)}</div>
         </header>
         <div className="table_scroll relative overflow-x-auto"><table className="table_data" id={`table_${c}`}>
+          <thead><tr><th scope="col" id={`table_acts_${c}`} className="table_acts whitespace-nowrap" hidden={!b.acts}>Action Buttons</th>
