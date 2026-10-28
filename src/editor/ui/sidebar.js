@@ -10,3 +10,4 @@ import { row_drag } from './row_drag.js';
 import { mi } from './ui_dom.js';
 
 let tab_q = '';   // the filter text (kept while the list redraws)
+const MANY = 5;
