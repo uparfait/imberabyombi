@@ -1,2 +1,3 @@
 /* icons/editor_paths_doc.js: document editor icons, part 2: files and formats, clipboard, history, arrows and panels.
    24×24 stroke paths drawn like PATHS (round caps and joins, no fills). */
+const FILE = 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6';
