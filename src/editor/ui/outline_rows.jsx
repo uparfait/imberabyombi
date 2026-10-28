@@ -15,3 +15,4 @@ function go(row) {
   h.scrollIntoView({ block: 'center', behavior: 'smooth' }); caret_to_start(h);
 }
 /* after a move: the outline now; the keyboard stays on the moved heading's row when the move came from it */
+function moved(f, kb) {
