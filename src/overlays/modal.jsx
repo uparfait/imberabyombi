@@ -34,3 +34,5 @@ function split_q(msg, cta) {
     if (at < 0) { q.push(k); continue; }
     q.push(String(k).slice(0, at + 1));
     return [q, (String(k).slice(at + 1) + text_of(kids.slice(i + 1))).trim()];
+  }
+  return [`${cta}?`, text_of(msg).trim()];
