@@ -22,3 +22,4 @@ export function export_xlsx(root, name) {
       + `${sheets.map((s, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" ContentType="${OX}.worksheet+xml"/>`).join('')}</Types>` },
     { name: '_rels/.rels', data: `${XML}<Relationships xmlns="${XL_PR}"><Relationship Id="rId1" Type="${XL_R}/officeDocument" Target="xl/workbook.xml"/></Relationships>` },
     { name: 'xl/workbook.xml', data: `${XML}<workbook xmlns="${XL_NS}" xmlns:r="${XL_R}"><sheets>`
+      + `${sheets.map((s, i) => `<sheet name="${xesc(s.name)}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join('')}</sheets></workbook>` },
