@@ -32,3 +32,4 @@ function on_input(e) {
 
 /* Pasting a code into any box fills all six */
 function on_paste(e) {
+  const t = e.target; if (!t.matches?.('.otp_box')) return;
