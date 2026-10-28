@@ -27,3 +27,4 @@ request(async () => {
 ```
 
 ## 3. Sign-in: `auth` (src/auth)
+Replace `auth.login()` with a call to your sign-in endpoint and keep the returned user (`{ name, email, role }`) in the
