@@ -15,3 +15,4 @@ const bulletin = n => { const rows = db.list('bulletins').filter(b => b.student 
   const avg = tm => { const v = SUBJECTS.map(s => sc(s, tm)).filter(v => v != null); return v.length ? Math.round(v.reduce((a, b) => a + b) / v.length) : '—'; };
   return (
     <div className="overflow-x-auto sm:col-span-2"><table><caption>{n}</caption><colgroup><col /><col span={3} className="hl" /></colgroup>
+      <thead><tr><th scope="col">Subject</th>{TERMS.map(x => <th scope="col" key={x}>{x}</th>)}</tr></thead>
