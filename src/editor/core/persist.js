@@ -21,3 +21,4 @@ export function doc_data() {
   };
 }
 export function save_doc(force) {
+  clearTimeout(save_timer); save_timer = null;
