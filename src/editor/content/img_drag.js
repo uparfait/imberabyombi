@@ -32,3 +32,4 @@ export function start_img_drag(e, img, through = false) {
 function on_move(ev) {
   const d = drag; if (!d || ev.pointerId !== d.id) return;
   let dx = ev.clientX - d.sx, dy = ev.clientY - d.sy; const z = state.zoom;
+  if (!d.moved) {
