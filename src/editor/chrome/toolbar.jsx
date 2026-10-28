@@ -68,3 +68,4 @@ export const toolbar = () => (
     <div className="tb_fill"></div>
     <button type="button" className="tb_dd mode_btn" id="mode_btn" data-tip="Editing mode" aria-haspopup="menu">
       <span className="ic_slot" id="mode_icon">{ic('edit')}</span><span className="lbl hidden md:inline" id="mode_label">Editing</span>{ic('arrow_drop_down')}</button>
+    {sep()}
