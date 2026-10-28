@@ -20,3 +20,4 @@ function Text_view({ f }) {
 }
 
 /* the dialog's content: header (icon, name, help tip, Open in a new tab, Download, Close) + the file */
+function File_view({ f, n }) {
