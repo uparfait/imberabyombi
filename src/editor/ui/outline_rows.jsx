@@ -83,3 +83,4 @@ export function wire_outline_row(row) {
     const more = e.target.closest('.outline_more');
     if (e.target.closest('.outline_fold')) toggle_fold(row);
     else if (more) open_section_menu(row, more, e.detail === 0);
+    else go(row);
