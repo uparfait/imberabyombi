@@ -20,3 +20,4 @@ Short files are easy to review, easy to replace and load only what a page needs.
 
 React needs a capital first letter to tell a component from an HTML tag, so components are `Capital_snake`.
 Names the tools require keep their own spelling: `index.html`, `package.json`, `vite.config.js`,
+`tailwind.config.js`, `postcss.config.js`, `README.md`. Tailwind utilities keep Tailwind's names (`bg-surface-2`),
