@@ -9,3 +9,4 @@ import { drop_point, place_at, anchor_abs } from './img_pos.js';
 let drag = null, caret_el = null, swallow_until = 0;
 /* true once right after a drag (or a cancelled one): the click that follows the release is not a click */
 export const take_drag_click = () => { const s = Date.now() < swallow_until; swallow_until = 0; return s; };
+const swallow = () => { swallow_until = Date.now() + 400; };
