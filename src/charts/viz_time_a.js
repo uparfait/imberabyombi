@@ -26,3 +26,4 @@ export const VIZ_TIME_A = {
   stacked_area: { t: 'Stacked area chart', g: 'time', d: 'Parts of a total over time; the top edge is the total.', seed: 'stackedArea', f(w) {
     const m = MONTHS(), s = SER.slice(0, 3), v = s.map(() => { let a = rnd(15, 30); return m.map(() => (a = Math.max(4, a + rnd(-4, 5))) * MARGIN()); });
     const f = frame(w, 260), cum = m.map((_, i) => s.map((__, j) => v.slice(0, j + 1).reduce((t, r) => t + r[i], 0)));
+    const ax = y_axis(f, Math.max(...cum.map(r => r.at(-1)))), x = band(m.length, f.l, f.w - f.r);
