@@ -29,3 +29,4 @@ export const VIZ_TIME_B = {
     const la = spread(a.map(v => y(v) + 4)), lb = spread(b.map(v => y(v) + 4));
     const ab = i => `x1="${xa}" x2="${xb}" y1="${round1(y(a[i]))}" y2="${round1(y(b[i]))}"`;
     return { svg: svg(f, `<text x="${xa}" y="14" text-anchor="middle">2025</text><text x="${xb}" y="14" text-anchor="middle">2026</text>`
+        + `<line class="base_line" x1="${xa}" x2="${xa}" y1="${f.t}" y2="${f.t + f.ih}"/><line class="base_line" x1="${xb}" x2="${xb}" y1="${f.t}" y2="${f.t + f.ih}"/>`
