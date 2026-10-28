@@ -16,3 +16,4 @@ function Adjust_body({ src, v }) {
   const filter = `brightness(${1 + s.brightness / 100}) contrast(${1 + s.contrast / 100}) saturate(${s.saturation / 100})`;
   return (
     <div className="grid gap-2 sm:col-span-2">
+      <div className="img_preview"><img alt="" src={src} style={{ filter, opacity: 1 - s.transparency / 100 }} /></div>
