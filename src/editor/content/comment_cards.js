@@ -44,3 +44,4 @@ function card_of(c) {
   });
   const ta = qs('textarea', card);
   if (ta) ta.addEventListener('keydown', e => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) qs('[data-x="save"]', card).click(); });
+  return card;
