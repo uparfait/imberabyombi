@@ -11,3 +11,5 @@ import { fix_list_starts, join_conts, place_abs } from './collect.js';
 import { save_sel, restore_sel } from './selection.js';
 import { schedule_ui } from './schedule.js';
 import { position_img_box } from '../content/index.js';
+
+/* remove an empty page; its absolute images move to prev keeping left / top */
