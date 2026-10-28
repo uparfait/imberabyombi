@@ -39,3 +39,4 @@ export function fmt_time(t) { return new Date(t).toLocaleString(undefined, { mon
 /* after edits (scheduled by the core): redraw the open panel unless someone is typing in it */
 export function refresh_comment_states() {
   if (!state.show_comments) return;
+  const active = qs('.c_card.active'), ae = document.activeElement, focused = ae && ae.closest && ae.closest('#comment_list');
