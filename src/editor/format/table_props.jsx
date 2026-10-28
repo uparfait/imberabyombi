@@ -39,3 +39,4 @@ export function table_props_dialog() {
       {num_field('tp_bw', 'Border width (px)', num_props(isNaN(bw) ? 1 : bw, 0, 10, 0.5))}
       {color_field('tp_bc', 'Border color', '#' + (to_hex(t0.style.getPropertyValue('--bc')) || '000000').toLowerCase())}
       {num_field('tp_pad', 'Cell padding (pt)', num_props(isNaN(pad) ? 5 : pad, 0, 30, 0.5))}
+      {sel_field('tp_va', 'Vertical alignment', VALIGN, c.td.style.verticalAlign || 'top')}
