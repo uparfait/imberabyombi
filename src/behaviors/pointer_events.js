@@ -19,3 +19,4 @@ export function install_pointer() {
   document.addEventListener('pointerover', e => { if (e.pointerType === 'touch') return; const x = tip.find(e.target); x ? tip.show(x) : tip.hide(); });
   document.addEventListener('pointermove', viz_point, { passive: true });
   document.addEventListener('pointerdown', viz_point, { passive: true });
+  document.addEventListener('pointerout', e => { if (tip.on && !tip.on.contains(e.relatedTarget)) tip.hide(); });
