@@ -52,3 +52,4 @@ async function slide_html(z, sp, i) {
   const nr = Object.values(rels).find(r => /notesSlide$/.test(r.type));
   if (nr) {
     const np = resolve_path(dir_of(sp), nr.target);
+    if (z.has(np)) {
