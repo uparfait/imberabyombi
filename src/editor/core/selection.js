@@ -69,3 +69,4 @@ export function scroll_caret_into_view() {
   else if (rect.bottom > sc.bottom - 16) scroller.scrollTop += rect.bottom - sc.bottom + 48;
 }
 export function caret_from_point(x, y) {
+  if (document.caretPositionFromPoint) { const p = document.caretPositionFromPoint(x, y); return p ? { node: p.offsetNode, off: p.offset } : null; }
