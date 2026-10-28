@@ -12,3 +12,4 @@ export const TEXT_EXT = /^(txt|md|csv|tsv|json|xml|js|mjs|ts|jsx|tsx|css|html?|y
 export const file_kind = f => { const t = f.type || '', x = ext_of(f);
   return t.startsWith('image/') ? 'image' : t.startsWith('video/') ? 'video' : t.startsWith('audio/') ? 'audio' : t === 'application/pdf' || /^pdf$/i.test(x) ? 'pdf'
     : t.startsWith('text/') || /json|xml|javascript|yaml|csv|sql/.test(t) || TEXT_EXT.test(x) ? 'text' : 'file'; };
+export const FICON = { image: 'image', video: 'video', audio: 'music', pdf: 'file', text: 'note', file: 'file' };
