@@ -23,3 +23,4 @@ export const db = {
   keys() { const o = []; for (let i = 0; i < ls.length; i++) { const k = ls.key(i); if (k && k.startsWith(cfg.ns)) o.push(k.slice(cfg.ns.length)); } return o; },
   list(c) { let v = db.get('c:' + c); if (!Array.isArray(v)) { if (!seeder) return []; v = seeder(c); db.set('c:' + c, v); } return v; },
   save(c, rows) { db.set('c:' + c, rows); },
+  find(c, id) { return db.list(c).find(r => r.id === id); },
