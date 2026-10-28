@@ -12,3 +12,4 @@ export * from './table_ops.js';
 export * from './table_grid.js';
 export * from './dialog_fields.jsx';
 export * from './table_dialogs.jsx';
+export * from './table_props.jsx';
