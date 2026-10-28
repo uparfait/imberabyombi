@@ -27,3 +27,4 @@ export const sheet_xml = s => {
     + `<cols>${cw.map((w, i) => `<col min="${i + 1}" max="${i + 1}" width="${w}" customWidth="1"/>`).join('')}</cols><sheetData>`;
   s.rows.forEach((r, ri) => {
     x += `<row r="${ri + 1}">`;
+    r.forEach((v, ci) => {
