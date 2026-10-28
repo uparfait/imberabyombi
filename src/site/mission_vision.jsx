@@ -18,3 +18,4 @@ export function mission_sec(full) {
   );
 }
 export function vision_sec(full) {
+  return (
