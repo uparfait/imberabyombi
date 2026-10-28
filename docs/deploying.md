@@ -3,6 +3,7 @@
 `npm run build` writes a static site to `dist/`. Any static host can serve it; no server code is needed.
 Pages have real addresses (`/about`, `/admin/tasks`), so the host must answer every route with `index.html`
 (a single-page fallback). The build also writes `dist/404.html`, a copy of `index.html`, for hosts that serve it for
+unknown paths. `npm run dev` and `npm run preview` already do this.
 
 ## GitHub Pages
 1. Build: `npm run build`.
