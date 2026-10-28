@@ -34,3 +34,4 @@ const indent_items = () => [{ label: 'Increase indent', icon: 'format_indent_inc
 /* dropdown button id → its items */
 const DROPS = {
   zoom_btn: zoom_items, style_btn: style_items, font_btn: font_items, spacing_btn: spacing_items, image_btn: image_items,
+  color_btn: () => [{ render: () => palette_el(set_text_color, 'Reset') }], hilite_btn: () => [{ render: () => palette_el(set_hilite, 'None') }],
