@@ -12,3 +12,4 @@ const clear_abs = img => { ['position', 'left', 'top', 'zIndex'].forEach(p => { 
 const keep_line = par => { if (par && par.nodeType === 1 && !par.childNodes.length && !par.classList.contains('pg_body')) par.appendChild(document.createElement('br')); };
 
 /* an absolute image goes before the first text block that reaches its top */
+export function anchor_abs(img) {
