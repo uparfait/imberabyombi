@@ -10,3 +10,4 @@ export const VIZ_CMP_A = {
     const bw = Math.min(24, x.bw * .6), top = v.indexOf(Math.max(...v));
     return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [[num(v[i]), 'Value', 0]], hit_col(f, x, i)
         + `<path class="mark" style="fill:var(--series_1)" d="${vbar(x(i), bw, ax.y(0), ax.y(v[i]))}"/>`)).join('')
+      + chart_base(f, ax.y(0)) + x_labels(f, c, x)
