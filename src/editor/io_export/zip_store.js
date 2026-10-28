@@ -3,3 +3,4 @@
 
 /* ---------- DOCX writer (Office Open XML, no external library) ---------- */
 export const CRC_T = (() => {
+  const t = new Uint32Array(256);
