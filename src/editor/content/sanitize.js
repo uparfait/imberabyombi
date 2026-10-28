@@ -39,3 +39,4 @@ function keep_attrs(c, tag) {
   for (const a of Array.from(c.attributes)) {
     const n = a.name.toLowerCase(), v = a.value;
     if (n === 'style') { const s = keep_style(c, tag); if (s) keep.style = s; }
+    else if (n === 'href' && tag === 'A') {
