@@ -10,3 +10,4 @@ export const ext_of = n => { const m = /\.([^.]+)$/.exec(n || ''); return m ? m[
 export const base_of = n => (n || 'Untitled').replace(/\.[^.]+$/, '');
 export const fmt_size = n => n < 1024 ? n + ' B' : n < 1048576 ? (n / 1024).toFixed(n < 10240 ? 1 : 0) + ' KB' : (n / 1048576).toFixed(1) + ' MB';
 export const BADGES = {
+  docx: ['DOCX', '#2b579a'], docm: ['DOCX', '#2b579a'], dotx: ['DOTX', '#2b579a'], doc: ['DOC', '#2b579a'], odt: ['ODT', '#2b579a'],
