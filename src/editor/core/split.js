@@ -71,3 +71,4 @@ export function pull_up(b, next) {
     const f = first_flow(next); if (!f) return;
     if (last && b.clientHeight - content_bottom(b) < 4) return;
     if (f.hasAttribute('data-cont') && last && same_kind(last, f)) merge_into(last, f); else b.appendChild(f);
+    if (overflows(b)) { push_overflow(b, next); return; }
