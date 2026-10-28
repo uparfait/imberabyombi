@@ -35,3 +35,4 @@ export function editor_start(root) {
       if (e.target.tagName !== 'IMG') return;
       const b = e.target.closest('.pg_body'); if (b) schedule_reflow(Math.max(0, body_index(b)));
       if (e.target === img_sel) position_img_box();
+    }, true);
