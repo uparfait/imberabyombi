@@ -15,3 +15,4 @@ export function toggle_list(tag) {
   exec(tag === 'UL' ? 'insertUnorderedList' : 'insertOrderedList');
 }
 /* type: a list-style-type value ('disc', 'lower-roman', "'★  '", …); makes the list first when needed */
+export function set_list_type(tag, type) {
