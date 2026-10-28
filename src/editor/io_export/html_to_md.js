@@ -29,3 +29,5 @@ export function html_to_md(root) {
       const pre = l.classList.contains('checklist') ? (li.getAttribute('data-checked') === 'true' ? '- [x] ' : '- [ ] ') : l.tagName === 'OL' ? `${k++}. ` : '- ';
       out.push('  '.repeat(depth) + pre + inline(li).trim());
       Array.from(li.children).filter(is_list).forEach(sub => out.push(list(sub, depth + 1)));
+    });
+    return out.join('\n');
