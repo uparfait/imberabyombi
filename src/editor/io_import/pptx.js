@@ -41,3 +41,4 @@ async function slide_html(z, sp, i) {
         if (url) body += `<p><img src="${url}" alt="" style="width:${clamp(w, 16, 620)}px"></p>`;
       }
     } else {
+      const tbl = by_tag(s, 'tbl')[0];
