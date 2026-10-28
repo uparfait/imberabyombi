@@ -39,3 +39,4 @@ function split_q(msg, cta) {
 }
 /* Confirm: the question is the title; anything after it ("You cannot undo this.") is the dialog's text */
 export const ask = (msg, fn, cta = 'Delete', danger = cta === 'Delete') => { const [q, more] = split_q(msg, cta);
+  modal({ title: q, help: more, submit: cta, danger, on_submit: fn }); };
