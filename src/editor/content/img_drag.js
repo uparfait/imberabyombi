@@ -27,3 +27,4 @@ export function start_img_drag(e, img, through = false) {
   e.preventDefault(); e.stopPropagation(); swallow_until = 0;
   drag = { img, id: e.pointerId, abs: is_abs(img), sx: e.clientX, sy: e.clientY, l0: img.style.left, t0: img.style.top, x0: img.offsetLeft, y0: img.offsetTop,
     moved: false, p: null, through: through && pos_of(img) === 'behind' };
+  addEventListener('pointermove', on_move); addEventListener('pointerup', on_up); addEventListener('pointercancel', cancel); addEventListener('keydown', on_key, true);
