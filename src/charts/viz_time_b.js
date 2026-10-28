@@ -44,3 +44,4 @@ export const VIZ_TIME_B = {
     return { svg: svg(f, Array.from({ length: wk + 1 }, (_, i) => `<line class="grid_line" y1="${f.t}" y2="${f.t + f.ih}" x1="${round1(x(i))}" x2="${round1(x(i))}"/>`
         + `${i < wk && (i % Math.ceil(10 / Math.max(1, f.iw / 60)) === 0)
           ? `<text x="${round1((x(i) + x(i + 1)) / 2)}" y="${f.h - 8}" text-anchor="middle">W${i + 1}</text>` : ''}`).join('')
+      + t.map((k, i) => mark_group(k, [[`W${d[i].s + 1}–W${d[i].e}`, 'Weeks', null], [pct(d[i].done), 'Done', 0]], hit_row(f, y, i)
