@@ -14,3 +14,4 @@ export function pub_header() {
           <li key={k}><a href={`#/${k}`} data-sec={k} className={`nav_link ${cur === k ? 'active' : ''}`} aria-current={cur === k ? 'page' : undefined}>{l}</a></li>
         ))}</ul>
         <div className="ml-auto flex items-center gap-1 xl:ml-2">{theme_btn()}
+          <a href="#/login" className="btn btn_ghost hidden sm:inline-flex">Sign in</a>
