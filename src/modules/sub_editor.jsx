@@ -23,3 +23,4 @@ export const sub_group = (g = {}) => <div key={g.key} ref={tie(g.key)} className
   <button type="button" className="btn btn_ghost btn_sm justify-self-start" data-act="sub_add_item">{ic('plus', 'h-4 w-4')}Add an item</button></div>;
 
 /* groups: the subtasks it opens with. Changes are drawn at once (flushSync), so a handler can focus the new row right after */
+export function Sub_editor({ groups }) {
