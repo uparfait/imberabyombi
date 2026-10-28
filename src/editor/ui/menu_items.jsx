@@ -67,3 +67,5 @@ export function download_items() {
 const zoom_peek = fn => () => { const z0 = state.zoom; fn(); return () => set_zoom(z0); };
 export function zoom_items() {
   return [...ZOOMS.map(z => ({ label: z + '%', checked: Math.round(state.zoom * 100) === z, peek: zoom_peek(() => set_zoom(z / 100)), action: () => set_zoom(z / 100) })),
+    { sep: true }, { label: 'Fit to width', peek: zoom_peek(zoom_fit), action: zoom_fit }];
+}
