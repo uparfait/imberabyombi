@@ -61,3 +61,4 @@ async function slide_html(z, sp, i) {
   return `<h2>${title || 'Slide ' + (i + 1)}</h2>${body}${notes}`;
 }
 export async function pptx_to_html(file) {
+  const z = await unzip(await file.arrayBuffer());
