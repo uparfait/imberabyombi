@@ -74,3 +74,4 @@ async function docx_blocks(cx, nodes, container) {
         for (const tc of kids(tr, 'tc')) {
           const td = document.createElement('td'), tc_pr = kids(tc, 'tcPr')[0], span = +(val(tc_pr && kids(tc_pr, 'gridSpan')[0]) || 1);
           const shd = tc_pr && kids(tc_pr, 'shd')[0], fill = shd && shd.getAttribute('w:fill');
+          if (span > 1) td.colSpan = span; if (fill && HEX6.test(fill) && fill.toUpperCase() !== 'FFFFFF') td.style.backgroundColor = '#' + fill;
