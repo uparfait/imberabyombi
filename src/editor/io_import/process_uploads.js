@@ -22,3 +22,4 @@ function place_uploads(done, mode, failed) {
       else failed.push('Click in the main text of the document first, then try again.');
     }
     if (projects.length) { save_tab(); projects.forEach(r => state.tabs.push(...project_tabs(r.project))); render_sidebar(); }
+    return;
