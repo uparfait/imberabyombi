@@ -29,3 +29,4 @@
   .nav_row.is_pinned > * { min-width: 0; pointer-events: auto; }
   .nav_row.is_pinned .tile_trigger { max-width: 100%; }   /* short on space (phones): buttons shrink and trim their names */
   .tile_trigger > span { min-width: 0; }
+  .tile_trigger { overflow: hidden; }   /* nothing inside ever spills over its neighbour */
