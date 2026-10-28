@@ -19,3 +19,5 @@ export function html_to_md(root) {
       const strike = /^(S|DEL|STRIKE)$/.test(t) || /line-through/.test(st.textDecoration || '');
       if (inner.trim()) { if (strike) inner = `~~${inner}~~`; if (ital) inner = `*${inner}*`; if (bold) inner = `**${inner}**`; }
       s += inner;
+    });
+    return s;
