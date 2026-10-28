@@ -25,3 +25,4 @@ export function ruler_ticks(len, start, horiz, z) {
         : `<text class="r_text" x="0" y="0" text-anchor="middle" transform="translate(${u(13)} ${p}) rotate(-90)">${Math.abs(k / 8)}</text>`;
     } else {
       const l = k % 4 === 0 ? 7 : (z >= 0.75 || k % 2 === 0) ? 3 : 0;
+      if (l) s += horiz ? `<line class="r_tick" x1="${p}" x2="${p}" y1="${u(17 - l)}" y2="${b}"/>` : `<line class="r_tick" y1="${p}" y2="${p}" x1="${u(17 - l)}" x2="${b}"/>`;
