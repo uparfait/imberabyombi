@@ -3,3 +3,5 @@
 import { rem } from '../../lib/index.js';
 import { qs, clamp, toast, last_range } from '../core/index.js';
 import { link_at_caret, open_link_dialog, remove_link } from './links.jsx';
+
+export let bubble_link = null;
