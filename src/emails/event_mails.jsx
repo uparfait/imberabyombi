@@ -15,3 +15,4 @@ export const event_mails = ({ ev, place, who, d1, d2, tm, event, rsvp, cal }) =>
     <div className="mail_diff">{[['Place', `${lorem.t(2)} room`, place], ['Agenda', lorem.t(3), lorem.t(4)], ['Guests', '24 people', '31 people']].map(([f, a, b]) => (
       <Fragment key={f}><p className="text-xs font-semibold uppercase tracking-wider text-muted">{f}</p><p><s>{a}</s></p><p><mark>{b}</mark></p></Fragment>
     ))}</div>{event(d1)}{mail_btn('Open the event')}</> },
+  change: { s: `New time: ${ev}`, t: <>
