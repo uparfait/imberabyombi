@@ -6,3 +6,4 @@ One element of each kind lives in `index.html`, outside the React root, and ever
 React draws the dialog contents through portals (`Dialog_hosts`, src/overlays); the rest is plain JavaScript.
 
 ## modal()
+```jsx
