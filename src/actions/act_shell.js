@@ -49,3 +49,4 @@ export const SHELL_ACT = {
   help_tip: t => tip.show(t),
   otp_resend: t => { form_msg(t.form, 'ok', 'Code sent', 'A new 6-digit code is on its way to your email.'); resend_in(30); },
   go: t => { close_dialog(qs('#modal')); location.hash = t.dataset.href; },
+  cmdk: () => open_cmd(),
