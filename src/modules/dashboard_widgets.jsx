@@ -25,3 +25,4 @@ const up_li = i => <li key={i.c + i.id} className="flex gap-3">
   <div className="min-w-0"><p className="truncate text-sm font-medium">{i.title}</p><p className="text-xs text-muted">{`${i.start} – ${i.end}`}</p></div></li>;
 
 /* u: the signed-in person. Returns the cards as a list (each keyed) */
+export function dash_widgets(u) {
