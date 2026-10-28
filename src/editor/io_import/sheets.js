@@ -25,3 +25,4 @@ export async function xlsx_native(buf) {
     const r = rels[s.getAttribute('r:id') || s.getAttributeNS(R_NS, 'id')]; if (!r) continue;
     const path = r.target.startsWith('/') ? r.target.slice(1) : resolve_path('xl/', r.target), rows = [];
     if (z.has(path)) by_tag(parse_xml(await z.text(path)), 'row').forEach(row => {
+      const ri = (parseInt(row.getAttribute('r')) || rows.length + 1) - 1; if (ri >= 2000) return; const arr = rows[ri] = rows[ri] || [];
