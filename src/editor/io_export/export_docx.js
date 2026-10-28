@@ -6,3 +6,4 @@ import { list_kind } from './docx_paras.js';
 import { blocks_xml } from './docx_table.js';
 import { prepare_images, abstract_xml } from './docx_image.js';
 import { DOCX_STYLES } from './docx_styles.js';
+import { docx_types, DOCX_RELS, docx_core, docx_numbering, docx_doc_rels, docx_header, docx_footer } from './docx_parts.js';
