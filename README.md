@@ -24,6 +24,7 @@ lives in the browser and can be reset from Settings.
 ## What is inside
 | Area             | Highlights                                                                          |
 |------------------|-------------------------------------------------------------------------------------|
+| Public website   | Hero, about, mission, vision, strategies, staff, partners, thanks, contact, detail pages, sitemap |
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
