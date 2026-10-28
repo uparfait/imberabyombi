@@ -27,3 +27,5 @@ function up_to(m, k) {
   const h = m.heads[k]; if (!h) return -1;
   for (let j = k - 1; j >= 0; j--) if (m.heads[j].lvl <= h.lvl) return m.heads[j].i;
   return -1;
+}
+function down_to(m, k) {
