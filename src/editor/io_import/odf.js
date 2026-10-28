@@ -62,3 +62,6 @@ async function odf_blocks(cx, n, out) {
     }
     else if (ln === 'page') { if (out.length) out.push(PB); out.push(`<h2>${esc_html(c.getAttribute('draw:name') || 'Slide')}</h2>`); await odf_blocks(cx, c, out); }
     else if (/^(section|text|presentation|index-body|table-of-content|custom-shape|g)$/.test(ln)) await odf_blocks(cx, c, out);
+  }
+}
+export async function odf_to_html(file) {
