@@ -3,3 +3,5 @@
    the page inert, so the caret and focus can only go back to the document after it closes). */
 import { qs } from '../core/index.js';
 import { modal, ask } from '../../overlays/index.js';
+
+/* run fn once #modal has closed (the 'close' event comes after the closing animation) */
