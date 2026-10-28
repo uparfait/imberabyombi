@@ -13,3 +13,4 @@
 }
 
 #editor {
+  --ed_off: 0rem;   /* the editor has the whole window */
