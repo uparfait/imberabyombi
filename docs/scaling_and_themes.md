@@ -32,3 +32,4 @@ inside its own box. Nested scroll areas hand the wheel back to the page at their
   chart steps). Components never need their own dark styles unless they sit on a special surface.
 - Theme switches are instant: `.theme_switch` turns all transitions off for two frames.
 - No shadows in any theme: every `box-shadow` and `text-shadow` is removed; borders carry depth.
+- Charts are redrawn after a theme or token change because they read colours when they draw.
