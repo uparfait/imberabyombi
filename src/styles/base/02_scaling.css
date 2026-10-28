@@ -13,3 +13,5 @@
   html {
     font-size: calc(100vw * 16 / var(--scale_phone));
     scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
+  }
+  @media (min-width: 430px) { html { font-size: calc(16px + (640px - 100vw) * (430 * 16 / var(--scale_phone) - 16) / 210); } }
