@@ -15,3 +15,4 @@ export function kit_forms_choices(brand_hex) {
       <optgroup label={lorem.t(1)}><option>{lorem.t(2)}</option></optgroup></select></div>
   );
   const suggest = (
+    <div className="field"><label htmlFor="demo_list">Input with suggestions</label>
