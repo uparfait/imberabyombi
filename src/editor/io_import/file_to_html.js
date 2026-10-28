@@ -19,3 +19,5 @@ export async function looks_like_text(file) {
   const b = new Uint8Array(await file.slice(0, 4096).arrayBuffer()); if (!b.length) return true;
   let bad = 0; for (const x of b) { if (x === 0) return false; if (x < 9 || (x > 13 && x < 32)) bad++; }
   return bad / b.length < 0.02;
+}
+const json_lines = text => JSON.stringify(text.split(/\r?\n/).filter(l => l.trim()).map(l => { try { return JSON.parse(l); } catch { return null; } }).filter(x => x != null));
