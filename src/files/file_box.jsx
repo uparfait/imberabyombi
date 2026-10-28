@@ -40,3 +40,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
       document.removeEventListener('reset', on_reset);
     };
   }, []);
+  return (
