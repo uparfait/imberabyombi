@@ -18,3 +18,4 @@ function on_text(x, y) {
   const r = document.createRange();
   for (const o of [p.off - 1, p.off]) {
     if (o < 0 || o >= p.node.length) continue; r.setStart(p.node, o); r.setEnd(p.node, o + 1);
+    if (Array.from(r.getClientRects()).some(c => x >= c.left - 2 && x <= c.right + 2 && y >= c.top && y <= c.bottom)) return true;
