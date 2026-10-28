@@ -15,3 +15,4 @@ export function table_ctx() {
 }
 /* every part of table t, first to last */
 export function table_chain(t) {
+  const bs = bodies(); let first = t;
