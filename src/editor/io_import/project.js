@@ -25,3 +25,4 @@ export function is_doc_empty() {
 /* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
 export function project_tabs(d) {
   return (d.tabs || []).map(t => {
+    const x = el('div'); x.innerHTML = sanitize_html(String(t.html || '')); qsa('.cmt', x).forEach(s => s.replaceWith(...s.childNodes));
