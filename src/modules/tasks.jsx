@@ -24,3 +24,4 @@ VIEWS.tasks = () => {
       <h2 className="text-lg">Your progress</h2>
       <p className="text-sm text-muted">{`${done} of ${mine.length} tasks on your plate are done.`}</p>
         <progress className="mt-3 max-w-md" max={mine.length || 1} value={done}></progress></div></section>
+    {tabs('tasks', list, t)}
