@@ -26,3 +26,4 @@ export function file_badge(ext) {
 export const badge_html = (ext, cls = 'fmt_badge') => { const [l, c] = file_badge(ext); return `<span class="${cls}" style="background:${c}">${esc_html(l)}</span>`; };
 export function bytes_to_b64(u8) { let s = ''; for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000)); return btoa(s); }
 export function b64bytes(b) { const s = atob(b), a = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) a[i] = s.charCodeAt(i); return a; }
+export function data_ur_lto_blob(u) {
