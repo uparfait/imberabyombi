@@ -66,3 +66,4 @@ function show_value(text, x, y) {
   value_el.style.left = clamp(x - w / 2, e, innerWidth - w - e) + 'px'; value_el.style.top = (y + scaled(18)) + 'px';
 }
 const hide_value = () => { if (value_el) value_el.remove(); };
+export function ruler_drag(e) {
