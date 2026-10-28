@@ -10,3 +10,4 @@ export const viz_tip = { el: null, cur: null,
       d.slice(1).forEach(([v, n, s]) => {
         const row = document.createElement('p'), key = document.createElement('i'), b = document.createElement('b'), sp = document.createElement('span');
         key.style.background = s == null ? 'rgb(var(--muted))' : scale_color(s); b.textContent = v; sp.textContent = n; row.append(key, b, sp); el.append(row); });
+      el.classList.add('on'); }
