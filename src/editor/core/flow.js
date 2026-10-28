@@ -24,3 +24,4 @@ export function normalize_body(b) {
   for (const n of Array.from(b.childNodes)) {
     if (n.nodeType === 8) { n.remove(); continue; }
     if (is_abs(n)) continue;
+    if (n.nodeType === 1 && BLOCK_RE.test(n.tagName)) {
