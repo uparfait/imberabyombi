@@ -19,3 +19,4 @@ export const FORMS = {
   profile: d => { const u = auth.user; auth.login({ ...u, name: d.name.trim(), email: d.email.trim().toLowerCase() }); rerender(); form_msg(qs('[data-form=profile]'), 'ok', 'Profile saved', 'Your new name and email show everywhere.'); },
   /* the message text is HTML (the slot is filled by plain JS): the address is escaped */
   forgot: (d, f) => form_msg(f, 'ok', 'Check your email', `We sent a reset link to <b>${esc(d.email)}</b>. It expires in 30 minutes.`, false),
+  otp: (d, f) => { const code = qsa('.otp_box', f).map(i => i.value).join('');
