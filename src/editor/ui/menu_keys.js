@@ -34,3 +34,4 @@ export function menu_key(e) {
     return bar_step(1);
   }
   if (k === 'ArrowLeft') {
+    if (menu_stack.length > 1) {
