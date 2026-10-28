@@ -34,3 +34,5 @@ export function activate_comment(id, focus) {
   qsa('.c_card').forEach(c => c.classList.toggle('active', c.dataset.id === id));
   const card = qs(`.c_card[data-id="${id}"]`);
   if (card) { card.scrollIntoView({ block: 'nearest' }); if (focus) { const t = qs('textarea', card); if (t) t.focus(); } }
+}
+export function fmt_time(t) { return new Date(t).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }); }
