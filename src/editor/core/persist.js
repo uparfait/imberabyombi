@@ -42,3 +42,4 @@ export function restore_doc() {
   state.setup = Object.assign(default_setup(), s, { margins: Object.assign(default_setup().margins, s.margins || {}) });
   state.tabs = tabs.map(t => ({ ...t, id: t.id || uid(), name: String(t.name || 'Tab'), html: String(t.html || '') || '<p><br></p>', undo: [], redo: [] }));
   state.active = state.tabs.some(t => t.id === d.active) ? d.active : state.tabs[0].id;
+  state.comments = Array.isArray(d.comments) ? d.comments.filter(c => c && c.id).map(c => Object.assign({ replies: [] }, c, { draft: false })) : [];
