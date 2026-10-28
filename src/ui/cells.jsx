@@ -27,3 +27,4 @@ export const options = f => (typeof f.o === 'function' ? f.o() : f.o || []).map(
   return <option key={i} value={ov}>{ol}</option>;
 });
 export function cell(c, k, row) {
+  const s = schemas[c], v = row[k], f = s.f.find(x => x.k === k);
