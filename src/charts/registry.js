@@ -13,3 +13,4 @@ export function draw_chart(cv, labels, vals, anim = true) {
   const step = () => {
     t = Math.min(1, t + .05); const e = 1 - Math.pow(1 - t, 3);
     x.clearRect(0, 0, wd, ht); x.font = `500 ${fs}px ${getComputedStyle(document.body).fontFamily}`; x.lineWidth = 1;
+    for (let i = 0; i <= 4; i++) {
