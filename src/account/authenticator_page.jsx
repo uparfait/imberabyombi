@@ -8,3 +8,4 @@ import { qr_svg } from './qr_svg.js';
 const TEXT = 'Get sign-in codes from an app on your phone, such as Imberabyombi Authenticator or Microsoft Authenticator. It works offline.';
 
 export function authenticator_page() {
+  const key = 'JBSW Y3DP EHPK 3PXP';
