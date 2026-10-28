@@ -56,3 +56,6 @@ export function install_format() {
   addEventListener('mousedown', on_down, true);
   return () => {
     document.removeEventListener('mousemove', on_hover); removeEventListener('mousedown', on_down, true);
+    if (drag_stop) drag_stop(); set_col_hover(null);
+  };
+}
