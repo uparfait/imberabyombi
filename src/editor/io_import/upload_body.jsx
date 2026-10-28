@@ -49,3 +49,6 @@ export function Upload_body({ up }) {
         {MODES.map(([k, l], i) => (
           <button key={k} type="button" data-m={k} aria-pressed={String(k === m)} onClick={() => up.set({ m: k })}
             className={`px-4 py-2 text-sm font-medium transition ${i ? 'border-l border-muted/50' : ''} ${k === m ? SEG_ON : SEG_OFF}`}>{l}</button>
+        ))}
+      </div>
+      <label className={FLD}>Turned into editable text, tables and images</label>
