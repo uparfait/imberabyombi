@@ -20,3 +20,4 @@ export async function export_docx(root, name) {
   try {
     await prepare_images(root);
     const { win, hin } = dims(), s = state.setup, m = s.margins;
+    const rels = [], media = [], nums = [], abstracts = new Map(); let rid = 10, img_n = 0;
