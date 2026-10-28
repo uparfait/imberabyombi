@@ -29,3 +29,4 @@ export function mi(name, cls = 'h-4 w-4 shrink-0') { return ic_html(name, cls); 
 
 /* the clean text of a node (no zero-width spaces), trimmed */
 export function clean_text(n) { return (n ? n.textContent : '').replace(/​/g, '').trim(); }
+/* a name not used yet among names: base, else "base (2)", "base (3)"… (base may already carry its own number) */
