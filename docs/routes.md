@@ -18,3 +18,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
 
 ## How a navigation works
 1. `hashchange` → `navigate()`.
+2. On staff pages the navigation is a "get": the clicked sidebar link shows the spinner, the top loader shows if it
