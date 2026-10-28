@@ -3,3 +3,4 @@
 import { qs, ymd, hm, fmt_d, money, now_dt } from '../lib/index.js';
 import { ui, db, rerender } from '../store/index.js';
 import { cfg } from '../config/index.js';
+import { me } from '../auth/index.js';
