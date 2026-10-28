@@ -18,3 +18,4 @@ function Editor_view() {
     <div id="editor" ref={root}>
       {/* the @page rule of the page setup (size, margins): rendered empty, written by apply_setup() */}
       <style id="page_rule"></style>
+      {topbar()}
