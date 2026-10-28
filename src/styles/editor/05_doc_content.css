@@ -20,3 +20,4 @@
 .doc_content hr{border:0;border-top:1px solid #9aa0a6;margin:6pt 0}
 .doc_content a{color:#1155cc;text-decoration:underline}
 .doc_content img{max-width:100%;height:auto;vertical-align:bottom;box-sizing:border-box}
+.doc_content table{border-collapse:collapse;width:100%;table-layout:fixed;margin:0;--bw:1px;--bc:#000000}
