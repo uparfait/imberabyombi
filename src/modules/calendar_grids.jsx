@@ -4,3 +4,4 @@ import { add_d, ymd, pad, to_min, fmt_hour } from '../lib/index.js';
 import { cal_task } from '../admin/index.js';
 
 const cols = 'grid grid-cols-[3.5rem_repeat(7,minmax(0,1fr))]';
+const INK = 'bg-ink text-white dark:bg-surface-3 dark:text-fg';
