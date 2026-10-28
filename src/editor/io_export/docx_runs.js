@@ -15,3 +15,4 @@ export function parse_pt(v) {
 }
 /* f: the formatting so far ({ b, i, u, s, sup, sub, font, size, color, hl, link }); returns it plus what element e adds */
 export function fmt_of(e, f) {
+  const g = Object.assign({}, f), t = e.tagName, st = e.style;
