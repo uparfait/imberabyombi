@@ -19,3 +19,4 @@ export const epub_opf = (id, title, now, manifest, imgs, spine) => '<?xml versio
   + `<meta property="dcterms:modified">${now}</meta></metadata>`
   + '<manifest><item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/><item id="css" href="style.css" media-type="text/css"/>'
   + `${manifest.join('')}${imgs.map((im, k) => `<item id="img${k + 1}" href="${im.name.slice(6)}" media-type="${im.type}"/>`).join('')}</manifest>`
+  + `<spine>${spine.join('')}</spine></package>`;
