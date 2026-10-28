@@ -54,3 +54,4 @@ function Download_body({ opt }) {
           <input id="dl_name" spellCheck="false" defaultValue={file_base()} className="min-w-0 flex-1 rounded-none border-0 bg-transparent focus:outline-none" />
           <span className="flex items-center border-l border-line bg-surface-2 px-3 text-muted">{'.' + f.ext}</span></div></div>
       <div className="grid gap-1.5"><span className="text-sm text-muted">Format</span>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(12.25rem,1fr))] gap-2" role="radiogroup" aria-label="Format">
