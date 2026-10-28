@@ -68,3 +68,4 @@ export function insert_cols(chain, col, n, side) {
   for (let k = 0; k < n; k++) chain_rows(chain).forEach(row => {
     const s = row_slots(row).find(x => col >= x.start && col <= x.end);
     if (!s) { const last = row.cells[row.cells.length - 1]; row.appendChild(last ? new_cell_like(last) : el('td', {}, '<p><br></p>')); return; }
+    if (side === 'left' ? s.start === col : s.end === col) { const nc = new_cell_like(s.cell); if (side === 'left') s.cell.before(nc); else s.cell.after(nc); }
