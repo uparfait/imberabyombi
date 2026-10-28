@@ -50,3 +50,4 @@ export function abstract_xml(kind, id) {
   for (let l = 0; l < 9; l++) {
     let fmt, text;
     if (NUMFMT[kind]) { fmt = NUMFMT[kind]; text = `%${l + 1}.`; }
+    else { fmt = 'bullet'; const arr = bullets[kind] || [kind.replace(/^['"]|['"]$/g, '').trim() || '•']; text = arr[l % arr.length]; }
