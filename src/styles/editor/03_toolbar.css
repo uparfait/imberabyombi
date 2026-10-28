@@ -54,3 +54,4 @@
 /* Text colour: an "A" over a bar in the current colour */
 .color_a { display: flex; flex-direction: column; align-items: center; line-height: 1; }
 .color_a .a { margin-top: .0625rem; font: 600 1rem/1 var(--font_sans); }
+.color_a .bar { width: 1.125rem; height: .25rem; margin-top: .125rem; border-radius: var(--pill); outline: 1px solid rgb(var(--fg) / .15); }
