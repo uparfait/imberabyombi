@@ -6,3 +6,5 @@ import { notify, staff_page } from '../../feedback/index.js';
 import { qs, el } from './utils.js';
 
 let sink = null, prog = null, line = null, timer = null;
+
+/* run fn with messages collected into the array `into` (live previews) */
