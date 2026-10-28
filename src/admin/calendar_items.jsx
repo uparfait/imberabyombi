@@ -39,5 +39,5 @@ export function mini_cal() {
         {has.has(k) && k !== td ? <span className="absolute bottom-0.5 h-1 w-1 rounded-full bg-brand"></span> : null}</button>; })}</div></div>;
 }
 
-/* ACT.mini: set ui.mini, then mini_draw(); false = no mini calendar on screen (then rerender(), as the reference did) */
+/* ACT.mini: set ui.mini, then mini_draw(); false = no mini calendar on screen (then the caller redraws the page with rerender()) */
 export const mini_draw = () => redraw_slot('mini');
