@@ -9,3 +9,4 @@ import { IMG_POSITIONS, img_max, img_align_of, img_now, hide_img_sel, set_replac
 import { set_img_pos, set_img_align } from './img_pos.js';
 import { crop_dialog } from './img_crop.jsx';
 import { adjust_dialog } from './img_adjust.jsx';
+import { image_size_dialog, alt_text_dialog } from './img_size.jsx';
