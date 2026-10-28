@@ -15,3 +15,4 @@ const views = wk => <div className="seg" role="radiogroup" aria-label="Calendar 
   <span>{cap(v)}</span></label>)}</div>;
 
 VIEWS.calendar = () => {
+  const d = parse_d(ui.cal_date), wk = ui.cal_view !== 'month', items = cal_items(), can = auth.can('calendar', 2);
