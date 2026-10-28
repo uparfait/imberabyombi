@@ -24,3 +24,4 @@ export const TABLE_ACT = {
   edit: t => open_form(t.dataset.col, t.dataset.id),
   /* the row fades out first; after the redraw its node loses .row_out in case React reuses it for another row */
   del: t => ask('Delete this record? It will be removed from this browser. You cannot undo this.', async () => {
+    close_dialog(qs('#modal')); const tr = document.querySelector(`tr[data-row="${t.dataset.id}"]`);
