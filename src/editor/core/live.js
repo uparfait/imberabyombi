@@ -60,3 +60,4 @@ function extras(s) { const r = s.restores.splice(0); r.reverse().forEach(f => { 
 function run(s) {
   const g = ++s.gen; let r; s.msgs = [];
   try { r = quiet(s.fn, s.msgs); } catch (e) { console.error(e); }
+  if (r && typeof r.then === 'function') { s.pending++; Promise.resolve(r).catch(e => console.error(e)).then(() => settle(s, g)); }
