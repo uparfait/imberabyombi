@@ -24,7 +24,7 @@ const LINKS = [['login', 'Sign in'], ['forgot', 'Forgot password'], ['verify', '
   ['set-password', 'Set password']];
 export const auth_links = cur => (
   <p className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-muted">{LINKS.filter(([k]) => k !== cur).map(([k, l]) => (
-    <a key={k} href={`#/${k}`} className="hover:text-accent">{l}</a>
+    <a key={k} href={to(`/${k}`)} className="hover:text-accent">{l}</a>
   ))}</p>
 );
 
