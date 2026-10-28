@@ -16,3 +16,4 @@ A simple pattern: keep `db` as a cache. Fetch a collection when a page opens, pu
 `rerender()`. On save, send the request inside `request()` and update the cache when it answers.
 
 ## 2. Requests: `request()` (src/feedback)
+Every user action already goes through `request(fn, { btn, delay })`: the button spins, the top loader shows, and an
