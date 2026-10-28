@@ -41,3 +41,4 @@ Icon buttons show their `aria-label`; any element with `data-tip` shows that tex
 shows the full text only when it is actually cut. On touch screens a tap shows it.
 
 ## Right-click menu
+On pages (not in fields, tables, code or dialogs, which keep the browser's menu) a right click opens quick links the
