@@ -15,6 +15,7 @@ export async function docx_to_html(file) {
   await load_script(LIB.mammoth);
   const res = await window.mammoth.convertToHtml({ arrayBuffer: buf.slice(0) },
     { styleMap: ["p[style-name='Title'] => p.title:fresh", "p[style-name='Subtitle'] => p.subtitle:fresh"] });
+  return { html: res.value || '' };
 }
 export async function docx_native(buf) {
   const z = await unzip(buf), doc = parse_xml(await z.text('word/document.xml'));
