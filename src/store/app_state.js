@@ -34,3 +34,4 @@ export const get_version = () => version;
 /* draw again. keep = stay on the page (rerender); otherwise this is a new page */
 export function render(keep = false, anim = false) {
   TIMERS.splice(0).forEach(clearInterval); AFTER.length = 0; ui.side = false;
+  for (const fn of BEFORE) { try { fn(keep); } catch (e) { console.error(e); } }
