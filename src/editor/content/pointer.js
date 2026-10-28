@@ -67,3 +67,4 @@ export function pages_mousedown(e) {
   const page = e.target.closest('.page'); if (!page || e.target.closest('.pg_body,.pg_header,.pg_footer_text,.img_sel')) return;
   e.preventDefault();
   const b = qs('.pg_body', page), br = b.getBoundingClientRect();
+  const pos = caret_from_point(clamp(e.clientX, br.left + 2, br.right - 2), clamp(e.clientY, br.top + 2, br.bottom - 2));
