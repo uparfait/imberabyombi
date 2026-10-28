@@ -21,3 +21,4 @@ export const VIZ_CMP_A = {
         + `<text class="value_label" x="${round1(x(v[i]) + 6)}" y="${round1(y(i) + 4)}">${num(v[i])}</text>`).join('')
       + `<line class="base_line" x1="${f.l}" x2="${f.l}" y1="${f.t}" y2="${f.t + f.ih}"/>`, 'Horizontal bar chart'),
       table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
+  stacked: { t: 'Stacked bar chart', g: 'cmp', d: 'Totals and their parts. A 2px gap separates the segments.', f(w) {
