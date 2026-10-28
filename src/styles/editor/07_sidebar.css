@@ -48,3 +48,4 @@ input.tab_filter, .tab_filter input {
 }
 .outline_item { padding-left: .625rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .outline_row:hover, .outline_item:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
+.outline_row.active { background: rgb(var(--brand) / .1); color: var(--active_fg); font-weight: 600; }
