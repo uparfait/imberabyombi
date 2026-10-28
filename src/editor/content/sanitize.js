@@ -19,3 +19,4 @@ export const KEEP_ATTR = new Set(['colspan', 'rowspan', 'start', 'alt', 'width',
 const ABS_STYLE = ['position', 'left', 'top', 'z-index'];
 /* data-pos of the original editor: left / right are now wrap_left / wrap_right */
 const POS_OLD = { left: 'wrap_left', right: 'wrap_right' };
+const abs_img = (c, tag) => tag === 'IMG' && /^(front|behind)$/.test(c.getAttribute('data-pos') || '');
