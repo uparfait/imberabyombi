@@ -7,3 +7,5 @@ import { auth } from '../auth/index.js';
 import { cap, css_var, rgb2hex } from '../lib/index.js';
 import { cfg } from '../config/index.js';
 import { ic } from '../icons/index.js';
+
+const FONTS = ['Figtree', 'Bricolage Grotesque', 'system-ui'];
