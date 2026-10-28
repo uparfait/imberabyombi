@@ -23,3 +23,4 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 
 ## SEO
 - `index.html` holds a real title, description, keywords, robots, author and canonical link, Open Graph and Twitter
+  card tags, theme colours for light and dark, a favicon and JSON-LD structured data (Organization).
