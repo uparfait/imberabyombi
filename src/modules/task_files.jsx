@@ -20,3 +20,6 @@ function Text_pre({ url }) {
   useEffect(() => { let on = true; fetch(url).then(x => x.text()).then(t => { if (on) set_text(t.slice(0, 20000)); }).catch(() => {});
     return () => { on = false; }; }, [url]);
   return <pre className="task_pre" data-text="">{text}</pre>;
+}
+
+/* how each kind shows inside the view; a kind not listed opens in the full viewer */
