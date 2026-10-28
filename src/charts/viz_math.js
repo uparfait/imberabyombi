@@ -25,3 +25,4 @@ export const sequential = p => `color-mix(in oklab, rgb(var(--brand)) ${Math.rou
 export const diverging = t => t >= 0
   ? `color-mix(in oklab, var(--series_1) ${Math.round(Math.min(1, t) * 100)}%, rgb(var(--surface_2)))`
   : `color-mix(in oklab, var(--series_2) ${Math.round(Math.min(1, -t) * 100)}%, rgb(var(--surface_2)))`;
+/* the date range scales every amount: 7, 30 or 90 days */
