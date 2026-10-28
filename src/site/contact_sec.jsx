@@ -26,3 +26,4 @@ export function contact_form() {
   );
 }
 export function contact_sec(full) {
+  return (
