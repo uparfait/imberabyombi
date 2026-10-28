@@ -16,3 +16,4 @@ export function md_inline(s) {
 const LIST_RE = /^\s*([-*+]|\d+[.)])\s+/, ROW_RE = /^\s*\|.*\|\s*$/;
 /* a Markdown table: the first row is bold, the --- separator row is dropped */
 function md_table(rows) {
+  const cells = r => r.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim());
