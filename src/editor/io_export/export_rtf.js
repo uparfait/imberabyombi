@@ -25,3 +25,4 @@ function rtf_table(rx, t) {
     o += '\\trowd\\trgaph100\\trleft0' + (r.cells[0] && r.cells[0].hasAttribute('data-hdr') ? '\\trhdr' : ''); let x = 0;
     Array.from(r.cells).forEach(c => {
       x += col_w * (c.colSpan || 1); const bg = to_hex(c.style.backgroundColor), va = { middle: '\\clvertalc', bottom: '\\clvertalb' }[c.style.verticalAlign] || '';
+      o += `${va}\\clbrdrt${brd}\\clbrdrl${brd}\\clbrdrb${brd}\\clbrdrr${brd}${bg ? `\\clcbpat${rtf_ci(rx, bg)}` : ''}\\cellx${x}`;
