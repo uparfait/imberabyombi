@@ -29,3 +29,7 @@ VIEWS.calendar = () => {
           <span className="hidden sm:inline">Activity</span></button> : null}</div>
     </header><div className="date_body">{grid}</div></section>
     {auth.can('calendar') ? <div className="mt-6">{crud('activities', { title: 'Activities', mod: 'calendar' })}</div> : null}
+  </>;
+};
+
+/* Move the main calendar to a date. When the shown week/month changes, its title and grid slide in from that
