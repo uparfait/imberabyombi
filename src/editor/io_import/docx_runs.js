@@ -6,3 +6,4 @@ import { by_tag, kids, resolve_path } from './xml_helpers.js';
 
 export const docx_val = n => n ? n.getAttribute('w:val') : null;
 const on = n => !!n && !/^(false|0|none)$/.test(docx_val(n) || '');
+/* Word's highlight names (data) → colours */
