@@ -15,3 +15,4 @@ export function last_flow(b) { let e = b && b.lastElementChild; while (e && is_a
 export function prev_flow(e) { e = e && e.previousElementSibling; while (e && is_abs(e)) e = e.previousElementSibling; return e || null; }
 export function bodies() { return pages_el ? qsa('.pg_body', pages_el) : []; }
 export function page_wraps() { return pages_el ? qsa('.page_wrap', pages_el) : []; }
+export function body_index(b) { return bodies().indexOf(b); }
