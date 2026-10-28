@@ -65,3 +65,4 @@ export function pick_any(cb) {
   i.addEventListener('change', () => { cb(Array.from(i.files)); i.remove(); }); i.click();
 }
 /* each file as a downloadable chip at the cursor (one undo step) */
+export async function attach_files(files) {
