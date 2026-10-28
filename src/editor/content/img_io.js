@@ -8,3 +8,4 @@ import { img_now, replace_target, set_replace_target } from './img_sel.js';
 
 export async function image_blob(img) {
   const im = await load_img(img.getAttribute('src')); const c = document.createElement('canvas');
+  c.width = im.naturalWidth; c.height = im.naturalHeight; c.getContext('2d').drawImage(im, 0, 0);
