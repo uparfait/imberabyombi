@@ -16,3 +16,4 @@ const TD = 'border-b border-line px-2 py-1.5 text-sm', NUM = TD + ' text-right t
 export function word_count_dialog() {
   const all = count(doc_text()), sel_t = last_range && !last_range.collapsed ? last_range.toString() : '', sel = sel_t ? count(sel_t) : null;
   const row = (l, a, b) => <tr key={l}><td className={TD}>{l}</td><td className={NUM}>{a}</td>{sel ? <td className={NUM}>{b}</td> : null}</tr>;
+  const n = v => v.toLocaleString();
