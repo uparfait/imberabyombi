@@ -29,3 +29,6 @@ const MEDIA = {
   audio: f => <audio src={f.url} controls className="w-full"></audio>,
   pdf: f => <iframe src={f.url} title={f.name} className="h-72 w-full rounded-xl border border-line"></iframe>,
   text: f => <Text_pre url={f.url} />
+};
+
+/* an attachment shown inside the task view (images, video, audio, PDF, text); others are opened in the full viewer */
