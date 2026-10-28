@@ -19,3 +19,4 @@ export function open_dialog({ title, content, buttons = [], width = 440, on_open
   const p = buttons.find(b => b.primary);
   modal({
     title, wide: width > 560,
+    body: <div className="grid gap-4 sm:col-span-2">{content}</div>,
