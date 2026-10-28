@@ -19,3 +19,4 @@ export const VIZ_CMP_B = {
         + ` style="stroke:rgb(var(--muted));stroke-width:2"/>` + dot(ax.x(a[i]), y(i), 'var(--series_2)') + dot(ax.x(b[i]), y(i), 'var(--series_1)'))
         + row_label(f, y, i, k)).join(''), 'Dumbbell chart'),
       legend: legend(['2025', '2026'], 'dot', [1, 0]),
+      table: [['Category', '2025', '2026', 'Change'], c.map((k, i) => [k, num(a[i]), num(b[i]), (b[i] >= a[i] ? '+' : '') + num(b[i] - a[i])])] }; } },
