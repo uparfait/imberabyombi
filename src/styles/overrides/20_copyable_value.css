@@ -21,3 +21,4 @@
   .pw_rules li { display: flex; align-items: center; gap: .5rem; color: rgb(var(--muted)); transition: color .2s; }
   .pw_rules li svg { opacity: .3; transition: opacity .2s; }
   .pw_rules li.ok { color: rgb(var(--ok)); }
+  .pw_rules li.ok svg { opacity: 1; }
