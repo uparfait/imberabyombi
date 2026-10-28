@@ -74,3 +74,4 @@ export function open_menu(anchor, items, opts = {}) {
   if (x + w > innerWidth - g) x = opts.side != null ? Math.max(g, opts.side - w + scaled(2)) : Math.max(g, innerWidth - w - g);
   if (y + h > innerHeight - g) y = Math.max(g, innerHeight - h - g); m.style.left = x + 'px'; m.style.top = y + 'px';
   menu_stack.push({ el: m, anchor, level });
+  if (anchor) { anchor.classList.add('open'); if (anchor.hasAttribute('aria-haspopup') || anchor.hasAttribute('aria-expanded')) anchor.setAttribute('aria-expanded', 'true'); }
