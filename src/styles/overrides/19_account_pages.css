@@ -40,3 +40,4 @@
      Phones: as wide as the screen allows (8px from each edge), still right under its button. */
   .tile_pop:not([hidden]) { display: flex; flex-direction: column; overflow: hidden; }
   .tile_pop { position: fixed; margin: 0; max-height: min(30rem, calc(100dvh - 9rem)); }   /* placed by placeTile() */
+  .tile_pop > div { display: flex; min-height: 0; flex-direction: column; }
