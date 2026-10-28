@@ -21,3 +21,4 @@ export const kit_tables = () => (
     <div className="card overflow-x-auto p-2"><table><caption className="px-4 pt-3">{lorem.t(3)}</caption><colgroup><col /><col span={2} className="hl" /><col /></colgroup>
       <thead><tr><th scope="col">Name</th><th scope="col">Lorem</th><th scope="col">Ipsum</th><th scope="col" className="text-right">Total</th></tr></thead>
       <tbody>{[0, 1, 2, 3].map(row)}</tbody>
+      <tfoot><tr><th scope="row">Sum</th><td></td><td></td><td className="text-right">{money(2190)}</td></tr></tfoot></table></div>
