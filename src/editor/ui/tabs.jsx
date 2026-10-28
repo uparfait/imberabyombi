@@ -34,3 +34,4 @@ export function step_tab(d) {
 }
 export function duplicate(t) {
   save_tab();
+  const c = duplicate_tab(t, unique_name(t.name + ' (copy)', state.tabs.map(x => x.name)));
