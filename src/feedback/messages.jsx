@@ -5,3 +5,4 @@ import { TICON } from './basics.js';
 
 /* B. Inline messages (title, text: JSX or text) */
 export const msg_box = (tone, title, text = '') => (
+  <div className="msg" data-tone={tone} role={tone === 'bad' ? 'alert' : 'status'}>{ic(TICON[tone] || 'help', 'ico h-5 w-5')}<div className="min-w-0 flex-1"><p className="font-semibold">{title}</p>{text ? <p className="mt-0.5 text-muted">{text}</p> : null}</div><button type="button" className="msg_x" data-act="msg_x" aria-label="Dismiss message">{ic('x', 'h-4 w-4')}</button></div>
