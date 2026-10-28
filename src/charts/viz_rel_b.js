@@ -41,3 +41,4 @@ export const VIZ_REL_B = {
         + ` style="fill:${scale_color(o.g)};stroke:rgb(var(--surface));stroke-width:2"/>`))
         .join(''), 'Network graph'),
       legend: legend(['Community 1', 'Community 2', 'Community 3'], 'dot'), table: [['Node', 'Community', 'Links'], nodes.map((o, i) => [o.k, o.g + 1, deg[i]])] }; } },
+  dendrogram: { t: 'Dendrogram', g: 'rel', d: 'Items grouped by similarity, merged step by step.', f(w) {
