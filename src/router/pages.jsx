@@ -30,8 +30,7 @@ export function public_page(r) {
 let redirecting = 0;
 const redirect = path => { if (!redirecting) redirecting = setTimeout(() => { redirecting = 0; go(path, { replace: true }); }); return null; };
 export function admin_page(r) {
-  if (!auth.user) { location.replace('#/login?next=' + encodeURIComponent('#' + r.path)); return null; }
-  if (!auth.role()) { auth.logout(); location.replace('#/login'); return null; }
+  if (!auth.user) return redirect('/login?next=' + encodeURIComponent(r.path));
   const mod = r.path.split('/')[2] || MODS.find(m => auth.can(m.k))?.k || 'settings', m = MODS.find(x => x.k === mod);
   route.mod = mod; lorem.seed(hash_str(mod));
   const body = !m ? not_found(true) : !auth.can(mod) ? forbidden() : VIEWS[mod]();
