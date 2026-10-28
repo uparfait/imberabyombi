@@ -4,3 +4,4 @@ import { qs } from '../lib/index.js';
 import { ui, rerender, before_render } from '../store/index.js';
 import { reduced } from '../feedback/index.js';
 import { tip } from '../overlays/index.js';
+import { close_pops } from '../actions/index.js';
