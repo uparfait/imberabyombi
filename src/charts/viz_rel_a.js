@@ -55,3 +55,4 @@ export const VIZ_REL_A = {
     const p = (i, r) => [cx + Math.sin(i / ax.length * Math.PI * 2) * r, cy - Math.cos(i / ax.length * Math.PI * 2) * r];
     return { svg: svg(f, [.25, .5, .75, 1].map(t => `<path class="grid_line" d="${path_of(ax.map((_, i) => p(i, rad * t)))}Z" style="fill:none"/>`).join('')
       + ax.map((k, i) => { const [x, y] = p(i, rad), [lx, ly] = p(i, rad + 14);
+        return `<line class="grid_line" x1="${cx}" y1="${cy}" x2="${round1(x)}" y2="${round1(y)}"/>`
