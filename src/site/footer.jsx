@@ -31,3 +31,4 @@ export function footer() {
             <button className="btn btn_primary">Subscribe</button></form><div data-msg-slot="" className="mt-3 empty:hidden"></div></div>
       </div>
       <div className="border-t border-line"><div className="wrap flex flex-wrap items-center justify-between gap-4 py-6 text-xs">
+        <small className="text-muted">© <time dateTime={y}>{y}</time> {cfg.name}. {lorem.t(3)}.</small>
