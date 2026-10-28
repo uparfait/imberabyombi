@@ -28,3 +28,4 @@ export function run_find(keep) {
   if (q) {
     let text = ''; const segs = [];
     bodies().forEach(b => {
+      const w = document.createTreeWalker(b, NodeFilter.SHOW_TEXT); let last_blk = null;
