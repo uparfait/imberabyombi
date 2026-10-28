@@ -5,3 +5,4 @@ import { state, refs, pages_el, scroller, active_tab, create_page, reflow, commi
   new_tab, qs, save_soon } from '../core/index.js';
 import { hide_img_sel, render_comments } from '../content/index.js';
 import { apply_setup } from './view.js';
+import { update_rulers } from './rulers.js';
