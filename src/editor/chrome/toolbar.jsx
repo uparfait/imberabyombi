@@ -14,3 +14,5 @@ const tb = ({ ed, icon, tip, edit = true, state, id }) => (
 const dd = (id, label_id, label, tip, width, edit) => (
   <button type="button" id={id} className={edit ? 'tb_dd tb_edit' : 'tb_dd'} style={{ width }} data-tip={tip} aria-haspopup="menu">
     <span className="lbl" id={label_id}>{label}</span>{ic('arrow_drop_down')}</button>
+);
+/* a list button with its own small menu arrow */
