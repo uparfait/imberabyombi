@@ -34,3 +34,5 @@ export function fill_refs(root) {
 }
 export function clear_refs() {
   for (const k of Object.keys(store)) delete store[k];
+  pages_el = scroller = hruler = vruler = null;
+}
