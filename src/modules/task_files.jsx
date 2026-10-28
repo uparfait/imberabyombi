@@ -17,3 +17,4 @@ export const file_chip = (f, id, i, own, on = false) => { const k = file_kind(f)
 /* a text attachment: "…" until its first 20 000 characters are read */
 function Text_pre({ url }) {
   const [text, set_text] = useState('…');
+  useEffect(() => { let on = true; fetch(url).then(x => x.text()).then(t => { if (on) set_text(t.slice(0, 20000)); }).catch(() => {});
