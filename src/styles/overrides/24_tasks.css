@@ -40,3 +40,4 @@
   .task_file { display: flex; min-width: 0; align-items: center; gap: .625rem; padding: .5rem .5rem .5rem .75rem; border-bottom: 1px solid rgb(var(--line)); text-align: left; transition: background-color .2s; }
   .task_file:last-child { border-bottom: 0; }
   .task_file:hover { background: rgb(var(--fg) / .04); }
+  .task_file img, .task_file_ico { width: 2.25rem; height: 2.25rem; flex: none; border-radius: .625rem; object-fit: cover; }
