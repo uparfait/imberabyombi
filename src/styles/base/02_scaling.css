@@ -28,3 +28,5 @@
   body {
     min-width: 22.5rem; background: rgb(var(--bg)); color: rgb(var(--fg));
     font-family: var(--font_sans); line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  /* Light/dark switch: nothing animates while the theme changes */
