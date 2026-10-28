@@ -31,3 +31,4 @@ export const MARGIN = () => RANGE[ui.viz_range || 30];
 export const fit = (s, px) => { const n = Math.max(1, Math.floor(px / 6.4)); return s.length > n ? s.slice(0, Math.max(1, n - 1)) + '…' : s; };
 /* the hover tooltip's data: [title, [value, series name, series index or null], …]. tip_text for SVG strings, tip_attr for JSX */
 export const tip_text = (title, rows) => `data-tt="${esc(JSON.stringify([title, ...rows]))}"`;
+export const tip_attr = (title, rows) => ({ 'data-tt': JSON.stringify([title, ...rows]) });
