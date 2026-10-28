@@ -32,3 +32,4 @@ export const EDITOR_TEXT_PATHS = {
   match_case: 'M2 18 7 6l5 12M3.7 14h6.6M21 12v6M21 15a3 3 0 1 1-6 0 3 3 0 0 1 6 0z',
   title: 'M4 7V4h16v3M12 4v16M9 20h6',
   short_text: 'M4 9h16M4 15h10',
+  spellcheck: 'M3 14 6.5 4l3.5 10M4.4 10h4.2M13 4v10M13 9.5h2a2.25 2.25 0 0 1 0 4.5h-2M11 18l3 3 7-7',
