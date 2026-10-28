@@ -40,3 +40,4 @@ a tile opens the file viewer (images, video, audio, PDF and text inside; other t
 
 ## Validation
 - Forms carry `noValidate`; browser bubbles never show. `validate(form)` checks required fields, types, patterns, ranges
+  and date formats, writes a short message under each bad field (`aria-invalid`), focuses the first one, and puts a
