@@ -16,3 +16,4 @@ export function table_xml(t, ctx) {
     ? `<w:${s} w:val="single" w:sz="${Math.max(2, Math.round(bwv * 6))}" w:space="0" w:color="${bc}"/>` : `<w:${s} w:val="nil"/>`;
   const pad_pt = parse_pt(t.style.getPropertyValue('--pad').trim()), pad = Math.round((pad_pt == null ? 5 : pad_pt) * 20);
   const jc = t.style.marginLeft === 'auto' ? (t.style.marginRight === 'auto' ? 'center' : 'right') : '';
+  let out = `<w:tbl><w:tblPr><w:tblW w:w="${total}" w:type="dxa"/>${jc ? `<w:jc w:val="${jc}"/>` : ''}`
