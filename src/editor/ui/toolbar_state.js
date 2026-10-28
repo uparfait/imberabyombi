@@ -28,3 +28,4 @@ export function refresh_toolbar() {
   const si = refs.size_input;
   if (si && document.activeElement !== si) si.value = Math.round(parseFloat(cs.fontSize) * 0.75 * 2) / 2;
   const blk = n.closest('p,h1,h2,h3,h4,h5,h6,li,td,th');
+  let label = 'Normal text';
