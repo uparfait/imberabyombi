@@ -58,3 +58,5 @@ export function text_items() {
 export function style_items() {
   const cur = refs.style_label ? refs.style_label.textContent : '';
   return STYLES.map(s => ({ label: s.label, label_style: s.css, checked: cur === s.label, action: () => set_block_style(s.key) }));
+}
+export function download_items() {
