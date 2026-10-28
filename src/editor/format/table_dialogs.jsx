@@ -17,3 +17,4 @@ export function preset_preview(p) {
   return (
     <table><tbody>{[0, 1, 2, 3].map(r => <tr key={r}>{[0, 1, 2].map(k => {
       const bg = r === 0 && p.header ? HDR_BG : (p.striped && (r - (p.header ? 1 : 0)) % 2 === 1) ? STRIPE_BG : '#fff';
+      return <td key={k} style={{ border: line, ...side, background: bg }}></td>;
