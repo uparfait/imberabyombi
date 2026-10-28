@@ -14,3 +14,4 @@ import { VIZ_MAP } from './viz_map.js';
 
 export const VIZ = {
   /* Comparison */ ...VIZ_CMP_A, ...VIZ_CMP_B,
+  /* Distribution */ ...VIZ_DIST,
