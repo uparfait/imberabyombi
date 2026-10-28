@@ -16,3 +16,4 @@ let save_timer = null, too_big = 0;
 export function doc_data() {
   const html = pages_el && bodies().length ? collect_html() : null;
   return {
+    title: state.title, setup: state.setup, active: state.active, comments: state.comments.filter(c => !c.draft),
