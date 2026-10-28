@@ -20,3 +20,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
   if (dk && (from || to)) rows = rows.filter(r => { const v = String(r[dk] || '').slice(0, 16), day = v.length <= 10, cut = s => day ? s.slice(0, 10) : s;
     return v && (!from || v >= cut(from)) && (!to || v <= cut(to)); });
   const val = (r, k) => Array.isArray(r[k]) ? r[k].map(x => x?.t ?? x?.name ?? x).join('; ') : k === 'role' ? role_name(r[k]) : r[k] ?? '';
+  const head = cols.map(([, n]) => n), body = rows.map(r => cols.map(([k]) => val(r, k)));
