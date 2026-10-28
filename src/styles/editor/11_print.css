@@ -26,3 +26,4 @@
   .page_wrap > .page { position: relative !important; transform: none !important; outline: 0 !important; border: 0 !important; }
   .pg_header:empty, .pg_footer_text:empty { visibility: hidden; }
   .doc_content .cmt { background: none !important; border: 0 !important; }
+  .pageless .page_wrap > .page { height: auto !important; min-height: 0 !important; }
