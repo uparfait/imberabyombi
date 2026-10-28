@@ -28,3 +28,5 @@ function Crop_body({ src, st }) {
     };
     const up = () => { stage.removeEventListener('pointermove', move); stage.removeEventListener('pointerup', up); };
     stage.addEventListener('pointermove', move); stage.addEventListener('pointerup', up);
+  };
+  const shown = rect && rect.w >= 4 && rect.h >= 4;
