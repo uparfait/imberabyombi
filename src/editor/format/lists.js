@@ -24,3 +24,5 @@ export function set_list_type(tag, type) {
   }
   if (!l) return;
   begin_op(); l.style.listStyleType = type; end_op();
+}
+/* strike: undefined toggles the checklist; true / false makes one with / without strikethrough */
