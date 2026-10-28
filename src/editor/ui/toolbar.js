@@ -32,3 +32,4 @@ const size_items = () => [8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 48, 60, 72, 96].
 const indent_items = () => [{ label: 'Increase indent', icon: 'format_indent_increase', action: () => indent(1) },
   { label: 'Decrease indent', icon: 'format_indent_decrease', action: () => indent(-1) }];
 /* dropdown button id → its items */
+const DROPS = {
