@@ -26,3 +26,4 @@ export async function pdf_to_html(buf) {
     const hs = lines.filter(l => l.text.trim()).map(l => l.h).sort((a, b) => a - b); const med = hs[Math.floor(hs.length / 2)] || 10;
     let para = null, prev_y = null, prev_h = 0;
     const flush = () => { if (para) { html += `<${para.tag}>${esc_html(para.text.trim())}</${para.tag}>`; para = null; } };
+    for (const l of lines) {
