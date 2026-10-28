@@ -31,3 +31,4 @@ export function set_zoom(z) {
   page_wraps().forEach(layout_page); layout_after(); update_rulers();
 }
 export function zoom_fit() {
+  if (!scroller) return;
