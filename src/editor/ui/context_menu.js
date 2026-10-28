@@ -26,3 +26,4 @@ export function on_context_menu(e) {
     cmd('Paste without formatting', 'content_paste_go', () => paste_from_clipboard(true), 'Ctrl+Shift+V'),
     { sep: true },
     cmd('Comment', 'add_comment', () => add_comment(), 'Ctrl+Alt+M'),
+    cmd('Insert link', 'link', () => open_link_dialog(), 'Ctrl+K'),
