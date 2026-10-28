@@ -25,3 +25,4 @@ const text_of = n => n == null || typeof n === 'boolean' ? '' : Array.isArray(n)
    (<strong>…</strong>) in the question: <>Check out <strong>{plate}</strong> from slot {n}? {more}</> */
 function split_q(msg, cta) {
   if (msg == null || typeof msg !== 'object') {
+    const [, q, more] = String(msg).match(/^([^?]*\?)\s*([\s\S]*)$/) || [, `${cta}?`, String(msg)];
