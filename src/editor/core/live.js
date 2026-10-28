@@ -31,3 +31,5 @@ function take() {
   return { tab: state.active, html: bodies().map(x => x.innerHTML), sel: a && b ? { a, so: r.startOffset, b, eo: r.endOffset } : null,
     img: img_sel && img_sel.isConnected ? where(img_sel) : null, top: scroller ? scroller.scrollTop : 0, setup: JSON.stringify(state.setup),
     zoom: state.zoom, on: bar ? qsa('.active', bar) : [], color: refs.color_bar?.style.background ?? null, size: refs.size_input?.value ?? null };
+}
+function put(sn) {
