@@ -58,3 +58,4 @@ export function text_runs(t, f) {
 /* ctx: { content_tw, content_px, add_link(href), add_media(bytes, ext), new_num(list) } (export_docx.js); headers and
    footers pass only the sizes, so their links stay text and their images are left out */
 export function inline_xml(node, f, ctx) {
+  let out = '';
