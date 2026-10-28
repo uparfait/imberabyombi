@@ -5,3 +5,4 @@ import { round1, num, linear, tip_attr } from './viz_math.js';
 import { path_of } from './viz_svg.js';
 
 export const KPIS = [];
+/* Sparkline: stretches to the card width; the latest value is a dot (HTML, so it stays round). With labels, every point gets
