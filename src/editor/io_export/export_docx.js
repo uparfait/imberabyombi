@@ -61,3 +61,5 @@ export async function export_docx(root, name) {
       { name: 'word/styles.xml', data: DOCX_STYLES },
       { name: 'word/numbering.xml', data: docx_numbering(abs_xml, num_xml) },
       { name: 'word/_rels/document.xml.rels', data: docx_doc_rels(rels) }
+    );
+    media.forEach(f => files.push(f));
