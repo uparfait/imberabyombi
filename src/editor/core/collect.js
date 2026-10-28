@@ -33,3 +33,4 @@ export function place_abs(pageless) {
   const bs = bodies();
   bs.forEach((b, i) => qsa(':scope > [data-page]', b).forEach(e => {
     if (!is_abs(e)) return;
+    const k = pageless ? 0 : Math.max(0, Math.min(bs.length - 1, parseInt(e.getAttribute('data-page')) || 0));
