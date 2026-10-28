@@ -4,3 +4,5 @@ import { lorem, hash_str } from '../lib/index.js';
 import { ui } from '../store/index.js';
 import { rnd, MONTHS, uwords, MARGIN } from './viz_math.js';
 import { KPIS } from './kpi_parts.jsx';
+
+export function kpi_data() {
