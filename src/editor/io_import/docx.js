@@ -15,3 +15,4 @@ export async function docx_to_html(file) {
       { styleMap: ["p[style-name='Title'] => p.title:fresh", "p[style-name='Subtitle'] => p.subtitle:fresh"] });
     if (res.value && res.value.trim()) return { html: res.value };
   } catch (e) { console.warn('Using the built-in Word reader', e); }
+  return { html: await docx_native(buf) };
