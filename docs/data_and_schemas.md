@@ -42,3 +42,4 @@ and in every screenshot. Methods: `t(n)` title of n words, `s()` sentence, `p()`
 `int(a, b)`, `r()` random 0–1, `seed(n)`.
 
 ## Storage keys
+`theme`, `tokens`, `session`, `lastRole`, `roles`, `notes`, `messages`, `allowSelect`, `sideMin`, `sideClosed`,
