@@ -13,3 +13,4 @@ const REPLY = '<input class="c_input mt-2" placeholder="Reply" aria-label="Reply
 const card_html = (c, orphan) => '<div class="flex items-center gap-2"><span class="c_avatar">Y</span><div class="min-w-0 flex-1">'
   + `<div class="font-medium">You</div><div class="text-xs text-muted">${fmt_time(c.time)}</div></div>`
   + `${c.draft ? '' : icon_btn('resolve', 'Resolve', 'check', 'text-accent') + icon_btn('delete', 'Delete', 'delete', '')}</div>`
+  + `<div class="c_quote"></div>${orphan ? '<div class="text-xs text-muted">The commented text was deleted.</div>' : ''}`
