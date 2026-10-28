@@ -19,3 +19,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Document tabs**: add, rename, duplicate, delete, drag to reorder, filter when there are many; each tab has its own
   outline of headings (fold, drag a heading to move its whole section, Move up / down, Delete section).
 - **Import** (Upload): DOCX, PPTX, XLSX / CSV / TSV, ODT, EPUB, RTF, PDF, HTML, Markdown, JSON, text and code files.
+- **Export** (Download): DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT, and a project file that keeps every tab.
