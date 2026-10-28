@@ -7,3 +7,4 @@ import { File_box } from '../files/index.js';
 import { DTF, dt_attrs, dt_show } from './date_formats.js';
 
 /* Form field generated from a schema field */
+export function field(f, v) {
