@@ -37,3 +37,4 @@ const own_rows = t => by_tag(t, 'table-row').filter(r => { let p = r.parentNode;
 async function odf_table(cx, c) {
   const rows = [];
   for (const tr of own_rows(c)) {
+    let r = '';
