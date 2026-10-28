@@ -17,3 +17,4 @@ export function table_menu_items() {
     { label: 'Insert column right', icon: 'add_column_right', action: () => tbl_op('col_right') },
     { label: 'Insert several rows or columns…', icon: 'library_add', action: insert_multiple_dialog },
     { sep: true },
+    { label: 'Delete row', icon: 'delete', action: () => tbl_op('del_row') },
