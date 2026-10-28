@@ -58,3 +58,4 @@ export function tbl_op(op, arg) {
     }
     case 'cell_bg': sel_cells(c).forEach(x => { x.style.backgroundColor = arg || ''; x.removeAttribute('data-autobg'); }); break;
     case 'valign': sel_cells(c).forEach(x => { x.style.verticalAlign = arg === 'top' ? '' : arg; }); break;
+    case 'border': chain.forEach(t => t.style.setProperty('--bw', arg + 'px')); break;
