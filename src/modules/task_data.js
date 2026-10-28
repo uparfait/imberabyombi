@@ -3,3 +3,5 @@
    it; whoever it is assigned to can change its status and dates, tick items, add files and comment. */
 import { qsa, uid } from '../lib/index.js';
 import { auth, me } from '../auth/index.js';
+
+/* Subtasks: [{ t: title, items: [{ t, done }] }] (an older flat list reads as one group) */
