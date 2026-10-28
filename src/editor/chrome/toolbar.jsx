@@ -51,3 +51,4 @@ export const toolbar = () => (
     <button type="button" className="tb_btn tb_edit" id="color_btn" data-tip="Text color" aria-label="Text color" aria-haspopup="menu">
       <span className="color_a"><span className="a">A</span><span className="bar" id="color_bar" style={{ background: '#000' }}></span></span></button>
     {tb({ icon: 'ink_highlighter', tip: 'Highlight color', id: 'hilite_btn' })}
+    {sep()}
