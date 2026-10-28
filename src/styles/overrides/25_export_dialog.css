@@ -1,2 +1,3 @@
 /* overrides/25_export_dialog.css: rules that come after the utilities, as in the reference */
   /* Export dialog: a column row = include tick + its name in the file */
+  .export_col { display: flex; align-items: center; gap: .75rem; }
