@@ -55,3 +55,4 @@ function on_key(e, row) {
   else if (k === 'ArrowRight') {
     if (row.classList.contains('folded')) { e.preventDefault(); toggle_fold(row, true); }
     else if (rows[i + 1] && +rows[i + 1].dataset.lvl > lvl) to(rows[i + 1]);
+  } else if (k === 'ArrowLeft') {
