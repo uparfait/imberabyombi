@@ -26,3 +26,4 @@ export async function docx_native(buf) {
     by_tag(nd, 'num').forEach(n => { const a = by_tag(n, 'abstractNumId')[0]; num_fmt[n.getAttribute('w:numId')] = a ? abs[a.getAttribute('w:val')] : 'bullet'; });
   }
   const out = document.createElement('div'); await docx_blocks({ z, rels, num_fmt }, kids(by_tag(doc, 'body')[0]), out);
+  return out.innerHTML || '<p><br></p>';
