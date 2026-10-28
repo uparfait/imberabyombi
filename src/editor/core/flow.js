@@ -73,3 +73,5 @@ export function shallow_clone(c) {
   const n = c.cloneNode(false); n.removeAttribute('start'); n.removeAttribute('id');
   if (is_table(c)) { const cg = c.querySelector(':scope > colgroup'); if (cg) n.appendChild(cg.cloneNode(true)); n.appendChild(document.createElement('tbody')); }
   return n;
+}
+export function move_items(c, items, next) {
