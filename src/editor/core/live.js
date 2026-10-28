@@ -18,3 +18,5 @@ import { img_sel, select_image, hide_img_sel } from '../content/index.js';
 
 let cur = null, zombies = 0, keeps = 0;   // cur: the running preview; zombies: cancelled previews whose async action still runs
 export function live_busy() { return !!cur || zombies > 0; }
+
+function where(n) { const bs = bodies(), h = editable_of(n), i = bs.indexOf(h), p = i < 0 ? null : path_to(h, n); return p ? { i, p } : null; }
