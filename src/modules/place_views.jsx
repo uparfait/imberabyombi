@@ -47,3 +47,4 @@ VIEWS.inventory = () => {
 };
 
 const check_out = (r, c) => c && r.status === 'Parked' ? <button className="btn btn_soft btn_sm" data-act="park_out" data-id={r.id}>Check out</button> : null;
+VIEWS.parking = () => {
