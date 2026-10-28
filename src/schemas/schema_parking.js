@@ -8,3 +8,4 @@ import { field_spec, STATUS, slot_ids, ABC } from './fields.js';
 
 export const parking_schema = {
   l: 'parking record', n: 13, cols: ['plate', 'driver', 'slot', 'in', 'out', 'fee', 'status'], sec: { Vehicle: 'plate,driver,slot', Stay: 'in,out,fee,status' },
+  f: [
