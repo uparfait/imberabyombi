@@ -55,3 +55,7 @@ export function Upload_body({ up }) {
       <div className="fmt_chips flex flex-wrap gap-1">{CHIPS.map(e => badge(e, 'fmt_chip'))}{fmt_chip('IMAGES', '#9334e6')}{fmt_chip('CODE', '#1a73e8')}</div>
       <p className="mt-2 text-xs text-muted">Any other file, such as a zip, audio or video, is added as an attachment that can be downloaded from the document.</p>
       <input ref={input} type="file" multiple style={{ display: 'none' }} onChange={e => { add(e.target.files); e.target.value = ''; }} />
+    </div>
+  );
+}
+/* the footer: Cancel and the submit button, whose label follows the number of files */
