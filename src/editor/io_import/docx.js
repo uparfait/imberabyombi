@@ -12,3 +12,4 @@ export async function docx_to_html(file) {
   try {
     await load_script(LIB.mammoth);
     const res = await window.mammoth.convertToHtml({ arrayBuffer: buf.slice(0) },
+      { styleMap: ["p[style-name='Title'] => p.title:fresh", "p[style-name='Subtitle'] => p.subtitle:fresh"] });
