@@ -17,3 +17,4 @@ export function content_bottom(b) {
 }
 export function overflows(b) { return !!last_flow(b) && content_bottom(b) > b.clientHeight + 1; }
 export function items_of(c) { return is_table(c) ? Array.from((c.tBodies[0] || c).rows || []) : Array.from(c.children); }
+export function item_parent(c) { return is_table(c) ? (c.tBodies[0] || c) : c; }
