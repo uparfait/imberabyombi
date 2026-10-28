@@ -11,3 +11,4 @@ export function pub_header() {
     <header id="site_header" className="hdr sticky top-0 z-40 bg-bg">
       <nav className="wrap flex h-16 items-center gap-4 sm:h-20" aria-label="Primary">{logo()}
         <ul className="link_group ml-auto hidden xl:flex">{PUB.slice(0, 6).map(([k, l]) => (
+          <li key={k}><a href={`#/${k}`} data-sec={k} className={`nav_link ${cur === k ? 'active' : ''}`} aria-current={cur === k ? 'page' : undefined}>{l}</a></li>
