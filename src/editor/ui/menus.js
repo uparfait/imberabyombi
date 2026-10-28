@@ -50,3 +50,4 @@ function format_items() {
     { label: 'Bullets & numbering', icon: 'format_list_bulleted', sub: () => [{ label: 'Checklist', icon: 'checklist', action: () => toggle_checklist() },
       { label: 'Bulleted list', icon: 'format_list_bulleted', sub: bullet_items }, { label: 'Numbered list', icon: 'format_list_numbered', sub: number_items }] },
     { label: 'Table', icon: 'table', sub: table_menu_items },
+    { sep: true }, { label: 'Clear formatting', icon: 'format_clear', shortcut: 'Ctrl+\\', action: () => clear_formatting() },
