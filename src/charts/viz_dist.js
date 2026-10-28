@@ -27,3 +27,4 @@ export const VIZ_DIST = {
         + ln(x(i), x(i), ax.y(o.lo), ax.y(o.hi)) + ln(x(i) - bw / 4, x(i) + bw / 4, ax.y(o.lo), ax.y(o.lo)) + ln(x(i) - bw / 4, x(i) + bw / 4, ax.y(o.hi), ax.y(o.hi))
         + `<rect class="mark" x="${round1(x(i) - bw / 2)}" y="${round1(ax.y(o.q3))}" width="${round1(bw)}" height="${round1(ax.y(o.q1) - ax.y(o.q3))}" rx="4"`
         + ` style="fill:color-mix(in srgb, var(--series_1) 16%, transparent);stroke:var(--series_1);stroke-width:1.5"/>`
+        + ln(x(i) - bw / 2, x(i) + bw / 2, ax.y(o.med), ax.y(o.med), 2.5)
