@@ -34,3 +34,4 @@ VIEWS.roles = () => {
       <div className="flex flex-wrap gap-2"><button className="btn btn_outline btn_sm" data-act="copy" data-text={invite_link(sel.id)}>
         {ic('link', 'h-4 w-4')}Copy invite link</button>
         {can && !sel.locked ? <button className="btn btn_danger btn_sm" data-act="role_del" data-id={sel.id}>
+          {ic('trash', 'h-4 w-4')}Delete role</button> : null}</div></header>
