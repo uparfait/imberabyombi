@@ -41,3 +41,4 @@
   .tile_pop:not([hidden]) { display: flex; flex-direction: column; overflow: hidden; }
   .tile_pop { position: fixed; margin: 0; max-height: min(30rem, calc(100dvh - 9rem)); }   /* placed by placeTile() */
   .tile_pop > div { display: flex; min-height: 0; flex-direction: column; }
+  .tile_grid { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
