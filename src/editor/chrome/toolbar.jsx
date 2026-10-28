@@ -16,3 +16,4 @@ const dd = (id, label_id, label, tip, width, edit) => (
     <span className="lbl" id={label_id}>{label}</span>{ic('arrow_drop_down')}</button>
 );
 /* a list button with its own small menu arrow */
+const split = (ed, icon, tip, dd_id, dd_tip) => (
