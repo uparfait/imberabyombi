@@ -15,3 +15,8 @@ export const player = (kind, src, poster = '') => (
     <div className="flex items-center gap-3 p-3">
       <button className="icon_btn bg-brand/10 text-accent hover:bg-brand hover:text-white" data-act="mp_play" aria-label="Play or pause">
         <span className="i_play">{ic('play', 'w-4 h-4')}</span><span className="i_pause">{ic('pause', 'w-4 h-4')}</span>
+      </button>
+      <input type="range" min="0" max="100" step=".1" defaultValue="0" data-mp-seek="" aria-label="Seek" /><output data-mp-time="">0:00</output>
+    </div>
+  </div>
+);
