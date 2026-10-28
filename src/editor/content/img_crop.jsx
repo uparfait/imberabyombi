@@ -36,3 +36,4 @@ function Crop_body({ src, st }) {
       <div className="text-center">
         <div className="crop_stage" onPointerDown={down}>
           <img alt="" src={src} ref={el => { pic.current = el; st.pic = el; }} />
+          <div className="crop_rect" style={shown ? { display: 'block', left: rect.x, top: rect.y, width: rect.w, height: rect.h } : { display: 'none' }}></div>
