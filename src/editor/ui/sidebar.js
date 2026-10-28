@@ -55,3 +55,4 @@ function wire_row(row, t, box) {
     row_drag(e, {
       row, list: box, cls: 'tab_drag_over', scrollers: [box, refs.sidebar],
       rows: () => qsa(':scope > .tab_row', box).filter(r => !r.hidden),
+      target: (g, rs) => { const j = g < rs.length ? idx(rs[g]) : idx(rs[rs.length - 1]) + 1, to = j > from ? j - 1 : j; return to === from || j < 0 ? null : to; },
