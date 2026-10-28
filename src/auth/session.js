@@ -11,3 +11,4 @@ export const auth = {
   logout() { db.del('session'); ss && ss.removeItem(cfg.ns + 'session'); },
   role() { return roles().find(r => r.id === auth.user?.role); },
   can(mod, lvl = 1) { const r = auth.role(); if (!r) return false; if (r.perms === '*') return true; return (r.perms[mod] || 0) >= lvl; },
+  boss() { const r = auth.role(); return r?.perms === '*' || r?.id === 'admin'; }
