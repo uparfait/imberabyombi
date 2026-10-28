@@ -10,3 +10,4 @@ export function table_xml(t, ctx) {
   const wp = clamp(parseFloat(t.style.width) || 100, 10, 100), total = Math.round(ctx.content_tw * wp / 100), cg = t.querySelector(':scope > colgroup');
   const pct = cg && cg.children.length === n ? Array.from(cg.children).map(c => parseFloat(c.style.width) || 100 / n) : Array(n).fill(100 / n);
   const sum = pct.reduce((a, b) => a + b, 0), widths = pct.map(p => Math.round(total * p / sum));
+  const bw = parseFloat(t.style.getPropertyValue('--bw')), bwv = isNaN(bw) ? 1 : bw, bc = to_hex(t.style.getPropertyValue('--bc')) || '000000';
