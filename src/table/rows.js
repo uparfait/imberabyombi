@@ -19,3 +19,4 @@ export function refresh(c) { if (!document.getElementById('table_body_' + c)) re
 
 /* First view: one timer per collection. It survives redraws of the same page (so a second table's spinner is not
    restarted by the first one's redraw) and is dropped when a new page draws. */
+const WAIT = new Map();
