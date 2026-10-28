@@ -14,3 +14,4 @@ export const VIZ_MAP = {
     return { svg: svg(f, tiles.map(t => { const cx = x0 + t.x * s + (t.y % 2 ? hw : 0) + hw, cy = f.t + t.y * s * .88 + hw;
       return mark_group(t.k, [[t.v, 'Value', null]], `<path class="mark" d="${hex(cx, cy, hw - 1)}" style="fill:${sequential(t.v / 100)}"/>`
         + `${s > 34 ? `<text class="${t.v > 55 ? 'inner_label' : ''}" x="${round1(cx)}" y="${round1(cy + 4)}" text-anchor="middle">${t.k}</text>` : ''}`); }).join(''),
+      'Choropleth map'),
