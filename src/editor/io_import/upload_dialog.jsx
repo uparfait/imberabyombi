@@ -7,3 +7,5 @@ import { after_close } from '../format/index.js';
 import { is_doc_empty } from './project.js';
 import { process_uploads } from './process_uploads.js';
 import { upload_store, Upload_body, Upload_actions } from './upload_body.jsx';
+
+/* File menu: Open and replace document… ('open'), Import into new tab… ('tab'), Insert file at cursor… ('insert') */
