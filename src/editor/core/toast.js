@@ -39,3 +39,4 @@ export function toast(msg, ms = 2800) {
 export function hide_toast() {
   if (alive()) prog.querySelector('[data-close]')?.click();
   prog = null;
+  clearTimeout(timer); if (line) line.style.display = 'none';
