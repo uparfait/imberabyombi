@@ -15,3 +15,7 @@ export const kit_tokens = () => (
     ))}</div>
     <div className="mt-8 flex flex-wrap items-end gap-5">{RADII.map(r => (
       <div key={r} className="grid justify-items-center gap-2 text-xs text-muted"><span className={`h-14 w-14 border-2 border-brand bg-brand/10 ${r}`}></span>{r}</div>
+    ))}</div>
+    <pre className="mt-8"><code>{'/* one line → the whole system follows */\n:root { --brand: 224 102 27; --radius: 1rem; --space: 1rem; }'}</code></pre>
+  </>
+);
