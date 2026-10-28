@@ -59,3 +59,4 @@ export function set_img_pos(img, pos) {
   });
 }
 export function set_img_align(img, a) {
+  img_op(img, x => {
