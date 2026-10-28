@@ -5,6 +5,7 @@
 #editor.ed_loading #pages { visibility: hidden; }   /* the saved document is still being read (a blank first page would flash) */
 #hruler { position: relative; flex: none; height: var(--ed_hr); overflow: hidden; }
 .ruler_reset {
+  position: absolute; right: .5rem; top: 50%; translate: 0 -50%; display: inline-flex; align-items: center; gap: .25rem; height: 1.25rem;
 #vruler { position: relative; flex: none; width: var(--ed_vr); overflow: hidden; }
 #hruler > svg { margin-top: calc((var(--ed_hr) - 24px) / 2); }
 #vruler > svg { margin-left: calc((var(--ed_vr) - 20px) / 2); }
