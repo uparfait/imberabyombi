@@ -15,3 +15,4 @@
   /* KPI designs */
   .kpi { display: flex; min-width: 0; flex-direction: column; gap: .25rem; padding: 1.25rem; }
   .kpi_label { font-size: .875rem; color: rgb(var(--muted)); }
+  .kpi_value { font-family: var(--font_display); font-size: 2rem; font-weight: 700; line-height: 1.15; letter-spacing: -.01em; }
