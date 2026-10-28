@@ -32,3 +32,7 @@ export function footer() {
       </div>
       <div className="border-t border-line"><div className="wrap flex flex-wrap items-center justify-between gap-4 py-6 text-xs">
         <small className="text-muted">© <time dateTime={y}>{y}</time> {cfg.name}. {lorem.t(3)}.</small>
+        <button className="btn btn_outline btn_sm" data-act="top">{ic('chev_u', 'h-4 w-4')}Back to top</button></div></div>
+    </footer>
+  );
+}
