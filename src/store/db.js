@@ -10,3 +10,4 @@ export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.r
 } })();
 
 /* seed(c) lives in src/schemas, which hands it over with set_seeder(seed) when it loads. db.js does not import the schemas
+   (or feedback) at the top: they reach every view, and the store, app_state included, must be ready before any view runs. */
