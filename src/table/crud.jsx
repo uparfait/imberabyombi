@@ -16,3 +16,4 @@ import { ph_height } from './table_full.js';
 /* Export ▾: CSV, JSON, Excel */
 const export_menu = c => (
   <div className="relative">
+    <button className="btn btn_outline btn_sm" data-act="pop" data-pop={`pop_export_${c}`} aria-haspopup="menu">{ic('download', 'w-4 h-4')}Export{ic('chev_d', 'h-4 w-4')}</button>
