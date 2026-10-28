@@ -1,6 +1,6 @@
 /* main.jsx: the entry point. Loads the stylesheet in cascade order (base + components + Tailwind, then the
    rules that come after the utilities), prepares the page (design tokens, top layer, saved switches), mounts the
-   app in #app and starts the hash router. React.StrictMode is left out on purpose: views queue work for after
+   app in #app and starts the router. React.StrictMode is left out on purpose: views queue work for after
    the draw (charts, animations), and a double draw in development would queue it twice. */
 import { createRoot } from 'react-dom/client';
 import './styles/index.css';
