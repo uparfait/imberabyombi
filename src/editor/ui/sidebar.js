@@ -28,6 +28,7 @@ export function render_sidebar() {
     const row = el('div', { class: 'tab_row select-none' + (active ? ' active' : ''), 'data-id': t.id, role: 'button', tabindex: '0' });
     if (active) row.setAttribute('aria-current', 'true');
     row.innerHTML = mi('description', 'h-5 w-5 shrink-0') + '<span class="tab_name min-w-0 flex-1 truncate"></span>'
+      + (active ? `<button type="button" class="icon_btn tab_fold h-8 w-8" aria-expanded="${!t.folded}" aria-label="${fold_label(t)}" data-tip="${fold_label(t)}">${mi('expand_more')}</button>` : '')
       + `<button type="button" class="icon_btn tab_more h-8 w-8" aria-label="Tab options" aria-haspopup="menu">${mi('more_vert')}</button>`;
     row.querySelector('.tab_name').textContent = t.name;
     wire_row(row, t, box);
