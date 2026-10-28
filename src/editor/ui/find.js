@@ -87,3 +87,4 @@ export function install_find(offs) {
   const keys = fn => e => { if (e.key === 'Enter') { e.preventDefault(); fn(e); } else if (e.key === 'Escape') { e.stopPropagation(); close_find(); } };
   listen(offs, refs.find_input, 'input', () => run_find());
   listen(offs, refs.find_case, 'change', () => run_find());
+  listen(offs, refs.find_input, 'keydown', keys(e => find_step(e.shiftKey ? -1 : 1)));
