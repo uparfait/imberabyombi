@@ -33,3 +33,4 @@ export const VIZ_TIME_B = {
       + c.map((k, i) => { const col = i === top ? 'var(--series_1)' : 'rgb(var(--muted) / .6)';
         return mark_group(k, [[round1(a[i]), '2025', null], [round1(b[i]), '2026', i === top ? 0 : null]],
           `<line class="hit_line" ${ab(i)}/><line class="series_line" ${ab(i)} style="stroke:${col}"/>${dot(xa, y(a[i]), col)}${dot(xb, y(b[i]), col)}`)
+          + `<text x="${xa - 10}" y="${round1(la[i])}" text-anchor="end">${esc(fit(k, f.l - 24))} ${round1(a[i])}</text>`
