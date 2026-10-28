@@ -35,3 +35,4 @@ export function split_text(block, b, next) {
   }
   const p = position_at(block, k);
   const r = document.createRange(); r.setStart(p.node, p.offset); r.setEnd(block, block.childNodes.length);
+  const frag = r.extractContents();
