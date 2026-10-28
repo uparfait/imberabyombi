@@ -17,3 +17,5 @@ export const loaded = new Set();    /* collections fetched during this page visi
 /* the parsed hash route: { path, q } plus what the admin page adds (mod, title) */
 export const route = { path: '/', q: {} };
 export function set_route(next) { for (const k of Object.keys(route)) delete route[k]; Object.assign(route, next); }
+
+/* what the next render is: keep = same page (rerender), anim = keep the page-enter animation, nav_fetched = data already waited for */
