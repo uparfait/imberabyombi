@@ -33,3 +33,4 @@ export function dims() {
 export function move_tab(from, to) {
   const n = state.tabs.length;
   if (from < 0 || from >= n) return null;
+  to = Math.max(0, Math.min(n - 1, to));
