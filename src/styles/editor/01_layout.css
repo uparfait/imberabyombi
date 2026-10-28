@@ -53,3 +53,4 @@ body.col_resize, body.col_resize * { cursor: col-resize !important; }
   border-right-color: transparent; border-radius: var(--pill); animation: spin_rotate .7s linear infinite; }
 
 /* The editor's own status line (core/toast.js) never prints */
+@media print { .ed_status { display: none !important; } }
