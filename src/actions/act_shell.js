@@ -52,3 +52,4 @@ export const SHELL_ACT = {
   cmdk: () => open_cmd(),
   ctx_back: () => history.back(),
   ctx_reload: () => location.reload(),
+  pwd: t => { const i = t.parentElement.querySelector('input'), show = i.type === 'password'; i.type = show ? 'text' : 'password'; icon_to(t, show ? 'eye_off' : 'eye'); t.setAttribute('aria-label', show ? 'Hide password' : 'Show password'); },
