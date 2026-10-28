@@ -37,3 +37,4 @@ export function Upload_body({ up }) {
       </div>
       <div className="up_list mt-2 max-h-[190px] overflow-auto">
         {files.map((f, i) => (
+          <div key={i + ':' + f.name} className="file_row flex items-center gap-2.5 border-b border-line px-1 py-1.5 text-[13px]">
