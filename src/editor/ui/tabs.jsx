@@ -67,3 +67,5 @@ export function start_rename(t) {
     if (over) return; over = true;
     const v = inp.value.trim(); if (save && v && v !== t.name) { t.name = v; save_soon(); }
     render_sidebar();
+  };
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') done(true); else if (e.key === 'Escape') done(false); e.stopPropagation(); });
