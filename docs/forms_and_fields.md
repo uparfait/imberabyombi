@@ -30,3 +30,4 @@ the format, or click to open the mini calendar (dates, weeks, months) and the 15
 ## Selects and suggestions: one shared picker
 - Every `<select>` inside `.field` or `.pick` opens a menu with a search box; multiple selects get checkboxes,
   **Clear** and **Done**. Typing a letter on a focused select opens it with the search filled in.
+- `<input data-list="list_id">` shows suggestions from `<datalist id="list_id">` while typing.
