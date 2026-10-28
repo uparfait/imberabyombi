@@ -7,3 +7,4 @@ export const PUB = [['about', 'About'], ['mission', 'Mission'], ['vision', 'Visi
 
 /* Brand artwork shell: used by home hero, page heroes, login and admin greeting */
 export const wave = () => (
+  <svg className="pointer-events-none absolute inset-x-0 -bottom-px h-10 w-full sm:h-16" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
