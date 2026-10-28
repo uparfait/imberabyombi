@@ -38,3 +38,4 @@ export function pages_keydown(e) {
   if (!r.collapsed || e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
   const first = first_flow(host);
   if (e.key === 'Backspace' && pi > 0 && at_body_start(host, r) && !(is_list(first) || is_table(first))) { done(e); backspace_across(host, pi); return; }
+  if (e.key === 'Delete' && pi < bs.length - 1 && at_body_end(host, r)) { done(e); delete_across(host, pi); return; }
