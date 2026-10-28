@@ -27,3 +27,4 @@ export function run_find(keep) {
   find_state.matches = []; find_state.idx = -1;
   if (q) {
     let text = ''; const segs = [];
+    bodies().forEach(b => {
