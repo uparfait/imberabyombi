@@ -45,3 +45,5 @@ async function odf_table(cx, c) {
     rows.push(`<tr>${r}</tr>`);
   }
   return `<table class="doc_table"><tbody>${rows.join('')}</tbody></table>`;
+}
+async function odf_blocks(cx, n, out) {
