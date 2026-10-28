@@ -8,3 +8,5 @@ import { form_msg, show_err } from '../feedback/index.js';
 import { modal } from '../overlays/index.js';
 import { Export_cols } from './export_cols.jsx';
 import { EXPORTS, date_key, export_file } from './export_file.js';
+
+/* fixed-choice columns (status, priority…) become filters; All keeps every value */
