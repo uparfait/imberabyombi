@@ -12,3 +12,4 @@ import { due_tag } from './task_dates.jsx';
 
 const head = (title, href, link) => <header className="flex items-center justify-between"><h2 className="text-lg">{title}</h2>
   <a href={href} className="btn btn_ghost btn_sm">{link}</a></header>;
+const none = text => <li className="text-sm text-muted">{text}</li>;
