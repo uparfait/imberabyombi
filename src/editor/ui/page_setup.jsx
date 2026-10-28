@@ -18,3 +18,4 @@ function seg(name, opts, cur, on) {
     <input type="radio" className="sr-only" name={name} value={v} defaultChecked={cur === v} onChange={on} /><span>{l}</span></label>)}</div>;
 }
 const check = (name, label, on) => (
+  <label className="flex cursor-pointer items-center gap-2 text-sm"><input type="checkbox" name={name} defaultChecked={on} /> {label}</label>
