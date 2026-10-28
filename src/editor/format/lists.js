@@ -11,3 +11,4 @@ const take_sel = () => { const s = getSelection(); if (s.rangeCount) set_last_ra
 export function toggle_list(tag) {
   if (!can_edit()) return;
   restore_focus(); const l = closest_list();
+  if (tag === 'UL' && l && l.classList.contains('checklist')) { begin_op(); l.classList.remove('checklist'); l.removeAttribute('data-strike'); end_op(); return; }
