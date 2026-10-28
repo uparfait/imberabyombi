@@ -7,3 +7,4 @@ import { render_comments } from '../content/index.js';
 import { render_tab } from './render.js';
 import { render_sidebar } from './sidebar.js';
 import { confirm_dialog } from './dialogs.jsx';
+import { unique_name } from './ui_dom.js';
