@@ -23,3 +23,4 @@ function Crop_body({ src, st }) {
     const r0 = stage.getBoundingClientRect(), sx = clamp(e.clientX - r0.left, 0, p.clientWidth), sy = clamp(e.clientY - r0.top, 0, p.clientHeight);
     const move = ev => {
       let x = clamp(ev.clientX - r0.left, 0, p.clientWidth), y = clamp(ev.clientY - r0.top, 0, p.clientHeight), w = Math.abs(x - sx), h = Math.abs(y - sy);
+      if (ratio && w && h) { if (w / h > ratio) w = h * ratio; else h = w / ratio; x = x < sx ? sx - w : sx + w; y = y < sy ? sy - h : sy + h; }
