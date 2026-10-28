@@ -15,3 +15,4 @@ function show(id) { state.active = id; render_tab(); render_sidebar(); render_co
 export function switch_tab(id) {
   if (id === state.active || !state.tabs.some(t => t.id === id)) return;
   if (hist_timer) commit();
+  save_tab(); show(id);
