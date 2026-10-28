@@ -18,3 +18,6 @@ export function doc_data() {
   return {
     title: state.title, setup: state.setup, active: state.active, comments: state.comments.filter(c => !c.draft),
     tabs: state.tabs.map(t => { const { undo, redo, ...rest } = t; return t.id === state.active && html != null ? { ...rest, html } : rest; })
+  };
+}
+export function save_doc(force) {
