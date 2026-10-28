@@ -20,7 +20,7 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 | 1024px up to `--scale_ref` | 15px (`--scale_desk`; admin pages 16.5px, `--scale_staff`), with `lg` / `xl` layouts |
 | wider than `--scale_ref` | The reference desktop view scaled up: a larger screen or a zoomed-out browser shows the same layout, never smaller |
 
-Make your own computer the reference: open the browser console, type `innerWidth`, and set `--scale_ref` to it.
+Because the root grows with the width past `--scale_ref`, zooming the browser out keeps text and controls at the same physical
 
 Pages never scroll sideways (`overflow-x: clip` on `html` and `body`); wide content (tables, tab strips) scrolls
 inside its own box. Nested scroll areas hand the wheel back to the page at their end.
