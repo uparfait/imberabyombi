@@ -39,3 +39,4 @@
 /* List buttons with their own menu arrow */
 .tb_split { display: inline-flex; flex: none; align-items: center; }
 .tb_split .tb_btn { min-width: 1.625rem; }
+.tb_split .arrow { width: .875rem; min-width: .875rem; padding: 0; }
