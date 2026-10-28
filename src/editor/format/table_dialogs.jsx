@@ -3,3 +3,4 @@
 import { useState } from 'react';
 import { modal } from '../../overlays/index.js';
 import { clamp, editable_of, caret_to_start, body_index, toast, end_op } from '../core/index.js';
+import { can_edit } from './commands.js';
