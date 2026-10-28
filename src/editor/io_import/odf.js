@@ -65,3 +65,4 @@ async function odf_blocks(cx, n, out) {
   }
 }
 export async function odf_to_html(file) {
+  const z = await unzip(await file.arrayBuffer()), doc = parse_xml(await z.text('content.xml')), sty = {};
