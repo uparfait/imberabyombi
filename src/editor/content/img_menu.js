@@ -46,3 +46,4 @@ export function image_menu_items(img) {
       action: () => img_op(img, x => { x.style.boxShadow = x.style.boxShadow ? '' : '0 2px 10px rgba(0,0,0,.35)'; }) },
     { label: 'Alt text…', icon: 'description', no_preview: true, action: off(() => alt_text_dialog(img)) },
     { sep: true },
+    { label: 'Replace image', icon: 'find_replace', sub: () => [
