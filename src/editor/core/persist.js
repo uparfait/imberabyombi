@@ -28,6 +28,7 @@ export function save_doc(force) {
   if (force !== true && live_busy()) { save_soon(); return false; }   // never save a preview
   if (!ready) return false;
   idb_set(DOC_KEY, doc_data()).then(ok => {
+    if (ok) { refused = false; if (db.get(DOC_KEY)) db.del(DOC_KEY); return; }   /* an older copy in localStorage is no longer needed */
 }
 export function save_soon() { clearTimeout(save_timer); save_timer = setTimeout(save_doc, 600); }
 set_on_change(save_soon);
