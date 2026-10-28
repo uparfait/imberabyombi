@@ -5,3 +5,5 @@ import { me } from '../auth/index.js';
 import { avatar } from '../ui/index.js';
 import { comments_of } from './task_data.js';
 import { ago } from './task_dates.jsx';
+
+const editor = c => <div className="mt-2 grid gap-2" data-comment-editor=""><textarea rows={3} aria-label="Edit your comment" defaultValue={c.text}></textarea>
