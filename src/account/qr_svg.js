@@ -3,3 +3,4 @@
 import { lorem, hash_str } from '../lib/index.js';
 
 export function qr_svg(seed) {
+  lorem.seed(hash_str(seed)); const n = 25, out = [];
