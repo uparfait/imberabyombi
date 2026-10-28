@@ -18,3 +18,4 @@
     -webkit-text-fill-color: rgb(var(--field_fg, var(--fg))) !important;
     -webkit-box-shadow: 0 0 0 100rem rgb(var(--field, var(--surface))) inset !important;
     box-shadow: 0 0 0 100rem rgb(var(--field, var(--surface))) inset !important;
+    caret-color: rgb(var(--field_fg, var(--fg)));
