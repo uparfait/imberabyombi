@@ -7,3 +7,4 @@ import { render_comments } from './comment_cards.js';
 
 export function add_comment() {
   if (previewing() || !can_edit()) return;
+  const host = restore_focus(), s = getSelection();
