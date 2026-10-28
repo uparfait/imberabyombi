@@ -60,3 +60,4 @@ export function merge_into(a, b) {
   b.remove();
 }
 export function insert_at_start(next, nodes) {
+  if (!nodes.length) return;
