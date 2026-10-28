@@ -6,3 +6,4 @@ import { auth } from '../auth/index.js';
 import { schemas } from '../schemas/index.js';
 import { ui, cur, route, after_render } from '../store/index.js';
 import { label } from '../ui/index.js';
+import { tview, sync_tools } from './table_view.js';
