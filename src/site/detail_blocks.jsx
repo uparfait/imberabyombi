@@ -32,3 +32,7 @@ export function intro_top() {
       <div>{sec_head('Overview', lorem.t(4), lorem.p(2))}<dl className="mt-8 grid grid-cols-2 gap-4">{[24, 180, 12, 98].map(n => (
         <div key={n} className="card p-5"><dt className="text-sm font-medium text-muted">{lorem.t(1)}</dt>
           <dd className="mt-1 font-display text-3xl font-bold text-fg"><data value={n} data-count={n}>0</data></dd></div>
+      ))}</dl>
+        <div className="mt-6">{player('audio', cfg.audio)}</div></div></section>
+  );
+}
