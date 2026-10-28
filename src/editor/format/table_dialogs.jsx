@@ -57,3 +57,4 @@ export function insert_multiple_dialog() {
   if (previewing() || !can_edit()) return; if (!table_ctx()) { toast('Place the cursor inside a table first'); return; }
   modal({
     title: 'Insert rows or columns', submit: 'Insert',
+    body: <>
