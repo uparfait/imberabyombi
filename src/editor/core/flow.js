@@ -84,3 +84,5 @@ export function split_container(c, b, next) {
   const items = items_of(c), lim = b.clientHeight + 1;
   let k = items.findIndex(it => top_in(it, b) + it.offsetHeight > lim);
   if (k < 0) k = items.length - 1;
+  move_items(c, items.slice(Math.max(1, k)), next);
+}
