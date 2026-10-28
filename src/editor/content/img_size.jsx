@@ -29,4 +29,5 @@ export function alt_text_dialog(img) {
     <div className="field sm:col-span-2"><label htmlFor="alt_t">Describe the image for people who can’t see it</label>
       <input type="text" id="alt_t" name="alt" defaultValue={img.getAttribute('alt') || ''} placeholder=" " /></div>
   ), on_submit: () => {
+    const v = qs('#alt_t').value.trim(); img_op(img, x => x.setAttribute('alt', v));
 }
