@@ -7,3 +7,4 @@ import { copy_box } from '../overlays/index.js';
 import { mail_btn, mail_date } from './mails.jsx';
 
 export const event_mails = ({ ev, place, who, d1, d2, tm, event, rsvp, cal }) => ({
+  invite: { s: `Invitation: ${ev}`, t: <>
