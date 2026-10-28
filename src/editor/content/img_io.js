@@ -29,3 +29,4 @@ export async function insert_image(src) {
   if (!can_edit()) return;
   const im = new Image(); im.src = src;
   try { await im.decode(); } catch (e) { toast('That image could not be loaded'); return; }
+  const host = restore_focus(); if (!host || !host.classList.contains('pg_body')) { toast('Place the cursor in the document body first'); return; }
