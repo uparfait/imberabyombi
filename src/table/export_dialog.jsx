@@ -3,3 +3,4 @@
 import { schemas, field_spec } from '../schemas/index.js';
 import { ui } from '../store/index.js';
 import { label, options } from '../ui/index.js';
+import { field } from '../fields/index.js';
