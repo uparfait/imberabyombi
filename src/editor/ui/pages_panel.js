@@ -17,3 +17,4 @@ export function render_pages_panel() {
       + `<button type="button" class="icon_btn page_del h-8 w-8" aria-label="Delete page">${mi('delete')}</button>`);
     row.querySelector('.truncate').textContent = snip;
     row.addEventListener('click', e => {
+      if (e.target.closest('.page_del')) { delete_page(i); return; }
