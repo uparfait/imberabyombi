@@ -49,6 +49,7 @@ export function draw_h_ruler() {
     + `<g class="r_handle" data-handle="left" transform="translate(${lx} 0)"><rect class="knob" x="${-u(6)}" y="${u(1)}" width="${u(12)}" height="${u(4)}" rx="${u(1)}"/>${tri}</g>`
     + `<g class="r_handle" data-handle="right" transform="translate(${rx} 0)">${tri}</g></svg>`
     + (changed(m) && state.mode === 'edit' ? `<button type="button" class="ruler_reset" data-tip="Put every margin back to 1 inch">${mi('restart_alt', 'h-3.5 w-3.5')}Reset margins</button>` : '');
+  hruler.querySelector('.ruler_reset')?.addEventListener('click', reset_margins);
 }
 export function draw_v_ruler() {
   if (state.setup.pageless || !vruler || !scroller) return;
