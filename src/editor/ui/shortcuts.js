@@ -40,3 +40,4 @@ function edit_key(e, k, code) {
   if (e.shiftKey && code === 'KeyX') return () => exec('strikeThrough');
   if (e.shiftKey && code === 'KeyC') return word_count_dialog;
   if (e.shiftKey && code === 'Period') return () => bump_size(1);
+  if (e.shiftKey && code === 'Comma') return () => bump_size(-1);
