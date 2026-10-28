@@ -52,3 +52,4 @@ export function toggle_menus() {
 }
 export function toggle_spell() {
   state.spell = !state.spell; bodies().forEach(b => { b.spellcheck = state.spell; });
+  if (refs.spell_btn) refs.spell_btn.classList.toggle('active', !state.spell);
