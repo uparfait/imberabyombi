@@ -11,3 +11,4 @@ export const EDITOR_DOC_PATHS = {
   redo: 'M15 5l5 5-5 5M20 10H9a5 5 0 0 0 0 10h3',
   print: 'M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z',
   upload_file: FILE + 'M12 18v-7M9 14l3-3 3 3',
+  file_download: FILE + 'M12 11v7M9 15l3 3 3-3',
