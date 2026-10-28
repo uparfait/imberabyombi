@@ -10,3 +10,4 @@ import { close_pops } from '../actions/index.js';
 import { go } from '../router/index.js';
 import { files_of, comments_of } from './task_data.js';
 import { task_view, task_refresh } from './task_view.jsx';
+import { tv_api } from './tv_state.js';
