@@ -16,3 +16,4 @@ export const FORMS = {
   contact: (d, f) => { db.set('messages', [...db.get('messages', []), { ...d, at: Date.now() }]); f.reset(); form_msg(f, 'ok', 'Message sent', 'We reply within two working days.'); },
   news: (d, f) => { f.reset(); form_msg(f, 'ok', 'You are subscribed', 'Check your inbox to confirm.'); },
   note: d => { db.set('notes', [{ id: uid(), title: d.title, body: d.body, at: Date.now() }, ...db.get('notes', [])]); refresh_panel(); qs('#side_panel article')?.classList.add('row_flash'); },
+  profile: d => { const u = auth.user; auth.login({ ...u, name: d.name.trim(), email: d.email.trim().toLowerCase() }); rerender(); form_msg(qs('[data-form=profile]'), 'ok', 'Profile saved', 'Your new name and email show everywhere.'); },
