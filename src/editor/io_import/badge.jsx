@@ -9,3 +9,4 @@ const CORNER = 'absolute right-0 top-0 h-2 w-2 rounded-bl-[3px] bg-white/40';   
 const PILL ='rounded-full px-1.5 py-1 text-[10.5px] font-semibold leading-none text-white';
 
 /* a flat pill with a label and a colour (IMAGES, CODE, or a format) */
+export const fmt_chip = (label, color, key = label) => <span key={key} className={`fmt_chip ${PILL}`} style={{ background: color }}>{label}</span>;
