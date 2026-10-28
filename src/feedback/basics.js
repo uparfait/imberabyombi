@@ -13,3 +13,4 @@ export const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matc
    (no keyboard to press it on). The shortcut itself works with either key. */
 export const key_hint = k => !matchMedia('(any-pointer: fine)').matches ? '' : /Mac|iPhone|iPad|iPod/i.test(navigator.userAgentData?.platform || navigator.platform || navigator.userAgent) ? '⌘' + k : 'Ctrl ' + k;
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
+export const TICON = { ok: 'check', bad: 'x', warn: 'bell', info: 'help' };
