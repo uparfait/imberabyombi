@@ -62,3 +62,4 @@ function clean(node) {
     if (!ALLOWED.has(tag) || (tag === 'B' && /^docs-internal-guid/.test(c.id || ''))) { c.replaceWith(...c.childNodes); continue; }
     const keep = keep_attrs(c, tag);
     for (const a of Array.from(c.attributes)) c.removeAttribute(a.name);
+    for (const k in keep) c.setAttribute(k, keep[k]);
