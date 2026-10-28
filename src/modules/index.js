@@ -2,3 +2,4 @@
    (TASK_ACT, task_change), and the fallbacks (forbidden, not_found). Import from here: import { VIEWS } from '../modules/index.js' */
 export * from './views.js';
 export * from './task_dates.jsx';
+export * from './task_data.js';
