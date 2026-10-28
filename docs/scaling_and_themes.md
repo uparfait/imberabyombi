@@ -36,3 +36,4 @@ inside its own box. Nested scroll areas hand the wheel back to the page at their
 - Autofill: browsers are blocked from recolouring filled fields. Fields on dark surfaces add `.field_dark`.
 
 ## Motion
+- Page changes cross-fade with the View Transitions API where supported, plus a short rise-in.
