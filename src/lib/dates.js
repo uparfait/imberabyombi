@@ -7,3 +7,4 @@ import { db } from '../store/db.js';
 export const ymd = (d = new Date()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 export const hm = (d = new Date()) => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
 export const now_dt = (d = new Date()) => `${ymd(d)}T${hm(d)}`;
+export const add_d = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
