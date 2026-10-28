@@ -64,3 +64,4 @@ export function set_font(f) { exec('fontName', f); const l = refs.font_label; if
 /* the last colours picked (kept as in the source; core's live restores #color_bar when a preview is cancelled) */
 export let last_text_color = '#000000', last_hilite = '#ffff00';
 export function set_text_color(c) { if (c) last_text_color = c; const b = refs.color_bar; if (b) b.style.background = c || '#000000'; exec('foreColor', c || '#000000'); }
+export function set_hilite(c) { if (c) last_hilite = c; exec('hiliteColor', c || 'transparent'); }
