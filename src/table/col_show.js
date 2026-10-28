@@ -3,3 +3,4 @@
 import { qs, qsa } from '../lib/index.js';
 import { ui } from '../store/index.js';
 import { reduced } from '../feedback/index.js';
+import { refresh } from './rows.js';
