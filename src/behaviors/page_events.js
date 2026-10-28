@@ -24,3 +24,4 @@ function on_error(e) {
 }
 
 export function install_page() {
+  document.addEventListener('visibilitychange', () => { const l = qs('link[rel=icon]'); if (l) l.href = tab_icon(rgb2hex(css_var(document.hidden ? '--ink' : '--brand'))); });
