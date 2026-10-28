@@ -25,3 +25,4 @@ function page_part(key, sel) {
 function insert_items() {
   return [
     { label: 'Image', icon: 'image', sub: image_items },
+    { label: 'Table', icon: 'table', sub: () => [{ render: table_grid_el }] },
