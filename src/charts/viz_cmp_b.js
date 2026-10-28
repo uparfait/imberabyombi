@@ -30,3 +30,4 @@ export const VIZ_CMP_B = {
           + ` style="fill:rgb(var(--fg) / ${[.12, .07, .035][j]})"/>`).join('')
         + `<path class="mark" style="fill:var(--series_1)" d="${hbar(y(i), h * .38, f.l, x(d[i].a))}"/>`
         + `<line x1="${round1(x(d[i].t))}" x2="${round1(x(d[i].t))}" y1="${round1(y(i) - h / 2 - 2)}" y2="${round1(y(i) + h / 2 + 2)}"`
+        + ` style="stroke:rgb(var(--fg));stroke-width:2"/>`)
