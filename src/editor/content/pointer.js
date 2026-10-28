@@ -14,3 +14,4 @@ import { activate_comment } from './comments.js';
 
 /* is there text right under the point? (a click there is for the text, not for an image behind it) */
 function on_text(x, y) {
+  const p = caret_from_point(x, y); if (!p || p.node.nodeType !== 3) return false;
