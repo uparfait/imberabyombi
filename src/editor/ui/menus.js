@@ -18,3 +18,4 @@ export function image_items() {
   return [cmd('Upload from computer', 'upload', () => { if (refs.image_open) refs.image_open.click(); }), cmd('By URL', 'link', () => image_url_dialog())];
 }
 /* header / footer / page numbers on or off (the new header or footer gets the caret) */
+function page_part(key, sel) {
