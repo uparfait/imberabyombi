@@ -6,3 +6,5 @@
 import { live } from '../core/index.js';
 
 let cur = null;   // { key, undo, keep } of the preview on screen
+
+export function peeking() { return cur ? cur.key : null; }
