@@ -24,3 +24,4 @@ export function split_text(block, b, next) {
   while (lo <= hi) { const mid = (lo + hi) >> 1; if (char_bottom(mid) <= limit) { best = mid; lo = mid + 1; } else hi = mid - 1; }
   if (best < 0) return false;
   let k = best + 1; if (k >= total) return false;
+  const text = tn.map(t => t.data).join('');
