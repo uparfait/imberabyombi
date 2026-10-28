@@ -72,3 +72,4 @@ export function open_menu(anchor, items, opts = {}) {
   if (opts.x != null) { x = opts.x; y = opts.y; } else { const r = anchor.getBoundingClientRect(); x = r.left; y = r.bottom + scaled(2); }
   const w = m.offsetWidth, h = m.offsetHeight;
   if (x + w > innerWidth - g) x = opts.side != null ? Math.max(g, opts.side - w + scaled(2)) : Math.max(g, innerWidth - w - g);
+  if (y + h > innerHeight - g) y = Math.max(g, innerHeight - h - g); m.style.left = x + 'px'; m.style.top = y + 'px';
