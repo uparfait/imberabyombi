@@ -35,3 +35,4 @@ function on_keydown(e) {
     e.preventDefault(); t.closest('.kv_cell, [data-tv-status]').querySelector('[data-act=tv_save], [data-act=tv_status_save]')?.click(); }
   if ((e.ctrlKey || e.metaKey) && k.toLowerCase() === 'k' && route.path.startsWith('/admin') && auth.user) { e.preventDefault(); open_cmd(); }
   if (k === 'Escape') { const pop = qs('.pop:not([hidden])'); close_pops();
+    if (!pop && ui.table_full && !qs('dialog[open]')) table_full(ui.table_full, false); if (ui.side && innerWidth < 1024) ACT.side(); }
