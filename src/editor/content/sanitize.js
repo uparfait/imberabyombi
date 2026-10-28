@@ -40,3 +40,4 @@ function keep_attrs(c, tag) {
     const n = a.name.toLowerCase(), v = a.value;
     if (n === 'style') { const s = keep_style(c, tag); if (s) keep.style = s; }
     else if (n === 'href' && tag === 'A') {
+      if (!/^\s*(javascript|vbscript|data):/i.test(v) || (/\bfile[-_]chip\b/.test(orig_cls) && /^data:/i.test(v.trim()) && c.hasAttribute('download'))) keep.href = v;
