@@ -30,3 +30,6 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 :root { --brand: 37 99 235; }     /* every orange becomes blue */
 :root { --radius: 0; }            /* larger surfaces go square, small things stay round */
 :root { --space: 1.25rem; }       /* every padding, margin and gap grows 25% */
+```
+
+## The accent colour
