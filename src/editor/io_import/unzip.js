@@ -13,3 +13,5 @@ export async function unzip(buf) {
     const nlen = dv.getUint16(p + 28, true);
     entries.set(dec.decode(u8.subarray(p + 46, p + 46 + nlen)), { method: dv.getUint16(p + 10, true), csize: dv.getUint32(p + 20, true), off: dv.getUint32(p + 42, true) });
     p += 46 + nlen + dv.getUint16(p + 30, true) + dv.getUint16(p + 32, true);
+  }
+  const cache = new Map();
