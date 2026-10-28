@@ -56,3 +56,4 @@ export function install_toolbar(offs) {
   listen(offs, refs.menus_toggle, 'click', () => toggle_menus());
   listen(offs, refs.top_download, 'click', () => open_download_dialog());
   listen(offs, refs.top_upload, 'click', () => open_upload_dialog());
+  const si = refs.size_input;
