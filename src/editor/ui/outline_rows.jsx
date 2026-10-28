@@ -68,3 +68,4 @@ function on_down(e, row) {
   const model = () => m || (m = section_model());
   row_drag(e, {
     row, list: ol, cls: 'outline_drag_over', scrollers: [ol.closest('.tab_scroll'), refs.sidebar],
+    rows: () => outline_rows(ol).filter(r => !r.hidden),
