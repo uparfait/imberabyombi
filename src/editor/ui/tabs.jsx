@@ -50,3 +50,4 @@ export function tab_menu(t) {
   const i = state.tabs.indexOf(t);
   return [
     { label: 'Rename', icon: 'edit', no_preview: true, action: () => start_rename(t) },
+    { label: 'Duplicate', icon: 'content_copy', no_preview: true, action: () => duplicate(t) },
