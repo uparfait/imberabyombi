@@ -7,3 +7,4 @@ import { kind_of } from '../fields/index.js';
 import { pick } from './pick.js';
 
 export const PK = {
+  opts(a) {
