@@ -16,3 +16,4 @@ import { step_tab } from './tabs.jsx';
 const ALIGN = { KeyL: 'justifyLeft', KeyE: 'justifyCenter', KeyR: 'justifyRight', KeyJ: 'justifyFull' };
 
 /* shortcuts that work anywhere on the editor page */
+function global_key(e, k) {
