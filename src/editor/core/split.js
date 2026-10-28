@@ -65,3 +65,4 @@ export function push_overflow(b, next) {
   if (flow_kids(b).length > 1 && last && (/^H[1-6]$/.test(last.tagName) || last.classList.contains('title')) && first_flow(next)) insert_at_start(next, [last]);
 }
 export function pull_up(b, next) {
+  let g = 0;
