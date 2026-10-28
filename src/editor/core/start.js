@@ -30,3 +30,4 @@ export function editor_start(root) {
     try { const off = install(); if (typeof off === 'function') offs.push(off); } catch (e) { console.error(e); }
   }
   if (pages_el) {
+    /* a picture that finishes loading reflows its page */
