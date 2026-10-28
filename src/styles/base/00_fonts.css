@@ -2,3 +2,4 @@
    a faster first visit, no extra connection, and it works offline. Latin and Latin Extended only, variable weights.
    font-display: swap shows text at once in a fallback font, then swaps in. Licence: src/assets/fonts/ofl_license.txt */
 @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 500 800; font-display: swap;
+  src: url('../../assets/fonts/bricolage_grotesque_latin_ext.woff2') format('woff2');
