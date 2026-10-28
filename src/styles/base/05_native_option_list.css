@@ -24,3 +24,4 @@
   input:autofill { filter: none; background-color: rgb(var(--field, var(--surface))); }
 
   /* Checkbox, radio, switch: Imberabyombi shapes in brand colours */
+  :where(input[type=checkbox], input[type=radio]) {
