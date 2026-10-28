@@ -28,3 +28,4 @@ function to_abs(img, pos) {
   const body = img.closest('.pg_body'), par = img.parentNode, { x, y } = is_abs(img) ? { x: img.offsetLeft, y: img.offsetTop } : offset_in(img, body);
   img.removeAttribute('data-align'); img.setAttribute('data-pos', pos);
   Object.assign(img.style, { position: 'absolute', left: Math.round(x) + 'px', top: Math.round(y) + 'px', zIndex: ABS_Z[pos] });
+  if (par !== body) { body.appendChild(img); keep_line(par); }
