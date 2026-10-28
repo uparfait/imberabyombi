@@ -71,3 +71,4 @@ export function open_menu(anchor, items, opts = {}) {
   let x, y; const g = scaled(8);   // g: the room kept to the screen's edges
   if (opts.x != null) { x = opts.x; y = opts.y; } else { const r = anchor.getBoundingClientRect(); x = r.left; y = r.bottom + scaled(2); }
   const w = m.offsetWidth, h = m.offsetHeight;
+  if (x + w > innerWidth - g) x = opts.side != null ? Math.max(g, opts.side - w + scaled(2)) : Math.max(g, innerWidth - w - g);
