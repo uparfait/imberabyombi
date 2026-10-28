@@ -3,3 +3,4 @@
 export const cfg = {
   name: 'Imberabyombi', logo: ['IMBERA', 'BYOMBI'] /* two-tone logo: first part in brand colour */, ns: window.NS || 'loremds:v1:',
   currency: 'USD', latency: 450 /* ms of simulated network time per request (saving, loading a table); set 0 or swap for fetch() */,
+  page_size: 10 /* table rows per page */, parking_slots: 24, parking_rate: 2, work_start: '08:00', storage_cap: 5 * 1024 * 1024,
