@@ -10,3 +10,4 @@ import { set_caret, scroll_caret_into_view, current_page } from './selection.js'
 import { live, live_busy } from './live.js';
 import { save_soon } from './persist.js';
 import { refresh_toolbar } from '../ui/index.js';
+import { hide_img_sel } from '../content/index.js';
