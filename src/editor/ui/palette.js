@@ -8,3 +8,4 @@ import { mi } from './ui_dom.js';
 
 /* on_pick(colour or null); none_label: the text of the reset choice ('Reset', 'None', 'Black'…) */
 export function palette_el(on_pick, none_label) {
+  const box = el('div', { class: 'palette px-1 pb-1' }), done = () => close_menus(0);
