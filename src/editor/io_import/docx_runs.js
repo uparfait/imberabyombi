@@ -33,3 +33,5 @@ export async function docx_run(cx, r) {
   }
   if (!inner) return '';
   return css.length ? `<span style="${css.join(';')}">${open}${inner}${close}</span>` : open + inner + close;
+}
+/* an embedded picture (DrawingML blip or VML imagedata), as wide as its extent (16–700 px) */
