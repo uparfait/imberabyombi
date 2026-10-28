@@ -10,3 +10,5 @@ import { upload_store, Upload_body, Upload_actions } from './upload_body.jsx';
 
 /* File menu: Open and replace document… ('open'), Import into new tab… ('tab'), Insert file at cursor… ('insert') */
 export function pick_file(mode) { open_upload_dialog([], mode === 'open' ? 'replace' : mode); }
+
+/* initial: files already chosen (dropped on the page); mode: the preselected place (default: replace an empty document,
