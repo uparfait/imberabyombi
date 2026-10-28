@@ -48,3 +48,5 @@ export function deepest(e, first) {
   while (e && e.nodeType === 1) {
     const c = first ? e.firstElementChild : e.lastElementChild;
     if (!c || c.tagName === 'BR' || c.tagName === 'IMG' || is_break(c)) break; e = c;
+  }
+  return e;
