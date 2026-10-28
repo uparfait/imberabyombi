@@ -2,3 +2,4 @@
    import.meta.env.BASE_URL, '/' by default), app_path() reads it back, go(path) moves there and navigate() draws the page.
    Back / Forward (popstate) draw the page of the new address. */
 import { qs } from '../lib/index.js';
+import { cfg } from '../config/index.js';
