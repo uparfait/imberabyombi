@@ -13,3 +13,4 @@ export function field_has_focus() { const a = document.activeElement; return !!(
 
 export function peek(key, fn) {
   if (cur && cur.key === key) return;
+  unpeek();
