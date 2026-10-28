@@ -5,3 +5,5 @@ import { ui } from '../store/index.js';
 import { cfg } from '../config/index.js';
 import { PANELS } from './panels.jsx';
 import { redraw_slot } from './live_slot.jsx';
+
+export const panel_html = k => <><header className="sticky top-0 z-[1] flex items-center gap-1 bg-surface px-4 pb-3 pt-4">
