@@ -4,3 +4,4 @@ export * from './content_css.js';
 export * from './project_file.js';
 export * from './export_text.js';
 export * from './html_to_md.js';
+export * from './export_pdf.js';
