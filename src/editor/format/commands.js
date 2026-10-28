@@ -62,3 +62,4 @@ export function set_font_size(pt) { pt = clamp(Math.round(pt * 2) / 2, 1, 400); 
 export function bump_size(d) { const cur = parseFloat(size_input()?.value) || 11; set_font_size(cur + d); }
 export function set_font(f) { exec('fontName', f); const l = refs.font_label; if (l) l.textContent = f; }
 /* the last colours picked (kept as in the source; core's live restores #color_bar when a preview is cancelled) */
+export let last_text_color = '#000000', last_hilite = '#ffff00';
