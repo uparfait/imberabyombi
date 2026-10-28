@@ -55,3 +55,4 @@ export function draw_v_ruler() {
 }
 /* the dragged margin's value next to the pointer: a label drawn like the template tooltip (#tip itself is hidden by the
    template's hover handling whenever the ruler redraws under the pointer) */
+const VALUE_CSS = 'position:fixed;z-index:400;padding:.25rem .5rem;border-radius:calc(var(--radius) * .5);font:500 .75rem/1rem var(--font_sans);'
