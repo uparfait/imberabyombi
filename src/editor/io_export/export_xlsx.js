@@ -5,3 +5,5 @@ import { export_data } from './export_data.js';
 import { xesc } from './docx_runs.js';
 import { zip_store } from './zip_store.js';
 import { XL_NS, XL_R, XL_PR, XLSX_STYLES, sheet_xml } from './xlsx_parts.js';
+
+const XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
