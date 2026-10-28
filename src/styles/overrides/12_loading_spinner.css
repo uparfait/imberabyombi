@@ -1,2 +1,3 @@
 /* overrides/12_loading_spinner.css: rules that come after the utilities, as in the reference */
   /* C. ONE loading indicator everywhere: the segmented spinner (spinner() in JS). Same shape and motion in
+        busy buttons, tables, panels and the floating loader; only the size changes. Colour: --spin, default brand. */
