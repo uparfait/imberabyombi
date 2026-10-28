@@ -26,3 +26,5 @@ export function snapshot() {
     if (i >= 0) { const p = path_to(h, r.startContainer); if (p) caret = { i, path: p, off: r.startOffset }; }
   }
   return { html: bs.map(b => b.innerHTML), caret };
+}
+export function commit() {
