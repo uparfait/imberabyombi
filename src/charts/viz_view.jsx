@@ -7,3 +7,5 @@ import { page_title, help_tip } from '../ui/index.js';
 import { count_up } from '../router/index.js';
 import { VIZ, VIZGROUPS } from './viz_charts.js';
 import { kpis } from './kpi_view.jsx';
+
+/* Draws every chart at its real width; on resize only the charts whose width changed are redrawn. VIZ_OUT keeps each chart's data. */
