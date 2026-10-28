@@ -23,6 +23,7 @@ export const ROLES0 = [
     perms: perm_map('dashboard:1,calendar:2,tasks:2,docs:2,events:2,inventory:2,settings:1') }
 ];
 export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !r.length) { r = ROLES0; db.set('roles', r); }
+  /* roles saved before a module existed get its default level (the document editor: every role may use it) */
 /* Landing page: where people with a role arrive after signing in (set on Roles & access). It falls back to the
    first module the role can open when the chosen one is not set or no longer allowed. */
 export const role_opens = r => MODS.filter(m => r && (r.perms === '*' || (r.perms[m.k] || 0) > 0));
