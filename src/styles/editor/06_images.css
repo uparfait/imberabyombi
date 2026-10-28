@@ -42,3 +42,4 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
 }
 .img_bar button:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
 .img_bar button.on { background: rgb(var(--brand) / .15); color: var(--active_fg); }
+.img_bar .sep { width: 1px; height: 1.125rem; margin: 0 .1875rem; background: rgb(var(--line)); }
