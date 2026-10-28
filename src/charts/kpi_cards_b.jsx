@@ -24,3 +24,4 @@ export const kpi_cards_b = k => {
     kpi_card('', 'Response time', 'Average time to answer a request, against the 400 ms target.',
       <><p className="kpi_value">{'320 '}<span className="kpi_of">ms</span></p>
         <div className="kpi_bullet"><i style={{ width: '50%' }}></i><i style={{ width: '25%' }}></i><i style={{ width: '25%' }}></i>
+          <b style={{ width: `${Math.round(320 / 600 * 100)}%` }}></b><s style={{ left: `${Math.round(400 / 600 * 100)}%` }}></s></div>
