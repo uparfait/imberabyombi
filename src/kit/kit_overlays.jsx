@@ -13,3 +13,4 @@ const POP_VIEWS = [['Day', 'D'], ['Week', 'W'], ['Month', 'M'], ['Year', 'Y'], [
 const closed_pop = () => el => { if (!el) return; el.hidden = true; el._out?.cancel?.(); el._out = null; };
 
 const toast_demo = (
+  <div className="mt-6 max-w-sm"><p className="mb-2 text-xs font-medium uppercase tracking-wider text-muted">Notification · staff pages only</p>
