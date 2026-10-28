@@ -33,3 +33,6 @@ function place_uploads(done, mode, failed) {
       state.comments = []; state.tabs = tabs; state.active = tabs[0].id; render_all();
     }
   } else { save_tab(); state.tabs.push(...tabs); state.active = tabs[0].id; render_tab(); render_sidebar(); render_comments(); }
+}
+
+/* mode: 'insert' (at the cursor), 'tab' (new tabs) or 'replace' (asks first unless the document is empty) */
