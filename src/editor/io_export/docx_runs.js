@@ -38,3 +38,4 @@ export function fmt_of(e, f) {
 export function r_pr(f) {
   let x = '';
   if (f.link) x += '<w:rStyle w:val="Hyperlink"/>';
+  if (f.font) x += `<w:rFonts w:ascii="${xesc(f.font)}" w:hAnsi="${xesc(f.font)}" w:cs="${xesc(f.font)}"/>`;
