@@ -8,3 +8,5 @@ import { page_title } from '../ui/index.js';
 import { tile_menu } from '../admin/index.js';
 import { MAILS } from './mails.jsx';
 import { mail_body } from './mail_body.jsx';
+
+/* key={k}: a new mail is a new element, so the paper's rise animation plays again (the reference replaced the HTML) */
