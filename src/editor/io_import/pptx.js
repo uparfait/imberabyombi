@@ -9,3 +9,4 @@ export const PB = '<div class="page_break" contenteditable="false"></div>';
 
 /* a text paragraph: runs and fields (bold / italic kept), line breaks */
 function para_html(p) {
+  let h = '';
