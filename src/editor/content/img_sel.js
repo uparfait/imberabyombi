@@ -10,3 +10,4 @@ export const IMG_POSITIONS = [['inline', 'In line', 'short_text'], ['wrap_left',
   ['break', 'Break text', 'view_agenda'], ['front', 'In front of text', 'flip_to_front'], ['behind', 'Behind text', 'flip_to_back']];
 const BAR = [...IMG_POSITIONS.map(([v, l, i]) => ['pos:' + v, l, i]), null,
   ['align:left', 'Align left', 'format_align_left'], ['align:center', 'Align center', 'format_align_center'], ['align:right', 'Align right', 'format_align_right'], null,
+  ['more', 'All image options', 'more_vert']];
