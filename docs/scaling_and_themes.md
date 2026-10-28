@@ -30,3 +30,4 @@ inside its own box. Nested scroll areas hand the wheel back to the page at their
   so there is never a light/dark flash. `set_theme()` (src/actions) switches it at runtime.
 - Dark mode is the `.dark` class on `<html>`; it swaps the token values (surfaces, text, lines, status colours,
   chart steps). Components never need their own dark styles unless they sit on a special surface.
+- Theme switches are instant: `.theme_switch` turns all transitions off for two frames.
