@@ -9,3 +9,4 @@
 
   /* ── FEEDBACK SYSTEM ────────────────────────────────────────────────
      A. Bottom-right notifications: completed background actions + system issues */
+  /* #toasts and #loader are manual popovers: the top layer keeps them above open dialogs (see raiseTop()) */
