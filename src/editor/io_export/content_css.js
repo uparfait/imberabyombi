@@ -20,3 +20,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content li{padding-left:2px}',
   '.doc_content blockquote{margin:0 0 0 .5in;padding:0}',
   ".doc_content pre{margin:0;font-family:'Source Code Pro','Courier New',monospace;font-size:10pt;background:#f8f9fa;padding:6pt}",
+  '.doc_content hr{border:0;border-top:1px solid #9aa0a6;margin:6pt 0}',
