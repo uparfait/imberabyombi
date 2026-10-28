@@ -33,3 +33,4 @@ export function apply_panels() {
   const room = p => Math.round(p.getBoundingClientRect().width || scaled(300)) + 'px';   // the panel's own width (rem-sized in the CSS)
   if (refs.sidebar_open) refs.sidebar_open.classList.toggle('show', !state.sidebar);
   cp.classList.toggle('show', !!state.show_comments);
+  sc.style.paddingLeft = state.sidebar && wide ? room(sb) : '';
