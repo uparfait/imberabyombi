@@ -47,3 +47,4 @@ export function Upload_body({ up }) {
       <label className={FLD}>Where should the content go?</label>
       <div className="seg up_mode">
         {MODES.map(([k, l], i) => (
+          <button key={k} type="button" data-m={k} aria-pressed={String(k === m)} onClick={() => up.set({ m: k })}
