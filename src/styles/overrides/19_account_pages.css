@@ -34,3 +34,4 @@
   .nav_row.is_pinned > .relative:last-child:not(:first-child) { flex-shrink: 12; }   /* the deepest (usually the longest) name trims first */
   @media (max-width: 639px) {
     html.nav_docked .nav_row.is_pinned .tile_trigger { gap: .25rem; padding: 0 .75rem; }   /* docked on a phone: the names stay, trimmed */
+    html.nav_docked .nav_row.is_pinned .tile_trigger > :not(.truncate) { display: none; }
