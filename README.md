@@ -40,5 +40,6 @@ index.html       SEO head, theme boot, overlay elements      src/styles/    toke
 src/main.jsx     entry: styles, app, router boot             src/store/     storage (db) and redraw (render, rerender)
 src/app.jsx      root: current page + dialogs                src/router/    hash routes, page meta, after-draw work
 src/config/      brand, media, business rules                src/actions/   every data-act and data-form handler
+src/lib/         small helpers, dates, lorem ipsum           src/behaviors/ delegated events, tooltips, gestures
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
