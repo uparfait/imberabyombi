@@ -7,3 +7,4 @@ import { export_md } from './html_to_md.js';
 import { export_pdf } from './export_pdf.js';
 import { export_rtf } from './export_rtf.js';
 import { export_epub } from './export_epub.js';
+import { top_tables, export_csv } from './export_data.js';
