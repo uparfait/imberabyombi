@@ -7,3 +7,4 @@ import { frame, svg, y_axis, x_axis, chart_base, band, x_labels, vbar, path_of, 
 export const VIZ_DIST = {
   histogram: { t: 'Histogram', g: 'dist', d: 'How values spread across equal ranges (bins).', f(w) {
     const vals = Array.from({ length: 400 }, () => 50 + gauss() * 14), bins = 16, lo = 0, hi = 100, step = (hi - lo) / bins, cnt = Array(bins).fill(0);
+    vals.forEach(v => { const b = Math.min(bins - 1, Math.max(0, Math.floor((v - lo) / step))); cnt[b]++; });
