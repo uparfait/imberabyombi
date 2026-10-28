@@ -16,3 +16,4 @@ export * from './link_bubble.js';
 export * from './comments.js';
 export * from './comment_cards.js';
 export * from './pages.js';
+export * from './boundaries.js';
