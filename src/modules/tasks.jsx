@@ -20,3 +20,4 @@ VIEWS.tasks = () => {
   const mine = all.filter(r => r.assignee === n), done = mine.filter(r => r.status === 'Done').length;
   const preset = t === 'mine' ? { assignee: n, by: n } : t === 'delegated' ? { by: n } : {};
   return <>
+    <section className="card mb-6 flex flex-wrap items-center gap-5 p-5">{i3('tasks', 'h-14 w-14')}<div className="min-w-[12rem] flex-1">
