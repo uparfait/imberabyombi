@@ -10,3 +10,5 @@ A module is a page in the admin (`#/admin/<key>`) with its own sidebar link, per
 import { field_spec as F } from './fields.js';
 import { lorem } from '../lib/index.js';
 import { person } from '../ui/index.js';
+
+export const buses_schema = {
