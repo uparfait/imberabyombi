@@ -11,3 +11,4 @@ export async function copy(text, what = 'Link', quiet = false) {
 /* Copyable value (code, key, link, token): dashed brand box + Copy button. It pulses twice when it appears to draw the eye;
    big = one-time code (digits rise in one by one). */
 export const copy_box = (value, what = 'Code', big = false) => (
+  <div className={`copy_box ${big ? 'copy_big' : ''}`}><code className="copy_val">{big ? [...value].map((c, i) => <span key={i} style={{ '--i': i }}>{c}</span>) : value}</code>
