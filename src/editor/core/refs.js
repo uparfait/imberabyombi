@@ -8,3 +8,5 @@ const ALIAS = { pages_el: 'pages' };
 const store = Object.create(null);
 
 export let pages_el = null, scroller = null, hruler = null, vruler = null;
+
+const find = id => (store.root && store.root.isConnected && store.root.querySelector('#' + CSS.escape(id))) || document.getElementById(id);
