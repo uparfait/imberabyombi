@@ -21,3 +21,4 @@ export function live_busy() { return !!cur || zombies > 0; }
 
 function where(n) { const bs = bodies(), h = editable_of(n), i = bs.indexOf(h), p = i < 0 ? null : path_to(h, n); return p ? { i, p } : null; }
 function find(w) { const b = w && bodies()[w.i]; return b ? node_at(b, w.p) : null; }
+function doc_range() {
