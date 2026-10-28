@@ -30,3 +30,5 @@ export function apply_preset(chain, key) {
     t.toggleAttribute('data-header', p.header); t.toggleAttribute('data-striped', p.striped);
   });
   restyle_table(chain);
+}
+/* header row flag + automatic backgrounds (cells with a colour the user chose keep it) */
