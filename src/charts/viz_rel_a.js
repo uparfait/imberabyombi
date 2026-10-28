@@ -32,3 +32,4 @@ export const VIZ_REL_A = {
     const mx = Math.max(...v.flat());
     const f = frame(w, 230, { l: 40, b: 26, r: 10 }), cw = f.iw / hrs.length, ch = f.ih / days.length;
     return { svg: svg(f, v.map((r, d) => r.map((n, h) => `<rect class="mark mark_cell" x="${round1(f.l + h * cw + 1)}" y="${round1(f.t + d * ch + 1)}"`
+        + ` width="${round1(cw - 2)}"`
