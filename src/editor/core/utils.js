@@ -49,3 +49,4 @@ export let _cctx = null;
 export function to_hex(c) {
   if (!c) return null; c = String(c).trim();
   if (!c || /^(transparent|inherit|initial|unset|currentcolor)$/i.test(c)) return null;
+  if (!_cctx) _cctx = document.createElement('canvas').getContext('2d');
