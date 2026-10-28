@@ -22,3 +22,8 @@ export function Export_cols({ c }) {
         </div>))}
       </div>
       <p className="mt-2 text-sm text-bad" data-export-none="" hidden={any}>Tick at least one column to export.</p>
+    </fieldset>
+  );
+}
+
+/* for the change listener: true when t is one of these ticks (the dialog has already updated itself, so stop there) */
