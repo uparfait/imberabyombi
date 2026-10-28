@@ -48,3 +48,4 @@ function on_key(e, row) {
   if ((k === 'F10' && e.shiftKey) || k === 'ContextMenu') { e.preventDefault(); open_section_menu(row, null, true); return; }
   if (e.ctrlKey || e.metaKey || e.altKey) return;
   const to = r => { e.preventDefault(); if (r) r.focus(); };
+  if (k === 'ArrowDown') to(rows[i + 1]);
