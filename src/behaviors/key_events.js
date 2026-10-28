@@ -27,3 +27,4 @@ function on_keydown(e) {
     const sel = t.tagName === 'SELECT';
     if (k === 'F4' || (e.altKey && k === 'ArrowDown') || (sel && (k === 'Enter' || k === ' '))) { e.preventDefault(); pick.open(t, true); }
     else if (sel && k.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      e.preventDefault(); pick.open(t, true); const q = pick.el.querySelector('[data-pk-q]'); if (q) { q.value = k; pick.filter(k); } }
