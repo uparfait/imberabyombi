@@ -42,3 +42,4 @@ export function wrap_selection(cls, attrs = {}) {
     if (cls) x.classList.add(cls); for (const k in attrs) x.setAttribute(k, attrs[k]); out.push(x);
   });
   if (out.length) { const r = document.createRange(); r.setStartBefore(out[0]); r.setEndAfter(out[out.length - 1]); s.removeAllRanges(); s.addRange(r); }
+  return out;
