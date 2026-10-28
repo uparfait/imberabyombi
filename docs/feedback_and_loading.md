@@ -29,3 +29,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
   "The request could not be completed" notification.
 - Every save, delete and get the user starts shows it: dialog buttons (Save, Comment, Delete…) spin while they work.
 - Data tables show the spinner in their body while rows load (the first view of a page).
+- Saving requests wait `cfg.latency` (450 ms) so the template behaves like a real API. Set it to 0, or put a real
