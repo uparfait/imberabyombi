@@ -20,3 +20,4 @@
   .pk_title { display: inline-flex; align-items: center; gap: .25rem; padding: .375rem .625rem; border-radius: var(--pill); font-size: .9rem; font-weight: 500; transition: background-color .15s; }
   .pk_title:hover { background: rgb(var(--fg) / .06); }
   .pk_grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); text-align: center; }
+  .pk_grid > span { padding: .375rem 0; font-size: .7rem; color: rgb(var(--muted)); }
