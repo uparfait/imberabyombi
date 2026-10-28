@@ -6,3 +6,5 @@ import { ic } from '../../icons/index.js';
 import { modal } from '../../overlays/index.js';
 import { state, qs, file_base, toast, hist_timer, commit } from '../core/index.js';
 import { FORMATS, doc_stats, do_export } from './formats.js';
+
+/* the format badge (a page with a folded corner, in the format's colour) and the file name box (field look, extension after it) */
