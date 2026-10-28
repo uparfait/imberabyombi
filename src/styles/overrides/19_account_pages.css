@@ -24,3 +24,4 @@
      right of the header's own left item (the system logo when the sidebar is closed, the menu icon on phones), which stays;
      the tools on the right (search, theme, modules, profile) stay too. --dock_x is measured in headerLine(). */
   .nav_row.is_pinned { position: sticky; top: 0; z-index: 41; flex-wrap: nowrap; width: fit-content; max-width: var(--dock_max, calc(100% - 13rem)); height: 4rem; transition: padding-left .25s var(--ease); }
+  html.nav_docked .nav_row.is_pinned { padding-left: var(--dock_x, 0px); }   /* padding, not translate: a transform would trap the menus' fixed sheet */
