@@ -17,3 +17,4 @@ export const idb_get = key => open().then(db => new Promise((resolve, reject) =>
 })).catch(() => undefined);
 
 /* save value under key; resolves true when it is stored, false when the browser refused it */
+export const idb_set = (key, value) => open().then(db => new Promise(resolve => {
