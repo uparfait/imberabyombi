@@ -11,3 +11,4 @@ export const rtf_ci = (rx, hex) => {
 const rtf_fi = (rx, f) => { let i = rx.fonts.indexOf(f); if (i < 0) { rx.fonts.push(f); i = rx.fonts.length - 1; } return i; };
 export const rtf_esc = s => {
   let o = '';
+  for (const ch of String(s).replace(/\u200b/g, '')) {
