@@ -20,3 +20,4 @@ export function apply_tokens() {
   ['--brand', '--brand_2', '--radius', '--space', '--font_sans'].forEach(p => s.removeProperty(p));
   if (t.brand) { const c = hex2rgb(t.brand); s.setProperty('--brand', c.join(' ')); s.setProperty('--brand_2', c.map(v => Math.round(v * .64)).join(' ')); }
   if (t.radius != null) s.setProperty('--radius', t.radius + 'rem');
+  if (t.space != null) s.setProperty('--space', t.space + 'rem');
