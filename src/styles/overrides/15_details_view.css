@@ -11,3 +11,4 @@
   /* Horizontal scrollers scroll on x only (no stray y scrollbar from tab underlines or focus rings) */
   .overflow-x-auto { overflow-y: hidden; }
   /* Everything you click to choose gets the pointer */
+  input:is([data-type], [type=radio], [type=checkbox], [type=range], [type=color], [type=file]), .multi_value, label:has(> input:is([type=radio], [type=checkbox])) { cursor: pointer; }
