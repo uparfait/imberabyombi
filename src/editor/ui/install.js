@@ -55,3 +55,4 @@ export function install_ui() {
   const offs = [];
   page_rule_el(); offs.push(drop_page_rule);
   listen(offs, document, 'mousedown', on_outside_down, true);
+  listen(offs, document, 'keydown', on_key, true);
