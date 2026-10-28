@@ -25,3 +25,5 @@ export const plain = (c, k, r) => { const v = r[k], t = schemas[c].f.find(f => f
 export const options = f => (typeof f.o === 'function' ? f.o() : f.o || []).map((o, i) => {
   const [ov, ol] = Array.isArray(o) ? o : [o, o];
   return <option key={i} value={ov}>{ol}</option>;
+});
+export function cell(c, k, row) {
