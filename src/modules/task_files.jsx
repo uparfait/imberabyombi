@@ -19,3 +19,4 @@ function Text_pre({ url }) {
   const [text, set_text] = useState('…');
   useEffect(() => { let on = true; fetch(url).then(x => x.text()).then(t => { if (on) set_text(t.slice(0, 20000)); }).catch(() => {});
     return () => { on = false; }; }, [url]);
+  return <pre className="task_pre" data-text="">{text}</pre>;
