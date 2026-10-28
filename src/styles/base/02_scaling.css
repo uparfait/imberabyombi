@@ -30,3 +30,4 @@
     font-family: var(--font_sans); line-height: 1.6; -webkit-font-smoothing: antialiased;
   }
   /* Light/dark switch: nothing animates while the theme changes */
+  .theme_switch, .theme_switch *, .theme_switch *::before, .theme_switch *::after { transition: none !important; }
