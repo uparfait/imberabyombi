@@ -36,3 +36,4 @@ export function activate_comment(id, focus) {
   if (card) { card.scrollIntoView({ block: 'nearest' }); if (focus) { const t = qs('textarea', card); if (t) t.focus(); } }
 }
 export function fmt_time(t) { return new Date(t).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }); }
+/* after edits (scheduled by the core): redraw the open panel unless someone is typing in it */
