@@ -21,3 +21,4 @@ export const reservations_schema = {
 };
 
 export const inventory_schema = {
+  l: 'inventory item', n: 12, cols: ['item', 'category', 'qty', 'unit', 'location'],
