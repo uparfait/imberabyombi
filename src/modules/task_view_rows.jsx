@@ -29,3 +29,4 @@ export function tv_rows(r, st) {
   const due = r.due ? <span className="flex flex-wrap items-center gap-x-3 gap-y-1">{fmt_dt(r.due)} {due_tag(r)}</span> : dash();
   const preview = st.prev ? <Fragment key={st.prev.n}>{file_preview(st.prev.f)}</Fragment> : null;
   const status = <div data-tv-status={r.id}><div className="pick max-w-[16rem]">
+    <select data-status-pick="" aria-label="Status" defaultValue={r.status}>{STATUS.task.map(x => <option key={x}>{x}</option>)}</select></div>
