@@ -34,3 +34,4 @@ export function apply_preset(chain, key) {
 /* header row flag + automatic backgrounds (cells with a colour the user chose keep it) */
 export function restyle_table(chain) {
   const hdr = chain[0].hasAttribute('data-header'), str = chain[0].hasAttribute('data-striped');
+  chain_rows(chain).forEach((r, i) => Array.from(r.cells).forEach(c => {
