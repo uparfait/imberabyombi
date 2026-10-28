@@ -16,3 +16,4 @@ export function after_close(fn) {
    by its x or Esc, like every template overlay). The action runs while the modal is open: use after_close() for work
    that needs the caret. */
 export function open_dialog({ title, content, buttons = [], width = 440, on_open }) {
+  const p = buttons.find(b => b.primary);
