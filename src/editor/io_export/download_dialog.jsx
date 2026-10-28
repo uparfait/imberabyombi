@@ -25,3 +25,4 @@ function summary(fmt, s) {
 const seg = (label, opts, cur, pick) => (
   <div className="flex items-center gap-3"><span className="text-[13px] text-muted">{label}</span>
     <div className="seg">{opts.map(([v, l], i) => (
+      <button key={l} type="button" aria-pressed={String(v === cur)} onClick={() => pick(v)}
