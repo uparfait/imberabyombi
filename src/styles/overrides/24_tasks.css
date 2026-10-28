@@ -28,3 +28,4 @@
   .kv tr:hover .kv_pen, .kv_pen:focus-visible { opacity: 1; }
   .kv_pen:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
   @media (hover: none) { .kv_pen { opacity: 1; } }
+  .tv_sub + .tv_sub { margin-top: .75rem; padding-top: .75rem; border-top: 1px dashed rgb(var(--line)); }
