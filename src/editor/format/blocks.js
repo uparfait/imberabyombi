@@ -21,3 +21,4 @@ export function with_blocks(fn) {
     if (td) { const p = el('p'); while (td.firstChild) p.appendChild(td.firstChild); if (!p.firstChild) p.innerHTML = '<br>'; td.appendChild(p); blocks = [p]; }
   }
   fn(blocks);
+  restore_sel(sel);
