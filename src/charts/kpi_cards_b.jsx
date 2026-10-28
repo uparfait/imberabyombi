@@ -31,3 +31,4 @@ export const kpi_cards_b = k => {
       <><p className="kpi_value flex items-center gap-2"><span className="kpi_live" aria-hidden="true"></span><span data-count={live[11]}>0</span></p>
         <p className="mt-1 text-sm text-muted">People using the system this minute</p>{spark(live, false, mins, num, 'People')}</>,
       [['Time', 'People'], mins.map((x, i) => [x, num(live[i])])]),
+    kpi_card('', 'Tasks done', 'Tasks completed this week out of all tasks due this week.',
