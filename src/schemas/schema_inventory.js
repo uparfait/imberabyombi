@@ -5,3 +5,4 @@ import { stock_cell } from '../ui/index.js';
 import { field_spec, option_list, STATUS, people, ABC } from './fields.js';
 
 export const reservations_schema = {
+  l: 'reservation', n: 8, cols: ['resource', 'by', 'date', 'from', 'to', 'status'],
