@@ -36,3 +36,4 @@ export function keep(key) {
    (it closes the menu), so fn sees the document as it will stay. */
 export function pick(key, fn, done) {
   const kept = keep(key); if (!kept) unpeek();
+  if (done) done();
