@@ -33,3 +33,5 @@ export function apply_paint() {
   document.execCommand('foreColor', false, p.color); if (p.bg) document.execCommand('hiliteColor', false, p.bg);
   document.execCommand('fontName', false, p.font);
   set_last_range(getSelection().getRangeAt(0).cloneRange());
+  set_font_size(p.size);
+}
