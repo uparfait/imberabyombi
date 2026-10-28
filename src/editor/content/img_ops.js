@@ -27,3 +27,4 @@ export const CROSS_MSG = 'This image comes from another website, so it can’t b
 /* draw im with render(canvas, im) and read the result back ('alpha' from render keeps transparency: PNG) */
 function draw(img, im, render) {
   const c = document.createElement('canvas'), alpha = render(c, im) === 'alpha', jpg = !alpha && /^data:image\/jpe?g/i.test(img.getAttribute('src'));
+  return c.toDataURL(jpg ? 'image/jpeg' : 'image/png', 0.92);
