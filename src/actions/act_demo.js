@@ -14,3 +14,4 @@ export const DEMO_ACT = {
   demo_dialog: () => modal({ title: lorem.t(3), help: lorem.p(2), submit: 'Confirm', body: field(field_spec('demo', 'Lorem field', 'text', 0, 1), ''), on_submit: () => show_msg(qs('#demo_messages'), 'ok', 'Confirmed', 'Lorem ipsum dolor sit amet.') }),
   demo_save: t => form_msg(t.closest('form'), 'ok', 'Saved', 'Lorem ipsum dolor sit amet, consectetur.'),
   demo_msg: t => show_msg(qs('#demo_messages'), t.dataset.v, TITLES[t.dataset.v], 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', false),
+  demo_bar: () => request(() => show_msg(qs('#demo_messages'), 'info', 'Request finished', 'The loader ran for one simulated request.'), { delay: 1200 }),
