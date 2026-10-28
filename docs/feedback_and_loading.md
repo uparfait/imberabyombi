@@ -14,3 +14,5 @@ Three channels, each with one job. Pick one by asking "where is the user looking
   one and puts a summary in the form's `[data-msg-slot]`. Errors clear while the user fixes them.
 - Success messages hide after 7 seconds; errors stay until dismissed or fixed.
 - Add `<div data-msg-slot className="empty:hidden"></div>` where a form's messages should appear.
+
+## Notifications
