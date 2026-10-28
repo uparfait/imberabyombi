@@ -28,3 +28,4 @@ export function zip_store(files, mime) {
     offset += 30 + name.length + data.length;
   }
   const cd_size = central.reduce((a, b) => a + b.length, 0), end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0, 0x06054b50, true); end.setUint16(8, files.length, true); end.setUint16(10, files.length, true); end.setUint32(12, cd_size, true);
