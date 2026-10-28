@@ -9,3 +9,4 @@
 .r_bg { fill: rgb(var(--surface)); }
 .r_margin { fill: rgb(var(--surface_3)); }
 .r_tick { stroke: rgb(var(--muted)); stroke-width: 1; }
+.r_text { fill: rgb(var(--fg) / .8); font-size: .625rem; font-family: var(--font_sans); }
