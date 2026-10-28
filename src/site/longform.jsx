@@ -20,3 +20,4 @@ export function longform(k) {
     <><blockquote><p>{lorem.s(14, 22)}</p><footer className="mt-2 text-sm"><cite>{lorem.name()}</cite></footer></blockquote><h4>{lorem.t(3)}</h4><p>{lorem.p(2)}</p>
       <dl>{[0, 1, 2].map(j => <Fragment key={j}><dt>{lorem.t(2)}</dt><dd>{lorem.s()}</dd></Fragment>)}</dl></>,
     <><h5>{lorem.t(2)}</h5><ol>{li(4)}</ol><h6>{lorem.t(2)}</h6><p>{lorem.p(2)}</p></>][i];
+  return (
