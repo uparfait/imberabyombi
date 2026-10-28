@@ -6,3 +6,4 @@ export function forgot_page(r) {
   return auth_shell('Forgot password', 'Enter your email. We will send you a link to set a new password.', <>
     <form data-form="forgot" className="on_bg mt-8 grid gap-6" noValidate><div data-msg-slot="" className="empty:hidden"></div>
       <div className="field"><label htmlFor="forgot_email">Email</label>
+        <input id="forgot_email" name="email" type="email" autoComplete="email" required placeholder="you@lorem.io" defaultValue={r.q.email || ''} /></div>
