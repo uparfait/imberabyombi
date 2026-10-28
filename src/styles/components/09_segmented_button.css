@@ -5,3 +5,4 @@
   .seg span { @apply block cursor-pointer px-4 py-2 text-sm font-medium text-fg/80 transition hover:bg-fg/5; }
   .seg label + label span { border-left: 1px solid rgb(var(--muted) / .5); }
   .seg input:checked + span { @apply bg-brand/15 text-accent; }
+  .seg input:focus-visible + span { outline: 2px solid rgb(var(--brand)); outline-offset: -2px; }
