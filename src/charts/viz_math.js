@@ -3,3 +3,5 @@
    polarity uses blue <-> orange with a grey middle; status colours (ok / warn / bad) only ever mean status. */
 import { lorem, cap, esc } from '../lib/index.js';
 import { ui } from '../store/index.js';
+
+export const round1 = n => Math.round(n * 10) / 10;
