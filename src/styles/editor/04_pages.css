@@ -18,3 +18,4 @@
 .page_wrap { position: relative; flex: none; }
 /* .page stays global (not only under .page_wrap): the PDF export renders clones of it in a holder on <body> */
 .page { position: absolute; left: 0; top: 0; transform-origin: 0 0; background: #fff; color: #000; color-scheme: light; }
+.page_wrap > .page { outline: 1px solid rgb(var(--line)); outline-offset: 0; }
