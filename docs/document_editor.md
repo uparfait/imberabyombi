@@ -23,6 +23,7 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
   outline of headings (fold, drag a heading to move its whole section, Move up / down, Delete section). The chevron on
   the active tab (or ← / →) folds its outline away so the other tabs stay in view; the choice is saved.
 - **Import** (Upload): DOCX, PPTX, XLSX / CSV / TSV, ODT, EPUB, RTF, PDF, HTML, Markdown, JSON, text and code files.
+  The content goes at the cursor, into new tabs, or in place of the tab on screen ("Replace this tab": the other tabs
 - **Export** (Download): DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT, and a project file that keeps every tab.
 - **Saving**: the document is kept in the browser (`editor_doc` key) a moment after each change.
 
