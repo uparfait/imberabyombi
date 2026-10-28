@@ -24,3 +24,4 @@ export const services_sec = (page = 0) => (
 Use the existing helpers (`sec_head`, `more`, `hero_shell`, `kicker` styles) so the page matches the others.
 
 ## 2. Register the page
+In `src/site/pages.jsx` add an entry to `PAGES`:
