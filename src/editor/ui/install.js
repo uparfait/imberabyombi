@@ -19,6 +19,7 @@ import { listen, run_offs, side_wheel } from './ui_dom.js';
 
 function install_menubar(offs) {
   const bar = refs.menubar; if (!bar) return;
+  side_wheel(offs, bar);
   qsa('[data-menu]', bar).forEach(b => {
     const items = () => (MENUS[b.dataset.menu] ? MENUS[b.dataset.menu]() : []);
     listen(offs, b, 'mousedown', e => e.preventDefault());
