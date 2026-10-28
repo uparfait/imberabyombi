@@ -18,3 +18,4 @@
     font-size: 1rem; font-weight: 400; letter-spacing: normal; text-transform: none; white-space: pre; color: rgb(var(--muted) / .75); pointer-events: none; }
   .date_hint i { font-style: normal; visibility: hidden; }
   .pick > .date_hint { height: auto; bottom: 0; padding: 0 .75rem; font-size: .875rem; }
+  /* Scrollbar that shows only while the pointer is over the area (admin sidebar) */
