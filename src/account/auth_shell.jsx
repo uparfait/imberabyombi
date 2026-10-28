@@ -16,3 +16,6 @@ export const auth_shell = (title, text, body) => (
     </section>
     <p className="px-6 py-4 text-center text-xs text-muted">© {new Date().getFullYear()} {cfg.name} · <a href="#/sitemap" className="hover:text-accent">Privacy</a>
       {' · '}<a href="#/sitemap" className="hover:text-accent">Terms</a></p></main>
+);
+
+/* the other account pages (route paths stay as they are) */
