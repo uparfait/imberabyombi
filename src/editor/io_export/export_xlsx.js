@@ -11,3 +11,4 @@ const OX = 'application/vnd.openxmlformats-officedocument.spreadsheetml';
 
 export function export_xlsx(root, name) {
   const sheets = export_data(root), used = new Set();
+  sheets.forEach(s => {
