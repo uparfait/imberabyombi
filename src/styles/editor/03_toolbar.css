@@ -26,3 +26,4 @@
 .tb_btn .ic_slot { display: inline-grid; place-items: center; }
 
 /* Drop-downs with a label (zoom, styles, font, mode) */
+.tb_dd { justify-content: space-between; gap: .125rem; padding: 0 .1875rem 0 .625rem; overflow: hidden; font-size: .8125rem; font-weight: 500; white-space: nowrap; }
