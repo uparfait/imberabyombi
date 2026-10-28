@@ -10,6 +10,7 @@ By default the site is built for the domain root (`https://example.com/`). To se
 `BASE_PATH` set to that folder, with a slash at both ends:
 ```bash
 BASE_PATH=/my-site/ npm run build          # macOS, Linux, Git Bash
+$env:BASE_PATH='/my-site/'; npm run build  # Windows PowerShell
 ## GitHub Pages
 1. Build: `npm run build`.
 2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` and
