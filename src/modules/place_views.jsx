@@ -40,3 +40,4 @@ const decide = (r, can) => can && r.status === 'Pending' ? <><button className="
 VIEWS.inventory = () => {
   const t = ui.tab.inv || 'res', low = db.list('inventory').filter(i => +i.qty < +i.min);
   const banner = low.length ? <div className="mb-6 flex items-start gap-4 rounded-3xl border border-warn/30 bg-warn/10 p-5">{i3('box', 'h-11 w-11', 'warn')}
+    <div><h2 className="text-base">{`${low.length} item${low.length > 1 ? 's are' : ' is'} below minimum stock`}</h2><p className="mt-1 text-sm text-muted">
