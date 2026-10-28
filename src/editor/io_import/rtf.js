@@ -51,3 +51,5 @@ export function rtf_to_html(rtf) {
     let text = rtf.slice(i, j); i = j;
     if (skip_n > 0) { const k = Math.min(skip_n, text.length); text = text.slice(k); skip_n -= k; }
     emit(text);
+  }
+  if (para) out.push(`<p>${para}</p>`); flush_table();
