@@ -15,3 +15,4 @@
   dialog::backdrop { background: rgb(var(--ink) / .55); backdrop-filter: blur(4px); }
   dialog[open] { animation: pop .3s var(--ease); }
   #modal { width: min(44rem, calc(100% - 1.5rem)); max-width: none; }
+  @media (min-width: 1024px) { #modal.modal_wide { width: min(max(70vw, 44rem), calc(100% - 3rem)); } }   /* modal({ wide: true }), e.g. the task view: at least 70% of a large screen */
