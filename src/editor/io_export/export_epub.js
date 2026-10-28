@@ -36,3 +36,4 @@ export async function export_epub(scope, name) {
   const out = [
     { name: 'mimetype', data: 'application/epub+zip' },
     { name: 'META-INF/container.xml', data: EPUB_CONTAINER },
+    { name: 'OEBPS/content.opf', data: epub_opf(id, state.title, now, manifest, imgs, spine) },
