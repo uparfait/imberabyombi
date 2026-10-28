@@ -10,3 +10,4 @@ React draws the dialog contents through portals (`Dialog_hosts`, src/overlays); 
 import { modal } from '../overlays/index.js';
 modal({
   title: 'Add a task',                 // text or JSX
+  help: 'What this dialog is for.',    // shown behind a help icon by the title (or as the text of a dialog with no body)
