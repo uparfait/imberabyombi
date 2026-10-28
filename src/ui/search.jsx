@@ -24,3 +24,5 @@ export const page_title = (title, text) => (
 );
 export const clear_x = () => (
   <button type="button" className="clear_btn" data-act="clear_search" aria-label="Clear search" data-tip="Clear">{ic('x', 'h-4 w-4')}</button>
+);
+export const search_ui = () => (
