@@ -14,3 +14,4 @@ export const parking_schema = {
     field_spec('fee', 'Fee', 'number', 0, 0, { min: 0 }), field_spec('status', 'Status', 'select', STATUS.park, 1, { def: () => 'Parked' })
   ],
   before: (d, row, f) => {
+    if (d.status === 'Parked' && db.list('parking').some(p => p.status === 'Parked' && p.slot === d.slot && p.id !== row.id)) {
