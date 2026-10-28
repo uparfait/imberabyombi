@@ -8,3 +8,4 @@ export * from './paint.js';
 export * from './lists.js';
 export * from './insert.js';
 export * from './table_model.js';
+export * from './table_ops.js';
