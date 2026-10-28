@@ -29,3 +29,4 @@ export function split_text(block, b, next) {
     const sp = Math.max(text.lastIndexOf(' ', k - 1), text.lastIndexOf('\t', k - 1), text.lastIndexOf('\n', k - 1)); if (sp > 0) k = sp + 1;
   }
   const remap = [];
+  if (cur_sel) for (const key of ['s', 'e']) {
