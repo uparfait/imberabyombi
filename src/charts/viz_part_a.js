@@ -15,3 +15,4 @@ export const VIZ_PART_A = {
     const s = SER.slice(0, 4), v = s.map(() => rnd(10, 40)), tot = v.reduce((a, b) => a + b), f = frame(w, 240, { l: 0, r: 0, t: 10, b: 10 });
     const rad = Math.min(105, f.ih / 2), cx = f.w / 2, cy = f.t + f.ih / 2;
     return { svg: svg(f, slices(v, tot, cx, cy, 0, rad, (val, i) => [s[i], [[pct(val / tot), num(val) + ' of ' + num(tot), i]]]), 'Pie chart'),
+      legend: legend(s.map((k, i) => `${k} ${Math.round(v[i] / tot * 100)}%`)), table: [['Part', 'Value', 'Share'], s.map((k, i) => [k, num(v[i]), pct(v[i] / tot)])] }; } },
