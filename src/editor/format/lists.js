@@ -9,3 +9,4 @@ export function closest_list() { const n = last_range && el_of(last_range.startC
 const take_sel = () => { const s = getSelection(); if (s.rangeCount) set_last_range(s.getRangeAt(0).cloneRange()); };
 /* tag: 'UL' | 'OL' */
 export function toggle_list(tag) {
+  if (!can_edit()) return;
