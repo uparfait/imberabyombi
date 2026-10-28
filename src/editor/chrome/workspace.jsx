@@ -22,3 +22,4 @@ export const workspace = () => (
           <span className="side_title">Document tabs</span>{icon_btn('add_tab_btn', 'add', 'Add tab', 'icon_btn sm')}
         </div>
         <div id="tab_list"></div>
+        <div className="side_row side_gap">
