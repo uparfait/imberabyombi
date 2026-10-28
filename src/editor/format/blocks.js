@@ -64,3 +64,4 @@ export function transform_case(mode) {
   const host = restore_focus(); const s = getSelection(); if (!s.rangeCount || s.isCollapsed) { toast('Select text first'); return; }
   begin_op(); const r = s.getRangeAt(0); const saved = [r.startContainer, r.startOffset, r.endContainer, r.endOffset];
   const root = el_of(r.commonAncestorContainer);
+  const conv = t => mode === 'upper' ? t.toUpperCase() : mode === 'lower' ? t.toLowerCase() : t.toLowerCase().replace(/(^|[\s(\-"'])(\p{L})/gu, (m, a, b) => a + b.toUpperCase());
