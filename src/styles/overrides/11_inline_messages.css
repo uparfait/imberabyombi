@@ -9,3 +9,4 @@
   .msg .msg_x:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
   .msg.msg_out { opacity: 0; transform: translateY(-.25rem); transition: opacity .3s, transform .3s; }
   .field_err { display: flex; align-items: center; gap: .35rem; margin-top: .1rem; font-size: .8rem; font-weight: 500; color: rgb(var(--bad)); animation: rise .25s var(--ease); }
+  [aria-invalid=true] { border-color: rgb(var(--bad)) !important; outline-color: rgb(var(--bad) / .16) !important; }
