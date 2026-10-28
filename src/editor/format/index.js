@@ -6,3 +6,4 @@ export * from './commands.js';
 export * from './blocks.js';
 export * from './paint.js';
 export * from './lists.js';
+export * from './insert.js';
