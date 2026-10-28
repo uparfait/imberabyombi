@@ -27,3 +27,4 @@ export const staff_card = (i, team) => {
     <article key={i} className="filter_card group text-center" data-team={team || ''} data-reveal="" style={{ '--d': `${(i % 4) * .06}s` }}>
       <div className="relative mx-auto aspect-[4/5] overflow-hidden rounded-3xl bg-surface-2"><img src={cfg.face(i * 7 + 3)} alt={`Portrait of ${n}`}
         width="320" height="400" loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+        <div className={LINKS_CLS}>{['mail', 'globe', 'send'].map(x => (
