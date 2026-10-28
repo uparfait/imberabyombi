@@ -6,3 +6,4 @@ import { db, render, render_flags, before_render } from '../store/index.js';
 import { request, staff_page, reduced, raise_top } from '../feedback/index.js';
 import { apply_tokens } from '../actions/index.js';
 import { install_listeners } from '../behaviors/index.js';
+import { before_page } from './render_hooks.js';
