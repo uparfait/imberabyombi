@@ -34,3 +34,4 @@ export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
 export function go(path, { replace = false } = {}) {
   const u = new URL(to(path), location.href);
   if (!replace && u.pathname + u.search === here()) return;
+  history[replace ? 'replaceState' : 'pushState'](null, '', u.pathname + u.search + u.hash);
