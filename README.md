@@ -35,5 +35,7 @@ lives in the browser and can be reset from Settings.
 The full feature list is in [whet-it-document.md](whet-it-document.md).
 
 ## Project map
+```
+index.html       SEO head, theme boot, overlay elements      src/styles/    tokens + stylesheet (≤100 lines per file)
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
