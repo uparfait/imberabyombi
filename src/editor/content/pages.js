@@ -11,3 +11,4 @@ export function add_blank_page(i) {
   const nf = has_next && first_flow(bs[i + 1]); if (nf && nf.hasAttribute('data-cont')) nf.removeAttribute('data-cont');
   const p = el('p', {}, '<br>');
   if (!is_break(last_flow(b))) b.appendChild(el('div', { class: 'page_break', contenteditable: 'false' }));
+  b.appendChild(p); if (has_next) b.appendChild(el('div', { class: 'page_break', contenteditable: 'false' }));
