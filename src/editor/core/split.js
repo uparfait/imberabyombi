@@ -15,3 +15,4 @@ export function split_text(block, b, next) {
   const rng = document.createRange();
   const char_bottom = i => {
     let lo = 0, hi = tn.length - 1;
+    while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (cum[mid] <= i) lo = mid; else hi = mid - 1; }
