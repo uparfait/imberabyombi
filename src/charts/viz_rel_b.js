@@ -6,3 +6,4 @@ import { frame, svg, band, dot, mark_group } from './viz_svg.js';
 import { legend } from './viz_legend.jsx';
 
 export const VIZ_REL_B = {
+  sankey: { t: 'Sankey diagram', g: 'rel', d: 'Flows from sources, through stages, to outcomes.', f(w) {
