@@ -29,3 +29,4 @@ export const rentals_schema = {
   g: () => {
     const o = add_d(new Date(), -lorem.int(1, 25)), st = lorem.pick(['Rented', 'Rented', 'Returned']);
     return {
+      book: lorem.pick(db.list('books')).title, borrower: lorem.pick(db.list('students')).name, out: ymd(o), due: ymd(add_d(o, 14)),
