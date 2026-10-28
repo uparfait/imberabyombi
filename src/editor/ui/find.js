@@ -81,3 +81,5 @@ export function replace_all() {
   begin_op(); const rep = refs.replace_input ? refs.replace_input.value : '';
   find_state.matches.slice().reverse().forEach(r => { r.deleteContents(); if (rep) r.insertNode(document.createTextNode(rep)); });
   end_op(0, true); run_find(); toast(`Replaced ${n} ${n === 1 ? 'match' : 'matches'}`);
+}
+/* the find panel's own listeners (source lines after replaceAll) */
