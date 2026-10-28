@@ -37,3 +37,6 @@ export function open_link_dialog(existing) {
     end_op(body_index(host));
   } });
   setTimeout(() => qs(sel_text ? '#lk_url' : '#lk_text')?.focus(), 60);
+}
+
+export function remove_link(a) {
