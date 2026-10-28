@@ -15,3 +15,4 @@ export function authenticator_page() {
       <ol className="auth_steps">
         <li><p><b className="font-medium">Scan this QR code</b> with the app.</p>
           <div className="mt-3 flex justify-center" dangerouslySetInnerHTML={{ __html: qr_svg(key) }}></div></li>
+        <li><p><b className="font-medium">Can't scan it?</b> Enter this key in the app instead.</p><div className="mt-3">{copy_box(key, 'Key')}</div></li>
