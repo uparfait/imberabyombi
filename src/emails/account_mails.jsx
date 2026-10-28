@@ -7,3 +7,5 @@ import { copy_box } from '../overlays/index.js';
 import { mail_btn } from './mails.jsx';
 
 const chars = (n, set) => Array.from({ length: n }, () => lorem.pick(set.split(''))).join('');
+
+export const account_mails = () => ({
