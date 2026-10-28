@@ -20,3 +20,4 @@ export const FORMS = {
   /* the message text is HTML (the slot is filled by plain JS): the address is escaped */
   forgot: (d, f) => form_msg(f, 'ok', 'Check your email', `We sent a reset link to <b>${esc(d.email)}</b>. It expires in 30 minutes.`, false),
   otp: (d, f) => { const code = qsa('.otp_box', f).map(i => i.value).join('');
+    if (!/^\d{6}$/.test(code)) { form_msg(f, 'bad', 'Enter the 6-digit code', 'Type or paste all six digits.', false); qsa('.otp_box', f).find(i => !i.value)?.focus(); return false; }
