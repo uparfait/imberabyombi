@@ -16,3 +16,4 @@ export const kit_actions = () => (
       <label key={v}><input type="radio" className="sr-only" name="kseg" defaultChecked={i === 1} /><span>{v}</span></label>
     ))}</div>
       <div className="flex -space-x-2">{[1, 2, 3, 4].map(i => (
+        <img key={i} src={cfg.face(i * 9)} alt="" width="36" height="36" loading="lazy" className="h-9 w-9 rounded-full border-2 border-bg object-cover" />
