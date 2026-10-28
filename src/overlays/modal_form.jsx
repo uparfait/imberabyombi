@@ -25,3 +25,4 @@ export function Modal_form({ m }) {
     if (ok !== false) close_dialog(document.getElementById('modal'));
   };
   return (
+    <form ref={ref} className="flex flex-col" noValidate onSubmit={on_submit}>
