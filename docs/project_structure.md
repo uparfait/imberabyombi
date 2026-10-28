@@ -33,8 +33,7 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `charts/`    | charts and KPIs (SVG), their data dialog and tooltip; the small canvas chart registry       |
 | `emails/`    | email designs and the email gallery                                                         |
 | `actions/`   | every `data-act` handler (`ACT`), which ones are requests (`REQ`), every `data-form` handler (`FORMS`) |
-| `behaviors/` | the delegated document listeners: click, input, change, keys, pointer, scroll, right-click menu |
-| `router/`    | hash parsing, page meta, `render_route()`, what runs after each draw, `boot()`              |
+| `behaviors/` | the delegated document listeners: click, internal links, input, change, keys, pointer, scroll, right-click menu |
 
 ## How the pieces talk
 - A page is a function that returns JSX and reads `db`, `ui` and `route` while it draws.
