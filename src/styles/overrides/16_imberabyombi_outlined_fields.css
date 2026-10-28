@@ -20,3 +20,4 @@
   .pick > .date_hint { height: auto; bottom: 0; padding: 0 .75rem; font-size: .875rem; }
   /* Scrollbar that shows only while the pointer is over the area (admin sidebar) */
   .scroll_hover { scrollbar-color: transparent transparent; scrollbar-gutter: stable; }
+  .scroll_hover:hover, .scroll_hover:focus-within { scrollbar-color: rgb(var(--brand) / .45) transparent; }
