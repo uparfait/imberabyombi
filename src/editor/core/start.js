@@ -15,3 +15,5 @@ import { install_content, img_sel, position_img_box } from '../content/index.js'
 import { install_ui, render_all, update_rulers } from '../ui/index.js';
 import * as format from '../format/index.js';
 import * as io_import from '../io_import/index.js';
+
+let running = null;   // the stop() of the editor on screen (one at a time)
