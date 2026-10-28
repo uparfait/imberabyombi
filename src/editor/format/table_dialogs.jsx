@@ -59,3 +59,4 @@ export function insert_multiple_dialog() {
     title: 'Insert rows or columns', submit: 'Insert',
     body: <>
       {num_field('im_n', 'How many', { min: 1, max: 100, defaultValue: 2 })}
+      {sel_field('im_w', 'Where', WHERE, 'row_below')}
