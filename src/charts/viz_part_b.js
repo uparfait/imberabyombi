@@ -32,3 +32,4 @@ export const VIZ_PART_B = {
     for (let i = 1; i < st.length; i++) v.push(Math.round(v[i - 1] * rnd(.38, .72))); v.forEach((_, i) => v[i] = Math.round(v[i] * MARGIN()));
     const f = frame(w, 250, { l: 92, r: 72, b: 8 }), y = band(st.length, f.t, f.t + f.ih), x = linear(0, v[0], 0, f.iw), h = Math.min(30, y.bw * .78), cx = f.l + f.iw / 2;
     return { svg: svg(f, st.map((k, i) => mark_group(k, [[num(v[i]), 'People', null], [i ? pct(v[i] / v[i - 1]) : '100%', 'From the step before', null]], hit_row(f, y, i)
+        + `<rect class="mark" x="${round1(cx - x(v[i]) / 2)}" y="${round1(y(i) - h / 2)}" width="${round1(Math.max(2, x(v[i])))}" height="${round1(h)}" rx="4"`
