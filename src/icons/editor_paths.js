@@ -4,3 +4,5 @@
 import { EDITOR_TEXT_PATHS } from './editor_paths_text.js';
 import { EDITOR_DOC_PATHS } from './editor_paths_doc.js';
 import { EDITOR_MEDIA_PATHS } from './editor_paths_media.js';
+
+export const EDITOR_PATHS = { ...EDITOR_TEXT_PATHS, ...EDITOR_DOC_PATHS, ...EDITOR_MEDIA_PATHS };
