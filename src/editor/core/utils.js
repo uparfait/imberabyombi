@@ -47,3 +47,4 @@ export function read_as_data_url(f) {
 /* CSS colour → 'RRGGBB' (null for transparent / unknown); the 2D context is made on first use, not at module load */
 export let _cctx = null;
 export function to_hex(c) {
+  if (!c) return null; c = String(c).trim();
