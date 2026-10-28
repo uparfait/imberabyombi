@@ -4,3 +4,4 @@
 import { el } from '../core/index.js';
 
 /* ================= tables ================= */
+/* document colours (the page is paper: these are not theme colours) */
