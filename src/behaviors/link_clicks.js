@@ -2,3 +2,5 @@
    inside the base path, no target or download, no modifier key, not an in-page #fragment, not a file) becomes go(path).
    It listens after the main click listener: links that one already handled (data-act, header sections on the home page) stay. */
 import { go, app_path, in_base } from '../router/index.js';
+
+function on_link(e) {
