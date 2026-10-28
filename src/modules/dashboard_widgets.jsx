@@ -47,3 +47,4 @@ export function dash_widgets(u) {
     W.push(<section key="stock" className="card p-5">{head('Low stock', '#/admin/inventory', 'Inventory')}
       <ul className="mt-4 grid gap-4">{low.length ? low.map(i => <li key={i.id}><p className="mb-1 text-sm font-medium">{i.item}</p>{stock_cell(i.qty, i)}
         </li>) : none('Every item is above its minimum.')}</ul></section>); }
+  if (auth.can('parking')) { const n = db.list('parking').filter(p => p.status === 'Parked').length, N = cfg.parking_slots;
