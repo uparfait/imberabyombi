@@ -22,3 +22,4 @@ export async function xlsx_native(buf) {
   const wb = parse_xml(await z.text('xl/workbook.xml')), rels = rels_of(z.has('xl/_rels/workbook.xml.rels') ? await z.text('xl/_rels/workbook.xml.rels') : '');
   const out = [];
   for (const s of by_tag(wb, 'sheet')) {
+    const r = rels[s.getAttribute('r:id') || s.getAttributeNS(R_NS, 'id')]; if (!r) continue;
