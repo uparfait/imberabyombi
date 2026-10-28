@@ -12,3 +12,4 @@ export const staff_schema = {
     field_spec('status', 'Status', 'select', STATUS.staff)
   ],
   g: () => {
+    const n = lorem.name();
