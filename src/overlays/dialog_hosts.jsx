@@ -14,3 +14,5 @@ const confirm_view = () => (
   </>
 );
 const portal = (id, child) => { const at = document.getElementById(id); return at && child ? createPortal(child, at) : null; };
+
+export function Dialog_hosts() {
