@@ -26,3 +26,4 @@ export function render_outline() {
       + '<span class="outline_text min-w-0 flex-1 truncate"></span>'
       + (top ? `<button type="button" class="outline_more" tabindex="-1" aria-label="Section options" data-tip="Section options" aria-haspopup="menu">${mi('more_vert')}</button>` : '');
     row.querySelector('.outline_text').textContent = clean_text(h);
+    row._h = h; row._ti = top ? ti++ : -1; row._key = fold_key(h, seen);
