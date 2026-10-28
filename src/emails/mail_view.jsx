@@ -21,3 +21,4 @@ export const mail_view = k => {
           <p className="truncate text-muted">to you@lorem.io</p></div>
           <time className="shrink-0 text-xs text-muted">{new Date().toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}</time></div></header>
       <div className="mail_canvas"><div className="mail_paper">
+        <div className="mail_top">
