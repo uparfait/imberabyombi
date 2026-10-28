@@ -3,6 +3,7 @@
 import { i3 } from '../icons/index.js';
 import { lorem } from '../lib/index.js';
 import { PUB, PAGES } from '../site/index.js';
+import { to } from '../router/index.js';
 
 export function sitemap() {
   const all = [['', 'Home', 'home'], ...PUB.map(([k, l]) => [k, l, PAGES[k].i]), ['intro', 'Overview', 'layers'], ['ui', 'Design system', 'grid'],
