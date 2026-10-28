@@ -15,3 +15,4 @@ export function image_xml(img, ctx) {
   const h = parseFloat(img.style.height) || w * nh / nw, cx = Math.round(w * EMU), cy = Math.round(h * EMU);
   const { rid, n } = ctx.add_media(bytes, ext), alt = xesc(img.getAttribute('alt') || '');
   const bw = parseFloat(img.style.borderWidth) || 0;
+  const ln = bw ? `<a:ln w="${Math.round(bw * EMU)}"><a:solidFill><a:srgbClr val="${to_hex(img.style.borderColor) || '000000'}"/></a:solidFill></a:ln>` : '';
