@@ -7,3 +7,4 @@ import { field_spec, option_list, STATUS, names } from './fields.js';
 export const attendance_schema = {
   l: 'attendance record', n: 42, cols: ['person', 'kind', 'date', 'in', 'out', 'status'],
   f: [
+    field_spec('person', 'Person', 'list', () => names('staff', 'students'), 1), field_spec('kind', 'Type', 'select', option_list('Staff|Student'), 1),
