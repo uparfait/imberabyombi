@@ -23,3 +23,6 @@ export const ACT = new Proxy(OWN, {
   has: (o, k) => has(o, k) || has(task(), k),
   ownKeys: o => [...new Set([...Reflect.ownKeys(o), ...Reflect.ownKeys(task())])],
   getOwnPropertyDescriptor: (o, k) => Reflect.getOwnPropertyDescriptor(o, k) || (has(task(), k) ? { value: task()[k], writable: true, enumerable: true, configurable: true } : undefined)
+});
+
+/* data-act buttons that are requests. 1 = a change (delete, update, export…): the button spins; 2 = a get (open details,
