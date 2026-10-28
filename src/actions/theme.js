@@ -13,3 +13,4 @@ export function set_theme(mode) {
   redraw_charts(); hex_refresh();
 }
 /* Colour tokens shown as hex (design system swatches) follow the theme and brand changes.
+   The [data-hex] buttons are rendered empty on purpose: this fills them. */
