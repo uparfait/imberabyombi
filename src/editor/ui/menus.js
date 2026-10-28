@@ -10,3 +10,4 @@ import { align_items, spacing_items, bullet_items, number_items, text_items, sty
 import { page_setup_dialog } from './page_setup.jsx';
 import { word_count_dialog, shortcuts_dialog } from './info_dialogs.jsx';
 import { special_chars_dialog, image_url_dialog } from './insert_dialogs.jsx';
+import { open_find } from './find.js';
