@@ -3,7 +3,7 @@
    sideways inside its pill (swipe, or the mouse wheel; no scrollbar shows). .active = a state that is on (bold, list…); .open = its menu is open; .viewing greys
    out the editing tools. */
 #toolbar {
-  display: flex; flex: none; flex-wrap: wrap; align-items: center; row-gap: .125rem; margin: .5rem .75rem; padding: .25rem .375rem;
+  display: flex; flex: none; flex-wrap: nowrap; align-items: center; margin: .5rem .75rem; padding: .25rem .375rem;
   border: 1px solid rgb(var(--line)); border-radius: 1.25rem; background: rgb(var(--fg) / .03); user-select: none;
 }
 @media (max-width: 639.98px) {   /* phones: tighter rows, no separators (the bar wraps instead of scrolling sideways) */
