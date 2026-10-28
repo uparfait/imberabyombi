@@ -21,3 +21,4 @@ export function on_context_menu(e) {
   } else set_last(s.getRangeAt(0).cloneRange(), host);
   const in_table = !!table_ctx();
   open_menu(null, [
+    cmd('Cut', 'content_cut', native('cut'), 'Ctrl+X'), cmd('Copy', 'content_copy', native('copy'), 'Ctrl+C'),
