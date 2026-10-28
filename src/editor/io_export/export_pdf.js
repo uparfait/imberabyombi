@@ -16,3 +16,4 @@ export async function export_pdf(scope, name, scale = 2) {
   if (ids.length > 1) { if (hist_timer) commit(); save_tab(); }
   let first = true;
   try {
+    for (let ti = 0; ti < ids.length; ti++) {
