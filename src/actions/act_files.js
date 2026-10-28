@@ -5,3 +5,4 @@ import { reduced } from '../feedback/index.js';
 import { FURL, view_file } from '../files/index.js';
 
 export const FILE_ACT = {
+  file_view: t => { const f = t.closest('.filebox')?._input?.files[+t.dataset.i]; if (f) view_file(f); },
