@@ -18,3 +18,5 @@ function resize(e, h) {
     img.style.width = w + 'px'; img.style.height = ''; img.removeAttribute('width'); img.removeAttribute('height');
     if (abs) { if (sign < 0) img.style.left = Math.round(l0 + sw - w) + 'px'; if (c.includes('n')) img.style.top = Math.round(t0 + sh - img.offsetHeight) + 'px'; }
     position_img_box();
+  };
+  const up = () => { removeEventListener('pointermove', move); removeEventListener('pointerup', up); end_op(body_index(img.closest('.pg_body'))); select_image(img); };
