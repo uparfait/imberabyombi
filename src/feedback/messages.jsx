@@ -17,3 +17,4 @@ export function show_msg(slot, tone, title, text, autohide = tone === 'ok') {
    [data-msg-slot]; React leaves this extra first child alone. */
 export const new_slot = at => { const s = document.createElement('div'); s.dataset.msgSlot = ''; s.className = 'mb-4'; at.prepend(s); return s; };
 export const slot_of = f => f.querySelector('[data-msg-slot]') || (f.nextElementSibling?.matches('[data-msg-slot]') ? f.nextElementSibling : null) || new_slot(f);
+export const form_msg = (f, tone, title, text, auto) => f && show_msg(slot_of(f), tone, title, text, auto);
