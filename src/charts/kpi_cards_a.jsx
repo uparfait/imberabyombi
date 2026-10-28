@@ -7,3 +7,4 @@ import { spark, delta, signed, kpi_card } from './kpi_parts.jsx';
 
 export const kpi_cards_a = k => {
   const { mo, weeks, users, d_users, rev, d_rev, enr, gauge_p, gauge_c, gauge_s, services, o1, o2, visits, vmax } = k;
+  const reached = `${Math.round(Math.min(1, enr / 1000) * 100)}%`, used = Math.round(gauge_p * 100);
