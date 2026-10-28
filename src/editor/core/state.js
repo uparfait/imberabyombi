@@ -21,3 +21,4 @@ export function set_on_change(fn) { on_change = fn; }
 export function state_changed() { on_change(); }
 
 export function active_tab() { return state.tabs.find(t => t.id === state.active); }
+export function file_base() { return (state.title || 'document').replace(/[\\/:*?"<>|]+/g, '').trim() || 'document'; }
