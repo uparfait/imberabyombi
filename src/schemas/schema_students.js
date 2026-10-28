@@ -30,3 +30,4 @@ export const bulletins_schema = {
 export const payments_schema = {
   l: 'payment', n: 20, cols: ['student', 'item', 'amount', 'method', 'date', 'status'],
   f: [
+    field_spec('student', 'Student', 'list', () => names('students'), 1),
