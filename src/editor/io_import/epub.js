@@ -11,3 +11,4 @@ export async function epub_to_html(file) {
   by_tag(opf, 'item').forEach(it => { man[it.getAttribute('id')] = { href: it.getAttribute('href'), type: it.getAttribute('media-type') || '' }; });
   const spine = by_tag(opf, 'itemref').map(r => man[r.getAttribute('idref')]).filter(x => x && /html/.test(x.type)), parts = [];
   for (const it of spine.slice(0, 400)) {
+    const path = resolve_path(base, decodeURIComponent(it.href)); if (!z.has(path)) continue;
