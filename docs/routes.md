@@ -26,3 +26,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
    shows any message that followed the navigation (signed in, signed out…).
 
 ## Links
+Use plain anchors: `<a href="#/about">About</a>`. To navigate from code: `location.hash = '#/admin/tasks'`.
