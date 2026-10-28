@@ -4,6 +4,7 @@
    the draw (charts, animations), and a double draw in development would queue it twice. */
 import { createRoot } from 'react-dom/client';
 import './styles/index.css';
+import './styles/overrides.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
