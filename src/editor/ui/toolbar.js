@@ -8,3 +8,4 @@ import { open_link_dialog, add_comment, insert_image_file } from '../content/ind
 import { open_upload_dialog } from '../io_import/index.js';
 import { open_download_dialog } from '../io_export/index.js';
 import { menu_stack, toggle_menu } from './menu_engine.js';
+import { peek, unpeek_key, pick, field_has_focus } from './hover_preview.js';
