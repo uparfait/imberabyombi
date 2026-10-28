@@ -17,3 +17,5 @@ export function json_to_html(text, name) {
     const keys = []; arr.slice(0, 3000).forEach(o => Object.keys(o).forEach(k => { if (!keys.includes(k) && keys.length < 40) keys.push(k); }));
     return { html: rows_to_table([keys, ...arr.slice(0, 3000).map(o => keys.map(k => fv(o[k]).slice(0, 500)))], true),
       note: arr.length > 3000 ? 'Only the first 3,000 records were added.' : '' };
+  }
+  if (arr && arr.length && arr.every(Array.isArray)) return { html: rows_to_table(trim_rows(arr.map(r => r.map(fv)), 3000, 40).rows, false) };
