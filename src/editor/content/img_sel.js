@@ -36,3 +36,4 @@ export function img_now(img) {
   if (!img || img.isConnected) return img;
   const w = where.get(img), b = w && w.path && bodies()[w.i], n = b && node_at(b, w.path);
   if (!n || n.tagName !== 'IMG') return img;
+  where.set(n, w); return n;
