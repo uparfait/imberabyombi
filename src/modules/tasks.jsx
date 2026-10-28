@@ -25,3 +25,6 @@ VIEWS.tasks = () => {
       <p className="text-sm text-muted">{`${done} of ${mine.length} tasks on your plate are done.`}</p>
         <progress className="mt-3 max-w-md" max={mine.length || 1} value={done}></progress></div></section>
     {tabs('tasks', list, t)}
+    {crud('tasks', { filter: FL[t] || FL.mine, preset, title: list.find(x => x[0] === t)?.[1], can_row: task_own, view: task_view, acts: status_btn })}
+  </>;
+};
