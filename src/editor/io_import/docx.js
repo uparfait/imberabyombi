@@ -42,3 +42,5 @@ async function docx_blocks(cx, nodes, container) {
       else {
         const par = stack[stack.length - 1]; let host = par.lastElementChild;
         if (!host) { host = document.createElement('li'); par.appendChild(host); } host.appendChild(l);
+      }
+      stack.push(l);
