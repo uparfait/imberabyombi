@@ -27,3 +27,4 @@ export function kit_forms_choices(brand_hex) {
         <select id="demo_multi" name="multi" multiple defaultValue={multi.slice(0, 2)}>{multi.map((v, i) => <option key={i}>{v}</option>)}</select>
         <span className="multi_value truncate" aria-hidden="true"></span></div>
       <div className="field"><label htmlFor="demo_color">Colour</label><input id="demo_color" type="color" defaultValue={brand_hex} /></div>
+      <div className="field sm:col-span-2 lg:col-span-1"><label htmlFor="demo_file">Files (any type)</label><File_box id="demo_file" multiple /></div>
