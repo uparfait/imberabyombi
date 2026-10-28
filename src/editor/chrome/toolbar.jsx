@@ -30,3 +30,4 @@ export const toolbar = () => (
     {tb({ ed: 'find', icon: 'search', tip: 'Find and replace (Ctrl+F)', edit: false })}
     {tb({ ed: 'undo', icon: 'undo', tip: 'Undo (Ctrl+Z)' })}
     {tb({ ed: 'redo', icon: 'redo', tip: 'Redo (Ctrl+Y)' })}
+    {tb({ ed: 'print', icon: 'print', tip: 'Print (Ctrl+P)', edit: false })}
