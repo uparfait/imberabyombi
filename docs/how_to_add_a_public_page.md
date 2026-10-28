@@ -11,3 +11,4 @@ import { sec_head, spy_attrs } from './site_bits.jsx';
 export const services_sec = (page = 0) => (
   <section className="section" {...spy_attrs('services', page)}>
     <div className="wrap">
+      {sec_head('Services', 'What we offer', 'One sentence that explains the services.')}
