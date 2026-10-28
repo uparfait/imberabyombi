@@ -43,3 +43,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 | Settings (theme, tokens …)   | `db.get('theme')` / `db.set(...)`                |
 | What the screen shows        | `ui`                                             |
 | The current route            | `route` (`path`, `q` = query, `mod`, `title`)    |
+| A small part's own state     | a component with `useState` (task view editors, export ticks, file tiles) |
