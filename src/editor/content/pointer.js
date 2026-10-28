@@ -7,3 +7,4 @@ import { qs, qsa, clamp, toast, download, state, DPI, dims, is_abs, editable_of,
 import { paint, apply_paint } from '../format/index.js';
 import { apply_panels, apply_setup } from '../ui/index.js';
 import { data_ur_lto_blob } from '../io_import/index.js';
+import { select_image, hide_img_sel } from './img_sel.js';
