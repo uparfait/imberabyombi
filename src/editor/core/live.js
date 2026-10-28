@@ -33,3 +33,4 @@ function take() {
     zoom: state.zoom, on: bar ? qsa('.active', bar) : [], color: refs.color_bar?.style.background ?? null, size: refs.size_input?.value ?? null };
 }
 function put(sn) {
+  if (!pages_el || sn.tab !== state.active) return;
