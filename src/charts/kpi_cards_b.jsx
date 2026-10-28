@@ -20,3 +20,4 @@ export const kpi_cards_b = k => {
           <span className="text-muted">{i + 1}</span><span className="truncate">{n}</span>
           <span className="kpi_track"><i style={{ width: `${Math.round(v / lead[0][1] * 100)}%`, background: i ? 'rgb(var(--muted) / .45)' : 'var(--series_1)' }}></i></span>
           <b className="font-medium tabular-nums">{num(v)}</b></li>))}</ol>,
+      [['Name', 'Rank', 'Value'], lead.map(([n, v], i) => [n, i + 1, num(v)])]),
