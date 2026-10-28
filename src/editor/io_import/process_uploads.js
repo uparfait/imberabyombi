@@ -56,3 +56,4 @@ export async function process_uploads(files, mode) {
   if (done.length) place_uploads(done, mode, failed);
   if (failed.length) show_failed(failed, done.length);
   else if (notes.length) toast(notes.join(' '), 7000);
+  else if (done.length) toast(done.length === 1 ? `Added ${done[0].file.name}` : `Added ${done.length} files`);
