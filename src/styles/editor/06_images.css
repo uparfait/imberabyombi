@@ -1,2 +1,3 @@
 /* styles/editor/06_images.css: pictures in the document and the picture tools.
    data-pos: (none) = in line with the text · wrap_left / wrap_right = floated, text wraps around · break = on a line of its
+   own (data-align left / center / right) · front / behind = absolute inside .pg_body (left / top / z-index set inline by
