@@ -13,3 +13,4 @@ export function handle_tab(e, r, host) {
   if (td && host.contains(td)) {
     const cells = qsa('td,th', td.closest('table')), i = cells.indexOf(td) + (e.shiftKey ? -1 : 1);
     if (i >= cells.length) { set_last_range(r.cloneRange()); tbl_op('row_below'); return; }
+    if (i >= 0) caret_to_start(cells[i]); return;
