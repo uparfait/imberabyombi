@@ -29,3 +29,5 @@ export default {
         sm: 'calc(var(--radius) * .25)', DEFAULT: 'calc(var(--radius) * .375)', md: 'calc(var(--radius) * .5)',
         lg: 'calc(var(--radius) * .625)', xl: 'calc(var(--radius) * .75)', '2xl': 'var(--radius)',
         '3xl': 'calc(var(--radius) * 1.5)', '4xl': 'calc(var(--radius) * 2.25)', full: 'var(--pill)'
+      },
+      boxShadow: { soft: 'var(--shadow)' },
