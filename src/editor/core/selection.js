@@ -25,3 +25,4 @@ export function restore_sel(sel) {
   const host = editable_of(sc); if (!host) return;
   const s = getSelection();
   const moved = document.activeElement !== host;
+  if (moved && document.activeElement && pages_el.contains(document.activeElement) === false && document.activeElement !== document.body) {
