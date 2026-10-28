@@ -32,3 +32,4 @@
 body.col_resize, body.col_resize * { cursor: col-resize !important; }
 
 /* Small round icon buttons inside the editor (template .icon_btn is 2.5rem) */
+#editor .icon_btn.sm, #link_bubble .icon_btn.sm { width: 2rem; height: 2rem; }
