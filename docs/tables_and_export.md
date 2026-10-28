@@ -16,3 +16,5 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 - Add, edit and delete with a generated form, validation, and a flash on the saved row; deleted rows slide out.
 - A loading row on the first view of a page, like a real API; empty and no-result states.
 - Export: CSV, JSON or Excel (see below).
+
+## Options
