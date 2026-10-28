@@ -44,3 +44,4 @@ export const page_hero = (crumb, title, lead, icon) => (
 );
 
 export function detail(k) {
+  const p = PAGES[k]; lorem.seed(hash_str(k));
