@@ -17,3 +17,4 @@ export function set_img_width(img, w) {
   });
 }
 export function load_img(src) {
+  return new Promise((res, rej) => {
