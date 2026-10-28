@@ -9,3 +9,4 @@ A module is a page in the admin (`#/admin/<key>`) with its own sidebar link, per
 /* schemas/schema_transport.js: buses (transport module) */
 import { field_spec as F } from './fields.js';
 import { lorem } from '../lib/index.js';
+import { person } from '../ui/index.js';
