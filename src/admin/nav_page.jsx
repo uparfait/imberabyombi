@@ -18,3 +18,4 @@ const head = (o, icon, text, extra = null) => !o.routed
 const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a' : 'button';
   return <Tag key={i} className="card card_hover group grid justify-items-center gap-3 p-5 text-center" {...(t.href ? { href: t.href } : t.attrs)}>
     {i3(it.i, 'h-12 w-12')}<span className="line-clamp-2 w-full font-medium leading-tight">{it.t}</span>
+    <span className="text-xs text-muted">{it.c ? `System · ${it.c.length} pages` : 'Page'}</span></Tag>; };
