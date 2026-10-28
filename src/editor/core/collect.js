@@ -6,3 +6,4 @@ import { bodies, is_abs, same_kind, first_flow, last_flow, prev_flow } from './d
 import { merge_into } from './flow.js';
 
 export function fix_list_starts() {
+  const bs = bodies();
