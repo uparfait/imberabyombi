@@ -13,3 +13,4 @@ const find = id => (store.root && store.root.isConnected && store.root.querySele
 export const refs = new Proxy(store, {
   get(o, k) {
     if (typeof k !== 'string') return o[k];
+    const v = o[k];
