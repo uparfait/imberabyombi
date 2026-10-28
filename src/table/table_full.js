@@ -5,3 +5,5 @@ import { ui, rerender, before_render } from '../store/index.js';
 import { reduced } from '../feedback/index.js';
 import { tip } from '../overlays/index.js';
 import { close_pops } from '../actions/index.js';
+
+const PH = {};   /* collection → the card's height when it went full screen (the placeholder's height) */
