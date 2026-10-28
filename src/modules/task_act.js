@@ -39,3 +39,4 @@ export const TASK_ACT = {
   task_comment: t => { const box = qs('#modal [data-comment-box]'), text = box?.value.trim(), id = t.dataset.id; if (!text) return box?.focus();
     comments(t, id, a => [...a, { id: uid(), by: me(), at: Date.now(), text }], 'Your comment was added.'); },
   comment_del: t => comments(t, t.dataset.id, a => a.filter(c => c.id !== t.dataset.c), 'Your comment was deleted.'),
+  /* your own comments: the pen swaps the text for an editor (Save / Cancel) */
