@@ -21,3 +21,6 @@ function status_pick(t) {
   if (t.value === r.status) { v?.put({ more: false }); const f = qs('#modal form'); if (f) f._init = snap(f); return; }
   v?.put({ more: true }); const more = box.querySelector('.tv_status_more');
   if (more && !reduced()) more.animate([{ opacity: 0, transform: 'translateY(-.25rem)' }, { opacity: 1, transform: 'none' }], { duration: 220 });
+}
+
+export function task_change(t) {
