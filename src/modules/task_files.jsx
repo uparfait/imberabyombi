@@ -16,3 +16,4 @@ export const file_chip = (f, id, i, own, on = false) => { const k = file_kind(f)
 
 /* a text attachment: "…" until its first 20 000 characters are read */
 function Text_pre({ url }) {
+  const [text, set_text] = useState('…');
