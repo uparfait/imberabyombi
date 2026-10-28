@@ -3,3 +3,4 @@
    so ic(), ic_html() and i3() find them; a template key with the same name (search, edit, link, image …) keeps its drawing. */
 import { EDITOR_TEXT_PATHS } from './editor_paths_text.js';
 import { EDITOR_DOC_PATHS } from './editor_paths_doc.js';
+import { EDITOR_MEDIA_PATHS } from './editor_paths_media.js';
