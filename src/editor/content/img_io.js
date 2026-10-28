@@ -20,3 +20,4 @@ export async function download_image(img) {
   img = img_now(img); if (!img || previewing()) return;
   try {
     const src = img.getAttribute('src'), m = src.match(/^data:image\/([a-z+]+)[;,]/i);
+    const blob = m ? data_ur_lto_blob(src) : await image_blob(img), ext = m ? m[1].toLowerCase().replace('jpeg', 'jpg').replace('svg+xml', 'svg') : 'png';
