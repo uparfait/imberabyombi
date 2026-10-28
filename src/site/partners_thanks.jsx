@@ -10,3 +10,4 @@ export const partner_logo = i => {
     <path d="M16 2 29 9.5v13L16 30 3 22.5v-13z" />];
   return (
     <div key={i} className="flex shrink-0 items-center gap-3 px-8 text-muted transition hover:text-brand">
+      <svg viewBox="0 0 32 32" className="h-9 w-9" fill="currentColor" aria-hidden="true">{sh[i % 4]}
