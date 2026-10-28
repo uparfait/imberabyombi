@@ -30,3 +30,4 @@ export function load_script(urls) {
     for (const u of urls) {
       try {
         await new Promise((res, rej) => {
+          const s = document.createElement('script'); s.src = u; s.onload = res;
