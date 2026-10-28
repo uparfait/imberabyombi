@@ -40,3 +40,4 @@ Add `<url><loc>https://example.com/#/services</loc></url>` to `public/sitemap.xm
 
 ## Tips
 - Keep each file under 100 lines: one section per file.
+- `data-reveal` fades content in on scroll; `data-count="120"` on a `<data>` element counts up.
