@@ -15,3 +15,4 @@ const comment = (r, c, on) => <li key={c.id} className="flex gap-3">{avatar(c.by
   <div className="min-w-0 flex-1 rounded-2xl bg-surface-2 px-4 py-2.5" data-comment={c.id}>
   <p className="flex items-center gap-2 text-sm"><b className="font-medium">{c.by === me() ? 'You' : c.by}</b><time className="text-xs text-muted">
     {`${ago(c.at)}${c.edited ? ' · edited' : ''}`}</time>
+    {c.by === me() ? <span className="ml-auto flex">
