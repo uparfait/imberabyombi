@@ -18,3 +18,4 @@ export const docx_types = (has_header, has_footer) => `${XML}<Types xmlns="http:
   + '<Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/></Types>';
 
 export const DOCX_RELS = `${XML}<Relationships xmlns="${PR}"><Relationship Id="rId1" Type="${RELNS}/officeDocument" Target="word/document.xml"/>`
+  + `<Relationship Id="rId2" Type="${PR}/metadata/core-properties" Target="docProps/core.xml"/></Relationships>`;
