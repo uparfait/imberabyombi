@@ -10,3 +10,4 @@ export const parking_schema = {
   l: 'parking record', n: 13, cols: ['plate', 'driver', 'slot', 'in', 'out', 'fee', 'status'], sec: { Vehicle: 'plate,driver,slot', Stay: 'in,out,fee,status' },
   f: [
     field_spec('plate', 'Plate number', 'text', 0, 1), field_spec('driver', 'Driver'), field_spec('slot', 'Slot', 'select', slot_ids, 1),
+    field_spec('in', 'Checked in', 'datetime-local', 0, 1, { def: () => now_dt() }), field_spec('out', 'Checked out', 'datetime-local'),
