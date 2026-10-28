@@ -33,3 +33,4 @@ export function toggle_checklist(strike) {
   if (!l || l.tagName !== 'UL') { document.execCommand('insertUnorderedList'); take_sel(); l = closest_list(); }
   if (!l) return;
   begin_op(); l.classList.add('checklist'); l.style.listStyleType = '';
+  if (strike) l.setAttribute('data-strike', ''); else if (strike === false) l.removeAttribute('data-strike');
