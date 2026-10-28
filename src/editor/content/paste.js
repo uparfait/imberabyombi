@@ -13,3 +13,4 @@ export let paste_plain = false;
 export function set_paste_plain(v) { paste_plain = !!v; }
 
 export function pages_paste(e) {
+  const host = editable_of(e.target); if (!host) return;
