@@ -56,3 +56,4 @@ export async function export_rtf(root, name) {
   const { win, hin } = dims(), m = state.setup.margins;
   const rx = { colors: [], fonts: ['Arial'], content_tw: Math.round((win - m.left - m.right) * 1440) };
   const body = rtf_blocks(rx, root), tw = v => Math.round(v * 1440);
+  const fonts = rx.fonts.map((f, i) => `{\\f${i}\\fnil ${f.replace(/[\\{};]/g, '')};}`).join('');
