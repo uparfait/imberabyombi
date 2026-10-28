@@ -33,3 +33,4 @@ export function cell(c, k, row) {
   if (['name', 'person', 'student', 'assignee', 'borrower', 'driver', 'by', 'guardian'].includes(k)) return person(v);
   if (TONE[v]) return badge(v);
   if (['dept', 'kind', 'category', 'grade', 'term', 'subject', 'type', 'item', 'resource', 'shift', 'method'].includes(k)) return tag(v);
+  if (f?.t === 'date') return <time dateTime={String(v ?? '')} className="whitespace-nowrap">{fmt_d(v)}</time>;
