@@ -41,3 +41,4 @@ export function edit_items() {
     cmd('Paste without formatting', 'content_paste_go', () => paste_from_clipboard(true), 'Ctrl+Shift+V'),
     { sep: true },
     cmd('Select all on this page', 'select_all', () => {
+      const h = restore_focus(); if (!h) return;
