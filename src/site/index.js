@@ -8,3 +8,4 @@ export * from './mission_vision.jsx';
 export * from './strategies_staff.jsx';
 export * from './partners_thanks.jsx';
 export * from './contact_sec.jsx';
+export * from './detail_blocks.jsx';
