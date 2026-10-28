@@ -22,3 +22,6 @@ export function adopt_abs(host) {
   if (!host || !host.classList.contains('pg_body')) return;
   qsa('img[data-pos="front"],img[data-pos="behind"]', host).forEach(img => {
     if (img.parentNode === host) return; const par = img.parentNode; host.appendChild(img); keep_line(par); anchor_abs(img);
+  });
+}
+function to_abs(img, pos) {
