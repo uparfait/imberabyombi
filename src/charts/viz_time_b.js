@@ -58,3 +58,4 @@ export const VIZ_TIME_B = {
     const v = Array.from({ length: weeks * 7 }, (_, i) => { const d = add_d(start, i); return Math.max(0, Math.round(rnd(-2, 8) + (d.getDay() % 6 ? 3 : -2))); });
     const mx = Math.max(...v);
     return { svg: svg(f, ['Mon', 'Wed', 'Fri'].map((k, j) => `<text x="${f.l - 6}" y="${round1(f.t + (j * 2 + 1) * (cell + 2) + cell - 2)}" text-anchor="end">${k}</text>`)
+      .join('')
