@@ -6,3 +6,4 @@
   .auth_steps > li { position: relative; padding-left: 2.5rem; counter-increment: step; }
   .auth_steps > li::before { content: counter(step); position: absolute; left: 0; top: -.0625rem; display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: var(--pill);
     background: rgb(var(--brand) / .14); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); font-size: .8125rem; font-weight: 600; }
+  /* Design-system specimen of a notification (it never moves or times out) */
