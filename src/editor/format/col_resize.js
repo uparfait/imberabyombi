@@ -13,3 +13,4 @@ export function ensure_colgroup(t, chain) {
   if (!cg || cg.children.length !== n) {
     const tw = t.offsetWidth || 1, first = t.rows[0];
     const ws = first && first.cells.length === n ? Array.from(first.cells).map(c => c.offsetWidth / tw * 100) : Array(n).fill(100 / n);
+    cg = el('colgroup'); ws.forEach(w => cg.appendChild(el('col', { style: `width:${w.toFixed(3)}%` })));
