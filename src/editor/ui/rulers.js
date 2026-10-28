@@ -48,3 +48,4 @@ export function draw_v_ruler() {
   const { hin } = dims(), z = state.zoom, m = state.setup.margins, H = hin * DPI * z;
   const top = target.getBoundingClientRect().top - vruler.getBoundingClientRect().top;
   const ty = m.top * DPI * z, by = (hin - m.bottom) * DPI * z, x = u(2), w = u(17);
+  const knob = `<rect class="knob" x="${x}" y="${-u(2)}" width="${w}" height="${u(4)}" rx="${u(1)}"/><rect x="0" y="${-u(6)}" width="${u(20)}" height="${u(12)}" fill="transparent"/>`;
