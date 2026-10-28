@@ -23,3 +23,4 @@ export function pub_header() {
 
 /* Mobile menu (the #drawer dialog): Home + every public page, then Sign in and the design system */
 export const drawer_content = () => (
+  <div className="flex h-full flex-col p-5"><div className="flex items-center justify-between">{logo()}
