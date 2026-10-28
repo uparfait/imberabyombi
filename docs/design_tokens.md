@@ -22,3 +22,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--scale_ref`      | `1920`              | Reference desktop width; wider screens show it scaled up         |
 | `--bg` … `--line`  | per theme           | Surfaces, text, muted text, borders (light and `.dark` sets)     |
 | `--ok` `--warn` `--bad` `--info` | per theme | Status badges, meters, alerts                               |
+| `--shadow`         | `none`              | Kept for compatibility: the system is flat, borders carry depth  |
