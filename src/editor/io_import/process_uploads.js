@@ -48,3 +48,4 @@ export async function process_uploads(files, mode) {
     catch (err) {
       console.error(err);
       const why = /load failed/.test(err.message || '') ? 'the converter couldn’t be downloaded. Check your internet connection.'
+        : (err.message || 'it couldn’t be read') + '.';
