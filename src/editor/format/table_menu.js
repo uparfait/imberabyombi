@@ -12,3 +12,4 @@ export function table_menu_items() {
   const c = table_ctx(), t0 = c && table_chain(c.table)[0];
   return [
     { label: 'Insert row above', icon: 'add_row_above', action: () => tbl_op('row_above') },
+    { label: 'Insert row below', icon: 'add_row_below', action: () => tbl_op('row_below') },
