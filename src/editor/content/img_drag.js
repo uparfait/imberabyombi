@@ -50,3 +50,4 @@ function on_move(ev) {
 function finish() {
   removeEventListener('pointermove', on_move); removeEventListener('pointerup', on_up);
   removeEventListener('pointercancel', cancel); removeEventListener('keydown', on_key, true);
+  img_box?.classList.remove('img_dragging'); document.body.classList.remove('img_dragging'); hide_caret();
