@@ -24,3 +24,4 @@ const json_lines = text => JSON.stringify(text.split(/\r?\n/).filter(l => l.trim
 
 export async function file_to_html(file) {
   const name = file.name, ext = ext_of(name);
+  if (file.type.startsWith('image/') || IMG_EXT.has(ext)) {
