@@ -14,3 +14,4 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 
 | Screen width        | Result                                                                          |
 |---------------------|---------------------------------------------------------------------------------|
+| up to 430px (phones) | The 360px design scaled to the screen: a 320px and a 430px phone look the same |
