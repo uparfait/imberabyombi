@@ -22,3 +22,4 @@ VIEWS.calendar = () => {
     <section className="card overflow-hidden"><header className="flex flex-wrap items-center gap-2 border-b border-line p-3 sm:p-4">
       <button className="btn btn_outline" data-act="cal_today">Today</button>
       <button className="icon_btn" data-act="cal_nav" data-n="-1" aria-label="Previous">{ic('chev_l')}</button>
+      <button className="icon_btn" data-act="cal_nav" data-n="1" aria-label="Next">{ic('chev_r')}</button>
