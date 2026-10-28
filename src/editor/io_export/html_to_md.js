@@ -18,3 +18,4 @@ export function html_to_md(root) {
       const bold = /^(B|STRONG)$/.test(t) || /^(bold|[6-9]00)$/.test(st.fontWeight), ital = /^(I|EM)$/.test(t) || st.fontStyle === 'italic';
       const strike = /^(S|DEL|STRIKE)$/.test(t) || /line-through/.test(st.textDecoration || '');
       if (inner.trim()) { if (strike) inner = `~~${inner}~~`; if (ital) inner = `*${inner}*`; if (bold) inner = `**${inner}**`; }
+      s += inner;
