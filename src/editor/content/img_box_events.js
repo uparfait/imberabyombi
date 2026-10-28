@@ -25,3 +25,4 @@ function resize(e, h) {
 const on_mousedown = e => e.preventDefault();
 function on_pointerdown(e) {
   if (!img_sel) return;
+  const h = e.target.closest('.h'); if (h) { resize(e, h); return; }
