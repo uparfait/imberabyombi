@@ -17,3 +17,4 @@
   --ed_hr: 1.5rem; --ed_vr: 1.25rem;   /* ruler bar height / width (the engine's 24 / 20 px SVG is centred in them) */
   --ed_side: 15rem;   /* document tabs sidebar and comments panel width (apply_panels() pads #scroller by their measured width) */
   position: relative; display: flex; flex-direction: column; height: calc(100dvh - var(--ed_off)); min-height: 22rem;
+  overflow: hidden;
