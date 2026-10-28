@@ -8,3 +8,4 @@
   .help_tip:hover, .help_tip:focus-visible { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
   /* Charts & KPIs (Viz): hairline grid, quiet axes, thin marks. Hovering a mark dims the others. */
   .viz_card { display: flex; min-width: 0; flex-direction: column; gap: 1rem; padding: 1.25rem; }
+  @media (min-width: 640px) { .viz_card { padding: 1.5rem; } }
