@@ -26,3 +26,4 @@ function on_change(e) {
     return request(() => table.refresh(c), { delay: staff_page() ? cfg.latency : 0 }); }
   if (t.dataset.tableCol) { const c = t.dataset.tableCol, v = table.tview(c), k = t.value;
     if (!t.checked && schemas[c].cols.length - v.hide.length <= 1) { t.checked = true; return; }   /* one column always stays */
+    v.hide = t.checked ? v.hide.filter(x => x !== k) : [...v.hide, k]; table.tview_save(c); return table.col_show(c, k, t.checked); }
