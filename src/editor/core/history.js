@@ -31,3 +31,4 @@ export function commit() {
   if (live_busy()) return;   // previews never enter the undo stack
   clearTimeout(hist_timer); hist_timer = null;
   const t = active_tab(); if (!t || !pages_el) return;
+  const s = snapshot(), top = t.undo[t.undo.length - 1];
