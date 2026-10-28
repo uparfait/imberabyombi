@@ -13,3 +13,5 @@ import { apply_setup, set_mode, toggle_menus, do_print } from './view.js';
 import { update_rulers } from './rulers.js';
 import { apply_panels } from './pages_panel.js';
 import { new_document } from './render.js';
+
+/* a command: never previewed */
