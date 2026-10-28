@@ -11,3 +11,4 @@ export const partner_logo = i => {
   return (
     <div key={i} className="flex shrink-0 items-center gap-3 px-8 text-muted transition hover:text-brand">
       <svg viewBox="0 0 32 32" className="h-9 w-9" fill="currentColor" aria-hidden="true">{sh[i % 4]}
+        <circle cx="16" cy="16" r="4.5" style={{ fill: 'rgb(var(--bg))' }} /></svg>
