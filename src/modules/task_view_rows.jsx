@@ -27,3 +27,4 @@ export function tv_rows(r, st) {
   const row = (f, l, html, can) => <tr data-tv-row={f}><th scope="row">{l}</th><td><div className="kv_cell">
     {st.edit[f] ? tv_cell(f, r) : <><div className="min-w-0 flex-1">{html}</div>{can ? pen(f) : null}</>}</div></td></tr>;
   const due = r.due ? <span className="flex flex-wrap items-center gap-x-3 gap-y-1">{fmt_dt(r.due)} {due_tag(r)}</span> : dash();
+  const preview = st.prev ? <Fragment key={st.prev.n}>{file_preview(st.prev.f)}</Fragment> : null;
