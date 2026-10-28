@@ -14,3 +14,4 @@ export function md_inline(s) {
     .replace(/~~([^~]+)~~/g, '<s>$1</s>');
 }
 const LIST_RE = /^\s*([-*+]|\d+[.)])\s+/, ROW_RE = /^\s*\|.*\|\s*$/;
+/* a Markdown table: the first row is bold, the --- separator row is dropped */
