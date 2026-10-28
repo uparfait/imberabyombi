@@ -64,3 +64,4 @@ export function insert_rows(row, n, below) {
   return first;
 }
 /* n columns on side 'left' | 'right' of grid column col (a merged cell spanning past col grows instead) */
+export function insert_cols(chain, col, n, side) {
