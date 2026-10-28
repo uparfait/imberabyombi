@@ -9,9 +9,7 @@ export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.r
     key: i => [...m.keys()][i], get length() { return m.size; } };
 } })();
 
-/* seed(c) lives in src/schemas, which hands it over with set_seeder(seed) when it loads. db.js does not import the schemas
-   (or feedback) at the top: they reach every view, and the store, app_state included, must be ready before any view runs. */
-let seeder = null;
+/* seed(c) lives in src/schemas, which hands it over with set_seeder(seed) when it loads; the "storage is full" notice comes
 export const set_seeder = fn => { seeder = fn; };
 const storage_full = () => import('../feedback/index.js')
   .then(m => m.notify('Export a backup, then reset demo data in Settings to free space.', 'bad', 'Browser storage is full'));
