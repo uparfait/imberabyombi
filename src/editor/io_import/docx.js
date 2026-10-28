@@ -39,3 +39,4 @@ async function docx_blocks(cx, nodes, container) {
     while (stack.length < lvl + 1) {
       const l = document.createElement(tag);
       if (!stack.length) container.appendChild(l);
+      else {
