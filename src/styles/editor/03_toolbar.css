@@ -19,3 +19,4 @@
 }
 .tb_btn { justify-content: center; min-width: 1.875rem; padding: 0 .25rem; }
 .tb_btn:hover, .tb_dd:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
+.tb_btn:active { background: rgb(var(--fg) / .1); }
