@@ -7,6 +7,7 @@ unknown paths. `npm run dev` and `npm run preview` already do this.
 
 ## Root or folder
 By default the site is built for the domain root (`https://example.com/`). To serve it from a folder, build with
+`BASE_PATH` set to that folder, with a slash at both ends:
 ## GitHub Pages
 1. Build: `npm run build`.
 2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` and
