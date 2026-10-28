@@ -49,3 +49,4 @@ VIEWS.inventory = () => {
 const check_out = (r, c) => c && r.status === 'Parked' ? <button className="btn btn_soft btn_sm" data-act="park_out" data-id={r.id}>Check out</button> : null;
 VIEWS.parking = () => {
   const logs = db.list('parking'), parked = logs.filter(l => l.status === 'Parked'), occ = Object.fromEntries(parked.map(p => [p.slot, p]));
+  const N = cfg.parking_slots, can = auth.can('parking', 2);
