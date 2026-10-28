@@ -49,3 +49,4 @@ textarea.c_input { border-radius: calc(var(--radius) * .75); }
 @media (max-width: 639.98px) { .find_panel { right: .75rem; } }
 .find_line { display: flex; align-items: center; gap: .5rem; }
 .find_line + .find_line { margin-top: .5rem; }
+.find_foot { justify-content: space-between; flex-wrap: wrap; }
