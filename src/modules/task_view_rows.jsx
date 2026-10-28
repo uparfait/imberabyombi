@@ -37,3 +37,4 @@ export function tv_rows(r, st) {
     {row('subs', 'Subtasks', subs.length ? subs.map(sub(r, mine)) : <span className="text-muted">No subtasks</span>, own)}
     {row('priority', 'Priority', r.priority ? badge(r.priority) : dash(), own)}
     <tr><th scope="row">Attachments</th><td>
+      {files.length ? <div className="task_files">{files.map((f, i) => file_chip(f, r.id, i, own, st.prev?.i === i))}</div> : mine ? null : dash()}
