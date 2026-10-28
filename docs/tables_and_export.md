@@ -23,3 +23,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 | `title`         | the table's title                                                              |
 | `mod`           | the permission key (defaults to the current module): level 2 can add, edit and delete |
 | `filter(row)`   | show only some rows (e.g. a tab of the same collection)                        |
+| `preset`        | values a new record starts with                                                |
