@@ -15,3 +15,4 @@ export async function docx_run(cx, r) {
   const pr = kids(r, 'rPr')[0], css = []; let open = '', close = '';
   const wrap = t => { open += `<${t}>`; close = `</${t}>` + close; };
   if (pr) {
+    if (on(kids(pr, 'b')[0])) wrap('b'); if (on(kids(pr, 'i')[0])) wrap('i'); if (on(kids(pr, 'u')[0])) wrap('u');
