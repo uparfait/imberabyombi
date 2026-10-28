@@ -12,6 +12,7 @@ import { drawer_content } from '../site/index.js';
 import { redraw_charts } from '../charts/index.js';
 import { header_line } from '../behaviors/index.js';
 import { resend_in } from '../account/index.js';
+import { go } from '../router/index.js';
 import { set_theme } from './theme.js';
 import { close_pops, toggle_pop } from './pops.js';
 import { open_cmd } from './open_cmd.jsx';
