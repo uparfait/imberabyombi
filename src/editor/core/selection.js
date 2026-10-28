@@ -55,3 +55,5 @@ export function caret_to_start(e) { if (!e) return; const t = text_nodes(e)[0]; 
 export function caret_to_end(e) {
   if (!e) return; const ts = text_nodes(e), t = ts[ts.length - 1];
   if (t) set_caret(t, t.length); else { const d = deepest(e, false); set_caret(d, is_empty_block(d) ? 0 : d.childNodes.length); }
+}
+export function caret_rect(r) {
