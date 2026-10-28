@@ -36,3 +36,4 @@ export async function docx_run(cx, r) {
 }
 /* an embedded picture (DrawingML blip or VML imagedata), as wide as its extent (16–700 px) */
 async function docx_image(cx, c) {
+  const blip = by_tag(c, 'blip')[0] || by_tag(c, 'imagedata')[0], rid = blip && (blip.getAttribute('r:embed') || blip.getAttribute('r:id')), rel = rid && cx.rels[rid];
