@@ -32,3 +32,5 @@ export function restore_sel(sel) {
   const r = mk_range(sc, so, ec, eo); if (!r) return;
   s.removeAllRanges(); s.addRange(r);
   if (moved || sel.host !== host) scroll_caret_into_view();
+}
+export function mk_range(sc, so, ec, eo) {
