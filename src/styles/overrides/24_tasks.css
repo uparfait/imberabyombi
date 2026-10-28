@@ -5,3 +5,4 @@
     background: rgb(var(--info) / .1); color: rgb(var(--info)); font-size: 11px; line-height: 1.35; text-align: left; transition: background-color .2s; }
   .cal_task:hover { background: rgb(var(--info) / .18); }
   .cal_task.is_late { border-color: rgb(var(--bad) / .4); background: rgb(var(--bad) / .1); color: rgb(var(--bad)); }
+  .cal_task.is_done { opacity: .6; text-decoration: line-through; }
