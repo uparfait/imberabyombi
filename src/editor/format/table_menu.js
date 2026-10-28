@@ -14,3 +14,4 @@ export function table_menu_items() {
     { label: 'Insert row above', icon: 'add_row_above', action: () => tbl_op('row_above') },
     { label: 'Insert row below', icon: 'add_row_below', action: () => tbl_op('row_below') },
     { label: 'Insert column left', icon: 'add_column_left', action: () => tbl_op('col_left') },
+    { label: 'Insert column right', icon: 'add_column_right', action: () => tbl_op('col_right') },
