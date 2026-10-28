@@ -3,3 +3,4 @@
    fresh HTML did; #main is new on every new page, so its enter animation plays again. */
 import { ic, i3 } from '../icons/index.js';
 import { ui, render_flags, get_version } from '../store/index.js';
+import { MODS } from '../auth/index.js';
