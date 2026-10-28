@@ -26,3 +26,4 @@ export const sec_head = (label, title, text, light) => (
   </header>
 );
 export const more = (k, c = 'btn_primary') => (
+  <a href={`#/${k}`} className={`btn ${c} group mt-8 py-2 pl-6 pr-2`}>Read more<span
