@@ -13,3 +13,4 @@ export const students_schema = {
     field_spec('phone', 'Guardian phone', 'tel'), field_spec('status', 'Status', 'select', option_list('Active|Suspended|Graduated'))
   ],
   g: i => ({
+    name: lorem.name(), regno: `LRM-2026-${pad(i + 1)}0`, grade: lorem.pick(GRADES), dob: ymd(new Date(lorem.int(2012, 2019), lorem.int(0, 11), lorem.int(1, 28))),
