@@ -25,3 +25,4 @@ export function kit_forms_choices(brand_hex) {
       {groups}{suggest}
       <div className="field"><label htmlFor="demo_multi">Multiple select (searchable)</label>
         <select id="demo_multi" name="multi" multiple defaultValue={multi.slice(0, 2)}>{multi.map((v, i) => <option key={i}>{v}</option>)}</select>
+        <span className="multi_value truncate" aria-hidden="true"></span></div>
