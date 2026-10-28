@@ -22,3 +22,4 @@
   html, body { overflow-x: clip; }
   /* Calm scrolling: the scrollbar space is always reserved (nothing shifts sideways when the page is frozen),
      the page is frozen behind open dialogs / the phone menu, and overlays never pass their scroll to the page. */
+  html { scrollbar-gutter: stable; }
