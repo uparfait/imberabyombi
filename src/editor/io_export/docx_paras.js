@@ -33,3 +33,4 @@ export const NUMFMT = {
 export function list_kind(l) { const t = (l.style.listStyleType || '').trim(); if (l.tagName === 'OL') return NUMFMT[t] ? t : 'decimal'; return t || 'disc'; }
 /* a nested list of the same tag and kind continues its parent's numbering (same num_id, one level deeper) */
 export function list_xml(l, lvl, ctx, num_id) {
+  if (num_id == null && !l.classList.contains('checklist')) num_id = ctx.new_num(l);
