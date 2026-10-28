@@ -18,3 +18,6 @@ export function show_next() {
   if (!NEXT_MSG) return; const [text, tone, title] = NEXT_MSG; NEXT_MSG = null;
   if (staff_page()) return notify(text, tone, title);
   const slot = qs('#main [data-msg-slot]'); slot ? show_msg(slot, tone, esc(title || TTITLE[tone] || TTITLE.ok), esc(text)) : inline_note(text, tone, title);
+}
+
+/* A. Bottom-right notification (pauses on hover, max 4 stacked). Staff pages only, see above. */
