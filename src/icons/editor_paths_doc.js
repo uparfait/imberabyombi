@@ -29,3 +29,4 @@ export const EDITOR_DOC_PATHS = {
   content_cut: 'M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12',
   content_copy: 'M9 9h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1zM5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1',
   content_paste: CLIP + 'h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3M9 3h6v3H9z',
+  content_paste_go: CLIP + 'h5M15 4h3a2 2 0 0 1 2 2v6M9 3h6v3H9zM15 18h7M19 15l3 3-3 3',
