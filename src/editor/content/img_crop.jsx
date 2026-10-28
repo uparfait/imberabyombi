@@ -10,3 +10,4 @@ import { img_now } from './img_sel.js';
 const RATIOS = [['free', 'Free'], ['1', 'Square'], ['1.3333', '4:3'], ['1.7778', '16:9'], ['0.75', '3:4']];
 
 /* st: what Crop reads ({ rect, pic }) */
+function Crop_body({ src, st }) {
