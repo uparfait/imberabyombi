@@ -5,3 +5,4 @@
 - A modern browser: Chrome, Edge, Firefox or Safari (desktop or phone).
 
 ## Install and run
+```bash
