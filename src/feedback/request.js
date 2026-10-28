@@ -3,3 +3,4 @@
 import { qs } from '../lib/index.js';
 import { cfg } from '../config/index.js';
 import { sleep, staff_page } from './basics.js';
+import { spinner_html } from './spinner.jsx';
