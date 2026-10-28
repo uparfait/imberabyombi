@@ -14,3 +14,4 @@ export async function export_epub(scope, name) {
   if (hist_timer) commit(); save_tab();
   const tabs = scope === 'all' ? state.tabs : [active_tab()], ser = new XMLSerializer(), files = [], manifest = [], spine = [], nav = [], imgs = [];
   let img_n = 0;
+  const css = CONTENT_CSS.replace(/white-space:pre-wrap;?/, '') + 'body{margin:0 4%}.doc_content .page_break{page-break-after:always}';
