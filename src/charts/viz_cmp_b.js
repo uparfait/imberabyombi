@@ -48,3 +48,4 @@ export const VIZ_CMP_B = {
         + (i < bars.length - 1 ? `<line class="grid_line" x1="${round1(x(i) + bw / 2)}" x2="${round1(x(i + 1) - bw / 2)}"`
           + ` y1="${round1(ax.y(o.b))}" y2="${round1(ax.y(o.b))}"/>` : ''); }).join('')
       + chart_base(f, ax.y(0)) + x_labels(f, bars.map(o => o.k), x), 'Waterfall chart'),
+      legend: legend(['Total', 'Increase', 'Decrease'], 'rect', ['rgb(var(--fg) / .72)', 'var(--series_2)', 'var(--series_1)']),
