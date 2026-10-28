@@ -28,3 +28,4 @@ export * from './menus.js';
 export * from './context_menu.js';
 export * from './toolbar.js';
 export * from './shortcuts.js';
+export * from './render.js';
