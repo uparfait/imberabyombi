@@ -31,3 +31,5 @@ export function table_xml(t, ctx) {
         + `${bg ? `<w:shd w:val="clear" w:color="auto" w:fill="${bg}"/>` : ''}${va ? `<w:vAlign w:val="${va}"/>` : ''}</w:tcPr>${inner}</w:tc>`;
     });
     out += '</w:tr>';
+  });
+  return out + '</w:tbl>';
