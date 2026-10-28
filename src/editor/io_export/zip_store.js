@@ -18,3 +18,4 @@ export function zip_store(files, mime) {
     lh.setUint32(14, crc, true); lh.setUint32(18, data.length, true); lh.setUint32(22, data.length, true); lh.setUint16(26, name.length, true);
     lh.setUint16(28, 0, true);
     chunks.push(new Uint8Array(lh.buffer), name, data);
+    const ch = new DataView(new ArrayBuffer(46));
