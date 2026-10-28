@@ -48,3 +48,4 @@ export const VIZ_TIME_A = {
       const sy = linear(Math.min(...v), Math.max(...v), y(i) + 12, y(i) - 12), pts = v.map((n, j) => [sx(j), sy(n)]), last = v.at(-1), chg = last - v[0];
       return `${i ? `<line class="grid_line" x1="0" x2="${f.w}" y1="${round1(y(i) - y.bw / 2)}" y2="${round1(y(i) - y.bw / 2)}"/>` : ''}`
         + mark_group(k, [[num(last * MARGIN()), 'Latest', 0], [(chg >= 0 ? '+' : '−') + num(Math.abs(chg) * MARGIN()), 'Since the start', null]], hit_row(f, y, i)
+          + `<text x="0" y="${round1(y(i) + 4)}">${esc(fit(k, lw - 8))}</text>`
