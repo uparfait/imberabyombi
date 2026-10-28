@@ -4,3 +4,4 @@
 import { Fragment, useSyncExternalStore } from 'react';
 import { createPortal } from 'react-dom';
 import { DIALOGS, subscribe_dialogs, get_dialog_version, run_view } from './dialog_store.js';
+import { Modal_form } from './modal_form.jsx';
