@@ -11,3 +11,4 @@ import { cal_items } from '../admin/index.js';
 import { due_tag } from './task_dates.jsx';
 
 const head = (title, href, link) => <header className="flex items-center justify-between"><h2 className="text-lg">{title}</h2>
+  <a href={href} className="btn btn_ghost btn_sm">{link}</a></header>;
