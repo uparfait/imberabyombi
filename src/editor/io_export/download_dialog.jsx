@@ -65,3 +65,4 @@ function Download_body({ opt }) {
 }
 
 export function open_download_dialog(pre) {
+  if (hist_timer) commit();
