@@ -5,3 +5,5 @@ import { after_render } from '../store/index.js';
 import { auth_shell, auth_links } from './auth_shell.jsx';
 import { otp_boxes } from './otp_boxes.jsx';
 import { resend_in } from './resend_in.js';
+
+export function verify_page() {
