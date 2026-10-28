@@ -3,3 +3,5 @@
    cx = { z (the unzipped file), rels (document relationships), num_fmt (list formats by numId) }. A page break is \u0001. */
 import { esc_html, clamp } from '../core/index.js';
 import { by_tag, kids, resolve_path } from './xml_helpers.js';
+
+export const docx_val = n => n ? n.getAttribute('w:val') : null;
