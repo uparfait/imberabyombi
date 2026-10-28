@@ -3,3 +3,4 @@
 
 /* colour tokens (CSS variable names, snake_case) */
 const TOKS = ['brand', 'brand_2', 'ink', 'bg', 'surface', 'surface_2', 'surface_3', 'fg', 'muted', 'line', 'ok', 'warn', 'bad', 'info'];
+/* written out in full so Tailwind finds every class */
