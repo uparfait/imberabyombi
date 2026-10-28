@@ -37,3 +37,4 @@ export function row_drag(e, o) {
     ev.preventDefault();
   };
   const end = ok => {
+    removeEventListener('pointermove', move); removeEventListener('pointerup', up); removeEventListener('pointercancel', cancel);
