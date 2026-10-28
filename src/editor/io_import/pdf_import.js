@@ -35,3 +35,4 @@ export async function pdf_to_html(buf) {
       prev_y = l.y; prev_h = l.h;
     }
     flush();
+    if (p < pdf.numPages) html += PB;
