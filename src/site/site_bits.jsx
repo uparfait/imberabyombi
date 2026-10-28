@@ -31,3 +31,4 @@ export const more = (k, c = 'btn_primary') => (
 );
 /* the props a section gets: on the home page it is a scroll-spy target (s_about); on its own page a plain anchor (p_about).
    Spread it: <section {...spy_attrs('about', full)}> */
+export const spy_attrs = (k, full) => full ? { id: `p_${k}` } : { id: `s_${k}`, 'data-spy': '' };
