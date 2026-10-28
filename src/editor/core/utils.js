@@ -29,3 +29,4 @@ export function load_script(urls) {
     let err;
     for (const u of urls) {
       try {
+        await new Promise((res, rej) => {
