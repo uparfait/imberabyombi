@@ -35,3 +35,5 @@ export function md_to_html(md) {
     if (/^\s*>/.test(l)) {
       const buf = []; while (i < lines.length && /^\s*>/.test(lines[i])) buf.push(lines[i++].replace(/^\s*>\s?/, ''));
       out += `<blockquote>${buf.map(x => `<p>${md_inline(x) || '<br>'}</p>`).join('')}</blockquote>`; continue;
+    }
+    if (ROW_RE.test(l)) { const rows = []; while (i < lines.length && ROW_RE.test(lines[i])) rows.push(lines[i++]); out += md_table(rows); continue; }
