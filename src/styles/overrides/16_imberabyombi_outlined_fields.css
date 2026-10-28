@@ -22,3 +22,4 @@
   .scroll_hover { scrollbar-color: transparent transparent; scrollbar-gutter: stable; }
   .scroll_hover:hover, .scroll_hover:focus-within { scrollbar-color: rgb(var(--brand) / .45) transparent; }
   /* A button that sits beside a field (newsletter, inline forms) matches the field height */
+  :is(.field, input:not([type=checkbox],[type=radio],[type=hidden],[type=range])) ~ .btn:not(.btn_sm) { min-height: calc(3.25rem + 2px); padding-inline: 1.5rem; }
