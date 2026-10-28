@@ -59,3 +59,4 @@ Every feature below is working code. Each line says what it is and where it live
   hover values, and a click on a card (or a mark) that opens its data in a table, 20 rows a page.
 
 ## Platform
+- Hash router with per-page title and description, redirects to sign-in and back, not-found and no-access views.
