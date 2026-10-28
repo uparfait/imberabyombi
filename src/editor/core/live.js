@@ -79,3 +79,4 @@ export const live = {
   preview(fn, restore) {
     if (typeof fn !== 'function' || state.mode !== 'edit' || !pages_el) return;
     if (!cur) { if (hist_timer) commit(); cur = { snap: take(), fn, gen: 0, pending: 0, msgs: [], restores: [], dirty: false }; }
+    else { put(cur.snap); extras(cur); cur.fn = fn; }
