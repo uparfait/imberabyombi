@@ -29,3 +29,4 @@ export function menu_key(e) {
     return true;
   }
   if (k === 'Home' || k === 'End') { if (n) focus_row(m, rows[k === 'Home' ? 0 : n - 1]); return true; }
+  if (k === 'ArrowRight') {
