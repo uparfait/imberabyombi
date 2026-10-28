@@ -11,3 +11,4 @@ import { task_refresh } from './task_view.jsx';
 import { tv_api } from './tv_state.js';
 
 /* tick item i of subtask g (saved at once) */
+const tick = (id, g, i, on) => request(() => {
