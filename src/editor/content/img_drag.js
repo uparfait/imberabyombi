@@ -19,3 +19,5 @@ function show_caret(p) {
   Object.assign(caret_el.style, { left: (rc.left - pr.left) / z + 'px', top: (rc.top - pr.top) / z + 'px', height: clamp(rc.height / z, rem() * 0.75, rem() * 3.75) + 'px' });
 }
 function hide_caret() { if (caret_el) caret_el.remove(); }
+
+/* e: the pointerdown (on the image or on the selection box's move area); through: a press on a selected Behind-text
