@@ -61,3 +61,5 @@ export function install_ui() {
   install_menubar(offs); install_find(offs); install_panels(offs); install_view(offs); install_toolbar(offs);
   offs.push(() => { close_menus(0); unpeek(); stop_sel_timer(); });
   requestAnimationFrame(update_rulers);
+  return () => run_offs(offs);
+}
