@@ -38,3 +38,4 @@ export function drop_point(x, y, img) {
   const p = caret_from_point(x, y);
   hide.forEach((e, i) => { e.style.visibility = vis[i]; });
   const host = p && editable_of(p.node);
+  return host && host.classList.contains('pg_body') && !(img && img.contains(p.node)) ? p : null;
