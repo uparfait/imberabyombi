@@ -23,3 +23,4 @@
   @media (min-width: 1024px) { .kv.tv thead th:first-child { width: 12rem; } }   /* the wide task view: a narrow label column */
   .kv.tv thead th, .kv.tv .kv_group th { position: static; }   /* the task view scrolls as one page: no pinned rows overlapping */
   .kv_wrap:has(> .kv.tv) { max-height: none; overflow: clip; }   /* the task view: one scroll (the dialog) */
+  .kv_cell { display: flex; min-width: 0; align-items: flex-start; gap: .5rem; }
