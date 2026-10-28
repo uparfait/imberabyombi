@@ -27,3 +27,4 @@ export function on_first_line(host, r) {
 export function on_last_line(host, r) {
   const l = last_non_break(host); if (l === host || is_table(l)) return false;
   if (!l.contains(r.startContainer)) return false;
+  const cr = caret_rect(r), lr = l.getBoundingClientRect();
