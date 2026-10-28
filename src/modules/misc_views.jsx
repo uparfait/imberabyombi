@@ -5,3 +5,4 @@ import { emails_view } from '../emails/index.js';
 import { viz } from '../charts/index.js';
 import { nav_drops } from '../admin/index.js';
 import { empty } from '../ui/index.js';
+import { page_hero } from '../site/index.js';
