@@ -43,3 +43,4 @@ before_render(() => resize_observer?.disconnect());   /* the page that draws nex
 export function charts_view() {
   after_render(() => viz_draw_all()); after_render(watch);
   const by = g => Object.entries(VIZ).filter(([, c]) => c.g === g);
+  return (
