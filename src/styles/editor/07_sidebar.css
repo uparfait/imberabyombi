@@ -30,3 +30,4 @@ input.tab_filter, .tab_filter input {
 }
 .tab_row:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
 .tab_row.active { background: rgb(var(--brand) / .15); color: var(--active_fg); font-weight: 600; }
+.tab_row > svg { flex: none; width: 1.25rem; height: 1.25rem; }
