@@ -23,3 +23,4 @@ export const PK = {
       + `${ic_html('search', 'h-4 w-4 shrink-0 text-muted')}<span class="truncate">${esc(v)}</span></button>`).join('')}</div>` : '';
   },
   times(v) {
+    const near = v ? Math.min(95, Math.floor(to_min(v) / 15)) : 36;
