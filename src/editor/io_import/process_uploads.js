@@ -69,3 +69,4 @@ export async function attach_files(files) {
   if (!files.length || !can_edit()) return;
   const saved = last_range; let html = '';
   for (const f of files) { try { html += await attachment_html(f) + ' '; } catch (e) { toast(`${f.name}: ${e.message}`, 5000); } }
+  if (!html) return; set_last_range(saved);
