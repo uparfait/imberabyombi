@@ -54,3 +54,4 @@ export function clear_formatting() {
   if (!can_edit()) return;
   exec('removeFormat');
   with_blocks(bs => bs.forEach(b => {
+    ['lineHeight', 'marginLeft', 'paddingTop', 'paddingBottom', 'backgroundColor', 'color', 'fontSize', 'fontFamily'].forEach(p => b.style[p] = '');
