@@ -27,3 +27,5 @@ export function remove_comment(id) {
   }
   else { const t = state.tabs.find(x => x.id === c.tab); if (t) t.html = strip_comment(t.html, id); }
   save_soon(); render_comments();
+}
+export function activate_comment(id, focus) {
