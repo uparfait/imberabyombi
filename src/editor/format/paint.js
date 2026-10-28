@@ -19,3 +19,5 @@ export function start_paint() {
     bold: parseInt(cs.fontWeight) >= 600, italic: cs.fontStyle === 'italic', underline: dec.join(' ').includes('underline'),
     strike: dec.join(' ').includes('line-through'), color: cs.color, bg, font: cs.fontFamily.split(',')[0].replace(/["']/g, '').trim(),
     size: Math.round(parseFloat(cs.fontSize) * 0.75 * 2) / 2
+  };
+  btn(true); toast('Select the text to apply the format to', 2000);
