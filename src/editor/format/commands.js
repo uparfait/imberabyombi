@@ -38,3 +38,4 @@ export function wrap_selection(cls, attrs = {}) {
     while (f.firstChild) sp.appendChild(f.firstChild); f.replaceWith(sp); out.push(sp);
   });
   qsa('[style]', host).filter(x => x.style.fontFamily && x.style.fontFamily.includes(marker)).forEach(x => {
+    x.style.fontFamily = font_of(x, fonts); if (!x.getAttribute('style')) x.removeAttribute('style');   /* keeps its own font */
