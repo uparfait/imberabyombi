@@ -17,3 +17,4 @@ export const VIZ_REL_A = {
       `<circle class="hit_area" cx="${round1(xs(p.x))}" cy="${round1(ax.y(p.y))}" r="12"/>${dot(xs(p.x), ax.y(p.y), scale_color(p.g))}`)).join(''), 'Scatter plot'),
       legend: legend(gr, 'dot'), table: [['Group', 'x', 'y'], pts.map(p => [gr[p.g], round1(p.x), round1(p.y)])] }; } },
   bubble: { t: 'Bubble chart', g: 'rel', d: 'A scatter plot where dot size shows a third measure.', f(w) {
+    const gr = SER.slice(0, 2), pts = gr.flatMap((_, g) => Array.from({ length: 8 }, () => ({ g, x: rnd(8, 92), y: rnd(10, 90), s: rnd(5, 100) })));
