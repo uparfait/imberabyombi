@@ -24,3 +24,4 @@ export const VIZ_REL_B = {
         + ` style="stroke:${c ? 'rgb(var(--muted))' : scale_color(a)};stroke-width:${round1(Math.max(1, h))}"/>`); }).join('');
     return { svg: svg(f, flows + cols.map((nodes, c) => nodes.map((k, i) => { const o = pos[c][i], x = col_x(c), last = c === cols.length - 1;
       return `<rect x="${round1(x)}" y="${round1(o.y)}" width="${nw}" height="${round1(o.h)}" rx="3" style="fill:${c ? 'rgb(var(--fg))' : scale_color(i)}"/>`
+        + `<text x="${round1(last ? x - 6 : x + nw + 6)}" y="${round1(o.y + o.h / 2 + 4)}" text-anchor="${last ? 'end' : 'start'}" class="value_label">${k}</text>`; })
