@@ -18,3 +18,4 @@ export function delete_page(i) {
   if (previewing() || !can_edit()) return;
   const bs = bodies(), b = bs[i];
   ask(`Delete page ${i + 1} and everything on it?`, () => {
+    begin_op();
