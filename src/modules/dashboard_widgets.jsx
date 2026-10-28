@@ -30,3 +30,4 @@ export function dash_widgets(u) {
   if (auth.can('attendance')) {
     const days = Array.from({ length: 7 }, (_, i) => add_d(new Date(), i - 6)), att = db.list('attendance');
     const lab = days.map(d => d.toLocaleDateString(undefined, { weekday: 'short' }));
+    const val = days.map(d => att.filter(a => a.date === ymd(d) && a.status !== 'Absent').length);
