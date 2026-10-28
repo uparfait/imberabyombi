@@ -15,3 +15,7 @@ export const books_schema = {
   g: () => ({
     title: lorem.t(3), author: lorem.name(), isbn: `978-${lorem.int(1, 9)}-${lorem.int(1000, 9999)}-${lorem.int(1000, 9999)}-${lorem.int(0, 9)}`,
     category: lorem.pick(['Fiction', 'Science', 'History', 'Languages', 'Reference']), copies: lorem.int(1, 6), shelf: `${lorem.pick(ABC)}${lorem.int(1, 12)}`
+  })
+};
+
+export const rentals_schema = {
