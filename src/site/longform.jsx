@@ -33,3 +33,4 @@ export function longform(k) {
           <h2 className="mt-4 text-lg">{lorem.t(3)}</h2><p className="mt-1 text-sm text-muted">{lorem.s()}</p>
           <a href="#/contact" className="btn btn_primary btn_sm mt-4">Contact us</a></div>
         <nav className="card p-5" aria-label="Related pages"><h2 className="text-sm font-semibold">Related</h2><ul className="mt-3 grid gap-1 text-sm">
+          {PUB.filter(([x]) => x !== k).slice(0, 4).map(([x, l]) => (
