@@ -43,3 +43,4 @@ export function table_props_dialog() {
       {num_field('tp_w', 'Width (% of the line)', num_props(parseFloat(t0.style.width) || 100, 10, 100))}
       {sel_field('tp_al', 'Position', POSITIONS, al)}
       <div className="flex flex-wrap gap-x-5 gap-y-2 sm:col-span-2">
+        {check_field('tp_hdr', 'Header row', t0.hasAttribute('data-header'))}
