@@ -13,3 +13,4 @@ export function add_comment() {
   begin_op(); const spans = wrap_selection('cmt', { 'data-cid': id }); if (!spans.length) return;
   end_op(body_index(host));
   state.comments.push({ id, tab: state.active, quote, text: '', time: Date.now(), replies: [], draft: true });
+  state.show_comments = true; apply_panels(); render_comments(); activate_comment(id, true);
