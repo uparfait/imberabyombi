@@ -11,3 +11,4 @@ before_render(keep => { if (!keep) for (const c in PH) delete PH[c]; });
 export const ph_height = c => PH[c] ? `${PH[c]}px` : '24rem';
 
 /* on: true = open, false = close, undefined = toggle. The card, its button and the placeholder redraw from ui.table_full. */
+export function table_full(c, on) {
