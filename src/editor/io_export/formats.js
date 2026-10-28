@@ -14,3 +14,4 @@ import { export_docx } from './export_docx.js';
 export const FORMATS = [
   { key: 'docx', ext: 'docx', name: 'Word document', desc: 'Edit in Word, LibreOffice or any word processor', color: '#2b579a', icon: 'description', tabs: true },
   { key: 'pdf', ext: 'pdf', name: 'PDF', desc: 'Looks the same everywhere; best for sharing and printing', color: '#d93025', icon: 'picture_as_pdf', tabs: true },
+  { key: 'html', ext: 'html', name: 'Web page', desc: 'One file that opens in any browser', color: '#e8710a', icon: 'html', tabs: true },
