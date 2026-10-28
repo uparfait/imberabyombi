@@ -21,3 +21,4 @@ export function ruler_ticks(len, start, horiz, z) {
   for (let k = from; k <= to; k++) {
     const p = (start + k / 8) * DPI * z;
     if (k % 8 === 0) {
+      if (k) s += horiz ? `<text class="r_text" x="${p}" y="${u(16)}" text-anchor="middle">${Math.abs(k / 8)}</text>`
