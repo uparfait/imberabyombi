@@ -50,3 +50,4 @@ export function delete_across(host, pi) {
   if (nf && last && TEXT_BLOCK_RE.test(last.tagName) && TEXT_BLOCK_RE.test(nf.tagName)) {
     const cont = nf.hasAttribute('data-cont') && same_kind(last, nf), s = save_sel();
     if (is_empty_block(nf)) nf.remove();
+    else { if (is_empty_block(last)) last.innerHTML = ''; merge_into(last, nf); restore_sel(s); if (cont) document.execCommand('forwardDelete'); }
