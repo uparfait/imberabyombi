@@ -22,3 +22,4 @@ function summary(fmt, s) {
   return sum;
 }
 /* a segmented choice (pill), styled like the template's .seg */
+const seg = (label, opts, cur, pick) => (
