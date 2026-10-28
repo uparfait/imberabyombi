@@ -25,3 +25,4 @@ export function rows_to_table(rows, header) {
     h += '<tr>';
     for (let c = 0; c < width; c++) {
       const v = r[c] == null ? '' : String(r[c]), hd = header && i === 0;
+      h += `<td${hd ? ` data-hdr="" data-autobg="" style="background-color:${HDR_BG}"` : ''}><p>${v ? esc_html(v).replace(/\n/g, '<br>') : '<br>'}</p></td>`;
