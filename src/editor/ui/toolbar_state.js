@@ -40,3 +40,4 @@ export function refresh_toolbar() {
 }
 
 /* selectionchange: a range inside the pages becomes the remembered one; the toolbar and link bubble follow shortly */
+export let sel_timer = null;
