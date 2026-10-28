@@ -54,3 +54,4 @@ export function new_cell_like(c, keep_span) {
   n.style.backgroundColor = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); n.innerHTML = '<p><br></p>'; return n;
 }
 /* n rows like row, above or below it; returns the first new row */
+export function insert_rows(row, n, below) {
