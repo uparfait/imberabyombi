@@ -15,3 +15,5 @@
   position: relative; display: inline-block; overflow: hidden; line-height: 0; cursor: crosshair; user-select: none; touch-action: none;
   border-radius: calc(var(--radius) * .5);
   background: repeating-conic-gradient(rgb(var(--surface_3)) 0 25%, rgb(var(--surface)) 0 50%) 0 0 / 1rem 1rem;
+}
+.crop_stage img { display: block; max-width: min(36.25rem, 78vw); max-height: 23.75rem; pointer-events: none; background: none; }
