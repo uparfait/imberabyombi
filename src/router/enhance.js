@@ -9,3 +9,4 @@ import { header_line, chain_wheel } from '../behaviors/index.js';
 
 export function count_up(el) {
   const to = +el.dataset.count; if (el._c || isNaN(to)) return; el._c = 1;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = to; return; }
