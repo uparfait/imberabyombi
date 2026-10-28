@@ -29,3 +29,5 @@ export async function xlsx_native(buf) {
       by_tag(row, 'c').forEach((c, k) => { const ref = c.getAttribute('r'), ci = ref ? col_idx(ref) : k; if (ci >= 40) return; arr[ci] = cell_value(c, strings); });
     });
     out.push({ name: s.getAttribute('name') || 'Sheet', rows: Array.from(rows, r => r || []) });
+  }
+  return out;
