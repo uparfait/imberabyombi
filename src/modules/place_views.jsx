@@ -50,3 +50,4 @@ const check_out = (r, c) => c && r.status === 'Parked' ? <button className="btn 
 VIEWS.parking = () => {
   const logs = db.list('parking'), parked = logs.filter(l => l.status === 'Parked'), occ = Object.fromEntries(parked.map(p => [p.slot, p]));
   const N = cfg.parking_slots, can = auth.can('parking', 2);
+  const rev = logs.filter(l => l.status === 'Exited' && String(l.out).startsWith(ymd())).reduce((a, l) => a + (+l.fee || 0), 0);
