@@ -4,3 +4,4 @@
   .msg { --t: var(--info); display: flex; gap: .75rem; align-items: flex-start; padding: .8rem .9rem; font-size: .875rem; line-height: 1.45; text-align: left;
     color: rgb(var(--fg)); background: rgb(var(--t) / .08); border: 1px solid rgb(var(--t) / .3); border-radius: var(--radius); animation: rise .35s var(--ease); }
   .msg[data-tone=ok] { --t: var(--ok); } .msg[data-tone=bad] { --t: var(--bad); } .msg[data-tone=warn] { --t: var(--warn); }
+  .msg .ico { color: rgb(var(--t)); flex-shrink: 0; margin-top: .05rem; }
