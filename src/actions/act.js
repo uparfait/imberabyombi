@@ -16,3 +16,5 @@ import { DEMO_ACT } from './act_demo.js';
 const OWN = { ...SHELL_ACT, ...TABLE_ACT, ...PICKER_ACT, ...FILE_ACT, ...ADMIN_ACT, ...ROLE_ACT, ...CALENDAR_ACT, ...RECORD_ACT, ...DEMO_ACT };
 const task = () => { try { return modules.TASK_ACT || {}; } catch { return {}; } };
 const has = (o, k) => Object.hasOwn(o, k);
+
+/* behaves like the plain merged object: ACT[k], k in ACT, Object.keys(ACT) */
