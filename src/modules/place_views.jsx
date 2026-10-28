@@ -19,3 +19,6 @@ VIEWS.library = () => {
     {tabs('lib', [['books', 'Books'], ['rentals', 'Rentals', out.length], ['decl', 'Declarations']], t)}
     {t === 'books' ? crud('books', { title: 'Registered books' })
       : t === 'rentals' ? crud('rentals', { title: 'Rentals', acts: returned }) : crud('declarations', { title: 'Declarations' })}</>;
+};
+
+const event_card = (e, i) => <article key={e.id} className="card overflow-hidden"><figure className="relative m-0">
