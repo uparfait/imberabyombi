@@ -7,3 +7,4 @@
   overflow-y: auto; overscroll-behavior: contain; background: rgb(var(--surface_2));   /* = the workspace: covers a page wider than the room */
 }
 #editor #sidebar.closed { display: none; }
+@container ed_ws (max-width: 62.49rem) { #editor #sidebar { border-right: 1px solid rgb(var(--line)); background: rgb(var(--surface)); } }
