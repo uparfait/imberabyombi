@@ -13,3 +13,4 @@ export function hero_sec() {
       <div className="relative grid w-full items-end gap-10 px-6 pb-20 pt-14 sm:px-12 sm:pb-28 sm:pt-20 lg:grid-cols-[1.2fr_.8fr] xl:px-20">
         <div className="hero_in">
           <h1 className="hero_title">{lorem.t(1)}<br />{lorem.t(2)}</h1>
+          <p className="mt-6 font-display text-2xl text-brand sm:text-3xl"><span>{lorem.t(1)} </span><span className="caret"
