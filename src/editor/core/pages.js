@@ -22,3 +22,4 @@ export function layout_page(wrap) {
   page.style.transform = z === 1 ? '' : `scale(${z})`;
   if (s.pageless) {
     page.style.height = 'auto'; page.style.minHeight = h + 'px';
+    Object.assign(body.style, { position: 'relative', top: '', bottom: '', left: '', right: '',
