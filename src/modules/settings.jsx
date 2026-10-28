@@ -10,3 +10,4 @@ import { ic } from '../icons/index.js';
 import { to } from '../router/index.js';
 
 const FONTS = ['Figtree', 'Bricolage Grotesque', 'system-ui'];
+/* a range token: its label shows the value (#token_<k>_out, updated while dragging) */
