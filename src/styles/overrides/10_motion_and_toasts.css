@@ -14,3 +14,4 @@
   @media (min-width: 640px) { #toasts { left: auto; width: 24rem; } }
   .toast { --t: var(--ok); pointer-events: auto; position: relative; overflow: hidden; display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: .8rem; align-items: start;
     padding: .9rem .75rem 1.05rem 1rem; border-radius: calc(var(--radius) * 1.15); background: rgb(var(--surface)); color: rgb(var(--fg));
+    border: 1px solid rgb(var(--line)); box-shadow: var(--shadow); animation: toast_in .45s var(--ease) both; }
