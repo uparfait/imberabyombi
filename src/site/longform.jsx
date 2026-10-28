@@ -30,3 +30,4 @@ export function longform(k) {
           <li key={s.id}><button className={TOC_CLS} data-act="scroll" data-to={s.id}>{s.t}</button></li>
         ))}</ol></nav>
         <div className="card relative isolate overflow-hidden p-6"><div className="pattern_layer" aria-hidden="true"></div>{i3('send', 'h-12 w-12')}
+          <h2 className="mt-4 text-lg">{lorem.t(3)}</h2><p className="mt-1 text-sm text-muted">{lorem.s()}</p>
