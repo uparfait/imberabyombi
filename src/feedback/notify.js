@@ -16,3 +16,4 @@ export let NEXT_MSG = null;
 export const notify_next = (text, tone = 'ok', title) => { NEXT_MSG = [text, tone, title]; };
 export function show_next() {
   if (!NEXT_MSG) return; const [text, tone, title] = NEXT_MSG; NEXT_MSG = null;
+  if (staff_page()) return notify(text, tone, title);
