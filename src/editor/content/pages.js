@@ -21,3 +21,4 @@ export function delete_page(i) {
     begin_op();
     if (i > 0) { const pl = last_flow(bs[i - 1]); if (is_break(pl)) pl.remove(); }
     const nb = bs[i + 1], nf = nb && first_flow(nb); if (nf && nf.hasAttribute('data-cont')) nf.removeAttribute('data-cont');
+    if (bs.length > 1) remove_page(b); else b.innerHTML = '<p><br></p>';
