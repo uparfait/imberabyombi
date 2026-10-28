@@ -22,3 +22,4 @@ export const FORMS = {
   otp: (d, f) => { const code = qsa('.otp_box', f).map(i => i.value).join('');
     if (!/^\d{6}$/.test(code)) { form_msg(f, 'bad', 'Enter the 6-digit code', 'Type or paste all six digits.', false); qsa('.otp_box', f).find(i => !i.value)?.focus(); return false; }
     if (d.setup) notify_next('Use it to get a code each time you sign in.', 'ok', 'Authenticator app is on');
+    else notify_next(d.trust ? 'This device is trusted for 30 days.' : 'You are signed in.', 'ok', 'Verified');
