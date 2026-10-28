@@ -20,3 +20,4 @@ export function login_page(r) {
       <div data-msg-slot="" className="empty:hidden"></div>
       {role_part(inv, rs, sel)}
       <div className="field"><label htmlFor="signin_name">Full name</label>
+        <input id="signin_name" name="name" autoComplete="name" defaultValue={r.q.name || ''} placeholder="Lorem Ipsum" /></div>
