@@ -13,3 +13,4 @@ let sub_timer = null;
 export function close_menus(from = 0) {
   if (from === 0) { clearTimeout(sub_timer); unpeek(); }
   while (menu_stack.length > from) {
+    const m = menu_stack.pop(); m.el.remove();
