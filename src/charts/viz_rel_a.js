@@ -36,3 +36,4 @@ export const VIZ_REL_A = {
         + ` height="${round1(ch - 2)}" rx="3" style="fill:${sequential(n / mx)}" ${tip_text(`${days[d]}, ${fmt_hour(hrs[h])}`, [[n, 'Visits', null]])}/>`).join('')
         + `<text x="${f.l - 8}" y="${round1(f.t + d * ch + ch / 2 + 4)}" text-anchor="end">${days[d]}</text>`).join('')
       + hrs.map((h, i) => i % Math.ceil(hrs.length / Math.max(1, f.iw / 40)) ? ''
+        : `<text x="${round1(f.l + i * cw + cw / 2)}" y="${f.h - 8}" text-anchor="middle">${fmt_hour(h)}</text>`).join(''), 'Heatmap'),
