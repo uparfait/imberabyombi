@@ -39,3 +39,4 @@ const KEYS = [['Bold / Italic / Underline', 'Ctrl+B / I / U'], ['Strikethrough',
   ['Keyboard shortcuts', 'Ctrl+/']];
 
 export function shortcuts_dialog() {
+  modal({
