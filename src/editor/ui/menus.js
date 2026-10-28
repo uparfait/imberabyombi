@@ -56,3 +56,4 @@ function format_items() {
 }
 function tools_items() {
   return [
+    cmd('Word count', 'numbers', () => word_count_dialog(), 'Ctrl+Shift+C'),
