@@ -38,3 +38,4 @@ export function duplicate(t) {
   state.tabs.splice(state.tabs.indexOf(t) + 1, 0, c); show(c.id);
 }
 export function delete_tab(t) {
+  if (state.tabs.length < 2) return;
