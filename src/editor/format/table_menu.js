@@ -31,3 +31,4 @@ export function table_menu_items() {
     { label: 'Border width', icon: 'border_style', sub: () => [0, 1, 2, 3].map(w => ({ label: w ? w + ' px' : 'No border', action: () => tbl_op('border', w) })) },
     { label: 'Border color', icon: 'border_color', sub: () => [{ render: () => palette_el(col => tbl_op('border_color', col), 'Black') }] },
     { label: 'Header row', icon: 'table_rows', checked: !!(t0 && t0.hasAttribute('data-header')), action: () => tbl_op('header') },
+    { label: 'Striped rows', icon: 'reorder', checked: !!(t0 && t0.hasAttribute('data-striped')), action: () => tbl_op('striped') },
