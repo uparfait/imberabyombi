@@ -13,3 +13,4 @@ export function Live_slot({ name, first, draw, fresh = true }) {
   const [own, set_own] = useState(null), latest = useRef(null), count = useRef(0);
   latest.current = draw;
   useLayoutEffect(() => {
+    const fn = () => { const jsx = latest.current(); flushSync(() => set_own({ v: get_version(), n: ++count.current, jsx })); };
