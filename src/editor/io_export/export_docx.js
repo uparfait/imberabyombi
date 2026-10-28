@@ -11,3 +11,4 @@ import { zip_store } from './zip_store.js';
 
 const tw = v => Math.round(v * 1440);   /* inches → twentieths of a point */
 const sect_xml = (refs, win, hin, m) => `<w:sectPr>${refs}<w:pgSz w:w="${tw(win)}" w:h="${tw(hin)}"${win > hin ? ' w:orient="landscape"' : ''}/>`
+  + `<w:pgMar w:top="${tw(m.top)}" w:right="${tw(m.right)}" w:bottom="${tw(m.bottom)}" w:left="${tw(m.left)}" w:header="${tw(Math.max(.3, m.top / 2))}"`
