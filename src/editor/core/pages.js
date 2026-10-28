@@ -31,3 +31,4 @@ export function layout_page(wrap) {
       left: m.left * DPI + 'px', right: m.right * DPI + 'px' });
     Object.assign(hd.style, { display: s.header ? 'block' : 'none', left: m.left * DPI + 'px', right: m.right * DPI + 'px',
       top: Math.max(12, m.top * DPI / 2 - 9) + 'px' });
+    Object.assign(ft.style, { display: (s.footer || s.page_numbers) ? 'flex' : 'none', left: m.left * DPI + 'px', right: m.right * DPI + 'px',
