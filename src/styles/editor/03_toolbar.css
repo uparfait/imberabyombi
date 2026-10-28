@@ -24,3 +24,5 @@
 .tb_btn.active { background: rgb(var(--brand) / .15); color: var(--active_fg); }
 .tb_btn svg, .tb_dd svg { flex: none; width: 1.125rem; height: 1.125rem; }
 .tb_btn .ic_slot { display: inline-grid; place-items: center; }
+
+/* Drop-downs with a label (zoom, styles, font, mode) */
