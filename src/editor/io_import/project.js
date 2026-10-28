@@ -10,3 +10,4 @@ const setup_of = s => Object.fromEntries(Object.entries(s || {}).map(([k, v]) =>
 
 export function load_project(d) {
   if (!d || !Array.isArray(d.tabs) || !d.tabs.length) throw new Error('bad project');
+  state.title = d.title || 'Untitled document';
