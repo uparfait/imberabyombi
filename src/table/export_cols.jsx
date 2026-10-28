@@ -27,3 +27,4 @@ export function Export_cols({ c }) {
 }
 
 /* for the change listener: true when t is one of these ticks (the dialog has already updated itself, so stop there) */
+export const export_change = t => !!t?.closest?.('[data-export-cols]') && t.type === 'checkbox';
