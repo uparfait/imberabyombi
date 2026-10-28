@@ -6,3 +6,4 @@ import { state, refs, active_tab, new_tab, duplicate_tab, move_tab, collect_html
 import { render_comments } from '../content/index.js';
 import { render_tab } from './render.js';
 import { render_sidebar } from './sidebar.js';
+import { confirm_dialog } from './dialogs.jsx';
