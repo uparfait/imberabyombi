@@ -4,3 +4,4 @@ import { state, refs, pages_el, scroller, dims, page_wraps, bodies, layout_page,
   toast, qs, el } from '../core/index.js';
 import { hide_img_sel } from '../content/index.js';
 import { close_menus } from './menu_engine.js';
+import { update_rulers } from './rulers.js';
