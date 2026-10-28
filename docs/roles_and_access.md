@@ -42,3 +42,4 @@ me()                 // the signed-in person's name
 ```
 
 ## Important
+The browser can be changed by its user, so `auth.can()` only shapes the interface. When you connect a backend,
