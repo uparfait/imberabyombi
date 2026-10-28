@@ -41,3 +41,4 @@ Settings → Appearance edits brand, radius, spacing and font live. The override
 inline styles on `<html>`; **Reset to stylesheet values** removes them so the CSS file applies again.
 
 ## Rules
+- Never hard-code a colour in a component: use `brand`, `ink`, `fg`, `muted`, `line`, `surface*` or a status colour.
