@@ -10,3 +10,5 @@ import { confirm_dialog } from './dialogs.jsx';
 import { unique_name } from './ui_dom.js';
 
 export function save_tab() { const t = active_tab(); if (t) t.html = collect_html(); }
+
+function show(id) { state.active = id; render_tab(); render_sidebar(); render_comments(); save_soon(); }
