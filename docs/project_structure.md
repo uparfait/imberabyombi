@@ -27,7 +27,7 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `table/`     | `crud()` data tables, column filters, pager, table settings, full screen, details view, forms, export |
 | `site/`      | public website: header, footer, home sections, detail pages, long-form pages                |
 | `account/`   | sign in, forgot password, 2-step code, authenticator app, set password                      |
-| `kit/`       | the design-system page (`#/ui`), one file per specimen group                                |
+| `kit/`       | the design-system page (`/ui`), one file per specimen group                                |
 | `admin/`     | admin shell: sidebar, header tools, side panels, apps menus, nested navigation              |
 | `modules/`   | one view per admin module (`VIEWS`), the calendar and the task feature                      |
 | `charts/`    | charts and KPIs (SVG), their data dialog and tooltip; the small canvas chart registry       |
