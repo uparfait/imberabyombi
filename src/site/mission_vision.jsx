@@ -26,3 +26,4 @@ export function vision_sec(full) {
           <li key={y} className="grid grid-cols-[1.25rem_1fr] gap-5" data-reveal="" style={{ '--d': `${i * .1}s` }}>
             <span className="flex flex-col items-center pt-1.5"><span className="h-4 w-4 rounded-full border-4 border-brand bg-surface dark:bg-ink"></span>
               {i < 3 ? <span className="mt-2 w-px flex-1 bg-line"></span> : null}</span>
+            <div className="pb-8"><time dateTime={y} className="text-sm font-semibold text-brand">{y}</time><h3 className="mt-1 text-xl">{lorem.t(3)}</h3>
