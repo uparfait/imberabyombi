@@ -9,3 +9,4 @@ const R_NS = 'http://schemas.openxmlformats.org/officeDocument/2006/relationship
 /* "AB12" → 27 (0-based column) */
 export function col_idx(ref) { const m = /^([A-Z]+)/i.exec(ref); let n = 0; if (m) for (const ch of m[1].toUpperCase()) n = n * 26 + ch.charCodeAt(0) - 64; return n - 1; }
 /* one cell's shown value: shared string, inline string, boolean or the stored value */
+function cell_value(c, strings) {
