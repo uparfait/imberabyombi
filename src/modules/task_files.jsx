@@ -10,3 +10,4 @@ export const file_chip = (f, id, i, own, on = false) => { const k = file_kind(f)
     <button type="button" className={on ? 'task_file_open active' : 'task_file_open'} data-act="task_file" data-id={id} data-i={i}>
       {f.url && k === 'image' ? <img src={f.url} alt="" /> : <span className="task_file_ico">{ic(FICON[k], 'h-5 w-5')}</span>}
       <span className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{f.name}</span>
+        <small className="text-muted">{fmt_size(f.size)}</small></span></button>
