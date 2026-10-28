@@ -32,3 +32,4 @@ export function i3_html(n, c = 'w-14 h-14', tone = 'brand') {
 <linearGradient id="${id}f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:color-mix(in srgb, rgb(var(--${a})) 55%, white)"/>` +
   `<stop offset="1" style="stop-color:rgb(var(--${a}))"/></linearGradient>
 <radialGradient id="${id}g" cx=".28" cy=".18" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".5"/>` +
+  `<stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
