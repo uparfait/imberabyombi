@@ -3,3 +3,5 @@
 import { DTF, ghost } from '../fields/index.js';
 import { pick, tip } from '../overlays/index.js';
 import { viz_tip } from '../charts/index.js';
+
+/* Chart tooltips follow the pointer (a tap shows one on touch screens) */
