@@ -47,3 +47,4 @@ export function indent(dir) {
   if (!can_edit()) return;
   restore_focus();
   const n = last_range && el_of(last_range.startContainer);
+  if (n && n.closest('li')) { exec(dir > 0 ? 'indent' : 'outdent'); return; }
