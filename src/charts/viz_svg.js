@@ -45,3 +45,4 @@ export const cross_bands = (f, labels, x, rows) => labels.map((k, i) => `<g clas
 export const arc = (cx, cy, r0, r1, a0, a1) => {
   const p = (r, a) => [cx + r * Math.sin(a), cy - r * Math.cos(a)], big = a1 - a0 > Math.PI ? 1 : 0;
   const [x0, y0] = p(r1, a0), [x1, y1] = p(r1, a1), [x2, y2] = p(r0, a1), [x3, y3] = p(r0, a0);
+  return `M${round1(x0)} ${round1(y0)}A${r1} ${r1} 0 ${big} 1 ${round1(x1)} ${round1(y1)}`
