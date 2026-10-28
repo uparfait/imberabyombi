@@ -22,3 +22,4 @@ function install_menubar(offs) {
   qsa('[data-menu]', bar).forEach(b => {
     const items = () => (MENUS[b.dataset.menu] ? MENUS[b.dataset.menu]() : []);
     listen(offs, b, 'mousedown', e => e.preventDefault());
+    listen(offs, b, 'click', e => toggle_menu(b, items, { focus: e.detail === 0 }));
