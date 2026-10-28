@@ -2,3 +2,4 @@
    crud(c, o) draws a table card. o: { title, mod, filter(row), preset, acts(row, can) → JSX, can_row(row), view(id) }. */
 import { cap } from '../lib/index.js';
 import { ic } from '../icons/index.js';
+import { auth } from '../auth/index.js';
