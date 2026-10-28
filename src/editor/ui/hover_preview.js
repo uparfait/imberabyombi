@@ -10,3 +10,5 @@ let cur = null;   // { key, undo, keep } of the preview on screen
 export function peeking() { return cur ? cur.key : null; }
 /* a text field outside the document has the focus (title, find, size box…): hovering the toolbar must not take it away */
 export function field_has_focus() { const a = document.activeElement; return !!(a && a.matches && a.matches('input, textarea, select')); }
+
+export function peek(key, fn) {
