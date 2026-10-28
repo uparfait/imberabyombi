@@ -9,3 +9,4 @@ import { hide_link_bubble } from './link_bubble.js';
 export function normalize_url(u) {
   u = u.trim(); if (!u) return '';
   if (/^[a-z][a-z0-9+.-]*:/i.test(u) || u.startsWith('#')) return u;
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(u)) return 'mailto:' + u;
