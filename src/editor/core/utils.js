@@ -12,3 +12,4 @@ export function esc_html(s) {
 export function el(tag, attrs = {}, html) {
   const e = document.createElement(tag);
   for (const k in attrs) { if (k === 'class') e.className = attrs[k]; else if (k === 'style') e.style.cssText = attrs[k]; else e.setAttribute(k, attrs[k]); }
+  if (html != null) e.innerHTML = html;
