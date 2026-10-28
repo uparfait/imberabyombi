@@ -14,3 +14,4 @@ const cap = s => s[0].toUpperCase() + s.slice(1);
 
 /* a segmented choice (the template's .seg) */
 function seg(name, opts, cur, on) {
+  return <div className="seg">{opts.map(([v, l]) => <label key={v}>
