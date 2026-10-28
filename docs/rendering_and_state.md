@@ -30,3 +30,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 - `rerender()`: the same page updates in place; scroll positions, open menus and typed text stay.
 
 ## Queues
+| Name             | Use                                                                        |
