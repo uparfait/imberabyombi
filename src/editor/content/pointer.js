@@ -5,3 +5,4 @@
 import { qs, qsa, clamp, toast, download, state, DPI, dims, is_abs, editable_of, body_index, last_non_break, caret_from_point, set_caret, caret_to_end,
   begin_op, end_op } from '../core/index.js';
 import { paint, apply_paint } from '../format/index.js';
+import { apply_panels, apply_setup } from '../ui/index.js';
