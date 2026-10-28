@@ -28,3 +28,4 @@ export function chain_wheel(e) {
 /* Headers show their bottom border only once the page is scrolled */
 export const header_line = () => { qsa('#site_header, #app_header').forEach(h => h.classList.toggle('is_scrolled', scrollY > 8));
   const row = qs('.nav_row.is_pinned'), h = document.documentElement, docked = !!row && row.getBoundingClientRect().top <= 1;
+  if (row) { const edge = Math.max(0, ...qsa('#app_header > :not(.link_group):not(.sr-only)').filter(e => e.offsetWidth).map(e => e.getBoundingClientRect().right));
