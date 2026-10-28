@@ -12,3 +12,4 @@ export function col_idx(ref) { const m = /^([A-Z]+)/i.exec(ref); let n = 0; if (
 function cell_value(c, strings) {
   const t = c.getAttribute('t'), v = by_tag(c, 'v')[0]; let val = v ? v.textContent : '';
   if (t === 's') val = strings[+val] || '';
+  else if (t === 'inlineStr') val = by_tag(c, 't').map(x => x.textContent).join('');
