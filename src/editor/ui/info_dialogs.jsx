@@ -14,3 +14,4 @@ function count(t) {
 const TD = 'border-b border-line px-2 py-1.5 text-sm', NUM = TD + ' text-right tabular-nums';
 
 export function word_count_dialog() {
+  const all = count(doc_text()), sel_t = last_range && !last_range.collapsed ? last_range.toString() : '', sel = sel_t ? count(sel_t) : null;
