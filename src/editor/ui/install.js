@@ -12,3 +12,4 @@ import { install_toolbar } from './toolbar.js';
 import { on_context_menu } from './context_menu.js';
 import { on_key } from './shortcuts.js';
 import { add_tab } from './tabs.jsx';
+import { apply_panels } from './pages_panel.js';
