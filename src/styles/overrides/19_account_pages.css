@@ -28,3 +28,4 @@
   .nav_row.is_pinned { pointer-events: none; }   /* its empty (padding) area lets the header icon under it be hovered and clicked */
   .nav_row.is_pinned > * { min-width: 0; pointer-events: auto; }
   .nav_row.is_pinned .tile_trigger { max-width: 100%; }   /* short on space (phones): buttons shrink and trim their names */
+  .tile_trigger > span { min-width: 0; }
