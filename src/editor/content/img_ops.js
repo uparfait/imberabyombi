@@ -58,3 +58,4 @@ export function flip_image(img, axis) {
   return bake_image(img, (c, im) => {
     c.width = im.naturalWidth; c.height = im.naturalHeight; const x = c.getContext('2d');
     if (axis === 'h') { x.translate(c.width, 0); x.scale(-1, 1); } else { x.translate(0, c.height); x.scale(1, -1); }
+    x.drawImage(im, 0, 0);
