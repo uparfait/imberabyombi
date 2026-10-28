@@ -3,3 +3,4 @@
 import { qsa, to_hex } from '../core/index.js';
 import { b64bytes } from '../io_import/index.js';
 import { xesc } from './docx_runs.js';
+import { NUMFMT } from './docx_paras.js';
