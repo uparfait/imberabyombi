@@ -7,3 +7,4 @@ export const player = (kind, src, poster = '') => (
     {kind === 'video'
       ? <div className="relative bg-ink">
           <video preload="metadata" playsInline poster={poster} className="block aspect-video w-full object-cover">
+            <source src={src} type="video/mp4" /><track kind="captions" srcLang="la" label="Latina" default data-vtt="" />
