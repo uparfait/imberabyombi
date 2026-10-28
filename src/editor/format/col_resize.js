@@ -37,3 +37,4 @@ export function start_col_drag(e) {
 }
 /* the pointer within 4px of a cell's inner border (not the table's outer edges) */
 function on_hover(e) {
+  if (state.mode !== 'edit' || e.buttons) return;
