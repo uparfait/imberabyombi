@@ -29,3 +29,4 @@ export function on_context_menu(e) {
     cmd('Insert link', 'link', () => open_link_dialog(), 'Ctrl+K'),
     { label: 'Insert table', icon: 'table', sub: () => [{ render: table_grid_el }] },
     in_table ? { sep: true } : null, ...(in_table ? table_menu_items() : []),
+    { sep: true }, { label: 'Clear formatting', icon: 'format_clear', shortcut: 'Ctrl+\\', action: () => clear_formatting() }
