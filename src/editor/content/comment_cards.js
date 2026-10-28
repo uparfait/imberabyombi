@@ -38,3 +38,4 @@ function card_of(c) {
   const rep = qs('.c_replies', card);
   c.replies.forEach(r => { const d = el('div', { class: 'mt-2 border-t border-line pt-2' }, reply_html(r)); d.lastChild.textContent = r.text; rep.appendChild(d); });
   card.addEventListener('click', e => on_card_click(e, c, card));
+  const inp = qs('input.c_input', card);
