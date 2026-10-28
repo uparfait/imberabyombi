@@ -8,3 +8,4 @@ export const bar = (d, n) => <span className="inline-flex items-center gap-2 whi
 export const sub_progress = r => { const a = items_of(r); return a.length ? bar(a.filter(x => x.done).length, a.length) : <span className="text-muted">—</span>; };
 
 /* a status change is only Save / Cancel: Done records now as the completed time; the dates change with their own pens */
+export const status_more = () => <div className="mt-3 flex justify-end gap-2">
