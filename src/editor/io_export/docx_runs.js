@@ -54,3 +54,5 @@ export function text_runs(t, f) {
     else if (part) out += `<w:r>${rp}<w:t xml:space="preserve">${xesc(part)}</w:t></w:r>`;
   });
   return out;
+}
+/* ctx: { content_tw, content_px, add_link(href), add_media(bytes, ext), new_num(list) } (export_docx.js); headers and
