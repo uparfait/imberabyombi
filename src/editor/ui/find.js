@@ -20,3 +20,5 @@ export function close_find() {
   if (refs.find_panel) refs.find_panel.classList.remove('show');
   find_state.open = false; find_state.matches = [];
   if (has_hl) { CSS.highlights.delete('find_all'); CSS.highlights.delete('find_cur'); }
+}
+/* keep: stay on the same match number (after a replace or an edit) instead of the first one */
