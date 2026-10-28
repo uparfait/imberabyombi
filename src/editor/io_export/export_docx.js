@@ -64,3 +64,5 @@ export async function export_docx(root, name) {
     );
     media.forEach(f => files.push(f));
     download(zip_store(files, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'), name + '.docx');
+  } catch (err) { console.error(err); throw new Error('Word export failed: ' + err.message); }
+}
