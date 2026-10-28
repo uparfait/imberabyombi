@@ -9,3 +9,4 @@ import { hero_shell } from '../site/index.js';
 import { dash_widgets } from './dashboard_widgets.jsx';
 
 /* [module, label, icon, collection, filter?]: the numbers a role may open */
+const STATS = [['staff', 'Staff', 'users', 'staff'], ['students', 'Students', 'cap', 'students'], ['employees', 'Employees', 'briefcase', 'employees'],
