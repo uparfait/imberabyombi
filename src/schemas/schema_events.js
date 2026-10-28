@@ -11,3 +11,5 @@ export const activities_schema = {
     field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { def: () => ui.cal_date }),
     field_spec('start', 'Starts', 'time', 0, 1, { def: () => '09:00' }), field_spec('end', 'Ends', 'time', 0, 1, { def: () => '10:00' }),
     field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')), field_spec('note', 'Note', 'textarea')
+  ],
+  g: () => {
