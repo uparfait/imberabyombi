@@ -19,3 +19,4 @@ export function render_sidebar() {
   const typing = !!list.querySelector('.tab_filter') && list.querySelector('.tab_filter') === document.activeElement;
   const many = state.tabs.length > MANY; if (!many) tab_q = '';
   list.innerHTML = '';
+  if (many) list.appendChild(filter_box(typing));
