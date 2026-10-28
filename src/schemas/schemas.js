@@ -11,3 +11,5 @@ import { books_schema, rentals_schema, declarations_schema } from './schema_libr
 import { reservations_schema, inventory_schema } from './schema_inventory.js';
 import { activities_schema, events_schema } from './schema_events.js';
 import { parking_schema } from './schema_parking.js';
+
+export const schemas = {
