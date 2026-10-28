@@ -34,3 +34,4 @@ export const CONTENT_CSS = '\n' + [
     + "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='white' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>\")"
     + ' center/11px no-repeat;border-color:#1a73e8}',
   '.doc_content ul.checklist[data-strike]>li[data-checked="true"]{text-decoration:line-through;color:#80868b}',
+  '.doc_content .page_break{height:0;overflow:hidden;user-select:none}',
