@@ -13,3 +13,4 @@ export function install_content() {
   const on = (t, k, f, o) => { if (!t) return; t.addEventListener(k, f, o); offs.push(() => t.removeEventListener(k, f, o)); };
   on(qs('#image_replace'), 'change', on_image_replace);
   const p = pages_el;
+  on(p, 'keydown', pages_keydown); on(p, 'beforeinput', pages_beforeinput); on(p, 'input', pages_input);
