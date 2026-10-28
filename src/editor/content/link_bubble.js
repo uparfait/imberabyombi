@@ -23,3 +23,4 @@ const on_copy = () => { if (bubble_link) navigator.clipboard?.writeText(bubble_l
 const on_edit = () => { const a = bubble_link; hide_link_bubble(); open_link_dialog(a); };
 const on_remove = () => remove_link(bubble_link);
 const on_down = e => { if (!e.target.closest('a')) e.preventDefault(); };
+export function install_link_bubble() {
