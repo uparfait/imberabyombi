@@ -66,3 +66,5 @@ export function set_img_align(img, a) {
     }
     else if (pos === 'wrap_left' || pos === 'wrap_right') {
       if (a === 'center') { x.setAttribute('data-pos', 'break'); x.setAttribute('data-align', 'center'); } else x.setAttribute('data-pos', 'wrap_' + a);
+    }
+    else if (pos === 'break') { if (a === 'left') x.removeAttribute('data-align'); else x.setAttribute('data-align', a); }
