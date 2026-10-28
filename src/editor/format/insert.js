@@ -15,3 +15,4 @@ export function insert_block_at_caret(node) {
   begin_op(); r.deleteContents();
   let block = top_block(host, r.startContainer);
   if (block && block.nodeType !== 1) block = null;
+  if (!block) host.appendChild(node);
