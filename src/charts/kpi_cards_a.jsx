@@ -31,3 +31,4 @@ export const kpi_cards_a = k => {
           <li key={n} className="kpi_part flex items-center justify-between gap-2" {...tip_attr(n, [[l, 'Status', null]])}>
             <span>{n}</span><span className={`kpi_status ${s}`}>{ic(s === 'ok' ? 'check' : 'bell', 'h-3.5 w-3.5')}{l}</span></li>))}</ul></>,
       [['Service', 'Status'], [['All services', 'Healthy · 99.95% uptime'], ...services.map(([n, , l]) => [n, l])]]),
+    kpi_card('', 'Orders: this month vs last', 'Orders placed this month compared with last month.',
