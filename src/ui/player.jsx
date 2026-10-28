@@ -12,3 +12,4 @@ export const player = (kind, src, poster = '') => (
           <button className="mp_big absolute inset-0 m-auto grid h-16 w-16 place-items-center rounded-full bg-brand text-white transition hover:scale-105" data-act="mp_play" aria-label="Play video">{ic('play', 'w-7 h-7')}</button>
         </div>
       : <audio preload="metadata"><source src={src} type="audio/mpeg" /></audio>}
+    <div className="flex items-center gap-3 p-3">
