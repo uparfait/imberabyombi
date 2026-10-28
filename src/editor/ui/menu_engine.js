@@ -55,3 +55,4 @@ function row_of(it, level) {
 }
 
 /* anchor: the button the menu hangs from (null for a menu at a point: opts.x / opts.y). opts.level: submenu depth;
+   opts.side: the parent row's left edge (a submenu flips to that side when it has no room); opts.focus: keyboard open */
