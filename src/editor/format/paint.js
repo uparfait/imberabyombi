@@ -23,3 +23,4 @@ export function start_paint() {
   btn(true); toast('Select the text to apply the format to', 2000);
 }
 export function apply_paint() {
+  const p = paint; stop_paint(); if (!p) return;
