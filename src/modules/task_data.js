@@ -18,3 +18,4 @@ export const read_subs = root => qsa('[data-sub-group]', root)
 /* chosen files as attachments: { id, name, size, type, url? } (url = the file as a data URL when ≤ 1 MB) */
 export const read_files = list => Promise.all([...(list || [])].map(f => new Promise(res => { const meta = { id: uid(), name: f.name, size: f.size, type: f.type || '' };
   if (f.size > 1048576) return res(meta);
+  const rd = new FileReader(); rd.onload = () => res({ ...meta, url: rd.result }); rd.onerror = () => res(meta); rd.readAsDataURL(f); })));
