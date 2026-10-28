@@ -48,3 +48,5 @@ export function restore_doc() {
 /* a fresh blank document (nothing saved yet) */
 export function reset_doc() {
   state.title = 'Untitled document'; state.setup = default_setup(); state.comments = [];
+  state.tabs = [new_tab('Tab 1')]; state.active = state.tabs[0].id;
+}
