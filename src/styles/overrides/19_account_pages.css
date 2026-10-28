@@ -30,3 +30,4 @@
   .nav_row.is_pinned .tile_trigger { max-width: 100%; }   /* short on space (phones): buttons shrink and trim their names */
   .tile_trigger > span { min-width: 0; }
   .tile_trigger { overflow: hidden; }   /* nothing inside ever spills over its neighbour */
+  .nav_row.is_pinned > .relative { min-width: 4.75rem; }   /* short on room: names trim, but icon + arrow always fit */
