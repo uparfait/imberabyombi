@@ -11,3 +11,4 @@ const TITLES = { ok: 'Saved', bad: 'Could not save', warn: 'Check this first', i
 
 export const DEMO_ACT = {
   mp_play: t => { const w = t.closest('[data-mp]'), m = w?._m; if (m) m.paused ? m.play().catch(() => media_err(w)) : m.pause(); },
+  demo_dialog: () => modal({ title: lorem.t(3), help: lorem.p(2), submit: 'Confirm', body: field(field_spec('demo', 'Lorem field', 'text', 0, 1), ''), on_submit: () => show_msg(qs('#demo_messages'), 'ok', 'Confirmed', 'Lorem ipsum dolor sit amet.') }),
