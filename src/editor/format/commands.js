@@ -52,3 +52,4 @@ export function apply_inline_style(prop, value) {
     const sp = el('span'); sp.style[prop] = value; sp.textContent = '\u200b';
     const r = s.getRangeAt(0); r.insertNode(sp); set_caret(sp.firstChild, 1);
   } else {
+    wrap_selection('', {}).forEach(sp => { qsa('[style]', sp).forEach(x => { x.style[prop] = ''; if (!x.getAttribute('style')) x.removeAttribute('style'); }); sp.style[prop] = value; });
