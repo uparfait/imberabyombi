@@ -51,3 +51,5 @@ export async function file_to_html(file) {
     return { kind: 'file', html: `<p>${chip}</p>`, inline: chip,
       note: `${name} uses an older format that can’t be turned into editable text, so it was attached as a file. `
         + `Save it as .${/ppt|key/.test(ext) ? 'pptx' : 'docx'} to edit it here.` };
+  }
+  if (file.type.startsWith('text/') || (file.size < 2e6 && await looks_like_text(file))) return { html: text_to_html(await file.text()) };
