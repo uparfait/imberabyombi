@@ -20,3 +20,4 @@ export function fmt_of(e, f) {
   if (t === 'S' || t === 'STRIKE' || t === 'DEL') g.s = true; if (t === 'SUP') g.sup = true; if (t === 'SUB') g.sub = true;
   if (t === 'CODE') g.font = 'Courier New'; if (t === 'MARK') g.hl = 'FFFF00';
   if (t === 'FONT') {
+    if (e.getAttribute('color')) g.color = to_hex(e.getAttribute('color'));
