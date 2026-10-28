@@ -23,3 +23,4 @@ export function build_table(rows, cols, opts = {}) {
 }
 export const chain_rows = chain => chain.flatMap(t => Array.from(t.rows));
 export function apply_preset(chain, key) {
+  const p = TABLE_PRESETS.find(x => x.key === key) || TABLE_PRESETS[0];
