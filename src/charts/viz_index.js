@@ -9,3 +9,4 @@ export * from './kpi_view.jsx';
 export * from './viz_view.jsx';
 export * from './viz_data.jsx';
 export * from './viz_tip.js';
+export * from './viz_api.js';
