@@ -13,3 +13,4 @@ const blank = v => v == null || v === false || v === '' || (Array.isArray(v) && 
 
 /* m: modal()'s options. A new modal() call is a new key, so a new form (its fields start from their defaults) */
 export function Modal_form({ m }) {
+  const ref = useRef(null);
