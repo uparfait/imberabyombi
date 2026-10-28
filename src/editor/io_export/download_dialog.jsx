@@ -67,3 +67,4 @@ function Download_body({ opt }) {
 export function open_download_dialog(pre) {
   if (hist_timer) commit();
   const opt = { fmt: pre || state.last_format || 'docx', scope: 'tab', quality: 2, multi: state.tabs.length > 1, busy: false };
+  const go = async () => {
