@@ -47,3 +47,4 @@ export function reflow(cur = 0, full = false) {
   if (is_break(last_flow(last_b))) { const nb = add_page_after(last_b); nb.innerHTML = '<p><br></p>'; }
   place_abs(false); fix_list_starts();
   restore_sel(cur_sel); set_cur_sel(null);
+  layout_after();
