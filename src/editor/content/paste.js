@@ -25,3 +25,4 @@ export function pages_paste(e) {
   if (body) end_op(body_index(host));
 }
 export async function paste_from_clipboard(plain) {
+  if (previewing() || !can_edit()) return;
