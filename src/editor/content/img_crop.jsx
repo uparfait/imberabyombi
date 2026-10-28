@@ -41,3 +41,4 @@ function Crop_body({ src, st }) {
       </div>
       <div className="flex flex-wrap gap-2">
         {RATIOS.map(([v, l]) => (
+          <button type="button" key={v} className="chip_btn" data-r={v} aria-pressed={(v === 'free' ? null : +v) === ratio} onClick={() => pick(v)}>{l}</button>
