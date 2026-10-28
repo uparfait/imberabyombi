@@ -36,3 +36,4 @@ export function file_items() {
 export function edit_items() {
   return [
     cmd('Undo', 'undo', () => undo(), 'Ctrl+Z'), cmd('Redo', 'redo', () => redo(), 'Ctrl+Y'), { sep: true },
+    cmd('Cut', 'content_cut', native('cut'), 'Ctrl+X'), cmd('Copy', 'content_copy', native('copy'), 'Ctrl+C'),
