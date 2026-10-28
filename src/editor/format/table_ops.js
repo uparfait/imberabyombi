@@ -42,3 +42,4 @@ export function tbl_op(op, arg) {
   let target = null, full = false;
   switch (op) {
     case 'row_above': case 'row_below': target = cell_at_col(insert_rows(c.tr, arg || 1, op === 'row_below'), slot.start); break;
+    case 'col_left': drop_cols(); insert_cols(chain, slot.start, arg || 1, 'left'); target = cell_at_col(c.tr, slot.start); break;
