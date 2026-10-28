@@ -1,2 +1,3 @@
 /* editor/ui/tabs.jsx: document tabs (source "sidebar: tabs"): switch, add (unique names "Tab 2", "Tab 3"…), step with
    Ctrl+PageDown / PageUp, the tab menu (Rename, Duplicate, Move up / down, Delete: never the last tab) and renaming in
+   place. Every change is saved with the document (save_soon; move_tab saves by itself). */
