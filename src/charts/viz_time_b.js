@@ -27,3 +27,4 @@ export const VIZ_TIME_B = {
     const y = linear(0, 100, f.t + f.ih, f.t), xa = f.l + 10, xb = f.w - f.r - 10;
     const top = b.map((v, i) => v - a[i]).reduce((m, d, i, arr) => Math.abs(d) > Math.abs(arr[m]) ? i : m, 0);
     const la = spread(a.map(v => y(v) + 4)), lb = spread(b.map(v => y(v) + 4));
+    const ab = i => `x1="${xa}" x2="${xb}" y1="${round1(y(a[i]))}" y2="${round1(y(b[i]))}"`;
