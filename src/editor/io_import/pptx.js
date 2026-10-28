@@ -28,3 +28,4 @@ async function slide_html(z, sp, i) {
     if (s.localName === 'sp') {
       const ph = by_tag(s, 'ph')[0], type = ph ? (ph.getAttribute('type') || 'body') : '', tx = by_tag(s, 'txBody')[0];
       const paras = tx ? kids(tx, 'p').map(para_html).filter(h => h.replace(/<[^>]+>/g, '').trim()) : [];
+      if (!paras.length) continue;
