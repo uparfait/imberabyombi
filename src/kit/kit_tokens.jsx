@@ -14,3 +14,4 @@ export const kit_tokens = () => (
           <button className="hex_btn" data-act="copy" data-what="Colour" data-hex={k} aria-label={`Copy the --${k} colour`}></button></p></div>
     ))}</div>
     <div className="mt-8 flex flex-wrap items-end gap-5">{RADII.map(r => (
+      <div key={r} className="grid justify-items-center gap-2 text-xs text-muted"><span className={`h-14 w-14 border-2 border-brand bg-brand/10 ${r}`}></span>{r}</div>
