@@ -40,3 +40,7 @@ export async function prepare_images(root) {
         const c = document.createElement('canvas'); c.width = im.naturalWidth; c.height = im.naturalHeight; c.getContext('2d').drawImage(im, 0, 0);
         img.setAttribute('src', c.toDataURL('image/png'));
       } catch (e) { img.remove(); }
+    }
+  }
+}
+/* the nine levels of one list kind: numbers ("1.", "a.", "i." per NUMFMT) or bullets (• ◦ ▪, or the list's own mark) */
