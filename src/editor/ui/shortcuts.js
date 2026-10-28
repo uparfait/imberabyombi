@@ -43,3 +43,4 @@ function edit_key(e, k, code) {
   if (e.shiftKey && code === 'Comma') return () => bump_size(-1);
   if (!e.shiftKey && code === 'Period') return () => exec('superscript');
   if (!e.shiftKey && code === 'Comma') return () => exec('subscript');
+  if (e.shiftKey && ALIGN[code]) return () => exec(ALIGN[code]);
