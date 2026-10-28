@@ -16,3 +16,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
   /* the dialog's filters replace the table's own for those columns */
   const q0 = ui.q[c]; ui.q[c] = { ...q0, ...flt }; let rows; try { rows = rows_of(c); } finally { ui.q[c] = q0; }
   if (to && to.length === 10) to += 'T23:59';   /* a bare To date covers that whole day */
+  /* a row with only a date is compared by day */
