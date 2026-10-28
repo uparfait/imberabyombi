@@ -9,3 +9,4 @@ export const frame = (w, h, p = {}) => {
   const f = { w, h, l: p.l ?? 40, r: p.r ?? 14, t: p.t ?? 16, b: p.b ?? 28 }; f.iw = w - f.l - f.r; f.ih = h - f.t - f.b; return f;
 };
 export const svg = (f, body, label) => `<svg viewBox="0 0 ${f.w} ${f.h}" width="${f.w}" height="${f.h}" role="img" aria-label="${esc(label)}">${body}</svg>`;
+export function y_axis(f, hi, lo = 0, fmt = compact_num) {
