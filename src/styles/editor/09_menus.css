@@ -31,3 +31,4 @@
 .grid_picker .c.on { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .2); }
 .grid_picker .lbl { margin-top: .5rem; text-align: center; font-size: .8125rem; font-weight: 500; color: rgb(var(--fg) / .78); }
 .grid_picker .pal_reset { margin-top: .5rem; }
+.grid_picker .pal_reset svg { flex: none; width: 1.125rem; height: 1.125rem; color: rgb(var(--muted)); }
