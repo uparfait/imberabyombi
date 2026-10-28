@@ -83,3 +83,4 @@ function apply_filter(list) {
   if (shown && none) none.remove();
 }
 function keep_in_view(box) {
+  const a = box.querySelector('.tab_row.active'); if (!a || box.scrollHeight <= box.clientHeight) return;
