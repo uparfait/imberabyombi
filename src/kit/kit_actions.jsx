@@ -17,3 +17,7 @@ export const kit_actions = () => (
     ))}</div>
       <div className="flex -space-x-2">{[1, 2, 3, 4].map(i => (
         <img key={i} src={cfg.face(i * 9)} alt="" width="36" height="36" loading="lazy" className="h-9 w-9 rounded-full border-2 border-bg object-cover" />
+      ))}</div></div>
+    <div className="mt-6">{tabs('kit', [['a', 'Lorem'], ['b', 'Ipsum', 3], ['c', 'Dolor']], 'a')}</div>
+  </>
+);
