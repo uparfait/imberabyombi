@@ -16,3 +16,5 @@ import { position_img_box } from '../content/index.js';
 function drop_page(b, prev) { if (prev) Array.from(b.children).filter(is_abs).forEach(e => prev.appendChild(e)); remove_page(b); }
 /* a body with no text flow gets one empty paragraph (absolute images stay) */
 function ensure_para(b) { if (first_flow(b)) return; Array.from(b.childNodes).forEach(n => { if (!is_abs(n)) n.remove(); }); b.prepend(el('p', {}, '<br>')); }
+
+export function reflow(cur = 0, full = false) {
