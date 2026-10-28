@@ -34,3 +34,4 @@ export function table_props_dialog() {
   modal({
     title: 'Table properties', submit: 'Apply',
     body: <>
+      {num_field('tp_rows', 'Rows', num_props(chain_rows(chain).length, 1, 500))}
