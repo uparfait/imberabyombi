@@ -13,3 +13,4 @@ export const STATUS = {
 };
 export const DEPTS = option_list('Teachers|Kitchen|Cleaners|Security|Administration');
 export const GRADES = option_list('Grade 1|Grade 2|Grade 3|Grade 4|Grade 5|Grade 6');
+export const SUBJECTS = option_list('Mathematics|Languages|Sciences|History|Arts|Sports');
