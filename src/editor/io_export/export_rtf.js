@@ -46,3 +46,4 @@ function rtf_blocks(rx, c) {
     if (n.nodeType === 3) { if (n.data.trim()) o += `${RTF_P} ${rtf_esc(n.data)}\\par\n`; return; } if (n.nodeType !== 1) return;
     const t = n.tagName;
     if (/^(P|H[1-6]|BLOCKQUOTE|PRE)$/.test(t)) o += rtf_para(rx, n); else if (t === 'DIV') o += is_break(n) ? '\\page\n' : rtf_blocks(rx, n);
+    else if (is_list(n)) o += rtf_list(rx, n, 0); else if (is_table(n)) o += rtf_table(rx, n);
