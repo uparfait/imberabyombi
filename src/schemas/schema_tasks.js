@@ -7,3 +7,4 @@ import { due_tag, sub_progress, read_subs, read_files, files_of, comments_of } f
 import { field_spec, STATUS, people } from './fields.js';
 
 export const tasks_schema = {
+  l: 'task', n: 14, cols: ['title', 'assignee', 'by', 'start', 'due', 'subs', 'priority', 'status'],
