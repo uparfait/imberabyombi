@@ -36,3 +36,4 @@ export const VIZ_TIME_B = {
           + `<text x="${xa - 10}" y="${round1(la[i])}" text-anchor="end">${esc(fit(k, f.l - 24))} ${round1(a[i])}</text>`
           + `<text x="${xb + 10}" y="${round1(lb[i])}">${round1(b[i])}</text>`; }).join(''), 'Slope chart'),
       table: [['Item', '2025', '2026'], c.map((k, i) => [k, round1(a[i]), round1(b[i])])] }; } },
+  gantt: { t: 'Gantt chart', g: 'time', d: 'Tasks on a timeline, with a today line and milestones.', f(w) {
