@@ -69,3 +69,4 @@ const hide_value = () => { if (value_el) value_el.remove(); };
 export function ruler_drag(e) {
   const g = e.target.closest('[data-handle]'); if (!g || state.mode !== 'edit') return;
   e.preventDefault();
+  const side = g.dataset.handle, horiz = side === 'left' || side === 'right', m = state.setup.margins, orig = m[side];
