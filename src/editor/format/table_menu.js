@@ -7,3 +7,5 @@ import { insert_multiple_dialog } from './table_dialogs.jsx';
 import { table_props_dialog } from './table_props.jsx';
 
 const VALIGN_ITEMS = [['Top', 'top', 'vertical_align_top'], ['Middle', 'middle', 'vertical_align_center'], ['Bottom', 'bottom', 'vertical_align_bottom']];
+
+export function table_menu_items() {
