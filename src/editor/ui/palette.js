@@ -20,3 +20,5 @@ export function palette_el(on_pick, none_label) {
       r.appendChild(b);
     });
     box.appendChild(r);
+  });
+  const lab = el('label', { class: 'menu_item pal_custom relative mt-2 cursor-pointer' },
