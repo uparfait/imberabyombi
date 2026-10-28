@@ -42,3 +42,4 @@ export function drop_point(x, y, img) {
 }
 /* move the same image node to a text position (never a copy) */
 export function place_at(img, p) {
+  const par = img.parentNode, r = document.createRange(); r.setStart(p.node, p.off); r.collapse(true); r.insertNode(img); keep_line(par);
