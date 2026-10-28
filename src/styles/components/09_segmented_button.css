@@ -14,3 +14,4 @@
 
   /* Long-form article typography */
   .prose_x { @apply text-muted; font-size: 1.0625rem; line-height: 1.8; }
+  .prose_x :where(h2,h3,h4,h5) { color: rgb(var(--fg)); }
