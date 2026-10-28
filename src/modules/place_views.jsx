@@ -31,3 +31,4 @@ const event_card = (e, i) => <article key={e.id} className="card overflow-hidden
     <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">{ic('pin', 'h-4 w-4')}{e.venue || '—'}</p><div className="mt-4">
       {bar_cell(e.registered, e.capacity)}</div></div></article>;
 VIEWS.events = () => {
+  const ev = db.list('events').filter(e => e.date >= ymd()).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 3);
