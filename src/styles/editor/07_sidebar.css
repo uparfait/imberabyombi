@@ -18,3 +18,4 @@
 .side_count { font: 400 .8125rem var(--font_sans); color: rgb(var(--muted)); }
 
 /* Tabs: filter box and the list scrolling inside itself (more than 5 tabs: .many), rows with a menu button that shows on hover */
+input.tab_filter, .tab_filter input {
