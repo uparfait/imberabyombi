@@ -41,3 +41,5 @@ export function set_line_height(v) { with_blocks(bs => bs.forEach(b => { b.style
 export function toggle_para_space(which) {
   const prop = which === 'before' ? 'paddingTop' : 'paddingBottom';
   with_blocks(bs => { const on = bs.some(b => !b.style[prop]); bs.forEach(b => { b.style[prop] = on ? '10pt' : ''; }); });
+}
+/* dir 1 / -1: list items nest / un-nest, other blocks move by half an inch */
