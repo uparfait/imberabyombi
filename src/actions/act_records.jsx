@@ -17,3 +17,4 @@ const bulletin = n => { const rows = db.list('bulletins').filter(b => b.student 
     <div className="overflow-x-auto sm:col-span-2"><table><caption>{n}</caption><colgroup><col /><col span={3} className="hl" /></colgroup>
       <thead><tr><th scope="col">Subject</th>{TERMS.map(x => <th scope="col" key={x}>{x}</th>)}</tr></thead>
       <tbody>{SUBJECTS.map(s => <tr key={s}><th scope="row" className="bg-transparent text-sm text-fg">{s}</th>{TERMS.map(tm => <td className="tabular-nums" key={tm}>{sc(s, tm) ?? '—'}</td>)}</tr>)}</tbody>
+      <tfoot><tr><th scope="row">Average</th>{TERMS.map(tm => <td key={tm}>{avg(tm)}</td>)}</tr></tfoot></table></div>
