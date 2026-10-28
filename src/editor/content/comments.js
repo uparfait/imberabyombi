@@ -23,3 +23,4 @@ export function remove_comment(id) {
   state.comments = state.comments.filter(x => x.id !== id);
   if (c.tab === state.active) {
     const spans = qsa(`.cmt[data-cid="${id}"]`, pages_el);
+    if (spans.length) { begin_op(); spans.forEach(sp => sp.replaceWith(...sp.childNodes)); end_op(0, true); }
