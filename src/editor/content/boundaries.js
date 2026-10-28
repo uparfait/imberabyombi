@@ -31,3 +31,4 @@ export function on_last_line(host, r) {
   return (lr.bottom - pad_bottom(l) * state.zoom) - cr.bottom < line_h(r) * 0.8;
 }
 export function backspace_across(host, pi) {
+  const prev = bodies()[pi - 1], first = first_flow(host), last = last_flow(prev);
