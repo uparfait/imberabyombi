@@ -23,3 +23,4 @@ export const parking_schema = {
     const parked = i < 7, in_d = new Date(Date.now() - lorem.int(1, parked ? 5 : 30) * 3.6e6), out = new Date(in_d.getTime() + lorem.int(1, 4) * 3.6e6);
     return {
       plate: `R${lorem.pick(ABC)}${lorem.pick(ABC)} ${lorem.int(100, 999)} ${lorem.pick(ABC)}`, driver: lorem.name(),
+      slot: 'P' + pad(parked ? i * 3 + 1 : lorem.int(1, 24)), in: now_dt(in_d), out: parked ? '' : now_dt(out),
