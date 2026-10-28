@@ -38,3 +38,4 @@ export async function file_to_html(file) {
     case 'json': case 'geojson': return json_to_html(await file.text(), name);
     case 'jsonl': case 'ndjson': return json_to_html(json_lines(await file.text()), name);
     case 'pptx': case 'pptm': case 'ppsx': return { html: await pptx_to_html(file) };
+    case 'odt': case 'ott': case 'odp': return { html: await odf_to_html(file) };
