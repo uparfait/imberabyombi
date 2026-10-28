@@ -17,3 +17,4 @@ export const kpi_cards_a = k => {
       [['Measure', 'Value'], [['Total revenue', '$' + num(rev)], ['Change', signed(d_rev)], ['Compared with', 'The same period last year']]]),
     kpi_card('', 'Enrolment goal', 'Progress towards this year\'s enrolment goal.',
       <><p className="kpi_value">{`${num(enr)} `}<span className="kpi_of">of 1,000</span></p><progress className="mt-3" max="1000" value={Math.min(1000, enr)}></progress>
+        <p className="mt-2 text-sm text-muted">{`${num(Math.max(0, 1000 - enr))} to go · ${reached} reached`}</p></>,
