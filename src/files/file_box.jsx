@@ -32,3 +32,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
     const on_blur = () => { blurred = picking_now.current; };
     const on_focus = () => { if (!blurred) return; blurred = false; setTimeout(stop, 800); };
     const on_reset = e => { if (e.target.contains?.(inp)) setTimeout(sync); };
+    inp.parentElement._input = inp; BOXES.set(inp, sync);   /* _input: what the tiles' data-act handlers read */
