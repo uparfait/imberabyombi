@@ -28,3 +28,5 @@
     appearance: none; width: 1.125rem; height: 1.125rem; flex-shrink: 0; cursor: pointer; vertical-align: middle;
     border: 2px solid rgb(var(--muted)); border-radius: calc(var(--radius) * .35); background: transparent center / 85% no-repeat;
     transition: background-color .2s, border-color .2s, background-position .25s var(--ease), background-size .2s var(--ease);
+  }
+  :where(input[type=checkbox], input[type=radio]):hover { border-color: rgb(var(--brand)); }
