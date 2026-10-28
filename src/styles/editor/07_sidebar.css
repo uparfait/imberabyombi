@@ -44,3 +44,4 @@ input.tab_filter, .tab_filter input {
 .outline_hint { padding: .25rem .625rem .25rem .75rem; font-size: .8125rem; font-style: italic; line-height: 1.45; color: rgb(var(--muted)); }
 .outline_row, .outline_item {
   display: flex; align-items: center; gap: .125rem; min-height: 2rem; padding-right: .25rem; border-radius: var(--pill);
+  cursor: pointer; font-size: .8125rem; color: rgb(var(--fg) / .78); transition: background-color .15s, color .15s, opacity .15s;
