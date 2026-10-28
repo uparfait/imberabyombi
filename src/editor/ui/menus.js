@@ -27,3 +27,4 @@ function insert_items() {
     { label: 'Image', icon: 'image', sub: image_items },
     { label: 'Table', icon: 'table', sub: () => [{ render: table_grid_el }] },
     cmd('File attachment…', 'attach_file', () => pick_any(attach_files)),
+    cmd('Link', 'link', () => open_link_dialog(), 'Ctrl+K'),
