@@ -10,3 +10,6 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 @media (min-width: 430px)  { … eases from the phone size down to 16px … }      /* hand-off */
 @media (min-width: 640px)  { html { font-size: 16px; } }                       /* tablets */
 @media (min-width: 1024px) { html { font-size: max(desk px, 100vw * desk / ref); } }  /* desktops */
+```
+
+| Screen width        | Result                                                                          |
