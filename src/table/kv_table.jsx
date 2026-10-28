@@ -6,3 +6,4 @@ import { dash } from '../ui/index.js';
 const blank = v => v === '' || v == null || v === false;
 
 export const kv_table = groups => (
+  <div className="kv_wrap relative rounded-2xl border border-line sm:col-span-2">
