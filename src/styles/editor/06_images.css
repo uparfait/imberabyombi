@@ -37,3 +37,4 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
   white-space: nowrap; pointer-events: auto; font: 500 .75rem/1.2 var(--font_sans); color-scheme: normal;
 }
 .img_bar button {
+  display: inline-flex; align-items: center; justify-content: center; min-width: 1.75rem; height: 1.75rem; padding: 0 .25rem;
