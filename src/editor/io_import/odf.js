@@ -48,3 +48,4 @@ async function odf_table(cx, c) {
 }
 async function odf_blocks(cx, n, out) {
   for (const c of Array.from(n.children)) {
+    const ln = c.localName;
