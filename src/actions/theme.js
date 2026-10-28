@@ -5,3 +5,4 @@ import { db } from '../store/index.js';
 import { redraw_charts } from '../charts/index.js';
 
 /* Theme switches are instant: no cross-fade and no colour transitions for that frame (easier on the eyes) */
+export function set_theme(mode) {
