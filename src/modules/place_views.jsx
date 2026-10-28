@@ -52,3 +52,4 @@ VIEWS.parking = () => {
   const N = cfg.parking_slots, can = auth.can('parking', 2);
   const rev = logs.filter(l => l.status === 'Exited' && String(l.out).startsWith(ymd())).reduce((a, l) => a + (+l.fee || 0), 0);
   const tile = s => { const p = occ[s], a = can ? { 'data-act': p ? 'park_out' : 'park_in', 'data-id': p?.id || '', 'data-slot': s } : { disabled: true };
+    return <button key={s} className={`tile ${p ? 'is_on' : ''}`} {...a} aria-label={`Slot ${s}, ${p ? 'occupied by ' + p.plate : 'free'}`}>
