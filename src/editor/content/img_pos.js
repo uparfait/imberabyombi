@@ -54,3 +54,4 @@ export function set_img_pos(img, pos) {
   img_op(img, x => {
     if (pos === 'front' || pos === 'behind') { to_abs(x, pos); return; }
     if (is_abs(x)) from_abs(x);
+    if (pos === 'inline') { x.removeAttribute('data-pos'); x.removeAttribute('data-align'); }
