@@ -1,1 +1,3 @@
 # Routes
+
+The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on every static host without rules.
