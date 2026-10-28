@@ -21,3 +21,4 @@ export function reflow(cur = 0, full = false) {
   if (!pages_el || !bodies().length) return;
   if (state.setup.pageless) { reflow_pageless(); return; }
   set_cur_sel(save_sel());
+  let bs = bodies();
