@@ -6,3 +6,4 @@ Code: [`src/auth/`](../src/auth/). Each role has a level per module: `0` = no ac
 | Role              | Main access                                                    |
 |-------------------|----------------------------------------------------------------|
 | Super Admin       | Everything, including roles (locked, cannot be edited)         |
+| Administrator     | Manage all operations; view roles                              |
