@@ -17,3 +17,4 @@ export const TABLE_ACT = {
   /* Tables: row click = full details (crud rows: view; any other table: row), pager, clear filters */
   view: t => { if (String(getSelection())) return; const o = cur[t.dataset.col]; o?.view ? o.view(t.dataset.id) : view_row(t.dataset.col, t.dataset.id); },   /* a table may have its own view (tasks) */
   row: t => { if (String(getSelection())) return; const hs = qsa('thead th', t.closest('table')).map(h => h.textContent.trim());
+    modal({ title: t.dataset.title || 'Details', body: kv_table([['', [...t.cells].map((x, i) => [hs[i] || '', x.innerHTML ? dom_copy(x) : ''])]]) }); },
