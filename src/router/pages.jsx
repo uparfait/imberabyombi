@@ -5,3 +5,4 @@ import { route } from '../store/index.js';
 import { auth, MODS } from '../auth/index.js';
 import { empty } from '../ui/index.js';
 import { PAGES, home, detail, pub_header, footer } from '../site/index.js';
+import { kit } from '../kit/index.js';
