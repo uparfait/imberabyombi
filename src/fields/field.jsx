@@ -22,3 +22,4 @@ export function field(f, v) {
     <datalist id={'list_' + f.k}>{opts.map((o, i) => <option key={i} value={o}></option>)}</datalist>
   </>;
   else if (DTF[f.t]) ctl = <>
+    <input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={dt_show(f.t, val)} required={req} />
