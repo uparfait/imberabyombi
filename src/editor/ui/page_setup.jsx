@@ -43,3 +43,4 @@ function Page_setup_body() {
 
 export function page_setup_dialog() {
   modal({
+    title: 'Page setup', body: <Page_setup_body />, submit: 'OK',
