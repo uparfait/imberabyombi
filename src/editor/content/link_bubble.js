@@ -19,3 +19,4 @@ export function update_link_bubble() {
 export function hide_link_bubble() { const lb = link_bubble(); if (lb) lb.style.display = 'none'; bubble_link = null; }
 
 /* the bubble's buttons (added by install_content; the returned function removes them) */
+const on_copy = () => { if (bubble_link) navigator.clipboard?.writeText(bubble_link.href).then(() => toast('Link copied'), () => toast('Copy failed')); };
