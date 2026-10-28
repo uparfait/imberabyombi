@@ -20,3 +20,4 @@ export function i3(n, c = 'w-14 h-14', tone = 'brand') {
         </radialGradient>
       </defs>
       <rect x="7" y="9" width="50" height="46" rx="23" fill={`url(#${id}f)`} />
+      <rect x="7" y="9" width="50" height="46" rx="23" fill={`url(#${id}g)`} />
