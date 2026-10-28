@@ -61,3 +61,4 @@ let value_el = null;
 function show_value(text, x, y) {
   if (!value_el) { value_el = document.createElement('div'); value_el.className = 'ruler_value'; value_el.setAttribute('role', 'status'); value_el.style.cssText = VALUE_CSS; }
   if (!value_el.isConnected) document.body.appendChild(value_el);
+  value_el.textContent = text; tip.hide();
