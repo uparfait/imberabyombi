@@ -12,3 +12,4 @@ const rtf_fi = (rx, f) => { let i = rx.fonts.indexOf(f); if (i < 0) { rx.fonts.p
 export const rtf_esc = s => {
   let o = '';
   for (const ch of String(s).replace(/\u200b/g, '')) {
+    const c = ch.codePointAt(0);
