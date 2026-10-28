@@ -5,3 +5,4 @@ import { TEXT_BLOCK_RE, el, editable_of, restore_focus, top_block, is_empty_bloc
 import { can_edit } from './commands.js';
 
 /* ================= block insertion ================= */
+/* inserts node as a top-level block at the caret and returns it (null when it could not). The caller ends the op. */
