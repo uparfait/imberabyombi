@@ -30,3 +30,4 @@ export function word_count_dialog() {
 }
 
 const KEYS = [['Bold / Italic / Underline', 'Ctrl+B / I / U'], ['Strikethrough', 'Ctrl+Shift+X'], ['Superscript / Subscript', 'Ctrl+. / Ctrl+,'],
+  ['Font size bigger / smaller', 'Ctrl+Shift+. / ,'], ['Normal text', 'Ctrl+Alt+0'], ['Heading 1–4', 'Ctrl+Alt+1 … 4'],
