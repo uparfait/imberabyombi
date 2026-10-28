@@ -6,3 +6,4 @@ import { ask } from '../../overlays/index.js';
 
 export function add_blank_page(i) {
   if (previewing() || !can_edit()) return;
+  if (state.setup.pageless) { toast('Turn off Pageless in Page setup to manage pages'); return; }
