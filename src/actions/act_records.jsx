@@ -29,3 +29,4 @@ export const RECORD_ACT = {
   report: t => modal({ title: 'Student bulletin', body: bulletin(t.dataset.name) }),
   return: t => { ui.flash = db.upsert('rentals', { id: t.dataset.id, status: 'Returned', returned: ymd() }); rerender(); notify('The copy is back on the shelf.', 'ok', 'Book returned'); },
   res: t => { ui.flash = db.upsert('reservations', { id: t.dataset.id, status: t.dataset.v }); rerender(); notify('The requester can now see the new status.', 'ok', `Reservation ${t.dataset.v.toLowerCase()}`); },
+  park_in: t => { const busy = new Set(db.list('parking').filter(p => p.status === 'Parked').map(p => p.slot)), free = slot_ids().find(s => !busy.has(s));
