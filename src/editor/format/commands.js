@@ -49,3 +49,4 @@ export function apply_inline_style(prop, value) {
   const host = restore_focus(); begin_op();
   const s = getSelection(); if (!s.rangeCount) return;
   if (s.isCollapsed) {
+    const sp = el('span'); sp.style[prop] = value; sp.textContent = '\u200b';
