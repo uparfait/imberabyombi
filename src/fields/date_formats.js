@@ -24,3 +24,4 @@ export const dt_attrs = (t, ph) => { const s = dt_spec(t); return { type: 'text'
 export const to24 = v => { const m = /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i.exec(String(v).trim()); if (!m) return String(v).trim(); return `${pad(+m[1] % 12 + (/p/i.test(m[3]) ? 12 : 0))}:${m[2]}`; };
 export const to12 = v => { const [h, m] = String(v).split(':').map(Number); return isNaN(h) || isNaN(m) ? v : `${pad(h % 12 || 12)}:${pad(m)} ${h < 12 ? 'AM' : 'PM'}`; };
 /* Display a stored value in a field of type t, following the clock */
+export const dt_show = (t, v) => { if (!v) return ''; if (t === 'time') return h24() ? v : to12(v);
