@@ -30,3 +30,4 @@
 .grid_picker .c { width: 1.125rem; height: 1.125rem; border: 1px solid rgb(var(--line)); border-radius: .25rem; background: rgb(var(--surface)); transition: background-color .08s, border-color .08s; }
 .grid_picker .c.on { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .2); }
 .grid_picker .lbl { margin-top: .5rem; text-align: center; font-size: .8125rem; font-weight: 500; color: rgb(var(--fg) / .78); }
+.grid_picker .pal_reset { margin-top: .5rem; }
