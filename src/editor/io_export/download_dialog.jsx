@@ -52,3 +52,4 @@ function Download_body({ opt }) {
       <div className="grid gap-1.5"><label className="text-sm text-muted" htmlFor="dl_name">File name</label>
         <div className={NAME_BOX}>
           <input id="dl_name" spellCheck="false" defaultValue={file_base()} className="min-w-0 flex-1 rounded-none border-0 bg-transparent focus:outline-none" />
+          <span className="flex items-center border-l border-line bg-surface-2 px-3 text-muted">{'.' + f.ext}</span></div></div>
