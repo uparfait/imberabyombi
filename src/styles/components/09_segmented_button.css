@@ -35,3 +35,4 @@
     background:
       radial-gradient(42% 55% at 34% 16%, rgb(var(--brand) / var(--glow)), transparent 70%),
       linear-gradient(180deg, var(--h0) 0%, var(--h0) 40%, var(--h1) 78%, var(--h2) 100%); }
+  .dark .hero { --h0: rgb(var(--ink)); --h1: color-mix(in srgb, rgb(var(--brand_2)) 72%, rgb(var(--ink))); --h2: rgb(var(--brand)); --glow: .32; border-width: 0; }
