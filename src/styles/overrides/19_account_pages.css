@@ -38,3 +38,4 @@
     html.nav_docked .nav_row.is_pinned > .relative { min-width: 3rem; } }
   /* A usual dropdown under its button. Many tiles: the title stays, only the tiles scroll; the menu never runs off the screen.
      Phones: as wide as the screen allows (8px from each edge), still right under its button. */
+  .tile_pop:not([hidden]) { display: flex; flex-direction: column; overflow: hidden; }
