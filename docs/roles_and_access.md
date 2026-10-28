@@ -32,3 +32,4 @@ matrix as it changes: if a page is taken away, the role moves to the first page 
 
 ## Using it in code
 ```js
+import { auth, me } from '../auth/index.js';
