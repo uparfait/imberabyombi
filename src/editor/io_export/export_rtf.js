@@ -43,3 +43,4 @@ function rtf_table(rx, t) {
 function rtf_blocks(rx, c) {
   let o = '';
   c.childNodes.forEach(n => {
+    if (n.nodeType === 3) { if (n.data.trim()) o += `${RTF_P} ${rtf_esc(n.data)}\\par\n`; return; } if (n.nodeType !== 1) return;
