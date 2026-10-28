@@ -17,3 +17,4 @@ export const account_mails = () => ({
     {copy_box('https://imberabyombi.com/reset?token=' + chars(24, 'abcdefghjkmnpqrstuvwxyz23456789'), 'Reset link')}
     <p className="text-sm text-muted">Did not ask for this? You can ignore this email. Your password stays the same.</p></> },
   code: { s: `${lorem.int(100, 999)} ${lorem.int(100, 999)} is your sign-in code`, t: <>
+    <h1 className="mail_h">Your sign-in code</h1><p>Use this code to finish signing in. It expires in <b>10 minutes</b>.</p>
