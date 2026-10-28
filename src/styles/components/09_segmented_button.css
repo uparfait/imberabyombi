@@ -22,3 +22,4 @@
   .prose_x :where(blockquote) { color: rgb(var(--fg)); }
   .prose_x :where(ul) { list-style-type: "◆  "; padding-inline-start: 1.4rem; }
   .prose_x :where(ol) { list-style-type: decimal; padding-inline-start: 1.5rem; }
+  .prose_x :where(li) { margin-block: .4rem; padding-inline-start: .2rem; }
