@@ -29,3 +29,4 @@ export const docx_numbering = (abs_xml, num_xml) =>
   `${XML}<w:numbering xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">${abs_xml}${num_xml}</w:numbering>`;
 
 export const docx_doc_rels = rels => `${XML}<Relationships xmlns="${PR}"><Relationship Id="rId1" Type="${RELNS}/styles" Target="styles.xml"/>`
+  + `<Relationship Id="rId2" Type="${RELNS}/numbering" Target="numbering.xml"/>${rels.join('')}</Relationships>`;
