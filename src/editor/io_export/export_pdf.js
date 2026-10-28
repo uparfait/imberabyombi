@@ -19,3 +19,4 @@ export async function export_pdf(scope, name, scale = 2) {
     for (let ti = 0; ti < ids.length; ti++) {
       if (state.active !== ids[ti]) { state.active = ids[ti]; render_tab(); await new Promise(r => setTimeout(r, 80)); }
       const pages = qsa('.page', pages_el);
+      for (let i = 0; i < pages.length; i++) {
