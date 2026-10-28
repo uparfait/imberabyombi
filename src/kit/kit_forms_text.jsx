@@ -2,3 +2,4 @@
    types are text fields with a mask (dt_attrs) and an empty hint the field helpers fill; search gets the search buttons. */
 import { lorem } from '../lib/index.js';
 import { DTF, dt_attrs } from '../fields/index.js';
+import { search_ui } from '../ui/index.js';
