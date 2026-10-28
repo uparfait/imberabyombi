@@ -19,3 +19,4 @@ export function footer() {
     <footer className="relative isolate mt-10 overflow-hidden border-t border-line bg-surface-2 text-muted">
       <div className="pattern_layer" style={{ '--pa': '.05' }} aria-hidden="true"></div>
       <div className="wrap grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.5fr]">
+        <div>{logo()}<p className="mt-4 max-w-xs text-sm">{lorem.s()}</p><div className="mt-6 flex gap-2">{soc.map(([i, l]) => (
