@@ -33,3 +33,4 @@ export function table_props_dialog() {
   const al = t0.style.marginLeft === 'auto' ? (t0.style.marginRight === 'auto' ? 'center' : 'right') : 'left';
   modal({
     title: 'Table properties', submit: 'Apply',
+    body: <>
