@@ -19,3 +19,4 @@ function place_uploads(done, mode, failed) {
       const html = content.length === 1 && content[0].inline ? content[0].inline : content.map(r => r.html).join('');
       const host = restore_focus();
       if (host && host.classList.contains('pg_body')) { begin_op(); document.execCommand('insertHTML', false, sanitize_html(html)); end_op(body_index(host), true); }
+      else failed.push('Click in the main text of the document first, then try again.');
