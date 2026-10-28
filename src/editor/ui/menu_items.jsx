@@ -50,3 +50,4 @@ export function text_items() {
     { sep: true },
     { label: 'Increase font size', icon: 'text_increase', shortcut: 'Ctrl+Shift+.', action: () => bump_size(1) },
     { label: 'Decrease font size', icon: 'text_decrease', shortcut: 'Ctrl+Shift+,', action: () => bump_size(-1) },
+    { sep: true },
