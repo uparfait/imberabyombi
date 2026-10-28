@@ -35,3 +35,8 @@ export const workspace = () => (
           <span className="side_title">Comments</span>{icon_btn('comments_close', 'close', 'Close comments')}
         </div>
         <div id="comment_list"></div>
+      </aside>
+    </div>
+    {find_panel()}
+  </div>
+);
