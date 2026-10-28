@@ -10,3 +10,4 @@ export async function unzip(buf) {
   const dec = new TextDecoder(), entries = new Map();
   for (let k = 0; k < count && p + 46 <= u8.length; k++) {
     if (dv.getUint32(p, true) !== 0x02014b50) break;
+    const nlen = dv.getUint16(p + 28, true);
