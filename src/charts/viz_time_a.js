@@ -49,3 +49,4 @@ export const VIZ_TIME_A = {
       return `${i ? `<line class="grid_line" x1="0" x2="${f.w}" y1="${round1(y(i) - y.bw / 2)}" y2="${round1(y(i) - y.bw / 2)}"/>` : ''}`
         + mark_group(k, [[num(last * MARGIN()), 'Latest', 0], [(chg >= 0 ? '+' : '−') + num(Math.abs(chg) * MARGIN()), 'Since the start', null]], hit_row(f, y, i)
           + `<text x="0" y="${round1(y(i) + 4)}">${esc(fit(k, lw - 8))}</text>`
+          + `<path class="series_line" d="${path_of(pts)}" style="stroke:rgb(var(--muted) / .7);stroke-width:1.5"/>${dot(...pts.at(-1), 'var(--series_1)', 3.5)}`
