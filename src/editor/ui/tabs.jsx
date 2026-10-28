@@ -4,3 +4,4 @@
 import { state, refs, active_tab, new_tab, duplicate_tab, move_tab, collect_html, hist_timer, commit, bodies, first_flow, caret_to_start,
   el, save_soon } from '../core/index.js';
 import { render_comments } from '../content/index.js';
+import { render_tab } from './render.js';
