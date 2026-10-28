@@ -48,3 +48,4 @@ export const toolbar = () => (
     {tb({ ed: 'bold', icon: 'format_bold', tip: 'Bold (Ctrl+B)', state: 'bold' })}
     {tb({ ed: 'italic', icon: 'format_italic', tip: 'Italic (Ctrl+I)', state: 'italic' })}
     {tb({ ed: 'underline', icon: 'format_underlined', tip: 'Underline (Ctrl+U)', state: 'underline' })}
+    <button type="button" className="tb_btn tb_edit" id="color_btn" data-tip="Text color" aria-label="Text color" aria-haspopup="menu">
