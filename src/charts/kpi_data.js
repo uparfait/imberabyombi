@@ -12,3 +12,4 @@ export function kpi_data() {
   const mins = Array.from({ length: 12 }, (_, i) => i === 11 ? 'Now' : `${11 - i} min ago`);
   const users = to(trend(), 12900 * m), d_users = rnd(2, 14), rev = 4.2e6 * m, d_rev = rnd(4, 18), enr = Math.round(842 * Math.min(1.15, m));
   const gauge_p = rnd(.45, .92), gauge_c = gauge_p > .85 ? 'rgb(var(--bad))' : gauge_p > .7 ? 'rgb(var(--warn))' : 'var(--series_1)';
+  const gauge_s = gauge_p > .85 ? 'Almost full' : gauge_p > .7 ? 'Getting full' : 'Plenty of space';
