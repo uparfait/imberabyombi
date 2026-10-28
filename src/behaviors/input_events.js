@@ -18,3 +18,4 @@ function on_input(e) {
   if (t.dataset.pkQ != null) pick.filter(t.value);
   /* 6-box code: one digit per box, jump to the next box, send when all six are in */
   if (t.matches?.('.otp_box')) { t.value = t.value.replace(/\D/g, '').slice(-1); const bs = qsa('.otp_box', t.closest('[data-otp]'));
+    if (t.value) (bs[bs.indexOf(t) + 1] || t).focus(); if (bs.every(b => b.value)) t.form?.requestSubmit(); }
