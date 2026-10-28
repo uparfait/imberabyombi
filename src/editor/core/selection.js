@@ -26,3 +26,4 @@ export function restore_sel(sel) {
   const s = getSelection();
   const moved = document.activeElement !== host;
   if (moved && document.activeElement && pages_el.contains(document.activeElement) === false && document.activeElement !== document.body) {
+    /* focus is in a dialog or field: just remember */ last_range = mk_range(sc, so, ec, eo); last_host = host; return;
