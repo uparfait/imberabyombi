@@ -89,3 +89,4 @@ export const live = {
     if (s.pending) zombies++;
   },
   /* keep the preview as one history step; with a different fn (or no preview) run fn normally */
+  keep(fn) {
