@@ -3,3 +3,4 @@
 export * from './text.js';
 export * from './dates.js';
 export * from './dom.js';
+export * from './lorem.js';
