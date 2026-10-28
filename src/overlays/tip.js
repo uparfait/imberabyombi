@@ -9,3 +9,4 @@ export const tip = {
   text(x) { return x.matches('.truncate, .trunc') ? (x.scrollWidth > x.clientWidth + 1 ? x.textContent.trim() : '') : x.dataset.tip || x.getAttribute('aria-label') || ''; },
   find(n) { for (let x = n?.closest?.(TIPS); x; x = x.parentElement?.closest(TIPS)) if (this.text(x)) return x; return null; },
   show(x) {
+    if (x === this.on) return; this.hide(); this.on = x;
