@@ -39,3 +39,5 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
 .img_bar button {
   display: inline-flex; align-items: center; justify-content: center; min-width: 1.75rem; height: 1.75rem; padding: 0 .25rem;
   border-radius: var(--pill); color: rgb(var(--fg) / .8); transition: background-color .15s;
+}
+.img_bar button:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
