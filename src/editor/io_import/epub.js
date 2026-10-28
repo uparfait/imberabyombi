@@ -19,3 +19,5 @@ export async function epub_to_html(file) {
       if (!url) { (im.closest('svg') || im).remove(); continue; }
       if (im.tagName.toLowerCase() === 'img') im.setAttribute('src', url);
       else { const ni = d.createElement('img'); ni.setAttribute('src', url); (im.closest('svg') || im).replaceWith(ni); }
+    }
+    if (d.body) parts.push(d.body.innerHTML);
