@@ -7,3 +7,4 @@
   .copy_big { justify-content: space-between; padding: .625rem .625rem .625rem 1.25rem; }
   .copy_big .copy_val { font-size: 1.875rem; font-weight: 600; letter-spacing: .28em; }
   .copy_big .copy_val span { display: inline-block; animation: rise .5s var(--ease) both; animation-delay: calc(.2s + var(--i) * 80ms); }
+  .copy_btn { display: inline-flex; flex: none; align-items: center; gap: .375rem; min-height: 2.25rem; padding: .375rem .875rem; border-radius: var(--pill);
