@@ -16,3 +16,6 @@ const off = fn => () => { if (!previewing()) fn(); };
 function delete_image(img) {
   img = img_now(img); if (!img?.isConnected) return;
   const b = img.closest('.pg_body'); hide_img_sel(); begin_op(); img.remove(); end_op(body_index(b));
+}
+
+export function image_menu_items(img) {
