@@ -24,3 +24,6 @@ export function hero_sec() {
             className="h-full w-full bg-transparent object-cover object-bottom" fetchPriority="high" /></div>
         </figure>
       </div>, 'flex min-h-[calc(100svh-4.75rem)] items-center sm:min-h-[calc(100svh-6.5rem)]')}</section>
+  );
+}
+export function about_sec(full) {
