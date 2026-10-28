@@ -81,3 +81,4 @@ export function move_items(c, items, next) {
   p.insertBefore(frag, p.firstChild);
 }
 export function split_container(c, b, next) {
+  const items = items_of(c), lim = b.clientHeight + 1;
