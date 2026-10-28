@@ -7,3 +7,4 @@ import { legend, scale_legend } from './viz_legend.jsx';
 
 export const VIZ_TIME_B = {
   candle: { t: 'Candlestick chart', g: 'time', d: 'Open, high, low and close per day. Hollow = up, filled = down.', f(w) {
+    let c = 100; const days = Array.from({ length: 20 }, (_, i) => {
