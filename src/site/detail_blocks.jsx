@@ -28,3 +28,4 @@ export const faq = () => (
 export function intro_top() {
   return (
     <section className="wrap section grid items-start gap-10 lg:grid-cols-[1.25fr_1fr]">
+      <div data-reveal="">{player('video', cfg.video, cfg.img('poster', 1280, 720))}</div>
