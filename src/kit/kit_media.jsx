@@ -16,3 +16,4 @@ export const kit_media = brand_hex => (
     <figure className="m-0"><img src={cfg.img('kit-img', 900, 600)} alt={lorem.t(3)} width="900" height="600" loading="lazy" className="w-full rounded-3xl object-cover" />
       <figcaption>{'<img> inside <figure>'}</figcaption></figure>
     <div className="grid gap-4">{player('video', cfg.video, cfg.img('kit-poster', 900, 506))}{player('audio', cfg.audio)}</div>
+    <iframe className="map aspect-video" src={cfg.map} title="Map embedded with an iframe" loading="lazy"></iframe>
