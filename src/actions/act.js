@@ -3,3 +3,4 @@
    The task handlers (modules) are looked up when a button is pressed, not copied at load: modules and actions import each
    other, and a copy made while modules is still loading would fail. */
 import * as modules from '../modules/index.js';
+import { SHELL_ACT } from './act_shell.js';
