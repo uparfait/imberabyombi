@@ -39,3 +39,4 @@ export function html_to_md(root) {
   };
   const blocks = [];
   Array.from(root.children).forEach(b => {
+    const t = b.tagName;
