@@ -14,3 +14,4 @@ export const KEEP_STYLE = ['color', 'background-color', 'font-weight', 'font-sty
   'border-radius', 'box-shadow', 'height', '--bw', '--bc', '--pad'];
 export const IMG_ONLY_STYLE = new Set(['border', 'border-radius', 'box-shadow', 'height']);
 export const KEEP_ATTR = new Set(['colspan', 'rowspan', 'start', 'alt', 'width', 'color', 'face', 'data-cid', 'data-checked', 'data-strike', 'data-pos',
+  'data-align', 'data-hdr', 'data-autobg', 'data-header', 'data-striped', 'data-style', 'download', 'title']);
