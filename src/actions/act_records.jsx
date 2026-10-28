@@ -26,3 +26,4 @@ export const RECORD_ACT = {
     if (t.dataset.v === 'in') db.upsert('attendance', { person: n, kind: 'Staff', date: td, in: hm(), out: '', status: hm() > cfg.work_start ? 'Late' : 'Present' });
     else if (mine) db.upsert('attendance', { id: mine.id, out: hm() });
     rerender(); notify(`Recorded at ${hm()}, ${fmt_d(td)}.`, 'ok', t.dataset.v === 'in' ? 'Checked in' : 'Checked out'); },
+  report: t => modal({ title: 'Student bulletin', body: bulletin(t.dataset.name) }),
