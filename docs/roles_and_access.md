@@ -20,3 +20,4 @@ Code: [`src/auth/`](../src/auth/). Each role has a level per module: `0` = no ac
 Every role manages its own tasks and opens Settings (theme, profile).
 
 ## Landing page
+Each role has a landing page ("Lands on after sign-in"), set on the role or when creating it. People with that role
