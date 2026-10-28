@@ -24,3 +24,4 @@ const check = (name, label, on) => (
 function Page_setup_body() {
   const s = state.setup, [pageless, set_pageless] = useState(!!s.pageless);
   return <>
+    <fieldset className="border-0 p-0 sm:col-span-2"><legend className="mb-2 px-0 text-sm">Format</legend>
