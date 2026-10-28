@@ -44,3 +44,4 @@ export function reflow(cur = 0, full = false) {
   bs = bodies();
   ensure_para(bs[0]);
   const last_b = bs[bs.length - 1];
+  if (is_break(last_flow(last_b))) { const nb = add_page_after(last_b); nb.innerHTML = '<p><br></p>'; }
