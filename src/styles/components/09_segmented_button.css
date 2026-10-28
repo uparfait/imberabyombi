@@ -27,3 +27,5 @@
   .prose_x :where(dd) { margin: 0 0 .9rem; }
   .prose_x :where(img) { border-radius: var(--radius); width: 100%; }
   .prose_x :where(a) { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Brand artwork: dark-to-orange hero with glowing sun, lattice and a wave cut */
