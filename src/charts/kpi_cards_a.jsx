@@ -10,3 +10,4 @@ export const kpi_cards_a = k => {
   const reached = `${Math.round(Math.min(1, enr / 1000) * 100)}%`, used = Math.round(gauge_p * 100);
   return [
     kpi_card('', 'Active users', 'People who used the system each month, over the last 12 months.',
+      <><p className="kpi_value">{compact_num(users[11])}</p>{delta(d_users)}{spark(users, true, mo, num, 'Active users')}</>,
