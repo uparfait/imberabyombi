@@ -28,3 +28,4 @@ function place_uploads(done, mode, failed) {
   done.forEach(r => { if (r.project) tabs.push(...project_tabs(r.project)); else tabs.push(new_tab(base_of(r.file.name), sanitize_html(r.html) || '<p><br></p>')); });
   if (mode === 'replace') {
     if (done.length === 1 && done[0].project) { try { load_project(done[0].project); } catch { failed.push(done[0].file.name + ': it isn’t a valid project file.'); } }
+    else {
