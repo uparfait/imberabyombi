@@ -14,3 +14,4 @@ export const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matc
 export const key_hint = k => !matchMedia('(any-pointer: fine)').matches ? '' : /Mac|iPhone|iPad|iPod/i.test(navigator.userAgentData?.platform || navigator.platform || navigator.userAgent) ? '⌘' + k : 'Ctrl ' + k;
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
 export const TICON = { ok: 'check', bad: 'x', warn: 'bell', info: 'help' };
+export const TTITLE = { ok: 'Done', bad: 'Something went wrong', warn: 'Heads up', info: 'Note' };
