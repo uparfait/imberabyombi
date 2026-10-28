@@ -41,3 +41,5 @@
   0% { stroke-dasharray: 1, 200; stroke-dashoffset: 0; }
   50% { stroke-dasharray: 90, 200; stroke-dashoffset: -35; }
   100% { stroke-dasharray: 90, 200; stroke-dashoffset: -125; }
+}
+@keyframes flash { from { background-color: rgb(var(--brand) / .2); } }
