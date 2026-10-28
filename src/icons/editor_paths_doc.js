@@ -42,3 +42,4 @@ export const EDITOR_DOC_PATHS = {
   public: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20',
   link_off: 'M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7M3 3l18 18',
   arrow_back: 'M19 12H5M11 18l-6-6 6-6',
+  arrow_upward: 'M12 19V5M6 11l6-6 6 6',
