@@ -3,3 +3,4 @@
   /* =====================================================================
      3. EVERY NATIVE ELEMENT, RESTYLED. :where() keeps specificity at 0,
         so any Tailwind utility on an element still wins.
+        Elements that Tailwind Preflight resets (inputs, selects, textareas,
