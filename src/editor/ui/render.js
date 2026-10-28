@@ -19,3 +19,4 @@ export function render_tab() {
   const w = create_page(); pages_el.appendChild(w);
   const b = qs('.pg_body', w); b.innerHTML = t.html || '<p><br></p>';
   reflow(0, true);
+  if (!t.undo.length) commit();
