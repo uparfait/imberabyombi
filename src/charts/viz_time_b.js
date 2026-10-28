@@ -13,3 +13,4 @@ export const VIZ_TIME_B = {
     const f = frame(w, 250), lo = Math.min(...days.map(d => d.lo)), hi = Math.max(...days.map(d => d.hi)), ts = ticks(lo, hi), y = linear(ts[0], ts.at(-1), f.t + f.ih, f.t);
     const x = band(days.length, f.l, f.w - f.r), bw = Math.min(12, x.bw * .55);
     return { svg: svg(f, ts.map(v => `<line class="grid_line" x1="${f.l}" x2="${f.w - f.r}" y1="${round1(y(v))}" y2="${round1(y(v))}"/>`
+        + `<text x="${f.l - 8}" y="${round1(y(v)) + 3.5}" text-anchor="end">${v}</text>`).join('') + days.map((d, i) => {
