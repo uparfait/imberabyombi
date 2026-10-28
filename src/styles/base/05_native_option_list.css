@@ -7,3 +7,4 @@
   :where(optgroup) { font-weight: 700; color: rgb(var(--muted)); background: rgb(var(--surface)); }
   input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
   input[type=number] { -moz-appearance: textfield; }
+  input[type=search]::-webkit-search-cancel-button { -webkit-appearance: none; }
