@@ -21,3 +21,6 @@ export async function epub_to_html(file) {
       else { const ni = d.createElement('img'); ni.setAttribute('src', url); (im.closest('svg') || im).replaceWith(ni); }
     }
     if (d.body) parts.push(d.body.innerHTML);
+  }
+  return parts.join(PB) || '<p><br></p>';
+}
