@@ -9,3 +9,4 @@ import { tip } from './tip.js';
 
 /* actions: extra footer buttons (e.g. Edit / Delete on the details view); wide: at least 70% of a large screen (the task view).
    Reuses the dialog if it is already open.
+   title: text or JSX · help: text · body, actions: JSX or a function returning JSX (called on every draw, so rerender()
