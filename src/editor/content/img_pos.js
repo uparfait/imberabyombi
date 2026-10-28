@@ -51,3 +51,4 @@ function from_abs(img) {
   if (p) place_at(img, p); else { const para = el('p'); img.replaceWith(para); para.appendChild(img); }
 }
 export function set_img_pos(img, pos) {
+  img_op(img, x => {
