@@ -14,3 +14,4 @@ import { close_pops } from './pops.js';
 const dom_copy = from => <span style={{ display: 'contents' }} ref={el => { if (el && !el.firstChild) el.append(...from.cloneNode(true).childNodes); }} />;
 
 export const TABLE_ACT = {
+  /* Tables: row click = full details (crud rows: view; any other table: row), pager, clear filters */
