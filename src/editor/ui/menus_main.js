@@ -66,3 +66,4 @@ export function view_items() {
   return [
     ...mode_items(), { sep: true },
     flip('Show ruler', state.show_ruler, () => { state.show_ruler = !state.show_ruler; update_rulers(); }),
+    flip('Show tabs & outlines', state.sidebar, () => { state.sidebar = !state.sidebar; apply_panels(); }),
