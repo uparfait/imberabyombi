@@ -8,3 +8,4 @@ import { close_pops } from '../actions/index.js';
 
 const PH = {};   /* collection → the card's height when it went full screen (the placeholder's height) */
 before_render(keep => { if (!keep) for (const c in PH) delete PH[c]; });
+export const ph_height = c => PH[c] ? `${PH[c]}px` : '24rem';
