@@ -17,3 +17,4 @@ function row_acts(c, o, r, can) {
   return (
     <>
       {extra || null}
+      {own ? <><button className="icon_btn h-8 w-8" data-act="edit" data-col={c} data-id={r.id} aria-label="Edit">{ic('edit', 'w-4 h-4')}</button>
