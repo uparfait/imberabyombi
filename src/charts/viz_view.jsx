@@ -47,3 +47,4 @@ export function charts_view() {
     <>
       {page_title('Charts & KPIs',
         'Every chart uses the system colours, follows light and dark and shows the exact values on hover. Click a card to see all its data in a table, '
+        + 'or one bar, point, slice or row to see only that one. The date range changes every number on the page.')}
