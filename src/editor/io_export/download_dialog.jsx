@@ -26,3 +26,4 @@ const seg = (label, opts, cur, pick) => (
   <div className="flex items-center gap-3"><span className="text-[13px] text-muted">{label}</span>
     <div className="seg">{opts.map(([v, l], i) => (
       <button key={l} type="button" aria-pressed={String(v === cur)} onClick={() => pick(v)}
+        className={`px-4 py-2 text-sm font-medium transition ${i ? 'border-l border-muted/50' : ''} ${v === cur
