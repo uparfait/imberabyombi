@@ -7,3 +7,4 @@
   cursor: pointer; font-size: .8125rem; color: rgb(var(--fg) / .78); transition: background-color .15s, color .15s;
 }
 .page_row:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
+.page_row .pnum {
