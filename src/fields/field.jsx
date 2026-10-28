@@ -26,3 +26,4 @@ export function field(f, v) {
     <span className="date_hint" aria-hidden="true"></span>
   </>;
   else ctl = <input id={id} name={f.k} type={f.t} defaultValue={val} placeholder=" " min={f.min ?? undefined} max={f.max ?? undefined}
+    autoComplete={f.t === 'email' ? 'email' : undefined} required={req} />;
