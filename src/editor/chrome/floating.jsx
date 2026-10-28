@@ -42,3 +42,6 @@ export const file_inputs = () => (
   <>
     <input type="file" id="file_open" hidden accept=".docx,.pdf,.html,.htm,.txt,.md,.markdown,.json" />
     <input type="file" id="image_open" hidden accept="image/*" multiple />
+    <input type="file" id="image_replace" hidden accept="image/*" />
+  </>
+);
