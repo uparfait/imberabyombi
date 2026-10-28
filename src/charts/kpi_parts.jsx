@@ -3,3 +3,5 @@
 import { ic } from '../icons/index.js';
 import { round1, num, linear, tip_attr } from './viz_math.js';
 import { path_of } from './viz_svg.js';
+
+export const KPIS = [];
