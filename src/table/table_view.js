@@ -7,7 +7,7 @@ import { db, ui } from '../store/index.js';
 export const tview = c => (ui.tview[c] ||= { per: cfg.page_size, hide: [], ...(db.get('tview', {})[c] || {}) });
 export const tview_save = c => db.set('tview', { ...db.get('tview', {}), [c]: ui.tview[c] });
 
-/* React keeps the column search inputs and the settings ticks across redraws (the reference drew them again), so after a
+/* React keeps the column search inputs and the settings ticks across redraws (it never resets typed text or ticks), so after a
    draw their values follow ui again: a cleared filter (Clear filters, a hidden column) empties its box. */
 export function sync_tools(c) {
   const q = ui.q[c] || {}, v = tview(c);
