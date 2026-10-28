@@ -14,3 +14,4 @@
   .pk_item { display: flex; width: 100%; align-items: center; gap: .75rem; min-height: 2.5rem; padding: .5rem 1rem; text-align: left; font-size: .9rem; line-height: 1.3; transition: background-color .15s; }
   .pk_item:hover, .pk_item:focus-visible { background: rgb(var(--fg) / .06); outline: 0; }
   .pk_item[aria-selected=true] { background: rgb(var(--brand) / .14); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); font-weight: 500; }
+  .pk_group { padding: .6rem 1rem .25rem; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgb(var(--muted)); }
