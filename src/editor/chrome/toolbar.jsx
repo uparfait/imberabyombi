@@ -57,3 +57,4 @@ export const toolbar = () => (
     {tb({ icon: 'image', tip: 'Insert image', id: 'image_btn' })}
     {sep()}
     <button type="button" className="tb_btn tb_edit" id="align_btn" data-tip="Align & indent" aria-label="Align & indent" aria-haspopup="menu">
+      <span className="ic_slot" id="align_icon">{ic('format_align_left')}</span>{ic('arrow_drop_down', 'dd_arrow')}</button>
