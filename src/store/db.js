@@ -21,3 +21,4 @@ export const db = {
   set(k, v) { try { ls.setItem(cfg.ns + k, JSON.stringify(v)); return true; } catch { storage_full(); return false; } },
   del(k) { ls.removeItem(cfg.ns + k); },
   keys() { const o = []; for (let i = 0; i < ls.length; i++) { const k = ls.key(i); if (k && k.startsWith(cfg.ns)) o.push(k.slice(cfg.ns.length)); } return o; },
+  list(c) { let v = db.get('c:' + c); if (!Array.isArray(v)) { if (!seeder) return []; v = seeder(c); db.set('c:' + c, v); } return v; },
