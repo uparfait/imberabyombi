@@ -7,3 +7,4 @@ import { modal, ask, close_dialog } from '../overlays/index.js';
 import { schemas } from '../schemas/index.js';
 import { view_row, refresh, open_form, kv_table, table_full, tview, tview_save, col_show, export_dialog } from '../table/index.js';
 import { viz } from '../charts/index.js';
+import { close_pops } from './pops.js';
