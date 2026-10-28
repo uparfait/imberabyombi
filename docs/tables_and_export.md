@@ -4,3 +4,6 @@
 ```jsx
 import { crud } from '../table/index.js';
 VIEWS.library = () => crud('books', { title: 'Books' });
+```
+
+## What every table gets
