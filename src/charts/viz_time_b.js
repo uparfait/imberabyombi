@@ -26,3 +26,4 @@ export const VIZ_TIME_B = {
     const c = uwords(6), a = c.map(() => rnd(20, 80)), b = a.map(v => Math.max(5, v + rnd(-25, 25))), f = frame(w, 260, { l: 92, r: 92, t: 30, b: 16 });
     const y = linear(0, 100, f.t + f.ih, f.t), xa = f.l + 10, xb = f.w - f.r - 10;
     const top = b.map((v, i) => v - a[i]).reduce((m, d, i, arr) => Math.abs(d) > Math.abs(arr[m]) ? i : m, 0);
+    const la = spread(a.map(v => y(v) + 4)), lb = spread(b.map(v => y(v) + 4));
