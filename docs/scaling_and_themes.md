@@ -24,3 +24,5 @@ Make your own computer the reference: open the browser console, type `innerWidth
 
 Pages never scroll sideways (`overflow-x: clip` on `html` and `body`); wide content (tables, tab strips) scrolls
 inside its own box. Nested scroll areas hand the wheel back to the page at their end.
+
+## Themes: light, dark or system
