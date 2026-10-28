@@ -34,6 +34,7 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 
 ## Pre-rendering
 Search engines render JavaScript pages. If the public pages must also show their text before any script runs, pre-render
+them at build time; they only read static data, so this is straightforward.
 
 ## Before publishing
 Replace the canonical URL, the JSON-LD values, the social image and the sample media. See
