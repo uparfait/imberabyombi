@@ -24,3 +24,7 @@ const LINKS = [['login', 'Sign in'], ['forgot', 'Forgot password'], ['verify', '
 export const auth_links = cur => (
   <p className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-muted">{LINKS.filter(([k]) => k !== cur).map(([k, l]) => (
     <a key={k} href={`#/${k}`} className="hover:text-accent">{l}</a>
+  ))}</p>
+);
+
+/* a password field (id = name) with a show/hide button (data-act="pwd"); attr: extra input props, e.g. { 'data-pw': '' } */
