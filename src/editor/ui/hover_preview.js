@@ -12,3 +12,4 @@ export function peeking() { return cur ? cur.key : null; }
 export function field_has_focus() { const a = document.activeElement; return !!(a && a.matches && a.matches('input, textarea, select')); }
 
 export function peek(key, fn) {
+  if (cur && cur.key === key) return;
