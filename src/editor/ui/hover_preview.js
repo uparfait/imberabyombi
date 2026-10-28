@@ -37,3 +37,4 @@ export function keep(key) {
 export function pick(key, fn, done) {
   const kept = keep(key); if (!kept) unpeek();
   if (done) done();
+  if (!kept) fn();
