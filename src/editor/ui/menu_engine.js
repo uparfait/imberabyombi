@@ -34,3 +34,4 @@ function row_of(it, level) {
   if (it.disabled) r.setAttribute('aria-disabled', 'true');
   if (it.sub) r.setAttribute('aria-haspopup', 'menu');
   r.innerHTML = `<span class="mi_check inline-flex w-4 shrink-0">${it.checked ? mi('check') : ''}</span>${it.icon ? mi(it.icon, 'mi_icon h-4 w-4 shrink-0 text-muted') : ''}`
+    + `<span class="mi_label min-w-0 flex-1"></span>${it.shortcut ? `<span class="mi_short ml-6 text-xs text-muted">${esc_html(it.shortcut)}</span>` : ''}`
