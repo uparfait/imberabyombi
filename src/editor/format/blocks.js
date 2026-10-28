@@ -30,3 +30,4 @@ export function set_block_style(key) {
     if (b.tagName === 'LI') return;
     const nb = document.createElement(st.tag);
     if (st.cls) nb.className = st.cls;
+    if (b.getAttribute('style')) nb.setAttribute('style', b.getAttribute('style'));
