@@ -17,3 +17,4 @@ export const PK = {
       + `<button type="button" class="btn btn_ghost btn_sm text-accent" data-act="pk_done">Done</button></div>` : ''}`;
   },
   list(a) {
+    const q = a.value.toLowerCase().trim(), vs = [...(document.getElementById(a.dataset.list)?.options || [])].map(o => o.value)
