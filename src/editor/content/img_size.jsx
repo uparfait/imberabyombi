@@ -5,3 +5,5 @@ import { modal } from '../../overlays/index.js';
 import { previewing } from '../format/index.js';
 import { img_op } from './img_ops.js';
 import { img_max, img_now } from './img_sel.js';
+
+export function image_size_dialog(img) {
