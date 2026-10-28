@@ -15,3 +15,4 @@ import { epub_to_html } from './epub.js';
 import { rtf_to_html } from './rtf.js';
 
 /* the first 4 KB: no zero bytes and under 2% control characters */
+export async function looks_like_text(file) {
