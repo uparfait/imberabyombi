@@ -20,3 +20,4 @@ export const PK = {
     const q = a.value.toLowerCase().trim(), vs = [...(document.getElementById(a.dataset.list)?.options || [])].map(o => o.value)
       .filter(v => v && v.toLowerCase().includes(q) && v.toLowerCase() !== q).slice(0, 50);
     return vs.length ? `<div class="pk_list" role="listbox">${vs.map(v => `<button type="button" class="pk_item" role="option" data-act="pk_set" data-v="${esc(v)}">`
+      + `${ic_html('search', 'h-4 w-4 shrink-0 text-muted')}<span class="truncate">${esc(v)}</span></button>`).join('')}</div>` : '';
