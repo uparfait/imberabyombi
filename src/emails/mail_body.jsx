@@ -20,6 +20,6 @@ export function mail_body(k) {
     <div className="flex flex-wrap gap-2">{mail_btn('Yes, I will attend')}{mail_btn('Maybe', 'btn_outline')}{mail_btn('No', 'btn_outline')}</div></>;
   const cal = <p className="text-xs text-muted">Add to calendar: <a href="#/admin/emails" className="text-accent underline">Imberabyombi</a> · <a href="#/admin/emails"
     className="text-accent underline">Outlook</a> · <a href="#/admin/emails" className="text-accent underline">Apple (.ics)</a></p>;
-  /* like the reference, all six mails are built in order (same lorem sequence for each), then one is picked */
+  /* all six mails are built in order (the same lorem sequence whichever mail is shown), then one is picked */
   return { ...event_mails({ ev, place, who, d1, d2, tm, event, rsvp, cal }), ...account_mails() }[k];
 }
