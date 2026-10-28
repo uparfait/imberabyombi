@@ -22,3 +22,4 @@ function rtf_table(rx, t) {
   const brd = bwv ? `\\brdrs\\brdrw${Math.max(5, Math.round(bwv * 15))}\\brdrcf${rtf_ci(rx, to_hex(t.style.getPropertyValue('--bc')) || '000000')}` : '\\brdrnil';
   let o = '';
   rows.forEach(r => {
+    o += '\\trowd\\trgaph100\\trleft0' + (r.cells[0] && r.cells[0].hasAttribute('data-hdr') ? '\\trhdr' : ''); let x = 0;
