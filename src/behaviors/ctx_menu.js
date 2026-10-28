@@ -33,3 +33,6 @@ function on_contextmenu(e) {
   const m = qs('#ctx'); m._out?.cancel(); m._out = null; m.innerHTML = ctx_menu(); m.hidden = false;
   m.style.left = Math.max(8, Math.min(e.clientX, innerWidth - m.offsetWidth - 8)) + 'px'; m.style.top = Math.max(8, Math.min(e.clientY, innerHeight - m.offsetHeight - 8)) + 'px';
   m.querySelector('.menu_item')?.focus({ preventScroll: true });
+}
+
+export const install_ctx = () => document.addEventListener('contextmenu', on_contextmenu);
