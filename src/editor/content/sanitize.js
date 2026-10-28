@@ -75,3 +75,4 @@ export function sanitize_html(html) {
   clean(doc.body);
   qsa('div:not(.page_break)', doc.body).forEach(d => {
     if (!d.isConnected) return;
+    if (Array.from(d.children).some(x => BLOCK_RE.test(x.tagName))) d.replaceWith(...d.childNodes);
