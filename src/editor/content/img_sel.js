@@ -3,3 +3,4 @@
    readout; select / hide / place it. img_now() finds an image again after a preview restore replaced the DOM. */
 import { ic_html } from '../../icons/index.js';
 import { rem } from '../../lib/index.js';
+import { qs, qsa, el, state, is_abs, offset_in, bodies, body_index, path_to, node_at } from '../core/index.js';
