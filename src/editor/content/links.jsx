@@ -7,3 +7,4 @@ import { show_err } from '../../feedback/index.js';
 import { hide_link_bubble } from './link_bubble.js';
 
 export function normalize_url(u) {
+  u = u.trim(); if (!u) return '';
