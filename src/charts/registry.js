@@ -15,3 +15,4 @@ export function draw_chart(cv, labels, vals, anim = true) {
     x.clearRect(0, 0, wd, ht); x.font = `500 ${fs}px ${getComputedStyle(document.body).fontFamily}`; x.lineWidth = 1;
     for (let i = 0; i <= 4; i++) {
       const y = Math.round((ht - pb) * i / 4) + .5; x.strokeStyle = col('--line'); x.beginPath(); x.moveTo(pl, y); x.lineTo(wd, y); x.stroke();
+      x.fillStyle = col('--muted'); x.textAlign = 'left'; x.fillText(Math.round(max * (1 - i / 4)), 0, y + fs * .35);
