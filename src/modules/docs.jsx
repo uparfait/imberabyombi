@@ -5,3 +5,4 @@ import { VIEWS } from './views.js';
 import { loading } from '../feedback/index.js';
 
 const Editor_page = lazy(() => import('../editor/index.js').then(m => ({ default: m.Editor_page })));
+VIEWS.docs = () => <Suspense fallback={loading('Opening the document editor')}><Editor_page /></Suspense>;
