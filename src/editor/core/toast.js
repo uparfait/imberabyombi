@@ -31,3 +31,4 @@ export function toast(msg, ms = 2800) {
   if (ms === 0 && alive()) { const m = prog.querySelector('[data-msg]'); if (m) m.textContent = msg; return; }
   if (alive()) hide_toast();
   notify(msg, 'info');
+  if (ms === 0) {   // progress: keep it open (a paused notification) until hide_toast()
