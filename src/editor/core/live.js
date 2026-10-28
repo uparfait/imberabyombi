@@ -24,3 +24,4 @@ function find(w) { const b = w && bodies()[w.i]; return b ? node_at(b, w.p) : nu
 function doc_range() {
   const s = getSelection();
   if (s.rangeCount) { const r = s.getRangeAt(0); if (where(r.startContainer)) return r; }
+  return last_range && last_range.startContainer.isConnected ? last_range : null;
