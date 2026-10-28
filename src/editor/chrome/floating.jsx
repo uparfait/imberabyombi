@@ -24,3 +24,9 @@ export const find_panel = () => (
       <div className="flex gap-2">
         <button type="button" className="btn btn_outline btn_sm" id="replace_one">Replace</button>
         <button type="button" className="btn btn_outline btn_sm" id="replace_all">Replace all</button>
+      </div>
+    </div>
+  </div>
+);
+
+export const link_bubble = () => (
