@@ -6,7 +6,7 @@ import { cal_task } from '../admin/index.js';
 const cols = 'grid grid-cols-[3.5rem_repeat(7,minmax(0,1fr))]';
 const INK = 'bg-ink text-white dark:bg-surface-3 dark:text-fg';
 const wday = x => x.toLocaleDateString(undefined, { weekday: 'short' }).toUpperCase();
-const more = (n, c) => n > 0 ? <span className={`${c} text-[11px] text-muted`}>{`+${n} more`}</span> : null;
+const more = (n, c) => n > 0 ? <span className={`${c} text-[0.6875rem] text-muted`}>{`+${n} more`}</span> : null;
 
 /* a timed item in the week grid: placed by its start, as tall as it lasts (at least 30 minutes) */
 const CHIP = 'absolute inset-x-1 z-[1] overflow-hidden rounded-lg px-2 py-1 text-left text-xs leading-tight transition hover:brightness-110';
