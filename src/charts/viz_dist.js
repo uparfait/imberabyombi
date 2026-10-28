@@ -9,3 +9,4 @@ export const VIZ_DIST = {
     const vals = Array.from({ length: 400 }, () => 50 + gauss() * 14), bins = 16, lo = 0, hi = 100, step = (hi - lo) / bins, cnt = Array(bins).fill(0);
     vals.forEach(v => { const b = Math.min(bins - 1, Math.max(0, Math.floor((v - lo) / step))); cnt[b]++; });
     const f = frame(w, 240), ax = y_axis(f, Math.max(...cnt)), x = linear(lo, hi, f.l, f.l + f.iw), bin = i => `${i * step}–${(i + 1) * step}`;
+    return { svg: svg(f, ax.g + cnt.map((n, i) => mark_group(bin(i), [[n, 'Count', 0]],
