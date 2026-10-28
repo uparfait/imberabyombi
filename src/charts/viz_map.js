@@ -12,3 +12,4 @@ export const VIZ_MAP = {
     const hex = (cx, cy, r) => path_of(Array.from({ length: 6 }, (_, i) =>
       [cx + r * Math.cos(Math.PI / 6 + i * Math.PI / 3), cy + r * Math.sin(Math.PI / 6 + i * Math.PI / 3)])) + 'Z';
     return { svg: svg(f, tiles.map(t => { const cx = x0 + t.x * s + (t.y % 2 ? hw : 0) + hw, cy = f.t + t.y * s * .88 + hw;
+      return mark_group(t.k, [[t.v, 'Value', null]], `<path class="mark" d="${hex(cx, cy, hw - 1)}" style="fill:${sequential(t.v / 100)}"/>`
