@@ -29,3 +29,4 @@ export const VIZ_PART_A = {
       if (!list.length) return; if (list.length === 1) { out.push({ ...list[0], x, y, wd, ht }); return; }
       const tot = list.reduce((s, o) => s + o.v, 0); let acc = 0, k = 0; while (k < list.length - 1 && acc + list[k].v < tot / 2) acc += list[k++].v;
       if (!k) acc = list[k++].v; const r = acc / tot;
+      if (wd >= ht) { split(list.slice(0, k), x, y, wd * r, ht); split(list.slice(k), x + wd * r, y, wd * (1 - r), ht); }
