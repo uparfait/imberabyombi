@@ -35,3 +35,4 @@ function Crop_body({ src, st }) {
       <p className="text-muted">Drag across the picture to choose the part to keep.</p>
       <div className="text-center">
         <div className="crop_stage" onPointerDown={down}>
+          <img alt="" src={src} ref={el => { pic.current = el; st.pic = el; }} />
