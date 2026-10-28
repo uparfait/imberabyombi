@@ -23,3 +23,4 @@ export const plain = (c, k, r) => { const v = r[k], t = schemas[c].f.find(f => f
 /* <option> tags for a schema field ([value, label] pairs or plain strings).
    React selects through the <select>: give it defaultValue={String(v ?? '')} (the reference marked the option selected). */
 export const options = f => (typeof f.o === 'function' ? f.o() : f.o || []).map((o, i) => {
+  const [ov, ol] = Array.isArray(o) ? o : [o, o];
