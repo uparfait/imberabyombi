@@ -20,3 +20,4 @@ export function err_text(el) {
 export function clear_err(el) { el.removeAttribute('aria-invalid'); const id = el.getAttribute('aria-describedby'); if (id?.startsWith('err_')) { document.getElementById(id)?.remove(); el.removeAttribute('aria-describedby'); } }
 export function show_err(el, msg) {
   if (!el) return; clear_err(el); const id = 'err_' + (el.id || el.name || uid());
+  el.setAttribute('aria-invalid', 'true'); el.setAttribute('aria-describedby', id);
