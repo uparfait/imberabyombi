@@ -47,3 +47,4 @@ export function image_menu_items(img) {
     { label: 'Alt text…', icon: 'description', no_preview: true, action: off(() => alt_text_dialog(img)) },
     { sep: true },
     { label: 'Replace image', icon: 'find_replace', sub: () => [
+      { label: 'Upload from computer', icon: 'upload', no_preview: true, action: off(() => { set_replace_target(img_now(img)); qs('#image_replace')?.click(); }) },
