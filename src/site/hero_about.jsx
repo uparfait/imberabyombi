@@ -40,3 +40,7 @@ export function about_sec(full) {
           className="h-full w-full rounded-3xl object-cover" /><figcaption>{lorem.t(3)}</figcaption></figure>
         <img src={cfg.img('about-b', 600, 600)} alt={lorem.t(3)} width="600" height="600" loading="lazy" className="aspect-square w-full rounded-3xl object-cover" />
         <div className="card grid place-content-center p-5 text-center"><data value="12" className="font-display text-5xl font-extrabold text-brand"
+          data-count="12">0</data><p className="mt-1 text-sm text-muted">{lorem.t(3)}</p></div>
+      </div></section>
+  );
+}
