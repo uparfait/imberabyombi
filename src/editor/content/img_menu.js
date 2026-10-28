@@ -48,3 +48,4 @@ export function image_menu_items(img) {
     { sep: true },
     { label: 'Replace image', icon: 'find_replace', sub: () => [
       { label: 'Upload from computer', icon: 'upload', no_preview: true, action: off(() => { set_replace_target(img_now(img)); qs('#image_replace')?.click(); }) },
+      { label: 'By URL', icon: 'link', no_preview: true, action: off(() => image_url_dialog(img_now(img))) }] },
