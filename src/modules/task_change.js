@@ -14,3 +14,5 @@ import { tv_api } from './tv_state.js';
 const tick = (id, g, i, on) => request(() => {
   const subs = subs_of(db.find('tasks', id)).map((x, j) => j !== g ? x : { ...x, items: x.items.map((y, k) => k === i ? { ...y, done: on } : y) });
   db.upsert('tasks', { id, subs }); task_refresh(id); });
+
+/* the status picked: the current one hides Cancel / Save (nothing to save), another shows them */
