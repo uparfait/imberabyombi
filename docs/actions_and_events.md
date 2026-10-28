@@ -23,3 +23,5 @@ export const EXAMPLE_ACT = {
 };
 ```
 Add the object to `ACT` in `src/actions/act.js`, and `archive: 1` to `REQ` if it should spin its button.
+
+## data-form: a form names its handler
