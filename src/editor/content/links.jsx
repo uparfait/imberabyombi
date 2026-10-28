@@ -26,3 +26,4 @@ export function open_link_dialog(existing) {
         autoComplete="off" /></div>
   </>, on_submit: () => {
     const url = normalize_url(qs('#lk_url').value), text = qs('#lk_text').value;
+    if (!url) { show_err(qs('#lk_url'), 'Enter a link address'); qs('#lk_url').focus(); return false; }
