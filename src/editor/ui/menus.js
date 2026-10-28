@@ -3,3 +3,4 @@
    no_preview; the Format menu's choices preview on hover. */
 import { state, refs, pages_el, current_page, qs, save_soon } from '../core/index.js';
 import { indent, clear_formatting, toggle_checklist, insert_hr, insert_page_break, insert_text_at_caret, table_grid_el, table_menu_items } from '../format/index.js';
+import { open_link_dialog, add_comment, add_blank_page } from '../content/index.js';
