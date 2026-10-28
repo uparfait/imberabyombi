@@ -6,3 +6,4 @@ import { db } from '../store/index.js';
 import { auth_shell, auth_links } from './auth_shell.jsx';
 
 /* the invitation note, or the role picker */
+const role_part = (inv, rs, sel) => inv ? <>
