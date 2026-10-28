@@ -18,3 +18,4 @@ function summary(fmt, s) {
     count(s.images, 'image', 'images')].filter(Boolean).join(', ') + '.';
   if ((fmt === 'xlsx' || fmt === 'csv') && !s.tables) sum += ' There are no tables, so each paragraph becomes one row.';
   if (fmt === 'pdf') sum += ' Pages are saved as pictures. For text you can select, use Print and choose Save as PDF.';
+  if (fmt === 'json') sum += ' Includes every tab, the page setup and comments.';
