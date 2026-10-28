@@ -8,3 +8,4 @@ import { staff_card } from './strategies_staff.jsx';
 
 export function staff_dir() {
   lorem.seed(77); const teams = [lorem.t(1), lorem.t(1), lorem.t(1), lorem.t(1)];
+  return (
