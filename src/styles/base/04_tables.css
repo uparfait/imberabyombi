@@ -22,3 +22,4 @@
     outline: 1px solid transparent; outline-offset: -2px;
   }
   :where(input:not([type=checkbox],[type=radio],[type=range],[type=color],[type=file]), select, textarea):hover,
+  :where(.field, .pick):hover > :where(select, input:not([type=checkbox],[type=radio],[type=range],[type=color],[type=file])) { border-color: rgb(var(--fg) / .8); }
