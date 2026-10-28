@@ -7,3 +7,4 @@ export function cell_text(c) {
   return (ps.length ? ps.map(p => p.textContent).join('\n') : c.textContent).replace(/\u200b/g, '').trim();
 }
 export function table_name(t, i) {
+  let p = t.previousElementSibling, k = 0;
