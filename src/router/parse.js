@@ -1,4 +1,5 @@
 /* router/parse.js: the route (/path?query, after the base path) as { path, q }, and the page's title + SEO tags
+   (description, og:title, canonical link) per route. */
 import { qs } from '../lib/index.js';
 
 export function parse() {
