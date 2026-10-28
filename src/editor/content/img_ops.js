@@ -66,3 +66,4 @@ export async function reset_image(img) {
   img = img_now(img); if (!img || previewing()) return;
   const o = img.getAttribute('data-orig') || img.getAttribute('src'); let w = img.offsetWidth;
   try { const im = await load_img(o); w = im.naturalWidth || w; } catch (e) { /* keep the current width */ }
+  img_op(img, x => {
