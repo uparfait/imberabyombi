@@ -10,3 +10,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
   page colour, header, footer, page numbers; text flows from page to page as you type; rulers set the margins.
 - **Text**: styles (Normal, Title, Subtitle, Heading 1–4), fonts, sizes, bold, italic, underline, strikethrough,
   colour and highlight palettes, alignment, line and paragraph spacing, indents, case changes, clear formatting,
+  paint format.
