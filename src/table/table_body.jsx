@@ -49,3 +49,4 @@ export function table_body(c) {
   const shown = rows.slice((p - 1) * per, p * per), acts = shown.map(r => row_acts(c, o, r, can)), with_acts = acts.some(Boolean), span = cols.length + (with_acts ? 1 : 0);
   return {
     acts: with_acts, count: rows.length, pager: rows.length ? pager(c, p, n) : null,
+    rows: rows.length ? shown.map((r, i) => (
