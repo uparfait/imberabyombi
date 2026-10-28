@@ -5,3 +5,4 @@ import { modal } from '../../overlays/index.js';
 import { clamp, editable_of, caret_to_start, body_index, toast, end_op } from '../core/index.js';
 import { can_edit } from './commands.js';
 import { insert_block_at_caret } from './insert.js';
+import { HDR_BG, STRIPE_BG, TABLE_PRESETS, build_table } from './table_model.js';
