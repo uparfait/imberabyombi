@@ -18,3 +18,4 @@ import { Live_slot, redraw_slot } from './live_slot.jsx';
 function nav_markup(routed) {
   const tree = NAVTREE(), ROOT = 'System 2';
   if (routed) { const q = []; let list = tree;
+    for (const x of route.path.split('/').slice(3, 5)) { const i = parseInt(x, 10); if (!list?.[i]) break; q.push(i); list = list[i].c; } ui.nav = q; }
