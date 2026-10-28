@@ -76,3 +76,4 @@ export function ruler_drag(e) {
     const span = horiz ? win - (side === 'left' ? m.right : m.left) : hin - (side === 'top' ? m.bottom : m.top);
     m[side] = clamp(Math.round(((side === 'left' || side === 'top') ? orig + d : orig - d) * 16) / 16, 0, span - 1);
     page_wraps().forEach(layout_page); update_rulers();
+    show_value(`${side[0].toUpperCase() + side.slice(1)} margin: ${m[side]}"`, ev.clientX, ev.clientY);
