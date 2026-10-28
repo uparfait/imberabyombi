@@ -22,3 +22,5 @@ export function request_close(d) {
   const f = d?.id === 'modal' && d.querySelector('form');
   if (f && f._init != null && snap(f) !== f._init) return confirm_discard(() => close_dialog(d));
   close_dialog(d);
+}
+/* "Discard changes?" in #confirm (drawn by <Dialog_hosts/>). yes runs on Discard: ACT.confirm_discard reads #confirm._yes */
