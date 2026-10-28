@@ -23,3 +23,4 @@ function rtf_table(rx, t) {
   let o = '';
   rows.forEach(r => {
     o += '\\trowd\\trgaph100\\trleft0' + (r.cells[0] && r.cells[0].hasAttribute('data-hdr') ? '\\trhdr' : ''); let x = 0;
+    Array.from(r.cells).forEach(c => {
