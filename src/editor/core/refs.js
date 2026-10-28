@@ -33,3 +33,4 @@ export function fill_refs(root) {
   return refs;
 }
 export function clear_refs() {
+  for (const k of Object.keys(store)) delete store[k];
