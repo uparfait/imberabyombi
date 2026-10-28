@@ -2,3 +2,4 @@
    EPUB): parse, elements by local name (any namespace), child elements, folder of a path, relative paths, relationships. */
 
 export const parse_xml = t => new DOMParser().parseFromString(t, 'application/xml');
+export const by_tag = (n, local) => n ? Array.from(n.getElementsByTagNameNS('*', local)) : [];
