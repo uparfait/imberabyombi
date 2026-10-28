@@ -25,3 +25,4 @@ export function export_xlsx(root, name) {
       + `${sheets.map((s, i) => `<sheet name="${xesc(s.name)}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join('')}</sheets></workbook>` },
     { name: 'xl/_rels/workbook.xml.rels', data: `${XML}<Relationships xmlns="${XL_PR}">`
       + `${sheets.map((s, i) => `<Relationship Id="rId${i + 1}" Type="${XL_R}/worksheet" Target="worksheets/sheet${i + 1}.xml"/>`).join('')}`
+      + `<Relationship Id="rId${sheets.length + 1}" Type="${XL_R}/styles" Target="styles.xml"/></Relationships>` },
