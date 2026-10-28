@@ -15,3 +15,4 @@ import { longform } from './longform.jsx';
 
 export function home() {
   lorem.seed(11);
+  return <>{hero_sec()}{about_sec()}{mission_sec()}{vision_sec()}{strategies_sec()}{staff_sec()}{partners_sec()}{thanks_sec()}{contact_sec()}</>;
