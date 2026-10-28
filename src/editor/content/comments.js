@@ -29,3 +29,4 @@ export function remove_comment(id) {
   save_soon(); render_comments();
 }
 export function activate_comment(id, focus) {
+  qsa('.cmt.active', pages_el).forEach(x => x.classList.remove('active'));
