@@ -1,2 +1,3 @@
 /* styles/editor/05_doc_content.css: the document's own look (source #contentCSS): Arial 11pt, black text, its headings,
    lists, tables, checklists, comments and file chips. This is paper, not interface: literal colours, the same in both themes.
+   The second half undoes the template's base styles for elements inside the document (headings in the display font,
