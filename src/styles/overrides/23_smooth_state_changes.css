@@ -40,3 +40,4 @@
   /* Headers: bottom border only once the page is scrolled */
   .hdr { border-bottom: 1px solid transparent; transition: border-color .2s; }
   .hdr.is_scrolled { border-bottom-color: rgb(var(--line)); }
+  .compose { display: grid; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); transition: border-color .2s; }
