@@ -2,3 +2,4 @@
    currency, simulated latency, table size, parking, work hours, storage cap, picture/video/audio/map links). */
 export const cfg = {
   name: 'Imberabyombi', logo: ['IMBERA', 'BYOMBI'] /* two-tone logo: first part in brand colour */, ns: window.NS || 'loremds:v1:',
+  currency: 'USD', latency: 450 /* ms of simulated network time per request (saving, loading a table); set 0 or swap for fetch() */,
