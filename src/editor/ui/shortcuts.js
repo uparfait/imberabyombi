@@ -44,3 +44,4 @@ function edit_key(e, k, code) {
   if (!e.shiftKey && code === 'Period') return () => exec('superscript');
   if (!e.shiftKey && code === 'Comma') return () => exec('subscript');
   if (e.shiftKey && ALIGN[code]) return () => exec(ALIGN[code]);
+  if (code === 'BracketRight') return () => indent(1);
