@@ -3,3 +3,5 @@
 import { lorem, pad, ymd, add_d } from '../lib/index.js';
 import { db } from '../store/index.js';
 import { field_spec, option_list, STATUS, GRADES, SUBJECTS, TERMS, names, tel } from './fields.js';
+
+export const students_schema = {
