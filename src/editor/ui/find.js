@@ -37,3 +37,4 @@ export function run_find(keep) {
       text += '\u0000';
     });
     const hay = mc ? text : text.toLowerCase(), needle = mc ? q : q.toLowerCase();
+    const loc = (pos, end) => {
