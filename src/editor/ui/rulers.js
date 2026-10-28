@@ -44,7 +44,7 @@ export function draw_h_ruler() {
   const left = w0.getBoundingClientRect().left - hruler.getBoundingClientRect().left;
   const lx = m.left * DPI * z, rx = (win - m.right) * DPI * z, y = u(3), h = u(18);
   const tri = `<path d="M${-u(6)} ${u(7)} L${u(6)} ${u(7)} L0 ${u(14)} Z"/><rect x="${-u(8)}" y="0" width="${u(16)}" height="${u(22)}" fill="transparent"/>`;
-  hruler.innerHTML = `<svg width="${W}" height="${u(24)}" style="position:absolute;left:${left}px;top:0;overflow:visible"><rect class="r_bg" x="0" y="${y}" width="${W}" height="${h}"/>`
+  hruler.innerHTML = `<svg aria-hidden="true" width="${W}" height="${u(24)}" style="position:absolute;left:${left}px;top:0;overflow:visible"><rect class="r_bg" x="0" y="${y}" width="${W}" height="${h}"/>`
     + `<rect class="r_margin" x="0" y="${y}" width="${lx}" height="${h}"/><rect class="r_margin" x="${rx}" y="${y}" width="${W - rx}" height="${h}"/>${ruler_ticks(win, m.left, true, z)}`
     + `<g class="r_handle" data-handle="left" transform="translate(${lx} 0)"><rect class="knob" x="${-u(6)}" y="${u(1)}" width="${u(12)}" height="${u(4)}" rx="${u(1)}"/>${tri}</g>`
     + `<g class="r_handle" data-handle="right" transform="translate(${rx} 0)">${tri}</g></svg>`;
