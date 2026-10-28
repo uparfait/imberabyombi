@@ -4,3 +4,5 @@
    helpers (first_flow, last_flow, prev_flow, flow_kids) skip them, and the pagination engine never moves them. */
 import { qsa } from './utils.js';
 import { pages_el } from './refs.js';
+
+export function is_break(n) { return !!(n && n.nodeType === 1 && n.classList.contains('page_break')); }
