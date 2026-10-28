@@ -9,3 +9,4 @@ export * from './copy.jsx';
 export * from './pick.js';
 export * from './pick_html.js';
 export * from './tip.js';
+export { raise_top, show_dialog } from '../feedback/index.js';
