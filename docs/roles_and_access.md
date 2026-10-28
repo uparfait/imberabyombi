@@ -31,3 +31,4 @@ matrix as it changes: if a page is taken away, the role moves to the first page 
 - Signing in with a new email adds that person to Staff with the chosen role.
 
 ## Using it in code
+```js
