@@ -13,6 +13,7 @@ const changed = m => { const d = default_setup().margins; return Object.keys(d).
 /* the four margins back to the default (one history step, like a drag) */
 export function reset_margins() {
   if (state.mode !== 'edit') return;
+  begin_op(); state.setup.margins = { ...default_setup().margins }; apply_setup(true); commit(); save_soon();
 
 export function update_rulers() {
   if (!hruler || !vruler) return;
