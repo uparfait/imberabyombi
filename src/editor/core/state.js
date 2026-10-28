@@ -11,3 +11,4 @@ export function new_tab(name, html) { return { id: uid(), name, html: html || '<
 
 export const state = {
   title: 'Untitled document', setup: default_setup(), tabs: [], active: null, zoom: 1, mode: 'edit', spell: true, comments: [],
+  sidebar: typeof innerWidth === 'number' ? innerWidth >= 1000 : true, show_comments: false, show_ruler: true, menus: true
