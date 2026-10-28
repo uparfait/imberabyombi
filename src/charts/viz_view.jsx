@@ -34,3 +34,4 @@ function Viz_card({ k, c }) {
 /* Each chart redraws when its own box changes width (window resize, sidebar or side panel opening, late CSS) */
 export let resize_observer = null;
 export const watch = () => {
+  resize_observer?.disconnect(); if (!('ResizeObserver' in window)) return;
