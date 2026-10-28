@@ -31,3 +31,4 @@ export const VIZ_PART_A = {
       if (!k) acc = list[k++].v; const r = acc / tot;
       if (wd >= ht) { split(list.slice(0, k), x, y, wd * r, ht); split(list.slice(k), x + wd * r, y, wd * (1 - r), ht); }
       else { split(list.slice(0, k), x, y, wd, ht * r); split(list.slice(k), x, y + ht * r, wd, ht * (1 - r)); } })(items, 0, 0, f.w, f.h);
+    return { svg: svg(f, out.map(o => mark_group(o.k, [[num(o.v), groups[o.g], o.g]],
