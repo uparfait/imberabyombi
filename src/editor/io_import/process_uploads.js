@@ -25,3 +25,4 @@ function place_uploads(done, mode, failed) {
     return;
   }
   const tabs = [];
+  done.forEach(r => { if (r.project) tabs.push(...project_tabs(r.project)); else tabs.push(new_tab(base_of(r.file.name), sanitize_html(r.html) || '<p><br></p>')); });
