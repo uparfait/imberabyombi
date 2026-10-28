@@ -41,3 +41,5 @@ async function odf_table(cx, c) {
     for (const tc of kids(tr, 'table-cell')) {
       const sub = []; await odf_blocks(cx, tc, sub); const span = +(tc.getAttribute('table:number-columns-spanned') || 1);
       r += `<td${span > 1 ? ` colspan="${span}"` : ''}>${sub.join('') || '<p><br></p>'}</td>`;
+    }
+    rows.push(`<tr>${r}</tr>`);
