@@ -8,3 +8,4 @@ export * from './text_md.js';
 export * from './tables.js';
 export * from './json_attach.js';
 export * from './pptx.js';
+export * from './pdf_import.js';
