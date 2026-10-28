@@ -9,3 +9,4 @@ export let col_hover = null;
 export function set_col_hover(h) { col_hover = h; document.body.classList.toggle('col_resize', !!h); }
 export function ensure_colgroup(t, chain) {
   let cg = t.querySelector(':scope > colgroup');
+  const n = Math.max(1, ...Array.from(t.rows).map(r => Array.from(r.cells).reduce((a, c) => a + (c.colSpan || 1), 0)));
