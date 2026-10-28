@@ -13,3 +13,4 @@
 }
 .page_row .page_del { opacity: 0; transition: opacity .15s; }
 .page_row:hover .page_del, .page_row:focus-within .page_del { opacity: 1; }
+.page_row .page_del:hover { color: rgb(var(--bad)); }
