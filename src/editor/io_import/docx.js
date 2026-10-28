@@ -70,3 +70,4 @@ async function docx_blocks(cx, nodes, container) {
       stack = [];
       const t = document.createElement('table'); t.className = 'doc_table'; const tb = document.createElement('tbody'); t.appendChild(tb);
       for (const tr of kids(n, 'tr')) {
+        const row = document.createElement('tr');
