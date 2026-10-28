@@ -9,3 +9,4 @@ import { field_spec, STATUS, people } from './fields.js';
 export const tasks_schema = {
   l: 'task', n: 14, cols: ['title', 'assignee', 'by', 'start', 'due', 'subs', 'priority', 'status'],
   f: [
+    field_spec('title', 'Title', 'text', 0, 1),
