@@ -20,3 +20,4 @@ function Editor_view() {
       <style id="page_rule"></style>
       {topbar()}
       {toolbar()}
+      {workspace()}
