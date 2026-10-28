@@ -27,3 +27,5 @@ VIEWS.roles = () => {
       <ul className="grid gap-1">{rs.map(r => <li key={r.id}>
         <button className={`side_link w-full ${r.id === sel.id ? 'active' : ''}`} data-act="role_sel" data-id={r.id}>{ic(r.perms === '*' ? 'shield' : 'key')}
         <span className="flex-1 truncate text-left">{r.name}</span><span className="chip bg-surface-2 text-muted" data-tip="People with this role">{cnt(r.id)}
+          </span></button></li>)}</ul></section>
+    <section key={sel.id} className="card overflow-hidden"><header className="flex flex-wrap items-start gap-4 border-b border-line p-5">
