@@ -48,3 +48,4 @@ export const VIZ_REL_A = {
         + ` y="${round1(y0 + i * cs + cs / 2 + 4)}" text-anchor="middle">${c.toFixed(1)}</text>` : ''}`)).join('')
         + `<text x="${x0 - 8}" y="${round1(y0 + i * cs + cs / 2 + 4)}" text-anchor="end">${k[i]}</text>`).join('')
       + k.map((t, j) => `<text x="${round1(x0 + j * cs + cs / 2)}" y="${round1(y0 + n * cs + 14)}" text-anchor="middle">${fit(t, cs)}</text>`).join(''), 'Correlogram'),
+      legend: scale_legend('−1', [-1, -.5, 0, .5, 1].map(diverging), '+1'), table: [['', ...k], m.map((r, i) => [k[i], ...r.map(c => c.toFixed(2))])] }; } },
