@@ -18,3 +18,4 @@ export function table_full(c, on) {
   tip.hide(); close_pops();
   if (on) {
     qs('#main')?.classList.remove('page_enter'); const r = card.getBoundingClientRect(); PH[c] = r.height; set(true);
+    if (!reduced()) qs(`#table_card_${c}`)?.animate([{ clipPath: box(r) }, { clipPath: 'inset(0 0 0 0 round 0)' }], { duration: 320, easing: ease });
