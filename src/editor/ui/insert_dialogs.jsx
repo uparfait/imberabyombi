@@ -28,3 +28,5 @@ export function special_chars_dialog() {
       <button key={c} type="button" className="h-[2.125rem] rounded-lg border border-line text-lg hover:bg-fg/5"
         data-tip={'U+' + c.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}
         onMouseDown={e => e.preventDefault()} onClick={() => insert_char(c)}>{c}</button>)}</div>
+  });
+  after_close(() => { if (pages_el && pages_el.isConnected) restore_focus(); });
