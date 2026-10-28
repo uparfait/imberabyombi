@@ -59,3 +59,4 @@ export const toolbar = () => (
     <button type="button" className="tb_btn tb_edit" id="align_btn" data-tip="Align & indent" aria-label="Align & indent" aria-haspopup="menu">
       <span className="ic_slot" id="align_icon">{ic('format_align_left')}</span>{ic('arrow_drop_down', 'dd_arrow')}</button>
     {tb({ icon: 'format_line_spacing', tip: 'Line & paragraph spacing', id: 'spacing_btn' })}
+    {split('checklist', 'checklist', 'Checklist (Ctrl+Shift+9)', 'check_dd', 'Checklist menu')}
