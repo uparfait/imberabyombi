@@ -20,3 +20,4 @@ export function kpi_data() {
   const lead = uwords(5).map(k => [k, rnd(20, 100) * m]).sort((a, b) => b[1] - a[1]), live = to(trend(), Math.round(128 * m)).map(Math.round), ring = rnd(.55, .9);
   const rate = rnd(3.9, 4.8), conv = to(trend().reverse(), 3.8 / Math.sqrt(m)), d_conv = -rnd(1, 6);
   const pct_fmt = v => v.toFixed(1) + '%';
+  return { m, mo, weeks, mins, users, d_users, rev, d_rev, enr, gauge_p, gauge_c, gauge_s, services, o1, o2, visits, vmax, src, split, share, lead, live, ring, rate,
