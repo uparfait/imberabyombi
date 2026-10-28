@@ -19,3 +19,4 @@ export const due_tag = r => r.due || (r.status === 'Done' && r.end)
   ? <span className={`due_tag ${late(r) ? 'late' : ''}`} data-due={r.due || r.end} data-status={r.status || ''} data-end={r.end || ''} title={fmt_dt(r.due || r.end)}>
     {ic('clock', 'h-3.5 w-3.5 shrink-0')}<span>{due_text(r)}</span></span>
   : <span className="text-muted">—</span>;
+setInterval(() => qsa('[data-due]').forEach(e => { const r = { due: e.dataset.due, status: e.dataset.status, end: e.dataset.end };
