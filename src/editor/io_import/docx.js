@@ -20,3 +20,4 @@ export async function docx_to_html(file) {
 export async function docx_native(buf) {
   const z = await unzip(buf), doc = parse_xml(await z.text('word/document.xml'));
   const rels = rels_of(z.has('word/_rels/document.xml.rels') ? await z.text('word/_rels/document.xml.rels') : ''), num_fmt = {};
+  if (z.has('word/numbering.xml')) {
