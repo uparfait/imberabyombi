@@ -26,3 +26,4 @@ export function table_xml(t, ctx) {
     Array.from(r.cells).forEach(c => {
       const span = c.colSpan || 1, w = widths.slice(col, col + span).reduce((a, b) => a + b, 0); col += span;
       const bg = to_hex(c.style.backgroundColor), va = { middle: 'center', bottom: 'bottom' }[c.style.verticalAlign];
+      let inner = blocks_xml(c, ctx, (c.tagName === 'TH' || c.hasAttribute('data-hdr')) ? { b: true } : null); if (!/<\/w:p>$|<w:p\/>$/.test(inner)) inner += '<w:p/>';
