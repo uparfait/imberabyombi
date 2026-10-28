@@ -10,3 +10,4 @@ export const kit_forms = brand_hex => (
     {kit_forms_text()}
     {kit_forms_choices(brand_hex)}
     {kit_forms_feedback()}
+    <div className="field"><label htmlFor="demo_textarea">Textarea</label><textarea id="demo_textarea" placeholder={lorem.s()}></textarea></div>
