@@ -25,3 +25,4 @@
   html { scrollbar-gutter: stable; }
   html:has(dialog[open]), html:has(#sidebar_scrim.on) { overflow: hidden; }
   :where(dialog, dialog *, #picker, #sidebar_scroll, .panel_in) { overscroll-behavior: contain; }
+  body {
