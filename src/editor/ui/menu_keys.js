@@ -5,3 +5,4 @@ import { restore_focus } from '../core/index.js';
 import { menu_stack, close_menus, menu_rows, focus_row } from './menu_engine.js';
 
 /* ← → on a menu-bar menu: open the neighbouring menu of the bar from the keyboard */
+function bar_step(d) {
