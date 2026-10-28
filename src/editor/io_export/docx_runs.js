@@ -18,3 +18,4 @@ export function fmt_of(e, f) {
   const g = Object.assign({}, f), t = e.tagName, st = e.style;
   if (t === 'B' || t === 'STRONG') g.b = true; if (t === 'I' || t === 'EM') g.i = true; if (t === 'U' || t === 'INS') g.u = true;
   if (t === 'S' || t === 'STRIKE' || t === 'DEL') g.s = true; if (t === 'SUP') g.sup = true; if (t === 'SUB') g.sub = true;
+  if (t === 'CODE') g.font = 'Courier New'; if (t === 'MARK') g.hl = 'FFFF00';
