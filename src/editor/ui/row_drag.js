@@ -10,3 +10,4 @@ export function row_drag(e, o) {
   const x0 = e.clientX, y0 = e.clientY, EDGE = scaled(36), START = scaled(5);
   let on = false, py = y0, val = null, line = null, raf = 0;
   const place = () => {
+    const rs = o.rows(); let g = rs.length;
