@@ -13,3 +13,7 @@ export const partner_logo = i => {
       <svg viewBox="0 0 32 32" className="h-9 w-9" fill="currentColor" aria-hidden="true">{sh[i % 4]}
         <circle cx="16" cy="16" r="4.5" style={{ fill: 'rgb(var(--bg))' }} /></svg>
       <span className="font-display text-2xl font-bold tracking-tight">{cap(lorem.w(1))}</span></div>
+  );
+};
+
+const MASK = 'linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)';
