@@ -6,3 +6,4 @@ export const player = (kind, src, poster = '') => (
   <div className="mp card overflow-hidden" data-mp="">
     {kind === 'video'
       ? <div className="relative bg-ink">
+          <video preload="metadata" playsInline poster={poster} className="block aspect-video w-full object-cover">
