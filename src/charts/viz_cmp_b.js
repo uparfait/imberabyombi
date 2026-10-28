@@ -35,3 +35,4 @@ export const VIZ_CMP_B = {
       legend: legend(['Actual', 'Target'], 'rect', [0, 'rgb(var(--fg))']),
       table: [['Measure', 'Actual', 'Target'], c.map((k, i) => [k, round1(d[i].a), round1(d[i].t)])] }; } },
   waterfall: { t: 'Waterfall chart', g: 'cmp', d: 'How a start value becomes an end value, step by step.', f(w) {
+    const steps = [['Start', 120, 'total'], ['Sales', 48], ['Services', 22], ['Refunds', -18], ['Costs', -36], ['Tax', -14], ['End', 0, 'total']]
