@@ -17,8 +17,7 @@ export const in_base = p => !BASE || p === BASE || p.startsWith(BASE + '/');
 export const app_path = (u = location) => (in_base(u.pathname) ? u.pathname.slice(BASE.length) : u.pathname) || '/';
 
 const here = () => location.pathname + location.search;
-let shown = null;   /* the address of the page on screen (parse() records it on every draw) */
-export const mark_shown = () => { shown = here(); };
+let shown = null, before = null;   /* the address on screen (parse() records it on every draw) and the one before it */
 
 /* Navigation is a user request: floating loader (only if slow) + cross-fade (View Transitions where supported) */
 /* Moving between staff pages is a get: it waits for the page's data (cfg.latency) with the top loader and the clicked sidebar
