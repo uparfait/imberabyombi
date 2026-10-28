@@ -18,3 +18,4 @@ export function exec(cmd, val) {
 /* the font each selected piece of text has now (the marker in wrap_selection would erase it) */
 function fonts_in(host, r) {
   const m = new Map(), w = document.createTreeWalker(host, NodeFilter.SHOW_TEXT);
+  for (let n = w.nextNode(); n; n = w.nextNode()) { if (!r.intersectsNode(n)) continue; let e = n.parentElement;
