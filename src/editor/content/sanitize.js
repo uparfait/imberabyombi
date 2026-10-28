@@ -6,3 +6,4 @@ import { qsa, BLOCK_RE } from '../core/index.js';
 
 /* sanitize pasted / imported HTML */
 export const ALLOWED = new Set(('P H1 H2 H3 H4 H5 H6 UL OL LI TABLE THEAD TBODY TFOOT TR TD TH COLGROUP COL B STRONG I EM U S STRIKE DEL INS SUB SUP A IMG BR HR '
+  + 'SPAN FONT BLOCKQUOTE PRE CODE DIV MARK SMALL').split(' '));
