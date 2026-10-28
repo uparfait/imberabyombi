@@ -13,3 +13,5 @@ export function create_page() {
   qs('.pg_footer_text', wrap).innerHTML = state.setup.footer_html;
   layout_page(wrap); set_editable(wrap);
   return wrap;
+}
+export function layout_page(wrap) {
