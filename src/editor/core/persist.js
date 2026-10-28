@@ -44,3 +44,5 @@ export function restore_doc() {
   state.active = state.tabs.some(t => t.id === d.active) ? d.active : state.tabs[0].id;
   state.comments = Array.isArray(d.comments) ? d.comments.filter(c => c && c.id).map(c => Object.assign({ replies: [] }, c, { draft: false })) : [];
   return true;
+}
+/* a fresh blank document (nothing saved yet) */
