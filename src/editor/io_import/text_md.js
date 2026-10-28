@@ -41,3 +41,4 @@ export function md_to_html(md) {
       const ordered = /^\s*\d/.test(l); const items = []; let task = false;
       while (i < lines.length && LIST_RE.test(lines[i])) {
         const t = lines[i++].replace(LIST_RE, ''); const tm = t.match(/^\[([ xX])\]\s+(.*)$/);
+        if (tm) { task = true; items.push(`<li data-checked="${tm[1] !== ' '}">${md_inline(tm[2])}</li>`); } else items.push(`<li>${md_inline(t)}</li>`);
