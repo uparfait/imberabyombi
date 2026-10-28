@@ -7,3 +7,5 @@ import { request, staff_page, reduced, raise_top } from '../feedback/index.js';
 import { apply_tokens } from '../actions/index.js';
 import { install_listeners } from '../behaviors/index.js';
 import { before_page } from './render_hooks.js';
+
+/* Navigation is a user request: floating loader (only if slow) + cross-fade (View Transitions where supported) */
