@@ -33,3 +33,4 @@
   [aria-expanded=true] > .chev { rotate: 180deg; }
   /* Side panel sits beside the content (the page shrinks); it slides open by width */
   /* Side panel (notes, my tasks, help): opens beside the content; a border with rounded top corners shows its edges under the header */
+  .panel { width: 0; border: 0 solid rgb(var(--line)); border-radius: 1.5rem 1.5rem 0 0; transition: width .3s var(--ease); }
