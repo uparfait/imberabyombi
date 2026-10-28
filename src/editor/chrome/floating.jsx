@@ -30,3 +30,4 @@ export const find_panel = () => (
 );
 
 export const link_bubble = () => (
+  <div id="link_bubble" className="no_print" role="dialog" aria-label="Link">
