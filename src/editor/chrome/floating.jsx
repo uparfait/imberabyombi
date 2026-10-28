@@ -23,3 +23,4 @@ export const find_panel = () => (
       <label className="find_case"><input type="checkbox" id="find_case" /> Match case</label>
       <div className="flex gap-2">
         <button type="button" className="btn btn_outline btn_sm" id="replace_one">Replace</button>
+        <button type="button" className="btn btn_outline btn_sm" id="replace_all">Replace all</button>
