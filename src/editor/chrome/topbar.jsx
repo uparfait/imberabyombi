@@ -18,3 +18,4 @@ export const topbar = () => (
       </div>
       <div className="top_btns">
         <button type="button" id="top_upload" className="icon_btn" data-tip="Upload files" aria-label="Upload files">{ic('upload_file')}</button>
+        <button type="button" id="top_comments" className="icon_btn" data-tip="Show comments" aria-label="Show comments">{ic('comment')}</button>
