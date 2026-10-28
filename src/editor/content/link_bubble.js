@@ -10,3 +10,4 @@ export const link_bubble = () => qs('#link_bubble');
 export function update_link_bubble() {
   const a = last_range && last_range.collapsed ? link_at_caret() : null, lb = link_bubble();
   if (!a || !lb) { hide_link_bubble(); return; }
+  bubble_link = a; const r = a.getBoundingClientRect(), link = qs('#lb_url'); link.href = a.href; link.textContent = a.getAttribute('href');
