@@ -2,3 +2,4 @@
    (natural sizes; linked images redrawn as PNG data, unreadable ones dropped) and the list numbering definitions. */
 import { qsa, to_hex } from '../core/index.js';
 import { b64bytes } from '../io_import/index.js';
+import { xesc } from './docx_runs.js';
