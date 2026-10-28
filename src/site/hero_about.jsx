@@ -22,3 +22,5 @@ export function hero_sec() {
         <figure className="hero_in relative mx-auto w-full max-w-[19rem] lg:mr-6" style={{ '--d': '.2s' }}>
           <div className="arch"><img src={cfg.hero} alt="Illustrated portrait" width="408" height="438"
             className="h-full w-full bg-transparent object-cover object-bottom" fetchPriority="high" /></div>
+        </figure>
+      </div>, 'flex min-h-[calc(100svh-4.75rem)] items-center sm:min-h-[calc(100svh-6.5rem)]')}</section>
