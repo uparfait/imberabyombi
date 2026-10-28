@@ -81,3 +81,6 @@ export function ruler_drag(e) {
   const up = () => {
     removeEventListener('pointermove', move); removeEventListener('pointerup', up); hide_value();
     begin_op(); apply_setup(true); commit(); save_soon();
+  };
+  addEventListener('pointermove', move); addEventListener('pointerup', up);
+}
