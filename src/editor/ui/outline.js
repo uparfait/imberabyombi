@@ -31,3 +31,5 @@ export function render_outline() {
     if (had && had._h === h) refocus = row;
     wire_outline_row(row);
     ol.appendChild(row);
+  });
+  apply_folds(ol); mark_outline();
