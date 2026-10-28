@@ -28,3 +28,4 @@ export const VIZ_CMP_B = {
       return mark_group(k, [[round1(d[i].a), 'Actual', 0], [round1(d[i].t), 'Target', null]], hit_row(f, y, i)
         + d[i].bands.map((bv, j) => `<rect x="${round1(from(j))}" y="${round1(y(i) - h / 2)}" width="${round1(x(bv) - from(j))}" height="${round1(h)}"`
           + ` style="fill:rgb(var(--fg) / ${[.12, .07, .035][j]})"/>`).join('')
+        + `<path class="mark" style="fill:var(--series_1)" d="${hbar(y(i), h * .38, f.l, x(d[i].a))}"/>`
