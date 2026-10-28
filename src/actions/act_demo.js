@@ -15,3 +15,5 @@ export const DEMO_ACT = {
   demo_save: t => form_msg(t.closest('form'), 'ok', 'Saved', 'Lorem ipsum dolor sit amet, consectetur.'),
   demo_msg: t => show_msg(qs('#demo_messages'), t.dataset.v, TITLES[t.dataset.v], 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', false),
   demo_bar: () => request(() => show_msg(qs('#demo_messages'), 'info', 'Request finished', 'The loader ran for one simulated request.'), { delay: 1200 }),
+  demo_busy: t => request(() => {}, { btn: t, delay: 1500 })
+};
