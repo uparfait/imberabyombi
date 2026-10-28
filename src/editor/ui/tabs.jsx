@@ -51,3 +51,4 @@ export function tab_menu(t) {
   return [
     { label: 'Rename', icon: 'edit', no_preview: true, action: () => start_rename(t) },
     { label: 'Duplicate', icon: 'content_copy', no_preview: true, action: () => duplicate(t) },
+    { label: 'Move up', icon: 'arrow_upward', disabled: i === 0, no_preview: true, action: () => { move_tab(i, i - 1); render_sidebar(); } },
