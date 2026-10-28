@@ -10,6 +10,7 @@ import { scaled, mi } from './ui_dom.js';
 
 const u = n => +scaled(n).toFixed(2);
 const changed = m => { const d = default_setup().margins; return Object.keys(d).some(k => m[k] !== d[k]); };
+/* the four margins back to the default (one history step, like a drag) */
 
 export function update_rulers() {
   if (!hruler || !vruler) return;
