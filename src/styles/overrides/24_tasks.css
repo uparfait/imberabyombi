@@ -1,3 +1,4 @@
 /* overrides/24_tasks.css: rules that come after the utilities, as in the reference */
   /* Tasks: due countdown, rows that open a task, subtasks in the form, attachments in the task view */
   /* Calendar: your tasks on their due day (overdue red, done faded) */
+  .cal_task { display: flex; width: 100%; min-width: 0; align-items: center; gap: .25rem; margin-bottom: .125rem; padding: .125rem .375rem; border: 1px solid rgb(var(--info) / .35); border-radius: .375rem;
