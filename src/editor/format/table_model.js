@@ -55,3 +55,4 @@ export function new_cell_like(c, keep_span) {
 }
 /* n rows like row, above or below it; returns the first new row */
 export function insert_rows(row, n, below) {
+  let ref = row, first = null;
