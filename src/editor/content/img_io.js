@@ -43,3 +43,4 @@ export async function insert_image_file(f) { if (!f.type.startsWith('image/')) r
 export async function on_image_replace(e) {
   const f = e.target.files[0]; e.target.value = ''; const img = replace_target; set_replace_target(null);
   if (!f || !img || !img.isConnected) return;
+  const url = await read_as_data_url(f);
