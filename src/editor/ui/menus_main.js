@@ -49,3 +49,4 @@ export function edit_items() {
   ];
 }
 function theme_items() {
+  const cur = db.get('theme', 'system');
