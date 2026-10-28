@@ -14,3 +14,4 @@ export const FORMS = {
     auth.login({ name, email, role, remember: !!d.remember, at: Date.now() }); db.set('lastRole', role); ensure_mine(name);
     notify_next(`You are signed in as ${role_name(role)}.`, 'ok', `Welcome, ${name.split(' ')[0]}`); location.hash = route.q.next || landing(role); },
   contact: (d, f) => { db.set('messages', [...db.get('messages', []), { ...d, at: Date.now() }]); f.reset(); form_msg(f, 'ok', 'Message sent', 'We reply within two working days.'); },
+  news: (d, f) => { f.reset(); form_msg(f, 'ok', 'You are subscribed', 'Check your inbox to confirm.'); },
