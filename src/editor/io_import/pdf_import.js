@@ -6,3 +6,4 @@ import { PB } from './pptx.js';
 /* the text lines of one page: { text, y, h } (h = the tallest text on the line) */
 function page_lines(tc) {
   const lines = []; let cur = { text: '', y: null, h: 0 };
+  for (const it of tc.items) {
