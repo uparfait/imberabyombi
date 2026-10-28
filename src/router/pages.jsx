@@ -19,3 +19,4 @@ export function public_page(r) {
   else { inner = not_found(); title = 'Page not found'; }
   set_meta(title); lorem.seed(5);
   return (
+    <div className="relative isolate flex min-h-[100dvh] flex-col"><div className="pattern_layer fixed" aria-hidden="true"></div>{pub_header()}
