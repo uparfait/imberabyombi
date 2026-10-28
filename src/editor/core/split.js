@@ -51,3 +51,4 @@ export function push_overflow(b, next) {
   if (!overflows(b)) return;
   const kids = flow_kids(b), lim = b.clientHeight + 1;
   let idx = kids.findIndex(c => c.offsetTop + c.offsetHeight - pad_bottom(c) > lim);
+  if (idx < 0) idx = kids.length - 1;
