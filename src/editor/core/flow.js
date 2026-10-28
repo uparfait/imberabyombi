@@ -20,3 +20,4 @@ export function items_of(c) { return is_table(c) ? Array.from((c.tBodies[0] || c
 export function item_parent(c) { return is_table(c) ? (c.tBodies[0] || c) : c; }
 
 export function normalize_body(b) {
+  let p = null;
