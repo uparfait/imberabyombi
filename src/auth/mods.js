@@ -15,3 +15,4 @@ export const MODS = [
   { k: 'roles', l: 'Roles & access', s: 'Roles', i: 'shield', g: 'System' },
   { k: 'emails', l: 'Email designs', s: 'Emails', i: 'mail', g: 'System' },
   { k: 'charts', l: 'Charts & KPIs', s: 'Charts', i: 'activity', g: 'System' },
+  { k: 'nav', l: 'System 2', s: 'System 2', i: 'layers', g: 'System' },   /* nested navigation: a system inside this one */
