@@ -26,3 +26,4 @@ let spy = null;   /* the home page's section spy (one at a time: React keeps the
 export function enhance() {
   const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }),
     { threshold: .12, rootMargin: '0px 0px -6% 0px' }) : null;
+  qsa('[data-reveal]').forEach(el => io ? io.observe(el) : el.classList.add('in'));
