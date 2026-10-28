@@ -35,3 +35,4 @@ export const kpi_cards_a = k => {
       <><div className="mt-2 grid grid-cols-2 gap-3">
         <div className="kpi_part" {...tip_attr('This month', [[num(o1), 'Orders', 0]])}>
           <p className="kpi_value">{compact_num(o1)}</p><p className="text-xs text-muted">This month</p></div>
+        <div className="kpi_part" {...tip_attr('Last month', [[num(o2), 'Orders', null]])}>
