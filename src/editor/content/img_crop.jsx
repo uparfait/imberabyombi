@@ -16,3 +16,5 @@ function Crop_body({ src, st }) {
   const centered = r => {
     const W = pic.current.clientWidth, H = pic.current.clientHeight; let w = W, h = w / r;
     if (h > H) { h = H; w = h * r; } set_rect({ x: (W - w) / 2, y: (H - h) / 2, w, h });
+  };
+  const pick = v => { const r = v === 'free' ? null : +v; set_ratio(r); if (r) centered(r); else set_rect(null); };
