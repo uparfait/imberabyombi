@@ -36,3 +36,4 @@ export const EDITOR_TEXT_PATHS = {
   style: 'M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2.5a1.5 1.5 0 0 0-1 2.6c.4.4.6.9.6 1.4 0 1.1-.9 2-2 2zM7.5 11.5h.01M10 7.5h.01M15 7.5h.01',
   horizontal_rule: 'M3 12h18',
   reorder: 'M4 6h16M4 10h16M4 14h16M4 18h16',
+  toc: 'M3 6h12M3 12h12M3 18h12M19 6h2M19 12h2M19 18h2',
