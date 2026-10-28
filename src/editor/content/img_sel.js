@@ -47,3 +47,4 @@ export function select_image(img) {
 }
 export function hide_img_sel() { if (frozen) return; img_sel = null; if (!img_box) return; img_box.style.display = 'none'; if (img_box.parentNode) img_box.remove(); }
 export function img_align_of(img) {
+  const pos = pos_of(img);
