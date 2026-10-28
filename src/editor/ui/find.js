@@ -23,3 +23,4 @@ export function close_find() {
 }
 /* keep: stay on the same match number (after a replace or an edit) instead of the first one */
 export function run_find(keep) {
+  const q = refs.find_input ? refs.find_input.value : '', mc = !!(refs.find_case && refs.find_case.checked), prev = find_state.idx;
