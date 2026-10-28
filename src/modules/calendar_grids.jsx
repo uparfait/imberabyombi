@@ -2,3 +2,5 @@
    (3rem each) with timed chips and the red now-line. Month: 6 weeks of day cells with up to 3 items each. */
 import { add_d, ymd, pad, to_min, fmt_hour } from '../lib/index.js';
 import { cal_task } from '../admin/index.js';
+
+const cols = 'grid grid-cols-[3.5rem_repeat(7,minmax(0,1fr))]';
