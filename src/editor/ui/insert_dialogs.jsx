@@ -4,3 +4,4 @@ import { last_range, last_host, set_last, begin_op, end_op, body_index, editable
 import { can_edit } from '../format/index.js';
 import { img_op, insert_image } from '../content/index.js';
 import { modal } from '../../overlays/index.js';
+import { show_err } from '../../feedback/index.js';
