@@ -10,3 +10,5 @@
   <url><loc>https://example.com/#/partners</loc></url>
   <url><loc>https://example.com/#/thanks</loc></url>
   <url><loc>https://example.com/#/contact</loc></url>
+  <url><loc>https://example.com/#/ui</loc><priority>0.5</priority></url>
+</urlset>
