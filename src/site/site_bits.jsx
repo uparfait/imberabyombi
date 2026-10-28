@@ -23,3 +23,6 @@ export const sec_head = (label, title, text, light) => (
     <p className={`kicker ${light ? 'text-brand' : ''}`}>{ic('diamond', 'h-3.5 w-3.5')}{label}</p>
     <h2 className={`mt-3 text-3xl sm:text-5xl ${light ? 'text-white' : ''}`}>{title}</h2>
     {text ? <p className={`mt-4 text-lg ${light ? 'text-white/70' : 'text-muted'}`}>{text}</p> : null}
+  </header>
+);
+export const more = (k, c = 'btn_primary') => (
