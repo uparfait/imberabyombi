@@ -46,3 +46,5 @@ export function row_slots(row) { let c = 0; return Array.from(row.cells).map(cel
 export function cell_at_col(row, col) {
   if (!row) return null; const s = row_slots(row).find(x => col >= x.start && col <= x.end);
   return s ? s.cell : row.cells[row.cells.length - 1] || null;
+}
+export const table_width_cols = chain => Math.max(1, ...chain_rows(chain).map(r => row_slots(r).reduce((a, s) => Math.max(a, s.end + 1), 0)));
