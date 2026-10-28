@@ -43,3 +43,4 @@ export const pos_of = img => img.getAttribute('data-pos') || 'inline';
 export const img_max = img => (is_abs(img) ? img.closest('.pg_body') : img.closest('td,th') || img.closest('.pg_body')).clientWidth;
 export function select_image(img) {
   if (state.mode !== 'edit' || !img) return;
+  img_sel = img; img.setAttribute('draggable', 'false'); remember(img); position_img_box();
