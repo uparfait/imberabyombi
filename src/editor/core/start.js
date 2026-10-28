@@ -37,3 +37,4 @@ export function editor_start(root) {
       if (e.target === img_sel) position_img_box();
     }, true);
     /* a key pressed in the document ends a running preview first */
+    on(pages_el, 'keydown', () => { if (live.active) live.cancel(); }, true);
