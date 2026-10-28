@@ -9,3 +9,4 @@ export * from './menu_keys.js';
 export * from './palette.js';
 export * from './dialogs.jsx';
 export * from './page_setup.jsx';
+export * from './info_dialogs.jsx';
