@@ -4,3 +4,4 @@ import { state, dims, download, el, qsa, esc_html } from '../core/index.js';
 import { CONTENT_CSS } from './content_css.js';
 
 export function export_html(root, name) {
+  const { win } = dims(), m = state.setup.margins;
