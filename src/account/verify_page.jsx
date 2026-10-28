@@ -8,3 +8,4 @@ import { resend_in } from './resend_in.js';
 
 export function verify_page() {
   after_render(() => resend_in(30));
+  return auth_shell('2-step verification', 'Enter the 6-digit code from your authenticator app, or the code we sent to your email.', <>
