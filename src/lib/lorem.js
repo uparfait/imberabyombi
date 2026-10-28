@@ -1,3 +1,5 @@
 /* lib/lorem.js: LOREM IPSUM. Deterministic, so a page renders the same text twice: lorem.seed(n) restarts the
    sequence (seed data and detail pages seed with hash_str(key)); every other call advances it. */
 import { cap } from './text.js';
+
+export const WORDS = ('lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ' +
