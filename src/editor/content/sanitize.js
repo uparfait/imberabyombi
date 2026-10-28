@@ -43,3 +43,4 @@ function keep_attrs(c, tag) {
       if (!/^\s*(javascript|vbscript|data):/i.test(v) || (/\bfile[-_]chip\b/.test(orig_cls) && /^data:/i.test(v.trim()) && c.hasAttribute('download'))) keep.href = v;
     }
     else if (n === 'src' && tag === 'IMG') { if (/^(data:image\/|https?:|blob:)/i.test(v)) keep.src = v; }
+    else if (n === 'data-orig' && tag === 'IMG') { if (/^data:image\//i.test(v)) keep[n] = v; }
