@@ -13,3 +13,4 @@ import { before_page } from './render_hooks.js';
    link spinning, then the page draws with its tables already filled. Public and sign-in pages draw at once. */
 export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
   return request(() => { render_flags.nav_fetched = get; document.startViewTransition && !reduced() ? document.startViewTransition(() => render()) : render(); },
+    { delay: get ? cfg.latency : 0 }); };
