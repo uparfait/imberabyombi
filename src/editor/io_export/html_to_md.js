@@ -50,3 +50,5 @@ export function html_to_md(root) {
     else if (t === 'BLOCKQUOTE') blocks.push(inline(b).split('\n').map(x => '> ' + x).join('\n'));
     else if (t === 'PRE') blocks.push('```\n' + b.textContent + '\n```');
     else { const s = inline(b).trim(); blocks.push(s || ''); }
+  });
+  return blocks.join('\n\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
