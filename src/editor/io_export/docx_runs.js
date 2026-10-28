@@ -11,3 +11,4 @@ export const WNS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/
   + 'xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"';
 export function parse_pt(v) {
   if (!v) return null; const n = parseFloat(v); if (isNaN(n)) return null;
+  if (/pt$/.test(v)) return n; if (/px$/.test(v)) return n * 0.75; if (/em$/.test(v)) return n * 11; return null;
