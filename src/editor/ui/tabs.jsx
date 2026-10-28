@@ -28,3 +28,4 @@ export function add_tab() {
 }
 /* d: +1 next, -1 previous (wraps around) */
 export function step_tab(d) {
+  const n = state.tabs.length; if (n < 2) return;
