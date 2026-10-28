@@ -43,3 +43,4 @@ async function docx_image(cx, c) {
   return `<img src="${url}" alt="" style="width:${clamp(w, 16, 700)}px">`;
 }
 const SKIP = /^(pPr|rPr|del|moveFrom|proofErr|bookmarkStart|bookmarkEnd|commentRangeStart|commentRangeEnd)$/;
+export async function docx_runs(cx, n) {
