@@ -6,3 +6,4 @@ export const by_tag = (n, local) => n ? Array.from(n.getElementsByTagNameNS('*',
 export const kids = (n, local) => n ? Array.from(n.children).filter(c => !local || c.localName === local) : [];
 export const dir_of = p => p.replace(/[^/]*$/, '');
 export function resolve_path(dir, rel) {
+  rel = (rel || '').split('#')[0]; const parts = rel.startsWith('/') ? [] : dir.split('/').filter(Boolean);
