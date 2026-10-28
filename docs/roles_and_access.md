@@ -37,3 +37,4 @@ import { auth, me } from '../auth/index.js';
 auth.user            // the signed-in person ({ name, email, role }) or null
 auth.can('tasks')    // can open the module (level ≥ 1)
 auth.can('tasks', 2) // can manage it (add, edit, delete)
+auth.boss()          // an administrator role
