@@ -15,3 +15,4 @@ export const VIZ_DIST = {
       + chart_base(f, ax.y(0)) + [0, 25, 50, 75, 100].map(t => `<text x="${round1(x(t))}" y="${f.h - 8}" text-anchor="middle">${t}</text>`).join(''), 'Histogram'),
       table: [['Range', 'Count'], cnt.map((n, i) => [bin(i), n])] }; } },
   box: { t: 'Box plot', g: 'dist', d: 'Median, middle half (box), range (whiskers) and outliers.', f(w) {
+    const g = uwords(5), sets = g.map(() => { const m = rnd(35, 65), s = rnd(6, 16); return Array.from({ length: 60 }, () => m + gauss() * s).sort((a, b) => a - b); });
