@@ -15,3 +15,4 @@ export let ui_timer = null;
 export function schedule_ui() {
   clearTimeout(ui_timer);
   ui_timer = setTimeout(() => {
+    ui_timer = null; if (!pages_el) return;
