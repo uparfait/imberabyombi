@@ -12,3 +12,6 @@ export function export_html(root, name) {
   const doc = '<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
     + `<title>${esc_html(state.title)}</title><style>${css}</style></head><body><div class="sheet doc_content">${root.innerHTML}</div></body></html>`;
   download(new Blob([doc], { type: 'text/html' }), name + '.html');
+}
+
+/* innerText needs the copy on the page (off screen); white-space:pre-wrap as in the document's styles keeps spaces */
