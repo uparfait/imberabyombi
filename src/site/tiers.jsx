@@ -12,3 +12,4 @@ export function tiers() {
         {i === 0 ? <p className="text-xs font-semibold text-accent">Recommended</p> : <p className="text-xs">&nbsp;</p>}
         <h3 className="mt-1 text-2xl">{lorem.t(2)}</h3><span className="chip mt-3 bg-surface-2 text-muted">{ic('box', 'h-3.5 w-3.5')}{s}</span>
         <p className="mt-6 flex items-baseline gap-2">{o ? null : <small className="text-muted">From</small>}<data value={p}
+          className="font-display text-4xl font-bold text-ok">${p}</data><span className="text-muted">/mo</span>{o ? <s>${o}</s> : null}</p>
