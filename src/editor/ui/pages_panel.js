@@ -12,3 +12,4 @@ export function render_pages_panel() {
   box.innerHTML = '';
   if (state.setup.pageless) { box.innerHTML = '<p class="outline_hint">Pageless format is on. Turn it off in Page setup to see pages.</p>'; return; }
   bs.forEach((b, i) => {
+    const snip = b.textContent.replace(/​/g, '').trim().slice(0, 48) || (b.querySelector('img') ? 'Image' : b.querySelector('table') ? 'Table' : 'Blank page');
