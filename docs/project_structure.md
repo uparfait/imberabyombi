@@ -32,3 +32,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `modules/`   | one view per admin module (`VIEWS`), the calendar and the task feature                      |
 | `charts/`    | charts and KPIs (SVG), their data dialog and tooltip; the small canvas chart registry       |
 | `emails/`    | email designs and the email gallery                                                         |
+| `actions/`   | every `data-act` handler (`ACT`), which ones are requests (`REQ`), every `data-form` handler (`FORMS`) |
