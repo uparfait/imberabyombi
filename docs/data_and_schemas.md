@@ -5,3 +5,4 @@ Everything is kept in `localStorage` under the prefix `loremds:v1:` (`window.NS`
 is blocked (private mode, sandboxes).
 | Call                         | Does                                                        |
 |------------------------------|-------------------------------------------------------------|
+| `db.get(key, fallback)`      | a setting (`theme`, `tokens`, `session`, `sideMin` …)       |
