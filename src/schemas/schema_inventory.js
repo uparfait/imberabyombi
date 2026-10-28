@@ -7,3 +7,4 @@ import { field_spec, option_list, STATUS, people, ABC } from './fields.js';
 export const reservations_schema = {
   l: 'reservation', n: 8, cols: ['resource', 'by', 'date', 'from', 'to', 'status'],
   f: [
+    field_spec('resource', 'Resource', 'select', option_list('Main hall|Science lab|Computer room|School bus|Projector|Sports field'), 1),
