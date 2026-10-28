@@ -48,3 +48,4 @@ export function tbl_op(op, arg) {
     case 'del_col': drop_cols(); delete_col(chain, slot.start); full = true; break;
     case 'del_table': target = chain[chain.length - 1].nextElementSibling; chain.forEach(t => t.remove()); full = true; break;
     case 'merge': {
+      const nx = c.td.nextElementSibling; if (!nx) { toast('There’s no cell to the right to merge with'); break; }
