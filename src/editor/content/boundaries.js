@@ -29,3 +29,5 @@ export function on_last_line(host, r) {
   if (!l.contains(r.startContainer)) return false;
   const cr = caret_rect(r), lr = l.getBoundingClientRect();
   return (lr.bottom - pad_bottom(l) * state.zoom) - cr.bottom < line_h(r) * 0.8;
+}
+export function backspace_across(host, pi) {
