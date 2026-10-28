@@ -5,3 +5,4 @@ import { qs } from '../core/index.js';
 import { modal, ask } from '../../overlays/index.js';
 
 /* run fn once #modal has closed (the 'close' event comes after the closing animation) */
+export function after_close(fn) {
