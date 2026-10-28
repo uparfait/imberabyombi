@@ -13,3 +13,4 @@ export const activities_schema = {
     field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')), field_spec('note', 'Note', 'textarea')
   ],
   g: () => {
+    const h = lorem.int(7, 16);
