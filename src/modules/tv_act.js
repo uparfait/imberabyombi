@@ -24,3 +24,4 @@ function date_err(k, v, r) {
 
 export const TV_ACT = {
   tv_edit: t => { const cell = row_of(t).querySelector('.kv_cell'); set_edit(t, true);
+    cell.querySelector('input:not([type=checkbox]), textarea, select')?.focus(); if (!reduced()) cell.animate([{ opacity: .4 }, { opacity: 1 }], { duration: 180 }); },
