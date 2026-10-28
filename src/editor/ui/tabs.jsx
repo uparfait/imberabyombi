@@ -16,3 +16,5 @@ export function switch_tab(id) {
   if (id === state.active || !state.tabs.some(t => t.id === id)) return;
   if (hist_timer) commit();
   save_tab(); show(id);
+}
+/* "Tab n": n from the tab count up, the first one not taken */
