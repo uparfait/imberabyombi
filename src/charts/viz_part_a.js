@@ -25,3 +25,4 @@ export const VIZ_PART_A = {
   treemap: { t: 'Treemap', g: 'part', d: 'Nested parts sized by value, coloured by group.', f(w) {
     const groups = SER.slice(0, 3), items = groups.flatMap((gname, gi) => uwords(4).map(k => ({ k, g: gi, v: rnd(5, 40) }))).sort((a, b) => b.v - a.v);
     const f = frame(w, 260, { l: 0, r: 0, t: 0, b: 0 });
+    const out = []; (function split(list, x, y, wd, ht) {
