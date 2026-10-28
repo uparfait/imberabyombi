@@ -33,3 +33,4 @@ function migrate_task_dates() {
 let booted = false;
 export function boot() {
   if (booted) return; booted = true;
+  install_listeners(); before_render(before_page); define_callout();
