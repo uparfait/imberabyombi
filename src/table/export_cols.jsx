@@ -18,3 +18,4 @@ export function Export_cols({ c }) {
           <label className="flex w-36 shrink-0 cursor-pointer items-center gap-2 text-sm">
             <input type="checkbox" name={`col_${k}`} value="1" defaultChecked onChange={tick(k)} /><span className="truncate">{label(c, k)}</span></label>
           <span className="shrink-0 text-xs text-muted">shown as</span>
+          <input name={`as_${k}`} defaultValue={label(c, k)} aria-label={`${label(c, k)} is shown as`} disabled={!on[k]} />
