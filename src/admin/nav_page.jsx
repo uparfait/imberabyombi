@@ -16,3 +16,4 @@ const head = (o, icon, text, extra = null) => !o.routed
       <span className="hero_in" style={{ '--d': '.1s' }}>{i3(icon, 'h-16 w-16 sm:h-20 sm:w-20')}</span></div>)}</section>;
 
 const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a' : 'button';
+  return <Tag key={i} className="card card_hover group grid justify-items-center gap-3 p-5 text-center" {...(t.href ? { href: t.href } : t.attrs)}>
