@@ -43,3 +43,4 @@ export const VIZ_DIST = {
         + ` style="fill:color-mix(in srgb, ${scale_color(i)} 22%, transparent);stroke:${scale_color(i)};stroke-width:1.5"/>` + dot(x(i), ax.y(med), scale_color(i)));
     }).join('') + x_labels(f, g, x), 'Violin plot'),
       table: [['Group', 'Median', 'Count'], sets.map((a, i) => [g[i], round1(median(a)), a.length])] }; } },
+  dotplot: { t: 'Dot plot', g: 'dist', d: 'One dot per category on a shared scale, sorted.', f(w) {
