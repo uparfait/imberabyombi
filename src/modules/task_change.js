@@ -19,3 +19,4 @@ const tick = (id, g, i, on) => request(() => {
 function status_pick(t) {
   const box = t.closest('[data-tv-status]'), v = tv_api(t), r = db.find('tasks', box.dataset.tvStatus);
   if (t.value === r.status) { v?.put({ more: false }); const f = qs('#modal form'); if (f) f._init = snap(f); return; }
+  v?.put({ more: true }); const more = box.querySelector('.tv_status_more');
