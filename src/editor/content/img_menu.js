@@ -37,3 +37,4 @@ export function image_menu_items(img) {
     { label: 'Crop…', icon: 'crop', no_preview: true, action: off(() => crop_dialog(img)) },
     { label: 'Adjustments…', icon: 'tune', no_preview: true, action: off(() => adjust_dialog(img)) },
     { label: 'Border', icon: 'border_style', sub: () => [
+      ...[0, 1, 2, 4, 6].map(w => ({
