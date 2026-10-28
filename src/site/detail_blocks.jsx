@@ -26,3 +26,4 @@ export const faq = () => (
 );
 
 export function intro_top() {
+  return (
