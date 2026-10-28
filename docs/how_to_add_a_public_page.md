@@ -16,3 +16,9 @@ export const services_sec = (page = 0) => (
         {['Design', 'Build', 'Support'].map((t, i) => (
           <article key={t} className="card p-6" data-reveal="" style={{ '--d': `${i * 0.08}s` }}>
             <h3 className="text-lg">{t}</h3><p className="mt-2 text-muted">Lorem ipsum dolor sit amet.</p>
+          </article>))}
+      </div>
+    </div>
+  </section>);
+```
+Use the existing helpers (`sec_head`, `more`, `hero_shell`, `kicker` styles) so the page matches the others.
