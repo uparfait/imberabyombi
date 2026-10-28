@@ -44,3 +44,4 @@ function on_over(e) {
   hover_fn = () => run(img, b.dataset.a); live.preview(hover_fn);
 }
 function on_out(e) { if (hover_b && !hover_b.contains(e.relatedTarget)) { live.cancel(); settle(false); } }
+function on_click(e) {
