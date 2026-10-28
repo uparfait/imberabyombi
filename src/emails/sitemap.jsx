@@ -5,3 +5,4 @@ import { lorem } from '../lib/index.js';
 import { PUB, PAGES } from '../site/index.js';
 
 export function sitemap() {
+  const all = [['', 'Home', 'home'], ...PUB.map(([k, l]) => [k, l, PAGES[k].i]), ['intro', 'Overview', 'layers'], ['ui', 'Design system', 'grid'],
