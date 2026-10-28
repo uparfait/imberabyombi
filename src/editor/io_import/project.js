@@ -26,3 +26,6 @@ export function is_doc_empty() {
 export function project_tabs(d) {
   return (d.tabs || []).map(t => {
     const x = el('div'); x.innerHTML = sanitize_html(String(t.html || '')); qsa('.cmt', x).forEach(s => s.replaceWith(...s.childNodes));
+    return new_tab(String(t.name || 'Tab'), x.innerHTML || '<p><br></p>');
+  });
+}
