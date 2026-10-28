@@ -15,3 +15,4 @@ export function y_axis(f, hi, lo = 0, fmt = compact_num) {
     + `<text x="${f.l - 8}" y="${round1(y(v)) + 3.5}" text-anchor="end">${fmt(v)}</text>`).join('') };
 }
 export function x_axis(f, hi, lo = 0, fmt = compact_num) {
+  const ts = ticks(Math.min(lo, 0), hi), x = linear(ts[0], ts.at(-1), f.l, f.l + f.iw);
