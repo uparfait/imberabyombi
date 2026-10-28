@@ -69,3 +69,4 @@ export function charts_view() {
 }
 
 /* Date range: every KPI and chart is redrawn for the new range (the KPI grid is keyed by the range, so its count-up restarts) */
+export function viz_range(v) { ui.viz_range = +v; rerender(); qsa('#viz_kpis [data-count]').forEach(count_up); }
