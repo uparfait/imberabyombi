@@ -39,3 +39,4 @@ export function trim_rows(rows, max_r = 2000, max_c = 40) {
   return { rows: rows.slice(0, max_r).map(r => r.slice(0, Math.min(width, max_c))), cut: rows.length > max_r || width > max_c };
 }
 export function csv_parse(text, delim) {
+  text = text.replace(/^\ufeff/, '');
