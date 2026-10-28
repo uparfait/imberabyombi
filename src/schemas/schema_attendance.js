@@ -13,3 +13,4 @@ export const attendance_schema = {
   ],
   g: i => {
     const st = lorem.pick(['Present', 'Present', 'Present', 'Late', 'Absent', 'Excused']), kind = lorem.pick(['Staff', 'Student']), off = st === 'Absent';
+    return {
