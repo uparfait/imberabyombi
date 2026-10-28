@@ -12,3 +12,5 @@
   #toolbar .tb_fill { min-width: 0; }
 }
 #toolbar.viewing .tb_edit { opacity: .38; pointer-events: none; }
+
+.tb_btn, .tb_dd {
