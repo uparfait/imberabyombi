@@ -45,3 +45,4 @@ function hold_scroll(top) {
 }
 
 /* after a change in the task view: redraw the page behind and the view (same scroll), without "discard changes?" on close */
+export function task_refresh(id, msg) {
