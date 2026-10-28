@@ -13,3 +13,4 @@ import { tip } from './tip.js';
    refreshes an open view) · on_submit(values, form): values = form_obj(form); return false to keep the dialog open. */
 export function modal({ title, help = '', body = '', submit, on_submit, danger, actions = '', wide = false }) {
   /* The description (help): a dialog with content shows it behind the help icon by the title; a dialog with nothing
+     else to show (a confirm) shows it as its text, in a compact layout without dividers. */
