@@ -40,3 +40,5 @@ export function cal_go(k) {
   ui.cal_date = k; ui.mini = null;
   const sel = [moved && '.date_title, .date_body', month && '#date_mini .date_mini_title, #date_mini .date_mini_grid'].filter(Boolean).join(', ');
   ui.slide = moved || month ? { n, sel } : null;
+  rerender();
+}
