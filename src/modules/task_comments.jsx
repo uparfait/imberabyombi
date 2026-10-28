@@ -16,3 +16,4 @@ const comment = (r, c, on) => <li key={c.id} className="flex gap-3">{avatar(c.by
   <p className="flex items-center gap-2 text-sm"><b className="font-medium">{c.by === me() ? 'You' : c.by}</b><time className="text-xs text-muted">
     {`${ago(c.at)}${c.edited ? ' · edited' : ''}`}</time>
     {c.by === me() ? <span className="ml-auto flex">
+      <button type="button" className="icon_btn h-7 w-7" data-act="comment_edit" aria-label="Edit comment" disabled={on}>{ic('edit', 'h-3.5 w-3.5')}</button>
