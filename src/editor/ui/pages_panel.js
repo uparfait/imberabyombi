@@ -26,3 +26,4 @@ export function render_pages_panel() {
 }
 
 /* the panels take room beside the pages when the editor is wide; on a narrow editor they cover the pages */
+export function apply_panels() {
