@@ -12,3 +12,4 @@ export async function image_blob(img) {
   return new Promise((res, rej) => { try { c.toBlob(b => b ? res(b) : rej(new Error('blob')), 'image/png'); } catch (e) { rej(e); } });
 }
 export async function copy_image(img) {
+  img = img_now(img); if (!img || previewing()) return;
