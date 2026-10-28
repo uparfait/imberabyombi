@@ -10,3 +10,4 @@ import { FORMATS, doc_stats, do_export } from './formats.js';
 /* the format badge (a page with a folded corner, in the format's colour) and the file name box (field look, extension after it) */
 const BADGE = 'relative flex h-11 w-9 flex-none items-end justify-center rounded-[4px_11px_4px_4px] pb-1.5 text-[9.5px] font-bold leading-none '
   + 'tracking-[.02em] text-white';
+const NAME_BOX = 'flex items-stretch overflow-hidden rounded-xl border border-muted/60 bg-surface focus-within:border-brand focus-within:outline '
