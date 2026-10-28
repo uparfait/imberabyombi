@@ -35,3 +35,4 @@ export const CONTENT_CSS = '\n' + [
     + ' center/11px no-repeat;border-color:#1a73e8}',
   '.doc_content ul.checklist[data-strike]>li[data-checked="true"]{text-decoration:line-through;color:#80868b}',
   '.doc_content .page_break{height:0;overflow:hidden;user-select:none}',
+  '.doc_content .cmt{background:rgba(251,188,4,.3);border-bottom:2px solid #fbbc04}',
