@@ -21,3 +21,6 @@ function on_error(e) {
   const t = e.target;
   if (t.matches?.('[data-view] :is(img, video, audio)')) return;
   if (t.tagName === 'IMG' && !t.dataset.fb) { t.dataset.fb = 1; t.src = FALLBACK; }
+}
+
+export function install_page() {
