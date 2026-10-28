@@ -28,3 +28,4 @@ export async function export_docx(root, name) {
       },
       add_media(bytes, ext) {
         const n = ++img_n, id = 'rId' + (++rid); media.push({ name: `word/media/image${n}.${ext}`, data: bytes });
+        rels.push(`<Relationship Id="${id}" Type="${RELNS}/image" Target="media/image${n}.${ext}"/>`); return { rid: id, n };
