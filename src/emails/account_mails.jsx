@@ -18,3 +18,4 @@ export const account_mails = () => ({
     <p className="text-sm text-muted">Did not ask for this? You can ignore this email. Your password stays the same.</p></> },
   code: { s: `${lorem.int(100, 999)} ${lorem.int(100, 999)} is your sign-in code`, t: <>
     <h1 className="mail_h">Your sign-in code</h1><p>Use this code to finish signing in. It expires in <b>10 minutes</b>.</p>
+    {copy_box(String(lorem.int(100000, 999999)), 'Code', true)}<p className="text-sm text-muted">Never share this code. {cfg.name} will never ask for it by phone or chat.</p>
