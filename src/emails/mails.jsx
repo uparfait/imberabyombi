@@ -3,3 +3,4 @@
 
 export const MAILS = {
   invite: { l: 'Event invite', i: 'calendar' }, update: { l: 'Event update', i: 'edit' }, change: { l: 'Time change', i: 'clock' },
+  reset: { l: 'Password reset', i: 'lock' }, code: { l: 'Sign-in code', i: 'shield' }, token: { l: 'Access token', i: 'key' }
