@@ -57,3 +57,4 @@ export const pick = {
     p.style.minWidth = p.dataset.kind === 'menu' ? Math.max(r.width, 192) + 'px' : '';
     p.style.maxHeight = Math.max(below, above, 160) + 'px';
     const w = p.offsetWidth, h = p.offsetHeight;
+    p.style.left = Math.max(8, Math.min(r.left, vw - w - 8)) + 'px';
