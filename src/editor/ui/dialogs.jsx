@@ -8,3 +8,4 @@ import { modal, ask } from '../../overlays/index.js';
 export function after_close(fn) {
   const d = document.getElementById('modal');
   if (!d || !d.open) { fn(); return; }
+  d.addEventListener('close', () => fn(), { once: true });
