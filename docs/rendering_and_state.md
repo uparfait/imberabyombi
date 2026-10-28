@@ -49,3 +49,5 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 Inputs are uncontrolled (`defaultValue`, `defaultChecked`); values are read on submit with `form_obj(form)`. When a
 control must follow data after a redraw, give it a `key` that changes with that data. To set a value from code before
 firing events, use `set_native_value(input, value)` (src/fields), so React notices the change.
+
+## Errors
