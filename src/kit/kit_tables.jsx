@@ -22,3 +22,4 @@ export const kit_tables = () => (
       <thead><tr><th scope="col">Name</th><th scope="col">Lorem</th><th scope="col">Ipsum</th><th scope="col" className="text-right">Total</th></tr></thead>
       <tbody>{[0, 1, 2, 3].map(row)}</tbody>
       <tfoot><tr><th scope="row">Sum</th><td></td><td></td><td className="text-right">{money(2190)}</td></tr></tfoot></table></div>
+    <h3 className="mt-10 text-xl">Data table</h3><p className="mt-1 max-w-prose text-sm text-muted">{DATA_HELP}</p>
