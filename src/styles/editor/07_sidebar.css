@@ -20,3 +20,4 @@
 /* Tabs: filter box and the list scrolling inside itself (more than 5 tabs: .many), rows with a menu button that shows on hover */
 input.tab_filter, .tab_filter input {
   display: block; width: 100%; min-height: 0; margin: 0 0 .5rem; padding: .375rem .875rem; border-radius: var(--pill);
+  font-size: .8125rem; line-height: 1.25rem;
