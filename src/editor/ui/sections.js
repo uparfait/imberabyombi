@@ -52,3 +52,4 @@ export function move_section(k, to, m = section_model()) {
   const part = m.blocks.slice(h.i, h.end), ref = m.blocks[to] || null;
   part.forEach(b => m.c.insertBefore(b, ref));
   const f = rewrite(m, part[0]); if (f) caret_to_start(f);
+  return f;
