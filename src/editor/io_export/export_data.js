@@ -19,3 +19,4 @@ export const top_tables = root => qsa('table', root).filter(t => !t.parentElemen
 export function export_data(root) {
   const ts = top_tables(root);
   if (ts.length) return ts.map((t, i) => ({
+    name: table_name(t, i), hdr: t.hasAttribute('data-header') || !!(t.rows[0] && t.rows[0].querySelector('th,[data-hdr]')),
