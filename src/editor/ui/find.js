@@ -50,3 +50,4 @@ export function run_find(keep) {
     }
   }
   if (find_state.matches.length) find_state.idx = keep && prev >= 0 ? Math.min(prev, find_state.matches.length - 1) : 0;
+  paint_find(!keep);
