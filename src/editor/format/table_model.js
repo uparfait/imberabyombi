@@ -48,3 +48,4 @@ export function cell_at_col(row, col) {
   return s ? s.cell : row.cells[row.cells.length - 1] || null;
 }
 export const table_width_cols = chain => Math.max(1, ...chain_rows(chain).map(r => row_slots(r).reduce((a, s) => Math.max(a, s.end + 1), 0)));
+/* an empty cell shaped like c (same tag and style, no automatic background) */
