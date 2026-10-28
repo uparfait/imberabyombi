@@ -34,3 +34,4 @@ export function draw_h_ruler() {
   const w0 = page_wraps()[0]; if (!w0 || !hruler) return;
   const { win } = dims(), z = state.zoom, m = state.setup.margins, W = win * DPI * z;
   const left = w0.getBoundingClientRect().left - hruler.getBoundingClientRect().left;
+  const lx = m.left * DPI * z, rx = (win - m.right) * DPI * z, y = u(3), h = u(18);
