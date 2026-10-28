@@ -3,3 +3,5 @@
 import { state, dims, DPI, esc_html } from '../core/index.js';
 import { load_img } from '../content/index.js';
 import { HDR_BG } from '../format/index.js';
+
+export function content_width_px() { const { w } = dims(), m = state.setup.margins; return Math.round(w - (m.left + m.right) * DPI); }
