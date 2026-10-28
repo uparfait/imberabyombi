@@ -68,3 +68,4 @@ export async function odf_to_html(file) {
   const z = await unzip(await file.arrayBuffer()), doc = parse_xml(await z.text('content.xml')), sty = {};
   by_tag(doc, 'style').forEach(s => {
     const tp = kids(s, 'text-properties')[0];
+    if (tp) sty[s.getAttribute('style:name')] = { b: /bold|[6-9]00/.test(tp.getAttribute('fo:font-weight') || ''), i: tp.getAttribute('fo:font-style') === 'italic',
