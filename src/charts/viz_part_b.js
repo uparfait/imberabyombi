@@ -29,3 +29,4 @@ export const VIZ_PART_B = {
       table: [['Part', 'Share'], [...s.map((n, j) => [n, p[j] + '%']), ['Other', rest + '%']]] }; } },
   funnel: { t: 'Funnel chart', g: 'part', d: 'Steps of a process and how many continue to the next.', f(w) {
     const st = ['Visited', 'Signed up', 'Activated', 'Subscribed', 'Renewed'], v = [10000];
+    for (let i = 1; i < st.length; i++) v.push(Math.round(v[i - 1] * rnd(.38, .72))); v.forEach((_, i) => v[i] = Math.round(v[i] * MARGIN()));
