@@ -32,3 +32,4 @@ export async function docx_run(cx, r) {
     else if (ln === 'drawing' || ln === 'pict') inner += await docx_image(cx, c);
   }
   if (!inner) return '';
+  return css.length ? `<span style="${css.join(';')}">${open}${inner}${close}</span>` : open + inner + close;
