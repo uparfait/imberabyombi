@@ -11,3 +11,4 @@ export const PAPER = {
 };
 /* the site's own fonts (already served with the template) + web-safe fonts; the document default stays Arial */
 export const FONTS = ['Arial', 'Bricolage Grotesque', 'Comic Sans MS', 'Courier New', 'Figtree', 'Georgia', 'Impact', 'JetBrains Mono',
+  'Times New Roman', 'Trebuchet MS', 'Verdana'];
