@@ -28,3 +28,5 @@ export function palette_el(on_pick, none_label) {
   inp.addEventListener('change', () => {
     const v = inp.value, kept = keep('custom' + v); if (!kept) unpeek();
     done(); if (!kept) on_pick(v);
+  });
+  box.appendChild(lab);
