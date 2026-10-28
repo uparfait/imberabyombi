@@ -7,3 +7,4 @@ import { PUB, PAGES } from '../site/index.js';
 export function sitemap() {
   const all = [['', 'Home', 'home'], ...PUB.map(([k, l]) => [k, l, PAGES[k].i]), ['intro', 'Overview', 'layers'], ['ui', 'Design system', 'grid'],
     ['login', 'Sign in', 'lock'], ['forgot', 'Forgot password', 'key'], ['verify', '2-step verification', 'shield'], ['authenticator', 'Authenticator app', 'shield'],
+    ['set-password', 'Set password', 'lock'], ['admin', 'Dashboard', 'chart']];
