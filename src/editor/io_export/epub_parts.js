@@ -14,3 +14,4 @@ export const EPUB_CONTAINER = '<?xml version="1.0" encoding="UTF-8"?><container 
   + '<rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/></rootfiles></container>';
 
 export const epub_opf = (id, title, now, manifest, imgs, spine) => '<?xml version="1.0" encoding="UTF-8"?>'
+  + '<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid"><metadata xmlns:dc="http://purl.org/dc/elements/1.1/">'
