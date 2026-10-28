@@ -20,3 +20,4 @@ export function on_context_menu(e) {
     const p = caret_from_point(e.clientX, e.clientY); if (p && host.contains(p.node)) set_caret(p.node, p.off);
   } else set_last(s.getRangeAt(0).cloneRange(), host);
   const in_table = !!table_ctx();
+  open_menu(null, [
