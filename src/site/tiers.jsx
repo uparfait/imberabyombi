@@ -21,3 +21,4 @@ export function tiers() {
       <div className="card mt-10 overflow-x-auto p-2"><table><caption className="px-4 pt-3">{lorem.t(3)}</caption>
         <colgroup><col /><col /><col className="hl" /><col /></colgroup>
         <thead><tr><th scope="col">Partner</th><th scope="col">Since</th><th scope="col">Tier</th><th scope="col" className="text-right">Projects</th></tr></thead>
+        <tbody>{[0, 1, 2, 3, 4].map(i => {
