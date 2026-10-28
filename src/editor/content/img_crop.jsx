@@ -3,3 +3,4 @@
 import { useState, useRef } from 'react';
 import { modal } from '../../overlays/index.js';
 import { clamp, toast } from '../core/index.js';
+import { can_edit, previewing } from '../format/index.js';
