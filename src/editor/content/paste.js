@@ -35,3 +35,7 @@ export async function paste_from_clipboard(plain) {
         if (it.types.includes('text/html')) {
           const h = await (await it.getType('text/html')).text(), host = restore_focus(); begin_op();
           document.execCommand('insertHTML', false, sanitize_html(h)); adopt_abs(host); end_op(); return;
+        }
+      }
+    }
+    const t = await navigator.clipboard.readText(); restore_focus(); document.execCommand('insertText', false, t);
