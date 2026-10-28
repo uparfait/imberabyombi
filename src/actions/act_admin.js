@@ -11,3 +11,5 @@ import { redraw_charts } from '../charts/index.js';
 import { apply_tokens } from './theme.js';
 
 const EASE = 'cubic-bezier(.22,.8,.22,1)';
+
+export const ADMIN_ACT = {
