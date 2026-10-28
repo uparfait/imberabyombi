@@ -28,3 +28,4 @@ types, table presets, image positions) and the selection shows the result at onc
 it was; click to keep it (one undo step). The selection stays selected while you apply styles one after another.
 
 ## Keyboard
+| Keys | Action | Keys | Action |
