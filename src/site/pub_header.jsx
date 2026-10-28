@@ -2,3 +2,4 @@
    mobile drawer's content. The "drawer" action shows it: show_in_dialog('drawer', drawer_content). */
 import { ic } from '../icons/index.js';
 import { logo, theme_btn } from '../ui/index.js';
+import { route } from '../store/index.js';
