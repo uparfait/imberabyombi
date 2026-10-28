@@ -18,3 +18,5 @@ export const event_mails = ({ ev, place, who, d1, d2, tm, event, rsvp, cal }) =>
   change: { s: `New time: ${ev}`, t: <>
     <h1 className="mail_h">The time has changed</h1><p><b>{ev}</b> moved to a new date. {lorem.s()}</p>
     <div className="mail_move">{mail_date(d1, true)}<span className="text-muted">{ic('arrow_r', 'h-6 w-6')}</span>{mail_date(d2)}<div className="min-w-0 text-sm">
+      <p className="text-muted"><s>{tm('14:00', '16:30')}</s></p><p className="font-medium">{tm('10:00', '12:30')}</p></div></div>{rsvp}{cal}</> }
+});
