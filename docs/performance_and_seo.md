@@ -37,3 +37,4 @@ pre-render the public pages at build time; the public pages only read static dat
 
 ## Before publishing
 Replace the canonical URL, the JSON-LD values, the social image and the sample media. See
+[before production](before_production.md).
