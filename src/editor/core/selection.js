@@ -78,3 +78,5 @@ export function restore_focus() {
   if (cs.rangeCount) {
     const h = editable_of(cs.getRangeAt(0).startContainer);
     if (h && pages_el && pages_el.contains(h) && document.activeElement === h) { last_range = cs.getRangeAt(0).cloneRange(); last_host = h; return h; }
+  }
+  if (last_range && last_host && last_host.isConnected && last_range.startContainer.isConnected) {
