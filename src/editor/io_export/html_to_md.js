@@ -52,3 +52,5 @@ export function html_to_md(root) {
     else { const s = inline(b).trim(); blocks.push(s || ''); }
   });
   return blocks.join('\n\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
+}
+export function export_md(root, name) { download(new Blob([html_to_md(root)], { type: 'text/markdown;charset=utf-8' }), name + '.md'); }
