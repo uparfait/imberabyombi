@@ -11,3 +11,5 @@ const POP_VIEWS = [['Day', 'D'], ['Week', 'W'], ['Month', 'M'], ['Year', 'Y'], [
 
 /* the menu starts closed on every draw, as the reference's fresh markup did (a new ref function, so React calls it each time) */
 const closed_pop = () => el => { if (!el) return; el.hidden = true; el._out?.cancel?.(); el._out = null; };
+
+const toast_demo = (
