@@ -15,3 +15,4 @@ export const file_box = inp => inp?.closest?.('.filebox') || null;
 export const file_tiles = inp => { BOXES.get(inp)?.(); };
 
 /* props: id, name, multiple, accept and any other <input> attribute (data-new-files…) */
+export function File_box({ id, name, multiple, accept, onClick, onChange, ...rest }) {
