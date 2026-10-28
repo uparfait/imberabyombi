@@ -47,3 +47,5 @@ function put(sn) {
     const h = editable_of(sc), ae = document.activeElement;
     if (!ae || ae === document.body || pages_el.contains(ae)) { if (ae !== h) h.focus({ preventScroll: true }); const g = getSelection(); g.removeAllRanges(); g.addRange(r); }
     set_last(r.cloneRange(), h);
+  }
+  const im = find(sn.img); if (im) select_image(im);
