@@ -8,3 +8,5 @@ import { form_obj } from '../fields/index.js';
 import { validate, request } from '../feedback/index.js';
 import { run_view } from './dialog_store.js';
 import { close_dialog, snap } from './dialogs.js';
+
+const blank = v => v == null || v === false || v === '' || (Array.isArray(v) && !v.length);
