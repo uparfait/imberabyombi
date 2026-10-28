@@ -10,3 +10,4 @@ export function init_player(w) {
   const fmt = s => `${Math.floor(s / 60)}:${pad(Math.floor(s % 60))}`;
   m.addEventListener('timeupdate', () => { if (m.duration) { seek.value = m.currentTime / m.duration * 100; fill_range(seek); } out.value = fmt(m.currentTime); });
   m.addEventListener('play', () => w.classList.add('playing')); m.addEventListener('pause', () => w.classList.remove('playing'));
+  seek.addEventListener('input', () => { if (m.duration) m.currentTime = seek.value / 100 * m.duration; });
