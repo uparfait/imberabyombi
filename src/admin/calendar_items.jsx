@@ -40,3 +40,4 @@ export function mini_cal() {
 }
 
 /* ACT.mini: set ui.mini, then mini_draw(); false = no mini calendar on screen (then rerender(), as the reference did) */
+export const mini_draw = () => redraw_slot('mini');
