@@ -40,3 +40,4 @@ export function run_find(keep) {
     const loc = (pos, end) => {
       let lo = 0, hi = segs.length - 1;
       while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (end ? segs[mid].start < pos : segs[mid].start <= pos) lo = mid; else hi = mid - 1; }
+      return { node: segs[lo].node, off: pos - segs[lo].start };
