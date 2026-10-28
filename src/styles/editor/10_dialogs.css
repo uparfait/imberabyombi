@@ -35,3 +35,4 @@
 
 /* The source's shortcut table class, should a dialog use it */
 .kbd_table td { padding: .3125rem .5rem; border-bottom: 1px solid rgb(var(--line)); font-size: .8125rem; white-space: normal; }
+.kbd_table td:last-child { white-space: nowrap; color: rgb(var(--muted)); }
