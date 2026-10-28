@@ -72,3 +72,6 @@ export async function attach_files(files) {
   if (!html) return; set_last_range(saved);
   const host = restore_focus(); if (!host || !host.classList.contains('pg_body')) return;
   begin_op(); document.execCommand('insertHTML', false, sanitize_html(html)); end_op(body_index(host));
+}
+
+/* dropping files on the page is content's drop_handler (it opens the upload dialog): no listener of its own here */
