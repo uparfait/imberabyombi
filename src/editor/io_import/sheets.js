@@ -43,3 +43,5 @@ export async function sheet_to_html(file, ext) {
     const { rows, cut } = trim_rows(s.rows); if (cut) note = 'Large sheets were shortened to 2,000 rows and 40 columns.';
     return `<h2>${esc_html(s.name)}</h2>` + (rows.length ? rows_to_table(rows, true) : '<p>This sheet is empty.</p>');
   }).join('');
+  return { html: html || '<p><br></p>', note };
+}
