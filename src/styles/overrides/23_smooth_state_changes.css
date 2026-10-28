@@ -22,3 +22,4 @@
   .brand_toggle:is(:hover, :focus-visible) { background: rgb(var(--fg) / .06); }
   .brand_toggle:is(:hover, :focus-visible) .bt_logo { opacity: 0; scale: .8; }
   .brand_toggle:is(:hover, :focus-visible) .bt_open { opacity: 1; scale: 1; }
+  @media (min-width: 1024px) { body:has(#sidebar[data-min=true]) .brand_toggle { display: grid; } }
