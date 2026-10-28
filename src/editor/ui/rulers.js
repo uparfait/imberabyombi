@@ -52,3 +52,5 @@ export function draw_v_ruler() {
   vruler.innerHTML = `<svg width="${u(20)}" height="${H}" style="position:absolute;left:0;top:${top}px;overflow:visible"><rect class="r_bg" x="${x}" y="0" width="${w}" height="${H}"/>`
     + `<rect class="r_margin" x="${x}" y="0" width="${w}" height="${ty}"/><rect class="r_margin" x="${x}" y="${by}" width="${w}" height="${H - by}"/>${ruler_ticks(hin, m.top, false, z)}`
     + `<g class="r_handle v" data-handle="top" transform="translate(0 ${ty})">${knob}</g><g class="r_handle v" data-handle="bottom" transform="translate(0 ${by})">${knob}</g></svg>`;
+}
+/* the dragged margin's value next to the pointer: a label drawn like the template tooltip (#tip itself is hidden by the
