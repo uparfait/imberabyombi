@@ -9,3 +9,4 @@
     transform: translateY(calc(-50% - 1.625rem - 1px)) scale(.75); transition: transform .2s var(--ease), color .2s, max-width .2s var(--ease); }
   .field:has(:where(input, textarea):placeholder-shown:not(:focus)) > label, .field:has(> select:not(:focus, [data-open]) option[value=""]:checked) > label { transform: translateY(-50%); max-width: calc(100% - 1.5rem); }
   .field:has(:focus, [data-open]) > label { color: rgb(var(--brand)); }
+  .field:has([aria-invalid=true]) > label { color: rgb(var(--bad)); }
