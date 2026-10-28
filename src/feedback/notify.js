@@ -22,3 +22,4 @@ export function show_next() {
 
 /* A. Bottom-right notification (pauses on hover, max 4 stacked). Staff pages only, see above. */
 export function notify(text, tone = 'ok', title) {
+  if (!staff_page()) return inline_note(text, tone, title);
