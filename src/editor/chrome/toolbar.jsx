@@ -18,3 +18,4 @@ const dd = (id, label_id, label, tip, width, edit) => (
 /* a list button with its own small menu arrow */
 const split = (ed, icon, tip, dd_id, dd_tip) => (
   <span className="tb_split tb_edit">
+    <button type="button" className="tb_btn" data-ed={ed} data-state={ed} data-tip={tip} aria-label={name_of(tip)}>{ic(icon)}</button>
