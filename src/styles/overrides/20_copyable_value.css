@@ -25,3 +25,4 @@
   .qr { width: 10rem; height: 10rem; fill: #1A120C; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * .5); }
 
   /* Email designs: client header + an email "paper" in the brand */
+  .mail_canvas { padding: 1rem; background: rgb(var(--surface_2)); }
