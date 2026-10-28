@@ -3,3 +3,4 @@
    text-selection switch. Fields, tables, code, copy boxes, dialogs and selected text keep the browser's own menu (to copy). */
 import { qs, esc } from '../lib/index.js';
 import { ic_html } from '../icons/index.js';
+import { auth, MODS } from '../auth/index.js';
