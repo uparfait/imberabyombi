@@ -35,3 +35,4 @@ export function rtf_to_html(rtf) {
       if (DEST.has(w)) { st.skip = 1; continue; }
       switch (w) {
         case 'par': end_para(); break; case 'line': para += '<br>'; break; case 'tab': emit('\t'); break;
+        case 'page': if (!in_tbl) { flush_table(); if (para) { out.push(`<p>${para}</p>`); para = ''; } out.push(PB); } break;
