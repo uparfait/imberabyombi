@@ -1,2 +1,3 @@
 /* overrides/13_floating_loader.css: rules that come after the utilities, as in the reference */
   /* D. Floating loader: requests the user asked for that have no button to spin (navigation, imports, checkboxes) */
+  #loader { position: fixed; z-index: 300; inset: auto; margin: 0; padding: 0; overflow: visible; color: inherit; left: 50%; top: calc(env(safe-area-inset-top, 0px) + 5rem); display: grid; place-items: center; width: 3rem; height: 3rem;
