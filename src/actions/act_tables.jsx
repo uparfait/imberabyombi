@@ -31,3 +31,4 @@ export const TABLE_ACT = {
   tab: t => { ui.tab[t.dataset.key] = t.dataset.v; ui.page = {}; render(true, true); },
   create: t => { close_pops(); if (route.mod !== t.dataset.mod) { ui.pending_form = t.dataset.col; location.hash = '#/admin/' + t.dataset.mod; } else open_form(t.dataset.col); },
   /* Table tools */
+  table_full: t => table_full(t.dataset.col),
