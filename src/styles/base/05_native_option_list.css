@@ -31,3 +31,4 @@
   }
   :where(input[type=checkbox], input[type=radio]):hover { border-color: rgb(var(--brand)); }
   :where(input[type=radio]) { width: 1.25rem; height: 1.25rem; border-radius: 999px; }
+  :where(input[type=checkbox]:checked) { background-color: rgb(var(--brand)); border-color: rgb(var(--brand));
