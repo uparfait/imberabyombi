@@ -16,3 +16,4 @@ Extras: `def` (default), `when` (`'Done'` / `'!Done'`, shown by status), `min`, 
 
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
+  <div data-msg-slot="" className="empty:hidden" />
