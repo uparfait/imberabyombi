@@ -14,3 +14,5 @@ export function add_comment() {
   end_op(body_index(host));
   state.comments.push({ id, tab: state.active, quote, text: '', time: Date.now(), replies: [], draft: true });
   state.show_comments = true; apply_panels(); render_comments(); activate_comment(id, true);
+}
+export function strip_comment(html, id) {
