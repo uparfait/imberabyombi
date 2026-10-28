@@ -32,3 +32,4 @@ const MEDIA = {
 };
 
 /* an attachment shown inside the task view (images, video, audio, PDF, text); others are opened in the full viewer */
+export function file_preview(f) {
