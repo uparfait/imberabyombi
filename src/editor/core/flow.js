@@ -12,3 +12,4 @@ export const sel_remap = new Map();   // old element -> replacement element
 
 export function content_bottom(b) {
   const l = last_flow(b); let y = l ? l.offsetTop + l.offsetHeight - pad_bottom(l) : 0;
+  for (const im of b.querySelectorAll('img[data-pos="wrap_left"],img[data-pos="wrap_right"]')) { const t = top_in(im, b) + im.offsetHeight; if (t > y) y = t; }
