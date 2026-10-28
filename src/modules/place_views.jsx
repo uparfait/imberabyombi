@@ -4,3 +4,4 @@ import { VIEWS } from './views.js';
 import { db, ui } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { ymd, parse_d, money } from '../lib/index.js';
+import { cfg } from '../config/index.js';
