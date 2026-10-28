@@ -56,3 +56,4 @@ export function on_key(e) {
   if (e.key === 'Escape') {
     let closed = false;
     hide_link_bubble();
+    if (find_state.open) { close_find(); closed = true; }
