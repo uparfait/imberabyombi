@@ -18,3 +18,5 @@ export const XLSX_STYLES = '<?xml version="1.0" encoding="UTF-8" standalone="yes
 
 export const col_name = i => { let s = ''; i++; while (i > 0) { const r = (i - 1) % 26; s = String.fromCharCode(65 + r) + s; i = Math.floor((i - 1) / 26); } return s; };
 const FROZEN = '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>';
+
+export const sheet_xml = s => {
