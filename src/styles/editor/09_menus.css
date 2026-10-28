@@ -21,3 +21,4 @@
 .pal_row { display: flex; gap: .25rem; }
 .pal_sw { display: block; width: 1.125rem; height: 1.125rem; flex: none; border: 1px solid rgb(var(--fg) / .15); border-radius: var(--pill);
   transition: transform .12s var(--ease); }
+.pal_sw:hover, .pal_sw:focus-visible { transform: scale(1.2); }
