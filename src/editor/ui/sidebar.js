@@ -6,3 +6,4 @@ import { toggle_menu } from './menu_engine.js';
 import { switch_tab, tab_menu, start_rename } from './tabs.jsx';
 import { render_outline } from './outline.js';
 import { render_pages_panel } from './pages_panel.js';
+import { row_drag } from './row_drag.js';
