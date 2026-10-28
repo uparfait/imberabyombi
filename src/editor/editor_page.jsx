@@ -9,3 +9,4 @@ import { topbar, toolbar, workspace, link_bubble, file_inputs } from './chrome/i
 import './editor_styles.css';
 
 function Editor_view() {
+  const root = useRef(null);
