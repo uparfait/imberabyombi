@@ -10,3 +10,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 - A search box in every column header: text search, a select for fixed choices, a date field for date columns.
 - Sort by any column (`aria-sort`), pages of `cfg.page_size` rows (Back · n of n · Next), a row count.
 - **Action Buttons** as the first column, pinned while the table scrolls sideways (left out when no row has actions).
+- A settings menu (left): rows per page (10, 20, 50) and which columns to show, remembered per table.
