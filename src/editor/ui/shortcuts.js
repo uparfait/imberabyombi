@@ -47,3 +47,6 @@ function edit_key(e, k, code) {
   if (code === 'BracketRight') return () => indent(1);
   if (code === 'BracketLeft') return () => indent(-1);
   return null;
+}
+
+export function on_key(e) {
