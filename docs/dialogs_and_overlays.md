@@ -25,3 +25,4 @@ modal({
 
 ## Questions and other dialogs
 - `ask(message, on_yes, cta = 'Delete', danger)`: the part up to the first `?` is the title, the rest is the text.
+- `show_in_dialog('drawer' | 'viewer', () => jsx)`: fills and opens the drawer or the file viewer.
