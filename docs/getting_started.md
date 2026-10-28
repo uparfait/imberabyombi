@@ -15,3 +15,5 @@ The page reloads as you save files. Nothing else is needed: there is no backend,
 ```bash
 npm run build      # writes the optimised site to dist/
 npm run preview    # serves dist/ locally to check the build
+```
+`dist/` is a static site: upload it to any host (GitHub Pages, Netlify, Vercel, a plain web server).
