@@ -22,3 +22,4 @@ export function viz_draw_all(force = true) {
 function Viz_card({ k, c }) {
   const [o, set_o] = useState(null);
   useLayoutEffect(() => { DRAWN.set(k, set_o); return () => { if (DRAWN.get(k) === set_o) DRAWN.delete(k); }; }, [k]);
+  return (
