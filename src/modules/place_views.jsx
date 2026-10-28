@@ -43,3 +43,4 @@ VIEWS.inventory = () => {
     <div><h2 className="text-base">{`${low.length} item${low.length > 1 ? 's are' : ' is'} below minimum stock`}</h2><p className="mt-1 text-sm text-muted">
       {low.map(i => i.item).join(', ')}</p></div></div> : null;
   return <>{tabs('inv', [['res', 'Reservations', db.list('reservations').filter(r => r.status === 'Pending').length], ['stock', 'Inventory', low.length]], t)}
+    {t === 'res' ? crud('reservations', { title: 'Reservations', acts: decide }) : <>{banner}{crud('inventory', { title: 'Stock' })}</>}</>;
