@@ -7,3 +7,5 @@ import { legend, scale_legend } from './viz_legend.jsx';
 
 /* the 0..100 labels under a scatter or bubble chart */
 const x_ticks = (f, xs) => [0, 25, 50, 75, 100].map(t => `<text x="${round1(xs(t))}" y="${f.h - 8}" text-anchor="middle">${t}</text>`).join('');
+
+export const VIZ_REL_A = {
