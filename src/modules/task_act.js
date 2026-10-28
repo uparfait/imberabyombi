@@ -27,3 +27,4 @@ export const TASK_ACT = {
   /* an attachment previews inside the task view; Full view opens the file viewer */
   task_file: t => { const v = tv_api(t), i = +t.dataset.i, f = files_of(db.find('tasks', t.dataset.id))[i], box = t.closest('td')?.querySelector('[data-task-preview]');
     if (!v || !box || !f) return; v.put({ prev: { f, i, n: ++shown } }); fade_in(box, 220); },
+  task_file_full: t => { const f = tv_api(t)?.st.prev?.f;
