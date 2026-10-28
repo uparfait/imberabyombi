@@ -17,3 +17,4 @@ export function tv_editor(f, r) {
   if (f === 'notes') return field({ ...field_spec('tv_notes', 'Notes', 'textarea') }, r.notes);
   if (f === 'priority') return field(field_spec('tv_priority', 'Priority', 'select', STATUS.prio), r.priority);
   if (f === 'assignee') return field(field_spec('tv_assignee', 'Assigned to', 'select', assignees, 1), r.assignee);
+  if (f === 'subs') return sub_editor(subs_of(r));
