@@ -74,3 +74,4 @@ export function ruler_drag(e) {
   const move = ev => {
     const d = ((horiz ? ev.clientX : ev.clientY) - start) / state.zoom / DPI;
     const span = horiz ? win - (side === 'left' ? m.right : m.left) : hin - (side === 'top' ? m.bottom : m.top);
+    m[side] = clamp(Math.round(((side === 'left' || side === 'top') ? orig + d : orig - d) * 16) / 16, 0, span - 1);
