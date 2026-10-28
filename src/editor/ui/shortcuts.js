@@ -31,3 +31,4 @@ function edit_key(e, k, code) {
   if (k === 'z' && !e.shiftKey) return undo;
   if ((k === 'z' && e.shiftKey) || k === 'y') return redo;
   if (k === 'k') return () => open_link_dialog();
+  if (k === '\\') return clear_formatting;
