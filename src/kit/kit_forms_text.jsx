@@ -11,3 +11,4 @@ export const kit_forms_text = () => (
   <fieldset className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><legend>Text inputs</legend>{TYPES.map(([t, l]) => {
     const id = `demo_${t.replace('-', '_')}`;
     return (
+      <div key={t} className="field"><label htmlFor={id}>{l}</label><input id={id} {...(DTF[t] ? dt_attrs(t) : { type: t, placeholder: lorem.w(2) })} />
