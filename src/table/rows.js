@@ -14,3 +14,4 @@ export function rows_of(c) {
 }
 
 /* Draw the table again from data + ui: rows, count, pager, Action Buttons column. The reference redrew only the table's
+   body; here the page redraws (rerender) and React keeps every node that did not change. No table on screen: nothing. */
