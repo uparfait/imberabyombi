@@ -44,3 +44,6 @@ export function delete_tab(t) {
     state.tabs.splice(i, 1); state.comments = state.comments.filter(c => c.tab !== t.id);
     if (state.active === t.id) { state.active = state.tabs[Math.max(0, i - 1)].id; render_tab(); }
     render_sidebar(); render_comments(); save_soon();
+  });
+}
+export function tab_menu(t) {
