@@ -28,3 +28,4 @@ export function tv_rows(r, st) {
     {st.edit[f] ? tv_cell(f, r) : <><div className="min-w-0 flex-1">{html}</div>{can ? pen(f) : null}</>}</div></td></tr>;
   const due = r.due ? <span className="flex flex-wrap items-center gap-x-3 gap-y-1">{fmt_dt(r.due)} {due_tag(r)}</span> : dash();
   const preview = st.prev ? <Fragment key={st.prev.n}>{file_preview(st.prev.f)}</Fragment> : null;
+  const status = <div data-tv-status={r.id}><div className="pick max-w-[16rem]">
