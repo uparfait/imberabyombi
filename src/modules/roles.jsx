@@ -12,3 +12,4 @@ const LV = ['No access', 'View', 'Manage'];
 /* the access matrix: a radio per module and level (0 none · 1 view · 2 manage) */
 const matrix = (sel, edit) => <div className="overflow-x-auto"><table><thead><tr><th scope="col">Module</th>
   {LV.map(x => <th key={x} scope="col" className="text-center">{x}</th>)}</tr></thead>
+  <tbody>{MODS.map(m => <tr key={m.k}><th scope="row" className="bg-transparent text-sm font-medium text-fg"><span className="flex items-center gap-3">
