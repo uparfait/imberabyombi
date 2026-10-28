@@ -2,3 +2,4 @@
    page, columns) and the full-screen button. Full screen: the table grows from its place to fill the tab and shrinks back. */
 import { ic } from '../icons/index.js';
 import { schemas } from '../schemas/index.js';
+import { label } from '../ui/index.js';
