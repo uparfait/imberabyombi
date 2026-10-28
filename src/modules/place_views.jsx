@@ -42,3 +42,4 @@ VIEWS.inventory = () => {
   const banner = low.length ? <div className="mb-6 flex items-start gap-4 rounded-3xl border border-warn/30 bg-warn/10 p-5">{i3('box', 'h-11 w-11', 'warn')}
     <div><h2 className="text-base">{`${low.length} item${low.length > 1 ? 's are' : ' is'} below minimum stock`}</h2><p className="mt-1 text-sm text-muted">
       {low.map(i => i.item).join(', ')}</p></div></div> : null;
+  return <>{tabs('inv', [['res', 'Reservations', db.list('reservations').filter(r => r.status === 'Pending').length], ['stock', 'Inventory', low.length]], t)}
