@@ -5,3 +5,5 @@ export const spinner = (c = '') => (
 );
 export const spinner_html = (c = '') => `<svg class="spinner_segmented_svg ${c}" viewBox="0 0 50 50" aria-hidden="true"><circle class="spinner_segmented_dash" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle></svg>`;
 export const loading = (text = 'Loading') => (
+  <div className="grid justify-items-center gap-3 px-6 py-14" role="status">{spinner()}<span className="sr-only">{text}</span></div>
+);
