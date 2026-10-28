@@ -40,3 +40,4 @@ function on_over(e) {
   const b = e.target.closest('[data-a]'); if (b === hover_b) return;
   if (hover_b) { live.cancel(); settle(false); }
   if (!b || !img_sel || e.pointerType !== 'mouse' || !/^(pos|align):/.test(b.dataset.a)) return;
+  hover_b = b; hover_img = img_sel; freeze_img_box(true); const img = img_sel;
