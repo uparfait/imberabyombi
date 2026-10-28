@@ -16,3 +16,4 @@ const new_role_body = () => (
 
 export const ROLE_ACT = {
   role_sel: t => { ui.role = t.dataset.id; rerender(); },
+  role_new: () => modal({ title: 'New role', submit: 'Create role', body: new_role_body(),
