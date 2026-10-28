@@ -50,3 +50,4 @@ async function odf_blocks(cx, n, out) {
   for (const c of Array.from(n.children)) {
     const ln = c.localName;
     if (ln === 'h') { const lv = clamp(+(c.getAttribute('text:outline-level') || 1), 1, 4); out.push(`<h${lv}>${await odf_inline(cx, c) || '<br>'}</h${lv}>`); }
+    else if (ln === 'p') out.push(`<p>${await odf_inline(cx, c) || '<br>'}</p>`);
