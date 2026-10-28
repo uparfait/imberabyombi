@@ -8,6 +8,7 @@ import { defineConfig } from 'vite';
 
 /* Single-page fallback: dist/404.html is a copy of dist/index.html, so hosts that serve 404.html for unknown paths
    (GitHub Pages, many static hosts) open the app on every route, deep links and reloads included */
+const spa_fallback = () => {
 export default defineConfig({
   base: './',
   plugins: [react()],
