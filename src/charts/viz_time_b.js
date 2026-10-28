@@ -2,3 +2,4 @@
    Each chart: t (title), g (group), d (description), f(width) -> { svg, legend?, table: [head, rows] } */
 import { esc, fmt_d, ymd, add_d } from '../lib/index.js';
 import { round1, linear, ticks, rnd, uwords, sequential, fit, pct, spread, tip_text } from './viz_math.js';
+import { frame, svg, band, x_labels, dot, mark_group, hit_col, hit_row, row_label } from './viz_svg.js';
