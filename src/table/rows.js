@@ -8,3 +8,4 @@ import { plain } from '../ui/index.js';
 export function rows_of(c) {
   const o = cur[c] || {}, s = schemas[c]; let rows = db.list(c); if (o.filter) rows = rows.filter(o.filter);
   Object.entries(ui.q[c] || {}).forEach(([k, q]) => { if (!q) return; const t = s.f.find(f => f.k === k)?.t || '', n = q.toLowerCase().trim();
+    rows = rows.filter(r => t === 'select' ? String(r[k] ?? '') === q : /^date/.test(t) ? String(r[k] ?? '').startsWith(q) : plain(c, k, r).toLowerCase().includes(n)); });
