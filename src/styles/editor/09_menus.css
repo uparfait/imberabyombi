@@ -1,3 +1,4 @@
 /* styles/editor/09_menus.css: the editor's popup menus (ui/menu_engine.js: plain DOM on <body>, outside React). They are
    the template's .pop / .menu_item (classes ed_menu / ed_mi added), tightened for long word-processor menus: check mark,
    icon, label, shortcut and submenu arrow on one row, plain line separators. Also the colour palette and the table grid. */
+.ed_menu { max-width: calc(100vw - 1rem); padding: .375rem; border-radius: var(--radius); font-family: var(--font_sans); user-select: none; }
