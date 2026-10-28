@@ -42,3 +42,4 @@ export function adjust_dialog(img) {
       c.width = im.naturalWidth; c.height = im.naturalHeight; const x = c.getContext('2d'); x.drawImage(im, 0, 0);
       const d = x.getImageData(0, 0, c.width, c.height), p = d.data;
       for (let i = 0; i < p.length; i += 4) {
+        const r = (p[i] * B - 128) * C + 128, g = (p[i + 1] * B - 128) * C + 128, b = (p[i + 2] * B - 128) * C + 128, l = 0.2126 * r + 0.7152 * g + 0.0722 * b;
