@@ -36,3 +36,4 @@ function card_of(c) {
   card.innerHTML = card_html(c, orphan);
   qs('.c_quote', card).textContent = c.quote; qs('.c_text', card).textContent = c.text;
   const rep = qs('.c_replies', card);
+  c.replies.forEach(r => { const d = el('div', { class: 'mt-2 border-t border-line pt-2' }, reply_html(r)); d.lastChild.textContent = r.text; rep.appendChild(d); });
