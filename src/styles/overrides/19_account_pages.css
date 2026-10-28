@@ -8,3 +8,4 @@
     background: rgb(var(--brand) / .14); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); font-size: .8125rem; font-weight: 600; }
   /* Design-system specimen of a notification (it never moves or times out) */
   .toast_still { animation: none; }
+  .toast_still .bar { animation: none; transform: scaleX(.62); }
