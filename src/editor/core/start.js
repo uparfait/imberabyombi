@@ -47,3 +47,4 @@ export function editor_start(root) {
   /* ================= start ================= */
   try { document.execCommand('defaultParagraphSeparator', false, 'p'); } catch { /* not supported */ }
   render_all();
+  let stopped = false;
