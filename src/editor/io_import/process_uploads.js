@@ -27,12 +27,7 @@ function place_uploads(done, mode, failed) {
   }
   const tabs = [];
   done.forEach(r => { if (r.project) tabs.push(...project_tabs(r.project)); else tabs.push(new_tab(base_of(r.file.name), sanitize_html(r.html) || '<p><br></p>')); });
-  if (mode === 'replace') {
-    if (done.length === 1 && done[0].project) { try { load_project(done[0].project); } catch { failed.push(done[0].file.name + ': it isn’t a valid project file.'); } }
-    else {
-      const f = done[0]; state.title = f.project ? (f.project.title || base_of(f.file.name)) : base_of(f.file.name);
-      state.comments = []; state.tabs = tabs; state.active = tabs[0].id; render_all();
-    }
+  if (mode === 'replace') {   /* a project file fills an empty document whole (its setup and comments too) */
   } else { save_tab(); state.tabs.push(...tabs); state.active = tabs[0].id; render_tab(); render_sidebar(); render_comments(); }
 }
 
