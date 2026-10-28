@@ -18,6 +18,7 @@ npm run preview    # serves dist/ locally to check the build
 ```
 `dist/` is a static site: upload it to any host (GitHub Pages, Netlify, Vercel, a plain web server). The host answers
 every address with `index.html`; to serve the site from a folder, build with `BASE_PATH=/my-site/ npm run build`.
+See [deploying](deploying.md).
 
 ## First tour
 1. The public website opens at `#/` (home, about, mission, vision, strategies, staff, partners, thanks, contact).
