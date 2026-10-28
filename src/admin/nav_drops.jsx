@@ -24,3 +24,4 @@ function nav_markup(routed) {
   const href = idx => { let list = tree; return '#/admin/nav' + idx.map(i => { const n = list[i]; list = n.c; return `/${i}-${slug(n.t)}`; }).join(''); };
   const to = (l, i) => routed ? { href: href([...p.slice(0, l), i]) } : { attrs: { 'data-act': 'nav_open', 'data-level': l + 1, 'data-i': i } };
   /* one menu per system: System 2 always, System 3 while inside it. Its button names the open page (or the system on its home
+     page); the open page is highlighted in the menu */
