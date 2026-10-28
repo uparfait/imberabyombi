@@ -10,3 +10,5 @@
   #toolbar { margin: .375rem .5rem; padding: .1875rem .25rem; }
   #toolbar .tb_sep { display: none; }
   #toolbar .tb_fill { min-width: 0; }
+}
+#toolbar.viewing .tb_edit { opacity: .38; pointer-events: none; }
