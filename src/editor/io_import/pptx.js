@@ -22,3 +22,4 @@ function para_html(p) {
 async function slide_html(z, sp, i) {
   const doc = parse_xml(await z.text(sp)), rel_path = dir_of(sp) + '_rels/' + sp.split('/').pop() + '.rels', rels = rels_of(z.has(rel_path) ? await z.text(rel_path) : '');
   let title = '', body = '';
+  const tree = by_tag(doc, 'spTree')[0];
