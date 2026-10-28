@@ -41,3 +41,4 @@
   .task_file:last-child { border-bottom: 0; }
   .task_file:hover { background: rgb(var(--fg) / .04); }
   .task_file img, .task_file_ico { width: 2.25rem; height: 2.25rem; flex: none; border-radius: .625rem; object-fit: cover; }
+  .task_file_ico { display: grid; place-items: center; background: rgb(var(--brand) / .12); color: rgb(var(--brand)); }
