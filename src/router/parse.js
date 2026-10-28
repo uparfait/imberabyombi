@@ -1,4 +1,4 @@
-/* router/parse.js: the hash route (#/path?query) as { path, q }, and the page's title + SEO tags per route. */
+/* router/parse.js: the route (/path?query, after the base path) as { path, q }, and the page's title + SEO tags
 import { qs } from '../lib/index.js';
 
 export function parse() {
