@@ -8,3 +8,4 @@ import { qs, qsa, el, state, is_abs, offset_in, bodies, body_index, path_to, nod
 /* data-pos values: inline (no attribute), wrap_left, wrap_right, break, front, behind (front / behind are absolute) */
 export const IMG_POSITIONS = [['inline', 'In line', 'short_text'], ['wrap_left', 'Wrap text left', 'format_image_left'], ['wrap_right', 'Wrap text right', 'format_image_right'],
   ['break', 'Break text', 'view_agenda'], ['front', 'In front of text', 'flip_to_front'], ['behind', 'Behind text', 'flip_to_back']];
+const BAR = [...IMG_POSITIONS.map(([v, l, i]) => ['pos:' + v, l, i]), null,
