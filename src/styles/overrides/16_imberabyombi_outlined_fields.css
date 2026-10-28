@@ -30,3 +30,4 @@
   .field:hover > .multi_value { border-color: rgb(var(--fg)); }
   select[multiple]:is(:focus, [data-open]) + .multi_value { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
   select[multiple][aria-invalid=true] + .multi_value { border-color: rgb(var(--bad)); }
+  .field:has(> .multi_value:empty):not(:has(> select:is(:focus, [data-open]))) > label { transform: translateY(-50%); max-width: calc(100% - 1.5rem); }
