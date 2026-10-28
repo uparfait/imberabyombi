@@ -16,3 +16,4 @@ export function add_comment() {
   state.show_comments = true; apply_panels(); render_comments(); activate_comment(id, true);
 }
 export function strip_comment(html, id) {
+  const d = el('div'); d.innerHTML = html; qsa(`.cmt[data-cid="${id}"]`, d).forEach(sp => sp.replaceWith(...sp.childNodes)); return d.innerHTML;
