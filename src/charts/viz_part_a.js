@@ -27,3 +27,4 @@ export const VIZ_PART_A = {
     const f = frame(w, 260, { l: 0, r: 0, t: 0, b: 0 });
     const out = []; (function split(list, x, y, wd, ht) {
       if (!list.length) return; if (list.length === 1) { out.push({ ...list[0], x, y, wd, ht }); return; }
+      const tot = list.reduce((s, o) => s + o.v, 0); let acc = 0, k = 0; while (k < list.length - 1 && acc + list[k].v < tot / 2) acc += list[k++].v;
