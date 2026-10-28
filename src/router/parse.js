@@ -9,3 +9,5 @@ export function parse() {
 export function set_meta(title, desc) {
   document.title = title;   /* the browser tab shows only the active page */
   qs('meta[name=description]')?.setAttribute('content', desc || `${title}. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`);
+  qs('meta[property="og:title"]')?.setAttribute('content', document.title);
+}
