@@ -24,3 +24,4 @@ export const PK = {
   },
   times(v) {
     const near = v ? Math.min(95, Math.floor(to_min(v) / 15)) : 36;
+    const on = h24();
