@@ -6,3 +6,4 @@ import { uid } from './utils.js';
 import { state, default_setup, new_tab, set_on_change } from './state.js';
 import { pages_el } from './refs.js';
 import { bodies } from './dom.js';
+import { collect_html } from './collect.js';
