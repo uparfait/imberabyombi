@@ -44,3 +44,4 @@
   .task_file_ico { display: grid; place-items: center; background: rgb(var(--brand) / .12); color: rgb(var(--brand)); }
   .task_add_file { position: relative; overflow: hidden; display: inline-flex; height: 2.25rem; padding: 0 .875rem 0 .625rem; align-items: center; gap: .375rem; border: 1px dashed rgb(var(--line)); border-radius: var(--pill);
     cursor: pointer; font-size: .875rem; font-weight: 500; color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); transition: background-color .2s; }
+  .task_files + .task_add_file { margin-top: .5rem; }
