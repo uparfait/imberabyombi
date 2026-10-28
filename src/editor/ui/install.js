@@ -24,3 +24,4 @@ function install_menubar(offs) {
     listen(offs, b, 'mousedown', e => e.preventDefault());
     listen(offs, b, 'click', e => toggle_menu(b, items, { focus: e.detail === 0 }));
     listen(offs, b, 'mouseenter', () => {
+      const a = menu_stack.length && menu_stack[0].anchor;
