@@ -28,3 +28,4 @@ export function doc_stats(scope) {
   const root = export_root(scope), tables = top_tables(root).length, images = qsa('img', root).length;
   qsa('p,h1,h2,h3,h4,h5,h6,li,td,th,br', root).forEach(x => x.after(' '));
   const words = (root.textContent.replace(/\u200b/g, ' ').match(/[\p{L}\p{N}][\p{L}\p{N}'’\-]*/gu) || []).length;
+  return { words, tables, images, pages: scope === 'all' && state.tabs.length > 1 || state.setup.pageless ? null : bodies().length };
