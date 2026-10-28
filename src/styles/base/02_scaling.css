@@ -31,3 +31,5 @@
   }
   /* Light/dark switch: nothing animates while the theme changes */
   .theme_switch, .theme_switch *, .theme_switch *::before, .theme_switch *::after { transition: none !important; }
+  [hidden] { display: none !important; }
+}
