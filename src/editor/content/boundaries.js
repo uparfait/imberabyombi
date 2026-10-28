@@ -45,3 +45,4 @@ export function backspace_across(host, pi) {
 }
 export function delete_across(host, pi) {
   const next_b = bodies()[pi + 1], last = last_flow(host), nf = first_flow(next_b);
+  begin_op();
