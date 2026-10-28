@@ -12,3 +12,5 @@ export const WNS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/
 export function parse_pt(v) {
   if (!v) return null; const n = parseFloat(v); if (isNaN(n)) return null;
   if (/pt$/.test(v)) return n; if (/px$/.test(v)) return n * 0.75; if (/em$/.test(v)) return n * 11; return null;
+}
+/* f: the formatting so far ({ b, i, u, s, sup, sub, font, size, color, hl, link }); returns it plus what element e adds */
