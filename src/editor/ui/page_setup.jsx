@@ -42,7 +42,8 @@ function Page_setup_body() {
       </fieldset>
     </div>
     <div className="field"><label htmlFor="ps_color">Page color</label><input id="ps_color" name="page_color" type="color" defaultValue={s.page_color || '#ffffff'} /></div>
-  </>;
+    {!is_default(state.setup) && <button type="button" className="btn btn_ghost btn_sm self-end justify-self-start" onClick={reset}>Reset to defaults</button>}
+  </Fragment>;
 }
 
 export function page_setup_dialog() {
