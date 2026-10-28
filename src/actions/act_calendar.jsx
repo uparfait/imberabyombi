@@ -7,6 +7,7 @@ import { modal, slide_in } from '../overlays/index.js';
 import { open_form } from '../table/index.js';
 import { cal_go } from '../modules/index.js';
 import { mini_draw } from '../admin/index.js';
+import { go } from '../router/index.js';
 
 export const CALENDAR_ACT = {
   cal_today: () => cal_go(ymd()),
