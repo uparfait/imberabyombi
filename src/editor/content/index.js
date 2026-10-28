@@ -2,3 +2,4 @@
    alt text, border, copy / download / reset), links (dialog, bubble), comments, page management, the pages' keyboard
    and pointer events, paste & drop, and HTML sanitizing. Import from here: import { sanitize_html } from '../content/index.js' */
 export * from './img_sel.js';
+export * from './img_ops.js';
