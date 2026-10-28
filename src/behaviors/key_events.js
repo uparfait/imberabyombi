@@ -33,3 +33,4 @@ function on_keydown(e) {
   if ((k === 'Enter' || k === ' ') && t.matches?.('[data-act][tabindex]:not(button, a, input, select, textarea)')) { e.preventDefault(); t.click(); }
   if (k === 'Enter' && t.tagName === 'INPUT' && t.closest?.('.kv_cell, .tv_status_more') && !pick.a) {
     e.preventDefault(); t.closest('.kv_cell, [data-tv-status]').querySelector('[data-act=tv_save], [data-act=tv_status_save]')?.click(); }
+  if ((e.ctrlKey || e.metaKey) && k.toLowerCase() === 'k' && route.path.startsWith('/admin') && auth.user) { e.preventDefault(); open_cmd(); }
