@@ -21,3 +21,4 @@ export const EDITOR_DOC_PATHS = {
   text_snippet: 'M4 4h16v10l-6 6H4zM14 20v-6h6M8 9h8M8 13h4',
   html: 'M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16',
   markdown: 'M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM6 15V9l3 3 3-3v6M17 9v6M15 13l2 2 2-2',
+  menu_book: 'M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z',
