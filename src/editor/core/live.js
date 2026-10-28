@@ -85,3 +85,4 @@ export const live = {
   },
   cancel() {
     const s = cur; if (!s) return;
+    cur = null; s.cancelled = true; s.epoch = keeps; put(s.snap); extras(s);
