@@ -30,3 +30,4 @@ export function render_all() {
   apply_setup(false); render_tab(); render_sidebar(); render_comments(); apply_panels();
 }
 export function new_document() {
+  confirm_dialog('Start a new blank document? Anything you have not downloaded will be lost.', 'New document').then(ok => {
