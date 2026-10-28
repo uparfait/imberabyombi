@@ -2,3 +2,4 @@
    of round buttons in the template's look. It never scrolls sideways: on narrow screens it wraps onto more rows
    (the corners stay round). .active = a state that is on (bold, list…); .open = its menu is open; .viewing greys
    out the editing tools. */
+#toolbar {
