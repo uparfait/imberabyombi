@@ -27,3 +27,5 @@ modal({
 - `ask(message, on_yes, cta = 'Delete', danger)`: the part up to the first `?` is the title, the rest is the text.
 - `show_in_dialog('drawer' | 'viewer', () => jsx)`: fills and opens the drawer or the file viewer.
 - `close_dialog(el)` closes with the animation; `request_close(el)` asks first when a form changed.
+
+## Always on top
