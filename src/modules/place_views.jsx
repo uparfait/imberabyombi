@@ -22,3 +22,4 @@ VIEWS.library = () => {
 };
 
 const event_card = (e, i) => <article key={e.id} className="card overflow-hidden"><figure className="relative m-0">
+  <img src={cfg.img('event-' + i, 640, 360)} alt="" width="640" height="360" loading="lazy" className="aspect-video w-full object-cover" />
