@@ -52,3 +52,4 @@ export function indent(dir) {
 }
 export function clear_formatting() {
   if (!can_edit()) return;
+  exec('removeFormat');
