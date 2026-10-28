@@ -10,3 +10,4 @@ import { PB } from './pptx.js';
 export async function docx_to_html(file) {
   const buf = await file.arrayBuffer();
   try {
+    await load_script(LIB.mammoth);
