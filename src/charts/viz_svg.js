@@ -37,3 +37,4 @@ export function hbar(cy, h, xb, xt) {
 }
 export const path_of = pts => pts.map(([x, y], i) => `${i ? 'L' : 'M'}${round1(x)} ${round1(y)}`).join('');
 export const dot = (x, y, c, r = 4.5) => `<circle class="mark mark_dot" cx="${round1(x)}" cy="${round1(y)}" r="${r}" style="fill:${c}"/>`;
+/* x-position hit bands with a crosshair (line + area charts): one tooltip lists every series at that x */
