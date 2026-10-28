@@ -50,3 +50,4 @@ export function push_overflow(b, next) {
   if (pb) { const rest = []; let n = pb.nextSibling; while (n) { if (!is_abs(n)) rest.push(n); n = n.nextSibling; } insert_at_start(next, rest); }
   if (!overflows(b)) return;
   const kids = flow_kids(b), lim = b.clientHeight + 1;
+  let idx = kids.findIndex(c => c.offsetTop + c.offsetHeight - pad_bottom(c) > lim);
