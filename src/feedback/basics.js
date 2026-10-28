@@ -15,3 +15,5 @@ export const key_hint = k => !matchMedia('(any-pointer: fine)').matches ? '' : /
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
 export const TICON = { ok: 'check', bad: 'x', warn: 'bell', info: 'help' };
 export const TTITLE = { ok: 'Done', bad: 'Something went wrong', warn: 'Heads up', info: 'Note' };
+
+/* Bottom-right notifications belong to staff (admin) pages. Public and account pages get the same message inline
