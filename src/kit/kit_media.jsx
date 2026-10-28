@@ -19,3 +19,4 @@ export const kit_media = brand_hex => (
     <iframe className="map aspect-video" src={cfg.map} title="Map embedded with an iframe" loading="lazy"></iframe>
     <div className="grid gap-4"><embed type="image/svg+xml" src={svg_uri(brand_hex)} title="SVG through embed" className="h-36" />
       <object type="image/svg+xml" data={svg_uri('#1A120C')} className="h-36" aria-label="SVG through object"><p>Your browser cannot show this object.</p></object></div>
+    <div className="card p-4"><canvas id="chart_demo" className="h-56 w-full" role="img" aria-label="Sample bar chart drawn on canvas"></canvas></div>
