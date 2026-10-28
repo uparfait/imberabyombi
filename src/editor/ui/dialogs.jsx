@@ -12,3 +12,4 @@ export function after_close(fn) {
 }
 
 /* { title, content (JSX), buttons: [{ label, primary, action(form) }], width, on_open(form) }: Cancel comes with the
+   primary button; an action returning false keeps the dialog open. A dialog with no primary button is a view (closed
