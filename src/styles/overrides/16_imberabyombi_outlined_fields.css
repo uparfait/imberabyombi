@@ -2,3 +2,4 @@
   /* G. Imberabyombi outlined fields: the label rests inside the box and floats onto the border on focus or once filled */
   .field { position: relative; }
   /* Animated with transform only (move + scale), so the label glides smoothly; size and weight never jump */
+  .field:has(:where(input:not([type=range],[type=color],[type=file],[type=checkbox],[type=radio]), select:not([multiple],[size]), textarea, .multi_value)) > label:where(:not(.sr-only)) {
