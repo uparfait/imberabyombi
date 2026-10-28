@@ -30,3 +30,6 @@ export const inventory_schema = {
   r: { qty: (v, row) => stock_cell(v, row) },
   g: () => ({
     item: lorem.t(2), category: lorem.pick(['Kitchen', 'Cleaning', 'Stationery', 'Electronics', 'Sports']), qty: lorem.int(0, 60), min: lorem.int(5, 15),
+    unit: lorem.pick(['pcs', 'kg', 'L', 'boxes']), location: `Store ${lorem.pick(ABC)}`
+  })
+};
