@@ -17,3 +17,4 @@ export function p_pr_xml(e, extra = '') {
       + `${lh && !/px|pt/.test(st.lineHeight) ? ` w:line="${Math.round(lh * 240)}" w:lineRule="auto"` : ''}/>`;
   }
   const ml = parseFloat(st.marginLeft); if (ml && !extra.includes('numPr')) x += `<w:ind w:left="${Math.round(ml * 15)}"/>`;
+  if (e.tagName === 'BLOCKQUOTE') x += '<w:ind w:left="720"/>';
