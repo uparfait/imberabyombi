@@ -32,3 +32,4 @@ export async function docx_native(buf) {
 const JCM = { center: 'center', right: 'right', end: 'right', both: 'justify', distribute: 'justify' };
 const HEX6 = /^[0-9a-f]{6}$/i;
 async function docx_blocks(cx, nodes, container) {
+  let stack = [];
