@@ -2,3 +2,4 @@
   /* C. ONE loading indicator everywhere: the segmented spinner (spinner() in JS). Same shape and motion in
         busy buttons, tables, panels and the floating loader; only the size changes. Colour: --spin, default brand. */
   .spinner_segmented_svg { width: 3.375rem; height: 3.375rem; flex-shrink: 0; animation: spin_rotate 2s linear infinite; }
+  .spinner_segmented_dash { stroke: rgb(var(--spin, var(--brand))); stroke-linecap: round; stroke-dasharray: 1, 200; stroke-dashoffset: 0; animation: dash_pulse 1.5s ease-in-out infinite; }
