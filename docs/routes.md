@@ -9,6 +9,7 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 | Public  | `/intro` (hero detail), `/sitemap` (footer detail, legal), `/ui` (design system)                |
 | Account | `/login` `/forgot` `/verify` `/authenticator` `/set-password` (one shared account shell)        |
 | Admin   | `/admin` and `/admin/<module>`: dashboard, calendar, tasks, staff, employees, attendance, students, library, events, inventory, parking, roles, emails, charts, nav, settings |
+| Nested  | `/admin/nav/...`: System 2 and System 3 pages (three levels of navigation in all)               |
 
 - Unknown routes show "Page not found".
 - Admin routes without a session redirect to `#/login?next=...` and return there after sign-in.
