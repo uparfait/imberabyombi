@@ -22,3 +22,4 @@ const FROZEN = '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLe
 export const sheet_xml = s => {
   const width = Math.max(1, ...s.rows.map(r => r.length));
   const longest = (r, c) => Math.max(0, ...String(r[c] ?? '').split('\n').map(l => l.length));
+  const cw = Array.from({ length: width }, (_, c) => Math.min(60, Math.max(8, ...s.rows.slice(0, 500).map(r => longest(r, c))) + 2));
