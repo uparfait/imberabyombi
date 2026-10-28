@@ -3,3 +3,4 @@
    data-act handlers (sub_act.js) reach that state through sub_api(), and an element's state key through sub_key(). */
 import { useState } from 'react';
 import { flushSync } from 'react-dom';
+import { ic } from '../icons/index.js';
