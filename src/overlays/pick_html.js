@@ -8,3 +8,4 @@ import { pick } from './pick.js';
 
 export const PK = {
   opts(a) {
+    const row = o => `<button type="button" class="pk_item" role="option" aria-selected="${o.selected}" data-act="pk_opt" data-i="${o.index}" ${o.disabled ? 'disabled' : ''}>`
