@@ -28,3 +28,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.tab` / `.seg`                         | underlined tabs / segmented button                               |
 | `.pop` / `.menu_item` / `.menu_danger`  | popover menu and its items                                       |
 | `.choice_pill`                          | pill radio option (filter-chip style)                            |
+| `.search_btn` / `.clear_btn`            | search button (left) / clear button (right) of a search field    |
