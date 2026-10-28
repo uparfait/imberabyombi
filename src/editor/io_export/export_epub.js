@@ -27,3 +27,4 @@ export async function export_epub(scope, name) {
       img.setAttribute('src', fn); img.removeAttribute('data-nw'); img.removeAttribute('data-nh'); if (!img.hasAttribute('alt')) img.setAttribute('alt', '');
     });
     const title = tabs.length > 1 ? t.name : state.title;
+    const xb = Array.from(d.childNodes).map(n => n.nodeType === 3 ? xesc(n.data) : n.nodeType === 1 ? ser.serializeToString(n) : '').join('');
