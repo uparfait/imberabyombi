@@ -39,3 +39,5 @@ export const watch = () => {
   qsa('.viz_card [data-plot]').forEach(p => resize_observer.observe(p));
 };
 before_render(() => resize_observer?.disconnect());   /* the page that draws next watches again if it has charts */
+
+export function charts_view() {
