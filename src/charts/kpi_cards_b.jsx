@@ -42,3 +42,4 @@ export const kpi_cards_b = k => {
           <i key={i} style={{ '--p': `${Math.round(Math.max(0, Math.min(1, rate - i)) * 100)}%` }}></i>)}</div>
         <p className="mt-2 text-sm text-muted">{`From ${num(1284 * m)} reviews`}</p></>,
       [['Measure', 'Value'], [['Average rating', `${rate.toFixed(1)} / 5`], ['Reviews', num(1284 * m)]]]),
+    kpi_card('', 'Conversion rate', 'Share of visits that became a sign-up, each month. A fall shows in red.',
