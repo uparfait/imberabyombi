@@ -21,3 +21,6 @@ export function open_upload_dialog(initial = [], mode) {
     const { files, m } = up.get();
     if (!files.length) { toast('Choose at least one file'); return false; }
     const d = qs('#modal'); if (!d || !d.open || d.classList.contains('closing')) return;   /* closed meanwhile: same as Cancel */
+    after_close(() => { set_last(saved, saved_host); process_uploads(files, m); });
+  } });
+}
