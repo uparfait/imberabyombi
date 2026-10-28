@@ -13,3 +13,4 @@ export const VIZ_REL_B = {
     const val = (c, i) => Math.max(links.filter(l => l[0] === c && l[1] === i).reduce((s, l) => s + l[3], 0),
       links.filter(l => l[0] === c - 1 && l[2] === i).reduce((s, l) => s + l[3], 0));
     /* one scale for every column (so a flow is equally thick at both ends), each column centred */
+    const tots = cols.map((nodes, c) => nodes.reduce((s, _, i) => s + val(c, i), 0)), k = Math.min(...cols.map((nodes, c) => (f.ih - gap * (nodes.length - 1)) / tots[c]));
