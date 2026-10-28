@@ -19,3 +19,4 @@ export function delete_page(i) {
   const bs = bodies(), b = bs[i];
   ask(`Delete page ${i + 1} and everything on it?`, () => {
     begin_op();
+    if (i > 0) { const pl = last_flow(bs[i - 1]); if (is_break(pl)) pl.remove(); }
