@@ -31,3 +31,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
     let blurred = false;
     const on_blur = () => { blurred = picking_now.current; };
     const on_focus = () => { if (!blurred) return; blurred = false; setTimeout(stop, 800); };
+    const on_reset = e => { if (e.target.contains?.(inp)) setTimeout(sync); };
