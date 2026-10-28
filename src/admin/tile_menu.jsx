@@ -3,7 +3,7 @@
 import { ic, i3 } from '../icons/index.js';
 import { closed_pop } from './live_slot.jsx';
 
-/* a tile's attributes: a props object; a reference-style string ('data-act="mail" data-k="x"') is read into one */
+/* a tile's attributes: a props object; an attribute string ('data-act="mail" data-k="x"') is read into one */
 const attrs_of = a => typeof a === 'string' ? Object.fromEntries([...a.matchAll(/([\w-]+)="([^"]*)"/g)].map(m => [m[1], m[2]])) : a || {};
 
 const tile = (t, i) => { const Tag = t.href ? 'a' : 'button';
