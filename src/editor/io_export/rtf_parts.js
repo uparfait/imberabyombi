@@ -15,3 +15,4 @@ export const rtf_esc = s => {
     const c = ch.codePointAt(0);
     if (ch === '\\' || ch === '{' || ch === '}') o += '\\' + ch; else if (ch === '\t') o += '\\tab '; else if (ch === '\n') o += '\\line ';
     else if (c < 128) o += ch; else if (c < 0x10000) o += `\\u${c > 32767 ? c - 65536 : c}?`;
+    else { const hi = Math.floor((c - 0x10000) / 0x400) + 0xD800, lo = (c - 0x10000) % 0x400 + 0xDC00; o += `\\u${hi - 65536}?\\u${lo - 65536}?`; }
