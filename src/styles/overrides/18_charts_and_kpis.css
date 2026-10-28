@@ -7,3 +7,4 @@
   #viz_tip { position: fixed; z-index: 400; left: 0; top: 0; min-width: 8rem; max-width: min(16rem, calc(100vw - 1rem)); padding: .5rem .75rem; border: 1px solid rgb(var(--line));
     border-radius: calc(var(--radius) * .75); background: rgb(var(--surface)); color: rgb(var(--fg)); font-size: .8125rem; line-height: 1.45; pointer-events: none; opacity: 0; transition: opacity .12s; }
   #viz_tip.on { opacity: 1; }
+  #viz_tip .viz_tip_title { margin-bottom: .25rem; font-size: .75rem; color: rgb(var(--muted)); }
