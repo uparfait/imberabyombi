@@ -47,3 +47,4 @@ function keep_attrs(c, tag) {
     else if (n === 'data-pos') keep[n] = Object.hasOwn(POS_OLD, v) ? POS_OLD[v] : v;
     else if (n === 'data-page' && abs_img(c, tag)) keep[n] = v;
     else if (KEEP_ATTR.has(n)) keep[n] = v;
+    else if (n === 'class') { const cl = v.split(/\s+/).map(x => x.replace(/-/g, '_')).filter(x => KEEP_CLS.has(x)); if (cl.length) keep.class = cl.join(' '); }
