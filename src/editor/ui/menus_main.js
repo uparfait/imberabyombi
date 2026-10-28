@@ -25,3 +25,4 @@ export function file_items() {
     cmd('New document', 'note_add', () => new_document()),
     cmd('Upload files…', 'upload_file', () => open_upload_dialog(), 'Ctrl+O'),
     cmd('Open and replace document…', 'folder_open', () => pick_file('open')),
+    cmd('Import into new tab…', 'tab', () => pick_file('tab')),
