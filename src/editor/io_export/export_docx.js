@@ -16,3 +16,4 @@ const sect_xml = (refs, win, hin, m) => `<w:sectPr>${refs}<w:pgSz w:w="${tw(win)
 const num_of = n => `<w:num w:numId="${n.num_id}"><w:abstractNumId w:val="${n.abs}"/><w:lvlOverride w:ilvl="0"><w:startOverride w:val="${n.start}"/></w:lvlOverride></w:num>`;
 
 export async function export_docx(root, name) {
+  toast('Preparing Word document…', 0);
