@@ -15,3 +15,4 @@ function on_click(e) {
   if (!e.target.closest('.pop') && !e.target.closest('[data-pop]')) close_pops();
   else if (e.target.closest('#ctx a, #ctx button')) close_pops();   /* a choice in the right-click menu closes it */
   const pk = pick_at(e);
+  if (pk) { if (pick.a !== pk) pick.open(pk); else if (pk.tagName === 'SELECT') pick.close(); return; }
