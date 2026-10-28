@@ -53,3 +53,5 @@ export function move_section(k, to, m = section_model()) {
   part.forEach(b => m.c.insertBefore(b, ref));
   const f = rewrite(m, part[0]); if (f) caret_to_start(f);
   return f;
+}
+/* d: -1 up, +1 down */
