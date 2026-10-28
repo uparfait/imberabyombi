@@ -20,3 +20,4 @@ export function export_xlsx(root, name) {
       + '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>'
       + `<Override PartName="/xl/workbook.xml" ContentType="${OX}.sheet.main+xml"/><Override PartName="/xl/styles.xml" ContentType="${OX}.styles+xml"/>`
       + `${sheets.map((s, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" ContentType="${OX}.worksheet+xml"/>`).join('')}</Types>` },
+    { name: '_rels/.rels', data: `${XML}<Relationships xmlns="${XL_PR}"><Relationship Id="rId1" Type="${XL_R}/officeDocument" Target="xl/workbook.xml"/></Relationships>` },
