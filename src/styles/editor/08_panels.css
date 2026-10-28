@@ -55,3 +55,4 @@ textarea.c_input { border-radius: calc(var(--radius) * .75); }
 .find_case { display: flex; align-items: center; gap: .5rem; cursor: pointer; color: rgb(var(--fg) / .78); }
 
 /* Link bubble: shown and placed under the caret by the engine (display flex) */
+#link_bubble {
