@@ -9,3 +9,4 @@ The template is a complete front end with demo data in the browser. Before real 
 - Keep secrets (API keys, tokens) on the server. Anything in `src/` ends up in the public bundle.
 
 ## Content
+- Replace the lorem ipsum text, names and numbers (`lorem` in src/lib generates them; pages call it while drawing).
