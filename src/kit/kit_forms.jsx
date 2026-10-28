@@ -9,3 +9,4 @@ export const kit_forms = brand_hex => (
   <form className="on_bg grid gap-6" data-calc="" onSubmit={e => e.preventDefault()}>
     {kit_forms_text()}
     {kit_forms_choices(brand_hex)}
+    {kit_forms_feedback()}
