@@ -10,3 +10,4 @@ export const frame = (w, h, p = {}) => {
 };
 export const svg = (f, body, label) => `<svg viewBox="0 0 ${f.w} ${f.h}" width="${f.w}" height="${f.h}" role="img" aria-label="${esc(label)}">${body}</svg>`;
 export function y_axis(f, hi, lo = 0, fmt = compact_num) {
+  const ts = ticks(Math.min(lo, 0), hi), y = linear(ts[0], ts.at(-1), f.t + f.ih, f.t);
