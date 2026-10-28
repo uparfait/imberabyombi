@@ -23,3 +23,4 @@ export function snapshot() {
   const bs = bodies(), s = getSelection(); let caret = null;
   if (s.rangeCount) {
     const r = s.getRangeAt(0), h = editable_of(r.startContainer), i = bs.indexOf(h);
+    if (i >= 0) { const p = path_to(h, r.startContainer); if (p) caret = { i, path: p, off: r.startOffset }; }
