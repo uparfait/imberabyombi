@@ -11,3 +11,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 - **Text**: styles (Normal, Title, Subtitle, Heading 1–4), fonts, sizes, bold, italic, underline, strikethrough,
   colour and highlight palettes, alignment, line and paragraph spacing, indents, case changes, clear formatting,
   paint format.
+- **Lists**: bulleted and numbered (many marker styles) and checklists.
