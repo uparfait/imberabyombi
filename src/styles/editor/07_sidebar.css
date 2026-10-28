@@ -66,3 +66,4 @@ input.tab_filter, .tab_filter input {
 .tab_row.dragging, .tab_dragging, .outline_row.dragging, .outline_dragging { opacity: .4; }
 :is(.outline_drag_over, .tab_drag_over) :is(.outline_row, .tab_row):not(.active):hover { background: transparent; }
 :is(.outline_drag_over, .tab_drag_over), :is(.outline_drag_over, .tab_drag_over) * { cursor: grabbing; }
+.drop_line { height: 2px; border-radius: var(--pill); background: rgb(var(--brand)); pointer-events: none; }
