@@ -17,3 +17,4 @@ export function save_sel() {
   return { sc: r.startContainer, so: r.startOffset, ec: r.endContainer, eo: r.endOffset, host };
 }
 export function restore_sel(sel) {
+  if (!sel) { sel_remap.clear(); return; }
