@@ -30,3 +30,4 @@ export const sheet_xml = s => {
     r.forEach((v, ci) => {
       v = v == null ? '' : String(v); if (!v) return;
       const ref = col_name(ci) + (ri + 1), hd = s.hdr && ri === 0, sty = hd ? ' s="1"' : v.includes('\n') ? ' s="2"' : '', tv = v.trim();
+      if (!hd && /^-?(\d+(\.\d+)?|\.\d+)(e[+-]?\d+)?$/i.test(tv) && tv.length < 16 && !/^-?0\d/.test(tv)) x += `<c r="${ref}"${sty}><v>${tv}</v></c>`;
