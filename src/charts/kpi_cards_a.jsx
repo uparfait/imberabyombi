@@ -22,3 +22,4 @@ export const kpi_cards_a = k => {
     kpi_card('', 'Storage used', 'Share of the storage space in use: amber from 70%, red from 85%.',
       <><div className="kpi_gauge"><svg viewBox="0 0 120 70" aria-hidden="true">
         <path d={arc(60, 62, 44, 56, -Math.PI / 2, Math.PI / 2)} style={{ fill: `color-mix(in srgb, ${gauge_c} 16%, transparent)` }} />
+        <path d={arc(60, 62, 44, 56, -Math.PI / 2, -Math.PI / 2 + Math.PI * gauge_p)} style={{ fill: gauge_c }} /></svg>
