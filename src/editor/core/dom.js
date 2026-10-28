@@ -31,3 +31,5 @@ export function offset_within(block, node, off) {
   const r = document.createRange(); r.setStart(block, 0);
   try { r.setEnd(node, off); } catch { return 0; }
   return r.toString().length;
+}
+export function position_at(root, k) {
