@@ -15,3 +15,4 @@ import { ph_height } from './table_full.js';
 
 /* Export ▾: CSV, JSON, Excel */
 const export_menu = c => (
+  <div className="relative">
