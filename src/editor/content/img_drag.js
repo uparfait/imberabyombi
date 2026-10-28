@@ -17,3 +17,5 @@ function show_caret(p) {
   caret_el = caret_el || el('div', { class: 'img_drop_caret', style: 'position:absolute;width:0.125rem;pointer-events:none;z-index:6;background:rgb(var(--brand))' });
   if (caret_el.parentNode !== page) page.appendChild(caret_el);
   Object.assign(caret_el.style, { left: (rc.left - pr.left) / z + 'px', top: (rc.top - pr.top) / z + 'px', height: clamp(rc.height / z, rem() * 0.75, rem() * 3.75) + 'px' });
+}
+function hide_caret() { if (caret_el) caret_el.remove(); }
