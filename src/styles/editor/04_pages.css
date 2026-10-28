@@ -2,6 +2,7 @@
    (24 / 20 px, paper pixels along the page) is centred in them. The pages are paper (px / pt, the exception to rem):
    white, black text, light colour scheme in both themes, edged by a line instead of a shadow. .page is scaled by the
    zoom (transform); .pg_body / .pg_header / .pg_footer are placed by the engine. */
+#editor.ed_loading #pages { visibility: hidden; }   /* the saved document is still being read (a blank first page would flash) */
 #hruler { position: relative; flex: none; height: var(--ed_hr); overflow: hidden; }
 #vruler { position: relative; flex: none; width: var(--ed_vr); overflow: hidden; }
 #hruler > svg { margin-top: calc((var(--ed_hr) - 24px) / 2); }
