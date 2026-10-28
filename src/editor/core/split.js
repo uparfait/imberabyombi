@@ -19,3 +19,5 @@ export function split_text(block, b, next) {
     const t = tn[lo], o = i - cum[lo]; if (o >= t.length) return -Infinity;
     rng.setStart(t, o); rng.setEnd(t, o + 1); const rs = rng.getClientRects();
     return rs.length ? rs[rs.length - 1].bottom : -Infinity;
+  };
+  let lo = 0, hi = total - 1, best = -1;
