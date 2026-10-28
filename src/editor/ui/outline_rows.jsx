@@ -28,3 +28,4 @@ function section_items(row, kb) {
     { label: 'Move section down', icon: 'arrow_downward', disabled: !mv.down, no_preview: true, action: () => moved(move_section_by(k, 1), kb) },
     { sep: true },
     { label: 'Delete section', icon: 'delete', no_preview: true, action: () => confirm_dialog(
+      <>Delete the section <strong>{text}</strong>? The heading and everything under it are removed. You can undo this with Ctrl+Z.</>, 'Delete')
