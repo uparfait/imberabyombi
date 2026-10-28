@@ -22,3 +22,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - A form with unsaved edits asks "Discard changes?" before closing.
 
 ## Messages
+- Errors use `role="alert"`; other notifications `role="status"`; the notification region is `aria-live="polite"`.
