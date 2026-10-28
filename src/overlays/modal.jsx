@@ -24,3 +24,4 @@ const text_of = n => n == null || typeof n === 'boolean' ? '' : Array.isArray(n)
 /* "Delete this record? You cannot undo this." → [the question, the rest as text]. A JSX message keeps its markup
    (<strong>…</strong>) in the question: <>Check out <strong>{plate}</strong> from slot {n}? {more}</> */
 function split_q(msg, cta) {
+  if (msg == null || typeof msg !== 'object') {
