@@ -23,3 +23,4 @@ setInterval(() => qsa('[data-due]').forEach(e => { const r = { due: e.dataset.du
   e.lastElementChild.textContent = due_text(r); e.classList.toggle('late', r.status !== 'Done' && countdown(r.due).late); }), 30000);
 
 /* a task date in an editor: an older bare date gets a time (start 09:00, due and completed 17:00) */
+export const dt_in = (s, k) => !s ? '' : /T\d/.test(s) ? String(s).slice(0, 16) : `${s}T${k === 'start' ? '09:00' : '17:00'}`;
