@@ -31,3 +31,4 @@ export const events_schema = {
     field_spec('about', 'Description', 'textarea')
   ],
   r: { registered: (v, row) => bar_cell(v, row.capacity) },
+  g: () => {
