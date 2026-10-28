@@ -13,10 +13,9 @@ BASE_PATH=/my-site/ npm run build          # macOS, Linux, Git Bash
 $env:BASE_PATH='/my-site/'; npm run build  # Windows PowerShell
 ```
 Asset paths and every link in the app follow it.
+
 ## GitHub Pages
-1. Build: `npm run build`.
-2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` and
-   uploads `dist/` with the official Pages actions (`actions/upload-pages-artifact`, `actions/deploy-pages`).
+1. Build for the repository folder: `BASE_PATH=/<repository>/ npm run build` (skip it for a custom domain or a
 3. In the repository settings, set Pages to deploy from that branch or from GitHub Actions.
 The site is then served at `https://<user>.github.io/<repository>/`.
 
