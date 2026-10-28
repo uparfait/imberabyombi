@@ -31,3 +31,4 @@ function rtf_table(rx, t) {
     Array.from(r.cells).forEach(c => {
       const f = c.tagName === 'TH' || c.hasAttribute('data-hdr') ? { b: true } : {}, parts = [];
       c.childNodes.forEach(nd => {
+        if (nd.nodeType === 1 && is_list(nd)) Array.from(nd.children).forEach(li => parts.push(rtf_esc('• ') + rtf_inline(rx, li, f)));
