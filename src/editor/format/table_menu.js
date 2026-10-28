@@ -29,3 +29,4 @@ export function table_menu_items() {
     { label: 'Cell background', icon: 'format_color_fill', sub: () => [{ render: () => palette_el(col => tbl_op('cell_bg', col), 'None') }] },
     { label: 'Vertical alignment', icon: 'vertical_align_center', sub: () => VALIGN_ITEMS.map(([l, v, i]) => ({ label: l, icon: i, action: () => tbl_op('valign', v) })) },
     { label: 'Border width', icon: 'border_style', sub: () => [0, 1, 2, 3].map(w => ({ label: w ? w + ' px' : 'No border', action: () => tbl_op('border', w) })) },
+    { label: 'Border color', icon: 'border_color', sub: () => [{ render: () => palette_el(col => tbl_op('border_color', col), 'Black') }] },
