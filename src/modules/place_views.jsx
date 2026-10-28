@@ -54,8 +54,7 @@ VIEWS.parking = () => {
   const tile = s => { const p = occ[s], a = can ? { 'data-act': p ? 'park_out' : 'park_in', 'data-id': p?.id || '', 'data-slot': s } : { disabled: true };
     return <button key={s} className={`tile ${p ? 'is_on' : ''}`} {...a} aria-label={`Slot ${s}, ${p ? 'occupied by ' + p.plate : 'free'}`}>
       <span className="text-xs font-semibold">{s}</span>
-      {p ? <>{ic('car', 'h-6 w-6')}<span className="w-full truncate font-mono text-[11px]">{p.plate}</span>
-        </> : <span className="text-[11px] text-muted">Free</span>}</button>; };
+      {p ? <>{ic('car', 'h-6 w-6')}<span className="w-full truncate font-mono text-[0.6875rem]">{p.plate}</span>
   return <>{stat_row([['Capacity', N, 'car', 'ink'], ['Occupied', parked.length, 'car'], ['Free', N - parked.length, 'check', 'ok'],
       ['Revenue today', money(rev), 'coin', 'info']])}
     <section className="card mb-6 p-5"><header className="mb-5 flex flex-wrap items-center gap-3"><h2 className="text-lg">Live slots</h2>
