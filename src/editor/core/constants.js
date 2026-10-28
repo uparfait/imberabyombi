@@ -19,3 +19,4 @@ export const STYLES = [
   { key: 'subtitle', label: 'Subtitle', tag: 'P', cls: 'subtitle', css: 'font-size:16px;color:#666' },
   { key: 'h1', label: 'Heading 1', tag: 'H1', css: 'font-size:20px' },
   { key: 'h2', label: 'Heading 2', tag: 'H2', css: 'font-size:17px' },
+  { key: 'h3', label: 'Heading 3', tag: 'H3', css: 'font-size:15px;color:#434343' },
