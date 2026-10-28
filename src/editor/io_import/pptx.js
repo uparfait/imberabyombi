@@ -13,3 +13,4 @@ function para_html(p) {
   for (const c of Array.from(p.children)) {
     if (c.localName === 'r' || c.localName === 'fld') {
       const pr = kids(c, 'rPr')[0]; let s = esc_html(by_tag(c, 't').map(x => x.textContent).join(''));
+      if (pr && pr.getAttribute('b') === '1') s = `<b>${s}</b>`; if (pr && pr.getAttribute('i') === '1') s = `<i>${s}</i>`; h += s;
