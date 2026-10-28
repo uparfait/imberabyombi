@@ -57,3 +57,4 @@ function put(sn) {
   if (scroller) scroller.scrollTop = sn.top;
 }
 function extras(s) { const r = s.restores.splice(0); r.reverse().forEach(f => { try { f(); } catch (e) { console.error(e); } }); }
+function run(s) {
