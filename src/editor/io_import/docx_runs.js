@@ -50,3 +50,5 @@ export async function docx_runs(cx, n) {
     if (ln === 'r') h += await docx_run(cx, c);
     else if (ln === 'hyperlink') {
       const rel = cx.rels[c.getAttribute('r:id')], inner = await docx_runs(cx, c); h += rel && rel.external ? `<a href="${esc_html(rel.target)}">${inner}</a>` : inner;
+    }
+    else if (!SKIP.test(ln)) h += await docx_runs(cx, c);
