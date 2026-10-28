@@ -14,3 +14,4 @@ export * from './dialog_fields.jsx';
 export * from './table_dialogs.jsx';
 export * from './table_props.jsx';
 export * from './table_menu.js';
+export * from './col_resize.js';
