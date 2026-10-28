@@ -8,3 +8,5 @@ export function default_setup() {
     header: false, footer: false, page_numbers: false, header_html: '', footer_html: '' };
 }
 export function new_tab(name, html) { return { id: uid(), name, html: html || '<p><br></p>', undo: [], redo: [] }; }
+
+export const state = {
