@@ -11,3 +11,4 @@ export function p_pr_xml(e, extra = '') {
   else if (e.classList && e.classList.contains('subtitle')) style = 'Subtitle';
   let x = style ? `<w:pStyle w:val="${style}"/>` : '';
   x += extra;
+  const lh = parseFloat(st.lineHeight), pt = parse_pt(st.paddingTop), pb = parse_pt(st.paddingBottom);
