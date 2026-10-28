@@ -52,3 +52,4 @@ export function apply_snap(s) {
 export function undo() {
   if (state.mode !== 'edit') return; live.cancel();
   const t = active_tab(); if (!t) return; if (hist_timer) commit(); if (t.undo.length < 2) return;
+  t.redo.push(t.undo.pop()); apply_snap(t.undo[t.undo.length - 1]); save_soon();
