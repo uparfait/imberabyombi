@@ -32,3 +32,4 @@ function insert_items() {
     { sep: true }, cmd('Horizontal line', 'horizontal_rule', () => insert_hr()),
     cmd('Page break', 'insert_page_break', () => insert_page_break(), 'Ctrl+Enter'),
     cmd('Blank page after this one', 'note_add', () => add_blank_page(current_page())),
+    cmd('Date', 'calendar_today', () => insert_text_at_caret(new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }))),
