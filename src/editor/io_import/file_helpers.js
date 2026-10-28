@@ -20,3 +20,4 @@ export function file_badge(ext) {
   if (BADGES[ext]) return BADGES[ext];
   if (IMG_EXT.has(ext)) return [ext.toUpperCase().slice(0, 4), '#9334e6'];
   if (CODE_EXT.has(ext)) return [ext.toUpperCase().slice(0, 4), '#1a73e8'];
+  return [(ext || 'FILE').toUpperCase().slice(0, 4), '#5f6368'];
