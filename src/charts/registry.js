@@ -19,3 +19,4 @@ export function draw_chart(cv, labels, vals, anim = true) {
     }
     vals.forEach((v, i) => {
       const h = (ht - pb) * (v / max) * e, bx = pl + cw * i + (cw - bw) / 2, by = ht - pb - h, g = x.createLinearGradient(0, by, 0, ht - pb);
+      g.addColorStop(0, col('--brand')); g.addColorStop(1, col('--brand_2')); x.fillStyle = g; x.beginPath();
