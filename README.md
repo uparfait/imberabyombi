@@ -11,8 +11,7 @@ charts and KPIs, all sharing one set of design tokens. Start any new website fro
 - **Light and fast**: React is the only runtime dependency, lazy media, small CSS, works on low-end phones and slow networks.
 - **Accessible and SEO-ready**: landmarks, keyboard support, live regions, per-page titles, Open Graph, JSON-LD.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Quick start
 
 ## React Compiler
 
