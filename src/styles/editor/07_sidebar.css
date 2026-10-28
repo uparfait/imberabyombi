@@ -34,3 +34,4 @@ input.tab_filter, .tab_filter input {
 .tab_name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tab_row .tab_more { opacity: 0; transition: opacity .15s; }
 .tab_row:hover .tab_more, .tab_row:focus-within .tab_more, .tab_row .tab_more.open { opacity: 1; }
+.tab_rename {
