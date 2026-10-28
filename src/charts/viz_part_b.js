@@ -7,3 +7,4 @@ import { legend } from './viz_legend.jsx';
 const ring = (d, fill) => `<path class="mark" d="${d}" style="fill:${fill};stroke:rgb(var(--surface));stroke-width:2"/>`;
 
 export const VIZ_PART_B = {
+  sunburst: { t: 'Sunburst chart', g: 'part', d: 'A hierarchy as rings: groups inside, their parts outside.', f(w) {
