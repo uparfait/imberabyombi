@@ -8,3 +8,4 @@ import { unpeek } from './hover_preview.js';
 import { MENUS } from './menus.js';
 import { install_find } from './find.js';
 import { on_selection, stop_sel_timer } from './toolbar_state.js';
+import { install_toolbar } from './toolbar.js';
