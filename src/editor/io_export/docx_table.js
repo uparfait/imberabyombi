@@ -23,3 +23,4 @@ export function table_xml(t, ctx) {
   rows.forEach((r, ri) => {
     const hdr_row = ri === 0 && Array.from(r.cells).some(c => c.hasAttribute('data-hdr') || c.tagName === 'TH');
     out += `<w:tr>${hdr_row ? '<w:trPr><w:tblHeader/></w:trPr>' : ''}`; let col = 0;
+    Array.from(r.cells).forEach(c => {
