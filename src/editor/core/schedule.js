@@ -18,3 +18,5 @@ export function schedule_ui() {
     ui_timer = null; if (!pages_el) return;
     render_outline(); render_pages_panel(); refresh_comment_states(); if (find_state.open) run_find(true);
   }, 250);
+}
+/* editor_start's stop(): drop pending frames / timers */
