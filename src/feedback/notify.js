@@ -41,3 +41,4 @@ export function notify(text, tone = 'ok', title) {
 export const toast = notify;
 
 /* the store's "storage is full" notice (store/db.js calls it when the browser refuses to save) */
+set_storage_full(() => notify('Export a backup, then reset demo data in Settings to free space.', 'bad', 'Browser storage is full'));
