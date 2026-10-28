@@ -14,3 +14,4 @@ export function zip_store(files, mime) {
     const name = enc.encode(f.name), data = typeof f.data === 'string' ? enc.encode(f.data) : f.data, crc = crc32(data);
     const lh = new DataView(new ArrayBuffer(30));
     lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true); lh.setUint16(8, 0, true); lh.setUint16(10, 0, true);
+    lh.setUint16(12, 0x21, true);
