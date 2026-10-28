@@ -24,3 +24,4 @@ export * from './rulers.js';
 export * from './view.js';
 export * from './menu_items.jsx';
 export * from './menus_main.js';
+export * from './menus.js';
