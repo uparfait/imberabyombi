@@ -8,3 +8,4 @@
 .ed_menu .ed_mi[aria-checked="true"] .mi_label { font-weight: 500; }
 .ed_menu .mi_check { color: var(--active_fg); }
 .ed_menu .mi_check svg { width: 1rem; height: 1rem; }
+.ed_menu .mi_label { overflow: hidden; text-overflow: ellipsis; }
