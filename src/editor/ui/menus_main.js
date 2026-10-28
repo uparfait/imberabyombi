@@ -53,3 +53,4 @@ function theme_items() {
   return [['light', 'Light'], ['dark', 'Dark'], ['system', 'Same as device']].map(([v, l]) => flip(l, cur === v, () => set_theme(v)));
 }
 function full_screen() {
+  if (document.fullscreenElement) document.exitFullscreen();
