@@ -30,3 +30,4 @@ export function enhance() {
   const ioc = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { count_up(en.target); ioc.unobserve(en.target); } })) : null;
   qsa('[data-count]').forEach(el => ioc ? ioc.observe(el) : count_up(el));
   qsa('input[type=range]').forEach(fill_range); header_line();
+  qsa('select[multiple]').forEach(ms_sync);
