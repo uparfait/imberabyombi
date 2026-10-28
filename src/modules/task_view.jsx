@@ -35,3 +35,6 @@ export function task_view(id) {
     actions: own ? <><button type="button" className="btn btn_danger order-first mr-auto" data-act="del" data-col="tasks" data-id={r.id}>
       {ic('trash', 'h-4 w-4')}Delete</button>
       <button type="button" className="btn btn_outline" data-act="edit" data-col="tasks" data-id={r.id}>{ic('edit', 'h-4 w-4')}Edit all</button></> : null });
+}
+
+/* the redrawn view opens at the same scroll; its form focuses its first field 50 ms later, which would scroll that field into
