@@ -7,3 +7,4 @@ export const DIALOGS = { modal: null, confirm: null, drawer: null, viewer: null 
 let version = 0, n = 0;
 const listeners = new Set();
 export const subscribe_dialogs = fn => { listeners.add(fn); return () => listeners.delete(fn); };
+export const get_dialog_version = () => version;
