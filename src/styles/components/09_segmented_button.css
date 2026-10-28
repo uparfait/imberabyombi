@@ -38,3 +38,4 @@
   .dark .hero { --h0: rgb(var(--ink)); --h1: color-mix(in srgb, rgb(var(--brand_2)) 72%, rgb(var(--ink))); --h2: rgb(var(--brand)); --glow: .32; border-width: 0; }
   .hero > .pattern_layer, .theme_band > .pattern_layer { --pc: var(--fg); --pa: .045; }
   .theme_band { background: color-mix(in srgb, rgb(var(--brand)) 6%, rgb(var(--surface))); }
+  .dark .theme_band { background: rgb(var(--ink)); }
