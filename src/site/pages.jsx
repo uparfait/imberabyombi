@@ -8,3 +8,4 @@ import { hero_sec, about_sec } from './hero_about.jsx';
 import { mission_sec, vision_sec } from './mission_vision.jsx';
 import { strategies_sec, staff_sec } from './strategies_staff.jsx';
 import { partners_sec, thanks_sec } from './partners_thanks.jsx';
+import { contact_sec } from './contact_sec.jsx';
