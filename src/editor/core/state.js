@@ -18,3 +18,4 @@ state.tabs.push(new_tab('Tab 1')); state.active = state.tabs[0].id;
 /* persist.js registers its debounced save here (state.js stays free of imports that reach other areas) */
 let on_change = () => {};
 export function set_on_change(fn) { on_change = fn; }
+export function state_changed() { on_change(); }
