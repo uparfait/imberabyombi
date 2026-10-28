@@ -43,3 +43,4 @@ export function toggle_para_space(which) {
   with_blocks(bs => { const on = bs.some(b => !b.style[prop]); bs.forEach(b => { b.style[prop] = on ? '10pt' : ''; }); });
 }
 /* dir 1 / -1: list items nest / un-nest, other blocks move by half an inch */
+export function indent(dir) {
