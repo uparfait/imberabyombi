@@ -12,3 +12,4 @@ export const legend = (names, kind = 'rect', idx = names.map((_, i) => i)) => (
 );
 
 /* lo / hi: the end labels; colors: one swatch each */
+export const scale_legend = (lo, colors, hi) => (
