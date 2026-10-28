@@ -9,3 +9,4 @@ export const field_label = el => (el.labels?.[0]?.textContent || el.placeholder 
 export function err_text(el) {
   const v = el.validity, l = field_label(el), lc = l.charAt(0).toLowerCase() + l.slice(1);
   if (v.valueMissing) return el.type === 'checkbox' ? 'Tick this box to continue.' : (el.tagName === 'SELECT' || el.type === 'radio') ? `Choose ${lc}.` : `Enter ${lc}.`;
+  if (v.typeMismatch) return el.type === 'email' ? 'Enter an email address like name@lorem.io.' : `Enter a valid ${lc}.`;
