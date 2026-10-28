@@ -45,3 +45,4 @@ export function apply_folds(ol) {
 export function toggle_fold(row, open) {
   if (!row.querySelector('.outline_fold')) return;
   const t = active_tab(), f = open === undefined ? !row.classList.contains('folded') : !open;
+  row.classList.toggle('folded', f); row.setAttribute('aria-expanded', String(!f));
