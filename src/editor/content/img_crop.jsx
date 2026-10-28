@@ -34,3 +34,4 @@ function Crop_body({ src, st }) {
     <div className="grid gap-3 sm:col-span-2">
       <p className="text-muted">Drag across the picture to choose the part to keep.</p>
       <div className="text-center">
+        <div className="crop_stage" onPointerDown={down}>
