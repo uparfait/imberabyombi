@@ -10,3 +10,5 @@ import { export_epub } from './export_epub.js';
 import { top_tables, export_csv } from './export_data.js';
 import { export_xlsx } from './export_xlsx.js';
 import { export_docx } from './export_docx.js';
+
+export const FORMATS = [
