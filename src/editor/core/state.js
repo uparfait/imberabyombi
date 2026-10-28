@@ -5,3 +5,4 @@ import { uid } from './utils.js';
 
 export function default_setup() {
   return { paper: 'letter', orientation: 'portrait', margins: { top: 1, bottom: 1, left: 1, right: 1 }, page_color: '#ffffff', pageless: false,
+    header: false, footer: false, page_numbers: false, header_html: '', footer_html: '' };
