@@ -25,3 +25,4 @@ export function render_tab() {
   update_rulers(); schedule_ui();
 }
 export function render_all() {
+  if (refs.doc_title) refs.doc_title.value = state.title;
