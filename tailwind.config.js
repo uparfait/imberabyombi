@@ -26,3 +26,4 @@ export default {
       },
       fontFamily: { sans: ['var(--font_sans)'], display: ['var(--font_display)'], mono: ['var(--font_mono)'] },
       borderRadius: {
+        sm: 'calc(var(--radius) * .25)', DEFAULT: 'calc(var(--radius) * .375)', md: 'calc(var(--radius) * .5)',
