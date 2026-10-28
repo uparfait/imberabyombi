@@ -5,3 +5,4 @@ import { qs, esc } from '../lib/index.js';
 import { ic_html } from '../icons/index.js';
 import { auth, MODS } from '../auth/index.js';
 import { key_hint } from '../feedback/index.js';
+import { tip } from '../overlays/index.js';
