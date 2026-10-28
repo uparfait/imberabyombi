@@ -24,3 +24,4 @@ export const sheet_xml = s => {
   const longest = (r, c) => Math.max(0, ...String(r[c] ?? '').split('\n').map(l => l.length));
   const cw = Array.from({ length: width }, (_, c) => Math.min(60, Math.max(8, ...s.rows.slice(0, 500).map(r => longest(r, c))) + 2));
   let x = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="${XL_NS}">${s.hdr ? FROZEN : ''}`
+    + `<cols>${cw.map((w, i) => `<col min="${i + 1}" max="${i + 1}" width="${w}" customWidth="1"/>`).join('')}</cols><sheetData>`;
