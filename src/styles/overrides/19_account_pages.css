@@ -3,3 +3,4 @@
   .auth_row { display: flex; align-items: center; gap: .875rem; padding: .875rem 1rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); font-size: .875rem; transition: background-color .2s; }
   .auth_row:hover { background: rgb(var(--fg) / .04); }
   .auth_steps { display: grid; gap: 1.75rem; counter-reset: step; }
+  .auth_steps > li { position: relative; padding-left: 2.5rem; counter-increment: step; }
