@@ -50,3 +50,6 @@ function keep_attrs(c, tag) {
     else if (n === 'class') { const cl = v.split(/\s+/).map(x => x.replace(/-/g, '_')).filter(x => KEEP_CLS.has(x)); if (cl.length) keep.class = cl.join(' '); }
   }
   return keep;
+}
+
+function clean(node) {
