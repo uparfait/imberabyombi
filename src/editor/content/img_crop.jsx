@@ -49,3 +49,4 @@ function Crop_body({ src, st }) {
 }
 
 export function crop_dialog(img) {
+  img = img_now(img); if (!img || previewing() || !can_edit()) return;
