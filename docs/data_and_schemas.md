@@ -11,3 +11,4 @@ is blocked (private mode, sandboxes).
 | `db.find(collection, id)`    | one row                                                     |
 | `db.upsert(collection, row)` | insert or update (by `id`), returns the id                  |
 | `db.remove(collection, id)`  | delete a row                                                |
+| `db.bytes()`                 | how much storage the app uses (Settings shows it)           |
