@@ -41,3 +41,4 @@
 .pageless .doc_content .page_break { height: auto; margin: 10px 0; border-top: 1px dashed #9aa0a6; }
 
 /* Find and replace marks (CSS Custom Highlight API, names set by ui/find.js) */
+::highlight(find_all) { background-color: #fde293; color: #000; }
