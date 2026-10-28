@@ -8,3 +8,4 @@ export function scaled(n) { return n * rem() / 16; }
 
 /* add a listener and remember how to remove it (offs: the cleanup list of an installer) */
 export function listen(offs, t, type, fn, o) {
+  if (!t) return;
