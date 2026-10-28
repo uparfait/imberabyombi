@@ -11,3 +11,4 @@ export * from './dialogs.jsx';
 export * from './page_setup.jsx';
 export * from './info_dialogs.jsx';
 export * from './insert_dialogs.jsx';
+export * from './find.js';
