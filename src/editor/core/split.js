@@ -67,3 +67,4 @@ export function push_overflow(b, next) {
 export function pull_up(b, next) {
   let g = 0;
   while (g++ < 1000) {
+    const last = last_flow(b); if (last && is_break(last)) return;
