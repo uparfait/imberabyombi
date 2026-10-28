@@ -29,3 +29,4 @@ export function kit() {
   after_render(() => draw_chart(qs('#chart_demo'), ['I', 'II', 'III', 'IV', 'V', 'VI'], [12, 19, 9, 24, 17, 28]));
   return (
     <>
+      {page_hero('Design system', 'Lorem design system', LEAD, 'layers')}
