@@ -16,3 +16,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
 - Add `<div data-msg-slot className="empty:hidden"></div>` where a form's messages should appear.
 
 ## Notifications
+- Staff pages only. On public and account pages `notify()` shows the same message inline, in the form or section the
