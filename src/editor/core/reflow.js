@@ -55,3 +55,5 @@ export function reflow_pageless() {
     const s = save_sel();
     for (let j = 1; j < bs.length; j++) { Array.from(bs[j].childNodes).forEach(n => b0.appendChild(n)); remove_page(bs[j]); }
     join_conts(b0); restore_sel(s);
+  }
+  normalize_body(b0); hoist_nested(b0); place_abs(true);
