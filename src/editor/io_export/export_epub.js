@@ -4,3 +4,4 @@ import { state, active_tab, el, qsa, uid, download, hist_timer, commit } from '.
 import { save_tab } from '../ui/index.js';
 import { b64bytes } from '../io_import/index.js';
 import { CONTENT_CSS } from './content_css.js';
+import { unwrap_comments } from './project_file.js';
