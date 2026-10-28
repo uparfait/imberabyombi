@@ -29,3 +29,4 @@ function up_to(m, k) {
   return -1;
 }
 function down_to(m, k) {
+  const h = m.heads[k], n = h && m.heads.find(x => x.i === h.end); if (!n) return -1;
