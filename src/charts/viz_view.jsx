@@ -23,3 +23,4 @@ function Viz_card({ k, c }) {
   const [o, set_o] = useState(null);
   useLayoutEffect(() => { DRAWN.set(k, set_o); return () => { if (DRAWN.get(k) === set_o) DRAWN.delete(k); }; }, [k]);
   return (
+    <article className="card viz_card" data-chart={k} data-act="viz_open" tabIndex="0" aria-label={`${c.t}: press Enter to see its data in a table`}>
