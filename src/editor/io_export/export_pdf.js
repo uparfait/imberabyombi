@@ -2,3 +2,4 @@
    Both tools load on first use from the CDN (load_script). scope 'all' draws every tab in turn, then reopens the first. */
 import { state, dims, qsa, el, toast, load_script, LIB, pages_el, hist_timer, commit } from '../core/index.js';
 import { save_tab, render_tab, render_sidebar } from '../ui/index.js';
+import { hide_img_sel, render_comments } from '../content/index.js';
