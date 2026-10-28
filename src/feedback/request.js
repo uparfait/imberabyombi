@@ -19,3 +19,5 @@ export function busy(btn, on) {
   btn.classList.toggle('is_busy', on); btn.disabled = on;
   if (on) { btn.setAttribute('aria-busy', 'true'); btn.insertAdjacentHTML('beforeend', spinner_html()); }
   else { btn.removeAttribute('aria-busy'); btn.querySelector(':scope > .spinner_segmented_svg')?.remove(); }
+}
+export async function request(fn, { btn = null, delay = cfg.latency } = {}) {
