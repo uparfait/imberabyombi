@@ -25,3 +25,4 @@ function status_pick(t) {
 
 export function task_change(t) {
   if (t.dataset?.subTick) { tick(t.dataset.subTick, +t.dataset.g, +t.dataset.i, t.checked); return true; }
+  if (t.matches?.('[data-status-pick]')) { status_pick(t); return true; }
