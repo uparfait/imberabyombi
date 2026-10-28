@@ -4,3 +4,4 @@ The template is meant to run well on low-end phones, slow CPUs and small bandwid
 
 ## Lightweight by design
 - Runtime dependencies: React and ReactDOM only. No UI kit, no router library, no state library, no date library.
+- Tailwind generates only the utilities the code uses; the production CSS is small and cached.
