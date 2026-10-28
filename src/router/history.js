@@ -31,3 +31,4 @@ export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
 
 /* go('/admin/tasks'): a new history entry, then the page draws. { replace: true } replaces the current entry instead
    (redirects). Going to the address already on screen does nothing. */
+export function go(path, { replace = false } = {}) {
