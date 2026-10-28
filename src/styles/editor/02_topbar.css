@@ -17,3 +17,5 @@
 .topbar_main { display: flex; flex-direction: column; min-width: 0; }
 .top_btns { display: flex; flex: none; align-items: center; gap: .25rem; margin-left: auto; }
 .pill_btn svg { flex: none; }
+
+/* The document title: reads as a heading, shows its field outline on hover / focus */
