@@ -11,3 +11,4 @@ import { tip } from './tip.js';
       Closing lives in the header x. The footer only appears for actions: Cancel + submit on forms/confirms, or custom actions. */
 export function close_dialog(d) {
   if (!d?.open || d.classList.contains('closing')) return;
+  pick.close(); tip.hide();
