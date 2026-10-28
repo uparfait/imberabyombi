@@ -5,6 +5,7 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Module                   | Route                  | Features                                                         |
 |--------------------------|------------------------|------------------------------------------------------------------|
 | Dashboard                | `/admin/dashboard`     | Welcome hero, counts, attendance chart, my tasks, agenda, low stock, parking |
+| Calendar & activities    | `/admin/calendar`      | Week (hour grid, now line) and month views, mini calendar, click a slot to add; your tasks on their due day (a click opens Tasks with it highlighted) |
 
 ## The admin shell ([`src/admin/`](../src/admin/))
 - **Sidebar**: full height, collapsible on desktop (the logo turns into "open sidebar" on hover), a drawer on phones;
