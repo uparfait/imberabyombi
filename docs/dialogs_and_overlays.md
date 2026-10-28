@@ -21,3 +21,4 @@ modal({
 ```
 - Submitting validates the form, runs `on_submit` inside `request()` (the button spins), then closes.
 - Closing happens only from the header ×, a Cancel button or `Esc`, never by a click outside. A form with unsaved edits
+  asks "Discard changes?" first.
