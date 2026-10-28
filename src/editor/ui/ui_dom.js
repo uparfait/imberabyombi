@@ -12,3 +12,4 @@ export function listen(offs, t, type, fn, o) {
   t.addEventListener(type, fn, o); offs.push(() => t.removeEventListener(type, fn, o));
 }
 /* run every cleanup of a list, newest first */
+export function run_offs(offs) { while (offs.length) { try { offs.pop()(); } catch (e) { console.error(e); } } }
