@@ -45,3 +45,4 @@ export function charts_view() {
   const by = g => Object.entries(VIZ).filter(([, c]) => c.g === g);
   return (
     <>
+      {page_title('Charts & KPIs',
