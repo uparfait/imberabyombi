@@ -13,3 +13,4 @@ import { schedule_ui } from './schedule.js';
 import { position_img_box } from '../content/index.js';
 
 /* remove an empty page; its absolute images move to prev keeping left / top */
+function drop_page(b, prev) { if (prev) Array.from(b.children).filter(is_abs).forEach(e => prev.appendChild(e)); remove_page(b); }
