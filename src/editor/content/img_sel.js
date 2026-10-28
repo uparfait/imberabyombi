@@ -13,3 +13,4 @@ const BAR = [...IMG_POSITIONS.map(([v, l, i]) => ['pos:' + v, l, i]), null,
   ['more', 'All image options', 'more_vert']];
 const bar_btn = ([a, t, i]) => `<button type="button" data-a="${a}" data-tip="${t}" aria-label="${t}">${ic_html(i, 'h-[1.125rem] w-[1.125rem]')}</button>`;
 const MOVE_CSS = 'position:absolute;inset:0;pointer-events:auto;touch-action:none;cursor:move';
+const BOX_HTML = () => `<div class="img_move" style="${MOVE_CSS}"></div>`
