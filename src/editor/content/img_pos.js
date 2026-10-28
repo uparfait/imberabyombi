@@ -63,3 +63,5 @@ export function set_img_align(img, a) {
     const pos = pos_of(x);
     if (pos === 'front' || pos === 'behind') {
       const room = x.closest('.pg_body').clientWidth - x.offsetWidth; x.style.left = Math.round(a === 'left' ? 0 : a === 'center' ? room / 2 : room) + 'px';
+    }
+    else if (pos === 'wrap_left' || pos === 'wrap_right') {
