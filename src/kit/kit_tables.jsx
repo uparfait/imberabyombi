@@ -18,3 +18,4 @@ const row = i => {
 
 export const kit_tables = () => (
   <>
+    <div className="card overflow-x-auto p-2"><table><caption className="px-4 pt-3">{lorem.t(3)}</caption><colgroup><col /><col span={2} className="hl" /><col /></colgroup>
