@@ -44,3 +44,4 @@ async function slide_html(z, sp, i) {
       const tbl = by_tag(s, 'tbl')[0];
       if (tbl) {
         const rows = kids(tbl, 'tr').map(tr => kids(tr, 'tc').map(tc => by_tag(tc, 'p').map(p => p.textContent).join('\n')));
+        if (rows.length) body += rows_to_table(rows, true);
