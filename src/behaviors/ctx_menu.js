@@ -21,3 +21,4 @@ export function ctx_menu() {
   return `${head}<p class="ctx_label">More</p>${item('#/ui', 'Design system', 'layers')}${u ? item('#/', 'Public website', 'globe') : ''}
     ${u ? search : ''}
     <hr class="my-1"><button type="button" class="menu_item" role="menuitem" data-act="ctx_back">${mi('arrowL')}Back</button>`
+    + `<button type="button" class="menu_item" role="menuitem" data-act="ctx_reload">${mi('refresh')}Reload</button>
