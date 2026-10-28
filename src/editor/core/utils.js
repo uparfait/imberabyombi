@@ -23,3 +23,4 @@ export function download(blob, name) {
 /* one promise per library: the first URL that loads wins; a failed library can be retried later */
 export const script_cache = {};
 export function load_script(urls) {
+  const key = urls[0];
