@@ -13,3 +13,5 @@ export function qr_svg(seed) {
     else if (lorem.r() > .5) out.push([x, y]);
   }
   return `<svg viewBox="-2 -2 29 29" class="qr" role="img" aria-label="QR code to scan with an authenticator app"><rect x="-2" y="-2" width="29" height="29" fill="#fff"/>`
+    + `${out.map(([x, y]) => `<rect x="${x}" y="${y}" width="1.02" height="1.02"/>`).join('')}</svg>`;
+}
