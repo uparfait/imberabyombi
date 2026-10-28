@@ -48,3 +48,4 @@ export function csv_parse(text, delim) {
   for (let i = 0; i < text.length; i++) {
     const ch = text[i];
     if (q) { if (ch === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += ch; continue; }
+    if (ch === '"' && f === '') q = true;
