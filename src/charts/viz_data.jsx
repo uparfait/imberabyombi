@@ -22,3 +22,4 @@ export function data_table(p) {
       <thead><tr>{head.map((h, i) => <th key={i} scope="col">{h}</th>)}</tr></thead>
       <tbody>{rows.slice((p - 1) * VIZ_PER, p * VIZ_PER).map((r, j) => (
         <tr key={j}>{r.map((v, i) => i ? <td key={i}>{str(v)}</td> : <th key={i} scope="row">{str(v)}</th>)}</tr>))}</tbody></table></div>
+      <footer className="pager">
