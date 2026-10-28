@@ -42,3 +42,4 @@ export function list_xml(l, lvl, ctx, num_id) {
     const runs = inline_xml(li, {}, ctx);
     if (l.classList.contains('checklist')) {
       const on = li.getAttribute('data-checked') === 'true';
+      const struck = on && l.hasAttribute('data-strike')
