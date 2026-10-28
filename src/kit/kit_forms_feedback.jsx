@@ -14,3 +14,6 @@ export const kit_forms_feedback = () => (
     ))}</div>
     <div className="flex flex-wrap items-center gap-2 sm:col-span-2"><label className="sr-only" htmlFor="demo_a">A</label>
       <input id="demo_a" name="a" type="number" defaultValue="4" className="w-28" /> + <label className="sr-only" htmlFor="demo_b">B</label>
+      <input id="demo_b" name="b" type="number" defaultValue="6" className="w-28" /> = <output name="sum" htmlFor="demo_a demo_b">10</output></div>
+  </fieldset>
+);
