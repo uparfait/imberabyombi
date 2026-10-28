@@ -3,3 +3,4 @@
    peek_view(key, apply): a view-only preview (zoom): apply() changes the view and returns the function that puts it back.
    keep(key): the preview shown for key becomes final (one undo step: live.keep(fn), which also just runs fn when core
    dropped the preview meanwhile, e.g. an undo). pick(key, fn, done) is the click on a choice. */
+import { live } from '../core/index.js';
