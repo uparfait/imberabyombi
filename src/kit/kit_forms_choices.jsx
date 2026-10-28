@@ -11,3 +11,4 @@ const choice = (c, i, type, name, role) => (
 export function kit_forms_choices(brand_hex) {
   const groups = (
     <div className="field"><label htmlFor="demo_select">Select with groups</label><select id="demo_select">
+      <optgroup label={lorem.t(1)}><option>{lorem.t(2)}</option><option>{lorem.t(2)}</option></optgroup>
