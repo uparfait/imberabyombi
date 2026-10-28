@@ -35,3 +35,4 @@ export async function file_to_html(file) {
     case 'xlsx': case 'xlsm': case 'xlsb': case 'xls': case 'ods': case 'fods': case 'numbers': return sheet_to_html(file, ext);
     case 'csv': return csv_to_html(await file.text());
     case 'tsv': case 'tab': return csv_to_html(await file.text(), '\t');
+    case 'json': case 'geojson': return json_to_html(await file.text(), name);
