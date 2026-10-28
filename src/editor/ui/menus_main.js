@@ -55,3 +55,4 @@ function theme_items() {
 function full_screen() {
   if (document.fullscreenElement) document.exitFullscreen();
   else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(() => toast('Full screen is not available here'));
+  else toast('Full screen is not available here');
