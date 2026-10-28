@@ -1,1 +1,2 @@
 /* styles/editor/09_menus.css: the editor's popup menus (ui/menu_engine.js: plain DOM on <body>, outside React). They are
+   the template's .pop / .menu_item (classes ed_menu / ed_mi added), tightened for long word-processor menus: check mark,
