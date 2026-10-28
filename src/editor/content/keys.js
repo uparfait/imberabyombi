@@ -37,3 +37,4 @@ export function pages_keydown(e) {
   if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { done(e); set_last(r.cloneRange(), host); insert_page_break(); return; }
   if (!r.collapsed || e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
   const first = first_flow(host);
+  if (e.key === 'Backspace' && pi > 0 && at_body_start(host, r) && !(is_list(first) || is_table(first))) { done(e); backspace_across(host, pi); return; }
