@@ -3,3 +3,4 @@
 Public pages are detail pages: a branded hero, the page's own top content, then long-form text, all from one entry.
 
 ## 1. Write the content
+Create a section in `src/site/`, for example `src/site/services_sec.jsx`:
