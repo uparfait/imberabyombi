@@ -11,3 +11,4 @@ export function table_grid_el() {
   for (let r = 0; r < 8; r++) for (let c = 0; c < 10; c++) {
     const d = el('div', { class: 'c' }); d.dataset.r = r; d.dataset.c = c; cells.push(d); g.appendChild(d);
     d.addEventListener('mouseenter', () => { cells.forEach(x => x.classList.toggle('on', +x.dataset.r <= r && +x.dataset.c <= c)); lbl.textContent = `${c + 1} × ${r + 1}`; });
+    d.addEventListener('click', () => { close_menus(0); insert_table(r + 1, c + 1); });
