@@ -7,3 +7,4 @@ export const TONES = { brand: ['brand', 'brand_2'], ink: ['muted', 'ink'], ok: [
 const tile = (tone, n) => { const id = 'i3' + (++GID), [a] = TONES[tone] || TONES.brand; return { id, a, d: icon_path(n) }; };
 
 export function i3(n, c = 'w-14 h-14', tone = 'brand') {
+  const { id, a, d } = tile(tone, n);
