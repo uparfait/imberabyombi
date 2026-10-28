@@ -27,3 +27,4 @@ export function Upload_body({ up }) {
   const drag_in = e => { e.preventDefault(); e.stopPropagation(); set_over(true); };
   const drag_out = e => { e.preventDefault(); e.stopPropagation(); set_over(false); if (e.type === 'drop') add(e.dataTransfer.files); };
   const key = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); input.current.click(); } };
+  return (
