@@ -15,3 +15,4 @@ export async function export_pdf(scope, name, scale = 2) {
   const orig = state.active, ids = scope === 'all' && state.tabs.length > 1 ? state.tabs.map(t => t.id) : [orig];
   if (ids.length > 1) { if (hist_timer) commit(); save_tab(); }
   let first = true;
+  try {
