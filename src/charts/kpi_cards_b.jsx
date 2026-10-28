@@ -12,3 +12,4 @@ export const kpi_cards_b = k => {
         <ul className="mt-3 grid gap-0.5 text-sm">{src.map((n, i) => (
           <li key={n} className="kpi_part flex items-center gap-2" {...tip_attr(n, [[share(i), 'Share', i]])}>
             <span className="legend_rect" style={{ '--c': scale_color(i) }}></span>{n}<b className="ml-auto font-medium">{share(i)}</b></li>))}</ul></>,
+      [['Source', 'Share'], src.map((n, i) => [n, share(i)])]),
