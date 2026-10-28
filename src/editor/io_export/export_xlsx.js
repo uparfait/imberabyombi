@@ -12,3 +12,4 @@ const OX = 'application/vnd.openxmlformats-officedocument.spreadsheetml';
 export function export_xlsx(root, name) {
   const sheets = export_data(root), used = new Set();
   sheets.forEach(s => {
+    let n = s.name.replace(/[\\/?*\[\]:]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 31) || 'Sheet'; const b = n.slice(0, 26); let k = 2;
