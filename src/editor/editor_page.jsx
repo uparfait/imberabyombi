@@ -5,3 +5,4 @@
    The page fills the admin content area (styles/editor/01_layout.css) and scrolls inside itself. */
 import { memo, useEffect, useRef } from 'react';
 import { editor_start } from './core/index.js';
+import { topbar, toolbar, workspace, link_bubble, file_inputs } from './chrome/index.js';
