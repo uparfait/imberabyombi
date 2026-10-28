@@ -32,3 +32,4 @@ export function thanks_sec(full) {
     <section {...spy_attrs('thanks', full)} className="wrap section">
       <div className="relative isolate overflow-hidden rounded-4xl bg-brand px-6 py-16 text-center text-white sm:px-14 sm:py-20" data-reveal="">
         <div className="pattern_layer" style={{ '--pc': '255 255 255', '--pa': '.13' }} aria-hidden="true"></div>
+        {i3('heart', 'mx-auto h-16 w-16 float', 'ink')}
