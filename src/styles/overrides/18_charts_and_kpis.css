@@ -3,3 +3,4 @@
   .viz_card[data-act], .kpi[data-act] { cursor: pointer; }
   .viz_card:focus-visible, .kpi:focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   .viz_data td, .viz_data th[scope=row] { white-space: nowrap; }
+  .viz_data td { font-variant-numeric: tabular-nums; }
