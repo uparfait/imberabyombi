@@ -60,3 +60,4 @@ export function editor_start(root) {
     const t = active_tab(); if (t && pages_el) t.html = collect_html();   // later saves (no pages) stay right
     save_doc(true);
     cancel_scheduled();
+    offs.reverse().forEach(f => { try { f(); } catch (e) { console.error(e); } });
