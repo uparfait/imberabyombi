@@ -52,3 +52,7 @@ export function page_setup_dialog() {
       }
       const next = { pageless: v.fmt === 'pageless', orientation: v.ori === 'landscape' ? 'landscape' : 'portrait', paper: v.paper, margins: nm,
         header: !!v.header, footer: !!v.footer, page_numbers: !!v.page_numbers, page_color: v.page_color || '#ffffff' };
+      after_close(() => { begin_op(); Object.assign(state.setup, next); apply_setup(true); commit(); save_soon(); });
+    }
+  });
+}
