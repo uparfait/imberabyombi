@@ -10,3 +10,4 @@ const same = (a, b) => a.length === b.length && a.every((f, i) => f === b[i]);
 
 /* The .filebox around a file input (null for an input that is not a File_box). The click listener adds .picking with it. */
 export const file_box = inp => inp?.closest?.('.filebox') || null;
+/* Redraw a File_box's tiles from input.files (after a change, an x or a form reset). The tiles fade in, except right after
