@@ -6,3 +6,4 @@ export * from './utils.js';
 export * from './state.js';
 export * from './refs.js';
 export * from './dom.js';
+export * from './pages.js';
