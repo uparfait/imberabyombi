@@ -31,3 +31,4 @@ function row_of(it, level) {
     + (it.disabled ? ' disabled pointer-events-none opacity-40' : ''),
     role: chk ? 'menuitemcheckbox' : 'menuitem', tabindex: '-1' });
   if (chk) r.setAttribute('aria-checked', String(!!it.checked));
+  if (it.disabled) r.setAttribute('aria-disabled', 'true');
