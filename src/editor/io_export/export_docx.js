@@ -22,3 +22,4 @@ export async function export_docx(root, name) {
     const { win, hin } = dims(), s = state.setup, m = s.margins;
     const rels = [], media = [], nums = [], abstracts = new Map(); let rid = 10, img_n = 0;
     const ctx = {
+      content_tw: Math.round((win - m.left - m.right) * 1440), content_px: (win - m.left - m.right) * DPI,
