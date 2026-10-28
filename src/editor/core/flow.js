@@ -55,3 +55,4 @@ export function div_to_block(d) {
   d.replaceWith(p); sel_remap.set(d, p);
 }
 export function merge_into(a, b) {
+  if (is_table(a)) { const pa = item_parent(a); items_of(b).forEach(r => pa.appendChild(r)); }
