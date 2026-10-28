@@ -24,3 +24,4 @@ const on_edit = () => { const a = bubble_link; hide_link_bubble(); open_link_dia
 const on_remove = () => remove_link(bubble_link);
 const on_down = e => { if (!e.target.closest('a')) e.preventDefault(); };
 export function install_link_bubble() {
+  const ls = [['#lb_copy', 'click', on_copy], ['#lb_edit', 'click', on_edit], ['#lb_remove', 'click', on_remove], ['#link_bubble', 'mousedown', on_down]]
