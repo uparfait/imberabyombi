@@ -5,3 +5,4 @@ import { db } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { lorem } from '../lib/index.js';
 import { ic, i3 } from '../icons/index.js';
+import { hero_shell } from '../site/index.js';
