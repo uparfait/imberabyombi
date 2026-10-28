@@ -45,3 +45,5 @@ export const page_hero = (crumb, title, lead, icon) => (
 
 export function detail(k) {
   const p = PAGES[k]; lorem.seed(hash_str(k));
+  return <>{page_hero(p.t, lorem.t(4), lorem.p(1), p.i)}{p.top()}{longform(k)}</>;
+}
