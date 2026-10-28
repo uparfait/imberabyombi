@@ -20,3 +20,4 @@ export async function docx_run(cx, r) {
     const va = val(kids(pr, 'vertAlign')[0]); if (va === 'superscript') wrap('sup'); else if (va === 'subscript') wrap('sub');
     const col = val(kids(pr, 'color')[0]); if (col && HEX6.test(col) && col !== '000000') css.push('color:#' + col);
     const sz = val(kids(pr, 'sz')[0]); if (sz) css.push(`font-size:${+sz / 2}pt`);
+    const fn = kids(pr, 'rFonts')[0], fa = fn && (fn.getAttribute('w:ascii') || fn.getAttribute('w:hAnsi')); if (fa) css.push(`font-family:'${fa.replace(/['"]/g, '')}'`);
