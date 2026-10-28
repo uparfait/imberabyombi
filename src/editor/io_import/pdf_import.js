@@ -36,3 +36,6 @@ export async function pdf_to_html(buf) {
     }
     flush();
     if (p < pdf.numPages) html += PB;
+  }
+  return html || '<p><br></p>';
+}
