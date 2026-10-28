@@ -18,3 +18,5 @@ Code: [`src/auth/`](../src/auth/). Each role has a level per module: `0` = no ac
 | Event coordinator | Events, calendar, reservations                                 |
 
 Every role manages its own tasks and opens Settings (theme, profile).
+
+## Landing page
