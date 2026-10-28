@@ -13,3 +13,5 @@ export function table_name(t, i) {
     if (is_table(p)) break; p = p.previousElementSibling;
   }
   return 'Table ' + (i + 1);
+}
+export const top_tables = root => qsa('table', root).filter(t => !t.parentElement.closest('table'));
