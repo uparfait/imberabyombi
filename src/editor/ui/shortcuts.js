@@ -63,3 +63,4 @@ export function on_key(e) {
   }
   if (!(e.ctrlKey || e.metaKey)) return;
   const k = e.key.toLowerCase(), g = global_key(e, k);
+  if (g) { done(); g(); return; }
