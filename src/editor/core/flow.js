@@ -8,3 +8,4 @@ import { is_break, is_list, is_table, is_abs, is_empty_block, same_kind, pad_bot
 
 export let cur_sel = null;            // selection being preserved during reflow
 export function set_cur_sel(v) { cur_sel = v; }
+export const sel_remap = new Map();   // old element -> replacement element
