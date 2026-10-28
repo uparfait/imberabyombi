@@ -11,3 +11,4 @@ import { PK } from './pick_html.js';
       validation and FormData are unchanged. Typing always works: date/time fields keep native typing (desktop) and
       the picker follows what is typed; selects filter as you type. Wrap a select in .field or .pick to make it clickable. */
 export const PICK = 'select, input[data-type]';
+/* Calendar paging animation (picker, sidebar mini calendar, main calendar): n = 1 next slides in from the right,
