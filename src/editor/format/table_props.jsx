@@ -23,3 +23,6 @@ const apply_props = (v, n_rows, n_cols) => ch => {
     t.toggleAttribute('data-header', v.hdr); t.toggleAttribute('data-striped', v.str);
   });
   chain_rows(ch).forEach(r => Array.from(r.cells).forEach(x => { x.style.verticalAlign = v.va === 'top' ? '' : v.va; }));
+};
+
+export function table_props_dialog() {
