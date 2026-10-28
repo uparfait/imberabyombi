@@ -4,3 +4,4 @@ import { num, scale_color, tip_attr } from './viz_math.js';
 import { spark, delta, kpi_card } from './kpi_parts.jsx';
 
 export const kpi_cards_b = k => {
+  const { m, mo, mins, src, split, share, lead, live, ring, rate, conv, d_conv, pct_fmt } = k;
