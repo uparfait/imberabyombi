@@ -17,3 +17,4 @@ export const VIZ_REL_B = {
     const pos = cols.map((nodes, c) => { let y = f.t + (f.ih - tots[c] * k - gap * (nodes.length - 1)) / 2;
       return nodes.map((_, i) => { const h = val(c, i) * k, o = { y, h, k, out: y, in: y }; y += h + gap; return o; }); });
     const flows = links.map(([c, a, b, v]) => {
+      const na = pos[c][a], nb = pos[c + 1][b], h = v * na.k, x0 = col_x(c) + nw, x1 = col_x(c + 1), y0 = na.out + h / 2, y1 = nb.in + h / 2;
