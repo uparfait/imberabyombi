@@ -17,3 +17,4 @@ export function bodies() { return pages_el ? qsa('.pg_body', pages_el) : []; }
 export function page_wraps() { return pages_el ? qsa('.page_wrap', pages_el) : []; }
 export function body_index(b) { return bodies().indexOf(b); }
 export function editable_of(n) {
+  if (!n) return null; if (n.nodeType !== 1) n = n.parentElement;
