@@ -6,3 +6,4 @@ import { exec, set_font_size } from './commands.js';
 /* the copied format while paint format is on, else null (read-only outside: end it with stop_paint()) */
 export let paint = null;
 const btn = on => refs.paint_btn?.classList.toggle('active', on);
+export function stop_paint() { paint = null; btn(false); }
