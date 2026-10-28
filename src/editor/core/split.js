@@ -66,3 +66,4 @@ export function push_overflow(b, next) {
 }
 export function pull_up(b, next) {
   let g = 0;
+  while (g++ < 1000) {
