@@ -47,3 +47,4 @@ export async function file_to_html(file) {
   }
   if (CODE_EXT.has(ext) || /^(dockerfile|makefile|readme|license|changelog)$/i.test(name)) return { html: code_to_html(await file.text(), name) };
   if (['doc', 'ppt', 'pages', 'key', 'wpd', 'wps'].includes(ext)) {
+    const chip = await attachment_html(file);
