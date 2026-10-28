@@ -13,3 +13,4 @@ import { refocus_after_close, previewing } from './guards.js';
 /* a 3 × 4 thumbnail of preset p (drawn as on the white page) */
 export function preset_preview(p) {
   const line = p.bw ? `1px solid ${p.bc}` : '1px dashed #dadce0';
+  const side = p.style === 'minimal' ? { borderLeftColor: 'transparent', borderRightColor: 'transparent' } : {};
