@@ -20,3 +20,4 @@ export function pages_paste(e) {
   const html = cd.getData('text/html'), text = cd.getData('text/plain');
   begin_op();
   if (!body || paste_plain || !html) document.execCommand('insertText', false, text);
+  else { document.execCommand('insertHTML', false, sanitize_html(html)); adopt_abs(host); }
