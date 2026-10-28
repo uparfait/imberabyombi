@@ -55,3 +55,4 @@ export function push_overflow(b, next) {
   if (idx < kids.length - 1) insert_at_start(next, kids.slice(idx + 1));
   let g = 0;
   while (overflows(b) && g++ < 500) {
+    const last = last_flow(b);
