@@ -3,3 +3,5 @@
 import { TEXT_BLOCK_RE } from './constants.js';
 import { is_break, is_list, is_table, is_abs, text_nodes, offset_within, position_at, same_kind, pad_bottom, first_flow, last_flow, flow_kids } from './dom.js';
 import { cur_sel, overflows, items_of, insert_at_start, merge_into, split_container, content_bottom } from './flow.js';
+
+export function is_splittable_text(e) {
