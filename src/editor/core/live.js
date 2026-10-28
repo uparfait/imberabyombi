@@ -37,3 +37,4 @@ function put(sn) {
   hide_img_sel();
   if (JSON.stringify(state.setup) !== sn.setup) { state.setup = JSON.parse(sn.setup); apply_setup(false); }
   if (state.zoom !== sn.zoom) set_zoom(sn.zoom);
+  let ws = page_wraps();
