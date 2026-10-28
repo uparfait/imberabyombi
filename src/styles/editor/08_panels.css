@@ -4,3 +4,4 @@
 /* Pages list: number badge, a snippet, a delete button on hover */
 .page_row {
   display: flex; align-items: center; gap: .625rem; min-height: 2.25rem; padding: 0 .25rem 0 .75rem; border-radius: var(--pill);
+  cursor: pointer; font-size: .8125rem; color: rgb(var(--fg) / .78); transition: background-color .15s, color .15s;
