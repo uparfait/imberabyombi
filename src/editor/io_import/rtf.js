@@ -21,3 +21,4 @@ export function rtf_to_html(rtf) {
   while (i < L) {
     const ch = rtf[i];
     if (ch === '{') { stack.push({ ...st }); i++; continue; }
+    if (ch === '}') { st = stack.pop() || st; i++; continue; }
