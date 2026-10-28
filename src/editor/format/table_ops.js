@@ -53,3 +53,4 @@ export function tbl_op(op, arg) {
       c.td.colSpan = (c.td.colSpan || 1) + (nx.colSpan || 1); nx.remove(); target = c.td; break;
     }
     case 'split': {
+      const n = c.td.colSpan || 1; if (n < 2) { toast('This cell isn’t merged'); break; }
