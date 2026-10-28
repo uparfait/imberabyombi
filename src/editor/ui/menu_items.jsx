@@ -23,3 +23,4 @@ function custom_spacing_dialog() {
 }
 export function spacing_items() {
   const line = () => { const b = selected_blocks()[0]; return b ? b.style.lineHeight || '1.15' : ''; };
+  return [
