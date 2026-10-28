@@ -7,3 +7,5 @@ import { file_tile } from './file_tile.jsx';
 
 const BOXES = new WeakMap();   /* file input → its File_box's sync() */
 const same = (a, b) => a.length === b.length && a.every((f, i) => f === b[i]);
+
+/* The .filebox around a file input (null for an input that is not a File_box). The click listener adds .picking with it. */
