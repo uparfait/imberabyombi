@@ -26,6 +26,7 @@ const check = (name, label, on) => (
 
 function Page_setup_body() {
   const [s, set_s] = useState(state.setup), [pageless, set_pageless] = useState(!!s.pageless), [ver, set_ver] = useState(0);
+  const reset = () => { set_s(default_setup()); set_pageless(false); set_ver(v => v + 1); };   /* the new key redraws the fields */
     <fieldset className="border-0 p-0 sm:col-span-2"><legend className="mb-2 px-0 text-sm">Format</legend>
       {seg('fmt', [['pages', 'Pages'], ['pageless', 'Pageless']], s.pageless ? 'pageless' : 'pages', e => set_pageless(e.target.value === 'pageless'))}</fieldset>
     <div id="ps_pages" className="grid gap-5 transition-opacity sm:col-span-2 sm:grid-cols-2" style={{ opacity: pageless ? 0.45 : 1 }}>
