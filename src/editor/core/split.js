@@ -39,3 +39,4 @@ export function split_text(block, b, next) {
   const nb = block.cloneNode(false); nb.setAttribute('data-cont', '1'); nb.removeAttribute('id'); nb.appendChild(frag);
   insert_at_start(next, [nb]);
   remap.forEach(([key, off]) => { const q = position_at(nb, off); cur_sel[key + 'c'] = q.node; cur_sel[key + 'o'] = q.offset; });
+  return true;
