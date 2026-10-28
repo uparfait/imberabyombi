@@ -31,3 +31,6 @@ function keep_style(c, tag) {
     if (val && !/expression|url\(/i.test(val)) out.push(`${p}:${val.trim()}`);
   });
   return out.join(';');
+}
+
+/* the attributes kept on one element (name → value) */
