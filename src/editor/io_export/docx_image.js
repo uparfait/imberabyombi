@@ -18,3 +18,4 @@ export function image_xml(img, ctx) {
   const ln = bw ? `<a:ln w="${Math.round(bw * EMU)}"><a:solidFill><a:srgbClr val="${to_hex(img.style.borderColor) || '000000'}"/></a:solidFill></a:ln>` : '';
   const graphic = '<a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic><pic:nvPicPr>'
     + `<pic:cNvPr id="${n}" name="image${n}.${ext}" descr="${alt}"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="${rid}"/>`
+    + `<a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${cx}" cy="${cy}"/></a:xfrm>`
