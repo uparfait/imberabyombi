@@ -26,3 +26,4 @@ export function pages_paste(e) {
 }
 export async function paste_from_clipboard(plain) {
   if (previewing() || !can_edit()) return;
+  restore_focus();
