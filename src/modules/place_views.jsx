@@ -33,3 +33,6 @@ const event_card = (e, i) => <article key={e.id} className="card overflow-hidden
 VIEWS.events = () => {
   const ev = db.list('events').filter(e => e.date >= ymd()).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 3);
   return <>{ev.length ? <div className="mb-6 grid gap-5 md:grid-cols-3">{ev.map(event_card)}</div> : null}{crud('events', { title: 'All events' })}</>;
+};
+
+const decide = (r, can) => can && r.status === 'Pending' ? <><button className="btn btn_soft btn_sm" data-act="res" data-v="Approved" data-id={r.id}>Approve</button>
