@@ -2,3 +2,4 @@
    the newsletter form (data-form="news") and the copyright bar with "Back to top". */
 import { ic } from '../icons/index.js';
 import { logo } from '../ui/index.js';
+import { cfg } from '../config/index.js';
