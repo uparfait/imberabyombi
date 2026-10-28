@@ -21,3 +21,4 @@ export const VIZ_TIME_B = {
         + ` height="${round1(Math.max(1.5, Math.abs(y(d.o) - y(d.c))))}" rx="2" style="fill:${up ? 'rgb(var(--surface))' : col};stroke:${col};stroke-width:1.5"/>`); }).join('')
       + x_labels(f, days.map(d => d.k), x), 'Candlestick chart'),
       legend: legend(['Up (hollow)', 'Down (filled)'], 'rect', ['var(--series_2)', 'var(--series_1)']),
+      table: [['Day', 'Open', 'High', 'Low', 'Close'], days.map(d => [d.k, round1(d.o), round1(d.hi), round1(d.lo), round1(d.c)])] }; } },
