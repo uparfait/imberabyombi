@@ -14,3 +14,4 @@ export function palette_el(on_pick, none_label) {
   box.appendChild(reset);
   PALETTE.forEach(row => {
     const r = el('div', { class: 'pal_row mt-1 flex gap-1' });
+    row.forEach(c => {
