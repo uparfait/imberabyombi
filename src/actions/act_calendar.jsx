@@ -15,7 +15,7 @@ export const CALENDAR_ACT = {
   /* Sidebar mini calendar pages in place and slides (no page re-render: mini_draw() redraws only #date_mini's content) */
   mini: t => { const n = +t.dataset.n, b = parse_d(ui.mini || ui.cal_date); ui.mini = ymd(new Date(b.getFullYear(), b.getMonth() + n, 1));
     const box = qs('#date_mini'); if (!box || !mini_draw()) return rerender(); slide_in(box.querySelectorAll('.date_mini_title, .date_mini_grid'), n); },
-  goday: t => { if (route.mod === 'calendar') return cal_go(t.dataset.d); ui.cal_date = t.dataset.d; ui.mini = null; location.hash = '#/admin/calendar'; },
+  goday: t => { if (route.mod === 'calendar') return cal_go(t.dataset.d); ui.cal_date = t.dataset.d; ui.mini = null; go('/admin/calendar'); },
   slot: (t, e) => { if (!auth.can('calendar', 2)) return; let h = 9; if (t.classList.contains('hour_lines')) { const r = t.getBoundingClientRect(); h = Math.min(22, Math.max(0, Math.floor((e.clientY - r.top) / r.height * 24))); }
     open_form('activities', null, { date: t.dataset.d, start: `${pad(h)}:00`, end: `${pad(h + 1)}:00` }); },
   ev: t => { const c = t.dataset.c; if (auth.can(c === 'events' ? 'events' : 'calendar', 2)) open_form(c, t.dataset.id);
