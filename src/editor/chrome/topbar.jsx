@@ -7,3 +7,4 @@ const MENUBAR = [['file', 'File'], ['edit', 'Edit'], ['view', 'View'], ['insert'
 
 export const topbar = () => (
   <header id="topbar" className="no_print show">
+    <div className="topbar_in"><div className="topbar_row">
