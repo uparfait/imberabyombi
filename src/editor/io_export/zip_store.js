@@ -12,3 +12,4 @@ export function zip_store(files, mime) {
   const enc = new TextEncoder(), chunks = [], central = []; let offset = 0;
   for (const f of files) {
     const name = enc.encode(f.name), data = typeof f.data === 'string' ? enc.encode(f.data) : f.data, crc = crc32(data);
+    const lh = new DataView(new ArrayBuffer(30));
