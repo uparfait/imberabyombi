@@ -85,3 +85,5 @@ export function restore_focus() {
   }
   const b = bodies()[0]; if (!b) return null;
   caret_to_end(last_non_break(b)); return b;
+}
+export function current_page() { const i = last_host ? body_index(last_host) : 0; return i < 0 ? 0 : i; }
