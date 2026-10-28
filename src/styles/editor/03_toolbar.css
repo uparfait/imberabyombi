@@ -37,3 +37,4 @@
 .tb_fill { flex: 1; min-width: .75rem; }
 
 /* List buttons with their own menu arrow */
+.tb_split { display: inline-flex; flex: none; align-items: center; }
