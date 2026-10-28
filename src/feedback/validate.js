@@ -25,3 +25,4 @@ export function show_err(el, msg) {
   const fld = el.closest('.field'); fld ? fld.append(p) : (el.closest('label') || el).after(p);
 }
 export function validate(f) {
+  f.noValidate = true;
