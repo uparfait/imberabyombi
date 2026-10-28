@@ -3,3 +3,4 @@
    the .dark theme applies by itself; the document pages stay paper (white, black text) in both themes. */
 @import '../styles/editor/01_layout.css';
 @import '../styles/editor/02_topbar.css';
+@import '../styles/editor/03_toolbar.css';
