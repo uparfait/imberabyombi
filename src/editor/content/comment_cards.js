@@ -32,3 +32,4 @@ function on_card_click(e, c, card) {
   else if (x.dataset.x === 'cancel' || x.dataset.x === 'resolve' || x.dataset.x === 'delete') { remove_comment(c.id); if (x.dataset.x === 'resolve') toast('Comment resolved'); }
 }
 function card_of(c) {
+  const card = el('div', { class: 'c_card', 'data-id': c.id }), orphan = !qs(`.cmt[data-cid="${c.id}"]`, pages_el);
