@@ -13,3 +13,4 @@ export const account_mails = () => ({
     <h1 className="mail_h">Reset your password</h1><p>We received a request to reset the password for <b>you@lorem.io</b>. This link works once
       and expires in <b>30 minutes</b>.</p>
     <div>{mail_btn('Set a new password', 'btn_primary', '#/set-password')}</div>
+    <p className="text-sm text-muted">If the button does not work, copy this link into your browser:</p>
