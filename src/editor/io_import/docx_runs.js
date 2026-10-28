@@ -5,3 +5,4 @@ import { esc_html, clamp } from '../core/index.js';
 import { by_tag, kids, resolve_path } from './xml_helpers.js';
 
 export const docx_val = n => n ? n.getAttribute('w:val') : null;
+const on = n => !!n && !/^(false|0|none)$/.test(docx_val(n) || '');
