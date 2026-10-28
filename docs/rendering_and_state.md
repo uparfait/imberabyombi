@@ -13,3 +13,4 @@ There is one redraw switch, in [`src/store/app_state.js`](../src/store/app_state
 `render()` and `rerender()` redraw **synchronously** (React `flushSync`), so the next line can already use the new DOM:
 ```js
 import { db, ui, rerender, qs } from '../store/index.js';
+ui.flash = db.upsert('tasks', row);   // the new row will flash
