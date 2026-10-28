@@ -19,3 +19,4 @@ The site is then served at `https://<user>.github.io/<repository>/`.
 ## Any web server (Apache, Nginx, IIS, a shared host)
 Upload the contents of `dist/`. Serve `index.html` for `/`. Let the server cache `assets/*` files for a long time
 (their names contain a content hash) and keep `index.html` uncached so updates show at once:
+```nginx
