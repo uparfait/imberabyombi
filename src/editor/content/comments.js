@@ -10,3 +10,4 @@ export function add_comment() {
   const host = restore_focus(), s = getSelection();
   if (!s.rangeCount || s.isCollapsed || !host || !host.classList.contains('pg_body')) { toast('Select some text to comment on'); return; }
   const quote = s.toString().replace(/\u200b/g, '').slice(0, 300), id = uid();
+  begin_op(); const spans = wrap_selection('cmt', { 'data-cid': id }); if (!spans.length) return;
