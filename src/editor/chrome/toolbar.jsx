@@ -47,3 +47,4 @@ export const toolbar = () => (
     {sep()}
     {tb({ ed: 'bold', icon: 'format_bold', tip: 'Bold (Ctrl+B)', state: 'bold' })}
     {tb({ ed: 'italic', icon: 'format_italic', tip: 'Italic (Ctrl+I)', state: 'italic' })}
+    {tb({ ed: 'underline', icon: 'format_underlined', tip: 'Underline (Ctrl+U)', state: 'underline' })}
