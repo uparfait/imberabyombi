@@ -62,3 +62,4 @@ function on_key(e, row) {
 }
 
 /* drag a section: the model is taken once (the document does not change during a drag) */
+function on_down(e, row) {
