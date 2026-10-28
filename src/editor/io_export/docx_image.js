@@ -26,3 +26,4 @@ export function image_xml(img, ctx) {
       + `relativeHeight="${251658240 + n}" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"><wp:simplePos x="0" y="0"/>`
       + `<wp:positionH relativeFrom="column"><wp:align>${pos}</wp:align></wp:positionH><wp:positionV relativeFrom="paragraph"><wp:posOffset>0</wp:posOffset>`
       + `</wp:positionV><wp:extent cx="${cx}" cy="${cy}"/><wp:effectExtent l="0" t="0" r="0" b="0"/><wp:wrapSquare wrapText="bothSides"/>`
+      + `${doc_pr}<wp:cNvGraphicFramePr/>${graphic}</wp:anchor></w:drawing></w:r>`;
