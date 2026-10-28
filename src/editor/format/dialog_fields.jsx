@@ -5,3 +5,4 @@ import { clamp } from '../core/index.js';
 
 /* number field props for a current value v: clamped into [min, max]; step 'any' when v is off the step grid */
 export function num_props(v, min, max, step = 1) {
+  const d = clamp(v, min, max); return { min, max, step: Math.abs(d / step - Math.round(d / step)) < 1e-9 ? step : 'any', defaultValue: d };
