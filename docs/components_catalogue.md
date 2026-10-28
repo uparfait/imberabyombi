@@ -33,3 +33,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.filebox` / `.files` / `.file`         | file field: tiles of the chosen files                            |
 | `.spinner_segmented_svg`                | THE loading indicator (`spinner()` in JS)                        |
 | `.tile` / `.tile.is_on`                 | selectable grid tile (a parking slot), `is_on` when taken        |
+| `.hero` / `.sun` / `.arch`              | brand artwork pieces (follow the theme)                          |
