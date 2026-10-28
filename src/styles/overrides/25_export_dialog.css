@@ -3,3 +3,4 @@
   .export_col { display: flex; align-items: center; gap: .75rem; }
   .export_col input[type=text], .export_col input:not([type]) { min-width: 0; flex: 1; height: 2.5rem; }
   .check_row { display: flex; align-items: flex-start; gap: .75rem; padding: .7rem .25rem; border-bottom: 1px solid rgb(var(--line)); }
+  .check_row:last-child { border-bottom: 0; }
