@@ -20,3 +20,4 @@ export const rtf_esc = s => {
   return o;
 };
 const rtf_codes = (rx, f) => {
+  let s = `\\f${rtf_fi(rx, f.font || 'Arial')}\\fs${Math.round((f.size || 11) * 2)}`;
