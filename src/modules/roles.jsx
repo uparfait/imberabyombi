@@ -37,3 +37,4 @@ VIEWS.roles = () => {
           {ic('trash', 'h-4 w-4')}Delete role</button> : null}</div></header>
       <div id="matrix_msg" className="px-5 pt-4 empty:hidden"></div>
       <div className="border-b border-line px-5 py-4"><div className="field max-w-xs"><label htmlFor="role_land">Lands on after sign-in</label>
+        <select key={`${land}|${JSON.stringify(sel.perms)}`} id="role_land" data-role-land={sel.id} disabled={!can} defaultValue={land}>{land_opts(sel)}
