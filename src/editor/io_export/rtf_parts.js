@@ -24,3 +24,5 @@ const rtf_codes = (rx, f) => {
   if (f.b) s += '\\b'; if (f.i) s += '\\i'; if (f.u || f.link) s += '\\ul'; if (f.s) s += '\\strike'; if (f.sup) s += '\\super'; if (f.sub) s += '\\sub';
   if (f.color) s += `\\cf${rtf_ci(rx, f.color)}`; else if (f.link) s += `\\cf${rtf_ci(rx, '1155CC')}`; if (f.hl) s += `\\highlight${rtf_ci(rx, f.hl)}`;
   return s;
+};
+const HEX = Array.from({ length: 256 }, (_, i) => i.toString(16).padStart(2, '0'));
