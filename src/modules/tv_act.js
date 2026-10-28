@@ -31,3 +31,4 @@ export const TV_ACT = {
     let v; if (k === 'subs') v = read_subs(cell);
     else { if (inp && !inp.checkValidity()) { show_err(inp, err_text(inp)); inp.focus(); return; } v = inp ? field_val(inp) : ''; }
     const err = date_err(k, v, db.find('tasks', id)); if (err) { show_err(inp, err); inp.focus(); return; }
+    request(() => { db.upsert('tasks', { id, [k]: v }); task_refresh(id, 'Saved.'); }, { btn: t }); },
