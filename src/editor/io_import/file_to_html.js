@@ -42,3 +42,4 @@ export async function file_to_html(file) {
     case 'rtf': return { html: rtf_to_html(await file.text()) };
     case 'epub': return { html: await epub_to_html(file) };
     case 'html': case 'htm': case 'xhtml': return { html: await file.text() };
+    case 'md': case 'markdown': case 'mdown': return { html: md_to_html(await file.text()) };
