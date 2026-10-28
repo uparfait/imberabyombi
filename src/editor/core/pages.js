@@ -9,3 +9,4 @@ export function create_page() {
   const wrap = el('div', { class: 'page_wrap' });
   wrap.innerHTML = '<div class="page"><div class="pg_header" data-ph="Header"></div><div class="pg_body doc_content"></div>'
     + '<div class="pg_footer"><div class="pg_footer_text" data-ph="Footer"></div><span class="pg_num"></span></div></div>';
+  qs('.pg_header', wrap).innerHTML = state.setup.header_html;
