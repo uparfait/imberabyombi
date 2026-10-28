@@ -58,3 +58,4 @@ export function reflow_pageless() {
   }
   normalize_body(b0); hoist_nested(b0); place_abs(true);
   ensure_para(b0);
+  layout_after();
