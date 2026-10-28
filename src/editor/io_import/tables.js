@@ -13,3 +13,5 @@ export async function fit_img_html(url, alt, inline) {
     if (im.naturalWidth) {
       w = Math.min(im.naturalWidth, content_width_px());
       if (im.naturalHeight * w / im.naturalWidth > max_h) w = Math.floor(max_h * im.naturalWidth / im.naturalHeight);
+    }
+  } catch { /* keep 320 px */ }
