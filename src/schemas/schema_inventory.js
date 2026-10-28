@@ -23,3 +23,4 @@ export const reservations_schema = {
 export const inventory_schema = {
   l: 'inventory item', n: 12, cols: ['item', 'category', 'qty', 'unit', 'location'],
   f: [
+    field_spec('item', 'Item', 'text', 0, 1), field_spec('category', 'Category', 'select', option_list('Kitchen|Cleaning|Stationery|Electronics|Sports|Furniture')),
