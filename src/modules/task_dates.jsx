@@ -21,3 +21,5 @@ export const due_tag = r => r.due || (r.status === 'Done' && r.end)
   : <span className="text-muted">—</span>;
 setInterval(() => qsa('[data-due]').forEach(e => { const r = { due: e.dataset.due, status: e.dataset.status, end: e.dataset.end };
   e.lastElementChild.textContent = due_text(r); e.classList.toggle('late', r.status !== 'Done' && countdown(r.due).late); }), 30000);
+
+/* a task date in an editor: an older bare date gets a time (start 09:00, due and completed 17:00) */
