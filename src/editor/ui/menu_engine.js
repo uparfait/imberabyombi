@@ -9,3 +9,5 @@ import { mi, scaled } from './ui_dom.js';
 
 export const menu_stack = [];
 let sub_timer = null;
+
+export function close_menus(from = 0) {
