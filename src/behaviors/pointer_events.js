@@ -9,3 +9,4 @@ export const viz_point = e => { const v = e.target.closest?.('.viz_plot [data-tt
 
 function on_focusin(e) {
   const t = e.target;
+  if (DTF[t.dataset?.type]) ghost(t, true);
