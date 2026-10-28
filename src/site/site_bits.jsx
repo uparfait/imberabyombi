@@ -19,3 +19,4 @@ export const hero_shell = (inner, c = '') => (
   </div>
 );
 export const sec_head = (label, title, text, light) => (
+  <header className="max-w-2xl" data-reveal="">
