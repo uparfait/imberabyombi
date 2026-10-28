@@ -17,3 +17,4 @@ export function update_rulers() {
   draw_h_ruler(); draw_v_ruler();
 }
 export function ruler_ticks(len, start, horiz, z) {
+  let s = ''; const from = Math.ceil(-start * 8), to = Math.floor((len - start) * 8), b = u(17);
