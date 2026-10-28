@@ -29,3 +29,4 @@ export const diverging = t => t >= 0
 export const RANGE = { 7: .3, 30: 1, 90: 2.6 };
 export const MARGIN = () => RANGE[ui.viz_range || 30];
 export const fit = (s, px) => { const n = Math.max(1, Math.floor(px / 6.4)); return s.length > n ? s.slice(0, Math.max(1, n - 1)) + '…' : s; };
+/* the hover tooltip's data: [title, [value, series name, series index or null], …]. tip_text for SVG strings, tip_attr for JSX */
