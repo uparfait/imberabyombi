@@ -8,3 +8,4 @@ import { KPIS } from './kpi_parts.jsx';
 export function kpi_data() {
   lorem.seed(hash_str('kpi' + (ui.viz_range || 30))); KPIS.length = 0;
   const m = MARGIN(), mo = MONTHS(), trend = () => Array.from({ length: 12 }, (_, i) => 40 + i * 2 + rnd(-8, 8)), to = (t, end) => t.map(v => v / t.at(-1) * end);
+  const weeks = Array.from({ length: 12 }, (_, i) => i === 11 ? 'This week' : `${11 - i} weeks ago`);
