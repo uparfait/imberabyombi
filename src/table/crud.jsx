@@ -44,3 +44,4 @@ export function crud(c, o = {}) {
             <div id={`pop_table_${c}`} className="pop left-0 w-72" hidden>{table_menu(c)}</div></div>
           <h2 id={`table_title_${c}`} className="text-lg">{o.title || cap(s.l) + 's'}</h2>
           <span className="chip bg-surface-2 text-muted" id={`table_count_${c}`}>{b.count}</span>
+          <div className="ml-auto flex items-center gap-2">{export_menu(c)}
