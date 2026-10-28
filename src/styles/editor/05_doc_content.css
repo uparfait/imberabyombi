@@ -55,3 +55,4 @@
 .doc_content :is(var,cite,dd,q){color:inherit;font-weight:inherit}
 .doc_content :is(var,cite){font-style:italic}
 .doc_content q::before,.doc_content q::after{color:inherit}
+.doc_content :is(sub,sup){font-size:75%}
