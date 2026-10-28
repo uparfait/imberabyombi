@@ -7,3 +7,4 @@ export const icon_key = n => PATHS[n] ? n : String(n ?? '').replace(/[A-Z]/g, c 
 export const icon_path = n => PATHS[icon_key(n)] || PATHS.diamond;
 
 export const ic = (n, c = 'w-5 h-5') => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={c} aria-hidden="true">
