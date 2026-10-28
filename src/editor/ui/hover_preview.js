@@ -8,3 +8,4 @@ import { live } from '../core/index.js';
 let cur = null;   // { key, undo, keep } of the preview on screen
 
 export function peeking() { return cur ? cur.key : null; }
+/* a text field outside the document has the focus (title, find, size box…): hovering the toolbar must not take it away */
