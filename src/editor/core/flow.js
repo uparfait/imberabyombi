@@ -23,3 +23,4 @@ export function normalize_body(b) {
   let p = null;
   for (const n of Array.from(b.childNodes)) {
     if (n.nodeType === 8) { n.remove(); continue; }
+    if (is_abs(n)) continue;
