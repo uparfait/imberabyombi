@@ -19,3 +19,4 @@ export function close_menus(from = 0) {
 }
 /* can this item show its effect on hover? */
 export function can_peek(it) {
+  return !!(it && !it.sub && !it.disabled && !it.no_preview && it.action && !/…\s*$/.test(it.label || ''));
