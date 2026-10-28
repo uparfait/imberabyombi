@@ -57,3 +57,4 @@ export const VIZ_REL_A = {
       + ax.map((k, i) => { const [x, y] = p(i, rad), [lx, ly] = p(i, rad + 14);
         return `<line class="grid_line" x1="${cx}" y1="${cy}" x2="${round1(x)}" y2="${round1(y)}"/>`
           + `<text x="${round1(lx)}" y="${round1(ly + 4)}" text-anchor="${Math.abs(lx - cx) < 4 ? 'middle' : lx > cx ? 'start' : 'end'}">${k}</text>`; }).join('')
+      + v.map((r, j) => mark_group(s[j], ax.map((k, i) => [Math.round(r[i]), k, j]), `<path class="mark" d="${path_of(r.map((val, i) => p(i, rad * val / 100)))}Z"`
