@@ -22,3 +22,4 @@ export function contact_form() {
         <textarea id="contact_message" name="message" rows="5" required placeholder={lorem.s()}></textarea></div>
       <label className="flex items-start gap-3 text-sm font-normal text-muted sm:col-span-2">
         <input type="checkbox" name="consent" required className="mt-0.5" /> {lorem.s(10, 14)}</label>
+      <div className="sm:col-span-2"><button className="btn btn_primary w-full py-3 sm:w-auto">{ic('send', 'h-4 w-4')}Send message</button></div></form>
