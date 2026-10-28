@@ -25,3 +25,4 @@ export function start_col_drag(e) {
   begin_op(); const sx = e.clientX;
   const move = ev => {
     const dx = (ev.clientX - sx) / state.zoom; let a = widths[ci] + dx, b = widths[ci + 1] - dx;
+    if (a < 24) { b -= 24 - a; a = 24; } if (b < 24) { a -= 24 - b; b = 24; }
