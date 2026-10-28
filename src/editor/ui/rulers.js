@@ -13,3 +13,4 @@ export function update_rulers() {
   if (!hruler || !vruler) return;
   hruler.style.display = state.show_ruler ? '' : 'none';
   vruler.style.display = state.show_ruler && !state.setup.pageless ? '' : 'none';
+  if (!state.show_ruler) return;
