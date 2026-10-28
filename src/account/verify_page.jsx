@@ -7,3 +7,4 @@ import { otp_boxes } from './otp_boxes.jsx';
 import { resend_in } from './resend_in.js';
 
 export function verify_page() {
+  after_render(() => resend_in(30));
