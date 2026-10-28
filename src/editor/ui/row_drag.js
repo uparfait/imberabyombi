@@ -44,3 +44,5 @@ export function row_drag(e, o) {
     const stop = c => { c.stopPropagation(); c.preventDefault(); };
     addEventListener('click', stop, { capture: true, once: true }); setTimeout(() => removeEventListener('click', stop, true), 0);
     if (ok && val != null) o.drop(val);
+  };
+  const up = () => end(true), cancel = () => end(false);
