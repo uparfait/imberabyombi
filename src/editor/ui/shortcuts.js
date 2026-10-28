@@ -24,3 +24,4 @@ function global_key(e, k) {
   if (k === 'o') return () => open_upload_dialog();
   if (k === 's') return () => save_project();
   if (k === '/') return shortcuts_dialog;
+  return null;
