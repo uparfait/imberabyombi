@@ -72,3 +72,6 @@ export function inline_xml(node, f, ctx) {
       out += `<w:hyperlink r:id="${rid}" w:history="1">${inline_xml(n, Object.assign({}, g, { link: true, color: null, u: false }), ctx)}</w:hyperlink>`; return;
     }
     out += inline_xml(n, g, ctx);
+  });
+  return out;
+}
