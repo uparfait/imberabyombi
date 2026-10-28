@@ -32,3 +32,4 @@
   .kpi_spark span { position: absolute; width: .5rem; height: .5rem; margin: -.25rem 0 0 -.25rem; border-radius: var(--pill); background: var(--series_1); }
   .kpi_gauge { position: relative; width: 100%; max-width: 11rem; margin: .5rem auto 0; }
   .kpi_gauge svg { display: block; width: 100%; height: auto; }
+  .kpi_gauge .kpi_value { position: absolute; inset: auto 0 0; text-align: center; }
