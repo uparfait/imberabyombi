@@ -19,3 +19,4 @@ export function viz_draw_all(force = true) {
     VIZ_OUT[k] = o; set(o); });
 }
 /* one chart card: the plot is filled with the chart's SVG string, the legend is JSX */
+function Viz_card({ k, c }) {
