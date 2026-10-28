@@ -13,10 +13,11 @@ const mark_staff_page = () => document.documentElement.classList.toggle('staff_p
 
 /* the same spinner index.html shows while the app loads, kept until the first page is drawn */
 const boot_loader = <div className="boot_loader" role="status" aria-label="Loading">{spinner()}</div>;
+
 export default function App() {
   const version = useSyncExternalStore(subscribe, get_version);
   const page = render_route();
-  useLayoutEffect(() => { run_after_render({ ...render_flags }); }, [version]);
+  useLayoutEffect(() => { mark_staff_page(); run_after_render({ ...render_flags }); }, [version]);
   return (
     <>
       {page}
