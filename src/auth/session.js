@@ -15,3 +15,4 @@ export const auth = {
 };
 export const me = () => auth.user?.name || '';
 export const base_url = () => location.href.split('#')[0];
+export const invite_link = id => `${base_url()}#/login?role=${id}`;
