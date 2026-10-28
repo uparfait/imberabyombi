@@ -4,3 +4,4 @@
 import { toast, state, editable_of, body_index, restore_focus, caret_from_point, set_caret, read_as_data_url, begin_op, end_op } from '../core/index.js';
 import { can_edit, previewing } from '../format/index.js';
 import { open_upload_dialog } from '../io_import/index.js';
+import { sanitize_html } from './sanitize.js';
