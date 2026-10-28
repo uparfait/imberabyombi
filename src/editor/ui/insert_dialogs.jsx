@@ -25,3 +25,4 @@ export function special_chars_dialog() {
   modal({
     title: 'Special characters',
     body: <div className="grid grid-cols-8 gap-1 sm:col-span-2 sm:grid-cols-10">{CHARS.map(c =>
+      <button key={c} type="button" className="h-[2.125rem] rounded-lg border border-line text-lg hover:bg-fg/5"
