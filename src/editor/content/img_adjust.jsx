@@ -14,3 +14,4 @@ function Adjust_body({ src, v }) {
   const [s, set_s] = useState({ ...v });
   const put = next => { Object.assign(v, next); set_s({ ...v }); };
   const filter = `brightness(${1 + s.brightness / 100}) contrast(${1 + s.contrast / 100}) saturate(${s.saturation / 100})`;
+  return (
