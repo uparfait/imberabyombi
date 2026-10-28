@@ -7,3 +7,4 @@ export const kit_type = () => (
     <p className="max-w-prose">Lorem <em>ipsum</em> <strong>dolor</strong> <small>sit amet</small>, <s>consectetur</s> <cite>Adipiscing</cite> <q>sed do eiusmod</q>{' '}
       <abbr title="Lorem Ipsum Dolor">LID</abbr> <data value="42">quadraginta duo</data> <time dateTime="2026-11-04">4 Nov</time> <code>tempor()</code>{' '}
       <var>x</var> <samp>incididunt ok</samp> <kbd>Ctrl</kbd> + <kbd>K</kbd>, H<sub>2</sub>O, E = mc<sup>2</sup>, <mark>magna aliqua</mark>.<br />
+      Ut enim <span className="font-semibold text-accent">ad minim</span> <a href="#/" className="text-accent underline underline-offset-4">veniam</a>.</p>
