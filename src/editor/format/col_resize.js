@@ -36,3 +36,4 @@ export function start_col_drag(e) {
   addEventListener('mousemove', move); addEventListener('mouseup', up); drag_stop = up;
 }
 /* the pointer within 4px of a cell's inner border (not the table's outer edges) */
+function on_hover(e) {
