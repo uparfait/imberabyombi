@@ -82,3 +82,4 @@ export function move_items(c, items, next) {
 }
 export function split_container(c, b, next) {
   const items = items_of(c), lim = b.clientHeight + 1;
+  let k = items.findIndex(it => top_in(it, b) + it.offsetHeight > lim);
