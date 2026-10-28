@@ -26,3 +26,4 @@ export function apply_tokens() {
 }
 /* #token_<k>_out is an <output> with one text child: setting its value replaces that text */
 export function set_token(k, v) { const t = db.get('tokens', {}); t[k] = k === 'radius' || k === 'space' ? +v : v; db.set('tokens', t); apply_tokens(); const o = qs('#token_' + k + '_out'); if (o) o.value = k === 'brand' ? v : v + 'rem'; }
+export function fill_range(t) { const mn = +t.min || 0, mx = +t.max || 100; t.style.setProperty('--val', ((+t.value - mn) / (mx - mn) * 100) + '%'); }
