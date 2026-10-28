@@ -24,3 +24,4 @@ export const mark_shown = () => { shown = here(); };
 /* Moving between staff pages is a get: it waits for the page's data (cfg.latency) with the top loader and the clicked sidebar
    link spinning, then the page draws with its tables already filled. Public and sign-in pages draw at once. */
 /* A navigation that starts during a cross-fade skips the old one (its ready promise rejects: expected, so it is caught). */
+export const navigate = () => { const get = staff_page() && !!qs('#sidebar');
