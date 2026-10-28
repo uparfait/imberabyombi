@@ -46,3 +46,4 @@ export function viz_open(card, e) {
       return modal({ title: `${title} · ${d[0]}`, help, body: kv_table([['', pairs]]) }); }
   }
   SHOWN = { head, rows, p: 1 };
+  modal({ title, help, body: <Viz_data key={++PAGER.n} /> });
