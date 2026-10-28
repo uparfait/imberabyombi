@@ -4,3 +4,5 @@
 import { Fragment, useLayoutEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { get_version } from '../store/index.js';
+
+const SLOTS = {};   /* name → redraw function of the slot on screen */
