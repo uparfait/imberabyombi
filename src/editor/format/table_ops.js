@@ -67,3 +67,4 @@ export function tbl_op(op, arg) {
     case 'props': arg(chain); full = true; break;
   }
   chain.forEach(t => { if (t.isConnected && !t.rows.length) t.remove(); });
+  const alive = chain.filter(t => t.isConnected); if (alive.length) restyle_table(alive);
