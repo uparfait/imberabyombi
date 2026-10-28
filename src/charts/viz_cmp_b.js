@@ -42,3 +42,4 @@ export const VIZ_CMP_B = {
     const hi = Math.max(...bars.map(o => Math.max(o.a, o.b))), f = frame(w, 250), ax = y_axis(f, hi), x = band(bars.length, f.l, f.w - f.r);
     const bw = Math.min(24, x.bw * .6);
     return { svg: svg(f, ax.g + bars.map((o, i) => {
+      const c = o.t ? 'rgb(var(--fg) / .72)' : o.b >= o.a ? 'var(--series_2)' : 'var(--series_1)', lo = Math.min(o.a, o.b), up = Math.max(o.a, o.b);
