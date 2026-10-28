@@ -23,3 +23,4 @@ export function native(c) { return () => { restore_focus(); document.execCommand
 export function file_items() {
   return [
     cmd('New document', 'note_add', () => new_document()),
+    cmd('Upload files…', 'upload_file', () => open_upload_dialog(), 'Ctrl+O'),
