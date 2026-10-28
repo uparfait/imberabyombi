@@ -33,3 +33,4 @@ export function set_block_style(key) {
     if (b.getAttribute('style')) nb.setAttribute('style', b.getAttribute('style'));
     while (b.firstChild) nb.appendChild(b.firstChild);
     if (!nb.firstChild) nb.innerHTML = '<br>';
+    b.replaceWith(nb); sel_remap.set(b, nb);
