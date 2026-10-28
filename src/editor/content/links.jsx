@@ -24,3 +24,4 @@ export function open_link_dialog(existing) {
     <div className="field sm:col-span-2"><label htmlFor="lk_url">Link</label>
       <input type="text" inputMode="url" id="lk_url" name="url" defaultValue={a ? a.getAttribute('href') : ''} placeholder="Paste a link or type an address"
         autoComplete="off" /></div>
+  </>, on_submit: () => {
