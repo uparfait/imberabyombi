@@ -36,3 +36,4 @@ export function boot() {
   install_listeners(); before_render(before_page); define_callout();
   addEventListener('hashchange', navigate);
   apply_tokens();
+  migrate_task_dates();
