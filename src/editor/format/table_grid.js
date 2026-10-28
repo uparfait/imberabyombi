@@ -10,3 +10,4 @@ export function table_grid_el() {
   const box = el('div', { class: 'grid_picker' }), g = el('div', { class: 'g' }), lbl = el('div', { class: 'lbl' }, '1 × 1'), cells = [];
   for (let r = 0; r < 8; r++) for (let c = 0; c < 10; c++) {
     const d = el('div', { class: 'c' }); d.dataset.r = r; d.dataset.c = c; cells.push(d); g.appendChild(d);
+    d.addEventListener('mouseenter', () => { cells.forEach(x => x.classList.toggle('on', +x.dataset.r <= r && +x.dataset.c <= c)); lbl.textContent = `${c + 1} × ${r + 1}`; });
