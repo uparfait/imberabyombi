@@ -39,3 +39,4 @@ export const VIZ_CMP_A = {
       + ` width="${round1(Math.max(0, b - a - (j ? 1 : 0) - (j < 3 ? 1 : 0)))}" height="${round1(bh)}" rx="0"/>`;
     return { svg: svg(f, [0, .25, .5, .75, 1].map(t => `<line class="grid_line" y1="${f.t}" y2="${f.t + f.ih}" x1="${round1(x(t))}" x2="${round1(x(t))}"/>`
         + `<text x="${round1(x(t))}" y="${f.h - 8}" text-anchor="middle">${t * 100}%</text>`).join('')
+      + c.map((k, i) => { let acc = 0; return mark_group(k, s.map((n, j) => [pct(v[i][j]), n, j]), hit_row(f, y, i)
