@@ -27,3 +27,4 @@ export function fmt_of(e, f) {
     if (st.fontWeight) g.b = /^(bold|bolder|[6-9]00)$/.test(st.fontWeight);
     if (st.fontStyle) g.i = st.fontStyle === 'italic';
     const td = st.textDecorationLine || st.textDecoration || ''; if (/underline/.test(td)) g.u = true; if (/line-through/.test(td)) g.s = true;
+    if (st.color) g.color = to_hex(st.color) || g.color;
