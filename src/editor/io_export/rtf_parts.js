@@ -58,3 +58,4 @@ export function rtf_para(rx, e) {
   else if (e.classList.contains('subtitle')) { f = { size: 15, color: '666666' }; pre += '\\sa320'; }
   else if (e.tagName === 'PRE') f = { font: 'Courier New', size: 10 };
   const al = { center: '\\qc', right: '\\qr', end: '\\qr', justify: '\\qj' }[st.textAlign]; if (al) pre += al;
+  const ml = parseFloat(st.marginLeft); if (ml) pre += `\\li${Math.round(ml * 15)}`; if (e.tagName === 'BLOCKQUOTE') pre += '\\li720';
