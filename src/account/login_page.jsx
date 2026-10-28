@@ -4,3 +4,5 @@ import { ic } from '../icons/index.js';
 import { roles } from '../auth/index.js';
 import { db } from '../store/index.js';
 import { auth_shell, auth_links } from './auth_shell.jsx';
+
+/* the invitation note, or the role picker */
