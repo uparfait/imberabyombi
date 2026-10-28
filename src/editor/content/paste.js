@@ -42,3 +42,4 @@ export async function paste_from_clipboard(plain) {
   } catch (err) { toast('Your browser blocked clipboard access. Press Ctrl+V to paste.'); }
 }
 /* files dropped anywhere while the editor is on screen (a dialog's own drop zone handles its drops) */
+export function drop_handler(e) {
