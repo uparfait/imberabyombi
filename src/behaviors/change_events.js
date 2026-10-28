@@ -18,3 +18,4 @@ function on_change(e) {
   if (t.matches?.('[data-viz-range]')) return request(() => viz_range(t.value));   /* a get: new numbers for the range */
   if (t.getAttribute?.('aria-invalid') === 'true' && t.checkValidity()) { clear_err(t); if (t.type === 'radio') qsa(`[name="${t.name}"]`, t.form || document).forEach(clear_err); }
   /* task view: a subtask ticked, the status picked, files added (modules own that state) */
+  if (task_change(t)) return;
