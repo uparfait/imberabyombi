@@ -53,3 +53,4 @@ export const PK = {
   },
   years() {
     const y = pick.view.getFullYear(), now = new Date().getFullYear();
+    return `<div class="pk_cal"><p class="mb-2 px-1 text-sm font-medium">Choose a year</p><div class="pk_years">${Array.from({ length: 201 }, (_, i) => 1900 + i)
