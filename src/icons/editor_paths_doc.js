@@ -44,3 +44,4 @@ export const EDITOR_DOC_PATHS = {
   arrow_back: 'M19 12H5M11 18l-6-6 6-6',
   arrow_upward: 'M12 19V5M6 11l6-6 6 6',
   arrow_downward: 'M12 5v14M6 13l6 6 6-6',
+  arrow_drop_down: 'm8 10 4 4 4-4',
