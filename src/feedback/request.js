@@ -21,3 +21,4 @@ export function busy(btn, on) {
   else { btn.removeAttribute('aria-busy'); btn.querySelector(':scope > .spinner_segmented_svg')?.remove(); }
 }
 export async function request(fn, { btn = null, delay = cfg.latency } = {}) {
+  const top = staff_page();   /* read once, so start and done always pair up even if fn changes the page */
