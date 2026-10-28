@@ -35,3 +35,4 @@ export function pages_click(e) {
   if (chip) {
     e.preventDefault();
     try { download(data_ur_lto_blob(chip.getAttribute('href')), chip.getAttribute('download') || 'file'); } catch (err) { toast('This attachment could not be opened'); }
+    return;
