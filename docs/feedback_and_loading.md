@@ -28,3 +28,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
   150 ms (instant work never flashes it), waits `delay` ms, runs `fn`, then stops. A thrown error becomes a
   "The request could not be completed" notification.
 - Every save, delete and get the user starts shows it: dialog buttons (Save, Comment, Delete…) spin while they work.
+- Data tables show the spinner in their body while rows load (the first view of a page).
