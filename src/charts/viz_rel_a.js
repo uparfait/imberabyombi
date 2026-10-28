@@ -25,3 +25,4 @@ export const VIZ_REL_A = {
       + `<circle class="mark" cx="${round1(xs(p.x))}" cy="${round1(ax.y(p.y))}" r="${round1(rs(p.s))}"`
       + ` style="fill:color-mix(in srgb, ${scale_color(p.g)} 60%, transparent);stroke:rgb(var(--surface));stroke-width:2"/>`)).join(''), 'Bubble chart'),
       legend: legend(gr, 'dot'), table: [['Group', 'x', 'y', 'Size'], pts.map(p => [gr[p.g], round1(p.x), round1(p.y), num(p.s)])] }; } },
+  heatmap: { t: 'Heatmap', g: 'rel', d: 'Values on a grid (day × hour). Darker = more.', f(w) {
