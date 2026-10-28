@@ -9,3 +9,4 @@ export async function copy(text, what = 'Link', quiet = false) {
   catch { const ta = document.createElement('textarea'); ta.value = text; document.body.append(ta); ta.select(); try { document.execCommand('copy'); done(); } catch { prompt(`Copy this ${what.toLowerCase()}:`, text); } ta.remove(); }
 }
 /* Copyable value (code, key, link, token): dashed brand box + Copy button. It pulses twice when it appears to draw the eye;
+   big = one-time code (digits rise in one by one). */
