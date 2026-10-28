@@ -34,3 +34,5 @@ services: { t: 'Services', i: 'layers', top: () => services_sec(1) },
 ## 3. Show it in the menus (optional)
 Add `['services', 'Services']` to `PUB` in `src/site/site_bits.jsx`: the header links, the mobile drawer and the footer
 list it. To also show the section on the home page, add `{services_sec()}` to `home()` in `src/site/pages.jsx`.
+
+## 4. Tell search engines
