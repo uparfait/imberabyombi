@@ -91,3 +91,4 @@ function set_cur(r, m = r.parentElement) { if (!m) return; if (m._cur && m._cur 
 export function focus_row(m, r, preview = true) {
   if (!r) return;
   set_cur(r, m); unpeek();
+  r.focus({ preventScroll: false });
