@@ -11,3 +11,4 @@ export const get_dialog_version = () => version;
 
 /* content: the dialog's options (or null = empty). Each call gets a new key, so the dialog's DOM is new (like innerHTML) */
 export function set_dialog(id, content) {
+  DIALOGS[id] = content ? { ...content, key: ++n } : null; version++;
