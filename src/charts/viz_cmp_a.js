@@ -37,3 +37,4 @@ export const VIZ_CMP_A = {
     const f = frame(w, 220, { l: 82, r: 14, b: 26 }), x = linear(0, 1, f.l, f.l + f.iw), y = band(c.length, f.t, f.t + f.ih), bh = Math.min(22, y.bw * .62);
     const seg = (i, j, a, b) => `<rect class="mark" style="fill:${scale_color(j)}" x="${round1(a + (j ? 1 : 0))}" y="${round1(y(i) - bh / 2)}"`
       + ` width="${round1(Math.max(0, b - a - (j ? 1 : 0) - (j < 3 ? 1 : 0)))}" height="${round1(bh)}" rx="0"/>`;
+    return { svg: svg(f, [0, .25, .5, .75, 1].map(t => `<line class="grid_line" y1="${f.t}" y2="${f.t + f.ih}" x1="${round1(x(t))}" x2="${round1(x(t))}"/>`
