@@ -27,3 +27,4 @@ Enable gzip or brotli compression for `.js`, `.css`, `.svg`, `.xml` and `.txt` f
 
 ## Checklist
 - Replace `example.com` in `index.html`, `public/robots.txt` and `public/sitemap.xml`.
+- Run `npm run preview` and click through the public site, the sign-in and one admin module.
