@@ -37,3 +37,4 @@ export function md_to_html(md) {
       out += `<blockquote>${buf.map(x => `<p>${md_inline(x) || '<br>'}</p>`).join('')}</blockquote>`; continue;
     }
     if (ROW_RE.test(l)) { const rows = []; while (i < lines.length && ROW_RE.test(lines[i])) rows.push(lines[i++]); out += md_table(rows); continue; }
+    if (LIST_RE.test(l)) {
