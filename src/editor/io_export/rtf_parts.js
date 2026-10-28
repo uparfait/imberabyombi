@@ -7,3 +7,5 @@ import { fmt_of } from './docx_runs.js';
 export const RTF_P = '\\pard\\plain\\f0\\fs22';
 export const rtf_ci = (rx, hex) => {
   hex = (hex || '000000').toUpperCase(); let i = rx.colors.indexOf(hex); if (i < 0) { rx.colors.push(hex); i = rx.colors.length - 1; } return i + 1;
+};
+const rtf_fi = (rx, f) => { let i = rx.fonts.indexOf(f); if (i < 0) { rx.fonts.push(f); i = rx.fonts.length - 1; } return i; };
