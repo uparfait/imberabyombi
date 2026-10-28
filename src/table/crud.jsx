@@ -32,3 +32,4 @@ const col_head = (c, k, st, hide) => (
 );
 
 export function crud(c, o = {}) {
+  o.mod = o.mod || route.mod; cur[c] = o;
