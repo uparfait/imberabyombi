@@ -9,3 +9,5 @@ F('title', 'Title', 'text', 0, 1)                         // key, label, type, o
 F('status', 'Status', 'select', O('To do|In progress|Done'), 1, { def: () => 'To do' })
 F('due', 'Due', 'datetime-local', 0, 0, { when: '!Done' })   // shown only while status is not Done
 F('notes', 'Notes', 'textarea')
+```
+Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `textarea`, `list` (suggestions),
