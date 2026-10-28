@@ -27,3 +27,4 @@ export function rtf_to_html(rtf) {
       if (nx === '\\' || nx === '{' || nx === '}') { if (skip_n > 0) skip_n--; else emit(nx); i += 2; continue; }
       if (nx === "'") { const code = parseInt(rtf.substr(i + 2, 2), 16); i += 4; if (skip_n > 0) { skip_n--; continue; } if (!isNaN(code)) emit(cp(code)); continue; }
       if (nx === '*') { st.skip = 1; i += 2; continue; }
+      if (nx === '~') { emit('\u00a0'); i += 2; continue; }
