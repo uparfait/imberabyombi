@@ -57,3 +57,5 @@ export function undo() {
 export function redo() {
   if (state.mode !== 'edit') return; live.cancel();
   const t = active_tab(); if (!t || !t.redo.length) return;
+  const s = t.redo.pop(); t.undo.push(s); apply_snap(s); save_soon();
+}
