@@ -19,3 +19,4 @@ const comment = (r, c, on) => <li key={c.id} className="flex gap-3">{avatar(c.by
       <button type="button" className="icon_btn h-7 w-7" data-act="comment_edit" aria-label="Edit comment" disabled={on}>{ic('edit', 'h-3.5 w-3.5')}</button>
       <button type="button" className="icon_btn h-7 w-7" data-act="comment_del" data-id={r.id} data-c={c.id} aria-label="Delete comment">
         {ic('trash', 'h-3.5 w-3.5')}</button></span> : null}</p>
+  <p className="mt-0.5 whitespace-pre-line text-sm [overflow-wrap:anywhere]" data-comment-text="" hidden={on}>{c.text}</p>{on ? editor(c) : null}</div></li>;
