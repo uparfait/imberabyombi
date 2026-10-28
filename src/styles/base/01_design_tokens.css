@@ -35,3 +35,4 @@
     color-scheme: light;
   }
   .dark {
+    --bg: 31 31 31; --surface: 40 41 43; --surface_2: 50 51 54; --surface_3: 64 66 69;
