@@ -13,3 +13,4 @@ export async function image_blob(img) {
 }
 export async function copy_image(img) {
   img = img_now(img); if (!img || previewing()) return;
+  try { const b = await image_blob(img); await navigator.clipboard.write([new ClipboardItem({ 'image/png': b })]); toast('Image copied'); }
