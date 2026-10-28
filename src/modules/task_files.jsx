@@ -2,3 +2,4 @@
    preview shown inside the view (images, video, audio, PDF, text); other files are opened in the full viewer. */
 import { useEffect, useState } from 'react';
 import { ic, i3 } from '../icons/index.js';
+import { file_kind, FICON, fmt_size } from '../files/index.js';
