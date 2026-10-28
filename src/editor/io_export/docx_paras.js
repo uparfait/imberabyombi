@@ -10,3 +10,4 @@ export function p_pr_xml(e, extra = '') {
   else if (e.classList && e.classList.contains('title')) style = 'Title';
   else if (e.classList && e.classList.contains('subtitle')) style = 'Subtitle';
   let x = style ? `<w:pStyle w:val="${style}"/>` : '';
+  x += extra;
