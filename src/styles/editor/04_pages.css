@@ -1,2 +1,3 @@
 /* styles/editor/04_pages.css: rulers and paper. The ruler bars are rem (var(--ed_hr) / var(--ed_vr)); the engine's SVG
    (24 / 20 px, paper pixels along the page) is centred in them. The pages are paper (px / pt, the exception to rem):
+   white, black text, light colour scheme in both themes, edged by a line instead of a shadow. .page is scaled by the
