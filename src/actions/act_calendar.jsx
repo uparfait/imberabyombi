@@ -14,3 +14,4 @@ export const CALENDAR_ACT = {
   /* Sidebar mini calendar pages in place and slides (no page re-render: mini_draw() redraws only #date_mini's content) */
   mini: t => { const n = +t.dataset.n, b = parse_d(ui.mini || ui.cal_date); ui.mini = ymd(new Date(b.getFullYear(), b.getMonth() + n, 1));
     const box = qs('#date_mini'); if (!box || !mini_draw()) return rerender(); slide_in(box.querySelectorAll('.date_mini_title, .date_mini_grid'), n); },
+  goday: t => { if (route.mod === 'calendar') return cal_go(t.dataset.d); ui.cal_date = t.dataset.d; ui.mini = null; location.hash = '#/admin/calendar'; },
