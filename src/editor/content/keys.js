@@ -40,3 +40,4 @@ export function pages_keydown(e) {
   if (e.key === 'Backspace' && pi > 0 && at_body_start(host, r) && !(is_list(first) || is_table(first))) { done(e); backspace_across(host, pi); return; }
   if (e.key === 'Delete' && pi < bs.length - 1 && at_body_end(host, r)) { done(e); delete_across(host, pi); return; }
   if ((e.key === 'ArrowUp' && pi > 0 && on_first_line(host, r)) || (e.key === 'ArrowLeft' && pi > 0 && at_body_start(host, r))) {
+    done(e); caret_to_end(last_non_break(bs[pi - 1])); scroll_caret_into_view(); return;
