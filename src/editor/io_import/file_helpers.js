@@ -23,3 +23,4 @@ export function file_badge(ext) {
   return [(ext || 'FILE').toUpperCase().slice(0, 4), '#5f6368'];
 }
 /* the badge as an HTML string (the upload dialog draws the JSX twin, badge() in badge.jsx) */
+export const badge_html = (ext, cls = 'fmt_badge') => { const [l, c] = file_badge(ext); return `<span class="${cls}" style="background:${c}">${esc_html(l)}</span>`; };
