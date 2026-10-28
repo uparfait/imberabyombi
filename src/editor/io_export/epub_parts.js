@@ -8,3 +8,4 @@ const XHTML_HEAD = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE html>\n'
 /* one tab = one chapter; xb is the tab's content as XHTML */
 export const epub_chapter = (title, xb) => XHTML_HEAD + ' xml:lang="en"><head><meta charset="UTF-8"/>'
   + `<title>${xesc(title)}</title><link rel="stylesheet" type="text/css" href="style.css"/></head>`
+  + `<body><section class="doc_content">${xb}</section></body></html>`;
