@@ -49,3 +49,4 @@ export async function bake_image(img, render, width_fn, msg) {
   put(img, url, width_fn, q ? null : msg);
 }
 export function rotate_image(img, dir) {
+  return bake_image(img, (c, im) => {
