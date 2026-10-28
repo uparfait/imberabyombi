@@ -3,6 +3,7 @@
    step of history and is applied once the dialog has closed. Once the setup differs from the default, "Reset to defaults"
    fills the form with it (OK applies it). */
 import { Fragment, useState } from 'react';
+import { state, PAPER, clamp, begin_op, commit, save_soon, default_setup } from '../core/index.js';
 import { num_props } from '../format/index.js';
 import { modal } from '../../overlays/index.js';
 import { form_msg } from '../../feedback/index.js';
