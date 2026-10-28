@@ -16,3 +16,4 @@ function place_uploads(done, mode, failed) {
   const projects = done.filter(r => r.project), content = done.filter(r => !r.project);
   if (mode === 'insert') {
     if (content.length) {
+      const html = content.length === 1 && content[0].inline ? content[0].inline : content.map(r => r.html).join('');
