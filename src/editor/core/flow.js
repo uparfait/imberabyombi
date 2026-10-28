@@ -41,3 +41,4 @@ export function hoist_nested(b) {
     if (!p) return;
     const inner = Array.from(p.children).find(c => NEST.test(c.tagName));
     const before = p.cloneNode(false), after = p.cloneNode(false); after.removeAttribute('data-cont');
+    while (p.firstChild !== inner) before.appendChild(p.firstChild);
