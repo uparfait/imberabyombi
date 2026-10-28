@@ -33,3 +33,4 @@ export function vbar(cx, w, yb, yt) {
 export function hbar(cy, h, xb, xt) {
   const y = cy - h / 2, r = Math.min(4, h / 2, Math.abs(xt - xb)), e = xt >= xb ? -r : r;
   return `M${round1(xb)} ${round1(y)}H${round1(xt + e)}Q${round1(xt)} ${round1(y)} ${round1(xt)} ${round1(y + r)}`
+    + `V${round1(y + h - r)}Q${round1(xt)} ${round1(y + h)} ${round1(xt + e)} ${round1(y + h)}H${round1(xb)}Z`;
