@@ -45,3 +45,5 @@ function on_hover(e) {
     else if (Math.abs(e.clientX - r.left) <= 4 && cell.cellIndex > 0) h = { table: cell.closest('table'), ci: cell.cellIndex - 1 };
   }
   if (h || col_hover) set_col_hover(h);
+}
+/* capture on window: runs before the pages' own mousedown (caret placement), which never sees a resize drag */
