@@ -16,3 +16,4 @@ export function with_blocks(fn) {
   if (!can_edit()) return;
   const host = restore_focus(); begin_op();
   const sel = save_sel(); let blocks = selected_blocks();
+  if (!blocks.length && last_range) {
