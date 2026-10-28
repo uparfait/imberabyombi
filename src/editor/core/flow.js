@@ -66,3 +66,4 @@ export function insert_at_start(next, nodes) {
   next.insertBefore(frag, next.firstChild);
   if (old && old.hasAttribute('data-cont')) {
     const prev = prev_flow(old);
+    if (prev && same_kind(prev, old)) merge_into(prev, old); else old.removeAttribute('data-cont');
