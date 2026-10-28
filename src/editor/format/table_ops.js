@@ -31,3 +31,4 @@ export function table_chain(t) {
 export function sel_cells(c) { const r = last_range; const cells = r && !r.collapsed ? qsa('td,th', c.table).filter(x => r.intersectsNode(x)) : []; return cells.length ? cells : [c.td]; }
 /* op (snake_case; the source's camelCase names work too): row_above, row_below, col_left, col_right (arg: how many),
    del_row, del_col, del_table, merge, split, cell_bg / border_color (arg: colour or null), valign (top|middle|bottom),
+   border (px), header, striped (toggles), preset (key), distribute (equal widths), props (arg: fn(chain)) */
