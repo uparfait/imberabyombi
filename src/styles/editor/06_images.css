@@ -32,3 +32,4 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
 
 /* The quick bar under a selected picture: position, alignment, all options, size */
 .img_bar {
+  position: absolute; left: 0; top: calc(100% + .5rem); display: flex; align-items: center; gap: .125rem; padding: .1875rem;
