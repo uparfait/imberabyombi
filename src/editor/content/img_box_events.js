@@ -27,3 +27,6 @@ function on_pointerdown(e) {
   if (!img_sel) return;
   const h = e.target.closest('.h'); if (h) { resize(e, h); return; }
   if (e.target.closest('.img_move')) start_img_drag(e, img_sel, true);
+}
+
+/* quick bar hover preview: the box stays put while the pointer is on the bar (a preview may move the image) */
