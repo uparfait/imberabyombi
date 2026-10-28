@@ -17,3 +17,4 @@ export const read_subs = root => qsa('[data-sub-group]', root)
   .filter(g => g.t || g.items.length).map(g => ({ ...g, t: g.t || 'Subtask' }));
 /* chosen files as attachments: { id, name, size, type, url? } (url = the file as a data URL when ≤ 1 MB) */
 export const read_files = list => Promise.all([...(list || [])].map(f => new Promise(res => { const meta = { id: uid(), name: f.name, size: f.size, type: f.type || '' };
+  if (f.size > 1048576) return res(meta);
