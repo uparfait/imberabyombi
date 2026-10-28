@@ -18,3 +18,5 @@ export const rtf_esc = s => {
     else { const hi = Math.floor((c - 0x10000) / 0x400) + 0xD800, lo = (c - 0x10000) % 0x400 + 0xDC00; o += `\\u${hi - 65536}?\\u${lo - 65536}?`; }
   }
   return o;
+};
+const rtf_codes = (rx, f) => {
