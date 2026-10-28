@@ -28,3 +28,4 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
 .img_sel .nw { left: -.3125rem; top: -.3125rem; cursor: nwse-resize; }
 .img_sel .ne { right: -.3125rem; top: -.3125rem; cursor: nesw-resize; }
 .img_sel .sw { left: -.3125rem; bottom: -.3125rem; cursor: nesw-resize; }
+.img_sel .se { right: -.3125rem; bottom: -.3125rem; cursor: nwse-resize; }
