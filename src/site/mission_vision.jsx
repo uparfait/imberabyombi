@@ -22,3 +22,4 @@ export function vision_sec(full) {
     <section {...spy_attrs('vision', full)} className="theme_band relative isolate overflow-hidden border-y border-line py-20 sm:py-28">
       <div className="pattern_layer" aria-hidden="true"></div>
       <div className="wrap grid gap-14 lg:grid-cols-2"><div>{sec_head('Vision', lorem.t(4), lorem.p(2))}{full ? null : more('vision')}</div>
+        <ol className="grid gap-2">{[2027, 2028, 2030, 2032].map((y, i) => (
