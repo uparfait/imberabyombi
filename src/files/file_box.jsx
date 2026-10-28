@@ -6,3 +6,4 @@ import { spinner } from '../feedback/index.js';
 import { file_tile } from './file_tile.jsx';
 
 const BOXES = new WeakMap();   /* file input → its File_box's sync() */
+const same = (a, b) => a.length === b.length && a.every((f, i) => f === b[i]);
