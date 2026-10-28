@@ -12,3 +12,7 @@ export const kit_forms_text = () => (
     const id = `demo_${t.replace('-', '_')}`;
     return (
       <div key={t} className="field"><label htmlFor={id}>{l}</label><input id={id} {...(DTF[t] ? dt_attrs(t) : { type: t, placeholder: lorem.w(2) })} />
+        {t === 'search' ? search_ui() : DTF[t] ? <span className="date_hint" aria-hidden="true"></span> : null}</div>
+    );
+  })}</fieldset>
+);
