@@ -6,3 +6,4 @@ import { remove_comment, activate_comment, fmt_time } from './comments.js';
 
 const icon_btn = (x, tip, icon, cls) => `<button type="button" class="icon_btn h-7 w-7" data-x="${x}" data-tip="${tip}" aria-label="${tip}">`
   + `${ic_html(icon, 'h-[1.125rem] w-[1.125rem] ' + cls)}</button>`;
+const DRAFT = '<textarea class="c_input mt-2" rows="2" placeholder="Comment" aria-label="Comment"></textarea>'
