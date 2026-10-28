@@ -11,3 +11,5 @@ export function set_theme(mode) {
   h.classList.toggle('dark', mode === 'dark' || (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches));
   void h.offsetWidth; requestAnimationFrame(() => requestAnimationFrame(() => h.classList.remove('theme_switch')));
   redraw_charts(); hex_refresh();
+}
+/* Colour tokens shown as hex (design system swatches) follow the theme and brand changes.
