@@ -8,3 +8,4 @@ export function export_html(root, name) {
   const css = CONTENT_CSS + `body{margin:0;background:#f1f3f4;color-scheme:light}.sheet{background:${state.setup.page_color};max-width:${win}in;`
     + `margin:24px auto;padding:${m.top}in ${m.right}in ${m.bottom}in ${m.left}in;box-sizing:border-box;box-shadow:0 1px 3px rgba(0,0,0,.2)}`
     + '.doc_content .page_break{break-after:page;border-top:1px dashed #dadce0;margin:24px 0}'
+    + '@media print{body{background:none}.sheet{box-shadow:none;margin:0;padding:0;max-width:none}.doc_content .page_break{border:0;margin:0}}';
