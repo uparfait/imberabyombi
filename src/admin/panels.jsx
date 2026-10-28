@@ -2,3 +2,4 @@
    Each: t = title, h() = body, tools() = extra header buttons. Drawn by panel_html(); refresh_panel() draws the open one again. */
 import { ic, i3 } from '../icons/index.js';
 import { db } from '../store/index.js';
+import { me } from '../auth/index.js';
