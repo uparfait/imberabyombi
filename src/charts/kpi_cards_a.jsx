@@ -19,3 +19,4 @@ export const kpi_cards_a = k => {
       <><p className="kpi_value">{`${num(enr)} `}<span className="kpi_of">of 1,000</span></p><progress className="mt-3" max="1000" value={Math.min(1000, enr)}></progress>
         <p className="mt-2 text-sm text-muted">{`${num(Math.max(0, 1000 - enr))} to go · ${reached} reached`}</p></>,
       [['Measure', 'Value'], [['Enrolled', num(enr)], ['Goal', '1,000'], ['To go', num(Math.max(0, 1000 - enr))], ['Reached', reached]]]),
+    kpi_card('', 'Storage used', 'Share of the storage space in use: amber from 70%, red from 85%.',
