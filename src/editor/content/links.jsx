@@ -32,3 +32,4 @@ export function open_link_dialog(existing) {
     if (range && range.startContainer.isConnected) { const s = getSelection(); s.removeAllRanges(); s.addRange(range); }
     const host = restore_focus(); begin_op();
     if (a) { a.setAttribute('href', url); if (text && text !== a.textContent) a.textContent = text; }
+    else if (range && !range.collapsed && (!text || text === sel_text)) document.execCommand('createLink', false, url);
