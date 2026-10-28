@@ -31,3 +31,4 @@ export function toggle_checklist(strike) {
   restore_focus(); let l = closest_list();
   if (l && l.classList.contains('checklist') && strike === undefined) { exec('insertUnorderedList'); return; }
   if (!l || l.tagName !== 'UL') { document.execCommand('insertUnorderedList'); take_sel(); l = closest_list(); }
+  if (!l) return;
