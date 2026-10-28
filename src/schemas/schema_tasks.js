@@ -10,3 +10,4 @@ export const tasks_schema = {
   l: 'task', n: 14, cols: ['title', 'assignee', 'by', 'start', 'due', 'subs', 'priority', 'status'],
   f: [
     field_spec('title', 'Title', 'text', 0, 1),
+    field_spec('assignee', 'Assigned to', 'select', () => uniq([me(), ...people()]).map(n => [n, n === me() ? n + ' (You)' : n]), 1),
