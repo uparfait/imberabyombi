@@ -23,3 +23,4 @@ export const VIZ_DIST = {
     const ln = (x1, x2, y1, y2, sw = 1.5) => `<line x1="${round1(x1)}" x2="${round1(x2)}" y1="${round1(y1)}" y2="${round1(y2)}"`
       + ` style="stroke:var(--series_1);stroke-width:${sw}"/>`;
     return { svg: svg(f, ax.g + st.map((o, i) => mark_group(g[i],
+        [[round1(o.med), 'Median', 0], [`${round1(o.q1)}–${round1(o.q3)}`, 'Middle half', null], [`${round1(o.lo)}–${round1(o.hi)}`, 'Range', null]], hit_col(f, x, i)
