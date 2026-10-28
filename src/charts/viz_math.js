@@ -18,3 +18,4 @@ export const rnd = (a, b) => a + lorem.r() * (b - a);
 export const gauss = () => (lorem.r() + lorem.r() + lorem.r() + lorem.r() - 2) * .87;
 export const MONTHS = () => Array.from({ length: 12 }, (_, i) => new Date(2026, i, 1).toLocaleDateString(undefined, { month: 'short' }));
 export const uwords = n => { const s = new Set(); let g = 0; while (s.size < n && g++ < 500) s.add(cap(lorem.w(1))); return [...s]; };
+export const SER = ['Lorem', 'Ipsum', 'Dolor', 'Amet', 'Elit', 'Magna', 'Sed', 'Velit'];
