@@ -3,3 +3,5 @@
 import { lorem } from '../lib/index.js';
 import { DTF, dt_attrs } from '../fields/index.js';
 import { search_ui } from '../ui/index.js';
+
+const TYPES = [['text', 'Text'], ['email', 'Email'], ['password', 'Password'], ['number', 'Number'], ['tel', 'Phone'], ['url', 'URL'], ['search', 'Search'],
