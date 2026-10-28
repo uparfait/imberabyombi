@@ -13,3 +13,4 @@ export const topbar = () => (
       <div className="topbar_main">
         <input id="doc_title" className="title_input" defaultValue="Untitled document" spellCheck={false} aria-label="Document title" />
         <nav id="menubar" aria-label="Menus">
+          {MENUBAR.map(([k, l]) => <button key={k} type="button" className="menubar_btn" data-menu={k}>{l}</button>)}
