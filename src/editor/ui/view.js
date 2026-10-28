@@ -32,3 +32,4 @@ export function set_zoom(z) {
 }
 export function zoom_fit() {
   if (!scroller) return;
+  const avail = scroller.clientWidth - (parseFloat(scroller.style.paddingLeft) || 0) - (parseFloat(scroller.style.paddingRight) || 0) - scaled(56);
