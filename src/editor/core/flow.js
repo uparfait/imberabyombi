@@ -32,3 +32,6 @@ export function normalize_body(b) {
     if (n.nodeType === 3 && !p && /^[\s]*$/.test(n.data) && !(cur_sel && (cur_sel.sc === n || cur_sel.ec === n))) { n.remove(); continue; }
     if (!p) { p = document.createElement('p'); b.insertBefore(p, n); }
     p.appendChild(n);
+  }
+}
+export function hoist_nested(b) {
