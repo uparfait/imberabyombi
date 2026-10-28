@@ -60,3 +60,5 @@ export function on_key(e) {
     if (paint) { stop_paint(); closed = true; }
     if (closed) e.stopPropagation();
     return;
+  }
+  if (!(e.ctrlKey || e.metaKey)) return;
