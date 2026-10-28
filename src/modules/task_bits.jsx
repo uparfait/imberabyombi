@@ -4,3 +4,4 @@ import { ic } from '../icons/index.js';
 import { items_of } from './task_data.js';
 
 export const bar = (d, n) => <span className="inline-flex items-center gap-2 whitespace-nowrap">
+  <progress className="w-16" max={n || 1} value={d}></progress><span className="text-xs tabular-nums text-muted">{`${d}/${n}`}</span></span>;
