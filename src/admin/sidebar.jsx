@@ -2,3 +2,4 @@
    side_spin(link) shows the loading spinner in a clicked sidebar link until the next page draws. */
 import { uniq } from '../lib/index.js';
 import { ic, i3 } from '../icons/index.js';
+import { cfg } from '../config/index.js';
