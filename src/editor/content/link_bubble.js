@@ -17,3 +17,5 @@ export function update_link_bubble() {
   lb.style.top = Math.min(r.bottom + u * 0.375, innerHeight - u * 3.125) + 'px';
 }
 export function hide_link_bubble() { const lb = link_bubble(); if (lb) lb.style.display = 'none'; bubble_link = null; }
+
+/* the bubble's buttons (added by install_content; the returned function removes them) */
