@@ -27,3 +27,5 @@ export const account_mails = () => ({
     {copy_box('imb_live_' + chars(32, 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789'), 'Token')}
     <div className="flex flex-wrap gap-2">{['read:events', 'write:events', 'read:people'].map(x => <span key={x} className="chip bg-surface-2 text-muted">{x}</span>)}</div>
     <p className="text-sm text-muted">Expires on {fmt_d(ymd(add_d(new Date(), 90)))}. <a href="#/admin/emails" className="text-accent underline">Revoke this token</a> if you
+      did not create it.</p></> }
+});
