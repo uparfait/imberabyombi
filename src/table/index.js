@@ -7,3 +7,4 @@ export * from './rows.js';
 export * from './table_body.jsx';
 export * from './col_show.js';
 export * from './table_full.js';
+export * from './crud.jsx';
