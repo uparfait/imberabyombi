@@ -52,3 +52,4 @@ export function crop_dialog(img) {
   img = img_now(img); if (!img || previewing() || !can_edit()) return;
   const st = { rect: null, pic: null };
   modal({ title: 'Crop image', submit: 'Crop', wide: true, body: <Crop_body src={img.getAttribute('src')} st={st} />, on_submit: () => {
+    const { rect, pic } = st;
