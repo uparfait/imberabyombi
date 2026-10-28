@@ -47,3 +47,4 @@ export const VIZ_REL_A = {
         + ` style="fill:${diverging(c)}"/>${cs > 30 ? `<text class="${Math.abs(c) > .55 ? 'inner_label' : ''}" x="${round1(x0 + j * cs + cs / 2)}"`
         + ` y="${round1(y0 + i * cs + cs / 2 + 4)}" text-anchor="middle">${c.toFixed(1)}</text>` : ''}`)).join('')
         + `<text x="${x0 - 8}" y="${round1(y0 + i * cs + cs / 2 + 4)}" text-anchor="end">${k[i]}</text>`).join('')
+      + k.map((t, j) => `<text x="${round1(x0 + j * cs + cs / 2)}" y="${round1(y0 + n * cs + 14)}" text-anchor="middle">${fit(t, cs)}</text>`).join(''), 'Correlogram'),
