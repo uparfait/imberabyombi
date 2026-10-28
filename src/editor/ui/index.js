@@ -13,3 +13,4 @@ export * from './info_dialogs.jsx';
 export * from './insert_dialogs.jsx';
 export * from './find.js';
 export * from './toolbar_state.js';
+export * from './sections.js';
