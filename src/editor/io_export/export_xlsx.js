@@ -3,3 +3,4 @@
 import { download } from '../core/index.js';
 import { export_data } from './export_data.js';
 import { xesc } from './docx_runs.js';
+import { zip_store } from './zip_store.js';
