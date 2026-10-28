@@ -8,3 +8,4 @@ export * from './ensure_mine.js';
 export * from './calendar_items.jsx';
 export * from './side_section.jsx';
 export * from './sidebar.jsx';
+export * from './header_tools.jsx';
