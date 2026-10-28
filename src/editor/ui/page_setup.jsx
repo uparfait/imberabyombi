@@ -19,3 +19,6 @@ function seg(name, opts, cur, on) {
 }
 const check = (name, label, on) => (
   <label className="flex cursor-pointer items-center gap-2 text-sm"><input type="checkbox" name={name} defaultChecked={on} /> {label}</label>
+);
+
+function Page_setup_body() {
