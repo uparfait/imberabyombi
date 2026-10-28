@@ -13,3 +13,5 @@ export function toggle_list(tag) {
   restore_focus(); const l = closest_list();
   if (tag === 'UL' && l && l.classList.contains('checklist')) { begin_op(); l.classList.remove('checklist'); l.removeAttribute('data-strike'); end_op(); return; }
   exec(tag === 'UL' ? 'insertUnorderedList' : 'insertOrderedList');
+}
+/* type: a list-style-type value ('disc', 'lower-roman', "'★  '", …); makes the list first when needed */
