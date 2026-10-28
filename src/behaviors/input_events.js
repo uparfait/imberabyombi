@@ -1,3 +1,4 @@
 /* behaviors/input_events.js: the input listener (date masks, table column search, picker filtering, 6-box codes, password
    rules, range fills, live outputs, list filters, design tokens, calc forms, clearing fixed errors) and code pasting. */
 import { qs, qsa } from '../lib/index.js';
+import { ui } from '../store/index.js';
