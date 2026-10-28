@@ -3,3 +3,4 @@
    position / alignment button previews it live), and the box's context menu (all image options). */
 import { clamp, state, live, is_abs, begin_op, end_op, body_index } from '../core/index.js';
 import { open_menu } from '../ui/index.js';
+import { ensure_img_box, img_sel, img_max, select_image, hide_img_sel, position_img_box, freeze_img_box, img_now } from './img_sel.js';
