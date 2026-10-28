@@ -12,3 +12,4 @@ import { upload_store, Upload_body, Upload_actions } from './upload_body.jsx';
 export function pick_file(mode) { open_upload_dialog([], mode === 'open' ? 'replace' : mode); }
 
 /* initial: files already chosen (dropped on the page); mode: the preselected place (default: replace an empty document,
+   else at the cursor) */
