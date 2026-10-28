@@ -14,3 +14,4 @@ export function install_content() {
   on(qs('#image_replace'), 'change', on_image_replace);
   const p = pages_el;
   on(p, 'keydown', pages_keydown); on(p, 'beforeinput', pages_beforeinput); on(p, 'input', pages_input);
+  on(p, 'click', pages_click); on(p, 'pointerdown', pages_pointerdown); on(p, 'dragstart', pages_dragstart);
