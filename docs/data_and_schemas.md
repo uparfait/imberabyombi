@@ -14,3 +14,4 @@ is blocked (private mode, sandboxes).
 | `db.bytes()`                 | how much storage the app uses (Settings shows it)           |
 
 Collections are stored as `c:<collection>` (`c:tasks`, `c:staff`…). Settings → Data exports and imports a JSON backup
+and resets the demo data.
