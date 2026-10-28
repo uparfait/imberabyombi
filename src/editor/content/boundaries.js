@@ -40,3 +40,4 @@ export function backspace_across(host, pi) {
     const cont = first.hasAttribute('data-cont') && same_kind(last, first);
     if (is_empty_block(last)) { last.remove(); caret_to_start(first); }
     else { caret_to_end(last); merge_into(last, first); if (cont) document.execCommand('delete'); }
+  } else caret_to_end(last);
