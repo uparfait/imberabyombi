@@ -31,3 +31,5 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
       + `${body.map(b => `<Row>${b.map(v => cell_x(v)).join('')}</Row>`).join('')}</Table></Worksheet></Workbook>`, 'application/vnd.ms-excel'); }
   else { const q = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
     dl(`${c}-${ymd()}.csv`, [head.map(q).join(','), ...body.map(b => b.map(q).join(','))].join('\n'), 'text/csv'); }
+  notify(`${rows.length} row${rows.length === 1 ? '' : 's'} saved as ${name}.`, 'ok', 'Export ready');
+}
