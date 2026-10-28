@@ -35,3 +35,4 @@
   background: rgb(var(--brand)); color: #fff; font-size: .8125rem; font-weight: 600;
 }
 .c_input {
+  display: block; width: 100%; min-height: 0; padding: .4375rem .75rem; border-radius: var(--pill); background: rgb(var(--surface));
