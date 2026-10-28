@@ -9,3 +9,4 @@ export function can_edit() { if (state.mode !== 'edit') { toast('Switch to Editi
 export function exec(cmd, val) {
   if (!can_edit()) return;
   const host = restore_focus(); begin_op();
+  document.execCommand('styleWithCSS', false, true);
