@@ -1,3 +1,4 @@
 /* components/09_segmented_button.css: component classes */
 @layer components {
   /* Segmented button (Imberabyombi): one outlined pill, dividers between segments, tinted selection */
+  .seg { @apply inline-flex overflow-hidden rounded-full border border-muted/50; }
