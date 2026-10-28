@@ -47,3 +47,4 @@ function hold_scroll(top) {
 /* after a change in the task view: redraw the page behind and the view (same scroll), without "discard changes?" on close */
 export function task_refresh(id, msg) {
   const top = qs('#modal form > div.overflow-y-auto')?.scrollTop || 0;
+  rerender();
