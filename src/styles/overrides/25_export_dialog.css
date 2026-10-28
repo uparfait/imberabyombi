@@ -9,3 +9,4 @@
   .done_list > summary { padding: .6rem .25rem; font-size: .875rem; }
   .accordion { overflow: hidden; border: 1px solid rgb(var(--line)); border-radius: var(--radius); }
   .accordion details { border: 0; border-radius: 0; border-bottom: 1px solid rgb(var(--line)); }
+  .accordion details:last-child { border-bottom: 0; }
