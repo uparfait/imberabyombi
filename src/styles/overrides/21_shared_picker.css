@@ -16,3 +16,4 @@
   .pk_item[aria-selected=true] { background: rgb(var(--brand) / .14); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); font-weight: 500; }
   .pk_group { padding: .6rem 1rem .25rem; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgb(var(--muted)); }
   .pk_cal { width: min(18rem, calc(100vw - 2.5rem)); }
+  .pk_head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .25rem; }
