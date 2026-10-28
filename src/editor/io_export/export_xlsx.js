@@ -28,3 +28,6 @@ export function export_xlsx(root, name) {
       + `<Relationship Id="rId${sheets.length + 1}" Type="${XL_R}/styles" Target="styles.xml"/></Relationships>` },
     { name: 'xl/styles.xml', data: XLSX_STYLES },
     ...sheets.map((s, i) => ({ name: `xl/worksheets/sheet${i + 1}.xml`, data: sheet_xml(s) }))
+  ];
+  download(zip_store(files, `${OX}.sheet`), name + '.xlsx');
+}
