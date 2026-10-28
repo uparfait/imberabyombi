@@ -23,3 +23,4 @@ function on_text(x, y) {
   return false;
 }
 function behind_at(e) {
+  const page = e.target.closest('.page'), x = e.clientX, y = e.clientY; if (!page) return null;
