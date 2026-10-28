@@ -19,3 +19,4 @@
   .kpi_hero_value { margin-top: .25rem; font-family: var(--font_display); font-size: clamp(3rem, 2rem + 3vw, 4.5rem); font-weight: 700; line-height: 1; letter-spacing: -.02em; }
   .kpi_of { font-family: var(--font_sans); font-size: 1rem; font-weight: 400; letter-spacing: 0; color: rgb(var(--muted)); }
   .kpi_delta { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; margin-top: .25rem; font-size: .875rem; }
+  .kpi_delta b { font-weight: 600; }
