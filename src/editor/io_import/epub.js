@@ -14,3 +14,4 @@ export async function epub_to_html(file) {
     const path = resolve_path(base, decodeURIComponent(it.href)); if (!z.has(path)) continue;
     const d = new DOMParser().parseFromString(await z.text(path), 'text/html');
     for (const im of Array.from(d.querySelectorAll('img, image'))) {
+      const src = im.getAttribute('src') || im.getAttribute('xlink:href') || im.getAttribute('href'), p = src && resolve_path(dir_of(path), decodeURIComponent(src));
