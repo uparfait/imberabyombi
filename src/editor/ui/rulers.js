@@ -31,3 +31,4 @@ export function ruler_ticks(len, start, horiz, z) {
   return s;
 }
 export function draw_h_ruler() {
+  const w0 = page_wraps()[0]; if (!w0 || !hruler) return;
