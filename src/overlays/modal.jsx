@@ -17,3 +17,6 @@ export function modal({ title, help = '', body = '', submit, on_submit, danger, 
   const d = qs('#modal'); pick.close(); tip.hide(); d.classList.toggle('modal_wide', wide);
   set_dialog('modal', { title, help, body, submit, on_submit, danger, actions });
   if (!d.open) show_dialog(d);
+}
+
+/* the text of a JSX message (the confirm's text is plain: the reference stripped its tags) */
