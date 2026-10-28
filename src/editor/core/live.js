@@ -13,3 +13,4 @@ import { layout_after } from './reflow.js';
 import { last_range, set_last, mk_range } from './selection.js';
 import { hist_timer, commit, path_to, node_at } from './history.js';
 import { quiet, toast } from './toast.js';
+import { refresh_toolbar, apply_setup, set_zoom } from '../ui/index.js';
