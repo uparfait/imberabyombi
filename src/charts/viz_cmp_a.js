@@ -18,3 +18,4 @@ export const VIZ_CMP_A = {
     const x = linear(0, Math.max(...v), f.l, f.l + f.iw), y = band(c.length, f.t, f.t + f.ih), bh = Math.min(20, y.bw * .62);
     return { svg: svg(f, c.map((k, i) => mark_group(k, [[num(v[i]), 'Value', 0]], hit_row(f, y, i)
         + `<path class="mark" style="fill:var(--series_1)" d="${hbar(y(i), bh, f.l, x(v[i]))}"/>`) + row_label(f, y, i, k)
+        + `<text class="value_label" x="${round1(x(v[i]) + 6)}" y="${round1(y(i) + 4)}">${num(v[i])}</text>`).join('')
