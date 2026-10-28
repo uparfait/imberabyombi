@@ -25,3 +25,4 @@ const abs_img = (c, tag) => tag === 'IMG' && /^(front|behind)$/.test(c.getAttrib
 function keep_style(c, tag) {
   const out = [];
   (abs_img(c, tag) ? [...KEEP_STYLE, ...ABS_STYLE] : KEEP_STYLE).forEach(p => {
+    if (IMG_ONLY_STYLE.has(p) && tag !== 'IMG') return;
