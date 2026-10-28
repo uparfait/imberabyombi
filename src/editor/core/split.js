@@ -25,3 +25,4 @@ export function split_text(block, b, next) {
   if (best < 0) return false;
   let k = best + 1; if (k >= total) return false;
   const text = tn.map(t => t.data).join('');
+  if (!/\s/.test(text[k - 1]) && !/\s/.test(text[k])) {
