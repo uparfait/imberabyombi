@@ -3,3 +3,5 @@
 import { ic_html } from '../../icons/index.js';
 import { qs, qsa, el, toast, state, pages_el, save_soon } from '../core/index.js';
 import { remove_comment, activate_comment, fmt_time } from './comments.js';
+
+const icon_btn = (x, tip, icon, cls) => `<button type="button" class="icon_btn h-7 w-7" data-x="${x}" data-tip="${tip}" aria-label="${tip}">`
