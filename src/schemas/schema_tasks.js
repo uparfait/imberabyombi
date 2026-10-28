@@ -2,3 +2,4 @@
    and comments. Cells show "You", a live due tag and subtask progress. */
 import { lorem, uniq, ymd, add_d, now_dt } from '../lib/index.js';
 import { me } from '../auth/index.js';
+import { person_you } from '../ui/index.js';
