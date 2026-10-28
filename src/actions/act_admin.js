@@ -16,7 +16,7 @@ const EASE = 'cubic-bezier(.22,.8,.22,1)';
 export const ADMIN_ACT = {
   /* Email designs: switch the previewed email in place (no page jump). The address changes first: the redraw reads ?t= */
   mail: t => { const k = t.dataset.k; if (!qs('#mail_view') || !MAILS[k]) return; ui.mail = k;
-    history.replaceState(null, '', '#/admin/emails?t=' + k); rerender();
+    history.replaceState(null, '', to('/admin/emails?t=' + k)); rerender();
     const v = qs('#mail_view'); if (v?.firstElementChild) slide_in([v.firstElementChild], 0); },
   /* Nested navigation: a tile (in a menu or on a page) opens that level's page; no menu opens by itself */
   nav_open: t => { const lvl = +t.dataset.level; ui.nav = [...ui.nav.slice(0, lvl - 1), +t.dataset.i]; nav_draw();
