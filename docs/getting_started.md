@@ -25,3 +25,5 @@ Asset paths are relative (`base: './'` in `vite.config.js`), so it also works fr
 3. Press **Sign in** (or go to `#/login`). Pick a role, type any email and any password, press **Continue**.
 4. You land on the first admin module that role can open (or the role's landing page).
 5. Sign out from the avatar menu, pick another role and sign in again to see what that role can do.
+
+Internet access is used for fonts, sample photos (picsum.photos, i.pravatar.cc), the sample video and audio
