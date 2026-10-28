@@ -52,3 +52,4 @@ export function div_to_block(d) {
   const p = document.createElement('p');
   if (d.getAttribute('style')) p.setAttribute('style', d.getAttribute('style'));
   while (d.firstChild) p.appendChild(d.firstChild);
+  d.replaceWith(p); sel_remap.set(d, p);
