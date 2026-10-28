@@ -26,3 +26,6 @@ export const delta = (d, good_up = true, vs = 'vs last month') => {
   const good = d >= 0 === good_up;
   return (
     <p className={`kpi_delta ${good ? 'up' : 'down'}`}>{ic(d >= 0 ? 'chev_u' : 'chev_d', 'h-4 w-4')}<b>{`${d >= 0 ? '+' : '−'}${Math.abs(round1(d))}%`}</b><span>{vs}</span></p>
+  );
+};
+export const signed = d => `${d >= 0 ? '+' : '−'}${Math.abs(round1(d))}%`;
