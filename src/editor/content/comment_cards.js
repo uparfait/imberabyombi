@@ -2,3 +2,4 @@
    the order of their text in the page: draft (Comment / Cancel, Ctrl+Enter saves), saved (Resolve, Delete, replies). */
 import { ic_html } from '../../icons/index.js';
 import { qs, qsa, el, toast, state, pages_el, save_soon } from '../core/index.js';
+import { remove_comment, activate_comment, fmt_time } from './comments.js';
