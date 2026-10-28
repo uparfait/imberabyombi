@@ -19,3 +19,4 @@ A simple pattern: keep `db` as a cache. Fetch a collection when a page opens, pu
 Every user action already goes through `request(fn, { btn, delay })`: the button spins, the top loader shows, and an
 error becomes a notification. Put your `fetch()` inside `fn` and set `cfg.latency` to `0`:
 ```js
+request(async () => {
