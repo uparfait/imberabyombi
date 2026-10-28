@@ -23,3 +23,4 @@
 .tb_btn.open, .tb_dd.open { background: rgb(var(--fg) / .1); color: rgb(var(--fg)); }
 .tb_btn.active { background: rgb(var(--brand) / .15); color: var(--active_fg); }
 .tb_btn svg, .tb_dd svg { flex: none; width: 1.125rem; height: 1.125rem; }
+.tb_btn .ic_slot { display: inline-grid; place-items: center; }
