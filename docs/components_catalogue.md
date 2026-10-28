@@ -5,3 +5,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 
 | Class                                   | Use                                                              |
 |-----------------------------------------|------------------------------------------------------------------|
+| `.wrap` / `.section`                    | page width and gutters / vertical section rhythm                 |
