@@ -26,3 +26,4 @@ export async function download_image(img) {
 }
 
 export async function insert_image(src) {
+  if (!can_edit()) return;
