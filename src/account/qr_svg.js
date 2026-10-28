@@ -11,3 +11,5 @@ export function qr_svg(seed) {
       if (Math.max(Math.abs(fx - 3), Math.abs(fy - 3)) !== 2) out.push([x, y]);
     }
     else if (lorem.r() > .5) out.push([x, y]);
+  }
+  return `<svg viewBox="-2 -2 29 29" class="qr" role="img" aria-label="QR code to scan with an authenticator app"><rect x="-2" y="-2" width="29" height="29" fill="#fff"/>`
