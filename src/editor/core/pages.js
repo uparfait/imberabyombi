@@ -42,3 +42,5 @@ export function set_editable(wrap) {
   const on = state.mode === 'edit' ? 'true' : 'false';
   qsa('.pg_body,.pg_header,.pg_footer_text', wrap).forEach(e => { e.contentEditable = on; });
   qs('.pg_body', wrap).spellcheck = state.spell;
+}
+export function add_page_after(body) { const w = create_page(); body.closest('.page_wrap').after(w); return qs('.pg_body', w); }
