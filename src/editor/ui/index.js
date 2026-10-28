@@ -4,3 +4,4 @@
    Import from here: import { open_menu, render_all, install_ui } from '../ui/index.js' */
 export * from './ui_dom.js';
 export * from './hover_preview.js';
+export * from './menu_engine.js';
