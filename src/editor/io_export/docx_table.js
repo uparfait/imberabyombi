@@ -6,3 +6,4 @@ import { p_pr_xml, para_xml, list_xml } from './docx_paras.js';
 
 export function table_xml(t, ctx) {
   const rows = Array.from(t.rows); if (!rows.length) return '';
+  const n = Math.max(1, ...rows.map(r => Array.from(r.cells).reduce((a, c) => a + (c.colSpan || 1), 0)));
