@@ -33,3 +33,4 @@ export function keep(key) {
   const c = cur; cur = null; c.keep(); return true;
 }
 /* the click on a previewable choice: keep its preview, or (nothing shown: touch, keyboard) run fn. done() runs first
+   (it closes the menu), so fn sees the document as it will stay. */
