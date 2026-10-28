@@ -6,3 +6,4 @@ import { apply_panels } from '../ui/index.js';
 import { render_comments } from './comment_cards.js';
 
 export function add_comment() {
+  if (previewing() || !can_edit()) return;
