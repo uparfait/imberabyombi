@@ -45,3 +45,7 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
       <div className={view.quiet ? 'files quiet' : 'files'}>{view.files.map((f, i) => file_tile(f, i, view.gen))}</div>
       <div className="file_wait" role="status">{spinner()}<span>Waiting for your files…</span></div>
       <input ref={ref} id={id} name={name} type="file" multiple={multiple} accept={accept} {...rest}
+        onClick={e => { set_picking(true); onClick?.(e); }} onChange={e => { file_tiles(e.currentTarget); onChange?.(e); }} />
+    </div>
+  );
+}
