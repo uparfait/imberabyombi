@@ -22,3 +22,4 @@ export function render_sidebar() {
   if (many) list.appendChild(filter_box(typing));
   const box = el('div', { class: 'tab_scroll' + (many ? ' many' : '') });
   list.appendChild(box);
+  state.tabs.forEach(t => {
