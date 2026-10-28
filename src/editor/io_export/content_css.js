@@ -2,3 +2,4 @@
    tables, checklists), written into exported web pages and e-books. Document styling, not interface colours. */
 
 /* the "app" mark of a project file (.json); the import side recognises project files by it */
+export const PROJECT_APP = 'document-editor';
