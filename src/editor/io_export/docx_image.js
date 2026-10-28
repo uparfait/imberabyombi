@@ -49,3 +49,4 @@ export function abstract_xml(kind, id) {
   let lv = '';
   for (let l = 0; l < 9; l++) {
     let fmt, text;
+    if (NUMFMT[kind]) { fmt = NUMFMT[kind]; text = `%${l + 1}.`; }
