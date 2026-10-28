@@ -27,3 +27,4 @@ export const refs = new Proxy(store, {
 export function fill_refs(root) {
   clear_refs();
   store.root = root;
+  if (root) for (const e of root.querySelectorAll('[id]')) if (!(e.id in store)) store[e.id] = e;
