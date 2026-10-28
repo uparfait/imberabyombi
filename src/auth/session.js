@@ -10,3 +10,4 @@ export const auth = {
   login(u) { if (u.remember || !ss) db.set('session', u); else ss.setItem(cfg.ns + 'session', JSON.stringify(u)); },
   logout() { db.del('session'); ss && ss.removeItem(cfg.ns + 'session'); },
   role() { return roles().find(r => r.id === auth.user?.role); },
+  can(mod, lvl = 1) { const r = auth.role(); if (!r) return false; if (r.perms === '*') return true; return (r.perms[mod] || 0) >= lvl; },
