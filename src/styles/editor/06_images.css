@@ -23,3 +23,4 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
 .img_drop_caret { position: absolute; z-index: 6; width: 2px; border-radius: var(--pill); background: rgb(var(--brand)); pointer-events: none; }
 
 /* Selection box: brand outline and round brand handles (outside the zoom: it sits on the scaled .page) */
+.img_sel { position: absolute; z-index: 5; display: none; outline: 1px solid rgb(var(--brand)); pointer-events: none; }
