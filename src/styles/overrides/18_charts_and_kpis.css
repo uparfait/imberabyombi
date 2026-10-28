@@ -20,3 +20,4 @@
   .kpi_of { font-family: var(--font_sans); font-size: 1rem; font-weight: 400; letter-spacing: 0; color: rgb(var(--muted)); }
   .kpi_delta { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; margin-top: .25rem; font-size: .875rem; }
   .kpi_delta b { font-weight: 600; }
+  .kpi_delta.up > svg, .kpi_delta.up b { color: rgb(var(--ok)); }
