@@ -28,3 +28,4 @@ export const TASK_ACT = {
   task_file: t => { const v = tv_api(t), i = +t.dataset.i, f = files_of(db.find('tasks', t.dataset.id))[i], box = t.closest('td')?.querySelector('[data-task-preview]');
     if (!v || !box || !f) return; v.put({ prev: { f, i, n: ++shown } }); fade_in(box, 220); },
   task_file_full: t => { const f = tv_api(t)?.st.prev?.f;
+    if (f?.url) fetch(f.url).then(x => x.blob()).then(b => view_file(new File([b], f.name, { type: f.type || b.type }))); },
