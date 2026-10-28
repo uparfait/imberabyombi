@@ -26,3 +26,4 @@ export const mail_view = k => {
         <div className="mail_body">{m.t}</div>
         <div className="mail_foot"><p>You receive this email because you have an account at {cfg.name}.</p>
           <p className="mt-1"><a href="#/admin/emails" className="underline">Email settings</a> · <a href="#/admin/emails"
+            className="underline">Unsubscribe</a> · {lorem.t(2)} 12, {lorem.t(1)}</p></div>
