@@ -22,3 +22,5 @@ export function fmt_of(e, f) {
   if (t === 'FONT') {
     if (e.getAttribute('color')) g.color = to_hex(e.getAttribute('color'));
     if (e.getAttribute('face')) g.font = e.getAttribute('face').split(',')[0].replace(/["']/g, '').trim();
+  }
+  if (st) {
