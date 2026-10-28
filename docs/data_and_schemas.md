@@ -27,3 +27,4 @@ export const buses_schema = {
   n: 6,                                    // how many demo rows to seed
   cols: ['plate', 'driver', 'route'],      // table columns, in order
   f: [F('plate', 'Plate', 'text', 0, 1), F('driver', 'Driver'), F('route', 'Route')],   // form fields
+  r: { driver: v => person(v) },           // optional cell renderers (return JSX)
