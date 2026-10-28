@@ -46,3 +46,4 @@ export const VIZ_REL_B = {
     /* merges: [a, b, height]; nodes 0-7 are leaves, then 8.. */
     const merges = [[0, 1, .8], [2, 3, 1.1], [4, 5, .6], [6, 7, 1.4], [8, 9, 2.1], [10, 11, 2.6], [12, 13, 3.6]], pos = leaves.map((_, i) => ({ y: y(i), h: 0 }));
     let paths = '';
+    merges.forEach(([a, b, h], m) => { const na = pos[a], nb = pos[b], xm = x(h);
