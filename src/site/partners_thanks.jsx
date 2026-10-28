@@ -24,3 +24,7 @@ export function partners_sec(full) {
       {sec_head('Partners', lorem.t(4), lorem.s())}{full ? null : more('partners', 'btn_outline')}</div>
       <div className="marquee mt-12 overflow-hidden" style={{ WebkitMaskImage: MASK, maskImage: MASK }}><div className="marquee_track flex w-max py-2">
         {logos}<div className="flex" aria-hidden="true">{logos}</div></div></div></section>
+  );
+}
+
+export function thanks_sec(full) {
