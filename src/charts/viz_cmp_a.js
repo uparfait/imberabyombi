@@ -12,3 +12,4 @@ export const VIZ_CMP_A = {
         + `<path class="mark" style="fill:var(--series_1)" d="${vbar(x(i), bw, ax.y(0), ax.y(v[i]))}"/>`)).join('')
       + chart_base(f, ax.y(0)) + x_labels(f, c, x)
       + `<text class="value_label" x="${round1(x(top))}" y="${round1(ax.y(v[top]) - 7)}" text-anchor="middle">${num(v[top])}</text>`, 'Bar chart'),
+      table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
