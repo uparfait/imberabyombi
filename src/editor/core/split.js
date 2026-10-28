@@ -2,3 +2,4 @@
    caret on the right side), push overflow to the next page, pull blocks back up, and page signatures for early exit. */
 import { TEXT_BLOCK_RE } from './constants.js';
 import { is_break, is_list, is_table, is_abs, text_nodes, offset_within, position_at, same_kind, pad_bottom, first_flow, last_flow, flow_kids } from './dom.js';
+import { cur_sel, overflows, items_of, insert_at_start, merge_into, split_container, content_bottom } from './flow.js';
