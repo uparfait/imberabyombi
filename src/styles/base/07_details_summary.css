@@ -13,3 +13,4 @@
   /* Dialog */
   :where(dialog) { padding: 0; color: rgb(var(--fg)); background: rgb(var(--surface)); border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); box-shadow: var(--shadow); }
   dialog::backdrop { background: rgb(var(--ink) / .55); backdrop-filter: blur(4px); }
+  dialog[open] { animation: pop .3s var(--ease); }
