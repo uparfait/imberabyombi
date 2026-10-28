@@ -9,3 +9,6 @@ import { svg_uri } from './kit_block.jsx';
 const formula = (
   <math display="block"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>b</mi><mo>±</mo><msqrt><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi>
     <mi>c</mi></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></math>
+);
+
+export const kit_media = brand_hex => (
