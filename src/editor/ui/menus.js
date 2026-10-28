@@ -29,3 +29,4 @@ function insert_items() {
     cmd('File attachment…', 'attach_file', () => pick_any(attach_files)),
     cmd('Link', 'link', () => open_link_dialog(), 'Ctrl+K'),
     cmd('Comment', 'add_comment', () => add_comment(), 'Ctrl+Alt+M'),
+    { sep: true }, cmd('Horizontal line', 'horizontal_rule', () => insert_hr()),
