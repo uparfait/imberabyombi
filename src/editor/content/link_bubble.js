@@ -9,3 +9,4 @@ export const link_bubble = () => qs('#link_bubble');
 
 export function update_link_bubble() {
   const a = last_range && last_range.collapsed ? link_at_caret() : null, lb = link_bubble();
+  if (!a || !lb) { hide_link_bubble(); return; }
