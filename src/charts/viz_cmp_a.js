@@ -34,3 +34,4 @@ export const VIZ_CMP_A = {
       legend: legend(s), table: [['Category', ...s, 'Total'], c.map((k, i) => [k, ...v[i].map(num), num(tot[i])])] }; } },
   stacked100: { t: '100% stacked bar chart', g: 'cmp', d: 'Shares within each row, all rows the same length.', f(w) {
     const c = uwords(5), s = SER.slice(0, 4), v = c.map(() => { const r = s.map(() => rnd(5, 40)), t = r.reduce((a, b) => a + b); return r.map(x => x / t); });
+    const f = frame(w, 220, { l: 82, r: 14, b: 26 }), x = linear(0, 1, f.l, f.l + f.iw), y = band(c.length, f.t, f.t + f.ih), bh = Math.min(22, y.bw * .62);
