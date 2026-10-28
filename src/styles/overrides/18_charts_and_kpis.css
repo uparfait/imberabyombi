@@ -39,6 +39,7 @@
   .kpi_ring circle + circle { stroke: var(--series_1); stroke-linecap: round; }
   .kpi_ring b { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font_display); font-size: 1.25rem; font-weight: 700; }
   .kpi_bars { display: flex; align-items: flex-end; gap: .1875rem; height: 3rem; margin-top: .75rem; }
+  .kpi_bars i { flex: 1; min-height: 2px; border-radius: .1875rem 3px 0 0; transition: opacity .15s; }
   .kpi_split i { transition: opacity .15s; }
   .kpi_bars:has(i:hover) i:not(:hover), .kpi_split:has(i:hover) i:not(:hover) { opacity: .4; }
   .kpi .kpi_part { margin-inline: -.375rem; padding: .125rem .375rem; border-radius: .5rem; transition: background-color .15s; }
