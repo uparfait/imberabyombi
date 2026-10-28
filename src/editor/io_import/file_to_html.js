@@ -30,3 +30,4 @@ export async function file_to_html(file) {
     return { kind: 'image', html: await fit_img_html(url, base_of(name)), inline: await fit_img_html(url, base_of(name), true) };
   }
   switch (ext) {
+    case 'docx': case 'docm': case 'dotx': case 'dotm': return docx_to_html(file);
