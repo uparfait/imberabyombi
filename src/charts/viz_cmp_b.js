@@ -26,3 +26,4 @@ export const VIZ_CMP_B = {
     return { svg: svg(f, c.map((k, i) => {
       const x = linear(0, d[i].max, f.l, f.l + f.iw), h = Math.min(22, y.bw * .7), from = j => x(j ? d[i].bands[j - 1] : 0);
       return mark_group(k, [[round1(d[i].a), 'Actual', 0], [round1(d[i].t), 'Target', null]], hit_row(f, y, i)
+        + d[i].bands.map((bv, j) => `<rect x="${round1(from(j))}" y="${round1(y(i) - h / 2)}" width="${round1(x(bv) - from(j))}" height="${round1(h)}"`
