@@ -21,3 +21,4 @@ export const VIZ = {
   /* Maps */ ...VIZ_MAP
 };
 export const VIZGROUPS = [['kpi', 'KPIs', 'target'], ['cmp', 'Comparison', 'chart'], ['dist', 'Distribution', 'layers'], ['time', 'Change over time', 'activity'],
+  ['part', 'Part-to-whole', 'grid'], ['rel', 'Relationships', 'link'], ['map', 'Maps', 'globe']];
