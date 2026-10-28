@@ -9,3 +9,4 @@ export const CONTENT_CSS = '\n' + [
     + 'word-wrap:break-word;tab-size:4;-moz-tab-size:4}',
   '.doc_content p{margin:0}',
   '.doc_content h1,.doc_content h2,.doc_content h3,.doc_content h4,.doc_content h5,.doc_content h6{margin:0;font-weight:400;line-height:1.15}',
+  '.doc_content h1{font-size:20pt;padding:20pt 0 6pt}',
