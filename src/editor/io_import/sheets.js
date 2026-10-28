@@ -20,3 +20,4 @@ export async function xlsx_native(buf) {
   const z = await unzip(buf);
   const strings = z.has('xl/sharedStrings.xml') ? by_tag(parse_xml(await z.text('xl/sharedStrings.xml')), 'si').map(si => by_tag(si, 't').map(t => t.textContent).join('')) : [];
   const wb = parse_xml(await z.text('xl/workbook.xml')), rels = rels_of(z.has('xl/_rels/workbook.xml.rels') ? await z.text('xl/_rels/workbook.xml.rels') : '');
+  const out = [];
