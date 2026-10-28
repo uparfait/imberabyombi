@@ -3,3 +3,4 @@
   .kv_wrap { overflow: auto; overscroll-behavior: contain; max-height: min(30rem, calc(90dvh - 14rem)); }
   .kv thead th { position: sticky; top: 0; z-index: 1; }
   .kv thead th { padding-block: .6rem; }
+  .kv tbody th { width: 38%; font-size: .8rem; font-weight: 500; color: rgb(var(--muted)); background: rgb(var(--surface_2) / .5); white-space: normal; vertical-align: top; }
