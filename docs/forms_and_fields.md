@@ -6,3 +6,4 @@ resting inside, which floats onto the border on focus or once filled. A spec com
 ```js
 import { field_spec as F, option_list as O } from '../schemas/index.js';
 F('title', 'Title', 'text', 0, 1)                         // key, label, type, options, required
+F('status', 'Status', 'select', O('To do|In progress|Done'), 1, { def: () => 'To do' })
