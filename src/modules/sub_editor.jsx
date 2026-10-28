@@ -26,3 +26,4 @@ export const sub_group = (g = {}) => <div key={g.key} ref={tie(g.key)} className
 export function Sub_editor({ groups }) {
   const [gs, set_gs] = useState(() => keyed(groups));
   const put = fn => flushSync(() => set_gs(fn));
+  const api = {
