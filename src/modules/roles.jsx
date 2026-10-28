@@ -19,3 +19,4 @@ const matrix = (sel, edit) => <div className="overflow-x-auto"><table><thead><tr
       defaultChecked={(sel.perms[m.k] || 0) === v} disabled={!edit} /></td>)}</tr>)}</tbody></table></div>;
 
 VIEWS.roles = () => {
+  const rs = roles(), sel = rs.find(r => r.id === ui.role) || rs[0], can = auth.can('roles', 2), st = db.list('staff'), cnt = id => st.filter(s => s.role === id).length;
