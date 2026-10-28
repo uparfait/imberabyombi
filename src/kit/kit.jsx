@@ -44,3 +44,4 @@ export function kit() {
           {kit_block('media', 'Media', kit_media(brand_hex))}
           {kit_block('data', 'Tables', kit_tables())}
           {kit_block('overlays', 'Disclosure & overlays', kit_overlays())}
+          {kit_block('nav', 'Nested navigation', kit_nav())}
