@@ -2,3 +2,4 @@
    again, and only it, as the reference did (its .panel_in box stays, so the slide ACT.panel runs on it still plays). */
 import { ic } from '../icons/index.js';
 import { ui } from '../store/index.js';
+import { cfg } from '../config/index.js';
