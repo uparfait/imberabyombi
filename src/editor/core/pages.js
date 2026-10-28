@@ -6,3 +6,4 @@ import { state, dims } from './state.js';
 import { bodies } from './dom.js';
 
 export function create_page() {
+  const wrap = el('div', { class: 'page_wrap' });
