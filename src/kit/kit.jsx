@@ -45,3 +45,4 @@ export function kit() {
           {kit_block('data', 'Tables', kit_tables())}
           {kit_block('overlays', 'Disclosure & overlays', kit_overlays())}
           {kit_block('nav', 'Nested navigation', kit_nav())}
+          {kit_block('wc', 'Web component', kit_web_component())}
