@@ -23,3 +23,5 @@ export function show_err(el, msg) {
   el.setAttribute('aria-invalid', 'true'); el.setAttribute('aria-describedby', id);
   const p = document.createElement('p'); p.className = 'field_err'; p.id = id; p.innerHTML = ic_html('x', 'h-3.5 w-3.5 shrink-0') + `<span>${esc(msg)}</span>`;
   const fld = el.closest('.field'); fld ? fld.append(p) : (el.closest('label') || el).after(p);
+}
+export function validate(f) {
