@@ -6,3 +6,4 @@
     position: absolute; z-index: 1; left: .75rem; top: calc(1.625rem + 1px); max-width: calc((100% - 1.5rem) / .75); padding: 0 .25rem;
     font-size: 1rem; line-height: 1.5rem; font-weight: 400; color: rgb(var(--muted)); background: rgb(var(--field, var(--surface)));
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; transform-origin: left center;
+    transform: translateY(calc(-50% - 1.625rem - 1px)) scale(.75); transition: transform .2s var(--ease), color .2s, max-width .2s var(--ease); }
