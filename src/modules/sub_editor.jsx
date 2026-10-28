@@ -14,3 +14,4 @@ export const sub_key = el => KEYS.get(el);
 
 export const sub_item = (x = {}) => <div key={x.key} ref={tie(x.key)} className="sub_item" data-sub-item="">
   <input type="checkbox" className="check_circle" defaultChecked={!!x.done} aria-label="Done" />
+    <input className="sub_text" defaultValue={x.t || ''} placeholder="Item" aria-label="Item" />
