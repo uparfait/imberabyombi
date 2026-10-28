@@ -45,3 +45,4 @@ export function set_caret(node, off) {
   last_range = r.cloneRange(); last_host = host;
 }
 export function deepest(e, first) {
+  while (e && e.nodeType === 1) {
