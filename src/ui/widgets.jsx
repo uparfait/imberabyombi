@@ -25,3 +25,4 @@ export const stat_row = items => (
 );
 /* act: JSX (a button or link) shown under the text */
 export const empty = (title, text, act = null) => (
+  <div className="grid justify-items-center gap-3 px-6 py-14 text-center">
