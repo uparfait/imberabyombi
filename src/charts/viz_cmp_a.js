@@ -27,3 +27,4 @@ export const VIZ_CMP_A = {
     const seg = (i) => { let acc = 0; return v[i].map((val, j) => {
       const y0 = ax.y(acc), y1v = ax.y(acc + val); acc += val; const top = j === v[i].length - 1, gap = j ? 1 : 0;
       return top ? `<path class="mark" style="fill:${scale_color(j)}" d="${vbar(x(i), bw, y0 - gap, y1v)}"/>`
+        : `<rect class="mark" style="fill:${scale_color(j)}" x="${round1(x(i) - bw / 2)}" y="${round1(y1v + 1)}" width="${round1(bw)}"`
