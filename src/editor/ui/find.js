@@ -43,3 +43,4 @@ export function run_find(keep) {
       return { node: segs[lo].node, off: pos - segs[lo].start };
     };
     let i = 0;
+    while ((i = hay.indexOf(needle, i)) !== -1) {
