@@ -32,3 +32,4 @@ function split_q(msg, cta) {
   for (const [i, k] of kids.entries()) {
     const at = typeof k === 'object' ? -1 : String(k).indexOf('?');
     if (at < 0) { q.push(k); continue; }
+    q.push(String(k).slice(0, at + 1));
