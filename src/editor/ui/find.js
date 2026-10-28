@@ -14,3 +14,4 @@ export function open_find() {
   p.classList.add('show'); find_state.open = true;
   const sel = last_range && !last_range.collapsed ? last_range.toString() : '';
   if (sel && sel.length < 80) i.value = sel;
+  i.focus(); i.select(); run_find();
