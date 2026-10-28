@@ -35,3 +35,4 @@ function edit_key(e, k, code) {
   if (e.altKey && code === 'KeyM') return add_comment;
   if (e.altKey && /^Digit[0-4]$/.test(code)) return () => set_block_style(code === 'Digit0' ? 'p' : 'h' + code.slice(-1));
   if (e.shiftKey && code === 'Digit7') return () => toggle_list('OL');
+  if (e.shiftKey && code === 'Digit8') return () => toggle_list('UL');
