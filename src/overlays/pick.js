@@ -10,3 +10,4 @@ import { PK } from './pick_html.js';
       date & time, time and [data-list] suggestion field. The native control stays the source of truth, so forms,
       validation and FormData are unchanged. Typing always works: date/time fields keep native typing (desktop) and
       the picker follows what is typed; selects filter as you type. Wrap a select in .field or .pick to make it clickable. */
+export const PICK = 'select, input[data-type]';
