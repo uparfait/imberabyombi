@@ -7,3 +7,4 @@ import { refresh_toolbar } from '../ui/index.js';
 /* ================= formatting commands ================= */
 export function can_edit() { if (state.mode !== 'edit') { toast('Switch to Editing mode to make changes'); return false; } return true; }
 export function exec(cmd, val) {
+  if (!can_edit()) return;
