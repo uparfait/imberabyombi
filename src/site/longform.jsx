@@ -28,3 +28,5 @@ export function longform(k) {
       <aside className="grid content-start gap-6 lg:sticky lg:top-24 lg:self-start">
         <nav className="card p-5" aria-label="On this page"><h2 className="text-sm font-semibold">On this page</h2><ol className="mt-3 grid gap-1 text-sm">{secs.map(s => (
           <li key={s.id}><button className={TOC_CLS} data-act="scroll" data-to={s.id}>{s.t}</button></li>
+        ))}</ol></nav>
+        <div className="card relative isolate overflow-hidden p-6"><div className="pattern_layer" aria-hidden="true"></div>{i3('send', 'h-12 w-12')}
