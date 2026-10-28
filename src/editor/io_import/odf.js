@@ -31,3 +31,5 @@ async function odf_inline(cx, n) {
     else h += await odf_inline(cx, c);
   }
   return h;
+}
+/* the rows of table t itself (not those of tables nested in its cells) */
