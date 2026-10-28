@@ -18,3 +18,4 @@ export const refs = new Proxy(store, {
     if (!o.root) return v ?? null;
     const f = find(ALIAS[k] || k);
     if (f) o[k] = f;
+    return f || v || null;
