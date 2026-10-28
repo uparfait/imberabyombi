@@ -23,3 +23,4 @@ const sub = (r, mine) => (g, gi) => <div key={gi} className="tv_sub"><div classN
     <span className={`min-w-0 text-sm [overflow-wrap:anywhere] ${x.done ? 'text-muted line-through' : ''}`}>{x.t}</span></label></li>)}</ul></div>;
 
 export function tv_rows(r, st) {
+  const own = task_own(r), mine = task_mine(r), done = r.status === 'Done', subs = subs_of(r), files = files_of(r);
