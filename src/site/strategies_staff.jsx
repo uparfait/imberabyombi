@@ -17,3 +17,4 @@ export function strategies_sec(full) {
 }
 
 const LINKS_CLS = 'absolute inset-x-3 bottom-3 flex translate-y-2 justify-center gap-2 opacity-0 transition group-hover:translate-y-0 '
+  + 'group-hover:opacity-100 group-focus-within:translate-y-0 group-focus-within:opacity-100';
