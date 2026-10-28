@@ -26,3 +26,4 @@ matrix as it changes: if a page is taken away, the role moves to the first page 
 
 ## Roles & access page
 - Create roles, set levels in the matrix, delete roles nobody uses.
+- Copy an invite link (`#/login?role=<id>`) that locks the sign-in form to that role.
