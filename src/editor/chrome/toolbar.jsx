@@ -27,3 +27,4 @@ const sep = () => <div className="tb_sep"></div>;
 export const toolbar = () => (
   <div id="toolbar" className="toolbar no_print" role="toolbar" aria-label="Formatting">
     <button type="button" className="tb_btn tb_back" data-act="back" data-tip="Back" aria-label="Back">{ic('arrow_back')}</button>
+    {tb({ ed: 'find', icon: 'search', tip: 'Find and replace (Ctrl+F)', edit: false })}
