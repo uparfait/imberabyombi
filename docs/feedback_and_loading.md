@@ -36,3 +36,4 @@ Three channels, each with one job. Pick one by asking "where is the user looking
 - The spinner colour follows `--spin` (brand by default, white on filled buttons).
 
 ## Examples
+```js
