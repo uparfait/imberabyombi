@@ -27,3 +27,4 @@ export function alt_text_dialog(img) {
   img = img_now(img); if (!img || previewing()) return;
   modal({ title: 'Alt text', submit: 'Save', body: (
     <div className="field sm:col-span-2"><label htmlFor="alt_t">Describe the image for people who can’t see it</label>
+      <input type="text" id="alt_t" name="alt" defaultValue={img.getAttribute('alt') || ''} placeholder=" " /></div>
