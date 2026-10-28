@@ -34,3 +34,8 @@ export function longform(k) {
           <a href="#/contact" className="btn btn_primary btn_sm mt-4">Contact us</a></div>
         <nav className="card p-5" aria-label="Related pages"><h2 className="text-sm font-semibold">Related</h2><ul className="mt-3 grid gap-1 text-sm">
           {PUB.filter(([x]) => x !== k).slice(0, 4).map(([x, l]) => (
+            <li key={x}><a href={`#/${x}`} className={REL_CLS}>{l}{ic('chev_r', 'h-4 w-4')}</a></li>
+          ))}</ul></nav>
+      </aside></div>
+  );
+}
