@@ -37,3 +37,4 @@ body.col_resize, body.col_resize * { cursor: col-resize !important; }
 
 /* Buttons the engine draws with the source's names but without the template's .btn (comment cards, small dialogs) */
 #editor :is(.btn_primary, .btn_text, .btn_outline):not(.btn) {
+  display: inline-flex; align-items: center; justify-content: center; gap: .375rem; min-height: 2.25rem; padding: 0 1.125rem;
