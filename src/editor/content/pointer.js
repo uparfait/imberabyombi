@@ -60,3 +60,4 @@ export function pages_pointerdown(e) {
 }
 /* images move with img_drag, never with the browser's drag and drop (that would copy them) */
 export function pages_dragstart(e) { if (e.target && e.target.tagName === 'IMG' && e.target.closest('.pg_body')) e.preventDefault(); }
+export function pages_mouseup() { if (paint) setTimeout(apply_paint, 0); }
