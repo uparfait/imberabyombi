@@ -4,3 +4,5 @@ import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { lorem } from '../lib/index.js';
 import { hero_shell, sec_head, more, spy_attrs } from './site_bits.jsx';
+
+const GO_CLS = 'grid h-8 w-8 place-items-center rounded-full bg-white text-brand transition group-hover:translate-x-1';
