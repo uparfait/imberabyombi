@@ -39,3 +39,4 @@ export const VIZ_DIST = {
     const median = a => [...a].sort((p, q) => p - q)[100];
     return { svg: svg(f, ax.g + sets.map((a, i) => {
       const d = dens(a), med = median(a), pts = ys.map((y0, j) => [x(i) + d[j] * half, ax.y(y0)]), back = ys.map((y0, j) => [x(i) - d[j] * half, ax.y(y0)]).reverse();
+      return mark_group(g[i], [[round1(med), 'Median', i]], hit_col(f, x, i) + `<path class="mark" d="${path_of([...pts, ...back])}Z"`
