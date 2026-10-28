@@ -6,3 +6,4 @@ import { logo, theme_btn } from '../ui/index.js';
 import { cfg } from '../config/index.js';
 
 /* body: the page's form and links (JSX) */
+export const auth_shell = (title, text, body) => (
