@@ -16,3 +16,6 @@ export function tiers() {
         <a href="#/contact" className="btn btn_primary mt-6 w-full">Become a partner</a>
         <ul className="mt-6 grid gap-3 text-sm">{[0, 1, 2, 3].map(j => (
           <li key={j} className="flex gap-3">{ic('check', 'mt-0.5 h-4 w-4 shrink-0 text-accent')}<span>{lorem.s(5, 9)}</span></li>
+        ))}</ul></article>
+    ))}</div>
+      <div className="card mt-10 overflow-x-auto p-2"><table><caption className="px-4 pt-3">{lorem.t(3)}</caption>
