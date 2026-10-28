@@ -17,3 +17,4 @@ const new_role_body = () => (
 export const ROLE_ACT = {
   role_sel: t => { ui.role = t.dataset.id; rerender(); },
   role_new: () => modal({ title: 'New role', submit: 'Create role', body: new_role_body(),
+    on_submit: d => { const rs = roles(), base = d.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'role'; let id = base, i = 2; while (rs.some(r => r.id === id)) id = base + '-' + i++;
