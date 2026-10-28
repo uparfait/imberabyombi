@@ -52,3 +52,5 @@ export const EDITOR_DOC_PATHS = {
   keyboard_arrow_down: 'm6 9 6 6 6-6',
   keyboard_arrow_up: 'm18 15-6-6-6 6',
   more_vert: dot(12, 5) + dot(12, 12) + dot(12, 19),
+  drag_indicator: dot(9, 6) + dot(15, 6) + dot(9, 12) + dot(15, 12) + dot(9, 18) + dot(15, 18)
+};
