@@ -15,3 +15,4 @@ function rtf_list(rx, l, lvl) {
   return o;
 }
 function rtf_table(rx, t) {
+  const rows = Array.from(t.rows); if (!rows.length) return '';
