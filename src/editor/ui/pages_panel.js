@@ -10,3 +10,4 @@ export function render_pages_panel() {
   const bs = bodies();
   set_text(refs.page_count, state.setup.pageless ? '' : `(${bs.length})`);
   box.innerHTML = '';
+  if (state.setup.pageless) { box.innerHTML = '<p class="outline_hint">Pageless format is on. Turn it off in Page setup to see pages.</p>'; return; }
