@@ -36,3 +36,4 @@ export const VIZ_PART_A = {
         + ` style="fill:color-mix(in oklab, ${scale_color(o.g)} 30%, rgb(var(--surface)))"/>`
         + `<rect x="${round1(o.x + 1)}" y="${round1(o.y + 1)}" width="${round1(Math.max(0, Math.min(4, o.wd - 2)))}" height="${round1(Math.max(0, o.ht - 2))}" rx="2"`
         + ` style="fill:${scale_color(o.g)}"/>`
+        + `${o.wd > 56 && o.ht > 30 ? `<text class="value_label" x="${round1(o.x + 12)}" y="${round1(o.y + 19)}">${esc(fit(o.k, o.wd - 18))}</text>` : ''}`)).join(''),
