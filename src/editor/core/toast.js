@@ -27,3 +27,5 @@ export function toast(msg, ms = 2800) {
     const n = status_line(); n.textContent = msg; n.style.display = 'block';
     clearTimeout(timer); if (ms) timer = setTimeout(() => { n.style.display = 'none'; }, ms);
     return;
+  }
+  if (ms === 0 && alive()) { const m = prog.querySelector('[data-msg]'); if (m) m.textContent = msg; return; }
