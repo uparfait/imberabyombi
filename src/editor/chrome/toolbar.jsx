@@ -19,3 +19,4 @@ const dd = (id, label_id, label, tip, width, edit) => (
 const split = (ed, icon, tip, dd_id, dd_tip) => (
   <span className="tb_split tb_edit">
     <button type="button" className="tb_btn" data-ed={ed} data-state={ed} data-tip={tip} aria-label={name_of(tip)}>{ic(icon)}</button>
+    <button type="button" className="tb_btn arrow" id={dd_id} data-tip={dd_tip} aria-label={dd_tip} aria-haspopup="menu">{ic('arrow_drop_down')}</button>
