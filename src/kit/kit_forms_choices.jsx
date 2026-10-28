@@ -30,3 +30,4 @@ export function kit_forms_choices(brand_hex) {
       <div className="field sm:col-span-2 lg:col-span-1"><label htmlFor="demo_file">Files (any type)</label><File_box id="demo_file" multiple /></div>
       <div className="field"><label htmlFor="demo_range">Range <output id="demo_range_out">40</output></label>
         <input id="demo_range" type="range" defaultValue="40" data-out="#demo_range_out" /></div>
+      <div className="grid content-start gap-3"><p className="text-sm font-semibold">Checkboxes</p>{[1, 0].map((c, i) => choice(c, i, 'checkbox'))}</div>
