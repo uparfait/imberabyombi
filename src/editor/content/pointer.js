@@ -36,3 +36,5 @@ export function pages_click(e) {
     e.preventDefault();
     try { download(data_ur_lto_blob(chip.getAttribute('href')), chip.getAttribute('download') || 'file'); } catch (err) { toast('This attachment could not be opened'); }
     return;
+  }
+  const img = e.target.closest('.pg_body img');
