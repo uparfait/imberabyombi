@@ -18,3 +18,4 @@ const BOX_HTML = () => `<div class="img_move" style="${MOVE_CSS}"></div>`
   + '<div class="img_bar">' + BAR.map(b => b ? bar_btn(b) : '<span class="sep"></span>').join('') + '<span class="sz"></span></div>';
 
 export let img_box = null;
+export let img_sel = null;
