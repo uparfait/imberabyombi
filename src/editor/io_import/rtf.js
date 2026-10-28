@@ -40,3 +40,4 @@ export function rtf_to_html(rtf) {
         case 'ulnone': st.u = 0; break; case 'plain': st.b = st.i = st.u = 0; break;
         case 'uc': uc = arg || 0; break; case 'u': if (arg != null) { emit(String.fromCharCode(arg < 0 ? arg + 65536 : arg)); skip_n = uc; } break;
         case 'pard': in_tbl = false; break; case 'intbl': in_tbl = true; break;
+        case 'cell': cells.push(para.replace(/(<br>)+$/, '')); para = ''; break; case 'row': rows.push(cells); cells = []; break;
