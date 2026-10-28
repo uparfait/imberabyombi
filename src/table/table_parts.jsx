@@ -24,3 +24,4 @@ export const table_menu = c => { const v = tview(c);
           <input type="radio" className="sr-only" name={`per_${c}`} value={n} data-table-per={c} defaultChecked={v.per === n} /><span className="text-center">{n}</span></label>))}
       </div>
       <p className="px-3 pb-1 pt-2 text-xs font-medium uppercase tracking-wider text-muted">Columns</p>
+      {schemas[c].cols.map(k => (
