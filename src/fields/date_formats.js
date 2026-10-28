@@ -25,3 +25,4 @@ export const to24 = v => { const m = /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i.exec(Strin
 export const to12 = v => { const [h, m] = String(v).split(':').map(Number); return isNaN(h) || isNaN(m) ? v : `${pad(h % 12 || 12)}:${pad(m)} ${h < 12 ? 'AM' : 'PM'}`; };
 /* Display a stored value in a field of type t, following the clock */
 export const dt_show = (t, v) => { if (!v) return ''; if (t === 'time') return h24() ? v : to12(v);
+  if (t === 'datetime-local') { const [d, tm = ''] = String(v).split(/[T ]/); return tm ? `${d} ${h24() ? tm.slice(0, 5) : to12(tm.slice(0, 5))}` : d; } return v; };
