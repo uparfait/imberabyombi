@@ -33,3 +33,4 @@ export const fit = (s, px) => { const n = Math.max(1, Math.floor(px / 6.4)); ret
 export const tip_text = (title, rows) => `data-tt="${esc(JSON.stringify([title, ...rows]))}"`;
 export const tip_attr = (title, rows) => ({ 'data-tt': JSON.stringify([title, ...rows]) });
 export const pct = v => `${round1(v * 100)}%`;
+/* Label positions pushed apart (top to bottom) so stacked end labels never overlap */
