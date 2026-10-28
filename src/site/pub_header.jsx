@@ -6,3 +6,4 @@ import { route } from '../store/index.js';
 import { PUB } from './site_bits.jsx';
 
 export function pub_header() {
+  const cur = route.path.slice(1);
