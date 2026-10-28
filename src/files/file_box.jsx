@@ -22,3 +22,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
   picking_now.current = picking;
   useEffect(() => {
     const inp = ref.current, stop = () => set_picking(false);
+    const sync = () => {
