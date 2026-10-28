@@ -48,3 +48,4 @@ export function delete_across(host, pi) {
   begin_op();
   if (is_break(last)) { last.remove(); end_op(pi); return; }
   if (nf && last && TEXT_BLOCK_RE.test(last.tagName) && TEXT_BLOCK_RE.test(nf.tagName)) {
+    const cont = nf.hasAttribute('data-cont') && same_kind(last, nf), s = save_sel();
