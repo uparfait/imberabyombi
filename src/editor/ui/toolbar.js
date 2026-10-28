@@ -53,3 +53,4 @@ export function install_toolbar(offs) {
     listen(offs, b, 'click', () => pick(key, fn));
   });
   for (const [id, items] of Object.entries(DROPS)) { const b = refs[id]; listen(offs, b, 'click', e => toggle_menu(b, items, { focus: e.detail === 0 })); }
+  listen(offs, refs.menus_toggle, 'click', () => toggle_menus());
