@@ -47,3 +47,4 @@ export function place_at(img, p) {
 /* an absolute image back in the flow: to the text under its top-left corner, else in a paragraph of its own */
 function from_abs(img) {
   const rc = img.getBoundingClientRect(), p = drop_point(rc.left + 2, rc.top + 2, img);
+  clear_abs(img);
