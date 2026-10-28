@@ -5,3 +5,4 @@ import { uniq } from '../lib/index.js';
 import { me } from '../auth/index.js';
 import { field_spec, STATUS, people } from '../schemas/index.js';
 import { field } from '../fields/index.js';
+import { sub_editor } from './sub_editor.jsx';
