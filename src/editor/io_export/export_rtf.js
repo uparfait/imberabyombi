@@ -52,3 +52,4 @@ function rtf_blocks(rx, c) {
   return o;
 }
 export async function export_rtf(root, name) {
+  await prepare_images(root);
