@@ -13,3 +13,4 @@ export function ctx_menu() {
   const u = auth.user, on = document.documentElement.classList.contains('allow_select'), mi = i => ic_html(i, 'h-4 w-4 text-muted');
   const item = (h, l, i) => `<a class="menu_item" role="menuitem" href="${h}">${mi(i)}${esc(l)}</a>`;
   const groups = u
+    ? [['Quick links', ['tasks', 'calendar'].map(k => MODS.find(m => m.k === k)).filter(m => m && auth.can(m.k)).map(m => ['#/admin/' + m.k, m.l, m.i])]].filter(([, l]) => l.length)
