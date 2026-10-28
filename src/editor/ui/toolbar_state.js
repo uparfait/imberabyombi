@@ -14,3 +14,4 @@ export function refresh_toolbar() {
   const n = el_of(r.startContainer), tb = refs.toolbar; if (!n || !tb) return;
   const cs = getComputedStyle(n);
   qsa('[data-state]', tb).forEach(b => {
+    const k = b.dataset.state; let on = false;
