@@ -35,3 +35,4 @@ export function backspace_across(host, pi) {
   begin_op();
   if (is_break(last)) { last.remove(); end_op(pi - 1); return; }
   if (!last) { end_op(pi); return; }
+  if (is_empty_block(first)) { first.remove(); caret_to_end(last); }
