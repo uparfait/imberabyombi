@@ -10,3 +10,4 @@ import { adopt_abs } from './img_pos.js';
 
 /* the next paste is text only (set by the ui's Ctrl+Shift+V before the browser pastes) */
 export let paste_plain = false;
+export function set_paste_plain(v) { paste_plain = !!v; }
