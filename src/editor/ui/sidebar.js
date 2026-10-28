@@ -4,3 +4,4 @@
 import { state, refs, el, qsa, move_tab } from '../core/index.js';
 import { toggle_menu } from './menu_engine.js';
 import { switch_tab, tab_menu, start_rename } from './tabs.jsx';
+import { render_outline } from './outline.js';
