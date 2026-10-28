@@ -24,3 +24,4 @@ Names the tools require keep their own spelling: `index.html`, `package.json`, `
 HTML attributes keep HTML's (`aria-label`, `data-tip`), and custom elements need a hyphen (`<ds-callout>`).
 
 ## 3. Generic names, subject words only in data
+Class names and ids describe what a thing IS or DOES, never a business subject, so the template fits any website:
