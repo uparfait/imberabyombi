@@ -35,3 +35,4 @@ export function move_tab(from, to) {
   if (from < 0 || from >= n) return null;
   to = Math.max(0, Math.min(n - 1, to));
   const [t] = state.tabs.splice(from, 1); state.tabs.splice(to, 0, t); state_changed();
+  return t;
