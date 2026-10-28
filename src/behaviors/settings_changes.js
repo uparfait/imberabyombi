@@ -18,3 +18,4 @@ export function role_land_change(t) {
 }
 
 /* The reference refilled the role's landing <select> by hand and redrew only for the signed-in user's own role; here the redraw
+   always runs and does both (the roles view keys that select by the role's landing page and access, so it follows the data). */
