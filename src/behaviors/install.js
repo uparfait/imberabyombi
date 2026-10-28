@@ -13,5 +13,5 @@ import { install_ctx } from './ctx_menu.js';
 let installed = false;
 export function install_listeners() {
   if (installed) return; installed = true;
-  install_click(); install_input(); install_change(); install_keys(); install_pointer(); install_page(); install_scroll(); install_ctx();
+  install_click(); install_links(); install_input(); install_change(); install_keys(); install_pointer(); install_page(); install_scroll(); install_ctx();
 }
