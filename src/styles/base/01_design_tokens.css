@@ -40,3 +40,6 @@
     --ok: 74 200 120; --warn: 240 170 60; --bad: 245 105 105; --info: 120 165 255;
     --series_2: #3987e5; --series_3: #199e70; --series_4: #c98500; --series_5: #d55181; --series_7: #9085e9; --series_8: #e66767;
     --shadow: none;
+    color-scheme: dark;
+  }
+}
