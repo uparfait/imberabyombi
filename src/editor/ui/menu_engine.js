@@ -45,3 +45,4 @@ function row_of(it, level) {
     r.addEventListener('click', e => { if (!it.disabled) r._open(e.detail === 0); });
   } else {
     r.addEventListener('pointerenter', e => {
+      set_cur(r); clearTimeout(sub_timer); sub_timer = setTimeout(() => close_menus(level + 1), 150);
