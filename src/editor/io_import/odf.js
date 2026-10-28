@@ -16,3 +16,4 @@ async function odf_img(cx, fr) {
 }
 async function odf_inline(cx, n) {
   let h = '';
+  for (const c of Array.from(n.childNodes)) {
