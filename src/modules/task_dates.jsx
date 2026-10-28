@@ -14,3 +14,4 @@ export function countdown(due, now = Date.now()) {
 export const due_text = r => { if (r.status === 'Done') return r.end ? `Done ${fmt_dt(r.end)}` : fmt_dt(r.due);
   const c = countdown(r.due); return c.late ? `${c.text} overdue` : `${c.text} left`; };
 const late = r => r.status !== 'Done' && r.due && countdown(r.due).late;
+/* the countdown tag; its last <span> holds only text, so the 30-second tick below may replace that text */
