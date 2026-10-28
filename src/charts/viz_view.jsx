@@ -50,3 +50,4 @@ export function charts_view() {
         + 'or one bar, point, slice or row to see only that one. The date range changes every number on the page.')}
       <div className="mb-6 grid gap-3">
         <div className="seg max-w-full justify-self-start overflow-x-auto" role="radiogroup" aria-label="Date range">
+          {[['7', '7 days'], ['30', '30 days'], ['90', '90 days']].map(([v, l]) => (
