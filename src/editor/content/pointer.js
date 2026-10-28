@@ -52,3 +52,4 @@ export function pages_click(e) {
 }
 /* pressing an image selects it (the caret goes next to it, as a click would) and may start a drag (img_drag.js) */
 export function pages_pointerdown(e) {
+  const img = e.target.closest && e.target.closest('.pg_body img'); if (!img || e.button > 0 || state.mode !== 'edit') return;
