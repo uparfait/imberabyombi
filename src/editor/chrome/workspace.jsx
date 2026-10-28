@@ -31,3 +31,4 @@ export const workspace = () => (
       {icon_btn('sidebar_open', 'toc', 'Show tabs & outlines', 'icon_btn no_print')}
 
       <aside id="comments_panel" className="no_print" aria-label="Comments">
+        <div className="side_head side_between">
