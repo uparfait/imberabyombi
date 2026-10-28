@@ -15,3 +15,5 @@ export function verify_page() {
         <input type="checkbox" name="trust" />Trust this device for 30 days</label>
       <button className="btn btn_primary w-full">Verify</button>
       <button type="button" className="btn btn_ghost -mt-3 w-full" data-act="otp_resend" id="otp_resend" disabled>Resend code</button>
+    </form>
+    <a href="#/authenticator" className="auth_row mt-6">{ic('shield', 'h-5 w-5 shrink-0 text-muted')}<span className="min-w-0 flex-1">
