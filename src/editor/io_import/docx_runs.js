@@ -34,7 +34,7 @@ export async function docx_run(cx, r) {
   if (!inner) return '';
   return css.length ? `<span style="${css.join(';')}">${open}${inner}${close}</span>` : open + inner + close;
 }
-/* an embedded picture (DrawingML blip or VML imagedata), as wide as its extent (16–700 px) */
+/* an embedded picture (DrawingML blip or VML imagedata), as wide as its extent (16–700 px), its description as alt text */
 async function docx_image(cx, c) {
   const blip = by_tag(c, 'blip')[0] || by_tag(c, 'imagedata')[0], rid = blip && (blip.getAttribute('r:embed') || blip.getAttribute('r:id')), rel = rid && cx.rels[rid];
   if (!rel || rel.external) return '';
