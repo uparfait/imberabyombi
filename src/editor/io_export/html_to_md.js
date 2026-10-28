@@ -43,3 +43,4 @@ export function html_to_md(root) {
     if (/^H[1-6]$/.test(t)) blocks.push('#'.repeat(+t[1]) + ' ' + inline(b).trim());
     else if (t === 'P' && b.classList.contains('title')) blocks.push('# ' + inline(b).trim());
     else if (t === 'P' && b.classList.contains('subtitle')) blocks.push('*' + inline(b).trim() + '*');
+    else if (is_list(b)) blocks.push(list(b, 0));
