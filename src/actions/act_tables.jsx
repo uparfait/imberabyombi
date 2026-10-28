@@ -33,3 +33,4 @@ export const TABLE_ACT = {
   /* Table tools */
   table_full: t => table_full(t.dataset.col),
   table_cols_all: t => { const c = t.dataset.col, v = tview(c), was = v.hide; v.hide = []; tview_save(c); qsa(`[data-table-col="${c}"]`).forEach(i => i.checked = true); was.forEach(k => col_show(c, k, true)); },
+  export: t => { close_pops(); export_dialog(t.dataset.col, t.dataset.fmt); },
