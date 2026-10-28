@@ -5,3 +5,4 @@ import { can_edit, previewing } from '../format/index.js';
 import { ask } from '../../overlays/index.js';
 
 export function add_blank_page(i) {
+  if (previewing() || !can_edit()) return;
