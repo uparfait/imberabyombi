@@ -65,3 +65,4 @@ export const pick = {
     const list = this.el.querySelector('.pk_list'); if (!list) return; q = q.toLowerCase().trim(); let any = false;
     qsa('.pk_item', list).forEach(b => { b.hidden = !!q && !b.textContent.toLowerCase().includes(q); any ||= !b.hidden; });
     qsa('.pk_group', list).forEach(g => { let n = g.nextElementSibling, vis = false; while (n?.matches('.pk_item')) { vis ||= !n.hidden; n = n.nextElementSibling; } g.hidden = !vis; });
+    const none = list.querySelector('.pk_none'); if (none) none.hidden = any;
