@@ -1,11 +1,4 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
+/* app.jsx: the root component. It redraws whenever the store says so (render / rerender in store/app_state.js),
 
   return (
     <>
