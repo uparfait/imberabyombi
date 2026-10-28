@@ -19,3 +19,4 @@ function rtf_table(rx, t) {
   const n = Math.max(1, ...rows.map(r => Array.from(r.cells).reduce((a, c) => a + (c.colSpan || 1), 0)));
   const col_w = Math.round(rx.content_tw * (parseFloat(t.style.width) || 100) / 100 / n);
   const bw = parseFloat(t.style.getPropertyValue('--bw')), bwv = isNaN(bw) ? 1 : bw;
+  const brd = bwv ? `\\brdrs\\brdrw${Math.max(5, Math.round(bwv * 15))}\\brdrcf${rtf_ci(rx, to_hex(t.style.getPropertyValue('--bc')) || '000000')}` : '\\brdrnil';
