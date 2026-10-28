@@ -23,3 +23,4 @@ function date_err(k, v, r) {
 }
 
 export const TV_ACT = {
+  tv_edit: t => { const cell = row_of(t).querySelector('.kv_cell'); set_edit(t, true);
