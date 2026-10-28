@@ -4,3 +4,4 @@ export * from './file_utils.js';
 export * from './file_tile.jsx';
 export * from './file_box.jsx';
 export * from './file_info.jsx';
+export * from './file_viewer.jsx';
