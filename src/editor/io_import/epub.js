@@ -17,3 +17,4 @@ export async function epub_to_html(file) {
       const src = im.getAttribute('src') || im.getAttribute('xlink:href') || im.getAttribute('href'), p = src && resolve_path(dir_of(path), decodeURIComponent(src));
       const url = p && z.has(p) ? await z.data_url(p) : null;
       if (!url) { (im.closest('svg') || im).remove(); continue; }
+      if (im.tagName.toLowerCase() === 'img') im.setAttribute('src', url);
