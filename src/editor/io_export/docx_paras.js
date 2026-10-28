@@ -20,3 +20,4 @@ export function p_pr_xml(e, extra = '') {
   if (e.tagName === 'BLOCKQUOTE') x += '<w:ind w:left="720"/>';
   let alv = st.textAlign || (e.getAttribute && e.getAttribute('align'));
   if (!alv && e.querySelector) {
+    const im = e.querySelector(':scope > img[data-pos="break"]'); if (im && !e.textContent.replace(/\u200b/g, '').trim()) alv = im.getAttribute('data-align') || '';
