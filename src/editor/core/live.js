@@ -10,3 +10,4 @@ import { refs, pages_el, scroller } from './refs.js';
 import { bodies, page_wraps, editable_of } from './dom.js';
 import { create_page } from './pages.js';
 import { layout_after } from './reflow.js';
+import { last_range, set_last, mk_range } from './selection.js';
