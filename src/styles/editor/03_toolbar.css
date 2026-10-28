@@ -52,3 +52,4 @@
 .size_box:focus { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
 
 /* Text colour: an "A" over a bar in the current colour */
+.color_a { display: flex; flex-direction: column; align-items: center; line-height: 1; }
