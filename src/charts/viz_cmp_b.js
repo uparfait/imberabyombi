@@ -44,3 +44,4 @@ export const VIZ_CMP_B = {
     return { svg: svg(f, ax.g + bars.map((o, i) => {
       const c = o.t ? 'rgb(var(--fg) / .72)' : o.b >= o.a ? 'var(--series_2)' : 'var(--series_1)', lo = Math.min(o.a, o.b), up = Math.max(o.a, o.b);
       return mark_group(o.k, [[(o.t ? '' : o.b >= o.a ? '+' : '−') + num(Math.abs(o.b - o.a)), o.t ? 'Total' : o.b >= o.a ? 'Increase' : 'Decrease', null]],
+        hit_col(f, x, i) + `<path class="mark" style="fill:${c}" d="${o.t || o.b >= o.a ? vbar(x(i), bw, ax.y(lo), ax.y(up)) : vbar(x(i), bw, ax.y(up), ax.y(lo))}"/>`)
