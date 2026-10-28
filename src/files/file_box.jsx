@@ -16,3 +16,4 @@ export const file_tiles = inp => { BOXES.get(inp)?.(); };
 
 /* props: id, name, multiple, accept and any other <input> attribute (data-new-files…) */
 export function File_box({ id, name, multiple, accept, onClick, onChange, ...rest }) {
+  const ref = useRef(null), shown = useRef([]), picking_now = useRef(false);
