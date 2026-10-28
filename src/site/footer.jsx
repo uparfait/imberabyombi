@@ -17,3 +17,4 @@ export function footer() {
   );
   return (
     <footer className="relative isolate mt-10 overflow-hidden border-t border-line bg-surface-2 text-muted">
+      <div className="pattern_layer" style={{ '--pa': '.05' }} aria-hidden="true"></div>
