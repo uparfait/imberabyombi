@@ -2,3 +2,4 @@
    add / edit form and export. Import from here: import { crud, open_form, refresh } from '../table/index.js' */
 export * from './table_view.js';
 export * from './col_filter.jsx';
+export * from './table_parts.jsx';
