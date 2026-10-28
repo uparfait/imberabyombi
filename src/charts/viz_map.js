@@ -10,3 +10,4 @@ export const VIZ_MAP = {
     rows.forEach((r, y) => [...r].forEach((c, x) => c === 'X' && tiles.push({ x, y, k: 'R' + (tiles.length + 1), v: Math.round(rnd(5, 100)) })));
     const f = frame(w, 260, { l: 0, r: 0, t: 8, b: 8 }), s = Math.min((f.iw - 20) / 7.6, f.ih / (6 * .88 + .3)) / 1.0, hw = s * .5, x0 = (f.w - s * 7.5) / 2;
     const hex = (cx, cy, r) => path_of(Array.from({ length: 6 }, (_, i) =>
+      [cx + r * Math.cos(Math.PI / 6 + i * Math.PI / 3), cy + r * Math.sin(Math.PI / 6 + i * Math.PI / 3)])) + 'Z';
