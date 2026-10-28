@@ -5,3 +5,4 @@ import { xesc, RELNS, WNS, inline_xml } from './docx_runs.js';
 import { blocks_xml } from './docx_table.js';
 
 const XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
+const PR = 'http://schemas.openxmlformats.org/package/2006/relationships';
