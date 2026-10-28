@@ -44,3 +44,6 @@ VIEWS.inventory = () => {
       {low.map(i => i.item).join(', ')}</p></div></div> : null;
   return <>{tabs('inv', [['res', 'Reservations', db.list('reservations').filter(r => r.status === 'Pending').length], ['stock', 'Inventory', low.length]], t)}
     {t === 'res' ? crud('reservations', { title: 'Reservations', acts: decide }) : <>{banner}{crud('inventory', { title: 'Stock' })}</>}</>;
+};
+
+const check_out = (r, c) => c && r.status === 'Parked' ? <button className="btn btn_soft btn_sm" data-act="park_out" data-id={r.id}>Check out</button> : null;
