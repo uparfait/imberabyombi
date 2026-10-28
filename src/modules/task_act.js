@@ -18,3 +18,5 @@ const fade_in = (el, ms) => { if (!reduced()) el.animate([{ opacity: 0, transfor
 const comment_box = t => t.closest('[data-comment]');
 /* change the task's comments (fn: the list → the new list), then redraw the view and say so */
 const comments = (t, id, fn, msg) => request(() => { db.upsert('tasks', { id, comments: fn(comments_of(db.find('tasks', id))) }); task_refresh(id, msg); }, { btn: t });
+
+export const TASK_ACT = {
