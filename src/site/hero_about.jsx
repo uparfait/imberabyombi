@@ -16,3 +16,4 @@ export function hero_sec() {
           <p className="mt-6 font-display text-2xl text-brand sm:text-3xl"><span>{lorem.t(1)} </span><span className="caret"
             data-type={JSON.stringify([lorem.w(2), lorem.w(1), lorem.w(2)])}></span></p>
           <p className="mt-5 max-w-lg text-fg/70">{lorem.p(2)}</p>
+          <div className="mt-9 flex flex-wrap gap-3"><a href="#/login" className="btn btn_primary group py-2 pl-6 pr-2">Get started<span
