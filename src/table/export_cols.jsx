@@ -2,3 +2,4 @@
    An unticked column cannot be renamed; with no column ticked the download is off and a note says why. This is state
    (React onChange), so the change listener only has to stop at these ticks (export_change). */
 import { useLayoutEffect, useRef, useState } from 'react';
+import { schemas } from '../schemas/index.js';
