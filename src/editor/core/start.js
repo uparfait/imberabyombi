@@ -31,3 +31,4 @@ export function editor_start(root) {
   }
   if (pages_el) {
     /* a picture that finishes loading reflows its page */
+    on(pages_el, 'load', e => {
