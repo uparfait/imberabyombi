@@ -43,3 +43,5 @@ export function pick(key, fn, done) {
 export function peek_on(node, key, fn, done) {
   node.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') peek(key, fn); });
   node.addEventListener('pointerleave', () => unpeek_key(key));
+  node.addEventListener('click', () => pick(key, fn, done));
+}
