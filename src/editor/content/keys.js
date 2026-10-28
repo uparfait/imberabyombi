@@ -4,3 +4,4 @@
 import { qsa, state, pages_el, bodies, body_index, editable_of, el_of, is_list, is_table, first_flow, last_non_break, set_last, set_last_range,
   caret_to_start, caret_to_end, scroll_caret_into_view, begin_op, end_op, commit_soon, schedule_reflow, undo, redo, save_soon } from '../core/index.js';
 import { indent, insert_page_break, tbl_op } from '../format/index.js';
+import { img_sel, hide_img_sel } from './img_sel.js';
