@@ -16,3 +16,4 @@ export function close_dialog(d) {
 }
 /* a closed dialog's content goes at once (the 'close' event in dialog_store.js covers closes that bypass close_dialog) */
 const drop = d => { if (!d.open && DIALOGS[d.id]) set_dialog(d.id, null); };
+/* Overlays close only from their own Close / x button (or Esc). A form with unsaved edits asks first. */
