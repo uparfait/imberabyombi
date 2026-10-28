@@ -25,3 +25,4 @@ export async function docx_run(cx, r) {
     if (hl && HL[hl]) css.push('background-color:' + HL[hl]); else if (fill && HEX6.test(fill) && fill.toUpperCase() !== 'FFFFFF') css.push('background-color:#' + fill);
   }
   let inner = '';
+  for (const c of Array.from(r.children)) {
