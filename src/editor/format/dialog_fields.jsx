@@ -15,3 +15,4 @@ export const num_field = (id, label, props) => (
 /* a select: opts = [[value, label], …] */
 export const sel_field = (id, label, opts, value) => (
   <div className="field"><label htmlFor={id}>{label}</label>
+    <select id={id} name={id} defaultValue={value}>{opts.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
