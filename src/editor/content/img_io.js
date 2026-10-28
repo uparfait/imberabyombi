@@ -36,3 +36,5 @@ export async function insert_image(src) {
   const img = el('img', { src, style: `width:${w}px`, alt: '', draggable: 'false' });
   const s = getSelection(), r = s.getRangeAt(0); r.deleteContents(); r.insertNode(img); r.setStartAfter(img); r.collapse(true); s.removeAllRanges(); s.addRange(r);
   end_op(body_index(host));
+}
+export async function insert_image_file(f) { if (!f.type.startsWith('image/')) return; insert_image(await read_as_data_url(f)); }
