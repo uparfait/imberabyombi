@@ -23,3 +23,4 @@ export function p_pr_xml(e, extra = '') {
     const im = e.querySelector(':scope > img[data-pos="break"]'); if (im && !e.textContent.replace(/\u200b/g, '').trim()) alv = im.getAttribute('data-align') || '';
   }
   const al = JC[alv]; if (al) x += `<w:jc w:val="${al}"/>`;
+  return x ? `<w:pPr>${x}</w:pPr>` : '';
