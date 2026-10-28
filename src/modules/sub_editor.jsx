@@ -31,3 +31,5 @@ export function Sub_editor({ groups }) {
     add_item: gk => { const k = ++seq; put(a => a.map(g => g.key !== gk ? g : { ...g, items: [...g.items, { key: k }] })); },
     rm_group: gk => put(a => a.filter(g => g.key !== gk)),
     rm_item: (gk, ik) => put(a => a.map(g => g.key !== gk ? g : { ...g, items: g.items.filter(x => x.key !== ik) }))
+  };
+  return <><div className="grid gap-3" data-subs="" ref={el => { if (el) API.set(el, api); }}>{gs.map(g => sub_group(g))}</div>
