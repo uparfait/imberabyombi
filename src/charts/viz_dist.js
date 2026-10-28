@@ -35,3 +35,4 @@ export const VIZ_DIST = {
     const g = uwords(4), sets = g.map((_, k) => Array.from({ length: 200 }, () => k % 2 ? (lorem.r() < .5 ? 35 : 65) + gauss() * 8 : 50 + gauss() * (10 + k * 3)));
     const f = frame(w, 250), ax = y_axis(f, 100), x = band(g.length, f.l, f.w - f.r), half = Math.min(46, x.bw * .42), ys = Array.from({ length: 41 }, (_, i) => i * 2.5);
     const dens = a => {
+      const h = 6, d = ys.map(y0 => a.reduce((s, v) => s + Math.exp(-((v - y0) ** 2) / (2 * h * h)), 0)); const m = Math.max(...d); return d.map(v => v / m); };
