@@ -42,3 +42,4 @@ export const toolbar = () => (
     {dd('font_btn', 'font_label', 'Arial', 'Font', '6.75rem', true)}
     {sep()}
     {tb({ ed: 'size_down', icon: 'remove', tip: 'Decrease font size (Ctrl+Shift+,)' })}
+    <input id="size_input" className="size_box tb_edit" defaultValue="11" inputMode="decimal" aria-label="Font size" data-tip="Font size" />
