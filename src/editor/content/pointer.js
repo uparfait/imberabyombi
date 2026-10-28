@@ -47,3 +47,4 @@ export function pages_click(e) {
     begin_op(); li.setAttribute('data-checked', li.getAttribute('data-checked') === 'true' ? 'false' : 'true'); end_op(body_index(editable_of(li))); return;
   }
   const a = e.target.closest('.pg_body a');
+  if (a && (e.ctrlKey || e.metaKey || state.mode !== 'edit')) { e.preventDefault(); window.open(a.href, '_blank', 'noopener'); return; }
