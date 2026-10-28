@@ -30,3 +30,4 @@ export const more = (k, c = 'btn_primary') => (
     className="grid h-8 w-8 place-items-center rounded-full bg-white text-brand transition group-hover:translate-x-1">{ic('arrow_r', 'h-4 w-4')}</span></a>
 );
 /* the props a section gets: on the home page it is a scroll-spy target (s_about); on its own page a plain anchor (p_about).
+   Spread it: <section {...spy_attrs('about', full)}> */
