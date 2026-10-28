@@ -33,3 +33,4 @@ export const signed = d => `${d >= 0 ? '+' : '−'}${Math.abs(round1(d))}%`;
 export const kpi_card = (cls, title, d, body, [head, rows]) => {
   const i = KPIS.push({ t: title, d, head, rows }) - 1;
   return (
+    <article key={i} className={`card kpi ${cls}`} data-act="viz_open" data-kpi={i} tabIndex="0" role="button" aria-label={`${title}: show its data in a table`}>
