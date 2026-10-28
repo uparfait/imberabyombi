@@ -14,3 +14,4 @@ export function table_xml(t, ctx) {
   const minimal = t.getAttribute('data-style') === 'minimal';
   const bdr = s => bwv && !(minimal && /^(left|right|insideV)$/.test(s))
     ? `<w:${s} w:val="single" w:sz="${Math.max(2, Math.round(bwv * 6))}" w:space="0" w:color="${bc}"/>` : `<w:${s} w:val="nil"/>`;
+  const pad_pt = parse_pt(t.style.getPropertyValue('--pad').trim()), pad = Math.round((pad_pt == null ? 5 : pad_pt) * 20);
