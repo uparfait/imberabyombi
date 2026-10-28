@@ -38,3 +38,4 @@ export function kit() {
         <div className="min-w-0">
           {kit_block('tokens', 'Tokens', kit_tokens())}
           {kit_block('type', 'Typography', kit_type())}
+          {kit_block('lists', 'Lists', kit_lists())}
