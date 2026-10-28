@@ -17,3 +17,4 @@ export const EDITOR_MEDIA_PATHS = {
   call_split: 'M12 21v-8L4 5M12 13l8-8M4 10V5h5M20 10V5h-5',
   vertical_align_top: 'M4 3h16M12 21V8M8 12l4-4 4 4',
   vertical_align_center: 'M4 12h16M12 2v6M9 5l3 3 3-3M12 22v-6M9 19l3-3 3 3',
+  vertical_align_bottom: 'M4 21h16M12 3v13M8 12l4 4 4-4',
