@@ -57,3 +57,4 @@ async function docx_blocks(cx, nodes, container) {
       const num_id = num_pr && val(kids(num_pr, 'numId')[0]);
       if (num_id && num_id !== '0') {
         const li = document.createElement('li'); li.innerHTML = html || '<br>';
+        add_li(li, Math.min(+(val(kids(num_pr, 'ilvl')[0]) || 0), 6), (cx.num_fmt[num_id] || 'bullet') === 'bullet' ? 'UL' : 'OL');
