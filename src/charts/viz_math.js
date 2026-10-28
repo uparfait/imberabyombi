@@ -20,3 +20,4 @@ export const MONTHS = () => Array.from({ length: 12 }, (_, i) => new Date(2026, 
 export const uwords = n => { const s = new Set(); let g = 0; while (s.size < n && g++ < 500) s.add(cap(lorem.w(1))); return [...s]; };
 export const SER = ['Lorem', 'Ipsum', 'Dolor', 'Amet', 'Elit', 'Magna', 'Sed', 'Velit'];
 export const scale_color = i => `var(--series_${(i % 8) + 1})`;
+/* 0..1 -> light..full brand */
