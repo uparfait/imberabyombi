@@ -40,3 +40,4 @@ export async function export_docx(root, name) {
     const has_footer = !s.pageless && ((s.footer && s.footer_html.replace(/<[^>]*>/g, '').trim()) || s.page_numbers);
     const plain = { content_tw: ctx.content_tw, content_px: ctx.content_px };
     let sect_refs = '';
+    const files = [];
