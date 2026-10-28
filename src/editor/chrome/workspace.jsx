@@ -13,3 +13,4 @@ export const workspace = () => (
   <div id="workspace">
     <div id="vruler" className="no_print" aria-hidden="true"></div>
     <div id="main_col">
+      <div id="hruler" className="no_print" aria-hidden="true"></div>
