@@ -11,3 +11,5 @@ export function table_name(t, i) {
   while (p && k++ < 4) {
     if (/^H[1-4]$/.test(p.tagName) || p.classList.contains('title')) { const s = p.textContent.replace(/\u200b/g, '').trim(); if (s) return s; }
     if (is_table(p)) break; p = p.previousElementSibling;
+  }
+  return 'Table ' + (i + 1);
