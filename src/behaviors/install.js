@@ -8,3 +8,5 @@ import { install_pointer } from './pointer_events.js';
 import { install_page } from './page_events.js';
 import { install_scroll } from './scrolling.js';
 import { install_ctx } from './ctx_menu.js';
+
+let installed = false;
