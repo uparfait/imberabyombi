@@ -5,3 +5,4 @@ import { scale_color } from './viz_math.js';
 
 export const viz_tip = { el: null, cur: null,
   show(t, x, y) { const el = this.el || (this.el = document.getElementById('viz_tip')); if (!el) return;
+    if (this.cur !== t) { this.cur = t; let d; try { d = JSON.parse(t.dataset.tt); } catch { return; } el.replaceChildren();
