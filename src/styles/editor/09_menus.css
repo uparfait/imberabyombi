@@ -27,3 +27,4 @@
 /* Table size grid (Insert > Table): hover cells to pick rows × columns */
 .grid_picker { padding: .5rem .5rem .25rem; }
 .grid_picker .g { display: grid; grid-template-columns: repeat(10, 1.125rem); gap: .1875rem; }
+.grid_picker .c { width: 1.125rem; height: 1.125rem; border: 1px solid rgb(var(--line)); border-radius: .25rem; background: rgb(var(--surface)); transition: background-color .08s, border-color .08s; }
