@@ -17,3 +17,5 @@ export function add_comment() {
 }
 export function strip_comment(html, id) {
   const d = el('div'); d.innerHTML = html; qsa(`.cmt[data-cid="${id}"]`, d).forEach(sp => sp.replaceWith(...sp.childNodes)); return d.innerHTML;
+}
+export function remove_comment(id) {
