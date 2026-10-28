@@ -2,3 +2,4 @@
    where the content goes (at the cursor, in new tabs, replace the document). Add converts them once the dialog has
    closed, with the cursor put back where it was when the dialog opened. */
 import { modal } from '../../overlays/index.js';
+import { state, qs, toast, last_range, last_host, set_last } from '../core/index.js';
