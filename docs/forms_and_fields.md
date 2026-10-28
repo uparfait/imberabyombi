@@ -11,3 +11,4 @@ F('due', 'Due', 'datetime-local', 0, 0, { when: '!Done' })   // shown only while
 F('notes', 'Notes', 'textarea')
 ```
 Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `textarea`, `list` (suggestions),
+`date`, `time`, `datetime-local`, `month`, `week`, `hidden`, `files` (a file field), `subtasks` (task checklist editor).
