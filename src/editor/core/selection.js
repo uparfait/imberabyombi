@@ -29,3 +29,4 @@ export function restore_sel(sel) {
     /* focus is in a dialog or field: just remember */ last_range = mk_range(sc, so, ec, eo); last_host = host; return;
   }
   if (moved) host.focus({ preventScroll: true });
+  const r = mk_range(sc, so, ec, eo); if (!r) return;
