@@ -36,3 +36,4 @@ export function hbar(cy, h, xb, xt) {
     + `V${round1(y + h - r)}Q${round1(xt)} ${round1(y + h)} ${round1(xt + e)} ${round1(y + h)}H${round1(xb)}Z`;
 }
 export const path_of = pts => pts.map(([x, y], i) => `${i ? 'L' : 'M'}${round1(x)} ${round1(y)}`).join('');
+export const dot = (x, y, c, r = 4.5) => `<circle class="mark mark_dot" cx="${round1(x)}" cy="${round1(y)}" r="${r}" style="fill:${c}"/>`;
