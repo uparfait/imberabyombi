@@ -5,3 +5,4 @@ import { download, is_list, is_table, is_break } from '../core/index.js';
 export function html_to_md(root) {
   const inline = n => {
     let s = '';
+    n.childNodes.forEach(c => {
