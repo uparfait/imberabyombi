@@ -55,3 +55,4 @@ function keep_attrs(c, tag) {
 function clean(node) {
   for (const c of Array.from(node.childNodes)) {
     if (c.nodeType === 8) { c.remove(); continue; }
+    if (c.nodeType !== 1) continue;
