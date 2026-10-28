@@ -8,3 +8,4 @@ const tile = (tone, n) => { const id = 'i3' + (++GID), [a] = TONES[tone] || TONE
 
 export function i3(n, c = 'w-14 h-14', tone = 'brand') {
   const { id, a, d } = tile(tone, n);
+  return (
