@@ -65,3 +65,4 @@ export function paint_find(scroll) {
   }
 }
 /* d: +1 / -1; select: also make the match the remembered selection (always without CSS highlights) */
+export function find_step(d, select) {
