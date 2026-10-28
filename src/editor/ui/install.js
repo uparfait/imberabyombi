@@ -42,3 +42,4 @@ function install_view(offs) {
   listen(offs, hruler, 'pointerdown', ruler_drag); listen(offs, vruler, 'pointerdown', ruler_drag);
   listen(offs, scroller, 'scroll', () => {
     hide_link_bubble();
+    if (!raf) raf = requestAnimationFrame(() => { raf = 0; if (state.show_ruler) { draw_v_ruler(); draw_h_ruler(); } });
