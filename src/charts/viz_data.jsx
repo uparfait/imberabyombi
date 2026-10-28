@@ -32,3 +32,4 @@ export function data_table(p) {
 /* the dialog body of a full table: its page is local state, changed by viz_page() */
 function Viz_data() {
   const [p, set_p] = useState(SHOWN?.p || 1);
+  useLayoutEffect(() => { PAGER.set = set_p; return () => { if (PAGER.set === set_p) PAGER.set = null; }; }, []);
