@@ -6,3 +6,5 @@ import { before_render } from '../store/index.js';
 import { DIALOGS, set_dialog } from './dialog_store.js';
 import { pick } from './pick.js';
 import { tip } from './tip.js';
+
+/* E. One dialog for every form, confirm and detail view (animated open + close).
