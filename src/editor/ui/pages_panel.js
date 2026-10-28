@@ -14,3 +14,4 @@ export function render_pages_panel() {
   bs.forEach((b, i) => {
     const snip = b.textContent.replace(/​/g, '').trim().slice(0, 48) || (b.querySelector('img') ? 'Image' : b.querySelector('table') ? 'Table' : 'Blank page');
     const row = el('div', { class: 'page_row select-none', role: 'button', tabindex: '0' }, `<span class="pnum">${i + 1}</span><span class="min-w-0 flex-1 truncate"></span>`
+      + `<button type="button" class="icon_btn page_del h-8 w-8" aria-label="Delete page">${mi('delete')}</button>`);
