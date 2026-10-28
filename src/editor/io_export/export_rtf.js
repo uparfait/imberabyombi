@@ -6,3 +6,4 @@ import { prepare_images } from './docx_image.js';
 
 function rtf_list(rx, l, lvl) {
   let o = '', k = parseInt(l.getAttribute('start')) || 1; const kind = l.classList.contains('checklist') ? 'check' : l.tagName === 'OL' ? 'num' : 'bul';
+  Array.from(l.children).forEach(li => {
