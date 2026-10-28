@@ -23,6 +23,7 @@ Asset paths and every link in the app follow it.
 GitHub Pages serves `404.html` for every unknown path, so deep links and reloads open the app on the right page.
 
 ## Netlify, Cloudflare Pages
+Build command `npm run build`, output folder `dist`. Add `public/_redirects` (it is copied into `dist/`):
 
 ## Any web server (Apache, Nginx, IIS, a shared host)
 Upload the contents of `dist/`. Serve `index.html` for `/`. Let the server cache `assets/*` files for a long time
