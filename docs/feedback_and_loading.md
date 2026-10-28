@@ -41,3 +41,5 @@ import { request, notify } from '../feedback/index.js';
 import { db, rerender } from '../store/index.js';
 
 request(() => { db.upsert('tasks', { id, status: 'Done' }); rerender(); notify('It is now Done.', 'ok', 'Task updated'); },
+        { btn: event.target });
+```
