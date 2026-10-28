@@ -10,3 +10,4 @@ export function staff_dir() {
   lorem.seed(77); const teams = [lorem.t(1), lorem.t(1), lorem.t(1), lorem.t(1)];
   return (
     <section className="wrap section"><div className="flex flex-wrap items-center gap-3">
+      <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by team">{['All', ...teams].map((t, i) => (
