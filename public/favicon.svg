@@ -2,3 +2,5 @@
   <!-- Imberabyombi mark: a brand tile with the diamond lattice of the logo -->
   <rect width="64" height="64" rx="16" fill="#E0661B"/>
   <path d="M32 10 54 32 32 54 10 32Z" fill="none" stroke="white" stroke-width="6"/>
+  <path d="M32 24 40 32 32 40 24 32Z" fill="white"/>
+</svg>
