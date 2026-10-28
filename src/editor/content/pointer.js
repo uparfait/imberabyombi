@@ -71,3 +71,4 @@ export function pages_mousedown(e) {
   if (pos && b.contains(pos.node)) set_caret(pos.node, pos.off); else caret_to_end(last_non_break(b));
 }
 export function pages_dblclick(e) {
+  const page = e.target.closest('.page'); if (!page || state.setup.pageless || e.target.closest('.pg_body,.pg_header,.pg_footer')) return;
