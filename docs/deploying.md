@@ -51,6 +51,7 @@ RewriteRule . /index.html [L]
 In a folder, use `RewriteBase /my-site/` and `RewriteRule . /my-site/index.html [L]`.
 
 ## IIS (`web.config` next to `index.html`)
+```xml
 ## Checklist
 - Replace `example.com` in `index.html`, `public/robots.txt` and `public/sitemap.xml`.
 - Run `npm run preview` and click through the public site, the sign-in and one admin module.
