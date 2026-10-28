@@ -14,3 +14,5 @@ const head = (o, icon, text, extra = null) => !o.routed
       <div className="hero_in min-w-0 flex-1"><p className="text-sm text-fg/60">{o.kicker}</p><h2 className="mt-1 text-3xl text-fg sm:text-5xl">{o.title}</h2>
         <p className="mt-2 max-w-xl text-fg/70">{text}</p>{extra}</div>
       <span className="hero_in" style={{ '--d': '.1s' }}>{i3(icon, 'h-16 w-16 sm:h-20 sm:w-20')}</span></div>)}</section>;
+
+const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a' : 'button';
