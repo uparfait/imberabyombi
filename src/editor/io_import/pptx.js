@@ -6,3 +6,5 @@ import { parse_xml, by_tag, kids, dir_of, resolve_path, rels_of } from './xml_he
 import { rows_to_table } from './tables.js';
 
 export const PB = '<div class="page_break" contenteditable="false"></div>';
+
+/* a text paragraph: runs and fields (bold / italic kept), line breaks */
