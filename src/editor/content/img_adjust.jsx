@@ -46,3 +46,6 @@ export function adjust_dialog(img) {
         p[i] = l + (r - l) * S; p[i + 1] = l + (g - l) * S; p[i + 2] = l + (b - l) * S; p[i + 3] *= A;
       }
       x.putImageData(d, 0, 0); return A < 1 ? 'alpha' : '';
+    }, null, 'Adjustments applied');
+  } });
+}
