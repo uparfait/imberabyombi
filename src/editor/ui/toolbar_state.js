@@ -7,3 +7,4 @@ import { set_text, set_icon } from './ui_dom.js';
 import { mark_outline } from './outline.js';
 
 const q = c => { try { return document.queryCommandState(c); } catch { return false; } };
+const ALIGN = { center: 'format_align_center', right: 'format_align_right', end: 'format_align_right', justify: 'format_align_justify' };
