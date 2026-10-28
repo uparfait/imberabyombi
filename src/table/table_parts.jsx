@@ -17,3 +17,4 @@ export const pager = (c, p, n) => (
    Full screen (right): the table grows from its place to fill the tab (not the browser's fullscreen) and shrinks back. */
 export const table_menu = c => { const v = tview(c);
   return (
+    <>
