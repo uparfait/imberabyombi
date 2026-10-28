@@ -32,3 +32,4 @@ export const CONTENT_CSS = '\n' + [
     + 'border-radius:2px;background:#fff;cursor:pointer}',
   '.doc_content ul.checklist>li[data-checked="true"]::before{background:#1a73e8 url("data:image/svg+xml;utf8,'
     + "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='white' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>\")"
+    + ' center/11px no-repeat;border-color:#1a73e8}',
