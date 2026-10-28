@@ -15,3 +15,4 @@ export function start_paint() {
   while (e && !e.classList.contains('pg_body')) { const b = getComputedStyle(e).backgroundColor; if (to_hex(b)) { bg = b; break; } e = e.parentElement; }
   const dec = []; e = n;
   while (e && !e.classList.contains('pg_body')) { const d = getComputedStyle(e).textDecorationLine; if (d && d !== 'none') dec.push(d); e = e.parentElement; }
+  paint = {
