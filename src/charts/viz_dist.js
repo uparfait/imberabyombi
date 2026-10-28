@@ -32,3 +32,4 @@ export const VIZ_DIST = {
         .join('') + x_labels(f, g, x), 'Box plot'),
       table: [['Group', 'Min', 'Q1', 'Median', 'Q3', 'Max'], st.map((o, i) => [g[i], round1(o.lo), round1(o.q1), round1(o.med), round1(o.q3), round1(o.hi)])] }; } },
   violin: { t: 'Violin plot', g: 'dist', d: 'The full shape of each distribution, with the median dot.', f(w) {
+    const g = uwords(4), sets = g.map((_, k) => Array.from({ length: 200 }, () => k % 2 ? (lorem.r() < .5 ? 35 : 65) + gauss() * 8 : 50 + gauss() * (10 + k * 3)));
