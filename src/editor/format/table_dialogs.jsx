@@ -11,3 +11,4 @@ import { num_field, sel_field, POSITIONS } from './dialog_fields.jsx';
 import { refocus_after_close, previewing } from './guards.js';
 
 /* a 3 × 4 thumbnail of preset p (drawn as on the white page) */
+export function preset_preview(p) {
