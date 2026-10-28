@@ -6,3 +6,4 @@ import { xesc } from './docx_runs.js';
 import { NUMFMT } from './docx_paras.js';
 
 const EMU = 9525;   /* one CSS pixel in English Metric Units */
+export function image_xml(img, ctx) {
