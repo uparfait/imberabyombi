@@ -40,3 +40,4 @@ Rows follow the table's current search, then the dialog's range and filters. Fil
 - Rows come from `rows_of(c)`: the schema's data, the page's filter, the column searches, then the sort.
 - `refresh(c)` redraws when that table is on screen; `open_form(c, id, preset)` opens the add / edit form;
   `view_row(c, id)` the details; `export_dialog(c, format)` the export dialog.
+- Table state (page, sort, searches, settings) lives in `ui`, so it survives redraws and tab switches.
