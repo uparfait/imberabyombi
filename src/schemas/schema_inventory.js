@@ -12,3 +12,4 @@ export const reservations_schema = {
     field_spec('purpose', 'Purpose', 'textarea'), field_spec('status', 'Status', 'select', STATUS.res, 1, { def: () => 'Pending' })
   ],
   g: () => {
+    const h = lorem.int(8, 15);
