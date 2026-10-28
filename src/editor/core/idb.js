@@ -2,3 +2,5 @@
    localStorage (about 5 MB), so documents keep their images, however many there are. */
 const DB_NAME = (window.NS || 'loremds:v1:') + 'editor', STORE = 'docs';
 let opening = null;
+
+const open = () => opening || (opening = new Promise((resolve, reject) => {
