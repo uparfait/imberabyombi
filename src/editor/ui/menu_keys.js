@@ -38,3 +38,5 @@ export function menu_key(e) {
       const row = top.anchor, parent = menu_stack[menu_stack.length - 2].el;
       close_menus(menu_stack.length - 1); if (row) focus_row(parent, row, false);
       return true;
+    }
+    return bar_step(-1);
