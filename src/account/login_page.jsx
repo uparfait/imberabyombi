@@ -32,3 +32,6 @@ export function login_page(r) {
       <label className="flex cursor-pointer items-center gap-3 justify-self-start text-sm font-normal">
         <input type="checkbox" name="remember" defaultChecked />Keep me signed in</label>
       <button className="btn btn_primary mt-2 w-full">Sign in</button>
+    </form>{auth_links('login')}
+  </>);
+}
