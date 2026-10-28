@@ -21,3 +21,4 @@
   .kv.tv td, .kv.tv th { overflow-wrap: break-word; white-space: normal; }
   .kv.tv thead th:first-child { width: 38%; }
   @media (min-width: 1024px) { .kv.tv thead th:first-child { width: 12rem; } }   /* the wide task view: a narrow label column */
+  .kv.tv thead th, .kv.tv .kv_group th { position: static; }   /* the task view scrolls as one page: no pinned rows overlapping */
