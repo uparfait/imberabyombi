@@ -26,3 +26,4 @@ export function start_img_drag(e, img, through = false) {
   if (!img || e.button > 0 || state.mode !== 'edit' || drag) return;
   e.preventDefault(); e.stopPropagation(); swallow_until = 0;
   drag = { img, id: e.pointerId, abs: is_abs(img), sx: e.clientX, sy: e.clientY, l0: img.style.left, t0: img.style.top, x0: img.offsetLeft, y0: img.offsetTop,
+    moved: false, p: null, through: through && pos_of(img) === 'behind' };
