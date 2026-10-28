@@ -8,3 +8,5 @@ import { ic } from '../icons/index.js';
 import { crud } from '../table/index.js';
 import { cal_items } from '../admin/index.js';
 import { week_grid, month_grid } from './calendar_grids.jsx';
+
+/* Week / Month: a segmented choice (the change listener sets ui.cal_view) */
