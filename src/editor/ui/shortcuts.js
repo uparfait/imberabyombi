@@ -25,3 +25,5 @@ function global_key(e, k) {
   if (k === 's') return () => save_project();
   if (k === '/') return shortcuts_dialog;
   return null;
+}
+/* shortcuts that edit: only with the caret in the document */
