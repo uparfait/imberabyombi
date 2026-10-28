@@ -46,3 +46,4 @@ Change it, then call `rerender()`. Things that must survive a reload go to `db` 
 | A small part's own state     | a component with `useState` (task view editors, export ticks, file tiles) |
 
 ## Forms
+Inputs are uncontrolled (`defaultValue`, `defaultChecked`); values are read on submit with `form_obj(form)`. When a
