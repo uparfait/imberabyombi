@@ -8,6 +8,8 @@
   position: absolute; right: .5rem; top: 50%; translate: 0 -50%; display: inline-flex; align-items: center; gap: .25rem; height: 1.25rem;
   padding: 0 .5rem; border-radius: var(--pill); font: 500 .75rem/1 var(--font_sans); color: var(--active_fg); background: rgb(var(--brand) / .12);
   transition: background-color .15s;
+}
+.ruler_reset:hover { background: rgb(var(--brand) / .22); }
 #vruler { position: relative; flex: none; width: var(--ed_vr); overflow: hidden; }
 #hruler > svg { margin-top: calc((var(--ed_hr) - 24px) / 2); }
 #vruler > svg { margin-left: calc((var(--ed_vr) - 20px) / 2); }
