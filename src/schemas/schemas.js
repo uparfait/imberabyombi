@@ -4,3 +4,4 @@
 import { lorem, hash_str, uid } from '../lib/index.js';
 import { set_seeder } from '../store/index.js';
 import { staff_schema, employees_schema } from './schema_people.js';
+import { attendance_schema } from './schema_attendance.js';
