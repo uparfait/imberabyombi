@@ -3,3 +3,4 @@
 const dot = (x, y) => `M${x} ${y + 1}a1 1 0 1 0 0-2 1 1 0 0 0 0 2z`;
 
 export const EDITOR_TEXT_PATHS = {
+  add: 'M12 5v14M5 12h14',
