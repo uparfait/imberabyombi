@@ -35,3 +35,4 @@ input.tab_filter, .tab_filter input {
 .tab_row .tab_more { opacity: 0; transition: opacity .15s; }
 .tab_row:hover .tab_more, .tab_row:focus-within .tab_more, .tab_row .tab_more.open { opacity: 1; }
 .tab_rename {
+  width: 100%; min-width: 0; min-height: 0; padding: .125rem .5rem; border: 1px solid rgb(var(--brand)); border-radius: calc(var(--radius) * .5);
