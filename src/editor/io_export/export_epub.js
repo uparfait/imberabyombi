@@ -2,3 +2,4 @@
    own styles; images become files in the book (others are dropped); a contents page lists the chapters. */
 import { state, active_tab, el, qsa, uid, download, hist_timer, commit } from '../core/index.js';
 import { save_tab } from '../ui/index.js';
+import { b64bytes } from '../io_import/index.js';
