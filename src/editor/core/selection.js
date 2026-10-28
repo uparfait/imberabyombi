@@ -61,3 +61,5 @@ export function caret_rect(r) {
   let n = r.startContainer; const c = n.childNodes[r.startOffset];
   if (n.nodeType === 3) n = n.parentElement; else if (c && c.nodeType === 1 && c.tagName !== 'BR') n = c;
   return n.getBoundingClientRect();
+}
+export function scroll_caret_into_view() {
