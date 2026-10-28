@@ -32,3 +32,5 @@ export const buses_schema = {
 };
 ```
 Register it in `src/schemas/schemas.js` (`buses: buses_schema` in `schemas`). Tables, forms, validation, details view, export, search and seed data follow.
+
+Optional keys: `before(values, row, form)` adjusts values before saving (may be async, e.g. to read files),
