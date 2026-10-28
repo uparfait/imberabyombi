@@ -30,3 +30,4 @@ function on_pointerdown(e) {
 }
 
 /* quick bar hover preview: the box stays put while the pointer is on the bar (a preview may move the image) */
+let hover_b = null, hover_img = null, hover_fn = null;
