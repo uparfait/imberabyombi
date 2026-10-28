@@ -9,6 +9,7 @@ import { Dialog_hosts } from './overlays/index.js';
 
 export default function App() {
   const version = useSyncExternalStore(subscribe, get_version);
+  const page = render_route();
   return (
     <>
       <section id="center">
