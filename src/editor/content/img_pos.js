@@ -9,3 +9,4 @@ import { img_box, pos_of } from './img_sel.js';
 export const ABS_Z = { front: '3', behind: '-1' };
 const clear_abs = img => { ['position', 'left', 'top', 'zIndex'].forEach(p => { img.style[p] = ''; }); };
 /* a block left empty by a moved image keeps a line */
+const keep_line = par => { if (par && par.nodeType === 1 && !par.childNodes.length && !par.classList.contains('pg_body')) par.appendChild(document.createElement('br')); };
