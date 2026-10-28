@@ -15,3 +15,4 @@
 .topbar_row { display: flex; align-items: center; gap: .625rem; padding: .625rem .75rem .125rem; }
 .doc_logo { display: grid; flex: none; place-items: center; }
 .topbar_main { display: flex; flex-direction: column; min-width: 0; }
+.top_btns { display: flex; flex: none; align-items: center; gap: .25rem; margin-left: auto; }
