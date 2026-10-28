@@ -8,3 +8,4 @@ const dot = (x, y) => `M${x} ${y + 1}a1 1 0 1 0 0-2 1 1 0 0 0 0 2z`;
 
 export const EDITOR_DOC_PATHS = {
   undo: 'M9 5 4 10l5 5M4 10h11a5 5 0 0 1 0 10h-3',
+  redo: 'M15 5l5 5-5 5M20 10H9a5 5 0 0 0 0 10h3',
