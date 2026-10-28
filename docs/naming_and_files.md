@@ -27,3 +27,5 @@ HTML attributes keep HTML's (`aria-label`, `data-tip`), and custom elements need
 Class names and ids describe what a thing IS or DOES, never a business subject, so the template fits any website:
 `table_body_<collection>`, `table_filter`, `field_<key>`, `side_panel`, `tile`, `check_row`, `memo`, `choice_pill`.
 Subject words (staff, parking, students…) belong only in data: schema keys, module keys, labels and action names.
+
+## 4. Every file explains itself
