@@ -27,3 +27,4 @@ export const sec_head = (label, title, text, light) => (
 );
 export const more = (k, c = 'btn_primary') => (
   <a href={`#/${k}`} className={`btn ${c} group mt-8 py-2 pl-6 pr-2`}>Read more<span
+    className="grid h-8 w-8 place-items-center rounded-full bg-white text-brand transition group-hover:translate-x-1">{ic('arrow_r', 'h-4 w-4')}</span></a>
