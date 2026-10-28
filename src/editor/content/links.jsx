@@ -35,3 +35,5 @@ export function open_link_dialog(existing) {
     else if (range && !range.collapsed && (!text || text === sel_text)) document.execCommand('createLink', false, url);
     else document.execCommand('insertHTML', false, `<a href="${esc_html(url)}">${esc_html(text || url)}</a>`);
     end_op(body_index(host));
+  } });
+  setTimeout(() => qs(sel_text ? '#lk_url' : '#lk_text')?.focus(), 60);
