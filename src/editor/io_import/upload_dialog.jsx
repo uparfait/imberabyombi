@@ -15,3 +15,4 @@ export function pick_file(mode) { open_upload_dialog([], mode === 'open' ? 'repl
    else at the cursor) */
 export function open_upload_dialog(initial = [], mode) {
   if (state.mode !== 'edit') { toast('Switch to Editing mode to add files'); return; }
+  const up = upload_store(Array.from(initial), mode || (is_doc_empty() ? 'replace' : 'insert'));
