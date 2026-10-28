@@ -27,3 +27,4 @@
 @keyframes rise { from { opacity: 0; translate: 0 1rem; } }
 @keyframes page { from { opacity: 0; transform: translateY(.5rem); } }
 @keyframes pop { from { opacity: 0; transform: translateY(.6rem) scale(.98); } }
+@keyframes slide { from { transform: translateX(100%); } }
