@@ -1,3 +1,4 @@
 /* overrides/16_imberabyombi_outlined_fields.css: rules that come after the utilities, as in the reference */
   /* G. Imberabyombi outlined fields: the label rests inside the box and floats onto the border on focus or once filled */
   .field { position: relative; }
+  /* Animated with transform only (move + scale), so the label glides smoothly; size and weight never jump */
