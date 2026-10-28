@@ -28,3 +28,4 @@ export function set_list_type(tag, type) {
 /* strike: undefined toggles the checklist; true / false makes one with / without strikethrough */
 export function toggle_checklist(strike) {
   if (!can_edit()) return;
+  restore_focus(); let l = closest_list();
