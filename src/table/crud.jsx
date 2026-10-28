@@ -3,3 +3,4 @@
 import { cap } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { auth } from '../auth/index.js';
+import { schemas } from '../schemas/index.js';
