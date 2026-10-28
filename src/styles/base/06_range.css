@@ -10,3 +10,4 @@
   /* Colour + file */
   input[type=color] { appearance: none; width: 2.75rem; height: 2.75rem; padding: .25rem; cursor: pointer; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * .8); background: rgb(var(--surface)); }
   input[type=color]::-webkit-color-swatch-wrapper { padding: 0; }
+  input[type=color]::-webkit-color-swatch { border: 0; border-radius: calc(var(--radius) * .55); }
