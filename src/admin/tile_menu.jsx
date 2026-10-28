@@ -7,3 +7,4 @@ import { closed_pop } from './live_slot.jsx';
 const attrs_of = a => typeof a === 'string' ? Object.fromEntries([...a.matchAll(/([\w-]+)="([^"]*)"/g)].map(m => [m[1], m[2]])) : a || {};
 
 const tile = (t, i) => { const Tag = t.href ? 'a' : 'button';
+  return <Tag key={i} className={`tile_link ${t.on ? 'active' : ''}`} {...(t.href ? { href: t.href } : attrs_of(t.attrs))} aria-current={t.on ? 'true' : undefined}>
