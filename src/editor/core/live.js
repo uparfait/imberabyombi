@@ -15,3 +15,5 @@ import { hist_timer, commit, path_to, node_at } from './history.js';
 import { quiet, toast } from './toast.js';
 import { refresh_toolbar, apply_setup, set_zoom } from '../ui/index.js';
 import { img_sel, select_image, hide_img_sel } from '../content/index.js';
+
+let cur = null, zombies = 0, keeps = 0;   // cur: the running preview; zombies: cancelled previews whose async action still runs
