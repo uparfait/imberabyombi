@@ -38,3 +38,4 @@ Rows follow the table's current search, then the dialog's range and filters. Fil
 
 ## Under the hood
 - Rows come from `rows_of(c)`: the schema's data, the page's filter, the column searches, then the sort.
+- `refresh(c)` redraws when that table is on screen; `open_form(c, id, preset)` opens the add / edit form;
