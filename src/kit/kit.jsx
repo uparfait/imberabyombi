@@ -28,3 +28,4 @@ export function kit() {
   const brand_hex = rgb2hex(css_var('--brand') || '224 102 27');
   after_render(() => draw_chart(qs('#chart_demo'), ['I', 'II', 'III', 'IV', 'V', 'VI'], [12, 19, 9, 24, 17, 28]));
   return (
+    <>
