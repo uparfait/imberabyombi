@@ -10,3 +10,5 @@ export function img_op(img, fn) {
   img = img_now(img); if (!img || !can_edit() || !img.isConnected) return;
   const body = img.closest('.pg_body'); begin_op(); fn(img); end_op(body ? body_index(body) : 0);
   if (img.isConnected) select_image(img);
+}
+export function set_img_width(img, w) {
