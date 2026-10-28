@@ -2,3 +2,4 @@
    so My tasks, the calendar and the dashboard have something to show. */
 import { lorem, hash_str, ymd, add_d } from '../lib/index.js';
 import { db } from '../store/index.js';
+import { people } from '../schemas/index.js';
