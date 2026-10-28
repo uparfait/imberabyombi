@@ -16,3 +16,4 @@ const FALLBACK = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent('<svg 
   + '<path d="M2 .9 2.6 1.5 2 2.1 1.4 1.5Z" fill="#E0661B"/></svg>');
 
 /* Media that fails inside the file viewer shows the file's details instead: the viewer (React) does that with onError,
+   so it is skipped here. Any other broken image gets the brand placeholder once. */
