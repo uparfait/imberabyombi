@@ -11,3 +11,4 @@ export function col_idx(ref) { const m = /^([A-Z]+)/i.exec(ref); let n = 0; if (
 /* one cell's shown value: shared string, inline string, boolean or the stored value */
 function cell_value(c, strings) {
   const t = c.getAttribute('t'), v = by_tag(c, 'v')[0]; let val = v ? v.textContent : '';
+  if (t === 's') val = strings[+val] || '';
