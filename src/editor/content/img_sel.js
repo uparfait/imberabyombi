@@ -6,3 +6,4 @@ import { rem } from '../../lib/index.js';
 import { qs, qsa, el, state, is_abs, offset_in, bodies, body_index, path_to, node_at } from '../core/index.js';
 
 /* data-pos values: inline (no attribute), wrap_left, wrap_right, break, front, behind (front / behind are absolute) */
+export const IMG_POSITIONS = [['inline', 'In line', 'short_text'], ['wrap_left', 'Wrap text left', 'format_image_left'], ['wrap_right', 'Wrap text right', 'format_image_right'],
