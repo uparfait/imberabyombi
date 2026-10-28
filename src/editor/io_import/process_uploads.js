@@ -75,3 +75,4 @@ export async function attach_files(files) {
 }
 
 /* dropping files on the page is content's drop_handler (it opens the upload dialog): no listener of its own here */
+export function install_import() { return () => {}; }
