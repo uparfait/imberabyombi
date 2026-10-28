@@ -8,3 +8,4 @@ const RADII = ['rounded-sm', 'rounded-md', 'rounded-xl', 'rounded-2xl', 'rounded
 
 export const kit_tokens = () => (
   <>
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 xl:grid-cols-7">{TOKS.map(k => (
