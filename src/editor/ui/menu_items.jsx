@@ -11,3 +11,4 @@ import { after_close } from './dialogs.jsx';
 export function align_items() {
   return [['left', 'format_align_left', 'justifyLeft', 'Ctrl+Shift+L'], ['center', 'format_align_center', 'justifyCenter', 'Ctrl+Shift+E'],
     ['right', 'format_align_right', 'justifyRight', 'Ctrl+Shift+R'], ['justify', 'format_align_justify', 'justifyFull', 'Ctrl+Shift+J']]
+    .map(([l, i, c, k]) => ({ label: l[0].toUpperCase() + l.slice(1), icon: i, shortcut: k, action: () => exec(c) }));
