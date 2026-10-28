@@ -9,3 +9,4 @@ import { Modal_form } from './modal_form.jsx';
 /* "Discard changes?": the unsaved-changes check of request_close() */
 const confirm_view = () => (
   <>
+    <div className="p-6 pb-4"><h2 id="confirm_title" className="text-xl">Discard changes?</h2><p className="mt-2 text-muted">You changed this form. If you close it now, your changes are lost.</p></div>
