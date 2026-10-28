@@ -7,3 +7,4 @@ import { clean_text, mi } from './ui_dom.js';
 import { wire_outline_row } from './outline_rows.jsx';
 
 /* a heading's fold key: level + text (+ #n for the n-th heading with the same text) */
+function fold_key(h, seen) { const k = level_of(h) + ':' + clean_text(h), n = (seen[k] = (seen[k] || 0) + 1); return n > 1 ? k + '#' + n : k; }
