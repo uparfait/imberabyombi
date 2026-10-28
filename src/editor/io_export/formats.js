@@ -12,3 +12,4 @@ import { export_xlsx } from './export_xlsx.js';
 import { export_docx } from './export_docx.js';
 
 export const FORMATS = [
+  { key: 'docx', ext: 'docx', name: 'Word document', desc: 'Edit in Word, LibreOffice or any word processor', color: '#2b579a', icon: 'description', tabs: true },
