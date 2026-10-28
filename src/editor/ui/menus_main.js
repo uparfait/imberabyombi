@@ -31,3 +31,6 @@ export function file_items() {
     cmd('Rename', 'drive_file_rename_outline', () => { if (!state.menus) toggle_menus(); const t = refs.doc_title; if (t) { t.focus(); t.select(); } }),
     { sep: true }, cmd('Page setup', 'description', () => page_setup_dialog()),
     cmd('Print', 'print', () => do_print(), 'Ctrl+P')
+  ];
+}
+export function edit_items() {
