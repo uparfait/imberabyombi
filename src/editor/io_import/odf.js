@@ -13,3 +13,5 @@ async function odf_img(cx, fr) {
   const sw = fr.getAttribute('svg:width') || '', w = parseFloat(sw) || 0, u = sw.replace(/[\d.]/g, '');
   const px = u === 'cm' ? w * 37.8 : u === 'mm' ? w * 3.78 : u === 'in' ? w * 96 : u === 'pt' ? w * 4 / 3 : 300;
   return `<img src="${url}" alt="" style="width:${clamp(Math.round(px), 16, 650)}px">`;
+}
+async function odf_inline(cx, n) {
