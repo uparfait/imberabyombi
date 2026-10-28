@@ -12,3 +12,4 @@ export const VIZ_REL_A = {
   scatter: { t: 'Scatter plot', g: 'rel', d: 'How two measures move together, by group (3 groups max).', f(w) {
     const gr = SER.slice(0, 3), pts = gr.flatMap((_, g) => Array.from({ length: 16 }, () => {
       const xv = rnd(5, 95); return { g, x: xv, y: Math.max(2, Math.min(98, xv * (.4 + g * .25) + 20 + gauss() * 10)) }; }));
+    const f = frame(w, 260), ax = y_axis(f, 100), xs = linear(0, 100, f.l, f.l + f.iw);
