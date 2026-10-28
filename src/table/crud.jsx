@@ -37,3 +37,4 @@ export function crud(c, o = {}) {
   after_render(() => sync_tools(c));
   return (
     <>
+      {full ? <div className="table_ph" style={{ height: ph_height(c) }}></div> : null}
