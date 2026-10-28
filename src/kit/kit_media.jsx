@@ -6,3 +6,4 @@ import { cfg } from '../config/index.js';
 import { svg_uri } from './kit_block.jsx';
 
 /* x = (−b ± √(b² − 4ac)) / 2a */
+const formula = (
