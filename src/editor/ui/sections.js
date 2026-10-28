@@ -63,3 +63,4 @@ export function delete_section(k) {
   if (!can_edit()) return;
   const m = section_model(), h = m.heads[k]; if (!h) return;
   const next = m.blocks[h.end] || m.blocks[h.i - 1] || null;
+  m.blocks.slice(h.i, h.end).forEach(b => b.remove());
