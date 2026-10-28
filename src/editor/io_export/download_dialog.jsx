@@ -71,3 +71,6 @@ export function open_download_dialog(pre) {
     if (opt.busy) return false; opt.busy = true;
     try { const f = FORMATS.find(x => x.key === opt.fmt); await do_export(opt.fmt, f.tabs ? opt.scope : 'all', qs('#dl_name').value, opt.quality); }
     catch (err) { console.error(err); toast(err.message || 'The download failed', 7000); opt.busy = false; return false; }
+  };
+  modal({ title: 'Download', body: <Download_body opt={opt} />, submit: <>{ic('download', 'h-[18px] w-[18px]')}Download</>, on_submit: go });
+}
