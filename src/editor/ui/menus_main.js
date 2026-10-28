@@ -34,3 +34,4 @@ export function file_items() {
   ];
 }
 export function edit_items() {
+  return [
