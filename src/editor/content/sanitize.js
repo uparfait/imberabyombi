@@ -74,3 +74,4 @@ export function sanitize_html(html) {
   const doc = new DOMParser().parseFromString(html, 'text/html');
   clean(doc.body);
   qsa('div:not(.page_break)', doc.body).forEach(d => {
+    if (!d.isConnected) return;
