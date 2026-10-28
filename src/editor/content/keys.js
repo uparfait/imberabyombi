@@ -6,3 +6,5 @@ import { qsa, state, pages_el, bodies, body_index, editable_of, el_of, is_list, 
 import { indent, insert_page_break, tbl_op } from '../format/index.js';
 import { img_sel, hide_img_sel } from './img_sel.js';
 import { at_body_start, at_body_end, on_first_line, on_last_line, backspace_across, delete_across } from './boundaries.js';
+
+export function handle_tab(e, r, host) {
