@@ -18,3 +18,4 @@ export function menu_key(e) {
   if (k === 'Escape') {
     const a = menu_stack[0].anchor, inside = m.contains(document.activeElement) || menu_stack.some(x => x.el.contains(document.activeElement));
     close_menus(0);
+    if (inside) { if (a && a.isConnected && a.focus) a.focus(); else restore_focus(); }
