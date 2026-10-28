@@ -22,3 +22,5 @@ export function schedule_ui() {
 /* editor_start's stop(): drop pending frames / timers */
 export function cancel_scheduled() {
   if (reflow_raf) cancelAnimationFrame(reflow_raf);
+  reflow_raf = 0; reflow_from = null; clearTimeout(ui_timer); ui_timer = null;
+}
