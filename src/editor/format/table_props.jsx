@@ -52,3 +52,7 @@ export function table_props_dialog() {
       const n_rows = clamp(parseInt(f.tp_rows) || 1, 1, 500), n_cols = clamp(parseInt(f.tp_cols) || 1, 1, 30);
       const v = { bw: clamp(parseFloat(f.tp_bw) || 0, 0, 10), bc: f.tp_bc, pad: clamp(parseFloat(f.tp_pad) || 0, 0, 30), va: f.tp_va,
         w: clamp(parseInt(f.tp_w) || 100, 10, 100), al: f.tp_al, hdr: !!f.tp_hdr, str: !!f.tp_str, dist: !!f.tp_dist };
+      refocus_after_close(); tbl_op('props', apply_props(v, n_rows, n_cols));
+    }
+  });
+}
