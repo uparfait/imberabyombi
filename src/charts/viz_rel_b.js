@@ -34,3 +34,4 @@ export const VIZ_REL_B = {
     const rad = Math.min(f.iw, f.ih) / 2 - 28;
     nodes.forEach((o, i) => { const ga = o.g / 3 * Math.PI * 2 + .5, gx = cx + Math.cos(ga) * rad * .55, gy = cy + Math.sin(ga) * rad * .55;
       const k = nodes.filter((p, j) => j < i && p.g === o.g).length, a = k / 5 * Math.PI * 2; o.x = gx + Math.cos(a) * rad * .38; o.y = gy + Math.sin(a) * rad * .38; });
+    return { svg: svg(f, edges.map(([a, b]) => `<line x1="${round1(nodes[a].x)}" y1="${round1(nodes[a].y)}" x2="${round1(nodes[b].x)}" y2="${round1(nodes[b].y)}"`
