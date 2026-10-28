@@ -36,3 +36,4 @@ export function drop_point(x, y, img) {
   const hide = [img_box, img].filter(Boolean), vis = hide.map(e => e.style.visibility);
   hide.forEach(e => { e.style.visibility = 'hidden'; });
   const p = caret_from_point(x, y);
+  hide.forEach((e, i) => { e.style.visibility = vis[i]; });
