@@ -60,3 +60,4 @@ function clean(node) {
     if (DROP.has(tag)) { c.remove(); continue; }
     clean(c);
     if (!ALLOWED.has(tag) || (tag === 'B' && /^docs-internal-guid/.test(c.id || ''))) { c.replaceWith(...c.childNodes); continue; }
+    const keep = keep_attrs(c, tag);
