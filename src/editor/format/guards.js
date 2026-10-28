@@ -9,3 +9,4 @@ export const previewing = () => !!(live && live.active);
 export function after_close(fn) { const d = qs('#modal'); if (d) d.addEventListener('close', () => fn(), { once: true }); else fn(); }
 /* The table dialogs (template modal) apply their result at once, like the source (core's restore_sel only remembers the
    caret while focus is in a dialog field); once #modal has closed, the focus goes back to the caret in the document. */
+export function refocus_after_close() { after_close(() => { if (pages_el && pages_el.isConnected) restore_focus(); }); }
