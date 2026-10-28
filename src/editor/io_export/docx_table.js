@@ -21,3 +21,4 @@ export function table_xml(t, ctx) {
     + `<w:tblCellMar><w:top w:w="${pad}" w:type="dxa"/><w:left w:w="${pad}" w:type="dxa"/><w:bottom w:w="${pad}" w:type="dxa"/>`
     + `<w:right w:w="${pad}" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map(w => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>`;
   rows.forEach((r, ri) => {
+    const hdr_row = ri === 0 && Array.from(r.cells).some(c => c.hasAttribute('data-hdr') || c.tagName === 'TH');
