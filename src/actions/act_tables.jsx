@@ -2,3 +2,4 @@
    "Add …" from the create menu, the table tools (full screen, all columns, export) and the chart cards. */
 import { qs, qsa } from '../lib/index.js';
 import { ui, cur, route, db, render, rerender } from '../store/index.js';
+import { reduced, sleep, notify } from '../feedback/index.js';
