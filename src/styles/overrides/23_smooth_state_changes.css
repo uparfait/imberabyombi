@@ -37,3 +37,4 @@
   .panel[data-open=true] { width: 22rem; border-width: 1px 1px 0; }
   .panel_in { width: 22rem; }
   .rail_on { background: rgb(var(--brand) / .14); }
+  /* Headers: bottom border only once the page is scrolled */
