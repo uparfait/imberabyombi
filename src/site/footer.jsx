@@ -27,3 +27,4 @@ export function footer() {
         <div><h2 className="text-sm font-semibold text-fg">Newsletter</h2><p className="mt-4 text-sm">{lorem.s(8, 12)}</p>
           <form data-form="news" className="mt-4 flex items-start gap-2" noValidate><div className="field min-w-0 flex-1">
             <label className="sr-only" htmlFor="newsletter_email">Email address</label>
+            <input id="newsletter_email" name="email" type="email" required autoComplete="email" placeholder="you@lorem.io" /></div>
