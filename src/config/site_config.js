@@ -6,3 +6,4 @@ export const cfg = {
   page_size: 10 /* table rows per page */, parking_slots: 24, parking_rate: 2, work_start: '08:00', storage_cap: 5 * 1024 * 1024,
   img: (seed, w = 900, h = 650) => `https://picsum.photos/seed/${seed}/${w}/${h}`,
   face: n => `https://i.pravatar.cc/320?img=${(n % 70) + 1}`,
+  hero: 'https://uparfait.github.io/uparfait/favicon.ico' /* home hero portrait */,
