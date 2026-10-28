@@ -5,3 +5,4 @@ const WIDE = 'M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1
 
 export const EDITOR_MEDIA_PATHS = {
   table: BOX + 'M3 10h18M3 15h18M9 4v16M15 4v16',
+  table_rows: BOX + 'M3 9.5h18M3 14.5h18',
