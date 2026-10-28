@@ -56,3 +56,4 @@ function Download_body({ opt }) {
       <div className="grid gap-1.5"><span className="text-sm text-muted">Format</span>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(12.25rem,1fr))] gap-2" role="radiogroup" aria-label="Format">
           {FORMATS.map(x => fmt_card(x, x.key === opt.fmt, set('fmt')))}</div></div>
+      {scope_on || opt.fmt === 'pdf' ? <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
