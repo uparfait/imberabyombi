@@ -11,3 +11,4 @@ export function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++
 export function zip_store(files, mime) {
   const enc = new TextEncoder(), chunks = [], central = []; let offset = 0;
   for (const f of files) {
+    const name = enc.encode(f.name), data = typeof f.data === 'string' ? enc.encode(f.data) : f.data, crc = crc32(data);
