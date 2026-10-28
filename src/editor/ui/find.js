@@ -11,3 +11,4 @@ const BLOCK = 'p,h1,h2,h3,h4,h5,h6,li,td,th,blockquote,pre';
 
 export function open_find() {
   const p = refs.find_panel, i = refs.find_input; if (!p || !i) return;
+  p.classList.add('show'); find_state.open = true;
