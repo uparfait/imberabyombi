@@ -36,3 +36,5 @@ export const TV_ACT = {
     set_native_value(sel, db.find('tasks', box.dataset.tvStatus).status); sel.dispatchEvent(new Event('change', { bubbles: true })); },
   tv_status_save: t => { const box = status_box(t), id = box.dataset.tvStatus, st = box.querySelector('[data-status-pick]').value, now = now_dt();
     request(() => { db.upsert('tasks', { id, status: st, end: st === 'Done' ? now : '' });
+      task_refresh(id, st === 'Done' ? `Done, completed ${fmt_dt(now)}.` : `It is now ${st}.`); }, { btn: t }); }
+};
