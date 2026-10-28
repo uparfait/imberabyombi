@@ -12,5 +12,6 @@ export default defineConfig({
     cssCodeSplit: true,        /* lazy pages bring only their own CSS */
     reportCompressedSize: true, /* shows the gzip size of every file after a build */
     rolldownOptions: {
+      output: {
   }
 });
