@@ -13,6 +13,7 @@ import { after_close } from './dialogs.jsx';
 const SIDES = ['top', 'bottom', 'left', 'right'];
 const cap = s => s[0].toUpperCase() + s.slice(1);
 const KEYS = ['paper', 'orientation', 'page_color', 'pageless', 'header', 'footer', 'page_numbers'];
+const is_default = s => { const d = default_setup(); return KEYS.every(k => (s[k] || false) === (d[k] || false)) && SIDES.every(k => s.margins[k] === d.margins[k]); };
 
 /* a segmented choice (the template's .seg) */
 function seg(name, opts, cur, on) {
