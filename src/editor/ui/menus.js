@@ -23,3 +23,4 @@ function page_part(key, sel) {
   if (sel && state.setup[key]) setTimeout(() => { const e = pages_el && qs(sel, pages_el); if (e) e.focus(); }, 30);
 }
 function insert_items() {
+  return [
