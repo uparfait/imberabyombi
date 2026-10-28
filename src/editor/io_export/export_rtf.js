@@ -39,3 +39,5 @@ function rtf_table(rx, t) {
     o += '\\row\n';
   });
   return o + RTF_P + '\n';
+}
+function rtf_blocks(rx, c) {
