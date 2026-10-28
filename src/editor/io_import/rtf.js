@@ -45,3 +45,5 @@ export function rtf_to_html(rtf) {
         case 'lquote': emit('‘'); break; case 'rquote': emit('’'); break; case 'ldblquote': emit('“'); break; case 'rdblquote': emit('”'); break;
       }
       continue;
+    }
+    if (ch === '\r' || ch === '\n') { i++; continue; }
