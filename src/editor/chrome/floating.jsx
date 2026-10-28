@@ -4,3 +4,4 @@
 import { ic } from '../../icons/index.js';
 
 const small_btn = (id, icon, tip) => (
+  <button type="button" className="icon_btn sm" id={id} data-tip={tip} aria-label={tip.replace(/ \(.+\)$/, '')}>{ic(icon)}</button>
