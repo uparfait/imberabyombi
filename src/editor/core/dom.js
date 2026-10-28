@@ -30,3 +30,4 @@ export function text_nodes(root) {
 export function offset_within(block, node, off) {
   const r = document.createRange(); r.setStart(block, 0);
   try { r.setEnd(node, off); } catch { return 0; }
+  return r.toString().length;
