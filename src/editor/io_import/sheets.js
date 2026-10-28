@@ -31,3 +31,5 @@ export async function xlsx_native(buf) {
     out.push({ name: s.getAttribute('name') || 'Sheet', rows: Array.from(rows, r => r || []) });
   }
   return out;
+}
+export async function sheet_to_html(file, ext) {
