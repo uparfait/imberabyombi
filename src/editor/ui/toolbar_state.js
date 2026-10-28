@@ -13,3 +13,4 @@ export function refresh_toolbar() {
   const r = last_range; if (!r || !r.startContainer.isConnected) return;
   const n = el_of(r.startContainer), tb = refs.toolbar; if (!n || !tb) return;
   const cs = getComputedStyle(n);
+  qsa('[data-state]', tb).forEach(b => {
