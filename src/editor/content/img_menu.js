@@ -42,3 +42,4 @@ export function image_menu_items(img) {
       { label: 'Border color', icon: 'border_color', sub: () => [{ render: () => palette_el(c => set_img_border_color(img, c), 'Black') }] }] },
     { label: 'Corners', icon: 'rounded_corner', sub: () => [['Square', ''], ['Rounded', '8px'], ['Very rounded', '24px'], ['Circle or oval', '50%']].map(([l, v]) => ({
       label: l, checked: (img_now(img).style.borderRadius || '') === v, action: () => img_op(img, x => { x.style.borderRadius = v; }) })) },
+    { label: 'Drop shadow', icon: 'shadow', checked: !!img.style.boxShadow,
