@@ -21,3 +21,4 @@ and resets the demo data.
 /* src/schemas/schema_transport.js */
 import { field_spec as F } from './fields.js';
 import { lorem } from '../lib/index.js';
+import { person } from '../ui/index.js';
