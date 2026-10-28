@@ -27,3 +27,4 @@ const seg = (label, opts, cur, pick) => (
     <div className="seg">{opts.map(([v, l], i) => (
       <button key={l} type="button" aria-pressed={String(v === cur)} onClick={() => pick(v)}
         className={`px-4 py-2 text-sm font-medium transition ${i ? 'border-l border-muted/50' : ''} ${v === cur
+          ? 'bg-brand/15 text-accent' : 'text-fg/80 hover:bg-fg/5'}`}>{l}</button>))}
