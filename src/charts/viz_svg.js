@@ -44,3 +44,4 @@ export const cross_bands = (f, labels, x, rows) => labels.map((k, i) => `<g clas
 /* a ring segment (r0 > 0) or a pie slice (r0 = 0) from angle a0 to a1, clockwise from 12 o'clock */
 export const arc = (cx, cy, r0, r1, a0, a1) => {
   const p = (r, a) => [cx + r * Math.sin(a), cy - r * Math.cos(a)], big = a1 - a0 > Math.PI ? 1 : 0;
+  const [x0, y0] = p(r1, a0), [x1, y1] = p(r1, a1), [x2, y2] = p(r0, a1), [x3, y3] = p(r0, a0);
