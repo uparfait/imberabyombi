@@ -20,3 +20,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.table_data` / `.table_acts` / `.table_filter` / `.pick` / `.trunc` / `.pager` | data table / pinned Action Buttons / column filter / filter wrapper / trimmed cell / pager |
 | `.kv`                                   | COLUMN NAME / VALUE details table with category rows             |
 | `.tile_trigger` / `.tile_pop`           | "Your modules" style menu: a button dropping a grid of 3D tiles  |
+| `.viz_card` / `.kpi`                    | chart card / KPI card                                            |
