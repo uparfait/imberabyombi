@@ -55,3 +55,5 @@ export const VIZ_REL_B = {
         + dot(x(0), y(i), i < 4 ? 'var(--series_1)' : 'var(--series_2)', 4)) + `<text x="${round1(x(0) + 10)}" y="${round1(y(i) + 4)}">${esc(fit(k, f.r - 14))}</text>`)
         .join(''), 'Dendrogram'),
       legend: legend(['Cluster 1', 'Cluster 2'], 'line'),
+      table: [['Merge', 'Height'], merges.map(([a, b, h]) => [`${a < 8 ? leaves[a] : 'Group ' + (a - 7)} + ${b < 8 ? leaves[b] : 'Group ' + (b - 7)}`, h])] }; } }
+};
