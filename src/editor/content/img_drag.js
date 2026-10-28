@@ -23,3 +23,4 @@ function hide_caret() { if (caret_el) caret_el.remove(); }
 /* e: the pointerdown (on the image or on the selection box's move area); through: a press on a selected Behind-text
    image that does not move places the caret in the text above it */
 export function start_img_drag(e, img, through = false) {
+  if (!img || e.button > 0 || state.mode !== 'edit' || drag) return;
