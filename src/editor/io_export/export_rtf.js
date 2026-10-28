@@ -11,3 +11,5 @@ function rtf_list(rx, l, lvl) {
     const mark = kind === 'check' ? (li.getAttribute('data-checked') === 'true' ? '☑' : '☐') : kind === 'num' ? `${k++}.` : ['•', '◦', '▪'][lvl % 3];
     o += `${RTF_P}\\fi-360\\li${720 * (lvl + 1)} ${rtf_esc(mark)}\\tab ${rtf_inline(rx, li, {})}\\par\n`;
     Array.from(li.children).filter(is_list).forEach(s => { o += rtf_list(rx, s, lvl + 1); });
+  });
+  return o;
