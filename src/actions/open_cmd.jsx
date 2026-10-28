@@ -5,3 +5,5 @@ import { MODS, auth } from '../auth/index.js';
 import { PUB, PAGES } from '../site/index.js';
 import { search_box } from '../ui/index.js';
 import { modal } from '../overlays/index.js';
+
+export function open_cmd() {
