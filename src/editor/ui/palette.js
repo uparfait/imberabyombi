@@ -26,3 +26,4 @@ export function palette_el(on_pick, none_label) {
   const inp = lab.querySelector('input');
   inp.addEventListener('input', () => peek('custom' + inp.value, () => on_pick(inp.value)));
   inp.addEventListener('change', () => {
+    const v = inp.value, kept = keep('custom' + v); if (!kept) unpeek();
