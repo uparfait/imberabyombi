@@ -5,3 +5,4 @@
    (and again when React replaced the element). pages_el / scroller / hruler / vruler are also live exports. */
 
 const ALIAS = { pages_el: 'pages' };
+const store = Object.create(null);
