@@ -23,3 +23,4 @@ export function section_model() {
   return { c, blocks, heads };
 }
 /* where section k goes one step up / down (a block index), -1 when it cannot move */
+function up_to(m, k) {
