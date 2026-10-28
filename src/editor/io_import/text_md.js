@@ -22,3 +22,4 @@ function md_table(rows) {
   return `<table class="doc_table"><tbody>${body.map((r, k) => `<tr>${cells(r).map(c => cell(c, k)).join('')}</tr>`).join('')}</tbody></table>`;
 }
 export function md_to_html(md) {
+  const lines = md.replace(/\r\n?/g, '\n').split('\n'); let out = '', i = 0;
