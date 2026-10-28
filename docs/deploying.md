@@ -6,3 +6,4 @@ from the domain root or any sub-folder without server rules.
 
 ## GitHub Pages
 1. Build: `npm run build`.
+2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` and
