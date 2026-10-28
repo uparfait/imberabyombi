@@ -4,3 +4,4 @@
 import { esc_html, clamp } from '../core/index.js';
 import { unzip } from './unzip.js';
 import { parse_xml, by_tag, kids } from './xml_helpers.js';
+import { PB } from './pptx.js';
