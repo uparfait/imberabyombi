@@ -25,3 +25,4 @@ export default {
         accent: 'color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg)))'
       },
       fontFamily: { sans: ['var(--font_sans)'], display: ['var(--font_display)'], mono: ['var(--font_mono)'] },
+      borderRadius: {
