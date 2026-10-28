@@ -14,3 +14,4 @@ import { tv_comments } from './task_comments.jsx';
 import { tv_tie } from './tv_state.js';
 
 /* st: edit = rows in their editor, more = the status' Cancel / Save shown, prev = the attachment previewed, cedit = comments being edited */
+export function Task_view({ id }) {
