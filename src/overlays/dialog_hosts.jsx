@@ -18,3 +18,4 @@ const portal = (id, child) => { const at = document.getElementById(id); return a
 export function Dialog_hosts() {
   useSyncExternalStore(subscribe_dialogs, get_dialog_version);
   const { modal: m, confirm: c, drawer: dr, viewer: v } = DIALOGS;
+  return (
