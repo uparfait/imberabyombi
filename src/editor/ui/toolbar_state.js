@@ -10,3 +10,4 @@ const q = c => { try { return document.queryCommandState(c); } catch { return fa
 const ALIGN = { center: 'format_align_center', right: 'format_align_right', end: 'format_align_right', justify: 'format_align_justify' };
 
 export function refresh_toolbar() {
+  const r = last_range; if (!r || !r.startContainer.isConnected) return;
