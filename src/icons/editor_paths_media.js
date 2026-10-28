@@ -4,3 +4,4 @@ const BOX = 'M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 
 const WIDE = 'M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z';
 
 export const EDITOR_MEDIA_PATHS = {
+  table: BOX + 'M3 10h18M3 15h18M9 4v16M15 4v16',
