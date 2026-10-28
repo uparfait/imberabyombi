@@ -77,3 +77,4 @@ export function replace_one() {
   end_op(Math.max(0, body_index(h))); run_find(true);
 }
 export function replace_all() {
+  if (!can_edit()) return; const n = find_state.matches.length; if (!n) return;
