@@ -5,3 +5,4 @@ import { frame, svg, y_axis, chart_base, band, x_labels, vbar, hbar, mark_group,
 import { legend } from './viz_legend.jsx';
 
 export const VIZ_CMP_A = {
+  bar: { t: 'Bar chart', g: 'cmp', d: 'One measure across categories. The highest bar is labelled.', f(w) {
