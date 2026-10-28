@@ -26,3 +26,4 @@ export const employees_schema = {
     field_spec('salary', 'Monthly salary', 'number', 0, 0, { min: 0 }), field_spec('status', 'Status', 'select', STATUS.staff)
   ],
   g: () => ({
+    name: lorem.name(), dept: lorem.pick(DEPTS), position: lorem.t(2), shift: lorem.pick(['Morning', 'Day', 'Evening']), phone: tel(),
