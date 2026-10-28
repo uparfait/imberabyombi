@@ -4,3 +4,4 @@ export * from './nav_busy.js';
 export * from './click_events.js';
 export * from './input_events.js';
 export * from './change_events.js';
+export * from './settings_changes.js';
