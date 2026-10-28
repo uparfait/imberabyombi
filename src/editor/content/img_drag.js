@@ -42,3 +42,4 @@ function on_move(ev) {
     const body = d.img.closest('.pg_body'), page = body.closest('.page');
     d.img.style.left = Math.round(clamp(d.x0 + dx / z, -body.offsetLeft, page.offsetWidth - body.offsetLeft - d.img.offsetWidth)) + 'px';
     d.img.style.top = Math.round(clamp(d.y0 + dy / z, -body.offsetTop, page.offsetHeight - body.offsetTop - d.img.offsetHeight)) + 'px';
+    position_img_box(); return;
