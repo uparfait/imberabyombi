@@ -36,3 +36,4 @@ function place_uploads(done, mode, failed) {
 }
 
 /* mode: 'insert' (at the cursor), 'tab' (new tabs) or 'replace' (asks first unless the document is empty) */
+export async function process_uploads(files, mode) {
