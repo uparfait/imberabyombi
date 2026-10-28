@@ -21,3 +21,4 @@ export function peek_view(key, apply) {
   if (cur && cur.key === key) return;
   unpeek();
   const back = apply();
+  cur = { key, undo: typeof back === 'function' ? back : () => {}, keep: () => {} };
