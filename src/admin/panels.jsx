@@ -39,7 +39,7 @@ const HELP = [['How do roles decide what I see?', 'Each role has a level per mod
   ['How do I change the brand colour?', 'Settings, Appearance, Brand colour. Or edit --brand in the stylesheet.'],
   ['How do I check a car out?', 'Open Smart parking and select a busy slot, or use Check out in the log.']];
 
-/* search_box(attrs, placeholder): attrs is a props object in the port */
+/* search_box(attrs, placeholder): attrs is a props object spread on the search input */
 const help = () => <>{search_box({ 'data-filter': '.accordion_item' }, 'Search help')}
   <div className="accordion mt-4">{HELP.map(([q, a]) => <details key={q} className="accordion_item"><summary className="text-sm">{q}</summary>
     <p className="px-5 pb-4 pt-3 text-sm text-muted">{a}</p></details>)}</div>
