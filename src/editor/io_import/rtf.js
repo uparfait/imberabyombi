@@ -12,3 +12,4 @@ export function rtf_to_html(rtf) {
   const out = []; let para = '', st = { b: 0, i: 0, u: 0, skip: 0 }, uc = 1, skip_n = 0, in_tbl = false, cells = [], rows = [];
   const stack = [];
   const emit = s => { if (st.skip || !s) return; let h = esc_html(s); if (st.u) h = `<u>${h}</u>`; if (st.i) h = `<i>${h}</i>`; if (st.b) h = `<b>${h}</b>`; para += h; };
+  const flush_table = () => {
