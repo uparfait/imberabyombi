@@ -4,3 +4,4 @@ import { ic, ic_html } from '../icons/index.js';
 import { TICON } from './basics.js';
 
 /* B. Inline messages (title, text: JSX or text) */
+export const msg_box = (tone, title, text = '') => (
