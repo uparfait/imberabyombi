@@ -25,3 +25,4 @@ export const chain_rows = chain => chain.flatMap(t => Array.from(t.rows));
 export function apply_preset(chain, key) {
   const p = TABLE_PRESETS.find(x => x.key === key) || TABLE_PRESETS[0];
   chain.forEach(t => {
+    t.style.setProperty('--bw', p.bw + 'px'); t.style.setProperty('--bc', p.bc);
