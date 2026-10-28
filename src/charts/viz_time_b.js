@@ -23,3 +23,4 @@ export const VIZ_TIME_B = {
       legend: legend(['Up (hollow)', 'Down (filled)'], 'rect', ['var(--series_2)', 'var(--series_1)']),
       table: [['Day', 'Open', 'High', 'Low', 'Close'], days.map(d => [d.k, round1(d.o), round1(d.hi), round1(d.lo), round1(d.c)])] }; } },
   slope: { t: 'Slope chart', g: 'time', d: 'Change between two moments for each item.', f(w) {
+    const c = uwords(6), a = c.map(() => rnd(20, 80)), b = a.map(v => Math.max(5, v + rnd(-25, 25))), f = frame(w, 260, { l: 92, r: 92, t: 30, b: 16 });
