@@ -34,3 +34,4 @@
   color: rgb(var(--fg) / .8); transition: background-color .15s, color .15s;
 }
 .menubar_btn:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
+.menubar_btn.open { background: rgb(var(--brand) / .15); color: var(--active_fg); }
