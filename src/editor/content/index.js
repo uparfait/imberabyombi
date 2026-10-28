@@ -20,3 +20,4 @@ export * from './boundaries.js';
 export * from './keys.js';
 export * from './pointer.js';
 export * from './paste.js';
+export * from './sanitize.js';
