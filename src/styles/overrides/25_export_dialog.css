@@ -11,3 +11,4 @@
   .accordion details { border: 0; border-radius: 0; border-bottom: 1px solid rgb(var(--line)); }
   .accordion details:last-child { border-bottom: 0; }
   .i3 { transition: transform .5s var(--ease); }
+  .group:hover .i3, .i3:hover { transform: translateY(-4px) rotate(-5deg) scale(1.04); }
