@@ -37,3 +37,4 @@ export function tbl_op(op, arg) {
   const c = table_ctx(); if (!c) { toast('Place the cursor inside a table first'); return; }
   op = String(op).replace(/[A-Z]/g, ch => '_' + ch.toLowerCase());
   begin_op();
+  const chain = table_chain(c.table), slot = row_slots(c.tr).find(x => x.cell === c.td) || { start: 0, end: 0 };
