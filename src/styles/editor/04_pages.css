@@ -20,3 +20,5 @@
 .page { position: absolute; left: 0; top: 0; transform-origin: 0 0; background: #fff; color: #000; color-scheme: light; }
 .page_wrap > .page { outline: 1px solid rgb(var(--line)); outline-offset: 0; }
 .dark .page_wrap > .page { outline-color: transparent; }
+
+/* The editable areas of a page: no focus ring on the body (the caret shows where you are). layout_page() sets the body's
