@@ -53,3 +53,6 @@ export function abstract_xml(kind, id) {
     else { fmt = 'bullet'; const arr = bullets[kind] || [kind.replace(/^['"]|['"]$/g, '').trim() || '•']; text = arr[l % arr.length]; }
     lv += `<w:lvl w:ilvl="${l}"><w:start w:val="1"/><w:numFmt w:val="${fmt}"/><w:lvlText w:val="${xesc(text)}"/><w:lvlJc w:val="left"/>`
       + `<w:pPr><w:ind w:left="${720 * (l + 1)}" w:hanging="360"/></w:pPr></w:lvl>`;
+  }
+  return `<w:abstractNum w:abstractNumId="${id}"><w:multiLevelType w:val="hybridMultilevel"/>${lv}</w:abstractNum>`;
+}
