@@ -49,3 +49,5 @@ export function task_refresh(id, msg) {
   const top = qs('#modal form > div.overflow-y-auto')?.scrollTop || 0;
   rerender();
   if (qs('#modal')?.open && qs('#modal [data-task]')?.dataset.task === id) { task_view(id); hold_scroll(top); }
+  const f = qs('#modal form'); if (f) f._init = snap(f); if (msg) notify(msg, 'ok', 'Task updated');
+}
