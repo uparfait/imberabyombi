@@ -22,3 +22,4 @@ const POS_OLD = { left: 'wrap_left', right: 'wrap_right' };
 const abs_img = (c, tag) => tag === 'IMG' && /^(front|behind)$/.test(c.getAttribute('data-pos') || '');
 
 /* the styles kept on one element */
+function keep_style(c, tag) {
