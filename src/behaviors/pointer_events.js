@@ -12,3 +12,6 @@ function on_focusin(e) {
   if (DTF[t.dataset?.type]) ghost(t, true);
   if (t.dataset?.list != null && !pick.mute && pick.a !== t) pick.open(t);
   if (t.matches?.(':focus-visible')) { const x = tip.find(t); x === t ? tip.show(x) : tip.hide(); }
+}
+
+export function install_pointer() {
