@@ -41,3 +41,4 @@ function on_over(e) {
   if (hover_b) { live.cancel(); settle(false); }
   if (!b || !img_sel || e.pointerType !== 'mouse' || !/^(pos|align):/.test(b.dataset.a)) return;
   hover_b = b; hover_img = img_sel; freeze_img_box(true); const img = img_sel;
+  hover_fn = () => run(img, b.dataset.a); live.preview(hover_fn);
