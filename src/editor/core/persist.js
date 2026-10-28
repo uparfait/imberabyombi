@@ -40,3 +40,4 @@ export function restore_doc() {
   const s = d.setup && typeof d.setup === 'object' ? d.setup : {};
   state.title = String(d.title || 'Untitled document');
   state.setup = Object.assign(default_setup(), s, { margins: Object.assign(default_setup().margins, s.margins || {}) });
+  state.tabs = tabs.map(t => ({ ...t, id: t.id || uid(), name: String(t.name || 'Tab'), html: String(t.html || '') || '<p><br></p>', undo: [], redo: [] }));
