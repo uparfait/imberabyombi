@@ -19,3 +19,4 @@ export function field(f, v) {
   else if (f.t === 'textarea') ctl = <textarea id={id} name={f.k} rows={3} placeholder=" " required={req} defaultValue={val} />;
   else if (f.t === 'list') ctl = <>
     <input id={id} name={f.k} data-list={'list_' + f.k} defaultValue={val} placeholder=" " autoComplete="off" required={req} />
+    <datalist id={'list_' + f.k}>{opts.map((o, i) => <option key={i} value={o}></option>)}</datalist>
