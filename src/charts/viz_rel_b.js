@@ -10,3 +10,4 @@ export const VIZ_REL_B = {
     const cols = [['Search', 'Social', 'Email'], ['Pricing', 'Docs'], ['Signed up', 'Left']];
     const links = [[0, 0, 0, 30], [0, 0, 1, 20], [0, 1, 0, 12], [0, 1, 1, 18], [0, 2, 0, 15], [0, 2, 1, 5], [1, 0, 0, 34], [1, 0, 1, 23], [1, 1, 0, 14], [1, 1, 1, 26]];
     const f = frame(w, 260, { l: 8, r: 8, t: 10, b: 10 }), nw = 12, col_x = i => f.l + (f.iw - nw) * i / (cols.length - 1), gap = 14;
+    const val = (c, i) => Math.max(links.filter(l => l[0] === c && l[1] === i).reduce((s, l) => s + l[3], 0),
