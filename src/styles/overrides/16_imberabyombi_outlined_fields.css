@@ -12,3 +12,4 @@
   .field:has([aria-invalid=true]) > label { color: rgb(var(--bad)); }
   .field:has(> label:not(.sr-only)) :is(input, textarea):not(:focus)::placeholder { color: transparent; }
   .field > select:not(:focus, [data-open]):has(option[value=""]:checked) { color: transparent; }
+  .on_bg { --field: var(--bg); }
