@@ -5,6 +5,7 @@ import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { lorem } from '../lib/index.js';
 import { PUB } from './site_bits.jsx';
+import { to } from '../router/index.js';
 
 const TOC_CLS = 'w-full rounded-lg px-2 py-1.5 text-left text-muted transition hover:bg-fg/5 hover:text-accent';
 const REL_CLS = 'flex items-center justify-between rounded-lg px-2 py-1.5 text-muted transition hover:bg-fg/5 hover:text-accent';
