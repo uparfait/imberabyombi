@@ -16,3 +16,4 @@ export const event_mails = ({ ev, place, who, d1, d2, tm, event, rsvp, cal }) =>
       <Fragment key={f}><p className="text-xs font-semibold uppercase tracking-wider text-muted">{f}</p><p><s>{a}</s></p><p><mark>{b}</mark></p></Fragment>
     ))}</div>{event(d1)}{mail_btn('Open the event')}</> },
   change: { s: `New time: ${ev}`, t: <>
+    <h1 className="mail_h">The time has changed</h1><p><b>{ev}</b> moved to a new date. {lorem.s()}</p>
