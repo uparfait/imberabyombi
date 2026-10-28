@@ -7,7 +7,7 @@
           320px and a 430px phone look exactly like a 360px one
         · 430–640px: eases from the phone size down to 16px (no jump)
         · tablets, 640–1023px: 16px, normal responsive layout
-        · laptops and desktops, 1024px up to --scale_ref: 15px
+        · laptops and desktops, 1024px up to --scale_ref: 15px (admin pages: --scale_staff, 16.5px)
         · wider than --scale_ref: that desktop view, scaled up (no cap)
      ===================================================================== */
   html {
