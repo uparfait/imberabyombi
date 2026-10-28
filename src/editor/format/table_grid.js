@@ -12,3 +12,5 @@ export function table_grid_el() {
     const d = el('div', { class: 'c' }); d.dataset.r = r; d.dataset.c = c; cells.push(d); g.appendChild(d);
     d.addEventListener('mouseenter', () => { cells.forEach(x => x.classList.toggle('on', +x.dataset.r <= r && +x.dataset.c <= c)); lbl.textContent = `${c + 1} × ${r + 1}`; });
     d.addEventListener('click', () => { close_menus(0); insert_table(r + 1, c + 1); });
+  }
+  const more = el('button', { type: 'button', class: 'pal_reset', style: 'margin-top:8px' }, ic_html('tune', 'h-5 w-5') + 'Custom size and style…');
