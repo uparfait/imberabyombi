@@ -31,3 +31,4 @@ export function fmt_of(e, f) {
     if (st.backgroundColor) { const h = to_hex(st.backgroundColor); g.hl = h; }
     const pt = parse_pt(st.fontSize); if (pt) g.size = pt;
     if (st.fontFamily) g.font = st.fontFamily.split(',')[0].replace(/["']/g, '').trim();
+    if (st.verticalAlign === 'super') g.sup = true; if (st.verticalAlign === 'sub') g.sub = true;
