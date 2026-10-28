@@ -9,3 +9,4 @@ export function file_tile(f, i, gen = 0) {
   const k = file_kind(f), media = k === 'image' || k === 'video', u = media ? furl(f) : '';
   return (
     <div key={`${gen}_${i}`} className={`file ${media ? 'media' : 'doc'}`} style={{ '--i': i }} data-act="file_view" data-i={i} tabIndex="0" role="button"
+      aria-label={`Open ${f.name}`} data-tip={media ? f.name : undefined}>
