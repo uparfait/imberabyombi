@@ -28,3 +28,4 @@ export const ACTIONS = {
 export const LIVE_ED = ['size_down', 'size_up', 'bold', 'italic', 'underline', 'checklist', 'bullets', 'numbers', 'outdent', 'indent', 'clear'];
 
 const font_items = () => FONTS.map(f => ({ label: f, label_style: `font-family:'${f}'`, checked: (refs.font_label ? refs.font_label.textContent : '') === f, action: () => set_font(f) }));
+const size_items = () => [8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 48, 60, 72, 96].map(s => ({ label: String(s), action: () => set_font_size(s) }));
