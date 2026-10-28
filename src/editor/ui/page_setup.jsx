@@ -38,3 +38,7 @@ function Page_setup_body() {
       </fieldset>
     </div>
     <div className="field"><label htmlFor="ps_color">Page color</label><input id="ps_color" name="page_color" type="color" defaultValue={s.page_color || '#ffffff'} /></div>
+  </>;
+}
+
+export function page_setup_dialog() {
