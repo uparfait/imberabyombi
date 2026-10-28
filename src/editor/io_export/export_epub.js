@@ -34,3 +34,4 @@ export async function export_epub(scope, name) {
   }
   const id = (crypto.randomUUID && crypto.randomUUID()) || uid() + uid(), now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
   const out = [
+    { name: 'mimetype', data: 'application/epub+zip' },
