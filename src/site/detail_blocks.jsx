@@ -5,3 +5,5 @@ import { cfg } from '../config/index.js';
 import { search_box, player } from '../ui/index.js';
 import { sec_head } from './site_bits.jsx';
 import { staff_card } from './strategies_staff.jsx';
+
+export function staff_dir() {
