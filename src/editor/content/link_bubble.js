@@ -13,3 +13,4 @@ export function update_link_bubble() {
   bubble_link = a; const r = a.getBoundingClientRect(), link = qs('#lb_url'); link.href = a.href; link.textContent = a.getAttribute('href');
   lb.style.display = 'flex';
   const u = rem();   /* gaps in rem: they scale with the interface */
+  lb.style.left = clamp(r.left, u / 2, innerWidth - lb.offsetWidth - u / 2) + 'px';
