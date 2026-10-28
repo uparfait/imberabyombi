@@ -30,3 +30,4 @@ export function about_sec(full) {
   return (
     <section {...spy_attrs('about', full)} className="wrap section grid items-center gap-14 lg:grid-cols-2">
       <div>{sec_head('About', lorem.t(4), lorem.p(2))}
+        <ul className="mt-8 grid gap-5">{['users', 'target', 'sparkle'].map((x, i) => (
