@@ -54,3 +54,4 @@ export function pages_beforeinput(e) {
 function same_everywhere(sel, host) { qsa(sel, pages_el).forEach(x => { if (x !== host) x.innerHTML = host.innerHTML; }); save_soon(); }
 export function pages_input(e) {
   const host = editable_of(e.target) || e.target; hide_img_sel();
+  if (host.classList.contains('pg_body')) { schedule_reflow(body_index(host)); commit_soon(); }
