@@ -26,3 +26,4 @@ async function slide_html(z, sp, i) {
   const shapes = tree ? Array.from(tree.getElementsByTagNameNS('*', '*')).filter(n => n.localName === 'sp' || n.localName === 'pic' || n.localName === 'graphicFrame') : [];
   for (const s of shapes) {
     if (s.localName === 'sp') {
+      const ph = by_tag(s, 'ph')[0], type = ph ? (ph.getAttribute('type') || 'body') : '', tx = by_tag(s, 'txBody')[0];
