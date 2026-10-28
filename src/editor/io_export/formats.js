@@ -33,3 +33,4 @@ export function doc_stats(scope) {
 export async function do_export(fmt, scope, name, quality) {
   state.last_format = fmt;
   name = (name || '').replace(/[\\/:*?"<>|]+/g, '').trim() || file_base();
+  if (fmt === 'json') return save_project(name);
