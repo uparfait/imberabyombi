@@ -49,3 +49,4 @@
 .doc_content :is(td,th){white-space:pre-wrap;font-size:inherit;color:inherit;background-color:transparent;letter-spacing:normal;text-transform:none}
 .doc_content tr,.doc_content tbody tr:hover{background-color:transparent;transition:none}
 .doc_content pre,.dark .doc_content pre{color:inherit;border:0;border-radius:0;overflow:visible;line-height:inherit;white-space:pre-wrap}
+.doc_content hr{height:0;background:none}
