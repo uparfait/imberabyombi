@@ -31,3 +31,4 @@ export const VIZ_TIME_B = {
     return { svg: svg(f, `<text x="${xa}" y="14" text-anchor="middle">2025</text><text x="${xb}" y="14" text-anchor="middle">2026</text>`
         + `<line class="base_line" x1="${xa}" x2="${xa}" y1="${f.t}" y2="${f.t + f.ih}"/><line class="base_line" x1="${xb}" x2="${xb}" y1="${f.t}" y2="${f.t + f.ih}"/>`
       + c.map((k, i) => { const col = i === top ? 'var(--series_1)' : 'rgb(var(--muted) / .6)';
+        return mark_group(k, [[round1(a[i]), '2025', null], [round1(b[i]), '2026', i === top ? 0 : null]],
