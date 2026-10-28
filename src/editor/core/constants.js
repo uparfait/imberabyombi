@@ -3,3 +3,4 @@
    loaded on demand for some import/export formats, and the block-tag tests used by the pagination engine. */
 
 export const DPI = 96;
+export const PAPER = {
