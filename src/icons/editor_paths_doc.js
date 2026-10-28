@@ -36,3 +36,4 @@ export const EDITOR_DOC_PATHS = {
   delete: BIN + 'M10 11v5M14 11v5',
   delete_forever: BIN + 'M10 10l4 6M14 10l-4 6',
   close: 'M18 6 6 18M6 6l12 12',
+  comment: BUBBLE + 'M7 8h10M7 12h6',
