@@ -28,3 +28,4 @@ export function load_script(urls) {
   script_cache[key] = (async () => {
     let err;
     for (const u of urls) {
+      try {
