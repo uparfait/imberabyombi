@@ -38,3 +38,4 @@ function put(sn) {
   if (JSON.stringify(state.setup) !== sn.setup) { state.setup = JSON.parse(sn.setup); apply_setup(false); }
   if (state.zoom !== sn.zoom) set_zoom(sn.zoom);
   let ws = page_wraps();
+  while (ws.length < sn.html.length) { pages_el.appendChild(create_page()); ws = page_wraps(); }
