@@ -22,3 +22,4 @@ export const person_you = n => n && n === me()
   : person(n);
 export const person = n => n
   ? <span className="flex min-w-0 items-center gap-2.5 whitespace-nowrap">{avatar(n)}<span className="min-w-0 truncate font-medium">{n}</span></span>
+  : dash();
