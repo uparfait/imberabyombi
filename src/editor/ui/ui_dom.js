@@ -25,3 +25,4 @@ export function set_icon(e, name, cls = 'h-5 w-5') {
   if (p) p.setAttribute('d', icon_path(name)); else e.innerHTML = ic_html(name, cls);
 }
 /* an icon for the plain-DOM menus and lists (icon keys = the source's icon names) */
+export function mi(name, cls = 'h-4 w-4 shrink-0') { return ic_html(name, cls); }
