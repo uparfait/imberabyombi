@@ -12,3 +12,4 @@ export function field(f, v) {
   if (f.t === 'hidden') return <input key={f.k} type="hidden" name={f.k} defaultValue={val} />;
   let ctl; /* placeholder=" " lets the Imberabyombi label rest inside an empty field */
   /* a checklist (tasks): rows of tick + text, added and removed in place */
+  if (f.t === 'subtasks') return <div key={f.k} className="sm:col-span-2"><p className="mb-2 text-sm font-medium">{f.l}</p>{sub_editor(subs_of({ subs: v }))}</div>;
