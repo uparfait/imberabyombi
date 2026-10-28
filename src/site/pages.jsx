@@ -19,3 +19,4 @@ export function home() {
 }
 
 /* Add a public page: add an entry here { t: title, i: icon, top: () => JSX } (and to PUB to show it in the menus) */
+export const PAGES = {
