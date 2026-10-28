@@ -37,3 +37,4 @@ export const VIZ_DIST = {
     const dens = a => {
       const h = 6, d = ys.map(y0 => a.reduce((s, v) => s + Math.exp(-((v - y0) ** 2) / (2 * h * h)), 0)); const m = Math.max(...d); return d.map(v => v / m); };
     const median = a => [...a].sort((p, q) => p - q)[100];
+    return { svg: svg(f, ax.g + sets.map((a, i) => {
