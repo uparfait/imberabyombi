@@ -14,3 +14,4 @@ export function rtf_to_html(rtf) {
   const emit = s => { if (st.skip || !s) return; let h = esc_html(s); if (st.u) h = `<u>${h}</u>`; if (st.i) h = `<i>${h}</i>`; if (st.b) h = `<b>${h}</b>`; para += h; };
   const flush_table = () => {
     if (!rows.length) return;
+    out.push(`<table class="doc_table"><tbody>${rows.map(r => `<tr>${r.map(c => `<td><p>${c || '<br>'}</p></td>`).join('')}</tr>`).join('')}</tbody></table>`); rows = [];
