@@ -18,3 +18,5 @@ export const parking_schema = {
       show_err(f.elements.slot, `Slot ${d.slot} is taken. Choose a free slot.`); f.elements.slot.focus(); return false;
     }
     return d;
+  },
+  g: i => {
