@@ -52,3 +52,4 @@
   .kpi_bullet { position: relative; display: flex; height: 1rem; margin-top: .75rem; }
   .kpi_bullet i:nth-child(1) { background: rgb(var(--fg) / .12); border-radius: 4px 0 0 4px; }
   .kpi_bullet i:nth-child(2) { background: rgb(var(--fg) / .07); }
+  .kpi_bullet i:nth-child(3) { background: rgb(var(--fg) / .035); border-radius: 0 4px 4px 0; }
