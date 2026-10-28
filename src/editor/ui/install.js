@@ -52,3 +52,4 @@ function install_view(offs) {
 }
 
 export function install_ui() {
+  const offs = [];
