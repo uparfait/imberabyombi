@@ -20,3 +20,4 @@ function global_key(e, k) {
   if (k === 'pagedown' || k === 'pageup') return () => step_tab(k === 'pagedown' ? 1 : -1);
   if (k === 'p' && !e.shiftKey) return do_print;
   if ((k === 'f' && !e.shiftKey) || k === 'h') return open_find;
+  if (k === 'f' && e.shiftKey) return toggle_menus;
