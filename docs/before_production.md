@@ -22,3 +22,4 @@ The template is a complete front end with demo data in the browser. Before real 
   `--brand` (around `184 74 12`) or switch primary buttons to `text-ink`.
 
 ## Performance
+- Set `cfg.latency` to `0` (the simulated network delay) once real requests replace the demo store.
