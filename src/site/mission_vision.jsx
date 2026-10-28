@@ -7,3 +7,4 @@ import { sec_head, more, spy_attrs } from './site_bits.jsx';
 export function mission_sec(full) {
   return (
     <section {...spy_attrs('mission', full)} className="wrap section"><div className="card grid gap-10 p-6 sm:p-12 lg:grid-cols-[auto_1fr]" data-reveal="">
+      {i3('flag', 'h-20 w-20 sm:h-28 sm:w-28')}
