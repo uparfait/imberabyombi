@@ -8,3 +8,4 @@ import { NUMFMT } from './docx_paras.js';
 const EMU = 9525;   /* one CSS pixel in English Metric Units */
 export function image_xml(img, ctx) {
   if (!ctx.add_media) return '';
+  const m = (img.getAttribute('src') || '').match(/^data:image\/(png|jpe?g|gif);base64,(.*)$/i); if (!m) return '';
