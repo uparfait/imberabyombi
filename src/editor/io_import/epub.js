@@ -6,3 +6,4 @@ import { PB } from './pptx.js';
 
 export async function epub_to_html(file) {
   const z = await unzip(await file.arrayBuffer());
+  const rf = by_tag(parse_xml(await z.text('META-INF/container.xml')), 'rootfile')[0]; if (!rf) throw new Error('the book’s table of contents is missing');
