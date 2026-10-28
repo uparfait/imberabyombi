@@ -41,3 +41,4 @@ To navigate from code: `go('/admin/tasks')`. A redirect that should not leave a 
 `go('/login', { replace: true })`. Going to the address already on screen does nothing.
 
 ## Base path
+The site can live at the domain root (`/`) or in a folder (`/my-site/`). The folder comes from `BASE_PATH` at build
