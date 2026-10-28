@@ -17,3 +17,4 @@ export const workspace = () => (
       <div id="scroller"><div id="pages" className="doc_pages"></div></div>
 
       <aside id="sidebar" className="doc_side no_print" aria-label="Document tabs and outline">
+        <div className="side_head">{icon_btn('sidebar_close', 'arrow_back', 'Hide tabs & outlines')}</div>
