@@ -21,3 +21,4 @@ export const students_schema = {
 export const bulletins_schema = {
   l: 'bulletin entry', n: 40, cols: ['student', 'term', 'subject', 'score', 'remark'],
   f: [
+    field_spec('student', 'Student', 'list', () => names('students'), 1), field_spec('term', 'Term', 'select', TERMS, 1),
