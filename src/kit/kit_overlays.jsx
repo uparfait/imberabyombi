@@ -29,3 +29,4 @@ export const kit_overlays = () => (
     <div className="mt-4 flex flex-wrap gap-2">{['ok', 'bad', 'warn', 'info'].map(v => (
       <button key={v} className="btn btn_outline btn_sm" data-act="demo_msg" data-v={v}>{`Inline ${TONE_WORD[v]}`}</button>
     ))}<button className="btn btn_outline btn_sm" data-act="demo_bar">Run loader</button></div>
+    <div id="demo_messages" className="mt-4 max-w-2xl empty:hidden"></div>
