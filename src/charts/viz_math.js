@@ -15,3 +15,4 @@ export const ticks = (lo, hi, n = 4) => {
   return out;
 };
 export const rnd = (a, b) => a + lorem.r() * (b - a);
+export const gauss = () => (lorem.r() + lorem.r() + lorem.r() + lorem.r() - 2) * .87;
