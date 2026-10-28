@@ -13,3 +13,5 @@ import { pptx_to_html } from './pptx.js';
 import { odf_to_html } from './odf.js';
 import { epub_to_html } from './epub.js';
 import { rtf_to_html } from './rtf.js';
+
+/* the first 4 KB: no zero bytes and under 2% control characters */
