@@ -17,3 +17,4 @@ export const auth = {
 export const me = () => auth.user?.name || '';
 /* full addresses (they are shared by email or chat): base_url('/login') → 'https://host/login' */
 export const base_url = (path = '/') => location.origin + to(path);
+export const invite_link = id => base_url(`/login?role=${id}`);
