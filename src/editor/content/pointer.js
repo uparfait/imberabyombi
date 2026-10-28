@@ -45,3 +45,5 @@ export function pages_click(e) {
   const li = e.target.closest('ul.checklist > li');
   if (li && e.target === li && e.clientX < li.getBoundingClientRect().left && state.mode === 'edit') {
     begin_op(); li.setAttribute('data-checked', li.getAttribute('data-checked') === 'true' ? 'false' : 'true'); end_op(body_index(editable_of(li))); return;
+  }
+  const a = e.target.closest('.pg_body a');
