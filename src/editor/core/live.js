@@ -3,3 +3,4 @@
      pointerenter → live.preview(fn[, restore])   pointerleave → live.cancel()   click → live.keep(fn)
    preview: the first call snapshots the active tab (page html, selection, selected image, scroll, setup, zoom, toolbar
    state); later calls restore that snapshot first. fn runs with history off and its toasts held back. `restore` (optional)
+   undoes side effects outside the document (e.g. a remembered colour) on cancel. Previews never enter the undo stack. */
