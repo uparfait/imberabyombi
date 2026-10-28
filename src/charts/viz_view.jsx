@@ -46,3 +46,4 @@ export function charts_view() {
   return (
     <>
       {page_title('Charts & KPIs',
+        'Every chart uses the system colours, follows light and dark and shows the exact values on hover. Click a card to see all its data in a table, '
