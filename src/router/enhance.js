@@ -39,3 +39,4 @@ export function enhance() {
   qsa('[data-mp]').forEach(init_player);
   spy?.disconnect(); spy = null;
   if (route.path === '/' && io) {
+    spy = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { const k = en.target.id.slice(2);
