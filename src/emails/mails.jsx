@@ -6,3 +6,4 @@ export const MAILS = {
   reset: { l: 'Password reset', i: 'lock' }, code: { l: 'Sign-in code', i: 'shield' }, token: { l: 'Access token', i: 'key' }
 };
 export const mail_btn = (l, c = 'btn_primary', href = '#/admin/emails') => <a href={href} className={`btn ${c}`}>{l}</a>;
+/* a calendar tile: month, day, weekday; strike = the old date of a moved event */
