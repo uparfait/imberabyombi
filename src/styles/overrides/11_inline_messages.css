@@ -6,3 +6,4 @@
   .msg[data-tone=ok] { --t: var(--ok); } .msg[data-tone=bad] { --t: var(--bad); } .msg[data-tone=warn] { --t: var(--warn); }
   .msg .ico { color: rgb(var(--t)); flex-shrink: 0; margin-top: .05rem; }
   .msg .msg_x { margin: -.2rem -.2rem 0 auto; display: grid; place-items: center; width: 1.75rem; height: 1.75rem; flex-shrink: 0; border-radius: var(--pill); color: rgb(var(--muted)); }
+  .msg .msg_x:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
