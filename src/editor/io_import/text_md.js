@@ -19,3 +19,4 @@ function md_table(rows) {
   const cells = r => r.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim());
   const body = rows.filter(r => !/^\s*\|?\s*:?-{2,}/.test(r));
   const cell = (c, k) => k === 0 ? `<td style="font-weight:700">${md_inline(c)}</td>` : `<td>${md_inline(c)}</td>`;
+  return `<table class="doc_table"><tbody>${body.map((r, k) => `<tr>${cells(r).map(c => cell(c, k)).join('')}</tr>`).join('')}</tbody></table>`;
