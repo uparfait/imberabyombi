@@ -32,3 +32,5 @@ export const sheet_xml = s => {
       const ref = col_name(ci) + (ri + 1), hd = s.hdr && ri === 0, sty = hd ? ' s="1"' : v.includes('\n') ? ' s="2"' : '', tv = v.trim();
       if (!hd && /^-?(\d+(\.\d+)?|\.\d+)(e[+-]?\d+)?$/i.test(tv) && tv.length < 16 && !/^-?0\d/.test(tv)) x += `<c r="${ref}"${sty}><v>${tv}</v></c>`;
       else x += `<c r="${ref}" t="inlineStr"${sty}><is><t xml:space="preserve">${xesc(v)}</t></is></c>`;
+    });
+    x += '</row>';
