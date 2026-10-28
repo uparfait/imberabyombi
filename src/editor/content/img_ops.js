@@ -39,3 +39,4 @@ function put(img, url, width_fn, msg) {
   if (msg) toast(msg, 1600);
 }
 /* A picture already shown (and not from another website) is redrawn at once (a hover preview shows it at once);
+   otherwise it is loaded first (core's live tracks the async preview and undoes it if it was cancelled meanwhile). */
