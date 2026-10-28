@@ -18,3 +18,4 @@ import { toggle_spell, toggle_menus, do_print } from './view.js';
 import { listen } from './ui_dom.js';
 
 export const ACTIONS = {
+  find: () => open_find(), undo: () => undo(), redo: () => redo(), print: () => do_print(), upload: () => open_upload_dialog(),
