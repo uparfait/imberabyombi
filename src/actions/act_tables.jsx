@@ -30,7 +30,7 @@ export const TABLE_ACT = {
     db.remove(t.dataset.col, t.dataset.id); rerender(); tr?.classList.remove('row_out'); notify(`The ${schemas[t.dataset.col].l} was removed.`, 'ok', 'Deleted'); }),
   sort: t => { const c = t.dataset.col, k = t.dataset.k, s = ui.sort[c]; ui.sort[c] = { k, d: s?.k === k ? -s.d : 1 }; ui.page[c] = 1; rerender(); },
   tab: t => { ui.tab[t.dataset.key] = t.dataset.v; ui.page = {}; render(true, true); },
-  create: t => { close_pops(); if (route.mod !== t.dataset.mod) { ui.pending_form = t.dataset.col; location.hash = '#/admin/' + t.dataset.mod; } else open_form(t.dataset.col); },
+  create: t => { close_pops(); if (route.mod !== t.dataset.mod) { ui.pending_form = t.dataset.col; go('/admin/' + t.dataset.mod); } else open_form(t.dataset.col); },
   /* Table tools */
   table_full: t => table_full(t.dataset.col),
   table_cols_all: t => { const c = t.dataset.col, v = tview(c), was = v.hide; v.hide = []; tview_save(c); qsa(`[data-table-col="${c}"]`).forEach(i => i.checked = true); was.forEach(k => col_show(c, k, true)); },
