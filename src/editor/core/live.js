@@ -82,7 +82,7 @@ export const live = {
     if (!cur) { if (hist_timer) commit(); cur = { snap: take(), fn, gen: 0, pending: 0, msgs: [], restores: [], dirty: false }; }
     else { put(cur.snap); extras(cur); cur.fn = fn; }
     if (typeof restore === 'function') cur.restores.push(restore);
-    run(cur);
+    run(cur); mark(true);
   },
   cancel() {
     const s = cur; if (!s) return;
