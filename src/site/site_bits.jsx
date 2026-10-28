@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 
 export const PUB = [['about', 'About'], ['mission', 'Mission'], ['vision', 'Vision'], ['strategies', 'Strategies'], ['staff', 'Staff'],
+  ['partners', 'Partners'], ['thanks', 'Thanks'], ['contact', 'Contact']];
