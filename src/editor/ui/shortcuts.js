@@ -14,3 +14,5 @@ import { toggle_menus, do_print } from './view.js';
 import { step_tab } from './tabs.jsx';
 
 const ALIGN = { KeyL: 'justifyLeft', KeyE: 'justifyCenter', KeyR: 'justifyRight', KeyJ: 'justifyFull' };
+
+/* shortcuts that work anywhere on the editor page */
