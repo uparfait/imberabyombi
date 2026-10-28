@@ -11,3 +11,4 @@ export function set_last_range(r) { last_range = r || null; }
 export function set_last_host(h) { last_host = h || null; }
 
 export function save_sel() {
+  const s = getSelection(); if (!s.rangeCount || !pages_el) return null;
