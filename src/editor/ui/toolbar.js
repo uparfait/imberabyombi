@@ -19,3 +19,4 @@ import { listen } from './ui_dom.js';
 
 export const ACTIONS = {
   find: () => open_find(), undo: () => undo(), redo: () => redo(), print: () => do_print(), upload: () => open_upload_dialog(),
+  download: () => open_download_dialog(), spell: () => toggle_spell(), paint: () => start_paint(),
