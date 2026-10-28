@@ -16,6 +16,7 @@ export function pub_header() {
         ))}</ul>
         <div className="ml-auto flex items-center gap-1 xl:ml-2">{theme_btn()}
           <a href={to('/login')} className="btn btn_ghost hidden sm:inline-flex">Sign in</a>
+          <a href={to('/contact')} data-sec="contact" className="btn btn_ink hidden sm:inline-flex">Contact us</a>
           <button className="icon_btn xl:hidden" data-act="drawer" aria-label="Open menu">{ic('menu')}</button></div>
       </nav></header>
   );
