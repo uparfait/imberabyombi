@@ -16,3 +16,5 @@ export async function docx_to_html(file) {
     if (res.value && res.value.trim()) return { html: res.value };
   } catch (e) { console.warn('Using the built-in Word reader', e); }
   return { html: await docx_native(buf) };
+}
+export async function docx_native(buf) {
