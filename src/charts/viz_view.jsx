@@ -16,3 +16,4 @@ export function viz_draw_all(force = true) {
     const k = card.dataset.chart, c = VIZ[k], plot = card.querySelector('[data-plot]'), set = DRAWN.get(k); if (!c || !plot || !set) return;
     const w = Math.max(260, Math.floor(plot.clientWidth)); if (!force && plot._w === w) return; plot._w = w; lorem.seed(hash_str((c.seed || k) + (ui.viz_range || 30)));
     let o; try { o = c.f(w); } catch (e) { console.error(e); return; }
+    VIZ_OUT[k] = o; set(o); });
