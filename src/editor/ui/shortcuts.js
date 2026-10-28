@@ -18,3 +18,4 @@ const ALIGN = { KeyL: 'justifyLeft', KeyE: 'justifyCenter', KeyR: 'justifyRight'
 /* shortcuts that work anywhere on the editor page */
 function global_key(e, k) {
   if (k === 'pagedown' || k === 'pageup') return () => step_tab(k === 'pagedown' ? 1 : -1);
+  if (k === 'p' && !e.shiftKey) return do_print;
