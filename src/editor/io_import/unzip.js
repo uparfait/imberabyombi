@@ -15,3 +15,4 @@ export async function unzip(buf) {
     p += 46 + nlen + dv.getUint16(p + 30, true) + dv.getUint16(p + 32, true);
   }
   const cache = new Map();
+  const find = n => entries.has(n) ? n : Array.from(entries.keys()).find(k => k.toLowerCase() === String(n).toLowerCase());
