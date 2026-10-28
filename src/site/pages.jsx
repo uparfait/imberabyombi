@@ -25,3 +25,4 @@ export const PAGES = {
   mission: { t: 'Mission', i: 'flag', top: () => mission_sec(1) },
   vision: { t: 'Vision', i: 'eye', top: () => vision_sec(1) },
   strategies: { t: 'Strategies', i: 'compass', top: () => <>{strategies_sec(1)}{faq()}</> },
+  staff: { t: 'Staff', i: 'users', top: () => staff_dir() },
