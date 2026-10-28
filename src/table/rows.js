@@ -22,3 +22,4 @@ export function refresh(c) { if (!document.getElementById('table_body_' + c)) re
 const WAIT = new Map();
 before_render(keep => { if (!keep) { WAIT.forEach(clearTimeout); WAIT.clear(); } });
 export function wait_load(c) {
+  if (loaded.has(c) || WAIT.has(c)) return;
