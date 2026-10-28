@@ -49,3 +49,4 @@ export function viz_open(card, e) {
   modal({ title, help, body: <Viz_data key={++PAGER.n} /> });
 }
 /* Back / Next in the open table (data-n = -1 or 1) */
+export const viz_page = t => { if (!qs('#viz_data') || !SHOWN) return; const p = SHOWN.p + +t.dataset.n; flushSync(() => PAGER.set?.(p)); };
