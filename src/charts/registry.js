@@ -3,3 +3,4 @@
 import { css_var, rem } from '../lib/index.js';
 
 /* Canvas bar chart: reads colours from tokens, so it follows theme + brand changes */
+export const CHARTS = new Map();
