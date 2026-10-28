@@ -3,3 +3,4 @@
    itself never scrolls; the heading (title + menus, toolbar) stays and the workspace scrolls inside itself. */
 
 /* The source's colour variables under snake names, mapped to template tokens (for inline styles ported from the source:
+   style="color:var(--fg3)", "var(--app_bg)"…). They follow the theme: .dark on <html> changes the tokens they read. */
