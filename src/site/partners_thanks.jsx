@@ -9,3 +9,4 @@ export const partner_logo = i => {
   const sh = [<circle cx="16" cy="16" r="13" />, <path d="M16 2 30 16 16 30 2 16z" />, <rect x="3" y="3" width="26" height="26" rx="8" />,
     <path d="M16 2 29 9.5v13L16 30 3 22.5v-13z" />];
   return (
+    <div key={i} className="flex shrink-0 items-center gap-3 px-8 text-muted transition hover:text-brand">
