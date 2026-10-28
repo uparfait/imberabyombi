@@ -43,3 +43,5 @@ function on_move(ev) {
     d.img.style.left = Math.round(clamp(d.x0 + dx / z, -body.offsetLeft, page.offsetWidth - body.offsetLeft - d.img.offsetWidth)) + 'px';
     d.img.style.top = Math.round(clamp(d.y0 + dy / z, -body.offsetTop, page.offsetHeight - body.offsetTop - d.img.offsetHeight)) + 'px';
     position_img_box(); return;
+  }
+  if (img_box) img_box.style.transform = `translate(${dx / z}px, ${dy / z}px)`;
