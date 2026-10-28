@@ -6,3 +6,4 @@ import { indent, clear_formatting, toggle_checklist, insert_hr, insert_page_brea
 import { open_link_dialog, add_comment, add_blank_page } from '../content/index.js';
 import { pick_any, attach_files } from '../io_import/index.js';
 import { cmd, file_items, edit_items, view_items } from './menus_main.js';
+import { align_items, spacing_items, bullet_items, number_items, text_items, style_items } from './menu_items.jsx';
