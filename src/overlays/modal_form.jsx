@@ -3,3 +3,4 @@
    without dividers, and the footer (Cancel + submit, or custom actions). */
 import { useLayoutEffect, useRef } from 'react';
 import { ic } from '../icons/index.js';
+import { help_tip } from '../ui/index.js';
