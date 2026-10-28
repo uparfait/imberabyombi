@@ -23,3 +23,4 @@ function resize(e, h) {
   addEventListener('pointermove', move); addEventListener('pointerup', up);
 }
 const on_mousedown = e => e.preventDefault();
+function on_pointerdown(e) {
