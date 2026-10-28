@@ -27,3 +27,5 @@ export function Task_view({ id }) {
 
 const HELP = { own: 'You created this task: hover a row and use the pen to change it.', view: 'You can view this task and comment on it.',
   mine: 'Assigned to you: change its status and dates, tick items, add files and comment. Only the person who created it can change the rest.' };
+
+export function task_view(id) {
