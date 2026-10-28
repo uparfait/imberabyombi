@@ -14,3 +14,4 @@ export const tile_menu = o => <div className="relative">
   <button className={`tile_trigger ${o.set ? 'is_set' : ''}`} data-act="pop" data-pop={o.id} aria-haspopup="true">
     {o.set ? i3(o.icon, 'h-7 w-7') : ic(o.icon || 'grid', 'h-5 w-5')}<span className="truncate">{o.label}</span>{ic('chevD', 'h-4 w-4 shrink-0 text-muted')}</button>
   <div id={o.id} ref={closed_pop()} className="pop tile_pop left-0 w-[19rem] max-w-[calc(100vw-1rem)] p-3" hidden>
+    <div className="rounded-3xl bg-surface-2 p-3"><p className="px-2 pb-2 font-display text-lg">{o.title}</p>
