@@ -61,3 +61,4 @@ export function editor_start(root) {
     save_doc(true);
     cancel_scheduled();
     offs.reverse().forEach(f => { try { f(); } catch (e) { console.error(e); } });
+    toast_cleanup();
