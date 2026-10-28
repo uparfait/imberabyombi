@@ -16,3 +16,5 @@ const cap = s => s[0].toUpperCase() + s.slice(1);
 function seg(name, opts, cur, on) {
   return <div className="seg">{opts.map(([v, l]) => <label key={v}>
     <input type="radio" className="sr-only" name={name} value={v} defaultChecked={cur === v} onChange={on} /><span>{l}</span></label>)}</div>;
+}
+const check = (name, label, on) => (
