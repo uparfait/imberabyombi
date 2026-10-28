@@ -53,3 +53,4 @@ export function img_align_of(img) {
   if (pos === 'front' || pos === 'behind') {
     const body = img.closest('.pg_body'); if (!body) return 'left';
     const room = body.clientWidth - img.offsetWidth, l = img.offsetLeft;
+    return Math.abs(l - room / 2) < 2 ? 'center' : l >= room - 2 ? 'right' : 'left';
