@@ -34,3 +34,4 @@ export async function paste_from_clipboard(plain) {
         const img = it.types.find(t => t.startsWith('image/')); if (img) { insert_image(await read_as_data_url(await it.getType(img))); return; }
         if (it.types.includes('text/html')) {
           const h = await (await it.getType('text/html')).text(), host = restore_focus(); begin_op();
+          document.execCommand('insertHTML', false, sanitize_html(h)); adopt_abs(host); end_op(); return;
