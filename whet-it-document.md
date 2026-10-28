@@ -9,3 +9,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Every native element restyled: inputs, selects, checkboxes, switches, radios, ranges, colour, file, progress, meter,
   details, tables, dialogs, kbd, blockquote, code.
 - Components: buttons (primary, ink, outline, ghost, soft, danger, glass, small), icon buttons, cards, chips, kickers,
+  tabs, segmented buttons, popover menus, choice pills, tiles, accordions, prose, hero artwork, theme band, pattern layer.
