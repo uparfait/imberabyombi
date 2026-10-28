@@ -11,3 +11,4 @@ export function set_cur_sel(v) { cur_sel = v; }
 export const sel_remap = new Map();   // old element -> replacement element
 
 export function content_bottom(b) {
+  const l = last_flow(b); let y = l ? l.offsetTop + l.offsetHeight - pad_bottom(l) : 0;
