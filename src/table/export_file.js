@@ -30,3 +30,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
       + `<Styles><Style ss:ID="h"><Font ss:Bold="1"/></Style></Styles><Worksheet ss:Name="${x(cap(c).slice(0, 31))}"><Table><Row>${head.map(h => cell_x(h, 1)).join('')}</Row>`
       + `${body.map(b => `<Row>${b.map(v => cell_x(v)).join('')}</Row>`).join('')}</Table></Worksheet></Workbook>`, 'application/vnd.ms-excel'); }
   else { const q = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
+    dl(`${c}-${ymd()}.csv`, [head.map(q).join(','), ...body.map(b => b.map(q).join(','))].join('\n'), 'text/csv'); }
