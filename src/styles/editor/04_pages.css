@@ -42,7 +42,7 @@
 /* selected text keeps its own colour under a light tint. currentColor, not inherit: a selection inherits from the parent's
    selection (the template's white text), not from the text itself */
 :is(.pg_body, .pg_header, .pg_footer_text)::selection, :is(.pg_body, .pg_header, .pg_footer_text) ::selection {
-  background: rgb(var(--brand) / .28); color: inherit;
+  background: rgb(var(--brand) / .28); color: currentColor;
 }
 
 /* Pageless: one long sheet with side lines; page breaks show as a dashed line */
