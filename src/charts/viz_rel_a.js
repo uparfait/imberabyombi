@@ -53,3 +53,4 @@ export const VIZ_REL_A = {
     const ax = ['Speed', 'Quality', 'Cost', 'Support', 'Reach', 'Safety'], s = SER.slice(0, 2), v = s.map(() => ax.map(() => rnd(35, 95)));
     const f = frame(w, 270, { l: 0, r: 0, t: 10, b: 10 }), rad = Math.min(105, f.ih / 2 - 14, f.w / 2 - 70), cx = f.w / 2, cy = f.t + f.ih / 2;
     const p = (i, r) => [cx + Math.sin(i / ax.length * Math.PI * 2) * r, cy - Math.cos(i / ax.length * Math.PI * 2) * r];
+    return { svg: svg(f, [.25, .5, .75, 1].map(t => `<path class="grid_line" d="${path_of(ax.map((_, i) => p(i, rad * t)))}Z" style="fill:none"/>`).join('')
