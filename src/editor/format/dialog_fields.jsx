@@ -13,3 +13,4 @@ export const num_field = (id, label, props) => (
   <div className="field"><label htmlFor={id}>{label}</label><input id={id} name={id} type="number" placeholder=" " {...props} /></div>
 );
 /* a select: opts = [[value, label], …] */
+export const sel_field = (id, label, opts, value) => (
