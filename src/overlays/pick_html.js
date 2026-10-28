@@ -10,3 +10,4 @@ export const PK = {
   opts(a) {
     const row = o => `<button type="button" class="pk_item" role="option" aria-selected="${o.selected}" data-act="pk_opt" data-i="${o.index}" ${o.disabled ? 'disabled' : ''}>`
       + `${a.multiple ? '<span class="pk_box" aria-hidden="true"></span>' : ''}<span class="truncate ${o.value === '' ? 'text-muted' : ''}">${esc(o.text)}</span></button>`;
+    return `<label class="pk_search"><span class="sr-only">Search options</span><input type="search" data-pk-q placeholder="Search" autocomplete="off">${search_ui_html()}</label>
