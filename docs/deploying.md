@@ -36,6 +36,7 @@ Build command `npm run build`, output folder `dist`. Add `vercel.json` at the pr
 
 ## Nginx
 ```nginx
+location / { try_files $uri $uri/ /index.html; }
 location /assets/ { add_header Cache-Control "public, max-age=31536000, immutable"; }
 location = /index.html { add_header Cache-Control "no-cache"; }
 ```
