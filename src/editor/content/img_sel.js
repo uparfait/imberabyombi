@@ -22,3 +22,4 @@ export let img_sel = null;
 /* the image a "Replace image › Upload from computer" is for (read by the #image_replace change listener) */
 export let replace_target = null;
 export const set_replace_target = img => { replace_target = img; };
+/* the box is made on first use (never at module load) */
