@@ -18,3 +18,4 @@ function page_lines(tc) {
 }
 export async function pdf_to_html(buf) {
   await load_script(LIB.pdfjs); const lib = window.pdfjsLib; lib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
+  const pdf = await lib.getDocument({ data: buf }).promise; let html = '';
