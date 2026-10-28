@@ -5,3 +5,4 @@ import { go, app_path, in_base } from '../router/index.js';
 
 function on_link(e) {
   if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest?.('a[href]'), href = a?.getAttribute('href'), target = a?.getAttribute('target');
