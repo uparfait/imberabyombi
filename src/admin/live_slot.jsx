@@ -22,3 +22,4 @@ export function Live_slot({ name, first, draw, fresh = true }) {
 }
 
 /* draw one slot again, synchronously (code right after can query the new DOM). false = that slot is not on screen */
+export const redraw_slot = name => { const fn = SLOTS[name]; if (fn) fn(); return !!fn; };
