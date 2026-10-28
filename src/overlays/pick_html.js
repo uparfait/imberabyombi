@@ -26,3 +26,4 @@ export const PK = {
     const near = v ? Math.min(95, Math.floor(to_min(v) / 15)) : 36;
     const on = h24();
     return `<div class="flex min-h-0 flex-col"><div class="pk_clock" role="group" aria-label="Clock format">${[[0, '12h'], [1, '24h']]
+      .map(([n, l]) => `<button type="button" data-act="pk_h24" data-v="${n}" aria-pressed="${!!n === on}">${l}</button>`).join('')}</div>
