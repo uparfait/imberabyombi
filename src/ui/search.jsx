@@ -19,3 +19,4 @@ export const help_tip = (text, about = 'this') => (
 /* Visible page title + help icon (the page's h1 stays in the header for screen readers, so this one is hidden from them) */
 export const page_title = (title, text) => (
   <div className="mb-5 flex items-center gap-1">
+    <p className="font-display text-2xl font-medium tracking-tight" aria-hidden="true">{title}</p>{help_tip(text, title)}
