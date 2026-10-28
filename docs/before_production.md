@@ -24,3 +24,5 @@ The template is a complete front end with demo data in the browser. Before real 
 ## Performance
 - Set `cfg.latency` to `0` (the simulated network delay) once real requests replace the demo store.
 - Run `npm run build` and check the sizes it prints; run Lighthouse on `npm run preview`.
+
+## Data
