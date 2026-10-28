@@ -24,3 +24,6 @@ export function can_peek(it) {
 export function peek_item(it) {
   if (!it || it.disabled) return;
   if (it.peek) peek_view(it, it.peek); else if (can_peek(it)) peek(it, it.action);
+}
+
+function row_of(it, level) {
