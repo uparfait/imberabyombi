@@ -20,3 +20,5 @@ function summary(fmt, s) {
   if (fmt === 'pdf') sum += ' Pages are saved as pictures. For text you can select, use Print and choose Save as PDF.';
   if (fmt === 'json') sum += ' Includes every tab, the page setup and comments.';
   return sum;
+}
+/* a segmented choice (pill), styled like the template's .seg */
