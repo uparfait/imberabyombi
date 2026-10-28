@@ -17,3 +17,4 @@
     display: none !important;
   }
   #editor, #workspace, #main_col, #scroller {
+    display: block !important; position: static !important; height: auto !important; min-height: 0 !important; overflow: visible !important;
