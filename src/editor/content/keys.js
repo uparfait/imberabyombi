@@ -26,3 +26,4 @@ export function pages_keydown(e) {
   const host = editable_of(e.target); if (!host) return;
   if (img_sel) {
     if (e.key === 'Delete' || e.key === 'Backspace') {
+      done(e); const img = img_sel, b = img.closest('.pg_body'); hide_img_sel(); begin_op(); img.remove(); end_op(body_index(b)); return;
