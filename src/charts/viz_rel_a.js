@@ -52,3 +52,4 @@ export const VIZ_REL_A = {
   radar: { t: 'Radar chart', g: 'rel', d: 'Several scores per item on spokes (2–3 items).', f(w) {
     const ax = ['Speed', 'Quality', 'Cost', 'Support', 'Reach', 'Safety'], s = SER.slice(0, 2), v = s.map(() => ax.map(() => rnd(35, 95)));
     const f = frame(w, 270, { l: 0, r: 0, t: 10, b: 10 }), rad = Math.min(105, f.ih / 2 - 14, f.w / 2 - 70), cx = f.w / 2, cy = f.t + f.ih / 2;
+    const p = (i, r) => [cx + Math.sin(i / ax.length * Math.PI * 2) * r, cy - Math.cos(i / ax.length * Math.PI * 2) * r];
