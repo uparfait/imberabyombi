@@ -31,3 +31,4 @@ function nav_markup(routed) {
       icon: (act || sys).i, label: (act || sys).t, set: true, tiles: items.map((it, i) => ({ icon: it.i, label: it.t, on: cur === i, ...to(l, i) })) })}</Fragment>; };
   const title = node ? node.t : ROOT; if (routed) route.title = title;
   lorem.seed(hash_str(title));
+  const kicker = [ROOT, ...path.slice(0, -1).map(x => x.t)].filter(x => x !== title).join(' · ') || 'Systems';
