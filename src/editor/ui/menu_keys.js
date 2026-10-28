@@ -42,3 +42,5 @@ export function menu_key(e) {
     return bar_step(-1);
   }
   if ((k === 'Enter' || k === ' ') && m._cur && m._cur.isConnected) { m._cur.click(); return true; }
+  return false;
+}
