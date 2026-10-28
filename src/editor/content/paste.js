@@ -30,3 +30,4 @@ export async function paste_from_clipboard(plain) {
   try {
     if (!plain && navigator.clipboard.read) {
       const items = await navigator.clipboard.read();
+      for (const it of items) {
