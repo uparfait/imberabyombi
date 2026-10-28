@@ -45,3 +45,4 @@ export function apply_snap(s) {
   let ws = page_wraps();
   while (ws.length < s.html.length) { pages_el.appendChild(create_page()); ws = page_wraps(); }
   while (ws.length > s.html.length) { ws.pop().remove(); }
+  bodies().forEach((b, i) => { b.innerHTML = s.html[i]; });
