@@ -12,6 +12,7 @@ export async function docx_to_html(file) {
   const buf = await file.arrayBuffer();
   try { const html = await docx_native(buf.slice(0)); if (html && html.trim()) return { html }; }
   catch (e) { console.warn('Trying mammoth for this Word file', e); }
+  await load_script(LIB.mammoth);
 }
 export async function docx_native(buf) {
   const z = await unzip(buf), doc = parse_xml(await z.text('word/document.xml'));
