@@ -17,3 +17,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
 - `#/login?role=<id>` locks the sign-in form to a role (invite link); `&email=..&name=..` pre-fills it (access link).
 
 ## How a navigation works
+1. `hashchange` → `navigate()`.
