@@ -32,3 +32,5 @@ export function render_sidebar() {
     wire_row(row, t, box);
     box.appendChild(row);
     if (active) box.appendChild(el('div', { class: 'outline', id: 'outline', role: 'tree', 'aria-label': 'Document outline' }));
+  });
+  apply_filter(list);
