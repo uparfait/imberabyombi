@@ -11,3 +11,4 @@ const slices = (v, tot, cx, cy, r0, rad, tip) => { let a = 0; return v.map((val,
     `<path class="mark" d="${arc(cx, cy, r0, rad, a0, a)}" style="fill:${scale_color(i)};stroke:rgb(var(--surface));stroke-width:2"/>`); }).join(''); };
 
 export const VIZ_PART_A = {
+  pie: { t: 'Pie chart', g: 'part', d: 'A few parts of a whole (keep it to 6 or fewer).', f(w) {
