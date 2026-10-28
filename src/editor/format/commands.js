@@ -19,3 +19,4 @@ export function exec(cmd, val) {
 function fonts_in(host, r) {
   const m = new Map(), w = document.createTreeWalker(host, NodeFilter.SHOW_TEXT);
   for (let n = w.nextNode(); n; n = w.nextNode()) { if (!r.intersectsNode(n)) continue; let e = n.parentElement;
+    while (e && e !== host && !e.style?.fontFamily && !e.getAttribute?.('face')) e = e.parentElement;
