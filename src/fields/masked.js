@@ -22,3 +22,4 @@ export const masked = (t, s) => {
 export const kind_of = a => a.dataset.type || a.type;
 /* Show the rest of the format while typing (2026-1 → 2026-1M-DD, 09:30 → 09:30 AM); hidden when empty, complete or not focused */
 export const ghost = (i, on = document.activeElement === i) => { const g = i.nextElementSibling; if (!g?.matches('.date_hint')) return; const v = i.value, ph = DTF[i.dataset.type] ? dt_spec(i.dataset.type).ph : '';
+  g.innerHTML = on && v && v.length < ph.length ? `<i>${esc(v)}</i>${esc(ph.slice(v.length))}` : ''; };
