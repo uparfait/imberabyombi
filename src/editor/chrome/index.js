@@ -2,3 +2,4 @@
    functions that Editor_page draws once. Import from here: import { toolbar } from './chrome/index.js' */
 export * from './topbar.jsx';
 export * from './toolbar.jsx';
+export * from './workspace.jsx';
