@@ -22,3 +22,4 @@ export async function export_epub(scope, name) {
     await prepare_images(d);
     qsa('img', d).forEach(img => {
       const m = (img.getAttribute('src') || '').match(/^data:image\/(png|jpe?g|gif|webp|svg\+xml);base64,(.*)$/i); if (!m) { img.remove(); return; }
+      const mt = m[1].toLowerCase() === 'jpg' ? 'jpeg' : m[1].toLowerCase(), ext = mt.replace('jpeg', 'jpg').replace('svg+xml', 'svg'), fn = `images/img${++img_n}.${ext}`;
