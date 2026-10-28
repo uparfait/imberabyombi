@@ -40,3 +40,5 @@ export function show_in_dialog(id, render) {
    before the page draws (so a view of the old page is not drawn again) */
 before_render(keep => {
   if (keep) return;
+  for (const id of ['confirm', 'modal', 'viewer']) { const d = document.getElementById(id); if (d?.open) d.close(); DIALOGS[id] = null; }
+});
