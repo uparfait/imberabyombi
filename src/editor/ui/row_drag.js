@@ -6,3 +6,4 @@ import { el } from '../core/index.js';
 import { scaled } from './ui_dom.js';
 
 export function row_drag(e, o) {
+  if (e.button !== 0 || e.pointerType === 'touch') return;
