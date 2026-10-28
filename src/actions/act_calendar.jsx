@@ -17,3 +17,4 @@ export const CALENDAR_ACT = {
   goday: t => { if (route.mod === 'calendar') return cal_go(t.dataset.d); ui.cal_date = t.dataset.d; ui.mini = null; location.hash = '#/admin/calendar'; },
   slot: (t, e) => { if (!auth.can('calendar', 2)) return; let h = 9; if (t.classList.contains('hour_lines')) { const r = t.getBoundingClientRect(); h = Math.min(22, Math.max(0, Math.floor((e.clientY - r.top) / r.height * 24))); }
     open_form('activities', null, { date: t.dataset.d, start: `${pad(h)}:00`, end: `${pad(h + 1)}:00` }); },
+  ev: t => { const c = t.dataset.c; if (auth.can(c === 'events' ? 'events' : 'calendar', 2)) open_form(c, t.dataset.id);
