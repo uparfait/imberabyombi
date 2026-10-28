@@ -40,3 +40,4 @@ export async function file_to_html(file) {
     case 'pptx': case 'pptm': case 'ppsx': return { html: await pptx_to_html(file) };
     case 'odt': case 'ott': case 'odp': return { html: await odf_to_html(file) };
     case 'rtf': return { html: rtf_to_html(await file.text()) };
+    case 'epub': return { html: await epub_to_html(file) };
