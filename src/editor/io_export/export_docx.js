@@ -19,3 +19,4 @@ export async function export_docx(root, name) {
   toast('Preparing Word document…', 0);
   try {
     await prepare_images(root);
+    const { win, hin } = dims(), s = state.setup, m = s.margins;
