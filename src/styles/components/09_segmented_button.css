@@ -31,3 +31,4 @@
   /* Brand artwork: dark-to-orange hero with glowing sun, lattice and a wave cut */
   /* The hero and the Vision band follow the theme: light = white to soft orange with dark text, dark = ink to orange with light text */
   .hero { --h0: rgb(var(--surface)); --h1: color-mix(in srgb, rgb(var(--brand)) 14%, rgb(var(--surface))); --h2: color-mix(in srgb, rgb(var(--brand)) 42%, rgb(var(--surface))); --glow: .16;
+    border: 1px solid rgb(var(--line));
