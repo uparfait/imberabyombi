@@ -27,3 +27,4 @@ function section_items(row, kb) {
     { label: 'Move section up', icon: 'arrow_upward', disabled: !mv.up, no_preview: true, action: () => moved(move_section_by(k, -1), kb) },
     { label: 'Move section down', icon: 'arrow_downward', disabled: !mv.down, no_preview: true, action: () => moved(move_section_by(k, 1), kb) },
     { sep: true },
+    { label: 'Delete section', icon: 'delete', no_preview: true, action: () => confirm_dialog(
