@@ -17,3 +17,4 @@ const views = wk => <div className="seg" role="radiogroup" aria-label="Calendar 
 VIEWS.calendar = () => {
   const d = parse_d(ui.cal_date), wk = ui.cal_view !== 'month', items = cal_items(), can = auth.can('calendar', 2);
   after_render(() => { const s = qs('#date_hours'); if (s) s.scrollTop = 7 * 3 * rem(); });
+  const grid = wk ? week_grid(d, items) : month_grid(d, items);
