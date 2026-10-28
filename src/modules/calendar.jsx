@@ -13,3 +13,5 @@ import { week_grid, month_grid } from './calendar_grids.jsx';
 const views = wk => <div className="seg" role="radiogroup" aria-label="Calendar view">{['week', 'month'].map(v => <label key={v}>
   <input type="radio" className="sr-only" name="calv" value={v} data-calview="" defaultChecked={ui.cal_view === v || (v === 'week' && wk && ui.cal_view !== 'month')} />
   <span>{cap(v)}</span></label>)}</div>;
+
+VIEWS.calendar = () => {
