@@ -27,3 +27,4 @@ export const diverging = t => t >= 0
   : `color-mix(in oklab, var(--series_2) ${Math.round(Math.min(1, -t) * 100)}%, rgb(var(--surface_2)))`;
 /* the date range scales every amount: 7, 30 or 90 days */
 export const RANGE = { 7: .3, 30: 1, 90: 2.6 };
+export const MARGIN = () => RANGE[ui.viz_range || 30];
