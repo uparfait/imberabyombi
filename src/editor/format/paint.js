@@ -31,3 +31,4 @@ export function apply_paint() {
   if (p.bold) document.execCommand('bold'); if (p.italic) document.execCommand('italic');
   if (p.underline) document.execCommand('underline'); if (p.strike) document.execCommand('strikeThrough');
   document.execCommand('foreColor', false, p.color); if (p.bg) document.execCommand('hiliteColor', false, p.bg);
+  document.execCommand('fontName', false, p.font);
