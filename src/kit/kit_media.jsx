@@ -12,3 +12,4 @@ const formula = (
 );
 
 export const kit_media = brand_hex => (
+  <div className="grid gap-6 md:grid-cols-2">
