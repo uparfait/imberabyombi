@@ -27,3 +27,4 @@ export const kpi_cards_a = k => {
       [['Measure', 'Value'], [['Used', `${used}%`], ['Free', `${100 - used}%`], ['Status', gauge_s]]]),
     kpi_card('', 'Uptime', 'Time the system was available, and the state of each service right now.',
       <><p className="kpi_value">99.95%</p><p className="kpi_status ok">{ic('check', 'h-4 w-4')}Healthy</p>
+        <ul className="mt-3 grid gap-1 text-sm">{services.map(([n, s, l]) => (
