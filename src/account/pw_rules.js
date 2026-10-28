@@ -6,3 +6,4 @@ export const PW_RULES = [['len', 'At least 8 characters', v => v.length >= 8], [
 
 export function pw_check(i) {
   const f = i.form, v = i.value;
+  const ok = PW_RULES.map(([k, , t]) => { const p = t(v); f.querySelector(`[data-rule="${k}"]`)?.classList.toggle('ok', p); return p; }).filter(Boolean).length;
