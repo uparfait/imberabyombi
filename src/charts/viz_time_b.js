@@ -51,3 +51,4 @@ export const VIZ_TIME_B = {
       + `<line x1="${round1(x(today))}" x2="${round1(x(today))}" y1="${f.t - 6}" y2="${f.t + f.ih}" style="stroke:rgb(var(--fg));stroke-width:1.5;stroke-dasharray:3 3"/>`
       + `<text class="value_label" x="${round1(x(today))}" y="${f.t - 8}" text-anchor="middle">Today</text>`, 'Gantt chart'),
       legend: legend(['Planned', 'Done', 'Milestone'], 'rect', ['color-mix(in srgb, var(--series_1) 22%, transparent)', 'var(--series_1)', 'rgb(var(--fg))']),
+      table: [['Task', 'Start', 'End', 'Done'], t.map((k, i) => [k, `W${d[i].s + 1}`, `W${d[i].e}`, pct(d[i].done)])] }; } },
