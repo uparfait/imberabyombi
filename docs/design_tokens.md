@@ -26,3 +26,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--pattern`        | SVG data URI        | Diamond lattice from the brand artwork (used as a CSS mask)      |
 
 ## Examples
+```css
