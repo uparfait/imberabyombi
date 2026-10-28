@@ -29,3 +29,4 @@ export async function paste_from_clipboard(plain) {
   restore_focus();
   try {
     if (!plain && navigator.clipboard.read) {
+      const items = await navigator.clipboard.read();
