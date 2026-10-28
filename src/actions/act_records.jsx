@@ -33,3 +33,5 @@ export const RECORD_ACT = {
     if (!t.dataset.slot && !free) return show_msg(qs('#tiles_msg'), 'warn', 'Every slot is taken', 'Check a car out before checking another one in.'); open_form('parking', null, { slot: t.dataset.slot || free, status: 'Parked', in: now_dt(), out: '', fee: 0 }); },
   park_out: t => { const r = db.find('parking', t.dataset.id); if (!r) return; const hrs = Math.max(1, Math.ceil((Date.now() - new Date(r.in)) / 3.6e6)), fee = hrs * cfg.parking_rate;
     ask(<>Check out <strong>{r.plate}</strong>{` from slot ${r.slot}? ${hrs} hour${hrs > 1 ? 's' : ''} parked, fee ${money(fee)}.`}</>, () => {
+      ui.flash = db.upsert('parking', { id: r.id, out: now_dt(), fee, status: 'Exited' }); rerender(); notify(`Slot ${r.slot} is free again. Fee ${money(fee)}.`, 'ok', 'Car checked out'); }, 'Check out'); }
+};
