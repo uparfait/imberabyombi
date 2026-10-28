@@ -38,3 +38,4 @@ export function hoist_nested(b) {
   const NEST = /^(UL|OL|TABLE|HR|P|H[1-6]|BLOCKQUOTE|PRE)$/;
   for (let g = 0; g < 200; g++) {
     const p = Array.from(b.children).find(x => TEXT_BLOCK_RE.test(x.tagName) && !is_break(x) && Array.from(x.children).some(c => NEST.test(c.tagName)));
+    if (!p) return;
