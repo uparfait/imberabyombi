@@ -9,3 +9,4 @@ import { can_edit } from './commands.js';
 export function insert_block_at_caret(node) {
   if (!can_edit()) return null;
   restore_focus();
+  const s = getSelection(); if (!s.rangeCount) return null;
