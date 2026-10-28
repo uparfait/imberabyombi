@@ -35,3 +35,5 @@
 
 .tb_sep { flex: none; width: 1px; height: 1.25rem; margin: 0 .3125rem; background: rgb(var(--line)); }
 .tb_fill { flex: 1; min-width: .75rem; }
+
+/* List buttons with their own menu arrow */
