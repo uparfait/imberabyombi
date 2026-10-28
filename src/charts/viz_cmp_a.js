@@ -20,3 +20,4 @@ export const VIZ_CMP_A = {
         + `<path class="mark" style="fill:var(--series_1)" d="${hbar(y(i), bh, f.l, x(v[i]))}"/>`) + row_label(f, y, i, k)
         + `<text class="value_label" x="${round1(x(v[i]) + 6)}" y="${round1(y(i) + 4)}">${num(v[i])}</text>`).join('')
       + `<line class="base_line" x1="${f.l}" x2="${f.l}" y1="${f.t}" y2="${f.t + f.ih}"/>`, 'Horizontal bar chart'),
+      table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
