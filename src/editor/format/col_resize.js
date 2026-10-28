@@ -43,3 +43,5 @@ function on_hover(e) {
     const r = cell.getBoundingClientRect(), row = cell.parentElement;
     if (Math.abs(e.clientX - r.right) <= 4 && cell !== row.cells[row.cells.length - 1]) h = { table: cell.closest('table'), ci: cell.cellIndex };
     else if (Math.abs(e.clientX - r.left) <= 4 && cell.cellIndex > 0) h = { table: cell.closest('table'), ci: cell.cellIndex - 1 };
+  }
+  if (h || col_hover) set_col_hover(h);
