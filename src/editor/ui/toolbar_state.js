@@ -19,3 +19,4 @@ export function refresh_toolbar() {
     else {
       const li = n.closest('li'), l = li && li.parentElement;
       if (k === 'checklist') on = !!(l && l.classList.contains('checklist'));
+      else if (k === 'bullets') on = !!(l && l.tagName === 'UL' && !l.classList.contains('checklist'));
