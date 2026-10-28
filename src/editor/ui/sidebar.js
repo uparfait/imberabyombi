@@ -21,3 +21,4 @@ export function render_sidebar() {
   list.innerHTML = '';
   if (many) list.appendChild(filter_box(typing));
   const box = el('div', { class: 'tab_scroll' + (many ? ' many' : '') });
+  list.appendChild(box);
