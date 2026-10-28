@@ -13,3 +13,5 @@ import { clean_text, scaled } from './ui_dom.js';
 function go(row) {
   const h = row._h; if (!h || !h.isConnected) return;
   h.scrollIntoView({ block: 'center', behavior: 'smooth' }); caret_to_start(h);
+}
+/* after a move: the outline now; the keyboard stays on the moved heading's row when the move came from it */
