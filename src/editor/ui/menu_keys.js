@@ -23,3 +23,4 @@ export function menu_key(e) {
   }
   if (k === 'Tab') { close_menus(0); return false; }
   if (in_field || e.ctrlKey || e.metaKey || e.altKey) return false;
+  const rows = menu_rows(m), at = rows.indexOf(m._cur), n = rows.length;
