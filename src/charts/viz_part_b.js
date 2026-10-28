@@ -13,3 +13,4 @@ export const VIZ_PART_B = {
     kids.forEach((ch, gi) => { const gv = ch.reduce((s, o) => s + o.v, 0), g0 = a;
       ch.forEach((o, j) => { const a0 = a; a += o.v / tot * Math.PI * 2;
         parts += mark_group(o.k, [[num(o.v), groups[gi], gi]], ring(arc(cx, cy, rad * .62, rad, a0, a),
+          `color-mix(in oklab, ${scale_color(gi)} ${80 - j * 18}%, rgb(var(--surface)))`)); });
