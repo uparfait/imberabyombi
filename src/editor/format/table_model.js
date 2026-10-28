@@ -52,3 +52,5 @@ export const table_width_cols = chain => Math.max(1, ...chain_rows(chain).map(r 
 export function new_cell_like(c, keep_span) {
   const n = c.cloneNode(false); if (!keep_span) n.removeAttribute('colspan'); n.removeAttribute('rowspan'); n.removeAttribute('data-hdr'); n.removeAttribute('data-autobg');
   n.style.backgroundColor = ''; if (!n.getAttribute('style')) n.removeAttribute('style'); n.innerHTML = '<p><br></p>'; return n;
+}
+/* n rows like row, above or below it; returns the first new row */
