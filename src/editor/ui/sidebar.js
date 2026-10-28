@@ -66,3 +66,4 @@ function filter_box(focus) {
   inp.value = tab_q;
   inp.addEventListener('input', () => { tab_q = inp.value; apply_filter(refs.tab_list); });
   inp.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && inp.value) { e.stopPropagation(); inp.value = ''; tab_q = ''; apply_filter(refs.tab_list); }
