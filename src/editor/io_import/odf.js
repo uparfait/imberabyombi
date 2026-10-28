@@ -59,3 +59,5 @@ async function odf_blocks(cx, n, out) {
     else if (ln === 'table') out.push(await odf_table(cx, c));
     else if (ln === 'frame') {
       const tb = by_tag(c, 'text-box')[0]; if (tb) await odf_blocks(cx, tb, out); else { const i = await odf_img(cx, c); if (i) out.push(`<p>${i}</p>`); }
+    }
+    else if (ln === 'page') { if (out.length) out.push(PB); out.push(`<h2>${esc_html(c.getAttribute('draw:name') || 'Slide')}</h2>`); await odf_blocks(cx, c, out); }
