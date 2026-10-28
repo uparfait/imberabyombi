@@ -11,3 +11,4 @@ import { zip_store } from './zip_store.js';
 import { epub_chapter, EPUB_CONTAINER, epub_opf, epub_nav } from './epub_parts.js';
 
 export async function export_epub(scope, name) {
+  if (hist_timer) commit(); save_tab();
