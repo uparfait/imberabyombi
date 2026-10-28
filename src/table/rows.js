@@ -11,3 +11,6 @@ export function rows_of(c) {
     rows = rows.filter(r => t === 'select' ? String(r[k] ?? '') === q : /^date/.test(t) ? String(r[k] ?? '').startsWith(q) : plain(c, k, r).toLowerCase().includes(n)); });
   const st = ui.sort[c]; if (st) rows = [...rows].sort((a, b) => String(a[st.k] ?? '').localeCompare(String(b[st.k] ?? ''), undefined, { numeric: true }) * st.d);
   return rows;
+}
+
+/* Draw the table again from data + ui: rows, count, pager, Action Buttons column. The reference redrew only the table's
