@@ -9,3 +9,4 @@ import { set_zoom, zoom_fit } from './view.js';
 import { after_close } from './dialogs.jsx';
 
 export function align_items() {
+  return [['left', 'format_align_left', 'justifyLeft', 'Ctrl+Shift+L'], ['center', 'format_align_center', 'justifyCenter', 'Ctrl+Shift+E'],
