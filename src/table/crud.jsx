@@ -23,3 +23,4 @@ const export_menu = c => (
 );
 
 /* a column title: sort button (with its direction) + the column search */
+const col_head = (c, k, st, hide) => (
