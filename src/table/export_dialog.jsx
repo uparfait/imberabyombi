@@ -31,3 +31,4 @@ export function export_dialog(c, fmt) {
     </>,
     submit: `Download ${name}`,
     on_submit: (d, f) => { const cols = s.cols.filter(k => d['col_' + k]);
+      if (!cols.length) { form_msg(f, 'bad', 'Choose at least one column', 'Tick the columns to include.', false); return false; }
