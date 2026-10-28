@@ -47,3 +47,6 @@ export function on_selection() {
   if (h && pages_el && pages_el.contains(h)) {
     set_last(r.cloneRange(), h);
     clearTimeout(sel_timer); sel_timer = setTimeout(() => { sel_timer = null; refresh_toolbar(); update_link_bubble(); }, 60);
+  }
+}
+export function stop_sel_timer() { clearTimeout(sel_timer); sel_timer = null; }
