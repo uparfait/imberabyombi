@@ -63,3 +63,4 @@ function run(s) {
   if (r && typeof r.then === 'function') { s.pending++; Promise.resolve(r).catch(e => console.error(e)).then(() => settle(s, g)); }
 }
 function finish(s) { commit(); refresh_toolbar(); s.msgs.forEach(m => toast(...m)); }
+/* an async action (image bake, …) finished: keep the result only if it belongs to what is on screen */
