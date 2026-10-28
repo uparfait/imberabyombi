@@ -40,3 +40,4 @@ export function Upload_body({ up }) {
           <div key={i + ':' + f.name} className="file_row flex items-center gap-2.5 border-b border-line px-1 py-1.5 text-[13px]">
             {badge(ext_of(f.name))}<span className="min-w-0 flex-1 truncate">{f.name}</span><span className="text-muted">{fmt_size(f.size)}</span>
             <button type="button" className="icon_btn sm h-7 w-7" aria-label={`Remove ${f.name}`} onClick={() => up.set({ files: files.filter((_, k) => k !== i) })}>
+              {ic('close', 'h-5 w-5')}</button>
