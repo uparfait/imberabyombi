@@ -16,3 +16,4 @@
   }
   /* Phone: the backdrop behind the sidebar fades in and out */
   /* Collapsed sidebar (desktop): the header shows the logo; on hover/focus it turns into the "open sidebar" icon */
+  .brand_toggle { display: none; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: var(--pill); transition: background-color .2s; }
