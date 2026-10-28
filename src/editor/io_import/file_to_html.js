@@ -5,3 +5,4 @@ import { read_as_data_url } from '../core/index.js';
 import { IMG_EXT, CODE_EXT, MIME, ext_of, base_of, fmt_size } from './file_helpers.js';
 import { text_to_html, md_to_html } from './text_md.js';
 import { pdf_to_html } from './pdf_import.js';
+import { fit_img_html, csv_to_html, code_to_html } from './tables.js';
