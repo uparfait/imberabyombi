@@ -31,3 +31,4 @@ export function doc_stats(scope) {
   return { words, tables, images, pages: scope === 'all' && state.tabs.length > 1 || state.setup.pageless ? null : bodies().length };
 }
 export async function do_export(fmt, scope, name, quality) {
+  state.last_format = fmt;
