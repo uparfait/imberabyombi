@@ -14,3 +14,4 @@ const card_html = (c, orphan) => '<div class="flex items-center gap-2"><span cla
   + `<div class="font-medium">You</div><div class="text-xs text-muted">${fmt_time(c.time)}</div></div>`
   + `${c.draft ? '' : icon_btn('resolve', 'Resolve', 'check', 'text-accent') + icon_btn('delete', 'Delete', 'delete', '')}</div>`
   + `<div class="c_quote"></div>${orphan ? '<div class="text-xs text-muted">The commented text was deleted.</div>' : ''}`
+  + '<div class="c_text mt-1 whitespace-pre-wrap"></div><div class="c_replies"></div>' + (c.draft ? DRAFT : REPLY);
