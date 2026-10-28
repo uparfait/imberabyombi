@@ -14,6 +14,7 @@ export async function docx_to_html(file) {
   catch (e) { console.warn('Trying mammoth for this Word file', e); }
   await load_script(LIB.mammoth);
   const res = await window.mammoth.convertToHtml({ arrayBuffer: buf.slice(0) },
+    { styleMap: ["p[style-name='Title'] => p.title:fresh", "p[style-name='Subtitle'] => p.subtitle:fresh"] });
 }
 export async function docx_native(buf) {
   const z = await unzip(buf), doc = parse_xml(await z.text('word/document.xml'));
