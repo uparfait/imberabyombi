@@ -2,7 +2,7 @@
    for the parts plain JS fills (picker, tooltips, toasts, quick menu). Unknown names fall back to the diamond. */
 import { PATHS } from './paths.js';
 
-/* names are snake_case PATHS keys ('chev_d'); a reference-style name ('chevD') still finds its icon */
+/* names are snake_case PATHS keys ('chev_d'); a camelCase name ('chevD') still finds its icon */
 export const icon_key = n => PATHS[n] ? n : String(n ?? '').replace(/[A-Z]/g, c => '_' + c.toLowerCase());
 export const icon_path = n => PATHS[icon_key(n)] || PATHS.diamond;
 
