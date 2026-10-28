@@ -13,3 +13,5 @@ F('notes', 'Notes', 'textarea')
 Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `textarea`, `list` (suggestions),
 `date`, `time`, `datetime-local`, `month`, `week`, `hidden`, `files` (a file field), `subtasks` (task checklist editor).
 Extras: `def` (default), `when` (`'Done'` / `'!Done'`, shown by status), `min`, `max`.
+
+```jsx
