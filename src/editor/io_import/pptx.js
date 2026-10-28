@@ -39,3 +39,5 @@ async function slide_html(z, sp, i) {
         const url = await z.data_url(resolve_path(dir_of(sp), rel.target)), ex = by_tag(s, 'ext').find(e => e.hasAttribute('cx'));
         const w = ex ? Math.round(+ex.getAttribute('cx') / 9525) : 400;
         if (url) body += `<p><img src="${url}" alt="" style="width:${clamp(w, 16, 620)}px"></p>`;
+      }
+    } else {
