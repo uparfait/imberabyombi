@@ -22,3 +22,4 @@ export function image_xml(img, ctx) {
     + `<a:prstGeom prst="rect"><a:avLst/></a:prstGeom>${ln}</pic:spPr></pic:pic></a:graphicData></a:graphic>`;
   const pos = ({ wrap_left: 'left', wrap_right: 'right' })[img.getAttribute('data-pos')], doc_pr = `<wp:docPr id="${n}" name="Picture ${n}" descr="${alt}"/>`;
   if (pos === 'left' || pos === 'right') {
+    return `<w:r><w:drawing><wp:anchor distT="0" distB="91440" distL="${pos === 'right' ? 182880 : 0}" distR="${pos === 'left' ? 182880 : 0}" simplePos="0" `
