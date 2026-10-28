@@ -30,3 +30,4 @@ export function contact_sec(full) {
     <section {...spy_attrs('contact', full)} className="wrap section"><div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr]">
       <div>{sec_head('Contact', lorem.t(4), lorem.s())}
         <address className="mt-8 grid gap-4">{[['pin', `${lorem.t(2)} 12, ${lorem.t(1)}`], ['mail', 'hello@lorem.io'], ['phone', '+250 788 000 000'],
+          ['clock', 'Mon to Fri, 08:00 to 17:00']].map(([i, t]) => (
