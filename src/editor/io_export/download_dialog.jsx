@@ -37,3 +37,4 @@ const fmt_card = (f, on, pick) => (
       ? 'border-brand bg-brand/10 outline outline-1 outline-offset-[-2px] outline-brand' : 'border-line bg-surface hover:bg-fg/5'}`}>
     <span className={BADGE} style={{ background: f.color }}><span className="absolute right-0 top-0 h-[11px] w-[11px] rounded-bl bg-white/40"></span>{f.ext.toUpperCase()}</span>
     <span className="min-w-0"><span className="block text-sm font-medium">{f.name}</span>
+      <span className={`mt-0.5 block text-xs leading-snug ${on ? 'opacity-80' : 'text-muted'}`}>{f.desc}</span></span>
