@@ -15,3 +15,5 @@ export const VIZ_MAP = {
       return mark_group(t.k, [[t.v, 'Value', null]], `<path class="mark" d="${hex(cx, cy, hw - 1)}" style="fill:${sequential(t.v / 100)}"/>`
         + `${s > 34 ? `<text class="${t.v > 55 ? 'inner_label' : ''}" x="${round1(cx)}" y="${round1(cy + 4)}" text-anchor="middle">${t.k}</text>` : ''}`); }).join(''),
       'Choropleth map'),
+      legend: scale_legend('0', [.1, .3, .5, .7, 1].map(sequential), '100'), table: [['Region', 'Value'], tiles.map(t => [t.k, t.v])] }; } }
+};
