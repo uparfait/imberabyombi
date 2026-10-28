@@ -46,3 +46,4 @@
 .doc_content ol{list-style-type:decimal}
 .doc_content ul.checklist{list-style-type:none}
 .doc_content table{border-spacing:0;font-size:inherit}
+.doc_content :is(td,th){white-space:pre-wrap;font-size:inherit;color:inherit;background-color:transparent;letter-spacing:normal;text-transform:none}
