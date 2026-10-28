@@ -43,3 +43,4 @@ export const declarations_schema = {
     field_spec('note', 'Note', 'textarea')
   ],
   g: () => ({
+    book: lorem.pick(db.list('books')).title, type: lorem.pick(['Lost', 'Damaged', 'Found', 'Donated']), by: lorem.pick(db.list('students')).name,
