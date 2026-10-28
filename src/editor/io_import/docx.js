@@ -18,3 +18,4 @@ export async function docx_to_html(file) {
   return { html: await docx_native(buf) };
 }
 export async function docx_native(buf) {
+  const z = await unzip(buf), doc = parse_xml(await z.text('word/document.xml'));
