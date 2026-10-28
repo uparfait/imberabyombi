@@ -57,3 +57,4 @@ export function install_ui() {
   listen(offs, document, 'mousedown', on_outside_down, true);
   listen(offs, document, 'keydown', on_key, true);
   listen(offs, document, 'selectionchange', on_selection);
+  listen(offs, pages_el, 'contextmenu', on_context_menu);
