@@ -28,3 +28,4 @@ export function p_pr_xml(e, extra = '') {
 export function para_xml(e, ctx) { const base = e.tagName === 'PRE' ? { font: 'Courier New', size: 10 } : {}; return `<w:p>${p_pr_xml(e)}${inline_xml(e, base, ctx)}</w:p>`; }
 export const NUMFMT = {
   'decimal': 'decimal', 'decimal-leading-zero': 'decimalZero', 'lower-alpha': 'lowerLetter', 'lower-latin': 'lowerLetter', 'upper-alpha': 'upperLetter',
+  'upper-latin': 'upperLetter', 'lower-roman': 'lowerRoman', 'upper-roman': 'upperRoman'
