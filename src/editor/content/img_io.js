@@ -17,3 +17,4 @@ export async function copy_image(img) {
   catch (e) { toast('Your browser blocked copying this image. Use Download image instead.'); }
 }
 export async function download_image(img) {
+  img = img_now(img); if (!img || previewing()) return;
