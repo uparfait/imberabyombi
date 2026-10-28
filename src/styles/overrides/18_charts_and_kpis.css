@@ -24,3 +24,4 @@
   .kpi_delta.down > svg, .kpi_delta.down b { color: rgb(var(--bad)); }
   .kpi_delta span { color: rgb(var(--muted)); }
   .kpi_status { --t: var(--ok); display: inline-flex; align-items: center; gap: .375rem; align-self: flex-start; padding: .125rem .625rem; border-radius: var(--pill);
+    font-size: .75rem; font-weight: 500; background: rgb(var(--t) / .12); color: rgb(var(--t)); }
