@@ -26,3 +26,4 @@ export function split_text(block, b, next) {
   let k = best + 1; if (k >= total) return false;
   const text = tn.map(t => t.data).join('');
   if (!/\s/.test(text[k - 1]) && !/\s/.test(text[k])) {
+    const sp = Math.max(text.lastIndexOf(' ', k - 1), text.lastIndexOf('\t', k - 1), text.lastIndexOf('\n', k - 1)); if (sp > 0) k = sp + 1;
