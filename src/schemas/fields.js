@@ -10,3 +10,5 @@ export const STATUS = {
   staff: option_list('Active|On leave|Inactive'), att: option_list('Present|Late|Absent|Excused'), task: option_list('To do|In progress|Done'),
   prio: option_list('Low|Medium|High'), pay: option_list('Paid|Partial|Unpaid'), rent: option_list('Rented|Returned'),
   res: option_list('Pending|Approved|Rejected'), ev: option_list('Planned|Open|Closed|Done'), park: option_list('Parked|Exited')
+};
+export const DEPTS = option_list('Teachers|Kitchen|Cleaners|Security|Administration');
