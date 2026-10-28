@@ -41,3 +41,4 @@ export function pages_click(e) {
   if (img) { select_image(img); return; }
   const out = !e.target.closest('.img_sel'), bh = out && state.mode === 'edit' ? behind_at(e) : null;
   if (bh) { select_image(bh); return; }
+  if (out) hide_img_sel();
