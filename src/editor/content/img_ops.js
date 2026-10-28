@@ -68,3 +68,4 @@ export async function reset_image(img) {
   try { const im = await load_img(o); w = im.naturalWidth || w; } catch (e) { /* keep the current width */ }
   img_op(img, x => {
     x.setAttribute('src', o); x.removeAttribute('data-orig');
+    ['border', 'borderRadius', 'boxShadow', 'height', 'position', 'left', 'top', 'zIndex'].forEach(p => { x.style[p] = ''; });
