@@ -9,3 +9,4 @@ import { cal_go } from '../modules/index.js';
 import { mini_draw } from '../admin/index.js';
 
 export const CALENDAR_ACT = {
+  cal_today: () => cal_go(ymd()),
