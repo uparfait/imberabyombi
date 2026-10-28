@@ -12,3 +12,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
 
 - Unknown routes show "Page not found".
 - Admin routes without a session redirect to `#/login?next=...` and return there after sign-in.
+- A module the role cannot open shows "No access" (forbidden view).
