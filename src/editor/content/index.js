@@ -14,3 +14,4 @@ export * from './img_menu.js';
 export * from './links.jsx';
 export * from './link_bubble.js';
 export * from './comments.js';
+export * from './comment_cards.js';
