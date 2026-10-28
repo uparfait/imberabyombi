@@ -33,3 +33,4 @@ export const VIZ_TIME_A = {
         + `<path class="series_line" d="${path_of(top)}" style="stroke:${scale_color(j)}"/>`; };
     return { svg: svg(f, ax.g + s.map((_, j) => layer(j)).join('') + chart_base(f, ax.y(0)) + x_labels(f, m, x)
         + cross_bands(f, m, x, i => [...s.map((n, j) => [num(v[j][i]), n, j]).reverse(), [num(cum[i].at(-1)), 'Total', null]]), 'Stacked area chart'),
+      legend: legend(s), table: [['Month', ...s, 'Total'], m.map((k, i) => [k, ...v.map(r => num(r[i])), num(cum[i].at(-1))])] }; } },
