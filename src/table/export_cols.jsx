@@ -14,3 +14,4 @@ export function Export_cols({ c }) {
   return (
     <fieldset ref={ref} className="sm:col-span-2" data-export-cols=""><legend className="mb-2 text-sm font-medium">Columns to include</legend>
       <div className="grid gap-2">{cols.map(k => (
+        <div key={k} className="export_col">
