@@ -2,3 +2,4 @@
    a reset / none choice, the PALETTE swatches and a custom colour. Hover previews a colour, a click keeps it;
    while the custom colour picker is open each colour shows at once and the confirmed one stays. */
 import { el, esc_html, PALETTE } from '../core/index.js';
+import { close_menus } from './menu_engine.js';
