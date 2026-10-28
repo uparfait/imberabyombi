@@ -5,3 +5,4 @@ import { state, refs, pages_el, scroller, dims, page_wraps, bodies, layout_page,
 import { hide_img_sel } from '../content/index.js';
 import { close_menus } from './menu_engine.js';
 import { update_rulers } from './rulers.js';
+import { set_text, set_icon, scaled } from './ui_dom.js';
