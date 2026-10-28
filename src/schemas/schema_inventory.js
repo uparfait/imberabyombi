@@ -28,3 +28,4 @@ export const inventory_schema = {
     field_spec('unit', 'Unit', 'select', option_list('pcs|kg|L|boxes|packs')), field_spec('location', 'Location')
   ],
   r: { qty: (v, row) => stock_cell(v, row) },
+  g: () => ({
