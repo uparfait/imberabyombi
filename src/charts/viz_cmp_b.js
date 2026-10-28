@@ -22,3 +22,4 @@ export const VIZ_CMP_B = {
       table: [['Category', '2025', '2026', 'Change'], c.map((k, i) => [k, num(a[i]), num(b[i]), (b[i] >= a[i] ? '+' : '') + num(b[i] - a[i])])] }; } },
   bullet: { t: 'Bullet chart', g: 'cmp', d: 'Actual against a target, over poor / fair / good bands.', f(w) {
     const c = ['Revenue', 'Profit', 'New users', 'Satisfaction'], f = frame(w, 200, { l: 92, r: 18, b: 10 }), y = band(c.length, f.t, f.t + f.ih);
+    const d = c.map(() => { const max = 100, t = rnd(60, 90); return { max, t, a: rnd(40, 98), bands: [50, 75, 100] }; });
