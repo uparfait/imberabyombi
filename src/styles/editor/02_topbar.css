@@ -28,3 +28,4 @@
 .title_input:focus { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
 
 /* Menu bar: pill buttons like the template's nav links; the open menu's button is tinted */
+#menubar { display: flex; flex-wrap: wrap; gap: .0625rem; margin-left: -.25rem; }
