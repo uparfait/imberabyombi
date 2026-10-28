@@ -26,3 +26,4 @@ VIEWS.calendar = () => {
       <h2 className="date_title font-sans text-xl font-normal sm:text-2xl">{d.toLocaleDateString(undefined, { month: 'long', year: 'numeric' })}</h2>
       <div className="ml-auto flex items-center gap-2">{views(wk)}
         {can ? <button className="btn btn_primary" data-act="add" data-col="activities">{ic('plus', 'h-4 w-4')}
+          <span className="hidden sm:inline">Activity</span></button> : null}</div>
