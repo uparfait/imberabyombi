@@ -3,3 +3,4 @@
 import { icon_path } from './icon.jsx';
 
 export let GID = 0;
+export const TONES = { brand: ['brand', 'brand_2'], ink: ['muted', 'ink'], ok: ['ok', 'ok'], info: ['info', 'info'], warn: ['warn', 'brand_2'], bad: ['bad', 'bad'] };
