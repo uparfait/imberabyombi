@@ -62,3 +62,4 @@
 .doc_content img{display:inline;background:none}
 .doc_content abbr[title]{text-decoration:underline dotted;cursor:inherit}
 /* the image menu's "Drop shadow" (an inline box-shadow) is part of the document: shown despite the flat interface rule */
+.doc_content img[style*="box-shadow"]{box-shadow:0 2px 10px rgba(0,0,0,.35)!important}
