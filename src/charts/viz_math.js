@@ -37,3 +37,5 @@ export const pct = v => `${round1(v * 100)}%`;
 export const spread = (ys, gap = 13) => {
   const o = ys.map((y, i) => [y, i]).sort((a, b) => a[0] - b[0]), out = [...ys];
   o.forEach(([y, i], n) => { out[i] = n ? Math.max(y, out[o[n - 1][1]] + gap) : y; });
+  return out;
+};
