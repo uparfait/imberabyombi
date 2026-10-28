@@ -25,3 +25,4 @@ export const db = {
   save(c, rows) { db.set('c:' + c, rows); },
   find(c, id) { return db.list(c).find(r => r.id === id); },
   upsert(c, row) {
+    const rows = db.list(c), id = row.id || uid(), i = rows.findIndex(r => r.id === id);
