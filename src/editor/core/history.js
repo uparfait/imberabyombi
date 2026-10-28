@@ -47,3 +47,4 @@ export function apply_snap(s) {
   while (ws.length > s.html.length) { ws.pop().remove(); }
   bodies().forEach((b, i) => { b.innerHTML = s.html[i]; });
   if (s.caret) { const b = bodies()[s.caret.i], n = b && node_at(b, s.caret.path); if (n) set_caret(n, s.caret.off); scroll_caret_into_view(); }
+  layout_after(); refresh_toolbar();
