@@ -12,6 +12,7 @@ import { after_close } from './dialogs.jsx';
 
 const SIDES = ['top', 'bottom', 'left', 'right'];
 const cap = s => s[0].toUpperCase() + s.slice(1);
+const KEYS = ['paper', 'orientation', 'page_color', 'pageless', 'header', 'footer', 'page_numbers'];
 
 /* a segmented choice (the template's .seg) */
 function seg(name, opts, cur, on) {
