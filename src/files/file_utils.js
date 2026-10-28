@@ -9,3 +9,4 @@ export const furl = f => FURL.get(f) || (FURL.set(f, URL.createObjectURL(f)), FU
 export const fmt_size = n => n < 1024 ? `${n} B` : n < 1048576 ? `${(n / 1024).toFixed(1)} KB` : `${(n / 1048576).toFixed(1)} MB`;
 export const ext_of = f => (f.name.includes('.') ? f.name.split('.').pop() : '').slice(0, 5);
 export const TEXT_EXT = /^(txt|md|csv|tsv|json|xml|js|mjs|ts|jsx|tsx|css|html?|ya?ml|log|ini|conf|env|sql|py|rb|php|java|kt|c|h|cpp|cs|go|rs|sh|bat|ps1)$/i;
+export const file_kind = f => { const t = f.type || '', x = ext_of(f);
