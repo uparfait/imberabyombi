@@ -3,3 +3,5 @@
    refs.vruler, refs.workspace, refs.toolbar, refs.doc_title, refs.find_panel, refs.size_input, refs.tab_list, …
    plus refs.root (the editor root) and refs.pages_el (= refs.pages). Any other key is looked up by id on first use
    (and again when React replaced the element). pages_el / scroller / hruler / vruler are also live exports. */
+
+const ALIAS = { pages_el: 'pages' };
