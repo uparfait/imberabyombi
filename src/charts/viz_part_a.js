@@ -9,3 +9,5 @@ import { legend } from './viz_legend.jsx';
 const slices = (v, tot, cx, cy, r0, rad, tip) => { let a = 0; return v.map((val, i) => { const a0 = a; a += val / tot * Math.PI * 2;
   return mark_group(...tip(val, i),
     `<path class="mark" d="${arc(cx, cy, r0, rad, a0, a)}" style="fill:${scale_color(i)};stroke:rgb(var(--surface));stroke-width:2"/>`); }).join(''); };
+
+export const VIZ_PART_A = {
