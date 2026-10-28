@@ -32,11 +32,7 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 - Images carry `alt` text; headings follow one `h1` per page; links are real `<a href>` elements.
 - A `<noscript>` message explains that the site needs JavaScript.
 
-## Hash routes and search engines
-Routes are hash-based (`#/about`), which works on every static host without server rules and keeps the template
-portable. Search engines render JavaScript pages, but each hash route is not a separate URL for every crawler. If search
-ranking of individual pages matters, switch to path routes (`/about`) with a server rewrite to `index.html`, or
-pre-render the public pages at build time; the public pages only read static data, so both are straightforward.
+## Pre-rendering
 
 ## Before publishing
 Replace the canonical URL, the JSON-LD values, the social image and the sample media. See
