@@ -45,3 +45,4 @@ function on_move(ev) {
     position_img_box(); return;
   }
   if (img_box) img_box.style.transform = `translate(${dx / z}px, ${dy / z}px)`;
+  d.p = drop_point(ev.clientX, ev.clientY, d.img); if (d.p) show_caret(d.p); else hide_caret();
