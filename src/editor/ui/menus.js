@@ -36,3 +36,4 @@ function insert_items() {
     cmd('Special characters', 'emoji_symbols', () => special_chars_dialog()),
     { sep: true },
     { label: 'Header', icon: 'vertical_align_top', checked: !!state.setup.header, no_preview: true, action: () => page_part('header', '.pg_header') },
+    { label: 'Footer', icon: 'vertical_align_bottom', checked: !!state.setup.footer, no_preview: true, action: () => page_part('footer', '.pg_footer_text') },
