@@ -20,7 +20,7 @@ const task_li = x => <li key={x.id}><button type="button" className="task_row" d
   <span className="min-w-0 flex-1"><span className="block truncate text-sm">{x.title}</span>{x.due ? due_tag(x) : null}</span>{badge(x.priority)}</button></li>;
 const up_li = i => <li key={i.c + i.id} className="flex gap-3">
   <time dateTime={`${i.date}T${i.start}`} className="grid w-12 shrink-0 place-items-center rounded-2xl bg-brand/10 py-1.5 leading-tight text-accent">
-    <b className="font-display text-lg">{parse_d(i.date).getDate()}</b><small className="text-[10px]">
+    <b className="font-display text-lg">{parse_d(i.date).getDate()}</b><small className="text-[0.625rem]">
       {parse_d(i.date).toLocaleDateString(undefined, { month: 'short' })}</small></time>
   <div className="min-w-0"><p className="truncate text-sm font-medium">{i.title}</p><p className="text-xs text-muted">{`${i.start} – ${i.end}`}</p></div></li>;
 
