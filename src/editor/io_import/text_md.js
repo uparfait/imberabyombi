@@ -25,3 +25,4 @@ export function md_to_html(md) {
   const lines = md.replace(/\r\n?/g, '\n').split('\n'); let out = '', i = 0;
   while (i < lines.length) {
     const l = lines[i];
+    if (/^```/.test(l)) {
