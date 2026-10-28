@@ -5,3 +5,4 @@ import { MODS } from './mods.js';
 
 export const perm_map = s => Object.fromEntries(s.split(',').map(x => { const [k, v] = x.split(':'); return [k.trim(), +v]; }));
 export const ROLES0 = [
+  { id: 'super', name: 'Super Admin', perms: '*', locked: true, d: 'Sees and manages everything, including roles.' },
