@@ -7,3 +7,4 @@ import { staff_schema, employees_schema } from './schema_people.js';
 import { attendance_schema } from './schema_attendance.js';
 import { tasks_schema } from './schema_tasks.js';
 import { students_schema, bulletins_schema, payments_schema } from './schema_students.js';
+import { books_schema, rentals_schema, declarations_schema } from './schema_library.js';
