@@ -18,3 +18,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 - Export: CSV, JSON or Excel (see below).
 
 ## Options
+| Option          | Meaning                                                                        |
