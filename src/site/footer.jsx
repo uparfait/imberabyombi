@@ -5,6 +5,7 @@ import { logo } from '../ui/index.js';
 import { cfg } from '../config/index.js';
 import { lorem } from '../lib/index.js';
 import { PUB } from './site_bits.jsx';
+import { to } from '../router/index.js';
 
 const SOCIAL_CLS = 'grid h-10 w-10 place-items-center rounded-full border border-line text-fg/80 transition hover:border-brand hover:bg-brand hover:text-white';
 
