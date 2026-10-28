@@ -12,3 +12,4 @@ import { tip } from './tip.js';
    title: text or JSX · help: text · body, actions: JSX or a function returning JSX (called on every draw, so rerender()
    refreshes an open view) · on_submit(values, form): values = form_obj(form); return false to keep the dialog open. */
 export function modal({ title, help = '', body = '', submit, on_submit, danger, actions = '', wide = false }) {
+  /* The description (help): a dialog with content shows it behind the help icon by the title; a dialog with nothing
