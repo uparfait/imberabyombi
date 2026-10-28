@@ -6,3 +6,4 @@ There is one redraw switch, in [`src/store/app_state.js`](../src/store/app_state
 ## The draw cycle
 1. Something changes data (`db.upsert(...)`) or UI state (`ui.tab.tasks = 'mine'`).
 2. The code calls `rerender()` (same page) or `render()` (a new page).
+3. `<App/>` draws `render_route()`: the public, account or admin page for the current hash.
