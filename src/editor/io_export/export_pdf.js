@@ -24,3 +24,4 @@ export async function export_pdf(scope, name, scale = 2) {
         const c = pages[i].cloneNode(true); c.style.transform = 'none'; c.style.boxShadow = 'none'; c.style.border = '0';
         qsa('.cmt', c).forEach(x => { x.style.background = 'none'; x.style.borderBottom = '0'; }); qsa('.img_sel', c).forEach(x => x.remove());
         qsa('[contenteditable]', c).forEach(x => x.removeAttribute('contenteditable'));
+        holder.innerHTML = ''; holder.appendChild(c);
