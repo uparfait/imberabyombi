@@ -39,3 +39,4 @@ function place_uploads(done, mode, failed) {
 export async function process_uploads(files, mode) {
   if (!can_edit()) return;
   if (mode === 'replace' && !is_doc_empty() && !(await confirm_dialog('Replace everything in this document with the uploaded files?', 'Replace'))) return;
+  if (hist_timer) commit();
