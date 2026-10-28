@@ -5,3 +5,4 @@
 import { state, hruler, vruler, scroller, DPI, dims, page_wraps, layout_page, clamp, begin_op, commit, save_soon } from '../core/index.js';
 import { tip } from '../../overlays/index.js';
 import { apply_setup } from './view.js';
+import { scaled } from './ui_dom.js';
