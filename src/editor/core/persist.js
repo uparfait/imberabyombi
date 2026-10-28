@@ -14,3 +14,4 @@ let save_timer = null, too_big = 0;
 
 /* the saved shape; the active tab's html comes from the pages (split parts re-joined) */
 export function doc_data() {
+  const html = pages_el && bodies().length ? collect_html() : null;
