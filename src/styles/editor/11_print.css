@@ -3,3 +3,4 @@
    around the editor (admin sidebar, header, panels, menus, notifications) and the editor's own chrome is left out.
    Scoped with :has(#editor), so the rules do nothing on other pages after the editor's styles have loaded. */
 @media print {
+  html:has(#editor), html:has(#editor) body {
