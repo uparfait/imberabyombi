@@ -5,3 +5,4 @@
    state); later calls restore that snapshot first. fn runs with history off and its toasts held back. `restore` (optional)
    undoes side effects outside the document (e.g. a remembered colour) on cancel. Previews never enter the undo stack. */
 import { qsa } from './utils.js';
+import { state } from './state.js';
