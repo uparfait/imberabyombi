@@ -10,3 +10,6 @@ export default defineConfig({
   build: {
     target: 'es2020',          /* modern browsers, including older phones still in use */
     cssCodeSplit: true,        /* lazy pages bring only their own CSS */
+    reportCompressedSize: true /* shows the gzip size of every file after a build */
+  }
+});
