@@ -35,3 +35,4 @@ export function sel_cells(c) { const r = last_range; const cells = r && !r.colla
 export function tbl_op(op, arg) {
   if (!can_edit()) return;
   const c = table_ctx(); if (!c) { toast('Place the cursor inside a table first'); return; }
+  op = String(op).replace(/[A-Z]/g, ch => '_' + ch.toLowerCase());
