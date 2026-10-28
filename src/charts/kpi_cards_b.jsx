@@ -36,3 +36,4 @@ export const kpi_cards_b = k => {
         <circle cx="40" cy="40" r="32" pathLength="100" style={{ strokeDasharray: `${done} 100` }} /></svg><b>{`${done}%`}</b></div>
         <p className="text-center text-sm text-muted">{`${Math.round(ring * 50)} of 50 this week`}</p></>,
       [['Measure', 'Value'], [['Done', Math.round(ring * 50)], ['Total', 50], ['Share', `${done}%`]]]),
+    kpi_card('', 'Satisfaction', 'Average rating out of 5 from all reviews this period.',
