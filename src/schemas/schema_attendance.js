@@ -2,3 +2,4 @@
    (staff and students; absent people have no times). */
 import { lorem, pad, ymd, add_d } from '../lib/index.js';
 import { db } from '../store/index.js';
+import { field_spec, option_list, STATUS, names } from './fields.js';
