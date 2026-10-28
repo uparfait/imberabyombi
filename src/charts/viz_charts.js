@@ -9,3 +9,4 @@ import { VIZ_TIME_B } from './viz_time_b.js';
 import { VIZ_PART_A } from './viz_part_a.js';
 import { VIZ_PART_B } from './viz_part_b.js';
 import { VIZ_REL_A } from './viz_rel_a.js';
+import { VIZ_REL_B } from './viz_rel_b.js';
