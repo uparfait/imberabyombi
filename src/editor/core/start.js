@@ -46,10 +46,7 @@ export function editor_start(root) {
 
   /* ================= start ================= */
   try { document.execCommand('defaultParagraphSeparator', false, 'p'); } catch { /* not supported */ }
-  render_all();
-  let stopped = false;
-  const t0 = setTimeout(() => { const b = bodies()[0]; if (b) caret_to_start(first_flow(b)); }, 60);
-  if (document.fonts) document.fonts.ready.then(() => { if (!stopped) { reflow(0, true); update_rulers(); } });
+  root?.classList.add('ed_loading'); render_all();
 
   function stop() {
     if (stopped) return;
