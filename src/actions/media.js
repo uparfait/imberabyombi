@@ -21,3 +21,5 @@ export function toggle_details(d, e) {
   const to = open ? d.getBoundingClientRect().height : s.getBoundingClientRect().height + d.offsetHeight - d.clientHeight;
   d._a?.cancel(); d._a = d.animate([{ height: from + 'px' }, { height: to + 'px' }], { duration: 300, easing: 'cubic-bezier(.22,.8,.22,1)' });
   d._a.onfinish = () => { if (!open) d.open = false; d._a = null; };
+}
+/* the message goes in a trailing box after the player's own (static) children, as in the reference */
