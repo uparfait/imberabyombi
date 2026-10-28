@@ -2,3 +2,4 @@
    rules, range fills, live outputs, list filters, design tokens, calc forms, clearing fixed errors) and code pasting. */
 import { qs, qsa } from '../lib/index.js';
 import { ui } from '../store/index.js';
+import { clear_err } from '../feedback/index.js';
