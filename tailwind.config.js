@@ -5,3 +5,4 @@
 /* spacing scale: Tailwind's steps, each a multiple of --space (default 1rem ÷ 4 per step) */
 const spacing = { 0: '0px', px: '1px', auto: 'auto' };
 for (const step of [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64, 72, 80, 96]) {
+  spacing[step] = `calc(var(--space) * ${step / 4})`;
