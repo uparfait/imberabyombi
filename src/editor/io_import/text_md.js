@@ -42,3 +42,5 @@ export function md_to_html(md) {
       while (i < lines.length && LIST_RE.test(lines[i])) {
         const t = lines[i++].replace(LIST_RE, ''); const tm = t.match(/^\[([ xX])\]\s+(.*)$/);
         if (tm) { task = true; items.push(`<li data-checked="${tm[1] !== ' '}">${md_inline(tm[2])}</li>`); } else items.push(`<li>${md_inline(t)}</li>`);
+      }
+      out += ordered ? `<ol>${items.join('')}</ol>` : `<ul${task ? ' class="checklist"' : ''}>${items.join('')}</ul>`; continue;
