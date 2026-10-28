@@ -11,3 +11,5 @@ export function level_of(h) { return h.tagName === 'P' ? 0 : +h.tagName[1] - 1; 
 /* the outline's headings in document order; a title split over two pages counts once */
 export function heading_els() {
   return pages_el ? qsa('.pg_body :is(h1, h2, h3, h4, p.title)', pages_el).filter(h => clean_text(h) && !h.hasAttribute('data-cont')) : [];
+}
+export function is_top_head(h) { return !!(h.parentElement && h.parentElement.classList.contains('pg_body')); }
