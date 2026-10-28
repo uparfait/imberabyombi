@@ -20,3 +20,4 @@ export * from './dashboard_widgets.jsx';
 export * from './dashboard.jsx';
 export * from './calendar_grids.jsx';
 export * from './calendar.jsx';
+export * from './tasks.jsx';
