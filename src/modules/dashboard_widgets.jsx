@@ -27,3 +27,4 @@ const up_li = i => <li key={i.c + i.id} className="flex gap-3">
 export function dash_widgets(u) {
   const W = [];
   if (auth.can('attendance')) {
+    const days = Array.from({ length: 7 }, (_, i) => add_d(new Date(), i - 6)), att = db.list('attendance');
