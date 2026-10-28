@@ -25,3 +25,4 @@ export const PK = {
   times(v) {
     const near = v ? Math.min(95, Math.floor(to_min(v) / 15)) : 36;
     const on = h24();
+    return `<div class="flex min-h-0 flex-col"><div class="pk_clock" role="group" aria-label="Clock format">${[[0, '12h'], [1, '24h']]
