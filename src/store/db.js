@@ -11,6 +11,7 @@ export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.r
 
 /* seed(c) lives in src/schemas, which hands it over with set_seeder(seed) when it loads; the "storage is full" notice comes
    from src/feedback the same way (set_storage_full). db.js imports neither: they reach every view, and the store, app_state
+   included, must be ready before any view runs. */
 export const set_seeder = fn => { seeder = fn; };
 const storage_full = () => import('../feedback/index.js')
   .then(m => m.notify('Export a backup, then reset demo data in Settings to free space.', 'bad', 'Browser storage is full'));
