@@ -20,3 +20,4 @@ let page_key = 0, last = null;
 export function render_route() {
   if (get_version() === 0) { skip_after_render(); return null; }   /* before boot's first navigate() draws: #app stays empty */
   set_route(parse()); const r = route; let html;
+  try { html = r.path === '/admin' || r.path.startsWith('/admin/') ? admin_page(r)
