@@ -11,3 +11,4 @@ const u = n => +scaled(n).toFixed(2);
 
 export function update_rulers() {
   if (!hruler || !vruler) return;
+  hruler.style.display = state.show_ruler ? '' : 'none';
