@@ -11,3 +11,4 @@ export function open_cmd() {
   modal({ title: 'Go to', body: (
     <div className="sm:col-span-2">
       {search_box({ 'data-filter': '.cmd_item', 'data-cmd': '', autoFocus: true }, 'Type a module or page name')}
+      <ul className="mt-3 grid max-h-[50dvh] gap-1 overflow-y-auto">{items.map(([h, l, i]) => <li className="cmd_item" key={h}><button className="menu_item py-2.5" data-act="go" data-href={h}>{ic(i, 'h-4 w-4 text-muted')}{l}</button></li>)}</ul>
