@@ -18,3 +18,4 @@ export function view_row(c, id) {
   if (rest.length && sec.length) groups.push(groups.shift());
   modal({ title: String(r[k0] || cap(s.l)), help: `${cap(s.l)}: every detail of this record, grouped by section.`, body: kv_table(groups),
     actions: can ? <>
+      <button type="button" className="btn btn_danger order-first mr-auto" data-act="del" data-col={c} data-id={id}>{ic('trash', 'h-4 w-4')}Delete</button>
