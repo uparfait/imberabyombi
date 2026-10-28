@@ -36,3 +36,4 @@ const rtf_pict = (rx, img) => {
     + `\n${parts.join('\n')}}`;
 };
 export function rtf_inline(rx, node, f) {
+  let o = '';
