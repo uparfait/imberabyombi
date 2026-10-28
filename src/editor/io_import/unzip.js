@@ -3,3 +3,4 @@
 import { MIME, ext_of, bytes_to_b64 } from './file_helpers.js';
 
 export async function unzip(buf) {
+  const u8 = new Uint8Array(buf), dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength);
