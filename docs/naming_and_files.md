@@ -34,3 +34,4 @@ above them. The `docs/` folder explains the techniques; the code comments explai
 
 ## 5. Imports go through folder barrels
 Each folder has an `index.js` that re-exports its files. Import from the folder, not from a file inside another folder:
+```js
