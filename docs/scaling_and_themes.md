@@ -21,6 +21,7 @@ html { font-size: calc(100vw * 16 / var(--scale_phone)); }                     /
 | wider than `--scale_ref` | The reference desktop view scaled up: a larger screen or a zoomed-out browser shows the same layout, never smaller |
 
 Because the root grows with the width past `--scale_ref`, zooming the browser out keeps text and controls at the same physical
+size; zooming in still enlarges them as usual. Below 360px the 360px design scales down so it always fills the screen.
 
 Pages never scroll sideways (`overflow-x: clip` on `html` and `body`); wide content (tables, tab strips) scrolls
 inside its own box. Nested scroll areas hand the wheel back to the page at their end.
