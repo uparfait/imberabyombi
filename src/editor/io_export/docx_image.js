@@ -31,3 +31,4 @@ export function image_xml(img, ctx) {
   return `<w:r><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${cx}" cy="${cy}"/>${doc_pr}${graphic}</wp:inline></w:drawing></w:r>`;
 }
 export async function prepare_images(root) {
+  for (const img of qsa('img', root)) {
