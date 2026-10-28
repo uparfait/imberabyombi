@@ -40,3 +40,4 @@ export function reflow(cur = 0, full = false) {
     if (!full && i >= cur && same_sig(before, sig(b))) break;
   }
   bs = bodies();
+  for (let j = bs.length - 1; j >= 1; j--) if (is_blank_body(bs[j])) drop_page(bs[j], bs[j - 1]);
