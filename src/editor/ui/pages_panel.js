@@ -3,3 +3,4 @@
 import { state, refs, scroller, bodies, first_flow, caret_to_start, el } from '../core/index.js';
 import { delete_page } from '../content/index.js';
 import { update_rulers } from './rulers.js';
+import { set_text, mi, scaled } from './ui_dom.js';
