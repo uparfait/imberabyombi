@@ -10,3 +10,4 @@ export function insert_table(rows, cols) { const t = insert_block_at_caret(build
 export function table_ctx() {
   const r = last_range; if (!r || !r.startContainer.isConnected) return null;
   const host = editable_of(r.startContainer); if (!host || !host.classList.contains('pg_body')) return null;
+  const td = el_of(r.startContainer).closest('td,th'); if (!td || !host.contains(td)) return null;
