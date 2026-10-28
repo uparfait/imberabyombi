@@ -40,3 +40,4 @@ export function tbl_op(op, arg) {
   const chain = table_chain(c.table), slot = row_slots(c.tr).find(x => x.cell === c.td) || { start: 0, end: 0 };
   const drop_cols = () => chain.forEach(t => { const g = t.querySelector(':scope > colgroup'); if (g) g.remove(); });
   let target = null, full = false;
+  switch (op) {
