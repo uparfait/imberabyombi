@@ -3,3 +3,4 @@
    The root carries key={f.k}, so a form can list fields directly: {schema.f.map(f => field(f, row[f.k]))}. */
 import { options } from '../ui/index.js';
 import { sub_editor, subs_of } from '../modules/index.js';
+import { File_box } from '../files/index.js';
