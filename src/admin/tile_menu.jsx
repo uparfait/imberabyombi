@@ -12,3 +12,4 @@ const tile = (t, i) => { const Tag = t.href ? 'a' : 'button';
 
 export const tile_menu = o => <div className="relative">
   <button className={`tile_trigger ${o.set ? 'is_set' : ''}`} data-act="pop" data-pop={o.id} aria-haspopup="true">
+    {o.set ? i3(o.icon, 'h-7 w-7') : ic(o.icon || 'grid', 'h-5 w-5')}<span className="truncate">{o.label}</span>{ic('chevD', 'h-4 w-4 shrink-0 text-muted')}</button>
