@@ -8,3 +8,4 @@ import { table_chain } from './table_ops.js';
 export let col_hover = null;
 export function set_col_hover(h) { col_hover = h; document.body.classList.toggle('col_resize', !!h); }
 export function ensure_colgroup(t, chain) {
+  let cg = t.querySelector(':scope > colgroup');
