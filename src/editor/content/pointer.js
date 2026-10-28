@@ -39,3 +39,4 @@ export function pages_click(e) {
   }
   const img = e.target.closest('.pg_body img');
   if (img) { select_image(img); return; }
+  const out = !e.target.closest('.img_sel'), bh = out && state.mode === 'edit' ? behind_at(e) : null;
