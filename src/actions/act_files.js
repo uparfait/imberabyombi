@@ -3,3 +3,5 @@
    (fresh tile nodes: a faded one is never reused). */
 import { reduced } from '../feedback/index.js';
 import { FURL, view_file } from '../files/index.js';
+
+export const FILE_ACT = {
