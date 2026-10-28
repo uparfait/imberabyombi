@@ -4,3 +4,4 @@ import { cfg } from '../config/index.js';
 import { uid } from '../lib/index.js';
 
 export const ls = (() => { try { localStorage.setItem('_t', '1'); localStorage.removeItem('_t'); return localStorage; } catch {
+  const m = new Map();
