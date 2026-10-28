@@ -4,3 +4,4 @@
   <url><loc>https://example.com/</loc><priority>1.0</priority></url>
   <url><loc>https://example.com/#/about</loc></url>
   <url><loc>https://example.com/#/mission</loc></url>
+  <url><loc>https://example.com/#/vision</loc></url>
