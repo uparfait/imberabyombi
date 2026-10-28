@@ -21,3 +21,4 @@ export function apply_setup(full) {
   const { win, hin } = dims(), s = state.setup, m = s.margins;
   page_rule_el().textContent = s.pageless ? `@page{size:${win}in ${hin}in;margin:${m.top}in ${m.right}in ${m.bottom}in ${m.left}in}` : `@page{size:${win}in ${hin}in;margin:0}`;
   pages_el.classList.toggle('pageless', !!s.pageless);
+  page_wraps().forEach(w => { layout_page(w); qs('.pg_header', w).innerHTML = s.header_html || ''; qs('.pg_footer_text', w).innerHTML = s.footer_html || ''; });
