@@ -16,3 +16,4 @@ export const ZOOMS = [50, 75, 90, 100, 125, 150, 200];
 export const STYLES = [
   { key: 'p', label: 'Normal text', tag: 'P', css: 'font-size:14px' },
   { key: 'title', label: 'Title', tag: 'P', cls: 'title', css: 'font-size:24px' },
+  { key: 'subtitle', label: 'Subtitle', tag: 'P', cls: 'subtitle', css: 'font-size:16px;color:#666' },
