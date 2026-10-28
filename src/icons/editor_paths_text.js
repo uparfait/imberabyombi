@@ -38,3 +38,4 @@ export const EDITOR_TEXT_PATHS = {
   reorder: 'M4 6h16M4 10h16M4 14h16M4 18h16',
   toc: 'M3 6h12M3 12h12M3 18h12M19 6h2M19 12h2M19 18h2',
   numbers: 'M5 8l3-2v12M5 18h6M13 9a3 3 0 1 1 5.3 1.9L13 18h6',
+  tag: 'M4 9h16M4 15h16M10 3 8 21M16 3l-2 18',
