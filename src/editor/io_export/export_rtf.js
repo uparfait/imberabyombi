@@ -20,3 +20,4 @@ function rtf_table(rx, t) {
   const col_w = Math.round(rx.content_tw * (parseFloat(t.style.width) || 100) / 100 / n);
   const bw = parseFloat(t.style.getPropertyValue('--bw')), bwv = isNaN(bw) ? 1 : bw;
   const brd = bwv ? `\\brdrs\\brdrw${Math.max(5, Math.round(bwv * 15))}\\brdrcf${rtf_ci(rx, to_hex(t.style.getPropertyValue('--bc')) || '000000')}` : '\\brdrnil';
+  let o = '';
