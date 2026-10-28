@@ -37,3 +37,5 @@ function put(img, url, width_fn, msg) {
     x.style.width = clamp(Math.round(width_fn ? width_fn(w0, h0) : w0), 16, img_max(x)) + 'px';
   });
   if (msg) toast(msg, 1600);
+}
+/* A picture already shown (and not from another website) is redrawn at once (a hover preview shows it at once);
