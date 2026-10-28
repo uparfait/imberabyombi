@@ -36,3 +36,4 @@ VIEWS.roles = () => {
         {can && !sel.locked ? <button className="btn btn_danger btn_sm" data-act="role_del" data-id={sel.id}>
           {ic('trash', 'h-4 w-4')}Delete role</button> : null}</div></header>
       <div id="matrix_msg" className="px-5 pt-4 empty:hidden"></div>
+      <div className="border-b border-line px-5 py-4"><div className="field max-w-xs"><label htmlFor="role_land">Lands on after sign-in</label>
