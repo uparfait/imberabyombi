@@ -68,3 +68,5 @@ function filter_box(focus) {
   inp.addEventListener('keydown', e => {
     if (e.key === 'Escape' && inp.value) { e.stopPropagation(); inp.value = ''; tab_q = ''; apply_filter(refs.tab_list); }
     else if (e.key === 'Enter') { e.preventDefault(); const r = qsa('.tab_row', refs.tab_list).find(x => !x.hidden); if (r) switch_tab(r.dataset.id); }
+  });
+  if (focus) setTimeout(() => { inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length); }, 0);
