@@ -41,3 +41,4 @@ function on_hover(e) {
   const t = e.target, cell = pages_el && pages_el.contains(t) && t.closest('.pg_body td, .pg_body th'); let h = null;
   if (cell) {
     const r = cell.getBoundingClientRect(), row = cell.parentElement;
+    if (Math.abs(e.clientX - r.right) <= 4 && cell !== row.cells[row.cells.length - 1]) h = { table: cell.closest('table'), ci: cell.cellIndex };
