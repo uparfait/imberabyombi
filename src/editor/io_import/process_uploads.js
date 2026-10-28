@@ -55,3 +55,4 @@ export async function process_uploads(files, mode) {
   hide_toast();
   if (done.length) place_uploads(done, mode, failed);
   if (failed.length) show_failed(failed, done.length);
+  else if (notes.length) toast(notes.join(' '), 7000);
