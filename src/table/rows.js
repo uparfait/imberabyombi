@@ -10,3 +10,4 @@ export function rows_of(c) {
   Object.entries(ui.q[c] || {}).forEach(([k, q]) => { if (!q) return; const t = s.f.find(f => f.k === k)?.t || '', n = q.toLowerCase().trim();
     rows = rows.filter(r => t === 'select' ? String(r[k] ?? '') === q : /^date/.test(t) ? String(r[k] ?? '').startsWith(q) : plain(c, k, r).toLowerCase().includes(n)); });
   const st = ui.sort[c]; if (st) rows = [...rows].sort((a, b) => String(a[st.k] ?? '').localeCompare(String(b[st.k] ?? ''), undefined, { numeric: true }) * st.d);
+  return rows;
