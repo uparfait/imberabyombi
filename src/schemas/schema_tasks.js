@@ -26,3 +26,4 @@ export const tasks_schema = {
   g: () => {
     const p = people(), st = lorem.pick(STATUS.task), due = `${ymd(add_d(new Date(), lorem.int(-3, 12)))}T${lorem.pick(['10:00', '12:00', '15:30', '17:00'])}`;
     return {
+      title: lorem.t(4), assignee: lorem.pick(p), by: lorem.pick(p), start: `${ymd(add_d(new Date(), lorem.int(-12, -1)))}T${lorem.pick(['08:00', '09:00', '09:30'])}`,
