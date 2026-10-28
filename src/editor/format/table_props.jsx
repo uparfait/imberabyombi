@@ -28,3 +28,4 @@ const apply_props = (v, n_rows, n_cols) => ch => {
 export function table_props_dialog() {
   if (previewing() || !can_edit()) return;
   const c = table_ctx(); if (!c) { toast('Place the cursor inside a table first'); return; }
+  const chain = table_chain(c.table), t0 = chain[0];
