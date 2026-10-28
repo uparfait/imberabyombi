@@ -10,3 +10,4 @@ const DATA_HELP = 'Every admin list uses this: search inside each column, sort b
 
 const row = i => {
   const n = lorem.name();
+  return (
