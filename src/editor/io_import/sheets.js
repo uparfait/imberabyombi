@@ -15,3 +15,5 @@ function cell_value(c, strings) {
   else if (t === 'inlineStr') val = by_tag(c, 't').map(x => x.textContent).join('');
   else if (t === 'b') val = val === '1' ? 'TRUE' : 'FALSE';
   return val;
+}
+export async function xlsx_native(buf) {
