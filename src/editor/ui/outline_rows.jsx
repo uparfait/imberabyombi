@@ -42,3 +42,4 @@ function open_section_menu(row, btn, kb) {
 function on_key(e, row) {
   if (e.target !== row) return;
   const rows = outline_rows(row.parentElement).filter(r => !r.hidden), i = rows.indexOf(row), k = e.key, lvl = +row.dataset.lvl;
+  if (e.altKey && e.shiftKey && (k === 'ArrowUp' || k === 'ArrowDown')) {
