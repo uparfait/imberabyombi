@@ -2,3 +2,4 @@
    Sign-in, contact, newsletter, side-panel note, profile, forgot password, one-time code, set password. Return false to
    keep the form as it is (an error is shown). */
 import { qs, qsa, esc, uid } from '../lib/index.js';
+import { db, route, rerender } from '../store/index.js';
