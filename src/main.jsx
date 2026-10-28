@@ -3,6 +3,7 @@
    app in #app and starts the hash router. React.StrictMode is left out on purpose: views queue work for after
    the draw (charts, animations), and a double draw in development would queue it twice. */
 import { createRoot } from 'react-dom/client';
+import './styles/index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
