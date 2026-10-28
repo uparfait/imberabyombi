@@ -40,3 +40,4 @@ export async function insert_image(src) {
 export async function insert_image_file(f) { if (!f.type.startsWith('image/')) return; insert_image(await read_as_data_url(f)); }
 
 /* #image_replace (the hidden file input the chrome renders): the picked file replaces replace_target */
+export async function on_image_replace(e) {
