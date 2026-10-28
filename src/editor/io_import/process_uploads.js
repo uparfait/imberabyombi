@@ -63,3 +63,5 @@ export async function process_uploads(files, mode) {
 export function pick_any(cb) {
   const i = el('input', { type: 'file', multiple: '' }); i.style.display = 'none'; document.body.appendChild(i);
   i.addEventListener('change', () => { cb(Array.from(i.files)); i.remove(); }); i.click();
+}
+/* each file as a downloadable chip at the cursor (one undo step) */
