@@ -31,3 +31,4 @@ const font_items = () => FONTS.map(f => ({ label: f, label_style: `font-family:'
 const size_items = () => [8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 48, 60, 72, 96].map(s => ({ label: String(s), action: () => set_font_size(s) }));
 const indent_items = () => [{ label: 'Increase indent', icon: 'format_indent_increase', action: () => indent(1) },
   { label: 'Decrease indent', icon: 'format_indent_decrease', action: () => indent(-1) }];
+/* dropdown button id → its items */
