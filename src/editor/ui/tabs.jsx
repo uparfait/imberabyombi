@@ -27,3 +27,4 @@ export function add_tab() {
   setTimeout(() => { const b = bodies()[0]; if (b) caret_to_start(first_flow(b)); }, 30);
 }
 /* d: +1 next, -1 previous (wraps around) */
+export function step_tab(d) {
