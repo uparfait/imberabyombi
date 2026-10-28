@@ -42,3 +42,4 @@ export function csv_parse(text, delim) {
   text = text.replace(/^\ufeff/, '');
   if (!delim) {
     const first = text.split(/\r?\n/, 1)[0] || '';
+    const best = [',', ';', '\t', '|'].map(d => [d, first.split(d).length]).sort((a, b) => b[1] - a[1])[0]; delim = best[1] > 1 ? best[0] : ',';
