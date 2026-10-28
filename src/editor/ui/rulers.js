@@ -29,3 +29,5 @@ export function ruler_ticks(len, start, horiz, z) {
     }
   }
   return s;
+}
+export function draw_h_ruler() {
