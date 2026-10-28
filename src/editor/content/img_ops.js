@@ -50,3 +50,4 @@ export async function bake_image(img, render, width_fn, msg) {
 }
 export function rotate_image(img, dir) {
   return bake_image(img, (c, im) => {
+    c.width = im.naturalHeight; c.height = im.naturalWidth; const x = c.getContext('2d');
