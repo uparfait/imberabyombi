@@ -39,3 +39,4 @@
   .hero > .pattern_layer, .theme_band > .pattern_layer { --pc: var(--fg); --pa: .045; }
   .theme_band { background: color-mix(in srgb, rgb(var(--brand)) 6%, rgb(var(--surface))); }
   .dark .theme_band { background: rgb(var(--ink)); }
+  .sun { position: absolute; z-index: -1; left: 36%; top: 10%; width: 9rem; aspect-ratio: 1; border-radius: 50%; pointer-events: none;
