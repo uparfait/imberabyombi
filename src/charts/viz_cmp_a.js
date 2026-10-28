@@ -29,3 +29,4 @@ export const VIZ_CMP_A = {
       return top ? `<path class="mark" style="fill:${scale_color(j)}" d="${vbar(x(i), bw, y0 - gap, y1v)}"/>`
         : `<rect class="mark" style="fill:${scale_color(j)}" x="${round1(x(i) - bw / 2)}" y="${round1(y1v + 1)}" width="${round1(bw)}"`
           + ` height="${round1(Math.max(0, y0 - y1v - 1 - gap))}"/>`; }).join(''); };
+    return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [...s.map((n, j) => [num(v[i][j]), n, j]), [num(tot[i]), 'Total', null]], hit_col(f, x, i) + seg(i))).join('')
