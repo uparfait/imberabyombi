@@ -2,3 +2,4 @@
    on one mark (bar, point, slice, cell, row, sparkline point) opens only that one, as Column name | Value. */
 import { useLayoutEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
+import { qs } from '../lib/index.js';
