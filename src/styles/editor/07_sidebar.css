@@ -65,3 +65,4 @@ input.tab_filter, .tab_filter input {
 /* Dragging a tab or a section: the row fades, the list keeps still (no hover tints), a 2px brand line marks the drop */
 .tab_row.dragging, .tab_dragging, .outline_row.dragging, .outline_dragging { opacity: .4; }
 :is(.outline_drag_over, .tab_drag_over) :is(.outline_row, .tab_row):not(.active):hover { background: transparent; }
+:is(.outline_drag_over, .tab_drag_over), :is(.outline_drag_over, .tab_drag_over) * { cursor: grabbing; }
