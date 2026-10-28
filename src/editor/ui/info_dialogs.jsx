@@ -32,3 +32,4 @@ export function word_count_dialog() {
 const KEYS = [['Bold / Italic / Underline', 'Ctrl+B / I / U'], ['Strikethrough', 'Ctrl+Shift+X'], ['Superscript / Subscript', 'Ctrl+. / Ctrl+,'],
   ['Font size bigger / smaller', 'Ctrl+Shift+. / ,'], ['Normal text', 'Ctrl+Alt+0'], ['Heading 1–4', 'Ctrl+Alt+1 … 4'],
   ['Numbered / bulleted list / checklist', 'Ctrl+Shift+7 / 8 / 9'], ['Align left / center / right / justify', 'Ctrl+Shift+L / E / R / J'],
+  ['Indent / outdent', 'Ctrl+] / Ctrl+[ (Tab in lists)'], ['Insert link', 'Ctrl+K'], ['Add comment', 'Ctrl+Alt+M'], ['Page break', 'Ctrl+Enter'],
