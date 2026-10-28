@@ -8,3 +8,5 @@ export const player = (kind, src, poster = '') => (
       ? <div className="relative bg-ink">
           <video preload="metadata" playsInline poster={poster} className="block aspect-video w-full object-cover">
             <source src={src} type="video/mp4" /><track kind="captions" srcLang="la" label="Latina" default data-vtt="" />
+          </video>
+          <button className="mp_big absolute inset-0 m-auto grid h-16 w-16 place-items-center rounded-full bg-brand text-white transition hover:scale-105" data-act="mp_play" aria-label="Play video">{ic('play', 'w-7 h-7')}</button>
