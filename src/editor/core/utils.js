@@ -10,3 +10,4 @@ export function esc_html(s) {
   return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 export function el(tag, attrs = {}, html) {
+  const e = document.createElement(tag);
