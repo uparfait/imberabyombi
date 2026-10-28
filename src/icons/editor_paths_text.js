@@ -21,3 +21,4 @@ export const EDITOR_TEXT_PATHS = {
   format_align_right: 'M3 5h18M9 10h12M3 15h18M9 20h12',
   format_align_justify: 'M3 5h18M3 10h18M3 15h18M3 20h18',
   format_indent_increase: 'M3 5h18M11 10h10M11 14h10M3 19h18M4 9l3 3-3 3',
+  format_indent_decrease: 'M3 5h18M11 10h10M11 14h10M3 19h18M7 9l-3 3 3 3',
