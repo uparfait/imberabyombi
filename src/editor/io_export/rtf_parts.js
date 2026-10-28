@@ -47,3 +47,5 @@ export function rtf_inline(rx, node, f) {
       o += `{\\field{\\*\\fldinst HYPERLINK "${href.replace(/["\\{}]/g, '')}"}{\\fldrslt ${rtf_inline(rx, n, Object.assign({}, g, { link: true }))}}}`; return;
     }
     o += rtf_inline(rx, n, g);
+  });
+  return o;
