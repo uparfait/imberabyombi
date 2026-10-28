@@ -29,3 +29,5 @@ export const workspace = () => (
         <div id="page_list"></div>
       </aside>
       {icon_btn('sidebar_open', 'toc', 'Show tabs & outlines', 'icon_btn no_print')}
+
+      <aside id="comments_panel" className="no_print" aria-label="Comments">
