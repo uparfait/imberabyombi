@@ -48,3 +48,4 @@ export function rtf_to_html(rtf) {
     }
     if (ch === '\r' || ch === '\n') { i++; continue; }
     let j = i; while (j < L && !'\\{}\r\n'.includes(rtf[j])) j++;
+    let text = rtf.slice(i, j); i = j;
