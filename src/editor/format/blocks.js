@@ -44,3 +44,4 @@ export function toggle_para_space(which) {
 }
 /* dir 1 / -1: list items nest / un-nest, other blocks move by half an inch */
 export function indent(dir) {
+  if (!can_edit()) return;
