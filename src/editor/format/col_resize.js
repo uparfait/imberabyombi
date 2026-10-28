@@ -53,3 +53,4 @@ function on_down(e) {
 }
 export function install_format() {
   document.addEventListener('mousemove', on_hover);
+  addEventListener('mousedown', on_down, true);
