@@ -28,3 +28,4 @@ export const VIZ_PART_B = {
       legend: legend([...s, 'Other'], 'rect', [0, 1, 2, 'rgb(var(--surface_2))']),
       table: [['Part', 'Share'], [...s.map((n, j) => [n, p[j] + '%']), ['Other', rest + '%']]] }; } },
   funnel: { t: 'Funnel chart', g: 'part', d: 'Steps of a process and how many continue to the next.', f(w) {
+    const st = ['Visited', 'Signed up', 'Activated', 'Subscribed', 'Renewed'], v = [10000];
