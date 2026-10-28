@@ -16,3 +16,4 @@
   .ctx_label { padding: .5rem .75rem .25rem; font-size: .75rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: rgb(var(--muted)); }
   :focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   * { scrollbar-width: thin; scrollbar-color: rgb(var(--brand) / .45) transparent; }
+  ::-webkit-scrollbar { width: .6rem; height: .6rem; }
