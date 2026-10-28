@@ -2,3 +2,4 @@
    the page view, the data overlay and the tooltip. charts/index.js re-exports it: import { viz } from '../charts/index.js' */
 export * from './viz_math.js';
 export * from './viz_svg.js';
+export * from './viz_legend.jsx';
