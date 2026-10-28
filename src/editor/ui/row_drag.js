@@ -19,3 +19,4 @@ export function row_drag(e, o) {
   };
   const edge = () => {
     for (const s of o.scrollers || []) {
+      if (!s || s.scrollHeight <= s.clientHeight) continue;
