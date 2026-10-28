@@ -57,3 +57,4 @@ export function csv_parse(text, delim) {
   return rows;
 }
 export function csv_to_html(text, delim) {
+  const { rows, cut } = trim_rows(csv_parse(text, delim), 3000, 40);
