@@ -4,3 +4,4 @@
 import { scale_color } from './viz_math.js';
 
 export const viz_tip = { el: null, cur: null,
+  show(t, x, y) { const el = this.el || (this.el = document.getElementById('viz_tip')); if (!el) return;
