@@ -32,3 +32,7 @@ export default {
       },
       boxShadow: { soft: 'var(--shadow)' },
       padding: spacing, margin: spacing, gap: spacing, space: spacing,
+      transitionTimingFunction: { DEFAULT: 'var(--ease)' }
+    }
+  }
+};
