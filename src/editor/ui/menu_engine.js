@@ -15,3 +15,6 @@ export function close_menus(from = 0) {
   while (menu_stack.length > from) {
     const m = menu_stack.pop(); m.el.remove();
     if (m.anchor) { m.anchor.classList.remove('open'); if (m.anchor.hasAttribute('aria-expanded')) m.anchor.setAttribute('aria-expanded', 'false'); }
+  }
+}
+/* can this item show its effect on hover? */
