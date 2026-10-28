@@ -8,3 +8,4 @@ export function cell_text(c) {
 }
 export function table_name(t, i) {
   let p = t.previousElementSibling, k = 0;
+  while (p && k++ < 4) {
