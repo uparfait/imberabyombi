@@ -14,3 +14,4 @@ function bar_step(d) {
 
 export function menu_key(e) {
   if (!menu_stack.length) return false;
+  const k = e.key, top = menu_stack[menu_stack.length - 1], m = top.el, in_field = e.target.closest?.('input, textarea, select');
