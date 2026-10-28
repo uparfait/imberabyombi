@@ -25,3 +25,4 @@ const LEAD = 'Every element below is styled by the tokens at the top of the styl
 
 export function kit() {
   lorem.seed(99);
+  const brand_hex = rgb2hex(css_var('--brand') || '224 102 27');
