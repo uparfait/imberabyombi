@@ -43,3 +43,4 @@ function card_of(c) {
     if (e.key === 'Enter' && inp.value.trim()) { c.replies.push({ text: inp.value.trim(), time: Date.now() }); save_soon(); render_comments(); activate_comment(c.id); }
   });
   const ta = qs('textarea', card);
+  if (ta) ta.addEventListener('keydown', e => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) qs('[data-x="save"]', card).click(); });
