@@ -42,3 +42,4 @@
   .file { position: relative; flex: none; display: flex; align-items: center; gap: .625rem; height: 3.75rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * .75); background: rgb(var(--surface_2)); cursor: pointer; transition: border-color .2s; }
   .file:hover { border-color: rgb(var(--brand) / .5); }
   .file:focus-visible { outline-offset: -2px; }
+  .file.media { width: 3.75rem; justify-content: center; overflow: hidden; }
