@@ -24,3 +24,4 @@ export function image_menu_items(img) {
     { label: 'Position', icon: 'picture_in_picture', sub: () => IMG_POSITIONS.map(([v, l, i]) => ({
       label: l, icon: i, checked: pos === v, action: () => set_img_pos(img, v) })) },
     { label: 'Align', icon: 'format_align_center', sub: () => ['left', 'center', 'right'].map(a => ({
+      label: cap(a), icon: 'format_align_' + a, checked: img_align_of(img_now(img)) === a, action: () => set_img_align(img, a) })) },
