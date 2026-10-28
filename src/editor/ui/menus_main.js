@@ -72,3 +72,6 @@ export function view_items() {
     flip('Pageless format', state.setup.pageless, () => { begin_op(); state.setup.pageless = !state.setup.pageless; apply_setup(true); commit(); save_soon(); }),
     { sep: true }, { label: 'Zoom', icon: 'zoom_in', sub: zoom_items },
     { label: 'Theme', icon: 'moon', sub: theme_items },
+    cmd('Full screen', 'fullscreen', full_screen)
+  ];
+}
