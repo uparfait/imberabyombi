@@ -65,3 +65,4 @@ function on_up(ev) {
 }
 /* Esc (or a cancelled touch): everything goes back as it was */
 function cancel() {
+  if (!drag) return; const d = finish(); swallow();
