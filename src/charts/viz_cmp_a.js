@@ -22,3 +22,4 @@ export const VIZ_CMP_A = {
       + `<line class="base_line" x1="${f.l}" x2="${f.l}" y1="${f.t}" y2="${f.t + f.ih}"/>`, 'Horizontal bar chart'),
       table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
   stacked: { t: 'Stacked bar chart', g: 'cmp', d: 'Totals and their parts. A 2px gap separates the segments.', f(w) {
+    const c = uwords(6), s = SER.slice(0, 3), v = c.map(() => s.map(() => rnd(10, 40) * MARGIN())), tot = v.map(r => r.reduce((a, b) => a + b));
