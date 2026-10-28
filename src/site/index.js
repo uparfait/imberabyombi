@@ -11,3 +11,4 @@ export * from './contact_sec.jsx';
 export * from './detail_blocks.jsx';
 export * from './tiers.jsx';
 export * from './longform.jsx';
+export * from './pages.jsx';
