@@ -20,3 +20,4 @@ export const stock_cell = (v, r) => (
 export const label = (c, k) => schemas[c].f.find(f => f.k === k)?.l || cap(k);
 /* Searchable text of a value (what the column filters match against) */
 export const plain = (c, k, r) => { const v = r[k], t = schemas[c].f.find(f => f.k === k)?.t; return v == null || v === '' ? '' : Array.isArray(v) ? v.map(x => x?.t ?? x?.name ?? x).join('; ') : k === 'role' ? role_name(v) : t === 'date' ? `${v} ${fmt_d(v)}` : t === 'datetime-local' ? `${v} ${fmt_dt(v)}` : String(v); };
+/* <option> tags for a schema field ([value, label] pairs or plain strings).
