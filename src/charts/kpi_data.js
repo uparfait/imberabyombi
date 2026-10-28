@@ -6,3 +6,4 @@ import { rnd, MONTHS, uwords, MARGIN } from './viz_math.js';
 import { KPIS } from './kpi_parts.jsx';
 
 export function kpi_data() {
+  lorem.seed(hash_str('kpi' + (ui.viz_range || 30))); KPIS.length = 0;
