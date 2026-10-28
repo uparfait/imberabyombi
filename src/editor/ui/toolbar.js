@@ -12,3 +12,4 @@ import { peek, unpeek_key, pick, field_has_focus } from './hover_preview.js';
 import { palette_el } from './palette.js';
 import { zoom_items, style_items, align_items, spacing_items, bullet_items, number_items } from './menu_items.jsx';
 import { mode_items } from './menus_main.js';
+import { image_items } from './menus.js';
