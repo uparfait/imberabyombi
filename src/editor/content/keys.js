@@ -31,3 +31,4 @@ export function pages_keydown(e) {
     hide_img_sel();
   }
   if (!host.classList.contains('pg_body') || state.mode !== 'edit') return;
+  const s = getSelection(); if (!s.rangeCount) return; const r = s.getRangeAt(0);
