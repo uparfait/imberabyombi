@@ -66,3 +66,4 @@ export function insert_rows(row, n, below) {
 /* n columns on side 'left' | 'right' of grid column col (a merged cell spanning past col grows instead) */
 export function insert_cols(chain, col, n, side) {
   for (let k = 0; k < n; k++) chain_rows(chain).forEach(row => {
+    const s = row_slots(row).find(x => col >= x.start && col <= x.end);
