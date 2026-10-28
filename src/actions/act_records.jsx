@@ -27,3 +27,4 @@ export const RECORD_ACT = {
     else if (mine) db.upsert('attendance', { id: mine.id, out: hm() });
     rerender(); notify(`Recorded at ${hm()}, ${fmt_d(td)}.`, 'ok', t.dataset.v === 'in' ? 'Checked in' : 'Checked out'); },
   report: t => modal({ title: 'Student bulletin', body: bulletin(t.dataset.name) }),
+  return: t => { ui.flash = db.upsert('rentals', { id: t.dataset.id, status: 'Returned', returned: ymd() }); rerender(); notify('The copy is back on the shelf.', 'ok', 'Book returned'); },
