@@ -41,3 +41,4 @@ export function drop_point(x, y, img) {
   return host && host.classList.contains('pg_body') && !(img && img.contains(p.node)) ? p : null;
 }
 /* move the same image node to a text position (never a copy) */
+export function place_at(img, p) {
