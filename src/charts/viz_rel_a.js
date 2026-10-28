@@ -43,3 +43,4 @@ export const VIZ_REL_A = {
     for (let i = 0; i < n; i++) for (let j = 0; j < i; j++) m[i][j] = m[j][i] = round1(Math.max(-1, Math.min(1, (i + j) % 3 ? rnd(-.9, .95) : rnd(-.3, .3))) * 100) / 100;
     const f = frame(w, 270, { l: 64, t: 12, b: 50, r: 10 }), cs = Math.min(f.iw, f.ih) / n, x0 = f.l, y0 = f.t;
     return { svg: svg(f, m.map((r, i) => r.map((c, j) => mark_group(`${k[i]} × ${k[j]}`, [[c.toFixed(2), 'Correlation', null]],
+        `<rect class="mark mark_cell" x="${round1(x0 + j * cs + 1)}" y="${round1(y0 + i * cs + 1)}" width="${round1(cs - 2)}" height="${round1(cs - 2)}" rx="3"`
