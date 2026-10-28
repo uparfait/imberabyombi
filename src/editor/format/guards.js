@@ -8,3 +8,4 @@ export const previewing = () => !!(live && live.active);
 /* fn runs once, when #modal has closed (its close event; at once when there is no #modal) */
 export function after_close(fn) { const d = qs('#modal'); if (d) d.addEventListener('close', () => fn(), { once: true }); else fn(); }
 /* The table dialogs (template modal) apply their result at once, like the source (core's restore_sel only remembers the
+   caret while focus is in a dialog field); once #modal has closed, the focus goes back to the caret in the document. */
