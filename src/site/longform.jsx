@@ -23,3 +23,4 @@ export function longform(k) {
   return (
     <div className="wrap grid gap-12 pb-24 lg:grid-cols-[minmax(0,1fr)_17rem]">
       <article className="prose_x max-w-3xl">{secs.map((s, i) => (
+        <Fragment key={s.id}>{i ? <hr /> : null}<section id={s.id} className="scroll-mt-28"><h2>{s.t}</h2><p>{lorem.p(4)}</p>{extra(i)}</section></Fragment>
