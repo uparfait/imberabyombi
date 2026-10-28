@@ -80,3 +80,4 @@ export function replace_all() {
   if (!can_edit()) return; const n = find_state.matches.length; if (!n) return;
   begin_op(); const rep = refs.replace_input ? refs.replace_input.value : '';
   find_state.matches.slice().reverse().forEach(r => { r.deleteContents(); if (rep) r.insertNode(document.createTextNode(rep)); });
+  end_op(0, true); run_find(); toast(`Replaced ${n} ${n === 1 ? 'match' : 'matches'}`);
