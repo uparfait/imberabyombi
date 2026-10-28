@@ -29,3 +29,4 @@ function to_abs(img, pos) {
   img.removeAttribute('data-align'); img.setAttribute('data-pos', pos);
   Object.assign(img.style, { position: 'absolute', left: Math.round(x) + 'px', top: Math.round(y) + 'px', zIndex: ABS_Z[pos] });
   if (par !== body) { body.appendChild(img); keep_line(par); }
+  anchor_abs(img);
