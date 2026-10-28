@@ -25,3 +25,4 @@ arrive there after signing in (`landing(role_id)`). The choices only list pages 
 matrix as it changes: if a page is taken away, the role moves to the first page it can still open.
 
 ## Roles & access page
+- Create roles, set levels in the matrix, delete roles nobody uses.
