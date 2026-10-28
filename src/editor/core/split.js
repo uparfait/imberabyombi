@@ -8,3 +8,4 @@ export function is_splittable_text(e) {
   return TEXT_BLOCK_RE.test(e.tagName) && !/^H[1-6]$/.test(e.tagName) && !is_break(e) && e.textContent.replace(/\u200b/g, '').length > 1;
 }
 export function split_text(block, b, next) {
+  const tn = text_nodes(block); if (!tn.length) return false;
