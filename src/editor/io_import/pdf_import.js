@@ -28,3 +28,4 @@ export async function pdf_to_html(buf) {
     const flush = () => { if (para) { html += `<${para.tag}>${esc_html(para.text.trim())}</${para.tag}>`; para = null; } };
     for (const l of lines) {
       if (!l.text.trim()) { flush(); prev_y = l.y; continue; }
+      const tag = l.h > med * 1.6 ? 'h1' : l.h > med * 1.25 ? 'h2' : 'p';
