@@ -47,3 +47,4 @@ Reset the demo data (Settings → Data) once so the new collection is seeded.
 ## Going further
 - Several tables on one page: `tabs()` (src/ui) with `ui.tab.<key>` and `crud(c, { filter })` per tab.
 - Row buttons: `crud('buses', { acts: (r, can) => can && <button className="btn btn_soft btn_sm" data-act="bus_service" data-id={r.id}>Service</button> })`
+  and a handler `bus_service` in an `ACT` file (src/actions), see [actions and events](actions_and_events.md).
