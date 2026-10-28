@@ -34,3 +34,4 @@ body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hov
 .img_bar {
   position: absolute; left: 0; top: calc(100% + .5rem); display: flex; align-items: center; gap: .125rem; padding: .1875rem;
   border: 1px solid rgb(var(--line)); border-radius: var(--pill); background: rgb(var(--surface)); color: rgb(var(--fg));
+  white-space: nowrap; pointer-events: auto; font: 500 .75rem/1.2 var(--font_sans); color-scheme: normal;
