@@ -33,3 +33,4 @@ export function run_after_render({ keep, anim }) {
   if (!keep) scrollTo({ top: 0, behavior: 'instant' });
   AFTER.splice(0).forEach(f => { try { f(); } catch (e) { console.error(e); } });
   ui.flash = null; render_flags.nav_fetched = false; enhance(); show_next();
+  if (ui.scroll_flash) { ui.scroll_flash = false; qs('#main .row_flash')?.scrollIntoView({ block: 'center' }); }   /* a task opened from the calendar */
