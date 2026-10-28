@@ -38,3 +38,4 @@ it was; click to keep it (one undo step). The selection stays selected while you
 Help → Keyboard shortcuts lists them all.
 
 ## How it is built
+- `chrome/` + `editor_page.jsx`: the frame as React (title bar, toolbar, workspace, panels); it calls `editor_start(root)`.
