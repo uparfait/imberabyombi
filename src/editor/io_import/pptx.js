@@ -50,3 +50,4 @@ async function slide_html(z, sp, i) {
   }
   let notes = '';
   const nr = Object.values(rels).find(r => /notesSlide$/.test(r.type));
+  if (nr) {
