@@ -13,3 +13,4 @@ const keep_line = par => { if (par && par.nodeType === 1 && !par.childNodes.leng
 
 /* an absolute image goes before the first text block that reaches its top */
 export function anchor_abs(img) {
+  const body = img.closest('.pg_body'); if (!body || img.parentNode !== body) return;
