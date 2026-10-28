@@ -19,3 +19,4 @@ export function ctx_menu() {
   const search = `<button type="button" class="menu_item" role="menuitem" data-act="cmdk">${mi('search')}Search${kbd}</button>`;
   const head = groups.map(([g, l]) => `<p class="ctx_label">${esc(g)}</p>${l.map(x => item(...x)).join('')}`).join('');
   return `${head}<p class="ctx_label">More</p>${item('#/ui', 'Design system', 'layers')}${u ? item('#/', 'Public website', 'globe') : ''}
+    ${u ? search : ''}
