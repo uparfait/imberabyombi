@@ -33,3 +33,4 @@ export const kpi_cards_a = k => {
       [['Service', 'Status'], [['All services', 'Healthy · 99.95% uptime'], ...services.map(([n, , l]) => [n, l])]]),
     kpi_card('', 'Orders: this month vs last', 'Orders placed this month compared with last month.',
       <><div className="mt-2 grid grid-cols-2 gap-3">
+        <div className="kpi_part" {...tip_attr('This month', [[num(o1), 'Orders', 0]])}>
