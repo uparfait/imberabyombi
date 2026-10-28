@@ -79,3 +79,4 @@ export function ruler_drag(e) {
     show_value(`${side[0].toUpperCase() + side.slice(1)} margin: ${m[side]}"`, ev.clientX, ev.clientY);
   };
   const up = () => {
+    removeEventListener('pointermove', move); removeEventListener('pointerup', up); hide_value();
