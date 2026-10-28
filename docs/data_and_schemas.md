@@ -6,3 +6,4 @@ is blocked (private mode, sandboxes).
 | Call                         | Does                                                        |
 |------------------------------|-------------------------------------------------------------|
 | `db.get(key, fallback)`      | a setting (`theme`, `tokens`, `session`, `sideMin` …)       |
+| `db.set(key, value)`         | save a setting (a full storage shows a notification)        |
