@@ -68,5 +68,6 @@ export function position_img_box() {
   qsa('[data-a]', bar).forEach(b => { const [k, v] = b.dataset.a.split(':'); b.classList.toggle('on', (k === 'pos' && v === pos) || (k === 'align' && v === al)); });
   qs('.sz', box).textContent = `${img_sel.offsetWidth} × ${img_sel.offsetHeight}px`;
   const alt = img_sel.getAttribute('alt') || '', ab = qs('.alt_btn', box);
+  ab.textContent = alt ? 'Alt: ' + alt : 'Add alt text'; ab.classList.toggle('on', !!alt); ab.dataset.tip = alt ? 'Edit the alt text' : 'Describe this image for people who can’t see it';
   bar.style.left = '0px'; const over = x + bar.offsetWidth - page.offsetWidth + rem() / 2; if (over > 0) bar.style.left = -Math.min(over, x) + 'px';
 }
