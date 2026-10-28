@@ -37,3 +37,4 @@ export function thanks_sec(full) {
         <div className="mt-12 grid gap-4 text-left md:grid-cols-3">{[0, 1, 2].map(i => (
           <figure key={i} className="m-0 rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <blockquote className="border-0 bg-transparent p-0 text-base text-white"><p>{lorem.s(12, 18)}</p></blockquote>
+            <figcaption className="mt-5 flex items-center gap-3 text-white/80"><img src={cfg.face(40 + i * 5)} alt="" width="40" height="40" loading="lazy"
