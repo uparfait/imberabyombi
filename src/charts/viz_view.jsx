@@ -27,3 +27,8 @@ function Viz_card({ k, c }) {
       <header className="flex items-center gap-1"><h3 className="min-w-0 truncate text-base">{c.t}</h3>{help_tip(c.d, c.t)}</header>
       <div className="viz_plot" data-plot="" dangerouslySetInnerHTML={{ __html: o ? o.svg : '' }}></div>
       <div data-legend="" className="empty:hidden">{o ? o.legend : null}</div>
+    </article>
+  );
+}
+
+/* Each chart redraws when its own box changes width (window resize, sidebar or side panel opening, late CSS) */
