@@ -17,3 +17,4 @@ export function field(f, v) {
   if (f.t === 'files') return <div key={f.k} className="field sm:col-span-2"><label htmlFor={id}>{f.l}</label><File_box id={id} multiple data-new-files="" /></div>;
   if (f.t === 'select') ctl = <select id={id} name={f.k} required={req} defaultValue={String(val)}><option value="">Choose…</option>{options(f, v)}</select>;
   else if (f.t === 'textarea') ctl = <textarea id={id} name={f.k} rows={3} placeholder=" " required={req} defaultValue={val} />;
+  else if (f.t === 'list') ctl = <>
