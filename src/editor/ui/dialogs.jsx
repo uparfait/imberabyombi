@@ -24,3 +24,6 @@ export function open_dialog({ title, content, buttons = [], width = 440, on_open
     on_submit: p ? (v, f) => (p.action ? p.action(f, v) : undefined) : undefined
   });
   if (on_open) on_open(qs('#modal form'));
+}
+
+/* a yes / no question: resolves true on the confirm button (the dialog's x / Cancel simply close it) */
