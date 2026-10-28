@@ -36,3 +36,4 @@ export function table_props_dialog() {
     body: <>
       {num_field('tp_rows', 'Rows', num_props(chain_rows(chain).length, 1, 500))}
       {num_field('tp_cols', 'Columns', num_props(table_width_cols(chain), 1, 30))}
+      {num_field('tp_bw', 'Border width (px)', num_props(isNaN(bw) ? 1 : bw, 0, 10, 0.5))}
