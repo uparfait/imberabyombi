@@ -2,3 +2,4 @@
    snippet, delete), and which panels show (tabs & outline on the left, comments on the right) with the room they take. */
 import { state, refs, scroller, bodies, first_flow, caret_to_start, el } from '../core/index.js';
 import { delete_page } from '../content/index.js';
+import { update_rulers } from './rulers.js';
