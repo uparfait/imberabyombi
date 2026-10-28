@@ -5,3 +5,4 @@ import { esc } from '../lib/index.js';
 import { round1, compact_num, linear, ticks, fit, tip_text } from './viz_math.js';
 
 /* frame + axes */
+export const frame = (w, h, p = {}) => {
