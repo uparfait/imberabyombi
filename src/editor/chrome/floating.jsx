@@ -35,3 +35,7 @@ export const link_bubble = () => (
     {small_btn('lb_copy', 'content_copy', 'Copy link')}
     {small_btn('lb_edit', 'edit', 'Edit link')}
     {small_btn('lb_remove', 'link_off', 'Remove link')}
+  </div>
+);
+
+export const file_inputs = () => (
