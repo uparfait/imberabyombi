@@ -33,3 +33,4 @@ export const pick = {
     else if (kb && !q && a.dataset.list == null) (this.el.querySelector('[aria-selected=true]') || this.el.querySelector('.today, .pk_item'))?.focus({ preventScroll: true });
   },
   close(refocus = false) {
+    const a = this.a; if (!a) return;
