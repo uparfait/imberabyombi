@@ -30,3 +30,4 @@
 /* Menu bar: pill buttons like the template's nav links; the open menu's button is tinted */
 #menubar { display: flex; flex-wrap: wrap; gap: .0625rem; margin-left: -.25rem; }
 .menubar_btn {
+  padding: .1875rem .625rem; border-radius: var(--pill); font-size: .875rem; font-weight: 500; line-height: 1.25rem;
