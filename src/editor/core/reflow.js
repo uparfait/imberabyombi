@@ -50,3 +50,4 @@ export function reflow(cur = 0, full = false) {
   layout_after();
 }
 export function reflow_pageless() {
+  const bs = bodies(); const b0 = bs[0]; if (!b0) return;
