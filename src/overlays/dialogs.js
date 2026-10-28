@@ -24,3 +24,4 @@ export function request_close(d) {
   close_dialog(d);
 }
 /* "Discard changes?" in #confirm (drawn by <Dialog_hosts/>). yes runs on Discard: ACT.confirm_discard reads #confirm._yes */
+export function confirm_discard(yes) {
