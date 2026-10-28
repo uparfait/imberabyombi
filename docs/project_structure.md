@@ -34,3 +34,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `emails/`    | email designs and the email gallery                                                         |
 | `actions/`   | every `data-act` handler (`ACT`), which ones are requests (`REQ`), every `data-form` handler (`FORMS`) |
 | `behaviors/` | the delegated document listeners: click, input, change, keys, pointer, scroll, right-click menu |
+| `router/`    | hash parsing, page meta, `render_route()`, what runs after each draw, `boot()`              |
