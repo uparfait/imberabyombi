@@ -30,3 +30,4 @@ In `src/auth/mods.js`, add an entry to `MODS` (key, label, short label, icon, si
 `src/modules/transport.jsx`:
 ```jsx
 /* modules/transport.jsx: the Transport module: the bus list */
+import { VIEWS } from './views.js';
