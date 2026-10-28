@@ -9,3 +9,4 @@ export * from './key_events.js';
 export * from './pointer_events.js';
 export * from './page_events.js';
 export * from './scrolling.js';
+export * from './ctx_menu.js';
