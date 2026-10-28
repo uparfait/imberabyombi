@@ -17,3 +17,4 @@ export const epub_opf = (id, title, now, manifest, imgs, spine) => '<?xml versio
   + '<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid"><metadata xmlns:dc="http://purl.org/dc/elements/1.1/">'
   + `<dc:identifier id="bookid">urn:uuid:${id}</dc:identifier><dc:title>${xesc(title)}</dc:title><dc:language>en</dc:language>`
   + `<meta property="dcterms:modified">${now}</meta></metadata>`
+  + '<manifest><item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/><item id="css" href="style.css" media-type="text/css"/>'
