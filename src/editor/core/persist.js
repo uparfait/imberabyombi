@@ -30,6 +30,8 @@ export function save_doc(force) {
   idb_set(DOC_KEY, doc_data()).then(ok => {
     if (ok) { refused = false; if (db.get(DOC_KEY)) db.del(DOC_KEY); return; }   /* an older copy in localStorage is no longer needed */
     if (!refused) { refused = true; toast('This browser could not save the document. Download it to keep a copy.', 7000); }
+  });
+  return true;
 }
 export function save_soon() { clearTimeout(save_timer); save_timer = setTimeout(save_doc, 600); }
 set_on_change(save_soon);
