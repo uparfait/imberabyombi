@@ -12,3 +12,4 @@ export const search_box = (attrs, ph = 'Search', c = '') => (
   </label>
 );
 /* Search field buttons: .ss runs the search (left), .sx clears it (right, shown only while there is text) */
+/* Help icon: the explanation shows as a tooltip on hover, keyboard focus or tap, instead of a paragraph under a title */
