@@ -36,3 +36,6 @@ function on_paste(e) {
   const v = (e.clipboardData?.getData('text') || '').replace(/\D/g, '').slice(0, 6); if (!v) return; e.preventDefault();
   const bs = qsa('.otp_box', t.closest('[data-otp]')); [...v].forEach((c, i) => { if (bs[i]) bs[i].value = c; }); (bs[v.length] || bs[bs.length - 1]).focus();
   if (v.length === 6) t.form?.requestSubmit();
+}
+
+export const install_input = () => { document.addEventListener('input', on_input); document.addEventListener('paste', on_paste); };
