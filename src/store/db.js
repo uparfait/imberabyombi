@@ -29,3 +29,5 @@ export const db = {
     if (i > -1) rows[i] = { ...rows[i], ...row }; else rows.unshift({ ...row, id }); db.save(c, rows); return id;
   },
   remove(c, id) { db.save(c, db.list(c).filter(r => r.id !== id)); },
+  bytes() { return db.keys().reduce((n, k) => n + (k.length + (ls.getItem(cfg.ns + k) || '').length) * 2, 0); }
+};
