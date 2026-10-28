@@ -3,3 +3,5 @@
 import { state, default_setup, new_tab, uid, bodies, el, qsa } from '../core/index.js';
 import { sanitize_html } from '../content/index.js';
 import { render_all } from '../ui/index.js';
+
+/* project files written by the original editor name these setup keys in camelCase */
