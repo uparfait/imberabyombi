@@ -13,3 +13,4 @@ const swallow = () => { swallow_until = Date.now() + 400; };
 
 function show_caret(p) {
   const r = document.createRange(); try { r.setStart(p.node, p.off); } catch (e) { hide_caret(); return; } r.collapse(true);
+  const rc = caret_rect(r), page = editable_of(p.node).closest('.page'), pr = page.getBoundingClientRect(), z = state.zoom;
