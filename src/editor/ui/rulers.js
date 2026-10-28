@@ -3,6 +3,7 @@
    next to the pointer while dragging; one history step when let go). Lengths along the page are page units
    (inches × 96 × zoom); the ruler's own thickness, ticks and handles scale with the root font (u()). Once a margin differs
    from the default, "Reset margins" shows at the end of the ruler. */
+import { state, refs, hruler, vruler, scroller, DPI, dims, page_wraps, layout_page, clamp, begin_op, commit, save_soon, default_setup } from '../core/index.js';
 import { tip } from '../../overlays/index.js';
 import { apply_setup } from './view.js';
 import { scaled } from './ui_dom.js';
