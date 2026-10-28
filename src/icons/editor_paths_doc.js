@@ -50,3 +50,4 @@ export const EDITOR_DOC_PATHS = {
   expand_more: 'm6 9 6 6 6-6',
   expand_less: 'm18 15-6-6-6 6',
   keyboard_arrow_down: 'm6 9 6 6 6-6',
+  keyboard_arrow_up: 'm18 15-6-6-6 6',
