@@ -5,3 +5,4 @@ import { DTF, dt_spec } from './date_formats.js';
 
 /* Auto-format while typing: fill each part from the digits, pad or refuse per part, then add AM/PM in 12-hour mode */
 export const masked = (t, s) => {
+  const spec = DTF[t], twelve = /time/.test(t) && !h24(), groups = [...spec.mask.matchAll(/(#+)([^#]*)/g)].map(x => [x[1].length, x[2]]);
