@@ -55,3 +55,5 @@ function put(sn) {
   if (refs.size_input && sn.size != null) refs.size_input.value = sn.size;
   refresh_toolbar();
   if (scroller) scroller.scrollTop = sn.top;
+}
+function extras(s) { const r = s.restores.splice(0); r.reverse().forEach(f => { try { f(); } catch (e) { console.error(e); } }); }
