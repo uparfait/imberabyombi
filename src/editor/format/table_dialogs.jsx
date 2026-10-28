@@ -8,3 +8,4 @@ import { insert_block_at_caret } from './insert.js';
 import { HDR_BG, STRIPE_BG, TABLE_PRESETS, build_table } from './table_model.js';
 import { table_ctx, tbl_op } from './table_ops.js';
 import { num_field, sel_field, POSITIONS } from './dialog_fields.jsx';
+import { refocus_after_close, previewing } from './guards.js';
