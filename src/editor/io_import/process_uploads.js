@@ -28,6 +28,7 @@ function place_uploads(done, mode, failed) {
   const tabs = [];
   done.forEach(r => { if (r.project) tabs.push(...project_tabs(r.project)); else tabs.push(new_tab(base_of(r.file.name), sanitize_html(r.html) || '<p><br></p>')); });
   if (mode === 'replace') {   /* a project file fills an empty document whole (its setup and comments too) */
+    const f = done[0], title = f.project ? (f.project.title || base_of(f.file.name)) : base_of(f.file.name);
   } else { save_tab(); state.tabs.push(...tabs); state.active = tabs[0].id; render_tab(); render_sidebar(); render_comments(); }
 }
 
