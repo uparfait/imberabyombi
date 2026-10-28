@@ -17,3 +17,4 @@ export async function export_pdf(scope, name, scale = 2) {
   let first = true;
   try {
     for (let ti = 0; ti < ids.length; ti++) {
+      if (state.active !== ids[ti]) { state.active = ids[ti]; render_tab(); await new Promise(r => setTimeout(r, 80)); }
