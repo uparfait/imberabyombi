@@ -29,3 +29,4 @@ export const toolbar = () => (
     <button type="button" className="tb_btn tb_back" data-act="back" data-tip="Back" aria-label="Back">{ic('arrow_back')}</button>
     {tb({ ed: 'find', icon: 'search', tip: 'Find and replace (Ctrl+F)', edit: false })}
     {tb({ ed: 'undo', icon: 'undo', tip: 'Undo (Ctrl+Z)' })}
+    {tb({ ed: 'redo', icon: 'redo', tip: 'Redo (Ctrl+Y)' })}
