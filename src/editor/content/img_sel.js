@@ -15,7 +15,7 @@ const bar_btn = ([a, t, i]) => `<button type="button" data-a="${a}" data-tip="${
 const MOVE_CSS = 'position:absolute;inset:0;pointer-events:auto;touch-action:none;cursor:move';
 const BOX_HTML = () => `<div class="img_move" style="${MOVE_CSS}"></div>`
   + ['nw', 'ne', 'sw', 'se'].map(c => `<div class="h ${c}" data-c="${c}" style="touch-action:none"></div>`).join('')
-  + '<div class="img_bar">' + BAR.map(b => b ? bar_btn(b) : '<span class="sep"></span>').join('') + '<span class="sz"></span></div>';
+  + '<div class="img_bar">' + BAR.map(b => b ? bar_btn(b) : '<span class="sep"></span>').join('')
 
 export let img_box = null;
 export let img_sel = null;
