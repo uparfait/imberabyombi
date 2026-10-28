@@ -20,3 +20,4 @@ or `p-4` always read the tokens. Colours are stored as `R G B` triplets so opaci
 | `--scale_phone`    | `360`               | Phone design width (see [scaling](scaling_and_themes.md))        |
 | `--scale_desk`     | `15`                | Root size in px on laptops and desktops                          |
 | `--scale_ref`      | `1920`              | Reference desktop width; wider screens show it scaled up         |
+| `--bg` … `--line`  | per theme           | Surfaces, text, muted text, borders (light and `.dark` sets)     |
