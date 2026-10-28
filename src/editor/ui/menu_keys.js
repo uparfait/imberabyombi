@@ -25,3 +25,4 @@ export function menu_key(e) {
   if (in_field || e.ctrlKey || e.metaKey || e.altKey) return false;
   const rows = menu_rows(m), at = rows.indexOf(m._cur), n = rows.length;
   if (k === 'ArrowDown' || k === 'ArrowUp') {
+    if (n) focus_row(m, rows[at < 0 ? (k === 'ArrowDown' ? 0 : n - 1) : (at + (k === 'ArrowDown' ? 1 : -1) + n) % n]);
