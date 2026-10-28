@@ -69,3 +69,4 @@ function on_down(e, row) {
   row_drag(e, {
     row, list: ol, cls: 'outline_drag_over', scrollers: [ol.closest('.tab_scroll'), refs.sidebar],
     rows: () => outline_rows(ol).filter(r => !r.hidden),
+    target: (g, rs) => {
