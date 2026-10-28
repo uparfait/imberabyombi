@@ -29,3 +29,4 @@ export function set_block_style(key) {
   with_blocks(blocks => blocks.forEach(b => {
     if (b.tagName === 'LI') return;
     const nb = document.createElement(st.tag);
+    if (st.cls) nb.className = st.cls;
