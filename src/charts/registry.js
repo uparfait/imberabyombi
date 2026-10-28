@@ -16,3 +16,5 @@ export function draw_chart(cv, labels, vals, anim = true) {
     for (let i = 0; i <= 4; i++) {
       const y = Math.round((ht - pb) * i / 4) + .5; x.strokeStyle = col('--line'); x.beginPath(); x.moveTo(pl, y); x.lineTo(wd, y); x.stroke();
       x.fillStyle = col('--muted'); x.textAlign = 'left'; x.fillText(Math.round(max * (1 - i / 4)), 0, y + fs * .35);
+    }
+    vals.forEach((v, i) => {
