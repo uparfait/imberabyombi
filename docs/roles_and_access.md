@@ -11,3 +11,4 @@ Code: [`src/auth/`](../src/auth/). Each role has a level per module: `0` = no ac
 | Teacher           | Students (registration, bulletins, payments), attendance view  |
 | Accountant        | View students, payments and inventory                          |
 | Librarian         | Library                                                        |
+| Store keeper      | Reservations and inventory                                     |
