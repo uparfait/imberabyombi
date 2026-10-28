@@ -23,3 +23,4 @@ export function zip_store(files, mime) {
     ch.setUint16(12, 0, true); ch.setUint16(14, 0x21, true);
     ch.setUint32(16, crc, true); ch.setUint32(20, data.length, true); ch.setUint32(24, data.length, true); ch.setUint16(28, name.length, true);
     ch.setUint16(30, 0, true); ch.setUint16(32, 0, true); ch.setUint16(34, 0, true); ch.setUint16(36, 0, true); ch.setUint32(38, 0, true);
+    ch.setUint32(42, offset, true);
