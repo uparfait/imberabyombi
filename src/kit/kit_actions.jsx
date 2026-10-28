@@ -11,3 +11,4 @@ export const kit_actions = () => (
       <button className="btn btn_outline">Outline</button><button className="btn btn_soft">Soft</button><button className="btn btn_ghost">Ghost</button>
       <button className="btn btn_danger">Danger</button><button className="btn btn_primary" disabled>Disabled</button>
       <button className="icon_btn" aria-label="Notifications">{ic('bell')}</button></div>
+    <div className="mt-6 flex flex-wrap gap-2">{['Active', 'Pending', 'Overdue', 'Planned', 'Closed'].map(v => <Fragment key={v}>{badge(v)}</Fragment>)}{tag('Lorem')}</div>
