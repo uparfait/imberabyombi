@@ -81,3 +81,6 @@ async function docx_blocks(cx, nodes, container) {
         tb.appendChild(row);
       }
       container.appendChild(t);
+    } else if (ln === 'sdt') { const sc = kids(n, 'sdtContent')[0]; if (sc) await docx_blocks(cx, kids(sc), container); }
+  }
+}
