@@ -21,3 +21,4 @@ export async function export_pdf(scope, name, scale = 2) {
       const pages = qsa('.page', pages_el);
       for (let i = 0; i < pages.length; i++) {
         toast(`Making PDF: ${ids.length > 1 ? `tab ${ti + 1} of ${ids.length}, ` : ''}page ${i + 1} of ${pages.length}`, 0);
+        const c = pages[i].cloneNode(true); c.style.transform = 'none'; c.style.boxShadow = 'none'; c.style.border = '0';
