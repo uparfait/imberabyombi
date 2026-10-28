@@ -22,3 +22,4 @@ VIEWS.dashboard = () => {
   const u = auth.user, r = auth.role(), first = u.name.split(' ')[0];
   const stats = STATS.filter(x => auth.can(x[0]));
   const W = dash_widgets(u);
+  return <>
