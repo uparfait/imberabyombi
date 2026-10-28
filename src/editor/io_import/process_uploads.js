@@ -71,3 +71,4 @@ export async function attach_files(files) {
   for (const f of files) { try { html += await attachment_html(f) + ' '; } catch (e) { toast(`${f.name}: ${e.message}`, 5000); } }
   if (!html) return; set_last_range(saved);
   const host = restore_focus(); if (!host || !host.classList.contains('pg_body')) return;
+  begin_op(); document.execCommand('insertHTML', false, sanitize_html(html)); end_op(body_index(host));
