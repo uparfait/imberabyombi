@@ -5,3 +5,4 @@ Public pages are detail pages: a branded hero, the page's own top content, then 
 ## 1. Write the content
 Create a section in `src/site/`, for example `src/site/services_sec.jsx`:
 ```jsx
+/* site/services_sec.jsx: the Services section (home) and the top of the Services page */
