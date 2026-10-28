@@ -33,3 +33,5 @@ function rtf_table(rx, t) {
       c.childNodes.forEach(nd => {
         if (nd.nodeType === 1 && is_list(nd)) Array.from(nd.children).forEach(li => parts.push(rtf_esc('• ') + rtf_inline(rx, li, f)));
         else if (nd.nodeType === 1) parts.push(rtf_inline(rx, nd, f)); else if (nd.nodeType === 3 && nd.data.trim()) parts.push(rtf_esc(nd.data));
+      });
+      o += `${RTF_P}\\intbl ${parts.join('\\par ')}\\cell\n`;
