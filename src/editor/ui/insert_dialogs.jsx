@@ -18,3 +18,4 @@ function insert_char(c) {
   begin_op();
   const at = r.cloneRange(); at.deleteContents(); const t = document.createTextNode(c); at.insertNode(t);
   end_op(Math.max(0, body_index(h)));
+  if (t.isConnected) { const n = document.createRange(); n.setStartAfter(t); n.collapse(true); set_last(n, editable_of(t)); }
