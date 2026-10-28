@@ -36,3 +36,4 @@ function open_section_menu(row, btn, kb) {
   if (row._ti < 0) return;
   if (btn) { toggle_menu(btn, () => section_items(row, kb), { focus: kb }); return; }
   const b = row.getBoundingClientRect();
+  open_menu(null, section_items(row, true), { x: b.left + scaled(24), y: b.bottom, focus: true });
