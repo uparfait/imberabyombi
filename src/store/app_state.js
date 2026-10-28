@@ -25,3 +25,5 @@ export const TIMERS = [];     /* intervals that belong to the current page; clea
 const BEFORE = [];            /* cleanups every module registers once (close the picker, hide tooltips…) */
 export const before_render = fn => BEFORE.push(fn);
 export const after_render = fn => AFTER.push(fn);
+
+let version = 0;
