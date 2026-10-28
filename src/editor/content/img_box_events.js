@@ -53,3 +53,4 @@ function on_ctx(e) { if (!img_sel) return; e.preventDefault(); e.stopPropagation
 
 const EVENTS = [['mousedown', on_mousedown], ['pointerdown', on_pointerdown], ['pointerover', on_over], ['pointerout', on_out], ['click', on_click], ['contextmenu', on_ctx]];
 export function install_img_box() {
+  const box = ensure_img_box();
