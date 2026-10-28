@@ -15,3 +15,4 @@ export function init_player(w) {
 }
 /* <details> dropdowns (FAQ, help, legal) open and close with a smooth height animation */
 export function toggle_details(d, e) {
+  if (reduced() || !d.animate) return; e.preventDefault();
