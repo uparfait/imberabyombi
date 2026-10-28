@@ -41,3 +41,4 @@ export function dash_widgets(u) {
       {`${done} of ${mine.length} done`}</p>
       <progress className="mt-3" max={mine.length || 1} value={done}></progress>
       <ul className="mt-4 grid gap-3">{open.length ? open.map(task_li) : none('All tasks complete.')}</ul></section>); }
+  if (auth.can('calendar')) { const up = cal_items().filter(i => i.date >= ymd()).sort((a, b) => (a.date + a.start).localeCompare(b.date + b.start)).slice(0, 5);
