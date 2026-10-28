@@ -39,3 +39,4 @@ export function pages_keydown(e) {
   const first = first_flow(host);
   if (e.key === 'Backspace' && pi > 0 && at_body_start(host, r) && !(is_list(first) || is_table(first))) { done(e); backspace_across(host, pi); return; }
   if (e.key === 'Delete' && pi < bs.length - 1 && at_body_end(host, r)) { done(e); delete_across(host, pi); return; }
+  if ((e.key === 'ArrowUp' && pi > 0 && on_first_line(host, r)) || (e.key === 'ArrowLeft' && pi > 0 && at_body_start(host, r))) {
