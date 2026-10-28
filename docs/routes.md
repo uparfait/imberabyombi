@@ -14,8 +14,7 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 - Unknown routes show "Page not found".
 - Admin routes without a session redirect to `/login?next=/admin/...` and return there after sign-in.
 - A module the role cannot open shows "No access" (forbidden view).
-- Each route sets `<title>`, the meta description and `og:title` (`set_meta()`).
-- `#/login?role=<id>` locks the sign-in form to a role (invite link); `&email=..&name=..` pre-fills it (access link).
+- Each route sets `<title>`, the meta description, `og:title` and the canonical link (`set_meta()`).
 
 ## How a navigation works
 1. `hashchange` → `navigate()`.
