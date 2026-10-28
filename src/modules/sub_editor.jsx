@@ -33,3 +33,4 @@ export function Sub_editor({ groups }) {
     rm_item: (gk, ik) => put(a => a.map(g => g.key !== gk ? g : { ...g, items: g.items.filter(x => x.key !== ik) }))
   };
   return <><div className="grid gap-3" data-subs="" ref={el => { if (el) API.set(el, api); }}>{gs.map(g => sub_group(g))}</div>
+    <button type="button" className="btn btn_ghost btn_sm -ml-3 mt-1" data-act="sub_add">{ic('plus', 'h-4 w-4')}Add a subtask</button></>;
