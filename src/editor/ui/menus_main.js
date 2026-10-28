@@ -63,3 +63,4 @@ export function mode_items() {
     { label: 'Viewing', icon: 'visibility', checked: state.mode !== 'edit', no_preview: true, action: () => set_mode('view') }];
 }
 export function view_items() {
+  return [
