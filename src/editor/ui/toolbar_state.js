@@ -21,3 +21,5 @@ export function refresh_toolbar() {
       if (k === 'checklist') on = !!(l && l.classList.contains('checklist'));
       else if (k === 'bullets') on = !!(l && l.tagName === 'UL' && !l.classList.contains('checklist'));
       else if (k === 'numbers') on = !!(l && l.tagName === 'OL');
+    }
+    b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on));
