@@ -8,3 +8,4 @@ import { collect_html } from './collect.js';
 import { caret_to_start } from './selection.js';
 import { hist_timer, commit } from './history.js';
 import { schedule_reflow, cancel_scheduled } from './schedule.js';
+import { live } from './live.js';
