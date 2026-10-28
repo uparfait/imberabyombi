@@ -25,3 +25,4 @@ VIEWS.calendar = () => {
       <button className="icon_btn" data-act="cal_nav" data-n="1" aria-label="Next">{ic('chev_r')}</button>
       <h2 className="date_title font-sans text-xl font-normal sm:text-2xl">{d.toLocaleDateString(undefined, { month: 'long', year: 'numeric' })}</h2>
       <div className="ml-auto flex items-center gap-2">{views(wk)}
+        {can ? <button className="btn btn_primary" data-act="add" data-col="activities">{ic('plus', 'h-4 w-4')}
