@@ -14,3 +14,4 @@ export const num_field = (id, label, props) => (
 );
 /* a select: opts = [[value, label], …] */
 export const sel_field = (id, label, opts, value) => (
+  <div className="field"><label htmlFor={id}>{label}</label>
