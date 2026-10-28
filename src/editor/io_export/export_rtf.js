@@ -41,3 +41,4 @@ function rtf_table(rx, t) {
   return o + RTF_P + '\n';
 }
 function rtf_blocks(rx, c) {
+  let o = '';
