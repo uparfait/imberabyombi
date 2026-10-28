@@ -3,3 +3,4 @@
    and pointer events, paste & drop, and HTML sanitizing. Import from here: import { sanitize_html } from '../content/index.js' */
 export * from './img_sel.js';
 export * from './img_ops.js';
+export * from './img_pos.js';
