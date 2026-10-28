@@ -14,3 +14,4 @@ export * from './insert_dialogs.jsx';
 export * from './find.js';
 export * from './toolbar_state.js';
 export * from './sections.js';
+export * from './row_drag.js';
