@@ -20,7 +20,7 @@ export default function App() {
   useLayoutEffect(() => { mark_staff_page(); run_after_render({ ...render_flags }); }, [version]);
   return (
     <>
-      {page}
+      {page ?? (version === 0 && boot_loader)}
       <Dialog_hosts />
     </>
   );
