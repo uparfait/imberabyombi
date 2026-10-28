@@ -20,3 +20,4 @@ export function staff_dir() {
 }
 
 export const faq = () => (
+  <section className="wrap pb-20"><h2 className="text-2xl sm:text-3xl">Questions</h2><div className="mt-6 grid max-w-3xl gap-3">{[0, 1, 2, 3, 4].map(i => (
