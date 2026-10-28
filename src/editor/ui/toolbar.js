@@ -58,3 +58,4 @@ export function install_toolbar(offs) {
   listen(offs, refs.top_upload, 'click', () => open_upload_dialog());
   const si = refs.size_input;
   listen(offs, si, 'keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); const v = parseFloat(si.value); if (v > 0) set_font_size(v); } else if (e.key === 'Escape') restore_focus();
