@@ -29,7 +29,7 @@ export function login_page(r) {
           placeholder="Any password" />
         <button type="button" className="icon_btn absolute right-1 top-1/2 h-10 w-10 -translate-y-1/2" data-act="pwd" aria-label="Show password">{ic('eye', 'h-5 w-5')}</button>
       </div></div>
-      <a href="#/forgot" className="-mt-3 justify-self-end text-sm font-medium text-accent hover:underline">Forgot password?</a>
+      <a href={to('/forgot')} className="-mt-3 justify-self-end text-sm font-medium text-accent hover:underline">Forgot password?</a>
       <label className="flex cursor-pointer items-center gap-3 justify-self-start text-sm font-normal">
         <input type="checkbox" name="remember" defaultChecked />Keep me signed in</label>
       <button className="btn btn_primary mt-2 w-full">Sign in</button>
