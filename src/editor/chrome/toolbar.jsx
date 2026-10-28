@@ -46,3 +46,4 @@ export const toolbar = () => (
     {tb({ ed: 'size_up', icon: 'add', tip: 'Increase font size (Ctrl+Shift+.)' })}
     {sep()}
     {tb({ ed: 'bold', icon: 'format_bold', tip: 'Bold (Ctrl+B)', state: 'bold' })}
+    {tb({ ed: 'italic', icon: 'format_italic', tip: 'Italic (Ctrl+I)', state: 'italic' })}
