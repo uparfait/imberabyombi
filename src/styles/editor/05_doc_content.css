@@ -31,3 +31,4 @@
 .doc_content .page_break{height:0;overflow:hidden;user-select:none}
 .doc_content .cmt{background:rgba(251,188,4,.3);border-bottom:2px solid #fbbc04}
 .doc_content .cmt.active{background:rgba(251,188,4,.65)}
+.doc_content td[data-hdr],.doc_content th[data-hdr]{font-weight:700}
