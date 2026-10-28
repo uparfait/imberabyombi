@@ -8,3 +8,5 @@ let version = 0, n = 0;
 const listeners = new Set();
 export const subscribe_dialogs = fn => { listeners.add(fn); return () => listeners.delete(fn); };
 export const get_dialog_version = () => version;
+
+/* content: the dialog's options (or null = empty). Each call gets a new key, so the dialog's DOM is new (like innerHTML) */
