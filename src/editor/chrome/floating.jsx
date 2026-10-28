@@ -20,3 +20,4 @@ export const find_panel = () => (
       <input type="text" id="replace_input" placeholder="Replace with" aria-label="Replace with" />
     </div>
     <div className="find_line find_foot">
+      <label className="find_case"><input type="checkbox" id="find_case" /> Match case</label>
