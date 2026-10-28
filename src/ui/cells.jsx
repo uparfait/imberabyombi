@@ -35,3 +35,4 @@ export function cell(c, k, row) {
   if (['dept', 'kind', 'category', 'grade', 'term', 'subject', 'type', 'item', 'resource', 'shift', 'method'].includes(k)) return tag(v);
   if (f?.t === 'date') return <time dateTime={String(v ?? '')} className="whitespace-nowrap">{fmt_d(v)}</time>;
   if (f?.t === 'datetime-local') return <time dateTime={String(v ?? '')} className="whitespace-nowrap">{fmt_dt(v)}</time>;
+  if (['amount', 'fee', 'salary'].includes(k)) return <data value={+v || 0} className="tabular-nums">{money(v)}</data>;
