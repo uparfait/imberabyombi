@@ -26,3 +26,5 @@ export function text_nodes(root) {
   const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); const a = [];
   while (w.nextNode()) a.push(w.currentNode);
   return a;
+}
+export function offset_within(block, node, off) {
