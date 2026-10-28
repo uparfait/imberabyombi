@@ -21,3 +21,4 @@ export function contact_form() {
       <div className="field sm:col-span-2"><label htmlFor="contact_message">Message</label>
         <textarea id="contact_message" name="message" rows="5" required placeholder={lorem.s()}></textarea></div>
       <label className="flex items-start gap-3 text-sm font-normal text-muted sm:col-span-2">
+        <input type="checkbox" name="consent" required className="mt-0.5" /> {lorem.s(10, 14)}</label>
