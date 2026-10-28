@@ -19,3 +19,4 @@ export function path_to(root, node) {
   return node === root ? p : null;
 }
 export function node_at(root, path) { let n = root; for (const i of path) { if (!n || !n.childNodes[i]) return null; n = n.childNodes[i]; } return n; }
+export function snapshot() {
