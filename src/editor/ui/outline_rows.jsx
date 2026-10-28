@@ -20,3 +20,5 @@ function moved(f, kb) {
   render_outline();
   const r = kb && outline_rows(outline_el()).find(x => x._h === f);
   if (r && !r.hidden) r.focus();
+}
+function section_items(row, kb) {
