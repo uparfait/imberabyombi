@@ -39,3 +39,4 @@ Optional keys: `before(values, row, form)` adjusts values before saving (may be 
 ## Lorem ipsum that does not change
 `lorem` (src/lib) is deterministic: the same seed gives the same text every time, so a page looks the same on every visit
 and in every screenshot. Methods: `t(n)` title of n words, `s()` sentence, `p()` paragraph, `name()`, `pick(list)`,
+`int(a, b)`, `r()` random 0–1, `seed(n)`.
