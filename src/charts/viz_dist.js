@@ -19,3 +19,4 @@ export const VIZ_DIST = {
     const q = (a, p) => a[Math.floor((a.length - 1) * p)], st = sets.map(a => {
       const q1 = q(a, .25), q3 = q(a, .75), iq = q3 - q1, lo = a.find(v => v >= q1 - 1.5 * iq), hi = [...a].reverse().find(v => v <= q3 + 1.5 * iq);
       return { q1, q3, med: q(a, .5), lo, hi, out: a.filter(v => v < lo || v > hi) }; });
+    const f = frame(w, 250), ax = y_axis(f, 100), x = band(g.length, f.l, f.w - f.r), bw = Math.min(36, x.bw * .5);
