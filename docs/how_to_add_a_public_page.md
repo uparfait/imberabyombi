@@ -29,7 +29,7 @@ In `src/site/pages.jsx` add an entry to `PAGES`:
 services: { t: 'Services', i: 'layers', top: () => services_sec(1) },
 ```
 - `t` is the title (tab title, hero, menus), `i` an icon name from `src/icons/paths.js`, `top` the content above the
-  long-form text. The route `#/services` works at once, with its own `<title>` and description.
+  long-form text. The route `/services` works at once, with its own `<title>` and description.
 
 ## 3. Show it in the menus (optional)
 Add `['services', 'Services']` to `PUB` in `src/site/site_bits.jsx`: the header links, the mobile drawer and the footer
