@@ -35,3 +35,6 @@ function Page_setup_body() {
         <input id={'ps_' + k} name={'ps_' + k} type="number" placeholder=" " {...num_props(s.margins[k], 0, 5, 0.05)} /></div>)}
       <fieldset className="border-0 p-0 sm:col-span-2"><legend className="mb-2 px-0 text-sm">Headers, footers and page numbers</legend>
         <div className="flex flex-wrap gap-x-5 gap-y-1">{check('header', 'Header', s.header)}{check('footer', 'Footer', s.footer)}{check('page_numbers', 'Page numbers', s.page_numbers)}</div>
+      </fieldset>
+    </div>
+    <div className="field"><label htmlFor="ps_color">Page color</label><input id="ps_color" name="page_color" type="color" defaultValue={s.page_color || '#ffffff'} /></div>
