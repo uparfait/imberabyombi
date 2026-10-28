@@ -31,3 +31,4 @@ export function enhance() {
   qsa('[data-count]').forEach(el => ioc ? ioc.observe(el) : count_up(el));
   qsa('input[type=range]').forEach(fill_range); header_line();
   qsa('select[multiple]').forEach(ms_sync);
+  hex_refresh();
