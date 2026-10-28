@@ -6,3 +6,4 @@ const ICONS_2 = ['layers', 'users', 'box', 'chart'];
 const ICONS_3 = ['note', 'calendar', 'flag', 'star', 'target', 'bulb', 'compass', 'heart', 'globe', 'send', 'book', 'mail', 'pin', 'coin'];
 export const NAVTREE = (() => { let t; return () => t || (lorem.seed(808), t = [...Array.from({ length: 4 }, (_, a) => ({ t: lorem.t(2), i: ICONS_2[a] })),
   { t: 'System 3', i: 'grid', c: Array.from({ length: 14 }, (_, a) => ({ t: lorem.t(2), i: ICONS_3[a] })) }]); })();
+export const slug = t => String(t).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
