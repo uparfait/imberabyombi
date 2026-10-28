@@ -34,3 +34,5 @@ export function kit() {
         <nav aria-label="Design system sections" className="lg:sticky lg:top-24 lg:self-start">
           <ul className="flex gap-1 overflow-x-auto pb-2 lg:grid">{SECS.map(([id, t]) => (
           <li key={id}><button className="side_link whitespace-nowrap" data-act="scroll" data-to={`section_${id}`}>{t}</button></li>
+        ))}</ul></nav>
+        <div className="min-w-0">
