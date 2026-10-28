@@ -27,3 +27,4 @@ export function spacing_items() {
     ...[['Single', '1'], ['1.15', '1.15'], ['1.5', '1.5'], ['Double', '2']].map(([l, v]) => ({ label: l, checked: line() === v, action: () => set_line_height(v) })),
     { sep: true },
     { label: 'Add / remove space before paragraph', action: () => toggle_para_space('before') },
+    { label: 'Add / remove space after paragraph', action: () => toggle_para_space('after') },
