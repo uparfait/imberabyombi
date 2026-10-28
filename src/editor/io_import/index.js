@@ -13,3 +13,4 @@ export * from './sheets.js';
 export * from './docx_runs.js';
 export * from './docx.js';
 export * from './odf.js';
+export * from './epub.js';
