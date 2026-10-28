@@ -14,3 +14,4 @@ export const services_sec = (page = 0) => (
       {sec_head('Services', 'What we offer', 'One sentence that explains the services.')}
       <div className="mt-10 grid gap-6 md:grid-cols-3">
         {['Design', 'Build', 'Support'].map((t, i) => (
+          <article key={t} className="card p-6" data-reveal="" style={{ '--d': `${i * 0.08}s` }}>
