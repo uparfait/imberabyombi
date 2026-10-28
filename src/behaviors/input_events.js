@@ -21,3 +21,4 @@ function on_input(e) {
     if (t.value) (bs[bs.indexOf(t) + 1] || t).focus(); if (bs.every(b => b.value)) t.form?.requestSubmit(); }
   if (t.dataset.pw != null) pw_check(t);
   if (!pick.mute && pick.a === t) { if (t.dataset.list == null && t.value) pick.view = pick.from(t); pick.draw(); }
+  else if (!pick.mute && t.dataset.list != null) pick.open(t);
