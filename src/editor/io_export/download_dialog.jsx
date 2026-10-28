@@ -8,3 +8,4 @@ import { state, qs, file_base, toast, hist_timer, commit } from '../core/index.j
 import { FORMATS, doc_stats, do_export } from './formats.js';
 
 /* the format badge (a page with a folded corner, in the format's colour) and the file name box (field look, extension after it) */
+const BADGE = 'relative flex h-11 w-9 flex-none items-end justify-center rounded-[4px_11px_4px_4px] pb-1.5 text-[9.5px] font-bold leading-none '
