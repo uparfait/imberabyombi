@@ -73,3 +73,4 @@ function filter_box(focus) {
   return inp;
 }
 /* rows whose name does not contain the filter text hide (the outline goes with its tab) */
+function apply_filter(list) {
