@@ -19,3 +19,4 @@ export function unwrap_comments(d) {
   qsa('.cmt', d).forEach(s => s.replaceWith(...s.childNodes)); qsa('img[data-orig]', d).forEach(i => i.removeAttribute('data-orig')); return d;
 }
 /* scope 'all' (several tabs): every tab, joined by page breaks; otherwise the open tab */
+export function export_root(scope) {
