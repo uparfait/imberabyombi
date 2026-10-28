@@ -38,3 +38,4 @@ export function image_menu_items(img) {
     { label: 'Adjustments…', icon: 'tune', no_preview: true, action: off(() => adjust_dialog(img)) },
     { label: 'Border', icon: 'border_style', sub: () => [
       ...[0, 1, 2, 4, 6].map(w => ({
+        label: w ? w + ' px' : 'No border', checked: (parseFloat(img_now(img).style.borderWidth) || 0) === w, action: () => set_img_border(img, w) })), { sep: true },
