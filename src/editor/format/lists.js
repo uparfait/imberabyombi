@@ -10,3 +10,4 @@ const take_sel = () => { const s = getSelection(); if (s.rangeCount) set_last_ra
 /* tag: 'UL' | 'OL' */
 export function toggle_list(tag) {
   if (!can_edit()) return;
+  restore_focus(); const l = closest_list();
