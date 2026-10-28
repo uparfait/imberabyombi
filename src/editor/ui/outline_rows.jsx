@@ -79,3 +79,4 @@ function on_down(e, row) {
 }
 
 export function wire_outline_row(row) {
+  row.addEventListener('click', e => {
