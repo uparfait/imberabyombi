@@ -3,3 +3,5 @@
 import { lorem, pad, ymd, add_d } from '../lib/index.js';
 import { stock_cell } from '../ui/index.js';
 import { field_spec, option_list, STATUS, people, ABC } from './fields.js';
+
+export const reservations_schema = {
