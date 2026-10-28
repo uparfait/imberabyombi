@@ -37,3 +37,4 @@ export function drop_point(x, y, img) {
   hide.forEach(e => { e.style.visibility = 'hidden'; });
   const p = caret_from_point(x, y);
   hide.forEach((e, i) => { e.style.visibility = vis[i]; });
+  const host = p && editable_of(p.node);
