@@ -16,3 +16,4 @@ export function start_paint() {
   const dec = []; e = n;
   while (e && !e.classList.contains('pg_body')) { const d = getComputedStyle(e).textDecorationLine; if (d && d !== 'none') dec.push(d); e = e.parentElement; }
   paint = {
+    bold: parseInt(cs.fontWeight) >= 600, italic: cs.fontStyle === 'italic', underline: dec.join(' ').includes('underline'),
