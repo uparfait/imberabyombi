@@ -14,3 +14,4 @@ const CHARS = ('© ® ™ § ¶ † ‡ • · – — … ‰ ′ ″ « » ‹
 function insert_char(c) {
   if (!can_edit()) return;
   const r = last_range, h = last_host;
+  if (!r || !h || !h.isConnected || !r.startContainer.isConnected) return;
