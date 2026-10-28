@@ -32,3 +32,4 @@ export function spacing_items() {
   ];
 }
 export function bullet_items() {
+  return [['Disc', 'disc', '●'], ['Circle', 'circle', '○'], ['Square', 'square', '■'], ['Arrow', "'➔  '", '➔'], ['Star', "'★  '", '★'], ['Dash', "'–  '", '–']]
