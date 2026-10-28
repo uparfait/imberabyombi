@@ -13,3 +13,4 @@ export const DEMO_ACT = {
   mp_play: t => { const w = t.closest('[data-mp]'), m = w?._m; if (m) m.paused ? m.play().catch(() => media_err(w)) : m.pause(); },
   demo_dialog: () => modal({ title: lorem.t(3), help: lorem.p(2), submit: 'Confirm', body: field(field_spec('demo', 'Lorem field', 'text', 0, 1), ''), on_submit: () => show_msg(qs('#demo_messages'), 'ok', 'Confirmed', 'Lorem ipsum dolor sit amet.') }),
   demo_save: t => form_msg(t.closest('form'), 'ok', 'Saved', 'Lorem ipsum dolor sit amet, consectetur.'),
+  demo_msg: t => show_msg(qs('#demo_messages'), t.dataset.v, TITLES[t.dataset.v], 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', false),
