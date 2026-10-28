@@ -21,3 +21,4 @@
 /* The document title: reads as a heading, shows its field outline on hover / focus */
 .title_input {
   width: auto; min-width: 6rem; max-width: min(60vw, 32rem); field-sizing: content; min-height: 0; margin-left: -.125rem;
+  padding: .0625rem .5rem; border: 1px solid transparent; border-radius: calc(var(--radius) * .5); background: transparent;
