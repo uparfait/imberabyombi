@@ -23,3 +23,6 @@ export function json_to_html(text, name) {
     return { html: rows_to_table([['Key', 'Value'], ...Object.entries(data).map(([k, v]) => [k, fv(v)])], true) };
   }
   return { html: code_to_html(JSON.stringify(data, null, 2), name) };
+}
+
+export const MAX_ATTACH = 25 * 1024 * 1024;
