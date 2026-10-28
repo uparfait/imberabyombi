@@ -7,3 +7,4 @@ import { badge, person_you } from '../ui/index.js';
 import { STATUS } from '../schemas/index.js';
 import { task_own, task_mine, subs_of, files_of } from './task_data.js';
 import { due_tag } from './task_dates.jsx';
+import { bar, status_more } from './task_bits.jsx';
