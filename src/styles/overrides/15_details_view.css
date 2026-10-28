@@ -7,3 +7,4 @@
   .kv tbody td { white-space: normal; overflow-wrap: anywhere; }
   .kv .kv_group th { width: auto; padding-block: .5rem; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); background: rgb(var(--brand) / .07); }
   .kv tbody tr:last-child > * { border-bottom: 0; }
+  .kv :is(.truncate, .trunc, .whitespace-nowrap) { white-space: normal; overflow: visible; text-overflow: clip; }
