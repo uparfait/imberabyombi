@@ -60,3 +60,4 @@ export function paint_find(scroll) {
     if (idx >= 0) CSS.highlights.set('find_cur', new Highlight(matches[idx])); else CSS.highlights.delete('find_cur');
   }
   if (scroll && idx >= 0 && scroller) {
+    const r = matches[idx].getBoundingClientRect(), sc = scroller.getBoundingClientRect();
