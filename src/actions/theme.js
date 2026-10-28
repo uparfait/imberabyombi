@@ -3,3 +3,5 @@
 import { qs, qsa, css_var, hex2rgb, rgb2hex } from '../lib/index.js';
 import { db } from '../store/index.js';
 import { redraw_charts } from '../charts/index.js';
+
+/* Theme switches are instant: no cross-fade and no colour transitions for that frame (easier on the eyes) */
