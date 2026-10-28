@@ -9,3 +9,6 @@ export const search_box = (attrs, ph = 'Search', c = '') => (
     <span className="sr-only">{ph}</span>
     <input type="search" placeholder={ph} className="h-11 rounded-full border-transparent bg-surface-2 py-2 hover:border-transparent hover:bg-surface-3 focus:bg-surface" {...attrs} />
     {search_ui()}
+  </label>
+);
+/* Search field buttons: .ss runs the search (left), .sx clears it (right, shown only while there is text) */
