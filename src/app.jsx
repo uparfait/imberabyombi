@@ -8,6 +8,7 @@ import { render_route, run_after_render } from './router/index.js';
 import { Dialog_hosts } from './overlays/index.js';
 import { spinner } from './feedback/index.js';
 
+/* admin pages draw a little larger on laptops and desktops (html.staff_page → --scale_staff in src/styles/base) */
 export default function App() {
   const version = useSyncExternalStore(subscribe, get_version);
   const page = render_route();
