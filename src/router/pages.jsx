@@ -32,3 +32,6 @@ export function admin_page(r) {
   route.mod = mod; lorem.seed(hash_str(mod));
   const body = !m ? not_found(true) : !auth.can(mod) ? forbidden() : VIEWS[mod]();
   set_meta(route.title || m?.l || 'Not found'); return admin_shell(mod, body);   /* a view may name its page (route.title), e.g. nested navigation */
+}
+
+/* Account pages share one shell (auth_shell); each route = [tab title, page] */
