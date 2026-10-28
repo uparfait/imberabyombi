@@ -25,3 +25,4 @@ function on_input(e) {
   if (t.type === 'range') fill_range(t);
   if (t.dataset.out) { const o = qs(t.dataset.out); if (o) o.value = t.value; }
   if (t.dataset.filter) { const q = t.value.toLowerCase().trim(); qsa(t.dataset.filter).forEach(el => el.hidden = !!q && !el.textContent.toLowerCase().includes(q)); }
+  if (t.dataset.token && t.type !== 'select-one') set_token(t.dataset.token, t.value);
