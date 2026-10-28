@@ -18,3 +18,4 @@ export function row_drag(e, o) {
     Object.assign(line.style, { left: b.left + 'px', width: b.width + 'px', top: Math.round(y - 1) + 'px' }); line.hidden = false;
   };
   const edge = () => {
+    for (const s of o.scrollers || []) {
