@@ -39,3 +39,5 @@ function File_view({ f, n }) {
         <a className="icon_btn" href={u} target="_blank" rel="noopener" aria-label="Open in a new tab">{ic('external')}</a>
         <a className="icon_btn" href={u} download={f.name} aria-label="Download">{ic('download')}</a>
         <button type="button" className="icon_btn" data-act="close_viewer" aria-label="Close">{ic('x')}</button>
+      </header>
+      <div className="min-h-0 flex-1 overflow-auto" data-view="">{body}</div>
