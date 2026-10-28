@@ -21,3 +21,5 @@ export function start_paint() {
     size: Math.round(parseFloat(cs.fontSize) * 0.75 * 2) / 2
   };
   btn(true); toast('Select the text to apply the format to', 2000);
+}
+export function apply_paint() {
