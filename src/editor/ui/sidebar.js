@@ -20,3 +20,4 @@ export function render_sidebar() {
   const many = state.tabs.length > MANY; if (!many) tab_q = '';
   list.innerHTML = '';
   if (many) list.appendChild(filter_box(typing));
+  const box = el('div', { class: 'tab_scroll' + (many ? ' many' : '') });
