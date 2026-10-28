@@ -14,3 +14,4 @@ export function split_text(block, b, next) {
   const limit = b.getBoundingClientRect().bottom - 1;
   const rng = document.createRange();
   const char_bottom = i => {
+    let lo = 0, hi = tn.length - 1;
