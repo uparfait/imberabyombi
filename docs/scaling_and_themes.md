@@ -39,3 +39,4 @@ inside its own box. Nested scroll areas hand the wheel back to the page at their
 - Page changes cross-fade with the View Transitions API where supported, plus a short rise-in.
 - Dialogs and the drawer animate open and closed; saved rows flash, deleted rows slide out.
 - Field labels glide (transform only); `<details>` open and close smoothly.
+- `prefers-reduced-motion` turns off animations, counters and the typing effect; the spinner keeps a calm rotation.
