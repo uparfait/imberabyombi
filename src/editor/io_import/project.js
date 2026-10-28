@@ -19,3 +19,4 @@ export function load_project(d) {
 }
 
 export function is_doc_empty() {
+  const bs = bodies();
