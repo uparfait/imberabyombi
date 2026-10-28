@@ -35,3 +35,4 @@ export const staff_card = (i, team) => {
 };
 export function staff_sec() {
   return (
+    <section {...spy_attrs('staff')} className="wrap section"><div className="flex flex-wrap items-end justify-between gap-6">
