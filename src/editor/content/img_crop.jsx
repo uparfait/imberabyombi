@@ -14,3 +14,4 @@ function Crop_body({ src, st }) {
   const [rect, set_rect_s] = useState(null), [ratio, set_ratio] = useState(null), pic = useRef(null);
   const set_rect = r => { st.rect = r; set_rect_s(r); };
   const centered = r => {
+    const W = pic.current.clientWidth, H = pic.current.clientHeight; let w = W, h = w / r;
