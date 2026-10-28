@@ -57,3 +57,4 @@
 .doc_content q::before,.doc_content q::after{color:inherit}
 .doc_content :is(sub,sup){font-size:75%}
 .doc_content small{font-size:smaller}
+.doc_content s{text-decoration-color:currentColor;text-decoration-thickness:auto;opacity:1}
