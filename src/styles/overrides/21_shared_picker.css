@@ -35,3 +35,4 @@
   .pk_dt { display: grid; grid-template-columns: minmax(0, 1fr) 6.5rem; gap: .5rem; }
   .pk_dt .pk_cal { width: min(17rem, calc(100vw - 10rem)); }
   .pk_dt .pk_times { max-height: 16.5rem; overflow-y: auto; }
+  .pk_dt > div:last-child { border-left: 1px solid rgb(var(--line)); }
