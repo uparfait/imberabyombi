@@ -56,3 +56,4 @@ export function undo() {
 }
 export function redo() {
   if (state.mode !== 'edit') return; live.cancel();
+  const t = active_tab(); if (!t || !t.redo.length) return;
