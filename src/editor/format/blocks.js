@@ -25,3 +25,4 @@ export function with_blocks(fn) {
   end_op(host && host.classList.contains('pg_body') ? body_index(host) : 0);
 }
 export function set_block_style(key) {
+  const st = STYLES.find(s => s.key === key) || STYLES[0];
