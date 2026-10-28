@@ -3,3 +3,4 @@
    white, black text, light colour scheme in both themes, edged by a line instead of a shadow. .page is scaled by the
    zoom (transform); .pg_body / .pg_header / .pg_footer are placed by the engine. */
 #hruler { position: relative; flex: none; height: var(--ed_hr); overflow: hidden; }
+#vruler { position: relative; flex: none; width: var(--ed_vr); overflow: hidden; }
