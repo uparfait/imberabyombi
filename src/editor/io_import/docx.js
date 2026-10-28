@@ -50,3 +50,4 @@ async function docx_blocks(cx, nodes, container) {
   const page_break = () => container.insertAdjacentHTML('beforeend', PB);
   for (const n of nodes) {
     const ln = n.localName;
+    if (ln === 'p') {
