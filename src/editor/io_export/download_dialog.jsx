@@ -16,3 +16,4 @@ const count = (n, one, many) => n ? `${n} ${n === 1 ? one : many}` : '';
 function summary(fmt, s) {
   let sum = [count(s.pages, 'page', 'pages'), `${s.words.toLocaleString()} ${s.words === 1 ? 'word' : 'words'}`, count(s.tables, 'table', 'tables'),
     count(s.images, 'image', 'images')].filter(Boolean).join(', ') + '.';
+  if ((fmt === 'xlsx' || fmt === 'csv') && !s.tables) sum += ' There are no tables, so each paragraph becomes one row.';
