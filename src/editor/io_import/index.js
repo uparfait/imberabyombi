@@ -6,3 +6,4 @@ export * from './xml_helpers.js';
 export * from './unzip.js';
 export * from './text_md.js';
 export * from './tables.js';
+export * from './json_attach.js';
