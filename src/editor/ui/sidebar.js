@@ -81,3 +81,5 @@ function apply_filter(list) {
   let none = list.querySelector('.tab_none');
   if (!shown && !none) { none = el('p', { class: 'tab_none outline_hint' }, 'No tab matches this filter.'); list.querySelector('.tab_scroll')?.appendChild(none); }
   if (shown && none) none.remove();
+}
+function keep_in_view(box) {
