@@ -38,3 +38,4 @@ function keep_attrs(c, tag) {
   const keep = {}, orig_cls = c.getAttribute('class') || '';
   for (const a of Array.from(c.attributes)) {
     const n = a.name.toLowerCase(), v = a.value;
+    if (n === 'style') { const s = keep_style(c, tag); if (s) keep.style = s; }
