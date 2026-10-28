@@ -12,3 +12,4 @@ for (const step of [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1
 const token_color = name => `rgb(var(--${name}) / <alpha-value>)`;
 
 export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
