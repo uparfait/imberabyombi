@@ -22,3 +22,4 @@ export function set_text(e, s) {
 /* swap an icon: e is the icon's svg, its <path> or an element around it (rendered EMPTY: it gets the icon markup) */
 export function set_icon(e, name, cls = 'h-5 w-5') {
   if (!e) return; const p = e.tagName === 'path' ? e : e.querySelector('path');
+  if (p) p.setAttribute('d', icon_path(name)); else e.innerHTML = ic_html(name, cls);
