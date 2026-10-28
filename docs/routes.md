@@ -30,3 +30,4 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 Write normal anchors and build the address with `to()`, so it carries the base path:
 ```jsx
 import { to, go } from '../router/index.js';
+<a href={to('/about')}>About</a>
