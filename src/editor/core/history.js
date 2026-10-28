@@ -55,3 +55,4 @@ export function undo() {
   t.redo.push(t.undo.pop()); apply_snap(t.undo[t.undo.length - 1]); save_soon();
 }
 export function redo() {
+  if (state.mode !== 'edit') return; live.cancel();
