@@ -23,3 +23,4 @@ export async function unzip(buf) {
     if (en.method === 0) out = raw;
     else if (en.method === 8) {
       if (typeof DecompressionStream === 'undefined') throw new Error('this browser can’t unpack it. Try the latest Chrome, Edge, Firefox or Safari');
+      out = new Uint8Array(await new Response(new Blob([raw]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());
