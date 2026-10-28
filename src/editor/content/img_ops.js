@@ -6,3 +6,4 @@ import { can_edit, previewing } from '../format/index.js';
 import { img_max, select_image, img_now } from './img_sel.js';
 
 /* fn(img) gets the image as it is in the document now */
+export function img_op(img, fn) {
