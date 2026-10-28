@@ -11,3 +11,4 @@ import { on_selection, stop_sel_timer } from './toolbar_state.js';
 import { install_toolbar } from './toolbar.js';
 import { on_context_menu } from './context_menu.js';
 import { on_key } from './shortcuts.js';
+import { add_tab } from './tabs.jsx';
