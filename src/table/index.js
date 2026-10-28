@@ -9,3 +9,4 @@ export * from './col_show.js';
 export * from './table_full.js';
 export * from './crud.jsx';
 export * from './kv_table.jsx';
+export * from './view_row.jsx';
