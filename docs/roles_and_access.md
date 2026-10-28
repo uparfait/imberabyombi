@@ -39,3 +39,6 @@ auth.can('tasks')    // can open the module (level ≥ 1)
 auth.can('tasks', 2) // can manage it (add, edit, delete)
 auth.boss()          // an administrator role
 me()                 // the signed-in person's name
+```
+
+## Important
