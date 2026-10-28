@@ -2,3 +2,4 @@
    three as cards, then all), Reservations & inventory (low-stock banner) and Smart parking (live slots + movement log). */
 import { VIEWS } from './views.js';
 import { db, ui } from '../store/index.js';
+import { auth } from '../auth/index.js';
