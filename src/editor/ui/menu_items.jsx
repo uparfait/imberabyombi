@@ -37,3 +37,4 @@ export function bullet_items() {
 }
 export function number_items() {
   return [['1. 2. 3.', 'decimal'], ['01. 02. 03.', 'decimal-leading-zero'], ['a. b. c.', 'lower-alpha'], ['A. B. C.', 'upper-alpha'],
+    ['i. ii. iii.', 'lower-roman'], ['I. II. III.', 'upper-roman']].map(([l, v]) => ({ label: l, action: () => set_list_type('OL', v) }));
