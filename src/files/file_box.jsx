@@ -41,3 +41,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
     };
   }, []);
   return (
+    <div className={picking ? 'filebox picking' : 'filebox'}>
