@@ -39,3 +39,4 @@ export function crud(c, o = {}) {
     <>
       {full ? <div className="table_ph" style={{ height: ph_height(c) }}></div> : null}
       <section id={`table_card_${c}`} className={`card ${full ? 'table_full' : ''}`} aria-labelledby={`table_title_${c}`}>
+        <header className="flex flex-wrap items-center gap-3 border-b border-line p-4">
