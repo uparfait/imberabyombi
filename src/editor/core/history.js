@@ -35,3 +35,5 @@ export function commit() {
   if (top && top.html.length === s.html.length && top.html.every((h, i) => h === s.html[i])) { top.caret = s.caret; return; }
   t.undo.push(s); if (t.undo.length > 300) t.undo.shift(); t.redo = [];
   save_soon();
+}
+export function commit_soon() { if (live_busy()) return; clearTimeout(hist_timer); hist_timer = setTimeout(commit, 450); }
