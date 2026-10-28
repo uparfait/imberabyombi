@@ -42,3 +42,4 @@ export function shortcuts_dialog() {
   modal({
     title: 'Keyboard shortcuts',
     body: <div className="sm:col-span-2"><table className="w-full"><tbody>{KEYS.map(([a, b]) =>
+      <tr key={a}><td className={TD}>{a}</td><td className={TD + ' whitespace-nowrap text-muted'}>{b}</td></tr>)}</tbody></table>
