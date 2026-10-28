@@ -7,3 +7,4 @@ import { form_msg } from './messages.jsx';
 
 export const field_label = el => (el.labels?.[0]?.textContent || el.placeholder || el.name || 'this field').replace(/\*/g, '').trim();
 export function err_text(el) {
+  const v = el.validity, l = field_label(el), lc = l.charAt(0).toLowerCase() + l.slice(1);
