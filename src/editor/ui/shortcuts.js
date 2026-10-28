@@ -68,3 +68,5 @@ export function on_key(e) {
   if (in_field || !in_editor) return;
   if (k === 'v' && e.shiftKey) { set_paste_plain(true); return; }
   const fn = edit_key(e, k, e.code);
+  if (fn) { done(); fn(); }
+}
