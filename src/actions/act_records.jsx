@@ -12,3 +12,4 @@ import { open_form } from '../table/index.js';
 /* a student's average per subject and term, and per term over every subject */
 const bulletin = n => { const rows = db.list('bulletins').filter(b => b.student === n);
   const sc = (s, tm) => { const x = rows.filter(r => r.subject === s && r.term === tm).map(r => +r.score); return x.length ? Math.round(x.reduce((a, b) => a + b) / x.length) : null; };
+  const avg = tm => { const v = SUBJECTS.map(s => sc(s, tm)).filter(v => v != null); return v.length ? Math.round(v.reduce((a, b) => a + b) / v.length) : '—'; };
