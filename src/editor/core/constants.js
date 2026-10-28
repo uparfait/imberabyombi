@@ -42,3 +42,4 @@ export const LIB = {
 };
 export const PDFJS_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 export const BLOCK_RE = /^(P|H[1-6]|UL|OL|TABLE|BLOCKQUOTE|PRE|HR|DIV|FIGURE)$/;
+export const TEXT_BLOCK_RE = /^(P|H[1-6]|BLOCKQUOTE|PRE|DIV)$/;
