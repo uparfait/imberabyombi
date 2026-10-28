@@ -57,3 +57,5 @@ export function pages_pointerdown(e) {
   if (is_abs(img)) { if (document.activeElement !== host) host.focus({ preventScroll: true }); }
   else set_caret(img.parentNode, Array.prototype.indexOf.call(img.parentNode.childNodes, img) + 1);
   select_image(img); start_img_drag(e, img);
+}
+/* images move with img_drag, never with the browser's drag and drop (that would copy them) */
