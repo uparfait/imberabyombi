@@ -27,3 +27,4 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 - Each route updates `<title>`, the meta description and `og:title` (`set_meta()` in src/router).
 - `public/robots.txt` and `public/sitemap.xml` tell crawlers what to read; update the domain before publishing.
 - Images carry `alt` text; headings follow one `h1` per page; links are real `<a href>` elements.
+- A `<noscript>` message explains that the site needs JavaScript.
