@@ -34,3 +34,4 @@ export async function file_to_html(file) {
     case 'pdf': return { html: await pdf_to_html(await file.arrayBuffer()) };
     case 'xlsx': case 'xlsm': case 'xlsb': case 'xls': case 'ods': case 'fods': case 'numbers': return sheet_to_html(file, ext);
     case 'csv': return csv_to_html(await file.text());
+    case 'tsv': case 'tab': return csv_to_html(await file.text(), '\t');
