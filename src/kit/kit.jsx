@@ -13,3 +13,4 @@ import { kit_actions } from './kit_actions.jsx';
 import { kit_forms } from './kit_forms.jsx';
 import { kit_media } from './kit_media.jsx';
 import { kit_tables } from './kit_tables.jsx';
+import { kit_overlays } from './kit_overlays.jsx';
