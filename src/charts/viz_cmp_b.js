@@ -18,3 +18,4 @@ export const VIZ_CMP_B = {
         + `<line class="mark" x1="${round1(ax.x(a[i]))}" x2="${round1(ax.x(b[i]))}" y1="${round1(y(i))}" y2="${round1(y(i))}"`
         + ` style="stroke:rgb(var(--muted));stroke-width:2"/>` + dot(ax.x(a[i]), y(i), 'var(--series_2)') + dot(ax.x(b[i]), y(i), 'var(--series_1)'))
         + row_label(f, y, i, k)).join(''), 'Dumbbell chart'),
+      legend: legend(['2025', '2026'], 'dot', [1, 0]),
