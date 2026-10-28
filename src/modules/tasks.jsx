@@ -4,3 +4,4 @@ import { VIEWS } from './views.js';
 import { db, ui } from '../store/index.js';
 import { auth, me } from '../auth/index.js';
 import { i3 } from '../icons/index.js';
+import { tabs } from '../ui/index.js';
