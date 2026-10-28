@@ -18,3 +18,4 @@ export function toggle_list(tag) {
 export function set_list_type(tag, type) {
   if (!can_edit()) return;
   restore_focus(); let l = closest_list();
+  if (!l || l.tagName !== tag || l.classList.contains('checklist')) {
