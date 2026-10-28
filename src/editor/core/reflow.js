@@ -43,3 +43,4 @@ export function reflow(cur = 0, full = false) {
   for (let j = bs.length - 1; j >= 1; j--) if (is_blank_body(bs[j])) drop_page(bs[j], bs[j - 1]);
   bs = bodies();
   ensure_para(bs[0]);
+  const last_b = bs[bs.length - 1];
