@@ -12,3 +12,4 @@
   .task_row:hover { background: rgb(var(--fg) / .05); }
   .status_dot { width: .625rem; height: .625rem; flex: none; border-radius: var(--pill); background: rgb(var(--muted) / .5); }
   .status_dot[data-s="In progress"] { background: rgb(var(--info)); } .status_dot[data-s="Done"] { background: rgb(var(--ok)); }
+  .sub_group { display: grid; gap: .5rem; padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; }
