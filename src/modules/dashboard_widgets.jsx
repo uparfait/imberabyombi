@@ -44,3 +44,4 @@ export function dash_widgets(u) {
     W.push(<section key="cal" className="card p-5">{head('Coming up', '#/admin/calendar', 'Calendar')}<ol className="mt-4 grid gap-3">
       {up.length ? up.map(up_li) : none('Nothing scheduled.')}</ol></section>); }
   if (auth.can('inventory')) { const low = db.list('inventory').filter(i => +i.qty < +i.min).slice(0, 4);
+    W.push(<section key="stock" className="card p-5">{head('Low stock', '#/admin/inventory', 'Inventory')}
