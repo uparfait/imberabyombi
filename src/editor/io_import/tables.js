@@ -35,3 +35,4 @@ export function rows_to_table(rows, header) {
 export function trim_rows(rows, max_r = 2000, max_c = 40) {
   rows = rows.map(r => Array.from(r || [], v => v == null ? '' : String(v)));
   while (rows.length && rows[rows.length - 1].every(v => !v.trim())) rows.pop();
+  let width = 0; rows.forEach(r => { for (let c = r.length - 1; c >= 0; c--) if (r[c].trim()) { width = Math.max(width, c + 1); break; } });
