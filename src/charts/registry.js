@@ -26,3 +26,5 @@ export function draw_chart(cv, labels, vals, anim = true) {
     if (t < 1) requestAnimationFrame(step);
   };
   step();
+}
+export const redraw_charts = () => CHARTS.forEach(([l, v], id) => draw_chart(document.getElementById(id), l, v, false));
