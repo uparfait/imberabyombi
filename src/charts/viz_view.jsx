@@ -49,3 +49,4 @@ export function charts_view() {
         'Every chart uses the system colours, follows light and dark and shows the exact values on hover. Click a card to see all its data in a table, '
         + 'or one bar, point, slice or row to see only that one. The date range changes every number on the page.')}
       <div className="mb-6 grid gap-3">
+        <div className="seg max-w-full justify-self-start overflow-x-auto" role="radiogroup" aria-label="Date range">
