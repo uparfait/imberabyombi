@@ -6,3 +6,5 @@ import { state, hruler, vruler, scroller, DPI, dims, page_wraps, layout_page, cl
 import { tip } from '../../overlays/index.js';
 import { apply_setup } from './view.js';
 import { scaled } from './ui_dom.js';
+
+const u = n => +scaled(n).toFixed(2);
