@@ -26,3 +26,4 @@ function on_error(e) {
 export function install_page() {
   document.addEventListener('visibilitychange', () => { const l = qs('link[rel=icon]'); if (l) l.href = tab_icon(rgb2hex(css_var(document.hidden ? '--ink' : '--brand'))); });
   document.addEventListener('reset', e => setTimeout(() => {
+    qsa('input[type=file]', e.target).forEach(i => i.closest('.filebox') && file_tiles(i)); qsa('select[multiple]', e.target).forEach(ms_sync); }));
