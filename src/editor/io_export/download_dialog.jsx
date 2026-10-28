@@ -70,3 +70,4 @@ export function open_download_dialog(pre) {
   const go = async () => {
     if (opt.busy) return false; opt.busy = true;
     try { const f = FORMATS.find(x => x.key === opt.fmt); await do_export(opt.fmt, f.tabs ? opt.scope : 'all', qs('#dl_name').value, opt.quality); }
+    catch (err) { console.error(err); toast(err.message || 'The download failed', 7000); opt.busy = false; return false; }
