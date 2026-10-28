@@ -15,3 +15,4 @@ export const VIZ_TIME_A = {
         + ` style="stroke:${scale_color(j)}"/>${dot(x(11), ax.y(r[11]), scale_color(j))}<text x="${round1(x(11) + 9)}" y="${round1(ly[j])}">${s[j]}</text>`).join('')
       + x_labels(f, m, x) + cross_bands(f, m, x, i => s.map((n, j) => [num(v[j][i]), n, j])), 'Line graph'),
       legend: legend(s, 'line'), table: [['Month', ...s], m.map((k, i) => [k, ...v.map(r => num(r[i]))])] }; } },
+  area: { t: 'Area chart', g: 'time', d: 'One series over time, filled lightly to its baseline.', f(w) {
