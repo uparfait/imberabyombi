@@ -20,3 +20,4 @@ export const auth_shell = (title, text, body) => (
 
 /* the other account pages (route paths stay as they are) */
 const LINKS = [['login', 'Sign in'], ['forgot', 'Forgot password'], ['verify', '2-step verification'], ['authenticator', 'Authenticator app'],
+  ['set-password', 'Set password']];
