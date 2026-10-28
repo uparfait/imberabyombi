@@ -7,3 +7,4 @@ import { modal, ask } from '../../overlays/index.js';
 /* run fn once #modal has closed (the 'close' event comes after the closing animation) */
 export function after_close(fn) {
   const d = document.getElementById('modal');
+  if (!d || !d.open) { fn(); return; }
