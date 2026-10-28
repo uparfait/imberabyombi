@@ -1,1 +1,2 @@
 /* router/history.js: path routes on the browser History API. to(path) is the address of an app path (the base path in front:
+   import.meta.env.BASE_URL, '/' by default), app_path() reads it back, go(path) moves there and navigate() draws the page.
