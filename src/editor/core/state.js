@@ -26,3 +26,4 @@ export function file_base() { return (state.title || 'document').replace(/[\\/:*
 export function dims() {
   const p = PAPER[state.setup.paper] || PAPER.letter; let w = p.w, h = p.h;
   if (state.setup.orientation === 'landscape') [w, h] = [h, w];
+  return { w: Math.round(w * DPI), h: Math.round(h * DPI), win: w, hin: h };
