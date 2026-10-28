@@ -3,3 +3,4 @@
    step of history and is applied once the dialog has closed. */
 import { useState } from 'react';
 import { state, PAPER, clamp, begin_op, commit, save_soon } from '../core/index.js';
+import { num_props } from '../format/index.js';
