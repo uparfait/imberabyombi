@@ -29,3 +29,4 @@
 #scroller { position: relative; flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
 
 /* While a table column is dragged */
+body.col_resize, body.col_resize * { cursor: col-resize !important; }
