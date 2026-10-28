@@ -19,3 +19,4 @@ export * from './pages.js';
 export * from './boundaries.js';
 export * from './keys.js';
 export * from './pointer.js';
+export * from './paste.js';
