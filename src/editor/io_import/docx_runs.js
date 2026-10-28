@@ -27,3 +27,4 @@ export async function docx_run(cx, r) {
   let inner = '';
   for (const c of Array.from(r.children)) {
     const ln = c.localName;
+    if (ln === 't') inner += esc_html(c.textContent); else if (ln === 'tab') inner += '\t'; else if (ln === 'cr') inner += '<br>'; else if (ln === 'noBreakHyphen') inner += '-';
