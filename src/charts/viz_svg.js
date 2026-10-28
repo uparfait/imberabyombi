@@ -39,3 +39,4 @@ export const path_of = pts => pts.map(([x, y], i) => `${i ? 'L' : 'M'}${round1(x
 export const dot = (x, y, c, r = 4.5) => `<circle class="mark mark_dot" cx="${round1(x)}" cy="${round1(y)}" r="${r}" style="fill:${c}"/>`;
 /* x-position hit bands with a crosshair (line + area charts): one tooltip lists every series at that x */
 export const cross_bands = (f, labels, x, rows) => labels.map((k, i) => `<g class="x_band" ${tip_text(k, rows(i))}>`
+  + `<rect class="hit_area" x="${round1(x(i) - x.bw / 2)}" y="${f.t}" width="${round1(x.bw)}" height="${f.ih}"/>`
