@@ -39,3 +39,4 @@ export const VIZ_REL_A = {
         : `<text x="${round1(f.l + i * cw + cw / 2)}" y="${f.h - 8}" text-anchor="middle">${fmt_hour(h)}</text>`).join(''), 'Heatmap'),
       legend: scale_legend('0', [.1, .3, .5, .7, 1].map(sequential), mx), table: [['Day', ...hrs.map(fmt_hour)], days.map((k, d) => [k, ...v[d]])] }; } },
   correlogram: { t: 'Correlogram', g: 'rel', d: 'How strongly each pair of measures moves together (−1 to +1).', f(w) {
+    const k = ['Visits', 'Signups', 'Revenue', 'Costs', 'Tickets', 'Churn'], n = k.length, m = k.map((_, i) => k.map((__, j) => i === j ? 1 : null));
