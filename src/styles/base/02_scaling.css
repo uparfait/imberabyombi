@@ -11,3 +11,4 @@
         · wider than --scale_ref: that desktop view, scaled up (no cap)
      ===================================================================== */
   html {
+    font-size: calc(100vw * 16 / var(--scale_phone));
