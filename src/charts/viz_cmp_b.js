@@ -47,3 +47,4 @@ export const VIZ_CMP_B = {
         hit_col(f, x, i) + `<path class="mark" style="fill:${c}" d="${o.t || o.b >= o.a ? vbar(x(i), bw, ax.y(lo), ax.y(up)) : vbar(x(i), bw, ax.y(up), ax.y(lo))}"/>`)
         + (i < bars.length - 1 ? `<line class="grid_line" x1="${round1(x(i) + bw / 2)}" x2="${round1(x(i + 1) - bw / 2)}"`
           + ` y1="${round1(ax.y(o.b))}" y2="${round1(ax.y(o.b))}"/>` : ''); }).join('')
+      + chart_base(f, ax.y(0)) + x_labels(f, bars.map(o => o.k), x), 'Waterfall chart'),
