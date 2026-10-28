@@ -8,3 +8,5 @@ import { img_now } from './img_sel.js';
 
 const ROWS = [['brightness', 'Brightness', -100, 100], ['contrast', 'Contrast', -100, 100], ['saturation', 'Saturation', 0, 200], ['transparency', 'Transparency', 0, 100]];
 const START = { brightness: 0, contrast: 0, saturation: 100, transparency: 0 };
+
+/* v: the values Apply reads (kept in step with the sliders) */
