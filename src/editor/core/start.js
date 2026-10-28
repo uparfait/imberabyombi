@@ -59,3 +59,4 @@ export function editor_start(root) {
     if (hist_timer) commit();
     const t = active_tab(); if (t && pages_el) t.html = collect_html();   // later saves (no pages) stay right
     save_doc(true);
+    cancel_scheduled();
