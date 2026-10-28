@@ -12,3 +12,5 @@ export function md_inline(s) {
     .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/__([^_]+)__/g, '<b>$1</b>')
     .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<i>$2</i>').replace(/(^|\W)_([^_\s][^_]*)_/g, '$1<i>$2</i>')
     .replace(/~~([^~]+)~~/g, '<s>$1</s>');
+}
+const LIST_RE = /^\s*([-*+]|\d+[.)])\s+/, ROW_RE = /^\s*\|.*\|\s*$/;
