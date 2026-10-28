@@ -16,3 +16,4 @@ export function el(tag, attrs = {}, html) {
   return e;
 }
 export function download(blob, name) {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
