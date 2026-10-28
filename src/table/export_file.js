@@ -25,3 +25,4 @@ export function export_file(c, fmt, cols, from, to, flt = {}) {
     'application/json');
   else if (fmt === 'xls') { const x = v => String(v).replace(/[<>&"]/g, m => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[m]));
     const cell_x = (v, h) => `<Cell${h ? ' ss:StyleID="h"' : ''}><Data ss:Type="${typeof v === 'number' ? 'Number' : 'String'}">${x(v)}</Data></Cell>`;
+    dl(`${c}-${ymd()}.xls`, '<?xml version="1.0"?><?mso-application progid="Excel.Sheet"?>'
