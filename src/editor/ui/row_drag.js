@@ -30,3 +30,4 @@ export function row_drag(e, o) {
     py = ev.clientY;
     if (!on) {
       if (Math.abs(py - y0) < START && Math.abs(ev.clientX - x0) < START) return;
+      on = true; o.row.classList.add('dragging'); if (o.list && o.cls) o.list.classList.add(o.cls);
