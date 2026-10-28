@@ -42,3 +42,4 @@ function Page_setup_body() {
 }
 
 export function page_setup_dialog() {
+  modal({
