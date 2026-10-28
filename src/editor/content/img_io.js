@@ -15,3 +15,5 @@ export async function copy_image(img) {
   img = img_now(img); if (!img || previewing()) return;
   try { const b = await image_blob(img); await navigator.clipboard.write([new ClipboardItem({ 'image/png': b })]); toast('Image copied'); }
   catch (e) { toast('Your browser blocked copying this image. Use Download image instead.'); }
+}
+export async function download_image(img) {
