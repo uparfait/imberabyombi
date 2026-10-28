@@ -35,3 +35,4 @@ export function menu_key(e) {
   }
   if (k === 'ArrowLeft') {
     if (menu_stack.length > 1) {
+      const row = top.anchor, parent = menu_stack[menu_stack.length - 2].el;
