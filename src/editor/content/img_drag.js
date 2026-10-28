@@ -66,3 +66,4 @@ function on_up(ev) {
 /* Esc (or a cancelled touch): everything goes back as it was */
 function cancel() {
   if (!drag) return; const d = finish(); swallow();
+  if (d.abs) { d.img.style.left = d.l0; d.img.style.top = d.t0; }
