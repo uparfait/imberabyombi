@@ -14,3 +14,4 @@ export const VIZ_CMP_A = {
       + `<text class="value_label" x="${round1(x(top))}" y="${round1(ax.y(v[top]) - 7)}" text-anchor="middle">${num(v[top])}</text>`, 'Bar chart'),
       table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
   hbar: { t: 'Horizontal bar chart', g: 'cmp', d: 'Ranked categories with long names. Values sit at the bar tips.', f(w) {
+    const c = uwords(6), v = c.map(() => rnd(15, 100) * MARGIN()).sort((a, b) => b - a), f = frame(w, 230, { l: 92, r: 52, b: 10 });
