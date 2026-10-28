@@ -23,3 +23,5 @@ const WAIT = new Map();
 before_render(keep => { if (!keep) { WAIT.forEach(clearTimeout); WAIT.clear(); } });
 export function wait_load(c) {
   if (loaded.has(c) || WAIT.has(c)) return;
+  WAIT.set(c, setTimeout(() => { WAIT.delete(c); loaded.add(c); refresh(c); }, cfg.latency));
+}
