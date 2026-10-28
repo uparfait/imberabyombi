@@ -12,3 +12,8 @@ export function strategies_sec(full) {
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{['compass', 'layers', 'chart', 'shield', 'users', 'bulb'].map((x, i) => (
         <article key={x} className="card card_hover group p-7" data-reveal="" style={{ '--d': `${(i % 3) * .07}s` }}>{i3(x, 'h-14 w-14', i % 2 ? 'ink' : 'brand')}
           <h3 className="mt-6 text-xl">{lorem.t(3)}</h3><p className="mt-2 text-sm text-muted">{lorem.s(14, 20)}</p></article>
+      ))}</div></section>
+  );
+}
+
+const LINKS_CLS = 'absolute inset-x-3 bottom-3 flex translate-y-2 justify-center gap-2 opacity-0 transition group-hover:translate-y-0 '
