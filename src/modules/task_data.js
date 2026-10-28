@@ -21,3 +21,4 @@ export const read_files = list => Promise.all([...(list || [])].map(f => new Pro
   const rd = new FileReader(); rd.onload = () => res({ ...meta, url: rd.result }); rd.onerror = () => res(meta); rd.readAsDataURL(f); })));
 
 export const task_own = r => r.by === me() || (auth.boss() && r.assignee !== me());   /* may edit everything / delete */
+export const task_mine = r => task_own(r) || r.assignee === me();                        /* may change status and dates, tick items, add files */
