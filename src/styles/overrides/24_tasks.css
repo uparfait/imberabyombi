@@ -9,3 +9,4 @@
   .due_tag { display: inline-flex; align-items: center; gap: .25rem; font-size: .75rem; white-space: nowrap; color: rgb(var(--muted)); }
   .due_tag.late { color: rgb(var(--bad)); font-weight: 500; }
   .task_row { display: flex; width: 100%; align-items: center; gap: .75rem; padding: .625rem .5rem; border-radius: 1rem; text-align: left; transition: background-color .2s; }
+  .task_row:hover { background: rgb(var(--fg) / .05); }
