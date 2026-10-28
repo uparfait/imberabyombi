@@ -27,3 +27,4 @@ export const EDITOR_TEXT_PATHS = {
   format_list_numbered: 'M10 7h11M10 17h11M4 5.5 5.5 4.5v5M4 15a1.6 1.6 0 1 1 2.8 1.1L4 19.5h3.2',
   checklist: 'M11 7h10M11 17h10M3 7l2 2 3-4M3 17l2 2 3-4',
   checklist_rtl: 'M3 7h10M3 17h10M15 7l2 2 3-4M15 17l2 2 3-4',
+  text_increase: 'M2 19 7.5 5 13 19M4 14h7M16 12h6M19 9v6',
