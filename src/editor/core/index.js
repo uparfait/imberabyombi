@@ -3,3 +3,4 @@
    Order matters: self-contained modules first, the ones that reach other editor areas (content, ui) last. */
 export * from './constants.js';
 export * from './utils.js';
+export * from './state.js';
