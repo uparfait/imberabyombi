@@ -33,3 +33,5 @@ export const workspace = () => (
       <aside id="comments_panel" className="no_print" aria-label="Comments">
         <div className="side_head side_between">
           <span className="side_title">Comments</span>{icon_btn('comments_close', 'close', 'Close comments')}
+        </div>
+        <div id="comment_list"></div>
