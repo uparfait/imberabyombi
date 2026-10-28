@@ -16,3 +16,4 @@ export function link_at_caret() { const n = last_range && el_of(last_range.start
 
 export function open_link_dialog(existing) {
   if (previewing() || !can_edit()) return;
+  const a = existing || link_at_caret();
