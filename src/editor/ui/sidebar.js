@@ -52,3 +52,4 @@ function wire_row(row, t, box) {
   row.addEventListener('pointerdown', e => {
     if (e.target.closest('button, input')) return;
     const from = state.tabs.indexOf(t);
+    row_drag(e, {
