@@ -12,3 +12,5 @@ export function toggle_pop(id) { const p = document.getElementById(id); if (!p) 
 export function place_tile(p) {
   const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
   const r = b.getBoundingClientRect(), top = r.bottom + 8;
+  p.style.top = top + 'px'; p.style.left = Math.max(8, Math.min(r.left, innerWidth - p.offsetWidth - 8)) + 'px'; p.style.maxHeight = Math.max(160, Math.min(480, innerHeight - top - 12)) + 'px';
+}
