@@ -25,3 +25,4 @@ export const x_labels = (f, labels, x, every = Math.ceil(labels.length / Math.ma
   labels.map((k, i) => i % every ? '' : `<text x="${round1(x(i))}" y="${f.h - 8}" text-anchor="middle">${esc(fit(k, x.bw * every - 4))}</text>`).join('');
 
 /* marks: bars with a 4px rounded data-end, square at the baseline */
+export function vbar(cx, w, yb, yt) {
