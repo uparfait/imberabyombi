@@ -28,3 +28,5 @@ export const FORMS = {
   setpw: (d, f) => {
     if (PW_RULES.some(([, , t]) => !t(d.pw_new))) { form_msg(f, 'bad', 'Choose a stronger password', 'Meet every rule in the list.', false); f.elements.pw_new.focus(); return false; }
     if (d.pw_new !== d.pw_confirm) { show_err(f.elements.pw_confirm, 'The passwords do not match.'); f.elements.pw_confirm.focus(); return false; }
+    notify_next('Use it the next time you sign in.', 'ok', 'Password saved'); location.hash = '#/login'; }
+};
