@@ -8,3 +8,4 @@ import { dt_attrs } from '../fields/index.js';
 export function col_filter(c, k) {
   const f = schemas[c].f.find(x => x.k === k), v = ui.q[c]?.[k] || '';
   const a = { className: 'table_filter', 'data-search': c, 'data-k': k, 'aria-label': `Filter by ${label(c, k)}` };
+  if (f?.t === 'select') return <select {...a} defaultValue={v}><option value="">All</option>{options(f, v)}</select>;
