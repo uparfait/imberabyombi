@@ -34,3 +34,4 @@ export const TV_ACT = {
     request(() => { db.upsert('tasks', { id, [k]: v }); task_refresh(id, 'Saved.'); }, { btn: t }); },
   tv_status_cancel: t => { const box = status_box(t), sel = box.querySelector('[data-status-pick]');
     set_native_value(sel, db.find('tasks', box.dataset.tvStatus).status); sel.dispatchEvent(new Event('change', { bubbles: true })); },
+  tv_status_save: t => { const box = status_box(t), id = box.dataset.tvStatus, st = box.querySelector('[data-status-pick]').value, now = now_dt();
