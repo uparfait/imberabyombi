@@ -9,3 +9,5 @@ export const mail_btn = (l, c = 'btn_primary', href = '#/admin/emails') => <a hr
 /* a calendar tile: month, day, weekday; strike = the old date of a moved event */
 export const mail_date = (d, strike) => (
   <span className={`mail_date ${strike ? 'mail_old' : ''}`}><small>{d.toLocaleDateString(undefined, { month: 'short' }).toUpperCase()}</small><b>{d.getDate()}</b>
+    <small>{d.toLocaleDateString(undefined, { weekday: 'short' })}</small></span>
+);
