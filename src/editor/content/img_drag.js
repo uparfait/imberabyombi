@@ -5,3 +5,5 @@ import { rem } from '../../lib/index.js';
 import { el, clamp, state, is_abs, editable_of, caret_rect, set_caret, begin_op, end_op, body_index } from '../core/index.js';
 import { img_box, select_image, hide_img_sel, position_img_box, pos_of } from './img_sel.js';
 import { drop_point, place_at, anchor_abs } from './img_pos.js';
+
+let drag = null, caret_el = null, swallow_until = 0;
