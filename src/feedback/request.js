@@ -16,3 +16,4 @@ export const req = {
 };
 /* The spinner is the one element ever added inside a (React) button; busy(btn, false) removes it again */
 export function busy(btn, on) {
+  btn.classList.toggle('is_busy', on); btn.disabled = on;
