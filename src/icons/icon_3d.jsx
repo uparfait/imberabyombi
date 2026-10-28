@@ -16,3 +16,4 @@ export function i3(n, c = 'w-14 h-14', tone = 'brand') {
           <stop offset="1" style={{ stopColor: `rgb(var(--${a}))` }} />
         </linearGradient>
         <radialGradient id={`${id}g`} cx=".28" cy=".18" r=".7">
+          <stop offset="0" stopColor="#fff" stopOpacity=".5" /><stop offset="1" stopColor="#fff" stopOpacity="0" />
