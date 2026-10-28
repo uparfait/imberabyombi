@@ -37,3 +37,4 @@ const rtf_pict = (rx, img) => {
 };
 export function rtf_inline(rx, node, f) {
   let o = '';
+  node.childNodes.forEach(n => {
