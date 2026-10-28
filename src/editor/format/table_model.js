@@ -5,3 +5,4 @@ import { el } from '../core/index.js';
 
 /* ================= tables ================= */
 /* document colours (the page is paper: these are not theme colours) */
+export const HDR_BG = '#e8eaed', STRIPE_BG = '#f8f9fa';
