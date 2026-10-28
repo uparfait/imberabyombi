@@ -23,3 +23,4 @@ export const workspace = () => (
         </div>
         <div id="tab_list"></div>
         <div className="side_row side_gap">
+          <span className="side_title">Pages <span id="page_count" className="side_count"></span></span>
