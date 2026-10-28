@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 
 export const player = (kind, src, poster = '') => (
+  <div className="mp card overflow-hidden" data-mp="">
