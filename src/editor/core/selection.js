@@ -84,3 +84,4 @@ export function restore_focus() {
     const s = getSelection(); s.removeAllRanges(); s.addRange(last_range.cloneRange()); return last_host;
   }
   const b = bodies()[0]; if (!b) return null;
+  caret_to_end(last_non_break(b)); return b;
