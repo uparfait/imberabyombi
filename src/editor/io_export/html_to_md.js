@@ -31,3 +31,5 @@ export function html_to_md(root) {
       Array.from(li.children).filter(is_list).forEach(sub => out.push(list(sub, depth + 1)));
     });
     return out.join('\n');
+  };
+  const table = b => {
