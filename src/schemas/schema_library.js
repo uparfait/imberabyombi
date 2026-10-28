@@ -6,3 +6,4 @@ import { badge } from '../ui/index.js';
 import { field_spec, option_list, STATUS, names, ABC } from './fields.js';
 
 export const books_schema = {
+  l: 'book', n: 14, cols: ['title', 'author', 'isbn', 'category', 'copies', 'shelf'],
