@@ -52,3 +52,4 @@ export const PK = {
         + `${new Date(y, i, 1).toLocaleDateString(undefined, { month: 'short' })}</button>`; }).join('')}</div>${PK.foot('This month')}</div>`;
   },
   years() {
+    const y = pick.view.getFullYear(), now = new Date().getFullYear();
