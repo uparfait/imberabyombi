@@ -44,5 +44,6 @@ src/lib/         small helpers, dates, lorem ipsum           src/behaviors/ dele
 src/icons/       flat and 3D icons                           src/site/ src/account/ src/kit/   public, account, design pages
 src/auth/        roles, permissions, session                 src/admin/ src/modules/ src/charts/ src/emails/  admin
 src/schemas/     one schema per data type                    src/table/ src/fields/ src/files/ src/overlays/ src/feedback/ src/ui/
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Make it yours in five steps
