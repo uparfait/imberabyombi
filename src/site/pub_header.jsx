@@ -8,3 +8,4 @@ import { PUB } from './site_bits.jsx';
 export function pub_header() {
   const cur = route.path.slice(1);
   return (
+    <header id="site_header" className="hdr sticky top-0 z-40 bg-bg">
