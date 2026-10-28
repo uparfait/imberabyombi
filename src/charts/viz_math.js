@@ -13,3 +13,5 @@ export const ticks = (lo, hi, n = 4) => {
   const s = nice_step((hi - lo) / n), a = Math.floor(lo / s) * s, out = [];
   for (let v = a; v <= Math.ceil(hi / s) * s + s / 2; v += s) out.push(round1(v));
   return out;
+};
+export const rnd = (a, b) => a + lorem.r() * (b - a);
