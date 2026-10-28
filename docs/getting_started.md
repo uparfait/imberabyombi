@@ -14,3 +14,4 @@ The page reloads as you save files. Nothing else is needed: there is no backend,
 ## Build for production
 ```bash
 npm run build      # writes the optimised site to dist/
+npm run preview    # serves dist/ locally to check the build
