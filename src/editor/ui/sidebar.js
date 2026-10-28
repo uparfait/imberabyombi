@@ -36,3 +36,6 @@ export function render_sidebar() {
   apply_filter(list);
   render_outline(); render_pages_panel();
   box.scrollTop = top; keep_in_view(box);
+}
+
+function wire_row(row, t, box) {
