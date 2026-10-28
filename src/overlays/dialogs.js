@@ -33,3 +33,4 @@ export function confirm_discard(yes) {
    Each call is a fresh dialog content (like the reference's innerHTML); it opens the dialog if it is closed. */
 export function show_in_dialog(id, render) {
   const d = document.getElementById(id); set_dialog(id, { render });
+  if (!d.open) show_dialog(d);
