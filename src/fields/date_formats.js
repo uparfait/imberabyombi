@@ -3,3 +3,4 @@
 import { pad, h24 } from '../lib/index.js';
 
 /* Date & time fields are plain text inputs: type freely (separators are added as you type), or pick from #picker.
+   Typing respects the clock chosen in the time picker (h24): 12-hour = 01–12 + AM/PM (type "a" or "p"), 24-hour = 00–23.
