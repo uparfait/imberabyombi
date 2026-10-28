@@ -18,3 +18,4 @@ export function table_menu_items() {
     { label: 'Insert several rows or columns…', icon: 'library_add', action: insert_multiple_dialog },
     { sep: true },
     { label: 'Delete row', icon: 'delete', action: () => tbl_op('del_row') },
+    { label: 'Delete column', icon: 'delete', action: () => tbl_op('del_col') },
