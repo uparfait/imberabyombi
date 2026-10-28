@@ -50,3 +50,5 @@
 }
 .size_box:hover { border-color: rgb(var(--fg) / .8); }
 .size_box:focus { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
+
+/* Text colour: an "A" over a bar in the current colour */
