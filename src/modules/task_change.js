@@ -16,3 +16,4 @@ const tick = (id, g, i, on) => request(() => {
   db.upsert('tasks', { id, subs }); task_refresh(id); });
 
 /* the status picked: the current one hides Cancel / Save (nothing to save), another shows them */
+function status_pick(t) {
