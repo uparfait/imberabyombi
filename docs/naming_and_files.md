@@ -9,3 +9,4 @@ Short files are easy to review, easy to replace and load only what a page needs.
 
 ## 2. snake_case everywhere
 | What                         | Style                          | Example                                  |
+|------------------------------|--------------------------------|------------------------------------------|
