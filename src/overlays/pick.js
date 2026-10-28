@@ -45,3 +45,4 @@ export const pick = {
     if (a.dataset.list != null) h = PK.list(a);
     else if (a.tagName === 'SELECT') h = PK.opts(a);
     else if (t === 'time') h = PK.times(to24(a.value));
+    else { kind = 'cal'; h = this.mode === 'years' ? PK.years() : t === 'month' ? PK.months(a) : t === 'datetime-local' ? `<div class="pk_dt">${PK.cal(a)}${PK.times(to24(a.value.slice(11)))}</div>${PK.foot('Now')}` : PK.cal(a); }
