@@ -11,3 +11,4 @@ import { modal } from '../overlays/index.js';
 import { kv_table } from './kv_table.jsx';
 
 export function view_row(c, id) {
+  const s = schemas[c], r = db.find(c, id), can = auth.can(cur[c]?.mod, 2), k0 = s.cols[0];
