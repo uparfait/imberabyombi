@@ -20,3 +20,4 @@ export function image_xml(img, ctx) {
     + `<pic:cNvPr id="${n}" name="image${n}.${ext}" descr="${alt}"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="${rid}"/>`
     + `<a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${cx}" cy="${cy}"/></a:xfrm>`
     + `<a:prstGeom prst="rect"><a:avLst/></a:prstGeom>${ln}</pic:spPr></pic:pic></a:graphicData></a:graphic>`;
+  const pos = ({ wrap_left: 'left', wrap_right: 'right' })[img.getAttribute('data-pos')], doc_pr = `<wp:docPr id="${n}" name="Picture ${n}" descr="${alt}"/>`;
