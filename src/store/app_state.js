@@ -8,3 +8,4 @@ import { ymd } from '../lib/index.js';
 
 /* UI state that is not data: open tabs, table pages, sorting, column searches, sidebar, calendar view… */
 export const ui = {
+  q: {}, page: {}, sort: {}, tab: {}, closed: db.get('sideClosed', {}), cal_date: ymd(), cal_view: 'week', mini: null, role: null,
