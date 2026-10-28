@@ -5,3 +5,4 @@ import { useSyncExternalStore } from 'react';
 
 let busy_href = null;
 const subs = new Set();
+const subscribe = fn => { subs.add(fn); return () => subs.delete(fn); };
