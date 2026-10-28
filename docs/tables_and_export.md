@@ -29,3 +29,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 | `view(id)`      | open your own details view instead of the generic one                          |
 
 ## Export
+The Export menu offers CSV, JSON and Excel. The dialog then asks for:
