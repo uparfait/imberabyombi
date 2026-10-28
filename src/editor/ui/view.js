@@ -15,3 +15,5 @@ export function page_rule_el() {
   return r;
 }
 export function drop_page_rule() { if (own_rule) own_rule.remove(); own_rule = null; }
+
+export function apply_setup(full) {
