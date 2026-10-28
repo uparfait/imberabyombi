@@ -21,9 +21,7 @@ every address with `index.html`; to serve the site from a folder, build with `BA
 See [deploying](deploying.md).
 
 ## First tour
-1. The public website opens at `#/` (home, about, mission, vision, strategies, staff, partners, thanks, contact).
-2. The design-system page is at `#/ui`: every component, field, picker and feedback pattern in one place.
-3. Press **Sign in** (or go to `#/login`). Pick a role, type any email and any password, press **Continue**.
+1. The public website opens at `/` (home, about, mission, vision, strategies, staff, partners, thanks, contact).
 4. You land on the first admin module that role can open (or the role's landing page).
 5. Sign out from the avatar menu, pick another role and sign in again to see what that role can do.
 
