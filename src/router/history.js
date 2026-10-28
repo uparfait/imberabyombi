@@ -21,3 +21,4 @@ let shown = null;   /* the address of the page on screen (parse() records it on 
 export const mark_shown = () => { shown = here(); };
 
 /* Navigation is a user request: floating loader (only if slow) + cross-fade (View Transitions where supported) */
+/* Moving between staff pages is a get: it waits for the page's data (cfg.latency) with the top loader and the clicked sidebar
