@@ -21,3 +21,4 @@ const comment_box = t => t.closest('[data-comment]');
 const comments = (t, id, fn, msg) => request(() => { db.upsert('tasks', { id, comments: fn(comments_of(db.find('tasks', id))) }); task_refresh(id, msg); }, { btn: t });
 
 export const TASK_ACT = {
+  task_open: t => { close_pops(); task_view(t.dataset.id); },
