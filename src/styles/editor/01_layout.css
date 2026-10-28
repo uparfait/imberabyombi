@@ -27,3 +27,5 @@
 #workspace { position: relative; display: flex; flex: 1; min-height: 0; container: ed_ws / inline-size; border-top: 1px solid rgb(var(--line)); background: rgb(var(--surface_2)); }
 #main_col { position: relative; display: flex; flex: 1; flex-direction: column; min-width: 0; }
 #scroller { position: relative; flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+
+/* While a table column is dragged */
