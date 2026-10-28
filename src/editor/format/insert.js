@@ -19,3 +19,4 @@ export function insert_block_at_caret(node) {
   else if (is_empty_block(block)) block.before(node);
   else if (is_list(block) || is_table(block)) block.after(node);
   else {
+    const o = offset_within(block, r.startContainer, r.startOffset), len = block.textContent.length;
