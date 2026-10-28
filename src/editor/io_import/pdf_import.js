@@ -8,3 +8,4 @@ function page_lines(tc) {
   const lines = []; let cur = { text: '', y: null, h: 0 };
   for (const it of tc.items) {
     if (!('str' in it)) continue;
+    const y = it.transform[5], h = Math.abs(it.transform[3]) || it.height || 10;
