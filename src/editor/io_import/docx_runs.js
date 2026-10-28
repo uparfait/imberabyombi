@@ -7,3 +7,4 @@ import { by_tag, kids, resolve_path } from './xml_helpers.js';
 export const docx_val = n => n ? n.getAttribute('w:val') : null;
 const on = n => !!n && !/^(false|0|none)$/.test(docx_val(n) || '');
 /* Word's highlight names (data) → colours */
+const HL = { yellow: '#ffff00', green: '#00ff00', cyan: '#00ffff', magenta: '#ff00ff', blue: '#0000ff', red: '#ff0000', darkBlue: '#000080',
