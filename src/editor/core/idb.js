@@ -15,3 +15,5 @@ export const idb_get = key => open().then(db => new Promise((resolve, reject) =>
   const req = db.transaction(STORE).objectStore(STORE).get(key);
   req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error);
 })).catch(() => undefined);
+
+/* save value under key; resolves true when it is stored, false when the browser refused it */
