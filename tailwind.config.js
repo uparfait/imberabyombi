@@ -21,3 +21,4 @@ export default {
         bg: token_color('bg'), surface: token_color('surface'), 'surface-2': token_color('surface_2'), 'surface-3': token_color('surface_3'),
         fg: token_color('fg'), muted: token_color('muted'), line: token_color('line'),
         ok: token_color('ok'), warn: token_color('warn'), bad: token_color('bad'), info: token_color('info'),
+        /* accessible orange for small text: brand mixed toward the text colour (≥ 4.5:1 in both themes) */
