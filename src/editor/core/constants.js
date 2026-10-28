@@ -23,3 +23,4 @@ export const STYLES = [
   { key: 'h4', label: 'Heading 4', tag: 'H4', css: 'font-size:14px;color:#666' }
 ];
 export const PALETTE = [
+  ['#000000', '#434343', '#666666', '#999999', '#b7b7b7', '#cccccc', '#d9d9d9', '#efefef', '#f3f3f3', '#ffffff'],
