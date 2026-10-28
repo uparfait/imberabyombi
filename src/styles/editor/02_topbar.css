@@ -32,3 +32,5 @@
 .menubar_btn {
   padding: .1875rem .625rem; border-radius: var(--pill); font-size: .875rem; font-weight: 500; line-height: 1.25rem;
   color: rgb(var(--fg) / .8); transition: background-color .15s, color .15s;
+}
+.menubar_btn:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
