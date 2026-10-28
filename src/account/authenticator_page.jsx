@@ -9,3 +9,4 @@ const TEXT = 'Get sign-in codes from an app on your phone, such as Imberabyombi 
 
 export function authenticator_page() {
   const key = 'JBSW Y3DP EHPK 3PXP';
+  return auth_shell('Set up an authenticator app', TEXT, <>
