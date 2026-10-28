@@ -11,3 +11,4 @@ const DATA_HELP = 'Every admin list uses this: search inside each column, sort b
 const row = i => {
   const n = lorem.name();
   return (
+    <tr key={i} data-act="row" data-title={n} tabIndex={0} className="cursor-pointer"><td>{person(n)}</td><td>{badge(lorem.pick(['Active', 'Pending', 'Closed']))}</td>
