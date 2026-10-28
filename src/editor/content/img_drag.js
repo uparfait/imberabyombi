@@ -48,3 +48,4 @@ function on_move(ev) {
   d.p = drop_point(ev.clientX, ev.clientY, d.img); if (d.p) show_caret(d.p); else hide_caret();
 }
 function finish() {
+  removeEventListener('pointermove', on_move); removeEventListener('pointerup', on_up);
