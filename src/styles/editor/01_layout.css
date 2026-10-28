@@ -18,3 +18,4 @@
   --ed_side: 15rem;   /* document tabs sidebar and comments panel width (apply_panels() pads #scroller by their measured width) */
   position: relative; display: flex; flex-direction: column; height: calc(100dvh - var(--ed_off)); min-height: 22rem;
   overflow: hidden;
+  background: rgb(var(--surface)); color: rgb(var(--fg)); font-family: var(--font_sans); line-height: 1.5;
