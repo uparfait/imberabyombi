@@ -15,3 +15,4 @@ export function at_body_end(host, r) {
   const l = last_non_break(host); if (l === host) return true;
   if (!l.contains(r.endContainer)) return false;
   const rr = document.createRange(); try { rr.setStart(r.endContainer, r.endOffset); } catch (e) { return false; } rr.setEnd(l, l.childNodes.length);
+  return no_text(rr);
