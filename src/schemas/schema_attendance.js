@@ -9,3 +9,4 @@ export const attendance_schema = {
   f: [
     field_spec('person', 'Person', 'list', () => names('staff', 'students'), 1), field_spec('kind', 'Type', 'select', option_list('Staff|Student'), 1),
     field_spec('date', 'Date', 'date', 0, 1, { def: () => ymd() }), field_spec('in', 'Check in', 'time'), field_spec('out', 'Check out', 'time'),
+    field_spec('status', 'Status', 'select', STATUS.att, 1)
