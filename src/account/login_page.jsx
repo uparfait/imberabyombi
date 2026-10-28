@@ -25,3 +25,4 @@ export function login_page(r) {
         <input id="signin_email" name="email" type="email" autoComplete="email" required defaultValue={r.q.email || ''} placeholder="you@lorem.io" /></div>
       <div className="field"><label htmlFor="signin_password">Password</label><div className="relative">
         <input id="signin_password" name="password" type="password" autoComplete="current-password" required minLength={1} className="pr-12"
+          placeholder="Any password" />
