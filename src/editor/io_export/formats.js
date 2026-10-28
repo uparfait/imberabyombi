@@ -3,3 +3,4 @@
 import { state, qsa, bodies, file_base, toast } from '../core/index.js';
 import { save_project, export_root } from './project_file.js';
 import { export_html, export_txt } from './export_text.js';
+import { export_md } from './html_to_md.js';
