@@ -20,3 +20,4 @@ body.img_dragging, body.img_dragging * { cursor: grabbing !important; user-selec
 .img_sel .img_move { cursor: move; }   /* the box's move area (inline: inset 0, pointer events, touch) */
 .img_sel.img_dragging .img_bar, .img_sel.img_dragging .h { visibility: hidden; }
 body.img_dragging .pg_body > img:is([data-pos="front"], [data-pos="behind"]):hover { opacity: .8; }
+.img_drop_caret { position: absolute; z-index: 6; width: 2px; border-radius: var(--pill); background: rgb(var(--brand)); pointer-events: none; }
