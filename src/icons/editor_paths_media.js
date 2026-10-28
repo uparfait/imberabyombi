@@ -38,3 +38,4 @@ export const EDITOR_MEDIA_PATHS = {
   insert_page_break: 'M6 3v5h12V3M6 21v-5h12v5M2 12h3M8 12h3M13 12h3M19 12h3',
   library_add: 'M8 2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM2 7v13a2 2 0 0 0 2 2h13M14 6v8M10 10h8',
   add_circle: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 8v8M8 12h8',
+  input: 'M3 12h11M10 8l4 4-4 4M8 5V4a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-1',
