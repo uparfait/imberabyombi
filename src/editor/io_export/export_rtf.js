@@ -8,3 +8,4 @@ function rtf_list(rx, l, lvl) {
   let o = '', k = parseInt(l.getAttribute('start')) || 1; const kind = l.classList.contains('checklist') ? 'check' : l.tagName === 'OL' ? 'num' : 'bul';
   Array.from(l.children).forEach(li => {
     if (is_list(li)) { o += rtf_list(rx, li, lvl + 1); return; } if (li.tagName !== 'LI') return;
+    const mark = kind === 'check' ? (li.getAttribute('data-checked') === 'true' ? '☑' : '☐') : kind === 'num' ? `${k++}.` : ['•', '◦', '▪'][lvl % 3];
