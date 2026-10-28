@@ -37,9 +37,7 @@
   .panel[data-open=true] { width: 22rem; border-width: 1px 1px 0; }
   .panel_in { width: 22rem; }
   .rail_on { background: rgb(var(--brand) / .14); }
-  /* Headers: bottom border only once the page is scrolled */
-  .hdr { border-bottom: 1px solid transparent; transition: border-color .2s; }
-  .hdr.is_scrolled { border-bottom-color: rgb(var(--line)); }
+  /* Headers never draw a bottom border, scrolled or not */
   .compose { display: grid; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); transition: border-color .2s; }
   .compose:focus-within { border-color: rgb(var(--brand) / .55); }
   .compose :is(input, textarea) { min-height: 0; padding: .75rem 1rem; border: 0; outline: 0; background: transparent; resize: none; field-sizing: content; }
