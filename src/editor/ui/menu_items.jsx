@@ -16,3 +16,4 @@ export function align_items() {
 function custom_spacing_dialog() {
   modal({
     title: 'Custom spacing', submit: 'Apply',
+    body: <div className="field sm:col-span-2"><label htmlFor="cs_line">Line spacing</label>
