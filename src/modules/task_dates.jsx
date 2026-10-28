@@ -10,3 +10,5 @@ export function countdown(due, now = Date.now()) {
   const end = when_d(due); let left = Math.floor(Math.abs(end - now) / 6e4); const out = [];
   for (const [u, n] of [['y', 525600], ['M', 43800], ['d', 1440], ['h', 60], ['m', 1]]) { const q = Math.floor(left / n); left -= q * n; if (q) out.push(q + u); }
   return { late: end < now, text: out.join(' ') || '0m' };
+}
+export const due_text = r => { if (r.status === 'Done') return r.end ? `Done ${fmt_dt(r.end)}` : fmt_dt(r.due);
