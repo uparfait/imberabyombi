@@ -39,3 +39,4 @@ export function go(path, { replace = false } = {}) {
 }
 
 /* Back / Forward. A jump to an in-page #fragment keeps the address of the page, so nothing is drawn again */
+export const install_history = () => addEventListener('popstate', () => { if (here() !== shown) navigate(); });
