@@ -33,3 +33,4 @@ function row_of(it, level) {
   if (chk) r.setAttribute('aria-checked', String(!!it.checked));
   if (it.disabled) r.setAttribute('aria-disabled', 'true');
   if (it.sub) r.setAttribute('aria-haspopup', 'menu');
+  r.innerHTML = `<span class="mi_check inline-flex w-4 shrink-0">${it.checked ? mi('check') : ''}</span>${it.icon ? mi(it.icon, 'mi_icon h-4 w-4 shrink-0 text-muted') : ''}`
