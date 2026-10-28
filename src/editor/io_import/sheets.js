@@ -18,3 +18,4 @@ function cell_value(c, strings) {
 }
 export async function xlsx_native(buf) {
   const z = await unzip(buf);
+  const strings = z.has('xl/sharedStrings.xml') ? by_tag(parse_xml(await z.text('xl/sharedStrings.xml')), 'si').map(si => by_tag(si, 't').map(t => t.textContent).join('')) : [];
