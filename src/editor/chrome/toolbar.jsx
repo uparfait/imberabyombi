@@ -33,3 +33,4 @@ export const toolbar = () => (
     {tb({ ed: 'print', icon: 'print', tip: 'Print (Ctrl+P)', edit: false })}
     {tb({ ed: 'upload', icon: 'upload_file', tip: 'Upload files (Ctrl+O)', edit: false })}
     {tb({ ed: 'download', icon: 'download', tip: 'Download', edit: false })}
+    {tb({ ed: 'spell', icon: 'spellcheck', tip: 'Spelling check on/off', edit: false, id: 'spell_btn' })}
