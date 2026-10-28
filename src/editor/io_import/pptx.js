@@ -67,3 +67,4 @@ export async function pptx_to_html(file) {
     ? by_tag(parse_xml(await z.text('ppt/presentation.xml')), 'sldId')
       .map(s => { const r = prels[s.getAttribute('r:id')]; return r && resolve_path('ppt/', r.target); }).filter(Boolean)
     : [];
+  const num = n => parseInt(n.match(/(\d+)\.xml/)[1]);
