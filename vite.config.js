@@ -1,5 +1,4 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+/* vite.config.js: the dev server (npm run dev) and the production build (npm run build → dist/).
 
 // https://vite.dev/config/
 export default defineConfig({
