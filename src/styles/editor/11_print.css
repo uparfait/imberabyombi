@@ -13,3 +13,4 @@
     margin: 0 !important; padding: 0 !important; border: 0 !important; overflow: visible !important; transform: none !important; animation: none !important;
   }
   /* inside the editor: no chrome */
+  #editor :is(.no_print, #topbar, #toolbar, #hruler, #vruler, #sidebar, #sidebar_open, #comments_panel, #find_panel, #link_bubble, .img_sel, .img_drop_caret) {
