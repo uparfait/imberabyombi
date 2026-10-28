@@ -30,3 +30,4 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 - A `<noscript>` message explains that the site needs JavaScript.
 
 ## Hash routes and search engines
+Routes are hash-based (`#/about`), which works on every static host without server rules and keeps the template
