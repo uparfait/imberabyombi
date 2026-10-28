@@ -82,3 +82,5 @@ export const live = {
     else { put(cur.snap); extras(cur); cur.fn = fn; }
     if (typeof restore === 'function') cur.restores.push(restore);
     run(cur);
+  },
+  cancel() {
