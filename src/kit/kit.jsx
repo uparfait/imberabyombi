@@ -9,3 +9,4 @@ import { kit_block } from './kit_block.jsx';
 import { kit_tokens } from './kit_tokens.jsx';
 import { kit_type } from './kit_type.jsx';
 import { kit_lists } from './kit_lists.jsx';
+import { kit_actions } from './kit_actions.jsx';
