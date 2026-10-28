@@ -4,3 +4,4 @@
 
 export const DPI = 96;
 export const PAPER = {
+  letter: { label: 'Letter (8.5" × 11")', w: 8.5, h: 11 }, legal: { label: 'Legal (8.5" × 14")', w: 8.5, h: 14 },
