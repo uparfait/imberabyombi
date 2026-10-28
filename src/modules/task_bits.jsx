@@ -10,3 +10,4 @@ export const sub_progress = r => { const a = items_of(r); return a.length ? bar(
 /* a status change is only Save / Cancel: Done records now as the completed time; the dates change with their own pens */
 export const status_more = () => <div className="mt-3 flex justify-end gap-2">
   <button type="button" className="btn btn_ghost btn_sm" data-act="tv_status_cancel">Cancel</button>
+  <button type="button" className="btn btn_primary btn_sm" data-act="tv_status_save">{ic('check', 'h-4 w-4')}Save</button></div>;
