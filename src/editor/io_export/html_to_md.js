@@ -23,3 +23,4 @@ export function html_to_md(root) {
     return s;
   };
   const list = (l, depth) => {
+    let k = parseInt(l.getAttribute('start')) || 1; const out = [];
