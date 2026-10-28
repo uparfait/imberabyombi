@@ -10,3 +10,4 @@ import { hist_timer, commit } from './history.js';
 import { schedule_reflow, cancel_scheduled } from './schedule.js';
 import { live } from './live.js';
 import { restore_doc, reset_doc, save_doc, save_soon } from './persist.js';
+import { toast_cleanup } from './toast.js';
