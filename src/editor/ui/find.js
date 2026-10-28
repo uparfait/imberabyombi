@@ -68,3 +68,4 @@ export function paint_find(scroll) {
 export function find_step(d, select) {
   const n = find_state.matches.length; if (!n) return;
   find_state.idx = (find_state.idx + d + n) % n; paint_find(true);
+  if (select || !has_hl) { const r = find_state.matches[find_state.idx]; set_last(r.cloneRange(), editable_of(r.startContainer)); }
