@@ -43,3 +43,5 @@ later on the Roles & access page. Super Admin sees every module.
 
 That is all: the sidebar, apps grid, Create menu, command palette, permissions, page title and route follow from `MODS`.
 Reset the demo data (Settings → Data) once so the new collection is seeded.
+
+## Going further
