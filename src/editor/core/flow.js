@@ -58,3 +58,5 @@ export function merge_into(a, b) {
   if (is_table(a)) { const pa = item_parent(a); items_of(b).forEach(r => pa.appendChild(r)); }
   else { if (!is_list(a) && is_empty_block(a)) a.innerHTML = ''; Array.from(b.childNodes).forEach(n => a.appendChild(n)); }
   b.remove();
+}
+export function insert_at_start(next, nodes) {
