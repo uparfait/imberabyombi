@@ -47,3 +47,4 @@ export function text_items() {
     { label: 'Strikethrough', icon: 'strikethrough_s', shortcut: 'Ctrl+Shift+X', action: () => exec('strikeThrough') },
     { label: 'Superscript', icon: 'superscript', shortcut: 'Ctrl+.', action: () => exec('superscript') },
     { label: 'Subscript', icon: 'subscript', shortcut: 'Ctrl+,', action: () => exec('subscript') },
+    { sep: true },
