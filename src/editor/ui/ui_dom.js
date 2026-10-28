@@ -15,3 +15,4 @@ export function listen(offs, t, type, fn, o) {
 export function run_offs(offs) { while (offs.length) { try { offs.pop()(); } catch (e) { console.error(e); } } }
 
 /* the text of a label (a React text node keeps its identity; an empty element just gets the text) */
+export function set_text(e, s) {
