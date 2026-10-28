@@ -26,3 +26,4 @@ export function p_pr_xml(e, extra = '') {
   return x ? `<w:pPr>${x}</w:pPr>` : '';
 }
 export function para_xml(e, ctx) { const base = e.tagName === 'PRE' ? { font: 'Courier New', size: 10 } : {}; return `<w:p>${p_pr_xml(e)}${inline_xml(e, base, ctx)}</w:p>`; }
+export const NUMFMT = {
