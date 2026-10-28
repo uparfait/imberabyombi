@@ -27,3 +27,4 @@ export function file_items() {
     cmd('Open and replace document…', 'folder_open', () => pick_file('open')),
     cmd('Import into new tab…', 'tab', () => pick_file('tab')),
     cmd('Insert file at cursor…', 'input', () => pick_file('insert')),
+    { sep: true }, cmd('Download…', 'download', () => open_download_dialog()), { label: 'Download as', icon: 'file_download', sub: download_items },
