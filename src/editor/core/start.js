@@ -47,6 +47,7 @@ export function editor_start(root) {
   /* ================= start ================= */
   try { document.execCommand('defaultParagraphSeparator', false, 'p'); } catch { /* not supported */ }
   root?.classList.add('ed_loading'); render_all();
+  let stopped = false, t0 = 0;
 
   function stop() {
     if (stopped) return;
