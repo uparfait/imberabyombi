@@ -21,3 +21,4 @@ export function line_h(r) { const e = el_of(r.startContainer); return parseFloat
 export function on_first_line(host, r) {
   const f = first_flow(host); if (!f || is_table(f)) return false;
   if (r.startContainer !== host && !f.contains(r.startContainer)) return false;
+  const cr = caret_rect(r), fr = f.getBoundingClientRect(), pt = (parseFloat(getComputedStyle(f).paddingTop) || 0) * state.zoom;
