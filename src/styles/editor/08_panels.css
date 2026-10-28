@@ -46,3 +46,4 @@ textarea.c_input { border-radius: calc(var(--radius) * .75); }
   padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); font-size: .8125rem;
 }
 .find_panel.show { display: block; animation: pop .2s var(--ease); }
+@media (max-width: 639.98px) { .find_panel { right: .75rem; } }
