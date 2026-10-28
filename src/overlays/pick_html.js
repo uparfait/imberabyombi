@@ -47,3 +47,4 @@ export const PK = {
   },
   months(a) {
     const y = pick.view.getFullYear(), cur = ymd().slice(0, 7);
+    return `<div class="pk_cal">${PK.head(String(y), 'year')}<div class="grid grid-cols-3 gap-1 py-1">${Array.from({ length: 12 }, (_, i) => { const k = `${y}-${pad(i + 1)}`;
