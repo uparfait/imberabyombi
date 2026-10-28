@@ -19,3 +19,4 @@ export function image_items() {
 }
 /* header / footer / page numbers on or off (the new header or footer gets the caret) */
 function page_part(key, sel) {
+  state.setup[key] = !state.setup[key]; apply_setup(false); save_soon();
