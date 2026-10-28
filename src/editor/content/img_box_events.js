@@ -37,3 +37,4 @@ function settle(kept) {
   if (img?.isConnected) select_image(img); else hide_img_sel();
 }
 function on_over(e) {
+  const b = e.target.closest('[data-a]'); if (b === hover_b) return;
