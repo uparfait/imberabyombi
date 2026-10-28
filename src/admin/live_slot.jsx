@@ -11,3 +11,4 @@ const SLOTS = {};   /* name → redraw function of the slot on screen */
    Each draw gives fresh DOM like innerHTML did (fresh = false: patched in place, so a clicked link stays connected). */
 export function Live_slot({ name, first, draw, fresh = true }) {
   const [own, set_own] = useState(null), latest = useRef(null), count = useRef(0);
+  latest.current = draw;
