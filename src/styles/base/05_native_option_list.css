@@ -4,3 +4,4 @@
   :where(option) { background: rgb(var(--surface)); color: rgb(var(--fg)); padding: .35rem .6rem; border-radius: calc(var(--radius) * .5); }
   .dark select { color-scheme: dark; }
   :where(option:checked) { background: rgb(var(--brand)); color: #fff; }
+  :where(optgroup) { font-weight: 700; color: rgb(var(--muted)); background: rgb(var(--surface)); }
