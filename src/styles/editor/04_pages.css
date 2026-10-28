@@ -29,3 +29,4 @@
 .pg_header { min-height: 18px; }
 .pg_footer { display: flex; align-items: flex-end; gap: 12px; }
 .pg_footer_text { flex: 1; min-height: 18px; outline: 0; }
+.pg_num { flex: none; white-space: nowrap; }
