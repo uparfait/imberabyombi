@@ -27,3 +27,4 @@ export const FORMS = {
   /* the two password fields are named pw_new and pw_confirm (pw_field uses its id as the name) */
   setpw: (d, f) => {
     if (PW_RULES.some(([, , t]) => !t(d.pw_new))) { form_msg(f, 'bad', 'Choose a stronger password', 'Meet every rule in the list.', false); f.elements.pw_new.focus(); return false; }
+    if (d.pw_new !== d.pw_confirm) { show_err(f.elements.pw_confirm, 'The passwords do not match.'); f.elements.pw_confirm.focus(); return false; }
