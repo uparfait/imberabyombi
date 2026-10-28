@@ -13,3 +13,4 @@ const CHARS = ('© ® ™ § ¶ † ‡ • · – — … ‰ ′ ″ « » ‹
 /* the open modal makes the page inert (no focus there), so the character goes in through the DOM at the remembered caret */
 function insert_char(c) {
   if (!can_edit()) return;
+  const r = last_range, h = last_host;
