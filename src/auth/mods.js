@@ -5,3 +5,4 @@ export const MODS = [
   { k: 'calendar', l: 'Calendar & activities', s: 'Calendar', i: 'calendar', g: 'Overview' },
   { k: 'tasks', l: 'Tasks', s: 'Tasks', i: 'tasks', g: 'Overview' },
   { k: 'staff', l: 'Staff', s: 'Staff', i: 'users', g: 'People' },
+  { k: 'employees', l: 'Employees', s: 'Employees', i: 'briefcase', g: 'People' },
