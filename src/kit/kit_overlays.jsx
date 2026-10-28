@@ -30,3 +30,4 @@ export const kit_overlays = () => (
       <button key={v} className="btn btn_outline btn_sm" data-act="demo_msg" data-v={v}>{`Inline ${TONE_WORD[v]}`}</button>
     ))}<button className="btn btn_outline btn_sm" data-act="demo_bar">Run loader</button></div>
     <div id="demo_messages" className="mt-4 max-w-2xl empty:hidden"></div>
+    <div className="mt-6 flex flex-wrap gap-3"><button className="btn btn_primary" data-act="demo_dialog">Open dialog</button>
