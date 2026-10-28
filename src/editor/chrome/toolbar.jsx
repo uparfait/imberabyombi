@@ -32,3 +32,4 @@ export const toolbar = () => (
     {tb({ ed: 'redo', icon: 'redo', tip: 'Redo (Ctrl+Y)' })}
     {tb({ ed: 'print', icon: 'print', tip: 'Print (Ctrl+P)', edit: false })}
     {tb({ ed: 'upload', icon: 'upload_file', tip: 'Upload files (Ctrl+O)', edit: false })}
+    {tb({ ed: 'download', icon: 'download', tip: 'Download', edit: false })}
