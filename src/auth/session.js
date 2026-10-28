@@ -6,3 +6,4 @@ import { roles } from './roles.jsx';
 
 export const ss = (() => { try { sessionStorage.setItem('_t', 1); sessionStorage.removeItem('_t'); return sessionStorage; } catch { return null; } })();
 export const auth = {
+  get user() { return db.get('session') || (ss && JSON.parse(ss.getItem(cfg.ns + 'session') || 'null')); },
