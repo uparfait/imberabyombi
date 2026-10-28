@@ -55,3 +55,4 @@ export function charts_view() {
               <span className="whitespace-nowrap">{l}</span></label>))}
         </div>
         <nav aria-label="Chart groups" className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
+          {VIZGROUPS.map(([k, l]) => <button key={k} className="chip_btn whitespace-nowrap" data-act="scroll" data-to={`viz_${k}`}>{l}</button>)}
