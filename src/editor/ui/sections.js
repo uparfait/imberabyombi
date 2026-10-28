@@ -32,3 +32,4 @@ function down_to(m, k) {
   const h = m.heads[k], n = h && m.heads.find(x => x.i === h.end); if (!n) return -1;
   if (n.lvl >= h.lvl) return n.end;   // past the next section of the same level
   const kid = m.heads.find(x => x.i > n.i && x.i < n.end);   // into a higher heading: first, after its intro
+  return kid ? kid.i : n.end;
