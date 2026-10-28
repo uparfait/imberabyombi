@@ -13,3 +13,4 @@ export function kpi_data() {
   const users = to(trend(), 12900 * m), d_users = rnd(2, 14), rev = 4.2e6 * m, d_rev = rnd(4, 18), enr = Math.round(842 * Math.min(1.15, m));
   const gauge_p = rnd(.45, .92), gauge_c = gauge_p > .85 ? 'rgb(var(--bad))' : gauge_p > .7 ? 'rgb(var(--warn))' : 'var(--series_1)';
   const gauge_s = gauge_p > .85 ? 'Almost full' : gauge_p > .7 ? 'Getting full' : 'Plenty of space';
+  const services = [['API', 'ok', 'Operational'], ['Email', 'warn', 'Slower than usual'], ['Storage', 'ok', 'Operational']], o1 = 3480 * m, o2 = 3120 * m;
