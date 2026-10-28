@@ -53,3 +53,4 @@ export function pages_beforeinput(e) {
 /* the header / footer is the same on every page */
 function same_everywhere(sel, host) { qsa(sel, pages_el).forEach(x => { if (x !== host) x.innerHTML = host.innerHTML; }); save_soon(); }
 export function pages_input(e) {
+  const host = editable_of(e.target) || e.target; hide_img_sel();
