@@ -11,3 +11,4 @@ export function is_table(n) { return !!(n && n.tagName === 'TABLE'); }
 export function is_abs(n) { return !!(n && n.nodeType === 1 && /^(front|behind)$/.test(n.getAttribute('data-pos') || '')); }
 export function flow_kids(b) { return Array.from(b.children).filter(c => !is_abs(c)); }
 export function first_flow(b) { let e = b && b.firstElementChild; while (e && is_abs(e)) e = e.nextElementSibling; return e || null; }
+export function last_flow(b) { let e = b && b.lastElementChild; while (e && is_abs(e)) e = e.previousElementSibling; return e || null; }
