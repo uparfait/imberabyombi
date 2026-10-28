@@ -2,3 +2,4 @@
    Charts draw at their real width after the page is on screen (AFTER) and redraw when their own box changes width. */
 import { useLayoutEffect, useState } from 'react';
 import { qsa, lorem, hash_str } from '../lib/index.js';
+import { ui, after_render, before_render, rerender } from '../store/index.js';
