@@ -14,3 +14,5 @@ export function el(tag, attrs = {}, html) {
   for (const k in attrs) { if (k === 'class') e.className = attrs[k]; else if (k === 'style') e.style.cssText = attrs[k]; else e.setAttribute(k, attrs[k]); }
   if (html != null) e.innerHTML = html;
   return e;
+}
+export function download(blob, name) {
