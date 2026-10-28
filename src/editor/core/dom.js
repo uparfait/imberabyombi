@@ -21,3 +21,4 @@ export function editable_of(n) {
   return n ? n.closest('.pg_body,.pg_header,.pg_footer_text') : null;
 }
 export function el_of(n) { return n && n.nodeType === 1 ? n : (n ? n.parentElement : null); }
+export function node_len(n) { return n.nodeType === 3 ? n.length : n.childNodes.length; }
