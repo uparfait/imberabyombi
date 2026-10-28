@@ -29,3 +29,4 @@ export function field(f, v) {
     autoComplete={f.t === 'email' ? 'email' : undefined} required={req} />;
   return (
     <div key={f.k} className={f.t === 'textarea' ? 'field sm:col-span-2' : 'field'} data-when={f.when || undefined}>
+      <label htmlFor={id}>{f.l}{f.req ? <>{' '}<span className="text-accent" aria-hidden="true">*</span></> : null}</label>
