@@ -17,3 +17,4 @@ export function page_rule_el() {
 export function drop_page_rule() { if (own_rule) own_rule.remove(); own_rule = null; }
 
 export function apply_setup(full) {
+  if (!pages_el) return;
