@@ -46,3 +46,6 @@ export function edit_items() {
     }, 'Ctrl+A'),
     cmd('Delete', 'delete', native('delete')),
     { sep: true }, cmd('Find and replace', 'find_replace', () => open_find(), 'Ctrl+H')
+  ];
+}
+function theme_items() {
