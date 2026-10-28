@@ -6,3 +6,4 @@ export * from './footer.jsx';
 export * from './hero_about.jsx';
 export * from './mission_vision.jsx';
 export * from './strategies_staff.jsx';
+export * from './partners_thanks.jsx';
