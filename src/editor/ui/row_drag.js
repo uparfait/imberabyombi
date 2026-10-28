@@ -20,3 +20,4 @@ export function row_drag(e, o) {
   const edge = () => {
     for (const s of o.scrollers || []) {
       if (!s || s.scrollHeight <= s.clientHeight) continue;
+      const b = s.getBoundingClientRect(), d = py < b.top + EDGE ? -Math.ceil((b.top + EDGE - py) / 4) : py > b.bottom - EDGE ? Math.ceil((py - b.bottom + EDGE) / 4) : 0;
