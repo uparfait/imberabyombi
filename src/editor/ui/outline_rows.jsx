@@ -72,3 +72,4 @@ function on_down(e, row) {
     target: (g, rs) => {
       const md = model(), h = md.heads[row._ti]; if (!h) return null;
       const t = g < rs.length ? rs[g]._ti : -2, to = t === -2 ? md.blocks.length : t >= 0 && md.heads[t] ? md.heads[t].i : -1;
+      return to < 0 || (to >= h.i && to <= h.end) ? null : to;
