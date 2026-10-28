@@ -40,3 +40,4 @@ export function adjust_dialog(img) {
     const B = 1 + v.brightness / 100, C = 1 + v.contrast / 100, S = v.saturation / 100, A = 1 - v.transparency / 100;
     return bake_image(img, (c, im) => {
       c.width = im.naturalWidth; c.height = im.naturalHeight; const x = c.getContext('2d'); x.drawImage(im, 0, 0);
+      const d = x.getImageData(0, 0, c.width, c.height), p = d.data;
