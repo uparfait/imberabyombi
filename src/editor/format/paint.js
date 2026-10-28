@@ -24,3 +24,4 @@ export function start_paint() {
 }
 export function apply_paint() {
   const p = paint; stop_paint(); if (!p) return;
+  const s = getSelection(); if (!s.rangeCount || s.isCollapsed) return;
