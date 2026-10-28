@@ -43,3 +43,4 @@ function wire_row(row, t, box) {
   row.addEventListener('keydown', e => {
     if (e.target !== row) return;
     if (e.key === 'Enter') switch_tab(t.id);
+    else if (e.key === 'F2') { e.preventDefault(); start_rename(t); }
