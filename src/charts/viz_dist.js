@@ -16,3 +16,4 @@ export const VIZ_DIST = {
       table: [['Range', 'Count'], cnt.map((n, i) => [bin(i), n])] }; } },
   box: { t: 'Box plot', g: 'dist', d: 'Median, middle half (box), range (whiskers) and outliers.', f(w) {
     const g = uwords(5), sets = g.map(() => { const m = rnd(35, 65), s = rnd(6, 16); return Array.from({ length: 60 }, () => m + gauss() * s).sort((a, b) => a - b); });
+    const q = (a, p) => a[Math.floor((a.length - 1) * p)], st = sets.map(a => {
