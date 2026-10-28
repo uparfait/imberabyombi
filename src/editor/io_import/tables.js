@@ -36,3 +36,4 @@ export function trim_rows(rows, max_r = 2000, max_c = 40) {
   rows = rows.map(r => Array.from(r || [], v => v == null ? '' : String(v)));
   while (rows.length && rows[rows.length - 1].every(v => !v.trim())) rows.pop();
   let width = 0; rows.forEach(r => { for (let c = r.length - 1; c >= 0; c--) if (r[c].trim()) { width = Math.max(width, c + 1); break; } });
+  return { rows: rows.slice(0, max_r).map(r => r.slice(0, Math.min(width, max_c))), cut: rows.length > max_r || width > max_c };
