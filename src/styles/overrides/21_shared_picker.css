@@ -6,3 +6,4 @@
   #picker[data-kind=cal] { padding: .75rem; border-radius: calc(var(--radius) * 1.5); }
   .pk_list { position: relative; min-height: 0; flex: 1; overflow-y: auto; overscroll-behavior: contain; max-height: 18rem; padding: .375rem 0; }
   .pk_search { position: relative; display: block; border-bottom: 1px solid rgb(var(--line)); cursor: text; }
+  .pk_search input { padding-top: .75rem; padding-bottom: .75rem; font-size: .9rem; border: 0; outline: 0; background-color: transparent; }
