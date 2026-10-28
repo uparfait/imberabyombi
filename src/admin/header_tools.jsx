@@ -12,3 +12,4 @@ export function header_tools(n = '') {
   const u = auth.user, r = auth.role(), pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
   return <><button className="icon_btn" data-act="cmdk" aria-label={`Search${key_hint('K') ? ` (${key_hint('K')})` : ''}`}>{ic('search')}</button>
       <a className="icon_btn hidden sm:inline-grid" href="#/ui" aria-label="Design system">{ic('layers')}</a>
+      {theme_btn()}
