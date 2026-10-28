@@ -34,3 +34,4 @@ function none_row(c, s, can, filtered, span) {
 }
 
 /* → { rows (tbody content), count, pager (footer content), acts (the Action Buttons column shows) } */
+export function table_body(c) {
