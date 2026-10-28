@@ -13,3 +13,4 @@ export const PICKER_ACT = {
   pk_set: t => pick.set(t.dataset.v),
   pk_day: t => { const a = pick.a, v = t.dataset.v; if (!a) return;
     if (kind_of(a) === 'week') return pick.set(iso_week(parse_d(v)));
+    if (kind_of(a) === 'datetime-local') { pick.view = parse_d(v); return pick.set(`${v} ${a.value.slice(11) || dt_show('time', '09:00')}`, false); }
