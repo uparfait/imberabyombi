@@ -33,3 +33,4 @@ export const VIZ_PART_A = {
       else { split(list.slice(0, k), x, y, wd, ht * r); split(list.slice(k), x, y + ht * r, wd, ht * (1 - r)); } })(items, 0, 0, f.w, f.h);
     return { svg: svg(f, out.map(o => mark_group(o.k, [[num(o.v), groups[o.g], o.g]],
         `<rect class="mark" x="${round1(o.x + 1)}" y="${round1(o.y + 1)}" width="${round1(Math.max(0, o.wd - 2))}" height="${round1(Math.max(0, o.ht - 2))}" rx="4"`
+        + ` style="fill:color-mix(in oklab, ${scale_color(o.g)} 30%, rgb(var(--surface)))"/>`
