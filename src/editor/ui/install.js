@@ -43,3 +43,5 @@ function install_view(offs) {
   listen(offs, scroller, 'scroll', () => {
     hide_link_bubble();
     if (!raf) raf = requestAnimationFrame(() => { raf = 0; if (state.show_ruler) { draw_v_ruler(); draw_h_ruler(); } });
+  });
+  offs.push(() => cancelAnimationFrame(raf));
