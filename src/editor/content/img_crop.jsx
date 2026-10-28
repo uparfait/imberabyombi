@@ -30,3 +30,4 @@ function Crop_body({ src, st }) {
     stage.addEventListener('pointermove', move); stage.addEventListener('pointerup', up);
   };
   const shown = rect && rect.w >= 4 && rect.h >= 4;
+  return (
