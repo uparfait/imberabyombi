@@ -27,3 +27,8 @@ export function tiers() {
             <tr key={i} data-act="row" data-title={n} tabIndex={0} className="cursor-pointer">
               <th scope="row" className="bg-transparent text-sm font-semibold text-fg">{n}</th><td><time dateTime={2019 + i}>{2019 + i}</time></td>
               <td>{tag(lorem.t(1))}</td><td className="text-right tabular-nums">{lorem.int(2, 30)}</td></tr>
+          );
+        })}</tbody>
+        <tfoot><tr><th scope="row">Total</th><td></td><td></td><td className="text-right">{lorem.int(60, 90)}</td></tr></tfoot></table></div></section>
+  );
+}
