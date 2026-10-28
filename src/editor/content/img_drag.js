@@ -64,3 +64,4 @@ function on_up(ev) {
   select_image(img); position_img_box();
 }
 /* Esc (or a cancelled touch): everything goes back as it was */
+function cancel() {
