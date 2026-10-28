@@ -20,3 +20,4 @@ export const VIZ_REL_B = {
       const na = pos[c][a], nb = pos[c + 1][b], h = v * na.k, x0 = col_x(c) + nw, x1 = col_x(c + 1), y0 = na.out + h / 2, y1 = nb.in + h / 2;
       na.out += h; nb.in += h; const mx = (x0 + x1) / 2;
       return mark_group(`${cols[c][a]} → ${cols[c + 1][b]}`, [[v, 'People', c ? null : a]],
+        `<path class="mark mark_flow" d="M${round1(x0)} ${round1(y0)}C${round1(mx)} ${round1(y0)} ${round1(mx)} ${round1(y1)} ${round1(x1)} ${round1(y1)}"`
