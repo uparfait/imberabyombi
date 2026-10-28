@@ -26,3 +26,4 @@
   .kpi_status { --t: var(--ok); display: inline-flex; align-items: center; gap: .375rem; align-self: flex-start; padding: .125rem .625rem; border-radius: var(--pill);
     font-size: .75rem; font-weight: 500; background: rgb(var(--t) / .12); color: rgb(var(--t)); }
   .kpi_status.warn { --t: var(--warn); } .kpi_status.bad { --t: var(--bad); }
+  .kpi_spark { position: relative; height: 2rem; margin-top: .75rem; }
