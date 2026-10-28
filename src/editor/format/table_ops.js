@@ -17,3 +17,4 @@ export function table_ctx() {
 export function table_chain(t) {
   const bs = bodies(); let first = t;
   while (first.hasAttribute('data-cont')) {
+    const b = editable_of(first), i = bs.indexOf(b); if (i <= 0 || b.firstElementChild !== first) break;
