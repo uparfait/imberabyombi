@@ -17,3 +17,4 @@
   background: repeating-conic-gradient(rgb(var(--surface_3)) 0 25%, rgb(var(--surface)) 0 50%) 0 0 / 1rem 1rem;
 }
 .crop_stage img { display: block; max-width: min(36.25rem, 78vw); max-height: 23.75rem; pointer-events: none; background: none; }
+.crop_rect { position: absolute; border: 2px solid #fff; outline: 100rem solid rgb(0 0 0 / .5); pointer-events: none; }
