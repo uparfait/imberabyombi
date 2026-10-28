@@ -46,3 +46,4 @@ function on_key(e, row) {
     e.preventDefault(); if (row._ti >= 0) moved(move_section_by(row._ti, k === 'ArrowUp' ? -1 : 1), true); return;
   }
   if ((k === 'F10' && e.shiftKey) || k === 'ContextMenu') { e.preventDefault(); open_section_menu(row, null, true); return; }
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
