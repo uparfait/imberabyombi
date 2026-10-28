@@ -32,3 +32,4 @@ export const subscribe = fn => { listeners.add(fn); return () => listeners.delet
 export const get_version = () => version;
 
 /* draw again. keep = stay on the page (rerender); otherwise this is a new page */
+export function render(keep = false, anim = false) {
