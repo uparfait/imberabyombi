@@ -27,3 +27,4 @@ export function on_context_menu(e) {
     { sep: true },
     cmd('Comment', 'add_comment', () => add_comment(), 'Ctrl+Alt+M'),
     cmd('Insert link', 'link', () => open_link_dialog(), 'Ctrl+K'),
+    { label: 'Insert table', icon: 'table', sub: () => [{ render: table_grid_el }] },
