@@ -8,3 +8,4 @@ const TYPES = [['text', 'Text'], ['email', 'Email'], ['password', 'Password'], [
   ['date', 'Date'], ['time', 'Time'], ['datetime-local', 'Date & time'], ['month', 'Month'], ['week', 'Week']];
 
 export const kit_forms_text = () => (
+  <fieldset className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><legend>Text inputs</legend>{TYPES.map(([t, l]) => {
