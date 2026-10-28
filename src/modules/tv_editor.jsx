@@ -19,3 +19,6 @@ export function tv_editor(f, r) {
   if (f === 'assignee') return field(field_spec('tv_assignee', 'Assigned to', 'select', assignees, 1), r.assignee);
   if (f === 'subs') return sub_editor(subs_of(r));
   return field(field_spec('tv_' + f, { start: 'Start', due: 'Due', end: 'Completed on' }[f], 'datetime-local', 0, f !== 'start' ? 1 : 0), dt_in(r[f], f));
+}
+
+/* the cell of a row being edited: its editor, then Save (brand) and Cancel */
