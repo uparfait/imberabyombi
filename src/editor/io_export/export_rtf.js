@@ -50,3 +50,5 @@ function rtf_blocks(rx, c) {
     else if (t === 'HR') o += `${RTF_P}\\brdrb\\brdrs\\brdrw10\\brsp20 \\par\n`; else o += `${RTF_P} ${rtf_inline(rx, n, {})}\\par\n`;
   });
   return o;
+}
+export async function export_rtf(root, name) {
