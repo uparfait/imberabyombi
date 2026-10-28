@@ -25,3 +25,4 @@ export function on_first_line(host, r) {
   return cr.top - (fr.top + pt) < line_h(r) * 0.8;
 }
 export function on_last_line(host, r) {
+  const l = last_non_break(host); if (l === host || is_table(l)) return false;
