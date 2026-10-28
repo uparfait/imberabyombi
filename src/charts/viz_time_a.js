@@ -36,3 +36,4 @@ export const VIZ_TIME_A = {
       legend: legend(s), table: [['Month', ...s, 'Total'], m.map((k, i) => [k, ...v.map(r => num(r[i])), num(cum[i].at(-1))])] }; } },
   step: { t: 'Step line chart', g: 'time', d: 'Values that change in jumps (prices, plans, levels).', f(w) {
     const m = MONTHS(); let a = 20; const v = m.map(() => (a = lorem.r() < .45 ? a : Math.max(5, a + Math.round(rnd(-6, 9)))));
+    const f = frame(w, 230), ax = y_axis(f, Math.max(...v)), x = band(m.length, f.l, f.w - f.r);
