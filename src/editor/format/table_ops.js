@@ -60,3 +60,4 @@ export function tbl_op(op, arg) {
     case 'valign': sel_cells(c).forEach(x => { x.style.verticalAlign = arg === 'top' ? '' : arg; }); break;
     case 'border': chain.forEach(t => t.style.setProperty('--bw', arg + 'px')); break;
     case 'border_color': chain.forEach(t => t.style.setProperty('--bc', arg || '#000000')); break;
+    case 'header': { const on = !chain[0].hasAttribute('data-header'); chain.forEach(t => t.toggleAttribute('data-header', on)); break; }
