@@ -28,3 +28,4 @@ export const rentals_schema = {
   r: { status: (v, row) => badge(v === 'Rented' && row.due < ymd() ? 'Overdue' : v) },
   g: () => {
     const o = add_d(new Date(), -lorem.int(1, 25)), st = lorem.pick(['Rented', 'Rented', 'Returned']);
+    return {
