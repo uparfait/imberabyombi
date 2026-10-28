@@ -34,3 +34,5 @@ export function fmt_of(e, f) {
     if (st.verticalAlign === 'super') g.sup = true; if (st.verticalAlign === 'sub') g.sub = true;
   }
   return g;
+}
+export function r_pr(f) {
