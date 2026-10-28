@@ -31,3 +31,5 @@ export async function attachment_html(file) {
   if (file.size > MAX_ATTACH) throw new Error(`it is ${fmt_size(file.size)}; attachments can be up to 25 MB`);
   const url = await read_as_data_url(file);
   return `<a class="file_chip" contenteditable="false" href="${url}" download="${esc_html(file.name)}" title="${esc_html(file.name)}: click to download">`
+    + `📎 ${esc_html(file.name)} (${fmt_size(file.size)})</a>`;
+}
