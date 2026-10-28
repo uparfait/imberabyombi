@@ -50,3 +50,5 @@ function on_hover(e) {
 function on_down(e) {
   if (e.button !== 0 || !col_hover || !pages_el || !pages_el.contains(e.target)) return;
   e.preventDefault(); e.stopPropagation(); start_col_drag(e);
+}
+export function install_format() {
