@@ -3,3 +3,5 @@
    reference's order (the lorem calls happen as each element is created), so the sample text matches. */
 import { lorem } from '../lib/index.js';
 import { File_box } from '../files/index.js';
+
+const choice = (c, i, type, name, role) => (
