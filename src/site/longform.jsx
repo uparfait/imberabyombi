@@ -22,3 +22,4 @@ export function longform(k) {
     <><h5>{lorem.t(2)}</h5><ol>{li(4)}</ol><h6>{lorem.t(2)}</h6><p>{lorem.p(2)}</p></>][i];
   return (
     <div className="wrap grid gap-12 pb-24 lg:grid-cols-[minmax(0,1fr)_17rem]">
+      <article className="prose_x max-w-3xl">{secs.map((s, i) => (
