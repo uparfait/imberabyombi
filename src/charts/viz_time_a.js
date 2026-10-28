@@ -46,3 +46,4 @@ export const VIZ_TIME_A = {
     const f = frame(w, 220, { l: 0, r: 0, t: 0, b: 0 }), y = band(rows.length, 0, f.h), lw = Math.min(110, w * .3), sx = linear(0, 19, lw, f.w - 64);
     return { svg: svg(f, rows.map(([k, v], i) => {
       const sy = linear(Math.min(...v), Math.max(...v), y(i) + 12, y(i) - 12), pts = v.map((n, j) => [sx(j), sy(n)]), last = v.at(-1), chg = last - v[0];
+      return `${i ? `<line class="grid_line" x1="0" x2="${f.w}" y1="${round1(y(i) - y.bw / 2)}" y2="${round1(y(i) - y.bw / 2)}"/>` : ''}`
