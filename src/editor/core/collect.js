@@ -20,3 +20,4 @@ export function join_conts(root) {
 }
 export function collect_html() {
   const c = document.createElement('div');
+  bodies().forEach((b, i) => Array.from(b.childNodes).forEach(n => {
