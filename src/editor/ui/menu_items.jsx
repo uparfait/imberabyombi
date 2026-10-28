@@ -6,3 +6,4 @@ import { exec, set_line_height, toggle_para_space, set_list_type, bump_size, tra
 import { FORMATS, open_download_dialog } from '../io_export/index.js';
 import { modal } from '../../overlays/index.js';
 import { set_zoom, zoom_fit } from './view.js';
+import { after_close } from './dialogs.jsx';
