@@ -2,3 +2,4 @@
    the shared picker (#picker) and the tooltip (#tip). Import from here: import { modal, ask, pick } from '../overlays/index.js' */
 export * from './dialog_store.js';
 export * from './dialogs.js';
+export * from './modal.jsx';
