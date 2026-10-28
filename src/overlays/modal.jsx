@@ -3,3 +3,4 @@
 import { Children, Fragment } from 'react';
 import { qs } from '../lib/index.js';
 import { show_dialog } from '../feedback/index.js';
+import { set_dialog } from './dialog_store.js';
