@@ -32,3 +32,4 @@ export function confirm_discard(yes) {
 /* #drawer and #viewer: render() returns the dialog's JSX and is called on every draw (rerender() refreshes it).
    Each call is a fresh dialog content (like the reference's innerHTML); it opens the dialog if it is closed. */
 export function show_in_dialog(id, render) {
+  const d = document.getElementById(id); set_dialog(id, { render });
