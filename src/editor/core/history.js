@@ -37,3 +37,4 @@ export function commit() {
   save_soon();
 }
 export function commit_soon() { if (live_busy()) return; clearTimeout(hist_timer); hist_timer = setTimeout(commit, 450); }
+export function begin_op() { if (hist_timer) commit(); }
