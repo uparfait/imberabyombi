@@ -20,3 +20,4 @@ export const due_tag = r => r.due || (r.status === 'Done' && r.end)
     {ic('clock', 'h-3.5 w-3.5 shrink-0')}<span>{due_text(r)}</span></span>
   : <span className="text-muted">—</span>;
 setInterval(() => qsa('[data-due]').forEach(e => { const r = { due: e.dataset.due, status: e.dataset.status, end: e.dataset.end };
+  e.lastElementChild.textContent = due_text(r); e.classList.toggle('late', r.status !== 'Done' && countdown(r.due).late); }), 30000);
