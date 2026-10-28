@@ -20,3 +20,4 @@ export function set_route(next) { for (const k of Object.keys(route)) delete rou
 
 /* what the next render is: keep = same page (rerender), anim = keep the page-enter animation, nav_fetched = data already waited for */
 export const render_flags = { keep: false, anim: false, nav_fetched: false };
+export const AFTER = [];      /* run once after the next render (charts drawing, focus…); views push into it while rendering */
