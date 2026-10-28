@@ -70,3 +70,5 @@ export function start_rename(t) {
   };
   inp.addEventListener('keydown', e => { if (e.key === 'Enter') done(true); else if (e.key === 'Escape') done(false); e.stopPropagation(); });
   inp.addEventListener('blur', () => done(true));
+  inp.addEventListener('click', e => e.stopPropagation());
+}
