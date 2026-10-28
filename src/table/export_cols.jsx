@@ -4,3 +4,5 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import { schemas } from '../schemas/index.js';
 import { label } from '../ui/index.js';
+
+export function Export_cols({ c }) {
