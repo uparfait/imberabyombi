@@ -11,3 +11,4 @@
 .r_tick { stroke: rgb(var(--muted)); stroke-width: 1; }
 .r_text { fill: rgb(var(--fg) / .8); font-size: .625rem; font-family: var(--font_sans); }
 .r_handle { cursor: ew-resize; }
+.r_handle.v { cursor: ns-resize; }
