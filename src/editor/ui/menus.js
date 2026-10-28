@@ -14,3 +14,4 @@ import { open_find } from './find.js';
 import { apply_setup, toggle_spell } from './view.js';
 
 /* Insert › Image and the toolbar's image button */
+export function image_items() {
