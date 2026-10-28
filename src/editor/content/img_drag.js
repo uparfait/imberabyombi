@@ -60,3 +60,4 @@ function on_up(ev) {
   const i0 = body_index(img.closest('.pg_body'));
   if (d.abs) anchor_abs(img); else if (d.p && img.isConnected) place_at(img, d.p);
   const i1 = body_index(img.closest('.pg_body'));
+  end_op(Math.max(0, Math.min(i0, i1)), !d.abs);
