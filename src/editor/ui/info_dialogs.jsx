@@ -9,3 +9,4 @@ export function doc_text() {
 }
 function count(t) {
   t = t.replace(/​/g, '');
+  return { words: (t.match(/[\p{L}\p{N}][\p{L}\p{N}'’\-]*/gu) || []).length, chars: t.replace(/[\n\r]/g, '').length, no_space: t.replace(/\s/g, '').length };
