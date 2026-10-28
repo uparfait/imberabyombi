@@ -11,3 +11,4 @@ export const DOCX_STYLES = `${XML}<w:styles xmlns:w="http://schemas.openxmlforma
   + '</w:docDefaults>'
   + '<w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/><w:qFormat/></w:style>'
   + sty('Title', 'Title', '<w:keepNext/><w:spacing w:after="60"/>', '<w:sz w:val="52"/><w:szCs w:val="52"/>')
+  + sty('Subtitle', 'Subtitle', '<w:keepNext/><w:spacing w:after="320"/>', '<w:color w:val="666666"/><w:sz w:val="30"/><w:szCs w:val="30"/>')
