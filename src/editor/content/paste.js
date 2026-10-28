@@ -40,3 +40,5 @@ export async function paste_from_clipboard(plain) {
     }
     const t = await navigator.clipboard.readText(); restore_focus(); document.execCommand('insertText', false, t);
   } catch (err) { toast('Your browser blocked clipboard access. Press Ctrl+V to paste.'); }
+}
+/* files dropped anywhere while the editor is on screen (a dialog's own drop zone handles its drops) */
