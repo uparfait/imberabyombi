@@ -42,3 +42,5 @@ export function backspace_across(host, pi) {
     else { caret_to_end(last); merge_into(last, first); if (cont) document.execCommand('delete'); }
   } else caret_to_end(last);
   end_op(pi - 1);
+}
+export function delete_across(host, pi) {
