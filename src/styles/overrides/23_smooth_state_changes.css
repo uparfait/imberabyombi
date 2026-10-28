@@ -36,3 +36,4 @@
   .panel { width: 0; border: 0 solid rgb(var(--line)); border-radius: 1.5rem 1.5rem 0 0; transition: width .3s var(--ease); }
   .panel[data-open=true] { width: 22rem; border-width: 1px 1px 0; }
   .panel_in { width: 22rem; }
+  .rail_on { background: rgb(var(--brand) / .14); }
