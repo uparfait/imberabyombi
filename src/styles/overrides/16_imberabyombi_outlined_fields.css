@@ -33,3 +33,4 @@
   .field:has(> .multi_value:empty):not(:has(> select:is(:focus, [data-open]))) > label { transform: translateY(-50%); max-width: calc(100% - 1.5rem); }
 
   /* File field (Imberabyombi style): chosen files sit inside the field as small attachments above the button.
+     Images/videos = square thumbnails, other files = compact chips. x removes, click opens #viewer. Row scrolls on x. */
