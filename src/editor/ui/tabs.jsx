@@ -8,3 +8,5 @@ import { render_tab } from './render.js';
 import { render_sidebar } from './sidebar.js';
 import { confirm_dialog } from './dialogs.jsx';
 import { unique_name } from './ui_dom.js';
+
+export function save_tab() { const t = active_tab(); if (t) t.html = collect_html(); }
