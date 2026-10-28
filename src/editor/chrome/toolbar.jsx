@@ -66,3 +66,4 @@ export const toolbar = () => (
     {tb({ ed: 'indent', icon: 'format_indent_increase', tip: 'Increase indent (Ctrl+])' })}
     {tb({ ed: 'clear', icon: 'format_clear', tip: 'Clear formatting (Ctrl+\\)' })}
     <div className="tb_fill"></div>
+    <button type="button" className="tb_dd mode_btn" id="mode_btn" data-tip="Editing mode" aria-haspopup="menu">
