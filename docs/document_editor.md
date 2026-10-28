@@ -34,3 +34,4 @@ it was; click to keep it (one undo step). The selection stays selected while you
 | Ctrl Z / Y | undo / redo | Ctrl F | find and replace |
 | Ctrl Shift 7 / 8 / 9 | numbered / bulleted / checklist | Ctrl [ / ] | indent less / more |
 | Ctrl Enter | page break | Ctrl Shift F | show / hide the menus |
+| Ctrl Page Up / Down | previous / next tab | Alt Shift ↑ / ↓ | move a section (outline) |
