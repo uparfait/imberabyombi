@@ -32,3 +32,4 @@ export function collect_html() {
 export function place_abs(pageless) {
   const bs = bodies();
   bs.forEach((b, i) => qsa(':scope > [data-page]', b).forEach(e => {
+    if (!is_abs(e)) return;
