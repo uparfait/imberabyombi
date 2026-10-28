@@ -3,3 +3,4 @@
    Import from here: import { navigate, set_meta, enhance } from '../router/index.js' */
 export * from './parse.js';
 export * from './pages.jsx';
+export * from './enhance.js';
