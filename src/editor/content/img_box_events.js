@@ -14,3 +14,4 @@ function resize(e, h) {
   const abs = is_abs(img), l0 = img.offsetLeft, t0 = img.offsetTop;
   begin_op();
   const move = ev => {
+    const w = clamp(Math.round(sw + (ev.clientX - sx) / state.zoom * sign), 16, max_w);
