@@ -11,3 +11,4 @@ export function html_to_md(root) {
       const t = c.tagName, st = c.style;
       if (t === 'BR') { s += c.nextSibling ? '  \n' : ''; return; }
       if (t === 'IMG') { s += `![${c.getAttribute('alt') || ''}](${c.getAttribute('src')})`; return; }
+      if (/^(UL|OL)$/.test(t)) return;
