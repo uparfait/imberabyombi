@@ -28,3 +28,4 @@ export function open_link_dialog(existing) {
     const url = normalize_url(qs('#lk_url').value), text = qs('#lk_text').value;
     if (!url) { show_err(qs('#lk_url'), 'Enter a link address'); qs('#lk_url').focus(); return false; }
     /* the page is inert while the dialog is open: close it at once, put the selection back, then edit */
+    qs('#modal')?.close();
