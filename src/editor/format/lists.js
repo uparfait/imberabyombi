@@ -5,3 +5,4 @@ import { can_edit, exec } from './commands.js';
 
 /* ================= lists ================= */
 /* the list (ul / ol) holding the caret, or null */
+export function closest_list() { const n = last_range && el_of(last_range.startContainer); const li = n && n.closest('li'); return li ? li.parentElement : null; }
