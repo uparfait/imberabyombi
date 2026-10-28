@@ -62,3 +62,4 @@ export async function process_uploads(files, mode) {
 /* the system file dialog (any file, several at once); cb gets the chosen files */
 export function pick_any(cb) {
   const i = el('input', { type: 'file', multiple: '' }); i.style.display = 'none'; document.body.appendChild(i);
+  i.addEventListener('change', () => { cb(Array.from(i.files)); i.remove(); }); i.click();
