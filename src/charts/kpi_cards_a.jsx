@@ -13,3 +13,4 @@ export const kpi_cards_a = k => {
       <><p className="kpi_value">{compact_num(users[11])}</p>{delta(d_users)}{spark(users, true, mo, num, 'Active users')}</>,
       [['Month', 'Active users'], mo.map((x, i) => [x, num(users[i])])]),
     kpi_card('sm:col-span-2 xl:col-span-2 kpi_hero', 'Total revenue', 'The one number this page leads with: shown large, once.',
+      <><p className="kpi_hero_value">{`$${compact_num(rev)}`}</p>{delta(d_rev, true, 'vs the same period last year')}</>,
