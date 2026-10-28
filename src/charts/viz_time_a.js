@@ -24,3 +24,4 @@ export const VIZ_TIME_A = {
       + chart_base(f, ax.y(0)) + x_labels(f, m, x) + cross_bands(f, m, x, i => [[num(v[i]), 'Value', 0]]), 'Area chart'),
       table: [['Month', 'Value'], m.map((k, i) => [k, num(v[i])])] }; } },
   stacked_area: { t: 'Stacked area chart', g: 'time', d: 'Parts of a total over time; the top edge is the total.', seed: 'stackedArea', f(w) {
+    const m = MONTHS(), s = SER.slice(0, 3), v = s.map(() => { let a = rnd(15, 30); return m.map(() => (a = Math.max(4, a + rnd(-4, 5))) * MARGIN()); });
