@@ -37,3 +37,4 @@ export async function prepare_images(root) {
     img.dataset.nw = im.naturalWidth; img.dataset.nh = im.naturalHeight;
     if (!/^data:image\/(png|jpe?g|gif);base64,/i.test(src)) {
       try {
+        const c = document.createElement('canvas'); c.width = im.naturalWidth; c.height = im.naturalHeight; c.getContext('2d').drawImage(im, 0, 0);
