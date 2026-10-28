@@ -11,3 +11,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 - Sort by any column (`aria-sort`), pages of `cfg.page_size` rows (Back · n of n · Next), a row count.
 - **Action Buttons** as the first column, pinned while the table scrolls sideways (left out when no row has actions).
 - A settings menu (left): rows per page (10, 20, 50) and which columns to show, remembered per table.
+- Full screen (right): the table fills the tab (not the browser's full screen), header and actions stay pinned.
