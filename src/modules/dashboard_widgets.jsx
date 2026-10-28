@@ -12,3 +12,4 @@ import { due_tag } from './task_dates.jsx';
 import { to } from '../router/index.js';
 
 const head = (title, path, link) => <header className="flex items-center justify-between"><h2 className="text-lg">{title}</h2>
+  <a href={to(path)} className="btn btn_ghost btn_sm">{link}</a></header>;
