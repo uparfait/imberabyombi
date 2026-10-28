@@ -7,3 +7,4 @@
     height: auto !important; min-width: 0 !important; min-height: 0 !important; overflow: visible !important; background: #fff !important;
   }
   /* outside the editor: keep only the editor's ancestors, as plain blocks */
+  body:has(#editor) *:not(#editor, #editor *, :has(#editor)) { display: none !important; }
