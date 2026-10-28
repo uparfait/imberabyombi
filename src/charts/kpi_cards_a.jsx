@@ -15,3 +15,4 @@ export const kpi_cards_a = k => {
     kpi_card('sm:col-span-2 xl:col-span-2 kpi_hero', 'Total revenue', 'The one number this page leads with: shown large, once.',
       <><p className="kpi_hero_value">{`$${compact_num(rev)}`}</p>{delta(d_rev, true, 'vs the same period last year')}</>,
       [['Measure', 'Value'], [['Total revenue', '$' + num(rev)], ['Change', signed(d_rev)], ['Compared with', 'The same period last year']]]),
+    kpi_card('', 'Enrolment goal', 'Progress towards this year\'s enrolment goal.',
