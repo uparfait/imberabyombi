@@ -15,6 +15,4 @@ export const auth = {
   boss() { const r = auth.role(); return r?.perms === '*' || r?.id === 'admin'; }
 };
 export const me = () => auth.user?.name || '';
-export const base_url = () => location.href.split('#')[0];
-export const invite_link = id => `${base_url()}#/login?role=${id}`;
-export const access_link = r => `${base_url()}#/login?role=${r.role}&email=${encodeURIComponent(r.email || '')}&name=${encodeURIComponent(r.name || '')}`;
+/* full addresses (they are shared by email or chat): base_url('/login') → 'https://host/login' */
