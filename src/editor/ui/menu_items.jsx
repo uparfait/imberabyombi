@@ -19,3 +19,6 @@ function custom_spacing_dialog() {
     body: <div className="field sm:col-span-2"><label htmlFor="cs_line">Line spacing</label>
       <input id="cs_line" name="cs_line" type="number" placeholder=" " min="0.5" max="5" step="0.05" defaultValue="1.15" /></div>,
     on_submit: v => { const x = String(clamp(parseFloat(v.cs_line) || 1.15, 0.5, 5)); after_close(() => set_line_height(x)); }
+  });
+}
+export function spacing_items() {
