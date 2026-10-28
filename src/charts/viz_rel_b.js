@@ -47,3 +47,4 @@ export const VIZ_REL_B = {
     const merges = [[0, 1, .8], [2, 3, 1.1], [4, 5, .6], [6, 7, 1.4], [8, 9, 2.1], [10, 11, 2.6], [12, 13, 3.6]], pos = leaves.map((_, i) => ({ y: y(i), h: 0 }));
     let paths = '';
     merges.forEach(([a, b, h], m) => { const na = pos[a], nb = pos[b], xm = x(h);
+      paths += `<path d="M${round1(x(na.h))} ${round1(na.y)}H${round1(xm)}V${round1(nb.y)}H${round1(x(nb.h))}"`
