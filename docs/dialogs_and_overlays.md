@@ -35,3 +35,5 @@ Open dialogs sit in the browser's top layer. `#toasts` and `#loader` are manual 
 ## Popover menus
 `<button data-pop="pop_menu">` toggles `<div id="pop_menu" className="pop" hidden>`. A click outside closes it, `Esc`
 closes it, and on phones it stays inside the screen. "Your modules" style menus (`tile_menu()`) drop a grid of 3D tiles.
+
+## Tooltip
