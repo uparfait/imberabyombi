@@ -10,3 +10,4 @@ import { json_to_html, MAX_ATTACH, attachment_html } from './json_attach.js';
 import { sheet_to_html } from './sheets.js';
 import { docx_to_html } from './docx.js';
 import { pptx_to_html } from './pptx.js';
+import { odf_to_html } from './odf.js';
