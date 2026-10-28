@@ -34,3 +34,4 @@ function nav_markup(routed) {
   const kicker = [ROOT, ...path.slice(0, -1).map(x => x.t)].filter(x => x !== title).join(' · ') || 'Systems';
   const body = nav_page({ routed, title, kicker, node, kids, path, to });
   return <><nav className={`nav_row ${routed ? 'is_pinned' : ''}`} aria-label={`${ROOT} navigation`}>{[0, 1].map(menu)}</nav>
+    <div className="nav_page_body mt-4">{body}</div></>;
