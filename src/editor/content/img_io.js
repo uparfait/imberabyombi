@@ -35,3 +35,4 @@ export async function insert_image(src) {
   begin_op();
   const img = el('img', { src, style: `width:${w}px`, alt: '', draggable: 'false' });
   const s = getSelection(), r = s.getRangeAt(0); r.deleteContents(); r.insertNode(img); r.setStartAfter(img); r.collapse(true); s.removeAllRanges(); s.addRange(r);
+  end_op(body_index(host));
