@@ -46,3 +46,4 @@ export const VIZ_TIME_B = {
           ? `<text x="${round1((x(i) + x(i + 1)) / 2)}" y="${f.h - 8}" text-anchor="middle">W${i + 1}</text>` : ''}`).join('')
       + t.map((k, i) => mark_group(k, [[`W${d[i].s + 1}–W${d[i].e}`, 'Weeks', null], [pct(d[i].done), 'Done', 0]], hit_row(f, y, i)
         + `<rect class="mark" ${bar(i, x(d[i].e) - x(d[i].s), 'fill:color-mix(in srgb, var(--series_1) 22%, transparent)')}/>`
+        + `<rect ${bar(i, (x(d[i].e) - x(d[i].s)) * d[i].done, 'fill:var(--series_1)')}/>`
