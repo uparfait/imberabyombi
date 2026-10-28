@@ -7,3 +7,5 @@ export async function copy(text, what = 'Link', quiet = false) {
   const done = () => quiet || notify('Paste it anywhere you need it.', 'ok', `${what} copied`);
   try { await navigator.clipboard.writeText(text); done(); }
   catch { const ta = document.createElement('textarea'); ta.value = text; document.body.append(ta); ta.select(); try { document.execCommand('copy'); done(); } catch { prompt(`Copy this ${what.toLowerCase()}:`, text); } ta.remove(); }
+}
+/* Copyable value (code, key, link, token): dashed brand box + Copy button. It pulses twice when it appears to draw the eye;
