@@ -11,3 +11,4 @@ export function handle_tab(e, r, host) {
   e.preventDefault();
   const n = el_of(r.startContainer), td = n.closest('td,th');
   if (td && host.contains(td)) {
+    const cells = qsa('td,th', td.closest('table')), i = cells.indexOf(td) + (e.shiftKey ? -1 : 1);
