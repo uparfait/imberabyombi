@@ -40,3 +40,4 @@ export const VIZ_TIME_A = {
     const d = v.map((val, i) => `${i ? `H${round1(x(i))}V${round1(ax.y(val))}` : `M${round1(x(0))} ${round1(ax.y(val))}`}`).join('');
     return { svg: svg(f, ax.g + `<path class="series_line" d="${d}" style="stroke:var(--series_1)"/>${dot(x(11), ax.y(v[11]), 'var(--series_1)')}`
       + chart_base(f, ax.y(0)) + x_labels(f, m, x) + cross_bands(f, m, x, i => [[v[i], 'Level', 0]]), 'Step line chart'),
+      table: [['Month', 'Level'], m.map((k, i) => [k, v[i]])] }; } },
