@@ -53,3 +53,5 @@ export function rtf_to_html(rtf) {
     emit(text);
   }
   if (para) out.push(`<p>${para}</p>`); flush_table();
+  return out.join('') || '<p><br></p>';
+}
