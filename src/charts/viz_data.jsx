@@ -38,3 +38,4 @@ function Viz_data() {
 
 export function viz_open(card, e) {
   const k = card.dataset.chart, o = k ? VIZ_OUT[k] : KPIS[card.dataset.kpi]; if (!o) return;
+  const title = k ? VIZ[k].t : o.t, help = k ? VIZ[k].d : o.d, [head, rows] = k ? o.table : [o.head, o.rows], m = e?.target?.closest?.('[data-tt]');
