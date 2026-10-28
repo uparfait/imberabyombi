@@ -38,3 +38,4 @@ export function render_outline() {
 
 /* hide the rows inside a folded heading */
 export function apply_folds(ol) {
+  let hide = Infinity;
