@@ -55,3 +55,5 @@ async function odf_blocks(cx, n, out) {
       const items = [];
       for (const it of kids(c, 'list-item')) { const sub = []; await odf_blocks(cx, it, sub); items.push(`<li>${sub.join('').replace(/^<p>([\s\S]*?)<\/p>/, '$1')}</li>`); }
       out.push(`<ul>${items.join('')}</ul>`);
+    }
+    else if (ln === 'table') out.push(await odf_table(cx, c));
