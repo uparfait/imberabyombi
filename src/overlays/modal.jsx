@@ -6,3 +6,5 @@ import { show_dialog } from '../feedback/index.js';
 import { set_dialog } from './dialog_store.js';
 import { pick } from './pick.js';
 import { tip } from './tip.js';
+
+/* actions: extra footer buttons (e.g. Edit / Delete on the details view); wide: at least 70% of a large screen (the task view).
