@@ -13,7 +13,7 @@ export const workspace = () => (
   <div id="workspace">
     <div id="vruler" className="no_print" aria-hidden="true"></div>
     <div id="main_col">
-      <div id="hruler" className="no_print" aria-hidden="true"></div>
+      <div id="hruler" className="no_print"></div>
       <div id="scroller"><div id="pages" className="doc_pages"></div></div>
 
       <aside id="sidebar" className="doc_side no_print" aria-label="Document tabs and outline">
