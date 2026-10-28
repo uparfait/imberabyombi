@@ -42,3 +42,6 @@ export function load_script(urls) {
 }
 export function read_as_data_url(f) {
   return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; r.readAsDataURL(f); });
+}
+
+/* CSS colour → 'RRGGBB' (null for transparent / unknown); the 2D context is made on first use, not at module load */
