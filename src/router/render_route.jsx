@@ -2,3 +2,4 @@
    the admin page, an account page or a public page (or the error page when a view fails). A new page is a fresh tree (keyed),
    as innerHTML was: animations, observers and local state start over; a redraw of the same page keeps the tree. */
 import { Component } from 'react';
+import { route, set_route, render_flags, get_version } from '../store/index.js';
