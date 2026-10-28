@@ -26,3 +26,4 @@ VIEWS.dashboard = () => {
     <section aria-label="Welcome">{hero_shell(<div className="relative flex flex-wrap items-end gap-6 px-6 pb-16 pt-8 sm:px-10 sm:pb-20">
       <div className="hero_in min-w-0 flex-1"><p className="text-sm text-fg/60">
         {new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
+        <h2 className="mt-1 text-3xl text-fg sm:text-5xl">{`Welcome, ${first}`}</h2><p className="mt-2 max-w-xl text-fg/70">{lorem.s()}</p></div>
