@@ -6,3 +6,4 @@ import { can_edit } from './commands.js';
 import { chain_rows, table_width_cols, insert_rows, insert_cols, delete_col } from './table_model.js';
 import { table_ctx, table_chain, tbl_op } from './table_ops.js';
 import { num_field, num_props, sel_field, color_field, check_field, POSITIONS } from './dialog_fields.jsx';
+import { refocus_after_close, previewing } from './guards.js';
