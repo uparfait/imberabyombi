@@ -33,3 +33,5 @@ function down_to(m, k) {
   if (n.lvl >= h.lvl) return n.end;   // past the next section of the same level
   const kid = m.heads.find(x => x.i > n.i && x.i < n.end);   // into a higher heading: first, after its intro
   return kid ? kid.i : n.end;
+}
+export function section_moves(k) { const m = section_model(); return { up: up_to(m, k) >= 0, down: down_to(m, k) >= 0 }; }
