@@ -36,3 +36,4 @@ function none_row(c, s, can, filtered, span) {
 /* → { rows (tbody content), count, pager (footer content), acts (the Action Buttons column shows) } */
 export function table_body(c) {
   const s = schemas[c], o = cur[c] || {}, can = auth.can(o.mod, 2), v = tview(c), cols = s.cols.filter(k => !v.hide.includes(k));
+  if (render_flags.nav_fetched) loaded.add(c);
