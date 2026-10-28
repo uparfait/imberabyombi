@@ -13,3 +13,5 @@ export function add_blank_page(i) {
   if (!is_break(last_flow(b))) b.appendChild(el('div', { class: 'page_break', contenteditable: 'false' }));
   b.appendChild(p); if (has_next) b.appendChild(el('div', { class: 'page_break', contenteditable: 'false' }));
   end_op(i, true); if (p.isConnected) { caret_to_start(p); p.closest('.page_wrap').scrollIntoView({ block: 'start', behavior: 'smooth' }); }
+}
+export function delete_page(i) {
