@@ -4,3 +4,4 @@
   /* Animated with transform only (move + scale), so the label glides smoothly; size and weight never jump */
   .field:has(:where(input:not([type=range],[type=color],[type=file],[type=checkbox],[type=radio]), select:not([multiple],[size]), textarea, .multi_value)) > label:where(:not(.sr-only)) {
     position: absolute; z-index: 1; left: .75rem; top: calc(1.625rem + 1px); max-width: calc((100% - 1.5rem) / .75); padding: 0 .25rem;
+    font-size: 1rem; line-height: 1.5rem; font-weight: 400; color: rgb(var(--muted)); background: rgb(var(--field, var(--surface)));
