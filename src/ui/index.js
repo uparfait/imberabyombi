@@ -4,3 +4,4 @@ export * from './badges.jsx';
 export * from './cells.jsx';
 export * from './player.jsx';
 export * from './widgets.jsx';
+export * from './search.jsx';
