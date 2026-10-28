@@ -30,3 +30,4 @@
 .c_card:hover { border-color: rgb(var(--muted) / .5); }
 .c_card.active { border-color: #fbbc04; outline: 1px solid #fbbc04; outline-offset: -2px; }   /* the comment mark's colour */
 .c_quote { margin: .375rem 0; padding-left: .5rem; border-left: .1875rem solid #fbbc04; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-style: italic; color: rgb(var(--muted)); }
+.c_avatar {
