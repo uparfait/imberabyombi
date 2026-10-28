@@ -20,3 +20,4 @@ VIEWS.library = () => crud('books', { title: 'Books' });
 ## Options
 | Option          | Meaning                                                                        |
 |-----------------|--------------------------------------------------------------------------------|
+| `title`         | the table's title                                                              |
