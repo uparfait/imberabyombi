@@ -24,3 +24,4 @@ export function spark(v, hi = true, labels = null, fmt = num, name = 'Value', w 
 /* the change against the previous period: green when it goes the good way (good_up: a rise is good), red otherwise */
 export const delta = (d, good_up = true, vs = 'vs last month') => {
   const good = d >= 0 === good_up;
+  return (
