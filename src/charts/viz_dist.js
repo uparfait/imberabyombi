@@ -30,3 +30,4 @@ export const VIZ_DIST = {
         + ln(x(i) - bw / 2, x(i) + bw / 2, ax.y(o.med), ax.y(o.med), 2.5)
         + o.out.map(v => `<circle cx="${round1(x(i))}" cy="${round1(ax.y(v))}" r="3" style="fill:rgb(var(--surface));stroke:var(--series_1);stroke-width:1.5"/>`).join('')))
         .join('') + x_labels(f, g, x), 'Box plot'),
+      table: [['Group', 'Min', 'Q1', 'Median', 'Q3', 'Max'], st.map((o, i) => [g[i], round1(o.lo), round1(o.q1), round1(o.med), round1(o.q3), round1(o.hi)])] }; } },
