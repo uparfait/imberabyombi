@@ -8,3 +8,4 @@ import { qs, el } from './utils.js';
 let sink = null, prog = null, line = null, timer = null;
 
 /* run fn with messages collected into the array `into` (live previews) */
+export function quiet(fn, into) { const prev = sink; sink = into; try { return fn(); } finally { sink = prev; } }
