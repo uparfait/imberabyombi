@@ -12,3 +12,4 @@ const tb = ({ ed, icon, tip, edit = true, state, id }) => (
 );
 /* a drop-down with a text label (zoom, styles, font) */
 const dd = (id, label_id, label, tip, width, edit) => (
+  <button type="button" id={id} className={edit ? 'tb_dd tb_edit' : 'tb_dd'} style={{ width }} data-tip={tip} aria-haspopup="menu">
