@@ -8,3 +8,5 @@ export function pw_check(i) {
   const f = i.form, v = i.value;
   const ok = PW_RULES.map(([k, , t]) => { const p = t(v); f.querySelector(`[data-rule="${k}"]`)?.classList.toggle('ok', p); return p; }).filter(Boolean).length;
   const m = f.querySelector('[data-pw-meter]'); if (m) m.value = ok;
+  const l = f.querySelector('[data-pw-label]'); if (l) l.textContent = v ? ['Too weak', 'Weak', 'Fair', 'Good', 'Strong'][ok] : 'Type a password';
+}
