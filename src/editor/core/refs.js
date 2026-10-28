@@ -30,3 +30,4 @@ export function fill_refs(root) {
   if (root) for (const e of root.querySelectorAll('[id]')) if (!(e.id in store)) store[e.id] = e;
   for (const k in ALIAS) store[k] = store[ALIAS[k]] || null;
   pages_el = store.pages || null; scroller = store.scroller || null; hruler = store.hruler || null; vruler = store.vruler || null;
+  return refs;
