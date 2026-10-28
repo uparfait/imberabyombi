@@ -9,3 +9,5 @@ let sink = null, prog = null, line = null, timer = null;
 
 /* run fn with messages collected into the array `into` (live previews) */
 export function quiet(fn, into) { const prev = sink; sink = into; try { return fn(); } finally { sink = prev; } }
+
+const alive = () => !!(prog && prog.isConnected && !prog.classList.contains('out'));
