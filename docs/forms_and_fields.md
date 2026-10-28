@@ -33,3 +33,5 @@ the format, or click to open the mini calendar (dates, weeks, months) and the 15
 - `<input data-list="list_id">` shows suggestions from `<datalist id="list_id">` while typing.
 - Keyboard: `Alt + ↓` or `F4` opens, arrows move, `Enter` picks, `Esc` closes only the picker.
 - The picker lives outside React (`#picker`); when it sets a value it uses `set_native_value()` so React sees it.
+
+## Files
