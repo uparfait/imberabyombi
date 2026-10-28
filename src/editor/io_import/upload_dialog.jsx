@@ -13,3 +13,4 @@ export function pick_file(mode) { open_upload_dialog([], mode === 'open' ? 'repl
 
 /* initial: files already chosen (dropped on the page); mode: the preselected place (default: replace an empty document,
    else at the cursor) */
+export function open_upload_dialog(initial = [], mode) {
