@@ -27,3 +27,4 @@ export function Modal_form({ m }) {
   return (
     <form ref={ref} className="flex flex-col" noValidate onSubmit={on_submit}>
       <header className={`flex items-center justify-between gap-4 ${plain ? '' : 'border-b border-line'} px-5 py-4 sm:px-6`}>
+        <div className="flex min-w-0 items-center gap-1"><h2 id="modal_title" className="min-w-0 text-xl [overflow-wrap:anywhere]">{title}</h2>{help && !plain ? help_tip(help, 'this') : null}</div>
