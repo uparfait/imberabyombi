@@ -49,3 +49,4 @@ export function crud(c, o = {}) {
         </header>
         <div className="table_scroll relative overflow-x-auto"><table className="table_data" id={`table_${c}`}>
           <thead><tr><th scope="col" id={`table_acts_${c}`} className="table_acts whitespace-nowrap" hidden={!b.acts}>Action Buttons</th>
+            {s.cols.map(k => col_head(c, k, st, hide))}</tr></thead>
