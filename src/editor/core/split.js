@@ -30,3 +30,4 @@ export function split_text(block, b, next) {
   }
   const remap = [];
   if (cur_sel) for (const key of ['s', 'e']) {
+    const n = cur_sel[key + 'c'], o = cur_sel[key + 'o'];
