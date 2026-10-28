@@ -11,3 +11,4 @@ const CHARS = ('© ® ™ § ¶ † ‡ • · – — … ‰ ′ ″ « » ‹
   + '← → ↑ ↓ ↔ ⇒ ⇔ ★ ☆ ✓ ✗ ☐ ☑ ♠ ♣ ♥ ♦ ½ ⅓ ¼ ¾ ¹ ² ³ ⁿ').split(' ');
 
 /* the open modal makes the page inert (no focus there), so the character goes in through the DOM at the remembered caret */
+function insert_char(c) {
