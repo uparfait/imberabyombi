@@ -11,3 +11,4 @@ export async function docx_to_html(file) {
   const buf = await file.arrayBuffer();
   try {
     await load_script(LIB.mammoth);
+    const res = await window.mammoth.convertToHtml({ arrayBuffer: buf.slice(0) },
