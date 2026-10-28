@@ -8,3 +8,4 @@ export function tiers() {
   const t = [['400 GB', 1.29, 4.99], ['5 TB', 4.99, 19.99], ['20 TB', 99.99, null]];
   return (
     <section className="wrap pb-20"><div className="grid gap-5 lg:grid-cols-3">{t.map(([s, p, o], i) => (
+      <article key={s} className={`card relative p-7 ${i === 0 ? 'border-2 border-brand' : ''}`} data-reveal="" style={{ '--d': `${i * .08}s` }}>
