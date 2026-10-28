@@ -10,3 +10,4 @@ import { nav_page } from './nav_page.jsx';
 import { Live_slot, redraw_slot } from './live_slot.jsx';
 
 /* ── Nested navigation: three levels in all. Level 1 is this system (its sidebar). Level 2 is "System 2", opened from that
+   sidebar: 4 pages and a 5th tile, "System 3". Level 3 is System 3 with its own pages. So there are at most two selections:
