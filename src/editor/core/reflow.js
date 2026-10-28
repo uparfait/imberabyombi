@@ -61,3 +61,4 @@ export function reflow_pageless() {
   layout_after();
 }
 export function layout_after() {
+  if (!pages_el) return;
