@@ -48,3 +48,4 @@ function Download_body({ opt }) {
   useEffect(() => { const t = setTimeout(() => { const n = qs('#dl_name'); if (n) { n.focus(); n.select(); } }, 60); return () => clearTimeout(t); }, []);
   const s = doc_stats(f.tabs ? opt.scope : 'all'), scope_on = opt.multi && f.tabs;
   return (
+    <div className="grid gap-4 sm:col-span-2">
