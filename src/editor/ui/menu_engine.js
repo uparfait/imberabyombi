@@ -64,3 +64,4 @@ export function open_menu(anchor, items, opts = {}) {
   for (const it of items.filter(Boolean)) {
     if (it.sep) m.appendChild(el('hr', { class: 'my-1' }));
     else if (it.render) m.appendChild(it.render());
+    else if (it.header) m.appendChild(el('p', { class: 'ctx_label' }, esc_html(it.header)));
