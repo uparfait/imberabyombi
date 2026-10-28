@@ -36,3 +36,5 @@ export const docx_header = (html, plain) => { const d = el('div'); d.innerHTML =
 export const docx_footer = (s, plain) => {
   const d = el('div'); d.innerHTML = s.footer ? s.footer_html : '';
   return `${XML}<w:ftr ${WNS}><w:p><w:pPr><w:tabs><w:tab w:val="right" w:pos="${plain.content_tw}"/></w:tabs></w:pPr>${inline_xml(d, {}, plain)}`
+    + `${s.page_numbers ? '<w:r><w:tab/></w:r><w:fldSimple w:instr=" PAGE "><w:r><w:t>1</w:t></w:r></w:fldSimple>' : ''}</w:p></w:ftr>`;
+};
