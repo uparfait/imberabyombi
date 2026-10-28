@@ -31,3 +31,4 @@ export function wrap_selection(cls, attrs = {}) {
   document.execCommand('styleWithCSS', false, false);
   document.execCommand('fontName', false, marker);
   document.execCommand('styleWithCSS', false, true);
+  const out = [];
