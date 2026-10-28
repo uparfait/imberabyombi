@@ -33,3 +33,6 @@ export function table_menu_items() {
     { label: 'Header row', icon: 'table_rows', checked: !!(t0 && t0.hasAttribute('data-header')), action: () => tbl_op('header') },
     { label: 'Striped rows', icon: 'reorder', checked: !!(t0 && t0.hasAttribute('data-striped')), action: () => tbl_op('striped') },
     { sep: true },
+    { label: 'Table properties…', icon: 'settings', action: table_props_dialog }
+  ];
+}
