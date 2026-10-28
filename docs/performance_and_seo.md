@@ -31,3 +31,4 @@ Test on a throttled profile (DevTools → Performance → CPU 4× slowdown, Netw
 
 ## Hash routes and search engines
 Routes are hash-based (`#/about`), which works on every static host without server rules and keeps the template
+portable. Search engines render JavaScript pages, but each hash route is not a separate URL for every crawler. If search
