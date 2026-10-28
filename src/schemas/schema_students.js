@@ -37,3 +37,6 @@ export const payments_schema = {
   ],
   g: () => ({
     student: lorem.pick(db.list('students')).name, item: lorem.pick(['Tuition', 'Tuition', 'Transport', 'Meals', 'Uniform']), amount: lorem.int(5, 60) * 10,
+    method: lorem.pick(['Cash', 'Mobile money', 'Bank']), date: ymd(add_d(new Date(), -lorem.int(0, 40))), status: lorem.pick(['Paid', 'Paid', 'Partial', 'Unpaid'])
+  })
+};
