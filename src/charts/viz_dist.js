@@ -31,3 +31,4 @@ export const VIZ_DIST = {
         + o.out.map(v => `<circle cx="${round1(x(i))}" cy="${round1(ax.y(v))}" r="3" style="fill:rgb(var(--surface));stroke:var(--series_1);stroke-width:1.5"/>`).join('')))
         .join('') + x_labels(f, g, x), 'Box plot'),
       table: [['Group', 'Min', 'Q1', 'Median', 'Q3', 'Max'], st.map((o, i) => [g[i], round1(o.lo), round1(o.q1), round1(o.med), round1(o.q3), round1(o.hi)])] }; } },
+  violin: { t: 'Violin plot', g: 'dist', d: 'The full shape of each distribution, with the median dot.', f(w) {
