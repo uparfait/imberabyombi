@@ -1,1 +1,2 @@
 /* overrides/15_details_view.css: rules that come after the utilities, as in the reference */
+  /* The table scrolls inside the dialog; its COLUMN NAME / VALUE header row stays in place */
