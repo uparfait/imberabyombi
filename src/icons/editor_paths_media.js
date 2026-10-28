@@ -22,3 +22,4 @@ export const EDITOR_MEDIA_PATHS = {
   border_color: 'M4 21h16M14.5 4.5l3 3L9 16H6v-3z',
   rounded_corner: 'M20 4h-6A10 10 0 0 0 4 14v6M20 12v.01M20 20h.01M12 20h.01',
   shadow: 'M4 4h12v12H4zM20 8v12H8',
+  crop: 'M6 2v14a2 2 0 0 0 2 2h14M18 22V8a2 2 0 0 0-2-2H2',
