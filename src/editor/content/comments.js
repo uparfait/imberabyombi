@@ -4,3 +4,5 @@ import { qs, qsa, uid, el, toast, state, pages_el, restore_focus, begin_op, end_
 import { can_edit, wrap_selection, previewing } from '../format/index.js';
 import { apply_panels } from '../ui/index.js';
 import { render_comments } from './comment_cards.js';
+
+export function add_comment() {
