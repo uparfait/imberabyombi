@@ -28,3 +28,4 @@ export function on_last_line(host, r) {
   const l = last_non_break(host); if (l === host || is_table(l)) return false;
   if (!l.contains(r.startContainer)) return false;
   const cr = caret_rect(r), lr = l.getBoundingClientRect();
+  return (lr.bottom - pad_bottom(l) * state.zoom) - cr.bottom < line_h(r) * 0.8;
