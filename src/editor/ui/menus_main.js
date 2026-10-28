@@ -45,3 +45,4 @@ export function edit_items() {
       const r = document.createRange(); r.selectNodeContents(h); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
     }, 'Ctrl+A'),
     cmd('Delete', 'delete', native('delete')),
+    { sep: true }, cmd('Find and replace', 'find_replace', () => open_find(), 'Ctrl+H')
