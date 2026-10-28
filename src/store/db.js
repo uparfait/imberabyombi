@@ -20,3 +20,4 @@ export const db = {
   get(k, d = null) { try { const v = ls.getItem(cfg.ns + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { ls.setItem(cfg.ns + k, JSON.stringify(v)); return true; } catch { storage_full(); return false; } },
   del(k) { ls.removeItem(cfg.ns + k); },
+  keys() { const o = []; for (let i = 0; i < ls.length; i++) { const k = ls.key(i); if (k && k.startsWith(cfg.ns)) o.push(k.slice(cfg.ns.length)); } return o; },
