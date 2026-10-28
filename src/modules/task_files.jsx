@@ -27,3 +27,4 @@ const MEDIA = {
   image: f => <img src={f.url} alt={f.name} className="mx-auto max-h-72 w-auto rounded-xl bg-transparent" />,
   video: f => <video src={f.url} controls playsInline className="max-h-72 w-full rounded-xl bg-ink"></video>,
   audio: f => <audio src={f.url} controls className="w-full"></audio>,
+  pdf: f => <iframe src={f.url} title={f.name} className="h-72 w-full rounded-xl border border-line"></iframe>,
