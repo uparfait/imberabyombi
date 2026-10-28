@@ -20,3 +20,4 @@
   .kv.tv { table-layout: fixed; }
   .kv.tv td, .kv.tv th { overflow-wrap: break-word; white-space: normal; }
   .kv.tv thead th:first-child { width: 38%; }
+  @media (min-width: 1024px) { .kv.tv thead th:first-child { width: 12rem; } }   /* the wide task view: a narrow label column */
