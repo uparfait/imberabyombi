@@ -16,3 +16,4 @@ const fresh = () => { const f = qs('#modal form'); if (f) f._init = snap(f); }; 
 const status_box = t => t.closest('[data-tv-status]');
 
 /* a date row's value against the other date: the start never comes after the due / completed time */
+function date_err(k, v, r) {
