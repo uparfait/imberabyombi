@@ -69,3 +69,4 @@ function settle(s, g) {
   if (g !== s.gen) s.dirty = true;
   if (s.pending) return;
   if (s.cancelled) { zombies--; if (cur) { put(cur.snap); run(cur); } else if (s.epoch === keeps) put(s.snap); else commit(); return; }
+  if (s.kept) { finish(s); return; }
