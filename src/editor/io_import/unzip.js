@@ -26,3 +26,4 @@ export async function unzip(buf) {
       out = new Uint8Array(await new Response(new Blob([raw]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());
     }
     else throw new Error('it uses a compression method that isn’t supported');
+    cache.set(name, out); return out;
