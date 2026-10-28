@@ -17,3 +17,4 @@
    will land, a front / behind picture moves itself (slightly transparent while it moves) */
 body.img_dragging, body.img_dragging * { cursor: grabbing !important; user-select: none; }
 .img_sel.img_dragging { outline-style: dashed; background: rgb(var(--brand) / .14); }
+.img_sel .img_move { cursor: move; }   /* the box's move area (inline: inset 0, pointer events, touch) */
