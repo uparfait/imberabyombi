@@ -46,3 +46,4 @@ function keep_attrs(c, tag) {
     else if (n === 'data-orig' && tag === 'IMG') { if (/^data:image\//i.test(v)) keep[n] = v; }
     else if (n === 'data-pos') keep[n] = Object.hasOwn(POS_OLD, v) ? POS_OLD[v] : v;
     else if (n === 'data-page' && abs_img(c, tag)) keep[n] = v;
+    else if (KEEP_ATTR.has(n)) keep[n] = v;
