@@ -18,3 +18,4 @@ export function switch_tab(id) {
   save_tab(); show(id);
 }
 /* "Tab n": n from the tab count up, the first one not taken */
+export function next_tab_name() {
