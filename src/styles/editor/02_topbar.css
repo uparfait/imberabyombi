@@ -4,3 +4,4 @@
    #topbar's transitionend. Reduced motion: it opens and closes at once. */
 #topbar {
   display: grid; grid-template-rows: 0fr; flex: none; opacity: 0; visibility: hidden; user-select: none;
+  transition: grid-template-rows .3s var(--ease), opacity .25s var(--ease), visibility 0s linear .3s;
