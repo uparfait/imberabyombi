@@ -8,3 +8,4 @@ const MENUBAR = [['file', 'File'], ['edit', 'Edit'], ['view', 'View'], ['insert'
 export const topbar = () => (
   <header id="topbar" className="no_print show">
     <div className="topbar_in"><div className="topbar_row">
+      <button type="button" className="icon_btn" data-act="back" data-tip="Back" aria-label="Back">{ic('arrow_back')}</button>
