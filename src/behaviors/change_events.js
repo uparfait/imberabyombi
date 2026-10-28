@@ -15,3 +15,4 @@ import { allow_select_change, role_land_change, perm_change, import_change } fro
 
 function on_change(e) {
   const t = e.target;
+  if (t.matches?.('[data-viz-range]')) return request(() => viz_range(t.value));   /* a get: new numbers for the range */
