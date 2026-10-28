@@ -34,3 +34,4 @@ export function i3_html(n, c = 'w-14 h-14', tone = 'brand') {
 <radialGradient id="${id}g" cx=".28" cy=".18" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".5"/>` +
   `<stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
 <rect x="7" y="9" width="50" height="46" rx="23" fill="url(#${id}f)"/>
+<rect x="7" y="9" width="50" height="46" rx="23" fill="url(#${id}g)"/>
