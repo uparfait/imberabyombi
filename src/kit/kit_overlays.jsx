@@ -14,3 +14,4 @@ const closed_pop = () => el => { if (!el) return; el.hidden = true; el._out?.can
 
 const toast_demo = (
   <div className="mt-6 max-w-sm"><p className="mb-2 text-xs font-medium uppercase tracking-wider text-muted">Notification · staff pages only</p>
+    <div className="toast toast_still" data-tone="ok"><span data-ico="">{ic('check', 'h-4 w-4')}</span>
