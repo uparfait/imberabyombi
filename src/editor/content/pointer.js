@@ -30,3 +30,4 @@ function behind_at(e) {
 }
 
 export function pages_click(e) {
+  if (take_drag_click()) return;
