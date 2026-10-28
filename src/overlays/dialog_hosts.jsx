@@ -21,3 +21,4 @@ export function Dialog_hosts() {
   return (
     <>
       {portal('modal', m && <Modal_form key={m.key} m={m} />)}
+      {portal('confirm', c && <Fragment key={c.key}>{confirm_view()}</Fragment>)}
