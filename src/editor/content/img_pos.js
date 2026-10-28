@@ -48,3 +48,4 @@ export function place_at(img, p) {
 function from_abs(img) {
   const rc = img.getBoundingClientRect(), p = drop_point(rc.left + 2, rc.top + 2, img);
   clear_abs(img);
+  if (p) place_at(img, p); else { const para = el('p'); img.replaceWith(para); para.appendChild(img); }
