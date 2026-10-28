@@ -19,3 +19,5 @@ export const docx_types = (has_header, has_footer) => `${XML}<Types xmlns="http:
 
 export const DOCX_RELS = `${XML}<Relationships xmlns="${PR}"><Relationship Id="rId1" Type="${RELNS}/officeDocument" Target="word/document.xml"/>`
   + `<Relationship Id="rId2" Type="${PR}/metadata/core-properties" Target="docProps/core.xml"/></Relationships>`;
+
+export const docx_core = (title, now) => `${XML}<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" `
