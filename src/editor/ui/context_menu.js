@@ -16,3 +16,4 @@ export function on_context_menu(e) {
   const host = editable_of(e.target); if (!host || !host.classList.contains('pg_body')) return;
   e.preventDefault();
   const s = getSelection();
+  if (s.isCollapsed || !s.rangeCount || !s.getRangeAt(0).intersectsNode(e.target)) {
