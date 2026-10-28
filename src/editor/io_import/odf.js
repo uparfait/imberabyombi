@@ -38,3 +38,4 @@ async function odf_table(cx, c) {
   const rows = [];
   for (const tr of own_rows(c)) {
     let r = '';
+    for (const tc of kids(tr, 'table-cell')) {
