@@ -16,3 +16,5 @@
 .side_gap { margin-top: 1.5rem; }
 .side_title { font: 600 1rem/1.4 var(--font_display); color: rgb(var(--fg)); }
 .side_count { font: 400 .8125rem var(--font_sans); color: rgb(var(--muted)); }
+
+/* Tabs: filter box and the list scrolling inside itself (more than 5 tabs: .many), rows with a menu button that shows on hover */
