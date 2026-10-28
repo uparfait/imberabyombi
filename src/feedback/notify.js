@@ -13,3 +13,4 @@ export function inline_note(text, tone = 'ok', title) {
 }
 /* A message for the page a form goes to next (sign in, sign out, verified, password saved): shown once that page is drawn */
 export let NEXT_MSG = null;
+export const notify_next = (text, tone = 'ok', title) => { NEXT_MSG = [text, tone, title]; };
