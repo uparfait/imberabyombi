@@ -62,3 +62,5 @@ export function style_items() {
 export function download_items() {
   return [...FORMATS.map(f => ({ label: `${f.name} (.${f.ext})`, icon: f.icon, shortcut: f.key === 'json' ? 'Ctrl+S' : '', no_preview: true, action: () => open_download_dialog(f.key) })),
     { sep: true }, { label: 'All download options…', icon: 'tune', no_preview: true, action: () => open_download_dialog() }];
+}
+/* a zoom step previews the view itself (not the document): peek returns how to go back */
