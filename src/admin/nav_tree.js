@@ -3,3 +3,4 @@
 import { lorem } from '../lib/index.js';
 
 const ICONS_2 = ['layers', 'users', 'box', 'chart'];
+const ICONS_3 = ['note', 'calendar', 'flag', 'star', 'target', 'bulb', 'compass', 'heart', 'globe', 'send', 'book', 'mail', 'pin', 'coin'];
