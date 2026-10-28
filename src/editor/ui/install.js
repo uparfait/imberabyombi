@@ -6,3 +6,4 @@ import { hide_link_bubble, add_blank_page, render_comments } from '../content/in
 import { menu_stack, open_menu, toggle_menu, close_menus, on_outside_down } from './menu_engine.js';
 import { unpeek } from './hover_preview.js';
 import { MENUS } from './menus.js';
+import { install_find } from './find.js';
