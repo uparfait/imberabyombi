@@ -70,3 +70,4 @@ export function view_items() {
     flip('Show comments', state.show_comments, () => { state.show_comments = !state.show_comments; apply_panels(); render_comments(); }),
     flip('Show menus', state.menus, () => toggle_menus(), 'Ctrl+Shift+F'),
     flip('Pageless format', state.setup.pageless, () => { begin_op(); state.setup.pageless = !state.setup.pageless; apply_setup(true); commit(); save_soon(); }),
+    { sep: true }, { label: 'Zoom', icon: 'zoom_in', sub: zoom_items },
