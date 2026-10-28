@@ -32,3 +32,4 @@ export function tv_rows(r, st) {
     <select data-status-pick="" aria-label="Status" defaultValue={r.status}>{STATUS.task.map(x => <option key={x}>{x}</option>)}</select></div>
     <div className="tv_status_more" hidden={!st.more}>{st.more ? status_more() : null}</div></div>;
   return <>
+    {sec('Details')}{row('title', 'Title', <span className="font-medium">{r.title}</span>, own)}
