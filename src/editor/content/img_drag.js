@@ -54,3 +54,4 @@ function finish() {
   const d = drag; drag = null; return d;
 }
 function on_up(ev) {
+  if (!drag || ev.pointerId !== drag.id) return;
