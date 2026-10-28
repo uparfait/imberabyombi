@@ -3,3 +3,4 @@
 import { cap, ymd, dl } from '../lib/index.js';
 import { ui } from '../store/index.js';
 import { schemas } from '../schemas/index.js';
+import { role_name } from '../auth/index.js';
