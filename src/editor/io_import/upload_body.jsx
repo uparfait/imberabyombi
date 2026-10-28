@@ -21,3 +21,4 @@ const ZONE = 'drop_zone cursor-pointer rounded-2xl border-2 border-dashed px-4 p
 const FLD = 'fld mb-1.5 mt-3 block text-sm text-muted', SEG_ON = 'bg-brand/15 text-accent', SEG_OFF = 'text-fg/80 hover:bg-fg/5';
 
 export function Upload_body({ up }) {
+  const { files, m } = use_up(up), zone = useRef(null), input = useRef(null), [over, set_over] = useState(false);
