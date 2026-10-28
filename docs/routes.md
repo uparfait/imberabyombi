@@ -5,3 +5,4 @@ The router (src/router) reads the hash: `#/path?key=value`. Hash routes work on 
 | Area    | Routes                                                                                          |
 |---------|-------------------------------------------------------------------------------------------------|
 | Public  | `#/` `#/about` `#/mission` `#/vision` `#/strategies` `#/staff` `#/partners` `#/thanks` `#/contact` |
+| Public  | `#/intro` (hero detail), `#/sitemap` (footer detail, legal), `#/ui` (design system)              |
