@@ -15,3 +15,4 @@ export const account_mails = () => ({
     <div>{mail_btn('Set a new password', 'btn_primary', '#/set-password')}</div>
     <p className="text-sm text-muted">If the button does not work, copy this link into your browser:</p>
     {copy_box('https://imberabyombi.com/reset?token=' + chars(24, 'abcdefghjkmnpqrstuvwxyz23456789'), 'Reset link')}
+    <p className="text-sm text-muted">Did not ask for this? You can ignore this email. Your password stays the same.</p></> },
