@@ -47,3 +47,6 @@ export function run_find(keep) {
       const s = loc(i, false), e = loc(i + needle.length, true), r = document.createRange();
       try { r.setStart(s.node, s.off); r.setEnd(e.node, e.off); find_state.matches.push(r); } catch { /* a match over a removed node */ }
       i += needle.length;
+    }
+  }
+  if (find_state.matches.length) find_state.idx = keep && prev >= 0 ? Math.min(prev, find_state.matches.length - 1) : 0;
