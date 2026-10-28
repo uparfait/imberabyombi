@@ -44,3 +44,4 @@ export function table_body(c) {
   }
   const rows = rows_of(c), per = v.per, n = Math.max(1, Math.ceil(rows.length / per)), fi = ui.flash ? rows.findIndex(r => r.id === ui.flash) : -1;
   if (fi > -1) ui.page[c] = Math.floor(fi / per) + 1;
+  const p = ui.page[c] = Math.min(Math.max(1, ui.page[c] || 1), n), filtered = Object.values(ui.q[c] || {}).some(Boolean);
