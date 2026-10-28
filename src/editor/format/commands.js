@@ -30,3 +30,4 @@ export function wrap_selection(cls, attrs = {}) {
   const marker = 'wrapmark' + uid(), fonts = fonts_in(host, s.getRangeAt(0));
   document.execCommand('styleWithCSS', false, false);
   document.execCommand('fontName', false, marker);
+  document.execCommand('styleWithCSS', false, true);
