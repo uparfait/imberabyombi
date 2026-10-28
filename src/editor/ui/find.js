@@ -8,3 +8,5 @@ import { set_text, listen, scaled } from './ui_dom.js';
 export const find_state = { open: false, matches: [], idx: -1 };
 export const has_hl = !!(typeof window !== 'undefined' && window.CSS && CSS.highlights && window.Highlight);
 const BLOCK = 'p,h1,h2,h3,h4,h5,h6,li,td,th,blockquote,pre';
+
+export function open_find() {
