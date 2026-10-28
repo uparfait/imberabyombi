@@ -5,3 +5,4 @@ export * from './theme.js';
 export * from './media.js';
 export * from './open_cmd.jsx';
 export { ACT, REQ } from './act.js';
+export * from './forms.js';
