@@ -20,3 +20,4 @@ export const idb_get = key => open().then(db => new Promise((resolve, reject) =>
 export const idb_set = (key, value) => open().then(db => new Promise(resolve => {
   const tx = db.transaction(STORE, 'readwrite'); tx.objectStore(STORE).put(value, key);
   tx.oncomplete = () => resolve(true); tx.onerror = tx.onabort = () => resolve(false);
+})).catch(() => false);
