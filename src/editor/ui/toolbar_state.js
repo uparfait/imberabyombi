@@ -35,3 +35,4 @@ export function refresh_toolbar() {
     if (st) label = st.label; else if (/^H[56]$/.test(blk.tagName)) label = 'Heading ' + blk.tagName[1];
   }
   set_text(refs.style_label, label);
+  set_icon(refs.align_icon, ALIGN[blk ? getComputedStyle(blk).textAlign : 'left'] || 'format_align_left');
