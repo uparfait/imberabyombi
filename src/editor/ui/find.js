@@ -56,3 +56,4 @@ export function paint_find(scroll) {
   const { matches, idx } = find_state;
   set_text(refs.find_count, matches.length ? `${idx + 1} of ${matches.length}` : '0 of 0');
   if (has_hl) {
+    CSS.highlights.set('find_all', new Highlight(...matches));
