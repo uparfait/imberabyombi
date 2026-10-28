@@ -30,3 +30,4 @@
 .tb_dd .lbl { overflow: hidden; text-overflow: ellipsis; }
 .tb_dd > svg:last-child, .tb_btn .dd_arrow { width: 1rem; height: 1rem; }
 .tb_btn .dd_arrow { margin-left: -.125rem; }
+.tb_dd.mode_btn { gap: .375rem; padding: 0 .25rem 0 .5rem; }
