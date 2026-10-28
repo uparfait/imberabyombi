@@ -25,7 +25,7 @@ lives in the browser and can be reset from Settings.
 | Area             | Highlights                                                                          |
 |------------------|-------------------------------------------------------------------------------------|
 | Public website   | Hero, about, mission, vision, strategies, staff, partners, thanks, contact, detail pages, sitemap |
-| Design system    | `#/ui`: every component, field type, picker, feedback pattern and motion in one page |
+| Design system    | `/ui`: every component, field type, picker, feedback pattern and motion in one page  |
 | Account pages    | Sign in (role picker), forgot password, 2-step code, authenticator app, set password |
 | Admin shell      | Collapsible sidebar, apps grid, Create menu, side panels (notes, my tasks, help), Ctrl K palette, right-click menu, nested navigation |
 | Modules          | Dashboard, calendar, tasks, staff, employees, attendance, students, library, events, reservations & inventory, smart parking, roles & access, email designs, charts & KPIs, settings |
