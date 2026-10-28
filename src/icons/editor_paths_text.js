@@ -16,3 +16,4 @@ export const EDITOR_TEXT_PATHS = {
   format_color_fill: 'M3 12l7-7 7 7-7 7zM10 5 7 2M3 12h14M20 15s-1.5 2-1.5 3a1.5 1.5 0 0 0 3 0c0-1-1.5-3-1.5-3z',
   format_color_reset: 'M12 3s-6 6.5-6 11a6 6 0 0 0 12 0c0-4.5-6-11-6-11zM4 4l16 16',
   ink_highlighter: 'M14 4l6 6-8 8-6-6zM6 12l-2 6 2 2 6-2M14 21h7',
+  format_align_left: 'M3 5h18M3 10h12M3 15h18M3 20h12',
