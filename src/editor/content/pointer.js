@@ -49,3 +49,5 @@ export function pages_click(e) {
   const a = e.target.closest('.pg_body a');
   if (a && (e.ctrlKey || e.metaKey || state.mode !== 'edit')) { e.preventDefault(); window.open(a.href, '_blank', 'noopener'); return; }
   const c = e.target.closest('.cmt'); if (c) { if (!state.show_comments) { state.show_comments = true; apply_panels(); render_comments(); } activate_comment(c.dataset.cid); }
+}
+/* pressing an image selects it (the caret goes next to it, as a click would) and may start a drag (img_drag.js) */
