@@ -9,3 +9,5 @@ export const subs_of = r => { const a = Array.isArray(r?.subs) ? r.subs : []; re
 export const items_of = r => subs_of(r).flatMap(g => g.items || []);
 export const files_of = r => Array.isArray(r?.files) ? r.files : [];
 export const comments_of = r => Array.isArray(r?.comments) ? r.comments : [];
+
+/* the subtasks an editor shows (form or task view), read back from its fields */
