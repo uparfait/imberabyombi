@@ -8,3 +8,5 @@ import { render_outline } from './outline.js';
 import { render_pages_panel } from './pages_panel.js';
 import { row_drag } from './row_drag.js';
 import { mi } from './ui_dom.js';
+
+let tab_q = '';   // the filter text (kept while the list redraws)
