@@ -24,3 +24,4 @@ export const tasks_schema = {
   before: async (d, row, form) => ({ ...d, subs: read_subs(form), end: d.status === 'Done' ? d.end || now_dt() : '', comments: comments_of(row),
     files: [...files_of(row), ...await read_files(form.querySelector('[data-new-files]')?.files)] }),
   g: () => {
+    const p = people(), st = lorem.pick(STATUS.task), due = `${ymd(add_d(new Date(), lorem.int(-3, 12)))}T${lorem.pick(['10:00', '12:00', '15:30', '17:00'])}`;
