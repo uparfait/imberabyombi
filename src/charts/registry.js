@@ -12,3 +12,4 @@ export function draw_chart(cv, labels, vals, anim = true) {
   let t = anim && !matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1;
   const step = () => {
     t = Math.min(1, t + .05); const e = 1 - Math.pow(1 - t, 3);
+    x.clearRect(0, 0, wd, ht); x.font = `500 ${fs}px ${getComputedStyle(document.body).fontFamily}`; x.lineWidth = 1;
