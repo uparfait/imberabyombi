@@ -9,3 +9,4 @@ import { modal, ask } from '../overlays/index.js';
 const new_role_body = () => (
   <>
     <div className="field"><label htmlFor="new_role_name">Role name</label><input id="new_role_name" name="name" required placeholder=" " /></div>
+    <div className="field"><label htmlFor="new_role_desc">Description</label><input id="new_role_desc" name="d" placeholder=" " /></div>
