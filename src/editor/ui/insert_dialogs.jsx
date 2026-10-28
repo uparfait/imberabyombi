@@ -37,3 +37,4 @@ export function image_url_dialog(target) {
   if (target && target.tagName !== 'IMG') target = null;
   modal({
     title: target ? 'Replace image by URL' : 'Insert image by URL', submit: target ? 'Replace image' : 'Insert image',
+    body: <div className="field sm:col-span-2"><label htmlFor="img_url">Image address</label>
