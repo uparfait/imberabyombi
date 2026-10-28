@@ -40,3 +40,4 @@ export async function do_export(fmt, scope, name, quality) {
     const root = export_root(scope);
     if (fmt === 'docx') await export_docx(root, name); else if (fmt === 'html') export_html(root, name); else if (fmt === 'md') export_md(root, name);
     else if (fmt === 'txt') export_txt(root, name); else if (fmt === 'rtf') await export_rtf(root, name); else if (fmt === 'xlsx') export_xlsx(root, name);
+    else if (fmt === 'csv') export_csv(root, name);
