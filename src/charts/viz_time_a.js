@@ -31,3 +31,4 @@ export const VIZ_TIME_A = {
       const top = m.map((_, i) => [x(i), ax.y(cum[i][j])]), bot = m.map((_, i) => [x(i), ax.y(j ? cum[i][j - 1] : 0)]).reverse();
       return `<path d="${path_of([...top, ...bot])}Z" style="fill:${scale_color(j)};opacity:.55"/>`
         + `<path class="series_line" d="${path_of(top)}" style="stroke:${scale_color(j)}"/>`; };
+    return { svg: svg(f, ax.g + s.map((_, j) => layer(j)).join('') + chart_base(f, ax.y(0)) + x_labels(f, m, x)
