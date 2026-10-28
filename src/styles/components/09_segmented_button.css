@@ -19,3 +19,4 @@
   .prose_x :where(h3) { font-size: 1.375rem; margin: 2rem 0 .75rem; }
   .prose_x :where(h4,h5,h6) { margin: 1.75rem 0 .5rem; }
   .prose_x :where(p, ul, ol, dl, figure, blockquote, pre, table) { margin-block: 1.25rem; }
+  .prose_x :where(blockquote) { color: rgb(var(--fg)); }
