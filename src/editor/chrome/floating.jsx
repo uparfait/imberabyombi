@@ -18,3 +18,5 @@ export const find_panel = () => (
     </div>
     <div className="find_line">
       <input type="text" id="replace_input" placeholder="Replace with" aria-label="Replace with" />
+    </div>
+    <div className="find_line find_foot">
