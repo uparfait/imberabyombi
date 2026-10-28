@@ -8,3 +8,4 @@ function on_link(e) {
   const a = e.target.closest?.('a[href]'), href = a?.getAttribute('href'), target = a?.getAttribute('target');
   if (!href || href.startsWith('#') || a.hasAttribute('download') || (target && target !== '_self')) return;
   const u = new URL(href, location.href);
+  if (u.origin !== location.origin || !in_base(u.pathname) || /\.[a-z0-9]+$/i.test(u.pathname)) return;
