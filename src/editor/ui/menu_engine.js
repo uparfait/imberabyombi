@@ -46,3 +46,4 @@ function row_of(it, level) {
   } else {
     r.addEventListener('pointerenter', e => {
       set_cur(r); clearTimeout(sub_timer); sub_timer = setTimeout(() => close_menus(level + 1), 150);
+      if (e.pointerType !== 'touch') peek_item(it);
