@@ -12,3 +12,5 @@
 .ed_menu .mi_short { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .ed_menu > hr { height: 1px; margin: .25rem .5rem; border: 0; background: rgb(var(--line)); }
 .ed_menu > .ctx_label { padding: .5rem .5rem .25rem; }
+
+/* Colour palette: a reset choice, round swatches that grow on hover, a custom colour */
