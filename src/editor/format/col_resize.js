@@ -34,3 +34,5 @@ export function start_col_drag(e) {
     document.body.classList.remove('col_resize'); col_hover = null; if (table.isConnected) end_op(body_index(editable_of(table)));
   };
   addEventListener('mousemove', move); addEventListener('mouseup', up); drag_stop = up;
+}
+/* the pointer within 4px of a cell's inner border (not the table's outer edges) */
