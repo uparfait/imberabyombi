@@ -22,3 +22,4 @@ export const VIZ_REL_A = {
     return { svg: svg(f, ax.g + x_ticks(f, xs) + pts.sort((a, b) => b.s - a.s).map(p => mark_group(gr[p.g],
       [[num(p.s), 'Size', p.g], [`${round1(p.x)}, ${round1(p.y)}`, 'x, y', null]],
       `<circle class="mark" cx="${round1(xs(p.x))}" cy="${round1(ax.y(p.y))}" r="${round1(Math.max(12, rs(p.s)))}" style="fill:transparent"/>`
+      + `<circle class="mark" cx="${round1(xs(p.x))}" cy="${round1(ax.y(p.y))}" r="${round1(rs(p.s))}"`
