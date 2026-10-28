@@ -23,3 +23,4 @@ function summary(fmt, s) {
 }
 /* a segmented choice (pill), styled like the template's .seg */
 const seg = (label, opts, cur, pick) => (
+  <div className="flex items-center gap-3"><span className="text-[13px] text-muted">{label}</span>
