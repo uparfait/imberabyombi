@@ -75,3 +75,5 @@ export function replace_one() {
   begin_op(); const h = editable_of(r.startContainer); r.deleteContents();
   const rep = refs.replace_input ? refs.replace_input.value : ''; if (rep) r.insertNode(document.createTextNode(rep));
   end_op(Math.max(0, body_index(h))); run_find(true);
+}
+export function replace_all() {
