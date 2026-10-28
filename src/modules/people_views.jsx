@@ -54,3 +54,5 @@ VIEWS.students = () => {
     : <>{stat_row([['Collected', money(pays.filter(p => p.status === 'Paid').reduce((a, p) => a + +p.amount, 0)), 'coin', 'ok'],
       ['Partial', count('Partial'), 'clock', 'warn'], ['Unpaid', count('Unpaid'), 'x', 'bad']])}
       {crud('payments', { title: 'Payments' })}</>;
+  return <>{tabs('stu', [['reg', 'Registration', db.list('students').length], ['bul', 'Bulletins'], ['pay', 'Payments']], t)}{body}</>;
+};
