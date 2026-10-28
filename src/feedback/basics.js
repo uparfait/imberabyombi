@@ -17,3 +17,4 @@ export const TICON = { ok: 'check', bad: 'x', warn: 'bell', info: 'help' };
 export const TTITLE = { ok: 'Done', bad: 'Something went wrong', warn: 'Heads up', info: 'Note' };
 
 /* Bottom-right notifications belong to staff (admin) pages. Public and account pages get the same message inline
+   instead: in the form or section that caused it (or at the top of the page). */
