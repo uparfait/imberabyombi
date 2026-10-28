@@ -58,3 +58,4 @@ export function mark_outline() {
   if (in_body) rows.forEach((row, i) => { const h = row._h; if (h === n || (h.compareDocumentPosition(n) & Node.DOCUMENT_POSITION_FOLLOWING)) at = i; });
   while (at >= 0 && rows[at].hidden) at--;
   rows.forEach((row, i) => {
+    row.classList.toggle('active', i === at);
