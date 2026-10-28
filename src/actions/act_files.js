@@ -8,3 +8,4 @@ export const FILE_ACT = {
   file_view: t => { const f = t.closest('.filebox')?._input?.files[+t.dataset.i]; if (f) view_file(f); },
   file_rm: async t => { const inp = t.closest('.filebox')?._input, tile = t.closest('.file'); if (!inp) return; const i = +t.dataset.i, dt = new DataTransfer();
     if (tile && !reduced()) { const w = tile.offsetWidth; tile.style.pointerEvents = 'none';
+      await tile.animate([{ opacity: 1, transform: 'scale(1)', width: w + 'px' }, { opacity: 0, transform: 'scale(.6)', width: '0px', marginRight: '-.5rem', paddingLeft: 0, paddingRight: 0 }], { duration: 240, easing: 'cubic-bezier(.22,.8,.22,1)', fill: 'forwards' }).finished; }
