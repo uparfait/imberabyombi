@@ -17,3 +17,8 @@ export function pub_header() {
           <a href="#/login" className="btn btn_ghost hidden sm:inline-flex">Sign in</a>
           <a href="#/contact" data-sec="contact" className="btn btn_ink hidden sm:inline-flex">Contact us</a>
           <button className="icon_btn xl:hidden" data-act="drawer" aria-label="Open menu">{ic('menu')}</button></div>
+      </nav></header>
+  );
+}
+
+/* Mobile menu (the #drawer dialog): Home + every public page, then Sign in and the design system */
