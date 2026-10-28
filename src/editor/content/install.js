@@ -18,3 +18,5 @@ export function install_content() {
   on(p, 'mouseup', pages_mouseup); on(p, 'mousedown', pages_mousedown, true); on(p, 'dblclick', pages_dblclick);
   on(p, 'paste', pages_paste);
   on(window, 'dragover', window_dragover); on(window, 'drop', drop_handler);
+  return () => { while (offs.length) { try { offs.pop()(); } catch (e) { console.error(e); } } };
+}
