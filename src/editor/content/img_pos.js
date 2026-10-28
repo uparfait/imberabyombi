@@ -75,3 +75,4 @@ export function set_img_align(img, a) {
    (a top-level one gets a paragraph of its own). Works on a detached copy (collect_html's) as well. */
 export function flatten_abs_images(root) {
   qsa('img[data-pos="front"],img[data-pos="behind"]', root).forEach(img => {
+    img.removeAttribute('data-pos'); img.removeAttribute('data-page'); clear_abs(img); if (!img.getAttribute('style')) img.removeAttribute('style');
