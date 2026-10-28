@@ -12,3 +12,4 @@ export function countdown(due, now = Date.now()) {
   return { late: end < now, text: out.join(' ') || '0m' };
 }
 export const due_text = r => { if (r.status === 'Done') return r.end ? `Done ${fmt_dt(r.end)}` : fmt_dt(r.due);
+  const c = countdown(r.due); return c.late ? `${c.text} overdue` : `${c.text} left`; };
