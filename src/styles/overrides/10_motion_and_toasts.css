@@ -4,3 +4,4 @@
    ===================================================================== */
 
 /* Runtime-state + motion rules: kept outside Tailwind layers so classes that only JS adds are always styled. */
+  .tile { @apply grid aspect-[4/3] content-center justify-items-center gap-1 rounded-2xl border border-dashed border-line bg-surface p-2 text-center transition hover:border-brand; }
