@@ -34,3 +34,4 @@ function put(img, url, width_fn, msg) {
   img_op(img, x => {
     const src = x.getAttribute('src'); if (!x.hasAttribute('data-orig') && src.length < 6e6) x.setAttribute('data-orig', src);
     x.setAttribute('src', url); x.style.height = '';
+    x.style.width = clamp(Math.round(width_fn ? width_fn(w0, h0) : w0), 16, img_max(x)) + 'px';
