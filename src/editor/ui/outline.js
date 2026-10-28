@@ -60,3 +60,5 @@ export function mark_outline() {
   rows.forEach((row, i) => {
     row.classList.toggle('active', i === at);
     if (i === at) row.setAttribute('aria-current', 'location'); else row.removeAttribute('aria-current');
+  });
+  const tab_row = rows.find(x => x === document.activeElement) || rows[at] || rows.find(x => !x.hidden);
