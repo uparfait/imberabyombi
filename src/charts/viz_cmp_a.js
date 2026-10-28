@@ -7,3 +7,4 @@ import { legend } from './viz_legend.jsx';
 export const VIZ_CMP_A = {
   bar: { t: 'Bar chart', g: 'cmp', d: 'One measure across categories. The highest bar is labelled.', f(w) {
     const c = uwords(8), v = c.map(() => rnd(20, 100) * MARGIN()), f = frame(w, 250), ax = y_axis(f, Math.max(...v)), x = band(c.length, f.l, f.w - f.r);
+    const bw = Math.min(24, x.bw * .6), top = v.indexOf(Math.max(...v));
