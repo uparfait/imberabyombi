@@ -25,3 +25,4 @@ export function notify(text, tone = 'ok', title) {
   if (!staff_page()) return inline_note(text, tone, title);
   const host = qs('#toasts'), tpl = qs('#tpl_toast'); if (!host || !tpl) return;
   const n = tpl.content.firstElementChild.cloneNode(true), life = tone === 'bad' ? 7000 : 4500;
+  n.dataset.tone = tone; n.setAttribute('role', tone === 'bad' ? 'alert' : 'status'); n.style.setProperty('--life', life + 'ms');
