@@ -22,3 +22,4 @@ export const VIZ_REL_B = {
       return mark_group(`${cols[c][a]} → ${cols[c + 1][b]}`, [[v, 'People', c ? null : a]],
         `<path class="mark mark_flow" d="M${round1(x0)} ${round1(y0)}C${round1(mx)} ${round1(y0)} ${round1(mx)} ${round1(y1)} ${round1(x1)} ${round1(y1)}"`
         + ` style="stroke:${c ? 'rgb(var(--muted))' : scale_color(a)};stroke-width:${round1(Math.max(1, h))}"/>`); }).join('');
+    return { svg: svg(f, flows + cols.map((nodes, c) => nodes.map((k, i) => { const o = pos[c][i], x = col_x(c), last = c === cols.length - 1;
