@@ -30,3 +30,4 @@ const event_card = (e, i) => <article key={e.id} className="card overflow-hidden
     </div><h3 className="mt-3 text-lg">{e.title}</h3>
     <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">{ic('pin', 'h-4 w-4')}{e.venue || '—'}</p><div className="mt-4">
       {bar_cell(e.registered, e.capacity)}</div></div></article>;
+VIEWS.events = () => {
