@@ -3,3 +3,4 @@
 import { lorem } from '../lib/index.js';
 
 export const kit_web_component = () => (
+  <>
