@@ -12,3 +12,4 @@ import { close_pops, place_tile } from '../actions/index.js';
    Menus and dialogs contain their own scroll (overscroll-behavior), and the page is frozen behind open overlays. */
 export const glide = { y: 0, last: 0, raf: 0,
   by(d) { const max = document.documentElement.scrollHeight - innerHeight;
+    if (!this.raf) this.y = this.last = scrollY;
