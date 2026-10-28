@@ -7,3 +7,4 @@ import { build_table, apply_preset, restyle_table, row_slots, cell_at_col, new_c
 
 export function insert_table(rows, cols) { const t = insert_block_at_caret(build_table(rows, cols)); if (!t) return; end_op(body_index(editable_of(t))); caret_to_start(t.rows[0].cells[0]); }
 /* { td, tr, table, host } of the cell holding the caret, or null */
+export function table_ctx() {
