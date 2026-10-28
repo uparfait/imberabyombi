@@ -36,3 +36,4 @@ export const VIZ_REL_B = {
       const k = nodes.filter((p, j) => j < i && p.g === o.g).length, a = k / 5 * Math.PI * 2; o.x = gx + Math.cos(a) * rad * .38; o.y = gy + Math.sin(a) * rad * .38; });
     return { svg: svg(f, edges.map(([a, b]) => `<line x1="${round1(nodes[a].x)}" y1="${round1(nodes[a].y)}" x2="${round1(nodes[b].x)}" y2="${round1(nodes[b].y)}"`
         + ` style="stroke:rgb(var(--muted) / .45);stroke-width:1"/>`).join('')
+      + nodes.map((o, i) => mark_group(o.k, [[deg[i], 'Links', o.g]], `<circle class="hit_area" cx="${round1(o.x)}" cy="${round1(o.y)}" r="14"/>`
