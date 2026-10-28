@@ -2,3 +2,4 @@
    lists, tables, checklists, comments and file chips. This is paper, not interface: literal colours, the same in both themes.
    The second half undoes the template's base styles for elements inside the document (headings in the display font,
    striped / nowrap table cells, dark pre, brand hr, quote bars, bullet-less lists, no shadows…), so a page looks like the
+   source and like its exports (io_export keeps its own copy of the first half). */
