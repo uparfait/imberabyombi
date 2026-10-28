@@ -34,3 +34,4 @@ export const link_bubble = () => (
     {ic('public', 'lb_globe')}<a id="lb_url" target="_blank" rel="noopener"></a>
     {small_btn('lb_copy', 'content_copy', 'Copy link')}
     {small_btn('lb_edit', 'edit', 'Edit link')}
+    {small_btn('lb_remove', 'link_off', 'Remove link')}
