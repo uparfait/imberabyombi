@@ -48,3 +48,4 @@ function install_view(offs) {
   listen(offs, window, 'resize', () => { apply_panels(); close_menus(0); });
   /* the editor's room also changes when the template's own sidebar opens or closes */
   const area = refs.workspace || refs.root;
+  if (area && typeof ResizeObserver === 'function') { const ro = new ResizeObserver(() => apply_panels()); ro.observe(area); offs.push(() => ro.disconnect()); }
