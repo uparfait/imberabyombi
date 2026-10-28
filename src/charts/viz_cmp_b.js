@@ -49,3 +49,5 @@ export const VIZ_CMP_B = {
           + ` y1="${round1(ax.y(o.b))}" y2="${round1(ax.y(o.b))}"/>` : ''); }).join('')
       + chart_base(f, ax.y(0)) + x_labels(f, bars.map(o => o.k), x), 'Waterfall chart'),
       legend: legend(['Total', 'Increase', 'Decrease'], 'rect', ['rgb(var(--fg) / .72)', 'var(--series_2)', 'var(--series_1)']),
+      table: [['Step', 'Change', 'Running total'], bars.map(o => [o.k, o.t ? '—' : (o.b >= o.a ? '+' : '−') + num(Math.abs(o.b - o.a)), num(o.b)])] }; } }
+};
