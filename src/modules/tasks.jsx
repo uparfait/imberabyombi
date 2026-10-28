@@ -21,3 +21,4 @@ VIEWS.tasks = () => {
   const preset = t === 'mine' ? { assignee: n, by: n } : t === 'delegated' ? { by: n } : {};
   return <>
     <section className="card mb-6 flex flex-wrap items-center gap-5 p-5">{i3('tasks', 'h-14 w-14')}<div className="min-w-[12rem] flex-1">
+      <h2 className="text-lg">Your progress</h2>
