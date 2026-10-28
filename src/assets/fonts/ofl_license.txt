@@ -75,3 +75,4 @@ permission.
 
 5) The Font Software, modified or unmodified, in part or in whole,
 must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
