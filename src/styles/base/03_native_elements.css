@@ -9,3 +9,4 @@
         so it wins over the reset, and still below any utility class.
      ===================================================================== */
   ::selection { background: rgb(var(--brand)); color: #fff; }
+  /* Text can be selected only where people copy: fields, table cells, details, code, copy boxes, notes, contact details */
