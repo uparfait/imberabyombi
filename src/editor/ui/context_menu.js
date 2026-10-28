@@ -18,3 +18,4 @@ export function on_context_menu(e) {
   const s = getSelection();
   if (s.isCollapsed || !s.rangeCount || !s.getRangeAt(0).intersectsNode(e.target)) {
     const p = caret_from_point(e.clientX, e.clientY); if (p && host.contains(p.node)) set_caret(p.node, p.off);
+  } else set_last(s.getRangeAt(0).cloneRange(), host);
