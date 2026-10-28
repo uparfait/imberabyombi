@@ -4,3 +4,4 @@ import { ic } from '../icons/index.js';
 import { ui } from '../store/index.js';
 
 /* ACT.group folds it in place (aria-expanded, data-closed, inert) and saves ui.closed, so later draws agree */
+export const side_section = (k, title, body) => { const open = !ui.closed[k];
