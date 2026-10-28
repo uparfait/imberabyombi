@@ -29,3 +29,4 @@ export const CONTENT_CSS = '\n' + [
   '.doc_content ul.checklist{list-style:none;padding-left:.4in}',
   '.doc_content ul.checklist>li{position:relative}',
   '.doc_content ul.checklist>li::before{content:"";position:absolute;left:-22px;top:.18em;width:12px;height:12px;border:1.5px solid #5f6368;'
+    + 'border-radius:2px;background:#fff;cursor:pointer}',
