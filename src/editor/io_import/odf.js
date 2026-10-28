@@ -23,3 +23,4 @@ async function odf_inline(cx, n) {
     else if (ln === 'a') h += `<a href="${esc_html(c.getAttribute('xlink:href') || '')}">${await odf_inline(cx, c)}</a>`;
     else if (ln === 'frame') h += await odf_img(cx, c);
     else if (ln === 'note' || ln === 'annotation') continue;
+    else if (ln === 'span') {
