@@ -9,3 +9,4 @@ export const msg_box = (tone, title, text = '') => (
 );
 /* the same box as an HTML string (title, text: trusted HTML; escape user text with esc()) */
 export const msg_box_html = (tone, title, text = '') => `<div class="msg" data-tone="${tone}" role="${tone === 'bad' ? 'alert' : 'status'}">${ic_html(TICON[tone] || 'help', 'ico h-5 w-5')}<div class="min-w-0 flex-1"><p class="font-semibold">${title}</p>${text ? `<p class="mt-0.5 text-muted">${text}</p>` : ''}</div><button type="button" class="msg_x" data-act="msg_x" aria-label="Dismiss message">${ic_html('x', 'h-4 w-4')}</button></div>`;
+export function show_msg(slot, tone, title, text, autohide = tone === 'ok') {
