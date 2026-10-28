@@ -93,3 +93,4 @@ export const live = {
     const s = cur;
     if (s && (!fn || fn === s.fn)) { keeps++; cur = null; s.kept = true; s.restores = []; if (!s.pending) finish(s); return; }
     if (s) live.cancel();
+    keeps++;
