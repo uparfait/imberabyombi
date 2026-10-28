@@ -30,3 +30,4 @@ export const EDITOR_DOC_PATHS = {
   content_copy: 'M9 9h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1zM5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1',
   content_paste: CLIP + 'h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3M9 3h6v3H9z',
   content_paste_go: CLIP + 'h5M15 4h3a2 2 0 0 1 2 2v6M9 3h6v3H9zM15 18h7M19 15l3 3-3 3',
+  select_all: 'M4 4h2M10 4h4M18 4h2v2M20 10v4M20 18v2h-2M14 20h-4M6 20H4v-2M4 14v-4M4 6V4M9 9h6v6H9z',
