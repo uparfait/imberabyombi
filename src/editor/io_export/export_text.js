@@ -21,3 +21,4 @@ export function export_txt(root, name) {
   qsa('.page_break', host).forEach(p => p.replaceWith(document.createTextNode('\n\f\n')));
   qsa('img', host).forEach(i => i.replaceWith(document.createTextNode(i.getAttribute('alt') ? `[image: ${i.getAttribute('alt')}]` : '[image]')));
   qsa('.file_chip', host).forEach(a => a.replaceWith(document.createTextNode(`[attachment: ${a.getAttribute('download') || a.textContent}]`)));
+  qsa('ul.checklist > li', host).forEach(li => li.prepend(li.getAttribute('data-checked') === 'true' ? '[x] ' : '[ ] '));
