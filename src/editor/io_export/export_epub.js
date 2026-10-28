@@ -7,3 +7,4 @@ import { CONTENT_CSS } from './content_css.js';
 import { unwrap_comments } from './project_file.js';
 import { prepare_images } from './docx_image.js';
 import { xesc } from './docx_runs.js';
+import { zip_store } from './zip_store.js';
