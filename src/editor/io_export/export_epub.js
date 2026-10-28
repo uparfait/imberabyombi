@@ -25,3 +25,5 @@ export async function export_epub(scope, name) {
       const mt = m[1].toLowerCase() === 'jpg' ? 'jpeg' : m[1].toLowerCase(), ext = mt.replace('jpeg', 'jpg').replace('svg+xml', 'svg'), fn = `images/img${++img_n}.${ext}`;
       imgs.push({ name: 'OEBPS/' + fn, data: b64bytes(m[2]), type: 'image/' + mt });
       img.setAttribute('src', fn); img.removeAttribute('data-nw'); img.removeAttribute('data-nh'); if (!img.hasAttribute('alt')) img.setAttribute('alt', '');
+    });
+    const title = tabs.length > 1 ? t.name : state.title;
