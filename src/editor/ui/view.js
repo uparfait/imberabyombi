@@ -47,3 +47,4 @@ export function toggle_menus() {
   if (refs.topbar) refs.topbar.classList.toggle('show', state.menus);
   set_icon(refs.menus_icon, state.menus ? 'expand_less' : 'expand_more');
   const b = refs.menus_toggle;
+  if (b) { const t = state.menus ? 'Hide menus (Ctrl+Shift+F)' : 'Show menus (Ctrl+Shift+F)'; b.dataset.tip = t; if (b.hasAttribute('aria-label')) b.setAttribute('aria-label', t); b.setAttribute('aria-expanded', String(state.menus)); }
