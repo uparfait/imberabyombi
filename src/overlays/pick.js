@@ -43,3 +43,4 @@ export const pick = {
   draw() {
     const a = this.a, el = this.el, t = kind_of(a); let h = '', kind = 'menu';
     if (a.dataset.list != null) h = PK.list(a);
+    else if (a.tagName === 'SELECT') h = PK.opts(a);
