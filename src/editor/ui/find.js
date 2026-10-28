@@ -31,3 +31,4 @@ export function run_find(keep) {
       const w = document.createTreeWalker(b, NodeFilter.SHOW_TEXT); let last_blk = null;
       while (w.nextNode()) {
         const t = w.currentNode, blk = t.parentElement.closest(BLOCK) || b;
+        if (last_blk && blk !== last_blk) text += '\u0000';
