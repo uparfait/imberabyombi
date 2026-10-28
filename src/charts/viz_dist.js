@@ -47,3 +47,4 @@ export const VIZ_DIST = {
     const c = uwords(8), v = c.map(() => rnd(10, 95)).sort((a, b) => b - a), f = frame(w, 250, { l: 82, b: 28 }), ax = x_axis(f, 100);
     const y = band(c.length, f.t, f.t + f.ih);
     return { svg: svg(f, ax.g + c.map((k, i) => mark_group(k, [[round1(v[i]), 'Score', 0]], hit_row(f, y, i)
+        + `<line class="grid_line" x1="${f.l}" x2="${round1(ax.x(v[i]))}" y1="${round1(y(i))}" y2="${round1(y(i))}"/>` + dot(ax.x(v[i]), y(i), 'var(--series_1)', 5))
