@@ -2,3 +2,4 @@
    Import from here: import { home, detail, PAGES, pub_header, footer } from '../site/index.js' */
 export * from './site_bits.jsx';
 export * from './pub_header.jsx';
+export * from './footer.jsx';
