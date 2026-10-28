@@ -35,3 +35,5 @@ function on_move(ev) {
   if (!d.moved) {
     if (Math.hypot(dx, dy) < 4) return;
     d.moved = true; begin_op(); img_box?.classList.add('img_dragging'); document.body.classList.add('img_dragging');
+  }
+  ev.preventDefault();
