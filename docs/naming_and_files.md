@@ -37,3 +37,5 @@ Each folder has an `index.js` that re-exports its files. Import from the folder,
 ```js
 import { fmt_d, esc } from '../lib/index.js';
 import { notify, request } from '../feedback/index.js';
+```
+Import paths always carry the extension (`.js` / `.jsx`), as Vite and browsers expect.
