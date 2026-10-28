@@ -28,3 +28,4 @@ export const options = f => (typeof f.o === 'function' ? f.o() : f.o || []).map(
 });
 export function cell(c, k, row) {
   const s = schemas[c], v = row[k], f = s.f.find(x => x.k === k);
+  if (s.r?.[k]) return s.r[k](v, row);
