@@ -35,6 +35,7 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
 Hover any formatting choice (toolbar buttons, menu items, colours, fonts, sizes, styles, alignment, spacing, list
 types, table presets, image positions) and the selection shows the result at once. Move away and it returns exactly as
 it was; click to keep it (one undo step). The selection stays selected while you apply styles one after another, and
+its tint steps aside during a preview so the real colours show.
 
 ## Keyboard
 | Keys | Action | Keys | Action |
