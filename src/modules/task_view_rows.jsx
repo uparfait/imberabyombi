@@ -38,3 +38,4 @@ export function tv_rows(r, st) {
     {row('priority', 'Priority', r.priority ? badge(r.priority) : dash(), own)}
     <tr><th scope="row">Attachments</th><td>
       {files.length ? <div className="task_files">{files.map((f, i) => file_chip(f, r.id, i, own, st.prev?.i === i))}</div> : mine ? null : dash()}
+      {mine ? <label className="task_add_file">{ic('plus', 'h-4 w-4')}<span>Add files</span>
