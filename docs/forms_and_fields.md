@@ -35,3 +35,4 @@ the format, or click to open the mini calendar (dates, weeks, months) and the 15
 - The picker lives outside React (`#picker`); when it sets a value it uses `set_native_value()` so React sees it.
 
 ## Files
+`<File_box id="photos" name="photos" multiple />` (src/files) shows chosen files as tiles above the button: × removes one,
