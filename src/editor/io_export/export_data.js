@@ -31,3 +31,5 @@ export function export_data(root) {
       const x = li.cloneNode(true); qsa('ul,ol', x).forEach(n => n.remove()); const s = x.textContent.replace(/\u200b/g, '').trim(); if (s) lines.push(s);
     });
     else { const s = b.textContent.replace(/\u200b/g, '').trim(); if (s) lines.push(s); }
+  });
+  return [{ name: 'Text', hdr: false, rows: lines.map(l => [l]) }];
