@@ -15,3 +15,4 @@ export function field(f, v) {
   if (f.t === 'subtasks') return <div key={f.k} className="sm:col-span-2"><p className="mb-2 text-sm font-medium">{f.l}</p>{sub_editor(subs_of({ subs: v }))}</div>;
   /* new attachments (kept with the record when it is saved; the ones it already has stay) */
   if (f.t === 'files') return <div key={f.k} className="field sm:col-span-2"><label htmlFor={id}>{f.l}</label><File_box id={id} multiple data-new-files="" /></div>;
+  if (f.t === 'select') ctl = <select id={id} name={f.k} required={req} defaultValue={String(val)}><option value="">Choose…</option>{options(f, v)}</select>;
