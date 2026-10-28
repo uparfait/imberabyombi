@@ -5,6 +5,7 @@ Pages have real addresses (`/about`, `/admin/tasks`), so the host must answer ev
 (a single-page fallback). The build also writes `dist/404.html`, a copy of `index.html`, for hosts that serve it for
 unknown paths. `npm run dev` and `npm run preview` already do this.
 
+## Root or folder
 ## GitHub Pages
 1. Build: `npm run build`.
 2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` and
