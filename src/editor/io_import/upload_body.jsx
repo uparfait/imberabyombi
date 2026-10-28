@@ -41,3 +41,7 @@ export function Upload_body({ up }) {
             {badge(ext_of(f.name))}<span className="min-w-0 flex-1 truncate">{f.name}</span><span className="text-muted">{fmt_size(f.size)}</span>
             <button type="button" className="icon_btn sm h-7 w-7" aria-label={`Remove ${f.name}`} onClick={() => up.set({ files: files.filter((_, k) => k !== i) })}>
               {ic('close', 'h-5 w-5')}</button>
+          </div>
+        ))}
+      </div>
+      <label className={FLD}>Where should the content go?</label>
