@@ -25,3 +25,4 @@ table settings (`tview`), the table in full screen (`table_full`), the row to fl
 Change it, then call `rerender()`. Things that must survive a reload go to `db` instead (`db.set('sideMin', true)`).
 
 ## New page vs same page
+- `render()` (a navigation): clears the page's timers, closes open dialogs, forgets which tables already loaded,
