@@ -17,3 +17,4 @@ export async function unzip(buf) {
   const cache = new Map();
   const find = n => entries.has(n) ? n : Array.from(entries.keys()).find(k => k.toLowerCase() === String(n).toLowerCase());
   async function bytes(n) {
+    const name = find(n), en = name && entries.get(name); if (!en) throw new Error('a part of the file is missing: ' + n);
