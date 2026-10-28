@@ -19,3 +19,7 @@ const export_menu = c => (
     <button className="btn btn_outline btn_sm" data-act="pop" data-pop={`pop_export_${c}`} aria-haspopup="menu">{ic('download', 'w-4 h-4')}Export{ic('chev_d', 'h-4 w-4')}</button>
     <div id={`pop_export_${c}`} className="pop right-0 w-56" role="menu" hidden>{EXPORTS.map(([f, l, i]) => (
       <button key={f} type="button" className="menu_item" role="menuitem" data-act="export" data-col={c} data-fmt={f}>{ic(i, 'h-4 w-4 text-muted')}{l}</button>))}</div>
+  </div>
+);
+
+/* a column title: sort button (with its direction) + the column search */
