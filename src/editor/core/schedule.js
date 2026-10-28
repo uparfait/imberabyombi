@@ -9,3 +9,4 @@ export let reflow_raf = 0;
 let reflow_from = null;
 export function schedule_reflow(i) {
   reflow_from = reflow_from == null ? i : Math.min(reflow_from, i);
+  if (!reflow_raf) reflow_raf = requestAnimationFrame(() => { reflow_raf = 0; const f = reflow_from; reflow_from = null; reflow(f); });
