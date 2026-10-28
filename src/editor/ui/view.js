@@ -10,3 +10,4 @@ import { set_text, set_icon, scaled } from './ui_dom.js';
 /* the print page size lives in a <style id="page_rule"> (created in <head> when the chrome has none; removed on stop) */
 let own_rule = null;
 export function page_rule_el() {
+  let r = document.getElementById('page_rule');
