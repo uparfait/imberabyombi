@@ -24,3 +24,4 @@ function page_part(key, sel) {
 }
 function insert_items() {
   return [
+    { label: 'Image', icon: 'image', sub: image_items },
