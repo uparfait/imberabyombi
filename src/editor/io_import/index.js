@@ -14,3 +14,4 @@ export * from './docx_runs.js';
 export * from './docx.js';
 export * from './odf.js';
 export * from './epub.js';
+export * from './rtf.js';
