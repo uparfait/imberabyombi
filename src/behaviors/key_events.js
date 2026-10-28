@@ -25,3 +25,4 @@ function on_keydown(e) {
   if (pick.a && k === 'Tab') pick.close();
   if (t.matches?.(PICK)) { /* open the picker from the keyboard; on a select, typing a letter opens it with the search filled in */
     const sel = t.tagName === 'SELECT';
+    if (k === 'F4' || (e.altKey && k === 'ArrowDown') || (sel && (k === 'Enter' || k === ' '))) { e.preventDefault(); pick.open(t, true); }
