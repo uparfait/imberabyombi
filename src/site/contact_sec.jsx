@@ -2,3 +2,4 @@
    Contact section (address lines, a map, the form). The section doubles as the top block of the Contact page. */
 import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
+import { lorem } from '../lib/index.js';
