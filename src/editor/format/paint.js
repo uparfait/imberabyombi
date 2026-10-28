@@ -27,3 +27,4 @@ export function apply_paint() {
   const s = getSelection(); if (!s.rangeCount || s.isCollapsed) return;
   const r = s.getRangeAt(0).cloneRange(); set_last(r, editable_of(r.startContainer));
   exec('removeFormat');
+  document.execCommand('styleWithCSS', false, true);
