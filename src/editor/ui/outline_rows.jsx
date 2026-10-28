@@ -18,3 +18,4 @@ function go(row) {
 function moved(f, kb) {
   if (!f) return;
   render_outline();
+  const r = kb && outline_rows(outline_el()).find(x => x._h === f);
