@@ -11,3 +11,4 @@ import { page_setup_dialog } from './page_setup.jsx';
 import { open_find } from './find.js';
 import { apply_setup, set_mode, toggle_menus, do_print } from './view.js';
 import { update_rulers } from './rulers.js';
+import { apply_panels } from './pages_panel.js';
