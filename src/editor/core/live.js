@@ -85,7 +85,7 @@ export const live = {
     run(cur); mark(true);
   },
   cancel() {
-    const s = cur; if (!s) return;
+    const s = cur; if (!s) return; mark(false);
     cur = null; s.cancelled = true; s.epoch = keeps; put(s.snap); extras(s);
     if (s.pending) zombies++;
   },
