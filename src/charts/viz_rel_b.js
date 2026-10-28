@@ -30,3 +30,4 @@ export const VIZ_REL_B = {
   network: { t: 'Network graph', g: 'rel', d: 'Who connects to whom; size = number of links, colour = community.', f(w) {
     const n = 14, nodes = Array.from({ length: n }, (_, i) => ({ k: cap(lorem.w(1)), g: i % 3 })), edges = [];
     for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) if ((nodes[i].g === nodes[j].g ? .42 : .07) > lorem.r()) edges.push([i, j]);
+    const f = frame(w, 270, { l: 10, r: 10, t: 10, b: 10 }), deg = nodes.map((_, i) => edges.filter(e => e.includes(i)).length), cx = f.w / 2, cy = f.t + f.ih / 2;
