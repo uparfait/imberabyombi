@@ -15,3 +15,5 @@ export const to = (path = '/') => BASE + '/' + String(path).replace(/^\/+/, '');
 export const in_base = p => !BASE || p === BASE || p.startsWith(BASE + '/');
 /* the app path of an address (location by default) without the base path: '/admin/tasks' */
 export const app_path = (u = location) => (in_base(u.pathname) ? u.pathname.slice(BASE.length) : u.pathname) || '/';
+
+const here = () => location.pathname + location.search;
