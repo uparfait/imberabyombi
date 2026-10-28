@@ -14,3 +14,5 @@ export function set_dialog(id, content) {
   DIALOGS[id] = content ? { ...content, key: ++n } : null; version++;
   const emit = () => listeners.forEach(fn => fn());
   try { flushSync(emit); } catch { emit(); }
+}
+/* body / actions / render: JSX, or a function returning JSX (called on every draw, so rerender() refreshes an open view).
