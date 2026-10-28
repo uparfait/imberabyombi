@@ -13,3 +13,4 @@ const tw = v => Math.round(v * 1440);   /* inches → twentieths of a point */
 const sect_xml = (refs, win, hin, m) => `<w:sectPr>${refs}<w:pgSz w:w="${tw(win)}" w:h="${tw(hin)}"${win > hin ? ' w:orient="landscape"' : ''}/>`
   + `<w:pgMar w:top="${tw(m.top)}" w:right="${tw(m.right)}" w:bottom="${tw(m.bottom)}" w:left="${tw(m.left)}" w:header="${tw(Math.max(.3, m.top / 2))}"`
   + ` w:footer="${tw(Math.max(.3, m.bottom / 2))}" w:gutter="0"/></w:sectPr>`;
+const num_of = n => `<w:num w:numId="${n.num_id}"><w:abstractNumId w:val="${n.abs}"/><w:lvlOverride w:ilvl="0"><w:startOverride w:val="${n.start}"/></w:lvlOverride></w:num>`;
