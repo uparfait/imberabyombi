@@ -12,3 +12,4 @@ import { ACT, FORMS, close_pops, open_cmd } from '../actions/index.js';
 function on_submit(e) {
   const f = e.target, k = f.dataset.form; if (!k || !FORMS[k]) return;
   e.preventDefault(); if (!validate(f)) return;
+  request(() => FORMS[k](form_obj(f), f), { btn: f.querySelector('button:not([type=button])') });
