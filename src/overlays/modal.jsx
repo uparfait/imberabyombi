@@ -16,3 +16,4 @@ export function modal({ title, help = '', body = '', submit, on_submit, danger, 
      else to show (a confirm) shows it as its text, in a compact layout without dividers. */
   const d = qs('#modal'); pick.close(); tip.hide(); d.classList.toggle('modal_wide', wide);
   set_dialog('modal', { title, help, body, submit, on_submit, danger, actions });
+  if (!d.open) show_dialog(d);
