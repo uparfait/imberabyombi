@@ -17,3 +17,4 @@ async function odf_img(cx, fr) {
 async function odf_inline(cx, n) {
   let h = '';
   for (const c of Array.from(n.childNodes)) {
+    if (c.nodeType === 3) { h += esc_html(c.data); continue; } if (c.nodeType !== 1) continue;
