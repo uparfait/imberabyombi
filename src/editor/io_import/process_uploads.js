@@ -50,3 +50,6 @@ export async function process_uploads(files, mode) {
       const why = /load failed/.test(err.message || '') ? 'the converter couldn’t be downloaded. Check your internet connection.'
         : (err.message || 'it couldn’t be read') + '.';
       failed.push(`${f.name}: ${why}`);
+    }
+  }
+  hide_toast();
