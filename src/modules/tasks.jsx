@@ -7,3 +7,4 @@ import { i3 } from '../icons/index.js';
 import { tabs } from '../ui/index.js';
 import { crud } from '../table/index.js';
 import { task_own, task_mine } from './task_data.js';
+import { task_view } from './task_view.jsx';
