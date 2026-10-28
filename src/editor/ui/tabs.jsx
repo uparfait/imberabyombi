@@ -36,3 +36,5 @@ export function duplicate(t) {
   save_tab();
   const c = duplicate_tab(t, unique_name(t.name + ' (copy)', state.tabs.map(x => x.name)));
   state.tabs.splice(state.tabs.indexOf(t) + 1, 0, c); show(c.id);
+}
+export function delete_tab(t) {
