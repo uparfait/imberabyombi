@@ -4,3 +4,4 @@
   .viz_card:focus-visible, .kpi:focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   .viz_data td, .viz_data th[scope=row] { white-space: nowrap; }
   .viz_data td { font-variant-numeric: tabular-nums; }
+  #viz_tip { position: fixed; z-index: 400; left: 0; top: 0; min-width: 8rem; max-width: min(16rem, calc(100vw - 1rem)); padding: .5rem .75rem; border: 1px solid rgb(var(--line));
