@@ -28,3 +28,4 @@ export const x_labels = (f, labels, x, every = Math.ceil(labels.length / Math.ma
 export function vbar(cx, w, yb, yt) {
   const x = cx - w / 2, h = Math.abs(yb - yt), r = Math.min(4, w / 2, h), up = yt <= yb, e = up ? r : -r;
   return `M${round1(x)} ${round1(yb)}V${round1(yt + e)}Q${round1(x)} ${round1(yt)} ${round1(x + r)} ${round1(yt)}`
+    + `H${round1(x + w - r)}Q${round1(x + w)} ${round1(yt)} ${round1(x + w)} ${round1(yt + e)}V${round1(yb)}Z`;
