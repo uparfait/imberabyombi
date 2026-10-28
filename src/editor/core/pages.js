@@ -7,3 +7,4 @@ import { bodies } from './dom.js';
 
 export function create_page() {
   const wrap = el('div', { class: 'page_wrap' });
+  wrap.innerHTML = '<div class="page"><div class="pg_header" data-ph="Header"></div><div class="pg_body doc_content"></div>'
