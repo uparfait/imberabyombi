@@ -43,3 +43,4 @@ and in every screenshot. Methods: `t(n)` title of n words, `s()` sentence, `p()`
 
 ## Storage keys
 `theme`, `tokens`, `session`, `lastRole`, `roles`, `notes`, `messages`, `allowSelect`, `sideMin`, `sideClosed`,
+`tview` (table settings) and `c:<collection>` for each data type. Change the prefix in `index.html` to start a fresh dataset.
