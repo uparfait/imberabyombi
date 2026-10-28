@@ -12,3 +12,4 @@
 @import './components/09_segmented_button.css';
 
 @tailwind base;
+@tailwind components;
