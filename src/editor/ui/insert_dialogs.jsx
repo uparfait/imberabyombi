@@ -30,3 +30,6 @@ export function special_chars_dialog() {
         onMouseDown={e => e.preventDefault()} onClick={() => insert_char(c)}>{c}</button>)}</div>
   });
   after_close(() => { if (pages_el && pages_el.isConnected) restore_focus(); });
+}
+
+/* target: the image to replace (null: insert a new one at the caret) */
