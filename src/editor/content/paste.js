@@ -31,3 +31,4 @@ export async function paste_from_clipboard(plain) {
     if (!plain && navigator.clipboard.read) {
       const items = await navigator.clipboard.read();
       for (const it of items) {
+        const img = it.types.find(t => t.startsWith('image/')); if (img) { insert_image(await read_as_data_url(await it.getType(img))); return; }
