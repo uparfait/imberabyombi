@@ -1,3 +1,4 @@
 /* base/02_scaling.css: base layer */
 @layer base {
   /* =====================================================================
+     2. SCALING (everything is rem-based, so the root size scales text,
