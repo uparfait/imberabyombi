@@ -6,3 +6,5 @@ import { useSyncExternalStore } from 'react';
 let busy_href = null;
 const subs = new Set();
 const subscribe = fn => { subs.add(fn); return () => subs.delete(fn); };
+
+export const set_nav_busy = href => { busy_href = href; subs.forEach(fn => fn()); };
