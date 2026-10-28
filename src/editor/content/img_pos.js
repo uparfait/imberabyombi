@@ -73,3 +73,4 @@ export function set_img_align(img, a) {
 }
 /* Exports (and any copy that leaves the editor): absolute images become in-line images at their place in the text
    (a top-level one gets a paragraph of its own). Works on a detached copy (collect_html's) as well. */
+export function flatten_abs_images(root) {
