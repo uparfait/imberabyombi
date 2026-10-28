@@ -7,3 +7,4 @@ export const FURL = new WeakMap();
 export const VIEW = { f: null, n: 0 };   /* the file open in #viewer (null once it closes); n counts the views */
 export const furl = f => FURL.get(f) || (FURL.set(f, URL.createObjectURL(f)), FURL.get(f));
 export const fmt_size = n => n < 1024 ? `${n} B` : n < 1048576 ? `${(n / 1024).toFixed(1)} KB` : `${(n / 1048576).toFixed(1)} MB`;
+export const ext_of = f => (f.name.includes('.') ? f.name.split('.').pop() : '').slice(0, 5);
