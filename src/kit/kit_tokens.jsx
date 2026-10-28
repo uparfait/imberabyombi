@@ -12,3 +12,5 @@ export const kit_tokens = () => (
       <div key={k} className="overflow-hidden rounded-2xl border border-line"><div className="h-16" style={{ background: `rgb(var(--${k}))` }}></div>
         <p className="flex flex-wrap items-center justify-between gap-1 px-3 py-2 text-xs"><code>{`--${k}`}</code>
           <button className="hex_btn" data-act="copy" data-what="Colour" data-hex={k} aria-label={`Copy the --${k} colour`}></button></p></div>
+    ))}</div>
+    <div className="mt-8 flex flex-wrap items-end gap-5">{RADII.map(r => (
