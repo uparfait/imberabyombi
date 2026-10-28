@@ -41,3 +41,4 @@ export function image_menu_items(img) {
         label: w ? w + ' px' : 'No border', checked: (parseFloat(img_now(img).style.borderWidth) || 0) === w, action: () => set_img_border(img, w) })), { sep: true },
       { label: 'Border color', icon: 'border_color', sub: () => [{ render: () => palette_el(c => set_img_border_color(img, c), 'Black') }] }] },
     { label: 'Corners', icon: 'rounded_corner', sub: () => [['Square', ''], ['Rounded', '8px'], ['Very rounded', '24px'], ['Circle or oval', '50%']].map(([l, v]) => ({
+      label: l, checked: (img_now(img).style.borderRadius || '') === v, action: () => img_op(img, x => { x.style.borderRadius = v; }) })) },
