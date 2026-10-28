@@ -6,3 +6,4 @@ import { legend } from './viz_legend.jsx';
 
 export const VIZ_CMP_B = {
   lollipop: { t: 'Lollipop chart', g: 'cmp', d: 'A lighter bar chart: a hairline stem and a dot.', f(w) {
+    const c = uwords(9), v = c.map(() => rnd(10, 100) * MARGIN()), f = frame(w, 240), ax = y_axis(f, Math.max(...v)), x = band(c.length, f.l, f.w - f.r);
