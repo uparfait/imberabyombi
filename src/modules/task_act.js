@@ -14,3 +14,4 @@ import { SUB_ACT } from './sub_act.js';
 import { TV_ACT } from './tv_act.js';
 
 let shown = 0;   /* each preview is new content (its text is read again, its media start over) */
+const fade_in = (el, ms) => { if (!reduced()) el.animate([{ opacity: 0, transform: 'translateY(-.25rem)' }, { opacity: 1, transform: 'none' }], { duration: ms }); };
