@@ -52,3 +52,4 @@ input.tab_filter, .tab_filter input {
 .outline_row:focus-visible { outline-offset: -2px; }
 .outline_fold, .outline_fold_gap { display: inline-grid; flex: none; place-items: center; width: 1.375rem; height: 1.375rem; }
 .outline_fold { border-radius: var(--pill); color: rgb(var(--muted)); transition: background-color .15s, color .15s; }
+.outline_fold:hover { background: rgb(var(--fg) / .08); color: rgb(var(--fg)); }
