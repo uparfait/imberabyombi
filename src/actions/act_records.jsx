@@ -10,3 +10,4 @@ import { modal, ask } from '../overlays/index.js';
 import { open_form } from '../table/index.js';
 
 /* a student's average per subject and term, and per term over every subject */
+const bulletin = n => { const rows = db.list('bulletins').filter(b => b.student === n);
