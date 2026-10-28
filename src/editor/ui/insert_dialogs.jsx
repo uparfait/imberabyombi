@@ -40,3 +40,4 @@ export function image_url_dialog(target) {
     body: <div className="field sm:col-span-2"><label htmlFor="img_url">Image address</label>
       <input id="img_url" name="img_url" type="url" placeholder="https://…" autoComplete="off" /></div>,
     on_submit: (v, f) => {
+      const u = String(v.img_url || '').trim();
