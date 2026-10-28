@@ -11,3 +11,4 @@ const icon_btn = (id, icon, tip, cls = 'icon_btn') => (
 
 export const workspace = () => (
   <div id="workspace">
+    <div id="vruler" className="no_print" aria-hidden="true"></div>
