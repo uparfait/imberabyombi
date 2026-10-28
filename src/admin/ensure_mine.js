@@ -1,1 +1,2 @@
 /* ensure_mine.js: gives a person who signs in some tasks of their own (assigned to them, by them, one done), once,
+   so My tasks, the calendar and the dashboard have something to show. */
