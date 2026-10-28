@@ -18,3 +18,5 @@ export const masked = (t, s) => {
   if (twelve) { const ap = /[ap](?!.*[ap])/i.exec(s)?.[0];
     if (ap && /\d\d$/.test(o.split(/[ -]/).pop().split(':')[0] || '')) { if (!o.includes(':')) o += ':'; if (mins.length < 2) o = o.replace(/:(\d?)$/, (_, m) => ':' + (m || '0') + '0'); o += /p/i.test(ap) ? ' PM' : ' AM'; } }
   return o;
+};
+export const kind_of = a => a.dataset.type || a.type;
