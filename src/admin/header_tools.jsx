@@ -9,3 +9,4 @@ import { key_hint } from '../feedback/index.js';
 import { closed_pop } from './live_slot.jsx';
 
 export function header_tools(n = '') {
+  const u = auth.user, r = auth.role(), pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
