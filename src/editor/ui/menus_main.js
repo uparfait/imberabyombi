@@ -58,3 +58,4 @@ function full_screen() {
   else toast('Full screen is not available here');
 }
 /* Editing / Viewing (View menu and the toolbar's mode button) */
+export function mode_items() {
