@@ -38,3 +38,4 @@ function row_of(it, level) {
     + (it.sub ? mi('arrow_right', 'mi_arrow -mr-1 h-4 w-4 shrink-0 text-muted') : '');
   const lab = r.querySelector('.mi_label'); lab.textContent = it.label; if (it.label_style) lab.style.cssText = it.label_style;
   r._it = it;
+  if (it.sub) {
