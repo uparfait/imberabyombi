@@ -16,3 +16,6 @@ import { db, ui, rerender, qs } from '../store/index.js';
 ui.flash = db.upsert('tasks', row);   // the new row will flash
 rerender();
 qs('#main .row_flash')?.scrollIntoView({ block: 'center' });
+```
+
+## The state that is not data: `ui`
