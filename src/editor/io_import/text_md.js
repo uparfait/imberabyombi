@@ -47,3 +47,4 @@ export function md_to_html(md) {
     }
     if (!l.trim()) { i++; continue; }
     const buf = []; while (i < lines.length && lines[i].trim() && !/^(#{1,6}\s|```|\s*>|\s*([-*+]|\d+[.)])\s+|\s*\|)/.test(lines[i])) buf.push(lines[i++]);
+    out += `<p>${buf.map(md_inline).join(' ')}</p>`;
