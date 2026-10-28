@@ -25,3 +25,4 @@ export function Live_slot({ name, first, draw, fresh = true }) {
 export const redraw_slot = name => { const fn = SLOTS[name]; if (fn) fn(); return !!fn; };
 
 /* ref={sync_ref(el => …)}: a new function on every draw, so React calls it after every draw of that element */
+export const sync_ref = fn => el => { if (el) fn(el); };
