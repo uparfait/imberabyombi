@@ -37,3 +37,4 @@ export function file_preview(f) {
   const media = MEDIA[file_kind(f)];
   return <>{media ? media(f) : <div className="grid justify-items-center gap-2 py-4 text-center">{i3('file', 'h-12 w-12')}
     <p className="text-sm text-muted">This type of file opens in the full viewer.</p></div>}
+    <div className="mt-2 flex flex-wrap items-center justify-between gap-2"><span className="min-w-0 truncate text-sm font-medium">{f.name}</span>
