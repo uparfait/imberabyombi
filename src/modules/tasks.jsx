@@ -2,3 +2,4 @@
    All for admins). A row opens the task view; whoever may change a task gets a "Change status" button on its row. */
 import { VIEWS } from './views.js';
 import { db, ui } from '../store/index.js';
+import { auth, me } from '../auth/index.js';
