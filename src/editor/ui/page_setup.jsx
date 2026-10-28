@@ -23,3 +23,4 @@ const check = (name, label, on) => (
 
 function Page_setup_body() {
   const s = state.setup, [pageless, set_pageless] = useState(!!s.pageless);
+  return <>
