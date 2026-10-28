@@ -42,3 +42,4 @@ export const cross_bands = (f, labels, x, rows) => labels.map((k, i) => `<g clas
   + `<rect class="hit_area" x="${round1(x(i) - x.bw / 2)}" y="${f.t}" width="${round1(x.bw)}" height="${f.ih}"/>`
   + `<line class="crosshair" x1="${round1(x(i))}" x2="${round1(x(i))}" y1="${f.t}" y2="${f.t + f.ih}"/></g>`).join('');
 /* a ring segment (r0 > 0) or a pie slice (r0 = 0) from angle a0 to a1, clockwise from 12 o'clock */
+export const arc = (cx, cy, r0, r1, a0, a1) => {
