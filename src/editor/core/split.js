@@ -52,3 +52,4 @@ export function push_overflow(b, next) {
   const kids = flow_kids(b), lim = b.clientHeight + 1;
   let idx = kids.findIndex(c => c.offsetTop + c.offsetHeight - pad_bottom(c) > lim);
   if (idx < 0) idx = kids.length - 1;
+  if (idx < kids.length - 1) insert_at_start(next, kids.slice(idx + 1));
