@@ -35,3 +35,4 @@ export function restore_sel(sel) {
 }
 export function mk_range(sc, so, ec, eo) {
   const r = document.createRange();
+  try { r.setStart(sc, so); r.setEnd(ec, eo); } catch { try { r.setStart(sc, so); r.collapse(true); } catch { return null; } }
