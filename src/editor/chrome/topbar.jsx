@@ -11,3 +11,4 @@ export const topbar = () => (
       <button type="button" className="icon_btn" data-act="back" data-tip="Back" aria-label="Back">{ic('arrow_back')}</button>
       <span className="doc_logo" aria-hidden="true">{i3('file', 'h-10 w-10')}</span>
       <div className="topbar_main">
+        <input id="doc_title" className="title_input" defaultValue="Untitled document" spellCheck={false} aria-label="Document title" />
