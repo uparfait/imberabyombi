@@ -4,3 +4,4 @@ import { ic } from '../icons/index.js';
 import { furl, fmt_size, ext_of, file_kind, FICON } from './file_utils.js';
 
 /* gen: the File_box's redraw count. Each redraw is a new set of tiles (as the reference's innerHTML), so the
+   fade-in plays again and a tile faded out by data-act="file_rm" never stays on screen for another file. */
