@@ -23,3 +23,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
   useEffect(() => {
     const inp = ref.current, stop = () => set_picking(false);
     const sync = () => {
+      const list = [...(inp.files || [])], quiet = !!inp._quiet; inp._quiet = false; stop();
