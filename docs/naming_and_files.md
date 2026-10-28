@@ -29,3 +29,4 @@ Class names and ids describe what a thing IS or DOES, never a business subject, 
 Subject words (staff, parking, students…) belong only in data: schema keys, module keys, labels and action names.
 
 ## 4. Every file explains itself
+Each file starts with a short comment: what it holds and how it is used. Functions that are not obvious get one line
