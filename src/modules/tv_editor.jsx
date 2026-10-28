@@ -25,3 +25,4 @@ export function tv_editor(f, r) {
 export const tv_cell = (f, r) => <><div className="tv_edit min-w-0 flex-1">{tv_editor(f, r)}</div><div className="flex shrink-0 flex-col gap-1">
   <button type="button" className="icon_btn h-9 w-9 bg-brand text-white hover:bg-brand-2 hover:text-white" data-act="tv_save" aria-label="Save">
     {ic('check', 'h-4 w-4')}</button>
+  <button type="button" className="icon_btn h-9 w-9" data-act="tv_cancel" aria-label="Cancel">{ic('x', 'h-4 w-4')}</button></div></>;
