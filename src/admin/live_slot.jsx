@@ -1,6 +1,6 @@
 /* live_slot.jsx: the parts of the admin that redraw on their own, without a page redraw (side panel, sidebar mini
    calendar, sidebar links, the nested-navigation demo), plus ref helpers that set again, after every draw, the switches
-   the actions flip in place (React only writes an attribute when its value changes; the reference drew fresh HTML). */
+   the actions flip in place (React only writes an attribute when its value changes, so a change made from code would otherwise stay). */
 import { Fragment, useLayoutEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { get_version } from '../store/index.js';
