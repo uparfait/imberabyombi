@@ -23,3 +23,4 @@ export function vision_sec(full) {
       <div className="pattern_layer" aria-hidden="true"></div>
       <div className="wrap grid gap-14 lg:grid-cols-2"><div>{sec_head('Vision', lorem.t(4), lorem.p(2))}{full ? null : more('vision')}</div>
         <ol className="grid gap-2">{[2027, 2028, 2030, 2032].map((y, i) => (
+          <li key={y} className="grid grid-cols-[1.25rem_1fr] gap-5" data-reveal="" style={{ '--d': `${i * .1}s` }}>
