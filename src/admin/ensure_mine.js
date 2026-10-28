@@ -9,3 +9,5 @@ export function ensure_mine(n) {
   const p = people().filter(x => x !== n), d = o => ymd(add_d(new Date(), o)); lorem.seed(hash_str(n));
   [{ assignee: n, by: n, due: d(2), priority: 'High', status: 'In progress' }, { assignee: n, by: p[0], due: d(4), priority: 'Medium', status: 'To do' },
    { assignee: p[1], by: n, due: d(6), priority: 'Low', status: 'To do' }, { assignee: n, by: n, due: d(-1), priority: 'Low', status: 'Done' }]
+    .forEach(x => db.upsert('tasks', { title: lorem.t(4), notes: lorem.s(), ...x }));
+}
