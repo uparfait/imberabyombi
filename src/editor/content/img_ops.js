@@ -44,3 +44,4 @@ export async function bake_image(img, render, width_fn, msg) {
   img = img_now(img); if (!img || !can_edit()) return;
   if (img.complete && img.naturalWidth) { let url = null; try { url = draw(img, img, render); } catch (e) { url = null; } if (url) return put(img, url, width_fn, msg); }
   const q = previewing(), say = (m, ms) => { if (!q) toast(m, ms); };   // core cannot hold messages that come after an await
+  let im; try { im = await load_img(img.getAttribute('src')); } catch (e) { say('This image could not be loaded'); return; }
