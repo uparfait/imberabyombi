@@ -10,3 +10,4 @@ export const SUB_ACT = {
   sub_add: t => { const list = t.previousElementSibling; sub_api(list)?.add_group(); const g = list.lastElementChild; g.querySelector('.sub_title').focus();
     if (!reduced()) g.animate([{ opacity: 0, transform: 'translateY(-.25rem)' }, { opacity: 1, transform: 'none' }], { duration: 200 }); },
   sub_add_item: t => { const list = t.previousElementSibling; sub_api(t)?.add_item(sub_key(t.closest('[data-sub-group]')));
+    const row = list.lastElementChild; row.querySelector('.sub_text').focus();
