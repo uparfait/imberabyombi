@@ -40,3 +40,4 @@ export function layout_page(wrap) {
 }
 export function set_editable(wrap) {
   const on = state.mode === 'edit' ? 'true' : 'false';
+  qsa('.pg_body,.pg_header,.pg_footer_text', wrap).forEach(e => { e.contentEditable = on; });
