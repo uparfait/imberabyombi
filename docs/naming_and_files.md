@@ -10,3 +10,4 @@ Short files are easy to review, easy to replace and load only what a page needs.
 ## 2. snake_case everywhere
 | What                         | Style                          | Example                                  |
 |------------------------------|--------------------------------|------------------------------------------|
+| Files and folders            | snake_case                     | `src/modules/task_view.jsx`, `docs/how_to_add_a_module.md` |
