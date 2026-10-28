@@ -18,3 +18,4 @@ export const avatar = (n, c = 'h-8 w-8 text-xs') =>
   <span className={`grid ${c} shrink-0 place-items-center rounded-full bg-brand/15 font-semibold text-accent`} aria-hidden="true">{initials(n)}</span>;
 /* "You" when it is the signed-in person (tasks: assigned to / by) */
 export const person_you = n => n && n === me()
+  ? <span className="flex min-w-0 items-center gap-2.5 whitespace-nowrap">{avatar(n)}<span className="font-medium">You</span></span>
