@@ -1,1 +1,2 @@
 /* editor/core/history.js: undo / redo per tab (source "history (per tab)"). A snapshot is every page body's html plus
+   the caret as a node path. Typing commits after a pause (commit_soon); operations wrap in begin_op / end_op.
