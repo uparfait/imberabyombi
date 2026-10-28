@@ -15,3 +15,4 @@ export function json_to_html(text, name) {
   if (!arr && is_obj(data)) { const k = Object.keys(data).find(k => Array.isArray(data[k]) && data[k].length && data[k].every(is_obj)); if (k) arr = data[k]; }
   if (arr && arr.length && arr.every(is_obj)) {
     const keys = []; arr.slice(0, 3000).forEach(o => Object.keys(o).forEach(k => { if (!keys.includes(k) && keys.length < 40) keys.push(k); }));
+    return { html: rows_to_table([keys, ...arr.slice(0, 3000).map(o => keys.map(k => fv(o[k]).slice(0, 500)))], true),
