@@ -67,3 +67,4 @@ function on_up(ev) {
 function cancel() {
   if (!drag) return; const d = finish(); swallow();
   if (d.abs) { d.img.style.left = d.l0; d.img.style.top = d.t0; }
+  if (d.img.isConnected) position_img_box();
