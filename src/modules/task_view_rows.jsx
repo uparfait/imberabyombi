@@ -36,3 +36,4 @@ export function tv_rows(r, st) {
     {row('notes', 'Notes', r.notes ? <p className="whitespace-pre-line">{r.notes}</p> : dash(), own)}
     {row('subs', 'Subtasks', subs.length ? subs.map(sub(r, mine)) : <span className="text-muted">No subtasks</span>, own)}
     {row('priority', 'Priority', r.priority ? badge(r.priority) : dash(), own)}
+    <tr><th scope="row">Attachments</th><td>
