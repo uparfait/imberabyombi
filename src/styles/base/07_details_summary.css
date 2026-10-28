@@ -2,3 +2,4 @@
 @layer base {
   /* Details / summary */
   :where(details) { border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); overflow: hidden; }
+  summary { list-style: none; cursor: pointer; padding: 1rem 1.25rem; font-weight: 500; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color .2s; }
