@@ -28,3 +28,4 @@ export function snapshot() {
   return { html: bs.map(b => b.innerHTML), caret };
 }
 export function commit() {
+  if (live_busy()) return;   // previews never enter the undo stack
