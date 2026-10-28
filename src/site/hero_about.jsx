@@ -12,3 +12,4 @@ export function hero_sec() {
     <section id="s_hero" className="wrap pt-3 sm:pt-6" aria-label="Introduction">{hero_shell(
       <div className="relative grid w-full items-end gap-10 px-6 pb-20 pt-14 sm:px-12 sm:pb-28 sm:pt-20 lg:grid-cols-[1.2fr_.8fr] xl:px-20">
         <div className="hero_in">
+          <h1 className="hero_title">{lorem.t(1)}<br />{lorem.t(2)}</h1>
