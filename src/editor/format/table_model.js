@@ -15,3 +15,4 @@ export const TABLE_PRESETS = [
 ];
 /* opts: { width: % of the line, preset: key } */
 export function build_table(rows, cols, opts = {}) {
+  const t = el('table', { class: 'doc_table' }); const tb = el('tbody'); t.appendChild(tb);
