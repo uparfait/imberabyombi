@@ -29,3 +29,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - `prefers-reduced-motion` turns off animations, count-ups and the typing effect; the spinner keeps a calm rotation.
 - Small orange text uses the accent colour (≥ 4.5:1 in both themes).
 - White text on the default brand orange is about 3.4:1: for strict WCAG AA on small button text, use a darker
+  `--brand` (around `184 74 12`) or switch primary buttons to `text-ink`.
