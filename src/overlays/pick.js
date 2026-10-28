@@ -85,3 +85,4 @@ export const pick = {
 /* The picker control under the pointer (selects and touch-screen date fields ignore the pointer, so the click lands on .field/.pick) */
 export const pick_at = e => { if (e.target.closest('#picker')) return null; const h = e.target.closest('.field, .pick'); if (!h) return null;
   return qsa(PICK, h).find(x => { const r = x.getBoundingClientRect(); return r.width && e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom; }) || null; };
+/* every draw starts with the picker closed */
