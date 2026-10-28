@@ -10,3 +10,4 @@ export function num_props(v, min, max, step = 1) {
 
 /* a number field: props = min, max, step, defaultValue */
 export const num_field = (id, label, props) => (
+  <div className="field"><label htmlFor={id}>{label}</label><input id={id} name={id} type="number" placeholder=" " {...props} /></div>
