@@ -2,3 +2,4 @@
   .toast.raised:not(.out) { animation: none; }   /* stacked again above a dialog that just opened: it does not slide in twice */
   /* B. Inline messages: appear instantly inside the component that caused them */
   .msg { --t: var(--info); display: flex; gap: .75rem; align-items: flex-start; padding: .8rem .9rem; font-size: .875rem; line-height: 1.45; text-align: left;
+    color: rgb(var(--fg)); background: rgb(var(--t) / .08); border: 1px solid rgb(var(--t) / .3); border-radius: var(--radius); animation: rise .35s var(--ease); }
