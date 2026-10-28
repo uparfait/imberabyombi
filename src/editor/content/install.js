@@ -3,3 +3,4 @@
 import { qs, pages_el } from '../core/index.js';
 import { install_img_box } from './img_box_events.js';
 import { install_link_bubble } from './link_bubble.js';
+import { on_image_replace } from './img_io.js';
