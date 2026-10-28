@@ -19,3 +19,4 @@ export function render_outline() {
   let ti = 0, refocus = null;
   ol.innerHTML = '';
   hs.forEach((h, i) => {
+    const lvl = level_of(h), kids = i + 1 < hs.length && level_of(hs[i + 1]) > lvl, top = is_top_head(h);
