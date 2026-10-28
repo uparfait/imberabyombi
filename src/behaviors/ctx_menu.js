@@ -31,3 +31,4 @@ function on_contextmenu(e) {
   if (t.closest?.('input, textarea, select, [contenteditable], table, pre, code, .copy_box, dialog, a[href^="mailto:"], a[href^="tel:"]') || String(getSelection())) return;
   e.preventDefault(); tip.hide(); close_pops();
   const m = qs('#ctx'); m._out?.cancel(); m._out = null; m.innerHTML = ctx_menu(); m.hidden = false;
+  m.style.left = Math.max(8, Math.min(e.clientX, innerWidth - m.offsetWidth - 8)) + 'px'; m.style.top = Math.max(8, Math.min(e.clientY, innerHeight - m.offsetHeight - 8)) + 'px';
