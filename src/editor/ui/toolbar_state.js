@@ -30,3 +30,4 @@ export function refresh_toolbar() {
   const blk = n.closest('p,h1,h2,h3,h4,h5,h6,li,td,th');
   let label = 'Normal text';
   if (blk) {
+    const plain = !blk.classList.contains('title') && !blk.classList.contains('subtitle');
