@@ -23,3 +23,4 @@ export function next_tab_name() {
   for (let n = state.tabs.length + 1; ; n++) if (!names.has('Tab ' + n)) return 'Tab ' + n;
 }
 export function add_tab() {
+  save_tab(); const t = new_tab(next_tab_name()); state.tabs.push(t); show(t.id);
