@@ -41,3 +41,4 @@ export function task_view(id) {
    view, so the position is held for that moment */
 function hold_scroll(top) {
   const b = qs('#modal form > div.overflow-y-auto'); if (!b) return;
+  const pin = () => { b.scrollTop = top; }; pin(); b.addEventListener('scroll', pin); setTimeout(() => b.removeEventListener('scroll', pin), 300);
