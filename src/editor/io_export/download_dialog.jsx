@@ -69,3 +69,4 @@ export function open_download_dialog(pre) {
   const opt = { fmt: pre || state.last_format || 'docx', scope: 'tab', quality: 2, multi: state.tabs.length > 1, busy: false };
   const go = async () => {
     if (opt.busy) return false; opt.busy = true;
+    try { const f = FORMATS.find(x => x.key === opt.fmt); await do_export(opt.fmt, f.tabs ? opt.scope : 'all', qs('#dl_name').value, opt.quality); }
