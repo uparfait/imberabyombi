@@ -14,3 +14,4 @@ export const DTF = {
   week: { ph: 'YYYY-Www', re: '\\d{4}-W(0[1-9]|[1-4]\\d|5[0-3])', mask: '####-W##', parts: ['y', 'w'] }
 };
 export const H12 = ' (AM|PM)';
+const H12_RE = '(0[1-9]|1[0-2]):[0-5]\\d';
