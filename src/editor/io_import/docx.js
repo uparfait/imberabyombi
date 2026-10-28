@@ -77,3 +77,5 @@ async function docx_blocks(cx, nodes, container) {
           if (span > 1) td.colSpan = span; if (fill && HEX6.test(fill) && fill.toUpperCase() !== 'FFFFFF') td.style.backgroundColor = '#' + fill;
           await docx_blocks(cx, kids(tc).filter(x => x.localName === 'p' || x.localName === 'tbl'), td); if (!td.firstChild) td.innerHTML = '<p><br></p>';
           row.appendChild(td);
+        }
+        tb.appendChild(row);
