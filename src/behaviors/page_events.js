@@ -35,3 +35,5 @@ export function install_page() {
   addEventListener('blur', () => { file_blur = !!qs('.filebox.picking'); });
   addEventListener('focus', () => { if (!file_blur) return; file_blur = false; setTimeout(() => qsa('.filebox.picking').forEach(b => b.classList.remove('picking')), 800); });
   document.addEventListener('error', on_error, true);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => { if (db.get('theme', 'system') === 'system') set_theme('system'); });
+}
