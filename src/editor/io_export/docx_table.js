@@ -20,3 +20,4 @@ export function table_xml(t, ctx) {
     + `<w:tblBorders>${['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map(bdr).join('')}</w:tblBorders><w:tblLayout w:type="fixed"/>`
     + `<w:tblCellMar><w:top w:w="${pad}" w:type="dxa"/><w:left w:w="${pad}" w:type="dxa"/><w:bottom w:w="${pad}" w:type="dxa"/>`
     + `<w:right w:w="${pad}" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map(w => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>`;
+  rows.forEach((r, ri) => {
