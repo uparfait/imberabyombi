@@ -40,3 +40,4 @@ export function rtf_inline(rx, node, f) {
   node.childNodes.forEach(n => {
     if (n.nodeType === 3) { const t = n.data.replace(/\u200b/g, ''); if (t) o += `{${rtf_codes(rx, f)} ${rtf_esc(t)}}`; return; }
     if (n.nodeType !== 1) return;
+    const t = n.tagName;
