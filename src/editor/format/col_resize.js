@@ -52,3 +52,4 @@ function on_down(e) {
   e.preventDefault(); e.stopPropagation(); start_col_drag(e);
 }
 export function install_format() {
+  document.addEventListener('mousemove', on_hover);
