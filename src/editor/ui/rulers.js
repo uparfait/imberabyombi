@@ -44,3 +44,4 @@ export function draw_h_ruler() {
 export function draw_v_ruler() {
   if (state.setup.pageless || !vruler || !scroller) return;
   const ws = page_wraps(), sr = scroller.getBoundingClientRect();
+  const target = ws.find(w => w.getBoundingClientRect().bottom > sr.top + scaled(40)) || ws[0]; if (!target) return;
