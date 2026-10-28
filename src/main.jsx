@@ -9,3 +9,4 @@ import App from './app.jsx';
 import { boot } from './router/index.js';
 
 createRoot(document.getElementById('app')).render(<App />);
+boot();
