@@ -41,3 +41,4 @@
 .doc_content h6{color:#666666}
 .doc_content :is(p,li,td,th){text-wrap:wrap}
 .doc_content ul{list-style-type:disc}
+.doc_content ul ul{list-style-type:circle}
