@@ -37,3 +37,4 @@ export function render(keep = false, anim = false) {
   for (const fn of BEFORE) { try { fn(keep); } catch (e) { console.error(e); } }
   if (!keep) { loaded.clear(); ui.table_full = null; }
   render_flags.keep = keep; render_flags.anim = anim; version++;
+  const emit = () => listeners.forEach(fn => fn());
