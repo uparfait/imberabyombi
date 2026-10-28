@@ -8,3 +8,4 @@ import { field } from '../fields/index.js';
 import { modal } from '../overlays/index.js';
 
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset) */
+export function open_form(c, id, preset = {}) {
