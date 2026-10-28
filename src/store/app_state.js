@@ -12,3 +12,4 @@ export const ui = {
   side: false, side_min: db.get('sideMin', false), panel: null, slide: null, nav: [], viz_range: 30, tview: {}, table_full: null
 };
 export const cur = {};              /* per collection: the filter the current page applies (crud) */
+export const loaded = new Set();    /* collections fetched during this page visit (the first view shows the loading spinner) */
