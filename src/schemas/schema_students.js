@@ -8,3 +8,4 @@ export const students_schema = {
   l: 'student', n: 18, cols: ['name', 'regno', 'grade', 'guardian', 'phone', 'status'], sec: { Student: 'name,regno,grade,dob,status', Guardian: 'guardian,phone' },
   f: [
     field_spec('name', 'Full name', 'text', 0, 1),
+    field_spec('regno', 'Registration no.', 'text', 0, 1, { def: () => `LRM-${new Date().getFullYear()}-${Math.floor(Math.random() * 900 + 100)}` }),
