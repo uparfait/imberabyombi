@@ -8,3 +8,4 @@
   }
   /* outside the editor: keep only the editor's ancestors, as plain blocks */
   body:has(#editor) *:not(#editor, #editor *, :has(#editor)) { display: none !important; }
+  body:has(#editor) :has(#editor) {
