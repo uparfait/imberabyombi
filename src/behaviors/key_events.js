@@ -6,3 +6,4 @@ import { auth } from '../auth/index.js';
 import { request, validate } from '../feedback/index.js';
 import { form_obj } from '../fields/index.js';
 import { pick, PICK, tip } from '../overlays/index.js';
+import { table_full } from '../table/index.js';
