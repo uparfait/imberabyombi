@@ -50,3 +50,4 @@
 .doc_content tr,.doc_content tbody tr:hover{background-color:transparent;transition:none}
 .doc_content pre,.dark .doc_content pre{color:inherit;border:0;border-radius:0;overflow:visible;line-height:inherit;white-space:pre-wrap}
 .doc_content hr{height:0;background:none}
+.doc_content blockquote{border:0;background:none;border-radius:0;font-size:inherit}
