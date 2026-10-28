@@ -22,6 +22,7 @@
 }
 #editor .tb_back { display: none; }   /* Back in the toolbar only while the title bar is folded away */
 #editor #topbar:not(.show) + #toolbar .tb_back { display: inline-grid; }
+#editor.no_ruler { --ed_hr: 0rem; }   /* rulers hidden (the default): the side panels start right under the toolbar */
 
 /* Workspace: rulers + the scrolling pages, on a tinted surface so the white pages stand out (flat: a line, no shadow) */
 #workspace { position: relative; display: flex; flex: 1; min-height: 0; container: ed_ws / inline-size; border-top: 1px solid rgb(var(--line)); background: rgb(var(--surface_2)); }
