@@ -20,3 +20,4 @@ export function Dialog_hosts() {
   const { modal: m, confirm: c, drawer: dr, viewer: v } = DIALOGS;
   return (
     <>
+      {portal('modal', m && <Modal_form key={m.key} m={m} />)}
