@@ -15,3 +15,5 @@ export function open_find() {
   const sel = last_range && !last_range.collapsed ? last_range.toString() : '';
   if (sel && sel.length < 80) i.value = sel;
   i.focus(); i.select(); run_find();
+}
+export function close_find() {
