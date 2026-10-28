@@ -30,3 +30,4 @@ export function Upload_body({ up }) {
   return (
     <div className="sm:col-span-2">
       <div ref={zone} className={`${ZONE} ${over ? 'over border-brand bg-brand/10' : 'border-line'}`} tabIndex={0} role="button" aria-label="Choose files to upload"
+        onClick={() => input.current.click()} onKeyDown={key} onDragEnter={drag_in} onDragOver={drag_in} onDragLeave={drag_out} onDrop={drag_out}>
