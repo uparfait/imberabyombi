@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client';
 import './styles/index.css';
 import './styles/overrides.css';
 import App from './app.jsx';
+import { boot } from './router/index.js';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
