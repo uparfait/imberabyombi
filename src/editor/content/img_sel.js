@@ -9,3 +9,4 @@ import { qs, qsa, el, state, is_abs, offset_in, bodies, body_index, path_to, nod
 export const IMG_POSITIONS = [['inline', 'In line', 'short_text'], ['wrap_left', 'Wrap text left', 'format_image_left'], ['wrap_right', 'Wrap text right', 'format_image_right'],
   ['break', 'Break text', 'view_agenda'], ['front', 'In front of text', 'flip_to_front'], ['behind', 'Behind text', 'flip_to_back']];
 const BAR = [...IMG_POSITIONS.map(([v, l, i]) => ['pos:' + v, l, i]), null,
+  ['align:left', 'Align left', 'format_align_left'], ['align:center', 'Align center', 'format_align_center'], ['align:right', 'Align right', 'format_align_right'], null,
