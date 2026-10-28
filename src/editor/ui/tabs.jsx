@@ -39,3 +39,4 @@ export function duplicate(t) {
 }
 export function delete_tab(t) {
   if (state.tabs.length < 2) return;
+  confirm_dialog(<>Delete <strong>{t.name}</strong> and its content?</>, 'Delete tab', true).then(ok => {
