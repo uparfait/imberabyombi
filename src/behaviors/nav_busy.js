@@ -4,3 +4,4 @@
 import { useSyncExternalStore } from 'react';
 
 let busy_href = null;
+const subs = new Set();
