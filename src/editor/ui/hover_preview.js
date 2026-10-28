@@ -42,3 +42,4 @@ export function pick(key, fn, done) {
 /* hover (mouse / pen) previews, leaving restores, a click keeps: for elements that live as long as their menu */
 export function peek_on(node, key, fn, done) {
   node.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') peek(key, fn); });
+  node.addEventListener('pointerleave', () => unpeek_key(key));
