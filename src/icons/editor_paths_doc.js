@@ -47,3 +47,4 @@ export const EDITOR_DOC_PATHS = {
   arrow_drop_down: 'm8 10 4 4 4-4',
   arrow_right: 'm10 8 4 4-4 4',
   chevron_right: 'm9 18 6-6-6-6',
+  expand_more: 'm6 9 6 6 6-6',
