@@ -11,3 +11,5 @@ VIEWS.emails = () => emails_view();   /* Email designs (built with the other pag
 VIEWS.charts = () => viz.view();      /* Charts & KPIs (section 11b) */
 /* Nested navigation: a system of its own pages inside the dashboard (#/admin/nav/…), see nav_drops() */
 VIEWS.nav = () => <div id="nav_demo">{nav_drops(true)}</div>;
+
+export const forbidden = () => <div className="card">{empty('You do not have access to this area', 'Ask a Super Admin to give your role view access to this module.',
