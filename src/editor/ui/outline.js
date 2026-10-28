@@ -47,3 +47,4 @@ export function toggle_fold(row, open) {
   const t = active_tab(), f = open === undefined ? !row.classList.contains('folded') : !open;
   row.classList.toggle('folded', f); row.setAttribute('aria-expanded', String(!f));
   if (t) { const s = new Set(t.folds || []); if (f) s.add(row._key); else s.delete(row._key); t.folds = Array.from(s); save_soon(); }
+  apply_folds(row.parentElement); mark_outline();
