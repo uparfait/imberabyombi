@@ -40,6 +40,7 @@
 .pg_header:focus, .pg_footer_text:focus { outline: 1px solid rgb(var(--brand)); outline-offset: 0; border-radius: 2px; }
 .pg_header:empty:focus::before, .pg_footer_text:empty:focus::before { content: attr(data-ph); color: #9aa0a6; }
 /* selected text keeps its own colour under a light tint. currentColor, not inherit: a selection inherits from the parent's
+   selection (the template's white text), not from the text itself */
 :is(.pg_body, .pg_header, .pg_footer_text)::selection, :is(.pg_body, .pg_header, .pg_footer_text) ::selection {
   background: rgb(var(--brand) / .28); color: inherit;
 }
