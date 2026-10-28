@@ -11,3 +11,5 @@ Two small objects stand between the screens and the data, so a real API replaces
 | `db.upsert(collection, row)`| insert or update, returns the id       | `POST` / `PATCH`, then update cache |
 | `db.remove(collection, id)` | delete                                 | `DELETE`, then update cache         |
 | `db.get(key)` / `db.set(key, value)` | settings (theme, tokens, session…) | can stay in the browser          |
+
+A simple pattern: keep `db` as a cache. Fetch a collection when a page opens, put the rows in the cache, call
