@@ -45,3 +45,4 @@ export const VIZ_TIME_A = {
     const rows = uwords(5).map(k => { let a = rnd(20, 60); return [k, Array.from({ length: 20 }, () => (a = Math.max(5, a + rnd(-6, 6)) * 1))]; });
     const f = frame(w, 220, { l: 0, r: 0, t: 0, b: 0 }), y = band(rows.length, 0, f.h), lw = Math.min(110, w * .3), sx = linear(0, 19, lw, f.w - 64);
     return { svg: svg(f, rows.map(([k, v], i) => {
+      const sy = linear(Math.min(...v), Math.max(...v), y(i) + 12, y(i) - 12), pts = v.map((n, j) => [sx(j), sy(n)]), last = v.at(-1), chg = last - v[0];
