@@ -15,3 +15,4 @@ export const VIZ_CMP_A = {
       table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
   hbar: { t: 'Horizontal bar chart', g: 'cmp', d: 'Ranked categories with long names. Values sit at the bar tips.', f(w) {
     const c = uwords(6), v = c.map(() => rnd(15, 100) * MARGIN()).sort((a, b) => b - a), f = frame(w, 230, { l: 92, r: 52, b: 10 });
+    const x = linear(0, Math.max(...v), f.l, f.l + f.iw), y = band(c.length, f.t, f.t + f.ih), bh = Math.min(20, y.bw * .62);
