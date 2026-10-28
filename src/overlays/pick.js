@@ -54,7 +54,7 @@ export const pick = {
     const p = this.el, a = this.a; if (!a || p.hidden) return;
     const r = a.getBoundingClientRect(), vw = innerWidth, vh = innerHeight; if (r.bottom < 0 || r.top > vh) return this.close();
     const below = vh - r.bottom - 12, above = r.top - 12;
-    p.style.minWidth = p.dataset.kind === 'menu' ? Math.max(r.width, 192) + 'px' : '';
+    p.style.minWidth = p.dataset.kind === 'menu' ? `max(${r.width}px, 12rem)` : '';   /* at least 12rem: grows with the page scale */
     p.style.maxHeight = Math.max(below, above, 160) + 'px';
     const w = p.offsetWidth, h = p.offsetHeight;
     p.style.left = Math.max(8, Math.min(r.left, vw - w - 8)) + 'px';
