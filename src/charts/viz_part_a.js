@@ -17,3 +17,4 @@ export const VIZ_PART_A = {
     return { svg: svg(f, slices(v, tot, cx, cy, 0, rad, (val, i) => [s[i], [[pct(val / tot), num(val) + ' of ' + num(tot), i]]]), 'Pie chart'),
       legend: legend(s.map((k, i) => `${k} ${Math.round(v[i] / tot * 100)}%`)), table: [['Part', 'Value', 'Share'], s.map((k, i) => [k, num(v[i]), pct(v[i] / tot)])] }; } },
   donut: { t: 'Donut chart', g: 'part', d: 'Parts of a whole with the total in the middle.', f(w) {
+    const s = SER.slice(0, 5), v = s.map(() => rnd(10, 40) * MARGIN()), tot = v.reduce((a, b) => a + b), f = frame(w, 240, { l: 0, r: 0, t: 10, b: 10 });
