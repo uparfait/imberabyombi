@@ -4,3 +4,5 @@
    keep(key): the preview shown for key becomes final (one undo step: live.keep(fn), which also just runs fn when core
    dropped the preview meanwhile, e.g. an undo). pick(key, fn, done) is the click on a choice. */
 import { live } from '../core/index.js';
+
+let cur = null;   // { key, undo, keep } of the preview on screen
