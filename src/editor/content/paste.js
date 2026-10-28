@@ -9,3 +9,4 @@ import { insert_image, insert_image_file } from './img_io.js';
 import { adopt_abs } from './img_pos.js';
 
 /* the next paste is text only (set by the ui's Ctrl+Shift+V before the browser pastes) */
+export let paste_plain = false;
