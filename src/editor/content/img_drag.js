@@ -37,3 +37,4 @@ function on_move(ev) {
     d.moved = true; begin_op(); img_box?.classList.add('img_dragging'); document.body.classList.add('img_dragging');
   }
   ev.preventDefault();
+  if (d.abs) {
