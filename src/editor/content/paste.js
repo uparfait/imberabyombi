@@ -14,3 +14,4 @@ export function set_paste_plain(v) { paste_plain = !!v; }
 
 export function pages_paste(e) {
   const host = editable_of(e.target); if (!host) return;
+  e.preventDefault(); if (state.mode !== 'edit') return;
