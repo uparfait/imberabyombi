@@ -34,3 +34,4 @@ export function task_view(id) {
   modal({ title: r.title, wide: true, help: own ? HELP.own : mine ? HELP.mine : HELP.view, body: () => <Task_view id={id} />,
     actions: own ? <><button type="button" className="btn btn_danger order-first mr-auto" data-act="del" data-col="tasks" data-id={r.id}>
       {ic('trash', 'h-4 w-4')}Delete</button>
+      <button type="button" className="btn btn_outline" data-act="edit" data-col="tasks" data-id={r.id}>{ic('edit', 'h-4 w-4')}Edit all</button></> : null });
