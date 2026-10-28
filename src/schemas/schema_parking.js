@@ -16,3 +16,5 @@ export const parking_schema = {
   before: (d, row, f) => {
     if (d.status === 'Parked' && db.list('parking').some(p => p.status === 'Parked' && p.slot === d.slot && p.id !== row.id)) {
       show_err(f.elements.slot, `Slot ${d.slot} is taken. Choose a free slot.`); f.elements.slot.focus(); return false;
+    }
+    return d;
