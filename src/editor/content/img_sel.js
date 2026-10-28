@@ -46,3 +46,4 @@ export function select_image(img) {
   img_sel = img; img.setAttribute('draggable', 'false'); remember(img); position_img_box();
 }
 export function hide_img_sel() { if (frozen) return; img_sel = null; if (!img_box) return; img_box.style.display = 'none'; if (img_box.parentNode) img_box.remove(); }
+export function img_align_of(img) {
