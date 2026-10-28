@@ -34,3 +34,6 @@
 .pg_header:empty:focus::before, .pg_footer_text:empty:focus::before { content: attr(data-ph); color: #9aa0a6; }
 :is(.pg_body, .pg_header, .pg_footer_text)::selection, :is(.pg_body, .pg_header, .pg_footer_text) ::selection {
   background: rgb(var(--brand) / .28); color: inherit;
+}
+
+/* Pageless: one long sheet with side lines; page breaks show as a dashed line */
