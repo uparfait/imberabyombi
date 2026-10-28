@@ -3,3 +3,4 @@
    import { exec, tbl_op, install_format } from '../format/index.js' */
 export * from './guards.js';
 export * from './commands.js';
+export * from './blocks.js';
