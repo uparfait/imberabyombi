@@ -14,3 +14,4 @@ export function init_player(w) {
   w.querySelector('source')?.addEventListener('error', () => media_err(w));
 }
 /* <details> dropdowns (FAQ, help, legal) open and close with a smooth height animation */
+export function toggle_details(d, e) {
