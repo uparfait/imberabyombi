@@ -13,3 +13,4 @@ export const VIZ_CMP_B = {
       + chart_base(f, ax.y(0)) + x_labels(f, c, x), 'Lollipop chart'), table: [['Category', 'Value'], c.map((k, i) => [k, num(v[i])])] }; } },
   dumbbell: { t: 'Dumbbell chart', g: 'cmp', d: 'Before and after for each row: the line is the change.', f(w) {
     const c = uwords(6), a = c.map(() => rnd(20, 70) * MARGIN()), b = a.map(x => x + rnd(-15, 35) * MARGIN()), f = frame(w, 230, { l: 82, b: 28 });
+    const ax = x_axis(f, Math.max(...a, ...b)), y = band(c.length, f.t, f.t + f.ih);
