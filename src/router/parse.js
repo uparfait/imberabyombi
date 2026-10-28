@@ -4,3 +4,6 @@ import { qs } from '../lib/index.js';
 export function parse() {
   const raw = location.hash.replace(/^#/, '') || '/', [p, query = ''] = raw.split('?');
   return { path: p.replace(/\/+$/, '') || '/', q: Object.fromEntries(new URLSearchParams(query)) };
+}
+
+export function set_meta(title, desc) {
