@@ -63,3 +63,4 @@ function show_value(text, x, y) {
   if (!value_el.isConnected) document.body.appendChild(value_el);
   value_el.textContent = text; tip.hide();
   const e = scaled(4), w = value_el.offsetWidth;
+  value_el.style.left = clamp(x - w / 2, e, innerWidth - w - e) + 'px'; value_el.style.top = (y + scaled(18)) + 'px';
