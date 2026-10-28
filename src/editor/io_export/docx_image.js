@@ -23,3 +23,4 @@ export function image_xml(img, ctx) {
   const pos = ({ wrap_left: 'left', wrap_right: 'right' })[img.getAttribute('data-pos')], doc_pr = `<wp:docPr id="${n}" name="Picture ${n}" descr="${alt}"/>`;
   if (pos === 'left' || pos === 'right') {
     return `<w:r><w:drawing><wp:anchor distT="0" distB="91440" distL="${pos === 'right' ? 182880 : 0}" distR="${pos === 'left' ? 182880 : 0}" simplePos="0" `
+      + `relativeHeight="${251658240 + n}" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"><wp:simplePos x="0" y="0"/>`
