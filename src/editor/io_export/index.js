@@ -9,3 +9,4 @@ export * from './rtf_parts.js';
 export * from './export_rtf.js';
 export * from './epub_parts.js';
 export * from './export_epub.js';
+export * from './export_data.js';
