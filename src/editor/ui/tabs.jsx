@@ -33,3 +33,4 @@ export function step_tab(d) {
   switch_tab(state.tabs[(i + d + n) % n].id);
 }
 export function duplicate(t) {
+  save_tab();
