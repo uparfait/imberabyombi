@@ -25,3 +25,4 @@ export function zip_store(files, mime) {
     ch.setUint16(30, 0, true); ch.setUint16(32, 0, true); ch.setUint16(34, 0, true); ch.setUint16(36, 0, true); ch.setUint32(38, 0, true);
     ch.setUint32(42, offset, true);
     central.push(new Uint8Array(ch.buffer), name);
+    offset += 30 + name.length + data.length;
