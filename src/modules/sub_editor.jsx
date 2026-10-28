@@ -21,3 +21,5 @@ export const sub_group = (g = {}) => <div key={g.key} ref={tie(g.key)} className
     <button type="button" className="icon_btn h-9 w-9 shrink-0" data-act="sub_rm_group" aria-label="Remove subtask">{ic('trash', 'h-4 w-4')}</button></div>
   <div className="grid gap-1.5 pl-2" data-sub-items="">{(g.items || []).map(x => sub_item(x))}</div>
   <button type="button" className="btn btn_ghost btn_sm justify-self-start" data-act="sub_add_item">{ic('plus', 'h-4 w-4')}Add an item</button></div>;
+
+/* groups: the subtasks it opens with. Changes are drawn at once (flushSync), so a handler can focus the new row right after */
