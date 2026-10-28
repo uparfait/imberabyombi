@@ -30,3 +30,4 @@ export async function unzip(buf) {
   }
   return {
     names: () => Array.from(entries.keys()), has: n => !!find(n), bytes,
+    text: async n => new TextDecoder().decode(await bytes(n)),
