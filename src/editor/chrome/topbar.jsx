@@ -4,3 +4,5 @@
 import { ic, i3 } from '../../icons/index.js';
 
 const MENUBAR = [['file', 'File'], ['edit', 'Edit'], ['view', 'View'], ['insert', 'Insert'], ['format', 'Format'], ['tools', 'Tools'], ['help', 'Help']];
+
+export const topbar = () => (
