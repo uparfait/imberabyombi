@@ -19,3 +19,4 @@ qs('#main .row_flash')?.scrollIntoView({ block: 'center' });
 ```
 
 ## The state that is not data: `ui`
+`ui` holds what the screen shows: column searches (`q`), table pages (`page`), sorting (`sort`), open tabs (`tab`),
