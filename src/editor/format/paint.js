@@ -12,3 +12,4 @@ export function start_paint() {
   if (!last_range) { toast('Click into text first'); return; }
   const n = el_of(last_range.startContainer), cs = getComputedStyle(n);
   let bg = null, e = n;
+  while (e && !e.classList.contains('pg_body')) { const b = getComputedStyle(e).backgroundColor; if (to_hex(b)) { bg = b; break; } e = e.parentElement; }
