@@ -58,3 +58,4 @@ VIEWS.parking = () => {
         </> : <span className="text-[11px] text-muted">Free</span>}</button>; };
   return <>{stat_row([['Capacity', N, 'car', 'ink'], ['Occupied', parked.length, 'car'], ['Free', N - parked.length, 'check', 'ok'],
       ['Revenue today', money(rev), 'coin', 'info']])}
+    <section className="card mb-6 p-5"><header className="mb-5 flex flex-wrap items-center gap-3"><h2 className="text-lg">Live slots</h2>
