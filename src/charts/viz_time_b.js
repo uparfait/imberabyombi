@@ -6,3 +6,4 @@ import { frame, svg, band, x_labels, dot, mark_group, hit_col, hit_row, row_labe
 import { legend, scale_legend } from './viz_legend.jsx';
 
 export const VIZ_TIME_B = {
+  candle: { t: 'Candlestick chart', g: 'time', d: 'Open, high, low and close per day. Hollow = up, filled = down.', f(w) {
