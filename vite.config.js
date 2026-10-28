@@ -10,6 +10,7 @@ import { defineConfig } from 'vite';
    (GitHub Pages, many static hosts) open the app on every route, deep links and reloads included */
 const spa_fallback = () => {
   let out = 'dist';
+  return {
 export default defineConfig({
   base: './',
   plugins: [react()],
