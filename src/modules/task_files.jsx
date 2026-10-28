@@ -33,3 +33,4 @@ const MEDIA = {
 
 /* an attachment shown inside the task view (images, video, audio, PDF, text); others are opened in the full viewer */
 export function file_preview(f) {
+  if (!f.url) return <p className="text-sm text-muted">{`${f.name} is larger than 1 MB, so this demo kept only its name.`}</p>;
