@@ -26,3 +26,4 @@
   /* Multiple select: the native <select multiple> stays in the form (invisible, on top of the box); .multi_value is the visible field */
   .field > select[multiple] { position: absolute; left: 0; top: 0; width: 100%; height: calc(3.25rem + 2px); opacity: 0; }
   .multi_value { display: block; min-height: calc(3.25rem + 2px); padding: .875rem 2.75rem .875rem 1rem; line-height: 1.5rem; border: 1px solid rgb(var(--muted) / .6); border-radius: calc(var(--radius) * .75);
+    background: rgb(var(--field, var(--surface))) no-repeat right .6rem center / 1.5rem url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23908880'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); transition: border-color var(--speed); }
