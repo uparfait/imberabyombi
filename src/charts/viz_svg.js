@@ -54,3 +54,4 @@ export const arc = (cx, cy, r0, r1, a0, a1) => {
 export const mark_group = (title, rows, body) => `<g class="mark_group" ${tip_text(title, rows)}>${body}</g>`;
 export const hit_col = (f, x, i) => `<rect class="hit_area" x="${round1(x(i) - x.bw / 2)}" y="${f.t}" width="${round1(x.bw)}" height="${f.ih}"/>`;
 export const hit_row = (f, y, i) => `<rect class="hit_area" x="0" y="${round1(y(i) - y.bw / 2)}" width="${f.w}" height="${round1(y.bw)}"/>`;
+export const row_label = (f, y, i, k) => `<text x="${f.l - 8}" y="${round1(y(i) + 4)}" text-anchor="end">${esc(fit(k, f.l - 12))}</text>`;
