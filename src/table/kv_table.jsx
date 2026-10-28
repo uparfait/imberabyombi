@@ -4,3 +4,5 @@ import { Fragment } from 'react';
 import { dash } from '../ui/index.js';
 
 const blank = v => v === '' || v == null || v === false;
+
+export const kv_table = groups => (
