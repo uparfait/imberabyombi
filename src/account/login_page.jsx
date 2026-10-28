@@ -12,3 +12,5 @@ const role_part = (inv, rs, sel) => inv ? <>
   <input type="hidden" name="role" defaultValue={inv.id} /></>
   : <div className="field"><label htmlFor="signin_role">Sign in as</label><select id="signin_role" name="role" required defaultValue={sel}>
     {rs.map(x => <option key={x.id} value={x.id}>{x.name}</option>)}</select></div>;
+
+export function login_page(r) {
