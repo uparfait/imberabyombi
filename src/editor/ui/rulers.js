@@ -67,3 +67,4 @@ function show_value(text, x, y) {
 }
 const hide_value = () => { if (value_el) value_el.remove(); };
 export function ruler_drag(e) {
+  const g = e.target.closest('[data-handle]'); if (!g || state.mode !== 'edit') return;
