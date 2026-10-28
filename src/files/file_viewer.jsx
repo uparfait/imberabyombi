@@ -23,3 +23,4 @@ function Text_view({ f }) {
 function File_view({ f, n }) {
   const k = file_kind(f), u = furl(f), [failed, set_failed] = useState(false), err = () => set_failed(true);
   useEffect(() => () => { if (VIEW.n === n) VIEW.f = null; }, [n]);   /* the viewer closed (not another file opened) */
+  let body;   /* media the browser cannot play shows Open + Download instead */
