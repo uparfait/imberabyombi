@@ -9,3 +9,4 @@ export const staff_schema = {
   f: [
     field_spec('name', 'Full name', 'text', 0, 1), field_spec('email', 'Email', 'email', 0, 1),
     field_spec('role', 'Role', 'select', () => roles().map(r => [r.id, r.name]), 1), field_spec('phone', 'Phone', 'tel'),
+    field_spec('status', 'Status', 'select', STATUS.staff)
