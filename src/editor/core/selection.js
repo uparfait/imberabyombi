@@ -42,3 +42,4 @@ export function set_caret(node, off) {
   const host = editable_of(node); if (host && document.activeElement !== host) host.focus({ preventScroll: true });
   const r = document.createRange(); r.setStart(node, Math.min(off, node_len(node))); r.collapse(true);
   const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+  last_range = r.cloneRange(); last_host = host;
