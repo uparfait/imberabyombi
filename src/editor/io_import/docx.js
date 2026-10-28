@@ -5,3 +5,4 @@ import { load_script, LIB } from '../core/index.js';
 import { unzip } from './unzip.js';
 import { parse_xml, by_tag, kids, rels_of } from './xml_helpers.js';
 import { docx_val as val, docx_runs } from './docx_runs.js';
+import { PB } from './pptx.js';
