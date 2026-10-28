@@ -16,3 +16,4 @@ function on_submit(e) {
 }
 
 function on_keydown(e) {
+  const t = e.target, k = e.key; tip.hide();
