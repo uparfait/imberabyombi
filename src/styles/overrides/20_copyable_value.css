@@ -16,3 +16,4 @@
   .hex_btn:hover { background: rgb(var(--brand) / .12); color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); }
 
   /* Account pages: 6-box code, password rules, authenticator QR */
+  .otp { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .5rem; }
