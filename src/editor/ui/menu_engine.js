@@ -89,3 +89,4 @@ export function menu_rows(m) { return Array.from(m.querySelectorAll(':scope > .e
 function set_cur(r, m = r.parentElement) { if (!m) return; if (m._cur && m._cur !== r) m._cur.classList.remove('cur'); m._cur = r; r.classList.add('cur'); }
 /* move the keyboard to row r of menu m (previewing it when asked) */
 export function focus_row(m, r, preview = true) {
+  if (!r) return;
