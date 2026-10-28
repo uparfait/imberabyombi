@@ -41,3 +41,4 @@ export const PK = {
     const s = add_d(f, -f.getDay()), td = ymd();
     return `<div class="pk_cal">${PK.head(f.toLocaleDateString(undefined, { month: 'long', year: 'numeric' }), 'month')}<div class="pk_grid">`
       + `${'SMTWTFS'.split('').map(d => `<span aria-hidden="true">${d}</span>`).join('')}${Array.from({ length: 42 }, (_, i) => { const x = add_d(s, i), k = ymd(x);
+      return `<button type="button" class="pk_day ${x.getMonth() !== f.getMonth() ? 'out' : ''} ${k === td ? 'today' : ''}" aria-selected="${wk ? iso_week(x) === sel : k === sel}"`
