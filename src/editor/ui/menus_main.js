@@ -50,3 +50,4 @@ export function edit_items() {
 }
 function theme_items() {
   const cur = db.get('theme', 'system');
+  return [['light', 'Light'], ['dark', 'Dark'], ['system', 'Same as device']].map(([v, l]) => flip(l, cur === v, () => set_theme(v)));
