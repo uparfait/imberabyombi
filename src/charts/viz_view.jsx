@@ -12,3 +12,4 @@ import { kpis } from './kpi_view.jsx';
 export const VIZ_OUT = {};
 const DRAWN = new Map();   /* chart key -> its card's setter: the card shows VIZ_OUT[key] (SVG string + legend JSX) */
 export function viz_draw_all(force = true) {
+  qsa('.viz_card[data-chart]').forEach(card => {
