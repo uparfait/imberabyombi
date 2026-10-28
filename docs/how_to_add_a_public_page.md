@@ -12,3 +12,4 @@ export const services_sec = (page = 0) => (
   <section className="section" {...spy_attrs('services', page)}>
     <div className="wrap">
       {sec_head('Services', 'What we offer', 'One sentence that explains the services.')}
+      <div className="mt-10 grid gap-6 md:grid-cols-3">
