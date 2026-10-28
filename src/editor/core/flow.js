@@ -5,3 +5,5 @@
    Absolute images (front / behind text) are skipped everywhere: never wrapped, measured or moved. */
 import { BLOCK_RE, TEXT_BLOCK_RE } from './constants.js';
 import { is_break, is_list, is_table, is_abs, is_empty_block, same_kind, pad_bottom, top_in, first_flow, last_flow, prev_flow } from './dom.js';
+
+export let cur_sel = null;            // selection being preserved during reflow
