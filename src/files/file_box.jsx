@@ -30,3 +30,4 @@ export function File_box({ id, name, multiple, accept, onClick, onChange, ...res
     /* File dialog closed without choosing: stop the waiting spinner (cancel event, plus a focus fallback for older browsers) */
     let blurred = false;
     const on_blur = () => { blurred = picking_now.current; };
+    const on_focus = () => { if (!blurred) return; blurred = false; setTimeout(stop, 800); };
