@@ -25,3 +25,4 @@ import { person } from '../ui/index.js';
 export const buses_schema = {
   l: 'bus',                                // the singular label ("Add a bus")
   n: 6,                                    // how many demo rows to seed
+  cols: ['plate', 'driver', 'route'],      // table columns, in order
