@@ -14,6 +14,7 @@ const spa_fallback = () => {
     name: 'spa_fallback',
     apply: 'build',
     configResolved(c) { out = resolve(c.root, c.build.outDir); },
+    closeBundle() { copyFileSync(resolve(out, 'index.html'), resolve(out, '404.html')); }
 export default defineConfig({
   base: './',
   plugins: [react()],
