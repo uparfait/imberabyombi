@@ -59,3 +59,4 @@ function put(sn) {
 function extras(s) { const r = s.restores.splice(0); r.reverse().forEach(f => { try { f(); } catch (e) { console.error(e); } }); }
 function run(s) {
   const g = ++s.gen; let r; s.msgs = [];
+  try { r = quiet(s.fn, s.msgs); } catch (e) { console.error(e); }
