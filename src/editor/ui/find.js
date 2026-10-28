@@ -62,3 +62,6 @@ export function paint_find(scroll) {
   if (scroll && idx >= 0 && scroller) {
     const r = matches[idx].getBoundingClientRect(), sc = scroller.getBoundingClientRect();
     const m = scaled(40); if (r.top < sc.top + m || r.bottom > sc.bottom - m) scroller.scrollTop += r.top - sc.top - sc.height / 3;
+  }
+}
+/* d: +1 / -1; select: also make the match the remembered selection (always without CSS highlights) */
