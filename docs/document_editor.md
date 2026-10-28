@@ -13,3 +13,4 @@ page you came from. Code: [`src/editor/`](../src/editor/) (loaded only when the 
   paint format.
 - **Lists**: bulleted and numbered (many marker styles) and checklists.
 - **Tables**: grid picker, presets, rows and columns, merge and split, borders, cell colour, column resizing by drag.
+- **Images**: insert from file or URL, resize, crop, rotate, flip, adjust, alt text, border, and positions:
