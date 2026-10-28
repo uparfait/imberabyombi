@@ -11,3 +11,5 @@
 .doc_content img:is([data-pos="front"], [data-pos="behind"]) { position: absolute; display: block; float: none; margin: 0; }
 .doc_content img[data-pos="front"] { z-index: 3; }
 .doc_content img[data-pos="behind"] { z-index: -1; }
+
+/* Dragging a picture (content/img_drag.js puts .img_dragging on the selection box and on <body>): a grabbing hand
