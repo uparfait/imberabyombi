@@ -4,3 +4,4 @@ import { me } from '../auth/index.js';
 
 export const TONE = { Active: 'ok', Present: 'ok', Approved: 'ok', Paid: 'ok', Returned: 'ok', Done: 'ok', Open: 'ok', Exited: 'ok', Found: 'ok', Donated: 'info', Graduated: 'info',
   'On leave': 'warn', Late: 'warn', Pending: 'warn', Partial: 'warn', Medium: 'warn', Damaged: 'warn', Suspended: 'warn',
+  Planned: 'info', 'In progress': 'info', Rented: 'info', Low: 'info', Excused: 'info', Parked: 'info',
