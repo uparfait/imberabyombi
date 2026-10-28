@@ -18,3 +18,4 @@
   * { scrollbar-width: thin; scrollbar-color: rgb(var(--brand) / .45) transparent; }
   ::-webkit-scrollbar { width: .6rem; height: .6rem; }
   ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgb(var(--brand) / .4); border-radius: var(--pill); border: .15rem solid transparent; background-clip: padding-box; }
