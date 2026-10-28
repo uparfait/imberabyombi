@@ -75,3 +75,4 @@ function settle(s, g) {
 
 export const live = {
   get active() { return !!cur; },
+  busy: live_busy,
