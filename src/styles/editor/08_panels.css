@@ -32,3 +32,4 @@
 .c_quote { margin: .375rem 0; padding-left: .5rem; border-left: .1875rem solid #fbbc04; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-style: italic; color: rgb(var(--muted)); }
 .c_avatar {
   display: inline-grid; flex: none; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: var(--pill);
+  background: rgb(var(--brand)); color: #fff; font-size: .8125rem; font-weight: 600;
