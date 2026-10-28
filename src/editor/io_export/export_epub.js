@@ -33,3 +33,4 @@ export async function export_epub(scope, name) {
     nav.push(`<li><a href="ch${i + 1}.xhtml">${xesc(title)}</a></li>`);
   }
   const id = (crypto.randomUUID && crypto.randomUUID()) || uid() + uid(), now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
+  const out = [
