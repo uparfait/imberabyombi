@@ -36,3 +36,4 @@
   ::-webkit-calendar-picker-indicator { display: none; }
   /* Every select (single and multiple) opens the searchable picker instead of the native popup */
   select { pointer-events: none; }
+  :is(.field, .pick):has(> select) { cursor: pointer; }
