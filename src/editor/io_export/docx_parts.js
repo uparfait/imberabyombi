@@ -30,3 +30,5 @@ export const docx_numbering = (abs_xml, num_xml) =>
 
 export const docx_doc_rels = rels => `${XML}<Relationships xmlns="${PR}"><Relationship Id="rId1" Type="${RELNS}/styles" Target="styles.xml"/>`
   + `<Relationship Id="rId2" Type="${RELNS}/numbering" Target="numbering.xml"/>${rels.join('')}</Relationships>`;
+
+/* plain: { content_tw, content_px } only, so header / footer links stay text and images are left out */
