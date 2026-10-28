@@ -28,3 +28,4 @@ export function apply_paint() {
   const r = s.getRangeAt(0).cloneRange(); set_last(r, editable_of(r.startContainer));
   exec('removeFormat');
   document.execCommand('styleWithCSS', false, true);
+  if (p.bold) document.execCommand('bold'); if (p.italic) document.execCommand('italic');
