@@ -10,3 +10,5 @@ export const TONE = { Active: 'ok', Present: 'ok', Approved: 'ok', Paid: 'ok', R
 const TONE_CLASS = { ok: 'bg-ok/15 text-ok', warn: 'bg-warn/15 text-warn', info: 'bg-info/15 text-info', bad: 'bg-bad/15 text-bad', muted: 'bg-muted/15 text-muted' };
 /* an empty value in a cell */
 export const dash = () => <span className="text-muted">—</span>;
+
+export const badge = v => v ? <span className={`chip ${TONE_CLASS[TONE[v] || 'muted']}`}>{v}</span> : dash();
