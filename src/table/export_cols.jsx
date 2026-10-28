@@ -10,3 +10,4 @@ export function Export_cols({ c }) {
   const any = cols.some(k => on[k]);
   /* the Download button is the dialog's footer submit (drawn by modal()): its disabled flag follows the ticks */
   useLayoutEffect(() => { const b = ref.current?.form?.querySelector('footer button:not([type=button])'); if (b) b.disabled = !any; }, [any]);
+  const tick = k => e => { const v = e.target.checked; set_on(o => ({ ...o, [k]: v })); };
