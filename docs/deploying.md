@@ -20,7 +20,7 @@ Asset paths and every link in the app follow it.
 2. Publish `dist/` to a `gh-pages` branch, or use a GitHub Actions workflow that runs `npm ci && npm run build` (with
    `BASE_PATH` set) and uploads `dist/` with `actions/upload-pages-artifact` and `actions/deploy-pages`.
 3. In the repository settings, set Pages to deploy from that branch or from GitHub Actions.
-The site is then served at `https://<user>.github.io/<repository>/`.
+GitHub Pages serves `404.html` for every unknown path, so deep links and reloads open the app on the right page.
 
 ## Netlify, Vercel, Cloudflare Pages
 - Build command: `npm run build`
