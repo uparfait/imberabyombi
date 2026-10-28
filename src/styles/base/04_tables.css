@@ -24,3 +24,4 @@
   :where(input:not([type=checkbox],[type=radio],[type=range],[type=color],[type=file]), select, textarea):hover,
   :where(.field, .pick):hover > :where(select, input:not([type=checkbox],[type=radio],[type=range],[type=color],[type=file])) { border-color: rgb(var(--fg) / .8); }
   :where(input, select, textarea):is(:focus, [data-open]) { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
+  :where(input, select, textarea, button):disabled { opacity: .5; cursor: not-allowed; }
