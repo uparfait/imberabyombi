@@ -4,3 +4,4 @@
 .img_preview {
   display: flex; align-items: center; justify-content: center; height: 13.75rem; margin-bottom: .5rem; overflow: hidden;
   border: 1px solid rgb(var(--line)); border-radius: var(--radius);
+  background: repeating-conic-gradient(rgb(var(--surface_3)) 0 25%, rgb(var(--surface)) 0 50%) 0 0 / 1rem 1rem;
