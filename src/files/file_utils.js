@@ -5,3 +5,4 @@
       a tile opens #viewer: images, video, audio, PDF and any text/code file show inside; other types get Open + Download. */
 export const FURL = new WeakMap();
 export const VIEW = { f: null, n: 0 };   /* the file open in #viewer (null once it closes); n counts the views */
+export const furl = f => FURL.get(f) || (FURL.set(f, URL.createObjectURL(f)), FURL.get(f));
