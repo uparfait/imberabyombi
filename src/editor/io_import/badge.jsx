@@ -12,3 +12,4 @@ const PILL ='rounded-full px-1.5 py-1 text-[10.5px] font-semibold leading-none t
 export const fmt_chip = (label, color, key = label) => <span key={key} className={`fmt_chip ${PILL}`} style={{ background: color }}>{label}</span>;
 /* cls: 'fmt_badge' (page) or 'fmt_chip' (pill), as badge_html's cls */
 export function badge(ext, cls = 'fmt_badge') {
+  const [l, c] = file_badge(ext);
