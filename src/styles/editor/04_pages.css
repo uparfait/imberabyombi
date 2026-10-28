@@ -7,3 +7,4 @@
 #hruler > svg { margin-top: calc((var(--ed_hr) - 24px) / 2); }
 #vruler > svg { margin-left: calc((var(--ed_vr) - 20px) / 2); }
 .r_bg { fill: rgb(var(--surface)); }
+.r_margin { fill: rgb(var(--surface_3)); }
