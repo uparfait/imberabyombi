@@ -28,3 +28,4 @@ export async function download_image(img) {
 export async function insert_image(src) {
   if (!can_edit()) return;
   const im = new Image(); im.src = src;
+  try { await im.decode(); } catch (e) { toast('That image could not be loaded'); return; }
