@@ -18,3 +18,5 @@ export function palette_el(on_pick, none_label) {
       const b = el('button', { type: 'button', class: 'pal_sw h-[1.125rem] w-[1.125rem] shrink-0 rounded-full border border-line', style: `background:${c}`, 'aria-label': c, 'data-tip': c });
       peek_on(b, 'pal' + c, () => on_pick(c), done);
       r.appendChild(b);
+    });
+    box.appendChild(r);
