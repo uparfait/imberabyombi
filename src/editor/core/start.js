@@ -50,6 +50,7 @@ export function editor_start(root) {
   let stopped = false, t0 = 0;
   load_doc().then(found => {
     if (stopped) return;
+    set_ready(true); root?.classList.remove('ed_loading'); if (found) render_all();
 
   function stop() {
     if (stopped) return;
