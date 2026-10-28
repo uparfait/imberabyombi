@@ -30,3 +30,4 @@ export async function pdf_to_html(buf) {
       if (!l.text.trim()) { flush(); prev_y = l.y; continue; }
       const tag = l.h > med * 1.6 ? 'h1' : l.h > med * 1.25 ? 'h2' : 'p';
       const gap = prev_y == null ? 0 : prev_y - l.y;
+      if (!para || para.tag !== tag || tag !== 'p' || gap > Math.max(l.h, prev_h) * 1.75) { flush(); para = { tag, text: l.text }; }
