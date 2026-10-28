@@ -2,3 +2,4 @@
    editor (after the template's styles: at equal specificity these rules win). Colours come from the template tokens, so
    the .dark theme applies by itself; the document pages stay paper (white, black text) in both themes. */
 @import '../styles/editor/01_layout.css';
+@import '../styles/editor/02_topbar.css';
