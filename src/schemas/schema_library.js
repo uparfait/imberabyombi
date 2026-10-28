@@ -23,3 +23,4 @@ export const rentals_schema = {
   f: [
     field_spec('book', 'Book', 'list', () => db.list('books').map(b => b.title), 1), field_spec('borrower', 'Borrower', 'list', () => names('students', 'staff'), 1),
     field_spec('out', 'Rented on', 'date', 0, 1, { def: () => ymd() }), field_spec('due', 'Due date', 'date', 0, 1, { def: () => ymd(add_d(new Date(), 14)) }),
+    field_spec('returned', 'Returned on', 'date'), field_spec('status', 'Status', 'select', STATUS.rent, 1, { def: () => 'Rented' })
