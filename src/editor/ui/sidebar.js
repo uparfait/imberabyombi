@@ -85,3 +85,5 @@ function apply_filter(list) {
 function keep_in_view(box) {
   const a = box.querySelector('.tab_row.active'); if (!a || box.scrollHeight <= box.clientHeight) return;
   const b = box.getBoundingClientRect(), r = a.getBoundingClientRect();
+  if (r.top < b.top) box.scrollTop -= b.top - r.top; else if (r.bottom > b.bottom) box.scrollTop += r.bottom - b.bottom;
+}
