@@ -43,3 +43,4 @@
   100% { stroke-dasharray: 90, 200; stroke-dashoffset: -125; }
 }
 @keyframes flash { from { background-color: rgb(var(--brand) / .2); } }
+@keyframes pop_out { to { opacity: 0; transform: translateY(.6rem) scale(.98); } }
