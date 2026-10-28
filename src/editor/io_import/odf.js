@@ -39,3 +39,4 @@ async function odf_table(cx, c) {
   for (const tr of own_rows(c)) {
     let r = '';
     for (const tc of kids(tr, 'table-cell')) {
+      const sub = []; await odf_blocks(cx, tc, sub); const span = +(tc.getAttribute('table:number-columns-spanned') || 1);
