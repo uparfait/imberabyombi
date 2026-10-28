@@ -46,3 +46,4 @@ export function draw_v_ruler() {
   const ws = page_wraps(), sr = scroller.getBoundingClientRect();
   const target = ws.find(w => w.getBoundingClientRect().bottom > sr.top + scaled(40)) || ws[0]; if (!target) return;
   const { hin } = dims(), z = state.zoom, m = state.setup.margins, H = hin * DPI * z;
+  const top = target.getBoundingClientRect().top - vruler.getBoundingClientRect().top;
