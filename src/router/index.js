@@ -2,3 +2,4 @@
    the work after each draw (run_after_render, enhance), navigation and boot.
    Import from here: import { navigate, set_meta, enhance } from '../router/index.js' */
 export * from './parse.js';
+export * from './pages.jsx';
