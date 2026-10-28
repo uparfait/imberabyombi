@@ -54,3 +54,4 @@ function rtf_blocks(rx, c) {
 export async function export_rtf(root, name) {
   await prepare_images(root);
   const { win, hin } = dims(), m = state.setup.margins;
+  const rx = { colors: [], fonts: ['Arial'], content_tw: Math.round((win - m.left - m.right) * 1440) };
