@@ -40,3 +40,4 @@ export const dot = (x, y, c, r = 4.5) => `<circle class="mark mark_dot" cx="${ro
 /* x-position hit bands with a crosshair (line + area charts): one tooltip lists every series at that x */
 export const cross_bands = (f, labels, x, rows) => labels.map((k, i) => `<g class="x_band" ${tip_text(k, rows(i))}>`
   + `<rect class="hit_area" x="${round1(x(i) - x.bw / 2)}" y="${f.t}" width="${round1(x.bw)}" height="${f.ih}"/>`
+  + `<line class="crosshair" x1="${round1(x(i))}" x2="${round1(x(i))}" y1="${f.t}" y2="${f.t + f.ih}"/></g>`).join('');
