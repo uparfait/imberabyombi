@@ -49,3 +49,4 @@ export function drop_handler(e) {
   if (host && host.classList.contains('pg_body')) set_caret(pos.node, pos.off);
   const imgs = files.filter(f => f.type.startsWith('image/')), rest = files.filter(f => !f.type.startsWith('image/'));
   imgs.forEach(insert_image_file);
+  if (rest.length) open_upload_dialog(rest, 'insert');
