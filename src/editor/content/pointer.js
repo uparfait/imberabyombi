@@ -26,3 +26,4 @@ function behind_at(e) {
   const page = e.target.closest('.page'), x = e.clientX, y = e.clientY; if (!page) return null;
   const im = qsa('.pg_body img[data-pos="behind"]', page).reverse()
     .find(i => { const r = i.getBoundingClientRect(); return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; });
+  return im && !on_text(x, y) ? im : null;
