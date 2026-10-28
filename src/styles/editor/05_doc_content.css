@@ -61,3 +61,4 @@
 .doc_content mark{background:#ffff00;color:inherit;padding:0;border-radius:0}
 .doc_content img{display:inline;background:none}
 .doc_content abbr[title]{text-decoration:underline dotted;cursor:inherit}
+/* the image menu's "Drop shadow" (an inline box-shadow) is part of the document: shown despite the flat interface rule */
