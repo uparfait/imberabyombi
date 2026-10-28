@@ -57,3 +57,4 @@ export function on_key(e) {
     let closed = false;
     hide_link_bubble();
     if (find_state.open) { close_find(); closed = true; }
+    if (paint) { stop_paint(); closed = true; }
