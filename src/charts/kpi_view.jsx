@@ -4,3 +4,5 @@ import { ui } from '../store/index.js';
 import { kpi_data } from './kpi_data.js';
 import { kpi_cards_a } from './kpi_cards_a.jsx';
 import { kpi_cards_b } from './kpi_cards_b.jsx';
+
+export function kpis() {
