@@ -17,3 +17,4 @@ export const notify_next = (text, tone = 'ok', title) => { NEXT_MSG = [text, ton
 export function show_next() {
   if (!NEXT_MSG) return; const [text, tone, title] = NEXT_MSG; NEXT_MSG = null;
   if (staff_page()) return notify(text, tone, title);
+  const slot = qs('#main [data-msg-slot]'); slot ? show_msg(slot, tone, esc(title || TTITLE[tone] || TTITLE.ok), esc(text)) : inline_note(text, tone, title);
