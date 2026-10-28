@@ -3,7 +3,7 @@
 import { ic } from '../icons/index.js';
 
 /* Imberabyombi search pill: filled, no outline until focused.
-   attrs: props spread on the <input> (was an attribute string), e.g. { 'data-filter': '.filter_card', autoFocus: true } */
+   attrs: props spread on the <input>, e.g. { 'data-filter': '.filter_card', autoFocus: true } */
 export const search_box = (attrs, ph = 'Search', c = '') => (
   <label className={c ? `relative block ${c}` : 'relative block'}>
     <span className="sr-only">{ph}</span>
