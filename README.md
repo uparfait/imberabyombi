@@ -5,6 +5,7 @@ It gives you a public website, account pages, a role-based admin with fourteen w
 charts and KPIs, all sharing one set of design tokens. Start any new website from it and change only what is yours.
 
 - **Looks the same on every device**: phones show the 360px design scaled to the screen, large screens show the
+  desktop design scaled up, and nothing ever scrolls sideways.
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
