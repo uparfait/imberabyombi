@@ -10,3 +10,4 @@ import { Export_cols } from './export_cols.jsx';
 import { EXPORTS, date_key, export_file } from './export_file.js';
 
 /* fixed-choice columns (status, priority…) become filters; All keeps every value */
+const filters = (c, sels) => (
