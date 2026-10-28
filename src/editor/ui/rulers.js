@@ -4,3 +4,4 @@
    (inches × 96 × zoom); the ruler's own thickness, ticks and handles scale with the root font (u()). */
 import { state, hruler, vruler, scroller, DPI, dims, page_wraps, layout_page, clamp, begin_op, commit, save_soon } from '../core/index.js';
 import { tip } from '../../overlays/index.js';
+import { apply_setup } from './view.js';
