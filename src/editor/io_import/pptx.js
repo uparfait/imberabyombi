@@ -35,3 +35,4 @@ async function slide_html(z, sp, i) {
       else body += paras.map(p => `<p>${p}</p>`).join('');
     } else if (s.localName === 'pic') {
       const blip = by_tag(s, 'blip')[0], rel = blip && rels[blip.getAttribute('r:embed')];
+      if (rel && !rel.external) {
