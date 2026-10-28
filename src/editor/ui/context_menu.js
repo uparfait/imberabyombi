@@ -23,3 +23,4 @@ export function on_context_menu(e) {
   open_menu(null, [
     cmd('Cut', 'content_cut', native('cut'), 'Ctrl+X'), cmd('Copy', 'content_copy', native('copy'), 'Ctrl+C'),
     cmd('Paste', 'content_paste', () => paste_from_clipboard(false), 'Ctrl+V'),
+    cmd('Paste without formatting', 'content_paste_go', () => paste_from_clipboard(true), 'Ctrl+Shift+V'),
