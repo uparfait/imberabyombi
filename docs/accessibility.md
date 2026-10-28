@@ -26,3 +26,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - Field errors are written under the field, linked with `aria-invalid`, and the first bad field gets focus.
 
 ## Motion and colour
+- `prefers-reduced-motion` turns off animations, count-ups and the typing effect; the spinner keeps a calm rotation.
