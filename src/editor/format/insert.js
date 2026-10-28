@@ -16,3 +16,4 @@ export function insert_block_at_caret(node) {
   let block = top_block(host, r.startContainer);
   if (block && block.nodeType !== 1) block = null;
   if (!block) host.appendChild(node);
+  else if (is_empty_block(block)) block.before(node);
