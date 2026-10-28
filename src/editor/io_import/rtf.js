@@ -4,3 +4,4 @@ import { esc_html } from '../core/index.js';
 import { PB } from './pptx.js';
 
 const CP = '€\u0081‚ƒ„…†‡ˆ‰Š‹Œ\u008dŽ\u008f\u0090‘’“”•–—˜™š›œ\u009džŸ', cp = n => n >= 0x80 && n <= 0x9f ? CP[n - 0x80] : String.fromCharCode(n);
+const DEST = new Set(('fonttbl colortbl stylesheet info pict header footer headerl headerr headerf footerl footerr footerf listtable listoverridetable ' +
