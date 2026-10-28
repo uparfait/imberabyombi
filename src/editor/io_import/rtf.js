@@ -34,3 +34,4 @@ export function rtf_to_html(rtf) {
       i += 1 + m[0].length; const w = m[1], arg = m[2] != null ? parseInt(m[2]) : null;
       if (DEST.has(w)) { st.skip = 1; continue; }
       switch (w) {
+        case 'par': end_para(); break; case 'line': para += '<br>'; break; case 'tab': emit('\t'); break;
