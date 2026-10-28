@@ -13,3 +13,4 @@ export const fmt_chip = (label, color, key = label) => <span key={key} className
 /* cls: 'fmt_badge' (page) or 'fmt_chip' (pill), as badge_html's cls */
 export function badge(ext, cls = 'fmt_badge') {
   const [l, c] = file_badge(ext);
+  if (cls === 'fmt_chip') return fmt_chip(l, c, ext);
