@@ -20,3 +20,4 @@
   /* Pages never scroll sideways (clip, not hidden, so sticky headers and sidebars keep working).
      Wide content (tables, tab strips) scrolls inside its own box instead. */
   html, body { overflow-x: clip; }
+  /* Calm scrolling: the scrollbar space is always reserved (nothing shifts sideways when the page is frozen),
