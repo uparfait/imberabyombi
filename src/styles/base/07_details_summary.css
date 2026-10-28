@@ -18,3 +18,4 @@
   @media (min-width: 1024px) { #modal.modal_wide { width: min(max(70vw, 44rem), calc(100% - 3rem)); } }   /* modal({ wide: true }), e.g. the task view: at least 70% of a large screen */
   #modal > form { max-height: min(90dvh, 54rem); }
   #viewer { width: min(64rem, calc(100% - 1rem)); max-width: none; max-height: calc(100dvh - 1rem); }
+  #viewer[open] { display: flex; flex-direction: column; }
