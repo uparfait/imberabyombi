@@ -27,3 +27,4 @@ Asset paths are relative (`base: './'` in `vite.config.js`), so it also works fr
 5. Sign out from the avatar menu, pick another role and sign in again to see what that role can do.
 
 Internet access is used for fonts, sample photos (picsum.photos, i.pravatar.cc), the sample video and audio
+and the map embed. Broken images fall back to a branded placeholder.
