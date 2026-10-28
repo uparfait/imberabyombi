@@ -7,3 +7,4 @@ import { field_spec, option_list, STATUS, DEPTS, mail, tel } from './fields.js';
 export const staff_schema = {
   l: 'staff member', n: 12, cols: ['name', 'email', 'role', 'phone', 'status'], sec: { Profile: 'name,email,phone', Access: 'role,status' },
   f: [
+    field_spec('name', 'Full name', 'text', 0, 1), field_spec('email', 'Email', 'email', 0, 1),
