@@ -50,3 +50,4 @@
   .kpi_track { display: block; height: .5rem; overflow: hidden; border-radius: var(--pill); background: rgb(var(--surface_3)); }
   .kpi_track i { display: block; height: 100%; border-radius: var(--pill); }
   .kpi_bullet { position: relative; display: flex; height: 1rem; margin-top: .75rem; }
+  .kpi_bullet i:nth-child(1) { background: rgb(var(--fg) / .12); border-radius: 4px 0 0 4px; }
