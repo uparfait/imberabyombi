@@ -7,3 +7,4 @@ export * from './enhance.js';
 export * from './render_hooks.js';
 export * from './render_route.jsx';
 export * from './boot.js';
+/* the reference's ROUTE / AFTER / render / rerender live in the store; named here too (name map) */
