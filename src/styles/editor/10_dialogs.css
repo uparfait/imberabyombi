@@ -1,3 +1,4 @@
 /* styles/editor/10_dialogs.css: parts inside the editor's dialogs (template modal(), outside #editor): image adjustments
    (preview on a checkerboard, slider rows), the crop stage, the table style presets. The rest of the dialogs use the
    template's own fields, chips and buttons. */
+.img_preview {
