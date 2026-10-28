@@ -10,3 +10,4 @@ export function kpi_data() {
   const m = MARGIN(), mo = MONTHS(), trend = () => Array.from({ length: 12 }, (_, i) => 40 + i * 2 + rnd(-8, 8)), to = (t, end) => t.map(v => v / t.at(-1) * end);
   const weeks = Array.from({ length: 12 }, (_, i) => i === 11 ? 'This week' : `${11 - i} weeks ago`);
   const mins = Array.from({ length: 12 }, (_, i) => i === 11 ? 'Now' : `${11 - i} min ago`);
+  const users = to(trend(), 12900 * m), d_users = rnd(2, 14), rev = 4.2e6 * m, d_rev = rnd(4, 18), enr = Math.round(842 * Math.min(1.15, m));
