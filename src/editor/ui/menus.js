@@ -11,3 +11,4 @@ import { page_setup_dialog } from './page_setup.jsx';
 import { word_count_dialog, shortcuts_dialog } from './info_dialogs.jsx';
 import { special_chars_dialog, image_url_dialog } from './insert_dialogs.jsx';
 import { open_find } from './find.js';
+import { apply_setup, toggle_spell } from './view.js';
