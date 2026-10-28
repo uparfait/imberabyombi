@@ -37,3 +37,6 @@ export function staff_sec() {
   return (
     <section {...spy_attrs('staff')} className="wrap section"><div className="flex flex-wrap items-end justify-between gap-6">
       {sec_head('Staff', lorem.t(3), lorem.s())}{more('staff', 'btn_outline')}</div>
+      <div className="mt-12 grid grid-cols-2 gap-x-5 gap-y-10 lg:grid-cols-4">{[0, 1, 2, 3].map(i => staff_card(i))}</div></section>
+  );
+}
