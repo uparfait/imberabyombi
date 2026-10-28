@@ -12,3 +12,4 @@ export const outline_el = () => document.getElementById('outline');
 export const outline_rows = ol => (ol ? qsa(':scope > .outline_row', ol) : []);
 
 export function render_outline() {
+  const ol = outline_el(); if (!ol) return;
