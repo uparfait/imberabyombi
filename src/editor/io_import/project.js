@@ -29,6 +29,7 @@ export function replace_tab(tabs, title) {
   save_tab();
   const cur = active_tab(), [first, ...rest] = tabs;
   if (state.tabs.length === 1 && state.title === 'Untitled document') state.title = title;
+  cur.html = first.html; if (/^Tab \d+$/.test(cur.name)) cur.name = first.name;
 }
 /* the tabs of a project file as new tabs (comment marks removed: its comments are not imported) */
 export function project_tabs(d) {
