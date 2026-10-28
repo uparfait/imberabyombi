@@ -16,3 +16,4 @@ export const forbidden = () => <div className="card">{empty('You do not have acc
   <a href="#/admin" className="btn btn_primary btn_sm">Go to your start page</a>)}</div>;
 
 export const not_found = admin => admin ? <div className="card">{empty('Page not found', 'Check the address or pick a module from the menu.')}</div>
+  : <>{page_hero('Not found', 'Page not found', 'Check the address, or go back to the home page.', 'compass')}
