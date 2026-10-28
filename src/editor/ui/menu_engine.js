@@ -2,3 +2,4 @@
    like the template's .pop / .menu_item, with submenus, check marks and shortcuts. Items: { label, icon, shortcut, checked,
    disabled, label_style, action, sub, no_preview, peek } · { sep } · { header } · { render }. Hovering (or focusing) an item
    previews it (hover_preview.js) unless it opens a submenu or a dialog (no_preview, or a label ending in "…"); a click keeps
+   it. peek: a view-only preview, () => undo function (zoom). */
