@@ -6,3 +6,4 @@ import { VIZ_CMP_B } from './viz_cmp_b.js';
 import { VIZ_DIST } from './viz_dist.js';
 import { VIZ_TIME_A } from './viz_time_a.js';
 import { VIZ_TIME_B } from './viz_time_b.js';
+import { VIZ_PART_A } from './viz_part_a.js';
