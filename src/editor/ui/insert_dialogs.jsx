@@ -24,3 +24,4 @@ function insert_char(c) {
 export function special_chars_dialog() {
   modal({
     title: 'Special characters',
+    body: <div className="grid grid-cols-8 gap-1 sm:col-span-2 sm:grid-cols-10">{CHARS.map(c =>
