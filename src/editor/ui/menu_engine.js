@@ -66,3 +66,5 @@ export function open_menu(anchor, items, opts = {}) {
     else if (it.render) m.appendChild(it.render());
     else if (it.header) m.appendChild(el('p', { class: 'ctx_label' }, esc_html(it.header)));
     else m.appendChild(row_of(it, level));
+  }
+  document.body.appendChild(m);
