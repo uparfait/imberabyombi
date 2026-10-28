@@ -46,3 +46,4 @@ export async function file_to_html(file) {
     case 'txt': case 'text': return { html: text_to_html(await file.text()) };
   }
   if (CODE_EXT.has(ext) || /^(dockerfile|makefile|readme|license|changelog)$/i.test(name)) return { html: code_to_html(await file.text(), name) };
+  if (['doc', 'ppt', 'pages', 'key', 'wpd', 'wps'].includes(ext)) {
