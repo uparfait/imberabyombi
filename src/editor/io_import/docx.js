@@ -64,3 +64,4 @@ async function docx_blocks(cx, nodes, container) {
       let tag = 'p', cls = ''; const hm = /heading\s*([1-6])/i.exec(style);
       if (hm) tag = 'h' + hm[1]; else if (/^title$/i.test(style)) cls = 'title'; else if (/^subtitle$/i.test(style)) cls = 'subtitle';
       else if (/quote/i.test(style)) tag = 'blockquote';
+      container.insertAdjacentHTML('beforeend', `<${tag}${cls ? ` class="${cls}"` : ''}${attrs}>${html || '<br>'}</${tag}>`);
