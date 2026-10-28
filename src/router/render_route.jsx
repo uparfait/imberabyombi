@@ -9,3 +9,4 @@ import { skip_after_render } from './render_hooks.js';
 
 /* A view that fails while React draws it (a component inside the page) shows the same error page; the next draw tries again */
 class Page_guard extends Component {
+  state = { err: null, v: null };
