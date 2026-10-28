@@ -9,3 +9,5 @@ export function qr_svg(seed) {
     if (box) {
       const fx = x - box[0], fy = y - box[1]; if (fx < 0 || fy < 0 || fx > 6 || fy > 6) continue;
       if (Math.max(Math.abs(fx - 3), Math.abs(fy - 3)) !== 2) out.push([x, y]);
+    }
+    else if (lorem.r() > .5) out.push([x, y]);
