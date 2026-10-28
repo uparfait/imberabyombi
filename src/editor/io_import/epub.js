@@ -18,3 +18,4 @@ export async function epub_to_html(file) {
       const url = p && z.has(p) ? await z.data_url(p) : null;
       if (!url) { (im.closest('svg') || im).remove(); continue; }
       if (im.tagName.toLowerCase() === 'img') im.setAttribute('src', url);
+      else { const ni = d.createElement('img'); ni.setAttribute('src', url); (im.closest('svg') || im).replaceWith(ni); }
