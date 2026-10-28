@@ -81,3 +81,4 @@ function on_down(e, row) {
 export function wire_outline_row(row) {
   row.addEventListener('click', e => {
     const more = e.target.closest('.outline_more');
+    if (e.target.closest('.outline_fold')) toggle_fold(row);
