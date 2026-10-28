@@ -21,8 +21,7 @@ let running = null;   // the stop() of the editor on screen (one at a time)
 export function editor_start(root) {
   if (running) running();
   fill_refs(root);
-  if (!restore_doc()) reset_doc();
-  Object.assign(state, { zoom: 1, mode: 'edit', menus: false, spell: true });   // fresh markup = the source's start view
+  reset_doc(); set_ready(false);   // the saved document loads below (IndexedDB is asynchronous)
   const offs = [];
   const on = (t, ev, fn, opt) => { t.addEventListener(ev, fn, opt); offs.push(() => t.removeEventListener(ev, fn, opt)); };
   for (const install of [install_content, install_ui, format.install_format, io_import.install_import]) {
