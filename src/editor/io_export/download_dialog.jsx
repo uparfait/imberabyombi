@@ -15,3 +15,4 @@ const NAME_BOX = 'flex items-stretch overflow-hidden rounded-xl border border-mu
 const count = (n, one, many) => n ? `${n} ${n === 1 ? one : many}` : '';
 function summary(fmt, s) {
   let sum = [count(s.pages, 'page', 'pages'), `${s.words.toLocaleString()} ${s.words === 1 ? 'word' : 'words'}`, count(s.tables, 'table', 'tables'),
+    count(s.images, 'image', 'images')].filter(Boolean).join(', ') + '.';
