@@ -38,3 +38,4 @@ const DROPS = {
   align_btn: () => [...align_items(), { sep: true }, ...indent_items()],
   check_dd: () => [{ label: 'Checklist', icon: 'checklist', action: () => toggle_checklist(false) },
     { label: 'Checklist with strikethrough', icon: 'checklist_rtl', action: () => toggle_checklist(true) }],
+  bullet_dd: bullet_items, number_dd: number_items, mode_btn: mode_items
