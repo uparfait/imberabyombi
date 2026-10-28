@@ -31,3 +31,5 @@ export function unpeek_key(key) { if (cur && cur.key === key) unpeek(); }
 export function keep(key) {
   if (!cur || cur.key !== key) return false;
   const c = cur; cur = null; c.keep(); return true;
+}
+/* the click on a previewable choice: keep its preview, or (nothing shown: touch, keyboard) run fn. done() runs first
