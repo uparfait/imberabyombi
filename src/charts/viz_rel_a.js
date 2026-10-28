@@ -26,3 +26,4 @@ export const VIZ_REL_A = {
       + ` style="fill:color-mix(in srgb, ${scale_color(p.g)} 60%, transparent);stroke:rgb(var(--surface));stroke-width:2"/>`)).join(''), 'Bubble chart'),
       legend: legend(gr, 'dot'), table: [['Group', 'x', 'y', 'Size'], pts.map(p => [gr[p.g], round1(p.x), round1(p.y), num(p.s)])] }; } },
   heatmap: { t: 'Heatmap', g: 'rel', d: 'Values on a grid (day × hour). Darker = more.', f(w) {
+    const days = Array.from({ length: 7 }, (_, i) => new Date(2026, 9, 25 + i).toLocaleDateString(undefined, { weekday: 'short' }));
