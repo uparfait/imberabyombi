@@ -4,3 +4,4 @@ import { load_script, LIB, PDFJS_WORKER, toast, esc_html } from '../core/index.j
 import { PB } from './pptx.js';
 
 /* the text lines of one page: { text, y, h } (h = the tallest text on the line) */
+function page_lines(tc) {
