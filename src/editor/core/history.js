@@ -32,3 +32,4 @@ export function commit() {
   clearTimeout(hist_timer); hist_timer = null;
   const t = active_tab(); if (!t || !pages_el) return;
   const s = snapshot(), top = t.undo[t.undo.length - 1];
+  if (top && top.html.length === s.html.length && top.html.every((h, i) => h === s.html[i])) { top.caret = s.caret; return; }
