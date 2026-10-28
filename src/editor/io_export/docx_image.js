@@ -14,3 +14,4 @@ export function image_xml(img, ctx) {
   let w = parseFloat(img.style.width) || parseFloat(img.getAttribute('width')) || nw; w = Math.min(w, ctx.content_px);
   const h = parseFloat(img.style.height) || w * nh / nw, cx = Math.round(w * EMU), cy = Math.round(h * EMU);
   const { rid, n } = ctx.add_media(bytes, ext), alt = xesc(img.getAttribute('alt') || '');
+  const bw = parseFloat(img.style.borderWidth) || 0;
