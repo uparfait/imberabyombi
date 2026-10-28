@@ -16,3 +16,4 @@ function row_acts(c, o, r, can) {
   if (!extra && !own) return null;
   return (
     <>
+      {extra || null}
