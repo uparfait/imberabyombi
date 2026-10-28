@@ -34,3 +34,4 @@ const where = new WeakMap();
 function remember(img) { const b = img.closest('.pg_body'); if (b) where.set(img, { i: body_index(b), path: path_to(b, img) }); }
 export function img_now(img) {
   if (!img || img.isConnected) return img;
+  const w = where.get(img), b = w && w.path && bodies()[w.i], n = b && node_at(b, w.path);
