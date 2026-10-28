@@ -18,3 +18,4 @@ export const EDITOR_TEXT_PATHS = {
   ink_highlighter: 'M14 4l6 6-8 8-6-6zM6 12l-2 6 2 2 6-2M14 21h7',
   format_align_left: 'M3 5h18M3 10h12M3 15h18M3 20h12',
   format_align_center: 'M3 5h18M7 10h10M3 15h18M7 20h10',
+  format_align_right: 'M3 5h18M9 10h12M3 15h18M9 20h12',
