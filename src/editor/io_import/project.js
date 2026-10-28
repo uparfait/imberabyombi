@@ -2,3 +2,4 @@
    whole document, or turn its tabs into new tabs; and the "is the document still empty?" test (upload mode default). */
 import { state, default_setup, new_tab, uid, bodies, el, qsa } from '../core/index.js';
 import { sanitize_html } from '../content/index.js';
+import { render_all } from '../ui/index.js';
