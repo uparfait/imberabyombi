@@ -8,8 +8,4 @@ import './styles/overrides.css';
 import App from './app.jsx';
 import { boot } from './router/index.js';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+createRoot(document.getElementById('app')).render(<App />);
