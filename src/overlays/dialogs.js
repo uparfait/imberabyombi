@@ -28,3 +28,5 @@ export function confirm_discard(yes) {
   const c = qs('#confirm'); pick.close(); tip.hide(); c._yes = yes;
   set_dialog('confirm', {});
   show_dialog(c); c.querySelector('[data-act=confirm_keep]')?.focus();
+}
+/* #drawer and #viewer: render() returns the dialog's JSX and is called on every draw (rerender() refreshes it).
