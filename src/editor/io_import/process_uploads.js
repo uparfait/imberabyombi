@@ -31,3 +31,5 @@ function place_uploads(done, mode, failed) {
     else {
       const f = done[0]; state.title = f.project ? (f.project.title || base_of(f.file.name)) : base_of(f.file.name);
       state.comments = []; state.tabs = tabs; state.active = tabs[0].id; render_all();
+    }
+  } else { save_tab(); state.tabs.push(...tabs); state.active = tabs[0].id; render_tab(); render_sidebar(); render_comments(); }
