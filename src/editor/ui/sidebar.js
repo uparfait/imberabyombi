@@ -12,6 +12,7 @@ import { mi } from './ui_dom.js';
 let tab_q = '';   // the filter text (kept while the list redraws)
 const MANY = 5;
 const idx = r => state.tabs.findIndex(t => t.id === r.dataset.id);
+const fold_label = t => (t.folded ? 'Show' : 'Hide') + ' this tab’s outline';
 
 export function render_sidebar() {
   const list = refs.tab_list; if (!list) return;
