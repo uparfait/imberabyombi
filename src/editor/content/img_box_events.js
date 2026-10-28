@@ -7,6 +7,7 @@ import { open_menu } from '../ui/index.js';
 import { ensure_img_box, img_sel, img_max, select_image, hide_img_sel, position_img_box, freeze_img_box, img_now } from './img_sel.js';
 import { set_img_pos, set_img_align } from './img_pos.js';
 import { image_menu_items } from './img_menu.js';
+import { alt_text_dialog } from './img_size.jsx';
 import { start_img_drag } from './img_drag.js';
 
 function resize(e, h) {
