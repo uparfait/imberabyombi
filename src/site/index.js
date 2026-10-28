@@ -5,3 +5,4 @@ export * from './pub_header.jsx';
 export * from './footer.jsx';
 export * from './hero_about.jsx';
 export * from './mission_vision.jsx';
+export * from './strategies_staff.jsx';
