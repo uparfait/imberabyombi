@@ -9,3 +9,5 @@ export const cfg = {
   hero: 'https://uparfait.github.io/uparfait/favicon.ico' /* home hero portrait */,
   video: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
   audio: 'https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3',
+  map: 'https://www.openstreetmap.org/export/embed.html?bbox=30.03%2C-1.98%2C30.12%2C-1.92&layer=mapnik'
+};
