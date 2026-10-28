@@ -34,3 +34,4 @@ export async function prepare_images(root) {
   for (const img of qsa('img', root)) {
     const src = img.getAttribute('src') || ''; const im = new Image(); im.crossOrigin = 'anonymous'; im.src = src;
     try { await im.decode(); } catch (e) { img.remove(); continue; }
+    img.dataset.nw = im.naturalWidth; img.dataset.nh = im.naturalHeight;
