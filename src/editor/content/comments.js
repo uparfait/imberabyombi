@@ -40,3 +40,5 @@ export function fmt_time(t) { return new Date(t).toLocaleString(undefined, { mon
 export function refresh_comment_states() {
   if (!state.show_comments) return;
   const active = qs('.c_card.active'), ae = document.activeElement, focused = ae && ae.closest && ae.closest('#comment_list');
+  if (!focused) { render_comments(); if (active) activate_comment(active.dataset.id); }
+}
