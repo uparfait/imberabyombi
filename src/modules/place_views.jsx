@@ -26,3 +26,4 @@ const event_card = (e, i) => <article key={e.id} className="card overflow-hidden
   <figcaption className="absolute left-3 top-3 m-0 rounded-2xl bg-surface px-3 py-1.5 text-center leading-none"><time dateTime={e.date}>
     <b className="block font-display text-xl text-fg">{parse_d(e.date).getDate()}</b>
     <small className="text-[11px]">{parse_d(e.date).toLocaleDateString(undefined, { month: 'short' })}</small></time></figcaption></figure>
+  <div className="p-5"><div className="flex items-center justify-between gap-2">{badge(e.status)}<span className="text-xs text-muted">{e.start || ''}</span>
