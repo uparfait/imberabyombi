@@ -22,3 +22,4 @@ export function partners_sec(full) {
   return (
     <section {...spy_attrs('partners', full)} className="section"><div className="wrap flex flex-wrap items-end justify-between gap-6">
       {sec_head('Partners', lorem.t(4), lorem.s())}{full ? null : more('partners', 'btn_outline')}</div>
+      <div className="marquee mt-12 overflow-hidden" style={{ WebkitMaskImage: MASK, maskImage: MASK }}><div className="marquee_track flex w-max py-2">
