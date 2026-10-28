@@ -22,3 +22,4 @@ export function render_route() {
   set_route(parse()); const r = route; let html;
   try { html = r.path === '/admin' || r.path.startsWith('/admin/') ? admin_page(r)
     : AUTH_ROUTES[r.path] ? (set_meta(AUTH_ROUTES[r.path][0]), AUTH_ROUTES[r.path][1](r)) : public_page(r); }
+  catch (err) { console.error(err); html = error_page(); }
