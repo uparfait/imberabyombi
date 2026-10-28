@@ -19,5 +19,5 @@ export function set_dialog(id, content) {
    An error there is logged and leaves the part empty instead of taking the page down. */
 export const run_view = v => { try { return typeof v === 'function' ? v() : v; } catch (e) { console.error(e); return null; } };
 
-/* A dialog that has closed drops its content (the reference emptied #viewer; the others are refilled when they open) */
+/* A dialog that has closed drops its content (a closed #viewer stops its media; every dialog is filled again when it opens) */
 for (const id of Object.keys(DIALOGS)) document.getElementById(id)?.addEventListener('close', e => { if (!e.target.open && DIALOGS[id]) set_dialog(id, null); });
