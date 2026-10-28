@@ -15,3 +15,4 @@ export async function fit_img_html(url, alt, inline) {
       if (im.naturalHeight * w / im.naturalWidth > max_h) w = Math.floor(max_h * im.naturalWidth / im.naturalHeight);
     }
   } catch { /* keep 320 px */ }
+  const tag = `<img src="${url}" alt="${esc_html(alt || '')}" style="width:${Math.max(16, w)}px">`;
