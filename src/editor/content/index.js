@@ -21,3 +21,4 @@ export * from './keys.js';
 export * from './pointer.js';
 export * from './paste.js';
 export * from './sanitize.js';
+export * from './install.js';
