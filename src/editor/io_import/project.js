@@ -3,7 +3,7 @@
    (the upload dialog starts on Replace when the tab on screen is empty). */
 import { state, default_setup, new_tab, uid, bodies, el, qsa, active_tab, commit, save_soon } from '../core/index.js';
 import { sanitize_html } from '../content/index.js';
-import { render_all } from '../ui/index.js';
+import { render_all, save_tab } from '../ui/index.js';
 
 /* project files written by the original editor name these setup keys in camelCase */
 const OLD_KEYS = { pageColor: 'page_color', pageNumbers: 'page_numbers', headerHTML: 'header_html', footerHTML: 'footer_html' };
