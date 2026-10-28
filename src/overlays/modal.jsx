@@ -31,3 +31,4 @@ function split_q(msg, cta) {
   const kids = Children.toArray(Array.isArray(msg) ? msg : msg.type === Fragment ? msg.props.children : [msg]), q = [];
   for (const [i, k] of kids.entries()) {
     const at = typeof k === 'object' ? -1 : String(k).indexOf('?');
+    if (at < 0) { q.push(k); continue; }
