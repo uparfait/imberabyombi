@@ -53,3 +53,4 @@ async function slide_html(z, sp, i) {
   if (nr) {
     const np = resolve_path(dir_of(sp), nr.target);
     if (z.has(np)) {
+      const t = by_tag(parse_xml(await z.text(np)), 'sp').filter(s => { const ph = by_tag(s, 'ph')[0]; return ph && ph.getAttribute('type') === 'body'; })
