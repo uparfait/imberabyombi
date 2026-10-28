@@ -4,3 +4,4 @@
 `field(spec, value)` ([src/fields/field.jsx](../src/fields/field.jsx)) returns the outlined field: a box with the label
 resting inside, which floats onto the border on focus or once filled. A spec comes from `field_spec()` (src/schemas):
 ```js
+import { field_spec as F, option_list as O } from '../schemas/index.js';
