@@ -17,3 +17,4 @@ export const refs = new Proxy(store, {
     if (k === 'root' || (v && (!(v instanceof Node) || v.isConnected))) return v ?? null;
     if (!o.root) return v ?? null;
     const f = find(ALIAS[k] || k);
+    if (f) o[k] = f;
