@@ -13,3 +13,4 @@
   .hero_title { font-family: var(--font_display); font-weight: 500; font-size: clamp(3rem, 1.4rem + 6.4vw, 7.25rem); line-height: .95; letter-spacing: -.035em; }
 
   /* Long-form article typography */
+  .prose_x { @apply text-muted; font-size: 1.0625rem; line-height: 1.8; }
