@@ -17,3 +17,6 @@ export function i3(n, c = 'w-14 h-14', tone = 'brand') {
         </linearGradient>
         <radialGradient id={`${id}g`} cx=".28" cy=".18" r=".7">
           <stop offset="0" stopColor="#fff" stopOpacity=".5" /><stop offset="1" stopColor="#fff" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect x="7" y="9" width="50" height="46" rx="23" fill={`url(#${id}f)`} />
