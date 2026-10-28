@@ -2,3 +2,4 @@
    vertical alignment, width and position, header row, striped rows, equal column widths (one undo step on Apply). */
 import { modal } from '../../overlays/index.js';
 import { clamp, to_hex, toast } from '../core/index.js';
+import { can_edit } from './commands.js';
