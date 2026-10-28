@@ -39,3 +39,4 @@ export function render_sidebar() {
 }
 
 function wire_row(row, t, box) {
+  row.addEventListener('click', e => { if (e.target.closest('.tab_more, .tab_rename')) return; switch_tab(t.id); });
