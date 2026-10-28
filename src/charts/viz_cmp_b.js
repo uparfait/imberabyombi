@@ -39,3 +39,4 @@ export const VIZ_CMP_B = {
       .map(([k, v, t]) => [k, v * MARGIN(), t]); let run = 0;
     const bars = steps.map(([k, v, t], i) => {
       if (t && i) v = run; const a = t ? 0 : run, b = t ? v : run + v; if (!t || !i) run = t ? v : run + v; return { k, v, a, b, t }; });
+    const hi = Math.max(...bars.map(o => Math.max(o.a, o.b))), f = frame(w, 250), ax = y_axis(f, hi), x = band(bars.length, f.l, f.w - f.r);
