@@ -65,3 +65,5 @@ export function editor_start(root) {
     clear_refs();
   }
   running = stop;
+  return stop;
+}
