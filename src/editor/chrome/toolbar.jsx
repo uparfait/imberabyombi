@@ -40,3 +40,4 @@ export const toolbar = () => (
     {dd('style_btn', 'style_label', 'Normal text', 'Styles', '7.5rem', true)}
     {sep()}
     {dd('font_btn', 'font_label', 'Arial', 'Font', '6.75rem', true)}
+    {sep()}
