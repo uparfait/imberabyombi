@@ -33,3 +33,4 @@ export const TASK_ACT = {
   task_file_rm: t => { const id = t.dataset.id, i = +t.dataset.i;
     request(() => { db.upsert('tasks', { id, files: files_of(db.find('tasks', id)).filter((_, j) => j !== i) }); task_refresh(id, 'Attachment removed.'); },
       { btn: t }); },
+  /* the task view: a pen opens a row's editor (Save / Cancel); status shows Cancel / Save; comments */
