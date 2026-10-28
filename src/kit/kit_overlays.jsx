@@ -33,3 +33,4 @@ export const kit_overlays = () => (
     <div className="mt-6 flex flex-wrap gap-3"><button className="btn btn_primary" data-act="demo_dialog">Open dialog</button>
       <div className="relative"><button className="btn btn_outline" data-act="pop" data-pop="pop_demo">Week {ic('chev_d', 'h-4 w-4')}</button>
         <div id="pop_demo" ref={closed_pop()} className="pop left-0 w-56" hidden>
+          {POP_VIEWS.map(([l, k]) => <button key={k} className="menu_item justify-between">{l}<kbd>{k}</kbd></button>)}
