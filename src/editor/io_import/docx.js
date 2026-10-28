@@ -8,3 +8,4 @@ import { docx_val as val, docx_runs } from './docx_runs.js';
 import { PB } from './pptx.js';
 
 export async function docx_to_html(file) {
+  const buf = await file.arrayBuffer();
