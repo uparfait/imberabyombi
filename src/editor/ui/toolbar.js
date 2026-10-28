@@ -64,3 +64,5 @@ export function install_toolbar(offs) {
   listen(offs, si, 'click', e => toggle_menu(si, size_items, { focus: e.detail === 0 }));
   listen(offs, refs.image_open, 'change', e => { Array.from(e.target.files || []).forEach(f => insert_image_file(f)); e.target.value = ''; });
   listen(offs, refs.doc_title, 'input', e => { state.title = e.target.value || 'Untitled document'; document.title = state.title; });
+  listen(offs, refs.doc_title, 'keydown', e => { if (e.key === 'Enter' || e.key === 'Escape') { e.preventDefault(); restore_focus(); } });
+}
