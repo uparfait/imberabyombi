@@ -87,3 +87,5 @@ export function wire_outline_row(row) {
   });
   row.addEventListener('keydown', e => on_key(e, row));
   row.addEventListener('pointerdown', e => on_down(e, row));
+  row.addEventListener('focus', () => outline_rows(row.parentElement).forEach(x => { x.tabIndex = x === row ? 0 : -1; }));
+}
