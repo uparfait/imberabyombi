@@ -7,3 +7,4 @@ export const viz_tip = { el: null, cur: null,
   show(t, x, y) { const el = this.el || (this.el = document.getElementById('viz_tip')); if (!el) return;
     if (this.cur !== t) { this.cur = t; let d; try { d = JSON.parse(t.dataset.tt); } catch { return; } el.replaceChildren();
       const h = document.createElement('p'); h.className = 'viz_tip_title'; h.textContent = d[0]; el.append(h);
+      d.slice(1).forEach(([v, n, s]) => {
