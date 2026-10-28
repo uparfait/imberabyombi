@@ -34,3 +34,4 @@ function Preset_grid({ start }) {
 }
 export function custom_table_dialog() {
   if (previewing() || !can_edit()) return;
+  modal({
