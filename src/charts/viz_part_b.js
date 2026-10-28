@@ -34,3 +34,4 @@ export const VIZ_PART_B = {
     return { svg: svg(f, st.map((k, i) => mark_group(k, [[num(v[i]), 'People', null], [i ? pct(v[i] / v[i - 1]) : '100%', 'From the step before', null]], hit_row(f, y, i)
         + `<rect class="mark" x="${round1(cx - x(v[i]) / 2)}" y="${round1(y(i) - h / 2)}" width="${round1(Math.max(2, x(v[i])))}" height="${round1(h)}" rx="4"`
         + ` style="fill:color-mix(in oklab, rgb(var(--brand)) ${100 - i * 15}%, rgb(var(--surface)))"/>`)
+        + `<text x="${f.l - 8}" y="${round1(y(i) + 4)}" text-anchor="end">${k}</text>`
