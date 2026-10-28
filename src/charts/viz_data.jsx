@@ -18,3 +18,4 @@ const str = v => String(v ?? '');
 export function data_table(p) {
   const { head, rows } = SHOWN, n = Math.max(1, Math.ceil(rows.length / VIZ_PER)); p = SHOWN.p = Math.min(Math.max(1, p), n);
   return (
+    <div className="relative overflow-hidden rounded-2xl border border-line"><div className="overflow-x-auto"><table className="viz_data">
