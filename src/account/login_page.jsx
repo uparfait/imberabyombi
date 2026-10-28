@@ -10,3 +10,4 @@ const role_part = (inv, rs, sel) => inv ? <>
   <p className="flex items-center gap-2 rounded-xl bg-brand/10 p-3 text-sm text-accent">{ic('link', 'h-4 w-4 shrink-0')}
     <span>You were invited as <strong>{inv.name}</strong>.</span></p>
   <input type="hidden" name="role" defaultValue={inv.id} /></>
+  : <div className="field"><label htmlFor="signin_role">Sign in as</label><select id="signin_role" name="role" required defaultValue={sel}>
