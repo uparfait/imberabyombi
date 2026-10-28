@@ -21,3 +21,4 @@ export const ROLE_ACT = {
       const perms = perm_map('tasks:2,settings:1'); if (d.land) perms[d.land] = Math.max(perms[d.land] || 0, 1);   /* landing there means it can at least view it */
       rs.push({ id, name: d.name, d: d.d, land: d.land, perms }); db.set('roles', rs); ui.role = id; rerender(); notify('Set its access levels in the matrix.', 'ok', 'Role created'); } }),
   role_del: t => { const n = db.list('staff').filter(s => s.role === t.dataset.id).length;
+    if (n) return show_msg(qs('#matrix_msg'), 'bad', 'This role is still in use', `Move the ${n} staff member${n > 1 ? 's' : ''} with this role to another role, then delete it.`, false);
