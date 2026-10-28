@@ -16,3 +16,4 @@ modal({
   on_submit: (values, form) => { … }, // values = form_obj(form); return false to keep the dialog open
   danger: false,                       // red submit button
   actions: <button …>Delete</button>,  // extra footer buttons
+  wide: true                           // at least 70% of a large screen (the task view)
