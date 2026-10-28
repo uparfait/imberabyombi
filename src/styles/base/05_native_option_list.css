@@ -36,3 +36,4 @@
   :where(input[type=radio]:checked) { border-color: rgb(var(--brand)); background-image: radial-gradient(circle, rgb(var(--brand)) 0 .3rem, transparent .33rem); background-size: 100%; }
   input[type=checkbox][role=switch] {
     width: 3.25rem; height: 2rem; border-radius: 999px; border-width: 2px; border-color: rgb(var(--muted)); background-color: rgb(var(--surface_3));
+    background-image: radial-gradient(circle, rgb(var(--muted)) 0 .5rem, transparent .53rem);
