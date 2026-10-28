@@ -14,3 +14,5 @@ export let file_blur = false;
 const FALLBACK = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 3">'
   + '<rect width="4" height="3" fill="#E0661B" opacity=".18"/>'
   + '<path d="M2 .9 2.6 1.5 2 2.1 1.4 1.5Z" fill="#E0661B"/></svg>');
+
+/* Media that fails inside the file viewer shows the file's details instead: the viewer (React) does that with onError,
