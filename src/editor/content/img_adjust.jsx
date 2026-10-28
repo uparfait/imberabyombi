@@ -3,3 +3,4 @@
 import { useState } from 'react';
 import { modal } from '../../overlays/index.js';
 import { can_edit, previewing } from '../format/index.js';
+import { bake_image } from './img_ops.js';
