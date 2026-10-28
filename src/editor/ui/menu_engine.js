@@ -93,3 +93,5 @@ export function focus_row(m, r, preview = true) {
   set_cur(r, m); unpeek();
   r.focus({ preventScroll: false });
   if (preview && !r._it.sub) { peek_item(r._it); if (document.activeElement !== r) r.focus({ preventScroll: true }); }
+}
+/* a mousedown outside every menu (and outside the anchor of the open one) closes them */
