@@ -20,3 +20,4 @@ export function install_pointer() {
   document.addEventListener('pointermove', viz_point, { passive: true });
   document.addEventListener('pointerdown', viz_point, { passive: true });
   document.addEventListener('pointerout', e => { if (tip.on && !tip.on.contains(e.relatedTarget)) tip.hide(); });
+  document.addEventListener('focusin', on_focusin);
