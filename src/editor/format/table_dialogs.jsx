@@ -60,3 +60,7 @@ export function insert_multiple_dialog() {
     body: <>
       {num_field('im_n', 'How many', { min: 1, max: 100, defaultValue: 2 })}
       {sel_field('im_w', 'Where', WHERE, 'row_below')}
+    </>,
+    on_submit: v => { refocus_after_close(); tbl_op(v.im_w, clamp(parseInt(v.im_n) || 1, 1, 100)); }
+  });
+}
