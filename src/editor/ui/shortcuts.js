@@ -55,3 +55,4 @@ export function on_key(e) {
   if (menu_key(e)) { done(); return; }
   if (e.key === 'Escape') {
     let closed = false;
+    hide_link_bubble();
