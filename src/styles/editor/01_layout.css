@@ -7,3 +7,4 @@
 :root {
   --app_bg: rgb(var(--surface_2)); --bar_bg: rgb(var(--surface)); --fg2: rgb(var(--fg) / .78); --fg3: rgb(var(--muted));
   --hover: rgb(var(--fg) / .06); --press: rgb(var(--fg) / .1); --sep: rgb(var(--line)); --border: rgb(var(--line));
+  --active_bg: rgb(var(--brand) / .15); --active_fg: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg)));
