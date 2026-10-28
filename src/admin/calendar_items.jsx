@@ -6,3 +6,5 @@ import { db, ui } from '../store/index.js';
 import { auth, me } from '../auth/index.js';
 import { countdown } from '../modules/index.js';
 import { redraw_slot } from './live_slot.jsx';
+
+const event_item = e => ({ id: e.id, title: e.title, date: e.date, start: e.start || '09:00', end: add_time(e.start || '09:00', 120), c: 'events', tone: 'ink' });
