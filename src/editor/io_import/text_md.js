@@ -7,3 +7,4 @@ export const text_to_html = t => t.replace(/\r\n?/g, '\n').split('\n').map(l => 
 export function md_inline(s) {
   s = esc_html(s);
   return s.replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img alt="$1" src="$2">')
