@@ -46,3 +46,4 @@ export function on_selection() {
   const r = s.getRangeAt(0), h = editable_of(r.startContainer);
   if (h && pages_el && pages_el.contains(h)) {
     set_last(r.cloneRange(), h);
+    clearTimeout(sel_timer); sel_timer = setTimeout(() => { sel_timer = null; refresh_toolbar(); update_link_bubble(); }, 60);
