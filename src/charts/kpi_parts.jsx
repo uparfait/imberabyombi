@@ -29,3 +29,4 @@ export const delta = (d, good_up = true, vs = 'vs last month') => {
   );
 };
 export const signed = d => `${d >= 0 ? '+' : '−'}${Math.abs(round1(d))}%`;
+/* kpi_card(classes, title, description, body, [head, rows]): click (or Enter) opens the card's data; a part opens only itself */
