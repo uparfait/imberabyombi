@@ -7,3 +7,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Device scaling: phones show the 360px design scaled; desktops 15px; screens wider than the reference scale up.
 - Light, dark and system themes with no flash on load and instant switching; flat design (no shadows).
 - Every native element restyled: inputs, selects, checkboxes, switches, radios, ranges, colour, file, progress, meter,
+  details, tables, dialogs, kbd, blockquote, code.
