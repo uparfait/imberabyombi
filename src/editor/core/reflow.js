@@ -51,3 +51,4 @@ export function reflow(cur = 0, full = false) {
 }
 export function reflow_pageless() {
   const bs = bodies(); const b0 = bs[0]; if (!b0) return;
+  if (bs.length > 1) {
