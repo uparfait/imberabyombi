@@ -26,3 +26,4 @@ Add the object to `ACT` in `src/actions/act.js`, and `archive: 1` to `REQ` if it
 
 ## data-form: a form names its handler
 `<form data-form="contact" noValidate>` → on a valid submit `FORMS.contact(values, form)` runs, inside `request()`
+with the submit button busy. Validation (required, email, patterns, date formats) runs first and writes messages inline.
