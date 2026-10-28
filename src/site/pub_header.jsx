@@ -10,3 +10,4 @@ export function pub_header() {
   return (
     <header id="site_header" className="hdr sticky top-0 z-40 bg-bg">
       <nav className="wrap flex h-16 items-center gap-4 sm:h-20" aria-label="Primary">{logo()}
+        <ul className="link_group ml-auto hidden xl:flex">{PUB.slice(0, 6).map(([k, l]) => (
