@@ -29,3 +29,4 @@
   .prose_x :where(a) { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
 
   /* Brand artwork: dark-to-orange hero with glowing sun, lattice and a wave cut */
+  /* The hero and the Vision band follow the theme: light = white to soft orange with dark text, dark = ink to orange with light text */
