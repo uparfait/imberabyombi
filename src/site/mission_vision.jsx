@@ -15,3 +15,6 @@ export function mission_sec(full) {
           <article key={i} className="rounded-2xl bg-surface-2 p-5"><h3 className="text-base">{lorem.t(2)}</h3><p className="mt-2 text-sm text-muted">{lorem.s()}</p></article>
         ))}</div>
         {full ? null : more('mission')}</div></div></section>
+  );
+}
+export function vision_sec(full) {
