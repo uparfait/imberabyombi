@@ -45,3 +45,4 @@ export const VIZ_DIST = {
       table: [['Group', 'Median', 'Count'], sets.map((a, i) => [g[i], round1(median(a)), a.length])] }; } },
   dotplot: { t: 'Dot plot', g: 'dist', d: 'One dot per category on a shared scale, sorted.', f(w) {
     const c = uwords(8), v = c.map(() => rnd(10, 95)).sort((a, b) => b - a), f = frame(w, 250, { l: 82, b: 28 }), ax = x_axis(f, 100);
+    const y = band(c.length, f.t, f.t + f.ih);
