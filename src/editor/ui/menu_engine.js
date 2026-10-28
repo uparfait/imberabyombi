@@ -43,3 +43,4 @@ function row_of(it, level) {
       open_menu(r, s, { level: level + 1, x: b.right - scaled(2), y: b.top - scaled(6), side: b.left, focus }); };
     r.addEventListener('pointerenter', () => { set_cur(r); clearTimeout(sub_timer); sub_timer = setTimeout(() => r._open(false), 120); });
     r.addEventListener('click', e => { if (!it.disabled) r._open(e.detail === 0); });
+  } else {
