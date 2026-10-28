@@ -42,3 +42,4 @@ export function hide_toast() {
   clearTimeout(timer); if (line) line.style.display = 'none';
 }
 /* editor_start's stop(): remove the status line */
+export function toast_cleanup() { hide_toast(); if (line) line.remove(); line = null; }
