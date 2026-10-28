@@ -7,3 +7,4 @@ import { schemas } from '../schemas/index.js';
 import { show_next } from '../feedback/index.js';
 import { pick, tip } from '../overlays/index.js';
 import { CHARTS, viz_tip } from '../charts/index.js';
+import { open_form } from '../table/index.js';
