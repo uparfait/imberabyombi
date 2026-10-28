@@ -6,3 +6,5 @@ import { select_image, image_menu_items, open_link_dialog, add_comment, paste_fr
 import { table_ctx, table_menu_items, table_grid_el, clear_formatting } from '../format/index.js';
 import { open_menu } from './menu_engine.js';
 import { cmd, native } from './menus_main.js';
+
+export function on_context_menu(e) {
