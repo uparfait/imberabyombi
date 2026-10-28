@@ -20,3 +20,5 @@
     box-shadow: 0 0 0 100rem rgb(var(--field, var(--surface))) inset !important;
     caret-color: rgb(var(--field_fg, var(--fg)));
     transition: background-color 600000s 0s, color 600000s 0s;
+  }
+  input:autofill { filter: none; background-color: rgb(var(--field, var(--surface))); }
