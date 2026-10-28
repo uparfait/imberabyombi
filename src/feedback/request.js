@@ -13,3 +13,5 @@ export const req = {
   n: 0, t: null,
   start() { if (this.n++ > 0) return; clearTimeout(this.t); this.t = setTimeout(() => qs('#loader')?.classList.add('on'), 150); },
   done() { if (this.n === 0 || --this.n > 0) return; clearTimeout(this.t); qs('#loader')?.classList.remove('on'); }
+};
+/* The spinner is the one element ever added inside a (React) button; busy(btn, false) removes it again */
