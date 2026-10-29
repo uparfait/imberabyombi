@@ -30,4 +30,5 @@ export function i3_src(n, color) {
 export const i3 = (n, c = 'w-14 h-14', color = 'brand') =>
   <img src={i3_src(n, color)} className={`i3 shrink-0 ${c}`} alt="" aria-hidden="true" draggable={false} decoding="async" />;
 export const i3_html = (n, c = 'w-14 h-14', color = 'brand') =>
+  `<img src="${i3_src(n, color)}" class="i3 shrink-0 ${c}" alt="" aria-hidden="true" draggable="false" decoding="async">`;
 }
