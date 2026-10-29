@@ -19,3 +19,4 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
   - or a hex, e.g. `'#0E9AA7'`.
 - `hue_at(i)` gives rows of tiles and cards a different hue each, always the same for the same position.
 - The values live in `src/icons/icon_3d.jsx` (`HUES`, `TONES`, `HUE_RUN`): change a colour there and every icon that uses
+  it follows.
