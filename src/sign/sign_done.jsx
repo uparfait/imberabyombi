@@ -12,3 +12,4 @@ export function sign_done(d) {
       <span className="sign_done_badge">{i3('check', 'h-20 w-20', 'ok')}</span>
       <h1 className="mt-4 text-2xl sm:text-3xl">Signing complete</h1>
       <p className="mt-1 text-muted">You signed “{d.title}”.</p>
+      <dl className="sign_facts">
