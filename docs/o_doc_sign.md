@@ -21,3 +21,4 @@ its count. A document opened at the wrong address moves to the right one (a sent
 signing). No document is seeded: every account starts empty.
 
 ## Preparing
+- **Signers**: name, email and an optional **note for that signer** (they read it before signing; edit it later with the
