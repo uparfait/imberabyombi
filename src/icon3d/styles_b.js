@@ -32,3 +32,5 @@ export function glass(G, C, i) {
     + `<rect ${tile(33)} fill="${shade(C.p, -18)}" opacity=".45"/><rect ${tile(26)} fill="url(#${i}a)"/><rect ${tile(26)} fill="url(#${i}h)"/>`
     + `<rect ${tile(26)} fill="none" stroke="url(#${i}r)" stroke-width="2.5"/><rect ${tile(32, 36, 128, 34)} fill="none" stroke="#fff" stroke-opacity=".22"/>`
     + `<g filter="url(#${i}g)" opacity=".7">${use(i + 'G', 61, 55, 78, shade(C.p, 28))}</g>`
+    + `<g filter="url(#${i}v)">${use(i + 'G', 61, 55, 78, '#ffffff')}</g>`];
+}
