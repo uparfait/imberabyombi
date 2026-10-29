@@ -26,3 +26,4 @@ export function glass(G, C, i) {
   const tile = (y, x = 30, s = 140, r = 40) => `x="${x}" y="${y}" width="${s}" height="${s}" rx="${r}"`;
   return [blur(i + 'b', 14) + blur(i + 'g', 5) + lin(i + 'a', [[0, shade(C.p, 10), .82], [1, C.s, .5]], [0, 0, 1, 1])
     + rad(i + 'h', [[0, '#fff', .6], [1, '#fff', 0]], '28%', '18%', '60%')
+    + lin(i + 'r', [[0, '#fff', .95], [.5, '#fff', .08], [1, '#fff', .55]], [0, 0, 1, 1])
