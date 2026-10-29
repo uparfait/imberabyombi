@@ -28,3 +28,4 @@ export function signer_page(d) {
   const done = r.status === 'signed' || d.status !== 'sent';
   return <div className="sign_split">
     <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
+      {done ? <section className="card p-5"><h2 className="sign_cap">Signers</h2><div className="mt-1">{signer_rows(d, false)}</div></section>
