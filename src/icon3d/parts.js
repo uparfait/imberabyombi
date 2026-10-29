@@ -27,3 +27,4 @@ export function vol(id, o) {
     + `<feDiffuseLighting in="h" surfaceScale="${o.surf}" diffuseConstant="1" lighting-color="#fff" result="d"><feDistantLight azimuth="225" elevation="60"/></feDiffuseLighting>`
     + `<feComposite in="${g}" in2="d" operator="arithmetic" k1="${o.shade}" k2="${1 - o.shade}" result="c"/>`
     + `<feSpecularLighting in="h" surfaceScale="${o.surf}" specularConstant="${o.spec}" specularExponent="${o.exp}" lighting-color="#fff" result="s"><fePointLight x="70" y="30" z="160"/></feSpecularLighting>`
+    + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
