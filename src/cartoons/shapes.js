@@ -21,3 +21,4 @@ export const sun = (x, y, r, color, glow = ['#FFF6DA', '#FFE9AE']) =>
 
 /* a cloud s wide: overlapping puffs on a flat bottom */
 export function cloud(x, y, s, fill = '#fff', opacity = .92) {
+  const o = `opacity="${opacity}"`;
