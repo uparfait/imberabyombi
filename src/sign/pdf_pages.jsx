@@ -24,3 +24,4 @@ function Page({ pdf, i, n, size, children }) {
 }
 
 export function Pdf_pages({ doc, layer }) {
+  const [st, set] = useState({ pdf: null, err: null });
