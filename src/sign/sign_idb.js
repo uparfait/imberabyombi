@@ -16,3 +16,6 @@ const open = () => opening || (opening = new Promise((resolve, reject) => {
 const run = (mode, fn) => open().then(db => new Promise((resolve, reject) => {
   const tx = db.transaction(STORE, mode), req = fn(tx.objectStore(STORE));
   tx.oncomplete = () => resolve(req.result); tx.onerror = tx.onabort = () => reject(tx.error);
+}));
+
+/* the value under key (undefined when there is none or IndexedDB is not available) */
