@@ -11,3 +11,4 @@ export const Source = ({ st, put }) => <section className="grid gap-3" aria-labe
   {st.mode === 'text'
     ? <div className="field"><label htmlFor="ico_text">Letter, number or symbol</label>
         <input id="ico_text" value={st.text} maxLength={3} placeholder=" " autoComplete="off" onChange={e => put({ text: e.target.value })} /></div>
+    : st.mode === 'svg'
