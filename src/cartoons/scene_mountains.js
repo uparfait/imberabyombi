@@ -19,3 +19,6 @@ function peaks(x0, x1, base, tall, color, r) {
     x += half * r.range(1.2, 1.7);
   }
   return out;
+}
+
+export function mountains(w, h, r) {
