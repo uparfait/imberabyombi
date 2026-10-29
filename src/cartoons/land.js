@@ -39,3 +39,4 @@ export function tree(x, ground, s, r, kind = r.pick(['round', 'round', 'pine', '
 
 /* a bush s wide on the ground */
 export const bush = (x, ground, s, color) => circle(x - s * .28, ground - s * .16, s * .22, color) + circle(x + s * .26, ground - s * .15, s * .21, color)
+  + circle(x, ground - s * .26, s * .3, color) + rect(x - s * .48, ground - s * .16, s * .96, s * .16, s * .08, color);
