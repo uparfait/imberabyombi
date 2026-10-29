@@ -24,3 +24,4 @@ export function vol(id, o) {
   if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
   if (o.flat) return f + '</filter>';
   return f + `<feGaussianBlur in="${g}" stdDeviation="${o.bevel}" result="h"/>`
+    + `<feDiffuseLighting in="h" surfaceScale="${o.surf}" diffuseConstant="1" lighting-color="#fff" result="d"><feDistantLight azimuth="225" elevation="60"/></feDiffuseLighting>`
