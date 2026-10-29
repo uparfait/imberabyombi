@@ -30,3 +30,5 @@ export function open_pdf(id) {
     p.catch(() => OPEN.delete(id)); OPEN.set(id, p);
   }
   return OPEN.get(id);
+}
+export const forget_pdf = id => { OPEN.get(id)?.then(pdf => pdf.destroy(), () => {}); OPEN.delete(id); };
