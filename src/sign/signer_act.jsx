@@ -20,3 +20,4 @@ function apply(d, f, url) {
 
 function open_pad(d, f) {
   const [l] = KINDS[f.type], what = l.toLowerCase(); PAD.get = async () => null;
+  modal({ title: `Add your ${what}`, help: f.type === 'stamp' ? 'Create a stamp, or upload a picture of yours.' : 'Draw it, type it, or upload a picture of it.',
