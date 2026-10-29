@@ -10,3 +10,4 @@ export const rect = (x, y, w, h, rx, fill, more) =>
 export const path = (d, fill, more) => `<path d="${d}" fill="${fill}"${attrs(more)}/>`;
 /* a line or curve with round ends (arms, legs, smiles, wings) */
 export const stroke = (d, color, width, more) =>
+  `<path d="${d}" fill="none" stroke="${color}" stroke-width="${n(width)}" stroke-linecap="round" stroke-linejoin="round"${attrs(more)}/>`;
