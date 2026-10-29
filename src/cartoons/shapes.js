@@ -14,3 +14,5 @@ export const stroke = (d, color, width, more) =>
 /* points [[x, y], …] as a path: M x y L x y … */
 export const pts = list => list.map(([x, y], i) => (i ? 'L' : 'M') + n(x) + ' ' + n(y)).join('');
 export const line = (x1, y1, x2, y2) => `M${n(x1)} ${n(y1)}L${n(x2)} ${n(y2)}`;
+
+/* the sun: a disc in two soft rings of glow (glow: the sun colour mixed with white) */
