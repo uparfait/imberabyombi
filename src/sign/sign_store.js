@@ -17,3 +17,4 @@ export const LISTS = [
   ['waiting', 'Waiting', 'clock', 'Sent and waiting for signatures.'], ['completed', 'Completed', 'check', 'Signed by everyone.'],
   ['inbox', 'To sign', 'signature', 'Documents sent to you for your signature.']];
 const OF = { drafts: 'draft', waiting: 'sent', completed: 'completed' };
+/* the field kinds: [label, icon, size in points (w, h)] */
