@@ -12,3 +12,4 @@ function from_svg(str) {
   let vb = (el.getAttribute('viewBox') || '').trim().split(/[\s,]+/).map(Number);
   if (vb.length !== 4 || vb.some(isNaN)) vb = [0, 0, parseFloat(el.getAttribute('width')) || 24, parseFloat(el.getAttribute('height')) || 24];
   const at = PAINT.filter(a => el.hasAttribute(a)).map(a => `${a}="${esc_xml(el.getAttribute(a))}"`).join(' ');
+  const inner = `<g ${el.hasAttribute('fill') ? '' : 'fill="currentColor"'} ${at}>${el.innerHTML}</g>`
