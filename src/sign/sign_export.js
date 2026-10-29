@@ -16,3 +16,6 @@ function place(page, f, img, degrees) {
   const x = f.x * sw + (fw - w) / 2, y = f.y * sh + (fh - h) / 2;   /* top-left corner, as shown */
   const at = { 0: [x, H - y - h], 90: [y + h, x], 180: [W - x, y + h], 270: [W - y - h, H - x] }[rot] || [x, H - y - h];
   page.drawImage(img, { x: box.x + at[0], y: box.y + at[1], width: w, height: h, rotate: degrees(rot) });
+}
+
+/* d: the record, marks: { field id: PNG data URL } → the new file's bytes */
