@@ -2,3 +2,4 @@
    its signers (pick one to place their fields; each shows their note, with Edit note and Remove) and the form that adds a
    signer: name, email and a note for them. People already in the system are suggested as you type a name. */
 import { ic } from '../icons/index.js';
+import { db, rerender } from '../store/index.js';
