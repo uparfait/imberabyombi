@@ -11,3 +11,4 @@ function building(x, base, bw, bh, color, s, r) {
   let out = rect(x, base - bh, bw, bh + s * .02, s * .014, color) + rect(x, base - bh, bw, s * .02, s * .01, shade(color, -.12));
   for (let y = base - bh + pad; y < base - win * 2.4; y += win * 1.6)
     for (let c = 0; c < cols; c++) out += rect(x0 + c * (win + gap), y, win, win * 1.1, win * .2, r.chance(.4) ? LIT : GLASS);
+  out += rect(x + bw / 2 - win * .7, base - win * 2, win * 1.4, win * 2, win * .3, shade(color, -.3));
