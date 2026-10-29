@@ -9,3 +9,4 @@ const median = a => a.sort((x, y) => x - y)[a.length >> 1];
 function edges(d, w, h) {
   const c = [[], [], [], []], add = i => { for (let k = 0; k < 4; k++) c[k].push(d[i + k]); };
   for (let x = 0; x < w; x += 2) { add(x * 4); add(((h - 1) * w + x) * 4); }
+  for (let y = 0; y < h; y += 2) { add(y * w * 4); add((y * w + w - 1) * 4); }
