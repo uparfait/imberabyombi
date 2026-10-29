@@ -27,3 +27,4 @@ export function stage(w, h, r) {
     + circle(px + s * .065, deck - s * .205, s * .014, MIC);
   [[h * .93, .16, .1], [h * 1.04, .2, .02]].forEach(([y, size, shift]) => {
     const step = s * size * 1.05;
+    for (let x = step / 2 - shift * step * 4; x < w + step; x += step) out += from_back(x + r.range(-step, step) * .1, y, s * size, look(r), r.chance(.25));
