@@ -6,3 +6,4 @@ export const LIBS = [['lucide', 'Lucide', 'lucide-react'], ['heroicons', 'Heroic
   ['mdi', 'Material Design', '@mdi/react'], ['iconoir', 'Iconoir', 'iconoir-react'], ['simple-icons', 'Simple Icons', '@icons-pack/react-simple-icons']];
 
 const SETS = {};
+export const load_set = p => SETS[p] ||= fetch(`https://cdn.jsdelivr.net/npm/@iconify-json/${p}@1.2.0/icons.json`)
