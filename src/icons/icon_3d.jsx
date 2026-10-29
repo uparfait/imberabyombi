@@ -5,6 +5,7 @@
    i3(name, cls, color) draws it as an <img> (each name + colour is built once, then cached), i3_html(...) is the string
    twin, and mark3d(text, cls, color) draws a glossy letter or symbol inline, in the site's display font (the brand mark). */
 import { icon_path } from './icon.jsx';
+import { render } from '../icon3d/index.js';
 
 export let GID = 0;
 export const TONES = { brand: ['brand', 'brand_2'], ink: ['muted', 'ink'], ok: ['ok', 'ok'], info: ['info', 'info'], warn: ['warn', 'brand_2'], bad: ['bad', 'bad'] };
