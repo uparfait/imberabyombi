@@ -16,3 +16,4 @@ function edges(d, w, h) {
 /* the picture into canvas (scaled down when large), with its background made transparent by amount */
 export function paint(canvas, img, amount) {
   const k = Math.min(1, MAX / Math.max(img.naturalWidth, img.naturalHeight));
+  const w = Math.max(1, Math.round(img.naturalWidth * k)), h = Math.max(1, Math.round(img.naturalHeight * k));
