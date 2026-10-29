@@ -44,3 +44,4 @@ export function new_doc(name, size, pages) {
   log(d, `${me.name} uploaded ${name}`); db.upsert(C, d); return d;
 }
 /* a new signer takes the first colour no other signer has */
+export function add_rec(d, name, email, note) {
