@@ -14,3 +14,4 @@ import { Output } from './output.jsx';
 const FIRST = { mode: 'text', text: '#', svg: '', icon: null, icon_name: '', lib: 'lucide', style: 'glossy', cols: ['#E0661B', '', ''], size: 128 };
 
 export function Iconisus_page() {
+  const [st, set] = useState(FIRST), put = o => set(s => ({ ...s, ...o }));
