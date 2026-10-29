@@ -26,3 +26,5 @@ import { sign_done } from './sign_done.jsx';
 
 const LIST = new Set(LISTS.map(x => x[0]));
 let swept = false;
+
+/* the right address for a document opened at the wrong one, taken once this draw is over (a draw cannot start the next) */
