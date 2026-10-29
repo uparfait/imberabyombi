@@ -28,7 +28,7 @@ export const faq = () => (
 export function intro_top() {
   return (
     <section className="wrap section grid items-start gap-10 lg:grid-cols-[1.25fr_1fr]">
-      <div data-reveal="">{player('video', cfg.video, cfg.img('poster', 1280, 720))}</div>
+      <div data-reveal="">{player('video', cfg.video, cfg.poster)}</div>
       <div>{sec_head('Overview', lorem.t(4), lorem.p(2))}<dl className="mt-8 grid grid-cols-2 gap-4">{[24, 180, 12, 98].map(n => (
         <div key={n} className="card p-5"><dt className="text-sm font-medium text-muted">{lorem.t(1)}</dt>
           <dd className="mt-1 font-display text-3xl font-bold text-fg"><data value={n} data-count={n}>0</data></dd></div>
