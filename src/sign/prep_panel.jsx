@@ -19,3 +19,4 @@ function add(e) {
   f.reset(); prep_dirty(); rerender(); notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
 }
 /* a name picked from the suggestions brings its email */
+const fill = e => { const p = people().find(s => s.name === e.target.value); if (p && !e.target.form.elements.email.value) e.target.form.elements.email.value = p.email; };
