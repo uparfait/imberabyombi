@@ -7,3 +7,4 @@
    Text is set in the site's own fonts. The template's 3D icons (i3, src/icons) use it in the glossy style; the Iconisus
    module (/admin/icons) is its playground. Import from here: import { render, STYLES } from '../icon3d/index.js' */
 import { classic, balloon, ribbon } from './styles_a.js';
+import { glossy, clay, glass } from './styles_b.js';
