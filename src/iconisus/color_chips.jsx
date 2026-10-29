@@ -12,3 +12,4 @@ export function Colors({ st, put }) {
     <div className="flex items-center gap-4">
       <div className="flex gap-3">{NAMES.map((n, k) => { const v = st.cols[k] || auto[k];
         return <div key={n} className="relative">
+          <label className={`ico_chip ${st.cols[k] ? '' : 'auto'}`} style={{ background: v }} title={st.cols[k] ? n : `${n} (worked out)`}>
