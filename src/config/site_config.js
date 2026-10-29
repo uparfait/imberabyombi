@@ -2,12 +2,12 @@
    currency, simulated latency, table size, parking, work hours, storage cap, pictures, video/audio/map links).
    Pictures are cartoons drawn from a seed (src/cartoons: nothing to download); only the home hero is a real picture. */
 import { cartoon, cartoon_face } from '../cartoons/index.js';
+
 export const cfg = {
   name: 'Imberabyombi', logo: ['IMBERA', 'BYOMBI'] /* two-tone logo: first part in brand colour */, ns: window.NS || 'loremds:v1:',
   currency: 'USD', latency: 450 /* ms of simulated network time per request (saving, loading a table); set 0 or swap for fetch() */,
   page_size: 10 /* table rows per page */, parking_slots: 24, parking_rate: 2, work_start: '08:00', storage_cap: 5 * 1024 * 1024,
-  img: (seed, w = 900, h = 650) => `https://picsum.photos/seed/${seed}/${w}/${h}`,
-  face: n => `https://i.pravatar.cc/320?img=${(n % 70) + 1}`,
+  img: (seed, w = 900, h = 650) => cartoon(seed, w, h) /* a cartoon scene; the same seed always draws the same one */,
   hero: 'https://uparfait.github.io/uparfait/favicon.ico' /* home hero portrait */,
   video: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
   audio: 'https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3',
