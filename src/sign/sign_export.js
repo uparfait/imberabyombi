@@ -30,3 +30,6 @@ export async function signed_pdf(d, marks) {
   }
   if (d.status === 'completed') await certificate(pdf, d, L);
   return pdf.save();
+}
+
+/* hands the bytes to the browser as a download */
