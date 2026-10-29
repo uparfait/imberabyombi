@@ -17,3 +17,4 @@ async function take(file) {
   if (!/\.pdf$/i.test(file.name) && file.type !== 'application/pdf') return bad('Only PDF files can be uploaded. Save the document as a PDF first.', 'Not a PDF');
   if (file.size > MAX) return bad('Choose a PDF of 20 MB or less.', 'The file is too large');
   const bytes = await file.arrayBuffer();
+  if (!new TextDecoder().decode(bytes.slice(0, 1024)).includes('%PDF')) return bad('This file is not a PDF, whatever its name says.', 'Not a PDF');
