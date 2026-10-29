@@ -8,3 +8,4 @@ import { face_bits } from './features.js';
 
 export function look(r) {
   const style = r.pick(HAIR_STYLES), skin = r.pick(SKINS);
+  let hair = r.pick(HAIRS);
