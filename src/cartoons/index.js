@@ -7,3 +7,4 @@ import { scene_svg } from './scene.js';
 import { portrait_svg } from './portrait.js';
 
 const made = new Map();   // address by seed and size: a picture drawn twice is built once
+const memo = (key, fn) => made.get(key) || (made.set(key, fn()), made.get(key));
