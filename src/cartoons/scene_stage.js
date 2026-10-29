@@ -22,3 +22,4 @@ export function stage(w, h, r) {
   }
   out += rect(0, deck, w, h * .08, 0, shade(BRAND, -.12)) + rect(0, deck, w, h * .015, 0, shade(BRAND, .15)) + rect(0, deck + h * .08, w, h, 0, shade(bg, -.25));
   const px = w * r.range(.3, .7);
+  out += person(px, deck, s * .3, look(r), r.pick(['point', 'wave', 'cheer']), r());
