@@ -7,3 +7,4 @@
 .sign_brand { display: flex; flex: none; align-items: center; gap: .5rem; margin-right: .25rem; }
 .sign_top > nav { flex: 0 1 auto; }
 .sign_top .tile_trigger { max-width: 100%; }   /* short on room (phones): the menu's name trims, its icon and arrow stay */
+.sign_btns { display: flex; flex: none; align-items: center; gap: .375rem; margin-left: auto; }
