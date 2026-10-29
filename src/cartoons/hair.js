@@ -15,3 +15,4 @@ export function hair_back(cx, cy, R, style, color) {
   if (style === 'bun') return circle(cx, cy - R * 1.12, R * .45, color);
   if (style === 'curly') {
     let out = '';
+    for (let a = 165; a <= 375; a += 30) { const t = a * Math.PI / 180; out += circle(cx + Math.cos(t) * R * 1.02, cy + Math.sin(t) * R * .98, R * .36, color); }
