@@ -20,3 +20,4 @@ export function Pad_upload({ kind }) {
     if (!/^image\/(png|jpeg|webp)$/.test(f.type)) return say('Not a picture', 'Choose a PNG, JPG or WebP picture.');
     if (f.size > 5 * 1048576) return say('The picture is too large', 'Choose a picture of 5 MB or less.');
     const el = new Image(), url = URL.createObjectURL(f);
+    el.onload = () => { set_cut(solid_edges(el) ? 30 : 0); set_img(el); URL.revokeObjectURL(url); };
