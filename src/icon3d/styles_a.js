@@ -4,3 +4,5 @@
    ribbon: concentric striped bands with depth. */
 import { shade, mix, blend } from './color.js';
 import { lin, rad, glin, gvert, sym, use, pl, vol } from './parts.js';
+
+export function classic(G, C, i) {
