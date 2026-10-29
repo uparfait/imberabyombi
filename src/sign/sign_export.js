@@ -19,3 +19,4 @@ function place(page, f, img, degrees) {
 }
 
 /* d: the record, marks: { field id: PNG data URL } → the new file's bytes */
+export async function signed_pdf(d, marks) {
