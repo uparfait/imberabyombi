@@ -14,3 +14,4 @@ export function glossy(G, C, i) {
 
 export function clay(G, C, i) {
   const dk = C.hs ? C.s : shade(C.p, -8), tile = y => `x="30" y="${y}" width="140" height="140" rx="44"`;
+  return [lin(i + 'a', [[0, shade(C.p, 12, -4)], [.6, C.p], [1, dk]]) + lin(i + 'r', [[0, '#fff', .6], [.3, '#fff', 0]])
