@@ -8,3 +8,5 @@ import { KINDS } from './sign_store.js';
 import { P, prep_dirty } from './prep_state.js';
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+/* the page nearest the middle of the screen, and how far down it that middle is (a fraction) */
