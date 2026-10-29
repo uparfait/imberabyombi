@@ -6,3 +6,4 @@ const MAX = 1400;   /* the longest side kept: plenty for a signature or a stamp,
 
 const median = a => a.sort((x, y) => x - y)[a.length >> 1];
 /* the median red, green, blue and alpha of the edge pixels */
+function edges(d, w, h) {
