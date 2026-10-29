@@ -9,3 +9,4 @@ import { stage } from './scene_stage.js';
 import { mountains } from './scene_mountains.js';
 
 export const SCENES = { city, park, office, stage, mountains };
+const HINTS = [[/^event/, ['stage', 'stage', 'park', 'city']], [/^about/, ['office', 'park']]];
