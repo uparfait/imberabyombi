@@ -19,11 +19,11 @@ let page_key = 0, last = null;
 
 /* the public website (and the design system): neither an admin page nor an account page */
 export const is_public = path => !(path === '/admin' || path.startsWith('/admin/')) && !AUTH_ROUTES[path];
+
 export function render_route() {
   if (get_version() === 0) { skip_after_render(); return null; }   /* before boot's first navigate() draws: #app stays empty */
   set_route(parse()); const r = route; let html;
-  try { html = r.path === '/admin' || r.path.startsWith('/admin/') ? admin_page(r)
-    : AUTH_ROUTES[r.path] ? (set_meta(AUTH_ROUTES[r.path][0]), AUTH_ROUTES[r.path][1](r)) : public_page(r); }
+  try { html = is_public(r.path) ? public_page(r)
   catch (err) { console.error(err); html = error_page(); }
   if (html == null) { skip_after_render(); return last; }   /* redirected (admin_page): the old page stays until the next one */
   if (!render_flags.keep) page_key = get_version();
