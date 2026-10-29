@@ -17,3 +17,4 @@ export function Iconisus_page() {
   const [st, set] = useState(FIRST), put = o => set(s => ({ ...s, ...o }));
   const input = st.mode === 'svg' && st.svg.trim() ? st.svg : st.mode === 'lib' && st.icon ? iconify_svg(st.icon) : st.text;
   const draw = (o = {}) => render(input, { style: st.style, colors: st.cols, ...o });
+  return <div className="page_enter grid gap-6">
