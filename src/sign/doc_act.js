@@ -19,3 +19,4 @@ export const DOC_ACT = {
   },
   sign_doc_del: t => { const d = find_doc(t.dataset.id);
     ask(`Delete “${d.title}”? Its PDF and every signature on it are removed from this browser.`, async () => {
+      drop_doc(d.id); forget_pdf(d.id); await drop_files(d.id);
