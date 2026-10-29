@@ -21,3 +21,6 @@ function Page({ pdf, i, n, size, children }) {
     <div ref={box} className="sign_sheet" data-page={i} style={{ aspectRatio: `${size.w} / ${size.h}` }}>
       <canvas ref={cv} aria-hidden="true" /><div className="sign_layer">{children}</div></div>
     <figcaption className="sign_pno">Page {i + 1} of {n}</figcaption></figure>;
+}
+
+export function Pdf_pages({ doc, layer }) {
