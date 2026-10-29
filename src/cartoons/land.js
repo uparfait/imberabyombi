@@ -27,3 +27,4 @@ export function tree(x, ground, s, r, kind = r.pick(['round', 'round', 'pine', '
     [[.15, .5, .36], [.4, .42, .28], [.62, .38, .2]].forEach(([b, t, half]) => {   // tier: base height, tier height, half width
       const yb = g - s * b;
       out += path(`M${n(x - s * half)} ${n(yb)}L${n(x)} ${n(yb - s * t)}L${n(x + s * half)} ${n(yb)}Z`, color,
+        `stroke="${color}" stroke-width="${n(s * .05)}" stroke-linejoin="round"`);
