@@ -14,3 +14,4 @@ export function sky(w, h, r, horizon, colors = r.pick(SKIES)) {
 
 /* a band whose top rolls around y (± amp), filled down to the bottom of the picture */
 export function hill(w, h, y, amp, fill, r) {
+  const k = 2 * Math.PI / w, f1 = r.range(.7, 1.6) * k, f2 = r.range(2.2, 3.6) * k, p1 = r.range(0, 7), p2 = r.range(0, 7), list = [];
