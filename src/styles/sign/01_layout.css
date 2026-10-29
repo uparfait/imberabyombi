@@ -48,3 +48,5 @@
   .sign_left.open { transform: none; }
   .sign_scrim { position: fixed; inset: 0; z-index: 45; background: rgb(var(--ink) / .45); opacity: 0; pointer-events: none; transition: opacity .25s; }
   .sign_scrim.on { opacity: 1; pointer-events: auto; }
+}
+.sheet_grip { width: 2.5rem; height: .3rem; margin: -.5rem auto 0; border-radius: var(--pill); background: rgb(var(--line)); }
