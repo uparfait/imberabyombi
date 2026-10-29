@@ -19,3 +19,4 @@ export function portrait_svg(seed, w = 320, h = w) {
   if (collar === 'v') out += path(`M${n(cx - 8)} ${n(top + .5)}L${n(cx)} ${n(top + 11)}L${n(cx + 8)} ${n(top + .5)}Z`, skin_dark);
   if (collar === 'shirt') out += path(`M${n(cx - 8)} ${n(top + .5)}L${n(cx)} ${n(top + 9)}L${n(cx + 8)} ${n(top + .5)}Z`, skin_dark)
     + path(`M${n(cx - 9)} ${n(top)}L${n(cx - 1)} ${n(top + 9)}L${n(cx - 11)} ${n(top + 7)}Z`, WHITE)
+    + path(`M${n(cx + 9)} ${n(top)}L${n(cx + 1)} ${n(top + 9)}L${n(cx + 11)} ${n(top + 7)}Z`, WHITE);
