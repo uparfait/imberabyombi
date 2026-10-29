@@ -4,3 +4,4 @@
 import { cfg } from '../config/index.js';
 
 const NAME = cfg.ns + 'sign', STORE = 'files';
+let opening = null;
