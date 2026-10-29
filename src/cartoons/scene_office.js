@@ -31,3 +31,4 @@ export function office(w, h, r) {
     + cloud(wx + ww * .15, wy + wh * .4, Math.min(ww, wh) * .5) + stroke(line(wx + ww / 2, wy, wx + ww / 2, wy + wh), '#FFFFFF', s * .014);
   out += board(w * .52, h * .12, w * .36, h * .32, s, r);
   const shelf_x = w * .06, shelf_y = h * .62;
+  out += rect(shelf_x, shelf_y, w * .3, s * .02, s * .006, '#B07A4E');
