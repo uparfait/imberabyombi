@@ -3,3 +3,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { PAD, trim } from './pad_state.js';
 import { draw_stamp, INKS } from './stamp_draw.js';
+
+const SHAPES = [['round', 'Round'], ['square', 'Square']];
