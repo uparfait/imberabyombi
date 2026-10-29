@@ -26,3 +26,4 @@ export const lum = hex => { const v = parseInt(hex.slice(1), 16); return .3 * (v
 
 /* a colour made lighter (amt > 0, towards white) or darker (amt < 0, towards black); hex in, hex out */
 export function shade(hex, amt) {
+  const v = parseInt(hex.slice(1), 16), to = amt > 0 ? 255 : 0, k = Math.abs(amt);
