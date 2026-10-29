@@ -16,3 +16,4 @@ export function stage(w, h, r) {
   out += rect(sx, sy, sw, sh, s * .02, '#F7F4EF') + rect(sx, sy, sw, sh * .18, s * .02, BRAND) + rect(sx, sy + sh * .1, sw, sh * .08, 0, BRAND);
   out += circle(sx + sw * .24, sy + sh * .6, sh * .22, shade(BRAND, .35)) + path(`M${n(sx + sw * .24)} ${n(sy + sh * .6)}L${n(sx + sw * .24)} ${n(sy + sh * .38)}A${n(sh * .22)} ${n(sh * .22)} 0 0 1 ${n(sx + sw * .24 + sh * .22)} ${n(sy + sh * .6)}Z`, BRAND);
   for (let i = 0; i < 3; i++) out += rect(sx + sw * .5, sy + sh * (.38 + i * .17), sw * (.38 - i * .08), sh * .07, sh * .035, '#C9D1D9');
+  for (let i = 0; i < 26; i++) {
