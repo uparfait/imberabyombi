@@ -31,3 +31,4 @@ export function paint(canvas, img, amount) {
 
 /* a picture with solid (not transparent) edges: it most likely has paper around the ink */
 export function solid_edges(img) {
+  const c = document.createElement('canvas'), w = c.width = 64, h = c.height = 64, x = c.getContext('2d', { willReadFrequently: true });
