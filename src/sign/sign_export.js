@@ -21,3 +21,4 @@ function place(page, f, img, degrees) {
 /* d: the record, marks: { field id: PNG data URL } → the new file's bytes */
 export async function signed_pdf(d, marks) {
   await load_script(PDF_LIB); const L = window.PDFLib;
+  const bytes = await file_get('pdf:' + d.id); if (!bytes) throw new Error('The PDF of this document is not in this browser.');
