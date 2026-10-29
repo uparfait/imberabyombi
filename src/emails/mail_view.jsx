@@ -16,7 +16,7 @@ export const mail_view = k => {
   return (
     <article key={k} className="card overflow-hidden" aria-label={`${MAILS[k].l} email`}>
       <header className="border-b border-line p-4 sm:p-5"><h2 className="font-sans text-lg font-medium sm:text-xl">{m.s}</h2>
-        <div className="mt-3 flex items-center gap-3">{i3('diamond', 'h-10 w-10')}<div className="min-w-0 flex-1 text-sm">
+        <div className="mt-3 flex items-center gap-3">{mark3d('#', 'h-10 w-10')}<div className="min-w-0 flex-1 text-sm">
           <p className="truncate"><b className="font-medium">{cfg.name}</b> <span
             className="text-muted">&lt;no-reply@imberabyombi.com&gt;</span></p>
           <p className="truncate text-muted">to you@lorem.io</p></div>
