@@ -24,3 +24,4 @@ signing). No document is seeded: every account starts empty.
 - **Signers**: name, email and an optional **note for that signer** (they read it before signing; edit it later with the
   note button). People already in the system are suggested as you type a name. Each signer gets a colour.
 - **Fields**: Signature and Stamp. Click a tool to add one on the page on screen, or drag it onto a page. Drag a field to
+  move it, its corner to resize it (a stamp stays square); arrow keys nudge the selected field, Delete removes it.
