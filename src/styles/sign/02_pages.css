@@ -6,3 +6,4 @@
 .sign_sheet canvas { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: inherit; opacity: 0; transition: opacity .3s; }
 .sign_sheet.drawn canvas { opacity: 1; }
 .sign_layer { position: absolute; inset: 0; }
+.sign_pno { margin-top: .375rem; text-align: center; font-size: .75rem; color: rgb(var(--muted)); }
