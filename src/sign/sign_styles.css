@@ -2,3 +2,4 @@
    template's styles). Colours come from the template tokens, so the dark theme applies by itself; the PDF's pages stay
    white paper in both themes. */
 @import '../styles/sign/00_fonts.css';
+@import '../styles/sign/01_layout.css';
