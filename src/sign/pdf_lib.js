@@ -6,3 +6,4 @@ import { LIB, PDFJS_WORKER } from '../editor/core/constants.js';
 import { file_get } from './sign_idb.js';
 
 export const pdfjs = async () => {
+  await load_script(LIB.pdfjs); const lib = window.pdfjsLib; lib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER; return lib;
