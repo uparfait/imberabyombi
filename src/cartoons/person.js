@@ -33,3 +33,4 @@ export function person(x, y, s, o, pose = 'stand', phase = 0) {
   out += o.dress
     ? path(`M${n(x - 1.15 * u)} ${n(y - 7.2 * u)}L${n(x + 1.15 * u)} ${n(y - 7.2 * u)}L${n(x + 1.9 * u)} ${n(y - 3.2 * u)}L${n(x - 1.9 * u)} ${n(y - 3.2 * u)}Z`,
       o.top, `stroke="${o.top}" stroke-width="${n(.9 * u)}" stroke-linejoin="round"`)
+    : rect(x - 1.3 * u, y - 7.4 * u, 2.6 * u, 3.6 * u, .95 * u, o.top);
