@@ -31,3 +31,5 @@ export const signer_bar = d => { const left = left_of(d);
   return <div className="sign_bar"><div className="min-w-0 flex-1"><p className="truncate text-sm">{next_text(left)}</p>{bar(d)}</div>
     {left.length ? <button type="button" className="btn btn_primary btn_sm" data-act="sign_next">Next field</button>
       : <button type="button" className="btn btn_primary btn_sm" data-act="sign_finish">{ic('signature', 'h-4 w-4')}Finish</button>}</div>; };
+
+export const agree_body = (d, r) => <div className="grid gap-4 sm:col-span-2">
