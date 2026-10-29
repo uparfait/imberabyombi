@@ -3,3 +3,5 @@
 import { lazy, Suspense } from 'react';
 import { VIEWS } from './views.js';
 import { loading } from '../feedback/index.js';
+
+const Sign_page = lazy(() => import('../sign/index.js').then(m => ({ default: m.Sign_page })));
