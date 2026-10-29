@@ -13,3 +13,4 @@ export function park(w, h, r) {
   out += hill(w, h, g - s * .1, s * .06, hc[0], r);
   const back = r.int(2, 4);
   for (let i = 0; i < back; i++) out += tree(w * (i + r.range(.1, .9)) / back, g - s * .06, s * r.range(.14, .2), r);
+  out += hill(w, h, g, s * .04, hc[1], r);
