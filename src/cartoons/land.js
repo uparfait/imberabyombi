@@ -24,3 +24,4 @@ export function tree(x, ground, s, r, kind = r.pick(['round', 'round', 'pine', '
   const light = shade(color, .2), g = ground;
   if (kind === 'pine') {
     let out = rect(x - s * .05, g - s * .22, s * .1, s * .22, s * .02, TRUNK);
+    [[.15, .5, .36], [.4, .42, .28], [.62, .38, .2]].forEach(([b, t, half]) => {   // tier: base height, tier height, half width
