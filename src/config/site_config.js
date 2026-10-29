@@ -1,6 +1,7 @@
 /* config/site_config.js: CONFIG. Brand, media and business rules in one place (name, logo, storage prefix,
    currency, simulated latency, table size, parking, work hours, storage cap, pictures, video/audio/map links).
    Pictures are cartoons drawn from a seed (src/cartoons: nothing to download); only the home hero is a real picture.
+   The sample video is a cartoon too (public/media), with its first frame as the poster. */
 import { cartoon, cartoon_face } from '../cartoons/index.js';
 
 export const cfg = {
