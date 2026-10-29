@@ -21,3 +21,4 @@ export function Stamp_make({ name }) {
       <div className="flex flex-wrap gap-x-6 gap-y-3">
         <div><p className="mb-1.5 text-sm font-medium">Ink</p><div className="flex gap-2">{INKS.map((c, i) =>
           <button key={c} type="button" className={`sign_ink ${st.color === c ? 'on' : ''}`} style={{ background: c }} aria-label={`Ink ${i + 1}`}
+            aria-pressed={st.color === c} onClick={() => put('color', c)} />)}</div></div>
