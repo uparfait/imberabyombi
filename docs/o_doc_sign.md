@@ -31,3 +31,4 @@ signing). No document is seeded: every account starts empty.
 - The signer sees the sender's note, their own fields (pulsing) and the others' places. **Next field** goes to the next
   one; a mark made once is placed on the next field of its kind with one tap.
 - **Signature**: draw it, type it (five handwriting styles), or upload a picture. **Stamp**: create one (organisation,
+  centre text, today's date, ink, round or square) or upload a picture.
