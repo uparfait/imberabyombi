@@ -39,3 +39,4 @@ export const prep_panel = d => <div className="sign_panel">
     <input key={d.id} className="sign_title" defaultValue={d.title} maxLength={80} aria-label="Document title" onInput={e => { d.title = e.target.value; prep_dirty(); }} />
     <p className="mt-1 truncate text-xs text-muted" title={d.file}>{d.file} · {d.pages.length} page{d.pages.length === 1 ? '' : 's'} · {size_of(d.size)}</p></section>
   <section aria-label="Signers"><h2 className="sign_cap">Signers</h2>
+    {d.recipients.length ? <ul className="grid gap-2">{d.recipients.map(r => rec(d, r))}</ul>
