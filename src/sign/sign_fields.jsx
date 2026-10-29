@@ -18,3 +18,4 @@ const edit_field = (d, f, sel) => { const r = rec_of(d, f.rid), [l, i] = KINDS[f
 
 /* o = { mode: 'edit' | 'sign' | 'view', sel (edit), marks (saved), pending (signer's, not sent yet), me (signer's id) } */
 export const fields_on = (d, page, o) => d.fields.filter(f => f.page === page).map(f => {
+  if (o.mode === 'edit') return edit_field(d, f, o.sel);
