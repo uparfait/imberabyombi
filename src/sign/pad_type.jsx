@@ -12,3 +12,6 @@ async function typed(text, font) {
   c.width = Math.ceil(x.measureText(text).width) + 90; c.height = 170;
   x.font = f; x.fillStyle = INK; x.textBaseline = 'middle'; x.fillText(text, 45, 88);
   return trim(c);
+}
+
+export function Pad_type({ name }) {
