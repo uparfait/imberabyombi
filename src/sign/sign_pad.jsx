@@ -16,3 +16,4 @@ export function Mark_pad({ kind, name }) {
   const pick = k => { PAD.get = async () => null; set_tab(k); };
   return <div className="grid gap-4 sm:col-span-2">
     <div className="seg justify-self-start" role="radiogroup" aria-label={`How to make your ${kind}`}>{TABS[kind].map(([k, l]) =>
+      <label key={k}><input type="radio" className="sr-only" name="pad_tab" value={k} checked={tab === k} onChange={() => pick(k)} /><span>{l}</span></label>)}</div>
