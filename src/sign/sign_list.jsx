@@ -6,3 +6,5 @@ import { empty, initials } from '../ui/index.js';
 import { auth } from '../auth/index.js';
 import { to } from '../router/index.js';
 import { LISTS, STATUS, of_list, my_turn, my_rec, signed_n, ago } from './sign_store.js';
+
+export const status_chip = d => <span className={`chip ${STATUS[d.status][1]}`}>{STATUS[d.status][0]}</span>;
