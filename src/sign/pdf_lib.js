@@ -32,3 +32,5 @@ export function open_pdf(id) {
   return OPEN.get(id);
 }
 export const forget_pdf = id => { OPEN.get(id)?.then(pdf => pdf.destroy(), () => {}); OPEN.delete(id); };
+
+/* page i (from 0) into canvas, w CSS pixels wide. It draws off screen first, so the page never flashes blank. */
