@@ -26,3 +26,4 @@ function down(e, root) {
     show(el, f);
   };
   const up = () => { el.removeEventListener('pointermove', move); el.classList.remove('drag');
+    if (['x', 'y', 'w', 'h'].some(k => f[k] !== o[k])) prep_dirty(); };
