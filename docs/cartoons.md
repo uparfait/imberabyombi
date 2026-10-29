@@ -11,3 +11,5 @@ offline, and the same seed always draws the same picture. Code: [`src/cartoons/`
 | `cfg.face(n, w, h)` | a head-and-shoulders portrait (`h > w` for a tall card) | team cards, testimonials, avatar stacks |
 
 Both return an image address (an SVG data URI), so they go straight into `<img src>`:
+
+```jsx
