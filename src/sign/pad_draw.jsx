@@ -15,3 +15,5 @@ function wire(c, on_any) {
   const down = e => {
     if (!any) fit(); on = true; c.setPointerCapture(e.pointerId); l = m = at(e);
     x.beginPath(); x.arc(l.x, l.y, 1.3, 0, 7); x.fill(); if (!any) { any = true; on_any(true); }
+  };
+  const move = e => { if (!on) return; const p = at(e), n = { x: (l.x + p.x) / 2, y: (l.y + p.y) / 2 };
