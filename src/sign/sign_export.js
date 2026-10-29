@@ -35,3 +35,4 @@ export async function signed_pdf(d, marks) {
 /* hands the bytes to the browser as a download */
 export function save_pdf(name, bytes) {
   const url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' })), a = document.createElement('a');
+  a.href = url; a.download = name.replace(/[\\/:*?"<>|]+/g, ' ').trim() || 'document.pdf';
