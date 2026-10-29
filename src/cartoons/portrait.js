@@ -23,3 +23,5 @@ export function portrait_svg(seed, w = 320, h = w) {
   out += circle(cx - R, cy + 2, R * .22, o.skin) + circle(cx + R, cy + 2, R * .22, o.skin);
   if (r.chance(.25)) out += circle(cx - R, cy + 7, 1.6, BRAND) + circle(cx + R, cy + 7, 1.6, BRAND);
   out += head(cx, cy, R, o);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 ${n(H)}" width="${w}" height="${h}">${out}</svg>`;
+}
