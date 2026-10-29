@@ -25,3 +25,4 @@ export const BLUSH = '#F28C8C';
 export const lum = hex => { const v = parseInt(hex.slice(1), 16); return .3 * (v >> 16) + .59 * ((v >> 8) & 255) + .11 * (v & 255); };
 
 /* a colour made lighter (amt > 0, towards white) or darker (amt < 0, towards black); hex in, hex out */
+export function shade(hex, amt) {
