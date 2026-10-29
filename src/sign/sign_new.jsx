@@ -27,3 +27,4 @@ async function take(file) {
 
 export function Sign_new() {
   const [busy, set_busy] = useState(false), [over, set_over] = useState(false);
+  const pick = async f => { if (busy || !f) return; set_busy(true); if (!await take(f).catch(() => false)) set_busy(false); };
