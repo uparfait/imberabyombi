@@ -10,3 +10,4 @@ async function typed(text, font) {
   const f = `72px "${font}"`; await document.fonts.load(f, text);
   const c = document.createElement('canvas'), x = c.getContext('2d', { willReadFrequently: true }); x.font = f;
   c.width = Math.ceil(x.measureText(text).width) + 90; c.height = 170;
+  x.font = f; x.fillStyle = INK; x.textBaseline = 'middle'; x.fillText(text, 45, 88);
