@@ -43,3 +43,4 @@ export function person(x, y, s, o, pose = 'stand', phase = 0) {
 }
 
 /* a head with hair and a face, centre (x, y), radius R */
+export const head = (x, y, R, o) => hair_back(x, y, R, o.style, o.hair) + circle(x, y, R, o.skin) + face_bits(x, y, R, o) + hair_front(x, y, R, o.style, o.hair);
