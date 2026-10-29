@@ -47,3 +47,4 @@ function page_for(a, id) {
     : { title: d.title, back: list_href(d.status === 'completed' ? 'completed' : 'waiting'), body: owner_page(d) };
   if (a === 'sign') return { title: d.title, back: list_href('inbox'), btns: d.status === 'completed' ? dl(d) : null, body: signer_page(d) };
   if (a === 'done') return { title: 'Signing complete', back: list_href('inbox'), body: sign_done(d) };
+  return { title: 'Not found', back: list_href('all'), body: missing() };
