@@ -13,3 +13,4 @@ export function classic(G, C, i) {
     + lin(i + 'r', [[0, '#fff', .75], [.45, '#fff', 0], [1, shade(C.p, -35), .5]])
     + gvert(i + 'l', G, [[0, face], [1, mix(face, C.p, .14)]])
     + `<clipPath id="${i}k"><circle cx="100" cy="92" r="72"/></clipPath>`
+    + `<filter id="${i}t" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="${shade(C.p, -35)}" flood-opacity=".45"/></filter>`;
