@@ -32,3 +32,4 @@ export const prep_tools = d => <div className="sign_panel">
 </div>;
 
 export const prep_bar = d => { const r = rec_of(d, P.rid);
+  return <div className="sign_bar">
