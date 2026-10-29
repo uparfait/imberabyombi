@@ -25,3 +25,5 @@ export const prep_save = () => {
   save_doc(P.doc); P.dirty = false; document.querySelector('[data-unsaved]')?.setAttribute('hidden', '');
 };
 const leave = () => { if (P.dirty) prep_save(); P.doc = null; };
+
+before_render(keep => { if (!keep) leave(); });
