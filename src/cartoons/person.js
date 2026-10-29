@@ -49,3 +49,4 @@ export const head = (x, y, R, o) => hair_back(x, y, R, o.style, o.hair) + circle
 export function from_back(x, y, s, o, cheer = false) {
   const R = s * .17;
   let out = '';
+  if (cheer) [-1, 1].forEach(k => { out += stroke(line(x + k * s * .25, y - s * .35, x + k * s * .42, y - s * 1.05), o.top, s * .12) + circle(x + k * s * .42, y - s * 1.05, s * .07, o.skin); });
