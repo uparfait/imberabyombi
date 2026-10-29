@@ -4,3 +4,4 @@
    IndexedDB (sign_idb.js). Nothing is seeded: each person sees the documents they prepared and the ones sent to them. */
 import { db } from '../store/index.js';
 import { uid } from '../lib/index.js';
+import { auth } from '../auth/index.js';
