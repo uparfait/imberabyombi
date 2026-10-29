@@ -24,3 +24,4 @@ const fill = e => { const p = people().find(s => s.name === e.target.value); if 
 const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, on = P.rid === r.id;
   return <li key={r.id} className={`sign_rec ${on ? 'on' : ''}`} style={{ '--c': r.color }}>
     <button type="button" className="sign_rec_pick" data-act="sign_rid" data-id={r.id} aria-pressed={on}>
+      <span className="sign_dot" style={{ background: r.color }}>{initials(r.name)}</span>
