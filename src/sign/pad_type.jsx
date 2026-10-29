@@ -19,3 +19,4 @@ export function Pad_type({ name }) {
   PAD.get = async () => text.trim() ? typed(text.trim(), FONTS[font]) : null;
   return <div className="grid gap-4">
     <div className="field"><label htmlFor="pad_name">Your name</label>
+      <input id="pad_name" value={text} maxLength={40} placeholder=" " autoComplete="name" onChange={e => set_text(e.target.value)} /></div>
