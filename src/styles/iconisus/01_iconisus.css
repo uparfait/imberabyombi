@@ -20,3 +20,4 @@
 
 .ico_chip { position: relative; display: block; width: 2.5rem; height: 2.5rem; border: 2px solid rgb(var(--line)); border-radius: var(--pill); cursor: pointer;
   background-clip: padding-box; }
+.ico_chip.auto { border-style: dashed; }
