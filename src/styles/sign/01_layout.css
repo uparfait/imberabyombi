@@ -5,3 +5,4 @@
 .sign_top { position: sticky; top: 0; z-index: 30; display: flex; height: 4rem; align-items: center; gap: .375rem;
   padding: 0 .5rem; border-bottom: 1px solid rgb(var(--line)); background: rgb(var(--bg)); }
 .sign_brand { display: flex; flex: none; align-items: center; gap: .5rem; margin-right: .25rem; }
+.sign_top > nav { flex: 0 1 auto; }
