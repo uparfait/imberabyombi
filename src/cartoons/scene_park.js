@@ -24,3 +24,5 @@ export function park(w, h, r) {
   out += hill(w, h, h - s * .1, s * .02, hc[2], r);
   const people = r.int(1, 3), poses = ['wave', 'cheer', 'point', 'stand', 'walk'];
   for (let i = 0; i < people; i++) out += person(w * (i + r.range(.3, .7)) / people, h - s * r.range(.05, .08), s * r.range(.34, .4), look(r), r.pick(poses), r());
+  return out;
+}
