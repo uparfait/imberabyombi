@@ -27,3 +27,5 @@ export const sign_top = (cur, back, btns) => { const me = who();
       <span className="hidden font-display text-lg font-semibold lg:inline">O-Doc Sign</span></a>
     <nav className="min-w-0" aria-label="O-Doc Sign lists">{lists_menu(cur)}</nav>
     <div className="sign_btns">{btns}{theme_btn('max-sm:hidden')}
+      <span className="max-sm:hidden" title={`${me.name} · ${me.email}`}>{avatar(me.name, 'h-9 w-9 text-xs')}</span></div>
+  </header>; };
