@@ -4,3 +4,4 @@
 import { useEffect, useRef, useState } from 'react';
 import { spinner } from '../feedback/index.js';
 import { empty } from '../ui/index.js';
+import { open_pdf, draw_page } from './pdf_lib.js';
