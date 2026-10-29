@@ -38,4 +38,5 @@ them at build time; they only read static data, so this is straightforward.
 
 ## Before publishing
 Sample pictures cost no download: they are cartoons drawn in the page ([cartoons](cartoons.md)); the sample video
+(370 KB) loads only when played. Replace the canonical URL, the JSON-LD values, the social image and the sample media. See
 [before production](before_production.md).
