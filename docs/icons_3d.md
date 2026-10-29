@@ -24,3 +24,4 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
 - The brand mark is `mark3d('#')`: the sidebar's top row, the header (sidebar closed) and the email designs.
 
 ## Where the colours are used
+Status: green (done, complete), amber (warnings, waiting), red (problems). Files and documents: blue. Roles and access:
