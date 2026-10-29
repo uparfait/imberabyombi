@@ -8,3 +8,4 @@ export function face_bits(cx, cy, R, o) {
   let out = '';
   if (o.beard) out += path(`M${at(-.97, .05)}Q${at(-.92, 1.18)} ${at(0, 1.14)}Q${at(.92, 1.18)} ${at(.97, .05)}`
     + `Q${at(.62, .5)} ${at(0, .46)}Q${at(-.62, .5)} ${at(-.97, .05)}Z`, o.hair);
+  out += circle(cx - R * .6, cy + R * .4, R * .16, BLUSH, 'opacity=".35"') + circle(cx + R * .6, cy + R * .4, R * .16, BLUSH, 'opacity=".35"');
