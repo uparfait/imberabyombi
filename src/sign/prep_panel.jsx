@@ -29,3 +29,4 @@ const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, o
         <span className="block truncate text-xs text-muted">{r.email} · {n} field{n === 1 ? '' : 's'}</span></span></button>
     <div className="flex items-start gap-1">
       <p className={`sign_note flex-1 ${r.note ? '' : 'not-italic'}`}>{r.note ? `“${r.note}”` : 'No note for this signer'}</p>
+      <button type="button" className="icon_btn h-8 w-8" data-act="sign_rec_note" data-id={r.id} data-tip="Edit note" aria-label={`Edit the note for ${r.name}`}>{ic('note', 'h-4 w-4')}</button>
