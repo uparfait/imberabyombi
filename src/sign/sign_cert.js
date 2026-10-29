@@ -16,3 +16,4 @@ export async function certificate(pdf, d, L) {
     let line = '';   /* wrap on spaces to the page width */
     const out = l => { room(size + 6); page.drawText(l, { x: M + (o.x || 0), y: y - size, size, font: f, color: o.color || ink }); y -= size + 5; };
     for (const w of plain(s).split(' ')) { const t = line ? `${line} ${w}` : w; if (f.widthOfTextAtSize(t, size) > max && line) { out(line); line = w; } else line = t; }
+    out(line); };
