@@ -8,3 +8,4 @@ import { add_field, del_field, clamp } from './prep_fields.js';
 const pct = v => `${v * 100}%`;
 const show = (el, f) => Object.assign(el.style, { left: pct(f.x), top: pct(f.y), width: pct(f.w), height: pct(f.h) });
 const mark_sel = root => root.querySelectorAll('.sf_edit').forEach(e => e.classList.toggle('sel', e.dataset.fid === P.sel));
+const field_of = el => P.doc?.fields.find(x => x.id === el?.dataset.fid);
