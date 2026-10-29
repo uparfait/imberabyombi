@@ -9,3 +9,4 @@ function wire(c, on_any) {
   const fit = () => {
     if (any) return; const dpr = devicePixelRatio || 1;
     c.width = Math.round(c.clientWidth * dpr); c.height = Math.round(c.clientHeight * dpr); x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    Object.assign(x, { lineWidth: 2.6, lineCap: 'round', lineJoin: 'round', strokeStyle: INK, fillStyle: INK });
