@@ -3,3 +3,4 @@
 import { n, path, bird } from './shapes.js';
 import { HILLS, TREES, INK, shade } from './palette.js';
 import { sky, hill, tree, bush } from './land.js';
+import { person, look } from './person.js';
