@@ -2,3 +2,5 @@
    bushes. Sizes follow s, the picture's shorter side, so a scene reads the same in any shape. */
 import { n, pts, path, rect, circle, ellipse, sun, cloud, v_gradient } from './shapes.js';
 import { SKIES, SUNS, TREES, TRUNK, shade } from './palette.js';
+
+/* horizon: where the land starts (y); colours: [top, bottom] of the gradient */
