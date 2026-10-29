@@ -18,3 +18,6 @@ export function Colors({ st, put }) {
         </div>; })}</div>
       <div className="min-w-0 flex-1">
         <div className="flex justify-between text-xs text-muted"><label htmlFor="ico_size">Size</label><output htmlFor="ico_size">{st.size} px</output></div>
+        <input id="ico_size" type="range" min="16" max="512" step="8" value={st.size} onChange={e => put({ size: +e.target.value })} className="ico_range" /></div>
+    </div></section>;
+}
