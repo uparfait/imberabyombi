@@ -2,3 +2,4 @@
    event attributes are dropped), Iconify icon data ({ body, width, height, left, top }), or up to three characters of text.
    glyph(input, [font, weight]) → { inner (markup in currentColor), vb (viewBox numbers), sw (stroke width; 0 for fills) } */
 export const esc_xml = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+export const clean_svg = s => String(s).replace(/<script[\s\S]*?<\/script>/gi, '').replace(/\son\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '').replace(/javascript:/gi, '');
