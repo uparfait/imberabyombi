@@ -3,3 +3,5 @@
    white glyph · glass: a translucent tile with a light glyph and a glow behind it. */
 import { shade } from './color.js';
 import { lin, rad, grad, use, pl, blur, vol } from './parts.js';
+
+export function glossy(G, C, i) {
