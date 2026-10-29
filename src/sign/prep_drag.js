@@ -37,3 +37,6 @@ function key(e, root) {
   const m = MOVES[e.key], el = root.querySelector(`[data-fid="${P.sel}"]`), f = field_of(el); if (!m || !f) return;
   e.preventDefault(); const step = e.shiftKey ? .02 : .004;
   f.x = clamp(f.x + m[0] * step, 0, 1 - f.w); f.y = clamp(f.y + m[1] * step, 0, 1 - f.h); show(el, f); prep_dirty();
+}
+
+/* a tool dragged over a page: the page takes it; dropped: a field at that spot */
