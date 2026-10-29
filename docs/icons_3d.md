@@ -34,3 +34,4 @@ Completed green, To sign violet.
 |---|---|
 | input | `'A'`, `'7'`, `'#'` (up to 3 characters), any SVG string, or Iconify icon data `{ body, width, height, left, top }` |
 | style | `classic` (orb, extruded glyph), `balloon` (inflated two-tone), `ribbon` (striped bands), `glossy` (solid, shiny), `clay` (soft tile), `glass` (translucent tile) |
+| colors | `[primary, secondary, tertiary]`: 1 to 3; the missing ones are worked out from the first |
