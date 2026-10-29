@@ -17,3 +17,6 @@ function on_screen() {
     if (d < gap) { gap = d; best = { page: +s.dataset.page, y: clamp((mid - b.top) / b.height, .12, .88) }; }
   }
   return best;
+}
+
+/* type: 'signature' | 'stamp'; page, cx, cy: where (a page index and the centre as fractions), or nothing for "on screen" */
