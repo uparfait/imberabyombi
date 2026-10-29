@@ -26,3 +26,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
 ## Changing the look
 - Colours: [`src/cartoons/palette.js`](../src/cartoons/palette.js) (skies, hills, buildings, skins, hair, clothes; the
   brand orange is the main accent).
+- Your own pictures: the parts are exported (`person`, `look`, `head`, `sky`, `hill`, `tree`, `bush`, `shapes`,
