@@ -9,3 +9,4 @@
 
 .ico_grid { display: grid; height: 13rem; grid-template-columns: repeat(7, minmax(0, 1fr)); align-content: start; gap: .25rem; padding: .25rem;
   overflow-y: auto; overscroll-behavior: contain; border: 1px solid rgb(var(--line)); border-radius: 1rem; }
+.ico_pick { display: grid; aspect-ratio: 1; place-items: center; border-radius: .75rem; color: rgb(var(--fg)); transition: background-color .15s; }
