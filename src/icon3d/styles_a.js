@@ -18,3 +18,4 @@ export function classic(G, C, i) {
   return [d, `<circle cx="100" cy="92" r="72" fill="url(#${i}b)"/><circle cx="100" cy="92" r="72" fill="url(#${i}c)"/>`
     + `<g clip-path="url(#${i}k)"><ellipse cx="100" cy="46" rx="58" ry="34" fill="url(#${i}g)"/></g>`
     + `<circle cx="100" cy="92" r="72" fill="none" stroke="url(#${i}r)" stroke-width="2.5"/>`
+    + `<g filter="url(#${i}t)">${ext}${pl(G, 58, 50, 84, `url(#${i}l)`)}</g>`];
