@@ -29,10 +29,7 @@ Build command `npm run build`, output folder `dist`. Add `public/_redirects` (it
 ```
 
 ## Vercel
-Build command `npm run build`, output folder `dist`. Add `vercel.json` at the project root:
-```json
-{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
-```
+`vercel.json` at the project root is ready: build command `npm run build`, output folder `dist`, every route answered
 
 ## Nginx
 ```nginx
