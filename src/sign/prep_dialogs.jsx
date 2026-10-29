@@ -2,3 +2,5 @@
    gets it, how many fields each, the note each one reads). */
 import { ic } from '../icons/index.js';
 import { initials } from '../ui/index.js';
+
+export const note_body = r => <div className="field sm:col-span-2"><label htmlFor="sign_note_in">Note for {r.name}</label>
