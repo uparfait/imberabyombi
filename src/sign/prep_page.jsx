@@ -23,3 +23,4 @@ export const prep_btns = () => <>
     <span className="hidden sm:inline">Send for signing</span><span className="sm:hidden">Send</span></button></>;
 
 export const prep_page = d => <div className="sign_work">
+  <div className={`sign_scrim ${P.sheet ? 'on' : ''}`} data-act="sign_sheet" aria-hidden="true"></div>
