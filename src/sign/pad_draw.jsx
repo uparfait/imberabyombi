@@ -8,3 +8,4 @@ function wire(c, on_any) {
   const x = c.getContext('2d', { willReadFrequently: true }); let on = false, any = false, l, m;
   const fit = () => {
     if (any) return; const dpr = devicePixelRatio || 1;
+    c.width = Math.round(c.clientWidth * dpr); c.height = Math.round(c.clientHeight * dpr); x.setTransform(dpr, 0, 0, dpr, 0, 0);
