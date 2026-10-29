@@ -22,3 +22,4 @@ export const blur = (id, sd, r = '-60%') =>
 export function vol(id, o) {
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
   if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
+  if (o.flat) return f + '</filter>';
