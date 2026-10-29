@@ -4,3 +4,4 @@
      style   'classic' | 'balloon' | 'ribbon' | 'glossy' | 'clay' | 'glass'
      colors  ['#primary', '#secondary', '#tertiary']: 1, 2 or 3 (missing ones are worked out from the first)
      size    pixels or any CSS size ('100%')
+   Text is set in the site's own fonts. The template's 3D icons (i3, src/icons) use it in the glossy style; the Iconisus
