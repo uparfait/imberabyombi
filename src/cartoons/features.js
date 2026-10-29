@@ -2,3 +2,5 @@
    rosy cheeks, and sometimes glasses or a beard (o: the person's look, see person.js). */
 import { n, path, circle, stroke } from './shapes.js';
 import { INK, BLUSH, shade } from './palette.js';
+
+export function face_bits(cx, cy, R, o) {
