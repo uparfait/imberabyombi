@@ -19,3 +19,4 @@ export function clay(G, C, i) {
     + `<filter id="${i}d" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="${shade(C.p, -32)}" flood-opacity=".5"/></filter>`,
     `<rect ${tile(33)} fill="${shade(dk, -20)}"/><g filter="url(#${i}v)"><rect ${tile(24)} fill="url(#${i}a)"/></g>`
     + `<rect ${tile(24)} fill="none" stroke="url(#${i}r)" stroke-width="2"/>`
+    + `<g filter="url(#${i}d)"><g filter="url(#${i}w)">${use(i + 'G', 60, 54, 80, C.ht ? C.t : '#ffffff')}</g></g>`];
