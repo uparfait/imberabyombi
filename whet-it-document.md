@@ -68,6 +68,8 @@ Every feature below is working code. Each line says what it is and where it live
 - Sign with a drawn, typed (five handwriting fonts) or uploaded signature; a created or uploaded stamp; background
   removal makes the paper of an upload transparent. Next field, one-tap reuse, an agreement before signing.
 - Progress per signer, a copyable signing link, activity, and a download with the marks written into the PDF and a
+  signing certificate page once everyone has signed.
+
 ## Data tables (`src/table/`, `src/schemas/`)
 - Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
   Action Buttons column pinned first, details view (COLUMN NAME / VALUE), add, edit, delete.
