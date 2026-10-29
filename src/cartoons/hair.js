@@ -14,3 +14,4 @@ export function hair_back(cx, cy, R, style, color) {
   if (style === 'afro') return circle(cx, cy - R * .22, R * 1.45, color);
   if (style === 'bun') return circle(cx, cy - R * 1.12, R * .45, color);
   if (style === 'curly') {
+    let out = '';
