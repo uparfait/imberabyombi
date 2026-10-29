@@ -11,3 +11,5 @@ const open = () => opening || (opening = new Promise((resolve, reject) => {
   req.onupgradeneeded = () => req.result.createObjectStore(STORE);
   req.onsuccess = () => resolve(req.result);
   req.onerror = () => { opening = null; reject(req.error); };
+}));
+/* one request in its own transaction; resolves with its result once the transaction is done */
