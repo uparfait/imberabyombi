@@ -4,3 +4,4 @@
 import { useState } from 'react';
 import { PAD } from './pad_state.js';
 import { Pad_draw } from './pad_draw.jsx';
+import { Pad_type } from './pad_type.jsx';
