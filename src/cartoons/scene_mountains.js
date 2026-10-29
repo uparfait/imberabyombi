@@ -9,3 +9,4 @@ const SUNSETS = [['#FFC9A8', '#FFF0DC'], ['#C9D8F7', '#FFE9D6'], ['#BFE3F5', '#F
 
 /* a row of peaks with snowy tops along base y, from x0 to x1 */
 function peaks(x0, x1, base, tall, color, r) {
+  let out = '', x = x0;
