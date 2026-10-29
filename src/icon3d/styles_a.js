@@ -28,3 +28,4 @@ export function balloon(G, C, i) {
 }
 
 export function ribbon(G, C, i) {
+  const u = Math.max(G.vb[2], G.vb[3]) / 100, K = 5, bw = 2.2 * u, gw = .75 * u, base = G.sw, X = 42, Y = 36, S = 116, R = i + 'R';
