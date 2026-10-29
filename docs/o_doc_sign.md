@@ -29,3 +29,4 @@ signing). No document is seeded: every account starts empty.
 
 ## Signing
 - The signer sees the sender's note, their own fields (pulsing) and the others' places. **Next field** goes to the next
+  one; a mark made once is placed on the next field of its kind with one tap.
