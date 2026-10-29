@@ -15,3 +15,4 @@ export function sign_done(d) {
       <dl className="sign_facts">
         <dt>Document</dt><dd className="truncate">{d.title}</dd>
         <dt>Signed</dt><dd>{when(r?.signed_at)}</dd>
+        <dt>Status</dt><dd>{status_chip(d)}</dd></dl>
