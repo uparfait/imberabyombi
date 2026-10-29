@@ -13,3 +13,4 @@ export function glossy(G, C, i) {
 }
 
 export function clay(G, C, i) {
+  const dk = C.hs ? C.s : shade(C.p, -8), tile = y => `x="30" y="${y}" width="140" height="140" rx="44"`;
