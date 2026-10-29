@@ -25,3 +25,5 @@ dist-ssr
 
 # The lock file is always longer than 100 lines (repository rule); versions are pinned in package.json instead
 package-lock.json
+
+# The Vercel project link and local environment files (they can hold tokens)
