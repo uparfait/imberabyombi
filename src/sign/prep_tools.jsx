@@ -6,3 +6,4 @@ import { KINDS, rec_of } from './sign_store.js';
 import { P } from './prep_state.js';
 
 const tool = (type, c = '') => { const [l, i] = KINDS[type];
+  return <button key={type} type="button" className={`sign_tool ${c}`} data-act="sign_tool" data-type={type} draggable
