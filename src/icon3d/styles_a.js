@@ -11,3 +11,4 @@ export function classic(G, C, i) {
     + lin(i + 'c', [[.55, shade(C.p, -30), 0], [1, shade(C.p, -30), .45]])
     + lin(i + 'g', [[0, '#fff', .55], [1, '#fff', 0]])
     + lin(i + 'r', [[0, '#fff', .75], [.45, '#fff', 0], [1, shade(C.p, -35), .5]])
+    + gvert(i + 'l', G, [[0, face], [1, mix(face, C.p, .14)]])
