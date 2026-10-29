@@ -14,3 +14,4 @@ function edges(d, w, h) {
 }
 
 /* the picture into canvas (scaled down when large), with its background made transparent by amount */
+export function paint(canvas, img, amount) {
