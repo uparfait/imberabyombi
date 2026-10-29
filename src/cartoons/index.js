@@ -10,3 +10,4 @@ const made = new Map();   // address by seed and size: a picture drawn twice is 
 const memo = (key, fn) => made.get(key) || (made.set(key, fn()), made.get(key));
 
 /* SVG text → a data URI (only the characters an address needs escaped) */
+export const svg_data_uri = svg => 'data:image/svg+xml,' + svg.replace(/"/g, "'").replace(/[\r\n%#()<>?[\\\]^`{|}]/g, encodeURIComponent);
