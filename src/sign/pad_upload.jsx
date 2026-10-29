@@ -2,3 +2,4 @@
    checkerboard so what is transparent is plain to see. "Remove background" makes the paper transparent (bg_cut.js): it
    starts part-way for a picture with paper around it; slide right until only the ink is left. Its mark is the picture
    as shown, cut to its visible part. */
+import { useEffect, useRef, useState } from 'react';
