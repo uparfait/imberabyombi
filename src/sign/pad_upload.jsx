@@ -26,3 +26,5 @@ export function Pad_upload({ kind }) {
   };
   const input = <input type="file" accept="image/png,image/jpeg,image/webp" className="sr-only"
     onChange={e => { pick(e.target.files[0], e.target.form); e.target.value = ''; }} />;
+
+  if (!img) return <label className="sign_drop sm">{input}{i3('image', 'h-12 w-12')}
