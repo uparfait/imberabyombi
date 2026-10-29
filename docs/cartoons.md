@@ -6,3 +6,4 @@ offline, and the same seed always draws the same picture. Code: [`src/cartoons/`
 
 ## Using them
 | Call | Draws | Used by |
+|---|---|---|
