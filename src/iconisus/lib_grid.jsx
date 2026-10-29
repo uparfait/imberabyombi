@@ -26,3 +26,4 @@ export function Lib_grid({ st, put }) {
 
   const note = t => <p className="col-span-full py-8 text-center text-sm text-muted">{t}</p>;
   return <div className="grid gap-2">
+    <div className="flex gap-2">
