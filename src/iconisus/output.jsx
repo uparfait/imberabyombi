@@ -12,3 +12,4 @@ export function Output({ st, draw }) {
   const [code, set_code] = useState(false), svg = draw({ size: st.size });
   return <section className="grid gap-3" aria-label="Result">
     <div className="flex gap-2">
+      <button type="button" className="btn btn_primary btn_sm flex-1" onClick={() => copy(svg, 'SVG')}>{ic('copy', 'h-4 w-4')}Copy SVG</button>
