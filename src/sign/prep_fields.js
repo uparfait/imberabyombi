@@ -14,3 +14,4 @@ function on_screen() {
   const mid = innerHeight / 2; let best = { page: 0, y: .3 }, gap = Infinity;
   for (const s of qsa('.sign_sheet')) {
     const b = s.getBoundingClientRect(), d = b.top > mid ? b.top - mid : b.bottom < mid ? mid - b.bottom : 0;
+    if (d < gap) { gap = d; best = { page: +s.dataset.page, y: clamp((mid - b.top) / b.height, .12, .88) }; }
