@@ -33,3 +33,4 @@ export function Lib_grid({ st, put }) {
         <input id="ico_q" type="search" placeholder=" " autoComplete="off" value={q} onChange={e => set_q(e.target.value)} /></div></div>
     <p className="text-xs text-muted">{LIBS.find(l => l[0] === st.lib)[2]}{set ? ` · ${names.length} icons` : ''}</p>
     <div className="ico_grid" aria-label="Icons">
+      {err ? note('This icon set could not be loaded. Check your connection and pick it again.')
