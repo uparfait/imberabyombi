@@ -1,3 +1,4 @@
 /* styles/sign/00_fonts.css: the handwriting fonts of typed signatures, open-licence fonts served with the site from
    src/assets/fonts (no third-party font service; licence in ofl_license.txt). They download only when they are shown. */
 @font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url('../../assets/fonts/dancing_script_latin.woff2') format('woff2'); }
