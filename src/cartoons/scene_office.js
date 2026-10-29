@@ -21,3 +21,6 @@ function board(x, y, bw, bh, s, r) {
     list.push(`${n(bx + bar / 2)} ${n(by - bh * .06)}`);
   }
   return out + stroke('M' + list.join('L'), INK, s * .008, 'opacity=".55"');
+}
+
+export function office(w, h, r) {
