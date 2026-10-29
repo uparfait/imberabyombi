@@ -41,3 +41,4 @@ export const prep_panel = d => <div className="sign_panel">
   <section aria-label="Signers"><h2 className="sign_cap">Signers</h2>
     {d.recipients.length ? <ul className="grid gap-2">{d.recipients.map(r => rec(d, r))}</ul>
       : <p className="sign_hint">No signers yet. Add the people who sign this document.</p>}
+    <form className="mt-4 grid gap-3" noValidate onSubmit={add} aria-label="Add a signer">
