@@ -19,6 +19,7 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `lib/`       | small helpers (`esc`, `qs`, `uid`, `pad`), dates (`ymd`, `fmt_d`, `add_d`, `iso_week`), money, colours, download, `lorem` |
 | `icons/`     | the path dictionary, flat icons `ic()` and glossy 3D icons `i3()` in fixed colours, the brand mark `mark3d()` (plus `_html` string twins) |
 | `icon3d/`    | the 3D icon engine: `render(input, { style, colors, size })` in six styles |
+| `iconisus/`  | Iconisus (`/admin/icons`): the 3D icon maker (styles in `styles/iconisus/`) |
 | `store/`     | `db` (browser storage) and `app_state` (`ui`, `route`, `render`, `rerender`, `AFTER`, `TIMERS`) |
 | `auth/`      | modules list (`MODS`), roles and levels, session (`auth`, `me`), landing pages, invite links |
 | `schemas/`   | one schema per data type: fields, table columns, renderers, seed data                       |
