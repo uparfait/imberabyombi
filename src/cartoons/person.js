@@ -7,3 +7,4 @@ import { HAIR_STYLES, hair_back, hair_front } from './hair.js';
 import { face_bits } from './features.js';
 
 export function look(r) {
+  const style = r.pick(HAIR_STYLES), skin = r.pick(SKINS);
