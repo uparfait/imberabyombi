@@ -12,3 +12,4 @@ import { status_chip } from './sign_list.jsx';
 const people = () => db.list('staff').filter(s => s.email && s.name);
 
 function add(e) {
+  e.preventDefault(); const f = e.currentTarget; if (!validate(f)) return;
