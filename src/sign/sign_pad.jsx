@@ -3,3 +3,4 @@
    and an upload can lose its background. The tab on show sets PAD.get() (pad_state.js), which the dialog's button reads. */
 import { useState } from 'react';
 import { PAD } from './pad_state.js';
+import { Pad_draw } from './pad_draw.jsx';
