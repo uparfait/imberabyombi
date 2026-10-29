@@ -35,7 +35,7 @@ export function Sign_new() {
       onDragOver={e => { e.preventDefault(); set_over(true); }} onDragLeave={() => set_over(false)}
       onDrop={e => { e.preventDefault(); set_over(false); pick(e.dataTransfer.files[0]); }}>
       <input type="file" accept="application/pdf,.pdf" className="sr-only" disabled={busy} onChange={e => { pick(e.target.files[0]); e.target.value = ''; }} />
-      {busy ? spinner('h-14 w-14') : i3('upload', 'h-16 w-16')}
+      {busy ? spinner('h-14 w-14') : i3('upload', 'h-16 w-16', 'info')}
       <span className="mt-4 block font-display text-xl">{busy ? 'Reading the PDF…' : 'Drop a PDF here'}</span>
       <span className="mt-1 block text-sm text-muted">or <span className="font-medium text-accent underline underline-offset-4">choose a file</span>. PDF only, up to 20 MB.</span>
     </label>
