@@ -23,3 +23,4 @@ const row = (d, href, right, sub) => <li key={d.id}><a href={href} className="si
   {i3('file', 'h-11 w-11', TONE[d.status])}
   <span className="min-w-0 flex-1"><span className="block truncate font-medium">{d.title}</span>
     <span className="block truncate text-sm text-muted">{sub || sub_of(d)}</span></span>
+  {d.recipients.length ? faces(d) : null}{right || status_chip(d)}</a></li>;
