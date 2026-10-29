@@ -38,3 +38,4 @@ signing). No document is seeded: every account starts empty.
 - **Finish** asks the signer to agree to sign electronically. When everyone has signed, the document is Completed.
 
 ## Download
+**Download PDF** writes every mark placed so far into the file's pages (rotated pages included). A completed document's
