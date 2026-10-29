@@ -20,3 +20,4 @@ export const sun = (x, y, r, color, glow = ['#FFF6DA', '#FFE9AE']) =>
   circle(x, y, r * 1.7, glow[0], 'opacity=".55"') + circle(x, y, r * 1.3, glow[1], 'opacity=".7"') + circle(x, y, r, color);
 
 /* a cloud s wide: overlapping puffs on a flat bottom */
+export function cloud(x, y, s, fill = '#fff', opacity = .92) {
