@@ -15,6 +15,7 @@ export const HUE_RUN = ['orange', 'blue', 'green', 'violet', 'teal', 'pink', 'am
 export const hue_at = i => HUE_RUN[((i % HUE_RUN.length) + HUE_RUN.length) % HUE_RUN.length];
 
 const hex = c => TONES[c] || HUES[c] || (/^#[0-9a-f]{3,8}$/i.test(c || '') ? c : TONES.brand);
+/* the icon fills more of its box than the engine's 200 × 200 frame leaves it (a single character, the brand mark, more still) */
 }
 
 export function i3_html(n, c = 'w-14 h-14', tone = 'brand') {
