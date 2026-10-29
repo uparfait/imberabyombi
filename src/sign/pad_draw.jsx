@@ -20,3 +20,4 @@ function wire(c, on_any) {
     x.beginPath(); x.moveTo(m.x, m.y); x.quadraticCurveTo(l.x, l.y, n.x, n.y); x.stroke(); l = p; m = n; };
   const up = () => { on = false; };
   const ro = new ResizeObserver(fit); ro.observe(c);
+  const ev = [['pointerdown', down], ['pointermove', move], ['pointerup', up], ['pointercancel', up]];
