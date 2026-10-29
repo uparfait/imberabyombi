@@ -27,3 +27,4 @@ function wire(c, on_any) {
 }
 
 export function Pad_draw() {
+  const cv = useRef(null), pad = useRef(null), [has, set_has] = useState(false);
