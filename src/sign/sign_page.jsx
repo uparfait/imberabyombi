@@ -51,3 +51,4 @@ function page_for(a, id) {
 }
 
 export function Sign_page() {
+  const [, , , a = '', id] = route.path.split('/'), p = page_for(a, id);
