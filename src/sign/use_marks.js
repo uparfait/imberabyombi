@@ -6,3 +6,4 @@ import { marks_get } from './sign_idb.js';
 export function use_marks(id, version) {
   const [marks, set] = useState({});
   useEffect(() => {
+    let live = true; marks_get(id).then(m => { if (live) set(m); });
