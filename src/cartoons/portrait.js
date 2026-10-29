@@ -10,3 +10,4 @@ const COLLARS = ['crew', 'v', 'shirt', 'hood'];
 
 export function portrait_svg(seed, w = 320, h = w) {
   const r = rng('face:' + seed), o = look(r), back = r.pick(BACKS), H = 100 * h / w, cx = 50, cy = H * .44, R = 20, top = cy + R + 9;
+  const collar = r.pick(COLLARS), skin_dark = shade(o.skin, -.12);
