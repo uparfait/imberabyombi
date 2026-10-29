@@ -8,3 +8,4 @@ import './sign_styles.css';
 import './sign_act.js';
 import { ic } from '../icons/index.js';
 import { route } from '../store/index.js';
+import { auth } from '../auth/index.js';
