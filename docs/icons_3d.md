@@ -36,3 +36,5 @@ Completed green, To sign violet.
 | style | `classic` (orb, extruded glyph), `balloon` (inflated two-tone), `ribbon` (striped bands), `glossy` (solid, shiny), `clay` (soft tile), `glass` (translucent tile) |
 | colors | `[primary, secondary, tertiary]`: 1 to 3; the missing ones are worked out from the first |
 | size | pixels or any CSS size (`'100%'`) |
+
+Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
