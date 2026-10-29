@@ -7,3 +7,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 
 ## Pages (`/admin/sign/…`)
 | Address | Page |
+|---|---|
