@@ -15,3 +15,4 @@ export function Pad_upload({ kind }) {
 
   /* f: the chosen file; form: the dialog's form, where a problem is shown */
   const pick = (f, form) => {
+    const say = (title, text) => form_msg(form, 'warn', title, text);
