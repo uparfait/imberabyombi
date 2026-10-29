@@ -20,3 +20,6 @@ export function sign_done(d) {
         : 'Others still need to sign. The document is complete once they have.'}</p>
       <div className="mt-6 grid gap-2 sm:grid-cols-2">
         <a href={to(`/admin/sign/sign/${d.id}`)} className="btn btn_outline btn_sm">View document</a>
+        <a href={to('/admin/sign/inbox')} className="btn btn_primary btn_sm">Back to To sign</a></div>
+    </section></div>;
+}
