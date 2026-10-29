@@ -21,3 +21,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
   `about` gets the office or the park. To choose the scene yourself: `cartoon(seed, w, h, 'mountains')` from
   `src/cartoons/index.js` (`'city'`, `'park'`, `'office'`, `'stage'`, `'mountains'`).
 - Scenes are drawn for their shape: wide, tall or square pictures each get a fitting layout.
+- People come in many skin tones, hairstyles, clothes and poses (standing, waving, walking, pointing, cheering).
