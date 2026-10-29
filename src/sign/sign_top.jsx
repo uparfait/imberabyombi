@@ -14,3 +14,4 @@ const num = (n, k, c = 'ml-1.5') => <span className={`chip ${c} ${n && k === 'in
    tile has its count on a line of its own. */
 export function lists_menu(cur) {
   const it = LISTS.find(x => x[0] === cur);
+  return tile_menu({ id: 'pop_sign', title: 'O-Doc Sign', icon: it ? it[2] : 'file', label: it ? <>{it[1]}{num(count(cur), cur)}</> : 'Documents', set: true,
