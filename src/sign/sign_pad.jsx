@@ -6,3 +6,4 @@ import { PAD } from './pad_state.js';
 import { Pad_draw } from './pad_draw.jsx';
 import { Pad_type } from './pad_type.jsx';
 import { Pad_upload } from './pad_upload.jsx';
+import { Stamp_make } from './stamp_make.jsx';
