@@ -7,3 +7,5 @@ import { LIBS, load_set, icon_of } from './lib_load.js';
 
 const BATCH = 105;
 const flat = i => `<svg viewBox="${i.left} ${i.top} ${i.width} ${i.height}" class="h-6 w-6" aria-hidden="true">${clean_svg(i.body)}</svg>`;
+
+export function Lib_grid({ st, put }) {
