@@ -9,3 +9,5 @@ export function use_marks(id, version) {
     let live = true; marks_get(id).then(m => { if (live) set(m); });
     return () => { live = false; };
   }, [id, version]);
+  return marks;
+}
