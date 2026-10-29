@@ -6,3 +6,4 @@ admin module that turns any letter, symbol, SVG or library icon into a 3D icon.
 
 ## Using them
 ```jsx
+import { i3, i3_html, mark3d, hue_at } from '../icons/index.js';
