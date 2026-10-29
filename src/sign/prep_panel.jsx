@@ -16,3 +16,4 @@ function add(e) {
   const v = Object.fromEntries(new FormData(f)), name = v.name.trim(), email = v.email.trim().toLowerCase();
   if (P.doc.recipients.some(r => r.email === email)) return notify(`${email} already signs this document.`, 'warn', 'Already a signer');
   const r = add_rec(P.doc, name, email, String(v.note || '').trim()); P.rid = r.id;
+  f.reset(); prep_dirty(); rerender(); notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
