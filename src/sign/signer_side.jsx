@@ -10,3 +10,5 @@ const next_text = left => left.length
 const bar = d => { const n = own_fields(d).length, k = n - left_of(d).length;
   return <div className="sign_prog mt-3" role="progressbar" aria-label="Your fields" aria-valuemin={0} aria-valuemax={n} aria-valuenow={k}>
     <i style={{ width: `${n ? k / n * 100 : 0}%` }}></i></div>; };
+
+export const request_card = (d, r) => <section className="card p-5">
