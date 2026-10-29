@@ -2,3 +2,4 @@
    or a street; about… → the office or the park); any other seed gets one of the five. */
 import { rng } from './rng.js';
 import { n } from './shapes.js';
+import { city } from './scene_city.js';
