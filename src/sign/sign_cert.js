@@ -8,3 +8,4 @@ const plain = s => String(s ?? '').replace(/[  ]/g, ' ').replace(/[‘’]/g
   .replace(/[^\x20-\x7E\xA0-\xFF]/g, '?');
 
 export async function certificate(pdf, d, L) {
+  const font = await pdf.embedFont(L.StandardFonts.Helvetica), bold = await pdf.embedFont(L.StandardFonts.HelveticaBold);
