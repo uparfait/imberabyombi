@@ -43,3 +43,4 @@ export const prep_panel = d => <div className="sign_panel">
       : <p className="sign_hint">No signers yet. Add the people who sign this document.</p>}
     <form className="mt-4 grid gap-3" noValidate onSubmit={add} aria-label="Add a signer">
       <div className="field"><label htmlFor="sign_r_name">Full name</label>
+        <input id="sign_r_name" name="name" required maxLength={60} placeholder=" " autoComplete="off" list="sign_people" onInput={fill} /></div>
