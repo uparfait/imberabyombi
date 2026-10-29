@@ -32,3 +32,4 @@ export function Sign_new() {
     <section className="sign_head"><div><p className="text-sm text-muted">O-Doc Sign</p><h1 className="mt-1 text-3xl sm:text-4xl">New document</h1>
       <p className="mt-2 text-muted">Upload a PDF. You add the people who sign it and place their fields next.</p></div></section>
     <label className={`sign_drop ${over ? 'over' : ''}`} aria-busy={busy || undefined}
+      onDragOver={e => { e.preventDefault(); set_over(true); }} onDragLeave={() => set_over(false)}
