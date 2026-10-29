@@ -18,3 +18,4 @@ function remove_rec(r) {
 }
 
 function send() {
+  const d = P.doc, now = Date.now();
