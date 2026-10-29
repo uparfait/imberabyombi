@@ -23,3 +23,4 @@ export function clay(G, C, i) {
 }
 
 export function glass(G, C, i) {
+  const tile = (y, x = 30, s = 140, r = 40) => `x="${x}" y="${y}" width="${s}" height="${s}" rx="${r}"`;
