@@ -11,3 +11,4 @@ const look = (f, r) => ({ ...at(f), '--c': r?.color || '#94A3B8' });
 
 const edit_field = (d, f, sel) => { const r = rec_of(d, f.rid), [l, i] = KINDS[f.type];
   return <div key={f.id} className={`sf sf_edit ${sel === f.id ? 'sel' : ''}`} data-fid={f.id} style={look(f, r)} tabIndex={0}
+    aria-label={`${l} field for ${r?.name || 'nobody'}`}>
