@@ -5,3 +5,4 @@ import { VIEWS } from './views.js';
 import { loading } from '../feedback/index.js';
 
 const Sign_page = lazy(() => import('../sign/index.js').then(m => ({ default: m.Sign_page })));
+VIEWS.sign = () => <Suspense fallback={loading('Opening O-Doc Sign')}><Sign_page /></Suspense>;
