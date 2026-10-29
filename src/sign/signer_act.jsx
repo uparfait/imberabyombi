@@ -28,3 +28,4 @@ function open_pad(d, f) {
 }
 
 async function finish() {
+  const d = find_doc(S.id), r = my_rec(d), now = Date.now();
