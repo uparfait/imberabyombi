@@ -20,3 +20,4 @@ function down(e, root) {
   P.sel = f.id; mark_sel(root); el.setPointerCapture(e.pointerId); el.classList.add('drag');
   const move = ev => {
     const dx = (ev.clientX - sx) / b.width, dy = (ev.clientY - sy) / b.height;
+    if (rs && f.type === 'stamp') { f.w = clamp(o.w + Math.max(dx, dy / ar), min * 2, Math.min(1 - f.x, (1 - f.y) / ar)); f.h = f.w * ar; }
