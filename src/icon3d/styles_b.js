@@ -28,3 +28,4 @@ export function glass(G, C, i) {
     + rad(i + 'h', [[0, '#fff', .6], [1, '#fff', 0]], '28%', '18%', '60%')
     + lin(i + 'r', [[0, '#fff', .95], [.5, '#fff', .08], [1, '#fff', .55]], [0, 0, 1, 1])
     + vol(i + 'v', { goo: 1, bevel: 2.5, surf: 3, spec: .9, exp: 22, shade: .25 }),
+    `<circle cx="138" cy="58" r="38" fill="${C.t}" opacity=".9" filter="url(#${i}b)"/>`
