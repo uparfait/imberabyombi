@@ -22,8 +22,7 @@ export const ROLES0 = [
   { id: 'coordinator', name: 'Event coordinator', d: 'Events, calendar and reservations.',
     perms: perm_map('dashboard:1,calendar:2,tasks:2,docs:2,sign:2,icons:2,events:2,inventory:2,settings:1') }
 ];
-/* modules every role may use, and at what level (the document editor, O-Doc Sign): roles saved before one existed get it */
-const FOR_ALL = { docs: 2, sign: 2 };
+/* modules every role may use, and at what level (the document editor, O-Doc Sign, Iconisus): roles saved before one existed get it */
 export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !r.length) { r = ROLES0; db.set('roles', r); }
   else if (r.some(x => x.perms !== '*' && Object.keys(FOR_ALL).some(k => x.perms[k] == null))) {
     r = r.map(x => x.perms === '*' ? x : { ...x, perms: { ...FOR_ALL, ...x.perms } }); db.set('roles', r); }
