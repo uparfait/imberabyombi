@@ -19,3 +19,4 @@ const MAKERS = { classic, balloon, ribbon, glossy, clay, glass };
 export const STYLES = Object.keys(MAKERS);
 /* rounder letters for the inflated styles; the display font for the rest */
 const ROUND = ["Figtree, 'Arial Rounded MT Bold', system-ui, sans-serif", 800], DISPLAY = ["'Bricolage Grotesque', Figtree, system-ui, sans-serif", 800];
+const FONTS = { balloon: ROUND, ribbon: ROUND };
