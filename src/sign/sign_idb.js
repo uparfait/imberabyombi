@@ -2,3 +2,5 @@
    PDF (its bytes) and 'marks:<id>' the signatures and stamps placed on it ({ field id: PNG data URL }). sweep(ids) drops
    the files of documents that no longer exist (deleted, or demo data reset in Settings). */
 import { cfg } from '../config/index.js';
+
+const NAME = cfg.ns + 'sign', STORE = 'files';
