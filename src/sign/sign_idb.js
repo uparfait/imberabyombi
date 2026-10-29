@@ -5,3 +5,5 @@ import { cfg } from '../config/index.js';
 
 const NAME = cfg.ns + 'sign', STORE = 'files';
 let opening = null;
+
+const open = () => opening || (opening = new Promise((resolve, reject) => {
