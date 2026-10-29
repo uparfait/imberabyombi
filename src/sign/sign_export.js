@@ -7,3 +7,5 @@ import { file_get } from './sign_idb.js';
 import { certificate } from './sign_cert.js';
 
 const PDF_LIB = ['https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js', 'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js'];
+
+/* field f (fractions of the page as shown) → where pdf-lib draws the image on the page as stored (origin bottom left) */
