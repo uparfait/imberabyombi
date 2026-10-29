@@ -2,3 +2,4 @@
    the glyph as a symbol and its copies (use), the glyph painted with a gradient (pl), a blur filter, and vol(), the
    "volume" filter: an optional goo (rounds and thickens), then diffuse shading and a specular highlight. */
 const stop = ([o, c, a = 1]) => `<stop offset="${o}" stop-color="${c}"${a < 1 ? ` stop-opacity="${a}"` : ''}/>`;
+const US = ' gradientUnits="userSpaceOnUse"';
