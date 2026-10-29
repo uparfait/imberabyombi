@@ -21,3 +21,4 @@ export function portrait_svg(seed, w = 320, h = w) {
     + path(`M${n(cx - 9)} ${n(top)}L${n(cx - 1)} ${n(top + 9)}L${n(cx - 11)} ${n(top + 7)}Z`, WHITE)
     + path(`M${n(cx + 9)} ${n(top)}L${n(cx + 1)} ${n(top + 9)}L${n(cx + 11)} ${n(top + 7)}Z`, WHITE);
   out += circle(cx - R, cy + 2, R * .22, o.skin) + circle(cx + R, cy + 2, R * .22, o.skin);
+  if (r.chance(.25)) out += circle(cx - R, cy + 7, 1.6, BRAND) + circle(cx + R, cy + 7, 1.6, BRAND);
