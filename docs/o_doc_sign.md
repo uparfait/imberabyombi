@@ -15,3 +15,5 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 | `/admin/sign/doc/<id>` | follow a sent document: progress, each signer's state and note, activity, download |
 | `/admin/sign/sign/<id>` | sign it (the link the sender copies points here) |
 | `/admin/sign/done/<id>` | "Signing complete" |
+
+The top bar's menu (the same tile menu as nested systems) lists All, Drafts, Waiting, Completed and To sign, each with
