@@ -4,7 +4,7 @@
    messages that follow a navigation, scrolling), including the progressive enhancers in enhance(). */
 import { useLayoutEffect, useSyncExternalStore } from 'react';
 import { subscribe, get_version, render_flags, route } from './store/index.js';
-import { render_route, run_after_render } from './router/index.js';
+import { render_route, run_after_render, is_public } from './router/index.js';
 import { Dialog_hosts } from './overlays/index.js';
 import { spinner } from './feedback/index.js';
 
