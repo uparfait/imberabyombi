@@ -27,3 +27,4 @@ export function city(w, h, r) {
     x += bw + s * r.range(0, .025);
   }
   out += rect(0, base, w, walk, 0, '#D5DCE3') + rect(0, base + walk, w, h - base - walk, 0, '#5D6B7A');
+  for (let dx = s * .04; dx < w; dx += s * .16) out += rect(dx, base + walk + (h - base - walk) / 2 - s * .006, s * .08, s * .012, s * .006, '#F5F7FA');
