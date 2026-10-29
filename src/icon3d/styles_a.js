@@ -31,3 +31,4 @@ export function ribbon(G, C, i) {
   const u = Math.max(G.vb[2], G.vb[3]) / 100, K = 5, bw = 2.2 * u, gw = .75 * u, base = G.sw, X = 42, Y = 36, S = 116, R = i + 'R';
   const col = k => blend([C.p, C.s, C.t], k / K);
   const at = w => `stroke="currentColor" stroke-width="${w.toFixed(3)}" stroke-linejoin="round" stroke-linecap="round"`;
+  let ext = '', bands = '';
