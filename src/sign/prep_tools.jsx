@@ -24,3 +24,4 @@ const placed = d => { const n = d.fields.length;
     : <p className="text-sm text-muted">No fields yet.</p>; };
 
 export const prep_tools = d => <div className="sign_panel">
+  <section aria-label="Placing for"><h2 className="sign_cap">Placing for</h2>{placing(d)}</section>
