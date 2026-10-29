@@ -50,3 +50,4 @@
   .sign_scrim.on { opacity: 1; pointer-events: auto; }
 }
 .sheet_grip { width: 2.5rem; height: .3rem; margin: -.5rem auto 0; border-radius: var(--pill); background: rgb(var(--line)); }
+.sign_bar { position: fixed; inset: auto 0 0; z-index: 40; display: flex; align-items: center; gap: .5rem;
