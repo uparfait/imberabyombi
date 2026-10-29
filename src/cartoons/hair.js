@@ -10,3 +10,4 @@ const at = (cx, cy, R) => (x, y) => `${n(cx + x * R)} ${n(cy + y * R)}`;
 export function hair_back(cx, cy, R, style, color) {
   const p = at(cx, cy, R);
   if (style === 'long') return path(`M${p(-1.06, -.2)}Q${p(-1.22, 1.45)} ${p(-.75, 1.75)}L${p(.75, 1.75)}Q${p(1.22, 1.45)} ${p(1.06, -.2)}Z`, color);
+  if (style === 'bob') return path(`M${p(-1.08, -.2)}Q${p(-1.25, .85)} ${p(-1, 1.02)}L${p(1, 1.02)}Q${p(1.25, .85)} ${p(1.08, -.2)}Z`, color);
