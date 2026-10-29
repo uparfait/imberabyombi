@@ -10,6 +10,7 @@ Every feature below is working code. Each line says what it is and where it live
   details, tables, dialogs, kbd, blockquote, code.
 - Components: buttons (primary, ink, outline, ghost, soft, danger, glass, small), icon buttons, cards, chips, kickers,
   tabs, segmented buttons, popover menus, choice pills, tiles, accordions, prose, hero artwork, theme band, pattern layer.
+- Cartoon pictures drawn in the page from a seed (`src/cartoons/`): streets, parks, offices, event stages, mountains and
 - Flat stroke icons and 3D clay-tile icons from one path dictionary (`src/icons/`).
 
 ## Forms and input (`src/fields/`, `src/overlays/`, `src/files/`)
