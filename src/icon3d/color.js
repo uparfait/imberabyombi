@@ -25,3 +25,4 @@ export const blend = (cs, t) => { const n = cs.length - 1, x = Math.min(t * n, n
 
 /* p: primary (main body), s: secondary (gradient end, second band, tile shade), t: tertiary (glyph, mid colour, glow);
    hs / ht: whether they were given (some styles look different when they are) */
+export function palette(list = []) {
