@@ -10,3 +10,4 @@ import { i3, i3_html, mark3d, hue_at } from '../icons/index.js';
 i3('calendar', 'h-12 w-12', 'teal')        // an <img>; any name from src/icons/paths.js
 i3_html('file', 'h-10 w-10', 'info')       // the same as a string (plain-JS parts)
 mark3d('#', 'h-9 w-9')                     // a glossy letter or symbol, inline (the brand mark)
+items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, each its own colour
