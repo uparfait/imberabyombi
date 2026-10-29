@@ -24,3 +24,5 @@ export const file_get = key => run('readonly', s => s.get(key)).catch(() => unde
 export const file_set = (key, value) => run('readwrite', s => s.put(value, key)).then(() => true, () => false);
 export const file_del = key => run('readwrite', s => s.delete(key)).catch(() => {});
 export const drop_files = id => Promise.all([file_del('pdf:' + id), file_del('marks:' + id)]);
+
+export const marks_get = async id => (await file_get('marks:' + id)) || {};
