@@ -27,3 +27,4 @@ const OPEN = new Map();
 export function open_pdf(id) {
   if (!OPEN.has(id)) {
     const p = file_get('pdf:' + id).then(b => { if (!b) throw new Error('The PDF of this document is not in this browser.'); return parse(b); });
+    p.catch(() => OPEN.delete(id)); OPEN.set(id, p);
