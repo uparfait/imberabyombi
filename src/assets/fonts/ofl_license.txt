@@ -4,6 +4,7 @@ Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/
 Copyright 2016 The Dancing Script Project Authors, with Reserved Font Name 'Dancing Script'
 Copyright 2010 The Great Vibes Pro Project Authors
 Copyright (c) 2012 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved Font Name 'Sacramento'
+Copyright 2011 The Alex Brush Project Authors
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
