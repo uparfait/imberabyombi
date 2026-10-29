@@ -30,3 +30,4 @@ Completed green, To sign violet.
 
 ## The engine (`src/icon3d/`)
 `render(input, { style, colors, size })` returns an SVG string (vector; the look comes from SVG lighting filters).
+| Argument | Values |
