@@ -8,3 +8,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 ## Pages (`/admin/sign/…`)
 | Address | Page |
 |---|---|
+| `/admin/sign` · `/drafts` · `/waiting` · `/completed` | your documents: all, not sent yet, waiting for signatures, signed by everyone |
