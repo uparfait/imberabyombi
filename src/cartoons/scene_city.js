@@ -25,3 +25,5 @@ export function city(w, h, r) {
     const bw = s * r.range(.15, .26);
     out += building(x, base, bw, h * r.range(.26, .52), r.pick(BUILDINGS), s, r);
     x += bw + s * r.range(0, .025);
+  }
+  out += rect(0, base, w, walk, 0, '#D5DCE3') + rect(0, base + walk, w, h - base - walk, 0, '#5D6B7A');
