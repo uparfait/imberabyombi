@@ -10,3 +10,4 @@ function save(svg, name) {
 
 export function Output({ st, draw }) {
   const [code, set_code] = useState(false), svg = draw({ size: st.size });
+  return <section className="grid gap-3" aria-label="Result">
