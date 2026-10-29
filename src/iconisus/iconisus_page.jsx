@@ -25,3 +25,4 @@ export function Iconisus_page() {
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-start">
       <Stage draw={draw} />
       <aside className="card grid gap-6 p-5 sm:p-6" aria-label="Icon settings">
+        <Source st={st} put={put} />
