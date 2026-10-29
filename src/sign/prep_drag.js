@@ -3,3 +3,4 @@
    moves with the arrow keys (Shift: further) and goes with Delete or Backspace. prep_pointer(root) wires it all and
    returns the function that unwires it. Moves change the field's style at once and its record (P.doc) as they go. */
 import { P, prep_dirty } from './prep_state.js';
+import { add_field, del_field, clamp } from './prep_fields.js';
