@@ -12,3 +12,4 @@ export function trim(c, pad = 10) {
   }
   if (r < 0) return null;
   const o = document.createElement('canvas'); o.width = r - l + 1 + pad * 2; o.height = b - t + 1 + pad * 2;
+  o.getContext('2d').drawImage(c, l, t, r - l + 1, b - t + 1, pad, pad, r - l + 1, b - t + 1);
