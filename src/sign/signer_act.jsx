@@ -45,3 +45,4 @@ export const SIGNER_ACT = {
   sign_next: () => { const d = find_doc(S.id), f = d && left_of(d)[0]; if (!f) return;
     const el = qs(`[data-fid="${f.id}"]`); el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     el?.classList.remove('flash'); void el?.offsetWidth; el?.classList.add('flash');
+    setTimeout(() => SIGNER_ACT.sign_fill({ dataset: { id: f.id } }), 550); },
