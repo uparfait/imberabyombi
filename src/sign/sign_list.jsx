@@ -12,3 +12,5 @@ export const new_btn = (c = '') => auth.can('sign', 2)
   ? <a href={to('/admin/sign/new')} className={`btn btn_primary btn_sm ${c}`}>{ic('upload', 'h-4 w-4')}New document</a> : null;
 const doc_href = d => to(d.status === 'draft' ? `/admin/sign/edit/${d.id}` : `/admin/sign/doc/${d.id}`);
 const TONE = { draft: 'ink', sent: 'warn', completed: 'ok' };
+
+const faces = d => <span className="sign_faces" aria-hidden="true">{d.recipients.slice(0, 4).map(r =>
