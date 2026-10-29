@@ -14,3 +14,4 @@ export const svg_data_uri = svg => 'data:image/svg+xml,' + svg.replace(/"/g, "'"
 
 /* kind: 'city', 'park', 'office', 'stage' or 'mountains' to choose the scene (else the seed picks) */
 export const cartoon = (seed, w = 900, h = 650, kind) => memo(`${seed}|${w}|${h}|${kind || ''}`, () => svg_data_uri(scene_svg(seed, w, h, kind)));
+export const cartoon_face = (n, w = 320, h = w) => memo(`face|${n}|${w}|${h}`, () => svg_data_uri(portrait_svg(n, w, h)));
