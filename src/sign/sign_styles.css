@@ -1,2 +1,3 @@
 /* sign/sign_styles.css: O-Doc Sign's stylesheet, imported by sign_page.jsx only, so it loads with the module (after the
    template's styles). Colours come from the template tokens, so the dark theme applies by itself; the PDF's pages stay
+   white paper in both themes. */
