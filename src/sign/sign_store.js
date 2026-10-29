@@ -18,3 +18,4 @@ export const LISTS = [
   ['inbox', 'To sign', 'signature', 'Documents sent to you for your signature.']];
 const OF = { drafts: 'draft', waiting: 'sent', completed: 'completed' };
 /* the field kinds: [label, icon, size in points (w, h)] */
+export const KINDS = { signature: ['Signature', 'signature', 180, 56], stamp: ['Stamp', 'stamp', 112, 112] };
