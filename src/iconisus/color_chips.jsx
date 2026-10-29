@@ -10,3 +10,4 @@ export function Colors({ st, put }) {
   const set_k = (k, v) => { const c = [...st.cols]; c[k] = v; put({ cols: c }); };
   return <section className="grid gap-3" aria-label="Colours and size"><h3 className="ico_cap">Colours and size</h3>
     <div className="flex items-center gap-4">
+      <div className="flex gap-3">{NAMES.map((n, k) => { const v = st.cols[k] || auto[k];
