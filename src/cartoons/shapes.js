@@ -32,3 +32,4 @@ export const bird = (x, y, s, color, flap = .5) =>
     color, Math.max(1.2, s * .09));
 
 /* a vertical gradient from top to bottom colour, referenced as url(#id) */
+export const v_gradient = (id, top, bottom) =>
