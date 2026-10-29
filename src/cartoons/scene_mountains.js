@@ -2,3 +2,4 @@
    pine trees, and birds over the water. */
 import { n, path, rect, bird } from './shapes.js';
 import { INK, TREES, shade } from './palette.js';
+import { sky, hill, tree } from './land.js';
