@@ -39,3 +39,5 @@ export async function draw_page(pdf, i, canvas, w) {
   const v = page.getViewport({ scale: w / base.width * dpr }), off = document.createElement('canvas');
   off.width = Math.round(v.width); off.height = Math.round(v.height);
   await page.render({ canvasContext: off.getContext('2d'), viewport: v }).promise;
+  canvas.width = off.width; canvas.height = off.height; canvas.getContext('2d').drawImage(off, 0, 0);
+}
