@@ -9,3 +9,4 @@ export const pdfjs = async () => {
   await load_script(LIB.pdfjs); const lib = window.pdfjsLib; lib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER; return lib;
 };
 /* pdf.js takes the bytes over (to its worker), so it gets a copy */
+const parse = async bytes => (await pdfjs()).getDocument({ data: new Uint8Array(bytes).slice() }).promise;
