@@ -26,3 +26,4 @@ export async function signed_pdf(d, marks) {
   for (const f of d.fields) {
     const url = marks[f.id], page = pages[f.page]; if (!url || !page) continue;
     if (!imgs.has(url)) imgs.set(url, await pdf.embedPng(url));
+    place(page, f, imgs.get(url), L.degrees);
