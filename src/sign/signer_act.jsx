@@ -14,3 +14,4 @@ import { agree_body } from './signer_side.jsx';
 
 function apply(d, f, url) {
   const first = !S.adopted[f.type], [l] = KINDS[f.type];
+  S.pending[f.id] = url; S.adopted[f.type] = url; rerender(); qs(`[data-fid="${f.id}"]`)?.classList.add('sf_new');
