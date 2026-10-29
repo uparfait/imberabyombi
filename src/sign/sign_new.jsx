@@ -5,3 +5,4 @@ import { i3 } from '../icons/index.js';
 import { spinner, notify } from '../feedback/index.js';
 import { go } from '../router/index.js';
 import { new_doc, drop_doc } from './sign_store.js';
+import { file_set } from './sign_idb.js';
