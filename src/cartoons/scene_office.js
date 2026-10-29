@@ -34,3 +34,4 @@ export function office(w, h, r) {
   out += rect(shelf_x, shelf_y, w * .3, s * .02, s * .006, '#B07A4E');
   for (let bx = shelf_x + s * .02, i = 0; i < 6 && bx < shelf_x + w * .2; i++) {
     const bh = s * r.range(.08, .12), bw = s * r.range(.025, .035);
+    out += rect(bx, shelf_y - bh, bw, bh, s * .005, r.pick(CLOTHES)); bx += bw + s * .006;
