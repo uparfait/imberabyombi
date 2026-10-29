@@ -8,3 +8,4 @@ export const Source = ({ st, put }) => <section className="grid gap-3" aria-labe
   <h3 className="ico_cap">Source</h3>
   <div className="seg justify-self-start" role="radiogroup" aria-label="Source">{MODES.map(([k, l]) =>
     <label key={k}><input type="radio" className="sr-only" name="ico_mode" checked={st.mode === k} onChange={() => put({ mode: k })} /><span>{l}</span></label>)}</div>
+  {st.mode === 'text'
