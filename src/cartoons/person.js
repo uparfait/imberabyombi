@@ -35,3 +35,4 @@ export function person(x, y, s, o, pose = 'stand', phase = 0) {
       o.top, `stroke="${o.top}" stroke-width="${n(.9 * u)}" stroke-linejoin="round"`)
     : rect(x - 1.3 * u, y - 7.4 * u, 2.6 * u, 3.6 * u, .95 * u, o.top);
   hands(x, y, u, pose, sw).forEach(([hx, hy2], i) => {
+    const sx = x + (i ? 1 : -1) * 1.02 * u, sy = y - 6.85 * u;
