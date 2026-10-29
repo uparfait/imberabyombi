@@ -36,3 +36,4 @@ export const owner_page = d => <div className="sign_split">
   <aside className="sign_side" aria-label="Progress">
     <section className="card p-5">{progress(d)}<div className="mt-5">{signer_rows(d, true)}</div>
       <div className="mt-5 grid gap-2">
+        {my_turn(d) ? <a href={to(`/admin/sign/sign/${d.id}`)} className="btn btn_primary btn_sm">{ic('signature', 'h-4 w-4')}Sign now</a> : null}
