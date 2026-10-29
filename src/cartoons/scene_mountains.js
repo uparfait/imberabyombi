@@ -28,3 +28,4 @@ export function mountains(w, h, r) {
   out += rect(0, lake, w, shore - lake, 0, '#8FC9E8');
   for (let i = 0; i < 7; i++) out += rect(r.range(0, w * .9), r.range(lake + s * .02, shore - s * .03), s * r.range(.08, .2), s * .008, s * .004, '#FFFFFF', 'opacity=".55"');
   const birds = r.int(1, 3);
+  for (let i = 0; i < birds; i++) out += bird(r.range(w * .15, w * .85), r.range(lake * .25, lake * .6), s * r.range(.03, .045), INK, r());
