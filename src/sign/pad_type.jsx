@@ -3,3 +3,5 @@
    name written in that style. */
 import { useState } from 'react';
 import { PAD, INK, trim } from './pad_state.js';
+
+export const FONTS = ['Dancing Script', 'Great Vibes', 'Sacramento', 'Alex Brush', 'Caveat'];
