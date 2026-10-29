@@ -47,3 +47,4 @@ The permission key is `sign`. Every role may use it at level 2 (roles saved befo
 `FOR_ALL` in `src/auth/roles.jsx`). Level 2: upload, prepare, send, delete. Level 1: sign what is sent to you.
 
 ## Data
+| Where | What |
