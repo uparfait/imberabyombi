@@ -8,6 +8,7 @@ export const cfg = {
   currency: 'USD', latency: 450 /* ms of simulated network time per request (saving, loading a table); set 0 or swap for fetch() */,
   page_size: 10 /* table rows per page */, parking_slots: 24, parking_rate: 2, work_start: '08:00', storage_cap: 5 * 1024 * 1024,
   img: (seed, w = 900, h = 650) => cartoon(seed, w, h) /* a cartoon scene; the same seed always draws the same one */,
+  face: (n, w = 320, h = w) => cartoon_face(n, w, h) /* a cartoon portrait (h > w for a tall card) */,
   hero: 'https://uparfait.github.io/uparfait/favicon.ico' /* home hero portrait */,
   video: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
   audio: 'https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3',
