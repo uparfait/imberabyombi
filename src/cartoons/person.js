@@ -40,3 +40,6 @@ export function person(x, y, s, o, pose = 'stand', phase = 0) {
   });
   out += rect(x - .36 * u, y - 8 * u, .72 * u, .95 * u, .2 * u, shade(o.skin, -.12));
   return out + head(x, hy, R, o);
+}
+
+/* a head with hair and a face, centre (x, y), radius R */
