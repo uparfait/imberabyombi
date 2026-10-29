@@ -14,3 +14,4 @@ export function Colors({ st, put }) {
         return <div key={n} className="relative">
           <label className={`ico_chip ${st.cols[k] ? '' : 'auto'}`} style={{ background: v }} title={st.cols[k] ? n : `${n} (worked out)`}>
             <input type="color" value={v} aria-label={`${n} colour`} onChange={e => set_k(k, e.target.value)} /></label>
+          {k && st.cols[k] ? <button type="button" className="ico_clear" aria-label={`Reset the ${n.toLowerCase()} colour`} onClick={() => set_k(k, '')}>×</button> : null}
