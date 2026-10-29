@@ -17,3 +17,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 | `/admin/sign/done/<id>` | "Signing complete" |
 
 The top bar's menu (the same tile menu as nested systems) lists All, Drafts, Waiting, Completed and To sign, each with
+its count. A document opened at the wrong address moves to the right one (a sent draft to its page, someone else's to
