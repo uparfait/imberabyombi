@@ -10,3 +10,4 @@ export const rad = (id, st, cx, cy, r, u = '') => `<radialGradient id="${id}" cx
 /* gradients laid over the glyph's own box: diagonal, top to bottom, radial from the upper left */
 export const glin = (id, G, st) => { const [x, y, w, h] = G.vb; return lin(id, st, [x, y + h * .2, x + w, y + h * .8], US); };
 export const gvert = (id, G, st) => { const [x, y, , h] = G.vb; return lin(id, st, [x, y, x, y + h], US); };
+export const grad = (id, G, st) => { const [x, y, w, h] = G.vb; return rad(id, st, x + w * .32, y + h * .2, Math.max(w, h) * .95, US); };
