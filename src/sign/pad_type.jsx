@@ -9,3 +9,4 @@ export const FONTS = ['Dancing Script', 'Great Vibes', 'Sacramento', 'Alex Brush
 async function typed(text, font) {
   const f = `72px "${font}"`; await document.fonts.load(f, text);
   const c = document.createElement('canvas'), x = c.getContext('2d', { willReadFrequently: true }); x.font = f;
+  c.width = Math.ceil(x.measureText(text).width) + 90; c.height = 170;
