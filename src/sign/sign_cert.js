@@ -30,3 +30,5 @@ export async function certificate(pdf, d, L) {
     text(`Opened: ${when(r.viewed_at) || '-'}     Signed: ${when(r.signed_at)}`, { x: 14, color: soft });
     const n = d.fields.filter(f => f.rid === r.id).length; text(`${n} mark${n === 1 ? '' : 's'} on the document`, { x: 14, color: soft }); y -= 6; });
   rule(); text('Activity', { size: 13, bold: true }); y -= 4;
+  d.audit.forEach(a => text(`${when(a.at)}   ${a.t}`, { size: 9, color: soft }));
+}
