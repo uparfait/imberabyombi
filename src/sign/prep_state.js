@@ -21,3 +21,4 @@ export const prep_dirty = () => {
   clearTimeout(later); later = setTimeout(() => { if (P.dirty) prep_save(); }, 1500);
 };
 export const prep_save = () => {
+  clearTimeout(later); if (!P.doc) return;
