@@ -16,3 +16,4 @@ function Page({ pdf, i, n, size, children }) {
     const ro = new ResizeObserver(() => { clearTimeout(t); t = setTimeout(draw, 160); });
     io.observe(el); ro.observe(el);
     return () => { live = false; io.disconnect(); ro.disconnect(); clearTimeout(t); };
+  }, [pdf, i]);
