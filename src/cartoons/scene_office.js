@@ -13,3 +13,4 @@ function plant(x, y, s) {
 }
 
 function board(x, y, bw, bh, s, r) {
+  let out = rect(x, y, bw, bh, s * .02, '#FFFFFF', `stroke="${shade('#DDE3EA', -.1)}" stroke-width="${n(s * .008)}"`);
