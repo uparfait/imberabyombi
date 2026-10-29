@@ -18,3 +18,4 @@ function down(e, root) {
   const f = field_of(el), b = el.closest('.sign_sheet').getBoundingClientRect(), ar = b.width / b.height, min = 24 / b.width;
   const rs = !!e.target.closest('.sf_rs'), o = { ...f }, sx = e.clientX, sy = e.clientY;
   P.sel = f.id; mark_sel(root); el.setPointerCapture(e.pointerId); el.classList.add('drag');
+  const move = ev => {
