@@ -4,3 +4,4 @@
    as shown, cut to its visible part. */
 import { useEffect, useRef, useState } from 'react';
 import { i3 } from '../icons/index.js';
+import { form_msg } from '../feedback/index.js';
