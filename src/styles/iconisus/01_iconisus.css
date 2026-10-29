@@ -27,3 +27,4 @@
   border-radius: var(--pill); background: rgb(var(--surface)); font-size: .75rem; line-height: 1; }
 .ico_range { width: 100%; accent-color: rgb(var(--brand)); }
 .ico_code { width: 100%; padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; background: rgb(var(--bg)); font: .6875rem/1.5 var(--font_mono);
+  resize: vertical; }
