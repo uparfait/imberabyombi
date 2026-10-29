@@ -30,3 +30,4 @@ function inbox() {
   if (!all.length) return <div className="card">{empty('Nothing to sign', 'Documents sent to your email address show up here, ready to sign.')}</div>;
   return <>
     {wait.length ? <ul className="grid gap-2">{wait.map(d => row(d, sign(d), <span className="btn btn_primary btn_sm">{ic('signature', 'h-4 w-4')}Sign</span>,
+      `From ${d.owner_name} · sent ${ago(d.sent_at)}`))}</ul>
