@@ -8,8 +8,7 @@ import { render_route, run_after_render, is_public } from './router/index.js';
 import { Dialog_hosts } from './overlays/index.js';
 import { spinner } from './feedback/index.js';
 
-/* admin pages draw a little larger on laptops and desktops (html.staff_page → --scale_staff in src/styles/base) */
-const mark_staff_page = () => document.documentElement.classList.toggle('staff_page', /^\/admin(\/|$)/.test(route.path || ''));
+/* html.staff_page: admin pages draw a little larger on laptops and desktops (--scale_staff in src/styles/base);
 
 /* the same spinner index.html shows while the app loads, kept until the first page is drawn */
 const boot_loader = <div className="boot_loader" role="status" aria-label="Loading">{spinner()}</div>;
