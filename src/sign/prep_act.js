@@ -21,3 +21,4 @@ function send() {
   const d = P.doc, now = Date.now();
   Object.assign(d, { status: 'sent', sent_at: now });
   d.recipients.forEach(r => { r.status = 'pending'; delete r.viewed_at; delete r.signed_at; });
+  log(d, `${who().name} sent it to ${d.recipients.map(r => r.email).join(', ')}`); prep_save();
