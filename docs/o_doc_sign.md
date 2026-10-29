@@ -28,3 +28,4 @@ signing). No document is seeded: every account starts empty.
 - Changes save a moment after each one (and on Save, and when you leave). **Send** checks that every signer has a field.
 
 ## Signing
+- The signer sees the sender's note, their own fields (pulsing) and the others' places. **Next field** goes to the next
