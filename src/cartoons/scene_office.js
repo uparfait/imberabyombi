@@ -2,3 +2,4 @@
    with a growing chart over a desk with a laptop and a mug on the right, and the team in the middle (pointing at it). */
 import { n, path, rect, circle, ellipse, stroke, line, cloud, v_gradient } from './shapes.js';
 import { BRAND, BUILDINGS, CLOTHES, TREES, SKIES, INK, shade } from './palette.js';
+import { person, look } from './person.js';
