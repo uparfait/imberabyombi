@@ -20,3 +20,4 @@ export function Pad_type({ name }) {
   return <div className="grid gap-4">
     <div className="field"><label htmlFor="pad_name">Your name</label>
       <input id="pad_name" value={text} maxLength={40} placeholder=" " autoComplete="name" onChange={e => set_text(e.target.value)} /></div>
+    <div className="grid grid-cols-2 gap-2 sm:grid-cols-3" role="radiogroup" aria-label="Signature style">{FONTS.map((n, i) =>
