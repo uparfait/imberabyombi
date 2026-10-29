@@ -14,3 +14,4 @@ export function Pad_upload({ kind }) {
   PAD.get = async () => img ? trim(cv.current, 6) : null;
 
   /* f: the chosen file; form: the dialog's form, where a problem is shown */
+  const pick = (f, form) => {
