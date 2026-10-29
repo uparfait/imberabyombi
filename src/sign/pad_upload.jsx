@@ -34,3 +34,4 @@ export function Pad_upload({ kind }) {
     <div className="sign_checker"><canvas ref={cv} aria-label={`Your ${kind}`} /></div>
     <div className="grid gap-1.5">
       <div className="flex items-center justify-between text-sm"><label htmlFor="pad_cut" className="font-medium">Remove background</label>
+        <output htmlFor="pad_cut" className="tabular-nums text-muted">{cut}%</output></div>
