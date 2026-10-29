@@ -11,3 +11,4 @@ export const TREES = ['#5FAF73', '#3E8E63', '#7CC27A', '#2F8C7F'];
 export const TRUNK = '#8A5A3B';
 
 export const BUILDINGS = [BRAND, '#F29E5C', '#4F6D8F', '#7A8CB8', '#2F4858', '#F6C667', '#86B3A8', '#C96A6A'];
+export const LIT = '#FFF1BF';     // a lit window
