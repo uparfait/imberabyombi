@@ -25,3 +25,4 @@ export function vol(id, o) {
   if (o.flat) return f + '</filter>';
   return f + `<feGaussianBlur in="${g}" stdDeviation="${o.bevel}" result="h"/>`
     + `<feDiffuseLighting in="h" surfaceScale="${o.surf}" diffuseConstant="1" lighting-color="#fff" result="d"><feDistantLight azimuth="225" elevation="60"/></feDiffuseLighting>`
+    + `<feComposite in="${g}" in2="d" operator="arithmetic" k1="${o.shade}" k2="${1 - o.shade}" result="c"/>`
