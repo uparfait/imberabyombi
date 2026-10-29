@@ -36,3 +36,5 @@ export async function signed_pdf(d, marks) {
 export function save_pdf(name, bytes) {
   const url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' })), a = document.createElement('a');
   a.href = url; a.download = name.replace(/[\\/:*?"<>|]+/g, ' ').trim() || 'document.pdf';
+  document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
