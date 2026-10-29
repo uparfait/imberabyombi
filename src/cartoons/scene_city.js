@@ -6,3 +6,4 @@ import { sky, tree } from './land.js';
 import { person, look } from './person.js';
 
 function building(x, base, bw, bh, color, s, r) {
+  const pad = bw * .14, win = Math.max(s * .028, bw * .14), gap = win * .7;
