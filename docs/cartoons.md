@@ -5,3 +5,4 @@ Every sample picture in the template is a flat cartoon drawn in the browser from
 offline, and the same seed always draws the same picture. Code: [`src/cartoons/`](../src/cartoons/).
 
 ## Using them
+| Call | Draws | Used by |
