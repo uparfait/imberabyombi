@@ -9,3 +9,5 @@ import { Source } from './source.jsx';
 import { Styles } from './style_grid.jsx';
 import { Colors } from './color_chips.jsx';
 import { Output } from './output.jsx';
+
+/* the state: the source (mode: text, lib or svg, and its value), the style, the colours ('' = worked out), the size */
