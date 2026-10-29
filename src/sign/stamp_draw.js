@@ -8,3 +8,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
   const x = c.getContext('2d', { willReadFrequently: true });
   const date = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase();
   const font = s => { x.font = `800 ${s}px ${FONT}`; };
+  const fit = (t, cx, cy, max, s) => { do font(s); while (x.measureText(t).width > max && --s > 10); x.fillText(t, cx, cy); };
