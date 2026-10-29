@@ -17,3 +17,4 @@ export function Stamp_make({ name }) {
       <div className="field"><label htmlFor="st_org">Organisation</label>
         <input id="st_org" value={st.org} maxLength={34} placeholder=" " onChange={e => put('org', e.target.value)} /></div>
       <div className="field"><label htmlFor="st_mid">Centre text</label>
+        <input id="st_mid" value={st.mid} maxLength={14} placeholder=" " onChange={e => put('mid', e.target.value)} /></div>
