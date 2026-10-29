@@ -32,3 +32,4 @@ export function office(w, h, r) {
   out += board(w * .52, h * .12, w * .36, h * .32, s, r);
   const shelf_x = w * .06, shelf_y = h * .62;
   out += rect(shelf_x, shelf_y, w * .3, s * .02, s * .006, '#B07A4E');
+  for (let bx = shelf_x + s * .02, i = 0; i < 6 && bx < shelf_x + w * .2; i++) {
