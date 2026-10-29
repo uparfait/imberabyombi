@@ -36,7 +36,6 @@
   .hero > .pattern_layer, .theme_band > .pattern_layer { --pc: var(--fg); --pa: .045; }
   .theme_band { background: color-mix(in srgb, rgb(var(--brand)) 6%, rgb(var(--surface))); }
   .dark .theme_band { background: rgb(var(--ink)); }
-  .pattern_layer.fixed { will-change: transform; }   /* own GPU layer: the page scrolls over it without repainting it */
   .pattern_layer { position: absolute; inset: 0; z-index: -1; pointer-events: none;
     background-color: rgb(var(--pc, var(--brand)) / var(--pa, .06));
     -webkit-mask: var(--pattern) 0 0 / 5rem 5rem repeat; mask: var(--pattern) 0 0 / 5rem 5rem repeat; }
