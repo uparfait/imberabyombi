@@ -1,3 +1,4 @@
 /* styles/iconisus/01_iconisus.css: the Iconisus page: the preview stage, section captions, an icon set's grid, the style
    choices, the colour chips, the size slider and the code box. Template tokens; borders, no shadows; small things are pills. */
 .ico_stage { display: grid; min-height: 22rem; place-items: center; align-content: center; gap: 1.75rem; padding: 1.5rem;
+  background: radial-gradient(circle at 50% 38%, rgb(var(--fg) / .05), transparent 65%), rgb(var(--surface)); }
