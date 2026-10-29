@@ -25,3 +25,4 @@ export async function certificate(pdf, d, L) {
   [['Document', d.title], ['File', `${d.file} (${d.pages.length} page${d.pages.length === 1 ? '' : 's'})`], ['Document ID', d.id],
     ['Sent by', `${d.owner_name} <${d.owner}>`], ['Sent', when(d.sent_at)], ['Completed', when(d.completed_at)]]
     .forEach(([k, v]) => { text(k, { size: 8, bold: true, color: soft }); text(v, { size: 11 }); y -= 3; });
+  rule(); text('Signers', { size: 13, bold: true }); y -= 4;
