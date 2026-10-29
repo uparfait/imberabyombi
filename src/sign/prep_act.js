@@ -43,3 +43,6 @@ export const PREP_ACT = {
     if (!d.fields.length) return notify('Place at least one signature or stamp field on the document.', 'warn', 'No fields yet');
     if (alone) { P.rid = alone.id; rerender(); return notify(`Place a field for ${alone.name}, or remove them.`, 'warn', `${alone.name} has no field`); }
     if (!d.title.trim()) d.title = d.file.replace(/\.pdf$/i, '');
+    modal({ title: 'Send for signing', help: 'Each signer finds it under To sign once they sign in with their email.', body: send_body(d), submit: 'Send', on_submit: send });
+  }
+};
