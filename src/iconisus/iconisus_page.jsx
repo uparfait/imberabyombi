@@ -28,3 +28,8 @@ export function Iconisus_page() {
         <Source st={st} put={put} />
         <Styles st={st} put={put} input={input} />
         <Colors st={st} put={put} />
+        <Output st={st} draw={draw} />
+      </aside>
+    </div>
+  </div>;
+}
