@@ -30,3 +30,4 @@ export function mountains(w, h, r) {
   const birds = r.int(1, 3);
   for (let i = 0; i < birds; i++) out += bird(r.range(w * .15, w * .85), r.range(lake * .25, lake * .6), s * r.range(.03, .045), INK, r());
   out += hill(w, h, shore, s * .025, '#74BC7E', r) + hill(w, h, h - s * .05, s * .015, '#4C9A6A', r);
+  const pines = r.int(3, 6);
