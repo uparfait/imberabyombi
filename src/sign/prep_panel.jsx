@@ -8,3 +8,5 @@ import { initials } from '../ui/index.js';
 import { add_rec, size_of } from './sign_store.js';
 import { P, prep_dirty } from './prep_state.js';
 import { status_chip } from './sign_list.jsx';
+
+const people = () => db.list('staff').filter(s => s.email && s.name);
