@@ -27,3 +27,4 @@ export function Lib_grid({ st, put }) {
   const note = t => <p className="col-span-full py-8 text-center text-sm text-muted">{t}</p>;
   return <div className="grid gap-2">
     <div className="flex gap-2">
+      <div className="field min-w-0 flex-1"><label htmlFor="ico_lib">Icon set</label>
