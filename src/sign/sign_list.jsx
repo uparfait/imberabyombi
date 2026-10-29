@@ -20,3 +20,4 @@ const sub_of = d => { const n = d.recipients.length, s = signed_n(d);
     : d.status === 'sent' ? `${s} of ${n} signed · sent ${ago(d.sent_at)}` : `Completed ${ago(d.completed_at)}`; };
 
 const row = (d, href, right, sub) => <li key={d.id}><a href={href} className="sign_row card card_hover">
+  {i3('file', 'h-11 w-11', TONE[d.status])}
