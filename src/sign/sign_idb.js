@@ -20,3 +20,4 @@ const run = (mode, fn) => open().then(db => new Promise((resolve, reject) => {
 
 /* the value under key (undefined when there is none or IndexedDB is not available) */
 export const file_get = key => run('readonly', s => s.get(key)).catch(() => undefined);
+/* true when it is stored, false when the browser refused it (storage full, private mode) */
