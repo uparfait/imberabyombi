@@ -4,3 +4,4 @@ import { ic } from '../icons/index.js';
 import { copy } from '../overlays/index.js';
 
 function save(svg, name) {
+  const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' })), a = document.createElement('a');
