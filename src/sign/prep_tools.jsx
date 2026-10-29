@@ -12,3 +12,4 @@ const tool = (type, c = '') => { const [l, i] = KINDS[type];
 
 const placing = d => d.recipients.length
   ? <div className="grid gap-1.5" role="radiogroup" aria-label="Placing for">{d.recipients.map(r =>
+    <button key={r.id} type="button" role="radio" aria-checked={P.rid === r.id} className={`sign_for ${P.rid === r.id ? 'on' : ''}`}
