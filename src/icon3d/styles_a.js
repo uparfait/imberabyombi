@@ -38,3 +38,5 @@ export function ribbon(G, C, i) {
   }
   bands += use(R, X, Y, S, col(0), at(base));
   const bare = G.inner.replace(/\sstroke-width="[^"]*"/g, '').replace(/stroke-width\s*:[^;"]+;?/g, '');
+  return [sym(R, G, bare) + vol(i + 'v', { bevel: 2, surf: 3, spec: .7, exp: 18, shade: .45 }), ext + `<g filter="url(#${i}v)">${bands}</g>`];
+}
