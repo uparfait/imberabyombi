@@ -15,3 +15,4 @@ async function typed(text, font) {
 }
 
 export function Pad_type({ name }) {
+  const [text, set_text] = useState(name || ''), [font, set_font] = useState(0), shown = text.trim() || 'Your name';
