@@ -3,3 +3,4 @@
    starts part-way for a picture with paper around it; slide right until only the ink is left. Its mark is the picture
    as shown, cut to its visible part. */
 import { useEffect, useRef, useState } from 'react';
+import { i3 } from '../icons/index.js';
