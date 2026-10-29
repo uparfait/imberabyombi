@@ -26,3 +26,4 @@ export const file_del = key => run('readwrite', s => s.delete(key)).catch(() => 
 export const drop_files = id => Promise.all([file_del('pdf:' + id), file_del('marks:' + id)]);
 
 export const marks_get = async id => (await file_get('marks:' + id)) || {};
+export const sweep = ids => run('readonly', s => s.getAllKeys())
