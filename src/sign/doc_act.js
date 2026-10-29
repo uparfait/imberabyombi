@@ -18,3 +18,4 @@ export const DOC_ACT = {
     catch (e) { console.error(e); notify('The PDF could not be built. Check your connection and try again.', 'bad', 'Download failed'); }
   },
   sign_doc_del: t => { const d = find_doc(t.dataset.id);
+    ask(`Delete “${d.title}”? Its PDF and every signature on it are removed from this browser.`, async () => {
