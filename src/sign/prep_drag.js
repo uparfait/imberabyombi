@@ -52,3 +52,5 @@ export function prep_pointer(root) {
   root.addEventListener('pointerdown', d); root.addEventListener('dragover', over); root.addEventListener('drop', drop);
   document.addEventListener('keydown', k);
   return () => { root.removeEventListener('pointerdown', d); root.removeEventListener('dragover', over); root.removeEventListener('drop', drop);
+    document.removeEventListener('keydown', k); };
+}
