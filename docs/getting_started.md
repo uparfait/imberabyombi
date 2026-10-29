@@ -28,6 +28,7 @@ See [deploying](deploying.md).
 5. Sign out from the avatar menu, pick another role and sign in again to see what that role can do.
 
 Sample pictures are cartoons drawn in the page and the sample video is in `public/media/`
+([cartoons](cartoons.md)); internet access is used only for the home hero picture, the sample audio and the map
 
 ## Reset the demo
 Settings → Data → **Reset demo data** restores the sample records. Theme, session and tokens stay.
