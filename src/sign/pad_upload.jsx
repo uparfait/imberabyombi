@@ -29,3 +29,4 @@ export function Pad_upload({ kind }) {
 
   if (!img) return <label className="sign_drop sm">{input}{i3('image', 'h-12 w-12')}
     <span className="mt-3 block font-medium">Choose a picture of your {kind}</span>
+    <span className="mt-1 block text-xs text-muted">PNG, JPG or WebP, up to 5 MB. A photo on white paper works well.</span></label>;
