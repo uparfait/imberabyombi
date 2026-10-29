@@ -19,3 +19,4 @@ function apply(d, f, url) {
 }
 
 function open_pad(d, f) {
+  const [l] = KINDS[f.type], what = l.toLowerCase(); PAD.get = async () => null;
