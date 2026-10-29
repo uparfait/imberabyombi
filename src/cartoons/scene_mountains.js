@@ -25,3 +25,4 @@ export function mountains(w, h, r) {
   const s = Math.min(w, h), lake = h * r.range(.6, .66), shore = h * .84, color = r.pick(PEAKS);
   let out = sky(w, h, r, lake, r.pick(SUNSETS));
   out += peaks(-s * .2, w, lake, s * .42, shade(color, .15), r) + peaks(-s * .4, w, lake, s * .3, color, r);
+  out += rect(0, lake, w, shore - lake, 0, '#8FC9E8');
