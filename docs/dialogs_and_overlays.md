@@ -43,6 +43,7 @@ shows the full text only when it is actually cut. On touch screens a tap shows i
 ## Right-click menu
 On staff and account pages (not in fields, tables, code or dialogs, which keep the browser's menu) a right click opens
 quick links the signed-in role can open, Back, Reload and an "Allow text selection" switch (remembered). The public
+website keeps the browser's own menu everywhere.
 
 ## Command palette
 `Ctrl K` / `⌘K` (or the search button in the admin header) opens a searchable list of every page the role can open.
