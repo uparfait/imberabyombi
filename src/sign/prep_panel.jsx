@@ -10,3 +10,5 @@ import { P, prep_dirty } from './prep_state.js';
 import { status_chip } from './sign_list.jsx';
 
 const people = () => db.list('staff').filter(s => s.email && s.name);
+
+function add(e) {
