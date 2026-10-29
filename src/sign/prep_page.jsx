@@ -3,3 +3,4 @@
    up. prep_btns() are its top-bar buttons: Save and Send for signing. */
 import { useEffect, useRef } from 'react';
 import { ic } from '../icons/index.js';
+import { Pdf_pages } from './pdf_pages.jsx';
