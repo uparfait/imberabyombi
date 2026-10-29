@@ -16,3 +16,6 @@ export function Output({ st, draw }) {
       <button type="button" className="btn btn_outline btn_sm" onClick={() => save(svg, `icon_${st.style}.svg`)}>{ic('download', 'h-4 w-4')}Download</button>
       <button type="button" className="icon_btn" aria-expanded={code} aria-label={code ? 'Hide the code' : 'Show the code'} data-tip="SVG code"
         onClick={() => set_code(!code)}>{ic('data_object')}</button></div>
+    {code ? <textarea readOnly value={svg} rows={8} className="ico_code" aria-label="SVG code" onFocus={e => e.target.select()} /> : null}
+  </section>;
+}
