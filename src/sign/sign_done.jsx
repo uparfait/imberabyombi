@@ -13,3 +13,4 @@ export function sign_done(d) {
       <h1 className="mt-4 text-2xl sm:text-3xl">Signing complete</h1>
       <p className="mt-1 text-muted">You signed “{d.title}”.</p>
       <dl className="sign_facts">
+        <dt>Document</dt><dd className="truncate">{d.title}</dd>
