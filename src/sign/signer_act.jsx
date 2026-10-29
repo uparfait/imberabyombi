@@ -44,3 +44,4 @@ export const SIGNER_ACT = {
     open_pad(d, f); },
   sign_next: () => { const d = find_doc(S.id), f = d && left_of(d)[0]; if (!f) return;
     const el = qs(`[data-fid="${f.id}"]`); el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el?.classList.remove('flash'); void el?.offsetWidth; el?.classList.add('flash');
