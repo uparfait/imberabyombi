@@ -33,3 +33,4 @@ export function Pad_draw() {
     PAD.get = async () => p.any() ? trim(cv.current) : null;
     return p.stop;
   }, []);
+  return <div>
