@@ -1,1 +1,2 @@
 /* sign/sign_list.jsx: the lists. All, Drafts, Waiting, Completed: the documents you prepared; To sign: the ones sent to
+   you (waiting first, then the ones you signed). A row opens the document where it belongs: a draft to prepare it, a sent
