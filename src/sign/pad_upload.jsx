@@ -28,3 +28,4 @@ export function Pad_upload({ kind }) {
     onChange={e => { pick(e.target.files[0], e.target.form); e.target.value = ''; }} />;
 
   if (!img) return <label className="sign_drop sm">{input}{i3('image', 'h-12 w-12')}
+    <span className="mt-3 block font-medium">Choose a picture of your {kind}</span>
