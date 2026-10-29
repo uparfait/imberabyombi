@@ -11,3 +11,4 @@ export function rng(seed) {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
   r.range = (a, b) => a + r() * (b - a);
+  r.int = (a, b) => Math.floor(r.range(a, b + 1));
