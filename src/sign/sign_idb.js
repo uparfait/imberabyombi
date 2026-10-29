@@ -7,3 +7,4 @@ const NAME = cfg.ns + 'sign', STORE = 'files';
 let opening = null;
 
 const open = () => opening || (opening = new Promise((resolve, reject) => {
+  const req = indexedDB.open(NAME, 1);
