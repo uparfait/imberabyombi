@@ -4,3 +4,4 @@ export const PAD = { get: async () => null };
 export const INK = '#16204A';
 
 /* the smallest box around every pixel that is not transparent, plus pad pixels around it, as a PNG (null if empty) */
+export function trim(c, pad = 10) {
