@@ -19,3 +19,4 @@ function Page({ pdf, i, n, size, children }) {
   }, [pdf, i]);
   return <figure className="sign_fig">
     <div ref={box} className="sign_sheet" data-page={i} style={{ aspectRatio: `${size.w} / ${size.h}` }}>
+      <canvas ref={cv} aria-hidden="true" /><div className="sign_layer">{children}</div></div>
