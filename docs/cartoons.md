@@ -36,3 +36,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
 |---|---|
 | `sample_video.mp4` | an 8-second cartoon clip (960 × 540, H.264, about 370 KB) built from the same cartoon parts |
 | `sample_poster.webp` | its first frame, shown before it plays (`cfg.poster`) |
+| `share_image.png` | the social card picture (1200 × 630), `og:image` in index.html |
