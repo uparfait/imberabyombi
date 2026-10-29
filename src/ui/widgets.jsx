@@ -27,7 +27,7 @@ export const stat_row = items => (
 /* act: JSX (a button or link) shown under the text */
 export const empty = (title, text, act = null) => (
   <div className="grid justify-items-center gap-3 px-6 py-14 text-center">
-    {i3('check', 'w-16 h-16 float')}<h3 className="text-lg">{title}</h3>{text ? <p className="max-w-sm text-sm text-muted">{text}</p> : null}{act || null}
+    {i3('check', 'w-16 h-16 float', 'ok')}<h3 className="text-lg">{title}</h3>{text ? <p className="max-w-sm text-sm text-muted">{text}</p> : null}{act || null}
   </div>
 );
 export const logo = light => (
