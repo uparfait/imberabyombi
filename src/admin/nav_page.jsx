@@ -16,7 +16,7 @@ const head = (o, icon, text, extra = null) => !o.routed
 
 const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a' : 'button';
   return <Tag key={i} className="card card_hover group grid justify-items-center gap-3 p-5 text-center" {...(t.href ? { href: t.href } : t.attrs)}>
-    {i3(it.i, 'h-12 w-12')}<span className="line-clamp-2 w-full font-medium leading-tight">{it.t}</span>
+    {i3(it.i, 'h-12 w-12', hue_at(i))}<span className="line-clamp-2 w-full font-medium leading-tight">{it.t}</span>
     <span className="text-xs text-muted">{it.c ? `System · ${it.c.length} pages` : 'Page'}</span></Tag>; };
 
 const number = ([k, v, i]) => <div key={k} className="card flex items-center gap-4 p-4 sm:p-5">{i3(i, 'h-11 w-11')}
