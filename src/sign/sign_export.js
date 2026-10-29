@@ -24,3 +24,4 @@ export async function signed_pdf(d, marks) {
   const bytes = await file_get('pdf:' + d.id); if (!bytes) throw new Error('The PDF of this document is not in this browser.');
   const pdf = await L.PDFDocument.load(bytes, { ignoreEncryption: true }), pages = pdf.getPages(), imgs = new Map();
   for (const f of d.fields) {
+    const url = marks[f.id], page = pages[f.page]; if (!url || !page) continue;
