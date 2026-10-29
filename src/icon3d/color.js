@@ -10,3 +10,5 @@ function to_hsl(hex) {
   let h = 0, s = 0; const l = (mx + mn) / 2;
   if (d) { s = l > .5 ? d / (2 - mx - mn) : d / (mx + mn); h = mx === r ? (g - b) / d + (g < b ? 6 : 0) : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; h *= 60; }
   return [h, s * 100, l * 100];
+}
+function from_hsl(h, s, l) {
