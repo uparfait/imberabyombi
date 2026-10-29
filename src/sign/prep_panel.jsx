@@ -47,3 +47,4 @@ export const prep_panel = d => <div className="sign_panel">
       <datalist id="sign_people">{people().map(p => <option key={p.id} value={p.name}>{p.email}</option>)}</datalist>
       <div className="field"><label htmlFor="sign_r_email">Email</label>
         <input id="sign_r_email" name="email" type="email" required maxLength={120} placeholder=" " autoComplete="off" /></div>
+      <div className="field"><label htmlFor="sign_r_note">Note for this signer (optional)</label>
