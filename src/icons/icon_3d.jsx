@@ -33,4 +33,5 @@ export const i3_html = (n, c = 'w-14 h-14', color = 'brand') =>
   `<img src="${i3_src(n, color)}" class="i3 shrink-0 ${c}" alt="" aria-hidden="true" draggable="false" decoding="async">`;
 
 /* a glossy letter or symbol, inline so it uses the site's fonts (the brand mark is mark3d('#')) */
+const MARKS = new Map();
 }
