@@ -18,3 +18,4 @@ export function Iconisus_page() {
   const input = st.mode === 'svg' && st.svg.trim() ? st.svg : st.mode === 'lib' && st.icon ? iconify_svg(st.icon) : st.text;
   const draw = (o = {}) => render(input, { style: st.style, colors: st.cols, ...o });
   return <div className="page_enter grid gap-6">
+    <section className="flex flex-wrap items-end justify-between gap-4"><div className="min-w-0">
