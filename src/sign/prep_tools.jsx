@@ -18,3 +18,4 @@ const placing = d => d.recipients.length
   : <p className="sign_hint">Add a signer first (on the left).</p>;
 
 const placed = d => { const n = d.fields.length;
+  return n ? <ul className="grid gap-1 text-sm">{d.recipients.map(r => { const k = d.fields.filter(f => f.rid === r.id).length;
