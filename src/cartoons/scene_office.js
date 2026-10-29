@@ -37,3 +37,4 @@ export function office(w, h, r) {
     out += rect(bx, shelf_y - bh, bw, bh, s * .005, r.pick(CLOTHES)); bx += bw + s * .006;
   }
   out += plant(shelf_x + w * .26, shelf_y, s * .16);
+  const dx = w * .54, dw = w * .36, dy = floor - s * .2;
