@@ -7,3 +7,5 @@ import { i3 } from '../icons/index.js';
 import { form_msg } from '../feedback/index.js';
 import { PAD, trim } from './pad_state.js';
 import { paint, solid_edges } from './bg_cut.js';
+
+export function Pad_upload({ kind }) {
