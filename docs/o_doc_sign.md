@@ -66,3 +66,4 @@ documents between people and devices, keep these records and files on a server (
 | File | What it does |
 |---|---|
 | `sign_page.jsx`, `sign_top.jsx` | the window, its top bar and lists menu, the page for each address |
+| `sign_list.jsx`, `sign_new.jsx`, `sign_done.jsx` | the lists, the upload, "Signing complete" |
