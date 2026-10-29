@@ -25,3 +25,4 @@ export function stage(w, h, r) {
   out += person(px, deck, s * .3, look(r), r.pick(['point', 'wave', 'cheer']), r());
   out += stroke(line(px + s * .1, deck, px + s * .1, deck - s * .17), '#55607A', s * .01) + stroke(line(px + s * .1, deck - s * .17, px + s * .07, deck - s * .2), '#55607A', s * .008)
     + circle(px + s * .065, deck - s * .205, s * .014, MIC);
+  [[h * .93, .16, .1], [h * 1.04, .2, .02]].forEach(([y, size, shift]) => {
