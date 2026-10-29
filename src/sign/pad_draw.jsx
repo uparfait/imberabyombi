@@ -23,3 +23,4 @@ function wire(c, on_any) {
   const ev = [['pointerdown', down], ['pointermove', move], ['pointerup', up], ['pointercancel', up]];
   ev.forEach(([k, f]) => c.addEventListener(k, f));
   return { any: () => any, clear: () => { any = false; fit(); on_any(false); },
+    stop: () => { ro.disconnect(); ev.forEach(([k, f]) => c.removeEventListener(k, f)); } };
