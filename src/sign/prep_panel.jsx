@@ -3,3 +3,4 @@
    signer: name, email and a note for them. People already in the system are suggested as you type a name. */
 import { ic } from '../icons/index.js';
 import { db, rerender } from '../store/index.js';
+import { validate, notify } from '../feedback/index.js';
