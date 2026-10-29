@@ -39,3 +39,4 @@ export function office(w, h, r) {
   out += plant(shelf_x + w * .26, shelf_y, s * .16);
   const dx = w * .54, dw = w * .36, dy = floor - s * .2;
   out += rect(dx, dy, dw, s * .025, s * .008, '#C98F5E') + rect(dx + s * .02, dy, s * .02, floor - dy, 0, '#A9734A') + rect(dx + dw - s * .04, dy, s * .02, floor - dy, 0, '#A9734A');
+  out += rect(dx + dw * .3, dy - s * .12, s * .17, s * .11, s * .01, '#2F4858') + rect(dx + dw * .3 + s * .012, dy - s * .108, s * .146, s * .086, s * .006, '#BFE3F5')
