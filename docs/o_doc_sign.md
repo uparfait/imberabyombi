@@ -6,3 +6,4 @@ the whole window, like the document editor: its own top bar, no admin header or 
 styles in `src/styles/sign/`. It loads the first time someone opens it (its own file in the build).
 
 ## Pages (`/admin/sign/…`)
+| Address | Page |
