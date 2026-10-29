@@ -42,3 +42,4 @@ function key(e, root) {
 /* a tool dragged over a page: the page takes it; dropped: a field at that spot */
 const over = e => { if (e.dataTransfer?.types.includes('text/sign-field') && e.target.closest('.sign_sheet')) e.preventDefault(); };
 function drop(e) {
+  const s = e.target.closest('.sign_sheet'), t = e.dataTransfer?.getData('text/sign-field'); if (!s || !t) return;
