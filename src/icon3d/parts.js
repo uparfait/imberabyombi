@@ -16,3 +16,4 @@ export const sym = (id, G, inner = G.inner) => `<symbol id="${id}" viewBox="${G.
 export const use = (id, x, y, s, color, extra = '') => `<use xlink:href="#${id}" x="${x}" y="${y}" width="${s}" height="${s}" color="${color}" ${extra}/>`;
 export const pl = (G, x, y, s, paint) => `<svg x="${x}" y="${y}" width="${s}" height="${s}" viewBox="${G.vb.join(' ')}" overflow="visible">${G.inner.replace(/currentColor/g, paint)}</svg>`;
 export const blur = (id, sd, r = '-60%') =>
+  `<filter id="${id}" x="${r}" y="${r}" width="${-2 * parseFloat(r) + 100}%" height="${-2 * parseFloat(r) + 100}%"><feGaussianBlur stdDeviation="${sd}"/></filter>`;
