@@ -5,3 +5,4 @@ import { INK, TREES, shade } from './palette.js';
 import { sky, hill, tree } from './land.js';
 
 const PEAKS = ['#9FB7D6', '#A9A3CF', '#8FB0C9'];
+const SUNSETS = [['#FFC9A8', '#FFF0DC'], ['#C9D8F7', '#FFE9D6'], ['#BFE3F5', '#FDEBD8']];
