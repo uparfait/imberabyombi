@@ -17,3 +17,6 @@ export function Mark_pad({ kind, name }) {
   return <div className="grid gap-4 sm:col-span-2">
     <div className="seg justify-self-start" role="radiogroup" aria-label={`How to make your ${kind}`}>{TABS[kind].map(([k, l]) =>
       <label key={k}><input type="radio" className="sr-only" name="pad_tab" value={k} checked={tab === k} onChange={() => pick(k)} /><span>{l}</span></label>)}</div>
+    {tab === 'draw' ? <Pad_draw /> : tab === 'type' ? <Pad_type name={name} /> : tab === 'make' ? <Stamp_make name={name} /> : <Pad_upload kind={kind} />}
+  </div>;
+}
