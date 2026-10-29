@@ -9,3 +9,4 @@ import { PAD, trim } from './pad_state.js';
 import { paint, solid_edges } from './bg_cut.js';
 
 export function Pad_upload({ kind }) {
+  const cv = useRef(null), [img, set_img] = useState(null), [cut, set_cut] = useState(0);
