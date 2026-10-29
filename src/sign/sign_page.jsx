@@ -46,3 +46,4 @@ function page_for(a, id) {
   if (a === 'doc') return !mine ? move(`/admin/sign/sign/${id}`) : d.status === 'draft' ? move(`/admin/sign/edit/${id}`)
     : { title: d.title, back: list_href(d.status === 'completed' ? 'completed' : 'waiting'), body: owner_page(d) };
   if (a === 'sign') return { title: d.title, back: list_href('inbox'), btns: d.status === 'completed' ? dl(d) : null, body: signer_page(d) };
+  if (a === 'done') return { title: 'Signing complete', back: list_href('inbox'), body: sign_done(d) };
