@@ -23,3 +23,5 @@ export function Pad_upload({ kind }) {
     el.onload = () => { set_cut(solid_edges(el) ? 30 : 0); set_img(el); URL.revokeObjectURL(url); };
     el.onerror = () => { URL.revokeObjectURL(url); say('Unreadable picture', 'This picture could not be opened.'); };
     el.src = url;
+  };
+  const input = <input type="file" accept="image/png,image/jpeg,image/webp" className="sr-only"
