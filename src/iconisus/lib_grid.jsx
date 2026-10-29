@@ -29,3 +29,4 @@ export function Lib_grid({ st, put }) {
     <div className="flex gap-2">
       <div className="field min-w-0 flex-1"><label htmlFor="ico_lib">Icon set</label>
         <select id="ico_lib" value={st.lib} onChange={e => put({ lib: e.target.value, icon: null, icon_name: '' })}>{LIBS.map(([p, n]) => <option key={p} value={p}>{n}</option>)}</select></div>
+      <div className="field w-32"><label htmlFor="ico_q">Search</label>
