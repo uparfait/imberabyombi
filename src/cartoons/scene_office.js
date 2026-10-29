@@ -30,3 +30,4 @@ export function office(w, h, r) {
   out += `<defs>${v_gradient('win', sk[0], sk[1])}</defs>` + rect(wx, wy, ww, wh, s * .015, 'url(#win)', `stroke="#FFFFFF" stroke-width="${n(s * .02)}"`)
     + cloud(wx + ww * .15, wy + wh * .4, Math.min(ww, wh) * .5) + stroke(line(wx + ww / 2, wy, wx + ww / 2, wy + wh), '#FFFFFF', s * .014);
   out += board(w * .52, h * .12, w * .36, h * .32, s, r);
+  const shelf_x = w * .06, shelf_y = h * .62;
