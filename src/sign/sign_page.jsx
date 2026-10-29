@@ -36,3 +36,4 @@ const dl = d => <button type="button" className="btn btn_outline btn_sm" data-ac
 
 /* /admin/sign/<a>/<id> → { title, cur (the list on show), back (Back's address), btns (top bar), body } */
 function page_for(a, id) {
+  if (!a || LIST.has(a)) { const k = a || 'all'; return { title: LISTS.find(x => x[0] === k)[1], cur: k, body: sign_list(k) }; }
