@@ -20,3 +20,4 @@ export function paint(canvas, img, amount) {
   canvas.width = w; canvas.height = h;
   const x = canvas.getContext('2d', { willReadFrequently: true }); x.clearRect(0, 0, w, h); x.drawImage(img, 0, 0, w, h);
   if (!amount) return;
+  const im = x.getImageData(0, 0, w, h), d = im.data, [r, g, b, a] = edges(d, w, h); if (a < 128) return;
