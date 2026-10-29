@@ -20,3 +20,4 @@ export function Lib_grid({ st, put }) {
   const names = set ? Object.keys(set.icons).filter(n => !set.icons[n].hidden && n.includes(q.trim().toLowerCase())) : [];
   useEffect(() => {
     const el = end.current; if (!el) return;
+    const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) set_shown(n => n + BATCH); }, { root: el.parentElement });
