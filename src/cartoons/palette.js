@@ -18,3 +18,4 @@ export const SKINS = ['#FFDBB5', '#F5C9A0', '#E3AA7A', '#C98A55', '#A2683D', '#7
 export const HAIRS = ['#2B1D14', '#2B1D14', '#4A2F1E', '#7A4B26', '#C58B3E', '#E5BE76', '#9C3A1F', '#3A3A46', '#D9D4CC'];
 export const CLOTHES = [BRAND, '#2F80A8', '#3FA67A', '#F2B035', '#8E5BB5', '#D9534F', '#2F4858', '#F28C8C', '#5E9ED6', '#76B947'];
 export const PANTS = ['#2F4858', '#3B4A6B', '#5A4636', '#1F2A36', '#7C8BA1'];
+export const BACKS = ['#FDE3CF', '#D8ECF7', '#DDF1E4', '#F5E1F0', '#FFF1C9', '#E3E4FA'];
