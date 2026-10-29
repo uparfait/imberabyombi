@@ -6,3 +6,4 @@ import { ic } from '../icons/index.js';
 import { Pdf_pages } from './pdf_pages.jsx';
 import { fields_on } from './sign_fields.jsx';
 import { P } from './prep_state.js';
+import { prep_pointer } from './prep_drag.js';
