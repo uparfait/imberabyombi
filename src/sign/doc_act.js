@@ -7,3 +7,4 @@ import { base_url } from '../auth/index.js';
 import { go } from '../router/index.js';
 import { find_doc, drop_doc } from './sign_store.js';
 import { drop_files, marks_get } from './sign_idb.js';
+import { forget_pdf } from './pdf_lib.js';
