@@ -28,3 +28,4 @@
 @media (min-width: 420px) { .sign_tool.sm span { display: inline; } }
 .sign_for { display: flex; min-height: 2.5rem; align-items: center; gap: .5rem; padding: .375rem .875rem; border: 1px solid rgb(var(--line));
   border-radius: var(--pill); font-size: .875rem; font-weight: 500; text-align: left; transition: border-color .2s, background-color .2s; }
+.sign_for.on { border-color: var(--c); background: color-mix(in srgb, var(--c) 10%, transparent); }
