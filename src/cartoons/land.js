@@ -30,3 +30,5 @@ export function tree(x, ground, s, r, kind = r.pick(['round', 'round', 'pine', '
         `stroke="${color}" stroke-width="${n(s * .05)}" stroke-linejoin="round"`);
     });
     return out;
+  }
+  const trunk = rect(x - s * .05, g - s * .55, s * .1, s * .55, s * .03, TRUNK);
