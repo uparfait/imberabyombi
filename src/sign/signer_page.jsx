@@ -18,3 +18,4 @@ function Sign_doc({ d, me, done }) {
 }
 
 const not_yours = d => <div className="sign_main page_enter max-w-2xl"><div className="card">
+  {empty('This document was not sent to you', `“${d.title}” waits for other signers. To sign it, sign in with the email address it was sent to.`,
