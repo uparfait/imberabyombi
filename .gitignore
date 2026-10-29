@@ -28,3 +28,4 @@ package-lock.json
 
 # The Vercel project link and local environment files (they can hold tokens)
 .vercel
+.env*
