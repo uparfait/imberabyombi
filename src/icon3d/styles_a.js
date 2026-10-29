@@ -17,3 +17,4 @@ export function classic(G, C, i) {
   let ext = ''; for (let k = 5; k >= 1; k--) ext += use(i + 'G', 58, 50 + k, 84, shade(C.p, -22, 6));
   return [d, `<circle cx="100" cy="92" r="72" fill="url(#${i}b)"/><circle cx="100" cy="92" r="72" fill="url(#${i}c)"/>`
     + `<g clip-path="url(#${i}k)"><ellipse cx="100" cy="46" rx="58" ry="34" fill="url(#${i}g)"/></g>`
+    + `<circle cx="100" cy="92" r="72" fill="none" stroke="url(#${i}r)" stroke-width="2.5"/>`
