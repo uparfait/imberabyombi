@@ -5,3 +5,5 @@ import { n, line, path, rect, circle, ellipse, stroke } from './shapes.js';
 import { INK, SKINS, HAIRS, CLOTHES, PANTS, shade, lum } from './palette.js';
 import { HAIR_STYLES, hair_back, hair_front } from './hair.js';
 import { face_bits } from './features.js';
+
+export function look(r) {
