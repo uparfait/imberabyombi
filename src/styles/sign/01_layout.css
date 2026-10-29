@@ -26,3 +26,4 @@
 .sign_drop:hover, .sign_drop.over, .sign_drop:focus-within { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .06); }
 .sign_drop[aria-busy] { cursor: progress; }
 .sign_drop.sm { padding: 2rem 1rem; }
+.sign_step { display: grid; flex: none; width: 1.75rem; height: 1.75rem; place-items: center; border-radius: var(--pill);
