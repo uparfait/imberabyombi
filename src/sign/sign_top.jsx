@@ -26,3 +26,4 @@ export const sign_top = (cur, back, btns) => { const me = who();
     <a href={list_href('all')} className="sign_brand" aria-label="O-Doc Sign, all documents">{i3('signature', 'h-10 w-10')}
       <span className="hidden font-display text-lg font-semibold lg:inline">O-Doc Sign</span></a>
     <nav className="min-w-0" aria-label="O-Doc Sign lists">{lists_menu(cur)}</nav>
+    <div className="sign_btns">{btns}{theme_btn('max-sm:hidden')}
