@@ -13,3 +13,6 @@ export function look(r) {
   return { skin, hair, style, top: r.pick(CLOTHES), pants: r.pick(PANTS), glasses: r.chance(.2),
     beard: !['long', 'bob', 'bun'].includes(style) && r.chance(.15), dress: ['long', 'bob', 'bun'].includes(style) && r.chance(.4),
     happy: SKINS.indexOf(skin) < 4 && r.chance(.25) };   // closed eyes would vanish on the darkest skins
+}
+
+/* where the hands go for a pose (u: a tenth of the height; sw: -1…1 from the phase) */
