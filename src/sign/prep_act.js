@@ -19,3 +19,4 @@ function remove_rec(r) {
 
 function send() {
   const d = P.doc, now = Date.now();
+  Object.assign(d, { status: 'sent', sent_at: now });
