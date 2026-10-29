@@ -31,3 +31,4 @@ export function person(x, y, s, o, pose = 'stand', phase = 0) {
     + stroke(line(x + .45 * u, y - 4.3 * u, x + .5 * u + step, y - .5 * u), o.pants, .95 * u)
     + ellipse(x - .7 * u - step, y - .28 * u, .62 * u, .3 * u, INK) + ellipse(x + .7 * u + step, y - .28 * u, .62 * u, .3 * u, INK);
   out += o.dress
+    ? path(`M${n(x - 1.15 * u)} ${n(y - 7.2 * u)}L${n(x + 1.15 * u)} ${n(y - 7.2 * u)}L${n(x + 1.9 * u)} ${n(y - 3.2 * u)}L${n(x - 1.9 * u)} ${n(y - 3.2 * u)}Z`,
