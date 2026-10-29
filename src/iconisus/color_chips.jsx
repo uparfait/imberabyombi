@@ -7,3 +7,4 @@ const NAMES = ['Primary', 'Secondary', 'Tertiary'];
 
 export function Colors({ st, put }) {
   const P = palette(st.cols), auto = [P.p, P.s, P.t];
+  const set_k = (k, v) => { const c = [...st.cols]; c[k] = v; put({ cols: c }); };
