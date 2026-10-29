@@ -1,3 +1,4 @@
 /* styles/sign/01_layout.css: O-Doc Sign's window: its top bar, the lists, the upload box, the prepare page (signers · pages
    · tools) and the document pages (pages · progress). Phones get one column, a bar at the bottom and the signers in a
    sheet that slides up. Template tokens throughout; borders, no shadows. */
+.sign_app { display: flex; min-height: 100dvh; flex-direction: column; background: rgb(var(--bg)); }
