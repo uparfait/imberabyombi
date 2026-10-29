@@ -22,3 +22,4 @@ export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipient
     <span className="block truncate text-xs text-muted">{r.email}</span>
     <span className={`block text-xs ${r.status === 'signed' ? 'text-ok' : 'text-muted'}`}>{state(r)}</span>
     {links && r.note ? <span className="sign_note mt-1">“{r.note}”</span> : null}</span>
+  {r.status === 'signed' ? <span className="mt-1 text-ok">{ic('check', 'h-5 w-5')}</span>
