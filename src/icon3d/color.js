@@ -3,3 +3,4 @@
    works out the missing ones from the first. */
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 export const rgb = h => { h = h.replace('#', ''); if (h.length === 3) h = [...h].map(c => c + c).join(''); return [0, 2, 4].map(k => parseInt(h.substr(k, 2), 16)); };
+export const to_hex = a => '#' + a.map(v => clamp(Math.round(v), 0, 255).toString(16).padStart(2, '0')).join('');
