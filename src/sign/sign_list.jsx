@@ -4,3 +4,4 @@
 import { ic, i3 } from '../icons/index.js';
 import { empty, initials } from '../ui/index.js';
 import { auth } from '../auth/index.js';
+import { to } from '../router/index.js';
