@@ -4,3 +4,4 @@ import { n, pts, path, rect, circle, ellipse, sun, cloud, v_gradient } from './s
 import { SKIES, SUNS, TREES, TRUNK, shade } from './palette.js';
 
 /* horizon: where the land starts (y); colours: [top, bottom] of the gradient */
+export function sky(w, h, r, horizon, colors = r.pick(SKIES)) {
