@@ -30,6 +30,7 @@ export function ctx_menu() {
 
 function on_contextmenu(e) {
   const t = e.target;
+  if (document.documentElement.classList.contains('public_page')) return;   /* the public website: the browser's own menu */
   /* the document editor brings its own right-click menu, so the quick links stay out of it */
   if (t.closest?.('#editor, input, textarea, select, [contenteditable], table, pre, code, .copy_box, dialog, a[href^="mailto:"], a[href^="tel:"]') || String(getSelection())) return;
   e.preventDefault(); tip.hide(); close_pops();
