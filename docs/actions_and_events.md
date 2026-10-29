@@ -23,6 +23,7 @@ export const EXAMPLE_ACT = {
 };
 ```
 Add the object to `ACT` in `src/actions/act.js`, and `archive: 1` to `REQ` if it should spin its button. A module whose
+code loads on demand (O-Doc Sign) adds its handlers when it arrives: `add_act(EXAMPLE_ACT, { archive: 1 })`.
 
 ## data-form: a form names its handler
 `<form data-form="contact" noValidate>` → on a valid submit `FORMS.contact(values, form)` runs, inside `request()`
