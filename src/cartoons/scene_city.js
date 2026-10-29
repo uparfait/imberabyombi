@@ -31,3 +31,4 @@ export function city(w, h, r) {
   const trees = r.int(1, 3);
   for (let i = 0; i < trees; i++) out += tree(w * (i + r.range(.2, .8)) / trees, base + walk * .6, s * .22, r, 'round', r.pick(TREES));
   const people = r.int(1, 3);
+  for (let i = 0; i < people; i++) out += person(w * (i + r.range(.25, .75)) / people, base + walk * .9, s * .2, look(r), r.pick(['walk', 'walk', 'wave', 'stand']), r());
