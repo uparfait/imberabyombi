@@ -11,3 +11,4 @@ export const load_set = p => SETS[p] ||= fetch(`https://cdn.jsdelivr.net/npm/@ic
   .catch(e => { delete SETS[p]; throw e; });
 
 /* one icon of a set, as the engine takes it: { body, width, height, left, top } */
+export const icon_of = (set, n) => { const i = set.icons[n];
