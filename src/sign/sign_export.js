@@ -29,3 +29,4 @@ export async function signed_pdf(d, marks) {
     place(page, f, imgs.get(url), L.degrees);
   }
   if (d.status === 'completed') await certificate(pdf, d, L);
+  return pdf.save();
