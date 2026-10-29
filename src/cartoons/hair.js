@@ -5,3 +5,4 @@ import { n, path, circle } from './shapes.js';
 export const HAIR_STYLES = ['short', 'side', 'long', 'bob', 'bun', 'curly', 'afro', 'short', 'bald'];
 
 /* x, y as fractions of R from the centre → "x y" */
+const at = (cx, cy, R) => (x, y) => `${n(cx + x * R)} ${n(cy + y * R)}`;
