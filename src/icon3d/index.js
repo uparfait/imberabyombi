@@ -23,3 +23,4 @@ const FONTS = { balloon: ROUND, ribbon: ROUND };
 let n = 0;
 
 export function render(input, o = {}) {
+  const style = MAKERS[o.style] ? o.style : 'classic', C = palette(o.colors), s = o.size ?? 128;
