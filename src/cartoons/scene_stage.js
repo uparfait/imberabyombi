@@ -5,3 +5,5 @@ import { BRAND, CLOTHES, LIT, shade } from './palette.js';
 import { person, look, from_back } from './person.js';
 
 const NIGHTS = ['#2E2A4F', '#23395B', '#3B2C4A', '#1F3B4D'], MIC = '#1B1A22';
+
+export function stage(w, h, r) {
