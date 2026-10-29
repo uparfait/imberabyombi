@@ -9,3 +9,4 @@ export function sky(w, h, r, horizon, colors = r.pick(SKIES)) {
   let out = `<defs>${v_gradient('sky', colors[0], colors[1])}</defs>` + rect(0, 0, w, h, 0, 'url(#sky)');
   if (r.chance(.85)) out += sun(r.range(w * .12, w * .88), r.range(horizon * .2, horizon * .45), s * r.range(.06, .085), r.pick(SUNS));
   for (let i = 0; i < count; i++) out += cloud(w * (i + r.range(0, .55)) / count, r.range(horizon * .15, horizon * .6), s * r.range(.16, .26));
+  return out;
