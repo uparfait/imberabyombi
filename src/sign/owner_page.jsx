@@ -19,3 +19,4 @@ const state = r => r.status === 'signed' ? `Signed ${when(r.signed_at)}` : r.vie
 export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipients.map(r => <li key={r.id} className="flex items-start gap-3">
   <span className="sign_dot" style={{ background: r.color }}>{initials(r.name)}</span>
   <span className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
+    <span className="block truncate text-xs text-muted">{r.email}</span>
