@@ -12,3 +12,5 @@
 .ico_pick { display: grid; aspect-ratio: 1; place-items: center; border-radius: .75rem; color: rgb(var(--fg)); transition: background-color .15s; }
 .ico_pick:hover { background: rgb(var(--fg) / .06); }
 .ico_pick.on { outline: 2px solid rgb(var(--brand) / .55); outline-offset: -2px; background: rgb(var(--brand) / .14); color: rgb(var(--brand)); }
+
+.ico_style { display: grid; justify-items: center; gap: .25rem; padding: .5rem .25rem; border: 1px solid rgb(var(--line)); border-radius: 1rem;
