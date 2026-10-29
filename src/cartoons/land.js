@@ -33,3 +33,4 @@ export function tree(x, ground, s, r, kind = r.pick(['round', 'round', 'pine', '
   }
   const trunk = rect(x - s * .05, g - s * .55, s * .1, s * .55, s * .03, TRUNK);
   if (kind === 'tall') return trunk + ellipse(x, g - s * .62, s * .2, s * .38, color) + ellipse(x - s * .06, g - s * .74, s * .07, s * .16, light);
+  return trunk + circle(x - s * .19, g - s * .5, s * .2, color) + circle(x + s * .19, g - s * .5, s * .2, color)
