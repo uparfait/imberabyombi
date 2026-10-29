@@ -13,3 +13,4 @@ export function Stamp_make({ name }) {
   PAD.get = async () => st.org.trim() ? trim(cv.current, 6) : null;
   return <div className="grid items-start gap-5 sm:grid-cols-[11rem_minmax(0,1fr)]">
     <canvas ref={cv} width="400" height="400" className="sign_stamp_cv" aria-label="Stamp preview" />
+    <div className="grid gap-3">
