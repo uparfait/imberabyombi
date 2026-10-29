@@ -42,4 +42,4 @@ Add `<url><loc>https://example.com/services</loc></url>` to `public/sitemap.xml`
 - Keep each file under 100 lines: one section per file.
 - `data-reveal` fades content in on scroll; `data-count="120"` on a `<data>` element counts up.
 - Long text: `longform()` (src/site/longform.jsx) builds the article with a table of contents.
-- Images: `<img src={cfg.img('services', 900, 650)} alt="…" width="900" height="650" loading="lazy" />`.
+- Images: `<img src={cfg.img('services', 900, 650)} alt="…" width="900" height="650" loading="lazy" />` draws a
