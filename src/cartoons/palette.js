@@ -28,3 +28,5 @@ export const lum = hex => { const v = parseInt(hex.slice(1), 16); return .3 * (v
 export function shade(hex, amt) {
   const v = parseInt(hex.slice(1), 16), to = amt > 0 ? 255 : 0, k = Math.abs(amt);
   const c = [16, 8, 0].map(b => Math.round(((v >> b) & 255) + (to - ((v >> b) & 255)) * k));
+  return '#' + c.map(x => x.toString(16).padStart(2, '0')).join('');
+}
