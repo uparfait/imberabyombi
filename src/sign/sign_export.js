@@ -27,3 +27,5 @@ export async function signed_pdf(d, marks) {
     const url = marks[f.id], page = pages[f.page]; if (!url || !page) continue;
     if (!imgs.has(url)) imgs.set(url, await pdf.embedPng(url));
     place(page, f, imgs.get(url), L.degrees);
+  }
+  if (d.status === 'completed') await certificate(pdf, d, L);
