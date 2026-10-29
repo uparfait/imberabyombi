@@ -7,3 +7,4 @@ import { PAD, INK, trim } from './pad_state.js';
 function wire(c, on_any) {
   const x = c.getContext('2d', { willReadFrequently: true }); let on = false, any = false, l, m;
   const fit = () => {
+    if (any) return; const dpr = devicePixelRatio || 1;
