@@ -12,3 +12,4 @@ function to_hsl(hex) {
   return [h, s * 100, l * 100];
 }
 function from_hsl(h, s, l) {
+  h = ((h % 360) + 360) % 360; s /= 100; l /= 100;
