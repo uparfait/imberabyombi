@@ -7,3 +7,4 @@ export const note_body = r => <div className="field sm:col-span-2"><label htmlFo
   <textarea id="sign_note_in" name="note" rows={4} maxLength={500} placeholder=" " defaultValue={r.note || ''} /></div>;
 
 export const send_body = d => <div className="grid gap-4 sm:col-span-2">
+  <p className="text-sm text-muted">“{d.title}” · {d.pages.length} page{d.pages.length === 1 ? '' : 's'}</p>
