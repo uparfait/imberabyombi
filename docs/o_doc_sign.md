@@ -13,3 +13,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 | `/admin/sign/new` | upload a PDF (PDF only, up to 20 MB; the file is checked to really be a PDF) |
 | `/admin/sign/edit/<id>` | prepare a draft: signers on the left, the pages in the middle, the field tools on the right |
 | `/admin/sign/doc/<id>` | follow a sent document: progress, each signer's state and note, activity, download |
+| `/admin/sign/sign/<id>` | sign it (the link the sender copies points here) |
