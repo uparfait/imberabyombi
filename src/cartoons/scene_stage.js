@@ -11,3 +11,5 @@ export function stage(w, h, r) {
   let out = `<defs>${v_gradient('night', bg, shade(bg, .18))}</defs>` + rect(0, 0, w, h, 0, 'url(#night)');
   [w * .15, w * .5, w * .85].forEach(x => {
     out += path(`M${n(x - s * .03)} 0L${n(x + s * .03)} 0L${n(x + s * .22)} ${n(deck)}L${n(x - s * .22)} ${n(deck)}Z`, LIT, 'opacity=".14"') + rect(x - s * .04, 0, s * .08, s * .03, s * .01, '#55607A');
+  });
+  const sw = w * .44, sh = h * .3, sx = (w - sw) / 2, sy = h * .1;
