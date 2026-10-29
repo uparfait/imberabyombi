@@ -11,3 +11,4 @@ export function trim(c, pad = 10) {
     if (x < l) l = x; if (x > r) r = x; if (y < t) t = y; if (y > b) b = y;
   }
   if (r < 0) return null;
+  const o = document.createElement('canvas'); o.width = r - l + 1 + pad * 2; o.height = b - t + 1 + pad * 2;
