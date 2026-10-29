@@ -19,3 +19,4 @@ function wire(c, on_any) {
   const move = e => { if (!on) return; const p = at(e), n = { x: (l.x + p.x) / 2, y: (l.y + p.y) / 2 };
     x.beginPath(); x.moveTo(m.x, m.y); x.quadraticCurveTo(l.x, l.y, n.x, n.y); x.stroke(); l = p; m = n; };
   const up = () => { on = false; };
+  const ro = new ResizeObserver(fit); ro.observe(c);
