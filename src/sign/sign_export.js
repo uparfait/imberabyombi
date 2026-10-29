@@ -4,3 +4,4 @@
    placed on any page, rotated pages included. */
 import { load_script } from '../editor/core/utils.js';
 import { file_get } from './sign_idb.js';
+import { certificate } from './sign_cert.js';
