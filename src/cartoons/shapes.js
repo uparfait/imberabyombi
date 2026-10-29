@@ -13,3 +13,4 @@ export const stroke = (d, color, width, more) =>
   `<path d="${d}" fill="none" stroke="${color}" stroke-width="${n(width)}" stroke-linecap="round" stroke-linejoin="round"${attrs(more)}/>`;
 /* points [[x, y], …] as a path: M x y L x y … */
 export const pts = list => list.map(([x, y], i) => (i ? 'L' : 'M') + n(x) + ' ' + n(y)).join('');
+export const line = (x1, y1, x2, y2) => `M${n(x1)} ${n(y1)}L${n(x2)} ${n(y2)}`;
