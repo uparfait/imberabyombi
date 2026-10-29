@@ -29,6 +29,7 @@ See [deploying](deploying.md).
 
 Sample pictures are cartoons drawn in the page and the sample video is in `public/media/`
 ([cartoons](cartoons.md)); internet access is used only for the home hero picture, the sample audio and the map
+embed. Broken images fall back to a branded placeholder.
 
 ## Reset the demo
 Settings → Data → **Reset demo data** restores the sample records. Theme, session and tokens stay.
