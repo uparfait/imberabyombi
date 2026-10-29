@@ -2,3 +2,4 @@
    returns [defs, body] for a 200 × 200 picture.
    classic: a coloured orb with an extruded white glyph · balloon: an inflated, glossy two-tone glyph ·
    ribbon: concentric striped bands with depth. */
+import { shade, mix, blend } from './color.js';
