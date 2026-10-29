@@ -17,3 +17,4 @@ import { LISTS, find_doc, all_docs, who } from './sign_store.js';
 import { sweep } from './sign_idb.js';
 import { sign_top, list_href } from './sign_top.jsx';
 import { sign_list } from './sign_list.jsx';
+import { Sign_new } from './sign_new.jsx';
