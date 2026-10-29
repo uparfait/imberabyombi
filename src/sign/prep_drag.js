@@ -19,3 +19,4 @@ function down(e, root) {
   const rs = !!e.target.closest('.sf_rs'), o = { ...f }, sx = e.clientX, sy = e.clientY;
   P.sel = f.id; mark_sel(root); el.setPointerCapture(e.pointerId); el.classList.add('drag');
   const move = ev => {
+    const dx = (ev.clientX - sx) / b.width, dy = (ev.clientY - sy) / b.height;
