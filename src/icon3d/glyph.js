@@ -15,3 +15,4 @@ function from_svg(str) {
   const inner = `<g ${el.hasAttribute('fill') ? '' : 'fill="currentColor"'} ${at}>${el.innerHTML}</g>`
     .replace(/(\s)(fill|stroke)="(?!none|url\(|currentColor|transparent)[^"]*"/gi, '$1$2="currentColor"')
     .replace(/([;"\s])(fill|stroke)\s*:\s*(?!none|url\(|currentColor|transparent)[^;"]+/gi, '$1$2:currentColor');
+  const m = inner.match(/stroke-width="([\d.]+)"/);
