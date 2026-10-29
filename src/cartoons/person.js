@@ -48,3 +48,4 @@ export const head = (x, y, R, o) => hair_back(x, y, R, o.style, o.hair) + circle
 /* an audience member seen from behind: shoulders and the back of the head (cheer: arms up) */
 export function from_back(x, y, s, o, cheer = false) {
   const R = s * .17;
+  let out = '';
