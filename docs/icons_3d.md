@@ -17,3 +17,4 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
   - a tone: `brand` (orange, the default), `ink`, `ok`, `info`, `warn`, `bad`;
   - a hue: `orange`, `amber`, `green`, `teal`, `sky`, `blue`, `indigo`, `violet`, `pink`, `red`, `slate`;
   - or a hex, e.g. `'#0E9AA7'`.
+- `hue_at(i)` gives rows of tiles and cards a different hue each, always the same for the same position.
