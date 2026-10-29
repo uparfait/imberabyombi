@@ -12,3 +12,4 @@ export function Lib_grid({ st, put }) {
   const [set, set_set] = useState(null), [err, set_err] = useState(false), [q, set_q] = useState(''), [shown, set_shown] = useState(BATCH);
   const end = useRef(null);
   useEffect(() => {
+    let live = true; set_set(null); set_err(false);
