@@ -6,3 +6,4 @@
 import { useEffect } from 'react';
 import './sign_styles.css';
 import './sign_act.js';
+import { ic } from '../icons/index.js';
