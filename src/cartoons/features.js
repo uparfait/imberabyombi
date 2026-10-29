@@ -18,3 +18,5 @@ export function face_bits(cx, cy, R, o) {
   if (o.glasses) out += `<g fill="none" stroke="${INK}" stroke-width="${n(R * .06)}">`
     + `<circle cx="${n(cx - ex)}" cy="${n(ey)}" r="${n(R * .22)}"/><circle cx="${n(cx + ex)}" cy="${n(ey)}" r="${n(R * .22)}"/>`
     + `<path d="M${at(-.15, .06)}Q${at(0, -.02)} ${at(.15, .06)}"/></g>`;
+  return out;
+}
