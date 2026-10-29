@@ -24,3 +24,4 @@ export function paint(canvas, img, amount) {
   const cut = amount * 2.1, soft = 18 + amount * .4;
   for (let i = 0; i < d.length; i += 4) {
     const dr = d[i] - r, dg = d[i + 1] - g, db = d[i + 2] - b, dist = Math.sqrt(dr * dr + dg * dg + db * db);
+    if (dist <= cut) d[i + 3] = 0; else if (dist < cut + soft) d[i + 3] = Math.round(d[i + 3] * (dist - cut) / soft);
