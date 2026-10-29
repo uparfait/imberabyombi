@@ -36,3 +36,4 @@ export const rec_of = (d, id) => d.recipients.find(r => r.id === id);
 
 export const log = (d, t) => { d.audit.push({ at: Date.now(), t }); };
 export const save_doc = d => { d.updated = Date.now(); db.upsert(C, d); return d; };
+export const drop_doc = id => db.remove(C, id);
