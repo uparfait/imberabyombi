@@ -23,3 +23,6 @@ function hands(x, y, u, pose, sw) {
   if (pose === 'point') return [[x - 1.75 * u, low], [x + 3.3 * u, y - 7.1 * u + sw * .2 * u]];
   if (pose === 'walk') return [[x - 1.45 * u + sw * .8 * u, low], [x + 1.45 * u - sw * .8 * u, low]];
   return [[x - 1.75 * u, low], [x + 1.75 * u, low]];
+}
+
+export function person(x, y, s, o, pose = 'stand', phase = 0) {
