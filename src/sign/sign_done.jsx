@@ -7,3 +7,4 @@ import { status_chip } from './sign_list.jsx';
 
 export function sign_done(d) {
   const r = my_rec(d), all = d.status === 'completed';
+  return <div className="sign_main page_enter grid place-items-center">
