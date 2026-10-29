@@ -24,3 +24,6 @@ function wire(c, on_any) {
   ev.forEach(([k, f]) => c.addEventListener(k, f));
   return { any: () => any, clear: () => { any = false; fit(); on_any(false); },
     stop: () => { ro.disconnect(); ev.forEach(([k, f]) => c.removeEventListener(k, f)); } };
+}
+
+export function Pad_draw() {
