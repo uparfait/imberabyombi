@@ -10,3 +10,5 @@ import { add_field, del_field } from './prep_fields.js';
 import { note_body, send_body } from './prep_dialogs.jsx';
 
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
+
+function remove_rec(r) {
