@@ -13,3 +13,4 @@ const memo = (key, fn) => made.get(key) || (made.set(key, fn()), made.get(key));
 export const svg_data_uri = svg => 'data:image/svg+xml,' + svg.replace(/"/g, "'").replace(/[\r\n%#()<>?[\\\]^`{|}]/g, encodeURIComponent);
 
 /* kind: 'city', 'park', 'office', 'stage' or 'mountains' to choose the scene (else the seed picks) */
+export const cartoon = (seed, w = 900, h = 650, kind) => memo(`${seed}|${w}|${h}|${kind || ''}`, () => svg_data_uri(scene_svg(seed, w, h, kind)));
