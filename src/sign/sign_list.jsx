@@ -14,3 +14,4 @@ const doc_href = d => to(d.status === 'draft' ? `/admin/sign/edit/${d.id}` : `/a
 const TONE = { draft: 'ink', sent: 'warn', completed: 'ok' };
 
 const faces = d => <span className="sign_faces" aria-hidden="true">{d.recipients.slice(0, 4).map(r =>
+  <span key={r.id} style={{ background: r.color }} title={r.name}>{initials(r.name)}</span>)}</span>;
