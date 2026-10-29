@@ -3,3 +3,4 @@
    sheet that slides up. Template tokens throughout; borders, no shadows. */
 .sign_app { display: flex; min-height: 100dvh; flex-direction: column; background: rgb(var(--bg)); }
 .sign_top { position: sticky; top: 0; z-index: 30; display: flex; height: 4rem; align-items: center; gap: .375rem;
+  padding: 0 .5rem; border-bottom: 1px solid rgb(var(--line)); background: rgb(var(--bg)); }
