@@ -18,3 +18,4 @@ export function park(w, h, r) {
     + `L${n(w * .6)} ${n(g + s * .04)}C${n(w * .7)} ${n(g + s * .16)} ${n(w * .6)} ${n(h - s * .2)} ${n(w * .66)} ${n(h)}Z`, '#F3E3C3');
   const front = r.int(1, 3);
   for (let i = 0; i < front; i++) {
+    const x = w * (i + r.range(.1, .9)) / front;
