@@ -21,3 +21,4 @@ function from_svg(str) {
 
 export function glyph(input, font) {
   if (input && typeof input === 'object' && input.body) input = iconify_svg(input);
+  const str = String(input ?? '').trim();
