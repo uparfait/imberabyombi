@@ -13,3 +13,4 @@ offline, and the same seed always draws the same picture. Code: [`src/cartoons/`
 Both return an image address (an SVG data URI), so they go straight into `<img src>`:
 
 ```jsx
+<img src={cfg.img('services', 900, 650)} alt="…" width="900" height="650" loading="lazy" />
