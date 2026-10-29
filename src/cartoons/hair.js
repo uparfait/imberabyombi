@@ -19,3 +19,6 @@ export function hair_back(cx, cy, R, style, color) {
     return out;
   }
   return '';
+}
+
+export function hair_front(cx, cy, R, style, color) {
