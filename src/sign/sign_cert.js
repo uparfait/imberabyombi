@@ -26,3 +26,4 @@ export async function certificate(pdf, d, L) {
     ['Sent by', `${d.owner_name} <${d.owner}>`], ['Sent', when(d.sent_at)], ['Completed', when(d.completed_at)]]
     .forEach(([k, v]) => { text(k, { size: 8, bold: true, color: soft }); text(v, { size: 11 }); y -= 3; });
   rule(); text('Signers', { size: 13, bold: true }); y -= 4;
+  d.recipients.forEach((r, i) => { room(60); text(`${i + 1}. ${r.name} <${r.email}>`, { size: 11, bold: true });
