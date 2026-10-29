@@ -43,3 +43,4 @@ Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), 
 ## Iconisus (`/admin/icons`)
 In the sidebar under System. Source: Text, Library (twelve icon sets, Lucide to Simple Icons, loaded from jsDelivr only
 when picked, searchable, shown in batches) or SVG (pasted). Then a style with a live preview of all six, up to three
+colours, a size, and Copy SVG, Download or the code. The preview shows the icon large and at 64, 40 and 24 pixels.
