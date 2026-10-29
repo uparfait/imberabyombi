@@ -22,3 +22,4 @@ export { portrait_svg } from './portrait.js';
 export { person, look, head, from_back } from './person.js';
 export { sky, hill, tree, bush } from './land.js';
 export * as shapes from './shapes.js';
+export * as palette from './palette.js';
