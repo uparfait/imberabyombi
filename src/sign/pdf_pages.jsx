@@ -18,3 +18,4 @@ function Page({ pdf, i, n, size, children }) {
     return () => { live = false; io.disconnect(); ro.disconnect(); clearTimeout(t); };
   }, [pdf, i]);
   return <figure className="sign_fig">
+    <div ref={box} className="sign_sheet" data-page={i} style={{ aspectRatio: `${size.w} / ${size.h}` }}>
