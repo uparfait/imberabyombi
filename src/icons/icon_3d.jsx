@@ -36,4 +36,5 @@ export const i3_html = (n, c = 'w-14 h-14', color = 'brand') =>
 const MARKS = new Map();
 export function mark3d(t, c = 'h-9 w-9', color = 'brand') {
   const k = `${t}|${hex(color)}`;
+  if (!MARKS.has(k)) MARKS.set(k, frame(render(t, { style: 'glossy', colors: [hex(color)], size: '100%' }), '42 39 116 116'));
 }
