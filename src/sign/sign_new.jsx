@@ -33,3 +33,4 @@ export function Sign_new() {
       <p className="mt-2 text-muted">Upload a PDF. You add the people who sign it and place their fields next.</p></div></section>
     <label className={`sign_drop ${over ? 'over' : ''}`} aria-busy={busy || undefined}
       onDragOver={e => { e.preventDefault(); set_over(true); }} onDragLeave={() => set_over(false)}
+      onDrop={e => { e.preventDefault(); set_over(false); pick(e.dataTransfer.files[0]); }}>
