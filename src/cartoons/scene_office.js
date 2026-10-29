@@ -16,3 +16,4 @@ function board(x, y, bw, bh, s, r) {
   let out = rect(x, y, bw, bh, s * .02, '#FFFFFF', `stroke="${shade('#DDE3EA', -.1)}" stroke-width="${n(s * .008)}"`);
   const bars = r.int(4, 6), gap = bw * .06, bar = (bw - gap * (bars + 1)) / bars, list = [];
   for (let i = 0; i < bars; i++) {
+    const v = (i + 1) / bars * r.range(.55, .85), bx = x + gap + i * (bar + gap), by = y + bh * .9 - bh * .7 * v;
