@@ -19,3 +19,4 @@ export function look(r) {
 function hands(x, y, u, pose, sw) {
   const low = y - 4.3 * u;
   if (pose === 'wave') return [[x - 1.75 * u, low], [x + 2.4 * u + sw * .45 * u, y - 9.4 * u]];
+  if (pose === 'cheer') return [[x - 2.3 * u, y - 9.4 * u + sw * .3 * u], [x + 2.3 * u, y - 9.4 * u - sw * .3 * u]];
