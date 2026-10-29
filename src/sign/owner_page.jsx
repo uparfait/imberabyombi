@@ -33,3 +33,4 @@ export const progress = d => { const n = d.recipients.length, s = signed_n(d);
 export const dl_label = d => d.status === 'completed' ? 'Download signed PDF' : 'Download PDF';
 
 export const owner_page = d => <div className="sign_split">
+  <aside className="sign_side" aria-label="Progress">
