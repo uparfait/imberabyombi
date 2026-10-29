@@ -35,3 +35,4 @@ async function finish() {
   d.fields.forEach(f => { if (S.pending[f.id]) { f.done = true; f.at = now; } });
   Object.assign(r, { status: 'signed', signed_at: now }); log(d, `${r.name} signed`);
   if (d.recipients.every(x => x.status === 'signed')) { Object.assign(d, { status: 'completed', completed_at: now }); log(d, 'Everyone signed: the document is complete'); }
+  save_doc(d); S.pending = {}; go(`/admin/sign/done/${d.id}`);
