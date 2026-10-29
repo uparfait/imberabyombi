@@ -10,3 +10,4 @@ export const iconify_svg = i => `<svg xmlns="http://www.w3.org/2000/svg" viewBox
 function from_svg(str) {
   const el = new DOMParser().parseFromString(clean_svg(str), 'text/html').querySelector('svg'); if (!el) return null;
   let vb = (el.getAttribute('viewBox') || '').trim().split(/[\s,]+/).map(Number);
+  if (vb.length !== 4 || vb.some(isNaN)) vb = [0, 0, parseFloat(el.getAttribute('width')) || 24, parseFloat(el.getAttribute('height')) || 24];
