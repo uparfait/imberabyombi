@@ -36,7 +36,7 @@ export function sidebar(mod) {
   const create = CREATE.filter(([m]) => auth.can(m, 2)); SIDE.busy = null;
   /* Top row (same height as the header): logo and web name (trimmed, never wider than the sidebar), close-sidebar button at the end */
   return <><div className="flex h-16 shrink-0 items-center gap-1.5 pl-4 pr-3">
-    <a href={to('/')} className="flex min-w-0 flex-1 items-center gap-2" aria-label={`${cfg.name}, home`}>{i3('diamond', 'h-8 w-8')}
+    <a href={to('/')} className="flex min-w-0 flex-1 items-center gap-2" aria-label={`${cfg.name}, home`}>{mark3d('#', 'h-8 w-8')}
       <span className="truncate font-display text-lg font-extrabold tracking-wide"><span className="text-brand">{cfg.logo[0]}</span>{cfg.logo[1]}</span></a>
     <button className="icon_btn" data-act="side" aria-label="Close sidebar">{ic('sideClose')}</button></div>
   <div id="sidebar_scroll" className="scroll_hover flex min-h-0 flex-1 flex-col gap-5 overflow-y-auto p-3 pt-1" data-chain="">
