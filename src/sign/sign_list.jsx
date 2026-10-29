@@ -26,3 +26,4 @@ const row = (d, href, right, sub) => <li key={d.id}><a href={href} className="si
   {d.recipients.length ? faces(d) : null}{right || status_chip(d)}</a></li>;
 
 function inbox() {
+  const all = of_list('inbox'), wait = all.filter(my_turn), done = all.filter(d => !my_turn(d)), sign = d => to(`/admin/sign/sign/${d.id}`);
