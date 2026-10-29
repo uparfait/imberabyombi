@@ -28,3 +28,4 @@ export function office(w, h, r) {
   let out = rect(0, 0, w, h, 0, wall) + rect(0, floor, w, h - floor, 0, shade(wall, -.1)) + rect(0, floor - s * .012, w, s * .012, 0, shade(wall, -.2));
   const wx = w * .06, ww = w * .32, wy = h * .1, wh = h * .38, sk = r.pick(SKIES);
   out += `<defs>${v_gradient('win', sk[0], sk[1])}</defs>` + rect(wx, wy, ww, wh, s * .015, 'url(#win)', `stroke="#FFFFFF" stroke-width="${n(s * .02)}"`)
+    + cloud(wx + ww * .15, wy + wh * .4, Math.min(ww, wh) * .5) + stroke(line(wx + ww / 2, wy, wx + ww / 2, wy + wh), '#FFFFFF', s * .014);
