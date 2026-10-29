@@ -30,3 +30,4 @@ export function paint(canvas, img, amount) {
 }
 
 /* a picture with solid (not transparent) edges: it most likely has paper around the ink */
+export function solid_edges(img) {
