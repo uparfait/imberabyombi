@@ -14,3 +14,4 @@ function place(page, f, img, degrees) {
   const [sw, sh] = rot % 180 ? [H, W] : [W, H], fw = f.w * sw, fh = f.h * sh;
   const k = Math.min(fw / img.width, fh / img.height), w = img.width * k, h = img.height * k;
   const x = f.x * sw + (fw - w) / 2, y = f.y * sh + (fh - h) / 2;   /* top-left corner, as shown */
+  const at = { 0: [x, H - y - h], 90: [y + h, x], 180: [W - x, y + h], 270: [W - y - h, H - x] }[rot] || [x, H - y - h];
