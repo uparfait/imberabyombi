@@ -24,3 +24,4 @@ function board(x, y, bw, bh, s, r) {
 }
 
 export function office(w, h, r) {
+  const s = Math.min(w, h), wall = r.pick(WALLS), floor = h * .8;
