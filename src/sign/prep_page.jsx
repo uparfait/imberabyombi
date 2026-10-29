@@ -18,3 +18,4 @@ function Prep_doc({ d }) {
 }
 
 export const prep_btns = () => <>
+  <button type="button" className="btn btn_outline btn_sm" data-act="sign_save" aria-label="Save">{ic('check', 'h-4 w-4')}<span className="hidden sm:inline">Save</span></button>
