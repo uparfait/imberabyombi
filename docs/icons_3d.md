@@ -39,3 +39,5 @@ Completed green, To sign violet.
 
 Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
 (gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
+
+## Iconisus (`/admin/icons`)
