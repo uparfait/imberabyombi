@@ -15,3 +15,4 @@ const TONE = { draft: 'ink', sent: 'warn', completed: 'ok' };
 
 const faces = d => <span className="sign_faces" aria-hidden="true">{d.recipients.slice(0, 4).map(r =>
   <span key={r.id} style={{ background: r.color }} title={r.name}>{initials(r.name)}</span>)}</span>;
+const sub_of = d => { const n = d.recipients.length, s = signed_n(d);
