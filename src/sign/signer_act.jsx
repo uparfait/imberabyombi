@@ -46,3 +46,4 @@ export const SIGNER_ACT = {
     const el = qs(`[data-fid="${f.id}"]`); el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     el?.classList.remove('flash'); void el?.offsetWidth; el?.classList.add('flash');
     setTimeout(() => SIGNER_ACT.sign_fill({ dataset: { id: f.id } }), 550); },
+  sign_finish: () => { const d = find_doc(S.id), r = my_rec(d);
