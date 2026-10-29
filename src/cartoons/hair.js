@@ -8,3 +8,4 @@ export const HAIR_STYLES = ['short', 'side', 'long', 'bob', 'bun', 'curly', 'afr
 const at = (cx, cy, R) => (x, y) => `${n(cx + x * R)} ${n(cy + y * R)}`;
 
 export function hair_back(cx, cy, R, style, color) {
+  const p = at(cx, cy, R);
