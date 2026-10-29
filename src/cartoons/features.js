@@ -6,3 +6,4 @@ import { INK, BLUSH, shade } from './palette.js';
 export function face_bits(cx, cy, R, o) {
   const ey = cy + R * .08, ex = R * .37, at = (x, y) => `${n(cx + x * R)} ${n(cy + y * R)}`;
   let out = '';
+  if (o.beard) out += path(`M${at(-.97, .05)}Q${at(-.92, 1.18)} ${at(0, 1.14)}Q${at(.92, 1.18)} ${at(.97, .05)}`
