@@ -3,3 +3,4 @@
    middle so round avatars crop well. */
 import { n, path, rect, circle } from './shapes.js';
 import { BACKS, WHITE, BRAND, shade } from './palette.js';
+import { look, head } from './person.js';
