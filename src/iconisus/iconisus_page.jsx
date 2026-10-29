@@ -20,3 +20,4 @@ export function Iconisus_page() {
   return <div className="page_enter grid gap-6">
     <section className="flex flex-wrap items-end justify-between gap-4"><div className="min-w-0">
       <p className="text-sm text-muted">System</p><h2 className="mt-1 text-3xl sm:text-4xl">Iconisus</h2>
+      <p className="mt-2 max-w-2xl text-muted">Turn any letter, symbol, SVG or library icon into a 3D icon. Pick a style and up to three
