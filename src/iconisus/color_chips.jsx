@@ -4,3 +4,5 @@
 import { palette } from '../icon3d/index.js';
 
 const NAMES = ['Primary', 'Secondary', 'Tertiary'];
+
+export function Colors({ st, put }) {
