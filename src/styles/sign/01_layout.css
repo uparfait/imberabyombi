@@ -34,3 +34,4 @@
 .sign_left, .sign_right { background: rgb(var(--surface)); }
 .sign_center { min-width: 0; padding: 1rem .75rem 3rem; }
 .sign_work .sign_center, .sign_center.with_bar { padding-bottom: 7rem; }   /* room for the bar at the bottom */
+@media (min-width: 1024px) {
