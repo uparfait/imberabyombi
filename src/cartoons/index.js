@@ -3,3 +3,4 @@
    stage, mountains); cartoon_face(n, w, h) a person's portrait. Both return an image address (an SVG data URI) for
    <img src>; cfg.img and cfg.face (src/config) use them. The parts are exported too, to draw your own pictures.
    Import from here: import { cartoon, cartoon_face } from '../cartoons/index.js' */
+import { scene_svg } from './scene.js';
