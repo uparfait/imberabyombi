@@ -14,3 +14,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 | `/admin/sign/edit/<id>` | prepare a draft: signers on the left, the pages in the middle, the field tools on the right |
 | `/admin/sign/doc/<id>` | follow a sent document: progress, each signer's state and note, activity, download |
 | `/admin/sign/sign/<id>` | sign it (the link the sender copies points here) |
+| `/admin/sign/done/<id>` | "Signing complete" |
