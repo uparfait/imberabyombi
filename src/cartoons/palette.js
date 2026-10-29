@@ -20,3 +20,5 @@ export const CLOTHES = [BRAND, '#2F80A8', '#3FA67A', '#F2B035', '#8E5BB5', '#D95
 export const PANTS = ['#2F4858', '#3B4A6B', '#5A4636', '#1F2A36', '#7C8BA1'];
 export const BACKS = ['#FDE3CF', '#D8ECF7', '#DDF1E4', '#F5E1F0', '#FFF1C9', '#E3E4FA'];
 export const BLUSH = '#F28C8C';
+
+/* how light a colour looks, 0 (black) … 255 (white) */
