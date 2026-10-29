@@ -27,3 +27,4 @@ export const prep_save = () => {
 const leave = () => { if (P.dirty) prep_save(); P.doc = null; };
 
 before_render(keep => { if (!keep) leave(); });
+addEventListener('pagehide', () => { if (P.dirty) prep_save(); });
