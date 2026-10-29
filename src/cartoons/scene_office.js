@@ -10,3 +10,6 @@ function plant(x, y, s) {
   return ellipse(x - s * .18, y - s * .55, s * .14, s * .3, TREES[0], `transform="rotate(-25 ${n(x)} ${n(y - s * .4)})"`)
     + ellipse(x + s * .18, y - s * .55, s * .14, s * .3, TREES[1], `transform="rotate(25 ${n(x)} ${n(y - s * .4)})"`)
     + ellipse(x, y - s * .7, s * .13, s * .34, TREES[2]) + path(`M${n(x - s * .22)} ${n(y - s * .32)}L${n(x + s * .22)} ${n(y - s * .32)}L${n(x + s * .16)} ${n(y)}L${n(x - s * .16)} ${n(y)}Z`, BRAND);
+}
+
+function board(x, y, bw, bh, s, r) {
