@@ -11,3 +11,4 @@ export function look(r) {
   let hair = r.pick(HAIRS);
   if (Math.abs(lum(hair) - lum(skin)) < 45) hair = lum(skin) > 128 ? shade(hair, -.45) : '#1A120C';   // keep the face clear of the hair
   return { skin, hair, style, top: r.pick(CLOTHES), pants: r.pick(PANTS), glasses: r.chance(.2),
+    beard: !['long', 'bob', 'bun'].includes(style) && r.chance(.15), dress: ['long', 'bob', 'bun'].includes(style) && r.chance(.4),
