@@ -7,3 +7,4 @@ import { empty } from '../ui/index.js';
 import { open_pdf, draw_page } from './pdf_lib.js';
 
 function Page({ pdf, i, n, size, children }) {
+  const box = useRef(null), cv = useRef(null);
