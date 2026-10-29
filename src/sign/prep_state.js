@@ -4,3 +4,5 @@
    draws, the tab closes), so nothing is lost. */
 import { before_render } from '../store/index.js';
 import { find_doc, save_doc } from './sign_store.js';
+
+export const P = { doc: null, rid: null, sel: null, sheet: false, dirty: false };
