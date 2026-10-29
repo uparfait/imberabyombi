@@ -16,3 +16,4 @@ export function look(r) {
 }
 
 /* where the hands go for a pose (u: a tenth of the height; sw: -1…1 from the phase) */
+function hands(x, y, u, pose, sw) {
