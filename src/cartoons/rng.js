@@ -4,3 +4,4 @@ export function rng(seed) {
   let h = 2166136261;
   for (const c of String(seed)) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
   let s = h >>> 0;
+  const r = () => {
