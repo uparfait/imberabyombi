@@ -45,3 +45,5 @@ export function sign_list(k) {
   return <div className="sign_main page_enter">
     <section className="sign_head"><div className="min-w-0"><p className="text-sm text-muted">O-Doc Sign</p>
       <h1 className="mt-1 text-3xl sm:text-4xl">{l}</h1><p className="mt-2 text-muted">{help}</p></div>{new_btn('shrink-0')}</section>
+    {body}</div>;
+}
