@@ -12,3 +12,4 @@ export function portrait_svg(seed, w = 320, h = w) {
   const r = rng('face:' + seed), o = look(r), back = r.pick(BACKS), H = 100 * h / w, cx = 50, cy = H * .44, R = 20, top = cy + R + 9;
   const collar = r.pick(COLLARS), skin_dark = shade(o.skin, -.12);
   let out = rect(0, 0, 100, H, 0, back) + circle(r.range(15, 85), r.range(10, H - 10), r.range(28, 46), shade(back, -.05));
+  if (collar === 'hood') out += path(`M${n(cx - 30)} ${n(top + 4)}Q${n(cx)} ${n(cy - 6)} ${n(cx + 30)} ${n(top + 4)}Z`, shade(o.top, -.15));
