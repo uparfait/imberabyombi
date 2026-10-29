@@ -13,3 +13,4 @@ import { sym } from './parts.js';
 import { palette } from './color.js';
 
 export { palette } from './color.js';
+export { iconify_svg, clean_svg } from './glyph.js';
