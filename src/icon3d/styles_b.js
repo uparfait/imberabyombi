@@ -10,3 +10,6 @@ export function glossy(G, C, i) {
   return [grad(i + 'a', G, [[0, shade(C.p, 20, -6)], [.45, C.p], [1, shade(dk, -16, 4)]])
     + vol(i + 'v', { goo: 1.5, bevel: 3, surf: 5, spec: 1.3, exp: 34, shade: .5 }) + vol(i + 'e', { goo: 1.5, flat: 1 }),
     `<g filter="url(#${i}e)">${ext}</g><g filter="url(#${i}v)">${pl(G, 35, 26, 130, `url(#${i}a)`)}</g>`];
+}
+
+export function clay(G, C, i) {
