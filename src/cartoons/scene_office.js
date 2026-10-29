@@ -43,3 +43,4 @@ export function office(w, h, r) {
     + rect(dx + dw * .26, dy - s * .012, s * .2, s * .014, s * .006, '#7C8BA1') + rect(dx + dw * .8, dy - s * .05, s * .035, s * .05, s * .008, '#FFFFFF')
     + circle(dx + dw * .8 + s * .0175, dy - s * .06, s * .008, shade(BRAND, .3));
   const people = r.int(1, 2), poses = ['point', 'wave', 'stand', 'cheer'];
+  for (let i = 0; i < people; i++) out += person(i ? w * .42 - s * .24 : w * .44, h - s * .06, s * .42, look(r), i ? r.pick(poses) : 'point', r());
