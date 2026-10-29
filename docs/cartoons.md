@@ -38,3 +38,5 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
 | `sample_poster.webp` | its first frame, shown before it plays (`cfg.poster`) |
 | `share_image.png` | the social card picture (1200 × 630), `og:image` in index.html |
 | `logo.png` | the brand mark (512 × 512) for the JSON-LD logo |
+
+`cfg.video` and `cfg.poster` follow the site's base path. The video loads only when someone presses play
