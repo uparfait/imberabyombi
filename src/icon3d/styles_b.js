@@ -6,3 +6,4 @@ import { lin, rad, grad, use, pl, blur, vol } from './parts.js';
 
 export function glossy(G, C, i) {
   const dk = C.hs ? C.s : C.p;
+  let ext = ''; for (let k = 8; k >= 1; k--) ext += use(i + 'G', 35, 26 + k * 1.2, 130, shade(dk, -26, 4));
