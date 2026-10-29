@@ -11,6 +11,7 @@ export function sitemap() {
     ['set-password', 'Set password', 'lock'], ['admin', 'Dashboard', 'chart']];
   return (
     <section className="wrap section"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{all.map(([k, l, i], j) => (
+      <a key={k} href={to(`/${k}`)} className="card card_hover group flex items-center gap-4 p-5">{i3(i, 'h-11 w-11', hue_at(j))}<span className="font-semibold">{l}</span></a>
     ))}</div>
       <div className="mt-14 grid max-w-3xl gap-3">{['Privacy policy', 'Terms of service', 'Cookies'].map(t => (
         <details key={t}><summary>{t}</summary><p className="px-5 pb-5 pt-3 text-muted">{lorem.p(4)}</p></details>
