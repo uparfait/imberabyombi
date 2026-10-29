@@ -34,3 +34,7 @@ function inbox() {
       : <div className="card">{empty('You are all caught up', 'Nothing is waiting for your signature.')}</div>}
     {done.length ? <><h2 className="sign_cap mt-8">Signed by you</h2><ul className="grid gap-2">{done.map(d => row(d, sign(d),
       <span className="chip bg-ok/15 text-ok">{ic('check', 'h-3.5 w-3.5')}{my_rec(d).status === 'signed' ? 'Signed' : 'Closed'}</span>, `From ${d.owner_name}`))}</ul></> : null}
+  </>;
+}
+
+export function sign_list(k) {
