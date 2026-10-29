@@ -8,3 +8,4 @@ offline, and the same seed always draws the same picture. Code: [`src/cartoons/`
 | Call | Draws | Used by |
 |---|---|---|
 | `cfg.img(seed, w, h)` | a scene in that shape: a street, a park, an office, an event stage or mountains | about, articles, events, `/ui` |
+| `cfg.face(n, w, h)` | a head-and-shoulders portrait (`h > w` for a tall card) | team cards, testimonials, avatar stacks |
