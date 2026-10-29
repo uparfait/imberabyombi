@@ -6,3 +6,4 @@ export const INK = '#16204A';
 /* the smallest box around every pixel that is not transparent, plus pad pixels around it, as a PNG (null if empty) */
 export function trim(c, pad = 10) {
   const { width: w, height: h } = c, d = c.getContext('2d', { willReadFrequently: true }).getImageData(0, 0, w, h).data;
+  let l = w, t = h, r = -1, b = -1;
