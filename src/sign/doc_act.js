@@ -14,3 +14,4 @@ export const DOC_ACT = {
   sign_link: t => copy(base_url(`/admin/sign/sign/${t.dataset.id}`), 'Signing link'),
   sign_dl: async t => {
     const d = find_doc(t.dataset.id); if (!d) return;
+    try { save_pdf(`${d.title}${d.status === 'completed' ? ' (signed)' : ''}.pdf`, await signed_pdf(d, await marks_get(d.id))); }
