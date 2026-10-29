@@ -6,3 +6,5 @@
 .ico_stage svg, .ico_pv svg { display: block; }
 .ico_pv { width: 52px; height: 52px; }
 .ico_cap { color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+
+.ico_grid { display: grid; height: 13rem; grid-template-columns: repeat(7, minmax(0, 1fr)); align-content: start; gap: .25rem; padding: .25rem;
