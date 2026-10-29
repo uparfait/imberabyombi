@@ -24,3 +24,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
 - People come in many skin tones, hairstyles, clothes and poses (standing, waving, walking, pointing, cheering).
 
 ## Changing the look
+- Colours: [`src/cartoons/palette.js`](../src/cartoons/palette.js) (skies, hills, buildings, skins, hair, clothes; the
