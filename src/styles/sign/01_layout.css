@@ -12,3 +12,4 @@
 @media (min-width: 640px) { .sign_top { gap: .625rem; padding: 0 1rem; } .sign_btns { gap: .5rem; } }
 
 /* lists, upload, done */
+.sign_main { width: 100%; max-width: 64rem; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
