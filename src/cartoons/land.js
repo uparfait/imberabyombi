@@ -6,3 +6,4 @@ import { SKIES, SUNS, TREES, TRUNK, shade } from './palette.js';
 /* horizon: where the land starts (y); colours: [top, bottom] of the gradient */
 export function sky(w, h, r, horizon, colors = r.pick(SKIES)) {
   const s = Math.min(w, h), count = r.int(2, 4);
+  let out = `<defs>${v_gradient('sky', colors[0], colors[1])}</defs>` + rect(0, 0, w, h, 0, 'url(#sky)');
