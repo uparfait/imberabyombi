@@ -8,3 +8,4 @@ export function use_marks(id, version) {
   useEffect(() => {
     let live = true; marks_get(id).then(m => { if (live) set(m); });
     return () => { live = false; };
+  }, [id, version]);
