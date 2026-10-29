@@ -4,3 +4,5 @@ import { useEffect, useRef, useState } from 'react';
 import { clean_svg } from '../icon3d/index.js';
 import { spinner } from '../feedback/index.js';
 import { LIBS, load_set, icon_of } from './lib_load.js';
+
+const BATCH = 105;
