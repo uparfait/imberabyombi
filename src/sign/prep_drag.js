@@ -34,3 +34,4 @@ const MOVES = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowD
 function key(e, root) {
   if (!P.sel || e.target.closest('input, textarea, select, [contenteditable], dialog')) return;
   if (e.key === 'Delete' || e.key === 'Backspace') { e.preventDefault(); del_field(P.sel); return; }
+  const m = MOVES[e.key], el = root.querySelector(`[data-fid="${P.sel}"]`), f = field_of(el); if (!m || !f) return;
