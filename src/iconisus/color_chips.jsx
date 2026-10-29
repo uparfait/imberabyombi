@@ -9,3 +9,4 @@ export function Colors({ st, put }) {
   const P = palette(st.cols), auto = [P.p, P.s, P.t];
   const set_k = (k, v) => { const c = [...st.cols]; c[k] = v; put({ cols: c }); };
   return <section className="grid gap-3" aria-label="Colours and size"><h3 className="ico_cap">Colours and size</h3>
+    <div className="flex items-center gap-4">
