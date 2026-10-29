@@ -5,3 +5,4 @@ import { copy } from '../overlays/index.js';
 
 function save(svg, name) {
   const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' })), a = document.createElement('a');
+  a.href = url; a.download = name; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000);
