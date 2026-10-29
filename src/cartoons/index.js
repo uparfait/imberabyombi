@@ -18,3 +18,4 @@ export const cartoon_face = (n, w = 320, h = w) => memo(`face|${n}|${w}|${h}`, (
 
 export { rng } from './rng.js';
 export { SCENES, scene_svg } from './scene.js';
+export { portrait_svg } from './portrait.js';
