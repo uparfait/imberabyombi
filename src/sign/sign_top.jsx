@@ -12,12 +12,12 @@ const num = (n, k, c = 'ml-1.5') => <span className={`chip ${c} ${n && k === 'in
 
 /* each list's icon colour (fixed) */
 const HUE = { all: 'orange', drafts: 'slate', waiting: 'amber', completed: 'green', inbox: 'violet' };
+
 /* cur: the list on show (its name and count on the button), or null on a document page ("Documents"). In the menu each
    tile has its count on a line of its own. */
 export function lists_menu(cur) {
   const it = LISTS.find(x => x[0] === cur);
-  return tile_menu({ id: 'pop_sign', title: 'O-Doc Sign', icon: it ? it[2] : 'file', label: it ? <>{it[1]}{num(count(cur), cur)}</> : 'Documents', set: true,
-    tiles: LISTS.map(([k, l, i]) => ({ icon: i, label: <>{l}<span className="mt-1 block">{num(count(k), k, '')}</span></>, on: k === cur, href: list_href(k) })) });
+  return tile_menu({ id: 'pop_sign', title: 'O-Doc Sign', icon: it ? it[2] : 'file', color: it ? HUE[cur] : 'blue',
 }
 
 /* back: the address Back goes to (a document page: its list), or nothing (Back: the page you came from) */
