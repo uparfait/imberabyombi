@@ -27,3 +27,4 @@
 .sign_drop[aria-busy] { cursor: progress; }
 .sign_drop.sm { padding: 2rem 1rem; }
 .sign_step { display: grid; flex: none; width: 1.75rem; height: 1.75rem; place-items: center; border-radius: var(--pill);
+  background: rgb(var(--brand)); color: #fff; font-size: .75rem; font-weight: 700; }
