@@ -12,3 +12,4 @@ const bar = d => { const n = own_fields(d).length, k = n - left_of(d).length;
     <i style={{ width: `${n ? k / n * 100 : 0}%` }}></i></div>; };
 
 export const request_card = (d, r) => <section className="card p-5">
+  <div className="flex items-center gap-3">{i3('signature', 'h-11 w-11')}<div className="min-w-0">
