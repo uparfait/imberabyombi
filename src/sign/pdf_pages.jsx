@@ -28,3 +28,4 @@ export function Pdf_pages({ doc, layer }) {
   useEffect(() => {
     let live = true; set({ pdf: null, err: null });
     open_pdf(doc.id).then(pdf => live && set({ pdf, err: null }), err => live && set({ pdf: null, err }));
+    return () => { live = false; };
