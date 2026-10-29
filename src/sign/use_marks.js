@@ -7,3 +7,4 @@ export function use_marks(id, version) {
   const [marks, set] = useState({});
   useEffect(() => {
     let live = true; marks_get(id).then(m => { if (live) set(m); });
+    return () => { live = false; };
