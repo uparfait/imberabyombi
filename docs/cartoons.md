@@ -32,3 +32,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
   caller keeps working.
 
 ## The sample video and other media (`public/media/`)
+| File | What it is |
