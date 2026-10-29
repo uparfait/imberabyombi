@@ -20,7 +20,7 @@ export function public_page(r) {
   else { inner = not_found(); title = 'Page not found'; }
   set_meta(title); lorem.seed(5);
   return (
-    <div className="relative isolate flex min-h-[100dvh] flex-col"><div className="pattern_layer fixed" aria-hidden="true"></div>{pub_header()}
+    <div className="relative isolate flex min-h-[100dvh] flex-col">{pub_header()}
       <main id="main" tabIndex={-1} className="page_enter flex-1 outline-none">{inner}</main>{footer()}</div>
   );
 }
