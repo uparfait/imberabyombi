@@ -29,3 +29,6 @@ export const prep_tools = d => <div className="sign_panel">
     <p className="mt-3 text-xs leading-relaxed text-muted">Click a field to add it to the page on screen, or drag it onto the page.
       Drag a field to move it and its corner to resize it. Arrow keys nudge the selected field; Delete removes it.</p></section>
   <section aria-label="Placed"><h2 className="sign_cap">Placed</h2>{placed(d)}</section>
+</div>;
+
+export const prep_bar = d => { const r = rec_of(d, P.rid);
