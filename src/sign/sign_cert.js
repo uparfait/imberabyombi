@@ -22,3 +22,4 @@ export async function certificate(pdf, d, L) {
   text('O-Doc Sign', { size: 10, bold: true, color: brand }); y -= 4;
   text('Signing certificate', { size: 22, bold: true }); y -= 6;
   text(`"${d.title}" was signed electronically by everyone it was sent to.`, { color: soft }); rule();
+  [['Document', d.title], ['File', `${d.file} (${d.pages.length} page${d.pages.length === 1 ? '' : 's'})`], ['Document ID', d.id],
