@@ -9,3 +9,4 @@ import { LISTS, STATUS, of_list, my_turn, my_rec, signed_n, ago } from './sign_s
 
 export const status_chip = d => <span className={`chip ${STATUS[d.status][1]}`}>{STATUS[d.status][0]}</span>;
 export const new_btn = (c = '') => auth.can('sign', 2)
+  ? <a href={to('/admin/sign/new')} className={`btn btn_primary btn_sm ${c}`}>{ic('upload', 'h-4 w-4')}New document</a> : null;
