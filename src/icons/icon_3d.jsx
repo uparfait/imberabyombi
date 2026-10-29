@@ -20,6 +20,7 @@ const frame = (svg, vb = '18 12 164 164') => svg.replace('viewBox="0 -4 200 200"
 const CACHE = new Map();
 export function i3_src(n, color) {
   const c = hex(color), k = `${n}|${c}`;
+  if (!CACHE.has(k)) {
 }
 
 export function i3_html(n, c = 'w-14 h-14', tone = 'brand') {
