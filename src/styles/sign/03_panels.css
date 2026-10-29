@@ -35,3 +35,4 @@
 .sign_log { display: grid; gap: .875rem; margin: .5rem 0 0 .25rem; padding-left: 1rem; border-left: 2px solid rgb(var(--line)); }
 .sign_log li { position: relative; }
 .sign_log li::before { content: ''; position: absolute; top: .45rem; left: calc(-1rem - 5px); width: .5rem; height: .5rem; border-radius: var(--pill); background: rgb(var(--brand)); }
+.sign_done_badge { display: inline-grid; animation: sf_pop .5s cubic-bezier(.3, 1.5, .5, 1) both; }
