@@ -8,3 +8,4 @@ export const signer_start = id => { if (S.id !== id) Object.assign(S, { id, pend
 
 /* your fields, page by page, top to bottom; and the ones still empty */
 export const own_fields = d => { const r = my_rec(d);
+  return r ? d.fields.filter(f => f.rid === r.id).sort((a, b) => a.page - b.page || a.y - b.y || a.x - b.x) : []; };
