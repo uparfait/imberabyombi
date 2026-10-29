@@ -3,3 +3,5 @@
 import { n, path, rect, circle, stroke, line, v_gradient } from './shapes.js';
 import { BRAND, CLOTHES, LIT, shade } from './palette.js';
 import { person, look, from_back } from './person.js';
+
+const NIGHTS = ['#2E2A4F', '#23395B', '#3B2C4A', '#1F3B4D'], MIC = '#1B1A22';
