@@ -10,3 +10,5 @@
 .sign_btns { display: flex; flex: none; align-items: center; gap: .375rem; margin-left: auto; }
 .sign_body { display: flex; min-height: 0; flex: 1; flex-direction: column; }
 @media (min-width: 640px) { .sign_top { gap: .625rem; padding: 0 1rem; } .sign_btns { gap: .5rem; } }
+
+/* lists, upload, done */
