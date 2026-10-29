@@ -28,3 +28,4 @@ export const steps_card = d => { const left = left_of(d);
       <button type="button" className="btn btn_primary btn_sm" data-act="sign_finish" disabled={!!left.length}>{ic('signature', 'h-4 w-4')}Finish and sign</button></div></section>; };
 
 export const signer_bar = d => { const left = left_of(d);
+  return <div className="sign_bar"><div className="min-w-0 flex-1"><p className="truncate text-sm">{next_text(left)}</p>{bar(d)}</div>
