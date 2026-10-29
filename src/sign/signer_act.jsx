@@ -4,3 +4,4 @@
 import { qs } from '../lib/index.js';
 import { rerender } from '../store/index.js';
 import { notify, form_msg } from '../feedback/index.js';
+import { modal } from '../overlays/index.js';
