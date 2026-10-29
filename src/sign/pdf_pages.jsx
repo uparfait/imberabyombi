@@ -15,3 +15,4 @@ function Page({ pdf, i, n, size, children }) {
     const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { near = true; draw(); } }, { rootMargin: '900px 0px' });
     const ro = new ResizeObserver(() => { clearTimeout(t); t = setTimeout(draw, 160); });
     io.observe(el); ro.observe(el);
+    return () => { live = false; io.disconnect(); ro.disconnect(); clearTimeout(t); };
