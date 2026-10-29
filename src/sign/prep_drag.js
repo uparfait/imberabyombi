@@ -12,3 +12,4 @@ const field_of = el => P.doc?.fields.find(x => x.id === el?.dataset.fid);
 
 function down(e, root) {
   const el = e.target.closest('.sf_edit');
+  if (!el) { if (P.sel && e.target.closest('.sign_sheet')) { P.sel = null; mark_sel(root); } return; }
