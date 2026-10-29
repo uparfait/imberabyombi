@@ -26,3 +26,4 @@ export const prep_page = d => <div className="sign_work">
   <div className={`sign_scrim ${P.sheet ? 'on' : ''}`} data-act="sign_sheet" aria-hidden="true"></div>
   <aside className={`sign_left ${P.sheet ? 'open' : ''}`} aria-label="Document and signers">{prep_panel(d)}</aside>
   <section className="sign_center" aria-label="Pages"><Prep_doc d={d} /></section>
+  <aside className="sign_right" aria-label="Fields">{prep_tools(d)}</aside>
