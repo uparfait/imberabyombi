@@ -4,3 +4,4 @@
 import { ic } from '../icons/index.js';
 import { db, rerender } from '../store/index.js';
 import { validate, notify } from '../feedback/index.js';
+import { initials } from '../ui/index.js';
