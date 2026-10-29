@@ -14,3 +14,5 @@ const HINTS = [[/^event/, ['stage', 'stage', 'park', 'city']], [/^about/, ['offi
 /* kind: one of SCENES to draw that scene whatever the seed */
 export function scene_svg(seed, w = 900, h = 650, kind) {
   const r = rng(seed), hint = HINTS.find(([re]) => re.test(seed)), draw = SCENES[kind] || SCENES[r.pick(hint ? hint[1] : Object.keys(SCENES))];
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${n(w)} ${n(h)}" width="${n(w)}" height="${n(h)}">${draw(w, h, r)}</svg>`;
+}
