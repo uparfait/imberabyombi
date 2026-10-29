@@ -18,3 +18,4 @@ function building(x, base, bw, bh, color, s, r) {
 
 export function city(w, h, r) {
   const s = Math.min(w, h), base = h * r.range(.7, .76), walk = s * .05;
+  let out = sky(w, h, r, base - h * .3), x = -r.range(0, s * .06);
