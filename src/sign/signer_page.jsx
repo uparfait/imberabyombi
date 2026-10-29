@@ -13,3 +13,4 @@ import { request_card, note_card, steps_card, signer_bar } from './signer_side.j
 import { signer_rows } from './owner_page.jsx';
 
 function Sign_doc({ d, me, done }) {
+  const marks = use_marks(d.id, d.updated);
