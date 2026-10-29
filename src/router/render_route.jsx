@@ -18,6 +18,7 @@ class Page_guard extends Component {
 let page_key = 0, last = null;
 
 /* the public website (and the design system): neither an admin page nor an account page */
+export const is_public = path => !(path === '/admin' || path.startsWith('/admin/')) && !AUTH_ROUTES[path];
 export function render_route() {
   if (get_version() === 0) { skip_after_render(); return null; }   /* before boot's first navigate() draws: #app stays empty */
   set_route(parse()); const r = route; let html;
