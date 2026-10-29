@@ -24,3 +24,4 @@ export const steps_card = d => { const left = left_of(d);
   return <section className="card p-5"><h2 className="sign_cap">Your fields</h2>
     <p className={`text-sm ${left.length ? 'text-muted' : 'font-medium text-ok'}`}>{next_text(left)}</p>{bar(d)}
     <div className="mt-4 grid gap-2">
+      <button type="button" className="btn btn_outline btn_sm" data-act="sign_next" disabled={!left.length}>{ic('arrow_downward', 'h-4 w-4')}Next field</button>
