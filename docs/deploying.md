@@ -30,6 +30,7 @@ Build command `npm run build`, output folder `dist`. Add `public/_redirects` (it
 
 ## Vercel
 `vercel.json` at the project root is ready: build command `npm run build`, output folder `dist`, every route answered
+with `index.html`, and `assets/*` cached for a year. Import the repository in Vercel (every push then deploys), or
 
 ## Nginx
 ```nginx
