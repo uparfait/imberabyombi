@@ -32,3 +32,5 @@ export function hair_front(cx, cy, R, style, color) {
     afro: `L${p(.95, -.15)}Q${p(0, -.8)} ${p(-.95, -.15)}`,
     curly: `L${p(.96, -.2)}Q${p(0, -.7)} ${p(-.96, -.2)}`
   }[style];
+  return edge ? path(top + edge + 'Z', color) : '';
+}
