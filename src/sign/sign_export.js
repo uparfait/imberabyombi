@@ -11,3 +11,4 @@ const PDF_LIB = ['https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.
 /* field f (fractions of the page as shown) → where pdf-lib draws the image on the page as stored (origin bottom left) */
 function place(page, f, img, degrees) {
   const box = page.getCropBox(), rot = ((page.getRotation().angle % 360) + 360) % 360, W = box.width, H = box.height;
+  const [sw, sh] = rot % 180 ? [H, W] : [W, H], fw = f.w * sw, fh = f.h * sh;
