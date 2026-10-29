@@ -25,3 +25,4 @@ export function hair_front(cx, cy, R, style, color) {
   const p = at(cx, cy, R), top = `M${p(-1.04, .05)}C${p(-1.12, -1.38)} ${p(1.12, -1.38)} ${p(1.04, .05)}`;
   const edge = {   // the inner edge, from the right temple back to the left one
     short: `L${p(.96, -.22)}Q${p(.42, -.78)} ${p(-.18, -.55)}Q${p(-.72, -.46)} ${p(-.96, -.1)}`,
+    side: `L${p(.95, -.3)}Q${p(.15, -.32)} ${p(-.5, -.78)}Q${p(-.86, -.5)} ${p(-.98, -.04)}`,
