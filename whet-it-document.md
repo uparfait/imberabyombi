@@ -64,6 +64,7 @@ Every feature below is working code. Each line says what it is and where it live
 - PDFs sent for signature, in the whole window with its own top bar and a lists menu: All, Drafts, Waiting, Completed
   and To sign, each with its count. Every account starts empty and sees what it prepared and what was sent to it.
 - Upload a PDF (checked to really be one), add signers with a note for each, place signature and stamp fields (click or
+  drag, move, resize, arrow keys), autosave, send.
 ## Data tables (`src/table/`, `src/schemas/`)
 - Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
   Action Buttons column pinned first, details view (COLUMN NAME / VALUE), add, edit, delete.
