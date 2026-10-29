@@ -30,7 +30,7 @@ export function longform(k) {
         <nav className="card p-5" aria-label="On this page"><h2 className="text-sm font-semibold">On this page</h2><ol className="mt-3 grid gap-1 text-sm">{secs.map(s => (
           <li key={s.id}><button className={TOC_CLS} data-act="scroll" data-to={s.id}>{s.t}</button></li>
         ))}</ol></nav>
-        <div className="card relative isolate overflow-hidden p-6"><div className="pattern_layer" aria-hidden="true"></div>{i3('send', 'h-12 w-12')}
+        <div className="card relative isolate overflow-hidden p-6"><div className="pattern_layer" aria-hidden="true"></div>{i3('send', 'h-12 w-12', 'blue')}
           <h2 className="mt-4 text-lg">{lorem.t(3)}</h2><p className="mt-1 text-sm text-muted">{lorem.s()}</p>
           <a href={to('/contact')} className="btn btn_primary btn_sm mt-4">Contact us</a></div>
         <nav className="card p-5" aria-label="Related pages"><h2 className="text-sm font-semibold">Related</h2><ul className="mt-3 grid gap-1 text-sm">
