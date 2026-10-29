@@ -28,3 +28,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
   brand orange is the main accent).
 - Your own pictures: the parts are exported (`person`, `look`, `head`, `sky`, `hill`, `tree`, `bush`, `shapes`,
   `palette`, `rng`). Draw an SVG string and pass it to `svg_data_uri()`.
+- Real photos instead: point `cfg.img` and `cfg.face` (src/config/site_config.js) at your image addresses; every
