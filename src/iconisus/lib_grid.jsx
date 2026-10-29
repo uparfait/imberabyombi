@@ -23,3 +23,5 @@ export function Lib_grid({ st, put }) {
     const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) set_shown(n => n + BATCH); }, { root: el.parentElement });
     io.observe(el); return () => io.disconnect();
   }, [set, shown, q]);
+
+  const note = t => <p className="col-span-full py-8 text-center text-sm text-muted">{t}</p>;
