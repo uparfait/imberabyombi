@@ -8,3 +8,4 @@ export const ellipse = (cx, cy, rx, ry, fill, more) => `<ellipse cx="${n(cx)}" c
 export const rect = (x, y, w, h, rx, fill, more) =>
   `<rect x="${n(x)}" y="${n(y)}" width="${n(w)}" height="${n(h)}"${rx ? ` rx="${n(rx)}"` : ''} fill="${fill}"${attrs(more)}/>`;
 export const path = (d, fill, more) => `<path d="${d}" fill="${fill}"${attrs(more)}/>`;
+/* a line or curve with round ends (arms, legs, smiles, wings) */
