@@ -11,6 +11,7 @@ export const HUES = { orange: '#E0661B', amber: '#E5A01A', green: '#17A34A', tea
   indigo: '#4F46E5', violet: '#7C5CFF', pink: '#E0457B', red: '#DC3545', slate: '#5B6475' };
 export const TONES = { brand: HUES.orange, ink: HUES.slate, ok: HUES.green, info: HUES.blue, warn: HUES.amber, bad: HUES.red };
 /* a run of hues for rows of icons that should each look different (tiles, cards): hue_at(i) */
+export const HUE_RUN = ['orange', 'blue', 'green', 'violet', 'teal', 'pink', 'amber', 'indigo', 'sky', 'red'];
 
 export function i3(n, c = 'w-14 h-14', tone = 'brand') {
   const { id, a, d } = tile(tone, n);
