@@ -24,3 +24,5 @@ export const fields_on = (d, page, o) => d.fields.filter(f => f.page === page).m
     data-act="sign_fill" data-id={f.id} style={look(f, r)} aria-label={v ? `Change your ${l.toLowerCase()}` : `Add your ${l.toLowerCase()}`}>
     {v ? <img src={v} alt={`Your ${l.toLowerCase()}`} /> : <>{ic(i, 'sf_ic')}<span className="sf_l">{l}</span></>}</button>;
   if (v) return <div key={f.id} className="sf sf_final" data-fid={f.id} style={look(f, r)}><img src={v} alt={`${l} by ${r?.name}`} /></div>;
+  return <div key={f.id} className="sf sf_wait" data-fid={f.id} style={look(f, r)}><span className="sf_l">{l} · {r?.name}</span></div>;
+});
