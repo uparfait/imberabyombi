@@ -22,3 +22,6 @@ export function Pad_type({ name }) {
       <input id="pad_name" value={text} maxLength={40} placeholder=" " autoComplete="name" onChange={e => set_text(e.target.value)} /></div>
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-3" role="radiogroup" aria-label="Signature style">{FONTS.map((n, i) =>
       <button key={n} type="button" role="radio" aria-checked={font === i} className={`sign_style ${font === i ? 'on' : ''}`} onClick={() => set_font(i)}>
+        <span style={{ fontFamily: `'${n}', cursive` }}>{shown}</span><small>{n}</small></button>)}</div>
+  </div>;
+}
