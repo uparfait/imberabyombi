@@ -16,3 +16,4 @@ function from_svg(str) {
     .replace(/(\s)(fill|stroke)="(?!none|url\(|currentColor|transparent)[^"]*"/gi, '$1$2="currentColor"')
     .replace(/([;"\s])(fill|stroke)\s*:\s*(?!none|url\(|currentColor|transparent)[^;"]+/gi, '$1$2:currentColor');
   const m = inner.match(/stroke-width="([\d.]+)"/);
+  return { inner, vb, sw: /stroke="currentColor"/.test(inner) ? (m ? +m[1] : 1) : 0 };
