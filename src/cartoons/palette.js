@@ -16,3 +16,4 @@ export const GLASS = '#DCE8F2';   // an unlit window
 
 export const SKINS = ['#FFDBB5', '#F5C9A0', '#E3AA7A', '#C98A55', '#A2683D', '#7A4A2A', '#563420'];
 export const HAIRS = ['#2B1D14', '#2B1D14', '#4A2F1E', '#7A4B26', '#C58B3E', '#E5BE76', '#9C3A1F', '#3A3A46', '#D9D4CC'];
+export const CLOTHES = [BRAND, '#2F80A8', '#3FA67A', '#F2B035', '#8E5BB5', '#D9534F', '#2F4858', '#F28C8C', '#5E9ED6', '#76B947'];
