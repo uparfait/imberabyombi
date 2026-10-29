@@ -16,3 +16,4 @@ export const pts = list => list.map(([x, y], i) => (i ? 'L' : 'M') + n(x) + ' ' 
 export const line = (x1, y1, x2, y2) => `M${n(x1)} ${n(y1)}L${n(x2)} ${n(y2)}`;
 
 /* the sun: a disc in two soft rings of glow (glow: the sun colour mixed with white) */
+export const sun = (x, y, r, color, glow = ['#FFF6DA', '#FFE9AE']) =>
