@@ -18,3 +18,4 @@ export function stage(w, h, r) {
   for (let i = 0; i < 3; i++) out += rect(sx + sw * .5, sy + sh * (.38 + i * .17), sw * (.38 - i * .08), sh * .07, sh * .035, '#C9D1D9');
   for (let i = 0; i < 26; i++) {
     const cx = r.range(0, w), cy = r.range(0, deck * .9), c = r.pick(CLOTHES), z = s * r.range(.008, .016);
+    out += r.chance(.5) ? circle(cx, cy, z, c) : rect(cx, cy, z * 1.6, z * .9, z * .3, c, `transform="rotate(${r.int(0, 90)} ${n(cx)} ${n(cy)})"`);
