@@ -25,9 +25,7 @@ export const ROLES0 = [
 /* modules every role may use, and at what level (the document editor, O-Doc Sign): roles saved before one existed get it */
 const FOR_ALL = { docs: 2, sign: 2 };
 export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !r.length) { r = ROLES0; db.set('roles', r); }
-  /* roles saved before a module existed get its default level (the document editor: every role may use it) */
-  else if (r.some(x => x.perms !== '*' && x.perms.docs == null)) {
-    r = r.map(x => x.perms === '*' || x.perms.docs != null ? x : { ...x, perms: { ...x.perms, docs: 2 } }); db.set('roles', r); }
+  else if (r.some(x => x.perms !== '*' && Object.keys(FOR_ALL).some(k => x.perms[k] == null))) {
   return r; };
 /* Landing page: where people with a role arrive after signing in (set on Roles & access). It falls back to the
    first module the role can open when the chosen one is not set or no longer allowed. */
