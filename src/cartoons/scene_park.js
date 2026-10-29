@@ -6,3 +6,4 @@ import { sky, hill, tree, bush } from './land.js';
 import { person, look } from './person.js';
 
 export function park(w, h, r) {
+  const s = Math.min(w, h), g = h * r.range(.56, .64), hc = r.pick(HILLS);
