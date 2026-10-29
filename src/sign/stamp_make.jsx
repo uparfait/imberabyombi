@@ -14,3 +14,4 @@ export function Stamp_make({ name }) {
   return <div className="grid items-start gap-5 sm:grid-cols-[11rem_minmax(0,1fr)]">
     <canvas ref={cv} width="400" height="400" className="sign_stamp_cv" aria-label="Stamp preview" />
     <div className="grid gap-3">
+      <div className="field"><label htmlFor="st_org">Organisation</label>
