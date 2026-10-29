@@ -31,3 +31,4 @@ export const PREP_ACT = {
   sign_field_del: t => del_field(t.dataset.id),
   sign_sheet: () => { P.sheet = !P.sheet; rerender(); },
   sign_rec_note: t => { const r = rec_of(P.doc, t.dataset.id);
+    modal({ title: `Note for ${r.name}`, help: 'They read it before they sign. Leave it empty for no note.', body: note_body(r), submit: 'Save note',
