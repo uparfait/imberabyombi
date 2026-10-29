@@ -17,3 +17,5 @@ export function hair_back(cx, cy, R, style, color) {
     let out = '';
     for (let a = 165; a <= 375; a += 30) { const t = a * Math.PI / 180; out += circle(cx + Math.cos(t) * R * 1.02, cy + Math.sin(t) * R * .98, R * .36, color); }
     return out;
+  }
+  return '';
