@@ -32,3 +32,4 @@
 /* the prepare page: signers | pages | tools */
 .sign_work { display: grid; flex: 1; grid-template-columns: minmax(0, 1fr); }
 .sign_left, .sign_right { background: rgb(var(--surface)); }
+.sign_center { min-width: 0; padding: 1rem .75rem 3rem; }
