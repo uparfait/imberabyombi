@@ -17,3 +17,4 @@ function Page({ pdf, i, n, size, children }) {
     io.observe(el); ro.observe(el);
     return () => { live = false; io.disconnect(); ro.disconnect(); clearTimeout(t); };
   }, [pdf, i]);
+  return <figure className="sign_fig">
