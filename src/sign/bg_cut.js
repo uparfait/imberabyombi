@@ -8,3 +8,4 @@ const median = a => a.sort((x, y) => x - y)[a.length >> 1];
 /* the median red, green, blue and alpha of the edge pixels */
 function edges(d, w, h) {
   const c = [[], [], [], []], add = i => { for (let k = 0; k < 4; k++) c[k].push(d[i + k]); };
+  for (let x = 0; x < w; x += 2) { add(x * 4); add(((h - 1) * w + x) * 4); }
