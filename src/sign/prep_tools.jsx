@@ -22,3 +22,5 @@ const placed = d => { const n = d.fields.length;
     return <li key={r.id} className="flex items-center gap-2"><span className="sign_dot sm" style={{ background: r.color }}></span>
       <span className="min-w-0 flex-1 truncate">{r.name}</span><span className={k ? 'text-muted' : 'text-warn'}>{k || 'none yet'}</span></li>; })}</ul>
     : <p className="text-sm text-muted">No fields yet.</p>; };
+
+export const prep_tools = d => <div className="sign_panel">
