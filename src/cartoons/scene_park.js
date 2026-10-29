@@ -16,3 +16,4 @@ export function park(w, h, r) {
   out += hill(w, h, g, s * .04, hc[1], r);
   out += path(`M${n(w * .42)} ${n(h)}C${n(w * .44)} ${n(h - s * .2)} ${n(w * .62)} ${n(g + s * .16)} ${n(w * .56)} ${n(g + s * .04)}`
     + `L${n(w * .6)} ${n(g + s * .04)}C${n(w * .7)} ${n(g + s * .16)} ${n(w * .6)} ${n(h - s * .2)} ${n(w * .66)} ${n(h)}Z`, '#F3E3C3');
+  const front = r.int(1, 3);
