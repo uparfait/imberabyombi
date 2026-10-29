@@ -12,6 +12,7 @@ The template is a complete front end with demo data in the browser. Before real 
 - Replace the lorem ipsum text, names and numbers (`lorem` in src/lib generates them; pages call it while drawing).
 - Replace the sample media in `src/config/` (`cfg.img`, `cfg.face`, `cfg.hero`, `cfg.video`, `cfg.poster`, `cfg.audio`,
   `cfg.map`) and the files in `public/media/` (sample video and poster, share image, logo). The cartoon pictures can
+  stay as they are or be swapped for photos: see [cartoons](cartoons.md).
 - Replace the brand name and logo parts (`cfg.name`, `cfg.logo`) and the favicon (`public/favicon.svg`).
 
 ## SEO and sharing
