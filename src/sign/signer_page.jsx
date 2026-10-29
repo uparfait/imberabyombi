@@ -30,3 +30,4 @@ export function signer_page(d) {
     <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
       {done ? <section className="card p-5"><h2 className="sign_cap">Signers</h2><div className="mt-1">{signer_rows(d, false)}</div></section>
         : <div className="max-lg:hidden">{steps_card(d)}</div>}</aside>
+    <section className={`sign_center ${done ? '' : 'with_bar'}`} aria-label="Pages">
