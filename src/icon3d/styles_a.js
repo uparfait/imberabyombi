@@ -23,3 +23,4 @@ export function classic(G, C, i) {
 
 export function balloon(G, C, i) {
   const st = C.ht ? [[0, C.p], [.5, C.t], [1, C.s]] : [[0, C.p], [1, C.s]];
+  return [glin(i + 'a', G, st) + vol(i + 'v', { goo: 5, bevel: 5, surf: 7, spec: .85, exp: 30, shade: .55 }),
