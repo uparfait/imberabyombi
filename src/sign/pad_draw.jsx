@@ -34,3 +34,4 @@ export function Pad_draw() {
     return p.stop;
   }, []);
   return <div>
+    <div className="sign_paper"><canvas ref={cv} className="sign_canvas" aria-label="Signature pad: draw your signature here" />
