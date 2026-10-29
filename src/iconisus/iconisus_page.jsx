@@ -23,3 +23,4 @@ export function Iconisus_page() {
       <p className="mt-2 max-w-2xl text-muted">Turn any letter, symbol, SVG or library icon into a 3D icon. Pick a style and up to three
         colours, then copy or download the SVG. The icons across this system are made with it, in the glossy style.</p></div></section>
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-start">
+      <Stage draw={draw} />
