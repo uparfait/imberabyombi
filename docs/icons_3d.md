@@ -41,3 +41,4 @@ Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), 
 (gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
 
 ## Iconisus (`/admin/icons`)
+In the sidebar under System. Source: Text, Library (twelve icon sets, Lucide to Simple Icons, loaded from jsDelivr only
