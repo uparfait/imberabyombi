@@ -8,3 +8,4 @@ export function trim(c, pad = 10) {
   const { width: w, height: h } = c, d = c.getContext('2d', { willReadFrequently: true }).getImageData(0, 0, w, h).data;
   let l = w, t = h, r = -1, b = -1;
   for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) if (d[(y * w + x) * 4 + 3] > 8) {
+    if (x < l) l = x; if (x > r) r = x; if (y < t) t = y; if (y > b) b = y;
