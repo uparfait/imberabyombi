@@ -8,3 +8,4 @@ const SHAPES = [['round', 'Round'], ['square', 'Square']];
 
 export function Stamp_make({ name }) {
   const cv = useRef(null), [st, set] = useState({ org: name || '', mid: 'Approved', color: INKS[0], shape: 'round' });
+  const put = (k, v) => set(s => ({ ...s, [k]: v }));
