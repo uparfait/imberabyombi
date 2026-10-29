@@ -16,3 +16,4 @@ export function Lib_grid({ st, put }) {
     load_set(st.lib).then(s => live && set_set(s), () => live && set_err(true));
     return () => { live = false; };
   }, [st.lib]);
+  useEffect(() => { set_shown(BATCH); }, [st.lib, q]);
