@@ -16,3 +16,4 @@ export function face_bits(cx, cy, R, o) {
   out += stroke(`M${at(-.06, .24)}Q${at(0, .31)} ${at(.07, .24)}`, shade(o.skin, -.22), R * .06);
   out += stroke(`M${at(-.28, .45)}Q${at(0, .68)} ${at(.28, .45)}`, o.beard ? shade(o.skin, .5) : INK, R * .08);
   if (o.glasses) out += `<g fill="none" stroke="${INK}" stroke-width="${n(R * .06)}">`
+    + `<circle cx="${n(cx - ex)}" cy="${n(ey)}" r="${n(R * .22)}"/><circle cx="${n(cx + ex)}" cy="${n(ey)}" r="${n(R * .22)}"/>`
