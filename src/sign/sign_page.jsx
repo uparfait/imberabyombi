@@ -21,3 +21,4 @@ import { Sign_new } from './sign_new.jsx';
 import { P, prep_start } from './prep_state.js';
 import { prep_page, prep_btns } from './prep_page.jsx';
 import { owner_page, dl_label } from './owner_page.jsx';
+import { signer_page } from './signer_page.jsx';
