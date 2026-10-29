@@ -33,3 +33,4 @@ function down(e, root) {
 const MOVES = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
 function key(e, root) {
   if (!P.sel || e.target.closest('input, textarea, select, [contenteditable], dialog')) return;
+  if (e.key === 'Delete' || e.key === 'Backspace') { e.preventDefault(); del_field(P.sel); return; }
