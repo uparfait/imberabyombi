@@ -29,7 +29,7 @@ VIEWS.roles = () => {
         <span className="flex-1 truncate text-left">{r.name}</span><span className="chip bg-surface-2 text-muted" data-tip="People with this role">{cnt(r.id)}
           </span></button></li>)}</ul></section>
     <section key={sel.id} className="card overflow-hidden"><header className="flex flex-wrap items-start gap-4 border-b border-line p-5">
-      {i3(full ? 'shield' : 'key', 'h-12 w-12')}
+      {i3(full ? 'shield' : 'key', 'h-12 w-12', full ? 'violet' : 'amber')}
       <div className="min-w-[10rem] flex-1"><h2 className="text-xl">{sel.name}</h2><p className="text-sm text-muted">{sel.d || 'Custom role.'}</p></div>
       <div className="flex flex-wrap gap-2"><button className="btn btn_outline btn_sm" data-act="copy" data-text={invite_link(sel.id)}>
         {ic('link', 'h-4 w-4')}Copy invite link</button>
