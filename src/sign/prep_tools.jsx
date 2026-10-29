@@ -26,3 +26,4 @@ const placed = d => { const n = d.fields.length;
 export const prep_tools = d => <div className="sign_panel">
   <section aria-label="Placing for"><h2 className="sign_cap">Placing for</h2>{placing(d)}</section>
   <section aria-label="Fields"><h2 className="sign_cap">Fields</h2><div className="grid gap-2">{tool('signature')}{tool('stamp')}</div>
+    <p className="mt-3 text-xs leading-relaxed text-muted">Click a field to add it to the page on screen, or drag it onto the page.
