@@ -27,3 +27,4 @@ export const mine = () => all_docs().filter(d => d.owner === who().email);
 export const my_rec = d => d?.recipients.find(r => r.email === who().email);
 export const to_sign = () => all_docs().filter(d => d.status !== 'draft' && my_rec(d));
 export const my_turn = d => d.status === 'sent' && my_rec(d)?.status !== 'signed';
+export const of_list = k => (k === 'inbox' ? to_sign() : k === 'all' ? mine() : mine().filter(d => d.status === OF[k]))
