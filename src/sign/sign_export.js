@@ -25,3 +25,4 @@ export async function signed_pdf(d, marks) {
   const pdf = await L.PDFDocument.load(bytes, { ignoreEncryption: true }), pages = pdf.getPages(), imgs = new Map();
   for (const f of d.fields) {
     const url = marks[f.id], page = pages[f.page]; if (!url || !page) continue;
+    if (!imgs.has(url)) imgs.set(url, await pdf.embedPng(url));
