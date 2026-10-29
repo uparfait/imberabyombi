@@ -14,3 +14,6 @@ function building(x, base, bw, bh, color, s, r) {
   out += rect(x + bw / 2 - win * .7, base - win * 2, win * 1.4, win * 2, win * .3, shade(color, -.3));
   if (r.chance(.3)) out += stroke(line(x + bw * .7, base - bh, x + bw * .7, base - bh - s * .07), shade(color, -.3), s * .008) + circle(x + bw * .7, base - bh - s * .07, s * .01, '#E0661B');
   return out;
+}
+
+export function city(w, h, r) {
