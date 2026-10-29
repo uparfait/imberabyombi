@@ -16,3 +16,6 @@ export function lists_menu(cur) {
   const it = LISTS.find(x => x[0] === cur);
   return tile_menu({ id: 'pop_sign', title: 'O-Doc Sign', icon: it ? it[2] : 'file', label: it ? <>{it[1]}{num(count(cur), cur)}</> : 'Documents', set: true,
     tiles: LISTS.map(([k, l, i]) => ({ icon: i, label: <>{l}<span className="mt-1 block">{num(count(k), k, '')}</span></>, on: k === cur, href: list_href(k) })) });
+}
+
+/* back: the address Back goes to (a document page: its list), or nothing (Back: the page you came from) */
