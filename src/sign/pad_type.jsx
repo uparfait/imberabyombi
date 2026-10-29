@@ -1,1 +1,2 @@
 /* sign/pad_type.jsx: <Pad_type name/>, a typed signature: your name (it can be changed) in one of five handwriting styles,
+   open-licence fonts served with the site (styles/sign/00_fonts.css; they download when this tab shows). Its mark is the
