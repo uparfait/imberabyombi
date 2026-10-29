@@ -3,3 +3,4 @@
 .sign_doc { position: relative; display: grid; max-width: 56rem; gap: 1.25rem; margin: 0 auto; }
 .sign_fig { margin: 0; }
 .sign_sheet { position: relative; container-type: inline-size; border: 1px solid rgb(var(--line)); border-radius: .375rem; background: #fff; }
+.sign_sheet canvas { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: inherit; opacity: 0; transition: opacity .3s; }
