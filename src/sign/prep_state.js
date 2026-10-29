@@ -10,3 +10,4 @@ export const P = { doc: null, rid: null, sel: null, sheet: false, dirty: false }
 /* the copy of draft id (made once, when its page opens) */
 export function prep_start(id) {
   if (P.doc?.id === id) return P.doc;
+  const d = find_doc(id);
