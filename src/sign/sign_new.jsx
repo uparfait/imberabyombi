@@ -6,3 +6,4 @@ import { spinner, notify } from '../feedback/index.js';
 import { go } from '../router/index.js';
 import { new_doc, drop_doc } from './sign_store.js';
 import { file_set } from './sign_idb.js';
+import { read_pdf } from './pdf_lib.js';
