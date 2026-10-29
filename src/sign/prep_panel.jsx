@@ -35,3 +35,4 @@ const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, o
 export const prep_panel = d => <div className="sign_panel">
   <div className="sheet_grip lg:hidden" aria-hidden="true"></div>
   <section aria-label="Document">
+    <div className="flex items-center gap-2">{status_chip(d)}<span className="chip bg-warn/15 text-warn" data-unsaved="" hidden={!P.dirty}>Unsaved</span></div>
