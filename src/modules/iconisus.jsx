@@ -5,3 +5,4 @@ import { VIEWS } from './views.js';
 import { loading } from '../feedback/index.js';
 
 const Iconisus_page = lazy(() => import('../iconisus/index.js').then(m => ({ default: m.Iconisus_page })));
+VIEWS.icons = () => <Suspense fallback={loading('Opening Iconisus')}><Iconisus_page /></Suspense>;
