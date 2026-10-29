@@ -25,3 +25,4 @@ export function Pad_upload({ kind }) {
     el.src = url;
   };
   const input = <input type="file" accept="image/png,image/jpeg,image/webp" className="sr-only"
+    onChange={e => { pick(e.target.files[0], e.target.form); e.target.value = ''; }} />;
