@@ -28,3 +28,6 @@ function down(e, root) {
   const up = () => { el.removeEventListener('pointermove', move); el.classList.remove('drag');
     if (['x', 'y', 'w', 'h'].some(k => f[k] !== o[k])) prep_dirty(); };
   el.addEventListener('pointermove', move); el.addEventListener('pointerup', up, { once: true }); el.addEventListener('pointercancel', up, { once: true });
+}
+
+const MOVES = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
