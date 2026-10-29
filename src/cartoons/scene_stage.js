@@ -23,3 +23,4 @@ export function stage(w, h, r) {
   out += rect(0, deck, w, h * .08, 0, shade(BRAND, -.12)) + rect(0, deck, w, h * .015, 0, shade(BRAND, .15)) + rect(0, deck + h * .08, w, h, 0, shade(bg, -.25));
   const px = w * r.range(.3, .7);
   out += person(px, deck, s * .3, look(r), r.pick(['point', 'wave', 'cheer']), r());
+  out += stroke(line(px + s * .1, deck, px + s * .1, deck - s * .17), '#55607A', s * .01) + stroke(line(px + s * .1, deck - s * .17, px + s * .07, deck - s * .2), '#55607A', s * .008)
