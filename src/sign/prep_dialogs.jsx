@@ -13,3 +13,4 @@ export const send_body = d => <div className="grid gap-4 sm:col-span-2">
       <span className="sign_dot" style={{ background: r.color }}>{initials(r.name)}</span>
       <span className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
         <span className="block truncate text-xs text-muted">{r.email} · {n} field{n === 1 ? '' : 's'}</span>
+        {r.note ? <span className="sign_note mt-1">“{r.note}”</span> : null}</span>
