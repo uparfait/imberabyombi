@@ -14,3 +14,4 @@ export const grad = (id, G, st) => { const [x, y, w, h] = G.vb; return rad(id, s
 
 export const sym = (id, G, inner = G.inner) => `<symbol id="${id}" viewBox="${G.vb.join(' ')}" overflow="visible">${inner}</symbol>`;
 export const use = (id, x, y, s, color, extra = '') => `<use xlink:href="#${id}" x="${x}" y="${y}" width="${s}" height="${s}" color="${color}" ${extra}/>`;
+export const pl = (G, x, y, s, paint) => `<svg x="${x}" y="${y}" width="${s}" height="${s}" viewBox="${G.vb.join(' ')}" overflow="visible">${G.inner.replace(/currentColor/g, paint)}</svg>`;
