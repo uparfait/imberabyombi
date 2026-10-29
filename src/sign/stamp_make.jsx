@@ -18,3 +18,4 @@ export function Stamp_make({ name }) {
         <input id="st_org" value={st.org} maxLength={34} placeholder=" " onChange={e => put('org', e.target.value)} /></div>
       <div className="field"><label htmlFor="st_mid">Centre text</label>
         <input id="st_mid" value={st.mid} maxLength={14} placeholder=" " onChange={e => put('mid', e.target.value)} /></div>
+      <div className="flex flex-wrap gap-x-6 gap-y-3">
