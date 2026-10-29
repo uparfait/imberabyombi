@@ -16,3 +16,4 @@ export { palette } from './color.js';
 export { iconify_svg, clean_svg } from './glyph.js';
 
 const MAKERS = { classic, balloon, ribbon, glossy, clay, glass };
+export const STYLES = Object.keys(MAKERS);
