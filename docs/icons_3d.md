@@ -22,3 +22,5 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
   it follows.
 - Each name and colour is built once and cached; icons are `<img>` elements, see-through on every background.
 - The brand mark is `mark3d('#')`: the sidebar's top row, the header (sidebar closed) and the email designs.
+
+## Where the colours are used
