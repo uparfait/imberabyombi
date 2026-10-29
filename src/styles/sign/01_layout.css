@@ -37,3 +37,4 @@
 @media (min-width: 1024px) {
   .sign_work { flex: none; grid-template-columns: 19rem minmax(0, 1fr) 15rem; height: calc(100dvh - 4rem); }   /* each column scrolls */
   .sign_work > * { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .sign_left { border-right: 1px solid rgb(var(--line)); }
