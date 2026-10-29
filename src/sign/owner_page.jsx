@@ -25,3 +25,5 @@ export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipient
   {r.status === 'signed' ? <span className="mt-1 text-ok">{ic('check', 'h-5 w-5')}</span>
     : links && d.status === 'sent' ? <button type="button" className="icon_btn h-8 w-8" data-act="sign_link" data-id={d.id} data-tip="Copy signing link"
       aria-label={`Copy the signing link for ${r.name}`}>{ic('link', 'h-4 w-4')}</button> : null}</li>)}</ul>;
+
+export const progress = d => { const n = d.recipients.length, s = signed_n(d);
