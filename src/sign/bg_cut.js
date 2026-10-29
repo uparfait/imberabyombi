@@ -27,3 +27,6 @@ export function paint(canvas, img, amount) {
     if (dist <= cut) d[i + 3] = 0; else if (dist < cut + soft) d[i + 3] = Math.round(d[i + 3] * (dist - cut) / soft);
   }
   x.putImageData(im, 0, 0);
+}
+
+/* a picture with solid (not transparent) edges: it most likely has paper around the ink */
