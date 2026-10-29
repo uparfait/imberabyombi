@@ -4,3 +4,4 @@
 import { when } from './sign_store.js';
 
 const A4 = [595.28, 841.89], M = 56;
+const plain = s => String(s ?? '').replace(/[  ]/g, ' ').replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, '-')
