@@ -13,3 +13,4 @@ function peaks(x0, x1, base, tall, color, r) {
   while (x < x1) {
     const half = tall * r.range(.7, 1.1), top = base - tall * r.range(.75, 1.05), cx = x + half;
     out += path(`M${n(x)} ${n(base)}L${n(cx - half * .12)} ${n(top + tall * .03)}Q${n(cx)} ${n(top - tall * .02)} ${n(cx + half * .12)} ${n(top + tall * .03)}L${n(x + half * 2)} ${n(base)}Z`, color);
+    const sy = top + (base - top) * .28, k = (sy - top) / (base - top);
