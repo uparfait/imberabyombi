@@ -9,3 +9,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 | Address | Page |
 |---|---|
 | `/admin/sign` · `/drafts` · `/waiting` · `/completed` | your documents: all, not sent yet, waiting for signatures, signed by everyone |
+| `/admin/sign/inbox` | **To sign**: documents sent to your email, waiting first, then the ones you signed |
