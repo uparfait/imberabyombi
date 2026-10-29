@@ -34,3 +34,4 @@ export const PREP_ACT = {
     modal({ title: `Note for ${r.name}`, help: 'They read it before they sign. Leave it empty for no note.', body: note_body(r), submit: 'Save note',
       on_submit: v => { r.note = String(v.note || '').trim(); prep_dirty(); rerender(); } }); },
   sign_rec_del: t => { const r = rec_of(P.doc, t.dataset.id), n = P.doc.fields.filter(f => f.rid === r.id).length;
+    if (!n) return remove_rec(r);
