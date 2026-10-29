@@ -52,3 +52,4 @@ function page_for(a, id) {
 
 export function Sign_page() {
   const [, , , a = '', id] = route.path.split('/'), p = page_for(a, id);
+  useEffect(() => { set_meta(p.title ? `${p.title} · O-Doc Sign` : 'O-Doc Sign'); });
