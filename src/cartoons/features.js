@@ -14,3 +14,4 @@ export function face_bits(cx, cy, R, o) {
     + circle(cx - ex + R * .035, ey - R * .035, R * .035, '#fff') + circle(cx + ex + R * .035, ey - R * .035, R * .035, '#fff');
   out += stroke(`M${at(-.5, -.2)}Q${at(-.37, -.28)} ${at(-.24, -.21)}M${at(.24, -.21)}Q${at(.37, -.28)} ${at(.5, -.2)}`, shade(o.hair, -.1), R * .07);
   out += stroke(`M${at(-.06, .24)}Q${at(0, .31)} ${at(.07, .24)}`, shade(o.skin, -.22), R * .06);
+  out += stroke(`M${at(-.28, .45)}Q${at(0, .68)} ${at(.28, .45)}`, o.beard ? shade(o.skin, .5) : INK, R * .08);
