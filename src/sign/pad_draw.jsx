@@ -13,3 +13,4 @@ function wire(c, on_any) {
   };
   const at = e => { const b = c.getBoundingClientRect(); return { x: e.clientX - b.left, y: e.clientY - b.top }; };
   const down = e => {
+    if (!any) fit(); on = true; c.setPointerCapture(e.pointerId); l = m = at(e);
