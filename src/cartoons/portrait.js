@@ -7,3 +7,5 @@ import { look, head } from './person.js';
 import { rng } from './rng.js';
 
 const COLLARS = ['crew', 'v', 'shirt', 'hood'];
+
+export function portrait_svg(seed, w = 320, h = w) {
