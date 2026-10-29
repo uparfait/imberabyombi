@@ -7,3 +7,4 @@
 .sign_sheet.drawn canvas { opacity: 1; }
 .sign_layer { position: absolute; inset: 0; }
 .sign_pno { margin-top: .375rem; text-align: center; font-size: .75rem; color: rgb(var(--muted)); }
+.sign_wait { position: absolute; top: 4rem; left: 50%; z-index: 3; transform: translateX(-50%); }
