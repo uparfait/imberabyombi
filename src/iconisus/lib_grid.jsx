@@ -10,3 +10,4 @@ const flat = i => `<svg viewBox="${i.left} ${i.top} ${i.width} ${i.height}" clas
 
 export function Lib_grid({ st, put }) {
   const [set, set_set] = useState(null), [err, set_err] = useState(false), [q, set_q] = useState(''), [shown, set_shown] = useState(BATCH);
+  const end = useRef(null);
