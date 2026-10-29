@@ -11,3 +11,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 | `/admin/sign` · `/drafts` · `/waiting` · `/completed` | your documents: all, not sent yet, waiting for signatures, signed by everyone |
 | `/admin/sign/inbox` | **To sign**: documents sent to your email, waiting first, then the ones you signed |
 | `/admin/sign/new` | upload a PDF (PDF only, up to 20 MB; the file is checked to really be a PDF) |
+| `/admin/sign/edit/<id>` | prepare a draft: signers on the left, the pages in the middle, the field tools on the right |
