@@ -4,3 +4,4 @@
   background: radial-gradient(circle at 50% 38%, rgb(var(--fg) / .05), transparent 65%), rgb(var(--surface)); }
 .ico_big { width: min(300px, 72vw); aspect-ratio: 1; }
 .ico_stage svg, .ico_pv svg { display: block; }
+.ico_pv { width: 52px; height: 52px; }
