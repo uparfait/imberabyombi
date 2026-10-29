@@ -69,3 +69,4 @@ documents between people and devices, keep these records and files on a server (
 | `sign_list.jsx`, `sign_new.jsx`, `sign_done.jsx` | the lists, the upload, "Signing complete" |
 | `prep_*.js(x)` | the prepare page: state and autosave, panels, tools, dialogs, adding fields, dragging |
 | `owner_page.jsx`, `doc_act.js` | the sender's page and its buttons (copy link, download, delete) |
+| `signer_*.js(x)` | the signing page, its guide and its buttons (fill, next field, finish) |
