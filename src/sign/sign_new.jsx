@@ -30,3 +30,4 @@ export function Sign_new() {
   const pick = async f => { if (busy || !f) return; set_busy(true); if (!await take(f).catch(() => false)) set_busy(false); };
   return <div className="sign_main page_enter max-w-3xl">
     <section className="sign_head"><div><p className="text-sm text-muted">O-Doc Sign</p><h1 className="mt-1 text-3xl sm:text-4xl">New document</h1>
+      <p className="mt-2 text-muted">Upload a PDF. You add the people who sign it and place their fields next.</p></div></section>
