@@ -50,3 +50,4 @@ function drop(e) {
 export function prep_pointer(root) {
   const d = e => down(e, root), k = e => key(e, root);
   root.addEventListener('pointerdown', d); root.addEventListener('dragover', over); root.addEventListener('drop', drop);
+  document.addEventListener('keydown', k);
