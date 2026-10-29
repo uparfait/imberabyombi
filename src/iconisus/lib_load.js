@@ -12,3 +12,4 @@ export const load_set = p => SETS[p] ||= fetch(`https://cdn.jsdelivr.net/npm/@ic
 
 /* one icon of a set, as the engine takes it: { body, width, height, left, top } */
 export const icon_of = (set, n) => { const i = set.icons[n];
+  return { body: i.body, width: i.width || set.width || 16, height: i.height || set.height || 16, left: i.left || set.left || 0, top: i.top || set.top || 0 }; };
