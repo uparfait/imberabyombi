@@ -49,3 +49,4 @@ The permission key is `sign`. Every role may use it at level 2 (roles saved befo
 ## Data
 | Where | What |
 |---|---|
+| collection `sign_docs` (localStorage, `db`) | each document: title, file name, page sizes, owner, status, signers, fields, activity |
