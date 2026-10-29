@@ -8,3 +8,4 @@ import { Stage } from './stage.jsx';
 import { Source } from './source.jsx';
 import { Styles } from './style_grid.jsx';
 import { Colors } from './color_chips.jsx';
+import { Output } from './output.jsx';
