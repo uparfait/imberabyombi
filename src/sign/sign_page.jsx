@@ -55,3 +55,5 @@ export function Sign_page() {
   useEffect(() => { set_meta(p.title ? `${p.title} · O-Doc Sign` : 'O-Doc Sign'); });
   /* once a visit: drop the stored files of documents that are gone */
   useEffect(() => { if (!swept) { swept = true; sweep(new Set(all_docs().map(d => d.id))); } }, []);
+  return <div className="sign_app">{sign_top(p.cur || null, p.back, p.btns)}<div className="sign_body">{p.body}</div></div>;
+}
