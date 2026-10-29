@@ -2,3 +2,5 @@
    IndexedDB; { } until they arrive. version (the record's updated time) reads them again after someone signs. */
 import { useEffect, useState } from 'react';
 import { marks_get } from './sign_idb.js';
+
+export function use_marks(id, version) {
