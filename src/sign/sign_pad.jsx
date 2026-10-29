@@ -9,3 +9,4 @@ import { Pad_upload } from './pad_upload.jsx';
 import { Stamp_make } from './stamp_make.jsx';
 
 export { PAD };
+const TABS = { signature: [['draw', 'Draw'], ['type', 'Type'], ['upload', 'Upload']], stamp: [['make', 'Create'], ['upload', 'Upload']] };
