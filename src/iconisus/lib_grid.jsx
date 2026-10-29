@@ -9,3 +9,4 @@ const BATCH = 105;
 const flat = i => `<svg viewBox="${i.left} ${i.top} ${i.width} ${i.height}" class="h-6 w-6" aria-hidden="true">${clean_svg(i.body)}</svg>`;
 
 export function Lib_grid({ st, put }) {
+  const [set, set_set] = useState(null), [err, set_err] = useState(false), [q, set_q] = useState(''), [shown, set_shown] = useState(BATCH);
