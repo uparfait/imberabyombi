@@ -11,3 +11,4 @@ import { paint, solid_edges } from './bg_cut.js';
 export function Pad_upload({ kind }) {
   const cv = useRef(null), [img, set_img] = useState(null), [cut, set_cut] = useState(0);
   useEffect(() => { if (img) paint(cv.current, img, cut); }, [img, cut]);
+  PAD.get = async () => img ? trim(cv.current, 6) : null;
