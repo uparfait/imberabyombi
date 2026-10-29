@@ -5,3 +5,4 @@ import { PAD, INK, trim } from './pad_state.js';
 
 /* draws on canvas c; on_any(true / false) when it gets its first stroke or is cleared */
 function wire(c, on_any) {
+  const x = c.getContext('2d', { willReadFrequently: true }); let on = false, any = false, l, m;
