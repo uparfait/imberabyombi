@@ -32,3 +32,4 @@ export const PREP_ACT = {
   sign_sheet: () => { P.sheet = !P.sheet; rerender(); },
   sign_rec_note: t => { const r = rec_of(P.doc, t.dataset.id);
     modal({ title: `Note for ${r.name}`, help: 'They read it before they sign. Leave it empty for no note.', body: note_body(r), submit: 'Save note',
+      on_submit: v => { r.note = String(v.note || '').trim(); prep_dirty(); rerender(); } }); },
