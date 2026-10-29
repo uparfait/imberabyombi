@@ -3,3 +3,5 @@
    soft band after that keeps the ink's edges smooth. amount (0–100): how far from the paper a colour may be and still go.
    A picture whose edges are already transparent is left as it is. */
 const MAX = 1400;   /* the longest side kept: plenty for a signature or a stamp, and each change of the slider stays quick */
+
+const median = a => a.sort((x, y) => x - y)[a.length >> 1];
