@@ -27,3 +27,4 @@ export function glass(G, C, i) {
   return [blur(i + 'b', 14) + blur(i + 'g', 5) + lin(i + 'a', [[0, shade(C.p, 10), .82], [1, C.s, .5]], [0, 0, 1, 1])
     + rad(i + 'h', [[0, '#fff', .6], [1, '#fff', 0]], '28%', '18%', '60%')
     + lin(i + 'r', [[0, '#fff', .95], [.5, '#fff', .08], [1, '#fff', .55]], [0, 0, 1, 1])
+    + vol(i + 'v', { goo: 1, bevel: 2.5, surf: 3, spec: .9, exp: 22, shade: .25 }),
