@@ -32,3 +32,4 @@ function inbox() {
     {wait.length ? <ul className="grid gap-2">{wait.map(d => row(d, sign(d), <span className="btn btn_primary btn_sm">{ic('signature', 'h-4 w-4')}Sign</span>,
       `From ${d.owner_name} · sent ${ago(d.sent_at)}`))}</ul>
       : <div className="card">{empty('You are all caught up', 'Nothing is waiting for your signature.')}</div>}
+    {done.length ? <><h2 className="sign_cap mt-8">Signed by you</h2><ul className="grid gap-2">{done.map(d => row(d, sign(d),
