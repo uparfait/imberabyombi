@@ -17,3 +17,4 @@ export const line = (x1, y1, x2, y2) => `M${n(x1)} ${n(y1)}L${n(x2)} ${n(y2)}`;
 
 /* the sun: a disc in two soft rings of glow (glow: the sun colour mixed with white) */
 export const sun = (x, y, r, color, glow = ['#FFF6DA', '#FFE9AE']) =>
+  circle(x, y, r * 1.7, glow[0], 'opacity=".55"') + circle(x, y, r * 1.3, glow[1], 'opacity=".7"') + circle(x, y, r, color);
