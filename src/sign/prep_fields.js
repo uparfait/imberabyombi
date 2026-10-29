@@ -23,3 +23,4 @@ function on_screen() {
 export function add_field(type, page, cx, cy) {
   if (!P.rid) { notify('Add a signer first, then place their fields.', 'warn', 'Who signs here?'); P.sheet = true; rerender(); return; }
   if (page == null) { const s = on_screen(), k = P.doc.fields.length % 4; page = s.page; cy = s.y + k * .02; cx = .5 + k * .03; }
+  const [, , pw, ph] = KINDS[type], sz = P.doc.pages[page], w = Math.min(pw / sz.w, .9), h = Math.min(ph / sz.h, .9);
