@@ -13,3 +13,4 @@ function place(page, f, img, degrees) {
   const box = page.getCropBox(), rot = ((page.getRotation().angle % 360) + 360) % 360, W = box.width, H = box.height;
   const [sw, sh] = rot % 180 ? [H, W] : [W, H], fw = f.w * sw, fh = f.h * sh;
   const k = Math.min(fw / img.width, fh / img.height), w = img.width * k, h = img.height * k;
+  const x = f.x * sw + (fw - w) / 2, y = f.y * sh + (fh - h) / 2;   /* top-left corner, as shown */
