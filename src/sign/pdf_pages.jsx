@@ -12,3 +12,4 @@ function Page({ pdf, i, n, size, children }) {
     if (!pdf) return; const el = box.current; let near = false, drawn = 0, t = 0, live = true;
     const draw = () => { const w = Math.round(el.clientWidth); if (!near || !w || Math.abs(w - drawn) < 2) return; drawn = w;
       draw_page(pdf, i, cv.current, w).then(() => live && el.classList.add('drawn'), () => { drawn = 0; }); };
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { near = true; draw(); } }, { rootMargin: '900px 0px' });
