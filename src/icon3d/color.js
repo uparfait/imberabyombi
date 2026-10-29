@@ -7,3 +7,4 @@ export const to_hex = a => '#' + a.map(v => clamp(Math.round(v), 0, 255).toStrin
 
 function to_hsl(hex) {
   const [r, g, b] = rgb(hex).map(v => v / 255), mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn;
+  let h = 0, s = 0; const l = (mx + mn) / 2;
