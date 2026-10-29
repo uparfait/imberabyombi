@@ -35,3 +35,4 @@ export const PREP_ACT = {
       on_submit: v => { r.note = String(v.note || '').trim(); prep_dirty(); rerender(); } }); },
   sign_rec_del: t => { const r = rec_of(P.doc, t.dataset.id), n = P.doc.fields.filter(f => f.rid === r.id).length;
     if (!n) return remove_rec(r);
+    ask(`Remove ${r.name}? Their ${plural(n, 'field')} on the document go too.`, () => remove_rec(r), 'Remove', true); },
