@@ -36,3 +36,4 @@
 .sign_log li { position: relative; }
 .sign_log li::before { content: ''; position: absolute; top: .45rem; left: calc(-1rem - 5px); width: .5rem; height: .5rem; border-radius: var(--pill); background: rgb(var(--brand)); }
 .sign_done_badge { display: inline-grid; animation: sf_pop .5s cubic-bezier(.3, 1.5, .5, 1) both; }
+.sign_facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .5rem 1rem; margin-top: 1.5rem; padding: 1rem; border-radius: 1rem;
