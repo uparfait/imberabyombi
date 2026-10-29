@@ -12,3 +12,4 @@ export function rng(seed) {
   };
   r.range = (a, b) => a + r() * (b - a);
   r.int = (a, b) => Math.floor(r.range(a, b + 1));
+  r.pick = list => list[Math.floor(r() * list.length)];
