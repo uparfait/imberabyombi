@@ -13,3 +13,4 @@ mark3d('#', 'h-9 w-9')                     // a glossy letter or symbol, inline 
 items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, each its own colour
 ```
 - **Colours are fixed in code**, so the theme and the live design tokens (Settings) never change them. The place that
+  shows an icon picks its colour, as the third argument:
