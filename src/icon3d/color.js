@@ -21,3 +21,4 @@ function from_hsl(h, s, l) {
 export const shade = (c, dl = 0, ds = 0, dh = 0) => { const [h, s, l] = to_hsl(c); return from_hsl(h + dh, clamp(s + ds, 0, 100), clamp(l + dl, 3, 97)); };
 export const mix = (a, b, t) => { const B = rgb(b); return to_hex(rgb(a).map((v, k) => v + (B[k] - v) * t)); };
 /* the colour at t (0–1) along a list of colours */
+export const blend = (cs, t) => { const n = cs.length - 1, x = Math.min(t * n, n - 1e-6), k = Math.floor(x); return mix(cs[k], cs[k + 1], x - k); };
