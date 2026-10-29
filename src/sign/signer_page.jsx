@@ -4,3 +4,4 @@
 import { ic } from '../icons/index.js';
 import { empty } from '../ui/index.js';
 import { to } from '../router/index.js';
+import { my_rec, who, log, save_doc, when } from './sign_store.js';
