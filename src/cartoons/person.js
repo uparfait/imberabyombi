@@ -21,3 +21,4 @@ function hands(x, y, u, pose, sw) {
   if (pose === 'wave') return [[x - 1.75 * u, low], [x + 2.4 * u + sw * .45 * u, y - 9.4 * u]];
   if (pose === 'cheer') return [[x - 2.3 * u, y - 9.4 * u + sw * .3 * u], [x + 2.3 * u, y - 9.4 * u - sw * .3 * u]];
   if (pose === 'point') return [[x - 1.75 * u, low], [x + 3.3 * u, y - 7.1 * u + sw * .2 * u]];
+  if (pose === 'walk') return [[x - 1.45 * u + sw * .8 * u, low], [x + 1.45 * u - sw * .8 * u, low]];
