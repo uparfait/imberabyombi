@@ -22,3 +22,4 @@ export function hill(w, h, y, amp, fill, r) {
 /* a tree s tall standing on ground: 'round' (puffs), 'pine' (three tiers) or 'tall' (an oval) */
 export function tree(x, ground, s, r, kind = r.pick(['round', 'round', 'pine', 'tall']), color = r.pick(TREES)) {
   const light = shade(color, .2), g = ground;
+  if (kind === 'pine') {
