@@ -12,3 +12,4 @@ function wire(c, on_any) {
     Object.assign(x, { lineWidth: 2.6, lineCap: 'round', lineJoin: 'round', strokeStyle: INK, fillStyle: INK });
   };
   const at = e => { const b = c.getBoundingClientRect(); return { x: e.clientX - b.left, y: e.clientY - b.top }; };
+  const down = e => {
