@@ -6,3 +6,4 @@ export function rng(seed) {
   let s = h >>> 0;
   const r = () => {
     s = (s + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(s ^ (s >>> 15), s | 1);
