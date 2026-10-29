@@ -9,3 +9,5 @@ export function rng(seed) {
     let t = Math.imul(s ^ (s >>> 15), s | 1);
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  r.range = (a, b) => a + r() * (b - a);
