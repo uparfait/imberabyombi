@@ -7,3 +7,4 @@ import { uid } from '../lib/index.js';
 import { auth } from '../auth/index.js';
 
 export const C = 'sign_docs';
+/* one colour per signer, in order (their fields, avatar and tag) */
