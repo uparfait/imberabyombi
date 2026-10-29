@@ -17,3 +17,4 @@
 .sign_note { display: -webkit-box; overflow: hidden; color: rgb(var(--muted)); font-size: .8125rem; font-style: italic; white-space: pre-line;
   -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
 .sign_note_card { border-color: rgb(var(--brand) / .35); background: rgb(var(--brand) / .05); }
+.sign_send_row { display: flex; align-items: flex-start; gap: .75rem; padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; }
