@@ -17,3 +17,4 @@ async function typed(text, font) {
 export function Pad_type({ name }) {
   const [text, set_text] = useState(name || ''), [font, set_font] = useState(0), shown = text.trim() || 'Your name';
   PAD.get = async () => text.trim() ? typed(text.trim(), FONTS[font]) : null;
+  return <div className="grid gap-4">
