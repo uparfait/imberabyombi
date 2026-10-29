@@ -14,3 +14,4 @@ export function classic(G, C, i) {
     + gvert(i + 'l', G, [[0, face], [1, mix(face, C.p, .14)]])
     + `<clipPath id="${i}k"><circle cx="100" cy="92" r="72"/></clipPath>`
     + `<filter id="${i}t" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="${shade(C.p, -35)}" flood-opacity=".45"/></filter>`;
+  let ext = ''; for (let k = 5; k >= 1; k--) ext += use(i + 'G', 58, 50 + k, 84, shade(C.p, -22, 6));
