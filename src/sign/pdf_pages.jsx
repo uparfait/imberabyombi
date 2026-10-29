@@ -32,3 +32,4 @@ export function Pdf_pages({ doc, layer }) {
   }, [doc.id]);
   if (st.err) return <div className="card">{empty('This PDF could not be opened', `${st.err.message || 'The file is damaged.'} Documents are kept in the browser they were uploaded in.`)}</div>;
   return <div className="sign_doc" aria-busy={st.pdf ? undefined : 'true'}>
+    {st.pdf ? null : <div className="sign_wait" role="status">{spinner()}<span className="sr-only">Opening the PDF</span></div>}
