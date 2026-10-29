@@ -21,3 +21,4 @@ function wire(c, on_any) {
   const up = () => { on = false; };
   const ro = new ResizeObserver(fit); ro.observe(c);
   const ev = [['pointerdown', down], ['pointermove', move], ['pointerup', up], ['pointercancel', up]];
+  ev.forEach(([k, f]) => c.addEventListener(k, f));
