@@ -10,3 +10,5 @@ export const pdfjs = async () => {
 };
 /* pdf.js takes the bytes over (to its worker), so it gets a copy */
 const parse = async bytes => (await pdfjs()).getDocument({ data: new Uint8Array(bytes).slice() }).promise;
+
+/* a new upload: its pages' sizes in points, as shown ({ w, h }, rotation applied); throws for a file that is not a PDF */
