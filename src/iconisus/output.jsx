@@ -14,3 +14,4 @@ export function Output({ st, draw }) {
     <div className="flex gap-2">
       <button type="button" className="btn btn_primary btn_sm flex-1" onClick={() => copy(svg, 'SVG')}>{ic('copy', 'h-4 w-4')}Copy SVG</button>
       <button type="button" className="btn btn_outline btn_sm" onClick={() => save(svg, `icon_${st.style}.svg`)}>{ic('download', 'h-4 w-4')}Download</button>
+      <button type="button" className="icon_btn" aria-expanded={code} aria-label={code ? 'Hide the code' : 'Show the code'} data-tip="SVG code"
