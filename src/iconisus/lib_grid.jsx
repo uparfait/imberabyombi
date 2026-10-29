@@ -21,3 +21,4 @@ export function Lib_grid({ st, put }) {
   useEffect(() => {
     const el = end.current; if (!el) return;
     const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) set_shown(n => n + BATCH); }, { root: el.parentElement });
+    io.observe(el); return () => io.disconnect();
