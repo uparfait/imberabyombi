@@ -14,3 +14,4 @@ export function portrait_svg(seed, w = 320, h = w) {
   let out = rect(0, 0, 100, H, 0, back) + circle(r.range(15, 85), r.range(10, H - 10), r.range(28, 46), shade(back, -.05));
   if (collar === 'hood') out += path(`M${n(cx - 30)} ${n(top + 4)}Q${n(cx)} ${n(cy - 6)} ${n(cx + 30)} ${n(top + 4)}Z`, shade(o.top, -.15));
   out += rect(cx - 7, cy + R - 7, 14, top - cy - R + 12, 4, skin_dark);
+  out += path(`M8 ${n(H)}C8 ${n(top + 9)} 24 ${n(top)} 50 ${n(top)}C76 ${n(top)} 92 ${n(top + 9)} 92 ${n(H)}Z`, o.top);
