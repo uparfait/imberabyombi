@@ -38,3 +38,4 @@ export const log = (d, t) => { d.audit.push({ at: Date.now(), t }); };
 export const save_doc = d => { d.updated = Date.now(); db.upsert(C, d); return d; };
 export const drop_doc = id => db.remove(C, id);
 export function new_doc(name, size, pages) {
+  const me = who(), now = Date.now(), title = name.replace(/\.pdf$/i, '').trim().slice(0, 80) || 'Untitled document';
