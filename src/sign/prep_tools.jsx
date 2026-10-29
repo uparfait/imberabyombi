@@ -3,3 +3,4 @@
    with the signer (it opens the signers' sheet) and the tools. */
 import { ic } from '../icons/index.js';
 import { KINDS, rec_of } from './sign_store.js';
+import { P } from './prep_state.js';
