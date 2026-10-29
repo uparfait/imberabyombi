@@ -14,3 +14,4 @@ export function sign_done(d) {
       <p className="mt-1 text-muted">You signed “{d.title}”.</p>
       <dl className="sign_facts">
         <dt>Document</dt><dd className="truncate">{d.title}</dd>
+        <dt>Signed</dt><dd>{when(r?.signed_at)}</dd>
