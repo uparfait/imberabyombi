@@ -5,3 +5,4 @@
 .sign_canvas { display: block; width: 100%; height: 12rem; cursor: crosshair; touch-action: none; }
 @media (min-width: 640px) { .sign_canvas { height: 14rem; } }
 .sign_canvas_hint { position: absolute; inset: 0; display: grid; place-items: center; color: #9CA3AF; font: 500 2rem 'Caveat', cursive; pointer-events: none; }
+.sign_canvas_line { position: absolute; right: 1.5rem; bottom: 2.5rem; left: 1.5rem; border-bottom: 1px solid #D1D5DB; pointer-events: none; }
