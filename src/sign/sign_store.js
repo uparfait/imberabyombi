@@ -8,3 +8,4 @@ import { auth } from '../auth/index.js';
 
 export const C = 'sign_docs';
 /* one colour per signer, in order (their fields, avatar and tag) */
+export const COLORS = ['#E0661B', '#2F6FDB', '#12936B', '#8B4FD8', '#D6407A', '#0E8FA6'];
