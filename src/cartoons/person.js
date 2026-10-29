@@ -27,3 +27,4 @@ function hands(x, y, u, pose, sw) {
 
 export function person(x, y, s, o, pose = 'stand', phase = 0) {
   const u = s / 10, hy = y - 8.55 * u, R = 1.12 * u, sw = Math.sin(phase * 2 * Math.PI), step = pose === 'walk' ? sw * u : .2 * u;
+  let out = stroke(line(x - .45 * u, y - 4.3 * u, x - .5 * u - step, y - .5 * u), o.pants, .95 * u)
