@@ -15,3 +15,4 @@ export function Mark_pad({ kind, name }) {
   const [tab, set_tab] = useState(TABS[kind][0][0]);
   const pick = k => { PAD.get = async () => null; set_tab(k); };
   return <div className="grid gap-4 sm:col-span-2">
+    <div className="seg justify-self-start" role="radiogroup" aria-label={`How to make your ${kind}`}>{TABS[kind].map(([k, l]) =>
