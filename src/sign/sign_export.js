@@ -3,3 +3,4 @@
    loads from the CDN the first time someone downloads. A mark keeps its shape inside its field and lands where it was
    placed on any page, rotated pages included. */
 import { load_script } from '../editor/core/utils.js';
+import { file_get } from './sign_idb.js';
