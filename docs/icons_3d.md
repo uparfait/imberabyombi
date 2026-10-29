@@ -27,3 +27,5 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
 Status: green (done, complete), amber (warnings, waiting), red (problems). Files and documents: blue. Roles and access:
 violet. Tiles, cards and lists of pages: `hue_at(i)`. O-Doc Sign's lists: All orange, Drafts slate, Waiting amber,
 Completed green, To sign violet.
+
+## The engine (`src/icon3d/`)
