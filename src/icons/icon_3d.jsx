@@ -18,6 +18,7 @@ const hex = c => TONES[c] || HUES[c] || (/^#[0-9a-f]{3,8}$/i.test(c || '') ? c :
 /* the icon fills more of its box than the engine's 200 × 200 frame leaves it (a single character, the brand mark, more still) */
 const frame = (svg, vb = '18 12 164 164') => svg.replace('viewBox="0 -4 200 200"', `viewBox="${vb}"`);
 const CACHE = new Map();
+export function i3_src(n, color) {
 }
 
 export function i3_html(n, c = 'w-14 h-14', tone = 'brand') {
