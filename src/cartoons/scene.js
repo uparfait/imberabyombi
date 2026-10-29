@@ -10,3 +10,5 @@ import { mountains } from './scene_mountains.js';
 
 export const SCENES = { city, park, office, stage, mountains };
 const HINTS = [[/^event/, ['stage', 'stage', 'park', 'city']], [/^about/, ['office', 'park']]];
+
+/* kind: one of SCENES to draw that scene whatever the seed */
