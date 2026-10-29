@@ -21,3 +21,4 @@ const sub_of = d => { const n = d.recipients.length, s = signed_n(d);
 
 const row = (d, href, right, sub) => <li key={d.id}><a href={href} className="sign_row card card_hover">
   {i3('file', 'h-11 w-11', TONE[d.status])}
+  <span className="min-w-0 flex-1"><span className="block truncate font-medium">{d.title}</span>
