@@ -36,3 +36,4 @@ export const prep_bar = d => { const r = rec_of(d, P.rid);
     <button type="button" className="sign_for on min-w-0 flex-1" style={{ '--c': r?.color || '#94A3B8' }} data-act="sign_sheet" aria-label="Signers">
       <span className="sign_dot sm" style={{ background: r?.color || '#94A3B8' }}></span><span className="truncate">{r ? r.name : 'Add a signer'}</span>
       {ic('users', 'ml-auto h-4 w-4 shrink-0 text-muted')}</button>
+    {tool('signature', 'sm')}{tool('stamp', 'sm')}</div>; };
