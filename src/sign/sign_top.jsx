@@ -20,3 +20,4 @@ export function lists_menu(cur) {
 
 /* back: the address Back goes to (a document page: its list), or nothing (Back: the page you came from) */
 export const sign_top = (cur, back, btns) => { const me = who();
+  return <header className="sign_top">
