@@ -14,3 +14,5 @@ export function rng(seed) {
   r.int = (a, b) => Math.floor(r.range(a, b + 1));
   r.pick = list => list[Math.floor(r() * list.length)];
   r.chance = p => r() < p;
+  return r;
+}
