@@ -9,3 +9,4 @@ import { Pdf_pages } from './pdf_pages.jsx';
 import { fields_on } from './sign_fields.jsx';
 import { use_marks } from './use_marks.js';
 import { S, signer_start } from './signer_state.js';
+import { request_card, note_card, steps_card, signer_bar } from './signer_side.jsx';
