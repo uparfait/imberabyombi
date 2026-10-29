@@ -15,3 +15,4 @@ export function portrait_svg(seed, w = 320, h = w) {
   if (collar === 'hood') out += path(`M${n(cx - 30)} ${n(top + 4)}Q${n(cx)} ${n(cy - 6)} ${n(cx + 30)} ${n(top + 4)}Z`, shade(o.top, -.15));
   out += rect(cx - 7, cy + R - 7, 14, top - cy - R + 12, 4, skin_dark);
   out += path(`M8 ${n(H)}C8 ${n(top + 9)} 24 ${n(top)} 50 ${n(top)}C76 ${n(top)} 92 ${n(top + 9)} 92 ${n(H)}Z`, o.top);
+  if (collar === 'crew') out += path(`M${n(cx - 9)} ${n(top + .5)}Q${n(cx)} ${n(top + 8)} ${n(cx + 9)} ${n(top + .5)}Z`, skin_dark);
