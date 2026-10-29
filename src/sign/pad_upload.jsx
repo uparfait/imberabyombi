@@ -17,3 +17,4 @@ export function Pad_upload({ kind }) {
   const pick = (f, form) => {
     const say = (title, text) => form_msg(form, 'warn', title, text);
     if (!f) return;
+    if (!/^image\/(png|jpeg|webp)$/.test(f.type)) return say('Not a picture', 'Choose a PNG, JPG or WebP picture.');
