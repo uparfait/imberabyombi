@@ -17,3 +17,6 @@ export function hill(w, h, y, amp, fill, r) {
   const k = 2 * Math.PI / w, f1 = r.range(.7, 1.6) * k, f2 = r.range(2.2, 3.6) * k, p1 = r.range(0, 7), p2 = r.range(0, 7), list = [];
   for (let i = 0; i <= 48; i++) { const x = w * i / 48; list.push([x, y + amp * (.75 * Math.sin(x * f1 + p1) + .25 * Math.sin(x * f2 + p2))]); }
   return path(pts(list) + `L${n(w)} ${n(h)}L0 ${n(h)}Z`, fill);
+}
+
+/* a tree s tall standing on ground: 'round' (puffs), 'pine' (three tiers) or 'tall' (an oval) */
