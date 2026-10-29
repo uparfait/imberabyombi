@@ -40,3 +40,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
 | `logo.png` | the brand mark (512 × 512) for the JSON-LD logo |
 
 `cfg.video` and `cfg.poster` follow the site's base path. The video loads only when someone presses play
+(`preload="metadata"`). Replace these files with your own and keep the names, or change the paths in `cfg`.
