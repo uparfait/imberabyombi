@@ -17,3 +17,4 @@ export const cartoon = (seed, w = 900, h = 650, kind) => memo(`${seed}|${w}|${h}
 export const cartoon_face = (n, w = 320, h = w) => memo(`face|${n}|${w}|${h}`, () => svg_data_uri(portrait_svg(n, w, h)));
 
 export { rng } from './rng.js';
+export { SCENES, scene_svg } from './scene.js';
