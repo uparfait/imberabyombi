@@ -17,3 +17,4 @@ const faces = d => <span className="sign_faces" aria-hidden="true">{d.recipients
   <span key={r.id} style={{ background: r.color }} title={r.name}>{initials(r.name)}</span>)}</span>;
 const sub_of = d => { const n = d.recipients.length, s = signed_n(d);
   return d.status === 'draft' ? `Edited ${ago(d.updated)} · ${n ? `${n} signer${n > 1 ? 's' : ''}` : 'no signers yet'}`
+    : d.status === 'sent' ? `${s} of ${n} signed · sent ${ago(d.sent_at)}` : `Completed ${ago(d.completed_at)}`; };
