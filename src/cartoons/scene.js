@@ -6,3 +6,4 @@ import { city } from './scene_city.js';
 import { park } from './scene_park.js';
 import { office } from './scene_office.js';
 import { stage } from './scene_stage.js';
+import { mountains } from './scene_mountains.js';
