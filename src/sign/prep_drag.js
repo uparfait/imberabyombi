@@ -15,3 +15,4 @@ function down(e, root) {
   if (!el) { if (P.sel && e.target.closest('.sign_sheet')) { P.sel = null; mark_sel(root); } return; }
   if (e.target.closest('[data-act]') || e.button > 0) return;
   e.preventDefault(); el.focus({ preventScroll: true });
+  const f = field_of(el), b = el.closest('.sign_sheet').getBoundingClientRect(), ar = b.width / b.height, min = 24 / b.width;
