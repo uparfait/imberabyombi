@@ -2,3 +2,4 @@
    with trees and people walking by, and the road. */
 import { rect, circle, stroke, line } from './shapes.js';
 import { BUILDINGS, LIT, GLASS, TREES, shade } from './palette.js';
+import { sky, tree } from './land.js';
