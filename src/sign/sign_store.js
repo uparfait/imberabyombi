@@ -50,3 +50,4 @@ export function add_rec(d, name, email, note) {
 }
 
 /* "12 Mar 2026, 14:05", "5 min ago", "1.2 MB" */
+export const when = t => t ? new Date(t).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' }) : '';
