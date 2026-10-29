@@ -30,3 +30,4 @@
   background: rgb(var(--brand)); color: #fff; font-size: .75rem; font-weight: 700; }
 
 /* the prepare page: signers | pages | tools */
+.sign_work { display: grid; flex: 1; grid-template-columns: minmax(0, 1fr); }
