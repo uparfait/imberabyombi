@@ -47,3 +47,4 @@
     border-radius: 1.5rem 1.5rem 0 0; padding-bottom: env(safe-area-inset-bottom); transform: translateY(105%); transition: transform .35s var(--ease); }
   .sign_left.open { transform: none; }
   .sign_scrim { position: fixed; inset: 0; z-index: 45; background: rgb(var(--ink) / .45); opacity: 0; pointer-events: none; transition: opacity .25s; }
+  .sign_scrim.on { opacity: 1; pointer-events: auto; }
