@@ -19,3 +19,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
 
 - The seed picks the scene. A seed that starts with `event` gets a stage, a park or a street; one that starts with
   `about` gets the office or the park. To choose the scene yourself: `cartoon(seed, w, h, 'mountains')` from
+  `src/cartoons/index.js` (`'city'`, `'park'`, `'office'`, `'stage'`, `'mountains'`).
