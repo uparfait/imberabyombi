@@ -31,3 +31,4 @@ export function signer_page(d) {
       {done ? <section className="card p-5"><h2 className="sign_cap">Signers</h2><div className="mt-1">{signer_rows(d, false)}</div></section>
         : <div className="max-lg:hidden">{steps_card(d)}</div>}</aside>
     <section className={`sign_center ${done ? '' : 'with_bar'}`} aria-label="Pages">
+      {done ? <p className="sign_banner" role="status">{ic('check', 'h-5 w-5 shrink-0')}
