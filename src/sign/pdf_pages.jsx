@@ -27,3 +27,4 @@ export function Pdf_pages({ doc, layer }) {
   const [st, set] = useState({ pdf: null, err: null });
   useEffect(() => {
     let live = true; set({ pdf: null, err: null });
+    open_pdf(doc.id).then(pdf => live && set({ pdf, err: null }), err => live && set({ pdf: null, err }));
