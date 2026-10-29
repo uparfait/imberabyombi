@@ -42,3 +42,5 @@ export function new_doc(name, size, pages) {
   const d = { id: uid(), title, file: name, size, pages, owner: me.email, owner_name: me.name, status: 'draft',
     recipients: [], fields: [], created: now, updated: now, audit: [] };
   log(d, `${me.name} uploaded ${name}`); db.upsert(C, d); return d;
+}
+/* a new signer takes the first colour no other signer has */
