@@ -52,3 +52,5 @@ export function from_back(x, y, s, o, cheer = false) {
   if (cheer) [-1, 1].forEach(k => { out += stroke(line(x + k * s * .25, y - s * .35, x + k * s * .42, y - s * 1.05), o.top, s * .12) + circle(x + k * s * .42, y - s * 1.05, s * .07, o.skin); });
   out += path(`M${n(x - s * .45)} ${n(y)}Q${n(x - s * .45)} ${n(y - s * .45)} ${n(x)} ${n(y - s * .45)}Q${n(x + s * .45)} ${n(y - s * .45)} ${n(x + s * .45)} ${n(y)}Z`, o.top);
   out += hair_back(x, y - s * .62, R, o.style, o.hair) + circle(x, y - s * .62, R, o.style === 'bald' ? o.skin : o.hair);
+  return out + (o.style === 'bald' ? '' : circle(x, y - s * .55, R * .78, o.hair));
+}
