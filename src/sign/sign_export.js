@@ -33,3 +33,4 @@ export async function signed_pdf(d, marks) {
 }
 
 /* hands the bytes to the browser as a download */
+export function save_pdf(name, bytes) {
