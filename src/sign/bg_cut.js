@@ -22,3 +22,4 @@ export function paint(canvas, img, amount) {
   if (!amount) return;
   const im = x.getImageData(0, 0, w, h), d = im.data, [r, g, b, a] = edges(d, w, h); if (a < 128) return;
   const cut = amount * 2.1, soft = 18 + amount * .4;
+  for (let i = 0; i < d.length; i += 4) {
