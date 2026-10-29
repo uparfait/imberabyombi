@@ -27,3 +27,4 @@
 .sign_agree { display: flex; align-items: flex-start; gap: .75rem; padding: 1rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; cursor: pointer;
   transition: border-color .2s, background-color .2s; }
 .sign_agree:has(input:checked) { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .06); }
+.sign_agree input { width: 1.125rem; height: 1.125rem; flex: none; margin-top: .125rem; accent-color: rgb(var(--brand)); }
