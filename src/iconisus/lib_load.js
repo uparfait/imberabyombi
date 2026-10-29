@@ -9,3 +9,5 @@ const SETS = {};
 export const load_set = p => SETS[p] ||= fetch(`https://cdn.jsdelivr.net/npm/@iconify-json/${p}@1.2.0/icons.json`)
   .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .catch(e => { delete SETS[p]; throw e; });
+
+/* one icon of a set, as the engine takes it: { body, width, height, left, top } */
