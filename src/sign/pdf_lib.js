@@ -15,3 +15,4 @@ const parse = async bytes => (await pdfjs()).getDocument({ data: new Uint8Array(
 export async function read_pdf(bytes) {
   const pdf = await parse(bytes), pages = [];
   try {
+    for (let i = 1; i <= pdf.numPages; i++) {
