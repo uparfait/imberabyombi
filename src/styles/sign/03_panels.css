@@ -12,3 +12,4 @@
 .sign_dot.sm { width: .625rem; height: .625rem; }
 .sign_rec { display: grid; gap: .375rem; padding: .625rem .625rem .375rem; border: 1px solid rgb(var(--line)); border-radius: 1rem;
   transition: border-color .2s, background-color .2s; }
+.sign_rec.on { border-color: var(--c); background: color-mix(in srgb, var(--c) 8%, transparent); }
