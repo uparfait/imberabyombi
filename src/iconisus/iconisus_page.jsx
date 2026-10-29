@@ -5,3 +5,4 @@ import { useState } from 'react';
 import './iconisus_styles.css';
 import { render, iconify_svg } from '../icon3d/index.js';
 import { Stage } from './stage.jsx';
+import { Source } from './source.jsx';
