@@ -24,3 +24,6 @@ export function cloud(x, y, s, fill = '#fff', opacity = .92) {
   const o = `opacity="${opacity}"`;
   return `<g ${o}>` + circle(x + s * .3, y, s * .2, fill) + circle(x + s * .55, y - s * .1, s * .26, fill) + circle(x + s * .78, y + s * .02, s * .17, fill)
     + rect(x + s * .1, y, s * .82, s * .17, s * .085, fill) + '</g>';
+}
+
+/* a bird in flight, s wide; flap 0…1 lifts the wings */
