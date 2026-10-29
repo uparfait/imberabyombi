@@ -21,3 +21,4 @@ function down(e, root) {
   const move = ev => {
     const dx = (ev.clientX - sx) / b.width, dy = (ev.clientY - sy) / b.height;
     if (rs && f.type === 'stamp') { f.w = clamp(o.w + Math.max(dx, dy / ar), min * 2, Math.min(1 - f.x, (1 - f.y) / ar)); f.h = f.w * ar; }
+    else if (rs) { f.w = clamp(o.w + dx, min * 3, 1 - f.x); f.h = clamp(o.h + dy, min * ar, 1 - f.y); }
