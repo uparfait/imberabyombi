@@ -25,3 +25,4 @@
 .sign_tool:active { transform: scale(.97); }
 .sign_tool.sm { min-height: 2.5rem; padding: .375rem .75rem; }
 .sign_tool.sm span { display: none; }
+@media (min-width: 420px) { .sign_tool.sm span { display: inline; } }
