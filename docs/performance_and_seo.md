@@ -37,5 +37,5 @@ Search engines render JavaScript pages. If the public pages must also show their
 them at build time; they only read static data, so this is straightforward.
 
 ## Before publishing
-Replace the canonical URL, the JSON-LD values, the social image and the sample media. See
+Sample pictures cost no download: they are cartoons drawn in the page ([cartoons](cartoons.md)); the sample video
 [before production](before_production.md).
