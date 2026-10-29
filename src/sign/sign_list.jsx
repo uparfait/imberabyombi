@@ -38,3 +38,4 @@ function inbox() {
 }
 
 export function sign_list(k) {
+  const [, l, , help] = LISTS.find(x => x[0] === k), rows = of_list(k);
