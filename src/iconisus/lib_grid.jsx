@@ -19,3 +19,4 @@ export function Lib_grid({ st, put }) {
   useEffect(() => { set_shown(BATCH); }, [st.lib, q]);
   const names = set ? Object.keys(set.icons).filter(n => !set.icons[n].hidden && n.includes(q.trim().toLowerCase())) : [];
   useEffect(() => {
+    const el = end.current; if (!el) return;
