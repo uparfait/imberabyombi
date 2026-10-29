@@ -38,3 +38,4 @@ export const prep_panel = d => <div className="sign_panel">
     <div className="flex items-center gap-2">{status_chip(d)}<span className="chip bg-warn/15 text-warn" data-unsaved="" hidden={!P.dirty}>Unsaved</span></div>
     <input key={d.id} className="sign_title" defaultValue={d.title} maxLength={80} aria-label="Document title" onInput={e => { d.title = e.target.value; prep_dirty(); }} />
     <p className="mt-1 truncate text-xs text-muted" title={d.file}>{d.file} · {d.pages.length} page{d.pages.length === 1 ? '' : 's'} · {size_of(d.size)}</p></section>
+  <section aria-label="Signers"><h2 className="sign_cap">Signers</h2>
