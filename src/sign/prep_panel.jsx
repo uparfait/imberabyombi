@@ -31,3 +31,5 @@ const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, o
       <p className={`sign_note flex-1 ${r.note ? '' : 'not-italic'}`}>{r.note ? `“${r.note}”` : 'No note for this signer'}</p>
       <button type="button" className="icon_btn h-8 w-8" data-act="sign_rec_note" data-id={r.id} data-tip="Edit note" aria-label={`Edit the note for ${r.name}`}>{ic('note', 'h-4 w-4')}</button>
       <button type="button" className="icon_btn h-8 w-8 hover:text-bad" data-act="sign_rec_del" data-id={r.id} data-tip="Remove" aria-label={`Remove ${r.name}`}>{ic('trash', 'h-4 w-4')}</button></div></li>; };
+
+export const prep_panel = d => <div className="sign_panel">
