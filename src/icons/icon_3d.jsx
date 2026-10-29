@@ -3,6 +3,7 @@
    change them. The place that shows an icon picks its colour: a tone (brand, ink, ok, info, warn, bad), a hue (orange,
    amber, green, teal, sky, blue, indigo, violet, pink, red, slate) or a hex.
    i3(name, cls, color) draws it as an <img> (each name + colour is built once, then cached), i3_html(...) is the string
+   twin, and mark3d(text, cls, color) draws a glossy letter or symbol inline, in the site's display font (the brand mark). */
 import { icon_path } from './icon.jsx';
 
 export let GID = 0;
