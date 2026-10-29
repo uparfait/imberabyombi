@@ -46,3 +46,4 @@ export function new_doc(name, size, pages) {
 /* a new signer takes the first colour no other signer has */
 export function add_rec(d, name, email, note) {
   const used = d.recipients.map(r => r.color), color = COLORS.find(c => !used.includes(c)) || COLORS[d.recipients.length % COLORS.length];
+  const r = { id: uid(), name, email, note, color, status: 'pending' }; d.recipients.push(r); return r;
