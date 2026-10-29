@@ -39,3 +39,4 @@ export const PREP_ACT = {
   sign_save: () => { prep_save(); notify('Your changes are kept. Send it when it is ready.', 'ok', 'Draft saved'); },
   sign_send: () => {
     const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
+    if (!R.length) { notify('Add the people who sign this document.', 'warn', 'No signers yet'); P.sheet = true; return rerender(); }
