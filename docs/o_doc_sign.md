@@ -50,3 +50,4 @@ The permission key is `sign`. Every role may use it at level 2 (roles saved befo
 | Where | What |
 |---|---|
 | collection `sign_docs` (localStorage, `db`) | each document: title, file name, page sizes, owner, status, signers, fields, activity |
+| IndexedDB `<ns>sign`, `pdf:<id>` | the uploaded PDF |
