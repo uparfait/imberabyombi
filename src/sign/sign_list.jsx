@@ -28,3 +28,4 @@ const row = (d, href, right, sub) => <li key={d.id}><a href={href} className="si
 function inbox() {
   const all = of_list('inbox'), wait = all.filter(my_turn), done = all.filter(d => !my_turn(d)), sign = d => to(`/admin/sign/sign/${d.id}`);
   if (!all.length) return <div className="card">{empty('Nothing to sign', 'Documents sent to your email address show up here, ready to sign.')}</div>;
+  return <>
