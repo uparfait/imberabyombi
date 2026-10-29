@@ -36,3 +36,4 @@ export function Lib_grid({ st, put }) {
       {err ? note('This icon set could not be loaded. Check your connection and pick it again.')
         : !set ? <div className="col-span-full grid place-items-center py-8" role="status">{spinner()}<span className="sr-only">Loading icons</span></div>
           : !names.length ? note('No icons match.')
+            : <>{names.slice(0, shown).map(n => <button key={n} type="button" title={n} aria-label={n} aria-pressed={st.icon_name === n}
