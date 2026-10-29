@@ -35,3 +35,4 @@ export function Pad_draw() {
   }, []);
   return <div>
     <div className="sign_paper"><canvas ref={cv} className="sign_canvas" aria-label="Signature pad: draw your signature here" />
+      {has ? null : <span className="sign_canvas_hint" aria-hidden="true">Sign here</span>}<i className="sign_canvas_line" aria-hidden="true"></i></div>
