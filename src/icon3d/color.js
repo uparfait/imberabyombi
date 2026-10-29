@@ -6,3 +6,4 @@ export const rgb = h => { h = h.replace('#', ''); if (h.length === 3) h = [...h]
 export const to_hex = a => '#' + a.map(v => clamp(Math.round(v), 0, 255).toString(16).padStart(2, '0')).join('');
 
 function to_hsl(hex) {
+  const [r, g, b] = rgb(hex).map(v => v / 255), mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn;
