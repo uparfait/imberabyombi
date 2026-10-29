@@ -1,2 +1,3 @@
 /* sign/sign_new.jsx: New document (/admin/sign/new): drop or choose a PDF (PDF only, up to 20 MB). The file is checked (it
    must start as a PDF and open as one), kept in this browser with its page sizes, and opens to add signers and fields. */
+import { useState } from 'react';
