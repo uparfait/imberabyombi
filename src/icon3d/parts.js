@@ -19,3 +19,4 @@ export const blur = (id, sd, r = '-60%') =>
   `<filter id="${id}" x="${r}" y="${r}" width="${-2 * parseFloat(r) + 100}%" height="${-2 * parseFloat(r) + 100}%"><feGaussianBlur stdDeviation="${sd}"/></filter>`;
 
 /* o = { goo, flat, bevel, surf, spec, exp, shade } */
+export function vol(id, o) {
