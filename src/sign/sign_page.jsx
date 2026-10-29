@@ -44,3 +44,4 @@ function page_for(a, id) {
   if (a === 'edit') return !mine ? move(`/admin/sign/sign/${id}`) : d.status !== 'draft' ? move(`/admin/sign/doc/${id}`)
     : (prep_start(id), { title: d.title, back: list_href('drafts'), btns: prep_btns(), body: prep_page(P.doc) });
   if (a === 'doc') return !mine ? move(`/admin/sign/sign/${id}`) : d.status === 'draft' ? move(`/admin/sign/edit/${id}`)
+    : { title: d.title, back: list_href(d.status === 'completed' ? 'completed' : 'waiting'), body: owner_page(d) };
