@@ -35,3 +35,4 @@ const dl = d => <button type="button" className="btn btn_outline btn_sm" data-ac
   {ic('download', 'h-4 w-4')}<span className="hidden sm:inline">{dl_label(d)}</span></button>;
 
 /* /admin/sign/<a>/<id> → { title, cur (the list on show), back (Back's address), btns (top bar), body } */
+function page_for(a, id) {
