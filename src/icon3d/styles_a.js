@@ -12,3 +12,4 @@ export function classic(G, C, i) {
     + lin(i + 'g', [[0, '#fff', .55], [1, '#fff', 0]])
     + lin(i + 'r', [[0, '#fff', .75], [.45, '#fff', 0], [1, shade(C.p, -35), .5]])
     + gvert(i + 'l', G, [[0, face], [1, mix(face, C.p, .14)]])
+    + `<clipPath id="${i}k"><circle cx="100" cy="92" r="72"/></clipPath>`
