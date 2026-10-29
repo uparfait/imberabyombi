@@ -70,3 +70,4 @@ documents between people and devices, keep these records and files on a server (
 | `prep_*.js(x)` | the prepare page: state and autosave, panels, tools, dialogs, adding fields, dragging |
 | `owner_page.jsx`, `doc_act.js` | the sender's page and its buttons (copy link, download, delete) |
 | `signer_*.js(x)` | the signing page, its guide and its buttons (fill, next field, finish) |
+| `sign_pad.jsx`, `pad_*.js(x)`, `stamp_*.js(x)`, `bg_cut.js` | the signature and stamp dialog |
