@@ -27,7 +27,7 @@ export const sign_top = (cur, back, btns) => { const me = who();
   return <header className="sign_top">
     {back ? <a href={back} className="icon_btn" data-tip="Back" aria-label="Back">{ic('arrow_back')}</a>
       : <button type="button" className="icon_btn" data-act="back" data-tip="Back" aria-label="Back">{ic('arrow_back')}</button>}
-    <a href={list_href('all')} className="sign_brand" aria-label="O-Doc Sign, all documents">{i3('signature', 'h-10 w-10')}
+    <a href={list_href('all')} className="sign_brand" aria-label="O-Doc Sign, all documents">{i3('signature', 'h-10 w-10', 'violet')}
       <span className="hidden font-display text-lg font-semibold lg:inline">O-Doc Sign</span></a>
     <nav className="min-w-0" aria-label="O-Doc Sign lists">{lists_menu(cur)}</nav>
     <div className="sign_btns">{btns}{theme_btn('max-sm:hidden')}
