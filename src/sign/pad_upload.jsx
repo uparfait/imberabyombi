@@ -31,3 +31,4 @@ export function Pad_upload({ kind }) {
     <span className="mt-3 block font-medium">Choose a picture of your {kind}</span>
     <span className="mt-1 block text-xs text-muted">PNG, JPG or WebP, up to 5 MB. A photo on white paper works well.</span></label>;
   return <div className="grid gap-3">
+    <div className="sign_checker"><canvas ref={cv} aria-label={`Your ${kind}`} /></div>
