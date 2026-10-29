@@ -11,3 +11,4 @@ import { forget_pdf } from './pdf_lib.js';
 import { signed_pdf, save_pdf } from './sign_export.js';
 
 export const DOC_ACT = {
+  sign_link: t => copy(base_url(`/admin/sign/sign/${t.dataset.id}`), 'Signing link'),
