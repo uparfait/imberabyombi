@@ -8,3 +8,4 @@ export const lin = (id, st, [x1, y1, x2, y2] = [0, 0, 0, 1], u = '') =>
   `<linearGradient id="${id}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"${u}>${st.map(stop).join('')}</linearGradient>`;
 export const rad = (id, st, cx, cy, r, u = '') => `<radialGradient id="${id}" cx="${cx}" cy="${cy}" r="${r}"${u}>${st.map(stop).join('')}</radialGradient>`;
 /* gradients laid over the glyph's own box: diagonal, top to bottom, radial from the upper left */
+export const glin = (id, G, st) => { const [x, y, w, h] = G.vb; return lin(id, st, [x, y + h * .2, x + w, y + h * .8], US); };
