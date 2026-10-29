@@ -6,3 +6,4 @@ import { P, prep_dirty } from './prep_state.js';
 import { add_field, del_field, clamp } from './prep_fields.js';
 
 const pct = v => `${v * 100}%`;
+const show = (el, f) => Object.assign(el.style, { left: pct(f.x), top: pct(f.y), width: pct(f.w), height: pct(f.h) });
