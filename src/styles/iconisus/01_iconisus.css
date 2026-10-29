@@ -22,3 +22,4 @@
   background-clip: padding-box; }
 .ico_chip.auto { border-style: dashed; }
 .ico_chip:focus-within { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
+.ico_chip input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
