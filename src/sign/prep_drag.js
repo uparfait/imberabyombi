@@ -24,3 +24,5 @@ function down(e, root) {
     else if (rs) { f.w = clamp(o.w + dx, min * 3, 1 - f.x); f.h = clamp(o.h + dy, min * ar, 1 - f.y); }
     else { f.x = clamp(o.x + dx, 0, 1 - f.w); f.y = clamp(o.y + dy, 0, 1 - f.h); }
     show(el, f);
+  };
+  const up = () => { el.removeEventListener('pointermove', move); el.classList.remove('drag');
