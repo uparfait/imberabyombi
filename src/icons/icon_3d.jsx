@@ -7,9 +7,7 @@
 import { icon_path } from './icon.jsx';
 import { render } from '../icon3d/index.js';
 
-export let GID = 0;
-export const TONES = { brand: ['brand', 'brand_2'], ink: ['muted', 'ink'], ok: ['ok', 'ok'], info: ['info', 'info'], warn: ['warn', 'brand_2'], bad: ['bad', 'bad'] };
-const tile = (tone, n) => { const id = 'i3' + (++GID), [a] = TONES[tone] || TONES.brand; return { id, a, d: icon_path(n) }; };
+export const HUES = { orange: '#E0661B', amber: '#E5A01A', green: '#17A34A', teal: '#0E9AA7', sky: '#0EA5E9', blue: '#2F6FDB',
 
 export function i3(n, c = 'w-14 h-14', tone = 'brand') {
   const { id, a, d } = tile(tone, n);
