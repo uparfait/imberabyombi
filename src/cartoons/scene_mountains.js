@@ -23,3 +23,4 @@ function peaks(x0, x1, base, tall, color, r) {
 
 export function mountains(w, h, r) {
   const s = Math.min(w, h), lake = h * r.range(.6, .66), shore = h * .84, color = r.pick(PEAKS);
+  let out = sky(w, h, r, lake, r.pick(SUNSETS));
