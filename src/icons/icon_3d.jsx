@@ -14,24 +14,7 @@ export const TONES = { brand: HUES.orange, ink: HUES.slate, ok: HUES.green, info
 export const HUE_RUN = ['orange', 'blue', 'green', 'violet', 'teal', 'pink', 'amber', 'indigo', 'sky', 'red'];
 export const hue_at = i => HUE_RUN[((i % HUE_RUN.length) + HUE_RUN.length) % HUE_RUN.length];
 
-export function i3(n, c = 'w-14 h-14', tone = 'brand') {
-  const { id, a, d } = tile(tone, n);
-  return (
-    <svg viewBox="0 0 64 64" className={`i3 shrink-0 ${c}`} aria-hidden="true">
-      <defs>
-        <linearGradient id={`${id}f`} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" style={{ stopColor: `color-mix(in srgb, rgb(var(--${a})) 55%, white)` }} />
-          <stop offset="1" style={{ stopColor: `rgb(var(--${a}))` }} />
-        </linearGradient>
-        <radialGradient id={`${id}g`} cx=".28" cy=".18" r=".7">
-          <stop offset="0" stopColor="#fff" stopOpacity=".5" /><stop offset="1" stopColor="#fff" stopOpacity="0" />
-        </radialGradient>
-      </defs>
-      <rect x="7" y="9" width="50" height="46" rx="23" fill={`url(#${id}f)`} />
-      <rect x="7" y="9" width="50" height="46" rx="23" fill={`url(#${id}g)`} />
-      <g transform="translate(20 20)" fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d={d} /></g>
-    </svg>
-  );
+const hex = c => TONES[c] || HUES[c] || (/^#[0-9a-f]{3,8}$/i.test(c || '') ? c : TONES.brand);
 }
 
 export function i3_html(n, c = 'w-14 h-14', tone = 'brand') {
