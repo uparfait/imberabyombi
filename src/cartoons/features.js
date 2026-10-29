@@ -11,3 +11,4 @@ export function face_bits(cx, cy, R, o) {
   out += circle(cx - R * .6, cy + R * .4, R * .16, BLUSH, 'opacity=".35"') + circle(cx + R * .6, cy + R * .4, R * .16, BLUSH, 'opacity=".35"');
   if (o.happy) out += stroke(`M${at(-.5, .1)}Q${at(-.37, -.04)} ${at(-.24, .1)}M${at(.24, .1)}Q${at(.37, -.04)} ${at(.5, .1)}`, INK, R * .08);
   else out += circle(cx - ex, ey, R * .1, INK) + circle(cx + ex, ey, R * .1, INK)
+    + circle(cx - ex + R * .035, ey - R * .035, R * .035, '#fff') + circle(cx + ex + R * .035, ey - R * .035, R * .035, '#fff');
