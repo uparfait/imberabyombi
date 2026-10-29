@@ -19,3 +19,4 @@ export function park(w, h, r) {
   const front = r.int(1, 3);
   for (let i = 0; i < front; i++) {
     const x = w * (i + r.range(.1, .9)) / front;
+    out += r.chance(.5) ? tree(x, g + s * .1, s * r.range(.26, .34), r, undefined, r.pick(TREES)) : bush(x, g + s * .1, s * .14, shade(hc[2], .05));
