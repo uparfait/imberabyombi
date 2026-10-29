@@ -18,3 +18,5 @@ const faces = d => <span className="sign_faces" aria-hidden="true">{d.recipients
 const sub_of = d => { const n = d.recipients.length, s = signed_n(d);
   return d.status === 'draft' ? `Edited ${ago(d.updated)} · ${n ? `${n} signer${n > 1 ? 's' : ''}` : 'no signers yet'}`
     : d.status === 'sent' ? `${s} of ${n} signed · sent ${ago(d.sent_at)}` : `Completed ${ago(d.completed_at)}`; };
+
+const row = (d, href, right, sub) => <li key={d.id}><a href={href} className="sign_row card card_hover">
