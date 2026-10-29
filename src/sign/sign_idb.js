@@ -15,3 +15,4 @@ const open = () => opening || (opening = new Promise((resolve, reject) => {
 /* one request in its own transaction; resolves with its result once the transaction is done */
 const run = (mode, fn) => open().then(db => new Promise((resolve, reject) => {
   const tx = db.transaction(STORE, mode), req = fn(tx.objectStore(STORE));
+  tx.oncomplete = () => resolve(req.result); tx.onerror = tx.onabort = () => reject(tx.error);
