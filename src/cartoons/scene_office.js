@@ -41,3 +41,4 @@ export function office(w, h, r) {
   out += rect(dx, dy, dw, s * .025, s * .008, '#C98F5E') + rect(dx + s * .02, dy, s * .02, floor - dy, 0, '#A9734A') + rect(dx + dw - s * .04, dy, s * .02, floor - dy, 0, '#A9734A');
   out += rect(dx + dw * .3, dy - s * .12, s * .17, s * .11, s * .01, '#2F4858') + rect(dx + dw * .3 + s * .012, dy - s * .108, s * .146, s * .086, s * .006, '#BFE3F5')
     + rect(dx + dw * .26, dy - s * .012, s * .2, s * .014, s * .006, '#7C8BA1') + rect(dx + dw * .8, dy - s * .05, s * .035, s * .05, s * .008, '#FFFFFF')
+    + circle(dx + dw * .8 + s * .0175, dy - s * .06, s * .008, shade(BRAND, .3));
