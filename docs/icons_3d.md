@@ -5,3 +5,4 @@ icon of the path dictionary becomes a solid, shiny object with a thick base. The
 admin module that turns any letter, symbol, SVG or library icon into a 3D icon.
 
 ## Using them
+```jsx
