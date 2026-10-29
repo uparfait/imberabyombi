@@ -9,3 +9,4 @@ import { go } from '../router/index.js';
 import { find_doc, my_rec, KINDS, log, save_doc } from './sign_store.js';
 import { marks_get, file_set } from './sign_idb.js';
 import { S, own_fields, left_of } from './signer_state.js';
+import { Mark_pad, PAD } from './sign_pad.jsx';
