@@ -19,3 +19,4 @@ function Sign_doc({ d, me, done }) {
 
 const not_yours = d => <div className="sign_main page_enter max-w-2xl"><div className="card">
   {empty('This document was not sent to you', `“${d.title}” waits for other signers. To sign it, sign in with the email address it was sent to.`,
+    d.owner === who().email ? <a href={to(`/admin/sign/doc/${d.id}`)} className="btn btn_primary btn_sm">Open its progress page</a> : null)}</div></div>;
