@@ -11,3 +11,4 @@ export const P = { doc: null, rid: null, sel: null, sheet: false, dirty: false }
 export function prep_start(id) {
   if (P.doc?.id === id) return P.doc;
   const d = find_doc(id);
+  Object.assign(P, { doc: d, rid: d?.recipients[0]?.id || null, sel: null, sheet: false, dirty: false });
