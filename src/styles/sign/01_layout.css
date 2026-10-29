@@ -40,3 +40,5 @@
   .sign_left { border-right: 1px solid rgb(var(--line)); }
   .sign_right { border-left: 1px solid rgb(var(--line)); }
   .sign_center, .sign_work .sign_center, .sign_center.with_bar { padding: 1.5rem 2rem 3rem; }
+}
+@media (max-width: 1023.98px) {
