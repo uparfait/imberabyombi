@@ -37,3 +37,4 @@ export function Pad_draw() {
     <div className="sign_paper"><canvas ref={cv} className="sign_canvas" aria-label="Signature pad: draw your signature here" />
       {has ? null : <span className="sign_canvas_hint" aria-hidden="true">Sign here</span>}<i className="sign_canvas_line" aria-hidden="true"></i></div>
     <div className="mt-2 flex items-center justify-between gap-3">
+      <button type="button" className="btn btn_ghost btn_sm" onClick={() => pad.current.clear()} disabled={!has}>Clear</button>
