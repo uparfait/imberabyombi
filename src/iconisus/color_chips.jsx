@@ -6,3 +6,4 @@ import { palette } from '../icon3d/index.js';
 const NAMES = ['Primary', 'Secondary', 'Tertiary'];
 
 export function Colors({ st, put }) {
+  const P = palette(st.cols), auto = [P.p, P.s, P.t];
