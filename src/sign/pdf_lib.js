@@ -19,3 +19,4 @@ export async function read_pdf(bytes) {
       const v = (await pdf.getPage(i)).getViewport({ scale: 1 }); pages.push({ w: Math.round(v.width), h: Math.round(v.height) });
     }
   } finally { pdf.destroy(); }
+  return pages;
