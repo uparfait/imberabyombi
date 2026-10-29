@@ -10,3 +10,4 @@ export const C = 'sign_docs';
 /* one colour per signer, in order (their fields, avatar and tag) */
 export const COLORS = ['#E0661B', '#2F6FDB', '#12936B', '#8B4FD8', '#D6407A', '#0E8FA6'];
 /* status → [label, chip classes] */
+export const STATUS = { draft: ['Draft', 'bg-muted/15 text-muted'], sent: ['Waiting', 'bg-warn/15 text-warn'], completed: ['Completed', 'bg-ok/15 text-ok'] };
