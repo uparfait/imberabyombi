@@ -13,3 +13,4 @@ const open = () => opening || (opening = new Promise((resolve, reject) => {
   req.onerror = () => { opening = null; reject(req.error); };
 }));
 /* one request in its own transaction; resolves with its result once the transaction is done */
+const run = (mode, fn) => open().then(db => new Promise((resolve, reject) => {
