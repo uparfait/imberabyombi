@@ -5,3 +5,4 @@ const stop = ([o, c, a = 1]) => `<stop offset="${o}" stop-color="${c}"${a < 1 ? 
 const US = ' gradientUnits="userSpaceOnUse"';
 
 export const lin = (id, st, [x1, y1, x2, y2] = [0, 0, 0, 1], u = '') =>
+  `<linearGradient id="${id}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"${u}>${st.map(stop).join('')}</linearGradient>`;
