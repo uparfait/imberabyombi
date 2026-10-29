@@ -2,3 +2,5 @@
    file, its id, who sent it and when), then each signer with their email, when they opened it and when they signed, and the
    activity. Text is written in Helvetica, so letters it cannot show become "?". */
 import { when } from './sign_store.js';
+
+const A4 = [595.28, 841.89], M = 56;
