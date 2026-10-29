@@ -19,3 +19,4 @@ export function paint(canvas, img, amount) {
   const w = Math.max(1, Math.round(img.naturalWidth * k)), h = Math.max(1, Math.round(img.naturalHeight * k));
   canvas.width = w; canvas.height = h;
   const x = canvas.getContext('2d', { willReadFrequently: true }); x.clearRect(0, 0, w, h); x.drawImage(img, 0, 0, w, h);
+  if (!amount) return;
