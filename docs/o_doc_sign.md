@@ -41,3 +41,5 @@ signing). No document is seeded: every account starts empty.
 **Download PDF** writes every mark placed so far into the file's pages (rotated pages included). A completed document's
 download ends with a **signing certificate** page: the document, its id, who sent it, each signer with their email, when
 they opened and signed it, and the activity.
+
+## Who can do what
