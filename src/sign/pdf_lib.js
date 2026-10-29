@@ -20,3 +20,6 @@ export async function read_pdf(bytes) {
     }
   } finally { pdf.destroy(); }
   return pages;
+}
+
+const OPEN = new Map();
