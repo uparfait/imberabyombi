@@ -31,3 +31,4 @@ export function Pad_draw() {
   useEffect(() => {
     const p = pad.current = wire(cv.current, set_has);
     PAD.get = async () => p.any() ? trim(cv.current) : null;
+    return p.stop;
