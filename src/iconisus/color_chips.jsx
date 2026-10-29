@@ -16,3 +16,4 @@ export function Colors({ st, put }) {
             <input type="color" value={v} aria-label={`${n} colour`} onChange={e => set_k(k, e.target.value)} /></label>
           {k && st.cols[k] ? <button type="button" className="ico_clear" aria-label={`Reset the ${n.toLowerCase()} colour`} onClick={() => set_k(k, '')}>×</button> : null}
         </div>; })}</div>
+      <div className="min-w-0 flex-1">
