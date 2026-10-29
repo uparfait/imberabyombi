@@ -3,3 +3,4 @@
 import { i3 } from '../icons/index.js';
 import { to } from '../router/index.js';
 import { my_rec, when } from './sign_store.js';
+import { status_chip } from './sign_list.jsx';
