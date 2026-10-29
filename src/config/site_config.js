@@ -1,5 +1,6 @@
 /* config/site_config.js: CONFIG. Brand, media and business rules in one place (name, logo, storage prefix,
    currency, simulated latency, table size, parking, work hours, storage cap, pictures, video/audio/map links).
+   Pictures are cartoons drawn from a seed (src/cartoons: nothing to download); only the home hero is a real picture. */
 export const cfg = {
   name: 'Imberabyombi', logo: ['IMBERA', 'BYOMBI'] /* two-tone logo: first part in brand colour */, ns: window.NS || 'loremds:v1:',
   currency: 'USD', latency: 450 /* ms of simulated network time per request (saving, loading a table); set 0 or swap for fetch() */,
