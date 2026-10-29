@@ -1,1 +1,2 @@
 /* iconisus/iconisus_styles.css: Iconisus's stylesheet, imported by iconisus_page.jsx only, so it loads with the module. */
+@import '../styles/iconisus/01_iconisus.css';
