@@ -5,3 +5,4 @@ import { notify } from '../feedback/index.js';
 import { ask, copy } from '../overlays/index.js';
 import { base_url } from '../auth/index.js';
 import { go } from '../router/index.js';
+import { find_doc, drop_doc } from './sign_store.js';
