@@ -33,3 +33,4 @@ export const bird = (x, y, s, color, flap = .5) =>
 
 /* a vertical gradient from top to bottom colour, referenced as url(#id) */
 export const v_gradient = (id, top, bottom) =>
+  `<linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${top}"/><stop offset="1" stop-color="${bottom}"/></linearGradient>`;
