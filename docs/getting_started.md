@@ -27,8 +27,7 @@ See [deploying](deploying.md).
 4. You land on the first admin module that role can open (or the role's landing page).
 5. Sign out from the avatar menu, pick another role and sign in again to see what that role can do.
 
-Internet access is used for fonts, sample photos (picsum.photos, i.pravatar.cc), the sample video and audio
-and the map embed. Broken images fall back to a branded placeholder.
+Sample pictures are cartoons drawn in the page and the sample video is in `public/media/`
 
 ## Reset the demo
 Settings → Data → **Reset demo data** restores the sample records. Theme, session and tokens stay.
