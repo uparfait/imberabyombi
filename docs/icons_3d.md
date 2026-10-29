@@ -16,3 +16,4 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
   shows an icon picks its colour, as the third argument:
   - a tone: `brand` (orange, the default), `ink`, `ok`, `info`, `warn`, `bad`;
   - a hue: `orange`, `amber`, `green`, `teal`, `sky`, `blue`, `indigo`, `violet`, `pink`, `red`, `slate`;
+  - or a hex, e.g. `'#0E9AA7'`.
