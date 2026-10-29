@@ -32,3 +32,4 @@ const move = path => { setTimeout(() => go(path, { replace: true })); return { b
 const missing = () => <div className="sign_main max-w-2xl"><div className="card">{empty('Document not found',
   'It was deleted, or it is kept in another browser.', <a href={list_href('all')} className="btn btn_primary btn_sm">All documents</a>)}</div></div>;
 const dl = d => <button type="button" className="btn btn_outline btn_sm" data-act="sign_dl" data-id={d.id} aria-label={dl_label(d)}>
+  {ic('download', 'h-4 w-4')}<span className="hidden sm:inline">{dl_label(d)}</span></button>;
