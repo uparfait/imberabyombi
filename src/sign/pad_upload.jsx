@@ -36,3 +36,4 @@ export function Pad_upload({ kind }) {
       <div className="flex items-center justify-between text-sm"><label htmlFor="pad_cut" className="font-medium">Remove background</label>
         <output htmlFor="pad_cut" className="tabular-nums text-muted">{cut}%</output></div>
       <input id="pad_cut" type="range" min="0" max="100" value={cut} onChange={e => set_cut(+e.target.value)} className="sign_range" />
+      <p className="text-xs text-muted">Slide right until only the ink is left. The checkerboard shows what is transparent.</p></div>
