@@ -31,3 +31,4 @@ export function hair_front(cx, cy, R, style, color) {
     bun: `L${p(.95, -.18)}Q${p(0, -.86)} ${p(-.95, -.18)}`,
     afro: `L${p(.95, -.15)}Q${p(0, -.8)} ${p(-.95, -.15)}`,
     curly: `L${p(.96, -.2)}Q${p(0, -.7)} ${p(-.96, -.2)}`
+  }[style];
