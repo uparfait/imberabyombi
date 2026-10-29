@@ -5,3 +5,4 @@ import { marks_get } from './sign_idb.js';
 
 export function use_marks(id, version) {
   const [marks, set] = useState({});
+  useEffect(() => {
