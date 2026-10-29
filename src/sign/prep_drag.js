@@ -44,3 +44,4 @@ const over = e => { if (e.dataTransfer?.types.includes('text/sign-field') && e.t
 function drop(e) {
   const s = e.target.closest('.sign_sheet'), t = e.dataTransfer?.getData('text/sign-field'); if (!s || !t) return;
   e.preventDefault(); const b = s.getBoundingClientRect();
+  add_field(t, +s.dataset.page, (e.clientX - b.left) / b.width, (e.clientY - b.top) / b.height);
