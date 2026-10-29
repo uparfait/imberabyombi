@@ -35,3 +35,5 @@ export function ribbon(G, C, i) {
   for (let j = 7; j >= 1; j--) ext += use(R, X + j * .8, Y + j * 1.1, S, shade(col(K), -32), at(base + 2 * K * bw));
   for (let k = K - 1; k >= 0; k--) {
     const w = base + 2 * (k + 1) * bw; bands += use(R, X, Y, S, shade(col(k + 1), -38), at(w)) + use(R, X, Y, S, col(k + 1), at(w - 2 * gw));
+  }
+  bands += use(R, X, Y, S, col(0), at(base));
