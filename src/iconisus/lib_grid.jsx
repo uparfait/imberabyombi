@@ -13,3 +13,4 @@ export function Lib_grid({ st, put }) {
   const end = useRef(null);
   useEffect(() => {
     let live = true; set_set(null); set_err(false);
+    load_set(st.lib).then(s => live && set_set(s), () => live && set_err(true));
