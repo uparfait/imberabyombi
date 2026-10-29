@@ -48,3 +48,4 @@ function drop(e) {
 }
 
 export function prep_pointer(root) {
+  const d = e => down(e, root), k = e => key(e, root);
