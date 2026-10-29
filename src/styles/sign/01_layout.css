@@ -58,3 +58,4 @@
 .sign_split { display: grid; flex: 1; grid-template-columns: minmax(0, 1fr); align-content: start; }
 .sign_side { display: grid; align-content: start; gap: 1rem; padding: 1rem .75rem 0; }
 @media (min-width: 1024px) {
+  .sign_split { grid-template-columns: minmax(0, 1fr) 22rem; }
