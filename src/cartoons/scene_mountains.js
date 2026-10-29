@@ -17,3 +17,5 @@ function peaks(x0, x1, base, tall, color, r) {
     out += path(`M${n(cx - half * k)} ${n(sy)}L${n(cx - half * .12)} ${n(top + tall * .03)}Q${n(cx)} ${n(top - tall * .02)} ${n(cx + half * .12)} ${n(top + tall * .03)}`
       + `L${n(cx + half * k)} ${n(sy)}L${n(cx + half * k * .4)} ${n(sy - tall * .05)}L${n(cx)} ${n(sy + tall * .02)}L${n(cx - half * k * .4)} ${n(sy - tall * .05)}Z`, '#FFFFFF');
     x += half * r.range(1.2, 1.7);
+  }
+  return out;
