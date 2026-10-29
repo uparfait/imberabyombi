@@ -30,3 +30,4 @@ export const PREP_ACT = {
   sign_tool: t => add_field(t.dataset.type),
   sign_field_del: t => del_field(t.dataset.id),
   sign_sheet: () => { P.sheet = !P.sheet; rerender(); },
+  sign_rec_note: t => { const r = rec_of(P.doc, t.dataset.id);
