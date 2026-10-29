@@ -19,3 +19,5 @@ function board(x, y, bw, bh, s, r) {
     const v = (i + 1) / bars * r.range(.55, .85), bx = x + gap + i * (bar + gap), by = y + bh * .9 - bh * .7 * v;
     out += rect(bx, by, bar, y + bh * .9 - by, bar * .25, i === bars - 1 ? BRAND : shade(r.pick(BUILDINGS.slice(2)), .25));
     list.push(`${n(bx + bar / 2)} ${n(by - bh * .06)}`);
+  }
+  return out + stroke('M' + list.join('L'), INK, s * .008, 'opacity=".55"');
