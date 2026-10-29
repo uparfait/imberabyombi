@@ -22,3 +22,4 @@ export function park(w, h, r) {
     out += r.chance(.5) ? tree(x, g + s * .1, s * r.range(.26, .34), r, undefined, r.pick(TREES)) : bush(x, g + s * .1, s * .14, shade(hc[2], .05));
   }
   out += hill(w, h, h - s * .1, s * .02, hc[2], r);
+  const people = r.int(1, 3), poses = ['wave', 'cheer', 'point', 'stand', 'walk'];
