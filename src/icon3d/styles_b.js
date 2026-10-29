@@ -5,3 +5,4 @@ import { shade } from './color.js';
 import { lin, rad, grad, use, pl, blur, vol } from './parts.js';
 
 export function glossy(G, C, i) {
+  const dk = C.hs ? C.s : C.p;
