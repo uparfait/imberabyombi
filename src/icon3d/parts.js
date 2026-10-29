@@ -3,3 +3,5 @@
    "volume" filter: an optional goo (rounds and thickens), then diffuse shading and a specular highlight. */
 const stop = ([o, c, a = 1]) => `<stop offset="${o}" stop-color="${c}"${a < 1 ? ` stop-opacity="${a}"` : ''}/>`;
 const US = ' gradientUnits="userSpaceOnUse"';
+
+export const lin = (id, st, [x1, y1, x2, y2] = [0, 0, 0, 1], u = '') =>
