@@ -7,3 +7,4 @@ import { go } from '../router/index.js';
 import { rec_of, log, who } from './sign_store.js';
 import { P, prep_dirty, prep_save } from './prep_state.js';
 import { add_field, del_field } from './prep_fields.js';
+import { note_body, send_body } from './prep_dialogs.jsx';
