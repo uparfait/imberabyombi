@@ -27,3 +27,4 @@ export function signer_page(d) {
   if (!r.viewed_at && d.status === 'sent') { r.viewed_at = Date.now(); log(d, `${r.name} opened the document`); save_doc(d); }
   const done = r.status === 'signed' || d.status !== 'sent';
   return <div className="sign_split">
+    <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
