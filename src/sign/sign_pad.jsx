@@ -12,3 +12,4 @@ export { PAD };
 const TABS = { signature: [['draw', 'Draw'], ['type', 'Type'], ['upload', 'Upload']], stamp: [['make', 'Create'], ['upload', 'Upload']] };
 
 export function Mark_pad({ kind, name }) {
+  const [tab, set_tab] = useState(TABS[kind][0][0]);
