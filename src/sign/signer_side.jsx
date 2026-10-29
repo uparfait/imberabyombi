@@ -4,3 +4,5 @@
 import { ic, i3 } from '../icons/index.js';
 import { KINDS } from './sign_store.js';
 import { own_fields, left_of } from './signer_state.js';
+
+const next_text = left => left.length
