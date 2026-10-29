@@ -24,3 +24,4 @@ export function city(w, h, r) {
   while (x < w) {
     const bw = s * r.range(.15, .26);
     out += building(x, base, bw, h * r.range(.26, .52), r.pick(BUILDINGS), s, r);
+    x += bw + s * r.range(0, .025);
