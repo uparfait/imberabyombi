@@ -40,3 +40,4 @@ function page_for(a, id) {
   if (a === 'new') return { title: 'New document', back: list_href('all'),
     body: auth.can('sign', 2) ? <Sign_new /> : <div className="sign_main">{forbidden()}</div> };
   const d = find_doc(id), mine = d?.owner === who().email;
+  if (!d) return { title: 'Not found', back: list_href('all'), body: missing() };
