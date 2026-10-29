@@ -7,3 +7,4 @@ export const S = { id: null, pending: {}, adopted: {} };
 export const signer_start = id => { if (S.id !== id) Object.assign(S, { id, pending: {}, adopted: {} }); };
 
 /* your fields, page by page, top to bottom; and the ones still empty */
+export const own_fields = d => { const r = my_rec(d);
