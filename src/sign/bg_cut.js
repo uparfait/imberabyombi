@@ -25,3 +25,5 @@ export function paint(canvas, img, amount) {
   for (let i = 0; i < d.length; i += 4) {
     const dr = d[i] - r, dg = d[i + 1] - g, db = d[i + 2] - b, dist = Math.sqrt(dr * dr + dg * dg + db * db);
     if (dist <= cut) d[i + 3] = 0; else if (dist < cut + soft) d[i + 3] = Math.round(d[i + 3] * (dist - cut) / soft);
+  }
+  x.putImageData(im, 0, 0);
