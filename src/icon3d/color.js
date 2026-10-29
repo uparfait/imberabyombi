@@ -18,3 +18,4 @@ function from_hsl(h, s, l) {
 }
 
 /* c with its lightness moved by dl, saturation by ds and hue turned by dh degrees */
+export const shade = (c, dl = 0, ds = 0, dh = 0) => { const [h, s, l] = to_hsl(c); return from_hsl(h + dh, clamp(s + ds, 0, 100), clamp(l + dl, 3, 97)); };
