@@ -22,3 +22,4 @@
 .sign_stamp_cv { width: 11rem; height: 11rem; margin: 0 auto; border: 1px solid rgb(var(--line)); border-radius: 1rem; background: #fff; }
 @media (min-width: 640px) { .sign_stamp_cv { width: 100%; height: auto; aspect-ratio: 1; } }
 .sign_ink { width: 2rem; height: 2rem; border-radius: var(--pill); outline: 2px solid transparent; outline-offset: 3px; transition: outline-color .2s; }
+.sign_ink.on { outline-color: rgb(var(--brand)); }
