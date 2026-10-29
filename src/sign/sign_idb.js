@@ -27,3 +27,4 @@ export const drop_files = id => Promise.all([file_del('pdf:' + id), file_del('ma
 
 export const marks_get = async id => (await file_get('marks:' + id)) || {};
 export const sweep = ids => run('readonly', s => s.getAllKeys())
+  .then(keys => Promise.all(keys.filter(k => !ids.has(String(k).split(':')[1])).map(file_del))).catch(() => {});
