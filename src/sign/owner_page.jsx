@@ -39,3 +39,4 @@ export const owner_page = d => <div className="sign_split">
         {my_turn(d) ? <a href={to(`/admin/sign/sign/${d.id}`)} className="btn btn_primary btn_sm">{ic('signature', 'h-4 w-4')}Sign now</a> : null}
         <button type="button" className="btn btn_outline btn_sm" data-act="sign_dl" data-id={d.id}>{ic('download', 'h-4 w-4')}{dl_label(d)}</button>
         <button type="button" className="btn btn_danger btn_sm" data-act="sign_doc_del" data-id={d.id}>{ic('trash', 'h-4 w-4')}Delete document</button></div></section>
+    <details className="card p-5" open><summary className="sign_cap cursor-pointer">Activity</summary>
