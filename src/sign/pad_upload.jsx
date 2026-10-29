@@ -35,3 +35,4 @@ export function Pad_upload({ kind }) {
     <div className="grid gap-1.5">
       <div className="flex items-center justify-between text-sm"><label htmlFor="pad_cut" className="font-medium">Remove background</label>
         <output htmlFor="pad_cut" className="tabular-nums text-muted">{cut}%</output></div>
+      <input id="pad_cut" type="range" min="0" max="100" value={cut} onChange={e => set_cut(+e.target.value)} className="sign_range" />
