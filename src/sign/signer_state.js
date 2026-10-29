@@ -2,3 +2,5 @@
    → PNG) and the last signature and stamp you made (adopted), so the next field of the same kind takes it in one tap. It
    starts over when another document opens; nothing is kept until you sign. */
 import { my_rec } from './sign_store.js';
+
+export const S = { id: null, pending: {}, adopted: {} };
