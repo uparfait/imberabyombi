@@ -31,3 +31,4 @@ function down(e, root) {
 }
 
 const MOVES = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
+function key(e, root) {
