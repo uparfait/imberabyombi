@@ -15,3 +15,6 @@ function from_hsl(h, s, l) {
   h = ((h % 360) + 360) % 360; s /= 100; l /= 100;
   const k = n => (n + h / 30) % 12, a = s * Math.min(l, 1 - l), f = n => l - a * Math.max(-1, Math.min(k(n) - 3, 9 - k(n), 1));
   return to_hex([f(0), f(8), f(4)].map(v => v * 255));
+}
+
+/* c with its lightness moved by dl, saturation by ds and hue turned by dh degrees */
