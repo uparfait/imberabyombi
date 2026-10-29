@@ -11,3 +11,4 @@ export function Stamp_make({ name }) {
   const put = (k, v) => set(s => ({ ...s, [k]: v }));
   useEffect(() => { const c = cv.current; draw_stamp(c, st); document.fonts?.ready.then(() => draw_stamp(c, st)); }, [st]);
   PAD.get = async () => st.org.trim() ? trim(cv.current, 6) : null;
+  return <div className="grid items-start gap-5 sm:grid-cols-[11rem_minmax(0,1fr)]">
