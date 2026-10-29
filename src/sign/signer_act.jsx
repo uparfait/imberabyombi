@@ -24,3 +24,4 @@ function open_pad(d, f) {
     body: <Mark_pad key={f.id} kind={f.type} name={my_rec(d).name} />, submit: `Use this ${what}`,
     on_submit: async () => { const url = await PAD.get();
       if (!url) { form_msg(qs('#modal form'), 'warn', `No ${what} yet`, `Make your ${what} first.`); return false; }
+      apply(d, f, url); } });
