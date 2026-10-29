@@ -22,3 +22,4 @@ export function hair_back(cx, cy, R, style, color) {
 }
 
 export function hair_front(cx, cy, R, style, color) {
+  const p = at(cx, cy, R), top = `M${p(-1.04, .05)}C${p(-1.12, -1.38)} ${p(1.12, -1.38)} ${p(1.04, .05)}`;
