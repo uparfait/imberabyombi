@@ -12,6 +12,7 @@ import { spinner } from './feedback/index.js';
    html.public_page: the public website lets text be selected and keeps the browser's own right-click menu */
 const mark_page = () => {
   const c = document.documentElement.classList, p = route.path || '';
+  c.toggle('staff_page', /^\/admin(\/|$)/.test(p)); c.toggle('public_page', is_public(p));
 
 /* the same spinner index.html shows while the app loads, kept until the first page is drawn */
 const boot_loader = <div className="boot_loader" role="status" aria-label="Loading">{spinner()}</div>;
