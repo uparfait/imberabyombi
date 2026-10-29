@@ -23,3 +23,4 @@
 @media (min-width: 640px) { .sign_faces { display: flex; } }
 .sign_drop { display: grid; justify-items: center; padding: 3rem 1.5rem; border: 2px dashed rgb(var(--muted) / .45); border-radius: var(--radius);
   background: rgb(var(--surface)); text-align: center; cursor: pointer; transition: border-color .2s, background-color .2s; }
+.sign_drop:hover, .sign_drop.over, .sign_drop:focus-within { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .06); }
