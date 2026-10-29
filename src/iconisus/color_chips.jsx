@@ -17,3 +17,4 @@ export function Colors({ st, put }) {
           {k && st.cols[k] ? <button type="button" className="ico_clear" aria-label={`Reset the ${n.toLowerCase()} colour`} onClick={() => set_k(k, '')}>×</button> : null}
         </div>; })}</div>
       <div className="min-w-0 flex-1">
+        <div className="flex justify-between text-xs text-muted"><label htmlFor="ico_size">Size</label><output htmlFor="ico_size">{st.size} px</output></div>
