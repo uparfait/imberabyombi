@@ -23,3 +23,5 @@ import { prep_page, prep_btns } from './prep_page.jsx';
 import { owner_page, dl_label } from './owner_page.jsx';
 import { signer_page } from './signer_page.jsx';
 import { sign_done } from './sign_done.jsx';
+
+const LIST = new Set(LISTS.map(x => x[0]));
