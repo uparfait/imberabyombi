@@ -24,3 +24,4 @@ export const mix = (a, b, t) => { const B = rgb(b); return to_hex(rgb(a).map((v,
 export const blend = (cs, t) => { const n = cs.length - 1, x = Math.min(t * n, n - 1e-6), k = Math.floor(x); return mix(cs[k], cs[k + 1], x - k); };
 
 /* p: primary (main body), s: secondary (gradient end, second band, tile shade), t: tertiary (glyph, mid colour, glow);
+   hs / ht: whether they were given (some styles look different when they are) */
