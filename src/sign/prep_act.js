@@ -41,3 +41,4 @@ export const PREP_ACT = {
     const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
     if (!R.length) { notify('Add the people who sign this document.', 'warn', 'No signers yet'); P.sheet = true; return rerender(); }
     if (!d.fields.length) return notify('Place at least one signature or stamp field on the document.', 'warn', 'No fields yet');
+    if (alone) { P.rid = alone.id; rerender(); return notify(`Place a field for ${alone.name}, or remove them.`, 'warn', `${alone.name} has no field`); }
