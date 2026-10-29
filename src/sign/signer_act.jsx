@@ -13,3 +13,4 @@ import { Mark_pad, PAD } from './sign_pad.jsx';
 import { agree_body } from './signer_side.jsx';
 
 function apply(d, f, url) {
+  const first = !S.adopted[f.type], [l] = KINDS[f.type];
