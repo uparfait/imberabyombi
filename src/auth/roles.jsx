@@ -22,6 +22,7 @@ export const ROLES0 = [
   { id: 'coordinator', name: 'Event coordinator', d: 'Events, calendar and reservations.',
     perms: perm_map('dashboard:1,calendar:2,tasks:2,docs:2,sign:2,events:2,inventory:2,settings:1') }
 ];
+/* modules every role may use, and at what level (the document editor, O-Doc Sign): roles saved before one existed get it */
 export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !r.length) { r = ROLES0; db.set('roles', r); }
   /* roles saved before a module existed get its default level (the document editor: every role may use it) */
   else if (r.some(x => x.perms !== '*' && x.perms.docs == null)) {
