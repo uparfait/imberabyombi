@@ -14,3 +14,4 @@ import { prep_tools, prep_bar } from './prep_tools.jsx';
 function Prep_doc({ d }) {
   const root = useRef(null);
   useEffect(() => prep_pointer(root.current), []);
+  return <div ref={root}><Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: 'edit', sel: P.sel })} /></div>;
