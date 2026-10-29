@@ -4,3 +4,4 @@ const svg = html => ({ __html: html });
 
 export const Stage = ({ draw }) => <section className="card ico_stage" aria-label="Preview">
   <div className="ico_big" dangerouslySetInnerHTML={svg(draw({ size: '100%' }))} />
+  <div className="flex items-end gap-6 text-xs text-muted">{[64, 40, 24].map(n =>
