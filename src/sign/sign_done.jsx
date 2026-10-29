@@ -6,3 +6,4 @@ import { my_rec, when } from './sign_store.js';
 import { status_chip } from './sign_list.jsx';
 
 export function sign_done(d) {
+  const r = my_rec(d), all = d.status === 'completed';
