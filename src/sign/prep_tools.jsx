@@ -2,3 +2,4 @@
    which add a field on click or drop one where they are dragged; what is placed so far). Phones: a bar at the bottom
    with the signer (it opens the signers' sheet) and the tools. */
 import { ic } from '../icons/index.js';
+import { KINDS, rec_of } from './sign_store.js';
