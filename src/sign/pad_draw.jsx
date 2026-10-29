@@ -17,3 +17,4 @@ function wire(c, on_any) {
     x.beginPath(); x.arc(l.x, l.y, 1.3, 0, 7); x.fill(); if (!any) { any = true; on_any(true); }
   };
   const move = e => { if (!on) return; const p = at(e), n = { x: (l.x + p.x) / 2, y: (l.y + p.y) / 2 };
+    x.beginPath(); x.moveTo(m.x, m.y); x.quadraticCurveTo(l.x, l.y, n.x, n.y); x.stroke(); l = p; m = n; };
