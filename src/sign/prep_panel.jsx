@@ -28,3 +28,4 @@ const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, o
       <span className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
         <span className="block truncate text-xs text-muted">{r.email} · {n} field{n === 1 ? '' : 's'}</span></span></button>
     <div className="flex items-start gap-1">
+      <p className={`sign_note flex-1 ${r.note ? '' : 'not-italic'}`}>{r.note ? `“${r.note}”` : 'No note for this signer'}</p>
