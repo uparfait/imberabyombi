@@ -10,3 +10,4 @@ function Page({ pdf, i, n, size, children }) {
   const box = useRef(null), cv = useRef(null);
   useEffect(() => {
     if (!pdf) return; const el = box.current; let near = false, drawn = 0, t = 0, live = true;
+    const draw = () => { const w = Math.round(el.clientWidth); if (!near || !w || Math.abs(w - drawn) < 2) return; drawn = w;
