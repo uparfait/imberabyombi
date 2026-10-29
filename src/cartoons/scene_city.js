@@ -21,3 +21,4 @@ export function city(w, h, r) {
   let out = sky(w, h, r, base - h * .3), x = -r.range(0, s * .06);
   const far = shade('#9FB3C8', r.range(-.05, .1));
   for (let fx = 0; fx < w; fx += s * r.range(.08, .14)) out += rect(fx, base - h * r.range(.38, .58), s * r.range(.08, .14), h * .6, s * .01, far, 'opacity=".55"');
+  while (x < w) {
