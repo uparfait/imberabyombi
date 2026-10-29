@@ -34,3 +34,4 @@ export function Lib_grid({ st, put }) {
     <p className="text-xs text-muted">{LIBS.find(l => l[0] === st.lib)[2]}{set ? ` · ${names.length} icons` : ''}</p>
     <div className="ico_grid" aria-label="Icons">
       {err ? note('This icon set could not be loaded. Check your connection and pick it again.')
+        : !set ? <div className="col-span-full grid place-items-center py-8" role="status">{spinner()}<span className="sr-only">Loading icons</span></div>
