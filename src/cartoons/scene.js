@@ -12,3 +12,4 @@ export const SCENES = { city, park, office, stage, mountains };
 const HINTS = [[/^event/, ['stage', 'stage', 'park', 'city']], [/^about/, ['office', 'park']]];
 
 /* kind: one of SCENES to draw that scene whatever the seed */
+export function scene_svg(seed, w = 900, h = 650, kind) {
