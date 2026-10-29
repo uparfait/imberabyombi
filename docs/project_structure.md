@@ -17,7 +17,7 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `config/`    | `cfg`: brand name and logo parts, storage prefix, currency, latency, page size, business rules, media URLs |
 | `cartoons/`  | cartoon pictures drawn from a seed: scenes (`cartoon`) and portraits (`cartoon_face`), behind `cfg.img` / `cfg.face` |
 | `lib/`       | small helpers (`esc`, `qs`, `uid`, `pad`), dates (`ymd`, `fmt_d`, `add_d`, `iso_week`), money, colours, download, `lorem` |
-| `icons/`     | the path dictionary, flat icons `ic()` and 3D icons `i3()` (plus `_html` string twins)      |
+| `icons/`     | the path dictionary, flat icons `ic()` and glossy 3D icons `i3()` in fixed colours, the brand mark `mark3d()` (plus `_html` string twins) |
 | `store/`     | `db` (browser storage) and `app_state` (`ui`, `route`, `render`, `rerender`, `AFTER`, `TIMERS`) |
 | `auth/`      | modules list (`MODS`), roles and levels, session (`auth`, `me`), landing pages, invite links |
 | `schemas/`   | one schema per data type: fields, table columns, renderers, seed data                       |
