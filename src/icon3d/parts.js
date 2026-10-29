@@ -20,3 +20,4 @@ export const blur = (id, sd, r = '-60%') =>
 
 /* o = { goo, flat, bevel, surf, spec, exp, shade } */
 export function vol(id, o) {
+  let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
