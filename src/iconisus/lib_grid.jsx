@@ -37,3 +37,4 @@ export function Lib_grid({ st, put }) {
         : !set ? <div className="col-span-full grid place-items-center py-8" role="status">{spinner()}<span className="sr-only">Loading icons</span></div>
           : !names.length ? note('No icons match.')
             : <>{names.slice(0, shown).map(n => <button key={n} type="button" title={n} aria-label={n} aria-pressed={st.icon_name === n}
+                className={`ico_pick ${st.icon_name === n ? 'on' : ''}`} onClick={() => put({ icon: icon_of(set, n), icon_name: n })}
