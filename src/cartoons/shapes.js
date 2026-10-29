@@ -29,3 +29,4 @@ export function cloud(x, y, s, fill = '#fff', opacity = .92) {
 /* a bird in flight, s wide; flap 0…1 lifts the wings */
 export const bird = (x, y, s, color, flap = .5) =>
   stroke(`M${n(x - s / 2)} ${n(y)}Q${n(x - s / 4)} ${n(y - s * (.15 + .35 * flap))} ${n(x)} ${n(y)}Q${n(x + s / 4)} ${n(y - s * (.15 + .35 * flap))} ${n(x + s / 2)} ${n(y)}`,
+    color, Math.max(1.2, s * .09));
