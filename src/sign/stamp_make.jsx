@@ -15,3 +15,4 @@ export function Stamp_make({ name }) {
     <canvas ref={cv} width="400" height="400" className="sign_stamp_cv" aria-label="Stamp preview" />
     <div className="grid gap-3">
       <div className="field"><label htmlFor="st_org">Organisation</label>
+        <input id="st_org" value={st.org} maxLength={34} placeholder=" " onChange={e => put('org', e.target.value)} /></div>
