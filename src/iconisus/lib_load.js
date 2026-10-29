@@ -4,3 +4,5 @@ export const LIBS = [['lucide', 'Lucide', 'lucide-react'], ['heroicons', 'Heroic
   ['ph', 'Phosphor', '@phosphor-icons/react'], ['feather', 'Feather', 'react-feather'], ['bi', 'Bootstrap', 'react-bootstrap-icons'],
   ['fa6-solid', 'Font Awesome', '@fortawesome/react-fontawesome'], ['ri', 'Remix', '@remixicon/react'], ['ion', 'Ionicons', 'react-icons/io5'],
   ['mdi', 'Material Design', '@mdi/react'], ['iconoir', 'Iconoir', 'iconoir-react'], ['simple-icons', 'Simple Icons', '@icons-pack/react-simple-icons']];
+
+const SETS = {};
