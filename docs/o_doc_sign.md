@@ -55,3 +55,4 @@ The permission key is `sign`. Every role may use it at level 2 (roles saved befo
 
 Files of deleted documents are cleaned up the next time O-Doc Sign opens. Everything stays in this browser: to share
 documents between people and devices, keep these records and files on a server (see
+[connecting a backend](connecting_a_backend.md)); `sign_store.js` and `sign_idb.js` are the only files that read them.
