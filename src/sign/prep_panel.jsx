@@ -13,3 +13,4 @@ const people = () => db.list('staff').filter(s => s.email && s.name);
 
 function add(e) {
   e.preventDefault(); const f = e.currentTarget; if (!validate(f)) return;
+  const v = Object.fromEntries(new FormData(f)), name = v.name.trim(), email = v.email.trim().toLowerCase();
