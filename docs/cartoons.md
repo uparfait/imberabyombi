@@ -14,3 +14,4 @@ Both return an image address (an SVG data URI), so they go straight into `<img s
 
 ```jsx
 <img src={cfg.img('services', 900, 650)} alt="…" width="900" height="650" loading="lazy" />
+<img src={cfg.face(7, 320, 400)} alt="Portrait of …" width="320" height="400" />
