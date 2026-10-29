@@ -27,3 +27,5 @@ export const blend = (cs, t) => { const n = cs.length - 1, x = Math.min(t * n, n
    hs / ht: whether they were given (some styles look different when they are) */
 export function palette(list = []) {
   const p = list[0] || '#7C5CFF';
+  return { p, s: list[1] || shade(p, 4, 0, -30), t: list[2] || shade(p, 12, 0, 40), hs: !!list[1], ht: !!list[2] };
+}
