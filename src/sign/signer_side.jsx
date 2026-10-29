@@ -21,3 +21,4 @@ export const note_card = (d, r) => r.note ? <section className="card sign_note_c
   <p className="mt-2 whitespace-pre-line text-sm">{r.note}</p></section> : null;
 
 export const steps_card = d => { const left = left_of(d);
+  return <section className="card p-5"><h2 className="sign_cap">Your fields</h2>
