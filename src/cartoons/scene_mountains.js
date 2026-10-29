@@ -11,3 +11,4 @@ const SUNSETS = [['#FFC9A8', '#FFF0DC'], ['#C9D8F7', '#FFE9D6'], ['#BFE3F5', '#F
 function peaks(x0, x1, base, tall, color, r) {
   let out = '', x = x0;
   while (x < x1) {
+    const half = tall * r.range(.7, 1.1), top = base - tall * r.range(.75, 1.05), cx = x + half;
