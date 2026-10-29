@@ -20,3 +20,6 @@ export function clay(G, C, i) {
     `<rect ${tile(33)} fill="${shade(dk, -20)}"/><g filter="url(#${i}v)"><rect ${tile(24)} fill="url(#${i}a)"/></g>`
     + `<rect ${tile(24)} fill="none" stroke="url(#${i}r)" stroke-width="2"/>`
     + `<g filter="url(#${i}d)"><g filter="url(#${i}w)">${use(i + 'G', 60, 54, 80, C.ht ? C.t : '#ffffff')}</g></g>`];
+}
+
+export function glass(G, C, i) {
