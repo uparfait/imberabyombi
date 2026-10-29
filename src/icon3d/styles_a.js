@@ -19,3 +19,6 @@ export function classic(G, C, i) {
     + `<g clip-path="url(#${i}k)"><ellipse cx="100" cy="46" rx="58" ry="34" fill="url(#${i}g)"/></g>`
     + `<circle cx="100" cy="92" r="72" fill="none" stroke="url(#${i}r)" stroke-width="2.5"/>`
     + `<g filter="url(#${i}t)">${ext}${pl(G, 58, 50, 84, `url(#${i}l)`)}</g>`];
+}
+
+export function balloon(G, C, i) {
