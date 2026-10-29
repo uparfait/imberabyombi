@@ -39,3 +39,7 @@ export function Lib_grid({ st, put }) {
             : <>{names.slice(0, shown).map(n => <button key={n} type="button" title={n} aria-label={n} aria-pressed={st.icon_name === n}
                 className={`ico_pick ${st.icon_name === n ? 'on' : ''}`} onClick={() => put({ icon: icon_of(set, n), icon_name: n })}
                 dangerouslySetInnerHTML={{ __html: flat(icon_of(set, n)) }} />)}
+              {shown < names.length ? <i ref={end} className="col-span-full h-4" /> : null}</>}
+    </div>
+  </div>;
+}
