@@ -23,3 +23,4 @@ export function city(w, h, r) {
   for (let fx = 0; fx < w; fx += s * r.range(.08, .14)) out += rect(fx, base - h * r.range(.38, .58), s * r.range(.08, .14), h * .6, s * .01, far, 'opacity=".55"');
   while (x < w) {
     const bw = s * r.range(.15, .26);
+    out += building(x, base, bw, h * r.range(.26, .52), r.pick(BUILDINGS), s, r);
