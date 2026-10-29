@@ -25,3 +25,5 @@ export function glyph(input, font) {
   if (/^<svg[\s>]/i.test(str)) { const g = from_svg(str); if (g) return g; }
   const ch = [...str].slice(0, 3), t = esc_xml(ch.join('') || '?'), fs = ch.length < 2 ? 80 : ch.length < 3 ? 58 : 42;
   return { inner: `<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-family="${font[0]}" font-weight="${font[1]}" font-size="${fs}" fill="currentColor">${t}</text>`,
+    vb: [0, 0, 100, 100], sw: 0 };
+}
