@@ -11,3 +11,5 @@ const memo = (key, fn) => made.get(key) || (made.set(key, fn()), made.get(key));
 
 /* SVG text → a data URI (only the characters an address needs escaped) */
 export const svg_data_uri = svg => 'data:image/svg+xml,' + svg.replace(/"/g, "'").replace(/[\r\n%#()<>?[\\\]^`{|}]/g, encodeURIComponent);
+
+/* kind: 'city', 'park', 'office', 'stage' or 'mountains' to choose the scene (else the seed picks) */
