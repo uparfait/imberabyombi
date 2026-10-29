@@ -22,7 +22,7 @@ export const EXAMPLE_ACT = {
   archive: t => { db.upsert('tasks', { id: t.dataset.id, status: 'Done' }); rerender(); notify('Archived.', 'ok'); }
 };
 ```
-Add the object to `ACT` in `src/actions/act.js`, and `archive: 1` to `REQ` if it should spin its button.
+Add the object to `ACT` in `src/actions/act.js`, and `archive: 1` to `REQ` if it should spin its button. A module whose
 
 ## data-form: a form names its handler
 `<form data-form="contact" noValidate>` → on a valid submit `FORMS.contact(values, form)` runs, inside `request()`
