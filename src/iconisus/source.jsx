@@ -13,3 +13,4 @@ export const Source = ({ st, put }) => <section className="grid gap-3" aria-labe
         <input id="ico_text" value={st.text} maxLength={3} placeholder=" " autoComplete="off" onChange={e => put({ text: e.target.value })} /></div>
     : st.mode === 'svg'
       ? <div className="field"><label htmlFor="ico_svg">SVG code</label>
+          <textarea id="ico_svg" rows={5} placeholder=" " spellCheck={false} value={st.svg} onChange={e => put({ svg: e.target.value })} className="font-mono text-xs" /></div>
