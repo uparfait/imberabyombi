@@ -9,3 +9,5 @@ import { LISTS, count, who } from './sign_store.js';
 
 export const list_href = k => to(k === 'all' ? '/admin/sign' : `/admin/sign/${k}`);
 const num = (n, k, c = 'ml-1.5') => <span className={`chip ${c} ${n && k === 'inbox' ? 'bg-brand text-white' : 'bg-fg/10 text-fg/70'}`}>{n}</span>;
+
+/* cur: the list on show (its name and count on the button), or null on a document page ("Documents"). In the menu each
