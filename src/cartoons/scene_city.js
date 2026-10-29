@@ -8,3 +8,4 @@ import { person, look } from './person.js';
 function building(x, base, bw, bh, color, s, r) {
   const pad = bw * .14, win = Math.max(s * .028, bw * .14), gap = win * .7;
   const cols = Math.max(1, Math.floor((bw - pad * 2 + gap) / (win + gap))), x0 = x + (bw - cols * win - (cols - 1) * gap) / 2;
+  let out = rect(x, base - bh, bw, bh + s * .02, s * .014, color) + rect(x, base - bh, bw, s * .02, s * .01, shade(color, -.12));
