@@ -5,3 +5,4 @@ import { Lib_grid } from './lib_grid.jsx';
 const MODES = [['text', 'Text'], ['lib', 'Library'], ['svg', 'SVG']];
 
 export const Source = ({ st, put }) => <section className="grid gap-3" aria-label="Source">
+  <h3 className="ico_cap">Source</h3>
