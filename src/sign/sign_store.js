@@ -15,3 +15,4 @@ export const STATUS = { draft: ['Draft', 'bg-muted/15 text-muted'], sent: ['Wait
 export const LISTS = [
   ['all', 'All', 'layers', 'Every document you prepared, newest first.'], ['drafts', 'Drafts', 'edit', 'Documents you have not sent yet.'],
   ['waiting', 'Waiting', 'clock', 'Sent and waiting for signatures.'], ['completed', 'Completed', 'check', 'Signed by everyone.'],
+  ['inbox', 'To sign', 'signature', 'Documents sent to you for your signature.']];
