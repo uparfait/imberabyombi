@@ -37,3 +37,6 @@ export function Pad_upload({ kind }) {
         <output htmlFor="pad_cut" className="tabular-nums text-muted">{cut}%</output></div>
       <input id="pad_cut" type="range" min="0" max="100" value={cut} onChange={e => set_cut(+e.target.value)} className="sign_range" />
       <p className="text-xs text-muted">Slide right until only the ink is left. The checkerboard shows what is transparent.</p></div>
+    <label className="btn btn_ghost btn_sm justify-self-start cursor-pointer">{input}Choose another picture</label>
+  </div>;
+}
