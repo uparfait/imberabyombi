@@ -30,3 +30,4 @@ export function Pdf_pages({ doc, layer }) {
     open_pdf(doc.id).then(pdf => live && set({ pdf, err: null }), err => live && set({ pdf: null, err }));
     return () => { live = false; };
   }, [doc.id]);
+  if (st.err) return <div className="card">{empty('This PDF could not be opened', `${st.err.message || 'The file is damaged.'} Documents are kept in the browser they were uploaded in.`)}</div>;
