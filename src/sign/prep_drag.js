@@ -43,3 +43,4 @@ function key(e, root) {
 const over = e => { if (e.dataTransfer?.types.includes('text/sign-field') && e.target.closest('.sign_sheet')) e.preventDefault(); };
 function drop(e) {
   const s = e.target.closest('.sign_sheet'), t = e.dataTransfer?.getData('text/sign-field'); if (!s || !t) return;
+  e.preventDefault(); const b = s.getBoundingClientRect();
