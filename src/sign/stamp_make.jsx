@@ -16,3 +16,4 @@ export function Stamp_make({ name }) {
     <div className="grid gap-3">
       <div className="field"><label htmlFor="st_org">Organisation</label>
         <input id="st_org" value={st.org} maxLength={34} placeholder=" " onChange={e => put('org', e.target.value)} /></div>
+      <div className="field"><label htmlFor="st_mid">Centre text</label>
