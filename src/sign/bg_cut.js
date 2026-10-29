@@ -11,3 +11,6 @@ function edges(d, w, h) {
   for (let x = 0; x < w; x += 2) { add(x * 4); add(((h - 1) * w + x) * 4); }
   for (let y = 0; y < h; y += 2) { add(y * w * 4); add((y * w + w - 1) * 4); }
   return c.map(median);
+}
+
+/* the picture into canvas (scaled down when large), with its background made transparent by amount */
