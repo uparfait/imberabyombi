@@ -11,3 +11,4 @@ const mark_sel = root => root.querySelectorAll('.sf_edit').forEach(e => e.classL
 const field_of = el => P.doc?.fields.find(x => x.id === el?.dataset.fid);
 
 function down(e, root) {
+  const el = e.target.closest('.sf_edit');
