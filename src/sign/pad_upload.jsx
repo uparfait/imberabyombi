@@ -27,7 +27,7 @@ export function Pad_upload({ kind }) {
   const input = <input type="file" accept="image/png,image/jpeg,image/webp" className="sr-only"
     onChange={e => { pick(e.target.files[0], e.target.form); e.target.value = ''; }} />;
 
-  if (!img) return <label className="sign_drop sm">{input}{i3('image', 'h-12 w-12')}
+  if (!img) return <label className="sign_drop sm">{input}{i3('image', 'h-12 w-12', 'teal')}
     <span className="mt-3 block font-medium">Choose a picture of your {kind}</span>
     <span className="mt-1 block text-xs text-muted">PNG, JPG or WebP, up to 5 MB. A photo on white paper works well.</span></label>;
   return <div className="grid gap-3">
