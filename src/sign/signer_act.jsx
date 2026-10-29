@@ -32,3 +32,4 @@ async function finish() {
   if (!r || d.status !== 'sent' || r.status === 'signed') return go(`/admin/sign/sign/${S.id}`);
   if (!await file_set('marks:' + d.id, { ...await marks_get(d.id), ...S.pending })) {
     notify('Free some space in this browser, then try again.', 'bad', 'Your signature could not be saved'); return false; }
+  d.fields.forEach(f => { if (S.pending[f.id]) { f.done = true; f.at = now; } });
