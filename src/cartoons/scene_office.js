@@ -25,3 +25,4 @@ function board(x, y, bw, bh, s, r) {
 
 export function office(w, h, r) {
   const s = Math.min(w, h), wall = r.pick(WALLS), floor = h * .8;
+  let out = rect(0, 0, w, h, 0, wall) + rect(0, floor, w, h - floor, 0, shade(wall, -.1)) + rect(0, floor - s * .012, w, s * .012, 0, shade(wall, -.2));
