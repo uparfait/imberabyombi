@@ -3,3 +3,4 @@
    document's file once per visit; draw_page() paints a page into a canvas at the width it is shown, sharp on dense screens. */
 import { load_script } from '../editor/core/utils.js';
 import { LIB, PDFJS_WORKER } from '../editor/core/constants.js';
+import { file_get } from './sign_idb.js';
