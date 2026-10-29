@@ -33,3 +33,4 @@ export function ribbon(G, C, i) {
   const at = w => `stroke="currentColor" stroke-width="${w.toFixed(3)}" stroke-linejoin="round" stroke-linecap="round"`;
   let ext = '', bands = '';
   for (let j = 7; j >= 1; j--) ext += use(R, X + j * .8, Y + j * 1.1, S, shade(col(K), -32), at(base + 2 * K * bw));
+  for (let k = K - 1; k >= 0; k--) {
