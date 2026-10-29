@@ -24,3 +24,4 @@ export async function read_pdf(bytes) {
 
 const OPEN = new Map();
 /* the open PDF of document id (a promise, shared by every page of the visit) */
+export function open_pdf(id) {
