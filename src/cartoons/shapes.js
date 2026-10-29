@@ -6,3 +6,4 @@ const attrs = more => (more ? ' ' + more : '');
 export const circle = (cx, cy, r, fill, more) => `<circle cx="${n(cx)}" cy="${n(cy)}" r="${n(r)}" fill="${fill}"${attrs(more)}/>`;
 export const ellipse = (cx, cy, rx, ry, fill, more) => `<ellipse cx="${n(cx)}" cy="${n(cy)}" rx="${n(rx)}" ry="${n(ry)}" fill="${fill}"${attrs(more)}/>`;
 export const rect = (x, y, w, h, rx, fill, more) =>
+  `<rect x="${n(x)}" y="${n(y)}" width="${n(w)}" height="${n(h)}"${rx ? ` rx="${n(rx)}"` : ''} fill="${fill}"${attrs(more)}/>`;
