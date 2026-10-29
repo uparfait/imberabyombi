@@ -27,3 +27,4 @@ export function Iconisus_page() {
       <aside className="card grid gap-6 p-5 sm:p-6" aria-label="Icon settings">
         <Source st={st} put={put} />
         <Styles st={st} put={put} input={input} />
+        <Colors st={st} put={put} />
