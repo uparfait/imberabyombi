@@ -7,3 +7,4 @@ offline, and the same seed always draws the same picture. Code: [`src/cartoons/`
 ## Using them
 | Call | Draws | Used by |
 |---|---|---|
+| `cfg.img(seed, w, h)` | a scene in that shape: a street, a park, an office, an event stage or mountains | about, articles, events, `/ui` |
