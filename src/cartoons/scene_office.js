@@ -5,3 +5,5 @@ import { BRAND, BUILDINGS, CLOTHES, TREES, SKIES, INK, shade } from './palette.j
 import { person, look } from './person.js';
 
 const WALLS = ['#F7EDE2', '#EAF2F8', '#F1F5EC', '#F6EEF6', '#FFF6E5'];
+
+function plant(x, y, s) {
