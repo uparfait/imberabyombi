@@ -29,3 +29,4 @@ let swept = false;
 
 /* the right address for a document opened at the wrong one, taken once this draw is over (a draw cannot start the next) */
 const move = path => { setTimeout(() => go(path, { replace: true })); return { body: loading('Opening the document') }; };
+const missing = () => <div className="sign_main max-w-2xl"><div className="card">{empty('Document not found',
