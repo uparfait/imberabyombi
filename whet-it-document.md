@@ -60,6 +60,7 @@ Every feature below is working code. Each line says what it is and where it live
   never touched); export DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT; saved in the browser (IndexedDB, so
   images are kept); rulers on demand with a margin reset.
 
+## O-Doc Sign (`src/sign/`, `/admin/sign`)
 ## Data tables (`src/table/`, `src/schemas/`)
 - Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
   Action Buttons column pinned first, details view (COLUMN NAME / VALUE), add, edit, delete.
