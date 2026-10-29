@@ -42,3 +42,4 @@ export function sign_list(k) {
   const body = k === 'inbox' ? inbox() : rows.length ? <ul className="grid gap-2">{rows.map(d => row(d, doc_href(d)))}</ul>
     : <div className="card">{k === 'all' ? empty('No documents yet', 'Upload a PDF, add the people who sign it and place their fields.', new_btn())
       : empty(`No ${l.toLowerCase()} documents`, help)}</div>;
+  return <div className="sign_main page_enter">
