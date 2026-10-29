@@ -8,3 +8,4 @@ import { own_fields, left_of } from './signer_state.js';
 const next_text = left => left.length
   ? `${left.length} field${left.length > 1 ? 's' : ''} left · next: ${KINDS[left[0].type][0].toLowerCase()}` : 'All your fields are filled';
 const bar = d => { const n = own_fields(d).length, k = n - left_of(d).length;
+  return <div className="sign_prog mt-3" role="progressbar" aria-label="Your fields" aria-valuemin={0} aria-valuemax={n} aria-valuenow={k}>
