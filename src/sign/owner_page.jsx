@@ -11,3 +11,4 @@ import { use_marks } from './use_marks.js';
 import { status_chip } from './sign_list.jsx';
 
 function Doc_view({ d }) {
+  const marks = use_marks(d.id, d.updated);
