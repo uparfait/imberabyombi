@@ -14,3 +14,4 @@ const parse = async bytes => (await pdfjs()).getDocument({ data: new Uint8Array(
 /* a new upload: its pages' sizes in points, as shown ({ w, h }, rotation applied); throws for a file that is not a PDF */
 export async function read_pdf(bytes) {
   const pdf = await parse(bytes), pages = [];
+  try {
