@@ -27,3 +27,4 @@ export function cloud(x, y, s, fill = '#fff', opacity = .92) {
 }
 
 /* a bird in flight, s wide; flap 0…1 lifts the wings */
+export const bird = (x, y, s, color, flap = .5) =>
