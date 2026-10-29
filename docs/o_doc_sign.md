@@ -34,3 +34,4 @@ signing). No document is seeded: every account starts empty.
   centre text, today's date, ink, round or square) or upload a picture.
 - **Remove background** (uploads): the paper colour becomes transparent, with a soft edge so the ink stays smooth. It starts
   at 30% for a picture with paper around it; slide right until only the ink is left (the checkerboard shows what is
+  transparent). Code: `src/sign/bg_cut.js`.
