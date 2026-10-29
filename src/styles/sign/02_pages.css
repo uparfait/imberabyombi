@@ -12,3 +12,4 @@
   background: rgb(var(--ok) / .12); color: rgb(var(--ok)); font-size: .875rem; font-weight: 600; }
 
 .sf { position: absolute; display: flex; align-items: center; justify-content: center; gap: .35em; border-radius: .5rem;
+  font: 600 clamp(9px, 1.7cqw, 15px)/1.2 var(--font_sans); user-select: none; -webkit-user-select: none; }
