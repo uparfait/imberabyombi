@@ -13,3 +13,4 @@ const TABS = { signature: [['draw', 'Draw'], ['type', 'Type'], ['upload', 'Uploa
 
 export function Mark_pad({ kind, name }) {
   const [tab, set_tab] = useState(TABS[kind][0][0]);
+  const pick = k => { PAD.get = async () => null; set_tab(k); };
