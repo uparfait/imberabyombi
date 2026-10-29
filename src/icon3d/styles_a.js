@@ -37,3 +37,4 @@ export function ribbon(G, C, i) {
     const w = base + 2 * (k + 1) * bw; bands += use(R, X, Y, S, shade(col(k + 1), -38), at(w)) + use(R, X, Y, S, col(k + 1), at(w - 2 * gw));
   }
   bands += use(R, X, Y, S, col(0), at(base));
+  const bare = G.inner.replace(/\sstroke-width="[^"]*"/g, '').replace(/stroke-width\s*:[^;"]+;?/g, '');
