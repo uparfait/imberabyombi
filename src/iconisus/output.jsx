@@ -2,3 +2,5 @@
 import { useState } from 'react';
 import { ic } from '../icons/index.js';
 import { copy } from '../overlays/index.js';
+
+function save(svg, name) {
