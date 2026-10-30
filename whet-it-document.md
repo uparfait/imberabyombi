@@ -34,3 +34,5 @@ Every feature below is working code. Each line says what it is and where it live
 - Header with section links and scroll spy, mobile drawer, footer with sitemap; hero with typing effect.
 - Sections: about, mission, vision, strategies, staff, partners, thanks, contact (form + map), FAQ, pricing tiers.
 - Detail pages, staff directory, long-form article pages, sitemap page, email design gallery.
+
+## Account (`src/account/`)
