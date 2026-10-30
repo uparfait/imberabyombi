@@ -34,3 +34,4 @@ export const PREP_ACT = {
     modal({ title: 'Edit signer', help: 'They find the document under To sign with this email, and read the note before they sign.',
       body: rec_body(r), submit: 'Save', on_submit: v => {
         const email = String(v.email).trim().toLowerCase();
+        if (P.doc.recipients.some(x => x !== r && x.email === email)) { notify(`${email} already signs this document.`, 'warn', 'Already a signer'); return false; }
