@@ -6,3 +6,4 @@ public/               favicon.svg, robots.txt, sitemap.xml (copied as they are i
 public/media/         the cartoon sample video and its poster, the social share image, the PNG logo
 src/main.jsx          entry: stylesheet (in order), mounts <App/> in #app, starts the router (boot)
 src/app.jsx           root component: the page for the current route + the shared dialogs
+src/styles/           the stylesheet: base/ (fonts, tokens, scaling, native elements), components/ (@layer components),
