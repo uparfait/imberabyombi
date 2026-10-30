@@ -4,3 +4,4 @@ import { uniq } from '../lib/index.js';
 import { ic, mark3d } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { auth, MODS } from '../auth/index.js';
+import { spinner } from '../feedback/index.js';
