@@ -57,3 +57,4 @@ export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...
     {line('Ends', <>{choose('rp_end', [['never', 'Never'], ['on', 'On a date'], ['after', 'After']], r.end, 'Ends')}
       <div className="field rp_until" data-when="rp_end=on"><label htmlFor={id + '_until'}>End date</label>
         <input id={id + '_until'} name="rp_until" {...dt_attrs('date')} defaultValue={r.until} /><span className="date_hint" aria-hidden="true"></span></div>
+      <div className="rp_count" data-when="rp_end=after">{num(id + '_count', 'rp_count', 'Number of times', r.count, 999)}</div></>, undefined, END_HELP)}
