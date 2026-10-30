@@ -19,3 +19,4 @@ const faces = d => <span className="sign_ev_faces">{d.recipients.slice(0, 5).map
 
 function row(d, a, i) {
   const k = act_of(a), p = k === 'done' ? null : person(d, a), [icon, verb] = ACTS[k] || [];
+  return <li key={i} className="sign_ev" title={`${a.t} · ${when(a.at)}`}>
