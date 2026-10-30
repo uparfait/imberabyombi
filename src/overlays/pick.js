@@ -55,3 +55,4 @@ export const pick = {
     const r = a.getBoundingClientRect(), vw = innerWidth, vh = innerHeight; if (r.bottom < 0 || r.top > vh) return this.close();
     const below = vh - r.bottom - 12, above = r.top - 12;
     p.style.minWidth = p.dataset.kind === 'menu' ? `max(${r.width}px, 12rem)` : '';   /* at least 12rem: grows with the page scale */
+    p.style.maxHeight = Math.max(below, above, 160) + 'px';
