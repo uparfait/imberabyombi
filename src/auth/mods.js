@@ -3,3 +3,4 @@
    whole window without the admin sidebar and header (it brings its own Back button), d = what it is (the sidebar link's
    tooltip). */
 export const MODS = [
+  { k: 'dashboard', l: 'Dashboard', s: 'Home', i: 'chart', g: 'Overview' },
