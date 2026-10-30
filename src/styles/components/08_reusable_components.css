@@ -6,3 +6,4 @@
   /* Public pages fill the screen edge to edge (gutters only); the root scaling rule keeps proportions the same on every device */
   .wrap { @apply mx-auto w-full px-4 sm:px-6 lg:px-10 2xl:px-16; }
   .section { @apply py-20 sm:py-28; }
+  /* 44px touch target (mobile first); .btn_sm is 36px; a button placed beside a field grows to the field height (section 5G) */
