@@ -17,3 +17,4 @@
   .table_full { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; border: 0; border-radius: 0; }
   .table_full > .table_scroll { flex: 1 1 auto; min-height: 0; overflow: auto; }
   .table_full thead th { position: sticky; top: 0; z-index: 2; }
+  .table_full thead th.table_acts { z-index: 3; }
