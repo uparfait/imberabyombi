@@ -20,3 +20,5 @@ import { open_cmd } from './open_cmd.jsx';
 /* a node React draws (it carries React's fiber key) is hidden instead of removed */
 const react_owned = el => Object.keys(el).some(k => k.startsWith('__reactFiber$'));
 const icon_to = (t, n) => t.querySelector('path')?.setAttribute('d', PATHS[n]);
+
+export const SHELL_ACT = {
