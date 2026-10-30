@@ -55,3 +55,4 @@ export function add_rec(d, name, email, note, cert = false) {
   d.recipients.push(r); return r;
 }
 /* colours again from the emails, in order (a draft opened, an email changed) */
+export const recolor = d => d.recipients.reduce((used, r) => { r.color = seed_color(r.email, used); return [...used, r.color]; }, []);
