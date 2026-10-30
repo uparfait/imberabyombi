@@ -4,3 +4,4 @@ import { createRoot } from 'react-dom/client';
 import '../styles/index.css';
 import '../styles/overrides.css';
 import './qr.css';
+import { Qr_app } from './qr_app.jsx';
