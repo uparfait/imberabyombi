@@ -41,5 +41,5 @@ export function account_menu(n = '', rail = false) {
             <p className="flex items-center gap-2 text-sm">{ic('box', 'h-4 w-4 text-muted')}{`${pct}% of 5 MB browser storage used`}</p>
             <progress className="mt-2" max="100" value={pct}></progress></div>
           <p className="mt-3 text-center text-xs text-muted">
-            <a href={to('/sitemap')} className="hover:text-accent">Privacy Policy</a>, <a href={to('/sitemap')} className="hover:text-accent">Terms of Service</a></p></div>, document.body)}</div>;
+            <a href={to('/sitemap')} className="hover:text-accent">Privacy Policy</a>, <a href={to('/sitemap')} className="hover:text-accent">Terms of Service</a></p>
 }
