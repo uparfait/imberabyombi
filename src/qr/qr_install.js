@@ -11,3 +11,5 @@ export const apple = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (nav
 export const can_install = () => !!offer;
 export async function install() {
   if (!offer) return false; offer.prompt(); const { outcome } = await offer.userChoice; offer = null; emit(); return outcome === 'accepted';
+}
+export const on_change = f => { subs.add(f); return () => subs.delete(f); };
