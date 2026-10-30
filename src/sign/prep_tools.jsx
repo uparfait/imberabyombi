@@ -1,5 +1,6 @@
 /* sign/prep_tools.jsx: the prepare page's tools, its right column (Send for signing, or Finish once everyone has signed;
    Save; Sign it myself, self_sign.jsx; "Placing for": whose fields, you as "You"; the field tools, which add a field on
+   click or drop one where they are dragged; what is placed so far; at its foot, Preview once someone has signed). */
 import { ic } from '../icons/index.js';
 import { KINDS, rec_of, send_block } from './sign_store.js';
 import { P } from './prep_state.js';
