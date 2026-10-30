@@ -3,3 +3,5 @@
 import { lazy, Suspense } from 'react';
 import { VIEWS } from './views.js';
 import { loading } from '../feedback/index.js';
+
+const Tz_page = lazy(() => import('../tzconv/index.js').then(m => ({ default: m.Tz_page })));
