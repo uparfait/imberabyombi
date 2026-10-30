@@ -20,6 +20,7 @@ Extras: `def` (default), `min`, `max`, `when` (shown only for some values: `'Don
 `seg` choice changes), `form: false` (kept out of forms; set in code).
 
 ## Forms in sections
+A schema with `form_sec: true` shows its `sec` groups as small headings in its form ("When", "Location"). `open_form(c, id,
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
   <div data-msg-slot="" className="empty:hidden" />
