@@ -32,3 +32,4 @@
 .sf_done { border: 1px solid color-mix(in srgb, rgb(var(--ok)) 45%, transparent); background: color-mix(in srgb, rgb(var(--ok)) 9%, transparent); cursor: pointer; }
 .sf_todo:focus-visible, .sf_done:focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
 .sf_wait { border: 1.5px dashed #CBD5E1; color: #94A3B8; font-weight: 500; }
+.sf_wait .sf_l { overflow: hidden; padding: 0 .4em; white-space: nowrap; text-overflow: ellipsis; }
