@@ -47,3 +47,6 @@ export const owner_page = d => <div className="sign_split">
           : <button type="button" className="btn btn_danger btn_sm" data-act="sign_doc_del" data-id={d.id}>{ic('trash', 'h-4 w-4')}Delete document</button>}</div></section>
     <details className="card p-5" open><summary className="sign_cap cursor-pointer">Activity</summary>
       {activity(d)}</details>
+  </aside>
+  <section className="sign_center" aria-label="Pages"><Doc_view d={d} /></section>
+</div>;
