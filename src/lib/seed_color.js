@@ -16,3 +16,4 @@ function hash(s) {
   return h >>> 0;
 }
 /* a hue in the allowed span */
+const hue_of = n => HUES[0] + n % (HUES[1] - HUES[0]);
