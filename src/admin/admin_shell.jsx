@@ -31,3 +31,4 @@ export function admin_shell(mod, content) {
   <div className="flex min-w-0 flex-1 flex-col">
   <header id="app_header" className="hdr sticky top-0 z-40 flex h-16 items-center gap-1 bg-bg px-2 sm:gap-2 sm:px-4">
     <button className="icon_btn lg:hidden" data-act="side" aria-label="Open menu">{ic('menu')}</button>
+    <button className="brand_toggle" data-act="side" aria-label="Open sidebar" data-tip="Open sidebar">
