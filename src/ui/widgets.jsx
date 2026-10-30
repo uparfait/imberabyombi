@@ -8,3 +8,4 @@ import { help_tip } from './search.jsx';
 /* Generic pieces */
 export const tabs = (key, items, cur) => (
   <div className="mb-5 flex gap-1 overflow-x-auto border-b border-line" role="tablist">
+    {items.map(([v, l, n]) => (
