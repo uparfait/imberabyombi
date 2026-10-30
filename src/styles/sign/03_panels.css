@@ -56,6 +56,7 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_events { display: grid; gap: .875rem; margin-top: .875rem; }
 .sign_ev { position: relative; display: flex; min-width: 0; align-items: center; gap: .625rem; }
 .sign_ev:not(:last-child)::after { content: ''; position: absolute; top: 1.875rem; bottom: -.875rem; left: .875rem; width: 2px; margin-left: -1px; background: rgb(var(--line)); }
+.sign_ev_who { position: relative; display: grid; flex: none; width: 1.75rem; height: 1.75rem; place-items: center; border-radius: var(--pill); color: #fff;
 .sign_done_badge { display: inline-grid; animation: sf_pop .5s cubic-bezier(.3, 1.5, .5, 1) both; }
 .sign_facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .5rem 1rem; margin-top: 1.5rem; padding: 1rem; border-radius: 1rem;
   background: rgb(var(--fg) / .05); font-size: .875rem; text-align: left; }
