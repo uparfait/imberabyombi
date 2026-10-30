@@ -55,3 +55,4 @@ export function Tz_page() {
             <div className="field tzc_num"><label htmlFor="tz_m">Minute</label>
               <select id="tz_m" value={st.m} onChange={e => put({ m: +e.target.value })}>{MINS.map(m => <option key={m} value={m}>{pad(m)}</option>)}</select></div>
             {is12 ? seg('tz_ampm', st.h < 12 ? 'AM' : 'PM', [['AM', 'AM'], ['PM', 'PM']], v => put({ h: st.h % 12 + (v === 'PM' ? 12 : 0) }), 'AM or PM') : null}
+            <button type="button" className="btn btn_ghost btn_sm ml-auto" onClick={now}>{ic('clock', 'h-4 w-4')}Now</button></div></div>
