@@ -3,3 +3,4 @@
    in view. A card on the Events page opens it (ev_tile). */
   .ev_back { display: inline-flex; align-items: center; gap: .375rem; margin-bottom: .75rem; color: rgb(var(--muted)); font-size: .875rem; font-weight: 500; }
   .ev_back:hover { color: rgb(var(--fg)); }
+  .ev_head { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .5rem; margin-bottom: 1.25rem; }
