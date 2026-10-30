@@ -15,3 +15,4 @@ const num = (n, k, c = 'ml-1.5') => <span className={`chip ${c} ${n && k === 'in
 const HUE = { all: 'orange', drafts: 'slate', waiting: 'amber', completed: 'green', archived: 'indigo', inbox: 'violet' };
 
 /* cur: the list on show (its name and count on the button), or null on a document page ("Documents"). In the menu each
+   tile has its count on a line of its own. */
