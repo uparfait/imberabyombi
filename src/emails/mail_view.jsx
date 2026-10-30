@@ -26,3 +26,4 @@ export const mail_view = k => {
           <span className="font-display text-lg font-extrabold tracking-wide"><span className="text-brand">{cfg.logo[0]}</span>{cfg.logo[1]}</span></div>
         <div className="mail_body">{m.t}</div>
         <div className="mail_foot"><p>You receive this email because you have an account at {cfg.name}.</p>
+          <p className="mt-1"><a href={to('/admin/emails')} className="underline">Email settings</a> · <a href={to('/admin/emails')}
