@@ -16,8 +16,7 @@ import { invite_table, INVITE_TABLE_ACT } from './invite_table.jsx';
 const HELP = 'Type or paste email addresses (press Enter after each one, or paste many at once), or upload a spreadsheet or text '
   + 'file (Excel, CSV): every email address in it is found. Check the list, then send the invites: each person gets the invitation email.';
 const n_of = (n, one, many) => n === 1 ? `1 ${one}` : `${n} ${many}`;
-/* the addresses waiting to be sent (one event at a time) and what the last addition found */
-const wait = { id: '', list: [], note: '' };
+/* the addresses waiting to be sent (one event at a time), what the last addition found, the one being changed */
 function add(id, found, bad = [], file = '') {
   const e = db.find('events', id), had = new Set([...(e?.invites || []).map(i => i.e), ...wait.list]), fresh = found.filter(m => !had.has(m)), old = found.length - fresh.length;
   wait.list.push(...fresh);
