@@ -43,9 +43,7 @@ export const PREP_ACT = {
         prep_dirty(); rerender(); } }); },
   /* removing a signer always asks first */
   sign_rec_del: t => { const r = rec_of(P.doc, t.dataset.id), n = P.doc.fields.filter(f => f.rid === r.id).length;
-    if (!n) return remove_rec(r);
-    ask(`Remove ${r.name}? Their ${plural(n, 'field')} on the document go too.`, () => remove_rec(r), 'Remove', true); },
-  sign_save: () => { prep_save(); notify('Your changes are kept. Send it when it is ready.', 'ok', 'Draft saved'); },
+    ask(`Remove ${r.name}? ${n ? `Their ${plural(n, 'field')} on the document go too.` : 'They will not get this document to sign.'}`, () => remove_rec(r), 'Remove', true); },
   sign_send: () => {
     const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
     /* what still stops it from being sent, in a dialog (a passing message was easy to miss) */
