@@ -56,3 +56,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
   border-radius: var(--pill); background: rgb(var(--bg)); font-size: .875rem; font-weight: 500; cursor: grab; transition: border-color .2s, background-color .2s, transform .15s; }
 .sign_tool:hover { border-color: rgb(var(--brand) / .6); background: rgb(var(--brand) / .06); }
 .sign_tool:active { transform: scale(.97); }
+.sign_for { display: flex; min-height: 2.5rem; align-items: center; gap: .5rem; padding: .375rem .875rem; border: 1px solid rgb(var(--line));
