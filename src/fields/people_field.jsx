@@ -11,3 +11,5 @@ function People_editor({ k, v, add }) {
     <div className="field"><label htmlFor={`pp_e_${r.i}`}>Email</label><input id={`pp_e_${r.i}`} name={`${k}_email`} data-pp="email" type="email" defaultValue={r.email} placeholder=" " required /></div>
     <button type="button" className="icon_btn h-8 w-8" onClick={() => set(rows.filter(x => x.i !== r.i))} aria-label="Remove" data-tip="Remove">{ic('x', 'h-4 w-4')}</button></div>)}
     <button type="button" className="btn btn_outline btn_sm justify-self-start" onClick={() => set([...rows, { i: uid() }])}>{ic('plus', 'h-4 w-4')}{add}</button></div>;
+}
+export const people_field = f => <div key={f.k} className="sm:col-span-2"><p className="ag_cap mb-2">{f.l}</p><People_editor k={f.k} v={f.v} add={f.add || 'Add'} /></div>;
