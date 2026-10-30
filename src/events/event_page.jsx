@@ -33,5 +33,5 @@ export function event_page(id) {
   route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
   return <div className="ev_page">{back}
     <div className="ev_head"><h2 className="ev_title">{e.title}</h2>{help_tip(HELP, 'this event')}{badge(st)}</div>
-    <div className={`ev_grid ${can ? '' : 'ev_one'}`}><div className="ev_main">{event_cards(e, can)}</div>{can ? side(e, st) : null}</div></div>;
+    <div className={`ev_grid ${can ? '' : 'ev_one'}`}><div className="ev_main">{event_cards(e, can)}{invites_card(e, st, can)}</div>{can ? side(e, st) : null}</div></div>;
 }
