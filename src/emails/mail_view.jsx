@@ -37,3 +37,4 @@ export function emails_view() {
   const q = route.q, k = MAILS[q.t] ? q.t : (ui.mail && MAILS[ui.mail] ? ui.mail : 'invite');
   return (
     <>{page_title('Email designs', 'How messages from the system look: invites, updates, time changes, password resets, sign-in codes and access tokens. '
+      + 'Codes, links and tokens can be copied.')}
