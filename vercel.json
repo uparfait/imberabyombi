@@ -6,6 +6,7 @@
   "rewrites": [
     {
       "source": "/qr-scan/",
+      "destination": "/qr-scan/index.html"
   "headers": [
     {
       "source": "/assets/(.*)",
