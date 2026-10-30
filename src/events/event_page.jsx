@@ -34,7 +34,7 @@ export function event_page(id) {
   route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
   /* the way back is an arrow at the start of the title row (never a line above the title) */
   return <div className="ev_page">
-    <div className="ev_head"><a href={to('/admin/events')} className="icon_btn ev_back" aria-label="Back to events" data-tip="Back to events">{ic('arrow_back')}</a>
+    <div className="ev_head"><a href={to('/admin/events')} className="icon_btn ev_back" aria-label="Back to events" data-tip="Back to events">{ic('chev_l')}</a>
       <h2 className="ev_title">{e.title}</h2>{help_tip(HELP, 'this event')}</div>
     <div className={`ev_grid ${can ? '' : 'ev_one'}`}><div className="ev_main">{event_cards(e, can)}{invites_card(e, st, can)}</div>{can ? side(e, st) : null}</div></div>;
 }
