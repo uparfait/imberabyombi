@@ -1,1 +1,2 @@
 /* overrides/29_room_layouts.css: layouts that follow the room they really have, not the window (container queries).
+   The sidebar, the side panel and the browser's zoom change how wide a page is without changing the window's width, so
