@@ -17,3 +17,4 @@
 .sign_dot.sm { width: .625rem; height: .625rem; }
 /* a signer's card: one column that never grows past the panel (a long email trims instead of pushing the card wider) */
 .sign_rec { display: grid; grid-template-columns: minmax(0, 1fr); gap: .375rem; padding: .625rem .625rem .375rem; border: 1px solid rgb(var(--line)); border-radius: 1rem;
+  transition: border-color .2s, background-color .2s; }
