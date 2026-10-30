@@ -7,3 +7,4 @@
   .live_body { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; min-height: 0; }
   .live_main { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 1.25rem; min-height: 0; }
   .live_now { display: grid; gap: .5rem; padding: 1.5rem 1.75rem; }
+  .live_now_t { font-family: var(--font_display); font-size: clamp(2rem, 4.2vw, 4rem); font-weight: 500; line-height: 1.05; overflow-wrap: anywhere; }
