@@ -3,3 +3,4 @@
    field hidden for a status (sync_when) lets the next one take its place. The modal form runs it on every draw, pages
    after theirs (run_after_render), sync_when when fields show or hide. */
 const FULL = '.sm\\:col-span-2, .col-span-2';
+export function fill_rows(grid) {
