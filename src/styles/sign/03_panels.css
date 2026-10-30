@@ -84,3 +84,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_done_badge { display: inline-grid; animation: sf_pop .5s cubic-bezier(.3, 1.5, .5, 1) both; }
 .sign_facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .5rem 1rem; margin-top: 1.5rem; padding: 1rem; border-radius: 1rem;
   background: rgb(var(--fg) / .05); font-size: .875rem; text-align: left; }
+.sign_facts dt { color: rgb(var(--muted)); }
