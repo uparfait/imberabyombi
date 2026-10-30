@@ -28,7 +28,4 @@ progress), the agenda, the organiser and co-organisers (each with Edit until it 
 after), the count and the link. **Menu** (tiles): Record/View minutes, Add task (Follow-ups), Attendees, Full screen.
 
 ## Minutes and follow-ups
-- **Record minutes** (View This Event) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
-  titled "Minutes · <title> · <date>" and started with who attended and the agenda. View This Event lists its minutes
-  by date with who wrote them, to open or copy the link; a recurring one gathers one per day.
-- **Add task** opens the task form, linked to the event (`ref`); View This Event lists these follow-ups with who does them.
+- **Record/View minutes** (View This Event) opens the document editor on that day's own document,
