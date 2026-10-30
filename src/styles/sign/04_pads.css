@@ -1,3 +1,4 @@
 /* styles/sign/04_pads.css: the signature dialog: the drawing pad (white paper, a line to sign on, a "Sign here" hint),
    the typed styles, an upload on a checkerboard (what is transparent shows as squares) with its slider, the stamp preview,
    the ink choices, and the agreement before signing. */
+.sign_paper { position: relative; overflow: hidden; border: 2px dashed rgb(var(--muted) / .45); border-radius: 1.25rem; background: #fff; }
