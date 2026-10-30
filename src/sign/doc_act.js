@@ -14,3 +14,4 @@ import { signed_pdf, save_pdf } from './sign_export.js';
 export const DOC_ACT = {
   sign_link: t => copy(base_url(`/admin/sign/sign/${t.dataset.id}`), 'Signing link'),
   sign_dl: async t => {
+    const d = find_doc(t.dataset.id); if (!d) return;
