@@ -28,3 +28,4 @@
   .viz_plot .crosshair { stroke: rgb(var(--muted)); stroke-width: 1; opacity: 0; pointer-events: none; }
   .viz_plot .x_band:hover .crosshair { opacity: .6; }
   .viz_plot .mark { transition: opacity .15s; }
+  .viz_plot svg:has(.mark_group:hover) .mark_group:not(:hover) .mark:not(.mark_flow) { opacity: .4; }
