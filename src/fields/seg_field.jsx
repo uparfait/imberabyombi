@@ -7,3 +7,4 @@ export const seg_field = (f, v) => { const id = 'field_' + f.k, opts = (typeof f
   return <div key={f.k} className="seg_field sm:col-span-2" data-when={f.when || undefined}>
     <p id={id} className="seg_cap">{f.l}{f.help ? help_tip(f.help, f.l.toLowerCase()) : null}</p>
     <div className="seg max-w-full overflow-x-auto" role="radiogroup" aria-labelledby={id}>
+      {opts.map(([ov, ol]) => <label key={ov}><input type="radio" className="sr-only" name={f.k} value={ov} defaultChecked={String(v) === String(ov)}
