@@ -39,3 +39,4 @@ export const gmt = m => `GMT${m < 0 ? '-' : '+'}${pad(Math.floor(Math.abs(m) / 6
 const gmt_short = m => { const a = Math.abs(m); return `GMT${m < 0 ? '-' : '+'}${Math.floor(a / 60)}${a % 60 ? ':' + pad(a % 60) : ''}`; };
 const city = tz => tz === 'UTC' ? 'UTC' : tz.split('/').pop().replace(/_/g, ' ');
 function long_name(tz, t) {
+  const p = F(tz, 'n', { timeZoneName: 'long' }).formatToParts(new Date(t)).find(x => x.type === 'timeZoneName'); return p ? p.value : '';
