@@ -7,3 +7,4 @@ import './qr.css';
 import { Qr_app } from './qr_app.jsx';
 
 createRoot(document.getElementById('qr_root')).render(<Qr_app />);
+const at = `${import.meta.env.BASE_URL}qr-scan/`;
