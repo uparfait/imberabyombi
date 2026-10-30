@@ -5,3 +5,4 @@ import { useState } from 'react';
 import { ic } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { secure } from './qr_engine.js';
+import { can_install, install, apple, standalone } from './qr_install.js';
