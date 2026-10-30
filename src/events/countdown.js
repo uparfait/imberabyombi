@@ -12,3 +12,4 @@ export function left(ms) {
 }
 
 export function count_to(e, st) {
+  if (!e.date || e.tbd) return null;
