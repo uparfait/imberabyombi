@@ -86,3 +86,4 @@ Every feature below is working code. Each line says what it is and where it live
 ## Platform
 - Path routes (`/about`, `/admin/tasks`) on the History API: per-page title, description and canonical link, Back /
   Forward, redirects to sign-in and back, not-found and no-access views; works from the domain root or a folder.
+- Role-based access on every module, button, widget and route; landing page per role.
