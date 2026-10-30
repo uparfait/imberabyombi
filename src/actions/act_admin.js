@@ -10,3 +10,5 @@ import { nav_draw, refresh_panel, ensure_mine } from '../admin/index.js';
 import { redraw_charts } from '../charts/index.js';
 import { to } from '../router/index.js';
 import { apply_tokens } from './theme.js';
+
+const EASE = 'cubic-bezier(.22,.8,.22,1)';
