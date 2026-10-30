@@ -22,3 +22,4 @@ function Text_view({ f }) {
 /* the dialog's content: header (icon, name, help tip, Open in a new tab, Download, Close) + the file */
 function File_view({ f, n }) {
   const k = file_kind(f), u = furl(f), [failed, set_failed] = useState(false), err = () => set_failed(true);
+  useEffect(() => () => { if (VIEW.n === n) VIEW.f = null; }, [n]);   /* the viewer closed (not another file opened) */
