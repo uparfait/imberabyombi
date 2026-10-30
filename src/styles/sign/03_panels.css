@@ -59,3 +59,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_for { display: flex; min-height: 2.5rem; align-items: center; gap: .5rem; padding: .375rem .875rem; border: 1px solid rgb(var(--line));
   border-radius: var(--pill); font-size: .875rem; font-weight: 500; text-align: left; transition: border-color .2s, background-color .2s; }
 .sign_for { border-color: color-mix(in srgb, var(--c) 28%, rgb(var(--line))); background: color-mix(in srgb, var(--c) 6%, transparent); }
+.sign_for.on { padding: calc(.375rem - 1px) calc(.875rem - 1px) calc(.375rem - 4px); border: 2px solid var(--c); border-bottom-width: 5px;
