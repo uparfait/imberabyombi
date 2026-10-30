@@ -7,3 +7,4 @@
 import { ymd, add_d, parse_d } from './dates.js';
 
 export const REPEAT_NEW = { freq: 'weekly', every: 1, days: [], by: 'date', dates: [], weeks: [], wdays: [], months: [], end: 'never', until: '', count: 10 };
+const days_between = (a, b) => Math.round((b - a) / 864e5);
