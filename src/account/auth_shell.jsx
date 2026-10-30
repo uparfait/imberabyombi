@@ -12,6 +12,7 @@ export const auth_shell = (title, text, body) => (
   <main id="main" className="auth_bg flex min-h-[100dvh] flex-col">
     <div className="pattern_layer" aria-hidden="true"></div>
     <div className="auth_top flex justify-end p-2 sm:p-4">{theme_btn()}</div>
+    <section className="auth_card mx-auto flex w-[calc(100%-1.5rem)] max-w-[28rem] flex-1 flex-col rounded-3xl bg-bg px-6 pb-8 pt-8 sm:my-auto sm:w-full sm:flex-none sm:px-10 sm:py-12">
       {logo()}
       <h1 className="mt-8 text-[2rem] leading-tight">{title}</h1><p className="mt-2 text-muted">{text}</p>
       {body}
