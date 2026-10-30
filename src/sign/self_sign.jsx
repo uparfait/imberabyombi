@@ -8,7 +8,7 @@ import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
 import { show_in_dialog } from '../overlays/index.js';
-import { go } from '../router/index.js';
+import { qs } from '../lib/index.js';
 import { find_doc, who, add_rec } from './sign_store.js';
 import { P, prep_dirty, prep_save } from './prep_state.js';
 import { Pdf_pages } from './pdf_pages.jsx';
