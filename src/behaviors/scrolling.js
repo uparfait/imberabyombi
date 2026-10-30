@@ -4,3 +4,4 @@ import { qs, qsa } from '../lib/index.js';
 import { ui } from '../store/index.js';
 import { pick, tip } from '../overlays/index.js';
 import { viz_tip, redraw_charts } from '../charts/index.js';
+import { place_tile } from '../actions/index.js';
