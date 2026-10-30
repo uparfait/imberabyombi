@@ -7,3 +7,4 @@ export const rec_body = r => <>
   <div className="field sm:col-span-2"><label htmlFor="sign_rec_name">Full name</label>
     <input id="sign_rec_name" name="name" required maxLength={60} placeholder=" " autoComplete="off" defaultValue={r.name} /></div>
   <div className="field sm:col-span-2"><label htmlFor="sign_rec_email">Email</label>
+    <input id="sign_rec_email" name="email" type="email" required maxLength={120} placeholder=" " autoComplete="off" defaultValue={r.email} /></div>
