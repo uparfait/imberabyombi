@@ -37,3 +37,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | `data-search="col" data-k="key"`| live column search of a data table                                 |
 | `data-type="date|time|datetime-local|month|week"` (input) | text date/time field with the picker   |
 | `data-list="id"`                | suggestions from `<datalist id>` while typing                      |
+| `data-tip="text"`               | tooltip (icon buttons use their `aria-label`)                      |
