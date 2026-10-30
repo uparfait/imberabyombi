@@ -45,3 +45,4 @@ export function agenda_ok(f, s, e, old = []) {
   for (const [k, x] of its.entries()) { const p = its[k - 1];
     if (x.from && x.to && x.to <= x.from) return bad(x.ti, 'Pick an end after the start.');
     if (s && x.from && x.from < s) return bad(x.fi, `The event starts at ${fmt_time(s)}.`);
+    if (e && x.to && x.to > e) return bad(x.ti, `The event ends at ${fmt_time(e)}.`);
