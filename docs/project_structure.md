@@ -22,3 +22,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `iconisus/`  | Iconisus (`/admin/icons`): the 3D icon maker (styles in `styles/iconisus/`) |
 | `store/`     | `db` (browser storage) and `app_state` (`ui`, `route`, `render`, `rerender`, `AFTER`, `TIMERS`) |
 | `auth/`      | modules list (`MODS`), roles and levels, session (`auth`, `me`), landing pages, invite links |
+| `schemas/`   | one schema per data type: fields, table columns, renderers, seed data                       |
