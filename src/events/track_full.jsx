@@ -34,3 +34,4 @@ export function track_full(e, now, t) {
       <button type="button" className="icon_btn" data-act="qr_close" aria-label="Close" data-tip="Close (Esc)">{ic('x')}</button></header>
     <div className="track_view">{step(-1, 'Back', 'chev_l')}<div className="track_clip"><ol className="track_strip" style={{ transform: `translateX(${-cur * 100}%)` }}>{ag.map((a, i) =>
       <li key={i} className="track_slide" aria-current={i === cur ? 'step' : undefined} aria-hidden={i !== cur}>
+        <p className="att_kind">{st[i]} · {fmt_time(a.from)} – {fmt_time(a.to)}</p><h2 className="track_t line-clamp-3">{a.title}</h2>
