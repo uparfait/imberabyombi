@@ -20,3 +20,4 @@
   input[type=file]::file-selector-button:hover { background: rgb(var(--brand) / .22); }
 
   /* Progress + meter */
+  progress { appearance: none; display: block; width: 100%; height: .55rem; border: 0; border-radius: var(--pill); overflow: hidden; background: rgb(var(--surface_3)); }
