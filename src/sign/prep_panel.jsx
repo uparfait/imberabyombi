@@ -16,6 +16,7 @@ const people = () => db.list('staff').filter(s => s.email && s.name);
 
 /* adds the signer typed in the form; true when added. Save signer uses it, and Save draft too (quiet: its own message) */
 export function add_signer(f, quiet = false) {
+  if (!validate(f)) return false;
   const v = Object.fromEntries(new FormData(f)), name = v.name.trim(), email = v.email.trim().toLowerCase();
   if (P.doc.recipients.some(r => r.email === email)) return notify(`${email} already signs this document.`, 'warn', 'Already a signer');
   const r = add_rec(P.doc, name, email, String(v.note || '').trim(), !!v.cert); P.rid = r.id; P.adding = false;
