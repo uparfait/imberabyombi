@@ -40,3 +40,4 @@ export function week_grid(d, items) {
 }
 
 export function month_grid(d, items) {
+  const f = new Date(d.getFullYear(), d.getMonth(), 1), s = add_d(f, -f.getDay()), td = ymd();
