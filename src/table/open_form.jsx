@@ -17,6 +17,7 @@ const body_of = (s, row, keys) => { const fs = s.f.filter(f => f.form !== false 
   return Object.entries(s.sec).flatMap(([h, ks]) => { const g = fs.filter(f => ks.split(',').includes(f.k));
     return g.length ? [<h3 key={'sec_' + h} className="form_sec sm:col-span-2">{h}</h3>, ...fields_of(g, row)] : []; }); };
 
+/* a saved record as its form shows it: a field it lacks (it was saved before the field existed) starts as what the record
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset). part: [title, keys]
    edits one section of a record only ("Edit location") */
 export function open_form(c, id, preset = {}, part = null) {
