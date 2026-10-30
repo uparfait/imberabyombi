@@ -11,3 +11,4 @@ import { BASE } from './attend_side.jsx';
 export function attendance_page(id, c) {
   const e = db.find(c, id), back = `${BASE[c]}/${id}`;
   if (!e) return empty('Not found', 'It may have been deleted.', null, 'alert', 'warn');
+  route.title = `Attendance · ${e.title}`;
