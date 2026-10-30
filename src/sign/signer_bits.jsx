@@ -2,3 +2,4 @@
    shows only while it is open, signer by signer) and the digital certificate chip (asked for · verified). chips(r) is the
    row of chips and note_text(r) the open note under it; NOTE_ACT opens and closes a note. */
 import { ic } from '../icons/index.js';
+import { rerender } from '../store/index.js';
