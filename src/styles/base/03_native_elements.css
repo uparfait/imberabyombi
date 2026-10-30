@@ -42,3 +42,4 @@
   abbr:where([title]) { text-decoration: underline dotted rgb(var(--brand)); text-underline-offset: 3px; cursor: help; }
   :where(q) { font-style: italic; quotes: "“" "”" "‘" "’"; }
   :where(q)::before { content: open-quote; color: rgb(var(--brand)); }
+  :where(q)::after { content: close-quote; color: rgb(var(--brand)); }
