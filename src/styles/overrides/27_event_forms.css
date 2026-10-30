@@ -16,3 +16,4 @@
   .rp_lab { display: flex; align-items: center; gap: .25rem; color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }
   .rp_body { display: grid; justify-items: start; gap: .625rem; min-width: 0; }
   .rp_chips { display: flex; flex-wrap: wrap; gap: .375rem; }
+  .rp_chip { padding: .375rem .75rem; font-size: .8125rem; }
