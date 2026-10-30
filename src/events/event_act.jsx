@@ -35,6 +35,7 @@ export const EV_ACT = {
         if (d.date && d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'Pick an end time after the start.'); return false; }
         if (d.date && !same && at(d.date, d.start || '23:59', d.tz) <= Date.now()) { show_err(f.elements[d.start ? 'start' : 'date'], 'Pick a time later than now.'); return false; }
         const moved = d.date ? { date: d.date, start: d.start || e.start, end: d.end || '', tz: d.tz, tbd: false, kind: e.kind === 'Live' ? 'Upcoming' : e.kind } : { tbd: true };
+        save(e.id, { ...moved, status: 'Postponed', status_note: d.reason || '' }, again ? 'Changes saved' : 'Event postponed',
       } }); },
   ev_cancel: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     modal({ title: 'Cancel this event?', help: 'It stays in the list as cancelled, and you can put it back on schedule later. Everyone invited is told by email.',
