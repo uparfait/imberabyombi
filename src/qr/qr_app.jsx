@@ -20,6 +20,7 @@ export function Qr_app() {
     if (!navigator.mediaDevices?.getUserMedia) return set({ phase: 'error', msg: 'The camera needs a secure page (https).' });
     set({ phase: 'scan' });
     try { await start(video.current, found); set_cam({ torch: has_torch(), lit: false }); }
+    catch (e) { stop(); set({ phase: 'error', msg: WHY[e.name] || 'The camera could not start.' }); }
   };
   const pick = async e => { const file = e.target.files[0]; e.target.value = ''; if (!file) return; stop();
     try { const t = await read_image(file); t ? found(t) : set({ phase: 'error', msg: 'No QR code in that picture.' }); }
