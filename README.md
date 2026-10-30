@@ -33,3 +33,5 @@ lives in the browser and can be reset from Settings.
 | Feedback         | Inline messages, notifications, one spinner for every request, custom validation    |
 
 The full feature list is in [whet-it-document.md](whet-it-document.md).
+
+## Project map
