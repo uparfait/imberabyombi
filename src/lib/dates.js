@@ -23,3 +23,4 @@ export const fmt_time = t => {
 };
 export const iso_week = d => {
   const x = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); x.setUTCDate(x.getUTCDate() + 4 - (x.getUTCDay() || 7));
+  const y0 = Date.UTC(x.getUTCFullYear(), 0, 1); return `${x.getUTCFullYear()}-W${pad(Math.ceil(((x - y0) / 864e5 + 1) / 7))}`;
