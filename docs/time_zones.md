@@ -27,3 +27,4 @@ Code: [`src/tzconv/`](../src/tzconv/), styles in `src/styles/tzconv/`; it loads 
 ## The helpers (`src/lib/tz.js`)
 | Helper | What it gives |
 |---|---|
+| `page_tz()`, `device_tz()` | the page's zone (Settings), the device's |
