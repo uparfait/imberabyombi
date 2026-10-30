@@ -1,3 +1,4 @@
 /* overrides/14_data_tables.css: rules that come after Tailwind's utilities, so they win at equal specificity */
   /* F. Data tables: per-column search in the header, trimmed cells, clickable rows, Back · n of n · Next pager */
   .trunc { max-width: 18rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .table_data thead th { min-width: 11rem; vertical-align: top; }
