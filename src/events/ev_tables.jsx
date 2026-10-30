@@ -4,3 +4,4 @@
    each and Transfer on the organiser (org_act.jsx). In a narrow box the email and the time move under the name and the
    item, and the buttons show their icons only (ev_wide / ev_narrow). */
 import { fmt_time } from '../lib/index.js';
+import { ic } from '../icons/index.js';
