@@ -16,3 +16,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   box: 'M21 8 12 3 3 8v8l9 5 9-5zM3 8l9 5 9-5M12 13v8',
   archive: 'M21 8v13H3V8M1 3h22v5H1zM10 12h4',
   car: 'M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11M3 11h18v6H3zM6 17v2M18 17v2M7 14h.01M17 14h.01',
+  star: 'M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z',
