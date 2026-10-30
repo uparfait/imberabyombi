@@ -15,3 +15,4 @@ import { left } from './countdown.js';
 const today = e => { const p = tz_parts(e.tz || page_tz(), Date.now()); return [`${p.y}-${pad(p.mo)}-${pad(p.d)}`, `${pad(p.h)}:${pad(p.mi)}`]; };
 export const item_end = (e, a) => at(e.repeat ? today(e)[0] : e.date, a.to, e.tz);
 export const hue = s => [...String(s || '')].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7) % 360;
+let pick = null;   /* { id, i, now, at }: the item picked with Back / Next */
