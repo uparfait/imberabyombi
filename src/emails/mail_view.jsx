@@ -23,3 +23,4 @@ export const mail_view = k => {
           <time className="shrink-0 text-xs text-muted">{fmt_stamp(Date.now(), { hour: 'numeric', minute: '2-digit' })}</time></div></header>
       <div className="mail_canvas"><div className="mail_paper">
         <div className="mail_top">
+          <span className="font-display text-lg font-extrabold tracking-wide"><span className="text-brand">{cfg.logo[0]}</span>{cfg.logo[1]}</span></div>
