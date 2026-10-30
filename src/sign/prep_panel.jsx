@@ -27,7 +27,7 @@ const gate = f => { if (!f) return; const email = f.elements.email.value.trim().
   f.querySelector('button.btn_primary').disabled = !f.checkValidity() || P.doc.recipients.some(r => r.email === email); };
 const open_form = v => { P.adding = v; rerender(); if (v) requestAnimationFrame(() => document.getElementById('sign_r_name')?.focus()); };
 /* a name picked from the suggestions brings its email */
-const fill = e => { const p = people().find(s => s.name === e.target.value); if (p && !e.target.form.elements.email.value) e.target.form.elements.email.value = p.email; };
+const fill = e => { const p = people().find(s => s.name === e.target.value); if (p && !e.target.form.elements.email.value) e.target.form.elements.email.value = p.email; gate(e.target.form); };
 
 const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, on = P.rid === r.id;
   return <li key={r.id} className={`sign_rec ${on ? 'on' : ''}`} style={{ '--c': r.color }}>
