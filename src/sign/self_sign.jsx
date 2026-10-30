@@ -8,3 +8,4 @@ import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
 import { show_in_dialog } from '../overlays/index.js';
+import { go } from '../router/index.js';
