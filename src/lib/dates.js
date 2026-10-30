@@ -10,3 +10,4 @@ export const hm = (d = page_now()) => `${pad(d.getHours())}:${pad(d.getMinutes()
 export const now_dt = (d = page_now()) => `${ymd(d)}T${hm(d)}`;
 export const add_d = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
 export const parse_d = s => { const [y, m, d] = String(s).slice(0, 10).split('-').map(Number); return new Date(y, (m || 1) - 1, d || 1); };
+export const fmt_d = s => s ? parse_d(s).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : '—';
