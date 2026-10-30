@@ -49,3 +49,4 @@ function data_card() {
     <p className="mt-5 flex justify-between text-sm"><span>{`${(used / 1024).toFixed(1)} KB used`}</span><span className="text-muted">{`${pct}% of 5 MB`}</span>
       </p><progress className="mt-2" max="100" value={pct}></progress>
     <div className="mt-6 flex flex-wrap gap-2"><button className="btn btn_outline btn_sm" data-act="data_export">{ic('download', 'h-4 w-4')}Export backup</button>
+      <label className="btn btn_outline btn_sm cursor-pointer">
