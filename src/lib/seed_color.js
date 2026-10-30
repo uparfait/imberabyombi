@@ -46,3 +46,5 @@ export function seed_color(text, avoid = []) {
   const s = String(text || '').trim().toLowerCase(), hs = avoid.filter(Boolean).map(seed_hue);
   let h = hue_of(hash(s));
   for (let k = 1; k < 24 && !apart(h, hs); k++) h = hue_of(hash(`${s}#${k}`));
+  return oklch_hex(L, C, h);
+}
