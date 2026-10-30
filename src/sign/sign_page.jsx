@@ -19,3 +19,4 @@ import { sign_list } from './sign_list.jsx';
 import { Sign_new } from './sign_new.jsx';
 import { P, prep_start } from './prep_state.js';
 import { prep_page } from './prep_page.jsx';
+import { owner_page } from './owner_page.jsx';
