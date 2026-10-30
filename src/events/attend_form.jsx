@@ -35,3 +35,4 @@ export function Attend_form({ c, id, demo }) {
     <div className="seg_field"><p className="seg_cap">Signature</p><div className="seg" role="radiogroup" aria-label="Signature">{MODES.map(([v, l]) => <label key={v}>
       <input type="radio" className="sr-only" name="sig_mode" checked={mode === v} onChange={() => { set_mode(v); set_err(''); }} /><span>{l}</span></label>)}</div></div>
     {mode === 'Drawn' ? <Pad_draw /> : <p className="att_digital">{ic('shield', 'h-5 w-5 shrink-0')}Signed with your name, email and the time.</p>}
+    {err ? <p className="field_err" role="alert">{err}</p> : null}
