@@ -9,3 +9,4 @@ export * from './invite_emails.js';
 export * from './event_invites.jsx';
 export * from './event_page.jsx';
 export * from './event_act.jsx';
+export * from './qr.jsx';
