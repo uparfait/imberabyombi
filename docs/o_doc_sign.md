@@ -64,3 +64,4 @@ every account starts empty.
 - Each signer's line: "Signed" in green, "Waiting" (or "Opened, not signed yet") in orange; their Note and certificate chips.
 - **Activity**, newest first: the person's initials in their colour with the action's icon on them, their first name, one
   verb (uploaded, sent, opened, verified, signed, archived) and how long ago; the full sentence and date on hover. Sending
+  shows who it went to as faces. Entries keep their sentence too (`log(d, text, act, by)`), which the certificate prints.
