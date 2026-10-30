@@ -34,3 +34,4 @@
 .sf_wait { border: 1.5px dashed #CBD5E1; color: #94A3B8; font-weight: 500; }
 .sf_wait .sf_l { overflow: hidden; padding: 0 .4em; white-space: nowrap; text-overflow: ellipsis; }
 .sf.sf_new { animation: sf_pop .45s cubic-bezier(.3, 1.5, .5, 1) both; }
+.sf.flash { animation: sf_flash 1s ease; }
