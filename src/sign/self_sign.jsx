@@ -32,3 +32,4 @@ export const preview_foot = d => d.recipients.some(r => r.status === 'signed')
 
 function Preview({ id }) {
   const d = find_doc(id), marks = use_marks(id, d?.updated);
+  if (!d) return null;
