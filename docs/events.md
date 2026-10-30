@@ -23,6 +23,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
   Presenter or Invited ([`events/my_role.js`](../src/events/my_role.js)).
 - **Time conflicts**: saving one that overlaps another at the same venue, or with the same organiser, says so; saving
   again keeps it. Times are compared as instants, each in its own time zone; a recurring one on each of its days for six
+  months ([`events/conflicts.js`](../src/events/conflicts.js)).
 
 ## Location, organiser, audience
 - **Location**: *Physical* (venue or address) or *Virtual* (meeting link and joining notes, such as a passcode). All
