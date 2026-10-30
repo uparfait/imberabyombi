@@ -50,3 +50,4 @@ export const PREP_ACT = {
     if (!d.fields.length) return stop('No fields yet', 'Place at least one signature or stamp field on the document, then send it.', 'Place a field');
     if (alone) { P.rid = alone.id; rerender();
       return stop(`${alone.name} has no field yet`, 'Every signer needs a signature or stamp field. Place one for them (they are picked under Placing for), or remove them, then send it.',
+        `Place ${alone.name.split(' ')[0]}’s field`); }
