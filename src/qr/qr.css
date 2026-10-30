@@ -4,3 +4,4 @@
 body { background: rgb(var(--bg)); }
 .qr_app { display: flex; min-height: 100dvh; flex-direction: column; }
 .qr_top { display: flex; align-items: center; gap: .625rem; padding: max(.75rem, env(safe-area-inset-top)) 1rem .75rem; }
+.qr_brand { display: grid; width: 2.25rem; height: 2.25rem; place-items: center; border-radius: .75rem; background: rgb(var(--brand)); color: #fff; }
