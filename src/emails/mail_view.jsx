@@ -19,3 +19,4 @@ export const mail_view = k => {
         <div className="mt-3 flex items-center gap-3">{mark3d('#', 'h-10 w-10')}<div className="min-w-0 flex-1 text-sm">
           <p className="truncate"><b className="font-medium">{cfg.name}</b> <span
             className="text-muted">&lt;no-reply@imberabyombi.com&gt;</span></p>
+          <p className="truncate text-muted">to you@lorem.io</p></div>
