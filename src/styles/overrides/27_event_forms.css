@@ -3,3 +3,4 @@
   .form_sec { margin-top: .25rem; font-size: .9375rem; font-weight: 600; color: rgb(var(--fg)); }
   .form_sec:not(:first-of-type) { margin-top: .75rem; }
   .seg_field { display: grid; justify-items: start; gap: .5rem; min-width: 0; }
+  .seg_cap { display: flex; align-items: center; gap: .25rem; color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }
