@@ -24,3 +24,5 @@ export const fmt_time = t => {
 export const iso_week = d => {
   const x = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); x.setUTCDate(x.getUTCDate() + 4 - (x.getUTCDay() || 7));
   const y0 = Date.UTC(x.getUTCFullYear(), 0, 1); return `${x.getUTCFullYear()}-W${pad(Math.ceil(((x - y0) / 864e5 + 1) / 7))}`;
+};
+export const week_date = w => { const [y, n] = String(w).split('-W').map(Number), j = new Date(y, 0, 4); return add_d(j, (n - 1) * 7 - ((j.getDay() + 6) % 7)); };
