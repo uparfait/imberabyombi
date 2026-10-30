@@ -43,6 +43,7 @@ const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz()
 
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <span key={f.k} className={`pick when_block when_${f.t}`}><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
+    onInput={e => { say(e.target.parentNode, in_words(f.t, e.target.value)); if (f.t === 'date') tz_say(e.target.closest('.when_row')); }} />
 
 /* fs: the row's fields in order; a dash goes between two times (start – end) */
 export const when_row = (fs, row) => <div key={'when_' + fs[0].k} className="when_row sm:col-span-2" role="group" aria-label="When">
