@@ -20,6 +20,7 @@ import { att_count, att_url, BASE } from './attend_side.jsx';
 import { att_phase } from './att_window.js';
 import { Qr } from './qr.jsx';
 import { qr_full } from './qr_full.jsx';
+import { minutes_card, follow_card } from './event_minutes.jsx';
 
 const mins = t => { const [h, m] = String(t || '0:0').split(':').map(Number); return h * 60 + m; };
 const span = a => `${fmt_time(a.from)} – ${fmt_time(a.to)}`;
