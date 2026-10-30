@@ -23,3 +23,4 @@ function first_page(e, day) {
 }
 
 export const MINUTES_ACT = {
+  ev_minutes: async t => { const c = t.dataset.c, e = db.find(c, t.dataset.id); if (!e) return; const day = today_in(e);
