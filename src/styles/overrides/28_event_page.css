@@ -35,3 +35,4 @@
   .ev_chip_x:hover { background: rgb(var(--fg) / .1); color: rgb(var(--fg)); }
   .ev_inv_count { margin-bottom: .5rem; color: rgb(var(--muted)); font-size: .8125rem; }
   /* the people invited (events/invite_table.jsx): a table that scrolls down inside itself, its header staying on top */
+  .ev_inv_scroll { max-height: 22rem; overflow-y: auto; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * .75); }
