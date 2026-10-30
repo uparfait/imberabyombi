@@ -66,3 +66,4 @@ export function Sign_page() {
   use_desktop();
   const [, , , a = '', id] = route.path.split('/'), p = page_for(a, id);
   useEffect(() => { set_meta(p.title ? `${p.title} · O-Doc Sign` : 'O-Doc Sign'); });
+  /* once a visit: drop the stored files of documents that are gone */
