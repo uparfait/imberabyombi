@@ -25,3 +25,4 @@ export const mail_view = k => {
         <div className="mail_top">
           <span className="font-display text-lg font-extrabold tracking-wide"><span className="text-brand">{cfg.logo[0]}</span>{cfg.logo[1]}</span></div>
         <div className="mail_body">{m.t}</div>
+        <div className="mail_foot"><p>You receive this email because you have an account at {cfg.name}.</p>
