@@ -30,3 +30,4 @@
   /* Right-hand link groups sit together in one translucent container */
   .link_group { @apply items-center gap-0.5 rounded-full bg-fg/5 p-1; }
   .side_link { @apply flex items-center gap-3 rounded-full px-4 py-2.5 text-sm font-medium text-fg/80 transition hover:bg-fg/5; }
+  .side_link.active { @apply bg-brand/15 font-semibold text-accent; }
