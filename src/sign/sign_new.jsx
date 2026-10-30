@@ -24,3 +24,6 @@ async function take(file) {
   const d = new_doc(file.name, file.size, pages);
   if (!await file_set('pdf:' + d.id, bytes)) { drop_doc(d.id); return bad('Free some space in this browser, then try again.', 'The PDF could not be kept'); }
   go(`/admin/sign/edit/${d.id}`); return true;
+}
+
+export function Sign_new() {
