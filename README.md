@@ -6,3 +6,4 @@ charts and KPIs, all sharing one set of design tokens. Start any new website fro
 
 - **Looks the same on every device**: phones show the 360px design scaled to the screen, large screens show the
   desktop design scaled up, and nothing ever scrolls sideways.
+- **Light, dark or system theme**, switched instantly, with no flash on load.
