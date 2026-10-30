@@ -18,3 +18,4 @@ function Agenda_editor({ v }) {
   return <div className="ag_edit" data-agenda="">{items.map((x, i) => <div key={x.k} className="ag_item" data-ag-item="">
     <div className="ag_item_head"><b>{`Item ${i + 1}`}</b>
       <button type="button" className="icon_btn h-8 w-8" onClick={() => set(items.filter(y => y.k !== x.k))} aria-label={`Remove item ${i + 1}`} data-tip="Remove">{ic('x', 'h-4 w-4')}</button></div>
+    <div className="ag_grid">{box(x.k, 'from', 'From', dt_show('time', x.from || ''), { ...t, required: true })}{box(x.k, 'to', 'To', dt_show('time', x.to || ''), { ...t, required: true })}
