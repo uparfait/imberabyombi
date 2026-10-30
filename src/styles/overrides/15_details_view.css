@@ -3,7 +3,7 @@
   .kv_wrap { overflow: auto; overscroll-behavior: contain; max-height: min(30rem, calc(90dvh - 14rem)); }
   .kv thead th { position: sticky; top: 0; z-index: 1; }
   .kv thead th { padding-block: .6rem; }
-  .kv tbody th { width: 38%; font-size: .8rem; font-weight: 500; color: rgb(var(--muted)); background: rgb(var(--surface_2) / .5); white-space: normal; vertical-align: top; }
+  .kv tbody th { width: 38%; font-size: .8rem; font-weight: 500; color: rgb(var(--muted)); background: rgb(var(--fg) / .05); white-space: normal; vertical-align: top; }
   .kv tbody td { white-space: normal; overflow-wrap: anywhere; }
   .kv .kv_group th { width: auto; padding-block: .5rem; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); background: rgb(var(--brand) / .07); }
   .kv tbody tr:last-child > * { border-bottom: 0; }
