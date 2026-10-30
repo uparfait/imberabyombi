@@ -3,3 +3,4 @@
 import { qsa } from '../lib/index.js';
 import { cfg } from '../config/index.js';
 import { ui, rerender } from '../store/index.js';
+import { schemas } from '../schemas/index.js';
