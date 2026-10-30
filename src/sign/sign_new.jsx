@@ -8,3 +8,5 @@ import { go } from '../router/index.js';
 import { new_doc, drop_doc } from './sign_store.js';
 import { file_set } from './sign_idb.js';
 import { read_pdf } from './pdf_lib.js';
+
+const MAX = 20 * 1048576;
