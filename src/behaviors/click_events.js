@@ -12,3 +12,4 @@ import { set_nav_busy } from './nav_busy.js';
 
 function on_click(e) {
   tip.hide();
+  const fin = e.target.closest?.('input[type=file]'); if (fin && fin.dataset.import == null) file_box(fin)?.classList.add('picking');
