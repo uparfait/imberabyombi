@@ -30,6 +30,7 @@ export const PREP_ACT = {
   sign_rid: t => { P.rid = t.dataset.id; rerender(); },
   sign_tool: t => add_field(t.dataset.type),
   sign_field_del: t => del_field(t.dataset.id),
+  /* Force digital signature, on or off, from the signer's card */
   /* a signer's name, email and note; a new email brings its own colour */
   sign_rec_edit: t => { const r = rec_of(P.doc, t.dataset.id);
     modal({ title: 'Edit signer', help: 'They find the document under To sign with this email, and read the note before they sign.',
