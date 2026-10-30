@@ -26,3 +26,4 @@ VIEWS.dashboard = () => {
     <section aria-label="Welcome" className="flex flex-wrap items-end gap-4">
       <div className="hero_in min-w-0 flex-1"><p className="text-sm text-muted">
         {page_now().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
+        <h2 className="mt-1 text-3xl text-fg sm:text-5xl">{`Welcome, ${first}`}</h2><p className="mt-2 max-w-xl text-muted">{lorem.s()}</p></div>
