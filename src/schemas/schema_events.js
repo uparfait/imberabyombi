@@ -45,7 +45,7 @@ export const events_schema = {
   form_sec: true, sec: { Details: 'title,about', ...SEC, Audience: 'audience,capacity,registered' },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('about', 'Description', 'textarea'),
-    field_spec('status', 'Status', 'select', STATUS.ev, 1, { def: () => 'Planned' }), kind_spec(), ...when_f(0), repeat_spec(), ...where_f(), ...org_f(),
+    field_spec('status', 'Status', 'select', STATUS.ev, 1, { def: () => 'Scheduled', form: false }), kind_spec(), ...when_f(0), repeat_spec(), ...where_f(), ...org_f(),
     audience_spec(), field_spec('capacity', 'Capacity', 'number', 0, 1, { min: 1, def: () => 100 }),
     field_spec('registered', 'Registered', 'number', 0, 0, { min: 0, def: () => 0 })
   ],
