@@ -50,3 +50,4 @@ export function month_grid(d, items) {
       <span className={`mx-auto mb-1 grid h-7 w-7 place-items-center rounded-full text-xs ${k === td ? 'bg-brand text-white' : 'text-muted'}`}>{x.getDate()}</span>
       {its.slice(0, 3).map(item)}{more(its.length - 3, 'px-1.5')}</div>; };
   return <>
+    <div className="grid grid-cols-7 border-b border-line text-center text-[0.6875rem] font-semibold tracking-widest text-muted">
