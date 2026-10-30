@@ -4,6 +4,7 @@
    window: the sidebar, the side panel or any zoom never squeeze a value into a narrow column. A card on the Events page
    opens it (ev_tile). */
   .ev_page { container: ev_page / inline-size; }
+  .ev_card { container: ev_card / inline-size; }
   .ev_back { flex: none; margin-left: -.5rem; }   /* the arrow back, first in the title row */
   .ev_head { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .5rem; margin-bottom: 1.25rem; }
   .ev_title { min-width: 0; font-family: var(--font_display); font-size: 1.625rem; font-weight: 500; letter-spacing: -.01em; overflow-wrap: anywhere; }
