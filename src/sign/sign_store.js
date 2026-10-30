@@ -21,3 +21,4 @@ export const KINDS = { signature: ['Signature', 'signature', 180, 56], stamp: ['
 
 export const who = () => ({ email: String(auth.user?.email || '').toLowerCase(), name: auth.user?.name || '' });
 export const all_docs = () => db.list(C);
+export const find_doc = id => id ? db.find(C, id) : null;
