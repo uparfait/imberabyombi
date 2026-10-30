@@ -12,3 +12,7 @@ function define_callout() {
   if (customElements.get('ds-callout')) return;
   customElements.define('ds-callout', class extends HTMLElement {
     constructor() { super(); this.attachShadow({ mode: 'open' }).append(document.getElementById('tpl_callout').content.cloneNode(true)); }
+  });
+}
+
+/* tasks saved before their dates had a time: start at 09:00, due and completed at 17:00 */
