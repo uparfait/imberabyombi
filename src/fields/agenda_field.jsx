@@ -14,3 +14,4 @@ const box = (k, n, l, v, x = {}) => { const { cls = '', ...a } = x;
     {a['data-type'] ? <span className="date_hint" aria-hidden="true"></span> : null}</div>; };
 
 function Agenda_editor({ v }) {
+  const [items, set] = useState(() => (v || []).map(x => ({ ...x, k: uid() }))), t = dt_attrs('time');
