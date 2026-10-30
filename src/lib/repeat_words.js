@@ -33,3 +33,5 @@ export function repeat_text(r, first) {
     s = every('year') + (ms ? ` in ${and_list(sorted(ms).map(x => MONTH_NAMES[x - 1]))}` : '') + month_day(r, f); }
   if (r.end === 'on' && r.until) s += `, until ${parse_d(r.until).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
   if (r.end === 'after') { const c = Math.max(1, +r.count || 1); s += c === 1 ? ', once' : `, ${c} times`; }
+  return s;
+}
