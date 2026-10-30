@@ -32,3 +32,4 @@ export const device_px = css => css * Math.min(3, Math.max(1, Math.round((global
 
 export function render(input, o = {}) {
   const style = MAKERS[o.style] ? o.style : 'classic', C = palette(o.colors), s = o.size ?? 128, view = o.view || [0, -4, 200, 200];
+  const G = glyph(input, FONTS[style] || DISPLAY), i = 'i3d' + (++n).toString(36) + Math.random().toString(36).slice(2, 5);
