@@ -36,3 +36,4 @@
   /* the side panel floats: rounded and bordered all round, clear of the screen's bottom edge (its height leaves .75rem) */
   .panel { width: 0; border: 0 solid rgb(var(--line)); border-radius: 1.5rem; transition: width .3s var(--ease); }
   .panel[data-open=true] { width: 22rem; border-width: 1px; }
+  /* below 768 px (no rail; its buttons are in the account menu) the panel opens over the page as a card */
