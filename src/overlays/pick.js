@@ -30,3 +30,4 @@ export const pick = {
     this.draw(); if (this.el.hidden) return;
     const q = this.el.querySelector('[data-pk-q]');
     if (q && (kb || FINE())) q.focus({ preventScroll: true });
+    else if (kb && !q && a.dataset.list == null) (this.el.querySelector('[aria-selected=true]') || this.el.querySelector('.today, .pk_item'))?.focus({ preventScroll: true });
