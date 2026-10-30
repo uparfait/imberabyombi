@@ -2,3 +2,4 @@
    action's icon on them, their first name and one verb (uploaded, sent, opened, verified, signed, archived), and how long ago; the full
    sentence and date show on hover. Sending shows who it went to as faces, not a list of emails. */
 import { ic } from '../icons/index.js';
+import { initials } from '../ui/index.js';
