@@ -17,3 +17,4 @@ export function attend_side(e, c, st) {
   const links = [['Attendance page', 'external', url, true], ['Live screen', 'play', to(page + '/live')], ['Attendees', 'users', to(page + '/attendance')]];
   return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
     {open ? <button type="button" className="ev_qr_btn" data-act="ev_qr" data-c={c} data-id={e.id} aria-label="Show the QR code full size" data-tip="Full size">
+      <Qr text={url} label="Attendance QR code" /></button> : null}
