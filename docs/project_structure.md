@@ -37,3 +37,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `charts/`    | charts and KPIs (SVG), their data dialog and tooltip; the small canvas chart registry       |
 | `emails/`    | email designs and the email gallery                                                         |
 | `editor/`    | the document editor (`/admin/docs`): page frame, pagination, formatting, images, menus, import and export |
+| `sign/`      | O-Doc Sign (`/admin/sign`): PDFs sent for signature, signers, fields, signing, the signed PDF (styles in `styles/sign/`) |
