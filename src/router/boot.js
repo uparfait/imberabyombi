@@ -29,3 +29,4 @@ export function boot() {
   install_history();   /* Back / Forward */
   apply_tokens();
   migrate_task_dates();
+  raise_top();   /* #toasts and #loader join the top layer */
