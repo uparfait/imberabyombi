@@ -31,3 +31,4 @@ export function found_card(text) {
     <p className="qr_kind">{ic(link ? 'shield' : web ? 'alert' : 'note', 'h-4 w-4')}{link ? 'Secure link' : web ? 'Not a secure link' : 'Text'}</p>
     {link ? <><p className="qr_host truncate">{new URL(link).host}</p><p className="qr_text truncate" title={link}>{link}</p></>
       : <p className="qr_text qr_plain">{text}</p>}
+    {web ? <p className="qr_note">Only links that start with https open from here.</p> : null}
