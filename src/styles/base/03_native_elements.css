@@ -11,3 +11,4 @@
   ::selection { background: rgb(var(--brand)); color: #fff; }
   /* Text can be selected only where people copy: fields, table cells, details, code, copy boxes, notes, contact details */
   body, dialog { -webkit-user-select: none; user-select: none; }   /* dialogs too: the browser makes open dialogs selectable */
+  html.allow_select body, html.allow_select dialog { -webkit-user-select: text; user-select: text; }   /* switched on in the account menu */
