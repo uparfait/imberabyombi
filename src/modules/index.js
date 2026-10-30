@@ -25,3 +25,4 @@ export * from './people_views.jsx';
 export * from './place_views.jsx';
 export * from './roles.jsx';
 export * from './settings.jsx';
+import './docs.jsx';   /* registers VIEWS.docs (the document editor, loaded on demand) */
