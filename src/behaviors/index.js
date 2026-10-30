@@ -9,3 +9,4 @@ export * from './change_events.js';
 export * from './settings_changes.js';
 export * from './key_events.js';
 export * from './pointer_events.js';
+export * from './page_events.js';
