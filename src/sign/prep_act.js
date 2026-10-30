@@ -51,3 +51,4 @@ export const PREP_ACT = {
     if (alone) { P.rid = alone.id; rerender();
       return stop(`${alone.name} has no field yet`, 'Every signer needs a signature or stamp field. Place one for them (they are picked under Placing for), or remove them, then send it.',
         `Place ${alone.name.split(' ')[0]}’s field`); }
+    if (!d.title.trim()) d.title = d.file.replace(/\.pdf$/i, '');
