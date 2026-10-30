@@ -24,3 +24,4 @@
   @media (min-width: 1024px) { .ev_grid:not(.ev_one) { grid-template-columns: minmax(0, 1fr) 17rem; } .ev_side { position: sticky; top: 5rem; } }
   /* Invitations (events/event_invites.jsx): the addresses box and Upload, what was found, the waiting chips and Send, then
      the people invited; long lists scroll inside themselves */
+  .ev_inv_add { display: grid; gap: .75rem; margin-bottom: 1.25rem; }
