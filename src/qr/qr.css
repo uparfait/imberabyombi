@@ -26,6 +26,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 @media (prefers-reduced-motion: reduce) { .qr_line { animation: none; top: 50%; } }
 .qr_live_foot { position: relative; z-index: 1; display: grid; justify-items: center; gap: 1rem; }
 .qr_live_hint { padding: .375rem .875rem; border-radius: var(--pill); background: rgb(0 0 0 / .45); font-size: .875rem; }
+.qr_live_bar { display: flex; gap: 2rem; min-height: 1px; }
 
 .qr_found { display: grid; gap: .375rem; padding: 1.25rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
 .qr_found.is_link { border-color: rgb(var(--ok) / .35); background: rgb(var(--ok) / .06); }
