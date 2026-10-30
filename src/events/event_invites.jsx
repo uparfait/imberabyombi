@@ -56,3 +56,4 @@ export function invites_card(e, st, can) {
         <input id="ev_inv_in" type="text" inputMode="email" autoComplete="off" placeholder=" " onKeyDown={keys}
           onPaste={ev => { const t = ev.currentTarget; setTimeout(() => take(e.id, t)); }} onBlur={ev => take(e.id, ev.currentTarget)} /></div>
         <label className="btn btn_outline ev_upload">{ic('upload', 'h-4 w-4')}Upload a file
+          <input type="file" accept={INVITE_FILES} className="sr-only" onChange={ev => upload(e.id, ev.currentTarget)} /></label></div>
