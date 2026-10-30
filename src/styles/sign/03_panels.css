@@ -41,3 +41,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_note_open { margin-top: .375rem; }
 /* "Force digital signature": the checkbox and its help icon */
 .sign_check_row { display: flex; align-items: center; gap: .125rem; }
+.sign_check { display: flex; align-items: center; gap: .5rem; font-size: .875rem; cursor: pointer; }
