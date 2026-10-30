@@ -4,3 +4,5 @@
 import { pad, tz_parts, repeat_next, page_tz, ymd, add_d, parse_d } from '../lib/index.js';
 import { rerender } from '../store/index.js';
 import { at } from '../schemas/index.js';
+
+const UNITS = [['y', 31536000], ['mo', 2592000], ['d', 86400], ['h', 3600], ['m', 60], ['s', 1]];
