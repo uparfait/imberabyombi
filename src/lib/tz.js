@@ -19,3 +19,4 @@ export const zones = () => ZONES ||= (() => {
 const FMT = new Map();
 const F = (tz, key, opts) => { const k = tz + '|' + key; let f = FMT.get(k);
   if (!f) { f = new Intl.DateTimeFormat('en-US', { timeZone: tz, ...opts }); FMT.set(k, f); } return f; };
+const PARTS = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hourCycle: 'h23' };
