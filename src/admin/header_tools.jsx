@@ -5,3 +5,4 @@ import { db } from '../store/index.js';
 import { cfg } from '../config/index.js';
 import { auth } from '../auth/index.js';
 import { avatar, theme_btn } from '../ui/index.js';
+import { key_hint } from '../feedback/index.js';
