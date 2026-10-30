@@ -7,3 +7,4 @@ import { seed_color } from '../lib/index.js';
 import { when, ago } from './sign_store.js';
 
 const ACTS = { upload: ['upload', 'uploaded it'], send: ['send', 'sent it to'], open: ['eye', 'opened it'], cert: ['shield', 'verified a certificate'],
+  sign: ['signature', 'signed'], archive: ['archive', 'archived it'], restore: ['restart_alt', 'restored it'] };
