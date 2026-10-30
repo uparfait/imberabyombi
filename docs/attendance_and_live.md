@@ -25,6 +25,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 Its title in the top bar (one line); its details, the agenda item running now (large, with its presenter and
 progress), the agenda, the organiser and co-organisers (each with Edit until it is over), its minutes and follow-ups;
 the time left above a large QR code (full screen on a click; an empty place before attendance opens, "Finished"
+after), the count and the link. **Menu** (tiles): Record minutes, Add task, Attendees, Full screen.
 
 ## Minutes and follow-ups
 - **Record minutes** (live screen) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
