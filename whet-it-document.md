@@ -49,3 +49,4 @@ Every feature below is working code. Each line says what it is and where it live
   subtasks with progress, attachments with inline previews, comments (edit and delete your own), a details view with
   a pen per row, status changes (Done records the time), only the creator edits or deletes.
 - Staff, employees, attendance (live clock, check in/out, late rule), students (bulletins, payments), library (books,
+  rentals, declarations), events, reservations and inventory (approve/reject, stock levels), smart parking (live slot
