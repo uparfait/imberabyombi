@@ -35,3 +35,4 @@ export const SHELL_ACT = {
   msg_x: t => { const m = t.closest('.msg'); if (!m) return; m.classList.add('msg_out'); setTimeout(() => (react_owned(m) ? (m.hidden = true) : m.remove()), reduced() ? 0 : 300); },
   side: () => { if (innerWidth < 1024) { ui.side = !ui.side; const s = qs('#sidebar'); s.inert = false; s.dataset.open = ui.side; qs('#sidebar_scrim').classList.toggle('on', ui.side); }
     else { ui.side_min = !ui.side_min; db.set('sideMin', ui.side_min); const s = qs('#sidebar'); s.dataset.min = ui.side_min; s.inert = ui.side_min; setTimeout(redraw_charts, 320); } header_line(); },
+  /* Sidebar sections fold in place (no re-render), so the height animation plays */
