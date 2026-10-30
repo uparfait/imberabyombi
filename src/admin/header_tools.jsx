@@ -43,4 +43,5 @@ export function account_menu(n = '', rail = false) {
           <p className="mt-3 text-center text-xs text-muted">
             <a href={to('/sitemap')} className="hover:text-accent">Privacy Policy</a>, <a href={to('/sitemap')} className="hover:text-accent">Terms of Service</a></p>
           <div className="mt-2 border-t border-line pt-2">
+            <button className="menu_item menu_danger w-full" data-act="logout">{ic('logout', 'h-4 w-4 text-muted')}Sign out</button></div></div>, document.body)}</div>;
 }
