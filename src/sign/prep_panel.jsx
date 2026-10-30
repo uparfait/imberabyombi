@@ -38,3 +38,4 @@ const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, o
     {chips(r)}{note_text(r)}</li>; };
 
 export const prep_panel = d => <div className="sign_panel">
+  <section aria-label="Document">
