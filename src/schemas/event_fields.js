@@ -26,3 +26,4 @@ export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(N
 export function when_ok(d, row, f) {
   if (!d.date || !('kind' in d)) return true;   /* a form without the timing (one section) */
   const err = (k, m) => { const i = f.elements[k]; show_err(i, m); i?.focus(); return false; };
+  if (d.start && d.end && d.end <= d.start) return err('end', 'Pick an end time after the start.');
