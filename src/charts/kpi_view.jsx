@@ -12,6 +12,6 @@ export function kpis() {
     <div key={ui.viz_range || 30} className="room"><div className="room_4 grid grid-flow-row-dense gap-4">
       {kpi_cards_a(k)}
       {kpi_cards_b(k)}
-    </div>
+    </div></div>
   );
 }
