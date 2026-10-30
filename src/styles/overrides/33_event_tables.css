@@ -15,3 +15,4 @@
   .ev_tbl :is(th, td).ev_org_tel { width: 9rem; }
   .ev_tbl :is(th, td).ev_org_acts { width: 10.5rem; padding-block: .375rem; text-align: right; white-space: nowrap; }
   .ev_org_acts .ev_edit { display: inline-flex; } .ev_org_acts .ev_edit + .ev_edit { margin-left: .25rem; }
+  @container (max-width: 40rem) {
