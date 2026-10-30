@@ -19,3 +19,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
     let acc = 0;
     for (const ch of t) {
       const cw = x.measureText(ch).width, a = bottom ? at + (w / 2 - acc - cw / 2) / r : at - w / 2 / r + (acc + cw / 2) / r;
+      x.save(); x.translate(C + r * Math.cos(a), C + r * Math.sin(a)); x.rotate(bottom ? a - Math.PI / 2 : a + Math.PI / 2);
