@@ -20,3 +20,4 @@
   @supports not selector(::-webkit-scrollbar) { * { scrollbar-width: thin; scrollbar-color: rgb(var(--brand) / .45) transparent; } }
   ::-webkit-scrollbar { width: .6rem; height: .6rem; }
   ::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+  ::-webkit-scrollbar-track { background: transparent; margin: calc(var(--radius) * .75); }
