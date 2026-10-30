@@ -34,6 +34,7 @@ attendance opens, "Finished" after), the count and the link. **Menu** (tiles): R
   one item at a time, its text from the left in the middle; the time it has left, and the event's bottom right. Back,
   Next, the arrow keys or the dots step through; on its own it slides to the item running now. A picked item holds
   until the running one changes or two minutes pass.
+- **Tint**: the now card, the full-screen agenda and the attendance page have a soft background in a hue taken from
 
 ## Minutes and follow-ups
 - **Record/View minutes** (Open This Event) opens the document editor on that day's own document,
