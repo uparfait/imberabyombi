@@ -38,3 +38,4 @@ body { background: rgb(var(--bg)); }
 .qr_text { color: rgb(var(--muted)); font-size: .875rem; overflow-wrap: anywhere; }
 .qr_plain { max-height: 10rem; overflow: auto; color: rgb(var(--fg)); font-size: 1rem; white-space: pre-wrap; }
 .qr_note { color: rgb(var(--muted)); font-size: .8125rem; }
+.qr_acts { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
