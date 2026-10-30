@@ -59,3 +59,4 @@ export function Tz_page() {
       </section>
       <div className="tzc_swap"><button type="button" className="icon_btn" onClick={swap} aria-label="Swap the time zones" data-tip="Swap">{ic('swap_vert')}</button></div>
       <section className="card p-5" aria-label="To">
+        <div className="tzc_head"><h3 className="tzc_cap">To</h3>{seg('tz_tf', st.tf, FMT, v => put({ tf: v }), 'Time format')}</div>
