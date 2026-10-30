@@ -9,3 +9,4 @@ import { Qr } from './qr.jsx';
 
 export const BASE = { events: '/admin/events', activities: '/admin/calendar' };
 export const att_count = id => db.list('attendees').filter(a => a.ref === id).length;
+export const att_url = (c, id) => new URL(to(`/attend/${c}/${id}`), location.origin).href;
