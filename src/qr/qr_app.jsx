@@ -37,4 +37,5 @@ export function Qr_app() {
       <h2 className="qr_ask_t">Allow the camera</h2><p className="qr_ask_p">Qr-scan reads QR codes with it. Nothing is recorded or sent.</p>
       <button type="button" className="btn btn_primary w-full" onClick={() => go()}>{ic('video', 'h-4 w-4')}Allow camera</button></div>
     : <div className="qr_sheet">
+      {st.phase === 'found' ? found_card(st.text) : <p className="qr_sheet_err">{st.msg}</p>}
 }
