@@ -6,3 +6,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | Class                                   | Use                                                              |
 |-----------------------------------------|------------------------------------------------------------------|
 | `.wrap` / `.section`                    | page width and gutters / vertical section rhythm                 |
+| `.btn` + `.btn_primary` `.btn_ink` `.btn_outline` `.btn_ghost` `.btn_soft` `.btn_danger` `.btn_warn` `.btn_glass`, `.btn_sm` | buttons (44px, small 36px; beside a field = field height) |
