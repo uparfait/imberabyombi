@@ -21,3 +21,4 @@
   .track_slide > * { max-width: min(100%, 70rem); }
   .track_t { font-family: var(--font_display); font-size: clamp(2.25rem, 5.5vw, 5.5rem); font-weight: 500; line-height: 1.08; overflow-wrap: anywhere; text-wrap: balance; }
   .track_d { color: rgb(var(--muted)); font-size: clamp(1.125rem, 1.9vw, 1.75rem); line-height: 1.45; overflow-wrap: anywhere; }
+  .track_who { font-size: clamp(1rem, 1.5vw, 1.5rem); font-weight: 500; }
