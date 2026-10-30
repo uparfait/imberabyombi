@@ -25,3 +25,4 @@ export function repeat_from(f) {
   return r;
 }
 /* the unit after "Every" (week / weeks) and the rule in words follow the form */
+export function repeat_say(f) {
