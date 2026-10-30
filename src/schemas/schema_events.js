@@ -18,7 +18,7 @@ export const activities_schema = {
   form_sec: true, sec: { Details: 'title,category,note', When: 'kind,date,start,end,tz,repeat' },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')),
-    field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1)
+    field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1), repeat_spec()
   ],
   before: (d, row, f) => when_ok(d, row, f) ? d : false,
   g: () => {
