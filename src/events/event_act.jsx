@@ -23,3 +23,4 @@ export const EV_ACT = {
     modal({ title: 'Postpone this event?', help: 'Move it to a new date, or leave the date empty if it is not known yet. Everyone invited is told by email.',
       body: [when_row(NEW_WHEN, { tz: e.tz }), reason()], submit: 'Postpone',
       on_submit: (d, f) => {
+        if (d.date && d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'Pick an end time after the start.'); return false; }
