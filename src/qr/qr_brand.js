@@ -12,3 +12,4 @@ const tokens = () => { try { return JSON.parse(localStorage.getItem(cfg.ns + 'to
 export const brand = () => { const b = tokens().brand; return HEX.test(b || '') ? b : DEF; };
 
 /* the site's mark in colour c: an SVG (n px), or a PNG data URL n px square with the mark taking k of it, on bg */
+const mark = (c, n) => render(HASH, { style: 'glossy', colors: [c], size: n, px: n, view: HASH_VIEW });
