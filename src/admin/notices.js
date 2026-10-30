@@ -6,3 +6,4 @@ import { ymd, fmt_d, fmt_time } from '../lib/index.js';
 import { db } from '../store/index.js';
 import { cfg } from '../config/index.js';
 import { auth, me } from '../auth/index.js';
+import { at } from '../schemas/index.js';
