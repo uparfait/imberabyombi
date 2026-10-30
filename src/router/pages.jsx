@@ -32,3 +32,4 @@ const redirect = path => { if (!redirecting) redirecting = setTimeout(() => { re
 export function admin_page(r) {
   if (!auth.user) return redirect('/login?next=' + encodeURIComponent(r.path));
   if (!auth.role()) { auth.logout(); return redirect('/login'); }
+  const mod = r.path.split('/')[2] || MODS.find(m => auth.can(m.k))?.k || 'settings', m = MODS.find(x => x.k === mod);
