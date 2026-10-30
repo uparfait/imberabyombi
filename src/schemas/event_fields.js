@@ -10,6 +10,7 @@ import { repeat_from } from '../fields/repeat_field.jsx';
 import { agenda_from, agenda_ok } from '../fields/agenda_field.jsx';
 import { people_from } from '../fields/people_field.jsx';
 import { field_spec } from './fields.js';
+import { clash_ok } from '../events/conflicts.js';
 
 export const KINDS = [['Upcoming', 'Upcoming'], ['Live', 'Live now'], ['Recurring', 'Recurring']];
 const KIND_HELP = 'Upcoming: it starts later. Live now: it has already started, so its date and start time are filled in with '
