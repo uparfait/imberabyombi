@@ -28,7 +28,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
 ## Location, organiser, audience
 - **Location**: *Physical* (venue or address) or *Virtual* (meeting link and joining notes, such as a passcode). All
   optional; a link without `https://` gets it.
-- **Organiser**: name and email (required) and phone. They start as the person signed in.
+- **Organiser**: name and email (required) and phone. They start as the person signed in. **Co-organisers**: names and
 - **Expected audience**: how many people are expected.
 
 ## The Events page
