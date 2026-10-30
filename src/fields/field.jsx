@@ -17,6 +17,7 @@ export function field(f, v) {
   /* new attachments (kept with the record when it is saved; the ones it already has stay) */
   if (f.t === 'files') return <div key={f.k} className="field sm:col-span-2"><label htmlFor={id}>{f.l}</label><File_box id={id} multiple data-new-files="" /></div>;
   if (f.t === 'select') ctl = <select id={id} name={f.k} required={req} defaultValue={String(val)}><option value="">Choose…</option>{options(f, v)}</select>;
+  /* a time zone: every zone, "(GMT+02:00) Central Africa Time - Kigali"; starts as the device's */
   else if (f.t === 'textarea') ctl = <textarea id={id} name={f.k} rows={3} placeholder=" " required={req} defaultValue={val} />;
   else if (f.t === 'list') ctl = <>
     <input id={id} name={f.k} data-list={'list_' + f.k} defaultValue={val} placeholder=" " autoComplete="off" required={req} />
