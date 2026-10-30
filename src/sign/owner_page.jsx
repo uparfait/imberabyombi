@@ -45,3 +45,4 @@ export const owner_page = d => <div className="sign_split">
         {kept_for_good(d) ? <button type="button" className={`btn btn_sm ${d.archived ? 'btn_outline' : 'btn_warn'}`} data-act={d.archived ? 'sign_doc_restore' : 'sign_doc_archive'} data-id={d.id}>
           {ic(d.archived ? 'restart_alt' : 'archive', 'h-4 w-4')}{d.archived ? 'Restore from archive' : 'Archive'}</button>
           : <button type="button" className="btn btn_danger btn_sm" data-act="sign_doc_del" data-id={d.id}>{ic('trash', 'h-4 w-4')}Delete document</button>}</div></section>
+    <details className="card p-5" open><summary className="sign_cap cursor-pointer">Activity</summary>
