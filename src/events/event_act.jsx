@@ -34,6 +34,7 @@ export const EV_ACT = {
      (or ended), how long it stays open after the end */
   ev_att_set: t => { const c = t.dataset.c, e = db.find(c, t.dataset.id); if (!e) return; const [b, a] = att_mins(e), early = ['Upcoming', 'Postponed', 'Recurring'].includes(ev_state(e));
     const [k, l, v, hint] = early ? ['att_before', 'Allow attendance before the start (minutes)', b, 'People can submit attendance this many minutes before it starts.']
+      : ['att_after', 'Allow attendance after the end (minutes)', a, 'People can still submit attendance this many minutes after it ends.'];
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
