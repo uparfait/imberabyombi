@@ -1,9 +1,5 @@
 /* events/live_page.jsx: the live screen of an event or activity (/admin/events/<id>/live, /admin/calendar/<id>/live): the
-   whole window, no sidebar, to show while it runs: its title, description and times; the agenda item running now, large,
-   with its presenter and how far it has got, and the agenda (done, now, next); the time left, then the attendance QR
-   code, large (a click shows it on the whole screen), with the live count and the link. Its Menu (the system's tile
-   menu): Edit agenda, Record minutes, Add task, Attendees, Full screen. Redrawn every 30 seconds; the count follows new
-   sign-ins at once. */
+   whole window, no sidebar, to show while it runs. Its title in the top bar (cut with "…" when long, whole on hover);
 import { tz_parts, page_tz, fmt_time, fmt_d, zone_short } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
 import { auth } from '../auth/index.js';
