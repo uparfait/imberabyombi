@@ -35,6 +35,7 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 /* the checkbox that asks a signer for a digital certificate */
 .sign_check { display: flex; align-items: center; gap: .5rem; font-size: .875rem; cursor: pointer; }
 .sign_check input { width: 1rem; height: 1rem; accent-color: rgb(var(--brand)); }
+/* the Activity heading: a rounded row (and a rounded focus ring) */
 
 .sign_tool { display: flex; min-height: 2.75rem; align-items: center; gap: .625rem; padding: .5rem 1rem; border: 1px solid rgb(var(--line));
   border-radius: var(--pill); background: rgb(var(--bg)); font-size: .875rem; font-weight: 500; cursor: grab; transition: border-color .2s, background-color .2s, transform .15s; }
