@@ -29,7 +29,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
 - **Location**: *Physical* (venue or address) or *Virtual* (meeting link and joining notes, such as a passcode). All
   optional; a link without `https://` gets it.
 - **Organiser**: name and email (required) and phone. They start as the person signed in. **Co-organisers**: names and
-  emails, added and removed in the form.
+  emails. On the event's page and Open This Event they are one **Organisers** table (name, email, phone, role) with
 - **Agenda**: items, each with a time from and to, a title, a description and a presenter (name, email, title). The item
   running now is marked on the page and the live screen ([`events/agenda_now.js`](../src/events/agenda_now.js)).
   Saving checks the times: each item ends after it starts, stays within the event's start and end, and starts once the
