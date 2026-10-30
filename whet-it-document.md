@@ -89,3 +89,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Role-based access on every module, button, widget and route; landing page per role.
 - Storage in the browser with a memory fallback; deterministic lorem ipsum and seed data.
 - Accessibility (landmarks, keyboard, focus, live regions, reduced motion) and SEO (meta, Open Graph, JSON-LD,
+  robots.txt, sitemap.xml). Lightweight: React is the only runtime dependency.
