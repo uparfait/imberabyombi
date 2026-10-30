@@ -29,3 +29,4 @@ export const my_turn = d => d.status === 'sent' && my_rec(d)?.status !== 'signed
 /* archived documents show only under Archived (the signers keep theirs under To sign) */
 const kept = () => mine().filter(d => !d.archived);
 export const of_list = k => (k === 'inbox' ? to_sign() : k === 'archived' ? mine().filter(d => d.archived) : k === 'all' ? kept()
+  : kept().filter(d => d.status === OF[k])).sort((a, b) => b.updated - a.updated);
