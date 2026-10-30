@@ -14,6 +14,7 @@ const here = r => { const tz = r.tz || page_tz(), to = page_tz(), a = convert(r.
   return { date: a.date, start: a.time, end: r.end ? convert(r.date, r.end, tz, to).time : add_time(a.time, 120) }; };
 /* a record on each of its days: its date, or each day a recurring one happens from 6 weeks before the calendar's day
    (or the mini calendar's month) to 11 weeks after */
+const span = () => { const ds = [ui.cal_date, ui.mini].filter(Boolean).sort(); return [ymd(add_d(parse_d(ds[0] || ymd()), -42)), ymd(add_d(parse_d(ds.at(-1) || ymd()), 77))]; };
 const event_item = e => ({ id: e.id, title: e.title, ...here(e), c: 'events', tone: 'ink' });
 const task_item = t => ({ id: t.id, title: t.title, date: String(t.due).slice(0, 10), due: t.due, all_day: true, c: 'tasks', status: t.status });
 export const cal_items = () => [
