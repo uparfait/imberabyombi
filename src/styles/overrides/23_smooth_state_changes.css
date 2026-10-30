@@ -47,6 +47,7 @@
      a layer behind the header's content (::before), so the header does not become the frame of its fixed menus. */
   .hdr { background: transparent; }
   .hdr::before { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(var(--bg) / .72); pointer-events: none;
+    -webkit-backdrop-filter: saturate(1.6) blur(16px); backdrop-filter: saturate(1.6) blur(16px); }
   .compose { display: grid; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); transition: border-color .2s; }
   .compose:focus-within { border-color: rgb(var(--brand) / .55); }
   .compose :is(input, textarea) { min-height: 0; padding: .75rem 1rem; border: 0; outline: 0; background: transparent; resize: none; field-sizing: content; }
