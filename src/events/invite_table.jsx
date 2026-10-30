@@ -19,3 +19,6 @@ function save(id, old, input) {
   editing = '';
   if (v !== old) { db.upsert('events', { id, invites: e.invites.map(i => i.e === old ? { e: v, at: Date.now() } : i) }); notify(`The invitation was sent to ${v}.`, 'ok', 'Address changed'); }
   rerender();
+}
+
+export const INVITE_TABLE_ACT = {
