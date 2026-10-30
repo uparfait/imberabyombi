@@ -37,3 +37,4 @@ function File_view({ f, n }) {
         <div className="flex min-w-0 flex-1 items-center gap-1"><h2 className="truncate font-sans text-base font-medium">{f.name}</h2>
           {help_tip(`${f.type || 'Unknown type'} · ${fmt_size(f.size)}`, 'this file')}</div>
         <a className="icon_btn" href={u} target="_blank" rel="noopener" aria-label="Open in a new tab">{ic('external')}</a>
+        <a className="icon_btn" href={u} download={f.name} aria-label="Download">{ic('download')}</a>
