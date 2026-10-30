@@ -28,3 +28,6 @@ export const INVITE_TABLE_ACT = {
   ev_uninvite: t => ask(`Remove ${t.dataset.e} from the invitations? They will not get any more emails about this event.`, () => {
     const e = db.find('events', t.dataset.id); db.upsert('events', { id: e.id, invites: (e.invites || []).filter(i => i.e !== t.dataset.e) }); rerender();
     notify('They are no longer on the list.', 'ok', 'Invitation removed'); }, 'Remove', true)
+};
+
+const btn = (act, icon, tip, cls, d) => <button type="button" className={`icon_btn h-8 w-8 ${cls}`} data-act={act} data-id={d.id} data-e={d.e} data-tip={tip} aria-label={tip}>{ic(icon, 'h-4 w-4')}</button>;
