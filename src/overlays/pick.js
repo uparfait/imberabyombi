@@ -70,3 +70,4 @@ export const pick = {
   keys(e) {
     const t = e.target, k = e.key, items = () => qsa('.pk_item:not([hidden]):not([disabled]), .pk_mon', this.el);
     if (k === 'Tab') return this.close(true);
+    if (t.matches('[data-pk-q]')) { if (k === 'ArrowDown' || k === 'Enter') { e.preventDefault(); const b = items()[0]; k === 'Enter' ? b?.click() : b?.focus(); } return; }
