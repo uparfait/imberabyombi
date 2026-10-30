@@ -31,3 +31,6 @@ function appearance(tk, th) {
         <select id="token_font" data-token="font" defaultValue={tk.font}>{FONTS.map(f => <option key={f}>{f}</option>)}</select></div>
       {range('radius', 'Corner radius', radius, '0', '2', '.125')}{range('space', 'Spacing scale', space, '.75', '1.5', '.05')}
     </div><button className="btn btn_outline btn_sm mt-6" data-act="tok_reset">{ic('refresh', 'h-4 w-4')}Reset to stylesheet values</button></section>;
+}
+
+/* the time zone every date and time follows (the calendar, today, activities and events set in other zones) */
