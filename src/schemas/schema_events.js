@@ -1,5 +1,6 @@
 /* schemas/schema_events.js: calendar activities (classes, meetings, sport, exams; their date, times and time zone on one
    line in the form: row 'when', empty to start but for the zone, the device's; shown on the calendar in the page's zone)
+   and events (venue, capacity and registrations; the registered cell shows a fill bar). */
 import { bar_cell } from '../ui/index.js';
 import { show_err } from '../feedback/index.js';
 import { field_spec, option_list, STATUS } from './fields.js';
