@@ -7,3 +7,4 @@
   .seg_field .seg span { white-space: nowrap; }
   /* How a recurring one repeats (fields/repeat_field.jsx): Repeats and Every on one line, labelled rows of choices (the
      label above on phones, beside from 640px), compact chips (dates as a 7-column month), the rule in words last */
+  .rp { display: grid; gap: 1rem; min-width: 0; }
