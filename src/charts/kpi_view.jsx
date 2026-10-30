@@ -1,4 +1,4 @@
-/* charts/kpi_view.jsx: the KPI section of the Charts & KPIs page: every KPI design in one dense grid.
+/* charts/kpi_view.jsx: the KPI section of the Charts & KPIs page: every KPI design in one dense grid, 1, 2 or 4 across
    The grid is keyed by the date range, so a new range draws fresh cards (the live count counts up again). */
 import { ui } from '../store/index.js';
 import { kpi_data } from './kpi_data.js';
