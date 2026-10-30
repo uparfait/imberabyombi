@@ -41,6 +41,7 @@ every account starts empty.
   (name, email, note, Force digital signature) and **Remove** (always asks; their fields go too), then a short list
   without icons, a tick showing what is on: **Adding fields** (place this signer's fields), **Digital signature** (Force
   digital signature, on or off), **Editing** (Edit signer) and **Notes** (their note, in a pop-up under it; its arrow turns
+  while it is open).
 - **Colours**: each signer's colour (their card's tint, avatar, tag and fields) comes from their email, through
   `seed_color()` (`src/lib/seed_color.js`): the same email always gets the same colour; signers of one document are kept
   at least 40° apart; only greens, teals, blues, violets and magentas are used (reds, oranges and yellows would read as
