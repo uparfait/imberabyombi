@@ -27,6 +27,7 @@ export default defineConfig({
     cssCodeSplit: true,        /* lazy pages bring only their own CSS */
     reportCompressedSize: true, /* shows the gzip size of every file after a build */
     rolldownOptions: {
+      input: { main: resolve(import.meta.dirname, 'index.html'), qr: resolve(import.meta.dirname, 'qr-scan/index.html') },
       output: {
         /* React in its own file: it rarely changes, so returning visitors keep it cached when the site is updated */
         codeSplitting: { groups: [{ name: 'react', test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/ }] }
