@@ -12,3 +12,5 @@ import { to } from '../router/index.js';
 const STATS = [['staff', 'Staff', 'users', 'staff'], ['students', 'Students', 'cap', 'students'], ['employees', 'Employees', 'briefcase', 'employees'],
   ['tasks', 'Open tasks', 'tasks', 'tasks', x => x.status !== 'Done'], ['library', 'Books', 'book', 'books'], ['inventory', 'Stock items', 'box', 'inventory'],
   ['events', 'Events', 'star', 'events'], ['parking', 'Cars parked', 'car', 'parking', x => x.status === 'Parked']];
+
+const stat = ([m, l, i, c, f], j) => { const n = f ? db.list(c).filter(f).length : db.list(c).length;
