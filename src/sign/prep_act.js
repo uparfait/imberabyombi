@@ -46,7 +46,7 @@ export const PREP_ACT = {
         if (moved) recolor(P.doc);
         prep_dirty(); rerender(); } }); },
   /* removing a signer always asks first */
-  sign_rec_del: t => { const r = rec_of(P.doc, t.dataset.id), n = P.doc.fields.filter(f => f.rid === r.id).length;
+  sign_rec_del: t => { const r = rec_of(P.doc, t.dataset.id), n = P.doc.fields.filter(f => f.rid === r.id).length; if (signed(r)) return;
     ask(`Remove ${r.name}? ${n ? `Their ${plural(n, 'field')} on the document go too.` : 'They will not get this document to sign.'}`, () => remove_rec(r), 'Remove', true); },
   /* Save draft keeps the draft as it is now: a signer still typed in the form is added first (a half-filled form stops the
      save and says what is missing), and the signer whose fields you are placing is remembered */
