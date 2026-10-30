@@ -10,3 +10,5 @@ import { ic } from '../icons/index.js';
 import { badge } from '../ui/index.js';
 import { to, go } from '../router/index.js';
 import { open_form } from '../table/index.js';
+
+const doc_url = m => new URL(to('/admin/docs?doc=m_' + m.id), location.origin).href;
