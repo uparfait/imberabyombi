@@ -5,3 +5,4 @@
   .kv .ev_tbl th { width: auto; } .kv .ev_tbl td { overflow-wrap: normal; }   /* inside the details table: not its row-header rules */
   .kv .ev_tbl .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .ev_tbl td { vertical-align: top; }
+  .ev_sub { display: block; color: rgb(var(--muted)); font-size: .8125rem; line-height: 1.35; }
