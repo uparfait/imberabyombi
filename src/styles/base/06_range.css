@@ -24,3 +24,4 @@
   progress::-webkit-progress-bar { background: rgb(var(--surface_3)); border-radius: var(--pill); }
   progress::-webkit-progress-value { background: linear-gradient(90deg, rgb(var(--brand_2)), rgb(var(--brand))); border-radius: var(--pill); transition: width .6s var(--ease); }
   progress::-moz-progress-bar { background: linear-gradient(90deg, rgb(var(--brand_2)), rgb(var(--brand))); border-radius: var(--pill); }
+  /* <progress> is for known progress only. Every loading state uses spinner() (see 5F). */
