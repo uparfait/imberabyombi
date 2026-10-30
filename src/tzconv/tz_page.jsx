@@ -40,3 +40,4 @@ export function Tz_page() {
   return <div className="page_enter">
     {page_title('Time zone converter', 'Pick a date and time in one time zone to see it in another. Swap turns them around; Now sets the current '
       + 'time. Search the time zones by city, name or offset, such as GMT+2.')}
+    <div className="tzc">
