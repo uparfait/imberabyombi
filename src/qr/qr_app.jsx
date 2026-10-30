@@ -23,3 +23,4 @@ export function Qr_app() {
     if (!navigator.mediaDevices?.getUserMedia) return set({ phase: 'error', msg: 'The camera needs a secure page (https).' });
     set({ phase: 'scan' });
     try { await start(video.current, found, f); set_multi(await cameras() > 1); }
+    catch (e) { stop(); set({ phase: 'error', msg: WHY[e.name] || 'The camera could not start. Scan a picture instead.' }); }
