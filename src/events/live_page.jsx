@@ -49,3 +49,4 @@ export function live_page(id, c) {
 }
 
 /* the browser's own full screen for the live screen (Esc leaves it) */
+export const LIVE_ACT = { live_full: () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.().catch(() => {}) };
