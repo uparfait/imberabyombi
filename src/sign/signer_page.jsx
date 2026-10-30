@@ -2,3 +2,4 @@
    with your fields to fill, and the guide (signer_side.jsx). You see only your own part: not the other signers, and of
    their fields only what they have already signed. The first opening is recorded. Signed already, or no longer open: it
    says so and shows the marks. Not sent to you: it says which email can sign it. */
+import { ic } from '../icons/index.js';
