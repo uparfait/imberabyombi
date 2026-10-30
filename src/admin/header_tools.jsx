@@ -1,6 +1,7 @@
 /* header_tools.jsx: the dashboard's header tools (search, design system, theme, account). Full-screen staff pages reuse
    them, or just account_menu() (O-Doc Sign's top bar); n is an id suffix so their menus stay unique. The account menu is
    drawn at the top of the page (a portal to <body>, placed under its button by place_tile), so nothing covers it.
+   RAIL: the side panels the rail opens (admin_shell.jsx); below 768 px, where the rail is hidden, they are in the
 import { ic } from '../icons/index.js';
 import { db } from '../store/index.js';
 import { cfg } from '../config/index.js';
