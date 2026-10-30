@@ -11,3 +11,4 @@ const ABOUT = 'When something happens, on one line as in a calendar app: the dat
   + 'block with a small label, its value in words ("Pick a date" while empty) and an arrow. Click a block to pick from a calendar, a list '
   + 'of times or a searchable list of time zones (by city, name or offset, such as GMT+2), or type in it. Only the time zone is filled in at '
   + 'first, with the device\'s. It stays on one line on any screen: the words get smaller, then shorter; the date and times always show in '
+  + 'full and only the time zone is cut (its whole name is on hover). A form uses it by giving the fields row: \'when\'.';
