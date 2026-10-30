@@ -52,6 +52,7 @@ export function live_page(id, c) {
         <button type="button" className="icon_btn h-8 w-8" data-act="ev_track" data-id={id} aria-label="The agenda on the whole screen" data-tip="Full screen">{ic('expand', 'h-4 w-4')}</button></div>
         {(x => x ? <><h2 className="live_now_t line-clamp-2">{x.title}</h2>{x.desc ? <p className="live_now_d line-clamp-2">{x.desc}</p> : null}{who(x)}</> : <h2 className="live_now_t">Done</h2>)(it || next)}
         {it ? <><p className="live_item_left"><b data-count-to={item_end(e, it)}>{left(item_end(e, it) - Date.now())}</b> left</p>
+          <progress max="100" value={done} aria-label="How far it has got"></progress></> : null}</div> : null}
       <div className="card live_card">{head('Agenda', 'Agenda')}{agenda_table(e, true)}</div>
       <div className="card live_card"><div className="live_head"><h2>Organisers</h2>{can ? add_co(e, c) : null}</div>{org_table(e, c, can)}</div>
     </section>
