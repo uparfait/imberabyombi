@@ -13,6 +13,7 @@ import { S, own_fields, left_of } from './signer_state.js';
 import { Mark_pad, PAD } from './sign_pad.jsx';
 import { agree_body } from './signer_side.jsx';
 import { Cert_pick, verify } from './cert_pick.jsx';
+import { P } from './prep_state.js';
 
 function apply(d, f, url) {
   const first = !S.adopted[f.type], [l] = KINDS[f.type];
