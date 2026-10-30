@@ -17,3 +17,4 @@ import { Cert_pick, verify } from './cert_pick.jsx';
 function apply(d, f, url) {
   const first = !S.adopted[f.type], [l] = KINDS[f.type];
   S.pending[f.id] = url; S.adopted[f.type] = url; rerender(); qs(`[data-fid="${f.id}"]`)?.classList.add('sf_new');
+  if (first && left_of(d).some(x => x.type === f.type)) notify(`Tap your next ${l.toLowerCase()} field to place it there too.`, 'ok', `${l} adopted`);
