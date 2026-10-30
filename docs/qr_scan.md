@@ -21,3 +21,4 @@ when the browser offers it (Chrome, Edge, Android); on an iPhone or iPad it says
 it opens in its own window, also offline (its files are kept by the service worker where the browser allows).
 
 ## Where it is linked
+- The admin sidebar (group Overview): **Qr-scan** (`app` in [`src/auth/mods.js`](../src/auth/mods.js)); a full page load,
