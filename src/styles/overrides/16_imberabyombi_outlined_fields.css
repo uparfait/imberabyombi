@@ -56,3 +56,4 @@
     color: rgb(var(--fg)); background: rgb(var(--surface) / .92); border: 1px solid rgb(var(--line)); transition: background-color .2s, color .2s; }
   .file_x:hover { color: #fff; background: rgb(var(--bad)); border-color: rgb(var(--bad)); }
   /* A date and its times on one line as soft blocks ("Friday, October 30 · 12:00pm – 1:00pm", fields/when_row.jsx). Each
+     block is the real input, see-through, under its value in words; while it is typed in, its own text shows instead. */
