@@ -41,3 +41,4 @@ export const ORG_ACT = {
         if (d.to === 'new' && taken(e, nu.email, -2)) return twice(f, 'p_email');
         const was = e.org_email ? [{ name: e.org_name || e.org_email, email: lc(e.org_email) }] : [];
         put(c, e, { org_name: nu.name, org_email: nu.email, org_tel: nu.tel, co_orgs: [...was, ...co.filter((_, i) => String(i) !== d.to)] },
+          'Ownership transferred', `${nu.name} is now the organiser.`); } });
