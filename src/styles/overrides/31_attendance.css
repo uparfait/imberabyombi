@@ -11,3 +11,4 @@
   .att_form .sign_canvas { display: block; width: 100%; height: 11rem; cursor: crosshair; touch-action: none; }
   .att_form .sign_canvas_hint { position: absolute; inset: 0; display: grid; place-items: center; color: #9CA3AF; font: 500 1.75rem 'Caveat', cursive; pointer-events: none; }
   .att_form .sign_canvas_line { position: absolute; right: 1.5rem; bottom: 2.25rem; left: 1.5rem; border-bottom: 1px solid #D1D5DB; pointer-events: none; }
+  /* the tick: the ring draws itself, then the check, with a small bounce */
