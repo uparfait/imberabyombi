@@ -15,3 +15,4 @@ const EASE = 'cubic-bezier(.22,.8,.22,1)';
 
 export const ADMIN_ACT = {
   /* Email designs: switch the previewed email in place (no page jump). The address changes first: the redraw reads ?t= */
+  mail: t => { const k = t.dataset.k; if (!qs('#mail_view') || !MAILS[k]) return; ui.mail = k;
