@@ -22,3 +22,4 @@ function track_at(e, now) {
   const [d, hm] = today(e), day = e.repeat ? d : e.date, ag = e.agenda || [];
   const st = ag.map((a, i) => i === now ? 'Now' : day < d || (day === d && a.to <= hm) ? 'Done' : 'Next'), next = st.indexOf('Next');
   const held = pick?.id === e.id && pick.now === now && Date.now() - pick.at < 120e3;
+  return [st, held ? Math.min(pick.i, ag.length - 1) : now > -1 ? now : next > -1 ? next : ag.length - 1];
