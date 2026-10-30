@@ -33,3 +33,4 @@ export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !
    first module the role can open when the chosen one is not set or no longer allowed. */
 export const role_opens = r => MODS.filter(m => r && (r.perms === '*' || (r.perms[m.k] || 0) > 0));
 export const landing = id => {
+  const r = roles().find(x => x.id === id), ok = role_opens(r), k = ok.some(m => m.k === r?.land) ? r.land : ok[0]?.k;
