@@ -31,3 +31,4 @@ export function notices(now = Date.now()) {
   if (can('parking')) db.list('parking').filter(p => p.status === 'Parked' && now - new Date(p.in) > cfg.overstay_hours * H).forEach(p =>
     out.push({ id: `park:${p.id}`, icon: 'car', tone: 'warn', title: 'Car overstaying', text: `${p.plate} · ${p.slot} · ${Math.floor((now - new Date(p.in)) / H)} h`, at: new Date(p.in).getTime(), href: '/admin/parking' }));
   if (can('events')) out.push(...events_for_me(now));
+  const late = can('library') ? db.list('rentals').filter(r => r.status === 'Rented' && r.due < td).length : 0;
