@@ -71,3 +71,4 @@ const design = () => <section className="card p-6"><h2 className="text-lg">Desig
   <a href={to('/ui')} className="btn btn_outline btn_sm mt-5">{ic('layers', 'h-4 w-4')}Open the design system</a></section>;
 
 VIEWS.settings = () => {
+  const tk = db.get('tokens', {}), th = db.get('theme', 'system'), u = auth.user;
