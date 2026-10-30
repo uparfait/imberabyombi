@@ -6,3 +6,5 @@ most urgent first. Notices are worked out from the data ([`notices.js`](../src/a
 - cars parked longer than `cfg.overstay_hours`;
 - events you organise, co-organise, present at or are invited to: starting soon, postponed, cancelled, an invitation;
 - for those who manage them: overdue books, reservations to review, items low on stock.
+
+A notice opens what it is about and is read from then on; **Mark all read** clears the count (kept in this browser).
