@@ -60,6 +60,7 @@ export function live_page(id, c) {
     </section>
     <aside className="card live_qr">{t ? <p className="live_left">{t[0]}<b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></p> : null}{open ? <button type="button" className="live_qr_btn" data-act="ev_qr" data-id={id} aria-label="Show the QR code on the whole screen" data-tip="Full screen">
       <Qr text={att_url(c, id)} label="Attendance QR code" /></button> : <div className="qr_empty">{ph === 'closed' ? 'Finished' : ''}</div>}
+      <p className="qr_full_count"><b>{n}</b> attended</p>{open ? copy_box(att_url(c, id), 'Link') : null}</aside></div>
   </div>;
 }
 
