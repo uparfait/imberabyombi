@@ -35,3 +35,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 - On the right are the status and the actions that fit it:
   - **Postpone**: a new date, or none yet, and a reason.
   - **Cancel event**: with a reason. It leaves the calendar.
+  - **Back on schedule**, **Mark as completed** (while live) and **Stop repeating**.
