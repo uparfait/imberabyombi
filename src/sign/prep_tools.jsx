@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { KINDS, rec_of } from './sign_store.js';
 import { P } from './prep_state.js';
+import { help_tip } from '../ui/index.js';
