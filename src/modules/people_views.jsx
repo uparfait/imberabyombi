@@ -47,3 +47,4 @@ VIEWS.attendance = () => {
 };
 
 const bulletin = r => <button className="btn btn_soft btn_sm" data-act="report" data-name={r.name}>Bulletin</button>;
+VIEWS.students = () => {
