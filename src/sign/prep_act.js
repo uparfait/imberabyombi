@@ -65,5 +65,6 @@ export const PREP_ACT = {
         `Place ${alone.name.split(' ')[0]}’s field`); }
     if (!d.title.trim()) d.title = d.file.replace(/\.pdf$/i, '');
     if (R.every(r => r.status === 'signed')) return modal({ title: 'Finish this document?', help: 'Everyone on it has signed: it moves to Completed, ready to download.', submit: 'Finish', on_submit: send });
+    modal({ title: 'Send for signing', help: 'Each signer who has not signed finds it under To sign once they sign in with their email.', body: send_body(d), submit: 'Send', on_submit: send });
   }
 };
