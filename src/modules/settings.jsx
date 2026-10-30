@@ -37,3 +37,4 @@ function appearance(tk, th) {
 const time_zone = () => <section className="card p-6"><div className="flex items-center gap-1"><h2 className="text-lg">Time zone</h2>
   {help_tip('Every date and time in the system shows in this time zone: today, the calendar, and activities and events set in other time zones, '
     + 'converted. New activities and events start in it. Saved in this browser.', 'the time zone')}</div>
+  <div key={page_tz()} className="field mt-5"><label htmlFor="page_tz">Show times in</label>
