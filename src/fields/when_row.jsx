@@ -14,3 +14,4 @@ export function in_words(t, v) {
 }
 
 const block = (f, v) => { const id = 'field_' + f.k, shown = dt_show(f.t, v);
+  return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
