@@ -16,3 +16,4 @@ export const PICK = 'select, input[data-type]';
 export const slide_in = (els, n) => { if (reduced()) return; [...els].forEach((g, i) => g.animate(n
   ? [{ opacity: 0, transform: `translateX(${n * (i ? 1.75 : .75)}rem)` }, { opacity: 1, transform: 'none' }]
   : [{ opacity: 0, transform: 'scale(.97)' }, { opacity: 1, transform: 'none' }], { duration: 280, easing: 'cubic-bezier(.22,.8,.22,1)' })); };
+export const FINE = () => matchMedia('(pointer: fine)').matches;
