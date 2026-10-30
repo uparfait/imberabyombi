@@ -17,3 +17,4 @@
   .viz_plot svg { display: block; max-width: 100%; height: auto; overflow: visible; font-family: var(--font_sans); }
   .viz_plot text { font-size: .6875rem; fill: rgb(var(--muted)); }
   .viz_plot text.value_label { fill: rgb(var(--fg)); font-weight: 500; }
+  .viz_plot text.inner_label { fill: #fff; font-weight: 600; }
