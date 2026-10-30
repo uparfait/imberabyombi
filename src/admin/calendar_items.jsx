@@ -16,3 +16,4 @@ const task_item = t => ({ id: t.id, title: t.title, date: String(t.due).slice(0,
 export const cal_items = () => [
   ...(auth.can('calendar') ? db.list('activities').map(a => ({ ...a, ...here(a), c: 'activities', tone: 'brand' })) : []),
   ...(auth.can('calendar') || auth.can('events') ? db.list('events').map(event_item) : []),
+  /* tasks assigned to you, on their due day (all day): a click opens Tasks with that task highlighted */
