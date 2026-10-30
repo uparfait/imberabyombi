@@ -35,6 +35,7 @@ export function ribbon(G, C, i, k) {
   const sep = -38 * Math.min(1, .35 + .65 * gw * S / Math.max(G.vb[2], G.vb[3]) * k);
   const ext = extrude(R, X, Y, S, deep(col(K), -32, k), [5.6, 7.7], k, at(base + 2 * K * bw));
   let bands = '';
+  for (let j = K - 1; j >= 0; j--) { const w = base + 2 * (j + 1) * bw; bands += use(R, X, Y, S, shade(col(j + 1), sep), at(w)) + use(R, X, Y, S, col(j + 1), at(w - 2 * gw)); }
   bands += use(R, X, Y, S, col(0), at(base));
   const bare = G.inner.replace(/\sstroke-width="[^"]*"/g, '').replace(/stroke-width\s*:[^;"]+;?/g, '');
   return [sym(R, G, bare) + vol(i + 'v', { bevel: 2, surf: 3, spec: .7, exp: 18, shade: .45 }), ext + `<g filter="url(#${i}v)">${bands}</g>`];
