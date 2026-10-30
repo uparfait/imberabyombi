@@ -39,3 +39,4 @@ function page_for(a, id) {
     body: auth.can('sign', 2) ? <Sign_new /> : <div className="sign_main">{forbidden()}</div> };
   const d = find_doc(id), mine = d?.owner === who().email;
   if (!d) return { title: 'Not found', back: list_href('all'), body: missing() };
+  if (a === 'edit') return !mine ? move(`/admin/sign/sign/${id}`) : d.status !== 'draft' ? move(`/admin/sign/doc/${id}`)
