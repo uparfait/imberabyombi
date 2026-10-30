@@ -10,3 +10,4 @@ import { field_spec, option_list, STATUS } from './fields.js';
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'category'],
   f: [
+    field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { def: () => ui.cal_date, row: 'when' }),
