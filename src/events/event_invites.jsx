@@ -16,3 +16,4 @@ const HELP = 'Type or paste email addresses (press Enter after each one, or past
   + 'file (Excel, CSV): every email address in it is found. Check the list, then send the invites: each person gets the invitation email.';
 const n_of = (n, one, many) => n === 1 ? `1 ${one}` : `${n} ${many}`;
 /* the addresses waiting to be sent (one event at a time) and what the last addition found */
+const wait = { id: '', list: [], note: '' };
