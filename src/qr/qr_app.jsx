@@ -2,3 +2,4 @@
    scans; it stops by itself once it finds a code), Scan a picture (from the gallery or files), what was found and the
    recent scans (qr_parts.jsx; the last six, kept in this browser). */
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { ic } from '../icons/index.js';
