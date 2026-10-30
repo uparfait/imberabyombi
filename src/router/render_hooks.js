@@ -27,3 +27,4 @@ export function before_page(keep) {
 export function run_after_render({ keep, anim }) {
   if (skipped) { skipped = false; return; }
   if (side_top) { const sd = qs('#sidebar_scroll'); if (sd) sd.scrollTop = side_top; side_top = 0; }
+  /* React keeps <main> across redraws of the same page, so the animation is removed (keep) or restarted (keep + anim) by hand */
