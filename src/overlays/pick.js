@@ -39,3 +39,4 @@ export const pick = {
   },
   emit() { const a = this.a; this.mute = true; a.dispatchEvent(new Event('input', { bubbles: true })); a.dispatchEvent(new Event('change', { bubbles: true })); this.mute = false; },
   /* the control is React's: its value goes in through the native setter, so React sees the change */
+  set(v, done = true) { if (!this.a) return; set_native_value(this.a, v); this.emit(); done ? this.close(this.kb || FINE()) : this.draw(); },
