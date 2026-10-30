@@ -6,3 +6,4 @@ import { rerender } from '../store/index.js';
 import { at } from '../schemas/index.js';
 
 const UNITS = [['y', 31536000], ['mo', 2592000], ['d', 86400], ['h', 3600], ['m', 60], ['s', 1]];
+export function left(ms) {
