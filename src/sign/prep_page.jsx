@@ -9,3 +9,4 @@ import { prep_panel } from './prep_panel.jsx';
 import { prep_tools } from './prep_tools.jsx';
 
 /* the pages with the fields being placed; the pointer and keys work on them while the page is open */
+function Prep_doc({ d }) {
