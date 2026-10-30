@@ -26,3 +26,4 @@ function add(id, found, bad = [], file = '') {
   rerender();
 }
 /* the typed text: its addresses join the list, anything else stays in the box to be corrected */
+const take = (id, input) => { if (!input?.value.trim()) return; const v = input.value; input.value = not_emails(v).join(' '); add(id, find_emails(v), not_emails(v)); };
