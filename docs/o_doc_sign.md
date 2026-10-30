@@ -42,3 +42,4 @@ every account starts empty.
   alerts); white initials on every colour pass 4.5:1.
 - **Fields**: Signature and Stamp. Click a tool to add one on the page on screen, or drag it onto a page. Drag a field to
   move it, its corner to resize it (a stamp stays square); arrow keys nudge the selected field, Delete removes it.
+- Changes save a moment after each one (and on Save, and when you leave). **Send** checks that there is a signer, a field,
