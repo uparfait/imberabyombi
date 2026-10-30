@@ -16,7 +16,6 @@ export function attend_page(r) {
   after_render(() => TIMERS.push(setInterval(tick, 1000)));
   const clock = (label, t) => <p className="att_clock">{label} <b data-count-to={t}>{left(t - Date.now())}</b></p>;
   set_meta(e ? `Attendance · ${e.title}` : 'Attendance');
-  const where = e && (e.place === 'Virtual' ? 'Online' : e.venue);
   return <main id="main" className="att_page"><div className="att_card card">
     {!e ? empty('Not found', 'This link does not lead to an event or activity.', null, 'alert', 'warn')
       : <><p className="att_kind">{c === 'events' ? 'Event' : 'Activity'}</p><h1 className="att_title">{e.title}</h1>
