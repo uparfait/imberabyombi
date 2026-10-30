@@ -6,6 +6,7 @@
   .kv .ev_tbl .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .ev_tbl td { vertical-align: top; }
   .ev_sub { display: block; color: rgb(var(--muted)); font-size: .8125rem; line-height: 1.35; overflow-wrap: anywhere; }
+  .ev_ag_table td { overflow: hidden; }
   .ev_narrow { display: none; }
   .ev_tbl .ev_ag_table th:first-child { width: 30%; }
   .ev_tbl :is(th, td).ev_ag_time { width: 10.5rem; color: rgb(var(--muted)); white-space: nowrap; font-variant-numeric: tabular-nums; }
