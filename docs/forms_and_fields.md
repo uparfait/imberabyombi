@@ -18,6 +18,7 @@ Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `t
 Extras: `def` (default), `min`, `max`, `when` (shown only for some values: `'Done'` / `'!Done'` by status, or
 `'field=A|B'` / `'field!=A'` by any field, a radio group too), `help` (a help icon by a `seg` title), `on` (runs when a
 `seg` choice changes), `form: false` (kept out of forms; set in code), `fill(record)` (what an older record that lacks
+the field shows when it is edited; without it, a missing field starts as `def`).
 
 ## Forms in sections
 A schema with `form_sec: true` shows its `sec` groups as small headings in its form ("When", "Location"). `open_form(c, id,
