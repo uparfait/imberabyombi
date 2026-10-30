@@ -38,3 +38,4 @@ export const pick = {
     if (refocus) { this.mute = true; a.focus({ preventScroll: true }); this.mute = false; }
   },
   emit() { const a = this.a; this.mute = true; a.dispatchEvent(new Event('input', { bubbles: true })); a.dispatchEvent(new Event('change', { bubbles: true })); this.mute = false; },
+  /* the control is React's: its value goes in through the native setter, so React sees the change */
