@@ -21,3 +21,4 @@ function row(d, a, i) {
   const k = act_of(a), p = k === 'done' ? null : person(d, a), [icon, verb] = ACTS[k] || [];
   return <li key={i} className="sign_ev" title={`${a.t} · ${when(a.at)}`}>
     {p ? <span className="sign_ev_who" style={{ background: p.color }}>{initials(p.name)}{icon ? <i>{ic(icon, 'h-2.5 w-2.5')}</i> : null}</span>
+      : <span className="sign_ev_who done">{ic('check', 'h-4 w-4')}</span>}
