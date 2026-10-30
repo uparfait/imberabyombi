@@ -13,3 +13,4 @@ const edit_field = (d, f, sel) => { const r = rec_of(d, f.rid), [l, i] = KINDS[f
   return <div key={f.id} className={`sf sf_edit ${sel === f.id ? 'sel' : ''}`} data-fid={f.id} style={look(f, r)} tabIndex={0}
     aria-label={`${l} field for ${r?.name || 'nobody'}`}>
     <span className="sf_tag">{r?.name || 'Unassigned'}</span>{ic(i, 'sf_ic')}<span className="sf_l">{l}</span>
+    <button type="button" className="sf_x" data-act="sign_field_del" data-id={f.id} aria-label={`Remove this ${l.toLowerCase()} field`}>{ic('x')}</button>
