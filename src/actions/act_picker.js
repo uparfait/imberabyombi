@@ -12,3 +12,4 @@ export const PICKER_ACT = {
   pk_done: () => pick.close(pick.kb || FINE()),
   pk_set: t => pick.set(t.dataset.v),
   pk_day: t => { const a = pick.a, v = t.dataset.v; if (!a) return;
+    if (kind_of(a) === 'week') return pick.set(iso_week(parse_d(v)));
