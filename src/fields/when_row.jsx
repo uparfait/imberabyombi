@@ -11,6 +11,7 @@ import { Fragment } from 'react';
 import { ic } from '../icons/index.js';
 import { pad, h24, zone_list, zone_short, page_tz } from '../lib/index.js';
 import { dt_attrs, dt_show, to24 } from './date_formats.js';
+import { repeat_say } from './repeat_field.jsx';
 
 /* a value in words, long and short: a date "Friday, October 30" / "Fri, Oct 30", a time "12:00pm" (or "12:00" on the
    24-hour clock) */
