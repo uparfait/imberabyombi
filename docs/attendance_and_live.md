@@ -18,6 +18,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   before it starts, how many minutes early it opens; while it runs, how many minutes after the end it stays open; once
   it has ended, reopen it from now for some minutes (the QR code comes back). All 0 to start with.
 - **Attendees**: no page of its own; the count, Attendees (in Open and in Menu) or the Attended row open the usual
+  table in an overlay over the page ([`attendees_view.jsx`](../src/events/attendees_view.jsx)): search, sort, export to
 
 ## View This Event
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)), also for a finished one: the whole window, no sidebar.
