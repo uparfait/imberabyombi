@@ -18,3 +18,4 @@ export const tabs = (key, items, cur) => (
 export const stat_row = items => (
   <div className={`mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 ${items.length > 4 ? 'lg:grid-cols-5' : 'lg:grid-cols-4'}`}>
     {items.map(([l, v, i, t], j) => (
+      <div key={j} className="card flex items-center gap-3 p-4">
