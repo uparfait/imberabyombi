@@ -25,6 +25,7 @@ export * from './people_views.jsx';
 export * from './place_views.jsx';
 export * from './roles.jsx';
 export * from './settings.jsx';
+export { EV_ACT } from '../events/index.js';   /* the event page's buttons (actions/act.js) */
 import './docs.jsx';   /* registers VIEWS.docs (the document editor, loaded on demand) */
 import './sign.jsx';   /* registers VIEWS.sign (O-Doc Sign, loaded on demand) */
 import './iconisus.jsx';   /* registers VIEWS.icons (Iconisus, the 3D icon maker, loaded on demand) */
