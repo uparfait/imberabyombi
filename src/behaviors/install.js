@@ -11,3 +11,4 @@ import { install_scroll } from './scrolling.js';
 
 let installed = false;
 export function install_listeners() {
+  if (installed) return; installed = true;
