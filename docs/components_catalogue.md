@@ -42,3 +42,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.hero_title`                           | oversized display headline                                       |
 
 ## Native elements need no class
+`<select>`, `<details>`, `<progress>`, `<meter>`, `<input type="range|color|file|checkbox|radio">`, `<dialog>`,
