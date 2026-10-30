@@ -7,3 +7,5 @@ import { subscribe, get_version, render_flags, route } from './store/index.js';
 import { render_route, run_after_render, is_public } from './router/index.js';
 import { Dialog_hosts } from './overlays/index.js';
 import { spinner } from './feedback/index.js';
+
+/* html.staff_page: admin pages draw a little larger on laptops and desktops (--scale_staff in src/styles/base);
