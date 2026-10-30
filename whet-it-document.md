@@ -45,3 +45,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Nested navigation: three levels (this system, System 2, System 3) with "Your modules" style menus.
 - Dashboard: welcome hero, counts, attendance chart, my tasks, agenda, low stock, parking.
 - Calendar: week (hour grid, now line) and month views, mini calendar, click a slot to add, your tasks on their due day.
+- Tasks: own / assigned / delegated / all tabs, dates with times by status, live countdown (red when overdue),
