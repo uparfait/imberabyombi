@@ -46,3 +46,5 @@ const help = () => <>{search_box({ 'data-filter': '.accordion_item' }, 'Search h
   <div className="accordion mt-4">{HELP.map(([q, a]) => <details key={q} className="accordion_item"><summary className="text-sm">{q}</summary>
     <p className="px-5 pb-4 pt-3 text-sm text-muted">{a}</p></details>)}</div>
   <p className="mt-6 text-sm text-muted">Still need help? <a href={to('/contact')} className="text-accent underline underline-offset-4">Contact us</a></p></>;
+
+export const PANELS = {
