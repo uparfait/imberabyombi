@@ -39,3 +39,4 @@ export const events_schema = {
   ],
   r: { registered: (v, row) => bar_cell(v, row.capacity) },
   g: () => {
+    const c = lorem.int(4, 20) * 10;
