@@ -15,3 +15,4 @@
   .track_left b { font-size: clamp(1.5rem, 2.4vw, 2.25rem); font-weight: 600; line-height: 1.1; font-variant-numeric: tabular-nums; }
   .track_view { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: 0; }
   .track_clip { height: 100%; overflow: hidden; }
+  .track_step { width: 3.5rem; height: 3.5rem; } .track_step:disabled { opacity: .2; }
