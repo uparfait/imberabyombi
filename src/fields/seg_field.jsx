@@ -5,3 +5,4 @@ import { help_tip } from '../ui/index.js';
 
 export const seg_field = (f, v) => { const id = 'field_' + f.k, opts = (typeof f.o === 'function' ? f.o() : f.o || []).map(o => Array.isArray(o) ? o : [o, o]);
   return <div key={f.k} className="seg_field sm:col-span-2" data-when={f.when || undefined}>
+    <p id={id} className="seg_cap">{f.l}{f.help ? help_tip(f.help, f.l.toLowerCase()) : null}</p>
