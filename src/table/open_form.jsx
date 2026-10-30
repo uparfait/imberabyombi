@@ -19,6 +19,7 @@ const body_of = (s, row, keys) => { const fs = s.f.filter(f => f.form !== false 
 
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset). part: [title, keys]
    edits one section of a record only ("Edit location") */
+export function open_form(c, id, preset = {}, part = null) {
   const s = schemas[c], row = id ? db.find(c, id) : { ...Object.fromEntries(s.f.filter(f => f.def).map(f => [f.k, f.def()])), ...(cur[c]?.preset || {}), ...preset };
   if (!row) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Record not found');
   const before = qs('#modal form');
