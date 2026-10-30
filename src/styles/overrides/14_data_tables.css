@@ -21,3 +21,4 @@
   html:has(.table_full) { overflow: hidden; }
   .table_data tbody tr[data-act] { cursor: pointer; }
   .table_data tbody tr:last-child > td { border-bottom: 0; }
+  tr[data-act]:focus-visible { outline-offset: -2px; }
