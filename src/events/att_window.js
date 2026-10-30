@@ -11,3 +11,5 @@ export const att_mins = e => [mins(e.att_before, ATT_DEF.before), mins(e.att_aft
 /* the window on day d: [opens, closes] */
 const win = (e, d) => { const [b, a] = att_mins(e), s = at(d, e.start, e.tz), end = e.end ? at(d, e.end, e.tz) : s + 2 * 3600e3;
   return [s - b * 60e3, end + a * 60e3]; };
+
+export function att_phase(e, now = Date.now()) {
