@@ -62,3 +62,4 @@ every account starts empty.
 
 ## Following a document
 - Each signer's line: "Signed" in green, "Waiting" (or "Opened, not signed yet") in orange; their Note and certificate chips.
+- **Activity**, newest first: the person's initials in their colour with the action's icon on them, their first name, one
