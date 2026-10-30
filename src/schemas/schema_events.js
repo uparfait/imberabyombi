@@ -36,3 +36,5 @@ export const events_schema = {
     field_spec('venue', 'Venue'), field_spec('capacity', 'Capacity', 'number', 0, 1, { min: 1, def: () => 100 }),
     field_spec('registered', 'Registered', 'number', 0, 0, { min: 0, def: () => 0 }), field_spec('status', 'Status', 'select', STATUS.ev, 1, { def: () => 'Planned' }),
     field_spec('about', 'Description', 'textarea')
+  ],
+  r: { registered: (v, row) => bar_cell(v, row.capacity) },
