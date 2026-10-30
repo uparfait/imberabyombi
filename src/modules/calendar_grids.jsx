@@ -9,3 +9,4 @@ const wday = x => x.toLocaleDateString(undefined, { weekday: 'short' }).toUpperC
 const more = (n, c) => n > 0 ? <span className={`${c} text-[0.6875rem] text-muted`}>{`+${n} more`}</span> : null;
 
 /* a timed item in the week grid: placed by its start, as tall as it lasts (at least 30 minutes) */
+const CHIP = 'absolute inset-x-1 z-[1] overflow-hidden rounded-lg px-2 py-1 text-left text-xs leading-tight transition hover:brightness-110';
