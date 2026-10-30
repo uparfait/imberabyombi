@@ -13,7 +13,7 @@ import { count_to, left, tick } from './countdown.js';
 import { event_cards } from './event_cards.jsx';
 import { invites_card } from './event_invites.jsx';
 
-const HELP = 'Every detail of this event, by section. Edit a section on its own; postpone, cancel or restore the event on the right.';
+const HELP = { events: 'Every detail, by section. Edit a section on its own; postpone, cancel or restore it on the right.',
 /* the actions that fit each state: [handler, label, icon, the states it shows in] */
 const ACTS = [
   ['ev_postpone', 'Postpone', 'clock', ['Upcoming', 'Recurring']], ['ev_postpone', 'Change the new date', 'calendar', ['Postponed']],
