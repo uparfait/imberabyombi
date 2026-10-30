@@ -10,3 +10,4 @@ import { Pdf_pages } from './pdf_pages.jsx';
 import { fields_on } from './sign_fields.jsx';
 import { use_marks } from './use_marks.js';
 import { status_chip } from './sign_list.jsx';
+import { activity } from './activity.jsx';
