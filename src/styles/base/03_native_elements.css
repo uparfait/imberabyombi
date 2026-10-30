@@ -38,3 +38,4 @@
   :where(em) { font-style: italic; }
   small { font-size: .82em; }
   :where(s) { text-decoration-color: rgb(var(--bad)); text-decoration-thickness: 2px; opacity: .75; }
+  :where(mark) { background: rgb(var(--brand) / .2); color: inherit; padding: .05em .3em; border-radius: calc(var(--radius) * .3); }
