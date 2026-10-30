@@ -11,3 +11,4 @@ each file in [`src/sign/`](../src/sign/) does.
 | IndexedDB `<ns>sign`, `marks:<id>` | the signatures and stamps (PNG) by field |
 
 Files of deleted documents are cleaned up the next time O-Doc Sign opens. Everything stays in this browser: to share
+documents between people and devices, keep these records and files on a server (see
