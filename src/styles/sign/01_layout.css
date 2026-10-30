@@ -39,3 +39,4 @@
 /* the side columns float as rounded panels, clear of the window's edges, rounded at the top and the bottom */
 .sign_left, .sign_right { margin: .75rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
 .sign_left { margin-right: 0; }
+.sign_right { margin-left: 0; }
