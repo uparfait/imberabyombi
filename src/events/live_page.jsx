@@ -34,6 +34,7 @@ export function live_page(id, c) {
   const st = ev_state(e), t = count_to(e, st), ag = e.agenda || [], now_i = agenda_now(e), p = tz_parts(e.tz || page_tz(), Date.now());
   const now_m = p.h * 60 + p.mi, it = ag[now_i], next = ag.find(a => mins(a.from) > now_m), n = att_count(id), open = att_phase(e)[0] !== 'closed';
   const done = it ? Math.min(100, Math.max(0, (now_m - mins(it.from)) / Math.max(1, mins(it.to) - mins(it.from)) * 100)) : 0;
+  const can = auth.can(c === 'events' ? 'events' : 'calendar', 2) && st !== 'Past';
   return <div className="live">
     <header className="live_top"><a href={to(page)} className="icon_btn" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
       <div className="live_acts">{tile_menu({ id: `pop_live_${id}`, title: e.title, icon: 'grid', label: 'Menu', tiles: [
