@@ -1,6 +1,7 @@
 /* icon3d/parts.js: the SVG building blocks of the 3D styles: gradient stops and gradients (linear, radial, along the glyph),
    the glyph as a symbol and its copies (use), the glyph painted with a gradient (pl), a blur filter, vol() (the volume
    filter: rounds, shades and lights), extrude() (a stack of copies: the depth) and deep() (a depth colour).
+   Size awareness: blurs are in user units (the picture is 200 across) and scale with the icon, but the lighting kernel
 const stop = ([o, c, a = 1]) => `<stop offset="${o}" stop-color="${c}"${a < 1 ? ` stop-opacity="${a}"` : ''}/>`;
 const US = ' gradientUnits="userSpaceOnUse"';
 
