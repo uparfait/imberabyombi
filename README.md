@@ -46,3 +46,6 @@ src/lib/         small helpers, dates, lorem ipsum           src/behaviors/ dele
 src/icons/       flat and glossy 3D icons (fixed colours)    src/site/ src/account/ src/kit/   public, account, design pages
 src/auth/        roles, permissions, session                 src/admin/ src/modules/ src/charts/ src/emails/  admin
 src/schemas/     one schema per data type                    src/table/ src/fields/ src/files/ src/overlays/ src/feedback/ src/ui/
+```
+
+## Make it yours in five steps
