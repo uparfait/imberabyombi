@@ -17,6 +17,7 @@ import { att_count, att_url, BASE } from './attend_side.jsx';
 import { att_phase } from './att_window.js';
 import { Qr } from './qr.jsx';
 import { tile_menu } from '../admin/tile_menu.jsx';
+import { copy_box } from '../overlays/index.js';
 
 const mins = t => { const [h, m] = String(t || '0:0').split(':').map(Number); return h * 60 + m; };
 const span = a => `${fmt_time(a.from)} – ${fmt_time(a.to)}`;
