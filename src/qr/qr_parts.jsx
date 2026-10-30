@@ -7,6 +7,7 @@ import { secure } from './qr_engine.js';
 import { can_install, install, apple, installed, standalone } from './qr_install.js';
 
 export function Install() {
+  const [tip, set_tip] = useState(false), add = can_install() ? install : !standalone() && !installed() && apple() ? () => set_tip(!tip) : null;
   const [ok, set] = useState(false);
   const copy = () => navigator.clipboard?.writeText(text).then(() => { set(true); setTimeout(() => set(false), 1500); }, () => {});
   return <button type="button" className={cls} onClick={copy} aria-label={label || 'Copy'} title={label ? undefined : 'Copy'}>
