@@ -25,3 +25,4 @@ export function repeat_hit(r, d, f) {
   const n = Math.max(1, +r.every || 1), months = (d.getFullYear() - f.getFullYear()) * 12 + d.getMonth() - f.getMonth();
   if (r.freq === 'daily') return days_between(f, d) % n === 0;
   if (r.freq === 'weekdays') return d.getDay() % 6 !== 0;
+  if (r.freq === 'weekly') return or(r.days, f.getDay()).includes(d.getDay()) && (days_between(monday(f), monday(d)) / 7) % n === 0;
