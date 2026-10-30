@@ -16,3 +16,4 @@ const HUE = { all: 'orange', drafts: 'slate', waiting: 'amber', completed: 'gree
 
 /* cur: the list on show (its name and count on the button), or null on a document page ("Documents"). In the menu each
    tile has its count on a line of its own. */
+export function lists_menu(cur) {
