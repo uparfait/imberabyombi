@@ -10,3 +10,4 @@
 .sign_tools { display: flex; min-width: 0; }
 .sign_tools > nav { flex: 0 1 auto; min-width: 0; }
 .sign_tools .tile_trigger { max-width: 100%; height: 2.25rem; background: transparent; }
+.sign_tools .tile_trigger:hover, .sign_tools .tile_trigger[aria-expanded="true"] { background: rgb(var(--fg) / .08); }
