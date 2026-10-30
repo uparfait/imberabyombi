@@ -1,6 +1,6 @@
 /* qr/qr_install.js: installing Qr-scan on its own (its own manifest, so only the scanner is installed). The browser offers
    it (beforeinstallprompt): Install shows and asks; once installed, or opened as the app, it goes. iPhones and iPads make no
-   offer: there it is Share, then Add to Home Screen. on_change(fn) tells when that changes. */
+   offer: there it is Share, then Add to Home Screen, until it is installed (remembered in this browser once installed or
 let offer = null;
 const subs = new Set(), emit = () => subs.forEach(f => f());
 addEventListener('beforeinstallprompt', e => { e.preventDefault(); offer = e; emit(); });
