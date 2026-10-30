@@ -7,3 +7,4 @@
   .wrap { @apply mx-auto w-full px-4 sm:px-6 lg:px-10 2xl:px-16; }
   .section { @apply py-20 sm:py-28; }
   /* 44px touch target (mobile first); .btn_sm is 36px; a button placed beside a field grows to the field height (section 5G) */
+  .btn { @apply inline-flex min-h-11 select-none items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-medium transition duration-300 active:scale-[.97] disabled:pointer-events-none disabled:opacity-50; }
