@@ -36,3 +36,4 @@ export function sidebar(mod) {
   const create = CREATE.filter(([m]) => auth.can(m, 2)); SIDE.busy = null;
   /* Top row (same height as the header): logo and web name (trimmed, never wider than the sidebar), close-sidebar button at the end */
   return <><div className="flex h-16 shrink-0 items-center gap-1.5 pl-4 pr-3">
+    <a href={to('/')} className="flex min-w-0 flex-1 items-center gap-2" aria-label={`${cfg.name}, home`}>{mark3d('#', 'h-8 w-8')}
