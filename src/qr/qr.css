@@ -1,3 +1,4 @@
 /* qr/qr.css: Qr-scan's screen (qr_app.jsx), phone first, one column: the top bar; the viewfinder (a dark square, the
    brand's four corners, a line that sweeps while it scans); the tools; what was found (green for a secure link, orange
    for one that is not); the recent scans. Colours come from the site's tokens, so light and dark follow. */
+body { background: rgb(var(--bg)); }
