@@ -4,3 +4,4 @@
 const inflate = async bytes => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());
 
 export async function zip_texts(buf, keep = name => /\.xml$/i.test(name)) {
+  const u8 = new Uint8Array(buf), dv = new DataView(buf), dec = new TextDecoder(); let e = u8.length - 22;
