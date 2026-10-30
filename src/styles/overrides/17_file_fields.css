@@ -12,7 +12,7 @@
   /* Charts & KPIs (Viz): hairline grid, quiet axes, thin marks. Hovering a mark dims the others. */
   .viz_card { display: flex; min-width: 0; flex-direction: column; gap: 1rem; padding: 1.25rem; }
   @media (min-width: 640px) { .viz_card { padding: 1.5rem; } }
-  @media (min-width: 1280px) { .viz_grid > .viz_card:last-child:nth-child(odd) { grid-column: span 2; } }   /* an odd last chart takes the full row */
+  @container (min-width: 52rem) { .viz_grid > .viz_card:last-child:nth-child(odd) { grid-column: span 2; } }   /* an odd last chart takes the full row (two across: room_2w) */
   .viz_plot { min-width: 0; overflow: hidden; }
   .viz_plot svg { display: block; max-width: 100%; height: auto; overflow: visible; font-family: var(--font_sans); }
   .viz_plot text { font-size: .6875rem; fill: rgb(var(--muted)); }
