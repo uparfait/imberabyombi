@@ -10,3 +10,4 @@ const load = () => lib ||= import('../editor/core/utils.js').then(u => u.load_sc
 function draw(q, text) {
   const c = q(0, 'M'); c.addData(text); c.make(); const n = c.getModuleCount(); let d = '';
   for (let r = 0; r < n; r++) for (let x = 0; x < n; x++) if (c.isDark(r, x)) d += `M${x} ${r}h1v1h-1z`;
+  return { n, d };
