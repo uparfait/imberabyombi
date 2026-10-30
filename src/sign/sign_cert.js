@@ -13,3 +13,4 @@ export async function certificate(pdf, d, L) {
   let page = pdf.addPage(A4), y = A4[1] - M;
   const room = need => { if (y - need < M) { page = pdf.addPage(A4); y = A4[1] - M; } };
   const text = (s, o = {}) => { const size = o.size || 10, f = o.bold ? bold : font, max = A4[0] - M * 2 - (o.x || 0);
+    let line = '';   /* wrap on spaces to the page width */
