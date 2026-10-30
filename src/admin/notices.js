@@ -37,3 +37,4 @@ export function notices(now = Date.now()) {
   if (res) out.push({ id: `res:${res}`, icon: 'calendar', tone: 'info', title: 'Reservations to review', text: plural(res, 'request waits', 'requests wait'), at: now, href: '/admin/inventory' });
   const low = can('inventory') ? db.list('inventory').filter(i => +i.qty <= +(i.min || 0)).length : 0;
   if (low) out.push({ id: `low:${low}`, icon: 'box', tone: 'warn', title: 'Low on stock', text: plural(low, 'item', 'items'), at: now, href: '/admin/inventory' });
+  return out.sort((a, b) => RANK[a.tone] - RANK[b.tone] || a.at - b.at);
