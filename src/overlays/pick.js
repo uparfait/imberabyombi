@@ -68,3 +68,4 @@ export const pick = {
     const none = list.querySelector('.pk_none'); if (none) none.hidden = any;
   },
   keys(e) {
+    const t = e.target, k = e.key, items = () => qsa('.pk_item:not([hidden]):not([disabled]), .pk_mon', this.el);
