@@ -18,3 +18,4 @@ const cv = document.createElement('canvas'), cx = cv.getContext('2d', { willRead
 async function decode(src, w, h) {
   const d = await reader();
   if (d) return (await d.detect(src))[0]?.rawValue || null;
+  const k = Math.min(1, 900 / Math.max(w, h)); cv.width = Math.round(w * k); cv.height = Math.round(h * k);
