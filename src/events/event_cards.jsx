@@ -34,8 +34,7 @@ const ROWS = {
   Audience: e => [['Expected', e.audience ? `${e.audience} people` : null], ...(e.capacity ? [['Capacity', e.capacity], ['Registered', bar_cell(e.registered || 0, e.capacity)]] : [])]
 };
 
-const group = (e, s, can) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
-  {can ? <button type="button" className="ev_edit" data-act="ev_edit" data-id={e.id} data-sec={s} aria-label={`Edit ${s.toLowerCase()}`}>{ic('edit', 'h-3.5 w-3.5')}Edit</button> : null}</div></th></tr>
+const group = (e, s, can, c) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
   {ROWS[s](e).filter(Boolean).map(([k, v, cls], j) => <tr key={k + j} className={cls || undefined}><th scope="row">{k}</th><td>{v === '' || v == null ? dash() : v}</td></tr>)}</Fragment>;
 
 export const event_cards = (e, can) => <section className="card ev_table" aria-label="Details"><table className="kv">
