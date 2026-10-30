@@ -21,3 +21,4 @@ function on_click(e) {
   const sum = e.target.closest('summary'); if (sum?.parentElement.tagName === 'DETAILS' && !e.target.closest('a, button, input')) toggle_details(sum.parentElement, e);
   /* Sidebar: the clicked link shows the spinner in place of its icon while the page loads (the redraw brings the icon back).
      React owns the link, so the spinner is state (use_nav_busy); aria-busy is set at once, the redraw clears it. */
+  const sl = e.target.closest('#sidebar a.side_link[href]');
