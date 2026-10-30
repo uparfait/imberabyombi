@@ -35,3 +35,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
   } else {
     x.lineWidth = 10; x.strokeRect(14, 64, 372, 272); x.lineWidth = 3; x.strokeRect(30, 80, 340, 240);
     fit(org.trim().toUpperCase(), C, 124, 300, 30); x.fillRect(60, 152, 280, 3);
+    fit(mid.trim().toUpperCase(), C, 202, 300, 56); x.fillRect(60, 248, 280, 3); fit(date, C, 284, 300, 24);
