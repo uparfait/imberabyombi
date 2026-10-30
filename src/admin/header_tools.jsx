@@ -11,3 +11,4 @@ import { to } from '../router/index.js';
 
 export const header_tools = (n = '') => <><button className="icon_btn" data-act="cmdk" aria-label={`Search${key_hint('K') ? ` (${key_hint('K')})` : ''}`}>{ic('search')}</button>
   <a className="icon_btn hidden sm:inline-grid" href={to('/ui')} aria-label="Design system">{ic('layers')}</a>
+  {theme_btn()}{account_menu(n)}</>;
