@@ -24,6 +24,7 @@ export function footer() {
           <a key={i} href={to('/contact')} className={SOCIAL_CLS} aria-label={l}>{ic(i, 'h-4 w-4')}</a>
         ))}</div>
         <a href={to('/qr-scan/')} data-reload="" className="app_badge mt-6" aria-label="Get the Qr-scan app">{ic('qr', 'h-7 w-7')}
+          <span><small>Get the app</small><b>Qr-scan</b></span></a>
         <iframe className="map mt-6 aspect-[4/3] w-full max-w-xs" src={cfg.map} title="Map showing our location" loading="lazy" referrerPolicy="no-referrer"></iframe></div>
         {col('Explore', PUB.map(([k, l]) => [k, l]))}
         {col('Platform', [['login', 'Sign in'], ['admin', 'Dashboard'], ['intro', 'Overview'], ['ui', 'Design system'], ['sitemap', 'Site map']])}
