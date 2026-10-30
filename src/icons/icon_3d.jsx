@@ -16,3 +16,5 @@ export const TONES = { brand: HUES.orange, ink: HUES.slate, ok: HUES.green, info
 /* a run of hues for rows of icons that should each look different (tiles, cards): hue_at(i) */
 export const HUE_RUN = ['orange', 'blue', 'green', 'violet', 'teal', 'pink', 'amber', 'indigo', 'sky', 'red'];
 export const hue_at = i => HUE_RUN[((i % HUE_RUN.length) + HUE_RUN.length) % HUE_RUN.length];
+
+const hex = c => TONES[c] || HUES[c] || (/^#[0-9a-f]{3,8}$/i.test(c || '') ? c : TONES.brand);
