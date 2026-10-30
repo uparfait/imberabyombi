@@ -16,3 +16,4 @@
   .ctx_label { padding: .5rem .75rem .25rem; font-size: .75rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: rgb(var(--muted)); }
   :focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   /* Scrollbars stay inside their component: slim, no arrow buttons, and the track keeps clear of rounded corners.
+     Chrome, Edge and Safari use the ::-webkit-scrollbar rules; other browsers get the standard thin scrollbar. */
