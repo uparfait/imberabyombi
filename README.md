@@ -9,3 +9,4 @@ charts and KPIs, all sharing one set of design tokens. Start any new website fro
 - **Light, dark or system theme**, switched instantly, with no flash on load.
 - **One design language**: Imberabyombi-style fields, menus, pickers and tooltips, flat (no shadows), brand orange and ink.
 - **Light and fast**: React is the only runtime dependency, lazy media, small CSS, works on low-end phones and slow networks.
+- **Accessible and SEO-ready**: landmarks, keyboard support, live regions, per-page titles, Open Graph, JSON-LD.
