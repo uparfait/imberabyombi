@@ -51,3 +51,4 @@ export function month_grid(d, items) {
       {its.slice(0, 3).map(item)}{more(its.length - 3, 'px-1.5')}</div>; };
   return <>
     <div className="grid grid-cols-7 border-b border-line text-center text-[0.6875rem] font-semibold tracking-widest text-muted">
+      {Array.from({ length: 7 }, (_, i) => <div key={i} className="py-2">{wday(add_d(s, i))}</div>)}</div>
