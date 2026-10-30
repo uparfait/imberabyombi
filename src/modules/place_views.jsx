@@ -39,6 +39,7 @@ VIEWS.events = () => {
   const next = all.filter(e => ev_state(e) === 'Upcoming').sort((a, b) => a.date.localeCompare(b.date)).slice(0, 3);
   return <>{t === 'all' && next.length ? <div className="mb-6 grid gap-5 md:grid-cols-3">{next.map(event_card)}</div> : null}
     {tabs('ev', [['all', 'All', all.length], ...EV_STATES.map(s => [s.toLowerCase(), s, n(s.toLowerCase())])], t)}
+    {crud('events', { title: t === 'all' ? 'All events' : `${EV_STATES.find(s => s.toLowerCase() === t)} events`, filter: in_state(t), view: v => go('/admin/events/' + v) })}</>;
 };
 
 const decide = (r, can) => can && r.status === 'Pending' ? <><button className="btn btn_soft btn_sm" data-act="res" data-v="Approved" data-id={r.id}>Approve</button>
