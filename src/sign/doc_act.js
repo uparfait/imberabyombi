@@ -20,3 +20,4 @@ export const DOC_ACT = {
   },
   sign_doc_del: t => { const d = find_doc(t.dataset.id);
     if (kept_for_good(d)) return notify('Someone has signed it, so it is kept. Archive it instead.', 'warn', 'A signed document cannot be deleted');
+    ask(`Delete “${d.title}”? Its PDF and every signature on it are removed from this browser.`, async () => {
