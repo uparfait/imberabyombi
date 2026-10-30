@@ -2,3 +2,4 @@
   /* E. Smooth state changes */
   .row_flash > td { animation: flash 1.8s var(--ease); }
   .row_out { opacity: 0; transform: translateX(1.5rem); transition: opacity .25s, transform .25s; }
+  dialog.closing { animation: pop_out .2s var(--ease) forwards; }
