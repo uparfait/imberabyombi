@@ -50,3 +50,4 @@ export function zone_list(t = Date.now()) {
   LIST = zones().map(tz => { const off = offset_min(tz, t), g = gmt(off), s = gmt_short(off); let name = long_name(tz, t);
     if (/^GMT([+-]|$)/.test(name)) name = '';
     const text = [name, tz === 'UTC' ? '' : city(tz)].filter(Boolean).join(' - ') || tz;
+    return { tz, off, gmt: g, text, label: `(${g}) ${text}`, short: `${s} · ${city(tz)}`,
