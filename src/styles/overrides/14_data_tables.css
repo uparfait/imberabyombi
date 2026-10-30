@@ -33,3 +33,4 @@
     color: rgb(var(--muted)); transition: background-color .15s, color .15s; }
   .search_btn { left: .375rem; }
   .clear_btn { right: .375rem; }
+  .search_btn:hover, .search_btn:focus-visible { color: rgb(var(--brand)); background: rgb(var(--brand) / .1); }
