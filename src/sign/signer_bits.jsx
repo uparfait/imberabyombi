@@ -10,3 +10,5 @@ import { when } from './sign_store.js';
 /* what "Force digital signature" asks of a signer (its help icon and the row's tooltip) */
 export const CERT_HELP = 'The signer must verify their identity with a digital certificate (the certificate file and its password) before they '
   + 'can sign or stamp.';
+
+/* one row: a button when it does something (a: its data-act and other attributes), else plain text; tick: a ✓ at its end */
