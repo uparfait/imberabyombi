@@ -20,3 +20,4 @@ export const Tick = ({ text, sub }) => <div className="att_done" role="status">
   <p className="att_done_t">{text}</p>{sub ? <p className="text-muted">{sub}</p> : null}</div>;
 
 export function Attend_form({ c, id, demo }) {
+  const [mode, set_mode] = useState('Drawn'), [done, set_done] = useState(null), [err, set_err] = useState('');
