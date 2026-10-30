@@ -10,6 +10,7 @@ import { badge, empty, help_tip } from '../ui/index.js';
 import { to } from '../router/index.js';
 import { ev_state } from './ev_state.js';
 import { event_cards } from './event_cards.jsx';
+import { invites_card } from './event_invites.jsx';
 
 const HELP = 'Every detail of this event, by section. Edit a section on its own; postpone, cancel or restore the event on the right.';
 /* the actions that fit each state: [handler, label, icon, the states it shows in] */
