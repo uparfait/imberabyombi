@@ -60,3 +60,6 @@ function use_desktop() {
     fit(); addEventListener('resize', fit);
     return () => { if (m) m.content = was; removeEventListener('resize', fit); root.style.removeProperty('--sign_z'); };
   }, []);
+}
+
+export function Sign_page() {
