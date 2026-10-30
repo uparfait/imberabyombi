@@ -36,3 +36,4 @@ export function live_page(id, c) {
         { icon: 'users', label: 'Attendees', href: to(page + '/attendance') }, { icon: 'fullscreen', label: 'Full screen', attrs: { 'data-act': 'live_full' } }] })}</div></header>
     <div className="live_body"><section className="live_main">
       <div className="card live_now">{it ? <><p className="att_kind">Now · {span(it)}</p><h2 className="live_now_t">{it.title}</h2>
+        {it.p_name ? <p className="live_who">{it.p_name}{it.p_title ? `, ${it.p_title}` : ''}</p> : null}<progress max="100" value={done} aria-label="How far it has got"></progress></>
