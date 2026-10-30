@@ -12,3 +12,5 @@ import { task_change } from '../modules/index.js';
 import * as table from '../table/index.js';
 import { set_token, set_theme } from '../actions/index.js';
 import { allow_select_change, page_tz_change, role_land_change, perm_change, import_change } from './settings_changes.js';
+
+function on_change(e) {
