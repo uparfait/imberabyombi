@@ -23,6 +23,7 @@ export function Qr_app() {
     catch (e) { stop(); set({ phase: 'error', msg: WHY[e.name] || 'The camera could not start.' }); }
   };
   useEffect(() => { let perm;   /* the camera's permission, where the browser tells it */
+    navigator.permissions?.query({ name: 'camera' }).then(p => { perm = p; p.onchange = () => p.state === 'granted' && go();
 
   return <div className="qr_app">{top_bar()}
     <main className="qr_main">
