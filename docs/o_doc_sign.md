@@ -60,6 +60,7 @@ every account starts empty.
   step (your signature drawn, typed or uploaded, your stamp made or uploaded, the agreement, the certificate when forced)
   and brings you back to the draft: **Signed by you**. Your fields now show your marks and stay as they are (not moved,
   resized, removed or added to), and you are not edited or removed as a signer ([`self_sign.jsx`](../src/sign/self_sign.jsx)).
+- **Preview**, at the foot of the right column once someone has signed: the document with the marks so far, and
 ## Signing
 - The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
   their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
