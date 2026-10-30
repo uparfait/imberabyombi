@@ -7,16 +7,8 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 .qr_view { position: absolute; inset: 0; overflow: hidden; background: #0d0d0e; }
 .qr_view video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
 .qr_view.on video { opacity: 1; }
-.qr_view video.mirror { transform: scaleX(-1); }
-.qr_corners { --l: 2.5rem; --w: 4px; --c: rgb(var(--brand)); position: absolute; inset: 14%; pointer-events: none;
-  background: linear-gradient(var(--c) 0 0) 0 0 / var(--l) var(--w), linear-gradient(var(--c) 0 0) 0 0 / var(--w) var(--l),
-    linear-gradient(var(--c) 0 0) 100% 0 / var(--l) var(--w), linear-gradient(var(--c) 0 0) 100% 0 / var(--w) var(--l),
-    linear-gradient(var(--c) 0 0) 0 100% / var(--l) var(--w), linear-gradient(var(--c) 0 0) 0 100% / var(--w) var(--l),
-    linear-gradient(var(--c) 0 0) 100% 100% / var(--l) var(--w), linear-gradient(var(--c) 0 0) 100% 100% / var(--w) var(--l);
-  background-repeat: no-repeat; }
-.qr_line { position: absolute; top: 15%; right: 17%; left: 17%; height: 2px; border-radius: 2px;
-  background: linear-gradient(90deg, transparent, rgb(var(--brand)), transparent); animation: qr_sweep 2.2s ease-in-out infinite alternate; }
-@keyframes qr_sweep { to { top: 85%; } }
+
+/* over the camera: the top row, the scan window (the rest dimmed by its outline), the hint and the round buttons */
 @media (prefers-reduced-motion: reduce) { .qr_line { animation: none; top: 50%; } }
 .qr_idle { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1.25rem; padding: 2rem; color: #fff; text-align: center; }
 .qr_idle_ic { display: grid; width: 5rem; height: 5rem; place-items: center; border-radius: 1.5rem; background: rgb(255 255 255 / .08); }
