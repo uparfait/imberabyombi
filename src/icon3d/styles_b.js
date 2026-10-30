@@ -26,7 +26,7 @@ export function glass(G, C, i, k) {
   return [blur(i + 'b', 14) + blur(i + 'g', 5) + lin(i + 'a', [[0, shade(C.p, 10), .82], [1, C.s, .5]], [0, 0, 1, 1])
     + rad(i + 'h', [[0, '#fff', .6], [1, '#fff', 0]], '28%', '18%', '60%')
     + lin(i + 'r', [[0, '#fff', .95], [.5, '#fff', .08], [1, '#fff', .55]], [0, 0, 1, 1])
-    + vol(i + 'v', { goo: 1, bevel: 2.5, surf: 3, spec: .9, exp: 22, shade: .25 }),
+    + vol(i + 'v', { goo: 1, bevel: 2.5, surf: 3, spec: .9, exp: 22, shade: .25 }, k),
     `<circle cx="138" cy="58" r="38" fill="${C.t}" opacity=".9" filter="url(#${i}b)"/>`
     + `<rect ${tile(33)} fill="${shade(C.p, -18)}" opacity=".45"/><rect ${tile(26)} fill="url(#${i}a)"/><rect ${tile(26)} fill="url(#${i}h)"/>`
     + `<rect ${tile(26)} fill="none" stroke="url(#${i}r)" stroke-width="2.5"/><rect ${tile(32, 36, 128, 34)} fill="none" stroke="#fff" stroke-opacity=".22"/>`
