@@ -26,3 +26,4 @@ const ROWS = {
 
 const card = (e, s, can) => <section key={s} className="card ev_card" aria-labelledby={`ev_sec_${s}`}>
   <header className="ev_card_head"><h3 id={`ev_sec_${s}`}>{s}</h3>
+    {can ? <button type="button" className="btn btn_ghost btn_sm" data-act="ev_edit" data-id={e.id} data-sec={s}>{ic('edit', 'h-4 w-4')}Edit</button> : null}</header>
