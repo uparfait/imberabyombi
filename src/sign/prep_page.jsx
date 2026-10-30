@@ -17,3 +17,4 @@ function Prep_doc({ d }) {
 
 export const prep_page = d => <div className="sign_work">
   <aside className="sign_left" aria-label="Document and signers">{prep_panel(d)}</aside>
+  <section className="sign_center" aria-label="Pages"><Prep_doc d={d} /></section>
