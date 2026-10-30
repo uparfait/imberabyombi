@@ -27,3 +27,4 @@ function on_click(e) {
   if (sec) { const el = qs('#s_' + sec.dataset.sec); close_dialog(qs('#drawer')); if (route.path === '/' && el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } }
   else if (e.target.closest('#drawer a')) close_dialog(qs('#drawer'));
   const t = e.target.closest('[data-act]'), a = t?.dataset.act;
+  if (!t || t.disabled || !ACT[a]) return;
