@@ -22,3 +22,4 @@ const F = (tz, key, opts) => { const k = tz + '|' + key; let f = FMT.get(k);
 const PARTS = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hourCycle: 'h23' };
 
 /* the wall-clock parts of instant t in tz */
+export function tz_parts(tz, t) {
