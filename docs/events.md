@@ -41,6 +41,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
   **Recurring**, **Postponed**, **Cancelled** and **Past**, each with its count. The table's Status column shows the same.
 - A row, a card or an event on the calendar opens its page, `/admin/events/<id>`; an activity's is `/admin/calendar/<id>`
   ([`events/event_page.jsx`](../src/events/event_page.jsx)). Its details are one table (Field | Value), a row per
+  section with an **Edit** that changes that section only (`open_form(c, id, {}, [title, keys])`).
   - **Postpone**: it opens with the event's date, times and time zone as they are now. Change them to the new ones, or
     clear the date if the new one is not known yet (the event then leaves the calendar). A reason is optional.
   - **Cancel event**: with a reason. It leaves the calendar.
