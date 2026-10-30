@@ -44,3 +44,4 @@ export const HASH_VIEW = [28, 24, 144, 144];
 
 /* a glossy letter or symbol, inline so it uses the site's fonts; '#' is drawn from HASH (the brand mark) */
 const MARKS = new Map();
+export function mark3d(t, c = 'h-9 w-9', color = 'brand') {
