@@ -36,3 +36,5 @@ export function run_after_render({ keep, anim }) {
   ui.flash = null; render_flags.nav_fetched = false; enhance(); show_next();
   if (!keep) help_intro();   /* a new page: its first help icon introduces itself (once per load) */
   if (ui.scroll_flash) { ui.scroll_flash = false; qs('#main .row_flash')?.scrollIntoView({ block: 'center' }); }   /* a task opened from the calendar */
+  if (ui.pending_form && schemas[ui.pending_form]) { const c = ui.pending_form; ui.pending_form = null; open_form(c); }   /* "Add …" chosen on another page */
+}
