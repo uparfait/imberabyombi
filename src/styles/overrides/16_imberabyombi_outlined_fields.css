@@ -61,6 +61,7 @@
      it is sized from the row's width (the font in container units, the rest in em), so the words get smaller rather than
      cut; where the row is narrow they get shorter ("Fri, Oct 30", "GMT+2"), then the arrows go. The date and times never
      shrink below their words; only the time zone gives way (cut with "…", its whole name on hover). Each block is the
+     real input or select, see-through, over a small label and the value in words; while it is typed in, its own text
   .when_block:hover { background: rgb(var(--fg) / .1); }
   .when_block:focus-within { outline: 2px solid rgb(var(--brand)); outline-offset: 0; }
   .when_block input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0 1rem; border: 0; border-radius: inherit; background: transparent;
