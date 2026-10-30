@@ -62,3 +62,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [Design tokens](docs/design_tokens.md) | [Scaling and themes](docs/scaling_and_themes.md) |
 | [Naming and files](docs/naming_and_files.md) | [Rendering and state](docs/rendering_and_state.md) |
 | [Actions and events](docs/actions_and_events.md) | [Forms, fields and pickers](docs/forms_and_fields.md) |
+| [Feedback and loading](docs/feedback_and_loading.md) | [Dialogs and overlays](docs/dialogs_and_overlays.md) |
