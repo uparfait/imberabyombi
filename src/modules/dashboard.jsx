@@ -24,3 +24,4 @@ VIEWS.dashboard = () => {
   const W = dash_widgets(u);
   return <>
     <section aria-label="Welcome" className="flex flex-wrap items-end gap-4">
+      <div className="hero_in min-w-0 flex-1"><p className="text-sm text-muted">
