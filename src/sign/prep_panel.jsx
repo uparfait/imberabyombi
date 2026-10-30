@@ -3,3 +3,4 @@
    they must sign with a digital certificate; each card is tinted with the signer's colour, from their email) and the
    form that adds a
    signer: name, email and a note for them. People already in the system are suggested as you type a name. Once there is
+   a signer the form folds into an "Add signer" button; Save adds the signer and folds it again, Cancel just folds it. */
