@@ -30,3 +30,4 @@ export function Qr_app() {
     catch { set({ phase: 'error', msg: 'That picture could not be read.' }); } };
   const flip = () => { const f = facing === 'environment' ? 'user' : 'environment'; set_facing(f); go(f); };
   useEffect(() => stop, []);
+  const scanning = st.phase === 'scan';
