@@ -17,6 +17,7 @@ import { MINUTES_ACT } from './event_minutes.jsx';
 import { LIVE_ACT } from './live_page.jsx';
 import { ATTENDEES_ACT } from './attendees_view.jsx';
 import { ORG_ACT } from './org_act.jsx';
+import { TRACK_ACT } from './track_full.jsx';
 import { att_mins } from './att_window.js';
 import { ev_state } from './ev_state.js';
 import { field } from '../fields/index.js';
