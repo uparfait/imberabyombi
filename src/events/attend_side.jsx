@@ -23,6 +23,7 @@ export function attend_side(e, c, st) {
       <Qr text={url} label="Attendance QR code" /></button> : null}{open ? qr_full(e, url, n) : null}
     <div className="ev_att_side"><a href={to(page + '/attendance')} className="ev_count" data-tip={n > 99 ? `${n} attended` : undefined}><b>{n > 99 ? '99+' : n}</b> attended</a>
       {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={url} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button>
+        : <a href={to(page + '/attendance')} className="btn btn_outline btn_sm">{ic('users', 'h-4 w-4')}Attendance</a>}
       {tile_menu({ id: `pop_links_${e.id}`, title: e.title, icon: false, label: 'Open', tiles })}</div>
   </div>;
 }
