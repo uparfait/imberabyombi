@@ -45,3 +45,4 @@ function intro(x) {
 export function help_intro(root) {
   const id = ++run;
   [500, 1200, 2600].forEach(ms => setTimeout(() => {
+    if (id !== run) return;
