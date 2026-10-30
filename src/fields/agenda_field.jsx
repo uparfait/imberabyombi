@@ -27,3 +27,4 @@ function Agenda_editor({ v }) {
 export const agenda_field = (f, v) => <div key={f.k} className="room sm:col-span-2"><p className="ag_cap mb-2">{f.l}</p><Agenda_editor v={v} /></div>;
 
 const val = (el, n) => (el.querySelector(`[data-ag=${n}]`)?.value || '').trim();
+export const agenda_from = f => [...f.querySelectorAll('[data-ag-item]')].map(el => ({ from: to24(val(el, 'from')), to: to24(val(el, 'to')),
