@@ -42,3 +42,4 @@ export function week_grid(d, items) {
 export function month_grid(d, items) {
   const f = new Date(d.getFullYear(), d.getMonth(), 1), s = add_d(f, -f.getDay()), td = ymd();
   const item = it => it.all_day ? cal_task(it) : <button key={it.c + it.id} data-act="ev" data-c={it.c} data-id={it.id}
+    className={`mb-0.5 block w-full truncate rounded-md px-1.5 py-0.5 text-left text-[0.6875rem] ${it.tone === 'ink' ? INK : 'bg-brand/15 text-accent'}`}>
