@@ -20,11 +20,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 - **Attendees**: `…/<id>/attendance`, the usual table (search, sort, export to CSV, JSON or Excel). A row shows the
   signature. A new sign-in shows at once on any open page (other tabs too).
 
-## The live screen
-`…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)): the whole window, no sidebar. Its title, description
-and times; the agenda item running now, large, with its presenter and progress, and the agenda; the time left above a
-large QR code (full screen on a click), the count and the link. **Menu** (tiles): Edit agenda, Record minutes, Add
-task, Attendees, Full screen.
+## View This Event
 
 ## Minutes and follow-ups
 - **Record minutes** (live screen) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
