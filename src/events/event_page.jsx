@@ -29,7 +29,7 @@ const side = (e, st, acts, t = count_to(e, st)) => <aside className="card ev_car
   {e.status_note && (st === 'Postponed' || st === 'Cancelled') ? <p className="ev_note">{e.status_note}</p> : null}
   {acts ? <div className="ev_acts">{ACTS.filter(a => !a[3] || a[3].includes(st)).map(([k, l, i]) =>
     <button key={k + l} type="button" className={`btn btn_sm ${k === 'ev_cancel' || k === 'ev_del' ? 'btn_ghost ev_bad' : 'btn_outline'}`} data-act={k} data-id={e.id}>
-      {ic(i, 'h-4 w-4')}{l}</button>)}</div></aside>;
+      {ic(i, 'h-4 w-4')}{l}</button>)}</div> : null}</aside>;
 
 export function event_page(id) {
   const e = db.find('events', id);
