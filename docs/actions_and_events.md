@@ -20,3 +20,6 @@ import { db, rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
 export const EXAMPLE_ACT = {
   archive: t => { db.upsert('tasks', { id: t.dataset.id, status: 'Done' }); rerender(); notify('Archived.', 'ok'); }
+};
+```
+Add the object to `ACT` in `src/actions/act.js`, and `archive: 1` to `REQ` if it should spin its button. A module whose
