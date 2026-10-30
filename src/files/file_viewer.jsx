@@ -33,3 +33,4 @@ function File_view({ f, n }) {
   else body = <Text_view f={f} />;
   return (
     <>
+      <header className="flex items-center gap-2 py-2 pl-4 pr-2">{ic(FICON[k], 'h-5 w-5 shrink-0 text-muted')}
