@@ -34,6 +34,7 @@ export function account_menu(n = '', rail = false) {
             <button className="menu_item menu_danger" data-act="logout">{ic('logout', 'h-4 w-4 text-muted')}Sign out</button></div>
           {rail ? <div className="mt-2 grid gap-0.5 border-t border-line pt-2 md:hidden">{RAIL.map(([k, i, c, l]) =>
             <button key={k} className="menu_item" data-act="panel" data-k={k}>{ic(i, `h-4 w-4 ${c}`)}{l}</button>)}
+            <button className="menu_item" data-act="cmdk">{ic('plus', 'h-4 w-4 text-muted')}Go to</button></div> : null}
           <div className="mt-2 rounded-2xl bg-surface-2 p-4">
             <p className="flex items-center gap-2 text-sm">{ic('box', 'h-4 w-4 text-muted')}{`${pct}% of 5 MB browser storage used`}</p>
             <progress className="mt-2" max="100" value={pct}></progress></div>
