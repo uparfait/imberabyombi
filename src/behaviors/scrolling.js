@@ -42,3 +42,4 @@ const on_resize = () => { tip.hide(); pick.place(); clearTimeout(RZ);
 
 export function install_scroll() {
   addEventListener('scroll', header_line, { passive: true });
+  addEventListener('scroll', e => { tip.hide(); viz_tip.hide(); qsa('.tile_pop:not([hidden]), .pop_fixed:not([hidden])').forEach(place_tile); if (!qs('#ctx').hidden) close_pops();
