@@ -33,3 +33,4 @@ import { to, go } from '../router/index.js';
 <a href={to('/about')}>About</a>
 ```
 One delegated click listener (`src/behaviors/link_clicks.js`) turns clicks on internal links into `go()`, so the page
+never reloads. It leaves alone: links to other sites, `target="_blank"`, `download`, Ctrl / ⌘ / Shift / Alt clicks
