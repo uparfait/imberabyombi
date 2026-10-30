@@ -21,3 +21,4 @@ function co_form(c, e, i = -2) {
   const co = e.co_orgs || [], p = co[i];
   modal({ title: p ? 'Edit co-organiser' : 'Add co-organiser', body: who(p), submit: p ? 'Save changes' : 'Add',
     actions: p ? <button type="button" className="btn btn_warn" data-act="ev_co_del" data-c={c} data-id={e.id} data-i={i}>Remove</button> : null,
+    on_submit: (d, f) => { if (taken(e, d.p_email, i)) return twice(f, 'p_email');
