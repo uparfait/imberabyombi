@@ -68,3 +68,4 @@ Every feature below is working code. Each line says what it is and where it live
   and To sign, each with its count. Every account starts empty and sees what it prepared and what was sent to it.
 - Upload a PDF (checked to really be one), add signers with a note for each, place signature and stamp fields (click or
   drag, move, resize, arrow keys), autosave, send.
+- Sign with a drawn, typed (five handwriting fonts) or uploaded signature; a created or uploaded stamp; background
