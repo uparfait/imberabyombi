@@ -11,3 +11,4 @@ export function toggle_pop(id) { const p = document.getElementById(id); if (!p) 
    as tall as the room below allows (the tiles scroll inside) */
 export function place_tile(p) {
   const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
+  /* inside a zoomed page (O-Doc Sign scaled to fit) the menu is placed in that page's own pixels: screen pixels ÷ zoom */
