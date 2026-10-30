@@ -29,3 +29,4 @@
   .ev_qr_btn { padding: .375rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: #fff; cursor: zoom-in; }
   .ev_count { color: rgb(var(--muted)); font-size: .875rem; } a.ev_count:hover { color: rgb(var(--fg)); }
   .ev_count b { color: rgb(var(--fg)); font-size: 1.25rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .ev_qr_big { display: grid; justify-items: center; gap: 1rem; } .ev_qr_big .qr { width: min(26rem, 70dvh, 100%); }
