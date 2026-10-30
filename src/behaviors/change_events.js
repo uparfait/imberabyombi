@@ -33,3 +33,4 @@ function on_change(e) {
   if (t.dataset.perm) perm_change(t);
   if (t.dataset.token && t.type === 'select-one') set_token(t.dataset.token, t.value);
   if (t.dataset.themeSet != null) set_theme(t.value);
+  if (t.dataset.calview != null) { ui.cal_view = t.value; ui.slide = { n: 0, sel: '.date_body' }; rerender(); }
