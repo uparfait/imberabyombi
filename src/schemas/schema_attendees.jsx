@@ -10,3 +10,4 @@ export const attendees_schema = {
     field_spec('name', 'Full name', 'text', 0, 1), field_spec('email', 'Email', 'email', 0, 1), field_spec('tel', 'Telephone', 'tel'),
     field_spec('org', 'Organisation or unit'), field_spec('position', 'Position'),
     field_spec('sig_kind', 'Signed', 'select', ['Drawn', 'Digital', 'By hand'], 0, { def: () => 'By hand' }),
+    field_spec('at', 'Time', 'hidden', 0, 0, { def: () => new Date().toISOString() }),
