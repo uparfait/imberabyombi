@@ -44,3 +44,4 @@ const HELP = [['How do roles decide what I see?', 'Each role has a level per mod
 /* search_box(attrs, placeholder): attrs is a props object spread on the search input */
 const help = () => <>{search_box({ 'data-filter': '.accordion_item' }, 'Search help')}
   <div className="accordion mt-4">{HELP.map(([q, a]) => <details key={q} className="accordion_item"><summary className="text-sm">{q}</summary>
+    <p className="px-5 pb-4 pt-3 text-sm text-muted">{a}</p></details>)}</div>
