@@ -22,3 +22,5 @@ export const qr_live = o => { const mark = mark3d('#', 'h-9 w-9', brand());
       <div className="qr_window" aria-hidden="true"><i className="qr_corners"></i><i className="qr_line"></i></div>
       <div className="qr_live_foot"><p className="qr_live_hint">Point at a QR code</p>
         <div className="qr_live_bar">
+          {o.has_torch ? round('bulb', 'Light', o.toggle_torch, o.lit) : null}</div></div></> : null}
+  </div>; };
