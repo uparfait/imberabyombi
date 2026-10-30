@@ -18,3 +18,4 @@ let main_enter = false;  /* the current page's <main> came with the page-enter a
 export const skip_after_render = () => { skipped = true; };
 
 export function before_page(keep) {
+  CHARTS.clear(); pick.close(); tip.hide(); viz_tip.hide(); clear_nav_busy();
