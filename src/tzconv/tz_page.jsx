@@ -37,7 +37,7 @@ export function Tz_page() {
   /* Now and Swap set the date field anew (dk: its key), the rest follows the state */
   const now = () => { const p = tz_parts(st.from, Date.now()); put({ date: ymd_of(p), h: p.h, m: p.mi, dk: st.dk + 1 }); };
   const swap = () => put({ from: st.to, to: st.from, ff: st.tf, tf: st.ff, date: ymd_of(tp), h: tp.h, m: tp.mi, dk: st.dk + 1 });
-  return <div className="page_enter">
+  return <div className="page_enter tzc_page">
     {page_title('TZ PlayGround', 'Timezone PlayGround. Pick a date and time in one time zone to see it in another. Swap turns them around; Now sets the current '
       + 'time. Search the time zones by city, name or offset, such as GMT+2.')}
     <div className="tzc">
