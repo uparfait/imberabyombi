@@ -14,3 +14,4 @@ export function agenda_table(e, fade = false) {
   if (!ag.length) return <p className="text-sm text-muted">None yet</p>;
   return <div className="ev_inv_box ev_tbl"><table className="ev_inv_table ev_ag_table">
     <thead><tr><th scope="col">Presenter</th><th scope="col">Item</th><th scope="col" className="ev_ag_time ev_wide">Time</th></tr></thead>
+    <tbody>{ag.map((a, i) => <tr key={i} className={i === now ? 'is_now' : fade && now > -1 && i < now ? 'is_done' : undefined}>
