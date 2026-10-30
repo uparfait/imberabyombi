@@ -33,3 +33,4 @@ every account starts empty.
   the middle. The right column starts with **Send for signing** and **Save draft**; its captions (Placing for, Fields,
   Placed) explain themselves in help icons.
 - **Signers**: name, email, an optional **note for that signer** (they read it before signing), and **Must sign with a
+  digital certificate**. People already in the system are suggested as you type a name. Once there is a signer the form
