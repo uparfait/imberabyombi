@@ -4,7 +4,6 @@
    page's zone. Their forms come in sections (form_sec): the same sections as their details. */
 import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/index.js';
 import { bar_cell } from '../ui/index.js';
-import { show_err } from '../feedback/index.js';
 import { field_spec, option_list, STATUS } from './fields.js';
 
 /* a record's time zone in a table cell or its details: "GMT+2 · Kigali" on its date (none: set in the page's) */
