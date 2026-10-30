@@ -17,7 +17,7 @@ const views = wk => <div className="seg" role="radiogroup" aria-label="Calendar 
   <span>{cap(v)}</span></label>)}</div>;
 
 VIEWS.calendar = () => {
-  const [, , , id, sub] = route.path.split('/'); if (id) return sub === 'attendance' ? attendance_page(id, 'activities') : sub === 'live' ? live_page(id, 'activities') : event_page(id, 'activities');   /* one activity */
+  const [, , , id, sub] = route.path.split('/'); if (id) return sub === 'live' ? live_page(id, 'activities') : event_page(id, 'activities');   /* one activity */
   const d = parse_d(ui.cal_date), wk = ui.cal_view !== 'month', items = cal_items(), can = auth.can('calendar', 2);
   after_render(() => { const s = qs('#date_hours'); if (s) s.scrollTop = 7 * 3 * rem(); });
   const grid = wk ? week_grid(d, items) : month_grid(d, items);
