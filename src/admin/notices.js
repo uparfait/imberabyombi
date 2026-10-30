@@ -13,3 +13,4 @@ const H = 3600e3, RANK = { bad: 0, warn: 1, info: 2, ok: 3 };
 const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 
 function events_for_me(now) {
+  return db.list('events').flatMap(e => {
