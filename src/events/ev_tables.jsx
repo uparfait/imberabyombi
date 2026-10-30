@@ -19,3 +19,6 @@ export function agenda_table(e, fade = false) {
       <td><b className="block font-medium">{a.title}{i === now ? <span className="chip ml-2 bg-ok/15 text-ok">Now</span> : null}</b>{sub(a.desc)}
         <span className="ev_sub ev_narrow">{fmt_time(a.from)} – {fmt_time(a.to)}</span></td>
       <td className="ev_ag_time ev_wide">{fmt_time(a.from)} – {fmt_time(a.to)}</td></tr>)}</tbody></table></div>;
+}
+
+const btn = (act, l, i, e, c, icon) => <button type="button" className="ev_edit" data-act={act} data-c={c} data-id={e.id} data-i={i} aria-label={l}>{ic(icon, 'h-3.5 w-3.5')}<span className="ev_btn_l">{l}</span></button>;
