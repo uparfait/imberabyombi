@@ -13,3 +13,5 @@ const note_chip = r => <button type="button" className="sign_chip" data-act="sig
 const cert_chip = r => <span className={`sign_chip ${r.cert_at ? 'ok' : ''}`} data-tip={r.cert_at
   ? `${r.cert_file} · verified ${when(r.cert_at)}` : 'They sign with their digital certificate and its password'}>
   {ic('shield', 'h-3.5 w-3.5')}{r.cert_at ? 'Certificate verified' : 'Certificate'}</span>;
+
+export const chips = r => r.note || r.cert ? <div className="sign_chips">{r.note ? note_chip(r) : null}{r.cert ? cert_chip(r) : null}</div> : null;
