@@ -15,3 +15,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Flat stroke icons and glossy 3D icons from one path dictionary (`src/icons/`); the 3D ones in colours fixed per place
   (never changed by the theme), drawn by the Icon3D engine (`src/icon3d/`), with a glossy "#" brand mark.
 - Iconisus (`/admin/icons`): a 3D icon maker for text, library icons (twelve sets) or SVG in six styles (classic, balloon,
+  ribbon, glossy, clay, glass), three colours, any size; copy or download the SVG.
