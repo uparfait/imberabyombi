@@ -53,3 +53,4 @@ VIEWS.students = () => {
     : t === 'bul' ? crud('bulletins', { title: 'Bulletin entries' })
     : <>{stat_row([['Collected', money(pays.filter(p => p.status === 'Paid').reduce((a, p) => a + +p.amount, 0)), 'coin', 'ok'],
       ['Partial', count('Partial'), 'clock', 'warn'], ['Unpaid', count('Unpaid'), 'x', 'bad']])}
+      {crud('payments', { title: 'Payments' })}</>;
