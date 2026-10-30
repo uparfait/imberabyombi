@@ -13,6 +13,7 @@ F('notes', 'Notes', 'textarea')
 ```
 Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `textarea`, `list` (suggestions),
 `date`, `time`, `datetime-local`, `month`, `week`, `hidden`, `files` (a file field), `subtasks` (task checklist editor),
+`tz` (a time zone), `seg` (a few choices as one segmented pill), `repeat` (how a recurring one repeats, see
 
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
