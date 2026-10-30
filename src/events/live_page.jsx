@@ -4,7 +4,7 @@
    code, large (a click shows it on the whole screen), with the live count and the link. Its Menu (the system's tile
    menu): Edit agenda, Record minutes, Add task, Attendees, Full screen. Redrawn every 30 seconds; the count follows new
    sign-ins at once. */
-import { pad, tz_parts, page_tz, fmt_time } from '../lib/index.js';
+import { tz_parts, page_tz, fmt_time, fmt_d, zone_short } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
 import { ic } from '../icons/index.js';
 import { empty } from '../ui/index.js';
