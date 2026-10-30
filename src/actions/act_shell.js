@@ -52,3 +52,4 @@ export const SHELL_ACT = {
   go: t => { close_dialog(qs('#modal')); go(t.dataset.href); },
   back: () => go(previous_path() || '/admin'),   /* a full-window page back to where the user came from */
   cmdk: () => open_cmd(),
+  pwd: t => { const i = t.parentElement.querySelector('input'), show = i.type === 'password'; i.type = show ? 'text' : 'password'; icon_to(t, show ? 'eye_off' : 'eye'); t.setAttribute('aria-label', show ? 'Hide password' : 'Show password'); },
