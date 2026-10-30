@@ -16,3 +16,5 @@ const FONTS = ['Figtree', 'Bricolage Grotesque', 'system-ui'];
 const range = (k, label, v, min, max, step) => <div className="field">
   <label htmlFor={`token_${k}`}>{label} <output id={`token_${k}_out`}>{`${v}rem`}</output></label>
   <input id={`token_${k}`} type="range" min={min} max={max} step={step} defaultValue={v} data-token={k} /></div>;
+
+function appearance(tk, th) {
