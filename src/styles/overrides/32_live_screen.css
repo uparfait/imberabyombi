@@ -14,3 +14,4 @@
   .live_agenda li { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); align-items: center; gap: 1rem; padding: .75rem 1rem; border-radius: var(--radius); }
   .live_agenda li.is_now { background: rgb(var(--ok) / .1); }
   .live_agenda li.is_done { opacity: .5; }
+  .live_when { color: rgb(var(--muted)); font-size: .875rem; font-variant-numeric: tabular-nums; }
