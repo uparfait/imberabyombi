@@ -34,3 +34,4 @@
 <script>
   window.NS = 'loremds:v1:';
   (function () { try {
+    var mode = JSON.parse(localStorage.getItem(NS + 'theme') || '"system"');
