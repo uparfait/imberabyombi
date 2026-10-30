@@ -32,3 +32,6 @@ function on_click(e) {
   if (t.tagName === 'A') e.preventDefault();
   if (a in REQ) request(() => ACT[a](t, e), { btn: REQ[a] === 1 && t.tagName === 'BUTTON' ? t : null, delay: REQ[a] === 1 || staff_page() ? cfg.latency : 0 });
   else ACT[a](t, e);
+}
+
+export const install_click = () => document.addEventListener('click', on_click);
