@@ -29,3 +29,5 @@ let n = 0;
 
 /* the device pixels of a size in CSS pixels on this screen (devicePixelRatio, in quarter steps, 1 to 3) */
 export const device_px = css => css * Math.min(3, Math.max(1, Math.round((globalThis.devicePixelRatio || 1) * 4) / 4));
+
+export function render(input, o = {}) {
