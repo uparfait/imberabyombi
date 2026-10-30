@@ -13,6 +13,7 @@ const fields_of = (fs, row) => fs.map(f => !f.row ? field(f, row[f.k])
 /* the form's fields (not those kept out of forms: form: false), or only keys (one section). A schema with form_sec
    shows its sec groups under small headings ("When", "Location") */
 const body_of = (s, row, keys) => { const fs = s.f.filter(f => f.form !== false && (!keys || keys.includes(f.k)));
+  if (keys || !s.form_sec) return fields_of(fs, row);
 
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset) */
 export function open_form(c, id, preset = {}) {
