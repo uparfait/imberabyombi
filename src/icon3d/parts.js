@@ -25,6 +25,7 @@ export const blur = (id, sd, r = '-60%') =>
   `<filter id="${id}" x="${r}" y="${r}" width="${-2 * parseFloat(r) + 100}%" height="${-2 * parseFloat(r) + 100}%"><feGaussianBlur stdDeviation="${sd}"/></filter>`;
 
 /* in device pixels: the goo's edge ramp, the smallest goo worth doing, the smallest bevel, the least extrusion depth, the
+   largest gap between extrusion copies; and the fill light that keeps tiny icons' far rims from going black */
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
   if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
   if (o.flat) return f + '</filter>';
