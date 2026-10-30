@@ -21,3 +21,6 @@ export function draw_stamp(c, { org, mid, color, shape }) {
       const cw = x.measureText(ch).width, a = bottom ? at + (w / 2 - acc - cw / 2) / r : at - w / 2 / r + (acc + cw / 2) / r;
       x.save(); x.translate(C + r * Math.cos(a), C + r * Math.sin(a)); x.rotate(bottom ? a - Math.PI / 2 : a + Math.PI / 2);
       x.fillText(ch, 0, 0); x.restore(); acc += cw + sp;
+    }
+  };
+  const star = (cx, cy, r) => { x.beginPath();
