@@ -5,3 +5,4 @@
    signer: name, email and a note for them. People already in the system are suggested as you type a name. Once there is
    a signer the form folds into an "Add signer" button; Save adds the signer and folds it again, Cancel just folds it. */
 import { ic } from '../icons/index.js';
+import { db, rerender } from '../store/index.js';
