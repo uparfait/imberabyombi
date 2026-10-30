@@ -18,3 +18,4 @@ export const qr_live = o => { const mark = mark3d('#', 'h-9 w-9', brand());
         : <a href={import.meta.env.BASE_URL} className="qr_live_mark" aria-label={`Back to ${cfg.name}`} title={cfg.name}>{mark}</a>}
       <span className="qr_live_name">Qr-scan</span>
       {o.app ? null : <Install />}</div>
+    {o.scanning ? <>
