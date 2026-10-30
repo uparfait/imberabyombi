@@ -23,3 +23,4 @@ export function admin_shell(mod, content) {
   /* Layout (Imberabyombi style): full-height sidebar on the left; header + content + side panels on the right.
      Header left: phones = menu icon + logo; desktop with the sidebar closed = logo that turns into "open sidebar" on hover. */
   return <div className="flex min-h-[100dvh]">
+  <div id="sidebar_scrim" ref={sync_ref(scrim_sync)} className={`scrim fixed inset-0 z-40 bg-ink/50 lg:hidden ${ui.side ? 'on' : ''}`}
