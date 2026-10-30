@@ -30,3 +30,6 @@ export function i3_src(n, color, css = 56) {
     CACHE.set(k, 'data:image/svg+xml,' + encodeURIComponent(render(glyph, { style: 'glossy', colors: [c], size: css, px, view: VIEW })));
   }
   return CACHE.get(k);
+}
+
+export const i3 = (n, c = 'w-14 h-14', color = 'brand') =>
