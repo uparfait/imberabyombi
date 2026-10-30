@@ -32,3 +32,4 @@ export function repeat_say(f) {
 }
 
 const chip = (name, v, label, on, cls = '', tip) => <label key={v} className={`choice_pill rp_chip ${cls}`} data-tip={tip}>
+  <input type="checkbox" className="sr-only" name={name} value={v} defaultChecked={on} aria-label={tip} />{label}</label>;
