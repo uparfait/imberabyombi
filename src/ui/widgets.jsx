@@ -28,3 +28,4 @@ export const stat_row = items => (
 /* act: JSX (a button or link) shown under the text */
 /* Empty or error state: an icon, the title with a help icon (the explanation shows in its tooltip, never as a paragraph)
    and an action. icon / color: a check in green by default; an error passes 'alert', 'bad'. */
+export const empty = (title, text, act = null, icon = 'check', color = 'ok') => (
