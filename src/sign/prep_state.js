@@ -19,3 +19,4 @@ export function prep_start(id) {
 }
 let later = 0;
 /* a change not saved yet: the "Unsaved" chip shows at once (the next draw keeps it); it is saved 1.5 s after the last one */
+export const prep_dirty = () => {
