@@ -4,3 +4,5 @@
 import { pad } from './text.js';
 /* db straight from its file (not the store barrel), as in dates.js */
 import { db } from '../store/db.js';
+
+export const device_tz = () => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC'; } catch { return 'UTC'; } };
