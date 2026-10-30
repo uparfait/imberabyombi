@@ -16,3 +16,4 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
 
 ## Installing it
 Only Qr-scan installs, never the site's other pages: it has its own manifest (`manifest.webmanifest`, scope
+`/qr-scan/`) and service worker (`sw.js`, the same scope; the site itself has neither). **Install** shows in the top bar
