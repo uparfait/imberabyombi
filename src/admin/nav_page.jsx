@@ -10,3 +10,5 @@ const head = (o, icon, text, extra = null) => { const T = o.routed ? 'h2' : 'h3'
   return <section className={`flex flex-wrap items-center gap-3 ${o.routed ? 'hero_in' : 'card p-4 sm:p-5'}`} aria-label={o.title}>{i3(icon, 'h-11 w-11')}
     <div className="flex min-w-0 flex-1 items-center gap-1"><T className="min-w-0 font-display text-2xl font-medium tracking-tight [overflow-wrap:anywhere]">{o.title}</T>
       {help_tip(text, o.title)}</div>{extra}</section>; };
+
+const tile = (o, it, i) => { const t = o.to(o.path.length, i), Tag = t.href ? 'a' : 'button';
