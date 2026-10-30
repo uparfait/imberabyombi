@@ -16,3 +16,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Library                  | `/admin/library`       | Books, rentals (return, overdue), declarations, monitoring tiles |
 | Events                   | `/admin/events`        | Upcoming cards with capacity progress, the full event list       |
 | Reservations & inventory | `/admin/inventory`     | Approve / reject reservations, stock with minimum-level meters   |
+| Smart parking            | `/admin/parking`       | Live slot grid, check-in, check-out with a fee (`cfg.parking_rate` per hour), movement log |
