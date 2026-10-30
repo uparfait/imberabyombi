@@ -34,9 +34,10 @@ const place_in = d => { if (!('place' in d)) return d;
 export const org_f = () => [field_spec('org_name', 'Name', 'text', 0, 1, { def: () => auth.user?.name || '' }),
   field_spec('org_email', 'Email', 'email', 0, 1, { def: () => auth.user?.email || '' }), field_spec('org_tel', 'Phone', 'tel')];
 export const audience_spec = () => field_spec('audience', 'Expected audience', 'number', 0, 0, { min: 1 });
+
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
 export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
-export const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
+const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
   if ('kind' in d) d.repeat = d.kind === 'Recurring' ? repeat_from(f) : null; return d; };
 
 /* a wall-clock date and time in tz → the instant (ms) */
