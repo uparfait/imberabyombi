@@ -66,3 +66,4 @@
     color: transparent; caret-color: transparent; text-align: center; font: inherit; cursor: pointer; }
   .when_block:focus-within input { color: rgb(var(--fg)); caret-color: auto; }
   .when_block:focus-within .when_text { visibility: hidden; }
+  .when_text { white-space: nowrap; pointer-events: none; }
