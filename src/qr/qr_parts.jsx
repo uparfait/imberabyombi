@@ -17,8 +17,7 @@ export function Install() {
 function Copy({ text, cls }) {
   const [ok, set] = useState(false);
   const copy = () => navigator.clipboard?.writeText(text).then(() => { set(true); setTimeout(() => set(false), 1500); }, () => {});
-  return <button type="button" className={cls} onClick={copy} aria-label={label || 'Copy'} title={label ? undefined : 'Copy'}>
-    {ic(ok ? 'check' : 'copy', 'h-4 w-4')}{label ? ok ? 'Copied' : label : null}</button>;
+  return <button type="button" className={cls} onClick={copy}>{ic(ok ? 'check' : 'copy', 'h-4 w-4')}{ok ? 'Copied' : 'Copy'}</button>;
 }
 const theme = () => { const html = document.documentElement, dark = !html.classList.contains('dark'); html.classList.toggle('dark', dark);
   try { localStorage.setItem('loremds:v1:theme', JSON.stringify(dark ? 'dark' : 'light')); } catch { /* kept for this visit only */ } };
