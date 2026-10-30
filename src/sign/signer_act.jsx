@@ -49,3 +49,4 @@ export const SIGNER_ACT = {
     el?.classList.remove('flash'); void el?.offsetWidth; el?.classList.add('flash');
     setTimeout(() => SIGNER_ACT.sign_fill({ dataset: { id: f.id } }), 550); },
   sign_finish: () => { const d = find_doc(S.id), r = my_rec(d);
+    if (!own_fields(d).length || left_of(d).length) return notify('Fill every field marked for you first.', 'warn', 'Not finished yet');
