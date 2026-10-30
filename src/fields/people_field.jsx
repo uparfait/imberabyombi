@@ -13,3 +13,5 @@ function People_editor({ k, v, add }) {
     <button type="button" className="btn btn_outline btn_sm justify-self-start" onClick={() => set([...rows, { i: uid() }])}>{ic('plus', 'h-4 w-4')}{add}</button></div>;
 }
 export const people_field = f => <div key={f.k} className="sm:col-span-2"><p className="ag_cap mb-2">{f.l}</p><People_editor k={f.k} v={f.v} add={f.add || 'Add'} /></div>;
+
+export const people_from = (f, k) => { const box = f.querySelector(`[data-people="${k}"]`); if (!box) return undefined;
