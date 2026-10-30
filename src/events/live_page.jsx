@@ -39,6 +39,7 @@ export function live_page(id, c) {
     {can ? <button type="button" className="ev_edit" data-act="ev_edit" data-col={c} data-id={id} data-sec={sec} aria-label={`Edit ${title.toLowerCase()}`}>{ic('edit', 'h-3.5 w-3.5')}Edit</button> : null}</div>;
   return <div className="live">
     <header className="live_top"><a href={to(page)} className="icon_btn" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
+      <h1 className="live_title truncate">{e.title}</h1>
       <div className="live_acts">{tile_menu({ id: `pop_live_${id}`, title: e.title, icon: 'grid', label: 'Menu', tiles: [
         ...(auth.can(c === 'events' ? 'events' : 'calendar', 2) && st !== 'Past' ? [{ icon: 'checklist', label: 'Edit agenda', attrs: { 'data-act': 'ev_edit', 'data-col': c, 'data-id': id, 'data-sec': 'Agenda' } }] : []),
         { icon: 'note', label: 'Record minutes', attrs: { 'data-act': 'ev_minutes', 'data-c': c, 'data-id': id } }, { icon: 'tasks', label: 'Add task', attrs: { 'data-act': 'ev_follow', 'data-c': c, 'data-id': id } },
