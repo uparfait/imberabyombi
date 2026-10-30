@@ -12,3 +12,4 @@ import { ev_state } from './ev_state.js';
 import { agenda_now } from './agenda_now.js';
 import { count_to, left, tick } from './countdown.js';
 import { att_count, att_url, BASE } from './attend_side.jsx';
+import { att_phase } from './att_window.js';
