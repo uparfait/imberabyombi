@@ -29,3 +29,4 @@ async function install_files(c) {
 }
 
 export function brand_apply() {
+  const t = tokens(), s = document.documentElement.style, c = brand();
