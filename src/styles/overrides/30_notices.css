@@ -5,3 +5,4 @@
   .notice_list { display: grid; gap: .125rem; max-height: min(26rem, 70dvh); overflow-y: auto; }
   .notice { position: relative; display: flex; align-items: center; gap: .75rem; width: 100%; padding: .625rem .75rem; border-radius: var(--radius); transition: background-color .2s; }
   .notice:hover { background: rgb(var(--fg) / .05); }
+  .notice_ic { display: grid; flex: none; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: var(--pill); }
