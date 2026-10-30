@@ -27,3 +27,4 @@ export const MINUTES_ACT = {
     let m = db.list('minutes').find(x => x.ref === e.id && x.date === day);
     if (!m) m = db.find('minutes', db.upsert('minutes', { ref: e.id, c, date: day, title: `Minutes · ${e.title} · ${fmt_d(day)}`, by: me(), at: Date.now() }));
     const key = 'editor_doc:m_' + m.id, { idb_get, idb_set } = await import('../editor/core/idb.js');
+    if (!(await idb_get(key))) await idb_set(key, { title: m.title, tabs: [{ id: 't1', name: 'Minutes', html: first_page(e, day) }], active: 't1', comments: [] });
