@@ -22,3 +22,5 @@ export function agenda_table(e, fade = false) {
 }
 
 const btn = (act, l, i, e, c, icon) => <button type="button" className="ev_edit" data-act={act} data-c={c} data-id={e.id} data-i={i} aria-label={l}>{ic(icon, 'h-3.5 w-3.5')}<span className="ev_btn_l">{l}</span></button>;
+
+export function org_table(e, c, can) {
