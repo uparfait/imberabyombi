@@ -25,3 +25,4 @@ export const ADMIN_ACT = {
      out and the new one in, so the change is easy to notice */
   panel: t => { const was = ui.panel, next = was === t.dataset.k ? null : t.dataset.k, pi = () => qs('#side_panel .panel_in');
     const anim = (kf, ms) => reduced() || !pi() ? null : pi().animate(kf, { duration: ms, easing: EASE }), slide = () => anim([{ opacity: 0, transform: 'translateX(1.5rem)' }, { opacity: 1, transform: 'none' }], 280);
+    ui.panel = next; qsa('aside [data-act=panel]').forEach(b => b.classList.toggle('rail_on', b.dataset.k === next && !b.closest('#side_panel')));
