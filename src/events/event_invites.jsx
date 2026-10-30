@@ -53,3 +53,4 @@ export function invites_card(e, st, can) {
       {auth.can('emails') ? <a href={to('/admin/emails?t=invite')} className="ev_link text-sm">See the email</a> : null}</header>
     {open ? <div className="ev_inv_add">
       <div className="ev_inv_row"><div className="field min-w-0 flex-1"><label htmlFor="ev_inv_in">Email addresses</label>
+        <input id="ev_inv_in" type="text" inputMode="email" autoComplete="off" placeholder=" " onKeyDown={keys}
