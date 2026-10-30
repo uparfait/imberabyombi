@@ -33,3 +33,4 @@ function oklch_hex(l, c, h) {
   return oklch_hex(l, 0, h);
 }
 export function seed_hue(hex) {
+  const [r, g, b] = [1, 3, 5].map(i => lin(parseInt(hex.slice(i, i + 2), 16) / 255));
