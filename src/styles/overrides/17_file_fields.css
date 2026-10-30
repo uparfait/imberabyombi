@@ -15,3 +15,4 @@
   @media (min-width: 1280px) { .viz_grid > .viz_card:last-child:nth-child(odd) { grid-column: span 2; } }   /* an odd last chart takes the full row */
   .viz_plot { min-width: 0; overflow: hidden; }
   .viz_plot svg { display: block; max-width: 100%; height: auto; overflow: visible; font-family: var(--font_sans); }
+  .viz_plot text { font-size: .6875rem; fill: rgb(var(--muted)); }
