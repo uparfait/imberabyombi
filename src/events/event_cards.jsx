@@ -32,9 +32,7 @@ const ROWS = {
     ['Attended', <button type="button" className="ev_link" data-act="ev_att_list" data-c={c} data-id={e.id}>{`${att_count(e.id)} people`}</button>]]
 };
 
-const group = (e, s, can, c) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
-  {can ? <button type="button" className="ev_edit" data-act="ev_edit" data-col={c} data-id={e.id} data-sec={s} aria-label={`Edit ${s.toLowerCase()}`}>{ic('edit', 'h-3.5 w-3.5')}Edit</button> : null}</div></th></tr>
-  {ROWS[s](e, c).filter(Boolean).map(([k, v, cls], j) => <tr key={k + j} className={cls || undefined}><th scope="row">{k}</th><td>{v === '' || v == null ? dash() : v}</td></tr>)}</Fragment>;
+const edit = (e, s, c) => <button type="button" className="ev_edit" data-act="ev_edit" data-col={c} data-id={e.id} data-sec={s} aria-label={`Edit ${s.toLowerCase()}`}>{ic('edit', 'h-3.5 w-3.5')}Edit</button>;
 
 export const event_cards = (e, can, c = 'events') => <section className="card ev_table" aria-label="Details"><table className="kv">
   <thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody>{SECS.map(s => group(e, s, can, c))}</tbody></table></section>;
