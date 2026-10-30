@@ -33,4 +33,5 @@ export function Qr_app() {
     <video ref={video} muted playsInline />
     {qr_live({ app: standalone(), scanning, has_torch: cam.torch, lit: cam.lit,
       toggle_torch: () => { torch(!cam.lit); set_cam({ ...cam, lit: !cam.lit }); } })}
+    {scanning ? null : st.phase === 'ask' ? <div className="qr_sheet qr_ask"><span className="qr_ask_ic" aria-hidden="true">{ic('video', 'h-7 w-7')}</span>
 }
