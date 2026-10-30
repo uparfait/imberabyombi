@@ -14,3 +14,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.field`                                | outlined field: the label rests inside and floats onto the border |
 | `.on_bg`                                | a form that sits on the page background (not on a card)          |
 | `.nav_link` / `.side_link` / `.link_group` | top navigation pill / sidebar link / translucent link group    |
+| `.panel` / `.memo` / `.check_row`       | side panel beside the content / note card / checklist row        |
