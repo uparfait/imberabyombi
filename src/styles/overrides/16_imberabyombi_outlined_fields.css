@@ -64,6 +64,7 @@
      real input or select, see-through, over a small label and the value in words; while it is typed in, its own text
      shows where the words were. */
   .when_wrap { container: when / inline-size; }
+  .when_cap { margin-bottom: .5rem; color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }   /* its title: what the row is */
   .when_block:hover { background: rgb(var(--fg) / .1); }
   .when_block:focus-within { outline: 2px solid rgb(var(--brand)); outline-offset: 0; }
   .when_block input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0 1rem; border: 0; border-radius: inherit; background: transparent;
