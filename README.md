@@ -25,3 +25,4 @@ lives in the browser and can be reset from Settings.
 | Area             | Highlights                                                                          |
 |------------------|-------------------------------------------------------------------------------------|
 | Public website   | Hero, about, mission, vision, strategies, staff, partners, thanks, contact, detail pages, sitemap |
+| Design system    | `/ui`: every component, field type, picker, feedback pattern and motion in one page  |
