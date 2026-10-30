@@ -19,3 +19,5 @@ export const week_of = f => ({ weeks: [nth(f) > 4 ? -1 : nth(f)], wdays: [f.getD
 const in_month = (r, d, f) => r.by === 'week'
   ? or(r.wdays, f.getDay()).includes(d.getDay()) && or(r.weeks, week_of(f).weeks[0]).some(w => w === -1 ? d.getDate() + 7 > month_days(d) : nth(d) === w)
   : or(r.dates, f.getDate()).some(x => x === -1 ? d.getDate() === month_days(d) : d.getDate() === x);
+
+/* does rule r (first date f) fall on day d? */
