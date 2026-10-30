@@ -13,6 +13,7 @@ import { kind_spec, kind_label, repeat_spec, where_f, org_f, audience_spec, even
 /* a record's time zone in a table cell or its details: "GMT+2 · Kigali" on its date (none: set in the page's) */
 const tz_cell = (v, row) => zone_short(v || page_tz(), row?.date);
 const place_cell = (v, row) => v === 'Virtual' ? 'Virtual' : row?.venue || '—';
+const kind_cell = (v, row) => tag(kind_label(row || {}));
 /* the date row: date, start, end (required or not) and time zone */
 const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }), field_spec('start', 'Starts', 'time', 0, 1, { row: 'when' }),
   field_spec('end', 'Ends', 'time', 0, end_req, { row: 'when' }), field_spec('tz', 'Time zone', 'tz', 0, 1, { def: () => device_tz(), row: 'when' })];
