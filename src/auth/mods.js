@@ -15,3 +15,4 @@ export const MODS = [
   { k: 'library', l: 'Library', s: 'Library', i: 'book', g: 'Academics' },
   { k: 'events', l: 'Events', s: 'Events', i: 'star', g: 'Operations' },
   { k: 'inventory', l: 'Reservations & inventory', s: 'Inventory', i: 'box', g: 'Operations' },
+  { k: 'parking', l: 'Smart parking', s: 'Parking', i: 'car', g: 'Operations' },
