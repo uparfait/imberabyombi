@@ -11,3 +11,4 @@ import { modal } from '../overlays/index.js';
 modal({
   title: 'Add a task',                 // text or JSX
   help: 'What this dialog is for.',    // shown behind a help icon by the title (or as the text of a dialog with no body)
+  body: () => <Task_form />,           // JSX or a function returning JSX: a function is drawn again on every rerender()
