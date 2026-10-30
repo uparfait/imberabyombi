@@ -49,3 +49,6 @@ export const AUTH_ROUTES = {
 export const error_page = () => (
   <main id="main" className="wrap py-20">
     {empty('Something went wrong', 'This page could not be shown. Reload the page, or reset demo data in Settings.',
+      <a href={to('/')} className="btn btn_primary btn_sm">Go to home page</a>, 'alert', 'bad')}
+  </main>
+);
