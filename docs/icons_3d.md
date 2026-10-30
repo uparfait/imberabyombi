@@ -49,6 +49,7 @@ Completed green, Archived indigo, To sign violet.
 numbers cannot look right at both 24 px and 300 px: small icons came out boxy, with hard black rims. The engine takes
 `k`, device pixels per unit, and sets every number from it (`parts.js`): the goo's edge ramp stays about 1.4 px wide and
 is skipped when it would be under a pixel; the bevel is at least 1.2 px, with the lighting's slope rescaled to match; a
+widened bevel dims the highlight; small icons get a little fill light so far rims never go black; the extrusion's copies
 Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
 (gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
 
