@@ -28,7 +28,7 @@
   .qr_off { font-size: .75rem; color: rgb(var(--muted)); overflow-wrap: anywhere; }
   /* under an event's status: its QR code (a click shows it full size), the count, the link, Links */
   .ev_att { display: grid; grid-template-columns: 7rem minmax(0, 1fr); align-items: center; gap: .75rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgb(var(--line)); }
-  .ev_att_one { grid-template-columns: minmax(0, 1fr); }
+  .ev_att_left { grid-column: 1 / -1; }   /* the time left, whole, above */
   .ev_att_side { display: grid; gap: .5rem; min-width: 0; }
   .ev_qr_btn { padding: .375rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: #fff; cursor: zoom-in; }
   .ev_count { color: rgb(var(--muted)); font-size: .875rem; } a.ev_count:hover { color: rgb(var(--fg)); }
