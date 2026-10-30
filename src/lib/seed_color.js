@@ -34,3 +34,4 @@ function oklch_hex(l, c, h) {
 }
 export function seed_hue(hex) {
   const [r, g, b] = [1, 3, 5].map(i => lin(parseInt(hex.slice(i, i + 2), 16) / 255));
+  const l = Math.cbrt(.4122214708 * r + .5363031674 * g + .0514459929 * b), m = Math.cbrt(.2119034982 * r + .6806995451 * g + .1073969566 * b),
