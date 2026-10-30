@@ -40,3 +40,4 @@ function Preview({ id }) {
 }
 
 export const SELF_ACT = {
+  sign_self: () => { const me = who(); if (!me.email) return;
