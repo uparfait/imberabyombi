@@ -28,3 +28,8 @@ export const mail_view = k => {
         <div className="mail_foot"><p>You receive this email because you have an account at {cfg.name}.</p>
           <p className="mt-1"><a href={to('/admin/emails')} className="underline">Email settings</a> · <a href={to('/admin/emails')}
             className="underline">Unsubscribe</a> · {lorem.t(2)} 12, {lorem.t(1)}</p></div>
+      </div></div></article>
+  );
+};
+
+/* the design shown: ?t= in the address, else the last one picked (ui.mail), else the invite */
