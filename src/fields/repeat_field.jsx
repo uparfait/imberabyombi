@@ -28,3 +28,4 @@ export function repeat_from(f) {
 export function repeat_say(f) {
   const box = f?.querySelector('[data-repeat]'); if (!box) return; const r = repeat_from(f);
   box.querySelector('[data-rp-unit]').textContent = UNIT[r.freq] ? UNIT[r.freq] + (r.every > 1 ? 's' : '') : '';
+  box.querySelector('[data-rp-sum]').textContent = repeat_text(r, f.elements.date?.value);
