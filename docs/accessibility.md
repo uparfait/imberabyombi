@@ -34,3 +34,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 
 ## Text selection
 The public website is selectable like any web page. Staff and account pages are not text-selectable by default (it
+keeps taps and drags clean), except where people copy things: fields, table cells, details values, code, copy boxes,
