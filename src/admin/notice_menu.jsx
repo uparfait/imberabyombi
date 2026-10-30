@@ -5,3 +5,5 @@ import { createPortal } from 'react-dom';
 import { ic } from '../icons/index.js';
 import { closed_pop } from './live_slot.jsx';
 import { notices, notices_read } from './notices.js';
+
+const TONE = { bad: 'bg-bad/15 text-bad', warn: 'bg-warn/15 text-warn', info: 'bg-info/15 text-info', ok: 'bg-ok/15 text-ok' };
