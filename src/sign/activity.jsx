@@ -11,3 +11,4 @@ const ACTS = { upload: ['upload', 'uploaded it'], send: ['send', 'sent it to'], 
 /* entries saved before they carried their action read it from their sentence */
 const RE = [['sign', / signed$/], ['open', / opened the document$/], ['cert', / verified their digital certificate/], ['send', / sent it to /], ['upload', / uploaded /], ['done', /^Everyone signed/]];
 const act_of = a => a.act || RE.find(([, re]) => re.test(a.t))?.[0] || '';
+/* who did it: a signer (by email, or by the name the sentence starts with), else the sender */
