@@ -7,3 +7,4 @@ import { ui, render_flags, AFTER } from '../store/index.js';
 import { schemas } from '../schemas/index.js';
 import { show_next } from '../feedback/index.js';
 import { pick, tip, help_intro } from '../overlays/index.js';
+import { CHARTS, viz_tip } from '../charts/index.js';
