@@ -17,3 +17,4 @@ export const header_tools = (n = '') => <><button className="icon_btn" data-act=
 export function account_menu(n = '') {
   const u = auth.user, r = auth.role(), pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
   return <div className="relative">
+        <button className="ml-1 rounded-full" data-act="pop" data-pop={`pop_account${n}`} aria-label="Account">{avatar(u.name, 'h-9 w-9 text-sm')}</button>
