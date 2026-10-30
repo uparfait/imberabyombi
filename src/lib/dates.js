@@ -13,3 +13,4 @@ export const parse_d = s => { const [y, m, d] = String(s).slice(0, 10).split('-'
 export const fmt_d = s => s ? parse_d(s).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : '—';
 export const fmt_dt = s => !s ? '—' : /T\d/.test(s) ? `${fmt_d(s)}, ${fmt_time(String(s).slice(11, 16))}` : fmt_d(s);   /* a bare date shows as just the date */
 export const to_min = t => { const [h, m] = String(t || '0:0').split(':').map(Number); return (h || 0) * 60 + (m || 0); };
+export const add_time = (t, mins) => { const v = Math.min(to_min(t) + mins, 23 * 60 + 59); return `${pad(Math.floor(v / 60))}:${pad(v % 60)}`; };
