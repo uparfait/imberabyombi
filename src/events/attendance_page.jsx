@@ -13,3 +13,4 @@ export function attendance_page(id, c) {
   if (!e) return empty('Not found', 'It may have been deleted.', null, 'alert', 'warn');
   route.title = `Attendance · ${e.title}`;
   return <div className="ev_page">
+    <div className="ev_head"><a href={to(back)} className="icon_btn ev_back" aria-label="Back" data-tip="Back">{ic('chev_l')}</a><h2 className="ev_title">{e.title}</h2></div>
