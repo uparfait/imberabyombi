@@ -29,3 +29,4 @@ const day_cls = (k, td, m, x) => k === td ? 'bg-brand font-semibold text-white' 
   : x.getMonth() !== m ? 'text-muted/60 hover:bg-fg/5' : 'text-fg hover:bg-fg/5';
 
 export function mini_cal() {
+  const b = parse_d(ui.mini || ui.cal_date), f = new Date(b.getFullYear(), b.getMonth(), 1), s = add_d(f, -f.getDay()), td = ymd();
