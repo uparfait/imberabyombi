@@ -16,3 +16,4 @@ export function att_phase(e, now = Date.now()) {
   if (!e?.date || e.tbd || e.status === 'Cancelled') return ['closed'];
   let d = e.date;
   if (e.repeat) { const p = tz_parts(e.tz || page_tz(), now), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
+    d = repeat_next(e.repeat, e.date, today); if (!d) return ['closed'];
