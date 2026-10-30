@@ -21,7 +21,7 @@ const event_item = e => ({ id: e.id, title: e.title, ...here(e), c: 'events', to
 const task_item = t => ({ id: t.id, title: t.title, date: String(t.due).slice(0, 10), due: t.due, all_day: true, c: 'tasks', status: t.status });
 export const cal_items = () => [
   ...(auth.can('calendar') ? db.list('activities').flatMap(each_day).map(a => ({ ...a, ...here(a), c: 'activities', tone: 'brand' })) : []),
-  ...(auth.can('calendar') || auth.can('events') ? db.list('events').filter(e => e.status !== 'Cancelled').flatMap(each_day).map(event_item) : []),
+  ...(auth.can('calendar') || auth.can('events') ? db.list('events').filter(e => e.status !== 'Cancelled' && !e.tbd).flatMap(each_day).map(event_item) : []),
   /* tasks assigned to you, on their due day (all day): a click opens Tasks with that task highlighted */
   ...(auth.can('tasks') ? db.list('tasks').filter(t => t.assignee === me() && t.due).map(task_item) : [])
 ];
