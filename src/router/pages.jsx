@@ -19,3 +19,4 @@ export function public_page(r) {
   else if (PAGES[k]) { inner = detail(k); title = PAGES[k].t; }
   else { inner = not_found(); title = 'Page not found'; }
   set_meta(title); lorem.seed(5);
+  return (
