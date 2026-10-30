@@ -14,7 +14,7 @@ const blank = v => v == null || v === false || v === '' || (Array.isArray(v) && 
 /* m: modal()'s options. A new modal() call is a new key, so a new form (its fields start from their defaults) */
 export function Modal_form({ m }) {
   const ref = useRef(null);
-  useLayoutEffect(() => {   /* the dirty check starts from the values the form opens with; the first field gets focus */
+  useLayoutEffect(() => {   /* the dirty check starts from the values the form opens with; the first field gets focus (not a
     const f = ref.current; f._init = snap(f);
     setTimeout(() => f.querySelector('input:not([type=hidden]),select,textarea')?.focus(), 50);
   }, []);
