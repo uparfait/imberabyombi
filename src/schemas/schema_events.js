@@ -21,8 +21,7 @@ const seed_more = () => { const n = lorem.name(), web = lorem.int(0, 3) === 0;
     org_name: n, org_email: mail(n), org_tel: tel() }; };
 
 export const activities_schema = {
-  l: 'activity', n: 16, cols: ['title', 'kind', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
-  form_sec: true, sec: { Details: 'title,category,note', When: 'kind,date,start,end,tz,repeat' },
+  l: 'activity', n: 16, cols: ['title', 'kind', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell, place: place_cell },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')),
     field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1), repeat_spec()
