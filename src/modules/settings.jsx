@@ -59,3 +59,4 @@ const profile = u => <section className="card p-6"><h2 className="text-lg">Your 
   <form data-form="profile" className="mt-5 grid gap-4 sm:grid-cols-2" noValidate>
   <div data-msg-slot="" className="empty:hidden sm:col-span-2"></div>
   <div className="field"><label htmlFor="profile_name">Full name</label>
+    <input id="profile_name" name="name" required autoComplete="name" placeholder=" " defaultValue={u.name} /></div>
