@@ -40,3 +40,5 @@ const HELP = [['How do roles decide what I see?', 'Each role has a level per mod
   ['Where is my data stored?', 'In this browser only (localStorage). Export a backup from Settings.'],
   ['How do I change the brand colour?', 'Settings, Appearance, Brand colour. Or edit --brand in the stylesheet.'],
   ['How do I check a car out?', 'Open Smart parking and select a busy slot, or use Check out in the log.']];
+
+/* search_box(attrs, placeholder): attrs is a props object spread on the search input */
