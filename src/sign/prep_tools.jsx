@@ -27,3 +27,4 @@ const placed = d => { const n = d.fields.length;
 const cap = (t, help) => <div className="sign_cap_row"><h2 className="sign_cap">{t}</h2>{help_tip(help, t.toLowerCase())}</div>;
 
 export const prep_tools = d => <div className="sign_panel">
+  <section className="grid gap-2" aria-label="Send">
