@@ -58,3 +58,5 @@ export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...
       <div className="field rp_until" data-when="rp_end=on"><label htmlFor={id + '_until'}>End date</label>
         <input id={id + '_until'} name="rp_until" {...dt_attrs('date')} defaultValue={r.until} /><span className="date_hint" aria-hidden="true"></span></div>
       <div className="rp_count" data-when="rp_end=after">{num(id + '_count', 'rp_count', 'Number of times', r.count, 999)}</div></>, undefined, END_HELP)}
+    <p className="rp_sum">{ic('refresh', 'h-4 w-4 shrink-0')}<span data-rp-sum="">{repeat_text(r, row.date)}</span></p>
+  </div>; };
