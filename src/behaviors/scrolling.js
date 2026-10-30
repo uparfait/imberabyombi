@@ -31,3 +31,4 @@ export const header_line = () => { qsa('#site_header, #app_header').forEach(h =>
   if (row) { const edge = Math.max(0, ...qsa('#app_header > :not(.link_group):not(.sr-only)').filter(e => e.offsetWidth).map(e => e.getBoundingClientRect().right));
     const left = row.parentElement.getBoundingClientRect().left, tools = qs('#app_header .link_group')?.getBoundingClientRect().left ?? innerWidth;
     h.style.setProperty('--dock_x', Math.max(0, Math.round(edge + 12 - left)) + 'px');
+    h.style.setProperty('--dock_max', Math.max(120, Math.round(tools - 8 - left)) + 'px'); }   /* all the room up to the header tools */
