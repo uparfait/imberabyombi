@@ -23,3 +23,6 @@ function send() {
   d.recipients.forEach(r => { r.status = 'pending'; ['viewed_at', 'signed_at', 'cert_at', 'cert_file'].forEach(k => delete r[k]); });
   log(d, `${who().name} sent it to ${d.recipients.map(r => r.email).join(', ')}`, 'send', who().email); prep_save();
   notify(`${plural(d.recipients.length, 'signer')} can now sign it under To sign.`, 'ok', 'Document sent'); go(`/admin/sign/doc/${d.id}`);
+}
+
+export const PREP_ACT = {
