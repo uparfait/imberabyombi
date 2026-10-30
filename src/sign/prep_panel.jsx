@@ -20,7 +20,7 @@ function add(e) {
   const v = Object.fromEntries(new FormData(f)), name = v.name.trim(), email = v.email.trim().toLowerCase();
   if (P.doc.recipients.some(r => r.email === email)) return notify(`${email} already signs this document.`, 'warn', 'Already a signer');
   const r = add_rec(P.doc, name, email, String(v.note || '').trim(), !!v.cert); P.rid = r.id; P.adding = false;
-  f.reset(); prep_dirty(); rerender(); notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
+  f.reset(); gate(f); prep_dirty(); rerender(); notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
 }
 const open_form = v => { P.adding = v; rerender(); if (v) requestAnimationFrame(() => document.getElementById('sign_r_name')?.focus()); };
 /* a name picked from the suggestions brings its email */
