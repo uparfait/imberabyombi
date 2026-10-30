@@ -13,3 +13,4 @@ export async function zip_texts(buf, keep = name => /\.xml$/i.test(name)) {
     const name = dec.decode(u8.subarray(p + 46, p + 46 + nl)); p += 46 + nl + dv.getUint16(p + 30, true) + dv.getUint16(p + 32, true);
     if (!keep(name)) continue;
     const start = at + 30 + dv.getUint16(at + 26, true) + dv.getUint16(at + 28, true), data = u8.subarray(start, start + size);
+    out.push(dec.decode(method === 0 ? data : await inflate(data)));
