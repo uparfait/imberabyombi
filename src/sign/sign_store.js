@@ -47,3 +47,5 @@ export function new_doc(name, size, pages) {
   const d = { id: uid(), title, file: name, size, pages, owner: me.email, owner_name: me.name, status: 'draft',
     recipients: [], fields: [], created: now, updated: now, audit: [] };
   log(d, `${me.name} uploaded ${name}`, 'upload', me.email); db.upsert(C, d); return d;
+}
+/* a signer's colour (their card, avatar, tag and fields) comes from their email (lib/seed_color.js), kept clear of the
