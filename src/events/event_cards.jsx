@@ -29,7 +29,7 @@ const ROWS = {
   Organiser: (e, c, can) => [['', org_table(e, c, can), 'kv_full']],
   Agenda: e => [['', agenda_table(e), 'kv_full']],
   Audience: (e, c) => [['Expected', e.audience ? `${e.audience} people` : null], e.capacity ? ['Capacity', e.capacity] : null,
-    ['Attended', <a href={to(`${BASE[c]}/${e.id}/attendance`)} className="ev_link">{`${att_count(e.id)} people`}</a>]]
+    ['Attended', <button type="button" className="ev_link" data-act="ev_att_list" data-c={c} data-id={e.id}>{`${att_count(e.id)} people`}</button>]]
 };
 
 const group = (e, s, can, c) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
