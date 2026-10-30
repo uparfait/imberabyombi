@@ -36,6 +36,7 @@ export const EV_ACT = {
     const [k, l, v, hint] = early ? ['att_before', 'Allow attendance before the start (minutes)', b, 'People can submit attendance this many minutes before it starts.']
       : ['att_after', 'Allow attendance after the end (minutes)', a, 'People can still submit attendance this many minutes after it ends.'];
     modal({ title: 'Attendance settings', body: [field(field_spec(k, l, 'number', 0, 1, { min: 0, max: 1440 }), v), <p key="hint" className="att_hint sm:col-span-2">{hint}</p>],
+      submit: 'Save', on_submit: d => save(e.id, { [k]: +d[k] }, 'Attendance settings saved', early ? `Attendance opens ${d[k]} min before the start.` : `Attendance stays open ${d[k]} min after the end.`, c) }); },
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
