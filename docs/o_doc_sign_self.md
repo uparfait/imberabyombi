@@ -9,6 +9,7 @@ Part of [O-Doc Sign](o_doc_sign.md): the owner of a draft signs it before (or in
   sign** (the agreement, and the certificate when forced). Signed, the overlay shows **Signed by you**, **Download a copy**
   and **Add other signers**. Your fields now show your marks and stay as they are (not moved, resized, removed or added
   to), and you are not edited or removed as a signer ([`self_sign.jsx`](../src/sign/self_sign.jsx)). Anyone who has signed
+  stays: their Remove becomes a green tick. Removing a signer who has not signed takes their fields with them.
 - **Preview**, at the foot once you (or anyone) have signed: the document with the marks so far, and
   **Download a copy**.
 - You can go on adding other signers and send it: it goes to those who have not signed. When everyone on it has signed
