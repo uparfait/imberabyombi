@@ -37,3 +37,4 @@ export const EV_ACT = {
   ev_stop: t => { const e = db.find('events', t.dataset.id); if (!e) return; const p = tz_parts(e.tz, Date.now()), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
     ask('Stop repeating this event? It will not happen after today. The days it has already happened on stay as they are.', () =>
       save(e.id, { repeat: { ...e.repeat, end: 'on', until: today } }, 'No longer repeating', 'It will not happen after today.'), 'Stop repeating', true); },
+  ev_copy: t => { const e = db.find('events', t.dataset.id); if (!e) return;
