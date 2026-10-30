@@ -5,3 +5,4 @@
    reds, oranges, ambers and yellows read as alerts (errors, warnings) next to a person, and olives look muddy.
    seed_color(text, avoid = []) → '#rrggbb'. avoid: colours already in use side by side (the other signers of a document);
    the text's next hues are tried until one is at least GAP degrees from each (less when many share the range), so
+   neighbours never look alike.
