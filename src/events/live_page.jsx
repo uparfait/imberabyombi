@@ -23,3 +23,4 @@ export function live_page(id, c) {
   const e = db.find(c, id), page = `${BASE[c]}/${id}`;
   if (!e) return empty('Not found', 'It may have been deleted.', null, 'alert', 'warn');
   route.title = `Live · ${e.title}`; route.full = true;
+  after_render(() => TIMERS.push(setInterval(tick, 1000), setInterval(rerender, 30000)));
