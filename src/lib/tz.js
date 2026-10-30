@@ -62,3 +62,4 @@ export const zone_of = (tz, t) => zone_list(t).find(z => z.tz === tz) || { tz, o
 
 /* a wall-clock date ('YYYY-MM-DD') and time ('HH:MM') in zone from, as it reads in zone to → { date, time } */
 export function convert(date, time, from, to) {
+  if (!date || !from || !to || from === to) return { date, time };
