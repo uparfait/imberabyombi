@@ -59,3 +59,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   globe: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20',
   send: 'M22 2 11 13M22 2l-7 20-4-9-9-4z',
   layers: 'M12 2 2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5',
+  activity: 'M22 12h-4l-3 9L9 3l-3 9H2',
