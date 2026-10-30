@@ -22,3 +22,4 @@ export function ev_state(e, now = Date.now()) {
   return now < s ? 'Upcoming' : runs(e, e.date, now) ? 'Live' : 'Past';
 }
 /* the events in one category ('all' or a state, any case) */
+export const in_state = st => e => st === 'all' || ev_state(e).toLowerCase() === st;
