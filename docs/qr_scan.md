@@ -13,6 +13,7 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
   phone) and **Install** (an icon) at the top right; a large scan window in the middle, the rest dimmed, with the brand's
   rounded corners and a sweeping line; "Point at a QR code"; and **Light** where the camera has one.
 - It stops once it finds a code; what it found comes up in a sheet from the bottom: a **secure link** (green: its site,
+  the whole link, **Open link** in a new tab and Copy); an `http` link (orange: "Not a secure link", Copy only: it does
 
 ## Installing it
 Only Qr-scan installs, never the site's other pages: it has its own manifest (`manifest.webmanifest`, scope
