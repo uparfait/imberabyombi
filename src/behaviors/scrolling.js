@@ -1,2 +1,3 @@
 /* behaviors/scrolling.js: smooth wheel hand-over from inner scroll areas to the page (glide, chain_wheel), the header line and
    docked menu row (header_line), what scrolling and resizing close or move, and the debounced resize work (RZ). */
+import { qs, qsa } from '../lib/index.js';
