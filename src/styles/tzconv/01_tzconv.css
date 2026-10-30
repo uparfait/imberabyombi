@@ -17,3 +17,4 @@
 @container tzc (min-width: 48rem) {
   .tzc { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
   .tzc_swap { margin: 0 .75rem; }
+  .tzc_swap::before { top: 1.5rem; bottom: 1.5rem; left: 50%; right: auto; width: 1px; height: auto; }
