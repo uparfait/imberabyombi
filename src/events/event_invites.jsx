@@ -58,7 +58,7 @@ export const INVITE_ACT = {
 };
 
 export function invites_card(e, st, can) {
-  if (wait.id !== e.id) Object.assign(wait, { id: e.id, list: [], note: '' });
+  if (wait.id !== e.id) Object.assign(wait, { id: e.id, list: [], note: '', edit: '' });
   const inv = e.invites || [], open = can && !['Cancelled', 'Past'].includes(st), n = wait.list.length;
   const keys = ev => { if (['Enter', ',', ';'].includes(ev.key)) { ev.preventDefault(); take(e.id, ev.currentTarget); } };
   return <section className="card ev_card" aria-labelledby="ev_sec_inv">
