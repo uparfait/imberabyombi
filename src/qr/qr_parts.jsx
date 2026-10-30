@@ -14,3 +14,4 @@ function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
     {ic(ok ? 'check' : 'copy', 'h-4 w-4')}{label ? ok ? 'Copied' : label : null}</button>;
 }
 const theme = () => { const html = document.documentElement, dark = !html.classList.contains('dark'); html.classList.toggle('dark', dark);
+  try { localStorage.setItem('loremds:v1:theme', JSON.stringify(dark ? 'dark' : 'light')); } catch { /* kept for this visit only */ } };
