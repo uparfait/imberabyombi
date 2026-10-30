@@ -32,3 +32,4 @@ const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); con
       <span className="when_text" aria-hidden="true">{in_words(f.t, shown)}</span></span></Fragment>; };
 
 /* fs: the row's fields in order; a dash goes between two times (start – end) */
+export const when_row = (fs, row) => <div key={'when_' + fs[0].k} className="when_row sm:col-span-2" role="group" aria-label="When">
