@@ -42,3 +42,4 @@ export function sidebar(mod) {
   <div id="sidebar_scroll" className="scroll_hover flex min-h-0 flex-1 flex-col gap-5 overflow-y-auto p-3 pt-1" data-chain="">
   {create.length ? create_menu(create) : null}
   {auth.can('calendar') ? <div className="-mb-4">{side_section('cal', 'Calendar',
+    <div id="date_mini" className="pt-1"><Live_slot name="mini" first={mini_cal()} draw={mini_cal} /></div>)}</div> : null}
