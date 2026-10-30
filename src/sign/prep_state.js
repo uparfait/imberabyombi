@@ -4,3 +4,4 @@
    prep_save() keeps the copy. It also saves itself a moment after each change, and when the page is left (another page
    draws, the tab closes), so nothing is lost. */
 import { before_render } from '../store/index.js';
+import { find_doc, save_doc, recolor } from './sign_store.js';
