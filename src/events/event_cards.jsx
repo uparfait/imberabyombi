@@ -21,3 +21,4 @@ const ROWS = {
     ? [['Where', 'Virtual'], ['Meeting link', e.link ? out(e.link, e.link) : null], ['Joining notes', e.join_note ? <p className="whitespace-pre-line">{e.join_note}</p> : null]]
     : [['Where', 'Physical'], ['Venue or address', e.venue]],
   Organiser: e => [['Name', e.org_name], ['Email', e.org_email ? out('mailto:' + e.org_email, e.org_email) : null], ['Phone', e.org_tel ? out('tel:' + e.org_tel.replace(/\s/g, ''), e.org_tel) : null]],
+  Audience: e => [['Expected', e.audience ? `${e.audience} people` : null], ['Capacity', e.capacity], ['Registered', bar_cell(e.registered || 0, e.capacity)]]
