@@ -20,3 +20,4 @@ export const FINE = () => matchMedia('(pointer: fine)').matches;
 /* a multiple select shows its choices in the .multi_value element after it (rendered EMPTY by React) */
 export const ms_sync = s => { const v = s.nextElementSibling; if (v?.matches('.multi_value')) v.textContent = [...s.selectedOptions].map(o => o.text).join(', '); };
 export const pick = {
+  el: document.getElementById('picker'), a: null, kb: false, mute: false, esc: false, mode: 'days', view: page_now(),
