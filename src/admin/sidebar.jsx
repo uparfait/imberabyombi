@@ -30,3 +30,4 @@ const create_menu = create => <div className="relative">
     data-act="pop" data-pop="pop_create" aria-haspopup="menu">
     {ic('plus', 'h-6 w-6')}Create{ic('chevD', 'h-4 w-4 text-muted')}</button>
   <div id="pop_create" ref={closed_pop()} className="pop left-0 w-64" role="menu" hidden>{create.map(([m, c, l, i]) =>
+    <button key={m} className="menu_item" role="menuitem" data-act="create" data-mod={m} data-col={c}>{ic(i, 'h-4 w-4 text-muted')}{l}</button>)}</div></div>;
