@@ -25,3 +25,4 @@ export function Attend_form({ c, id, demo }) {
   const submit = async e => {
     e.preventDefault(); const f = e.currentTarget; if (!validate(f)) return;
     const d = Object.fromEntries(new FormData(f)), email = d.email.trim().toLowerCase(), name = d.name.trim(), at = new Date().toISOString();
+    const sig = mode === 'Drawn' ? await PAD.get() : `${name} · ${email} · ${at} · ${hash_str(email + at).toString(16).toUpperCase()}`;
