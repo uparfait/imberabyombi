@@ -23,7 +23,7 @@ function appearance(tk, th) {
     <p className="mt-1 text-sm text-muted">Changes apply instantly and are saved in this browser.</p>
     <fieldset className="mt-5 border-0 p-0"><legend className="mb-2 px-0 text-sm">Theme</legend><div className="seg">{['light', 'dark', 'system'].map(v => <label key={v}>
       <input type="radio" className="sr-only" name="theme" value={v} data-theme-set="" defaultChecked={th === v} /><span>{cap(v)}</span></label>)}</div></fieldset>
-    <div key={get_version()} className="mt-6 grid gap-5 sm:grid-cols-2">
+    <div key={get_version()} className="room_2 mt-6 grid gap-5">
       <div className="field"><label htmlFor="token_brand">Brand colour</label>
         <div className="flex items-center gap-3"><input id="token_brand" type="color" defaultValue={brand} data-token="brand" />
           <output id="token_brand_out">{brand}</output></div></div>
