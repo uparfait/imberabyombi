@@ -21,6 +21,7 @@
   .ev_edit:hover { background: rgb(var(--brand) / .12); }
   .ev_link { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
   .ev_left { color: rgb(var(--muted)); font-size: .8125rem; }   /* "Starts in 2d 4h 5m 6s" */
+  .ev_left b { color: rgb(var(--fg)); font-weight: 600; font-variant-numeric: tabular-nums; }
   .ev_note { margin-top: .75rem; color: rgb(var(--muted)); font-size: .875rem; white-space: pre-line; overflow-wrap: anywhere; }
   .ev_acts { display: grid; gap: .5rem; margin-top: 1.25rem; }
   .ev_acts .btn { justify-content: flex-start; }
