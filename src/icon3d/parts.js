@@ -60,3 +60,4 @@ export function vol(id, o, k = 1) {
 /* extrude(id, x, y, s, color, [dx, dy], k): copies of the glyph along [dx, dy] (units), no more than PX.step device px
    apart (no staircase on big icons), at least PX.depth px deep in all (a ledge, not a dark fringe, on tiny icons) */
 export function extrude(id, x, y, s, color, [dx, dy], k, extra = '') {
+  const len = Math.hypot(dx, dy), m = Math.max(1, PX.depth / (k * len)), n = Math.max(3, Math.ceil(len * m * k / PX.step));
