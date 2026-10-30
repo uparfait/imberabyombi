@@ -33,4 +33,5 @@ export function add_field(type, page, cx, cy) {
 /* removing a field (its × or the Delete key) asks first */
 export function del_field(id) {
   const f = P.doc.fields.find(x => x.id === id); if (!f) return;
+  const [l] = KINDS[f.type], r = rec_of(P.doc, f.rid);
 }
