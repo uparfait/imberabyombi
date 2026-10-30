@@ -23,3 +23,4 @@ lives in the browser and can be reset from Settings.
 
 ## What is inside
 | Area             | Highlights                                                                          |
+|------------------|-------------------------------------------------------------------------------------|
