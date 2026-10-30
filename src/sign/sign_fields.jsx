@@ -7,3 +7,4 @@ import { ic } from '../icons/index.js';
 import { KINDS, rec_of } from './sign_store.js';
 
 export const at = f => ({ left: `${f.x * 100}%`, top: `${f.y * 100}%`, width: `${f.w * 100}%`, height: `${f.h * 100}%` });
+const look = (f, r) => ({ ...at(f), '--c': r?.color || '#94A3B8' });
