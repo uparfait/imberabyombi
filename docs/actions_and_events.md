@@ -32,3 +32,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 ## Attributes the listeners understand
 | Attribute                       | Effect                                                             |
 |---------------------------------|--------------------------------------------------------------------|
+| `data-act="name"`               | run `ACT.name` on click (and Enter / Space)                        |
