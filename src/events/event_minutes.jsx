@@ -19,3 +19,4 @@ function first_page(e, day) {
     .map(a => `<li>${esc(a.name)}${a.org ? ` (${esc(a.org)})` : ''}</li>`).join('');
   const ag = (e.agenda || []).map(a => `<h3>${esc(a.title)}</h3><p>${esc([a.p_name, a.p_title].filter(Boolean).join(', '))}</p><p><br></p>`).join('');
   return `<h1>${esc(e.title)}</h1><p>${[fmt_d(day), e.start ? fmt_time(e.start) : '', e.venue ? esc(e.venue) : ''].filter(Boolean).join(' · ')}</p>`
+    + `<h2>Present</h2>${came ? `<ul>${came}</ul>` : '<p><br></p>'}${ag ? `<h2>Agenda</h2>${ag}` : ''}<h2>Decisions</h2><p><br></p><h2>Actions</h2><p><br></p>`;
