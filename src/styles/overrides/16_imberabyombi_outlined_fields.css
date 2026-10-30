@@ -33,6 +33,7 @@
   .field:hover > .multi_value { border-color: rgb(var(--fg)); }
   select[multiple]:is(:focus, [data-open]) + .multi_value { border-color: rgb(var(--brand)); outline: 1px solid rgb(var(--brand)); outline-offset: -2px; }
   select[multiple][aria-invalid=true] + .multi_value { border-color: rgb(var(--bad)); }
+  select[multiple][data-open] + .multi_value { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23908880'%3E%3Cpath d='M7 14l5-5 5 5z'/%3E%3C/svg%3E"); }   /* its list is open: the arrow points up */
   .field:has(> .multi_value:empty):not(:has(> select:is(:focus, [data-open]))) > label { transform: translateY(-50%); max-width: calc(100% - 1.5rem); }
 
   /* File field (Imberabyombi style): chosen files sit inside the field as small attachments above the button.
