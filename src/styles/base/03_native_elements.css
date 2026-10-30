@@ -46,3 +46,4 @@
   :where(cite) { font-style: normal; font-weight: 600; }
   code, kbd, samp, pre, var { font-family: var(--font_mono); font-size: .875em; }
   code { background: rgb(var(--surface_2)); border: 1px solid rgb(var(--line)); padding: .1em .4em; border-radius: calc(var(--radius) * .4); }
+  kbd { background: rgb(var(--surface)); border: 1px solid rgb(var(--line)); border-bottom-width: 3px; padding: .05em .45em; border-radius: calc(var(--radius) * .4); }
