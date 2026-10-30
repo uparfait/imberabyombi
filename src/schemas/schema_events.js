@@ -21,3 +21,4 @@ export const activities_schema = {
   },
   g: () => {
     const h = lorem.int(7, 16);
+    return {
