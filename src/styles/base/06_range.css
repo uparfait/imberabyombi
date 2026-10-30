@@ -17,3 +17,4 @@
   input[type=file]:not(.sr-only):hover { border-color: rgb(var(--brand)); }
   input[type=color]:hover { border-color: rgb(var(--brand)); }
   input[type=file]::file-selector-button { margin-right: 1rem; border: 0; border-radius: var(--pill); padding: .5rem 1rem; font: inherit; font-weight: 600; cursor: pointer; background: rgb(var(--brand) / .12); color: rgb(var(--brand)); transition: background-color .2s; }
+  input[type=file]::file-selector-button:hover { background: rgb(var(--brand) / .22); }
