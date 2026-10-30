@@ -47,3 +47,4 @@ export const SHELL_ACT = {
     icon_to(t, 'check'); if (s) s.textContent = 'Copied'; t.classList.add('done');
     setTimeout(() => { t.querySelector('path')?.setAttribute('d', t._was[0]); if (s) s.textContent = t._was[1]; t._was = null; t.classList.remove('done'); }, 1600); },
   /* Help icon: a tap shows its tooltip on touch screens (hover and keyboard focus show it already) */
+  help_tip: t => tip.show(t),
