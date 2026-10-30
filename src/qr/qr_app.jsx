@@ -34,3 +34,4 @@ export function Qr_app() {
 
   return <div className="qr_app">{top_bar()}
     <main className="qr_main">
+      <div className={`qr_view ${scanning ? 'on' : ''}`}>
