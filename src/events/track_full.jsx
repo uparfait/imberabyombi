@@ -16,3 +16,5 @@ const today = e => { const p = tz_parts(e.tz || page_tz(), Date.now()); return [
 export const item_end = (e, a) => at(e.repeat ? today(e)[0] : e.date, a.to, e.tz);
 export const hue = s => [...String(s || '')].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7) % 360;
 let pick = null;   /* { id, i, now, at }: the item picked with Back / Next */
+
+/* each item: Now, Done or Next; the slide shown: the one picked, else the one running now, else the next, else the last */
