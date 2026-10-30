@@ -36,12 +36,7 @@ export const deep = (c, dl, k, ds = 0) => shade(c, dl * (.6 + .4 * Math.min(k, 1
    o = { goo, flat (goo only), bevel, surf, spec, exp, shade } */
 export function vol(id, o, k = 1) {
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
-  if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
-  if (o.flat) return f + '</filter>';
-  return f + `<feGaussianBlur in="${g}" stdDeviation="${o.bevel}" result="h"/>`
-    + `<feDiffuseLighting in="h" surfaceScale="${o.surf}" diffuseConstant="1" lighting-color="#fff" result="d"><feDistantLight azimuth="225" elevation="60"/></feDiffuseLighting>`
-    + `<feComposite in="${g}" in2="d" operator="arithmetic" k1="${o.shade}" k2="${1 - o.shade}" result="c"/>`
-    + `<feSpecularLighting in="h" surfaceScale="${o.surf}" specularConstant="${o.spec}" specularExponent="${o.exp}" lighting-color="#fff" result="s"><fePointLight x="70" y="30" z="160"/></feSpecularLighting>`
+  if (o.goo && o.goo * k >= PX.goo) {
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
