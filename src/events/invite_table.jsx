@@ -24,3 +24,4 @@ function save(id, old, input) {
 export const INVITE_TABLE_ACT = {
   ev_inv_edit: t => { editing = `${t.dataset.id}|${t.dataset.e}`; rerender(); },
   ev_inv_save: t => save(t.dataset.id, t.dataset.e, qs('.ev_inv_input')),
+  ev_inv_stop: stop,
