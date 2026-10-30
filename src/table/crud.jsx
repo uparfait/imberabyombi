@@ -1,5 +1,6 @@
 /* table/crud.jsx: generic CRUD: table + search + sort + export + add/edit/delete, from a schema.
    crud(c, o) draws a table card. o: { title, mod, filter(row), preset, acts(row, can) → JSX, can_row(row), view(id), full
+   (false: no full-window button, as in an overlay), add (false: no Add button) }. */
 import { cap } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { auth } from '../auth/index.js';
