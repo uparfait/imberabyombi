@@ -7,6 +7,7 @@ import { ic } from '../icons/index.js';
 import { to } from '../router/index.js';
 import { Qr } from './qr.jsx';
 import { tile_menu } from '../admin/tile_menu.jsx';
+import { qr_full } from './qr_full.jsx';
 
 export const BASE = { events: '/admin/events', activities: '/admin/calendar' };
 export const att_count = id => db.list('attendees').filter(a => a.ref === id).length;
