@@ -20,6 +20,7 @@ export const MODS = [
   { k: 'emails', l: 'Email designs', s: 'Emails', i: 'mail', g: 'System' },
   { k: 'charts', l: 'Charts & KPIs', s: 'Charts', i: 'activity', g: 'System' },
   { k: 'icons', l: 'Iconisus', s: 'Iconisus', i: 'sparkle', g: 'System' },
+  { k: 'tz', l: 'Time zone converter', s: 'Time zones', i: 'globe', g: 'System', d: 'A time in one time zone, as it reads in another' },   /* the 3D icon maker */
   { k: 'nav', l: 'System 2', s: 'System 2', i: 'layers', g: 'System' },   /* nested navigation: a system inside this one */
   { k: 'settings', l: 'Settings', s: 'Settings', i: 'sliders', g: 'System' }
 ];
