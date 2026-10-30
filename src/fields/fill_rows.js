@@ -7,3 +7,4 @@ export function fill_rows(grid) {
   let open = null;
   for (const el of grid.children) {
     el.classList.remove('fill_row');
+    if (el.tagName === 'LEGEND' || el.hidden || getComputedStyle(el).display === 'none') continue;
