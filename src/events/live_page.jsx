@@ -41,3 +41,5 @@ export function live_page(id, c) {
           {next?.p_name ? <p className="live_who">{next.p_name}{next.p_title ? `, ${next.p_title}` : ''}</p> : null}</>}</div>
       {ag.length ? <ol className="card live_agenda">{ag.map((a, i) => <li key={i} className={i === now_i ? 'is_now' : mins(a.to) <= now_m && now_i > -1 ? 'is_done' : ''}>
         <span className="live_when">{span(a)}</span><span className="min-w-0"><b className="block truncate">{a.title}</b><span className="block truncate text-sm text-muted">{a.p_name}</span></span></li>)}</ol> : null}
+    </section>
+    <aside className="card live_qr">{open ? <Qr text={att_url(c, id)} label="Attendance QR code" /> : <p className="text-muted">Attendance is closed</p>}
