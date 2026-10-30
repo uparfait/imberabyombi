@@ -14,3 +14,4 @@ import { apply_tokens } from './theme.js';
 const EASE = 'cubic-bezier(.22,.8,.22,1)';
 
 export const ADMIN_ACT = {
+  /* Email designs: switch the previewed email in place (no page jump). The address changes first: the redraw reads ?t= */
