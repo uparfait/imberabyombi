@@ -48,6 +48,7 @@ export const PREP_ACT = {
      save and says what is missing), and the signer whose fields you are placing is remembered */
   sign_save: () => { const f = document.querySelector('form[aria-label="Add a signer"]');
     const typed = f && ['name', 'email', 'note'].some(k => f.elements[k]?.value.trim());
+    if (typed && !add_signer(f, true)) return notify('Finish the signer you are adding, or clear the form, then save.', 'warn', 'Not saved yet');
   sign_send: () => {
     const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
     /* what still stops it from being sent, in a dialog (a passing message was easy to miss) */
