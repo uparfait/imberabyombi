@@ -35,3 +35,4 @@ import { to, go } from '../router/index.js';
 One delegated click listener (`src/behaviors/link_clicks.js`) turns clicks on internal links into `go()`, so the page
 never reloads. It leaves alone: links to other sites, `target="_blank"`, `download`, Ctrl / ⌘ / Shift / Alt clicks
 (new tab or window), pure `#section` links, links to files (`/sitemap.xml`) and links that have a `data-act`.
+On the home page, header links with `data-sec` scroll to their section instead.
