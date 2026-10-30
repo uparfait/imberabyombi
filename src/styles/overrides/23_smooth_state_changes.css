@@ -41,3 +41,4 @@
     #side_panel[data-open=true] { position: fixed; inset: 4.5rem .75rem .75rem; z-index: 45; display: block; width: auto; height: auto; } }
   .panel_in { width: 22rem; }
   .rail_on { background: rgb(var(--brand) / .14); }
+  /* Headers never draw a bottom border, scrolled or not */
