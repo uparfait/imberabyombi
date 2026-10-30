@@ -28,3 +28,4 @@ export function repeat_text(r, first) {
   const every = unit => n === 1 ? `Every ${unit}` : `Every ${n} ${unit}s`;
   let s = r.freq === 'daily' ? every('day') : r.freq === 'weekdays' ? 'Every weekday (Monday to Friday)' : '';
   if (r.freq === 'weekly') { const ds = r.days?.length ? r.days : f && [f.getDay()]; s = every('week') + (ds ? ` on ${and_list(sorted(ds, mon_first).map(x => DAY_NAMES[x]))}` : ''); }
+  if (r.freq === 'monthly') s = every('month') + month_day(r, f);
