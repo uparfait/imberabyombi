@@ -39,6 +39,7 @@ const tz_say = r => { const s = r?.querySelector('.when_tz select'); if (!s) ret
 const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz(), zs = zone_list();
   return <span key={f.k} className="pick when_block when_tz" data-tip={zs.find(z => z.tz === tz)?.label || tz}>
     <select id={id} name={f.k} defaultValue={tz} required={!!f.req} onChange={e => tz_say(e.target.closest('.when_row'))}>
+      {zs.map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select>{inside(f, id, tz_words_of(tz, row.date))}</span>; };
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
     <span className="pick when_block"><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
