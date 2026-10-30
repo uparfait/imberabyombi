@@ -12,3 +12,4 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 | Nested  | `/admin/nav/...`: System 2 and System 3 pages (three levels of navigation in all)               |
 
 - Unknown routes show "Page not found".
+- Admin routes without a session redirect to `/login?next=/admin/...` and return there after sign-in.
