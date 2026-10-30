@@ -53,7 +53,7 @@ export const events_schema = {
     field_spec('title', 'Title', 'text', 0, 1), field_spec('about', 'Description', 'textarea'),
     field_spec('status', 'Status', 'select', STATUS.ev, 1, { def: () => 'Scheduled', form: false }), kind_spec(), ...when_f(0), repeat_spec(), ...where_f(), ...org_f(),
     agenda_spec(), audience_spec(), field_spec('capacity', 'Capacity', 'number', 0, 1, { min: 1, def: () => 100 }),
-    field_spec('registered', 'Registered', 'number', 0, 0, { min: 0, def: () => 0 })
+    field_spec('registered', 'Attended', 'number', 0, 0, { min: 0, def: () => 0, form: false })
   ],
   r: { registered: (v, row) => bar_cell(v, row.capacity), tz: tz_cell, place: place_cell, kind: kind_cell, status: (v, row) => badge(ev_state(row)) },
   before: event_before,
