@@ -8,3 +8,5 @@ import { rec_of, log, who, recolor } from './sign_store.js';
 import { P, prep_dirty, prep_save } from './prep_state.js';
 import { add_field, del_field } from './prep_fields.js';
 import { rec_body, send_body } from './prep_dialogs.jsx';
+
+const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
