@@ -23,3 +23,4 @@ function on_click(e) {
      React owns the link, so the spinner is state (use_nav_busy); aria-busy is set at once, the redraw clears it. */
   const sl = e.target.closest('#sidebar a.side_link[href]');
   if (sl && sl.getAttribute('href') !== location.pathname + location.search && !e.ctrlKey && !e.metaKey && !e.shiftKey) { sl.setAttribute('aria-busy', 'true'); set_nav_busy(sl.getAttribute('href')); }
+  const sec = e.target.closest('a[data-sec]');
