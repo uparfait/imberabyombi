@@ -32,6 +32,7 @@ const side = (e, st, acts, t = count_to(e, st)) => <aside className="card ev_car
       {ic(i, 'h-4 w-4')}{l}</button>)}</div> : null}</aside>;
 
 export function event_page(id, c = 'events') {
+  const [back, mod, word] = ROOT[c], e = db.find(c, id), ev = c === 'events';
   after_render(() => TIMERS.push(setInterval(tick, 1000)));   /* the time left counts down */
   /* the way back is an arrow at the start of the title row (never a line above the title) */
   return <div className="ev_page">
