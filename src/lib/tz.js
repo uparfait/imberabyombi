@@ -13,3 +13,4 @@ const FALLBACK = ['UTC', 'Africa/Kigali', 'Africa/Maputo', 'Africa/Lagos', 'Afri
   'Pacific/Auckland', 'America/New_York', 'America/Chicago', 'America/Denver', 'America/Los_Angeles', 'America/Sao_Paulo'];
 let ZONES = null;
 export const zones = () => ZONES ||= (() => {
+  let z = typeof Intl.supportedValuesOf === 'function' ? Intl.supportedValuesOf('timeZone') : FALLBACK.slice();
