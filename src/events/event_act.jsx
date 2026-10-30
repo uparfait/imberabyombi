@@ -28,3 +28,4 @@ export const EV_ACT = {
         const moved = d.date ? { date: d.date, start: d.start || e.start, end: d.end || (d.start ? '' : e.end), tz: d.tz, kind: e.kind === 'Live' ? 'Upcoming' : e.kind } : {};
         save(e.id, { ...moved, status: 'Postponed', status_note: d.reason || '' }, 'Event postponed', (d.date ? 'It has a new date.' : 'Its new date is not set yet.') + told(e));
       } }); },
+  ev_cancel: t => { const e = db.find('events', t.dataset.id); if (!e) return;
