@@ -37,6 +37,7 @@ export const signed_n = d => d.recipients.filter(r => r.status === 'signed').len
 export const kept_for_good = d => signed_n(d) > 0;
 export const rec_of = (d, id) => d.recipients.find(r => r.id === id);
 /* the name a signer shows under on the prepare page: the person signed in is "You" */
+export const shown = r => r?.email === who().email ? 'You' : r?.name;
 /* what still stops a draft from being sent (the Send button's tooltip while it is disabled), or '' */
 export const send_block = d => !d.recipients.length ? 'Add the people who sign this document first.'
   : !d.fields.length ? 'Place a signature or stamp field on the document first.'
