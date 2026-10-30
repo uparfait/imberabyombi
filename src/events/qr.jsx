@@ -8,3 +8,4 @@ const load = () => lib ||= import('../editor/core/utils.js').then(u => u.load_sc
 
 /* the dark squares as one path, n squares a side */
 function draw(q, text) {
+  const c = q(0, 'M'); c.addData(text); c.make(); const n = c.getModuleCount(); let d = '';
