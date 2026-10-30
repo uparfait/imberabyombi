@@ -34,3 +34,5 @@ export const ADMIN_ACT = {
   tok_reset: () => { db.del('tokens'); apply_tokens(); rerender(); notify('Brand, radius, spacing and font follow the stylesheet again.', 'ok', 'Tokens reset'); },
   data_export: () => { const o = {}; db.keys().filter(k => k !== 'session').forEach(k => o[k] = db.get(k)); dl(`lorem-backup-${ymd()}.json`, JSON.stringify(o, null, 2), 'application/json'); notify('Keep the JSON file somewhere safe.', 'ok', 'Backup downloaded'); },
   data_reset: () => ask('Reset all demo data? Your session, theme and tokens stay. Everything else is replaced with fresh sample data.', () => {
+    db.keys().filter(k => k.startsWith('c:') || ['roles', 'notes'].includes(k)).forEach(k => db.del(k)); ensure_mine(me()); rerender(); notify('Fresh sample data is loaded.', 'ok', 'Demo data reset'); }, 'Reset')
+};
