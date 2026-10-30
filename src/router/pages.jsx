@@ -38,3 +38,6 @@ export function admin_page(r) {
   set_meta(route.title || m?.l || 'Not found');
   if (m?.full && auth.can(mod)) return <main id="main" tabIndex={-1} className="outline-none">{body}</main>;   /* full-window modules (the editor) */
   return admin_shell(mod, body);   /* a view may name its page (route.title), e.g. nested navigation */
+}
+
+/* Account pages share one shell (auth_shell); each route = [tab title, page] */
