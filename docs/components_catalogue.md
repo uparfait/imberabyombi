@@ -44,3 +44,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 ## Native elements need no class
 `<select>`, `<details>`, `<progress>`, `<meter>`, `<input type="range|color|file|checkbox|radio">`, `<dialog>`,
 `<table>`, `<kbd>`, `<blockquote>` and the rest already match the system. Add `role="switch"` to a checkbox for a toggle.
+Elements Tailwind's reset touches (inputs, headings, fieldset, legend, summary, table, code) are styled with bare element
