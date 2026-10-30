@@ -43,6 +43,8 @@ export function vol(id, o, k = 1) {
     const sd = o.goo, z = -.93, a0 = ncdf(z), slope = Math.max(sd * k / (nphi(z) * PX.edge), .5 / a0 + .02);
     f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${num(sd)}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="${num(slope)}" intercept="${num(.5 - slope * a0)}"/></feComponentTransfer>`;
     g = 'g';
+  }
+  if (o.flat) return f + (g === 'SourceGraphic' ? '<feMerge><feMergeNode in="SourceGraphic"/></feMerge>' : '') + '</filter>';   /* an empty filter draws nothing */
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
