@@ -39,3 +39,4 @@ export function admin_shell(mod, content) {
     </div></header>
   <div className="flex flex-1">
     <main id="main" key={page_key()} className="page_enter min-w-0 flex-1 p-3 sm:p-6">{content}</main>
+    <aside id="side_panel" className="panel sticky top-16 hidden h-[calc(100dvh-4.75rem)] shrink-0 overflow-hidden bg-surface md:block"
