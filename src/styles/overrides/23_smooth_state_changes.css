@@ -56,3 +56,4 @@
   .memo footer { display: flex; align-items: center; justify-content: space-between; min-height: 2rem; margin-top: .25rem; }
   .memo small { font-size: .7rem; color: rgb(var(--muted)); }
   .memo footer .icon_btn { opacity: 0; transition: opacity .15s; }
+  .memo:hover footer .icon_btn, .memo:focus-within footer .icon_btn { opacity: 1; }
