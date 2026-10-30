@@ -12,3 +12,4 @@ import { open_form, sync_when } from '../table/index.js';
 const lc = s => String(s || '').trim().toLowerCase();
 const put = (c, e, d, title, text) => { db.upsert(c, { id: e.id, ...d }); rerender(); notify(text, 'ok', title); };
 const get = t => [t.dataset.c, db.find(t.dataset.c, t.dataset.id), +t.dataset.i];
+const who = (p = {}, x = {}) => [field(field_spec('p_name', 'Name', 'text', 0, 1, x), p.name), field(field_spec('p_email', 'Email', 'email', 0, 1, x), p.email)];
