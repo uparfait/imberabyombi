@@ -15,3 +15,4 @@ export function attend_page(r) {
   set_meta(e ? `Attendance · ${e.title}` : 'Attendance');
   const where = e && (e.place === 'Virtual' ? 'Online' : e.venue);
   return <main id="main" className="att_page"><div className="att_card card">
+    {!e ? empty('Not found', 'This link does not lead to an event or activity.', null, 'alert', 'warn')
