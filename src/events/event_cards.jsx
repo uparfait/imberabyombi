@@ -31,7 +31,7 @@ const ROWS = {
     <div className="grid gap-0.5"><span className="flex flex-wrap items-center gap-2 font-medium">{a.title}{i === now ? <span className="chip bg-ok/15 text-ok">Now</span> : null}</span>
       {a.p_name ? <span className="text-sm">{a.p_name}{a.p_title ? `, ${a.p_title}` : ''}</span> : null}{a.desc ? <span className="text-sm text-muted">{a.desc}</span> : null}</div>,
     i === now ? 'ag_now' : '']) : [['Items', null]]; },
-  Audience: e => [['Expected', e.audience ? `${e.audience} people` : null], ['Capacity', e.capacity], ['Registered', bar_cell(e.registered || 0, e.capacity)]]
+  Audience: e => [['Expected', e.audience ? `${e.audience} people` : null], ...(e.capacity ? [['Capacity', e.capacity], ['Registered', bar_cell(e.registered || 0, e.capacity)]] : [])]
 };
 
 const group = (e, s, can) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
