@@ -20,3 +20,4 @@ export function Iconisus_page() {
   const draw = (o = {}) => render(input, { style: st.style, colors: st.cols, ...o });
   return <div className="page_enter">
     {page_title('Iconisus', 'Turn any letter, symbol, SVG or library icon into a 3D icon. Pick a style and up to three colours, then copy '
+      + 'or download the SVG. The icons across this system are made with it, in the glossy style.')}
