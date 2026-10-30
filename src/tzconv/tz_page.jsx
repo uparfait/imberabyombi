@@ -10,3 +10,4 @@ import { page_title } from '../ui/index.js';
 import { dt_attrs } from '../fields/index.js';
 
 const ymd_of = p => `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
+/* the start: now, in the page's time zone, converted to UTC (or to London when the page is on UTC) */
