@@ -26,3 +26,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   moon: 'M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z',
   menu: 'M3 6h18M3 12h18M3 18h18',
   side_close: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM9 3v18M16 9l-3 3 3 3',
+  side_open: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM9 3v18M13 9l3 3-3 3',
