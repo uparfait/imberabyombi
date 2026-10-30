@@ -50,7 +50,5 @@ export function event_page(id, c = 'events') {
   /* the way back is an arrow at the start of the title row (never a line above the title) */
   return <div className="ev_page">
     <div className="ev_head"><a href={to(back)} className="icon_btn ev_back" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
-      <h2 className="ev_title">{e.title}</h2>{help_tip(HELP[c], word.toLowerCase())}</div>
-    <div className="ev_grid"><div className="ev_main">{event_cards(e, can && st !== 'Past', c)}
-      <div className="room"><div className="room_2w grid gap-5">{minutes_card(e, c, false)}{follow_card(e, c, false)}</div></div>{ev ? invites_card(e, st, can) : null}</div>{side(e, c, st, can && ev)}</div></div>;
+      <h2 className="ev_title truncate">{e.title}</h2>{help_tip(HELP[c], word.toLowerCase())}</div>
 }
