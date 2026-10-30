@@ -19,3 +19,4 @@ export function notice_menu(n = '') {
       {all.length ? <ul className="notice_list">{all.map(x => <li key={x.id}>
         <button type="button" className={`notice ${read.has(x.id) ? '' : 'is_new'}`} data-act="notice_open" data-id={x.id} data-href={x.href}>
           <span className={`notice_ic ${TONE[x.tone]}`}>{ic(x.icon, 'h-4 w-4')}</span>
+          <span className="min-w-0 flex-1 text-left"><b className="block truncate text-sm font-medium">{x.title}</b><span className="block truncate text-xs text-muted">{x.text}</span></span>
