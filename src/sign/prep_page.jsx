@@ -2,3 +2,4 @@
    being placed, the tools on the right (Save and Send for signing at their top). */
 import { useEffect, useRef } from 'react';
 import { Pdf_pages } from './pdf_pages.jsx';
+import { fields_on } from './sign_fields.jsx';
