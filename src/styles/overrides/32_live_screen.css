@@ -1,5 +1,6 @@
 /* overrides/32_live_screen.css: the live screen (events/live_page.jsx): the whole window in one view (no scrolling on a
    wide screen): the top bar, then the agenda (now, large; the list) beside a large QR code. Made for a computer screen:
+   every screen shows this same view, scaled to fit (html.stage_page: the 1536 × 864 design, by the smaller of width and
   .live { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 1.25rem; height: 100dvh; padding: 1rem 1.5rem 1.5rem; background: rgb(var(--bg)); }
   .live_top { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; min-width: 0; }
   .live_title { flex: 1; min-width: 0; font-family: var(--font_display); font-size: clamp(1.5rem, 2.6vw, 2.5rem); font-weight: 500; line-height: 1.2; }   /* one line (truncate) */
