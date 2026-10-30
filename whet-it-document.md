@@ -40,3 +40,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Forgot password, 2-step verification code with resend timer, authenticator app set-up, set a new password.
 
 ## Admin (`src/admin/`, `src/modules/`)
+- Collapsible sidebar with groups and a mini calendar, apps grid, Create menu, account menu, side panels (notes,
