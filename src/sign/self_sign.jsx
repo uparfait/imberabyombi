@@ -3,6 +3,7 @@
    and sign, the document in an overlay with your fields to fill (your signature drawn, typed or uploaded, your stamp
    made or uploaded), Next field and Finish and sign (the agreement and, if forced, the certificate); signed, the same
    overlay has Download a copy and Add other signers. Your fields stay as signed, and the draft goes on: add others and
+   send it. Once you have signed (or anyone has), the foot has Preview: the marks so far and Download a copy. */
 import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
