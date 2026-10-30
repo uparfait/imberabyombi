@@ -43,3 +43,4 @@ export function Qr_app() {
           <button type="button" className="btn btn_primary" onClick={() => go()}>{ic('play', 'h-4 w-4')}{st.phase === 'idle' ? 'Start camera' : 'Scan again'}</button></div>}
       </div>
       <div className="qr_tools">
+        {scanning ? <button type="button" className="btn btn_outline btn_sm" onClick={() => { stop(); set({ phase: 'idle' }); }}>{ic('x', 'h-4 w-4')}Stop</button> : null}
