@@ -5,3 +5,4 @@
   .att_kind { color: rgb(var(--brand)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
   .att_title { margin-top: .25rem; font-family: var(--font_display); font-size: 1.75rem; font-weight: 500; line-height: 1.15; overflow-wrap: anywhere; }
   .att_when { margin-top: .375rem; color: rgb(var(--muted)); font-size: .875rem; }
+  .att_form { display: grid; gap: 1rem; margin-top: 1.5rem; }
