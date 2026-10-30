@@ -27,3 +27,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 - **Expected audience**: how many people are expected.
 
 ## The Events page
+- Tabs sort events by where they stand ([`events/ev_state.js`](../src/events/ev_state.js)): **Live**, **Upcoming**,
