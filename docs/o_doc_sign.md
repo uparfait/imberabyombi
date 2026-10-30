@@ -19,3 +19,4 @@ O-Doc Sign is open), a narrow computer window through a zoom (`--sign_z`, `sign_
 | `/admin/sign/edit/<id>` | prepare a draft: signers on the left, the pages in the middle, the field tools on the right |
 | `/admin/sign/doc/<id>` | follow a sent document: progress, each signer's state, note and certificate, activity, download |
 | `/admin/sign/sign/<id>` | sign it (the link the sender copies points here) |
+| `/admin/sign/done/<id>` | "Signing complete" |
