@@ -28,3 +28,4 @@ function on_click(e) {
   else if (e.target.closest('#drawer a')) close_dialog(qs('#drawer'));
   const t = e.target.closest('[data-act]'), a = t?.dataset.act;
   if (!t || t.disabled || !ACT[a]) return;
+  if (t.closest('.tile_pop')) close_pops();
