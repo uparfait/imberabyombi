@@ -23,3 +23,4 @@ const notes = () => { const ns = db.get('notes', []);
 
 const task_row = t => { const d = t.status === 'Done', items = items_of(t);
   return <li key={t.id}><button type="button" className="task_row" data-act="task_open" data-id={t.id}>
+    <span className="status_dot" data-s={t.status} aria-hidden="true"></span>
