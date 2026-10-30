@@ -43,3 +43,7 @@ VIEWS.attendance = () => {
       ['Excused', count('Excused'), 'note', 'info']])}
     {tabs('att', [['Staff', 'Staff'], ['Student', 'Students']], t)}
     {crud('attendance', { filter: r => r.kind === t, preset: { kind: t }, title: `${t === 'Staff' ? 'Staff' : 'Student'} attendance` })}
+  </>;
+};
+
+const bulletin = r => <button className="btn btn_soft btn_sm" data-act="report" data-name={r.name}>Bulletin</button>;
