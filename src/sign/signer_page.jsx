@@ -27,3 +27,4 @@ export function signer_page(d) {
   signer_start(d.id);
   if (!r.viewed_at && d.status === 'sent') { r.viewed_at = Date.now(); log(d, `${r.name} opened the document`, 'open', r.email); save_doc(d); }
   const done = r.status === 'signed' || d.status !== 'sent';
+  return <div className="sign_split">
