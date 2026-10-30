@@ -52,3 +52,4 @@ arrows in menus) · pointer and focus (tooltips, chart hover) · scroll and resi
 They are installed once by `boot()`. A right click is left to the browser (its own menu).
 
 ## Keyboard shortcuts
+`Esc` closes the top layer (picker, menu, then dialog) · `Ctrl K` / `⌘K` opens the command palette · `Alt + ↓` or `F4`
