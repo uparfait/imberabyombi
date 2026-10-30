@@ -49,6 +49,7 @@ every account starts empty.
 - **Fields**: Signature and Stamp. Click a tool to add one on the page on screen, or drag it onto a page. Drag a field to
   move it, its corner to resize it (a stamp stays square); arrow keys nudge the selected field; its × or Delete removes
   it, after asking.
+- Changes save a moment after each one (and on Save, and when you leave). **Save draft** saves it as it is: a signer
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
 
 ## Signing
