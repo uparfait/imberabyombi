@@ -1,5 +1,6 @@
 /* events/event_act.jsx: EV_ACT, the event page's buttons: edit one section, postpone (it opens with the event's date,
    times, zone and reason as they are now: change them to the new ones, or clear the date when the new one is not known
+   yet, tbd), cancel (with a reason), back on schedule, mark as completed, stop repeating, duplicate, delete, and the
    Invitations card's (INVITE_ACT: send, remove). They change
    the event's status (Scheduled, Postponed, Cancelled, Completed); where it stands follows (ev_state). */
 import { tz_parts, pad } from '../lib/index.js';
