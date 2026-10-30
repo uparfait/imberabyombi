@@ -30,3 +30,4 @@ body { background: rgb(var(--bg)); }
 .qr_tools { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
 
 .qr_found { display: grid; gap: .375rem; padding: 1.25rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
+.qr_found.is_link { border-color: rgb(var(--ok) / .35); background: rgb(var(--ok) / .06); }
