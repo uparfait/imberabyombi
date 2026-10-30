@@ -31,3 +31,4 @@ export function when_ok(d, row, f) {
   const s = at(d.date, d.start || (d.kind === 'Live' ? '00:00' : '23:59'), d.tz), now = Date.now();
   if (d.kind === 'Upcoming' && s <= now) return err(d.start ? 'start' : 'date', 'This time has already passed. Pick a later one, or choose Live now.');
   if (d.kind === 'Live' && s > now) return err(d.start ? 'start' : 'date', 'A live one has already started. Pick a time before now, or choose Upcoming.');
+  if (d.kind === 'Live' && d.end && at(d.date, d.end, d.tz) <= now) return err('end', 'This end time has already passed. Pick a later one.');
