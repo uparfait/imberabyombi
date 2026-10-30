@@ -26,3 +26,4 @@ export const top_bar = () => <header className="qr_top">
 
 /* what was found */
 export function found_card(text) {
+  const link = secure(text), web = !link && /^http:\/\//i.test(text.trim());
