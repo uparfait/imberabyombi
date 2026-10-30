@@ -24,3 +24,5 @@ Every feature below is working code. Each line says what it is and where it live
 - Searchable select menus, multiple selects with checkboxes, suggestions while typing (datalist).
 - File fields that show chosen files as tiles; a viewer for images, video, audio, PDF and text files.
 - Copy boxes, one-time code boxes, password rules, authenticator QR code.
+
+## Feedback (`src/feedback/`)
