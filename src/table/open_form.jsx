@@ -40,5 +40,6 @@ export function open_form(c, id, preset = {}, part = null) {
 const holds = (form, w) => { const m = /^(\w+)(!?=)(.*)$/.exec(w), [k, op, vs] = m ? m.slice(1) : ['status', w[0] === '!' ? '!=' : '=', w.replace(/^!/, '')];
   const any = vs.split('|').includes(form.elements[k]?.value ?? ''); return op === '=' ? any : !any; };
 /* fields shown only for some values; hidden ones are disabled, so they are not sent or checked. In document order, so a
+   block inside a hidden one stays hidden whatever its own rule says */
     el.hidden = !on; el.querySelectorAll('input, select, textarea').forEach(i => i.disabled = !on); });
   qsa('[data-fill-rows]', form).forEach(fill_rows); }
