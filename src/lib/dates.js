@@ -8,3 +8,4 @@ import { page_now } from './tz.js';
 export const ymd = (d = page_now()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 export const hm = (d = page_now()) => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
 export const now_dt = (d = page_now()) => `${ymd(d)}T${hm(d)}`;
+export const add_d = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
