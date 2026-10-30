@@ -15,3 +15,4 @@ documents between people and devices, keep these records and files on a server (
 [connecting a backend](connecting_a_backend.md)); `sign_store.js` and `sign_idb.js` are the only files that read them.
 
 ## Libraries and fonts
+- **pdf.js** (shows the pages) is the copy the document editor loads from the CDN on first use.
