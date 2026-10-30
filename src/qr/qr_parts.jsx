@@ -39,3 +39,4 @@ export function found_card(text) {
 /* the last scans, kept in this browser */
 export const recent_list = (items, clear) => items.length ? <section className="qr_recent" aria-label="Recent scans">
   <div className="flex items-center justify-between"><h2 className="qr_cap">Recent</h2>
+    <button type="button" className="text-xs text-muted hover:text-fg" onClick={clear}>Clear</button></div>
