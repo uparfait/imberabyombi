@@ -8,3 +8,4 @@
      .room_side  a 20rem list beside the rest from 50rem
      .room_full  a whole row in any of them */
   .room { container-type: inline-size; }
+  .room_full { grid-column: 1 / -1; }
