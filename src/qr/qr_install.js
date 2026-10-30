@@ -10,6 +10,7 @@ export const installed = () => { try { return localStorage.getItem(KEY) === '1';
 let offer = null;
 const subs = new Set(), emit = () => subs.forEach(f => f());
 /* the browser offers it only while it is not installed (so an app removed later can be installed again) */
+addEventListener('beforeinstallprompt', e => { e.preventDefault(); offer = e; try { localStorage.removeItem(KEY); } catch { /* fine */ } emit(); });
 
 export const standalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 export const apple = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
