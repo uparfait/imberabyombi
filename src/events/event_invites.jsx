@@ -73,6 +73,7 @@ export function invites_card(e, st, can) {
       {wait.note ? <p className="ev_inv_note" role="status">{wait.note}</p> : null}
       {n ? <div className="ev_chips">{wait.list.map(m => wait.edit === m
         ? <span key={m} className="ev_chip ev_chip_edit"><input className="ev_chip_input" type="email" defaultValue={m} size={m.length + 3}
+            aria-label={`Change ${m}`} autoFocus onKeyDown={chip_keys(e.id, m)} onBlur={k => chip_save(e.id, m, k.currentTarget)} /></span>
       <button type="button" className="btn btn_primary btn_sm justify-self-start" data-act="ev_invite" data-id={e.id}>{ic('send', 'h-4 w-4')}{n ? `Send ${n_of(n, 'invite', 'invites')}` : 'Send invites'}</button>
     </div> : null}
     {inv.length ? invite_table(e, open) : <p className="text-sm text-muted">No one is invited yet.</p>}
