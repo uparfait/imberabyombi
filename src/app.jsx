@@ -9,3 +9,4 @@ import { Dialog_hosts } from './overlays/index.js';
 import { spinner } from './feedback/index.js';
 
 /* html.staff_page: admin pages draw a little larger on laptops and desktops (--scale_staff in src/styles/base);
+   html.public_page: the public website lets text be selected */
