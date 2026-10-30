@@ -1,5 +1,6 @@
 /* sign/self_sign.jsx: signing your own draft. Under Save draft: Sign it myself, which adds you to the signers as "You"
    (picked under Placing for, so the fields you place are yours) and then goes. At the foot of the right column: Preview
+   and sign, the document in an overlay with your fields to fill (your signature drawn, typed or uploaded, your stamp
 import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
