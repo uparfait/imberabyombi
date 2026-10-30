@@ -17,6 +17,7 @@
   .ev_table { overflow: hidden; }
   .ev_group { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
   .ev_edit { display: inline-flex; align-items: center; gap: .25rem; padding: .25rem .625rem; border-radius: var(--pill); font-size: .75rem;
+    letter-spacing: 0; text-transform: none; color: rgb(var(--fg) / .8); transition: background-color .2s; }
   .ev_link { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
   .ev_note { margin-top: .75rem; color: rgb(var(--muted)); font-size: .875rem; white-space: pre-line; overflow-wrap: anywhere; }
   .ev_acts { display: grid; gap: .5rem; margin-top: 1.25rem; }
