@@ -6,3 +6,4 @@ import { rerender } from '../store/index.js';
 import { when } from './sign_store.js';
 
 const OPEN = new Set();
+export const NOTE_ACT = { sign_note_t: t => { const k = t.dataset.id; OPEN.has(k) ? OPEN.delete(k) : OPEN.add(k); rerender(); } };
