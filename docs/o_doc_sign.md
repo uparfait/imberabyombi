@@ -66,3 +66,4 @@ every account starts empty.
   verb (uploaded, sent, opened, verified, signed, archived) and how long ago; the full sentence and date on hover. Sending
   shows who it went to as faces. Entries keep their sentence too (`log(d, text, act, by)`), which the certificate prints.
 - **Delete** only while nobody has signed. Once someone has signed, a document is never deleted: **Archive** moves it to
+  Archived (orange: a caution, not a loss), and **Restore from archive** brings it back.
