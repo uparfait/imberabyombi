@@ -62,7 +62,7 @@ export function charts_view() {
         <section id="viz_kpi" className="scroll-mt-20"><h2 className="mb-4 text-xl">KPIs</h2><div id="viz_kpis">{kpis()}</div></section>
         {VIZGROUPS.slice(1).map(([g, l]) => (
           <section key={g} id={`viz_${g}`} className="scroll-mt-20"><h2 className="mb-4 text-xl">{l}</h2>
-            <div className="viz_grid grid gap-4 xl:grid-cols-2">{by(g).map(([k, c]) => <Viz_card key={k} k={k} c={c} />)}</div></section>))}
+            <div className="room"><div className="viz_grid room_2w grid gap-4">{by(g).map(([k, c]) => <Viz_card key={k} k={k} c={c} />)}</div></div></section>))}
       </div>
     </>
   );
