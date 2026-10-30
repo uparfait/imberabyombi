@@ -23,3 +23,5 @@ export const top_bar = () => <header className="qr_top">
       : !standalone() && apple() ? <span className="qr_hint" title="Share, then Add to Home Screen">{ic('download', 'h-4 w-4')}Add to Home Screen</span> : null}
     <button type="button" className="icon_btn" onClick={theme} aria-label="Light or dark" title="Light or dark">{ic('moon')}</button>
     {standalone() ? null : <a href={import.meta.env.BASE_URL} className="icon_btn" aria-label={`Back to ${cfg.name}`} title={cfg.name}>{ic('home')}</a>}</div></header>;
+
+/* what was found */
