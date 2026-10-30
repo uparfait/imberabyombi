@@ -57,3 +57,4 @@ export function zone_list(t = Date.now()) {
 }
 /* a zone's short name on a given day ("GMT-5 · New York" in winter, "GMT-4 · New York" in summer): date 'YYYY-MM-DD' or now */
 export const zone_short = (tz, date) => `${gmt_short(offset_min(tz, date ? Date.parse(`${date}T12:00:00Z`) : Date.now()))} · ${city(tz)}`;
+export const zone_of = (tz, t) => zone_list(t).find(z => z.tz === tz) || { tz, off: offset_min(tz, t ?? Date.now()), gmt: gmt(offset_min(tz, t ?? Date.now())),
