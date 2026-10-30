@@ -1,1 +1,2 @@
 /* styles/sign/02_pages.css: the PDF's pages (white paper in both themes, a fine border, no shadow) and the fields on them.
+   A field's size is a share of its page, so its text follows the page's width (cqw). Each signer has a colour (--c). */
