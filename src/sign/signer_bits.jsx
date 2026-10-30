@@ -18,3 +18,4 @@ const row = (label, tick, a = {}, end = null) => { const Tag = a['data-act'] ? '
 const notes = r => <>{row('Notes', false, { 'data-act': 'pop', 'data-pop': `pop_note_${r.id}`, 'aria-haspopup': 'dialog' },
   ic('chev_d', 'sign_chev h-4 w-4 shrink-0'))}
   {createPortal(<div id={`pop_note_${r.id}`} ref={closed_pop()} className="pop pop_fixed sign_note_pop" role="dialog" aria-label={`Note for ${r.name}`} hidden>
+    <p className="sign_cap">Note for {r.name}</p>
