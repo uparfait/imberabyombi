@@ -7,3 +7,4 @@
   .tint { background: radial-gradient(70% 80% at 12% 8%, color-mix(in oklab, hsl(var(--h) 70% 62%) 20%, transparent), transparent 72%),
       radial-gradient(65% 75% at 90% 92%, color-mix(in oklab, hsl(calc(var(--h) + 45) 65% 62%) 16%, transparent), transparent 72%), rgb(var(--surface));
     transition: --h 1.2s var(--ease); }
+  .track_top { display: flex; align-items: center; gap: 1.5rem; min-width: 0; padding-inline: .5rem; }
