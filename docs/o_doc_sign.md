@@ -54,3 +54,4 @@ every account starts empty.
 - **Remove background** (uploads): the paper colour becomes transparent, with a soft edge so the ink stays smooth. It starts
   at 30% for a picture with paper around it; slide right until only the ink is left (the checkerboard shows what is
   transparent). Code: `src/sign/bg_cut.js`.
+- **Finish** asks the signer to agree to sign electronically. When everyone has signed, the document is Completed.
