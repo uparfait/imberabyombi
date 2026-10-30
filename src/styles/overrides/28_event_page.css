@@ -35,6 +35,7 @@
   .ev_chip_text { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: text; }
   .ev_chip_edit { padding: .125rem .5rem; outline: 2px solid rgb(var(--brand)); outline-offset: -2px; }
   .ev_chip_input { width: auto; min-width: 12ch; max-width: 100%; field-sizing: content; padding: .125rem .25rem; border: 0; outline: 0; background: transparent;
+    font-size: .8125rem; line-height: 1.25rem; text-overflow: clip; }   /* as wide as the address */
   .ev_chip_x:hover { background: rgb(var(--fg) / .1); color: rgb(var(--fg)); }
   .ev_inv_count { margin-bottom: .5rem; color: rgb(var(--muted)); font-size: .8125rem; }
   /* the people invited (events/invite_table.jsx): a table that scrolls down inside itself, its header staying on top */
