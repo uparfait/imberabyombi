@@ -39,3 +39,5 @@ export function Sign_new() {
       {busy ? spinner('h-14 w-14') : i3('upload', 'h-16 w-16', 'info')}
       <span className="mt-4 block font-display text-xl">{busy ? 'Reading the PDF…' : 'Drop a PDF here'}</span>
       <span className="mt-1 block text-sm text-muted">or <span className="font-medium text-accent underline underline-offset-4">choose a file</span>. PDF only, up to 20 MB.</span>
+    </label>
+    <ol className="mt-6 grid gap-3 grid-cols-3">{STEPS.map(([t, x], n) => <li key={t} className="card flex gap-3 p-4">
