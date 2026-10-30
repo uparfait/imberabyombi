@@ -2,6 +2,7 @@
    or text file: every address in it is found); they wait as chips until Send invites, which also takes what is still
    typed. A waiting address can be changed on its chip (click it or its pen) or taken off (×). The people invited are in
    a table under it (invite_table.jsx), where they can be removed. A cancelled or past event keeps its list but takes no
+   new invites. INVITE_ACT: the card's buttons (merged into EV_ACT). */
 import { qs, cap } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
 import { auth } from '../auth/index.js';
