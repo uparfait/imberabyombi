@@ -47,3 +47,4 @@ export function help_intro(root) {
   [500, 1200, 2600].forEach(ms => setTimeout(() => {
     if (id !== run) return;
     const r = root || document.getElementById('app'), x = r && first_help(r);
+    if (!x) return; run++;
