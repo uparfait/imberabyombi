@@ -31,4 +31,5 @@ export function Qr_app() {
 
   return <div className="qr_app"><div className={`qr_view ${st.phase === 'scan' ? 'on' : ''}`}>
     <video ref={video} muted playsInline />
+    {qr_live({ app: standalone(), scanning, has_torch: cam.torch, lit: cam.lit,
 }
