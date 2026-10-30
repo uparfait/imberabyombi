@@ -14,11 +14,7 @@ const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site in
 
 export function Qr_app() {
   useSyncExternalStore(on_change, can_install);   /* Install shows when the browser offers it */
-  const video = useRef(null), [st, set] = useState({ phase: 'idle' }), [facing, set_facing] = useState('environment');
-  const [multi, set_multi] = useState(false), [recent, set_recent] = useState(load);
-  const found = t => { set({ phase: 'found', text: t }); navigator.vibrate?.(60);
-    const r = [{ t, at: Date.now() }, ...load().filter(x => x.t !== t)].slice(0, 6); set_recent(r); keep(r); };
-  const go = async (f = facing) => {
+  const video = useRef(null), [st, set] = useState({ phase: 'start' }), [cam, set_cam] = useState({ torch: false, lit: false });
     if (!navigator.mediaDevices?.getUserMedia) return set({ phase: 'error', msg: 'The camera needs a secure page (https).' });
     set({ phase: 'scan' });
     try { await start(video.current, found, f); set_multi(await cameras() > 1); }
