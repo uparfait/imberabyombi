@@ -6,6 +6,7 @@
 import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/index.js';
 import { bar_cell } from '../ui/index.js';
 import { field_spec, option_list, STATUS, mail, tel } from './fields.js';
+import { kind_spec, repeat_spec, where_f, org_f, audience_spec, event_before } from './event_fields.js';
 
 /* a record's time zone in a table cell or its details: "GMT+2 · Kigali" on its date (none: set in the page's) */
 const tz_cell = (v, row) => zone_short(v || page_tz(), row?.date);
