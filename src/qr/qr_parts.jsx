@@ -19,8 +19,6 @@ function Copy({ text, cls }) {
   const copy = () => navigator.clipboard?.writeText(text).then(() => { set(true); setTimeout(() => set(false), 1500); }, () => {});
   return <button type="button" className={cls} onClick={copy}>{ic(ok ? 'check' : 'copy', 'h-4 w-4')}{ok ? 'Copied' : 'Copy'}</button>;
 }
-const theme = () => { const html = document.documentElement, dark = !html.classList.contains('dark'); html.classList.toggle('dark', dark);
-  try { localStorage.setItem('loremds:v1:theme', JSON.stringify(dark ? 'dark' : 'light')); } catch { /* kept for this visit only */ } };
 
 export const top_bar = () => <header className="qr_top">
   <span className="qr_brand" aria-hidden="true">{ic('qr', 'h-5 w-5')}</span><h1 className="qr_name">Qr-scan</h1>
