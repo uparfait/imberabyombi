@@ -18,3 +18,4 @@ export function Qr({ text, label = 'QR code' }) {
   useEffect(() => { let on = true; load().then(q => on && set(draw(q, text))).catch(() => on && set({ off: true })); return () => { on = false; }; }, [text]);
   if (!p) return <div className="qr qr_wait" role="img" aria-label={label} />;
   if (p.off) return <p className="qr_off">{text}</p>;
+  return <svg className="qr" viewBox={`-2 -2 ${p.n + 4} ${p.n + 4}`} role="img" aria-label={label} shapeRendering="crispEdges">
