@@ -41,3 +41,5 @@ export function seed_hue(hex) {
 }
 const apart = (h, hs) => { const gap = Math.min(GAP, (HUES[1] - HUES[0]) / (hs.length + 1));
   return hs.every(x => { const d = Math.abs(h - x) % 360; return Math.min(d, 360 - d) >= gap; }); };
+
+export function seed_color(text, avoid = []) {
