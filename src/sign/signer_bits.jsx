@@ -4,3 +4,5 @@
 import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
 import { when } from './sign_store.js';
+
+const OPEN = new Set();
