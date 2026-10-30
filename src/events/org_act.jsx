@@ -39,3 +39,4 @@ export const ORG_ACT = {
       submit: 'Transfer', on_submit: (d, f) => {
         const nu = d.to === 'new' ? { name: d.p_name.trim(), email: lc(d.p_email), tel: d.p_tel || '' } : { ...co[+d.to], tel: '' };
         if (d.to === 'new' && taken(e, nu.email, -2)) return twice(f, 'p_email');
+        const was = e.org_email ? [{ name: e.org_name || e.org_email, email: lc(e.org_email) }] : [];
