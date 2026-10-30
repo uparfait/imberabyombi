@@ -29,8 +29,6 @@ export function signer_page(d) {
     <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
       {done ? null : steps_card(d)}</aside>
     <section className="sign_center" aria-label="Pages">
-      {done ? <p className="sign_banner" role="status">{ic('check', 'h-5 w-5 shrink-0')}
-        {r.status === 'signed' ? `You signed this on ${when(r.signed_at)}.` : 'This document is no longer open for signing.'}</p> : null}
       <Sign_doc d={d} me={r.id} done={done} /></section>
   </div>;
 }
