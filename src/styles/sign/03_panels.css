@@ -79,3 +79,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_ev_text b { font-weight: 600; }
 .sign_ev time { flex: none; color: rgb(var(--muted)); font-size: .75rem; }
 .sign_ev_faces { display: flex; padding-left: .25rem; }
+.sign_ev_faces > span { display: grid; width: 1.25rem; height: 1.25rem; margin-left: -.25rem; place-items: center; border: 2px solid rgb(var(--surface)); border-radius: var(--pill);
