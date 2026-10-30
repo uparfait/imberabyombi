@@ -17,3 +17,5 @@ const stat = ([m, l, i, c, f], j) => { const n = f ? db.list(c).filter(f).length
   return <a key={m} href={to(`/admin/${m}`)} className="card card_hover group flex items-center gap-4 p-4 sm:p-5">{i3(i, 'h-11 w-11 sm:h-12 sm:w-12', hue_at(j))}
     <div className="min-w-0"><p className="truncate text-sm text-muted">{l}</p>
       <p className="font-display text-2xl font-bold tabular-nums sm:text-3xl" data-count={n}>0</p></div></a>; };
+
+VIEWS.dashboard = () => {
