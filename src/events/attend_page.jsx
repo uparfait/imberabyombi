@@ -22,7 +22,6 @@ export function attend_page(r) {
     {!e ? empty('Not found', 'This link does not lead to an event or activity.', null, 'alert', 'warn')
       : <><p className="att_kind">{c === 'events' ? 'Event' : 'Activity'}</p><h1 className="att_title">{e.title}</h1>
         <p className="att_when">{[e.tbd ? '' : fmt_d(e.date), e.start ? fmt_time(e.start) : '', where].filter(Boolean).join(' · ')}</p>
-        {st === 'Past' || st === 'Cancelled' ? <Tick text="Attendance is closed" sub={st === 'Cancelled' ? 'It was cancelled.' : 'It is over.'} />
-          : <Attend_form c={c} id={id} />}</>}
+        {ph[0] === 'soon' ? <div className="att_done">{clock('Attendance opens in', ph[1])}</div>
   </div></main>;
 }
