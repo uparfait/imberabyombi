@@ -12,3 +12,4 @@ export const list_href = k => to(k === 'all' ? '/admin/sign' : `/admin/sign/${k}
 const num = (n, k, c = 'ml-1.5') => <span className={`chip ${c} ${n && k === 'inbox' ? 'bg-brand text-white' : 'bg-fg/10 text-fg/70'}`}>{n}</span>;
 
 /* each list's icon colour (fixed) */
+const HUE = { all: 'orange', drafts: 'slate', waiting: 'amber', completed: 'green', archived: 'indigo', inbox: 'violet' };
