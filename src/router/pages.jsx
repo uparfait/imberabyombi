@@ -35,3 +35,4 @@ export function admin_page(r) {
   const mod = r.path.split('/')[2] || MODS.find(m => auth.can(m.k))?.k || 'settings', m = MODS.find(x => x.k === mod);
   route.mod = mod; lorem.seed(hash_str(mod));
   const body = !m ? not_found(true) : !auth.can(mod) ? forbidden() : VIEWS[mod]();
+  set_meta(route.title || m?.l || 'Not found');
