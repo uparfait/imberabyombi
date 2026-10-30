@@ -3,3 +3,4 @@
    attended (live; it opens their table), Copy link, and Open: the event's other pages in one menu (it opens upward).
    att_count() and the paths are shared with the live screen. */
 import { db } from '../store/index.js';
+import { ic } from '../icons/index.js';
