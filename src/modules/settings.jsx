@@ -61,3 +61,4 @@ const profile = u => <section className="card p-6"><h2 className="text-lg">Your 
   <div className="field"><label htmlFor="profile_name">Full name</label>
     <input id="profile_name" name="name" required autoComplete="name" placeholder=" " defaultValue={u.name} /></div>
   <div className="field"><label htmlFor="profile_email">Email</label>
+    <input id="profile_email" name="email" type="email" required autoComplete="email" placeholder=" " defaultValue={u.email} /></div>
