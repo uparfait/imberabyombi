@@ -6,6 +6,7 @@
   .att_title { margin-top: .25rem; font-family: var(--font_display); font-size: 1.75rem; font-weight: 500; line-height: 1.15; overflow-wrap: anywhere; }
   .att_when { margin-top: .375rem; color: rgb(var(--muted)); font-size: .875rem; }
   .att_form { display: grid; gap: 1rem; margin-top: 1.5rem; }
+  .att_hint { margin-top: -.75rem; color: rgb(var(--muted)); font-size: .8125rem; }   /* what an attendance setting does, under it */
   .att_clock { margin-top: 1rem; color: rgb(var(--muted)); font-size: .875rem; } .att_clock b { color: rgb(var(--fg)); font-weight: 600; font-variant-numeric: tabular-nums; }
   .att_done .att_clock { font-size: 1.125rem; } .att_done .att_clock b { display: block; margin-top: .5rem; font-family: var(--font_display); font-size: 2.5rem; font-weight: 500; }
   .att_digital { display: flex; align-items: center; gap: .625rem; padding: 1rem; border-radius: var(--radius); background: rgb(var(--ok) / .1); color: rgb(var(--ok)); font-size: .875rem; }
