@@ -39,10 +39,7 @@ export function live_page(id, c) {
         { icon: 'note', label: 'Record minutes', attrs: { 'data-act': 'ev_minutes', 'data-c': c, 'data-id': id } }, { icon: 'tasks', label: 'Add task', attrs: { 'data-act': 'ev_follow', 'data-c': c, 'data-id': id } },
         { icon: 'users', label: 'Attendees', href: to(page + '/attendance') }, { icon: 'fullscreen', label: 'Full screen', attrs: { 'data-act': 'live_full' } }] })}</div></header>
     <div className="live_body"><section className="live_main">
-      <div className="card live_now">{it ? <><p className="att_kind">Now · {span(it)}</p><h2 className="live_now_t">{it.title}</h2>
-        {it.p_name ? <p className="live_who">{it.p_name}{it.p_title ? `, ${it.p_title}` : ''}</p> : null}<progress max="100" value={done} aria-label="How far it has got"></progress></>
-        : <><p className="att_kind">{next ? `Next · ${span(next)}` : 'Agenda'}</p><h2 className="live_now_t">{next ? next.title : ag.length ? 'Done' : 'No agenda'}</h2>
-          {next?.p_name ? <p className="live_who">{next.p_name}{next.p_title ? `, ${next.p_title}` : ''}</p> : null}</>}</div>
+      <div className="card live_info"><h1 className="live_title">{e.title}</h1>{e.about || e.note ? <p className="live_about">{e.about || e.note}</p> : null}
       {ag.length ? <ol className="card live_agenda">{ag.map((a, i) => <li key={i} className={i === now_i ? 'is_now' : mins(a.to) <= now_m && now_i > -1 ? 'is_done' : ''}>
         <span className="live_when">{span(a)}</span><span className="min-w-0"><b className="block truncate">{a.title}</b><span className="block truncate text-sm text-muted">{a.p_name}</span></span></li>)}</ol> : null}
     </section>
