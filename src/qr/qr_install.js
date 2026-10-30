@@ -7,3 +7,4 @@ addEventListener('beforeinstallprompt', e => { e.preventDefault(); offer = e; em
 addEventListener('appinstalled', () => { offer = null; emit(); });
 
 export const standalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+export const apple = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
