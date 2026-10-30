@@ -10,3 +10,4 @@ export * from './when_row.jsx';
 export * from './fill_rows.js';
 export * from './seg_field.jsx';
 export * from './repeat_field.jsx';
+export * from './agenda_field.jsx';
