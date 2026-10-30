@@ -26,13 +26,7 @@ const ROWS = {
   Location: e => place_of(e) === 'Virtual'
     ? [['Where', 'Virtual'], ['Meeting link', e.link ? out(e.link, e.link) : null], ['Joining notes', e.join_note ? <p className="whitespace-pre-line">{e.join_note}</p> : null]]
     : [['Where', 'Physical'], ['Venue or address', e.venue]],
-  Organiser: e => [['Name', e.org_name], ['Email', e.org_email ? out('mailto:' + e.org_email, e.org_email) : null], ['Phone', e.org_tel ? out('tel:' + e.org_tel.replace(/\s/g, ''), e.org_tel) : null],
-    ['Co-organisers', e.co_orgs?.length ? <div className="grid gap-1">{e.co_orgs.map(p => <span key={p.email}>{p.name} · {out('mailto:' + p.email, p.email)}</span>)}</div> : null]],
-  /* one row per item: its times, then its title, presenter and description; the one running now is marked */
-  Agenda: e => { const now = agenda_now(e); return e.agenda?.length ? e.agenda.map((a, i) => [`${fmt_time(a.from)} – ${fmt_time(a.to)}`,
-    <div className="grid gap-0.5"><span className="flex flex-wrap items-center gap-2 font-medium">{a.title}{i === now ? <span className="chip bg-ok/15 text-ok">Now</span> : null}</span>
-      {a.p_name ? <span className="text-sm">{a.p_name}{a.p_title ? `, ${a.p_title}` : ''}</span> : null}{a.desc ? <span className="text-sm text-muted">{a.desc}</span> : null}</div>,
-    i === now ? 'ag_now' : '']) : [['Items', null]]; },
+  Organiser: (e, c, can) => [['', org_table(e, c, can), 'kv_full']],
   Audience: (e, c) => [['Expected', e.audience ? `${e.audience} people` : null], e.capacity ? ['Capacity', e.capacity] : null,
     ['Attended', <a href={to(`${BASE[c]}/${e.id}/attendance`)} className="ev_link">{`${att_count(e.id)} people`}</a>]]
 };
