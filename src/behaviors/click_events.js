@@ -14,7 +14,7 @@ function on_click(e) {
   tip.hide();
   const fin = e.target.closest?.('input[type=file]'); if (fin && fin.dataset.import == null) file_box(fin)?.classList.add('picking');
   if (!e.target.closest('.pop') && !e.target.closest('[data-pop]')) close_pops();
-  else if (e.target.closest('#ctx a, #ctx button, .pop_fixed a, .pop_fixed button')) close_pops();   /* a choice in the right-click or account menu closes it */
+  else if (e.target.closest('.pop_fixed a, .pop_fixed button')) close_pops();   /* a choice in the account menu closes it */
   const pk = pick_at(e);
   if (pk) { if (pick.a !== pk) pick.open(pk); else if (pk.tagName === 'SELECT') pick.close(); return; }
   if (pick.a && !e.target.closest('#picker') && e.target !== pick.a) pick.close();
