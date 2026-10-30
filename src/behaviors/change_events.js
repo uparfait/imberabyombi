@@ -36,3 +36,4 @@ function on_change(e) {
   if (t.dataset.calview != null) { ui.cal_view = t.value; ui.slide = { n: 0, sel: '.date_body' }; rerender(); }
   if (t.multiple && t.tagName === 'SELECT') ms_sync(t);
   if (t.type === 'file' && t.dataset.import == null) file_tiles(t);
+  if (t.dataset.import != null && t.files[0]) import_change(t);
