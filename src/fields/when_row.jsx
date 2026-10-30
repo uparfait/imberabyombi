@@ -25,6 +25,7 @@ export function in_words(t, v) {
 const tz_words_of = (tz, date) => { const w = zone_short(tz, date); return [w, w.split(' · ')[0]]; };
 
 /* a block's small label, and its value in words (both lengths; CSS shows the one that fits) with the arrow */
+const CHEV = ic('chev_d', 'when_chev shrink-0');
 
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
