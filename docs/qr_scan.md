@@ -10,3 +10,4 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
 - **Scan a picture**: a photo or screenshot of a code, from the gallery or the files.
 - What it found: a **secure link** (green: its site, the whole link, Open link and Copy); an `http` link (orange: "Not a
   secure link", Copy only: it does not open from here); any other text (Copy).
+- **Recent**: the last six scans, kept in this browser (Clear empties it).
