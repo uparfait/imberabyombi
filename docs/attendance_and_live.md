@@ -20,3 +20,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 
 ## The live screen
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)): the whole window, no sidebar. Its title, description
+and times; the agenda item running now, large, with its presenter and progress, and the agenda; the time left above a
