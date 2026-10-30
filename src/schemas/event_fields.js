@@ -28,6 +28,7 @@ export const where_f = () => [field_spec('place', 'Location', 'seg', [['Physical
   field_spec('join_note', 'Joining notes', 'textarea', 0, 0, { when: 'place=Virtual' })];
 /* only the chosen kind of place is kept; a link without its https:// gets it */
 const place_in = d => { if (!('place' in d)) return d;
+  if (d.place === 'Virtual') { d.venue = ''; if (d.link && !/^[a-z][a-z0-9+.-]*:\/\//i.test(d.link)) d.link = 'https://' + d.link; } else { d.link = ''; d.join_note = ''; }
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
 export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
 export const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
