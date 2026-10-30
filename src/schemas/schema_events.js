@@ -7,6 +7,7 @@ import { bar_cell } from '../ui/index.js';
 import { show_err } from '../feedback/index.js';
 import { field_spec, option_list, STATUS } from './fields.js';
 
+/* a record's time zone in a table cell or its details: "GMT+2 · Kigali" on its date (none: set in the page's) */
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'category'],
   f: [
