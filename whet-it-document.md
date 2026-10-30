@@ -12,3 +12,4 @@ Every feature below is working code. Each line says what it is and where it live
   tabs, segmented buttons, popover menus, choice pills, tiles, accordions, prose, hero artwork, theme band, pattern layer.
 - Cartoon pictures drawn in the page from a seed (`src/cartoons/`): streets, parks, offices, event stages, mountains and
   portraits, in any shape, with no download; a cartoon sample video with its poster (`public/media/`).
+- Flat stroke icons and glossy 3D icons from one path dictionary (`src/icons/`); the 3D ones in colours fixed per place
