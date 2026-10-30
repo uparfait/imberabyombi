@@ -17,6 +17,7 @@ import { attend_side } from './attend_side.jsx';
 
 const HELP = { events: 'Every detail, by section. Edit a section on its own; postpone, cancel or restore it on the right.',
   activities: 'Every detail, by section. Edit a section on its own.' };
+const acts_ok = c => auth.can(c === 'events' ? 'events' : 'calendar', 2);
 const ROOT = { events: ['/admin/events', 'events', 'Event'], activities: ['/admin/calendar', 'calendar', 'Activity'] };
 /* the actions that fit each state: [handler, label, icon, the states it shows in] */
 const ACTS = [
