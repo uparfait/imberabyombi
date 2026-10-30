@@ -8,3 +8,4 @@ import { kind_of, dt_show, dt_refresh } from '../fields/index.js';
 export const PICKER_ACT = {
   pk_opt: t => { const a = pick.a, o = a?.options[+t.dataset.i]; if (!o) return;
     if (a.multiple) { o.selected = !o.selected; t.setAttribute('aria-selected', o.selected); pick.emit(); } else { a.selectedIndex = o.index; pick.emit(); pick.close(pick.kb || FINE()); } },
+  pk_clear: () => { const a = pick.a; if (!a) return; [...a.options].forEach(o => o.selected = false); qsa('[data-act=pk_opt]', pick.el).forEach(b => b.setAttribute('aria-selected', 'false')); pick.emit(); },
