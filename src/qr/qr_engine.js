@@ -32,3 +32,4 @@ export async function start(video, on_code, facing = 'environment') {
   const tick = async () => { if (!stream) return;
     try { if (video.readyState >= 2) { const v = await decode(video, video.videoWidth, video.videoHeight); if (v) { stop(); on_code(v); return; } } } catch { /* the next frame */ }
     timer = setTimeout(tick, 250); };
+  tick();
