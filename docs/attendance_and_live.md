@@ -22,3 +22,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)): the whole window, no sidebar. Its title, description
 and times; the agenda item running now, large, with its presenter and progress, and the agenda; the time left above a
 large QR code (full screen on a click), the count and the link. **Menu** (tiles): Edit agenda, Record minutes, Add
+task, Attendees, Full screen.
