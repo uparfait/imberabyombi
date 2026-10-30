@@ -68,3 +68,4 @@
   .when_block:focus-within .when_text { visibility: hidden; }
   .when_text { white-space: nowrap; pointer-events: none; }
   .when_dash { color: rgb(var(--muted)); }
+  .when_block .field_err { position: absolute; top: 100%; left: 0; white-space: nowrap; }
