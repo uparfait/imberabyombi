@@ -38,3 +38,4 @@ const choose = (name, opts, cur, label) => <div className="seg max-w-full" role=
 const line = (label, body, when, help) => <div className="rp_row" data-when={when}>
   <p className="rp_lab">{label}{help ? help_tip(help, label.toLowerCase()) : null}</p><div className="rp_body">{body}</div></div>;
 const weekdays = (name, on) => <div className="rp_chips">{MON_FIRST.map(d => chip(name, d, DAY_NAMES[d].slice(0, 3), on.includes(d), '', DAY_NAMES[d]))}</div>;
+const num = (id, name, label, v, max) => <div className="field"><label htmlFor={id}>{label}</label>
