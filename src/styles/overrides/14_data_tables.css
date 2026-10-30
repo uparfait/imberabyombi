@@ -8,3 +8,4 @@
   /* No rows (nothing yet, no matches, loading): the message stays in the middle of what is in view, however many columns
      there are and wherever the table is scrolled sideways: pinned to the view's left edge (sticky), as wide as the view
      (100cqw: the scroll box is a size container) */
+  .table_scroll { container-type: inline-size; }
