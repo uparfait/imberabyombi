@@ -1,3 +1,4 @@
 /* overrides/34_track_full.css: the agenda on the whole screen (events/track_full.jsx): the event and its time left on top,
    one item in the middle (its title large, its description smaller and apart) between Back and Next, dots for the items
    below and the event's time left bottom right; it slides. Its text starts at the left, the block in the middle. .tint (here and on the now card): two soft
+   glows of the item's hue (--h, from its title) mixed into the page colour, easing from one item's hue to the next */
