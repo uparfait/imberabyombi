@@ -1,5 +1,6 @@
 /* events/att_window.js: when attendance is open for an event or activity: from att_before minutes before it starts to
    att_after minutes after it ends (0 and 0 unless set in Attendance settings), on its day (a recurring one: today's or
+   its next day); or, reopened after it ended, until att_until. att_phase(e) is ['soon', opens], ['open', closes] or
 import { pad, tz_parts, page_tz, repeat_next, ymd, add_d, parse_d } from '../lib/index.js';
 import { at } from '../schemas/index.js';
 
