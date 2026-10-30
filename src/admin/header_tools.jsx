@@ -31,6 +31,7 @@ export function account_menu(n = '', rail = false) {
           <div className="flex items-center gap-3 rounded-3xl bg-surface-2 p-4">{avatar(u.name, 'h-14 w-14 text-lg')}
             <div className="min-w-0"><p className="truncate font-semibold">{u.name}</p><p className="truncate text-sm text-muted">{u.email}</p></div></div>
           <div className="mt-2 grid gap-0.5"><a href={to('/admin/settings')} className="menu_item">{ic('sliders', 'h-4 w-4 text-muted')}Settings</a>
+            <a href={to('/ui')} className="menu_item sm:hidden">{ic('layers', 'h-4 w-4 text-muted')}Design system</a>
             <a href={to('/')} className="menu_item">{ic('globe', 'h-4 w-4 text-muted')}Public website</a></div>
           {rail ? <div className="mt-2 grid gap-0.5 border-t border-line pt-2 md:hidden">{RAIL.map(([k, i, c, l]) =>
             <button key={k} className="menu_item" data-act="panel" data-k={k}>{ic(i, `h-4 w-4 ${c}`)}{l}</button>)}
