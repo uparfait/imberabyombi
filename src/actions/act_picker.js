@@ -15,3 +15,4 @@ export const PICKER_ACT = {
     if (kind_of(a) === 'week') return pick.set(iso_week(parse_d(v)));
     if (kind_of(a) === 'datetime-local') { pick.view = parse_d(v); return pick.set(`${v} ${a.value.slice(11) || dt_show('time', '09:00')}`, false); }
     pick.set(v); },
+  pk_time: t => { const a = pick.a; if (a) pick.set(kind_of(a) === 'datetime-local' ? `${a.value.slice(0, 10) || ymd()} ${dt_show('time', t.dataset.v)}` : dt_show('time', t.dataset.v)); },
