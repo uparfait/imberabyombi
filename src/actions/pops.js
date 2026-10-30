@@ -9,8 +9,7 @@ export function close_pops() { qsa('.pop:not([hidden])').forEach(p => { if (p._o
   const a = p._out = p.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(.6rem) scale(.98)' }], { duration: 160, easing: 'cubic-bezier(.22,.8,.22,1)' });
   a.onfinish = () => { if (p._out === a) { p.hidden = true; p._out = null; } }; }); }
 export function toggle_pop(id) { const p = document.getElementById(id); if (!p) return; const open = !p.hidden && !p._out; close_pops(); if (!open) { p._out?.cancel(); p._out = null; p.hidden = false; expanded(p, true); if (p.matches('.tile_pop, .pop_fixed')) place_tile(p); } }
-/* "Your modules" style menus and fixed menus (the account menu): right under their button (8px gap), kept 8px inside
-   the screen, as tall as the room below allows (a tile menu at most 480px; the tiles scroll inside) */
+/* "Your modules" style menus and fixed menus (the account menu): right under their button (8px gap), or above it when
 export function place_tile(p) {
   const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
   /* inside a zoomed page (O-Doc Sign scaled to fit) the menu is placed in that page's own pixels: screen pixels ÷ zoom */
