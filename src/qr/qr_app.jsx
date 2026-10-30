@@ -20,3 +20,4 @@ export function Qr_app() {
   const found = t => { set({ phase: 'found', text: t }); navigator.vibrate?.(60);
     const r = [{ t, at: Date.now() }, ...load().filter(x => x.t !== t)].slice(0, 6); set_recent(r); keep(r); };
   const go = async (f = facing) => {
+    if (!navigator.mediaDevices?.getUserMedia) return set({ phase: 'error', msg: 'The camera needs a secure page (https).' });
