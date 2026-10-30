@@ -38,3 +38,4 @@ export const PREP_ACT = {
         const moved = email !== r.email; Object.assign(r, { name: String(v.name).trim(), email, note: String(v.note || '').trim(), cert: !!v.cert });
         if (moved) recolor(P.doc);
         prep_dirty(); rerender(); } }); },
+  sign_rec_del: t => { const r = rec_of(P.doc, t.dataset.id), n = P.doc.fields.filter(f => f.rid === r.id).length;
