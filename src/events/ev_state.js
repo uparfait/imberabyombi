@@ -15,3 +15,4 @@ export function ev_state(e, now = Date.now()) {
   if (e.status === 'Cancelled' || e.status === 'Postponed') return e.status;
   if (DONE.includes(e.status) || !e.date) return e.date ? 'Past' : 'Upcoming';
   if (e.kind === 'Recurring' && e.repeat) {
+    const p = tz_parts(e.tz || page_tz(), now), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`, next = repeat_next(e.repeat, e.date, today);
