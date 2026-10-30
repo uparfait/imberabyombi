@@ -43,3 +43,4 @@ export function live_page(id, c) {
         <span className="live_when">{span(a)}</span><span className="min-w-0"><b className="block truncate">{a.title}</b><span className="block truncate text-sm text-muted">{a.p_name}</span></span></li>)}</ol> : null}
     </section>
     <aside className="card live_qr">{open ? <Qr text={att_url(c, id)} label="Attendance QR code" /> : <p className="text-muted">Attendance is closed</p>}
+      <p className="qr_full_count"><b>{n}</b> attended</p>
