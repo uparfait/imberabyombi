@@ -1,6 +1,7 @@
 /* overrides/28_event_page.css: one event on its own page (events/event_page.jsx): the title row (an arrow back, the
    title), the details as cards by section and, where the page has room, the status and actions in a column on the right
    that stays in view. The layout follows the room the page and each card really have (container queries), not the
+   window: the sidebar, the side panel or any zoom never squeeze a value into a narrow column. A card on the Events page
   .ev_back { flex: none; margin-left: -.5rem; }   /* the arrow back, first in the title row */
   .ev_head { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .5rem; margin-bottom: 1.25rem; }
   .ev_title { min-width: 0; font-family: var(--font_display); font-size: 1.625rem; font-weight: 500; letter-spacing: -.01em; overflow-wrap: anywhere; }
