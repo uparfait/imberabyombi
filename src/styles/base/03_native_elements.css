@@ -44,3 +44,4 @@
   :where(q)::before { content: open-quote; color: rgb(var(--brand)); }
   :where(q)::after { content: close-quote; color: rgb(var(--brand)); }
   :where(cite) { font-style: normal; font-weight: 600; }
+  code, kbd, samp, pre, var { font-family: var(--font_mono); font-size: .875em; }
