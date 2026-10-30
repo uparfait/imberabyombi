@@ -8,3 +8,4 @@ self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.o
 self.addEventListener('activate', e => e.waitUntil(caches.keys()
   .then(ks => Promise.all(ks.filter(k => k.startsWith('qr-scan-') && k !== CACHE).map(k => caches.delete(k)))).catch(() => {}).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
+  const r = e.request; if (r.method !== 'GET' || !r.url.startsWith('http')) return;
