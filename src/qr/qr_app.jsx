@@ -24,3 +24,5 @@ export function Qr_app() {
     set({ phase: 'scan' });
     try { await start(video.current, found, f); set_multi(await cameras() > 1); }
     catch (e) { stop(); set({ phase: 'error', msg: WHY[e.name] || 'The camera could not start. Scan a picture instead.' }); }
+  };
+  const pick = async e => { const file = e.target.files[0]; e.target.value = ''; if (!file) return; stop();
