@@ -49,6 +49,7 @@ export const PREP_ACT = {
   sign_save: () => { const f = document.querySelector('form[aria-label="Add a signer"]');
     const typed = f && ['name', 'email', 'note'].some(k => f.elements[k]?.value.trim());
     if (typed && !add_signer(f, true)) return notify('Finish the signer you are adding, or clear the form, then save.', 'warn', 'Not saved yet');
+    prep_save(); notify(typed ? 'Your changes are kept, the new signer too. Send it when it is ready.' : 'Your changes are kept. Send it when it is ready.', 'ok', 'Draft saved'); },
   sign_send: () => {
     const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
     /* what still stops it from being sent, in a dialog (a passing message was easy to miss) */
