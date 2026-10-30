@@ -41,3 +41,4 @@ src/main.jsx     entry: styles, app, router boot             src/store/     stor
 src/app.jsx      root: current page + dialogs                src/router/    path routes, page meta, after-draw work
 src/config/      brand, media, business rules                src/actions/   every data-act and data-form handler
 src/cartoons/    cartoon pictures drawn from a seed          public/media/  sample video, poster, share image, logo
+src/icon3d/      the 3D icon engine (six styles)             src/iconisus/  the 3D icon maker (/admin/icons)
