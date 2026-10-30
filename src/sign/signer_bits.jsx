@@ -19,3 +19,4 @@ const notes = r => <>{row('Notes', false, { 'data-act': 'pop', 'data-pop': `pop_
   ic('chev_d', 'sign_chev h-4 w-4 shrink-0'))}
   {createPortal(<div id={`pop_note_${r.id}`} ref={closed_pop()} className="pop pop_fixed sign_note_pop" role="dialog" aria-label={`Note for ${r.name}`} hidden>
     <p className="sign_cap">Note for {r.name}</p>
+    <p className={`whitespace-pre-line text-sm ${r.note ? '' : 'text-muted'}`}>{r.note || 'No note for this signer.'}</p></div>, document.body)}</>;
