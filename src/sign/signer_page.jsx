@@ -29,3 +29,4 @@ export function signer_page(d) {
   const done = r.status === 'signed' || d.status !== 'sent';
   return <div className="sign_split">
     <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
+      {done ? d.status === 'completed' ? <section className="card p-5"><button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_dl" data-id={d.id}>
