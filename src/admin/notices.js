@@ -10,3 +10,4 @@ import { at } from '../schemas/index.js';
 import { my_role } from '../events/my_role.js';
 
 const H = 3600e3, RANK = { bad: 0, warn: 1, info: 2, ok: 3 };
+const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
