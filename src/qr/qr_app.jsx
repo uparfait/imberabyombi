@@ -31,3 +31,5 @@ export function Qr_app() {
   const flip = () => { const f = facing === 'environment' ? 'user' : 'environment'; set_facing(f); go(f); };
   useEffect(() => stop, []);
   const scanning = st.phase === 'scan';
+
+  return <div className="qr_app">{top_bar()}
