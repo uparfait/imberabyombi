@@ -25,3 +25,4 @@
   @media (min-width: 1024px) { body:has(#sidebar[data-min=true]) .brand_toggle { display: grid; } }
   .scrim { opacity: 0; pointer-events: none; transition: opacity .3s var(--ease); }
   .scrim.on { opacity: 1; pointer-events: auto; }
+  /* Smooth fold for collapsible sections (sidebar calendar and groups). Not named .collapse: that is a Tailwind utility. */
