@@ -8,3 +8,4 @@ import { field, when_row } from '../fields/index.js';
 import { modal } from '../overlays/index.js';
 
 /* the form's fields; those a schema groups with row: 'when' (a date and its times) go on one line, where the first is */
+const body_of = (s, row) => s.f.map(f => !f.row ? field(f, row[f.k])
