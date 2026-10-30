@@ -2,3 +2,4 @@
    (form_sec), a segmented choice with its title (seg_field) */
   .form_sec { margin-top: .25rem; font-size: .9375rem; font-weight: 600; color: rgb(var(--fg)); }
   .form_sec:not(:first-of-type) { margin-top: .75rem; }
+  .seg_field { display: grid; justify-items: start; gap: .5rem; min-width: 0; }
