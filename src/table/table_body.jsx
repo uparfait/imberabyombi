@@ -11,3 +11,4 @@ import { pager } from './table_parts.jsx';
 import { rows_of, wait_load } from './rows.js';
 
 /* a row's buttons: the page's own (o.acts) + Edit and Delete for managers (unless o.can_row says no); null when none */
+function row_acts(c, o, r, can) {
