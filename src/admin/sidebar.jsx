@@ -40,3 +40,4 @@ export function sidebar(mod) {
       <span className="truncate font-display text-lg font-extrabold tracking-wide"><span className="text-brand">{cfg.logo[0]}</span>{cfg.logo[1]}</span></a>
     <button className="icon_btn" data-act="side" aria-label="Close sidebar">{ic('sideClose')}</button></div>
   <div id="sidebar_scroll" className="scroll_hover flex min-h-0 flex-1 flex-col gap-5 overflow-y-auto p-3 pt-1" data-chain="">
+  {create.length ? create_menu(create) : null}
