@@ -61,3 +61,4 @@
   .when_block { position: relative; display: inline-grid; min-width: 6.5rem; height: 2.75rem; padding: 0 1rem; place-items: center; border-radius: var(--radius);
     background: rgb(var(--fg) / .06); font-size: .9375rem; cursor: pointer; transition: background-color .2s; }
   .when_block:hover { background: rgb(var(--fg) / .1); }
+  .when_block:focus-within { outline: 2px solid rgb(var(--brand)); outline-offset: 0; }
