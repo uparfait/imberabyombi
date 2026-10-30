@@ -33,3 +33,4 @@ function nav_markup(routed) {
   const title = node ? node.t : ROOT; if (routed) route.title = title;
   lorem.seed(hash_str(title));
   const body = nav_page({ routed, title, node, kids, path, to });
+  return <><nav className={`nav_row ${routed ? 'is_pinned' : ''}`} aria-label={`${ROOT} navigation`}>{[0, 1].map(menu)}</nav>
