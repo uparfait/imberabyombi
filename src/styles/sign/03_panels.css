@@ -50,6 +50,7 @@ button.sign_opt:hover { background: rgb(var(--fg) / .06); }
 .sign_self_done { display: flex; align-items: center; justify-content: center; gap: .375rem; min-height: 2.25rem; color: rgb(var(--ok)); font-size: .8125rem; font-weight: 600; }
 /* the tools column's foot: Preview stays at the bottom while the column scrolls */
 .sign_right { display: flex; flex-direction: column; } .sign_right > .sign_panel { flex: 1 0 auto; }
+.sign_foot { position: sticky; bottom: 0; padding: .875rem 1.25rem 1rem; border-top: 1px solid rgb(var(--line)); background: rgb(var(--surface)); }
 .sign_check input { width: 1rem; height: 1rem; accent-color: rgb(var(--brand)); }
 /* the Activity heading: a rounded row (and a rounded focus ring) */
 .sign_side details > summary { margin: -.5rem; padding: .5rem .75rem; border-bottom: 0; border-radius: var(--pill); }
