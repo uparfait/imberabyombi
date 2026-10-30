@@ -28,3 +28,4 @@ export function account_menu(n = '') {
           <div className="mt-2 rounded-2xl bg-surface-2 p-4">
             <p className="flex items-center gap-2 text-sm">{ic('box', 'h-4 w-4 text-muted')}{`${pct}% of 5 MB browser storage used`}</p>
             <progress className="mt-2" max="100" value={pct}></progress></div>
+          <p className="mt-3 text-center text-xs text-muted">
