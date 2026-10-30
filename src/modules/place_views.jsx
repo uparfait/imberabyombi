@@ -2,7 +2,7 @@
    three as cards, then every event by where it stands: Live, Upcoming, Recurring, Postponed, Cancelled, Past; one event
    opens on its own page, /admin/events/<id>), Reservations & inventory (low-stock banner) and Smart parking. */
 import { VIEWS } from './views.js';
-import { db, ui } from '../store/index.js';
+import { db, ui, route } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { ymd, parse_d, money } from '../lib/index.js';
 import { cfg } from '../config/index.js';
