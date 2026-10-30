@@ -12,3 +12,4 @@
   .btn_ink { @apply bg-ink text-white hover:bg-brand dark:bg-fg dark:text-bg dark:hover:bg-brand dark:hover:text-white; }
   .btn_outline { @apply border border-muted/50 text-fg hover:bg-fg/5; }
   .btn_ghost { @apply text-fg hover:bg-fg/5; }
+  .btn_soft { @apply bg-brand/10 text-accent hover:bg-brand/20; }
