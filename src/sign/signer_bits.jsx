@@ -1,3 +1,4 @@
 /* sign/signer_bits.jsx: small pieces of a signer's card, on the prepare page and the progress page: a Note chip (the note
    shows only while it is open, signer by signer) and the digital certificate chip (asked for · verified). chips(r) is the
    row of chips and note_text(r) the open note under it; NOTE_ACT opens and closes a note. */
+import { ic } from '../icons/index.js';
