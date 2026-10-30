@@ -23,3 +23,4 @@ export const who = () => ({ email: String(auth.user?.email || '').toLowerCase(),
 export const all_docs = () => db.list(C);
 export const find_doc = id => id ? db.find(C, id) : null;
 export const mine = () => all_docs().filter(d => d.owner === who().email);
+export const my_rec = d => d?.recipients.find(r => r.email === who().email);
