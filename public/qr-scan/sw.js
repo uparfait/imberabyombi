@@ -3,3 +3,4 @@
    kept; offline, the kept copy is used (the page itself as the last resort). Keeping copies is a bonus: where the browser
    cannot (private windows, full storage), it still installs and works online. Bump CACHE to start the copies over. */
 const CACHE = 'qr-scan-v1';
+const keep = (r, res) => caches.open(CACHE).then(c => c.put(r, res)).catch(() => {});
