@@ -12,3 +12,4 @@
   .table_data td.table_none { padding-inline: 0; }
   .table_data td.table_none > * { position: sticky; left: 0; width: 100cqw; }
   .table_data thead .table_acts { z-index: 2; background: rgb(var(--surface_2)); }
+  .table_data tbody tr:hover:not(:has(:is(button, a, input, select, label, [data-act]):hover)) > .table_acts { background: color-mix(in srgb, rgb(var(--brand)) 4%, rgb(var(--surface))); }
