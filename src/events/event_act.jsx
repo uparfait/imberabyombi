@@ -31,6 +31,7 @@ export const EV_ACT = {
   ...INVITE_ACT, ...QR_ACT,
   /* when people can sign in: minutes before the start and after the end */
   ev_att_set: t => { const c = t.dataset.c, e = db.find(c, t.dataset.id); if (!e) return; const [b, a] = att_mins(e);
+    const num = (k, l, v) => field(field_spec(k, l, 'number', 0, 1, { min: 0, max: 1440 }), v);
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
