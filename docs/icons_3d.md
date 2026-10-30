@@ -45,6 +45,7 @@ Completed green, Archived indigo, To sign violet.
 | px | the device pixels it is drawn at (default: `size` when it is a number). `device_px(css)` gives it for this screen |
 | view | the part of the 200 × 200 picture to show, `[x, y, w, h]` (default `[0, -4, 200, 200]`) |
 
+**Small sizes.** The lighting and the "goo" (the step that rounds and thickens) work per device pixel, so one set of
 Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
 (gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
 
