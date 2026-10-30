@@ -18,7 +18,7 @@ const people = () => db.list('staff').filter(s => s.email && s.name);
 export function add_signer(f, quiet = false) {
   if (!validate(f)) return false;
   const v = Object.fromEntries(new FormData(f)), name = v.name.trim(), email = v.email.trim().toLowerCase();
-  if (P.doc.recipients.some(r => r.email === email)) return notify(`${email} already signs this document.`, 'warn', 'Already a signer');
+  if (P.doc.recipients.some(r => r.email === email)) { notify(`${email} already signs this document.`, 'warn', 'Already a signer'); return false; }
   const r = add_rec(P.doc, name, email, String(v.note || '').trim(), !!v.cert); P.rid = r.id; P.adding = false;
   f.reset(); gate(f); prep_dirty(); rerender(); notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
 }
