@@ -76,3 +76,4 @@
   .when_block select { opacity: 0; }
   .when_block:focus-within input { color: rgb(var(--fg)); caret-color: auto; }
   .when_block:not(:focus-within) input::placeholder { color: transparent; }   /* its format ("YYYY-MM-DD") only while typed in */
+  .when_lab { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: rgb(var(--muted)); font-size: max(.625rem, .72em); line-height: 1.25; pointer-events: none; }
