@@ -12,3 +12,4 @@ const round = (icon, label, on, pressed) => <button type="button" className={`qr
 
 /* o: { app (installed), scanning, has_torch, lit, toggle_torch } */
 export const qr_live = o => { const mark = mark3d('#', 'h-9 w-9', brand());
+  return <div className="qr_live">
