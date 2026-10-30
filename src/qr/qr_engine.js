@@ -35,3 +35,4 @@ export async function start(video, on_code, facing = 'environment') {
   tick();
 }
 export const cameras = async () => (await navigator.mediaDevices?.enumerateDevices?.() || []).filter(d => d.kind === 'videoinput').length;
+export async function read_image(file) { const bmp = await createImageBitmap(file); return decode(bmp, bmp.width, bmp.height); }
