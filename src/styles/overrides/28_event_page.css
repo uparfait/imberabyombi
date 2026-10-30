@@ -15,6 +15,7 @@
   .ev_card_head h3, .ev_side_title { font-size: 1rem; font-weight: 600; }
   /* the details: one Field | Value table, a row per section with its Edit button */
   .ev_table { overflow: hidden; }
+  .ev_group { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
   .ev_link { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
   .ev_note { margin-top: .75rem; color: rgb(var(--muted)); font-size: .875rem; white-space: pre-line; overflow-wrap: anywhere; }
   .ev_acts { display: grid; gap: .5rem; margin-top: 1.25rem; }
