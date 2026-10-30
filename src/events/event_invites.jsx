@@ -35,6 +35,7 @@ function chip_save(id, old, input) {
   if (v && v !== old) {
     if (find_emails(v)[0] !== v) { wait.note = `Not an email address: ${v}.`; return rerender(); }
     if (wait.list.includes(v) || e?.invites?.some(i => i.e === v)) { wait.note = `${v} is already on the list.`; return rerender(); }
+    wait.list = wait.list.map(m => m === old ? v : m); wait.note = '';
 const upload = (id, input) => { const file = input.files[0]; input.value = ''; if (!file) return;
   request(async () => { try { add(id, await emails_in_file(file), [], file.name); }
     catch { notify(`${file.name} could not be read. Save it as .xlsx or .csv and try again.`, 'bad', 'File not read'); } }, { btn: input.closest('label') }); };
