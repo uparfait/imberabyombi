@@ -29,3 +29,6 @@ export function repeat_hit(r, d, f) {
   if (r.freq === 'monthly') return months % n === 0 && in_month(r, d, f);
   if (r.freq === 'yearly') return (d.getFullYear() - f.getFullYear()) % n === 0 && or(r.months, f.getMonth() + 1).includes(d.getMonth() + 1) && in_month(r, d, f);
   return false;
+}
+
+/* the days ('YYYY-MM-DD') rule r with first date first falls on from 'from' to 'to' (both included), until it ends */
