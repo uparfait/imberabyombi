@@ -42,5 +42,6 @@ const holds = (form, w) => { const m = /^(\w+)(!?=)(.*)$/.exec(w), [k, op, vs] =
 /* fields shown only for some values; hidden ones are disabled, so they are not sent or checked. In document order, so a
    block inside a hidden one stays hidden whatever its own rule says */
 export function sync_when(form) { if (!form) return;
+  qsa('[data-when]', form).forEach(el => { const on = holds(form, el.dataset.when) && !el.parentElement.closest('[data-when][hidden]');
     el.hidden = !on; el.querySelectorAll('input, select, textarea').forEach(i => i.disabled = !on); });
   qsa('[data-fill-rows]', form).forEach(fill_rows); }
