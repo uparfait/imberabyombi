@@ -30,3 +30,4 @@ export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !
     r = r.map(x => x.perms === '*' ? x : { ...x, perms: { ...FOR_ALL, ...x.perms } }); db.set('roles', r); }
   return r; };
 /* Landing page: where people with a role arrive after signing in (set on Roles & access). It falls back to the
+   first module the role can open when the chosen one is not set or no longer allowed. */
