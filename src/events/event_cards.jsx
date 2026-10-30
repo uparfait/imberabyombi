@@ -11,3 +11,4 @@ const out = (href, text) => <a href={href} className="ev_link" target={href.star
 const times = e => e.start ? `${fmt_time(e.start)}${e.end ? ` – ${fmt_time(e.end)}` : ''}` : null;
 
 /* each section's rows: [label, value] (an empty value shows a dash; a null row is left out) */
+const ROWS = {
