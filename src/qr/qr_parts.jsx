@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import { ic } from '../icons/index.js';
 import { secure } from './qr_engine.js';
-import { can_install, install, apple, standalone } from './qr_install.js';
+import { can_install, install, apple, installed, standalone } from './qr_install.js';
 
 function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
   const [ok, set] = useState(false);
