@@ -10,3 +10,4 @@
   .ev_tbl .ev_ag_table th:first-child { width: 30%; }
   .ev_tbl :is(th, td).ev_ag_time { width: 10.5rem; color: rgb(var(--muted)); white-space: nowrap; font-variant-numeric: tabular-nums; }
   .ev_ag_table tr.is_now > td { background: rgb(var(--ok) / .08); }   /* the item running now */
+  .ev_ag_table tr.is_done > td { opacity: .5; }
