@@ -17,3 +17,4 @@ export const add_time = (t, mins) => { const v = Math.min(to_min(t) + mins, 23 *
 /* Clock format: 24-hour or 12-hour (toggle in the time picker, saved as "h24"; default follows the locale) */
 export const h24 = () => db.get('h24', !new Intl.DateTimeFormat(undefined, { hour: 'numeric' }).resolvedOptions().hour12);
 export const fmt_hour = h => h24() ? `${pad(h)}:00` : new Date(2000, 0, 1, h).toLocaleTimeString(undefined, { hour: 'numeric', hour12: true });
+export const fmt_time = t => {
