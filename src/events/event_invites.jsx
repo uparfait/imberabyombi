@@ -38,3 +38,4 @@ export const INVITE_ACT = {
     db.upsert('events', { id: e.id, invites: [...(e.invites || []), ...wait.list.map(m => ({ e: m, at: Date.now() }))] });
     const left = not_emails(qs('#ev_inv_in')?.value || '');   /* still in the box: not addresses */
     Object.assign(wait, { list: [], note: left.length ? `Not an email address: ${left.join(', ')}.` : '' });
+    rerender(); notify(`${n_of(n, 'person was', 'people were')} invited by email.`, 'ok', 'Invites sent'); },
