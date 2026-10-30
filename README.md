@@ -59,3 +59,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | Guide | Guide |
 |---|---|
 | [Getting started](docs/getting_started.md) | [Project structure](docs/project_structure.md) |
+| [Design tokens](docs/design_tokens.md) | [Scaling and themes](docs/scaling_and_themes.md) |
