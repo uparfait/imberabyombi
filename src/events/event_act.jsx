@@ -21,3 +21,4 @@ export const EV_ACT = {
   ev_edit: t => open_form('events', t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas.events.sec[t.dataset.sec].split(',')]),
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     modal({ title: 'Postpone this event?', help: 'Move it to a new date, or leave the date empty if it is not known yet. Everyone invited is told by email.',
+      body: [when_row(NEW_WHEN, { tz: e.tz }), reason()], submit: 'Postpone',
