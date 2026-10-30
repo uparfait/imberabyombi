@@ -38,3 +38,4 @@
   .legend_rect { width: .75rem; height: .75rem; border-radius: .1875rem; }
   .legend_dot { width: .625rem; height: .625rem; border-radius: var(--pill); }
   .legend_line { width: 1rem; height: .15625rem; border-radius: var(--pill); }
+  .viz_scale { display: flex; align-items: center; gap: .1875rem; font-size: .75rem; color: rgb(var(--muted)); }
