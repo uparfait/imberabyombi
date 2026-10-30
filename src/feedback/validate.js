@@ -22,7 +22,7 @@ export function show_err(el, msg) {
   if (!el) return; clear_err(el); const id = 'err_' + (el.id || el.name || uid());
   el.setAttribute('aria-invalid', 'true'); el.setAttribute('aria-describedby', id);
   const p = document.createElement('p'); p.className = 'field_err'; p.id = id; p.innerHTML = ic_html('x', 'h-3.5 w-3.5 shrink-0') + `<span>${esc(msg)}</span>`;
-  const fld = el.closest('.field'); fld ? fld.append(p) : (el.closest('label') || el).after(p);
+  const fld = el.closest('.field, .when_wrap, .seg_field'); fld ? fld.append(p) : (el.closest('label') || el).after(p);   /* a date row's: under the row */
 }
 export function validate(f) {
   f.noValidate = true;
