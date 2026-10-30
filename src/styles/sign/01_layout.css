@@ -43,3 +43,4 @@
 .sign_center { min-width: 0; padding: 1.5rem 2rem 3rem; }
 
 /* a document's page: pages | progress */
+.sign_split { display: grid; flex: 1; grid-template-columns: minmax(0, 1fr) 22rem; align-content: start; }
