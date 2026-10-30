@@ -17,3 +17,4 @@ const notes = () => { const ns = db.get('notes', []);
       <label className="sr-only" htmlFor="compose_title">Title</label><input id="compose_title" name="title" placeholder="Title" autoComplete="off" />
       <label className="sr-only" htmlFor="compose_body">Note</label><textarea id="compose_body" name="body" rows="1" required placeholder="Take a note…"></textarea>
       <div className="compose_foot"><button className="btn btn_ghost btn_sm text-accent">Done</button></div></form>
+    <div className="mt-4 grid gap-2">{ns.length ? ns.map(memo)
