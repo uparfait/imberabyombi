@@ -35,6 +35,7 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `kit/`       | the design-system page (`/ui`), one file per specimen group                                |
 | `admin/`     | admin shell: sidebar, header tools, side panels, apps menus, nested navigation              |
 | `modules/`   | one view per admin module (`VIEWS`), the calendar and the task feature                      |
+| `events/`    | the Events module's parts: where an event stands, its page (sections and actions), invitations |
 | `charts/`    | charts and KPIs (SVG), their data dialog and tooltip; the small canvas chart registry       |
 | `emails/`    | email designs and the email gallery                                                         |
 | `editor/`    | the document editor (`/admin/docs`): page frame, pagination, formatting, images, menus, import and export |
