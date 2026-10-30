@@ -26,6 +26,7 @@ export function kind_of(r) {
   const s = at(r.date, r.start, r.tz), now = Date.now(); return s <= now && now < (r.end ? at(r.date, r.end, r.tz) : s + 2 * 3600e3) ? 'Live' : 'Upcoming';
 }
 export const place_of = r => r.place || (r.link ? 'Virtual' : 'Physical');
+export const kind_label = r => KINDS.find(k => k[0] === kind_of(r))?.[1];
 
 /* where: in a place (a venue or address) or online (a meeting link and notes on joining, such as a passcode); all optional */
 const PLACE_HELP = 'Physical: it happens in a place; add the venue or address. Virtual: it happens online; add the meeting link '
