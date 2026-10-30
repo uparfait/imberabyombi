@@ -20,3 +20,4 @@ const number = ([k, v, i], j) => <div key={k} className="card flex items-center 
   <div className="min-w-0"><p className="truncate text-sm text-muted">{k}</p><p className="truncate font-display text-xl font-bold">{v}</p></div></div>;
 
 const activity = i => { const n = lorem.name();
+  return <li key={i} className="flex items-center gap-3 border-b border-line px-5 py-3 last:border-0"><span className="nav_avatar">{initials(n)}</span>
