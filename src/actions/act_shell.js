@@ -29,3 +29,4 @@ export const SHELL_ACT = {
   close_modal: () => request_close(qs('#modal')),
   confirm_keep: () => close_dialog(qs('#confirm')),
   confirm_discard: () => { const c = qs('#confirm'), yes = c._yes; c._yes = null; close_dialog(c); yes?.(); },
+  close_viewer: () => close_dialog(qs('#viewer')),
