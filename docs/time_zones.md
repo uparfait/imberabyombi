@@ -30,3 +30,4 @@ Code: [`src/tzconv/`](../src/tzconv/), styles in `src/styles/tzconv/`; it loads 
 | `page_tz()`, `device_tz()` | the page's zone (Settings), the device's |
 | `page_now()` | now on the page's clock, as a Date to read with `getDate()`, `getHours()`… |
 | `convert(date, time, from, to)` | a wall-clock date and time in one zone, as it reads in another: `{ date, time }` |
+| `zone_list(t)`, `zone_short(tz, date)` | every zone for a picker ("(GMT+02:00) Central Africa Time - Kigali"); "GMT+2 · Kigali" |
