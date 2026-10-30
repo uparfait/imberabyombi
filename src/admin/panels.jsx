@@ -31,3 +31,4 @@ const task_row = t => { const d = t.status === 'Done', items = items_of(t);
 
 const my_tasks = () => {
   const all = db.list('tasks').filter(t => t.assignee === me()), open = all.filter(t => t.status !== 'Done'), done = all.filter(t => t.status === 'Done');
+  return <><button className="btn btn_ghost btn_sm -ml-2 text-accent" data-act="create" data-mod="tasks" data-col="tasks">{ic('plus', 'h-4 w-4')}Add a task</button>
