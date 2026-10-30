@@ -28,3 +28,4 @@ export function boot() {
   install_listeners(); before_render(before_page); define_callout();
   install_history();   /* Back / Forward */
   apply_tokens();
+  migrate_task_dates();
