@@ -9,3 +9,4 @@ export const MODS = [
   { k: 'docs', l: 'Document editor', s: 'Editor', i: 'description', g: 'Overview', full: true },   /* full: the whole window, no admin shell */
   { k: 'sign', l: 'O-Doc Sign', s: 'Sign', i: 'signature', g: 'Overview', full: true, d: 'Online document signing and stamping' },
   { k: 'staff', l: 'Staff', s: 'Staff', i: 'users', g: 'People' },
+  { k: 'employees', l: 'Employees', s: 'Employees', i: 'briefcase', g: 'People' },
