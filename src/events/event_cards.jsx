@@ -39,3 +39,4 @@ const group = (e, s, can, c) => <Fragment key={s}><tr className="kv_group"><th s
   {ROWS[s](e).filter(Boolean).map(([k, v, cls], j) => <tr key={k + j} className={cls || undefined}><th scope="row">{k}</th><td>{v === '' || v == null ? dash() : v}</td></tr>)}</Fragment>;
 
 export const event_cards = (e, can, c = 'events') => <section className="card ev_table" aria-label="Details"><table className="kv">
+  <thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody>{SECS.map(s => group(e, s, can, c))}</tbody></table></section>;
