@@ -55,3 +55,4 @@
   .file_x { position: absolute; top: .2rem; right: .2rem; z-index: 2; display: grid; place-items: center; width: 1.375rem; height: 1.375rem; border-radius: var(--pill);
     color: rgb(var(--fg)); background: rgb(var(--surface) / .92); border: 1px solid rgb(var(--line)); transition: background-color .2s, color .2s; }
   .file_x:hover { color: #fff; background: rgb(var(--bad)); border-color: rgb(var(--bad)); }
+  /* A date and its times on one line as soft blocks ("Friday, October 30 · 12:00pm – 1:00pm", fields/when_row.jsx). Each
