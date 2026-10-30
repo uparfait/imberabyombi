@@ -16,3 +16,4 @@ function events_for_me(now) {
   return db.list('events').flatMap(e => {
     const role = my_role(e); if (!role) return [];
     const s = e.date ? at(e.date, e.start, e.tz) : 0, href = '/admin/events/' + e.id, n = { at: s, href, text: e.title };
+    if (e.status === 'Cancelled') return [{ ...n, id: `ev:${e.id}:x`, icon: 'x', tone: 'bad', title: 'Event cancelled' }];
