@@ -15,6 +15,7 @@ const fields_of = (fs, row) => fs.map(f => !f.row ? field(f, row[f.k])
 const body_of = (s, row, keys) => { const fs = s.f.filter(f => f.form !== false && (!keys || keys.includes(f.k)));
   if (keys || !s.form_sec) return fields_of(fs, row);
   return Object.entries(s.sec).flatMap(([h, ks]) => { const g = fs.filter(f => ks.split(',').includes(f.k));
+    return g.length ? [<h3 key={'sec_' + h} className="form_sec sm:col-span-2">{h}</h3>, ...fields_of(g, row)] : []; }); };
 
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset) */
 export function open_form(c, id, preset = {}) {
