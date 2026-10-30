@@ -32,3 +32,4 @@
   meter::-webkit-meter-even-less-good-value { background: rgb(var(--bad)); border-radius: var(--pill); }
   meter:-moz-meter-optimum::-moz-meter-bar { background: rgb(var(--ok)); border-radius: var(--pill); }
   meter:-moz-meter-sub-optimum::-moz-meter-bar { background: rgb(var(--warn)); border-radius: var(--pill); }
+  meter:-moz-meter-sub-sub-optimum::-moz-meter-bar { background: rgb(var(--bad)); border-radius: var(--pill); }
