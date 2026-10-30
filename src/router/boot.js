@@ -20,3 +20,6 @@ function migrate_task_dates() {
   const rows = db.get('c:tasks'), bare = v => /^\d{4}-\d{2}-\d{2}$/.test(v || ''), K = ['start', 'due', 'end'];
   if (Array.isArray(rows) && rows.some(t => K.some(k => bare(t[k]))))
     db.save('tasks', rows.map(t => { const o = { ...t }; K.forEach(k => { if (bare(o[k])) o[k] += k === 'start' ? 'T09:00' : 'T17:00'; }); return o; }));
+}
+
+let booted = false;
