@@ -20,3 +20,4 @@ const OF = { drafts: 'draft', waiting: 'sent', completed: 'completed' };
 export const KINDS = { signature: ['Signature', 'signature', 180, 56], stamp: ['Stamp', 'stamp', 112, 112] };
 
 export const who = () => ({ email: String(auth.user?.email || '').toLowerCase(), name: auth.user?.name || '' });
+export const all_docs = () => db.list(C);
