@@ -30,3 +30,5 @@ export function Attend_form({ c, id, demo }) {
     if (!demo && !db.list('attendees').some(a => a.ref === id && a.email === email))
       db.upsert('attendees', { ref: id, c, name, email, tel: d.tel.trim(), org: d.org.trim(), position: d.position.trim(), sig_kind: mode, sig, at });
     set_done(name);
+  };
+  return <form className="att_form" noValidate onSubmit={submit} onPointerDown={() => err && set_err('')}>{F.map(f => field(f, ''))}
