@@ -10,3 +10,4 @@ import { route } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { loading } from '../feedback/index.js';
 import { empty } from '../ui/index.js';
+import { go, set_meta } from '../router/index.js';
