@@ -24,5 +24,6 @@ export function attend_page(r) {
         <p className="att_when">{[e.tbd ? '' : fmt_d(e.date), e.start ? fmt_time(e.start) : '', where].filter(Boolean).join(' · ')}</p>
         {ph[0] === 'soon' ? <div className="att_done">{clock('Attendance opens in', ph[1])}</div>
           : ph[0] === 'open' ? <>{clock('Closes in', ph[1])}<Attend_form c={c} id={id} /></>
+          : <Tick text="Attendance is closed" sub={e.status === 'Cancelled' ? 'It was cancelled.' : ''} />}</>}
   </div></main>;
 }
