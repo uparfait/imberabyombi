@@ -11,3 +11,4 @@ import { crud } from '../table/index.js';
 import { to } from '../router/index.js';
 
 const copy_link = r => <button className="icon_btn h-8 w-8" data-act="copy" data-text={access_link(r)} aria-label={`Copy access link for ${r.name}`}
+  data-tip="Copy access link">
