@@ -62,3 +62,5 @@ Every feature below is working code. Each line says what it is and where it live
   XLSX, PPTX, EPUB, RTF, HTML, Markdown, JSON (at the cursor, in new tabs, or in place of one tab: the others are
   never touched); export DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT; saved in the browser (IndexedDB, so
   images are kept); rulers on demand with a margin reset.
+
+## O-Doc Sign (`src/sign/`, `/admin/sign`)
