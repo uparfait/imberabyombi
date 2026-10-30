@@ -27,3 +27,4 @@ export const my_rec = d => d?.recipients.find(r => r.email === who().email);
 export const to_sign = () => all_docs().filter(d => d.status !== 'draft' && my_rec(d));
 export const my_turn = d => d.status === 'sent' && my_rec(d)?.status !== 'signed';
 /* archived documents show only under Archived (the signers keep theirs under To sign) */
+const kept = () => mine().filter(d => !d.archived);
