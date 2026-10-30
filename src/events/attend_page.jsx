@@ -17,7 +17,7 @@ export function attend_page(r) {
   after_render(() => TIMERS.push(setInterval(tick, 1000)));
   const clock = (label, t) => <p className="att_clock">{label} <b data-count-to={t}>{left(t - Date.now())}</b></p>;
   set_meta(e ? `Attendance · ${e.title}` : 'Attendance');
-  return <main id="main" className="att_page"><div className="att_card card">
+  return <main id="main" className={`att_page ${e ? 'tint' : ''}`} style={e ? { '--h': hue(e.title) } : undefined}><div className="att_card card">
     {!e ? empty('Not found', 'This link does not lead to an event or activity.', null, 'alert', 'warn')
       : <><h1 className="att_title line-clamp-3">{e.title}</h1>
         {ph[0] === 'soon' ? <div className="att_done">{clock('Attendance opens in', ph[1])}</div>
