@@ -27,5 +27,6 @@ const ROWS = {
 
 const group = (e, s, can) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
   {can ? <button type="button" className="ev_edit" data-act="ev_edit" data-id={e.id} data-sec={s} aria-label={`Edit ${s.toLowerCase()}`}>{ic('edit', 'h-3.5 w-3.5')}Edit</button> : null}</div></th></tr>
+  {ROWS[s](e).filter(Boolean).map(([k, v]) => <tr key={k}><th scope="row">{k}</th><td>{v === '' || v == null ? dash() : v}</td></tr>)}</Fragment>;
 
 export const event_cards = (e, can) => SECS.map(s => card(e, s, can));
