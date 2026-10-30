@@ -6,7 +6,7 @@ import { ic } from '../icons/index.js';
 import { secure } from './qr_engine.js';
 import { can_install, install, apple, installed, standalone } from './qr_install.js';
 
-function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
+export function Install() {
   const [ok, set] = useState(false);
   const copy = () => navigator.clipboard?.writeText(text).then(() => { set(true); setTimeout(() => set(false), 1500); }, () => {});
   return <button type="button" className={cls} onClick={copy} aria-label={label || 'Copy'} title={label ? undefined : 'Copy'}>
