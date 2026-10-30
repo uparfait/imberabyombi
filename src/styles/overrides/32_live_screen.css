@@ -23,7 +23,7 @@
   .live_agenda li.is_done { opacity: .5; }
   .live_when { color: rgb(var(--muted)); font-size: .875rem; font-variant-numeric: tabular-nums; }
   .live_qr { display: grid; align-content: center; justify-items: center; gap: 1rem; padding: 1.5rem; text-align: center; }
-  .live_qr .qr { width: min(calc(100dvh - 28rem), 34vw); padding: .75rem; background: #fff; }   /* room left for the count and the link */
+  .live_qr_btn .qr, .live_qr .qr_empty { width: min(calc(100dvh - 28rem), 34vw); } .live_qr_btn .qr { padding: .75rem; background: #fff; }   /* room left for the count and the link */
   .live_qr_btn { border-radius: var(--radius); cursor: zoom-in; }
   .live_qr .copy_box { width: 100%; max-width: min(34vw, 30rem); }
   @media (max-aspect-ratio: 1/1) { .live { height: auto; min-height: 100dvh; } .live_body { grid-template-columns: minmax(0, 1fr); } .live_main { overflow: visible; }
