@@ -45,3 +45,4 @@ src/icon3d/      the 3D icon engine (six styles)             src/iconisus/  the 
 src/lib/         small helpers, dates, lorem ipsum           src/behaviors/ delegated events, tooltips, gestures
 src/icons/       flat and glossy 3D icons (fixed colours)    src/site/ src/account/ src/kit/   public, account, design pages
 src/auth/        roles, permissions, session                 src/admin/ src/modules/ src/charts/ src/emails/  admin
+src/schemas/     one schema per data type                    src/table/ src/fields/ src/files/ src/overlays/ src/feedback/ src/ui/
