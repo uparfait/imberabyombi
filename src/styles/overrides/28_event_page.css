@@ -48,3 +48,4 @@
   .ev_inv_input { padding: .375rem .75rem; font-size: .875rem; }
   .ev_inv_editing td:first-child { overflow: visible; padding-block: .375rem; }
   .ev_inv_editing .field_err { white-space: normal; }
+  @media (max-width: 639px) { .ev_inv_table .ev_inv_day { display: none; } .ev_inv_sub { display: block; } .ev_inv_table td, .ev_inv_table th { padding-inline: .75rem; } }
