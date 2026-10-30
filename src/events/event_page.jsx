@@ -15,6 +15,7 @@ import { event_cards } from './event_cards.jsx';
 import { invites_card } from './event_invites.jsx';
 import { attend_side } from './attend_side.jsx';
 
+/* when a past one ran, short: "Oct 23 · 12:00 PM – 2:00 PM" (the year when it is not this one; another day: its date too) */
 const HELP = { events: 'Every detail, by section. Edit a section on its own; postpone, cancel or restore it on the right.',
   activities: 'Every detail, by section. Edit a section on its own.' };
 const acts_ok = c => auth.can(c === 'events' ? 'events' : 'calendar', 2);
