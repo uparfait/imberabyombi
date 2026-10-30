@@ -4,6 +4,7 @@
     background: rgb(var(--brand) / .06); animation: attn 1.4s var(--ease) .35s 2; }
   @keyframes attn { 50% { border-color: rgb(var(--brand)); background: rgb(var(--brand) / .16); } }
   .copy_val { flex: 1; min-width: 0; padding: 0; border: 0; background: none; font-size: .85rem; color: rgb(var(--fg)); }
+  .copy_box:not(.copy_big) .copy_val { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }   /* a long link on one line (…); Copy takes it whole */
   .copy_big { justify-content: space-between; padding: .625rem .625rem .625rem 1.25rem; }
   .copy_big .copy_val { font-size: 1.875rem; font-weight: 600; letter-spacing: .28em; }
   .copy_big .copy_val span { display: inline-block; animation: rise .5s var(--ease) both; animation-delay: calc(.2s + var(--i) * 80ms); }
