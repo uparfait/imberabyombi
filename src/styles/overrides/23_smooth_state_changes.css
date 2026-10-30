@@ -7,3 +7,4 @@
   dialog.closing::backdrop { opacity: 0; transition: opacity .2s; }
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: .25s; }
   .side { transition: transform .35s var(--ease); }
+  .side[data-open=true] { transform: translateX(0); }
