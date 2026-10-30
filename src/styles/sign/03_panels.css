@@ -53,6 +53,7 @@ button.sign_opt:hover { background: rgb(var(--fg) / .06); }
 .sign_foot { position: sticky; bottom: 0; padding: .875rem 1.25rem 1rem; border-top: 1px solid rgb(var(--line)); background: rgb(var(--surface)); }
 .sign_preview { padding: 1.5rem 2rem 2.5rem; background: rgb(var(--surface_2)); }   /* the document with its marks, in the viewer */
 .sign_self_view { display: grid; grid-template-columns: minmax(0, 1fr) 18rem; min-height: 0; flex: 1; }   /* Preview and sign: the pages | your progress */
+.sign_self_side { padding: 1.25rem; overflow-y: auto; border-left: 1px solid rgb(var(--line)); }
 .sign_check input { width: 1rem; height: 1rem; accent-color: rgb(var(--brand)); }
 /* the Activity heading: a rounded row (and a rounded focus ring) */
 .sign_side details > summary { margin: -.5rem; padding: .5rem .75rem; border-bottom: 0; border-radius: var(--pill); }
