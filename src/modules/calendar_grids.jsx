@@ -31,3 +31,4 @@ export function week_grid(d, items) {
   return <div className="overflow-x-auto"><div className="min-w-[44rem]">
     <div className={`${cols} border-b border-line`}>
       <div className="self-end pb-1 pl-1 text-[0.625rem] text-muted">{gl}</div>{days.map(head)}</div>
+    {items.some(i => i.all_day && days.some(x => ymd(x) === i.date)) ? <div className={`${cols} border-b border-line`}>
