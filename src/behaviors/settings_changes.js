@@ -19,3 +19,4 @@ export function role_land_change(t) {
 
 /* A permission change saves the role (moving its landing page if that page was taken away), then the whole page redraws: the menus
    and the role's landing <select> follow the data (the roles view keys that select by the role's landing page and access). */
+export function perm_change(t) {
