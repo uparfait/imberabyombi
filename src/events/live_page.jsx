@@ -24,6 +24,7 @@ import { qr_full } from './qr_full.jsx';
 const mins = t => { const [h, m] = String(t || '0:0').split(':').map(Number); return h * 60 + m; };
 const span = a => `${fmt_time(a.from)} – ${fmt_time(a.to)}`;
 const who = a => a?.p_name ? <p className="live_who">{a.p_name}{a.p_title ? `, ${a.p_title}` : ''}</p> : null;
+const person = (name, sub) => <li key={name + sub}><b className="block truncate">{name}</b><span className="block truncate text-sm text-muted">{sub}</span></li>;
 
 export function live_page(id, c) {
   const e = db.find(c, id), page = `${BASE[c]}/${id}`;
