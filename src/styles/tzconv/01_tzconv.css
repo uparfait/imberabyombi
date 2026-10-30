@@ -12,6 +12,6 @@
 .tzc_swap::before { content: ''; position: absolute; top: 50%; right: 1.5rem; left: 1.5rem; height: 1px; background: rgb(var(--line)); }
 .tzc_swap .icon_btn { position: relative; border: 1px solid rgb(var(--line)); background: rgb(var(--surface)); }
 .tzc_result { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid rgb(var(--line)); }
-.tzc_time { font-family: var(--font_display); font-size: 3.75rem; font-weight: 500; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.tzc_time { font-family: var(--font_display); font-size: clamp(3.75rem, 7cqi, 5.5rem); font-weight: 500; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
 .tzc_suf { margin-left: .5rem; color: rgb(var(--muted)); font-family: var(--font_display); font-size: 1.25rem; }
 .tzc_utc { margin-top: 1rem; color: rgb(var(--muted)); font-size: .75rem; text-align: center; }
