@@ -31,7 +31,7 @@ const POSTPONE_HELP = 'It opens with its date and time as they are now. Change t
   + 'known yet. Everyone invited is told by email.';
 
 export const EV_ACT = {
-  ...INVITE_ACT, ...QR_ACT, ...MINUTES_ACT,
+  ...INVITE_ACT, ...QR_ACT, ...MINUTES_ACT, ...LIVE_ACT,
   /* when people can submit attendance, one setting at a time: before it starts, how early it opens; while it runs, how
      long it stays open after the end; once it has ended, reopen it from now for some minutes (its QR code comes back) */
   ev_att_set: t => { const c = t.dataset.c, e = db.find(c, t.dataset.id); if (!e) return; const [b, a] = att_mins(e), st = ev_state(e);
