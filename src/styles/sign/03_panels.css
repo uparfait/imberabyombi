@@ -86,3 +86,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
   background: rgb(var(--fg) / .05); font-size: .875rem; text-align: left; }
 .sign_facts dt { color: rgb(var(--muted)); }
 .sign_facts dd { justify-self: end; max-width: 100%; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) { .sign_done_badge, .sign_prog > i { animation: none; transition: none; } }
