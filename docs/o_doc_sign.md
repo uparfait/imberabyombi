@@ -35,6 +35,7 @@ every account starts empty.
 - The signer whose fields you are placing stands out, on both sides: zoomed in a little, a border in their colour that is
   thicker at the bottom, and a "Placing fields" chip (a tick under Placing for).
 - **Signers**: name, email, an optional **note for that signer** (they read it before signing), and **Force digital
+  signature** (its help icon: the signer must verify their identity with a digital certificate before they can sign or
   and their fields off. A signer's note shows only when their **Note** chip is opened.
 - **Colours**: each signer's colour (their card's tint, avatar, tag and fields) comes from their email, through
   `seed_color()` (`src/lib/seed_color.js`): the same email always gets the same colour; signers of one document are kept
