@@ -21,3 +21,4 @@ export const top_bar = () => <header className="qr_top">
   <div className="ml-auto flex items-center gap-1">
     {can_install() ? <button type="button" className="btn btn_primary btn_sm" onClick={install}>{ic('download', 'h-4 w-4')}Install</button>
       : !standalone() && apple() ? <span className="qr_hint" title="Share, then Add to Home Screen">{ic('download', 'h-4 w-4')}Add to Home Screen</span> : null}
+    <button type="button" className="icon_btn" onClick={theme} aria-label="Light or dark" title="Light or dark">{ic('moon')}</button>
