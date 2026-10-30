@@ -18,3 +18,5 @@ export const LISTS = [
 const OF = { drafts: 'draft', waiting: 'sent', completed: 'completed' };
 /* the field kinds: [label, icon, size in points (w, h)] */
 export const KINDS = { signature: ['Signature', 'signature', 180, 56], stamp: ['Stamp', 'stamp', 112, 112] };
+
+export const who = () => ({ email: String(auth.user?.email || '').toLowerCase(), name: auth.user?.name || '' });
