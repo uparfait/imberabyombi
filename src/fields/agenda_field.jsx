@@ -16,6 +16,7 @@ const box = (k, n, l, v, x = {}) => { const { cls = '', ...a } = x;
 
 function Agenda_editor({ v }) {
   const [items, set] = useState(() => (v || []).map(x => ({ ...x, k: uid() }))), t = dt_attrs('time'), box_el = useRef(null);
+  const add = () => { const el = box_el.current, ends = [...el.querySelectorAll('[data-ag=to]')].map(i => to24(i.value)).filter(Boolean).sort();
     <div className="ag_item_head"><b>{`Item ${i + 1}`}</b>
       <button type="button" className="icon_btn h-8 w-8" onClick={() => set(items.filter(y => y.k !== x.k))} aria-label={`Remove item ${i + 1}`} data-tip="Remove">{ic('x', 'h-4 w-4')}</button></div>
     <div className="ag_grid">{box(x.k, 'from', 'From', dt_show('time', x.from || ''), { ...t, required: true })}{box(x.k, 'to', 'To', dt_show('time', x.to || ''), { ...t, required: true })}
