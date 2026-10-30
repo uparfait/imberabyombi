@@ -64,3 +64,4 @@ function use_desktop() {
 
 export function Sign_page() {
   use_desktop();
+  const [, , , a = '', id] = route.path.split('/'), p = page_for(a, id);
