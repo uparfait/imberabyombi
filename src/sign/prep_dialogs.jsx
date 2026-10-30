@@ -4,3 +4,4 @@ import { ic } from '../icons/index.js';
 import { initials } from '../ui/index.js';
 
 export const rec_body = r => <>
+  <div className="field sm:col-span-2"><label htmlFor="sign_rec_name">Full name</label>
