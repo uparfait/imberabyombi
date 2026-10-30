@@ -3,3 +3,4 @@
    Other internal links then move through go() (link_clicks.js). */
 import { qs } from '../lib/index.js';
 import { cfg } from '../config/index.js';
+import { route } from '../store/index.js';
