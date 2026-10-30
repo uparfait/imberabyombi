@@ -81,3 +81,4 @@
   .when_block:focus-within:not(.when_tz) .when_val { visibility: hidden; }
   .when_text { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
   .when_short { display: none; }
+  .when_chev { width: 1em; height: 1em; margin-left: auto; color: rgb(var(--muted)); transition: transform .2s var(--ease); }
