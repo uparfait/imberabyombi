@@ -23,3 +23,5 @@ const activity = i => { const n = lorem.name();
   return <li key={i} className="flex items-center gap-3 border-b border-line px-5 py-3 last:border-0"><span className="nav_avatar">{initials(n)}</span>
     <p className="min-w-0 flex-1 truncate text-sm"><b className="font-medium">{n}</b> <span className="text-muted">{lorem.s(3, 5).replace(/\.$/, '').toLowerCase()}</span></p>
     <time className="shrink-0 text-xs text-muted">{`${i + 1} h`}</time></li>; };
+
+export function nav_page(o) {
