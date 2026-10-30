@@ -29,3 +29,4 @@ modal({
 - `close_dialog(el)` closes with the animation; `request_close(el)` asks first when a form changed.
 
 ## Always on top
+Open dialogs sit in the browser's top layer. `#toasts` and `#loader` are manual popovers, and every dialog opens through
