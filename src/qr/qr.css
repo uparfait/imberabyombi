@@ -3,3 +3,4 @@
    for one that is not); the recent scans. Colours come from the site's tokens, so light and dark follow. */
 body { background: rgb(var(--bg)); }
 .qr_app { display: flex; min-height: 100dvh; flex-direction: column; }
+.qr_top { display: flex; align-items: center; gap: .625rem; padding: max(.75rem, env(safe-area-inset-top)) 1rem .75rem; }
