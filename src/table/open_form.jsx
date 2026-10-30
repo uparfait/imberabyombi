@@ -38,5 +38,6 @@ export function open_form(c, id, preset = {}, part = null) {
 /* data-when: "Done" or "!Done" (the status: F(..., { when: 'Done' })), or "<field>=A|B" / "<field>!=A" (any field of the
    form, a radio group too) */
 const holds = (form, w) => { const m = /^(\w+)(!?=)(.*)$/.exec(w), [k, op, vs] = m ? m.slice(1) : ['status', w[0] === '!' ? '!=' : '=', w.replace(/^!/, '')];
+  const any = vs.split('|').includes(form.elements[k]?.value ?? ''); return op === '=' ? any : !any; };
     el.hidden = !on; el.querySelectorAll('input, select, textarea').forEach(i => i.disabled = !on); });
   qsa('[data-fill-rows]', form).forEach(fill_rows); }
