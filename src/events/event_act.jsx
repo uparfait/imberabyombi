@@ -34,6 +34,7 @@ export const EV_ACT = {
     const num = (k, l, v) => field(field_spec(k, l, 'number', 0, 1, { min: 0, max: 1440 }), v);
     modal({ title: 'Attendance settings', help: 'When people can sign in with the QR code: from some minutes before it starts to some minutes after it ends.',
       body: [num('att_before', 'Minutes before the start', b), num('att_after', 'Minutes after the end', a)], submit: 'Save',
+      on_submit: d => save(e.id, { att_before: +d.att_before, att_after: +d.att_after }, 'Attendance settings saved',
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
