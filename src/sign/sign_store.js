@@ -36,6 +36,7 @@ export const signed_n = d => d.recipients.filter(r => r.status === 'signed').len
 /* a document someone has signed is kept: it can be archived, never deleted */
 export const kept_for_good = d => signed_n(d) > 0;
 export const rec_of = (d, id) => d.recipients.find(r => r.id === id);
+/* what still stops a draft from being sent (the Send button's tooltip while it is disabled), or '' */
 
 /* an activity entry: its sentence (the signing certificate prints it), what was done (upload, send, open, sign, done) and
    by whom (email), so the activity can be drawn (activity.jsx) */
