@@ -45,3 +45,8 @@ export function admin_shell(mod, content) {
     <aside className="sticky top-16 hidden h-[calc(100dvh-4rem)] w-14 shrink-0 flex-col items-center gap-2 py-4 md:flex" aria-label="Side panels">
       {RAIL.map(([k, i, c, l]) =>
         <button key={k} className={`icon_btn ${c} ${ui.panel === k ? 'rail_on' : ''}`} data-act="panel" data-k={k} aria-label={l}>{ic(i)}</button>)}
+      <span className="my-1 h-px w-6 bg-line" aria-hidden="true"></span><button className="icon_btn" data-act="cmdk" aria-label="Go to">{ic('plus')}</button></aside>
+  </div>
+  </div>
+  </div>;
+}
