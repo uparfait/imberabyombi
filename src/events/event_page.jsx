@@ -30,3 +30,4 @@ export function event_page(id) {
   if (!e) return <>{back}{empty('Event not found', 'It may have been deleted. Go back to the events and pick another.', null, 'alert', 'warn')}</>;
   route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
   return <div className="ev_page">{back}
+    <div className="ev_head"><h2 className="ev_title">{e.title}</h2>{help_tip(HELP, 'this event')}{badge(st)}</div>
