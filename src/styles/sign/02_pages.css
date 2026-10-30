@@ -29,3 +29,4 @@
 .sf_edit.sel .sf_rs { display: block; }
 .sf_todo { border: 2px solid rgb(var(--warn)); background: color-mix(in srgb, rgb(var(--warn)) 13%, #fff); color: #7A5A00; cursor: pointer;
   animation: sf_pulse 2.2s ease-in-out infinite; }
+.sf_done { border: 1px solid color-mix(in srgb, rgb(var(--ok)) 45%, transparent); background: color-mix(in srgb, rgb(var(--ok)) 9%, transparent); cursor: pointer; }
