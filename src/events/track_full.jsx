@@ -38,3 +38,4 @@ export function track_full(e, now, t) {
         {a.desc ? <p className="track_d line-clamp-3">{a.desc}</p> : null}{a.p_name ? <p className="track_who truncate">{a.p_name}{a.p_title ? `, ${a.p_title}` : ''}</p> : null}
         {i === now ? <p className="track_item_left">{left_of(item_end(e, a))} left</p> : null}</li>)}</ol></div>{step(1, 'Next', 'chev_r')}</div>
     <footer className="track_foot"><span></span><p className="track_dots">{ag.map((a, i) => <button key={i} type="button" {...go} data-i={i} className={i === cur ? 'on' : st[i] === 'Done' ? 'done' : ''} aria-label={`Item ${i + 1}: ${a.title}`}></button>)}</p>
+      {t ? <p className="track_left"><span>{t[0]}</span>{left_of(t[1])}</p> : <span></span>}</footer></div>;
