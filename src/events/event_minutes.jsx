@@ -34,3 +34,5 @@ export const MINUTES_ACT = {
 
 const card = (title, btn, list) => <section className="card ev_card"><header className="ev_card_head"><h3>{title}</h3>{btn}</header>
   {list.length ? <ul className="ev_list">{list}</ul> : <p className="text-sm text-muted">None yet</p>}</section>;
+
+export const minutes_card = (e, c, can) => card('Minutes', can ? <button type="button" className="btn btn_outline btn_sm" data-act="ev_minutes" data-c={c} data-id={e.id}>
