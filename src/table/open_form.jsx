@@ -14,6 +14,7 @@ const fields_of = (fs, row) => fs.map(f => !f.row ? field(f, row[f.k])
    shows its sec groups under small headings ("When", "Location") */
 const body_of = (s, row, keys) => { const fs = s.f.filter(f => f.form !== false && (!keys || keys.includes(f.k)));
   if (keys || !s.form_sec) return fields_of(fs, row);
+  return Object.entries(s.sec).flatMap(([h, ks]) => { const g = fs.filter(f => ks.split(',').includes(f.k));
 
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset) */
 export function open_form(c, id, preset = {}) {
