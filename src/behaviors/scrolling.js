@@ -35,3 +35,4 @@ export const header_line = () => { qsa('#site_header, #app_header').forEach(h =>
   h.classList.toggle('nav_docked', docked); };   /* system pages: the menu row sits in the header, beside its left item */
 
 /* the resize timer: the heavy work waits until resizing pauses */
+export let RZ;
