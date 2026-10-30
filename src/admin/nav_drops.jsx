@@ -9,3 +9,5 @@ import { tile_menu } from './tile_menu.jsx';
 import { nav_page } from './nav_page.jsx';
 import { Live_slot, redraw_slot } from './live_slot.jsx';
 import { to as link_to } from '../router/index.js';
+
+/* ── Nested navigation: three levels in all. Level 1 is this system (its sidebar). Level 2 is "System 2", opened from that
