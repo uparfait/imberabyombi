@@ -30,3 +30,4 @@
   .ag_cap { color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }
   .ag_edit, .pp_edit { display: grid; gap: .75rem; }
   .ag_item { padding: .75rem 1rem 1rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); }
+  .ag_item_head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; font-size: .875rem; }
