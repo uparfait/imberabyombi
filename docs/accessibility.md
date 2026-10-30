@@ -12,3 +12,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - Every action works from the keyboard: `Enter` / `Space` on anything with `data-act` and a `tabIndex`.
 - `Esc` closes the open menu, picker or dialog (one layer at a time: the picker first, then the dialog).
 - `Ctrl K` / `⌘K` opens the command palette; the hint shows the right key for the device (none on touch-only devices).
+- Pickers: `Alt + ↓` or `F4` opens, arrows move, `Enter` picks, `Esc` closes only the picker.
