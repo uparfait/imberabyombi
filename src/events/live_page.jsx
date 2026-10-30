@@ -32,3 +32,4 @@ export function live_page(id, c) {
       <h1 className="live_title truncate">{e.title}</h1>{badge(st)}
       {t ? <span className="ev_left">{t[0]} <b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></span> : null}
       <div className="live_acts">{tile_menu({ id: `pop_live_${id}`, title: e.title, icon: false, label: 'Menu', tiles: [
+        { icon: 'edit', label: 'Record minutes', attrs: { 'data-act': 'ev_minutes', 'data-c': c, 'data-id': id } }, { icon: 'tasks', label: 'Add task', attrs: { 'data-act': 'ev_follow', 'data-c': c, 'data-id': id } },
