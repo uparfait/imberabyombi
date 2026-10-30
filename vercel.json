@@ -17,6 +17,7 @@
     {
       "source": "/assets/(.*)",
       "headers": [
+        {
     }
   ]
 }
