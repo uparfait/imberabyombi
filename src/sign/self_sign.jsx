@@ -44,3 +44,4 @@ export const SELF_ACT = {
     const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
     Object.assign(P, { rid: r.id, adding: false }); prep_dirty(); rerender();
     notify('Place your signature or stamp on the document, then sign them.', 'ok', 'You sign it too'); },
+  sign_self_go: () => { prep_save(); go(`/admin/sign/sign/${P.doc.id}`); },
