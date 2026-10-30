@@ -39,7 +39,7 @@ function intro(x) {
   x.classList.add('intro');
   setTimeout(() => {
     x.classList.remove('intro');
-    if (!x.isConnected || (tip.on && tip.on !== x)) return;
+    if (!x.isConnected || (tip.on && tip.on !== x) || !seen_now(x)) return;   /* scrolled away meanwhile: no text */
     tip.show(x, true);
     tip.t2 = setTimeout(() => { if (tip.on === x && !x.matches(':hover, :focus-visible')) tip.hide(); }, 3800);
   }, still() ? 0 : 1400);
