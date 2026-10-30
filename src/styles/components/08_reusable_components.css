@@ -38,3 +38,5 @@
   .menu_danger:hover svg { @apply text-bad; }
   .tab { @apply relative whitespace-nowrap px-4 py-3 text-sm font-medium text-muted transition hover:text-fg; }
   .tab.active { @apply text-accent; }
+  .tab.active::after { content: ""; @apply absolute inset-x-3 -bottom-px h-[3px] rounded-t-full bg-brand; }
+}
