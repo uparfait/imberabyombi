@@ -29,6 +29,7 @@ const POSTPONE_HELP = 'It opens with its date and time as they are now. Change t
 export const EV_ACT = {
   ...INVITE_ACT,
   /* the QR code full size, with the live count and the link */
+  ev_qr: t => { const c = t.dataset.c, id = t.dataset.id, url = att_url(c, id);
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
