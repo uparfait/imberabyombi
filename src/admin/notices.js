@@ -28,3 +28,4 @@ export function notices(now = Date.now()) {
   const out = [], td = ymd(), can = (m, l) => auth.can(m, l);
   if (can('tasks')) db.list('tasks').filter(t => t.assignee === me() && t.status !== 'Done' && t.due).forEach(t => { const d = new Date(t.due).getTime();
     if (d - now < 24 * H) out.push({ id: `task:${t.id}:${t.due}`, icon: 'tasks', tone: d < now ? 'bad' : 'warn', title: d < now ? 'Task overdue' : 'Task due soon', text: t.title, at: d, href: '/admin/tasks' }); });
+  if (can('parking')) db.list('parking').filter(p => p.status === 'Parked' && now - new Date(p.in) > cfg.overstay_hours * H).forEach(p =>
