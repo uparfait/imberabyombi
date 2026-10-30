@@ -11,3 +11,4 @@
   .track_ev { flex: 1; min-width: 0; color: rgb(var(--muted)); font-size: 1.125rem; }
   .track_foot { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 1rem; }
   .track_left { display: grid; justify-self: end; justify-items: end; gap: .125rem; padding: .75rem 1.25rem; border: 1px solid rgb(var(--fg) / .08); border-radius: var(--radius); background: rgb(var(--surface) / .55); backdrop-filter: blur(10px); }   /* the event's time left, bottom right */
+  .track_left span { color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
