@@ -3,6 +3,7 @@
    then its description and times, the agenda item running now (large, with its presenter and how far it has got), the
    agenda and the organisers as tables (ev_tables.jsx: Edit, Add and Transfer for those who manage it, not once it is
    over). On the right the time left, then the attendance QR code, large (a click shows it on the whole screen), or its
+   empty place (not open yet; "Finished" once over), with the live count and the link. Menu (tiles): Record/View
 import { tz_parts, page_tz, fmt_time, fmt_d, zone_short } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
 import { auth } from '../auth/index.js';
