@@ -11,3 +11,4 @@ import { Live_slot, redraw_slot, closed_pop } from './live_slot.jsx';
 import { to } from '../router/index.js';
 
 /* the Create menu: [module, collection, label, icon], shown when the role can manage the module */
+export const CREATE = [['tasks', 'tasks', 'New task', 'tasks'], ['calendar', 'activities', 'New activity', 'calendar'], ['students', 'students', 'Register student', 'cap'],
