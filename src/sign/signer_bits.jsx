@@ -13,3 +13,4 @@ const OPEN = new Set();
 export const NOTE_ACT = { sign_note_t: t => { const k = t.dataset.id; OPEN.has(k) ? OPEN.delete(k) : OPEN.add(k); rerender(); } };
 
 const note_chip = r => <button type="button" className="sign_chip" data-act="sign_note_t" data-id={r.id} aria-expanded={OPEN.has(r.id)}
+  aria-label={`${OPEN.has(r.id) ? 'Hide' : 'Show'} the note for ${r.name}`}>{ic('note', 'h-3.5 w-3.5')}Note{ic('chev_d', 'sign_chev h-3.5 w-3.5')}</button>;
