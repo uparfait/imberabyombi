@@ -25,3 +25,4 @@ export const pick = {
   open(a, kb = false) {
     if (!a || a.disabled) return;
     if (this.a && this.a !== a) this.close();
+    this.a = a; this.kb = kb; this.mode = 'days'; this.view = this.from(a); a.dataset.open = ''; a.setAttribute('aria-expanded', 'true');
