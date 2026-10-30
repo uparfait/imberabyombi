@@ -19,3 +19,5 @@ Only Qr-scan installs, never the site's other pages: it has its own manifest (`m
 `/qr-scan/`) and service worker (`sw.js`, the same scope; the site itself has neither). **Install** shows in the top bar
 when the browser offers it (Chrome, Edge, Android); on an iPhone or iPad it says Share, then Add to Home Screen. Installed,
 it opens in its own window, also offline (its files are kept by the service worker where the browser allows).
+
+## Where it is linked
