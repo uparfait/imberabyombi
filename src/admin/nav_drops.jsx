@@ -27,3 +27,4 @@ function nav_markup(routed) {
   /* one menu per system: System 2 always, System 3 while inside it. Its button names the open page (or the system on its home
      page); the open page is highlighted in the menu */
   const menu = l => { const items = list_at(l), cur = p[l]; if (!items) return null; const sys = l ? path[l - 1] : { t: ROOT, i: 'layers' };
+    const act = cur != null && !items[cur].c ? items[cur] : null;   /* the open page of this system (a sub-system keeps the system's name) */
