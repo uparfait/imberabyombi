@@ -5,3 +5,4 @@
 import { db } from '../store/index.js';
 import { ic } from '../icons/index.js';
 import { to } from '../router/index.js';
+import { Qr } from './qr.jsx';
