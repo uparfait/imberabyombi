@@ -20,3 +20,4 @@
   .brand_toggle > span { grid-area: 1 / 1; display: grid; place-items: center; transition: opacity .2s, scale .2s var(--ease); }
   .brand_toggle .bt_open { opacity: 0; scale: .8; color: rgb(var(--fg)); }
   .brand_toggle:is(:hover, :focus-visible) { background: rgb(var(--fg) / .06); }
+  .brand_toggle:is(:hover, :focus-visible) .bt_logo { opacity: 0; scale: .8; }
