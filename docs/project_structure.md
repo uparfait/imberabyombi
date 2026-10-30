@@ -47,3 +47,5 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 - A button declares its job with `data-act="name"`; `ACT.name(button, event)` runs it (see
   [actions and events](actions_and_events.md)). After changing data it calls `rerender()`.
 - Folders import each other only through their `index.js` (`import { crud } from '../table/index.js'`).
+
+See [rendering and state](rendering_and_state.md) for the draw cycle and [naming and files](naming_and_files.md) for the rules.
