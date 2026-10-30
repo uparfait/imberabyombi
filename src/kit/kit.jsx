@@ -20,7 +20,7 @@ import { kit_web_component } from './kit_web_component.jsx';
 import { kit_icons } from './kit_icons.jsx';
 
 /* side navigation: [section id, title] */
-const SECS = [['tokens', 'Tokens'], ['type', 'Typography'], ['lists', 'Lists'], ['actions', 'Actions'], ['forms', 'Forms'], ['media', 'Media'], ['data', 'Tables'],
+const SECS = [['tokens', 'Tokens'], ['type', 'Typography'], ['lists', 'Lists'], ['actions', 'Actions'], ['forms', 'Forms'], ['attend', 'Attendance'], ['media', 'Media'], ['data', 'Tables'],
   ['overlays', 'Disclosure & overlays'], ['nav', 'Nested navigation'], ['wc', 'Web component'], ['icons', '3D icons']];
 const LEAD = 'Every element below is styled by the tokens at the top of the stylesheet. Change one token and the whole system follows.';
 
