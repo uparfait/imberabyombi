@@ -38,6 +38,7 @@ export const ADMIN_ACT = {
   tz_save: () => { const v = qs('#page_tz')?.value; if (!v) return; v === device_tz() ? db.del('pageTz') : db.set('pageTz', v); rerender();
     notify(`Times now show in ${zone_of(v).short}.`, 'ok', 'Time zone saved'); },
   tz_cancel: () => tz_choose(page_tz()),
+  tz_device: () => tz_choose(device_tz()),
   tok_reset: () => { db.del('tokens'); apply_tokens(); rerender(); notify('Brand, radius, spacing and font follow the stylesheet again.', 'ok', 'Tokens reset'); },
   data_export: () => { const o = {}; db.keys().filter(k => k !== 'session').forEach(k => o[k] = db.get(k)); dl(`lorem-backup-${ymd()}.json`, JSON.stringify(o, null, 2), 'application/json'); notify('Keep the JSON file somewhere safe.', 'ok', 'Backup downloaded'); },
   data_reset: () => ask('Reset all demo data? Your session, theme and tokens stay. Everything else is replaced with fresh sample data.', () => {
