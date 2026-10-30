@@ -25,3 +25,4 @@ const ROWS = {
 };
 
 const card = (e, s, can) => <section key={s} className="card ev_card" aria-labelledby={`ev_sec_${s}`}>
+  <header className="ev_card_head"><h3 id={`ev_sec_${s}`}>{s}</h3>
