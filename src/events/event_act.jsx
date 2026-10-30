@@ -18,3 +18,4 @@ const reason = (l = 'Reason (optional)') => <div key="reason" className="field s
 const NEW_WHEN = [{ k: 'date', l: 'New date', t: 'date' }, { k: 'start', l: 'Starts', t: 'time' }, { k: 'end', l: 'Ends', t: 'time' }, { k: 'tz', l: 'Time zone', t: 'tz' }];
 
 export const EV_ACT = {
+  ev_edit: t => open_form('events', t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas.events.sec[t.dataset.sec].split(',')]),
