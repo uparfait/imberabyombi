@@ -5,3 +5,4 @@ export * from './task_dates.jsx';
 export * from './task_data.js';
 export * from './task_bits.jsx';
 export * from './sub_editor.jsx';
+export * from './sub_act.js';
