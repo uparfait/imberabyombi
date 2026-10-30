@@ -25,3 +25,5 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
    (`render_route()`), inside a View Transition where the browser supports it.
 4. `run_after_render()` scrolls to the top, starts reveal animations, counters, charts and the typing effect, and
    shows any message that followed the navigation (signed in, signed out…).
+
+## Links
