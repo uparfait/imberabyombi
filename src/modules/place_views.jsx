@@ -35,6 +35,7 @@ const event_card = (e, i) => <a key={e.id} href={to('/admin/events/' + e.id)} cl
       {bar_cell(e.registered, e.capacity)}</div></div></a>;
 VIEWS.events = () => {
   const id = route.path.split('/')[3]; if (id) return event_page(id);
+  const all = db.list('events'), t = ui.tab.ev || 'all', n = s => all.filter(in_state(s)).length;
 };
 
 const decide = (r, can) => can && r.status === 'Pending' ? <><button className="btn btn_soft btn_sm" data-act="res" data-v="Approved" data-id={r.id}>Approve</button>
