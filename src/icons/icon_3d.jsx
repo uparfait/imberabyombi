@@ -21,3 +21,4 @@ const hex = c => TONES[c] || HUES[c] || (/^#[0-9a-f]{3,8}$/i.test(c || '') ? c :
 /* the icon fills more of its box than the engine's 200 × 200 picture leaves it (a single character, the brand mark, more) */
 const VIEW = [18, 12, 164, 164];
 /* the CSS pixels a size class gives: h-11 → 44 (the largest when there are several, as in "h-11 sm:h-12") */
+export const css_px = cls => Math.max(0, ...[...String(cls).matchAll(/(?:^|[\s:])(?:h|w|size)-(\d+(?:\.5)?)(?=\s|$)/g)].map(m => +m[1] * 4)) || 56;
