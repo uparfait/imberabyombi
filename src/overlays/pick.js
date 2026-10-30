@@ -35,3 +35,4 @@ export const pick = {
   close(refocus = false) {
     const a = this.a; if (!a) return;
     this.a = null; this.el.hidden = true; this.el.innerHTML = ''; delete a.dataset.open; a.removeAttribute('aria-expanded');
+    if (refocus) { this.mute = true; a.focus({ preventScroll: true }); this.mute = false; }
