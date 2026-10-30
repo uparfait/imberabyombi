@@ -8,3 +8,5 @@ import { ic } from '../icons/index.js';
 import { agenda_now } from './agenda_now.js';
 
 const sub = v => v ? <span className="ev_sub">{v}</span> : null;
+
+export function agenda_table(e, fade = false) {
