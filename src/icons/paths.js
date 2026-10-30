@@ -32,3 +32,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   edit: 'M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z',
   trash: 'M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6',
   x: 'M18 6 6 18M6 6l12 12',
+  chev_d: 'm6 9 6 6 6-6', chev_u: 'm18 15-6-6-6 6', chev_r: 'm9 18 6-6-6-6', chev_l: 'm15 18-6-6 6-6',
