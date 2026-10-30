@@ -16,3 +16,4 @@
 .tzc_suf { margin-left: .5rem; color: rgb(var(--muted)); font-family: var(--font_display); font-size: 1.25rem; }
 @container tzc (min-width: 48rem) {
   .tzc { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  .tzc_swap { margin: 0 .75rem; }
