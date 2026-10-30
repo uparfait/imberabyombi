@@ -26,3 +26,4 @@
 .sign_rec.on { padding: calc(.625rem - 1px) calc(.625rem - 1px) calc(.375rem - 4px); border: 2px solid var(--c); border-bottom-width: 5px;
   background: color-mix(in srgb, var(--c) 16%, transparent); transform: scale(1.04); }
 .sign_chip.sign_chip_on { background: var(--c); color: #fff; }
+.sign_rec_pick { display: flex; min-width: 0; align-items: center; gap: .625rem; text-align: left; }
