@@ -11,3 +11,5 @@ import { VIEWS, forbidden, not_found } from '../modules/index.js';
 import { login_page, forgot_page, verify_page, authenticator_page, set_password_page } from '../account/index.js';
 import { set_meta } from './parse.js';
 import { to, go } from './history.js';
+
+export function public_page(r) {
