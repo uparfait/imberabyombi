@@ -13,3 +13,5 @@ const spans = (r, from, to) => { if (!r.date || r.tbd || r.status === 'Cancelled
 const low = v => String(v || '').trim().toLowerCase();
 const same_place = (a, b) => a.place !== 'Virtual' && b.place !== 'Virtual' && !!low(a.venue) && low(a.venue) === low(b.venue);
 const same_host = (a, b) => !!low(a.org_email) && low(a.org_email) === low(b.org_email);
+
+export function conflicts(r, self) {
