@@ -26,3 +26,4 @@ it opens in its own window, also offline (its files are kept by the service work
 - The public footer: the **Get the app · Qr-scan** badge.
 
 ## How it reads codes
+The browser's own `BarcodeDetector` where it reads QR codes (Chrome on Android, macOS, ChromeOS); elsewhere (Chrome on
