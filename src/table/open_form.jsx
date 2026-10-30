@@ -18,3 +18,4 @@ export function open_form(c, id, preset = {}) {
   const before = qs('#modal form');
   modal({ title: `${id ? 'Edit' : 'New'} ${s.l}`, body: body_of(s, row), submit: id ? 'Save changes' : `Add ${s.l}`,
     on_submit: async (d, form) => {
+      s.f.forEach(f => { if (f.t === 'number' && d[f.k] !== '' && d[f.k] != null) d[f.k] = +d[f.k]; });
