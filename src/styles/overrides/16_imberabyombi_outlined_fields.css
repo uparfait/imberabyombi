@@ -80,3 +80,4 @@
   .when_val { display: flex; align-items: center; gap: .35em; min-width: 0; line-height: 1.3; white-space: nowrap; pointer-events: none; }
   .when_block:focus-within:not(.when_tz) .when_val { visibility: hidden; }
   .when_text { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  .when_short { display: none; }
