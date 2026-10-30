@@ -11,3 +11,4 @@
   .rp_top { display: grid; gap: .75rem; align-items: center; }   /* Every under Repeats on a phone, beside it from 640px */
   .rp_every { display: flex; align-items: center; gap: .5rem; }
   .rp_every .field { width: 6.5rem; }
+  .rp_unit { min-width: 3.75rem; color: rgb(var(--muted)); font-size: .875rem; }
