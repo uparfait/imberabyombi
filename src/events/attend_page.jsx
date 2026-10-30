@@ -1,5 +1,5 @@
 /* events/attend_page.jsx: the attendance page its QR code opens (/attend/<events|activities>/<id>): no header or sidebar,
-   just the title of the event or activity (a long one wraps), and the form (attend_form.jsx) while attendance is open (att_window.js),
+   just the title of the event or activity (up to three lines, then "…"; whole on hover), and the form (attend_form.jsx) while attendance is open (att_window.js),
    with the time left until it closes; before that, the time left until it opens; after, closed. A
    page that shows a count follows new sign-ins from other tabs at once (the storage listener below). */
 import { db, rerender, after_render, TIMERS } from '../store/index.js';
