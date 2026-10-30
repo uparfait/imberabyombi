@@ -37,3 +37,4 @@
   .legend_rect, .legend_dot, .legend_line { flex: none; background: var(--c); }
   .legend_rect { width: .75rem; height: .75rem; border-radius: .1875rem; }
   .legend_dot { width: .625rem; height: .625rem; border-radius: var(--pill); }
+  .legend_line { width: 1rem; height: .15625rem; border-radius: var(--pill); }
