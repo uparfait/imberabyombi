@@ -47,3 +47,4 @@ function long_name(tz, t) {
 let LIST = null, LIST_DAY = '';
 export function zone_list(t = Date.now()) {
   const day = new Date(t).toISOString().slice(0, 10); if (LIST && LIST_DAY === day) return LIST;
+  LIST = zones().map(tz => { const off = offset_min(tz, t), g = gmt(off), s = gmt_short(off); let name = long_name(tz, t);
