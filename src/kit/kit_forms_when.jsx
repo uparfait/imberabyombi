@@ -4,3 +4,5 @@
 import { when_row } from '../fields/index.js';
 import { device_tz } from '../lib/index.js';
 import { help_tip } from '../ui/index.js';
+
+const FIELDS = [{ k: 'kit_date', l: 'Date', t: 'date' }, { k: 'kit_start', l: 'Starts', t: 'time' }, { k: 'kit_end', l: 'Ends', t: 'time' },
