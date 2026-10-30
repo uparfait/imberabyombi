@@ -12,3 +12,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.chip` / `.chip_btn`                   | badge / pressable filter chip (`aria-pressed`)                   |
 | `.kicker`                               | small section label with the diamond icon                        |
 | `.field`                                | outlined field: the label rests inside and floats onto the border |
+| `.on_bg`                                | a form that sits on the page background (not on a card)          |
