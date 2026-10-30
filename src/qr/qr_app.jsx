@@ -12,3 +12,5 @@ const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]');
 const keep = r => { try { localStorage.setItem(KEY, JSON.stringify(r)); } catch { /* this visit only */ } };
 const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site, or scan a picture.', NotFoundError: 'No camera here. Scan a picture instead.',
   NotReadableError: 'Another app is using the camera.' };
+
+export function Qr_app() {
