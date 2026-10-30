@@ -15,3 +15,4 @@ export const qr_full = (e, url, n) => <div id={`qr_full_${e.id}`} className="qr_
   <button type="button" className="icon_btn qr_full_x" data-act="qr_close" aria-label="Close" data-tip="Close (Esc)">{ic('x')}</button></div>;
 
 export const QR_ACT = {
+  ev_qr: t => { const el = qs('#qr_full_' + t.dataset.id); if (!el) return; el.hidden = false;
