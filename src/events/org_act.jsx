@@ -39,7 +39,7 @@ export const ORG_ACT = {
       body: [field(field_spec('to', 'New organiser', 'select', [...co.map((o, i) => [String(i), `${o.name} · ${o.email}`]), ['new', 'Someone new']], 1), co.length ? '0' : 'new'),
         ...who({}, fresh)],
       submit: 'Transfer', on_submit: (d, f) => {
-        const nu = d.to === 'new' ? { name: d.p_name.trim(), email: lc(d.p_email), tel: d.p_tel || '' } : { ...co[+d.to], tel: '' };
+        const nu = d.to === 'new' ? one(d) : co[+d.to];   /* everyone keeps their phone */
         if (d.to === 'new' && taken(e, nu.email, -2)) return twice(f, 'p_email');
         const was = e.org_email ? [{ name: e.org_name || e.org_email, email: lc(e.org_email) }] : [];
         put(c, e, { org_name: nu.name, org_email: nu.email, org_tel: nu.tel, co_orgs: [...was, ...co.filter((_, i) => String(i) !== d.to)] },
