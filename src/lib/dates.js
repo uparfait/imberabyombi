@@ -11,3 +11,4 @@ export const now_dt = (d = page_now()) => `${ymd(d)}T${hm(d)}`;
 export const add_d = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
 export const parse_d = s => { const [y, m, d] = String(s).slice(0, 10).split('-').map(Number); return new Date(y, (m || 1) - 1, d || 1); };
 export const fmt_d = s => s ? parse_d(s).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : '—';
+export const fmt_dt = s => !s ? '—' : /T\d/.test(s) ? `${fmt_d(s)}, ${fmt_time(String(s).slice(11, 16))}` : fmt_d(s);   /* a bare date shows as just the date */
