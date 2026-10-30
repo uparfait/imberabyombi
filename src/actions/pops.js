@@ -2,3 +2,5 @@
    They open and close by their hidden attribute only (no redraw). */
 import { qsa } from '../lib/index.js';
 import { reduced } from '../feedback/index.js';
+
+export function close_pops() { qsa('.pop:not([hidden])').forEach(p => { if (p._out) return; if (reduced()) { p.hidden = true; return; }
