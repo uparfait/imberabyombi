@@ -40,3 +40,5 @@ export function repeat_dates(r, first, from, to) {
     if (!repeat_hit(r, d, f)) continue; n++; const k = ymd(d); if (k >= from) out.push(k);
   }
   return out;
+}
+/* the next day it happens on, from day 'from' on (within about two years), or '' when it has ended */
