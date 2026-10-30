@@ -40,3 +40,4 @@ export const landing = id => {
    The chosen one is the select's value: <select defaultValue={land_value(r)} key={land_value(r)}>{land_opts(r)}</select> */
 export const land_opts = r => {
   const ok = role_opens(r);
+  return ok.length ? ok.map(m => <option key={m.k} value={m.k}>{m.l}</option>) : <option value="">No page yet</option>;
