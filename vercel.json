@@ -29,6 +29,10 @@
         {
           "key": "Cache-Control",
           "value": "no-cache"
+        }
+      ]
     }
+  ],
+  "redirects": [
   ]
 }
