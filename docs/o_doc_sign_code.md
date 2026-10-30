@@ -22,3 +22,4 @@ documents between people and devices, keep these records and files on a server (
 ## Files
 | File | What it does |
 |---|---|
+| `sign_page.jsx`, `sign_top.jsx` | the window, its top bar and lists menu, the page for each address |
