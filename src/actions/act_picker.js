@@ -20,3 +20,5 @@ export const PICKER_ACT = {
   pk_h24: t => { db.set('h24', t.dataset.v === '1'); dt_refresh(); pick.draw(); },
   pk_years: () => { pick.mode = pick.mode === 'years' ? 'days' : 'years'; pick.draw(); pick.slide(0); },
   pk_year: t => { pick.view = new Date(+t.dataset.v, pick.view.getMonth(), 1); pick.mode = 'days'; pick.draw(); pick.slide(0); },
+  pk_today: () => { const a = pick.a, d = page_now(); if (a) { const k = kind_of(a); pick.set(k === 'week' ? iso_week(d) : k === 'month' ? ymd(d).slice(0, 7) : k === 'datetime-local' ? dt_show(k, now_dt(d)) : ymd(d)); } }
+};
