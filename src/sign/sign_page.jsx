@@ -41,3 +41,4 @@ function page_for(a, id) {
   if (!d) return { title: 'Not found', back: list_href('all'), body: missing() };
   if (a === 'edit') return !mine ? move(`/admin/sign/sign/${id}`) : d.status !== 'draft' ? move(`/admin/sign/doc/${id}`)
     : (prep_start(id), { title: d.title, back: list_href('drafts'), body: prep_page(P.doc) });
+  if (a === 'doc') return !mine ? move(`/admin/sign/sign/${id}`) : d.status === 'draft' ? move(`/admin/sign/edit/${id}`)
