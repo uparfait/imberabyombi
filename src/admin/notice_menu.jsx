@@ -9,3 +9,4 @@ import { notices, notices_read } from './notices.js';
 const TONE = { bad: 'bg-bad/15 text-bad', warn: 'bg-warn/15 text-warn', info: 'bg-info/15 text-info', ok: 'bg-ok/15 text-ok' };
 
 export function notice_menu(n = '') {
+  const all = notices(), read = notices_read(), fresh = all.filter(x => !read.has(x.id)).length;
