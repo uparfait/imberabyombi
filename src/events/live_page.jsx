@@ -11,6 +11,7 @@ import { auth } from '../auth/index.js';
 import { ic } from '../icons/index.js';
 import { empty } from '../ui/index.js';
 import { to } from '../router/index.js';
+import { copy_box } from '../overlays/index.js';
 import { ev_state } from './ev_state.js';
 import { agenda_now } from './agenda_now.js';
 import { count_to, left, tick } from './countdown.js';
