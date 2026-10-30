@@ -30,3 +30,6 @@ export const MINUTES_ACT = {
     if (!(await idb_get(key))) await idb_set(key, { title: m.title, tabs: [{ id: 't1', name: 'Minutes', html: first_page(e, day) }], active: 't1', comments: [] });
     go('/admin/docs?doc=m_' + m.id); },
   ev_follow: t => { const e = db.find(t.dataset.c, t.dataset.id); if (e) open_form('tasks', null, { title: `Follow-up: ${e.title}`, ref: e.id }); }
+};
+
+const card = (title, btn, list) => <section className="card ev_card"><header className="ev_card_head"><h3>{title}</h3>{btn}</header>
