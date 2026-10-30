@@ -23,3 +23,4 @@
   .rp_last { grid-column: span 3; }
   .rp_until { width: 12rem; }
   .rp_count .field { width: 10rem; }
+  .rp_sum { display: flex; align-items: center; gap: .5rem; padding: .625rem .875rem; border-radius: var(--radius); background: rgb(var(--brand) / .08); font-size: .875rem; }
