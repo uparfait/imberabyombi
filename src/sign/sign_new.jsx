@@ -31,3 +31,4 @@ export function Sign_new() {
   const pick = async f => { if (busy || !f) return; set_busy(true); if (!await take(f).catch(() => false)) set_busy(false); };
   return <div className="sign_main page_enter max-w-3xl">
     <section className="sign_head"><div className="sign_page_title"><h1>New document</h1>
+      {help_tip('Upload a PDF. You add the people who sign it and place their fields next.', 'New document')}</div></section>
