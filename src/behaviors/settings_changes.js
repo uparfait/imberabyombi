@@ -13,6 +13,7 @@ export function allow_select_change(t) {
 }
 
 /* every page follows the new time zone at once */
+export function page_tz_change(t) {
 export function role_land_change(t) {
   const rs = roles(), r = rs.find(x => x.id === t.dataset.roleLand);
   if (r) request(() => { r.land = t.value; db.set('roles', rs);
