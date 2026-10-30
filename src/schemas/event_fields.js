@@ -28,3 +28,4 @@ export function when_ok(d, row, f) {
   const err = (k, m) => { const i = f.elements[k]; show_err(i, m); i?.focus(); return false; };
   if (d.start && d.end && d.end <= d.start) return err('end', 'Pick an end time after the start.');
   if (row.id && ['kind', 'date', 'start', 'end', 'tz'].every(k => (d[k] ?? '') === (row[k] ?? ''))) return true;
+  const s = at(d.date, d.start || (d.kind === 'Live' ? '00:00' : '23:59'), d.tz), now = Date.now();
