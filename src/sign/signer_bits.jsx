@@ -19,3 +19,4 @@ const cert_chip = r => <span className={`sign_chip ${r.cert_at ? 'ok' : ''}`} da
   {ic('shield', 'h-3.5 w-3.5')}{r.cert_at ? 'Digital signature verified' : 'Digital signature'}</span>;
 
 export const chips = (r, lead = null) => lead || r.note || r.cert
+  ? <div className="sign_chips">{lead}{r.note ? note_chip(r) : null}{r.cert ? cert_chip(r) : null}</div> : null;
