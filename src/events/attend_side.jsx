@@ -19,7 +19,7 @@ export const att_url = (c, id) => new URL(to(`/attend/${c}/${id}`), location.ori
 export function attend_side(e, c, can) {
   const url = att_url(c, e.id), n = att_count(e.id), page = `${BASE[c]}/${e.id}`, ph = att_phase(e), open = ph[0] !== 'closed';
   const tiles = [...(open ? [{ icon: 'external', label: 'Attendance page', href: url }] : []), { icon: 'play', label: 'Live screen', href: to(page + '/live') },
-    { icon: 'users', label: 'Attendees', href: to(page + '/attendance') }];
+    { icon: 'users', label: 'Attendees', href: to(page + '/attendance') },
   return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
     {open ? <button type="button" className="ev_qr_btn" data-act="ev_qr" data-id={e.id} aria-label="Show the QR code on the whole screen" data-tip="Full screen">
       <Qr text={url} label="Attendance QR code" /></button> : null}{open ? qr_full(e, url, n) : null}
