@@ -24,3 +24,5 @@ export const cal_items = () => [
 export const cal_task = i => <button key={i.id} className={`cal_task ${i.status === 'Done' ? 'is_done' : countdown(i.due || i.date).late ? 'is_late' : ''}`}
   data-act="cal_task" data-id={i.id} aria-label={`Task: ${i.title}, due ${fmt_dt(i.due || i.date)}`}>
   {ic('tasks', 'h-3 w-3 shrink-0')}<span className="truncate">{i.title}</span></button>;
+
+const day_cls = (k, td, m, x) => k === td ? 'bg-brand font-semibold text-white' : k === ui.cal_date ? 'bg-brand/15 text-accent'
