@@ -20,3 +20,5 @@ O-Doc Sign is open), a narrow computer window through a zoom (`--sign_z`, `sign_
 | `/admin/sign/doc/<id>` | follow a sent document: progress, each signer's state, note and certificate, activity, download |
 | `/admin/sign/sign/<id>` | sign it (the link the sender copies points here) |
 | `/admin/sign/done/<id>` | "Signing complete" |
+
+The top bar: Back, the O-Doc Sign name, then one rounded group, like the admin header's tools: the lists menu (the same
