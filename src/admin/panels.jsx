@@ -27,3 +27,4 @@ const task_row = t => { const d = t.status === 'Done', items = items_of(t);
     <span className="min-w-0 flex-1"><span className={`block truncate text-sm font-medium ${d ? 'text-muted line-through' : ''}`}>{t.title}</span>
       <span className="mt-0.5 flex flex-wrap items-center gap-x-2">{t.due ? due_tag(t) : null}
         {items.length ? <span className="text-xs text-muted">{`${items.filter(x => x.done).length}/${items.length} items`}</span> : null}</span></span>
+    <span className="chip bg-surface-2 text-muted">{t.status}</span></button></li>; };
