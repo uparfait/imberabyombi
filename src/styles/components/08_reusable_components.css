@@ -28,3 +28,4 @@
   .nav_link { @apply relative block rounded-full px-3.5 py-1.5 text-sm font-medium text-fg/80 transition hover:bg-fg/5 hover:text-fg; }
   .nav_link.active { @apply bg-surface text-accent; }
   /* Right-hand link groups sit together in one translucent container */
+  .link_group { @apply items-center gap-0.5 rounded-full bg-fg/5 p-1; }
