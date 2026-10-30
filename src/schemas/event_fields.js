@@ -24,6 +24,8 @@ export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def
 export function kind_of(r) {
   if (r.kind) return r.kind; if (r.repeat) return 'Recurring'; if (!r.date) return 'Upcoming';
   const s = at(r.date, r.start, r.tz), now = Date.now(); return s <= now && now < (r.end ? at(r.date, r.end, r.tz) : s + 2 * 3600e3) ? 'Live' : 'Upcoming';
+}
+export const place_of = r => r.place || (r.link ? 'Virtual' : 'Physical');
 
 /* where: in a place (a venue or address) or online (a meeting link and notes on joining, such as a passcode); all optional */
 const PLACE_HELP = 'Physical: it happens in a place; add the venue or address. Virtual: it happens online; add the meeting link '
