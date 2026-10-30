@@ -33,6 +33,7 @@ every account starts empty.
   the middle. The right column starts with **Send for signing** (disabled until every signer has a field; hovering it
   says what is missing) and **Save draft**; its captions (Placing for, Fields, Placed) explain themselves in help icons.
 - The signer whose fields you are placing stands out, on both sides: zoomed in a little, a border in their colour that is
+  thicker at the bottom, and a "Placing fields" chip (a tick under Placing for).
   and their fields off. A signer's note shows only when their **Note** chip is opened.
 - **Colours**: each signer's colour (their card's tint, avatar, tag and fields) comes from their email, through
   `seed_color()` (`src/lib/seed_color.js`): the same email always gets the same colour; signers of one document are kept
