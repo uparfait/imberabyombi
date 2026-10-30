@@ -28,7 +28,7 @@ const all_signed = d => d.recipients.length && d.recipients.every(r => r.status 
 /* a column caption with its help icon: the description shows on hover, focus or tap */
 const cap = (t, help) => <div className="sign_cap_row"><h2 className="sign_cap">{t}</h2>{help_tip(help, t.toLowerCase())}</div>;
 
-export const prep_tools = d => <div className="sign_panel">
+export const prep_tools = d => <><div className="sign_panel">
   <section className="grid gap-2" aria-label="Send">
     {(why => <span className="sign_send_wrap" data-tip={why || undefined}>
       <button type="button" className="btn btn_primary btn_sm w-full" data-act="sign_send" disabled={!!why}>{ic('send', 'h-4 w-4')}Send for signing</button></span>)(send_block(d))}
