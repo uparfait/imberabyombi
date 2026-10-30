@@ -7,3 +7,4 @@ import { ymd, fmt_d, money, qs, fmt_stamp } from '../lib/index.js';
 import { ic, i3 } from '../icons/index.js';
 import { badge, tabs, stat_row } from '../ui/index.js';
 import { DEPTS } from '../schemas/index.js';
+import { crud } from '../table/index.js';
