@@ -33,3 +33,4 @@ export function notices(now = Date.now()) {
   if (can('events')) out.push(...events_for_me(now));
   const late = can('library') ? db.list('rentals').filter(r => r.status === 'Rented' && r.due < td).length : 0;
   if (late) out.push({ id: `lib:${td}:${late}`, icon: 'book', tone: 'warn', title: 'Books overdue', text: plural(late, 'book is', 'books are') + ' past due', at: now, href: '/admin/library' });
+  const res = can('inventory', 2) ? db.list('reservations').filter(r => r.status === 'Pending').length : 0;
