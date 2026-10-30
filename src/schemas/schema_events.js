@@ -42,6 +42,7 @@ export const events_schema = {
   ],
   r: { registered: (v, row) => bar_cell(v, row.capacity), tz: tz_cell },
   before: (d, row, f) => when_ok(d, row, f) ? repeat_in(d, f) : false,
+  g: i => {
     const c = lorem.int(4, 20) * 10;
     return {
       title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-10, 30))), start: `${pad(lorem.int(9, 16))}:00`, venue: lorem.t(2), capacity: c,
