@@ -27,3 +27,4 @@ function co_form(c, e, i = -2) {
 }
 
 export const ORG_ACT = {
+  ev_co_add: t => { const [c, e] = get(t); if (e) co_form(c, e); },
