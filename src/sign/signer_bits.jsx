@@ -22,3 +22,4 @@ const notes = r => <>{row('Notes', false, { 'data-act': 'pop', 'data-pop': `pop_
     <p className={`whitespace-pre-line text-sm ${r.note ? '' : 'text-muted'}`}>{r.note || 'No note for this signer.'}</p></div>, document.body)}</>;
 
 /* on: this signer is the one whose fields are being placed */
+export const prep_opts = (r, on) => <div className="sign_opts">
