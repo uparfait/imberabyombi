@@ -24,3 +24,4 @@ function on_change(e) {
   if (t.closest?.('[data-export-cols]') && t.type === 'checkbox') { table.export_change?.(t); return; }
   if (t.dataset.tablePer) { const c = t.dataset.tablePer; table.tview(c).per = +t.value; table.tview_save(c); ui.page[c] = 1;
     return request(() => table.refresh(c), { delay: staff_page() ? cfg.latency : 0 }); }
+  if (t.dataset.tableCol) { const c = t.dataset.tableCol, v = table.tview(c), k = t.value;
