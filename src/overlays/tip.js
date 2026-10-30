@@ -29,3 +29,4 @@ before_render(() => tip.hide());
    and side panel, and dialogs) and tries a few times, so pages and dialogs that load their content later are caught too. */
 const SEEN = new Set(), still = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 let run = 0;
+const first_help = root => [...root.querySelectorAll('.help_tip')]
