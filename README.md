@@ -12,3 +12,4 @@ charts and KPIs, all sharing one set of design tokens. Start any new website fro
 - **Accessible and SEO-ready**: landmarks, keyboard support, live regions, per-page titles, Open Graph, JSON-LD.
 
 ## Quick start
+```bash
