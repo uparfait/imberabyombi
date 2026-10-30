@@ -37,3 +37,4 @@ export function found_card(text) {
 }
 
 /* the last scans, kept in this browser */
+export const recent_list = (items, clear) => items.length ? <section className="qr_recent" aria-label="Recent scans">
