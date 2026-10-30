@@ -12,3 +12,4 @@ const spans = (r, from, to) => { if (!r.date || r.tbd || r.status === 'Cancelled
   return days.map(d => { const s = at(d, r.start, r.tz); return [s, r.end ? at(d, r.end, r.tz) : s + 2 * 3600e3, d]; }); };
 const low = v => String(v || '').trim().toLowerCase();
 const same_place = (a, b) => a.place !== 'Virtual' && b.place !== 'Virtual' && !!low(a.venue) && low(a.venue) === low(b.venue);
+const same_host = (a, b) => !!low(a.org_email) && low(a.org_email) === low(b.org_email);
