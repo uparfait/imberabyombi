@@ -10,3 +10,4 @@ export const REPEAT_NEW = { freq: 'weekly', every: 1, days: [], by: 'date', date
 const days_between = (a, b) => Math.round((b - a) / 864e5);
 const monday = d => add_d(d, -((d.getDay() + 6) % 7));
 const month_days = d => new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+const nth = d => Math.ceil(d.getDate() / 7);   /* the first … fifth of its weekday in the month */
