@@ -25,3 +25,4 @@
   .rp_count .field { width: 10rem; }
   .rp_sum { display: flex; align-items: center; gap: .5rem; padding: .625rem .875rem; border-radius: var(--radius); background: rgb(var(--brand) / .08); font-size: .875rem; }
   @media (min-width: 640px) { .rp_top { grid-template-columns: minmax(0, 1fr) auto; }
+    .rp_row { grid-template-columns: 4.5rem minmax(0, 1fr); align-items: start; } .rp_lab { min-height: 2.25rem; } }
