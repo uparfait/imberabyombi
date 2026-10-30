@@ -50,3 +50,4 @@ On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.js
 - **Check the list**: addresses wait as chips; one already on the list is not added twice. Words that are not addresses
   stay in the box to be corrected.
 - **Send invites** sends them all, with anything still typed in the box. Each person invited is listed with the day.
+  Remove someone with ×.
