@@ -10,3 +10,4 @@ export const MODS = [
   { k: 'sign', l: 'O-Doc Sign', s: 'Sign', i: 'signature', g: 'Overview', full: true, d: 'Online document signing and stamping' },
   { k: 'staff', l: 'Staff', s: 'Staff', i: 'users', g: 'People' },
   { k: 'employees', l: 'Employees', s: 'Employees', i: 'briefcase', g: 'People' },
+  { k: 'attendance', l: 'Attendance', s: 'Attendance', i: 'clock', g: 'People' },
