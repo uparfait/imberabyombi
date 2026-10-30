@@ -12,3 +12,4 @@ const times = e => e.start ? `${fmt_time(e.start)}${e.end ? ` – ${fmt_time(e.e
 
 /* each section's rows: [label, value] (an empty value shows a dash; a null row is left out) */
 const ROWS = {
+  Details: e => [['Title', e.title], ['Description', e.about ? <p className="whitespace-pre-line">{e.about}</p> : null]],
