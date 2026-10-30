@@ -38,3 +38,4 @@ const card = (title, btn, list) => <section className="card ev_card"><header cla
 export const minutes_card = (e, c, can) => card('Minutes', can ? <button type="button" className="btn btn_outline btn_sm" data-act="ev_minutes" data-c={c} data-id={e.id}>
   {ic('edit', 'h-4 w-4')}Record minutes</button> : null, db.list('minutes').filter(m => m.ref === e.id).sort((a, b) => b.date.localeCompare(a.date)).map(m => <li key={m.id}>
   <a href={to('/admin/docs?doc=m_' + m.id)} className="ev_list_main"><b>{fmt_d(m.date)}</b><span className="text-sm text-muted">{m.by}</span></a>
+  <button type="button" className="icon_btn h-8 w-8" data-act="copy" data-text={doc_url(m)} data-what="Link" aria-label="Copy the link" data-tip="Copy link">{ic('link', 'h-4 w-4')}</button></li>));
