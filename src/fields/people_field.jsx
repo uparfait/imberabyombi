@@ -5,3 +5,4 @@ import { uid } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 
 function People_editor({ k, v, add }) {
+  const [rows, set] = useState(() => (v || []).map(x => ({ ...x, i: uid() })));
