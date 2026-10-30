@@ -17,3 +17,5 @@
   border-radius: 1rem; background: repeating-conic-gradient(#E5E7EB 0 25%, #fff 0 50%) 0 0 / 16px 16px; }
 .sign_checker canvas { display: block; max-width: 100%; max-height: 14rem; width: auto; height: auto; }
 .sign_range { width: 100%; accent-color: rgb(var(--brand)); }
+
+.sign_stamp_cv { width: 100%; height: auto; margin: 0 auto; border: 1px solid rgb(var(--line)); border-radius: 1rem; background: #fff; aspect-ratio: 1; }
