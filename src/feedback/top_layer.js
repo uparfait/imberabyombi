@@ -11,3 +11,4 @@ export function raise_top() {
 }
 export const show_dialog = d => { d.showModal(); raise_top(); };
 /* the browser's full screen lands above them too ("Copied" would be hidden): lifted again on each change */
+addEventListener('fullscreenchange', () => raise_top());
