@@ -21,6 +21,7 @@ export function add_signer(f, quiet = false) {
   if (P.doc.recipients.some(r => r.email === email)) { notify(`${email} already signs this document.`, 'warn', 'Already a signer'); return false; }
   const r = add_rec(P.doc, name, email, String(v.note || '').trim(), !!v.cert); P.rid = r.id; P.adding = false;
   f.reset(); gate(f); prep_dirty(); rerender(); if (!quiet) notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
+  return true;
 }
 /* Save signer is enabled only when the form can be saved: a name, a valid email, and that email not a signer yet */
 const gate = f => { if (!f) return; const email = f.elements.email.value.trim().toLowerCase();
