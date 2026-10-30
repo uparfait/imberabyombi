@@ -12,3 +12,4 @@ import { read_pdf } from './pdf_lib.js';
 const MAX = 20 * 1048576;
 const STEPS = [['Upload', 'A PDF of the document to sign.'], ['Add signers', 'Who signs it, with a note for each one.'],
   ['Place and send', 'Their signature and stamp fields, then send.']];
+const bad = (text, title) => { notify(text, 'bad', title); return false; };
