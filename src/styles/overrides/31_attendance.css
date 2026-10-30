@@ -3,7 +3,7 @@
   .att_page { display: grid; min-height: 100dvh; place-items: center; padding: 1.5rem 1rem; background: rgb(var(--bg)); }
   .att_card { width: 100%; max-width: 30rem; padding: 1.75rem 1.5rem; }
   .att_kind { color: rgb(var(--brand)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-  .att_title { font-family: var(--font_display); font-size: clamp(1.5rem, 6vw, 2rem); font-weight: 500; line-height: 1.2; text-wrap: balance; overflow-wrap: break-word; hyphens: auto; }   /* a long one wraps by words, in even lines */
+  .att_title { font-family: var(--font_display); font-size: clamp(1.5rem, 6vw, 2rem); font-weight: 500; line-height: 1.2; text-wrap: balance; overflow-wrap: break-word; hyphens: auto; }   /* wraps by words, in even lines; three at most (line-clamp-3) */
   .att_when { margin-top: .375rem; color: rgb(var(--muted)); font-size: .875rem; }
   .att_form { display: grid; gap: 1rem; margin-top: 1.5rem; }
   .att_hint { margin-top: -.75rem; color: rgb(var(--muted)); font-size: .8125rem; }   /* what an attendance setting does, under it */
