@@ -22,3 +22,4 @@ export * from './calendar_grids.jsx';
 export * from './calendar.jsx';
 export * from './tasks.jsx';
 export * from './people_views.jsx';
+export * from './place_views.jsx';
