@@ -49,3 +49,4 @@
   kbd { background: rgb(var(--surface)); border: 1px solid rgb(var(--line)); border-bottom-width: 3px; padding: .05em .45em; border-radius: calc(var(--radius) * .4); }
   :where(samp) { color: rgb(var(--ok)); }
   :where(var) { font-style: italic; color: rgb(var(--info)); }
+  :where(sub, sup) { font-size: .7em; }
