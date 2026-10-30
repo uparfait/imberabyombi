@@ -3,3 +3,4 @@
    three colours, at any size; copy or download the SVG. The template's own 3D icons come from this engine, glossy. */
 import { useState } from 'react';
 import './iconisus_styles.css';
+import { render, iconify_svg } from '../icon3d/index.js';
