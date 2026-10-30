@@ -21,6 +21,7 @@ export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def
 
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
 export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
+export const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
 /* a wall-clock date and time in tz → the instant (ms) */
 export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(Number), [h, mi] = (time || '00:00').split(':').map(Number);
   return zoned_to_utc(y, mo, d, h, mi, tz || device_tz()); };
