@@ -9,3 +9,4 @@ import { crud } from '../table/index.js';
 import { BASE } from './attend_side.jsx';
 
 export function attendance_page(id, c) {
+  const e = db.find(c, id), back = `${BASE[c]}/${id}`;
