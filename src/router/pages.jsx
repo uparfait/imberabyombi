@@ -2,3 +2,4 @@
    sign-in and permissions, the account pages, and the page shown when a view fails. */
 import { hash_str, lorem } from '../lib/index.js';
 import { route } from '../store/index.js';
+import { auth, MODS } from '../auth/index.js';
