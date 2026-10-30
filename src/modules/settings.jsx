@@ -44,3 +44,4 @@ const time_zone = () => <section className="card p-6"><div className="flex items
 
 function data_card() {
   const used = db.bytes(), pct = Math.min(100, Math.round(used / cfg.storage_cap * 100));
+  return <section className="card p-6"><h2 className="text-lg">Data in this browser</h2>
