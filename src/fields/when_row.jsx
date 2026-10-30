@@ -18,3 +18,5 @@ const block = (f, v) => { const id = 'field_' + f.k, shown = dt_show(f.t, v);
     <span className="pick when_block"><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
       onInput={e => { e.target.nextSibling.textContent = in_words(f.t, e.target.value); }} />
       <span className="when_text" aria-hidden="true">{in_words(f.t, shown)}</span></span></Fragment>; };
+
+/* fs: the row's fields in order; a dash goes between two times (start – end) */
