@@ -33,3 +33,4 @@ export function admin_shell(mod, content) {
     <button className="icon_btn lg:hidden" data-act="side" aria-label="Open menu">{ic('menu')}</button>
     <button className="brand_toggle" data-act="side" aria-label="Open sidebar" data-tip="Open sidebar">
       <span className="bt_logo">{mark3d('#', 'h-9 w-9')}</span><span className="bt_open">{ic('sideOpen')}</span></button>
+    <h1 className="sr-only">{m?.l || 'Not found'}</h1>
