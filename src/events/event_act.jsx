@@ -31,3 +31,4 @@ export const EV_ACT = {
   ev_cancel: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     modal({ title: 'Cancel this event?', help: 'It stays in the list as cancelled, and you can put it back on schedule later. Everyone invited is told by email.',
       body: [reason()], submit: 'Cancel event', dismiss: 'Keep it', danger: true,
+      on_submit: d => save(e.id, { status: 'Cancelled', status_note: d.reason || '' }, 'Event cancelled', 'It no longer shows on the calendar.' + told(e)) }); },
