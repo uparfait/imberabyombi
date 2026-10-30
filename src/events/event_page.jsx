@@ -14,6 +14,7 @@ import { event_cards } from './event_cards.jsx';
 import { invites_card } from './event_invites.jsx';
 
 const HELP = { events: 'Every detail, by section. Edit a section on its own; postpone, cancel or restore it on the right.',
+  activities: 'Every detail, by section. Edit a section on its own.' };
 /* the actions that fit each state: [handler, label, icon, the states it shows in] */
 const ACTS = [
   ['ev_postpone', 'Postpone', 'clock', ['Upcoming', 'Recurring']], ['ev_postpone', 'Change the new date', 'calendar', ['Postponed']],
