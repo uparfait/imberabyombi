@@ -17,6 +17,7 @@ const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when
 const SEC = { When: 'kind,date,start,end,tz,repeat', Location: 'place,venue,link,join_note', Organiser: 'org_name,org_email,org_tel' };
 /* seed rows: where and who */
 const seed_more = () => { const n = lorem.name(), web = lorem.int(0, 3) === 0;
+  return { place: web ? 'Virtual' : 'Physical', venue: web ? '' : lorem.t(2), link: web ? `https://meet.lorem.io/${lorem.w(1)}-${lorem.int(100, 999)}` : '',
 
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'kind', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
