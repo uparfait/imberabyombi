@@ -6,3 +6,4 @@ import { rerender } from '../store/index.js';
 import { ask, copy } from '../overlays/index.js';
 import { base_url } from '../auth/index.js';
 import { go } from '../router/index.js';
+import { find_doc, drop_doc, save_doc, log, who, kept_for_good } from './sign_store.js';
