@@ -7,3 +7,4 @@ body { background: rgb(var(--bg)); }
 .qr_brand { display: grid; width: 2.25rem; height: 2.25rem; place-items: center; border-radius: .75rem; background: rgb(var(--brand)); color: #fff; }
 .qr_name { font-family: var(--font_display); font-size: 1.25rem; font-weight: 700; letter-spacing: -.01em; }
 .qr_hint { display: inline-flex; align-items: center; gap: .375rem; padding-inline: .5rem; color: rgb(var(--muted)); font-size: .75rem; }
+.qr_main { display: grid; width: 100%; max-width: 30rem; gap: 1.25rem; margin: 0 auto; padding: .5rem 1rem max(2rem, env(safe-area-inset-bottom)); }
