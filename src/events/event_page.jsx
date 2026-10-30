@@ -33,9 +33,7 @@ const ACTS = [
 ];
 const side = (e, c, st, acts, t = count_to(e, st), r = st === 'Past' && ran(e)) => <aside className="card ev_card ev_side" aria-label="Status and actions">
   <h3 className="ev_side_title">Status</h3><div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">{badge(st)}
-    {t ? <span className="ev_left">{t[0]} <b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></span> : null}</div>
-  {r ? <dl className="ev_ran"><dt>Started</dt><dd>{fmt_stamp(r[0], { dateStyle: 'full', timeStyle: 'short' })}</dd>
-    <dt>Ended</dt><dd>{fmt_stamp(r[1], { dateStyle: 'full', timeStyle: 'short' })}</dd></dl> : null}
+    {t ? <span className="ev_left">{t[0]} <b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></span> : null}
   {e.status_note && (st === 'Postponed' || st === 'Cancelled') ? <p className="ev_note">{e.status_note}</p> : null}
   {acts ? <div className="ev_acts">{ACTS.filter(a => !a[3] || a[3].includes(st)).map(([k, l, i]) =>
     <button key={k + l} type="button" className={`btn btn_sm ${k === 'ev_cancel' || k === 'ev_del' ? 'btn_ghost ev_bad' : 'btn_outline'}`} data-act={k} data-id={e.id}>
