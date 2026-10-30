@@ -32,3 +32,4 @@ export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !
 /* Landing page: where people with a role arrive after signing in (set on Roles & access). It falls back to the
    first module the role can open when the chosen one is not set or no longer allowed. */
 export const role_opens = r => MODS.filter(m => r && (r.perms === '*' || (r.perms[m.k] || 0) > 0));
+export const landing = id => {
