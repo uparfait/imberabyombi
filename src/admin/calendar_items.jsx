@@ -44,3 +44,4 @@ export function mini_cal() {
 }
 
 /* ACT.mini: set ui.mini, then mini_draw(); false = no mini calendar on screen (then the caller redraws the page with rerender()) */
+export const mini_draw = () => redraw_slot('mini');
