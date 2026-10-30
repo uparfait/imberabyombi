@@ -27,3 +27,4 @@ export function Qr_app() {
   };
   const pick = async e => { const file = e.target.files[0]; e.target.value = ''; if (!file) return; stop();
     try { const t = await read_image(file); t ? found(t) : set({ phase: 'error', msg: 'No QR code in that picture.' }); }
+    catch { set({ phase: 'error', msg: 'That picture could not be read.' }); } };
