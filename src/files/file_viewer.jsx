@@ -28,3 +28,4 @@ function File_view({ f, n }) {
   else if (k === 'image') body = <img src={u} alt={f.name} className="mx-auto block max-h-[78dvh] w-auto bg-transparent object-contain" onError={err} />;
   else if (k === 'video') body = <video src={u} controls autoPlay playsInline className="mx-auto block max-h-[78dvh] w-full bg-ink" onError={err}></video>;
   else if (k === 'audio') body = (
+    <div className="grid justify-items-center gap-6 px-4 py-12">{i3('music', 'h-20 w-20', 'violet')}<audio src={u} controls autoPlay className="w-full max-w-md" onError={err}></audio></div>);
