@@ -34,3 +34,4 @@ const missing = () => <div className="sign_main max-w-2xl"><div className="card"
 /* /admin/sign/<a>/<id> → { title, cur (the list on show), back (Back's address), body }. A page's actions (Send, Save,
    Download, Finish) sit in its own right column or bottom bar, never in the top bar. */
 function page_for(a, id) {
+  if (!a || LIST.has(a)) { const k = a || 'all'; return { title: LISTS.find(x => x[0] === k)[1], cur: k, body: sign_list(k) }; }
