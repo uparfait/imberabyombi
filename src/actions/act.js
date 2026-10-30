@@ -28,3 +28,4 @@ export const ACT = new Proxy(OWN, {
 /* data-act buttons that are requests. 1 = a change (delete, update, export…): the button spins; 2 = a get (open details,
    page, sort, switch tab, week or template…). Both show the top #loader on staff pages. On public and sign-in pages a get
    runs at once with no loader (there is nothing to fetch there). */
+export const REQ = { view: 2, row: 2, viz_open: 2, viz_page: 2, edit: 2, ev: 2, page: 2, sort: 2, tab: 2, mail: 2, report: 2, role_sel: 2, cal_nav: 2, cal_today: 2, goday: 2,
