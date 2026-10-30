@@ -7,7 +7,7 @@ import { closed_pop } from './live_slot.jsx';
 const attrs_of = a => typeof a === 'string' ? Object.fromEntries([...a.matchAll(/([\w-]+)="([^"]*)"/g)].map(m => [m[1], m[2]])) : a || {};
 
 const tile = (t, i) => { const Tag = t.href ? 'a' : 'button';
-  return <Tag key={i} className={`tile_link ${t.on ? 'active' : ''}`} {...(t.href ? { href: t.href } : attrs_of(t.attrs))} aria-current={t.on ? 'true' : undefined}>
+  return <Tag key={i} className={`tile_link ${t.on ? 'active' : ''}`} {...(t.href ? { href: t.href, ...(t.blank ? { target: '_blank', rel: 'noopener' } : {}) } : attrs_of(t.attrs))} aria-current={t.on ? 'true' : undefined}>
     {i3(t.icon, 'h-11 w-11', t.color || hue_at(i))}<span className="line-clamp-2 w-full leading-tight">{t.label}</span></Tag>; };
 
 export const tile_menu = o => <div className="relative">
