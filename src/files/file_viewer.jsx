@@ -30,3 +30,4 @@ function File_view({ f, n }) {
   else if (k === 'audio') body = (
     <div className="grid justify-items-center gap-6 px-4 py-12">{i3('music', 'h-20 w-20', 'violet')}<audio src={u} controls autoPlay className="w-full max-w-md" onError={err}></audio></div>);
   else if (k === 'pdf') body = <iframe src={u} title={f.name} className="h-[78dvh] rounded-none bg-transparent"></iframe>;
+  else body = <Text_view f={f} />;
