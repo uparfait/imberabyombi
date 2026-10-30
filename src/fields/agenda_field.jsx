@@ -36,3 +36,4 @@ export const agenda_from = f => [...f.querySelectorAll('[data-ag-item]')].map(el
 
 /* the agenda's times make sense: each item ends after it starts, within the event's start s and end e ("HH:MM"), and
    starts once the one before it has ended. A form with new times but no agenda checks the saved one (old) against them. */
+export function agenda_ok(f, s, e, old = []) {
