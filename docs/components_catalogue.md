@@ -51,3 +51,4 @@ selectors, so the reset never shrinks them and utilities still win.
 Put the class in `src/styles/components/` with `@apply` and token-based utilities, never hard-coded colours:
 ```css
 @layer components {
+  .notice_bar { @apply flex items-center gap-3 rounded-2xl border border-line bg-surface-2 px-4 py-3 text-sm; }
