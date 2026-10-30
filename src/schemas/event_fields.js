@@ -43,6 +43,7 @@ const place_in = d => { if (!('place' in d)) return d;
 /* who organises it (the person signed in, to start with) and how many people are expected */
 export const org_f = () => [field_spec('org_name', 'Name', 'text', 0, 1, { def: () => auth.user?.name || '' }),
   field_spec('org_email', 'Email', 'email', 0, 1, { def: () => auth.user?.email || '' }), field_spec('org_tel', 'Phone', 'tel'),
+  field_spec('co_orgs', 'Co-organisers', 'people', 0, 0, { add: 'Add co-organiser' })];
 export const audience_spec = () => field_spec('audience', 'Expected audience', 'number', 0, 0, { min: 1 });
 
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
