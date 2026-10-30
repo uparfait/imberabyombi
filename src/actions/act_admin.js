@@ -19,6 +19,7 @@ const tz_choose = v => { const sel = qs('#page_tz'); if (!sel) return; sel.value
 
 export const ADMIN_ACT = {
   /* Notifications: a notice opens what it is about and is read from then on; Mark all read empties the count */
+  notice_open: t => { mark_read([t.dataset.id]); close_pops(); go(t.dataset.href); },
   /* Email designs: switch the previewed email in place (no page jump). The address changes first: the redraw reads ?t= */
   mail: t => { const k = t.dataset.k; if (!qs('#mail_view') || !MAILS[k]) return; ui.mail = k;
     history.replaceState(null, '', to('/admin/emails?t=' + k)); rerender();
