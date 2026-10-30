@@ -31,11 +31,7 @@ export function ribbon(G, C, i, k) {
   const u = Math.max(G.vb[2], G.vb[3]) / 100, K = 5, bw = 2.2 * u, gw = .75 * u, base = G.sw, X = 42, Y = 36, S = 116, R = i + 'R';
   const col = j => blend([C.p, C.s, C.t], j / K);
   const at = w => `stroke="currentColor" stroke-width="${w.toFixed(3)}" stroke-linejoin="round" stroke-linecap="round"`;
-  let ext = '', bands = '';
-  for (let j = 7; j >= 1; j--) ext += use(R, X + j * .8, Y + j * 1.1, S, shade(col(K), -32), at(base + 2 * K * bw));
-  for (let k = K - 1; k >= 0; k--) {
-    const w = base + 2 * (k + 1) * bw; bands += use(R, X, Y, S, shade(col(k + 1), -38), at(w)) + use(R, X, Y, S, col(k + 1), at(w - 2 * gw));
-  }
+  /* the lines between bands are gw units wide; under a device pixel they only muddy the colours, so they fade */
   bands += use(R, X, Y, S, col(0), at(base));
   const bare = G.inner.replace(/\sstroke-width="[^"]*"/g, '').replace(/stroke-width\s*:[^;"]+;?/g, '');
   return [sym(R, G, bare) + vol(i + 'v', { bevel: 2, surf: 3, spec: .7, exp: 18, shade: .45 }), ext + `<g filter="url(#${i}v)">${bands}</g>`];
