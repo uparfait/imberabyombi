@@ -4,6 +4,7 @@
   .live_top { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; min-width: 0; }
   .live_info { display: grid; gap: .5rem; padding: 1.5rem 1.75rem; }
   .live_title { font-family: var(--font_display); font-size: clamp(1.75rem, 3vw, 2.75rem); font-weight: 500; line-height: 1.1; overflow-wrap: anywhere; }
+  .live_about { display: -webkit-box; overflow: hidden; color: rgb(var(--muted)); -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
   .live_acts { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-left: auto; }
   .live_body { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; min-height: 0; }
   .live_main { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 1.25rem; min-height: 0; }
