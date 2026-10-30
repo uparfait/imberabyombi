@@ -15,3 +15,4 @@ export * from './task_view.jsx';
 export * from './tv_act.js';
 export * from './task_act.js';
 export * from './task_change.js';
+export * from './misc_views.jsx';
