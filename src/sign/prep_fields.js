@@ -35,6 +35,7 @@ export function add_field(type, page, cx, cy) {
 /* removing a field (its × or the Delete key) asks first */
 export function del_field(id) {
   const f = P.doc.fields.find(x => x.id === id); if (!f) return;
+  if (f.done) return notify('A signed field stays where it is.', 'warn', 'Already signed');
   const [l] = KINDS[f.type], r = rec_of(P.doc, f.rid);
   ask(`Remove this ${l.toLowerCase()} field${r ? ` for ${r.name}` : ''}? They will not ${f.type === 'stamp' ? 'stamp' : 'sign'} here.`, () => {
     P.doc.fields = P.doc.fields.filter(x => x.id !== id); if (P.sel === id) P.sel = null;
