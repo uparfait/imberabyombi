@@ -6,3 +6,4 @@ import { ui, render_flags, get_version } from '../store/index.js';
 import { MODS } from '../auth/index.js';
 import { sidebar } from './sidebar.jsx';
 import { header_tools, RAIL } from './header_tools.jsx';
+import { panel_html } from './panel_html.jsx';
