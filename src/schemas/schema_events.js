@@ -40,6 +40,7 @@ export const events_schema = {
     field_spec('registered', 'Registered', 'number', 0, 0, { min: 0, def: () => 0 })
   ],
   r: { registered: (v, row) => bar_cell(v, row.capacity), tz: tz_cell },
+  before: (d, row, f) => when_ok(d, row, f) ? d : false,
   g: () => {
     const c = lorem.int(4, 20) * 10;
     return {
