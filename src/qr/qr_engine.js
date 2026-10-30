@@ -12,3 +12,6 @@ async function reader() {
     try { if ((await BarcodeDetector.getSupportedFormats()).includes('qr_code')) return detector = new BarcodeDetector({ formats: ['qr_code'] }); } catch { /* jsQR below */ }
   }
   await load_script(JSQR); return detector = null;
+}
+
+const cv = document.createElement('canvas'), cx = cv.getContext('2d', { willReadFrequently: true });
