@@ -10,3 +10,4 @@ export const WEEK_NAMES = { 1: 'first', 2: 'second', 3: 'third', 4: 'fourth', [-
 export const and_list = xs => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}`;
 /* 1st, 2nd, 3rd, 4th … 11th, 12th, 13th … 21st */
 export const ordinal = n => n + (n % 100 > 10 && n % 100 < 14 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
+const sorted = (xs, key = x => x) => [...xs].sort((a, b) => key(a) - key(b));
