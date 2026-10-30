@@ -18,6 +18,7 @@ export function in_words(t, v) {
   if (!v) { const w = t === 'date' ? 'Pick a date' : 'Pick a time'; return [w, w.replace(' a ', ' ')]; }   /* empty: "Pick a date" / "Pick date" */
   if (t === 'date') { const d = new Date(`${v}T00:00`); if (isNaN(d)) return [v, v];
     return [d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }), d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })]; }
+  const [h, m] = to24(v).split(':').map(Number); if (isNaN(h) || isNaN(m)) return [v, v];
 }
 
 /* the time zone: a select of every zone ("(GMT+02:00) Central Africa Time - Kigali"), shown as "GMT+2 · Kigali", with its
