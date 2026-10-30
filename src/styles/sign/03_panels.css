@@ -71,3 +71,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_ev { position: relative; display: flex; min-width: 0; align-items: center; gap: .625rem; }
 .sign_ev:not(:last-child)::after { content: ''; position: absolute; top: 1.875rem; bottom: -.875rem; left: .875rem; width: 2px; margin-left: -1px; background: rgb(var(--line)); }
 .sign_ev_who { position: relative; display: grid; flex: none; width: 1.75rem; height: 1.75rem; place-items: center; border-radius: var(--pill); color: #fff;
+  font-size: .625rem; font-weight: 600; }
