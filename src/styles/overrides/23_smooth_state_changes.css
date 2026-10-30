@@ -26,3 +26,4 @@
   .scrim { opacity: 0; pointer-events: none; transition: opacity .3s var(--ease); }
   .scrim.on { opacity: 1; pointer-events: auto; }
   /* Smooth fold for collapsible sections (sidebar calendar and groups). Not named .collapse: that is a Tailwind utility. */
+  .fold { display: grid; grid-template-rows: 1fr; opacity: 1; transition: grid-template-rows .3s var(--ease), opacity .25s var(--ease); }
