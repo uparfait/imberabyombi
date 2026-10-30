@@ -51,3 +51,4 @@ export function zone_list(t = Date.now()) {
     if (/^GMT([+-]|$)/.test(name)) name = '';
     const text = [name, tz === 'UTC' ? '' : city(tz)].filter(Boolean).join(' - ') || tz;
     return { tz, off, gmt: g, text, label: `(${g}) ${text}`, short: `${s} · ${city(tz)}`,
+      key: `${g} ${text} ${tz.replace(/_/g, ' ')} ${s} utc${s.slice(3)}`.toLowerCase() }; })
