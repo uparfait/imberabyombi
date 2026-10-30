@@ -77,3 +77,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 
 ## Rules this repository follows
 Every file is at most 100 lines; names are snake_case (React components `Capital_snake`); every file starts with a
+comment saying what it holds. See [naming and files](docs/naming_and_files.md).
