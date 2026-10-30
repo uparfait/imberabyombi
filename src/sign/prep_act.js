@@ -37,3 +37,4 @@ export const PREP_ACT = {
         if (P.doc.recipients.some(x => x !== r && x.email === email)) { notify(`${email} already signs this document.`, 'warn', 'Already a signer'); return false; }
         const moved = email !== r.email; Object.assign(r, { name: String(v.name).trim(), email, note: String(v.note || '').trim(), cert: !!v.cert });
         if (moved) recolor(P.doc);
+        prep_dirty(); rerender(); } }); },
