@@ -31,3 +31,4 @@ export function Tz_page() {
   const [st, set] = useState(first), put = o => set(s => ({ ...s, ...o }));
   const [y, mo, d] = st.date.split('-').map(Number), t = zoned_to_utc(y, mo, d, st.h, st.m, st.from);
   const tp = tz_parts(st.to, t), up = tz_parts('UTC', t), fo = offset_min(st.from, t), to = offset_min(st.to, t);
+  const [main, suf] = fmt(tp.h, tp.mi, st.tf), days = Math.round((Date.UTC(tp.y, tp.mo - 1, tp.d) - Date.UTC(y, mo - 1, d)) / 864e5);
