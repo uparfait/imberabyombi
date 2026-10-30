@@ -5,3 +5,5 @@ let offer = null;
 const subs = new Set(), emit = () => subs.forEach(f => f());
 addEventListener('beforeinstallprompt', e => { e.preventDefault(); offer = e; emit(); });
 addEventListener('appinstalled', () => { offer = null; emit(); });
+
+export const standalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
