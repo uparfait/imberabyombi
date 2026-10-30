@@ -20,6 +20,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 - **Attendees**: no page of its own; the count, Attendees (in Open and in Menu) or the Attended row open the usual
   table in an overlay over the page ([`attendees_view.jsx`](../src/events/attendees_view.jsx)): search, sort, export to
   CSV, JSON or Excel (no filters). A row shows the signature. Only what people submit: no Add, Edit or Delete. A new
+  sign-in shows at once on any open page (other tabs too).
 
 ## View This Event
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)), also for a finished one: the whole window, no sidebar.
