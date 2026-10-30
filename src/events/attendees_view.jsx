@@ -7,3 +7,5 @@ import { db, rerender } from '../store/index.js';
 import { ic } from '../icons/index.js';
 import { show_in_dialog } from '../overlays/index.js';
 import { crud } from '../table/index.js';
+
+function view(c, id) {
