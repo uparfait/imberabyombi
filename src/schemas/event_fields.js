@@ -18,3 +18,4 @@ export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def
   on: e => { if (e.target.value === 'Live') live_now(e.target.form); } });
 
 /* a wall-clock date and time in tz → the instant (ms) */
+export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(Number), [h, mi] = (time || '00:00').split(':').map(Number);
