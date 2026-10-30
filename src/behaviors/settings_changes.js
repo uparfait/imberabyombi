@@ -14,7 +14,7 @@ export function allow_select_change(t) {
 
 /* a new time zone is only a choice until Save: Save and Cancel wake up while it differs from the one in use */
 export function page_tz_change(t) {
-  db.set('pageTz', t.value); rerender(); toast(`Times now show in ${zone_of(t.value).short}.`, 'ok', 'Time zone changed');
+  const dirty = t.value !== page_tz(); t.closest('section')?.querySelectorAll('[data-act=tz_save], [data-act=tz_cancel]').forEach(b => b.disabled = !dirty);
 }
 
 export function role_land_change(t) {
