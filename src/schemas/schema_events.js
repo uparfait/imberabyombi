@@ -11,3 +11,4 @@ export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'category'],
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { def: () => ui.cal_date, row: 'when' }),
+    field_spec('start', 'Starts', 'time', 0, 1, { def: () => '09:00', row: 'when' }), field_spec('end', 'Ends', 'time', 0, 1, { def: () => '10:00', row: 'when' }),
