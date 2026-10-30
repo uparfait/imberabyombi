@@ -36,4 +36,5 @@ export async function start(video, on_code) {
   tick();
 }
 const track = () => stream?.getVideoTracks()[0];
+export const has_torch = () => !!track()?.getCapabilities?.().torch;
 export const secure = t => { try { const u = new URL(String(t).trim()); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
