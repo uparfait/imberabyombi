@@ -33,6 +33,7 @@ export function ribbon(G, C, i, k) {
   const at = w => `stroke="currentColor" stroke-width="${w.toFixed(3)}" stroke-linejoin="round" stroke-linecap="round"`;
   /* the lines between bands are gw units wide; under a device pixel they only muddy the colours, so they fade */
   const sep = -38 * Math.min(1, .35 + .65 * gw * S / Math.max(G.vb[2], G.vb[3]) * k);
+  const ext = extrude(R, X, Y, S, deep(col(K), -32, k), [5.6, 7.7], k, at(base + 2 * K * bw));
   bands += use(R, X, Y, S, col(0), at(base));
   const bare = G.inner.replace(/\sstroke-width="[^"]*"/g, '').replace(/stroke-width\s*:[^;"]+;?/g, '');
   return [sym(R, G, bare) + vol(i + 'v', { bevel: 2, surf: 3, spec: .7, exp: 18, shade: .45 }), ext + `<g filter="url(#${i}v)">${bands}</g>`];
