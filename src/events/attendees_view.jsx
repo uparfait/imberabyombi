@@ -18,3 +18,4 @@ function view(c, id) {
 export const ATTENDEES_ACT = {
   ev_att_list: t => { const { c, id } = t.dataset, d = qs('#viewer');
     show_in_dialog('viewer', () => view(c, id)); d.classList.add('viewer_table'); d.setAttribute('aria-label', 'Attended');
+    d.addEventListener('close', () => { d.classList.remove('viewer_table'); d.setAttribute('aria-label', 'File viewer'); }, { once: true });
