@@ -33,3 +33,4 @@ export function found_card(text) {
       : <p className="qr_text qr_plain">{text}</p>}
     {web ? <p className="qr_note">Only links that start with https open from here.</p> : null}
     <div className="qr_acts">{link ? <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn_primary">{ic('external', 'h-4 w-4')}Open link</a> : null}
+      <Copy text={link || text} cls={`btn ${link ? 'btn_outline' : 'btn_primary'}`} /></div></section>;
