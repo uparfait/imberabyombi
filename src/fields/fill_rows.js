@@ -5,3 +5,4 @@
 const FULL = '.sm\\:col-span-2, .col-span-2';
 export function fill_rows(grid) {
   let open = null;
+  for (const el of grid.children) {
