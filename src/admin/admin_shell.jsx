@@ -15,3 +15,4 @@ const side_sync = el => { el.dataset.open = ui.side; el.dataset.min = ui.side_mi
 const scrim_sync = el => { el.classList.toggle('on', ui.side); };
 
 /* a new key for #main on a new page, or on a redraw that keeps the page-enter motion (render(true, true)) */
+let page_n = 0, seen = -1;
