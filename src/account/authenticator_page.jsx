@@ -13,7 +13,7 @@ export function authenticator_page() {
     <form data-form="otp" className="on_bg mt-8 grid gap-6" noValidate><div data-msg-slot="" className="empty:hidden"></div>
       <input type="hidden" name="setup" defaultValue="1" />
       <ol className="auth_steps">
-        <li><p><b className="font-medium">Scan this QR code</b> with the app.</p>
+        <li><p className="font-medium">Scan with the app</p>
           <div className="mt-3 flex justify-center" dangerouslySetInnerHTML={{ __html: qr_svg(key) }}></div></li>
         <li><p><b className="font-medium">Can't scan it?</b> Enter this key in the app instead.</p><div className="mt-3">{copy_box(key, 'Key')}</div></li>
         <li><p><b className="font-medium">Enter the 6-digit code</b> the app shows.</p><div className="mt-3">{otp_boxes('Code from the app')}</div></li>
