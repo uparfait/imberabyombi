@@ -31,3 +31,4 @@ export const SHELL_ACT = {
   confirm_discard: () => { const c = qs('#confirm'), yes = c._yes; c._yes = null; close_dialog(c); yes?.(); },
   close_viewer: () => close_dialog(qs('#viewer')),
   clear_search: t => { const i = t.parentElement.querySelector('input[type=search]'); if (!i) return; set_native_value(i, ''); i.dispatchEvent(new Event('input', { bubbles: true })); i.focus({ preventScroll: true }); },
+  run_search: t => { const i = t.parentElement.querySelector('input[type=search]'); if (!i) return; i.focus({ preventScroll: true }); i.dispatchEvent(new Event('input', { bubbles: true })); },
