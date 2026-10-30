@@ -32,3 +32,6 @@ export function org_table(e, c, can) {
     <thead><tr><th scope="col">Name</th><th scope="col" className="ev_wide">Email</th><th scope="col" className="ev_wide ev_org_tel">Phone</th>
       {can ? <th scope="col" className="ev_org_acts"><span className="sr-only">Actions</span></th> : null}</tr></thead>
     <tbody>{row({ name: e.org_name, email: e.org_email, tel: e.org_tel }, 'Organiser', -1)}{(e.co_orgs || []).map((o, i) => row(o, 'Co-organiser', i))}</tbody></table></div>;
+}
+
+/* a card's or section's Add: a co-organiser */
