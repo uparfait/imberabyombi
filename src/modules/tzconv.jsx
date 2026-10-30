@@ -2,3 +2,4 @@
    in the build); meanwhile the page shows the loading spinner. */
 import { lazy, Suspense } from 'react';
 import { VIEWS } from './views.js';
+import { loading } from '../feedback/index.js';
