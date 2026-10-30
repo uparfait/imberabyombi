@@ -18,3 +18,4 @@ import { use_marks } from './use_marks.js';
 const mine = d => d.recipients.find(r => r.email === who().email);
 
 /* under Save draft, in ink (apart from Send and Save): Sign it myself → Sign my fields → Signed by you */
+export function self_part(d) {
