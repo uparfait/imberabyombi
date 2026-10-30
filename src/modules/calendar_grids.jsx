@@ -15,3 +15,4 @@ const chip = i => { const a = to_min(i.start), b = Math.max(to_min(i.end), a + 3
     data-act="ev" data-c={i.c} data-id={i.id}><b className="block truncate">{i.title}</b>{`${i.start} – ${i.end}`}</button>; };
 
 export function week_grid(d, items) {
+  const s = add_d(d, -d.getDay()), days = Array.from({ length: 7 }, (_, i) => add_d(s, i)), td = ymd(), gl = zone_of(page_tz()).short.split(' · ')[0], now = page_now();
