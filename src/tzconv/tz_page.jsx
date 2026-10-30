@@ -51,3 +51,4 @@ export function Tz_page() {
             <div className="field tzc_num"><label htmlFor="tz_h">Hour</label>
               <select id="tz_h" value={is12 ? st.h % 12 || 12 : st.h} onChange={e => { const v = +e.target.value; put({ h: is12 ? v % 12 + (st.h >= 12 ? 12 : 0) : v }); }}>
                 {(is12 ? H12 : H24).map(h => <option key={h} value={h}>{is12 ? h : pad(h)}</option>)}</select></div>
+            <span className="tzc_colon" aria-hidden="true">:</span>
