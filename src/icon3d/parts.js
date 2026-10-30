@@ -29,6 +29,7 @@ export const blur = (id, sd, r = '-60%') =>
 const PX = { edge: 1.4, goo: 1, bevel: 1.2, depth: 1.1, step: .7, ambient: .35 };
 const nphi = z => .3989 * Math.exp(-z * z / 2), ncdf = z => 1 / (1 + Math.exp(-1.702 * z));   /* normal pdf, cdf (logistic) */
 const num = v => +v.toFixed(3);
+/* a depth or extrusion colour: less dark on small icons, so a sub-pixel extrusion does not read as a black outline */
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
   if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
   if (o.flat) return f + '</filter>';
