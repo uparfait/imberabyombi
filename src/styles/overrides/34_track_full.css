@@ -19,3 +19,4 @@
   .track_strip { display: flex; height: 100%; transition: transform .8s var(--ease); }
   .track_slide { display: grid; flex: 0 0 100%; place-content: center; justify-items: start; gap: 1.25rem; min-width: 0; padding: 0 6vw; text-align: left; }
   .track_slide > * { max-width: min(100%, 70rem); }
+  .track_t { font-family: var(--font_display); font-size: clamp(2.25rem, 5.5vw, 5.5rem); font-weight: 500; line-height: 1.08; overflow-wrap: anywhere; text-wrap: balance; }
