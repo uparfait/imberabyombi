@@ -16,3 +16,6 @@ import { chips, note_text } from './signer_bits.jsx';
 function Doc_view({ d }) {
   const marks = use_marks(d.id, d.updated);
   return <Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: 'view', marks })} />;
+}
+
+const state = r => r.status === 'signed' ? `Signed ${when(r.signed_at)}` : r.viewed_at ? `Opened ${ago(r.viewed_at)}, not signed yet` : 'Waiting';
