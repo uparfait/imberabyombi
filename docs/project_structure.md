@@ -43,3 +43,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `router/`    | path routes (`to`, `go`), page meta, `render_route()`, what runs after each draw, `boot()`  |
 
 ## How the pieces talk
+- A page is a function that returns JSX and reads `db`, `ui` and `route` while it draws.
