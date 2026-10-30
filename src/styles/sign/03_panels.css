@@ -31,3 +31,4 @@
   -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
 .sign_note_card { border-color: rgb(var(--brand) / .35); background: rgb(var(--brand) / .05); }
 /* a signer's chips (signer_bits.jsx): Note (opens the note under them) and the digital certificate */
+.sign_chips { display: flex; flex-wrap: wrap; gap: .375rem; margin-top: .375rem; }
