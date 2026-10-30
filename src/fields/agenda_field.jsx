@@ -17,3 +17,4 @@ function Agenda_editor({ v }) {
   const [items, set] = useState(() => (v || []).map(x => ({ ...x, k: uid() }))), t = dt_attrs('time');
   return <div className="ag_edit" data-agenda="">{items.map((x, i) => <div key={x.k} className="ag_item" data-ag-item="">
     <div className="ag_item_head"><b>{`Item ${i + 1}`}</b>
+      <button type="button" className="icon_btn h-8 w-8" onClick={() => set(items.filter(y => y.k !== x.k))} aria-label={`Remove item ${i + 1}`} data-tip="Remove">{ic('x', 'h-4 w-4')}</button></div>
