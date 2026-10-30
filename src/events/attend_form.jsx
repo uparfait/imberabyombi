@@ -16,3 +16,4 @@ const F = [field_spec('name', 'Full name', 'text', 0, 1), field_spec('email', 'E
 const MODES = [['Drawn', 'Draw'], ['Digital', 'Digital']];
 
 export const Tick = ({ text, sub }) => <div className="att_done" role="status">
+  <svg className="att_tick" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" /><path d="M15 27l7 7 15-16" /></svg>
