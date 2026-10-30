@@ -8,3 +8,4 @@ import { form_msg } from '../feedback/index.js';
 export function Cert_pick() {
   const [name, set_name] = useState('');
   return <div className="grid gap-3 sm:col-span-2">
+    <label className="sign_drop sm"><input type="file" name="cert_file" className="sr-only" onChange={e => set_name(e.target.files[0]?.name || '')} />
