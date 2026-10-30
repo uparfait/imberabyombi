@@ -45,3 +45,4 @@
   .ev_inv_acts .icon_btn { display: inline-grid; }
   .ev_inv_x:hover, .ev_inv_x:focus-visible { background: rgb(var(--warn)); color: #fff; }   /* removing: the warning colour, like Archive */
   .ev_inv_sub { display: none; color: rgb(var(--muted)); font-size: .75rem; }
+  .ev_inv_input { padding: .375rem .75rem; font-size: .875rem; }
