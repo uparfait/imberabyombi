@@ -32,3 +32,4 @@ export const PREP_ACT = {
   /* a signer's name, email and note; a new email brings its own colour */
   sign_rec_edit: t => { const r = rec_of(P.doc, t.dataset.id);
     modal({ title: 'Edit signer', help: 'They find the document under To sign with this email, and read the note before they sign.',
+      body: rec_body(r), submit: 'Save', on_submit: v => {
