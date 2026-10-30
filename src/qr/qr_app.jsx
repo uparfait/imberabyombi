@@ -37,3 +37,4 @@ export function Qr_app() {
       <div className={`qr_view ${scanning ? 'on' : ''}`}>
         <video ref={video} muted playsInline className={facing === 'user' ? 'mirror' : ''} />
         <i className="qr_corners" aria-hidden="true"></i>{scanning ? <i className="qr_line" aria-hidden="true"></i> : null}
+        {scanning ? null : <div className="qr_idle">
