@@ -36,3 +36,4 @@ every account starts empty.
   digital certificate**. People already in the system are suggested as you type a name. Once there is a signer the form
   folds into an **Add signer** button. **Edit signer** changes the name, email, note and certificate; **Remove** takes them
   and their fields off. A signer's note shows only when their **Note** chip is opened.
+- **Colours**: each signer's colour (their card's tint, avatar, tag and fields) comes from their email, through
