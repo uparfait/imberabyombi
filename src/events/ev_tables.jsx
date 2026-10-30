@@ -12,3 +12,4 @@ const sub = v => v ? <span className="ev_sub">{v}</span> : null;
 export function agenda_table(e, fade = false) {
   const ag = e.agenda || [], now = agenda_now(e);
   if (!ag.length) return <p className="text-sm text-muted">None yet</p>;
+  return <div className="ev_inv_box ev_tbl"><table className="ev_inv_table ev_ag_table">
