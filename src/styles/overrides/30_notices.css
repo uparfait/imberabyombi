@@ -9,3 +9,4 @@
   .notice_ic { display: grid; flex: none; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: var(--pill); }
   .notice.is_new::after { content: ''; flex: none; width: .5rem; height: .5rem; border-radius: var(--pill); background: rgb(var(--brand)); }
   .cal_role { display: block; width: max-content; max-width: 100%; margin-top: .125rem; padding: 0 .375rem; border-radius: var(--pill); overflow: hidden;
+    background: rgb(255 255 255 / .22); font-size: .5625rem; font-weight: 700; letter-spacing: .04em; line-height: 1rem; text-overflow: ellipsis; text-transform: uppercase; }
