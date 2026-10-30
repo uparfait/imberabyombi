@@ -20,6 +20,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
     Wednesday, 5 times"). Code: [`lib/repeat.js`](../src/lib/repeat.js) (the days) and
     [`lib/repeat_words.js`](../src/lib/repeat_words.js) (the words).
 - The calendar shows a recurring one on each day it happens, and your part in each item: Organiser, Co-organiser,
+  Presenter or Invited ([`events/my_role.js`](../src/events/my_role.js)).
 
 ## Location, organiser, audience
 - **Location**: *Physical* (venue or address) or *Virtual* (meeting link and joining notes, such as a passcode). All
