@@ -16,3 +16,5 @@ import { glossy, clay, glass } from './styles_b.js';
 import { glyph } from './glyph.js';
 import { sym } from './parts.js';
 import { palette } from './color.js';
+
+export { palette } from './color.js';
