@@ -43,3 +43,4 @@
   .field:has(> input[type=search]:placeholder-shown:not(:focus)) > label { transform: translate(2rem, -50%); }
   .pager { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .5rem .75rem; border-top: 1px solid rgb(var(--line)); }
   .pager:empty { display: none; }
+  /* Full-details view (row click): a COLUMN NAME | VALUE table, grouped by category when the schema has them.
