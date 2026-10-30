@@ -11,3 +11,5 @@ export const rec_body = r => <>
   <div className="field sm:col-span-2"><label htmlFor="sign_note_in">Note for this signer (optional)</label>
     <textarea id="sign_note_in" name="note" rows={3} maxLength={500} placeholder=" " defaultValue={r.note || ''} /></div>
   <label className="sign_check sm:col-span-2"><input type="checkbox" name="cert" defaultChecked={!!r.cert} />Must sign with a digital certificate</label></>;
+
+export const send_body = d => <div className="grid gap-4 sm:col-span-2">
