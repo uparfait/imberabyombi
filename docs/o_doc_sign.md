@@ -57,6 +57,7 @@ every account starts empty.
 ## Signing it yourself
 - Under **Save draft**, **Sign it myself** (in ink, apart from Send and Save) adds you to the signers as **You** and picks
   you under Placing for; place your signature or stamp fields. **Sign my fields** then opens the signing page with every
+  step (your signature drawn, typed or uploaded, your stamp made or uploaded, the agreement, the certificate when forced)
 ## Signing
 - The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
   their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
