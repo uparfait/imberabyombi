@@ -33,3 +33,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `account/`   | sign in, forgot password, 2-step code, authenticator app, set password                      |
 | `kit/`       | the design-system page (`/ui`), one file per specimen group                                |
 | `admin/`     | admin shell: sidebar, header tools, side panels, apps menus, nested navigation              |
+| `modules/`   | one view per admin module (`VIEWS`), the calendar and the task feature                      |
