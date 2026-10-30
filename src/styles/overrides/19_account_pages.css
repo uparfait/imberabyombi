@@ -47,3 +47,4 @@
   /* Attachments rise in one after another (not when the row is only re-drawn after a removal) */
   .files:not(.quiet) > .file { animation: file_in .35s var(--ease) both; animation-delay: calc(var(--i, 0) * 60ms); }
   @keyframes file_in { from { opacity: 0; transform: translateY(.5rem) scale(.88); } }
+  /* account pages (account/auth_shell.jsx): the brand colour with the white pattern, as the home page's Thanks block */
