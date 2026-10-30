@@ -33,3 +33,4 @@ export const INVITE_TABLE_ACT = {
 const btn = (act, icon, tip, cls, d) => <button type="button" className={`icon_btn h-8 w-8 ${cls}`} data-act={act} data-id={d.id} data-e={d.e} data-tip={tip} aria-label={tip}>{ic(icon, 'h-4 w-4')}</button>;
 const edit_row = (id, i) => <tr key={i.e} className="ev_inv_editing"><td>
   <input className="ev_inv_input" type="email" defaultValue={i.e} aria-label={`New address for ${i.e}`} autoFocus
+    onKeyDown={k => { if (k.key === 'Enter') { k.preventDefault(); save(id, i.e, k.currentTarget); } if (k.key === 'Escape') { k.stopPropagation(); stop(); } }} /></td>
