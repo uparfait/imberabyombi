@@ -18,3 +18,4 @@ const faces = d => <span className="sign_ev_faces">{d.recipients.slice(0, 5).map
   <span key={r.id} style={{ background: r.color }} title={r.name}>{initials(r.name)}</span>)}</span>;
 
 function row(d, a, i) {
+  const k = act_of(a), p = k === 'done' ? null : person(d, a), [icon, verb] = ACTS[k] || [];
