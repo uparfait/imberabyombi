@@ -42,6 +42,7 @@ export function kit() {
           {kit_block('lists', 'Lists', kit_lists())}
           {kit_block('actions', 'Actions', kit_actions())}
           {kit_block('forms', 'Forms', kit_forms(brand_hex))}
+          {kit_block('attend', 'Attendance', kit_attend())}
           {kit_block('media', 'Media', kit_media(brand_hex))}
           {kit_block('data', 'Tables', kit_tables())}
           {kit_block('overlays', 'Disclosure & overlays', kit_overlays())}
