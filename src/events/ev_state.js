@@ -19,3 +19,4 @@ export function ev_state(e, now = Date.now()) {
     return !next ? 'Past' : next === today && runs(e, today, now) ? 'Live' : 'Recurring';
   }
   const s = at(e.date, e.start, e.tz);
+  return now < s ? 'Upcoming' : runs(e, e.date, now) ? 'Live' : 'Past';
