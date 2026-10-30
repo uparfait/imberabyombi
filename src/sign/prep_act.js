@@ -64,6 +64,6 @@ export const PREP_ACT = {
       return stop(`${alone.name} has no field yet`, 'Every signer needs a signature or stamp field. Place one for them (they are picked under Placing for), or remove them, then send it.',
         `Place ${alone.name.split(' ')[0]}’s field`); }
     if (!d.title.trim()) d.title = d.file.replace(/\.pdf$/i, '');
-    modal({ title: 'Send for signing', help: 'Each signer finds it under To sign once they sign in with their email.', body: send_body(d), submit: 'Send', on_submit: send });
+    if (R.every(r => r.status === 'signed')) return modal({ title: 'Finish this document?', help: 'Everyone on it has signed: it moves to Completed, ready to download.', submit: 'Finish', on_submit: send });
   }
 };
