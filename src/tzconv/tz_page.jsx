@@ -8,3 +8,5 @@ import { pad, page_tz, h24, tz_parts, offset_min, zoned_to_utc, gmt, zone_list }
 import { ic } from '../icons/index.js';
 import { page_title } from '../ui/index.js';
 import { dt_attrs } from '../fields/index.js';
+
+const ymd_of = p => `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
