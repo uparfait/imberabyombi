@@ -42,3 +42,4 @@ export function track_full(e, now, t) {
 }
 
 /* the arrow keys while it is open: Back and Next */
+addEventListener('keydown', k => { const f = qs('.track_full:not([hidden])'), b = f && { ArrowLeft: 0, ArrowRight: 1 }[k.key];
