@@ -28,3 +28,4 @@ it opens in its own window, also offline (its files are kept by the service work
 ## How it reads codes
 The browser's own `BarcodeDetector` where it reads QR codes (Chrome on Android, macOS, ChromeOS); elsewhere (Chrome on
 Windows, Firefox, Safari) **jsQR**, loaded from the CDN the first time ([`qr_engine.js`](../src/qr/qr_engine.js)). The
+camera needs a secure page (https, or localhost while developing).
