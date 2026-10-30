@@ -31,3 +31,4 @@
   .ev_count b { color: rgb(var(--fg)); font-size: 1.25rem; font-weight: 600; font-variant-numeric: tabular-nums; }
   /* the QR code on the whole screen (events/qr_full.jsx): as large as the screen allows, the details beside it (under it
      on a tall screen) */
+  .qr_full { position: fixed; inset: 0; z-index: 90; display: grid; grid-template-columns: auto minmax(14rem, 26rem); align-items: center; justify-content: center;
