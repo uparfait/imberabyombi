@@ -4,3 +4,4 @@
    other, and a copy made while modules is still loading would fail. */
 import * as modules from '../modules/index.js';
 import { SHELL_ACT } from './act_shell.js';
+import { TABLE_ACT } from './act_tables.jsx';
