@@ -46,3 +46,4 @@ export const HASH_VIEW = [28, 24, 144, 144];
 const MARKS = new Map();
 export function mark3d(t, c = 'h-9 w-9', color = 'brand') {
   const hash = t === '#', px = Math.round(device_px(css_px(c))), k = `${t}|${hex(color)}|${px}`;
+  if (!MARKS.has(k)) MARKS.set(k, render(hash ? HASH : t, { style: 'glossy', colors: [hex(color)], size: '100%', px, view: hash ? HASH_VIEW : [42, 39, 116, 116] }));
