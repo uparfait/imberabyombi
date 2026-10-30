@@ -19,3 +19,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   signature. A new sign-in shows at once on any open page (other tabs too).
 
 ## The live screen
+`…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)): the whole window, no sidebar. Its title, description
