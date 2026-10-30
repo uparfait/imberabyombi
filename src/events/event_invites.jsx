@@ -76,6 +76,7 @@ export function invites_card(e, st, can) {
             aria-label={`Change ${m}`} autoFocus onKeyDown={chip_keys(e.id, m)} onBlur={k => chip_save(e.id, m, k.currentTarget)} /></span>
         : <span key={m} className="ev_chip"><button type="button" className="ev_chip_text" data-act="ev_wait_edit" data-e={m} data-tip="Change this address">{m}</button>
           <button type="button" className="ev_chip_x" data-act="ev_wait_edit" data-e={m} aria-label={`Change ${m}`}>{ic('edit', 'h-3 w-3')}</button>
+          <button type="button" className="ev_chip_x" data-act="ev_unwait" data-e={m} aria-label={`Take ${m} off the list`}>{ic('x', 'h-3 w-3')}</button></span>)}</div> : null}
       <button type="button" className="btn btn_primary btn_sm justify-self-start" data-act="ev_invite" data-id={e.id}>{ic('send', 'h-4 w-4')}{n ? `Send ${n_of(n, 'invite', 'invites')}` : 'Send invites'}</button>
     </div> : null}
     {inv.length ? invite_table(e, open) : <p className="text-sm text-muted">No one is invited yet.</p>}
