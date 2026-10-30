@@ -10,3 +10,5 @@ import { cfg } from '../config/index.js';
 import { ic } from '../icons/index.js';
 import { to } from '../router/index.js';
 import { help_tip } from '../ui/index.js';
+
+const FONTS = ['Figtree', 'Bricolage Grotesque', 'system-ui'];
