@@ -27,3 +27,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.date_hint`                            | the format hint shown while typing a date or time                |
 | `.tab` / `.seg`                         | underlined tabs / segmented button                               |
 | `.pop` / `.menu_item` / `.menu_danger`  | popover menu and its items                                       |
+| `.pop.pop_fixed`                         | a menu drawn at the top of the page (portal), placed under its button, above everything (the account menu) |
