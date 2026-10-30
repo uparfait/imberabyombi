@@ -33,3 +33,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.multi_value`                          | the visible box of a searchable multiple select                  |
 | `.filebox` / `.files` / `.file`         | file field: tiles of the chosen files                            |
 | `.spinner_segmented_svg`                | THE loading indicator (`spinner()` in JS)                        |
+| `.tile` / `.tile.is_on`                 | selectable grid tile (a parking slot), `is_on` when taken        |
