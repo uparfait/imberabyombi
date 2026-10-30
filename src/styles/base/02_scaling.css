@@ -26,6 +26,7 @@
   html { scrollbar-gutter: stable; }
   /* ...but none where the page never scrolls: full-window pages (the editor, Open This Event), something on the whole
      screen (which also stops the page behind from scrolling) */
+  html.full_page, html:fullscreen, html:has(:fullscreen, .qr_full:not([hidden]), .track_full:not([hidden])) { scrollbar-gutter: auto; }
   html:has(dialog[open]), html:has(#sidebar_scrim.on) { overflow: hidden; }
   :where(dialog, dialog *, #picker, #sidebar_scroll, .panel_in) { overscroll-behavior: contain; }
   body {
