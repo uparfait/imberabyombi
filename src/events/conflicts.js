@@ -18,3 +18,4 @@ export function conflicts(r, self) {
   if (!r.date) return [];
   const p = parse_d(r.date), from = ymd(add_d(p, -1)), to = ymd(add_d(p, r.kind === 'Recurring' ? 183 : 1)), mine = spans(r, from, to);
   return mine.length ? ['events', 'activities'].flatMap(c => db.list(c).filter(o => o.id !== self && (same_place(r, o) || same_host(r, o))).flatMap(o => {
+    const hit = spans(o, from, to).find(([s, e]) => mine.some(([a, b]) => a < e && s < b));
