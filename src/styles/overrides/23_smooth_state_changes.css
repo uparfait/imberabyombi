@@ -44,3 +44,4 @@
   /* Headers never draw a bottom border, scrolled or not */
   .hdr { border-bottom: 0; }
   .compose { display: grid; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); transition: border-color .2s; }
+  .compose:focus-within { border-color: rgb(var(--brand) / .55); }
