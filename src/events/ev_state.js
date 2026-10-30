@@ -17,3 +17,5 @@ export function ev_state(e, now = Date.now()) {
   if (e.kind === 'Recurring' && e.repeat) {
     const p = tz_parts(e.tz || page_tz(), now), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`, next = repeat_next(e.repeat, e.date, today);
     return !next ? 'Past' : next === today && runs(e, today, now) ? 'Live' : 'Recurring';
+  }
+  const s = at(e.date, e.start, e.tz);
