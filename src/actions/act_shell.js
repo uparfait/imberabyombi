@@ -10,3 +10,4 @@ import { close_dialog, request_close, ask, copy, tip, show_in_dialog } from '../
 import { set_native_value } from '../fields/index.js';
 import { drawer_content } from '../site/index.js';
 import { redraw_charts } from '../charts/index.js';
+import { header_line } from '../behaviors/index.js';
