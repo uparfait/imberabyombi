@@ -37,5 +37,7 @@
     {
       "source": "/qr-scan",
       "destination": "/qr-scan/",
+      "permanent": false
+    }
   ]
 }
