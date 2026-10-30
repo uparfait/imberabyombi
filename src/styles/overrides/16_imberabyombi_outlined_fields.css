@@ -69,3 +69,4 @@
   .when_text { white-space: nowrap; pointer-events: none; }
   .when_dash { color: rgb(var(--muted)); }
   .when_block .field_err { position: absolute; top: 100%; left: 0; white-space: nowrap; }
+  /* the time zone block: its select is the real field (the picker opens on click and searches the zones), see-through */
