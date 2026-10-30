@@ -5,7 +5,7 @@
 import { shade, mix, blend } from './color.js';
 import { lin, rad, glin, gvert, sym, use, pl, vol, extrude, deep } from './parts.js';
 
-export function classic(G, C, i) {
+export function classic(G, C, i, k) {
   const face = C.ht ? C.t : '#ffffff';
   const d = rad(i + 'b', [[0, shade(C.p, 16, -4)], [.5, C.p], [1, C.hs ? shade(C.s, -10) : shade(C.p, -17, 6)]], '34%', '22%', '88%')
     + lin(i + 'c', [[.55, shade(C.p, -30), 0], [1, shade(C.p, -30), .45]])
