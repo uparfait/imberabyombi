@@ -61,7 +61,7 @@ export const events_schema = {
     return {
       title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-10, 30))), start: `${pad(h)}:00`, end: hm(h, 120), venue: lorem.t(2), capacity: c,
       registered: lorem.int(0, c), status: ['Scheduled', 'Scheduled', 'Scheduled', 'Postponed', 'Scheduled', 'Cancelled'][i], about: lorem.s(), kind: i === 2 ? 'Recurring' : 'Upcoming',
-      repeat: i === 2 ? { freq: 'monthly', every: 1, by: 'week', end: 'after', count: 6 } : null, ...seed_more(), audience: Math.round(c * .8)
+      repeat: i === 2 ? { freq: 'monthly', every: 1, by: 'week', end: 'after', count: 6 } : null, ...seed_more(), audience: Math.round(c * .8), agenda: ag_seed(h)
     };
   }
 };
