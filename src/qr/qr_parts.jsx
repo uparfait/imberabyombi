@@ -27,3 +27,4 @@ export const top_bar = () => <header className="qr_top">
 /* what was found */
 export function found_card(text) {
   const link = secure(text), web = !link && /^http:\/\//i.test(text.trim());
+  return <section className={`qr_found ${link ? 'is_link' : web ? 'is_warn' : ''}`} aria-live="polite">
