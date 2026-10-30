@@ -4,3 +4,4 @@ import { pad, tz_parts, page_tz, repeat_next } from '../lib/index.js';
 
 export function agenda_now(e, now = Date.now()) {
   if (!e?.agenda?.length || !e.date || e.status === 'Cancelled' || e.tbd) return -1;
+  const p = tz_parts(e.tz || page_tz(), now), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`, hm = `${pad(p.h)}:${pad(p.mi)}`;
