@@ -20,3 +20,4 @@ const has = (o, k) => Object.hasOwn(o, k);
 /* behaves like the plain merged object: ACT[k], k in ACT, Object.keys(ACT) */
 export const ACT = new Proxy(OWN, {
   get: (o, k) => (has(o, k) ? o[k] : has(task(), k) ? task()[k] : undefined),
+  has: (o, k) => has(o, k) || has(task(), k),
