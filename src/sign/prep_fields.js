@@ -27,3 +27,6 @@ export function add_field(type, page, cx, cy) {
   const f = { id: uid(), type, rid: P.rid, page, w, h, x: clamp(cx - w / 2, 0, 1 - w), y: clamp(cy - h / 2, 0, 1 - h) };
   P.doc.fields.push(f); P.sel = f.id; prep_dirty(); rerender();
   qs(`[data-fid="${f.id}"]`)?.classList.add('sf_new');
+}
+
+export function del_field(id) {
