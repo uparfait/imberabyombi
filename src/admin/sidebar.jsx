@@ -27,3 +27,4 @@ export const side_spin = a => { SIDE.busy = a.getAttribute('href'); redraw_slot(
 
 const create_menu = create => <div className="relative">
   <button className="btn h-14 gap-3 rounded-2xl border border-line bg-surface px-5 text-fg shadow-soft hover:bg-surface-2"
+    data-act="pop" data-pop="pop_create" aria-haspopup="menu">
