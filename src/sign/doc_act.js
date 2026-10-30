@@ -19,3 +19,4 @@ export const DOC_ACT = {
     catch (e) { console.error(e); notify('The PDF could not be built. Check your connection and try again.', 'bad', 'Download failed'); }
   },
   sign_doc_del: t => { const d = find_doc(t.dataset.id);
+    if (kept_for_good(d)) return notify('Someone has signed it, so it is kept. Archive it instead.', 'warn', 'A signed document cannot be deleted');
