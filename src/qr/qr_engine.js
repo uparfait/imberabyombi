@@ -3,3 +3,5 @@
    frame every 250 ms until a code is found (the camera then stops) or stop(); read_image(file) reads one picture.
    secure(text): the link, when the text is one that starts with https; else null. */
 import { load_script } from '../editor/core/utils.js';
+
+const JSQR = ['https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js', 'https://unpkg.com/jsqr@1.4.0/dist/jsQR.js'];
