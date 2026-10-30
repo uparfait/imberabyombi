@@ -58,11 +58,10 @@ function Self_view({ id }) {
 /* the overlay in use (#viewer, wide) */
 const overlay = view => { const v = qs('#viewer'); show_in_dialog('viewer', view); v.classList.add('viewer_table');
   v.addEventListener('close', () => v.classList.remove('viewer_table'), { once: true }); };
+
 export const SELF_ACT = {
   sign_self: () => { const me = who(); if (!me.email) return;
     const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
     Object.assign(P, { rid: r.id, adding: false }); prep_dirty(); rerender();
-    notify('Place your signature or stamp on the document, then sign them.', 'ok', 'You sign it too'); },
-  sign_self_go: () => { prep_save(); go(`/admin/sign/sign/${P.doc.id}`); },
-  sign_preview: t => { if (P.doc) prep_save(); show_in_dialog('viewer', () => <Preview id={t.dataset.id} />); }
+    notify('Place your signature or stamp on the document, then Preview and sign (at the bottom right).', 'ok', 'You sign it too'); },
 };
