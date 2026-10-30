@@ -39,3 +39,4 @@ export const PREP_ACT = {
         if (moved) recolor(P.doc);
         prep_dirty(); rerender(); } }); },
   sign_rec_del: t => { const r = rec_of(P.doc, t.dataset.id), n = P.doc.fields.filter(f => f.rid === r.id).length;
+    if (!n) return remove_rec(r);
