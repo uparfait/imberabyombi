@@ -24,3 +24,4 @@ export function Attend_form({ c, id, demo }) {
   if (done) return <Tick text="Attendance submitted" sub={done} />;
   const submit = async e => {
     e.preventDefault(); const f = e.currentTarget; if (!validate(f)) return;
+    const d = Object.fromEntries(new FormData(f)), email = d.email.trim().toLowerCase(), name = d.name.trim(), at = new Date().toISOString();
