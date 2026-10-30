@@ -44,3 +44,4 @@ export const SHELL_ACT = {
   /* Copy: a .copy_btn shows "Copied" with a check for 1.6 s (its icon path and its label's text change, then change back) */
   copy: t => { const btn = t.matches('.copy_btn'); copy(t.dataset.text, t.dataset.what || 'Link', btn && !staff_page());
     if (!btn || t._was) return; const s = t.querySelector('span'); t._was = [t.querySelector('path')?.getAttribute('d'), s?.textContent];
+    icon_to(t, 'check'); if (s) s.textContent = 'Copied'; t.classList.add('done');
