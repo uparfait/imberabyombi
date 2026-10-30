@@ -30,3 +30,4 @@ after), the count and the link. **Menu** (tiles): Record/View minutes, Add task 
 ## Minutes and follow-ups
 - **Record/View minutes** (View This Event) opens the document editor on that day's own document,
   `/admin/docs?doc=m_<id>`, titled "Minutes · <title> · <date>" and started with who attended and the agenda; a
+  recurring one gets one per day. The minutes live in that document.
