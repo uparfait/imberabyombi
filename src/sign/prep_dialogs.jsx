@@ -13,3 +13,4 @@ export const rec_body = r => <>
   <label className="sign_check sm:col-span-2"><input type="checkbox" name="cert" defaultChecked={!!r.cert} />Must sign with a digital certificate</label></>;
 
 export const send_body = d => <div className="grid gap-4 sm:col-span-2">
+  <p className="text-sm text-muted">“{d.title}” · {d.pages.length} page{d.pages.length === 1 ? '' : 's'}</p>
