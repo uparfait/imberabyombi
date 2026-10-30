@@ -63,3 +63,4 @@ export const pick = {
   slide(n) { slide_in(this.el.querySelectorAll('.pk_title, .pk_grid, .pk_years, .pk_cal > .grid'), n); },
   filter(q) {
     const list = this.el.querySelector('.pk_list'); if (!list) return; q = q.toLowerCase().trim(); let any = false;
+    qsa('.pk_item', list).forEach(b => { b.hidden = !!q && !b.textContent.toLowerCase().includes(q); any ||= !b.hidden; });
