@@ -35,8 +35,6 @@ export function open_form(c, id, preset = {}, part = null) {
   if (f && f !== before) sync_when(f); else setTimeout(() => sync_when(qs('#modal form')));
 }
 
-/* fields shown only for some statuses (F(..., { when: 'Done' }) or '!Done'); hidden ones are disabled, so they are not sent or checked */
-export function sync_when(form) { const st = form?.elements.status?.value; if (st == null) return;
-  qsa('[data-when]', form).forEach(el => { const w = el.dataset.when, on = w.startsWith('!') ? st !== w.slice(1) : st === w;
+/* data-when: "Done" or "!Done" (the status: F(..., { when: 'Done' })), or "<field>=A|B" / "<field>!=A" (any field of the
     el.hidden = !on; el.querySelectorAll('input, select, textarea').forEach(i => i.disabled = !on); });
   qsa('[data-fill-rows]', form).forEach(fill_rows); }
