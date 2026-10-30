@@ -24,3 +24,4 @@
   .viz_plot .series_line { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   .viz_plot .mark_dot { stroke: rgb(var(--surface)); stroke-width: 2; }
   .viz_plot .hit_area { fill: transparent; }
+  .viz_plot .hit_line { stroke: transparent; stroke-width: 16; }
