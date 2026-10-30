@@ -36,3 +36,4 @@ export function nav_page(o) {
   const about = [lorem.p(3), lorem.p(2)], recent = Array.from({ length: 5 }, (_, i) => activity(i));
   return <>{top}<section className="mt-6 grid gap-3 sm:grid-cols-3 sm:gap-4" aria-label="Key numbers">{nums.map(number)}</section>
     <div className="mt-6 grid gap-6 lg:grid-cols-3"><section className="card p-6 lg:col-span-2"><h3 className="text-lg">About</h3>
+      <p className="mt-3 text-muted">{about[0]}</p><p className="mt-3 text-muted">{about[1]}</p></section>
