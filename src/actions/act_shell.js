@@ -32,3 +32,4 @@ export const SHELL_ACT = {
   close_viewer: () => close_dialog(qs('#viewer')),
   clear_search: t => { const i = t.parentElement.querySelector('input[type=search]'); if (!i) return; set_native_value(i, ''); i.dispatchEvent(new Event('input', { bubbles: true })); i.focus({ preventScroll: true }); },
   run_search: t => { const i = t.parentElement.querySelector('input[type=search]'); if (!i) return; i.focus({ preventScroll: true }); i.dispatchEvent(new Event('input', { bubbles: true })); },
+  msg_x: t => { const m = t.closest('.msg'); if (!m) return; m.classList.add('msg_out'); setTimeout(() => (react_owned(m) ? (m.hidden = true) : m.remove()), reduced() ? 0 : 300); },
