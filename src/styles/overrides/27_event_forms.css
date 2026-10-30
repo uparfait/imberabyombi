@@ -5,3 +5,4 @@
   .seg_field { display: grid; justify-items: start; gap: .5rem; min-width: 0; }
   .seg_cap { display: flex; align-items: center; gap: .25rem; color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }
   .seg_field .seg span { white-space: nowrap; }
+  /* How a recurring one repeats (fields/repeat_field.jsx): Repeats and Every on one line, labelled rows of choices (the
