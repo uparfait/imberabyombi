@@ -51,6 +51,7 @@ every account starts empty.
   it, after asking.
 - Changes save a moment after each one (and on Save, and when you leave). **Save draft** saves it as it is: a signer
   still typed in the form is added first (a half-filled form stops the save and says so), and the signer whose fields you
+  were placing is remembered, so the draft reopens on them. **Send** checks that there is a signer, a field,
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
 
 ## Signing
