@@ -15,3 +15,4 @@
   .rp_row { display: grid; gap: .5rem; min-width: 0; }
   .rp_lab { display: flex; align-items: center; gap: .25rem; color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }
   .rp_body { display: grid; justify-items: start; gap: .625rem; min-width: 0; }
+  .rp_chips { display: flex; flex-wrap: wrap; gap: .375rem; }
