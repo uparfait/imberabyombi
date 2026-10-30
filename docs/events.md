@@ -46,3 +46,4 @@ On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.js
 - **Files**: every email address in the file is found ([`events/invite_emails.js`](../src/events/invite_emails.js)).
   - `.xlsx`, `.xlsm` and `.ods` are read in the browser (cells only).
   - `.xls` is read with SheetJS, loaded on first use.
+  - `.csv`, `.tsv` and `.txt` are read as text.
