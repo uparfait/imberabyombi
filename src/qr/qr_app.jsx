@@ -4,9 +4,7 @@
    it stops once it finds a code, and what it found comes up in a sheet from the bottom with Scan again. */
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { ic } from '../icons/index.js';
-import { start, stop, cameras, read_image } from './qr_engine.js';
-import { on_change, can_install } from './qr_install.js';
-import { top_bar, found_card, recent_list } from './qr_parts.jsx';
+import { start, stop, has_torch, torch } from './qr_engine.js';
 
 const KEY = 'loremds:v1:qr_recent';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
