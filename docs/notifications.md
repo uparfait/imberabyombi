@@ -5,3 +5,4 @@ most urgent first. Notices are worked out from the data ([`notices.js`](../src/a
 - tasks assigned to you, due within a day or overdue;
 - cars parked longer than `cfg.overstay_hours`;
 - events you organise, co-organise, present at or are invited to: starting soon, postponed, cancelled, an invitation;
+- for those who manage them: overdue books, reservations to review, items low on stock.
