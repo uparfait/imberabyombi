@@ -20,3 +20,4 @@ const edit_field = (d, f, sel) => { const r = rec_of(d, f.rid), [l, i] = KINDS[f
 export const fields_on = (d, page, o) => d.fields.filter(f => f.page === page).map(f => {
   if (o.mode === 'edit') return edit_field(d, f, o.sel);
   const r = rec_of(d, f.rid), [l, i] = KINDS[f.type], v = o.pending?.[f.id] || o.marks?.[f.id];
+  if (o.mode === 'sign' && f.rid === o.me) return <button key={f.id} type="button" className={`sf ${v ? 'sf_done' : 'sf_todo'}`} data-fid={f.id}
