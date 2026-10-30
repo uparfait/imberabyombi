@@ -24,3 +24,4 @@ body { background: rgb(var(--bg)); }
 @keyframes qr_sweep { to { top: 85%; } }
 @media (prefers-reduced-motion: reduce) { .qr_line { animation: none; top: 50%; } }
 .qr_idle { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1.25rem; padding: 2rem; color: #fff; text-align: center; }
+.qr_idle_ic { display: grid; width: 5rem; height: 5rem; place-items: center; border-radius: 1.5rem; background: rgb(255 255 255 / .08); }
