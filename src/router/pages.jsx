@@ -33,3 +33,4 @@ export function admin_page(r) {
   if (!auth.user) return redirect('/login?next=' + encodeURIComponent(r.path));
   if (!auth.role()) { auth.logout(); return redirect('/login'); }
   const mod = r.path.split('/')[2] || MODS.find(m => auth.can(m.k))?.k || 'settings', m = MODS.find(x => x.k === mod);
+  route.mod = mod; lorem.seed(hash_str(mod));
