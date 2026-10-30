@@ -33,3 +33,4 @@ Open dialogs sit in the browser's top layer. `#toasts` and `#loader` are manual 
 `show_dialog()`, which lifts them back above it, so notifications and the loader are never hidden behind a dialog.
 
 ## Popover menus
+`<button data-pop="pop_menu">` toggles `<div id="pop_menu" className="pop" hidden>`. A click outside closes it, `Esc`
