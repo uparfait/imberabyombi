@@ -39,3 +39,4 @@
   /* below 768 px (no rail; its buttons are in the account menu) the panel opens over the page as a card */
   @media (max-width: 767.98px) {
     #side_panel[data-open=true] { position: fixed; inset: 4.5rem .75rem .75rem; z-index: 45; display: block; width: auto; height: auto; } }
+  .panel_in { width: 22rem; }
