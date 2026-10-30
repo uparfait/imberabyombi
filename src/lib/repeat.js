@@ -16,3 +16,4 @@ const or = (xs, x) => xs?.length ? xs : [x];
 export const week_of = f => ({ weeks: [nth(f) > 4 ? -1 : nth(f)], wdays: [f.getDay()] });
 
 /* monthly and yearly: the day in the month (dates, or nth weekdays) */
+const in_month = (r, d, f) => r.by === 'week'
