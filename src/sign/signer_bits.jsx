@@ -3,3 +3,4 @@
    is the row of chips (lead: a chip first, e.g. "Placing fields") and note_text(r) the open note under it; NOTE_ACT opens
    and closes a note. */
 import { ic } from '../icons/index.js';
+import { rerender } from '../store/index.js';
