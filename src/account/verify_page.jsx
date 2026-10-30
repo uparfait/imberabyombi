@@ -18,7 +18,7 @@ export function verify_page() {
       <button type="button" className="btn btn_ghost -mt-3 w-full" data-act="otp_resend" id="otp_resend" disabled>Resend code</button>
     </form>
     <a href={to('/authenticator')} className="auth_row mt-6">{ic('shield', 'h-5 w-5 shrink-0 text-muted')}<span className="min-w-0 flex-1">
-      <b className="block font-medium">Set up an authenticator app</b><small className="text-muted">Get codes on your phone, even offline</small></span>
+      <b className="block font-medium">Set up an authenticator app</b></span>
       {ic('chev_r', 'h-4 w-4 shrink-0 text-muted')}</a>{auth_links('verify')}
   </>);
 }
