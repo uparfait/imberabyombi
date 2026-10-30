@@ -23,3 +23,5 @@ function Agenda_editor({ v }) {
       <p className="ag_cap room_full">Presenter</p>{box(x.k, 'p_name', 'Name', x.p_name)}{box(x.k, 'p_email', 'Email', x.p_email, { type: 'email' })}
       {box(x.k, 'p_title', 'Title', x.p_title, { cls: 'room_full' })}</div></div>)}
     <button type="button" className="btn btn_outline btn_sm justify-self-start" onClick={() => set([...items, { k: uid() }])}>{ic('plus', 'h-4 w-4')}Add item</button></div>;
+}
+export const agenda_field = (f, v) => <div key={f.k} className="room sm:col-span-2"><p className="ag_cap mb-2">{f.l}</p><Agenda_editor v={v} /></div>;
