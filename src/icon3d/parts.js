@@ -31,6 +31,8 @@ const nphi = z => .3989 * Math.exp(-z * z / 2), ncdf = z => 1 / (1 + Math.exp(-1
 const num = v => +v.toFixed(3);
 /* a depth or extrusion colour: less dark on small icons, so a sub-pixel extrusion does not read as a black outline */
 export const deep = (c, dl, k, ds = 0) => shade(c, dl * (.6 + .4 * Math.min(k, 1)), ds);
+
+/* vol(id, o, k): optional goo (round and thicken), then diffuse shading and a specular highlight.
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
   if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
   if (o.flat) return f + '</filter>';
