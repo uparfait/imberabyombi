@@ -27,3 +27,4 @@ export function Attend_form({ c, id, demo }) {
     const d = Object.fromEntries(new FormData(f)), email = d.email.trim().toLowerCase(), name = d.name.trim(), at = new Date().toISOString();
     const sig = mode === 'Drawn' ? await PAD.get() : `${name} · ${email} · ${at} · ${hash_str(email + at).toString(16).toUpperCase()}`;
     if (!sig) return set_err('Sign in the box.');
+    if (!demo && !db.list('attendees').some(a => a.ref === id && a.email === email))
