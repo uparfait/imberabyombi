@@ -8,7 +8,7 @@ import { status_chip } from './sign_list.jsx';
 export function sign_done(d) {
   const r = my_rec(d), all = d.status === 'completed';
   return <div className="sign_main page_enter grid place-items-center">
-    <section className="card w-full max-w-md p-7 text-center sm:p-9">
+    <section className="card w-full max-w-md p-9">
       <span className="sign_done_badge">{i3('check', 'h-20 w-20', 'ok')}</span>
       <h1 className="mt-4 text-2xl sm:text-3xl">Signing complete</h1>
       <p className="mt-1 text-muted">You signed “{d.title}”.</p>
