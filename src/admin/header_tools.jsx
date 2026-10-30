@@ -26,3 +26,4 @@ export function account_menu(n = '') {
             <a href={to('/')} className="menu_item">{ic('globe', 'h-4 w-4 text-muted')}Public website</a>
             <button className="menu_item menu_danger" data-act="logout">{ic('logout', 'h-4 w-4 text-muted')}Sign out</button></div>
           <div className="mt-2 rounded-2xl bg-surface-2 p-4">
+            <p className="flex items-center gap-2 text-sm">{ic('box', 'h-4 w-4 text-muted')}{`${pct}% of 5 MB browser storage used`}</p>
