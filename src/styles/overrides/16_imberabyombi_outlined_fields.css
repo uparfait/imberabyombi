@@ -86,3 +86,4 @@
   .when_dash { flex: none; color: rgb(var(--muted)); }
   .when_block .field_err { position: absolute; top: 100%; left: 0; white-space: nowrap; font-size: .75rem; }
   @container when (max-width: 30rem) { .when_long { display: none; } .when_short { display: inline; } .when_row { font-size: clamp(.625rem, 3.2cqi, .9375rem); } }
+  @container when (max-width: 22rem) {
