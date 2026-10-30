@@ -35,3 +35,4 @@ export function render(input, o = {}) {
   const G = glyph(input, FONTS[style] || DISPLAY), i = 'i3d' + (++n).toString(36) + Math.random().toString(36).slice(2, 5);
   const px = +o.px || (typeof s === 'number' && s > 0 ? s : 200), k = px / view[2];   /* device px per unit */
   const [defs, body] = MAKERS[style](G, C, i, k);
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${s}" height="${s}" viewBox="${view.join(' ')}" `
