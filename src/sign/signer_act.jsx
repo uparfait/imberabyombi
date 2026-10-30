@@ -41,7 +41,7 @@ async function finish() {
   d.fields.forEach(f => { if (S.pending[f.id]) { f.done = true; f.at = now; } });
   Object.assign(r, { status: 'signed', signed_at: now }); log(d, `${r.name} signed`, 'sign', r.email);
   if (!own && d.recipients.every(x => x.status === 'signed')) { Object.assign(d, { status: 'completed', completed_at: now }); log(d, 'Everyone signed: the document is complete', 'done'); }
-  if (own) { save_doc(d); S.pending = {}; notify('Add other signers and send it, or preview it and download your copy.', 'ok', 'You signed it');
+  /* your own draft: signed in its Preview and sign overlay, the draft takes the signed copy and the overlay shows Download a copy */
     return go(`/admin/sign/edit/${d.id}`); }
   save_doc(d); S.pending = {}; go(`/admin/sign/done/${d.id}`);
 }
