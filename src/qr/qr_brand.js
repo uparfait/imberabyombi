@@ -15,3 +15,4 @@ export const brand = () => { const b = tokens().brand; return HEX.test(b || '') 
 const mark = (c, n) => render(HASH, { style: 'glossy', colors: [c], size: n, px: n, view: HASH_VIEW });
 const png = (c, n, k, bg) => new Promise((res, rej) => { const i = new Image();
   i.onload = () => { const cv = document.createElement('canvas'), s = n * k; cv.width = cv.height = n; const x = cv.getContext('2d');
+    if (bg) { x.fillStyle = bg; x.fillRect(0, 0, n, n); } x.drawImage(i, (n - s) / 2, (n - s) / 2, s, s); res(cv.toDataURL('image/png')); };
