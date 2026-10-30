@@ -10,6 +10,7 @@ import { found_card } from './qr_parts.jsx';
 import { qr_live } from './qr_live.jsx';
 
 const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site in the browser’s settings, then try again.',
+  NotFoundError: 'No camera was found.', NotReadableError: 'Another app is using the camera.' };
 
 export function Qr_app() {
   useSyncExternalStore(on_change, can_install);   /* Install shows when the browser offers it */
