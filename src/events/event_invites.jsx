@@ -33,6 +33,7 @@ const take = (id, input) => { if (!input?.value.trim()) return; const v = input.
 function chip_save(id, old, input) {
   if (wait.edit !== old) return; const v = input.value.trim().toLowerCase(), e = db.find('events', id);
   if (v && v !== old) {
+    if (find_emails(v)[0] !== v) { wait.note = `Not an email address: ${v}.`; return rerender(); }
 const upload = (id, input) => { const file = input.files[0]; input.value = ''; if (!file) return;
   request(async () => { try { add(id, await emails_in_file(file), [], file.name); }
     catch { notify(`${file.name} could not be read. Save it as .xlsx or .csv and try again.`, 'bad', 'File not read'); } }, { btn: input.closest('label') }); };
