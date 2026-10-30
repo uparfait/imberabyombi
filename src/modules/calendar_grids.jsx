@@ -27,3 +27,4 @@ export function week_grid(d, items) {
   const hour = h => <span key={h} className="absolute right-2 -translate-y-1/2 text-[0.6875rem] text-muted" style={{ top: `${(h + 1) * 3}rem` }}>{fmt_hour(h + 1)}</span>;
   const day = x => { const k = ymd(x);
     return <div key={k} className={`hour_lines relative border-l border-line ${k === td ? 'bg-brand/[.03]' : ''}`} data-act="slot" data-d={k}>
+      {items.filter(i => i.date === k && !i.all_day).map(chip)}{k === td ? now_line : null}</div>; };
