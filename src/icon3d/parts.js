@@ -6,6 +6,7 @@
    turns into a 1-bit mask (boxy circles) and the lighting sees a one-pixel cliff (a hard black rim). k, the device pixels
    per unit (px / 200, from render()), sets every number below so small icons get the same edges as large ones. */
 import { shade } from './color.js';
+
 const stop = ([o, c, a = 1]) => `<stop offset="${o}" stop-color="${c}"${a < 1 ? ` stop-opacity="${a}"` : ''}/>`;
 const US = ' gradientUnits="userSpaceOnUse"';
 
@@ -23,8 +24,7 @@ export const pl = (G, x, y, s, paint) => `<svg x="${x}" y="${y}" width="${s}" he
 export const blur = (id, sd, r = '-60%') =>
   `<filter id="${id}" x="${r}" y="${r}" width="${-2 * parseFloat(r) + 100}%" height="${-2 * parseFloat(r) + 100}%"><feGaussianBlur stdDeviation="${sd}"/></filter>`;
 
-/* o = { goo, flat, bevel, surf, spec, exp, shade } */
-export function vol(id, o) {
+/* in device pixels: the goo's edge ramp, the smallest goo worth doing, the smallest bevel, the least extrusion depth, the
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
   if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
   if (o.flat) return f + '</filter>';
