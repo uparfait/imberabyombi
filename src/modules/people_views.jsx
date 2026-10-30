@@ -40,3 +40,4 @@ VIEWS.attendance = () => {
       <div>{!mine ? <button className="btn btn_primary" data-act="clock" data-v="in">{ic('check', 'h-4 w-4')}Check in</button>
         : !mine.out ? <button className="btn btn_ink" data-act="clock" data-v="out">{ic('logout', 'h-4 w-4')}Check out</button> : badge(mine.status)}</div></section>
     {stat_row([['Present today', count('Present'), 'check', 'ok'], ['Late', count('Late'), 'clock', 'warn'], ['Absent', count('Absent'), 'x', 'bad'],
+      ['Excused', count('Excused'), 'note', 'info']])}
