@@ -42,3 +42,4 @@ export function agenda_ok(f, s, e, old = []) {
     return k < 0 || bad(f.elements[s && old[k].from < s ? 'start' : 'end'], `Agenda item ${k + 1} (${fmt_time(old[k].from)} – ${fmt_time(old[k].to)}) is outside.`); }
   const its = els.map((el, n) => ({ n, from: to24(val(el, 'from')), to: to24(val(el, 'to')), fi: el.querySelector('[data-ag=from]'), ti: el.querySelector('[data-ag=to]') }))
     .sort((a, b) => a.from.localeCompare(b.from));
+  for (const [k, x] of its.entries()) { const p = its[k - 1];
