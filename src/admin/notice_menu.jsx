@@ -17,3 +17,4 @@ export function notice_menu(n = '') {
       <div className="flex min-h-10 items-center justify-between gap-2 px-2"><p className="font-semibold">Notifications</p>
         {fresh ? <button type="button" className="btn btn_ghost btn_sm" data-act="notice_all">Mark all read</button> : null}</div>
       {all.length ? <ul className="notice_list">{all.map(x => <li key={x.id}>
+        <button type="button" className={`notice ${read.has(x.id) ? '' : 'is_new'}`} data-act="notice_open" data-id={x.id} data-href={x.href}>
