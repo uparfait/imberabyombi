@@ -18,6 +18,7 @@ const save = (id, d, title, text) => { db.upsert('events', { id, ...d }); rerend
 const told = e => e.invites?.length ? ` The ${e.invites.length} people invited were told by email.` : '';
 const reason = (v = '') => <div key="reason" className="field sm:col-span-2"><label htmlFor="ev_reason">Reason (optional)</label>
   <textarea id="ev_reason" name="reason" rows={3} placeholder=" " defaultValue={v} /></div>;
+const WHEN = [{ k: 'date', l: 'Date', t: 'date' }, { k: 'start', l: 'Starts', t: 'time' }, { k: 'end', l: 'Ends', t: 'time' }, { k: 'tz', l: 'Time zone', t: 'tz' }];
 
 export const EV_ACT = {
   ...INVITE_ACT,
