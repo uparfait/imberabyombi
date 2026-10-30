@@ -28,3 +28,4 @@ VIEWS.dashboard = () => {
         {page_now().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
         <h2 className="mt-1 text-3xl text-fg sm:text-5xl">{`Welcome, ${first}`}</h2><p className="mt-2 max-w-xl text-muted">{lorem.s()}</p></div>
       <span className="chip bg-surface-2 px-3 py-1 text-fg">{ic('shield', 'h-3.5 w-3.5')}{r.name}</span></section>
+    {stats.length ? <section className="mt-6 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4" aria-label="Key numbers">{stats.map(stat)}</section> : null}
