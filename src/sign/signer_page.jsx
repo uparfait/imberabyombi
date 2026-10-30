@@ -4,7 +4,7 @@
    says so in the guide and shows the marks. Not sent to you: it says which email can sign it. */
 import { empty } from '../ui/index.js';
 import { to } from '../router/index.js';
-import { my_rec, who, log, save_doc, when } from './sign_store.js';
+import { my_rec, who, log, save_doc } from './sign_store.js';
 import { Pdf_pages } from './pdf_pages.jsx';
 import { fields_on } from './sign_fields.jsx';
 import { use_marks } from './use_marks.js';
