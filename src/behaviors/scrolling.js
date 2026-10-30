@@ -24,3 +24,5 @@ export function chain_wheel(e) {
   const end = e.deltaY > 0 ? el.scrollTop + el.clientHeight >= el.scrollHeight - 1 : el.scrollTop <= 0;
   if (!end) return;
   e.preventDefault(); glide.by(e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? innerHeight : 1));
+}
+/* Headers show their bottom border only once the page is scrolled */
