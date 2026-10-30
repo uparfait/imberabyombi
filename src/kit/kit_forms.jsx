@@ -4,6 +4,7 @@ import { lorem } from '../lib/index.js';
 import { kit_forms_text } from './kit_forms_text.jsx';
 import { kit_forms_choices } from './kit_forms_choices.jsx';
 import { kit_forms_feedback } from './kit_forms_feedback.jsx';
+import { kit_forms_when } from './kit_forms_when.jsx';
 
 export const kit_forms = brand_hex => (
   <form className="on_bg grid gap-6" data-calc="" onSubmit={e => e.preventDefault()}>
