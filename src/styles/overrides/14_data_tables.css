@@ -7,3 +7,4 @@
   .table_data .table_acts { position: sticky; left: 0; z-index: 1; min-width: 0; background: rgb(var(--surface)); border-right: 1px solid rgb(var(--line)); }
   /* No rows (nothing yet, no matches, loading): the message stays in the middle of what is in view, however many columns
      there are and wherever the table is scrolled sideways: pinned to the view's left edge (sticky), as wide as the view
+     (100cqw: the scroll box is a size container) */
