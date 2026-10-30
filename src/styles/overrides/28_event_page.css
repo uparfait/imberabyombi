@@ -42,3 +42,4 @@
   .ev_inv_table td:first-child { overflow: hidden; }
   .ev_inv_day { width: 9rem; color: rgb(var(--muted)); }
   .ev_inv_acts { width: 6rem; padding-block: .375rem; text-align: right; }
+  .ev_inv_acts .icon_btn { display: inline-grid; }
