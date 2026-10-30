@@ -36,3 +36,5 @@ export const i3 = (n, c = 'w-14 h-14', color = 'brand') =>
   <img src={i3_src(n, color, css_px(c))} className={`i3 shrink-0 ${c}`} alt="" aria-hidden="true" draggable={false} decoding="async" />;
 export const i3_html = (n, c = 'w-14 h-14', color = 'brand') =>
   `<img src="${i3_src(n, color, css_px(c))}" class="i3 shrink-0 ${c}" alt="" aria-hidden="true" draggable="false" decoding="async">`;
+
+/* the "#" of Bricolage Grotesque, extra bold (wght 800, opsz 96), as an outline */
