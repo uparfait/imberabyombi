@@ -42,3 +42,4 @@ export function admin_shell(mod, content) {
     <aside id="side_panel" className="panel sticky top-16 hidden h-[calc(100dvh-4.75rem)] shrink-0 overflow-hidden bg-surface md:block"
       data-open={String(!!ui.panel)} aria-label="Side panel">
       <div className="panel_in scroll_hover h-full overflow-y-auto" data-chain=""><Live_slot name="panel" first={panel_now()} draw={panel_now} /></div></aside>
+    <aside className="sticky top-16 hidden h-[calc(100dvh-4rem)] w-14 shrink-0 flex-col items-center gap-2 py-4 md:flex" aria-label="Side panels">
