@@ -31,3 +31,4 @@ let n = 0;
 export const device_px = css => css * Math.min(3, Math.max(1, Math.round((globalThis.devicePixelRatio || 1) * 4) / 4));
 
 export function render(input, o = {}) {
+  const style = MAKERS[o.style] ? o.style : 'classic', C = palette(o.colors), s = o.size ?? 128, view = o.view || [0, -4, 200, 200];
