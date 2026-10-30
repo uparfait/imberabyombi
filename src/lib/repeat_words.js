@@ -2,3 +2,5 @@
    December 31, 2026", "Every month on the last Friday, 10 times", "Every year in March and June on the 15th". */
 import { parse_d } from './dates.js';
 import { week_of } from './repeat.js';
+
+export const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
