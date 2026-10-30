@@ -49,6 +49,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
   - **Cancel event**: with a reason. It leaves the calendar.
   - **Back on schedule**, **Mark as completed** (while live; it asks, and the event ends now) and **Stop repeating**.
   - **Delete**.
+- A past event is read only: no Edit, no actions, no new invites. Its minutes and attendance time stay.
 - An event's status is `Scheduled`, `Postponed`, `Cancelled` or `Completed`. The actions set it; the form does not show it.
 
 ## Invitations
