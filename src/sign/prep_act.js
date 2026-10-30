@@ -15,3 +15,6 @@ function remove_rec(r) {
   P.doc.recipients = P.doc.recipients.filter(x => x.id !== r.id); P.doc.fields = P.doc.fields.filter(f => f.rid !== r.id);
   if (P.rid === r.id) P.rid = P.doc.recipients[0]?.id || null;
   P.sel = null; prep_dirty(); rerender();
+}
+
+function send() {
