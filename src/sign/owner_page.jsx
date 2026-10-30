@@ -24,3 +24,4 @@ export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipient
   <div className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
     <span className="block truncate text-xs text-muted">{r.email}</span>
     <span className={`block text-xs ${r.status === 'signed' ? 'text-ok' : 'text-warn'}`}>{state(r)}</span>
+    {links ? <>{chips(r)}{note_text(r)}</> : null}</div>
