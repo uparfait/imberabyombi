@@ -2,3 +2,4 @@
    each, "Add" and × to remove one. people_from(form, key) reads them back. */
 import { useState } from 'react';
 import { uid } from '../lib/index.js';
+import { ic } from '../icons/index.js';
