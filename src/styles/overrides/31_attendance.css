@@ -32,3 +32,4 @@
   /* the QR code on the whole screen (events/qr_full.jsx): as large as the screen allows, the details beside it (under it
      on a tall screen) */
   .qr_full { position: fixed; inset: 0; z-index: 90; display: grid; grid-template-columns: auto minmax(14rem, 26rem); align-items: center; justify-content: center;
+    gap: clamp(1.5rem, 4vw, 4rem); padding: 1.5rem; background: rgb(var(--surface)); }
