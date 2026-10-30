@@ -20,3 +20,4 @@
 <script>
   (function () { try {
     var mode = JSON.parse(localStorage.getItem('loremds:v1:theme') || '"system"');
+    document.documentElement.classList.toggle('dark', mode === 'dark' || (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches));
