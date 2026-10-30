@@ -10,7 +10,7 @@ addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) qs
 
 export const qr_full = (e, url, n) => <div id={`qr_full_${e.id}`} className="qr_full" hidden role="dialog" aria-label="Attendance QR code">
   <div className="qr_full_code"><Qr text={url} label="Attendance QR code" /></div>
-  <div className="qr_full_info"><p className="att_kind">Scan to sign in</p><h2 className="qr_full_title truncate">{e.title}</h2>
+  <div className="qr_full_info"><p className="att_kind">Scan to submit attendance</p><h2 className="qr_full_title truncate">{e.title}</h2>
     <p className="qr_full_count"><b>{n}</b> attended</p>{copy_box(url, 'Link')}</div>
   <button type="button" className="icon_btn qr_full_x" data-act="qr_close" aria-label="Close" data-tip="Close (Esc)">{ic('x')}</button></div>;
 
