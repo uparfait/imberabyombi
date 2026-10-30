@@ -24,7 +24,7 @@ export const ROLES0 = [
 ];
 /* modules every role may use, and at what level (the document editor, O-Doc Sign, Iconisus, the time zone converter): roles
    saved before one existed get it */
-const FOR_ALL = { docs: 2, sign: 2, icons: 2, tz: 2 };
+const FOR_ALL = { docs: 2, sign: 2, icons: 2, tz: 2, qr: 1 };
 export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !r.length) { r = ROLES0; db.set('roles', r); }
   else if (r.some(x => x.perms !== '*' && Object.keys(FOR_ALL).some(k => x.perms[k] == null))) {
     r = r.map(x => x.perms === '*' ? x : { ...x, perms: { ...FOR_ALL, ...x.perms } }); db.set('roles', r); }
