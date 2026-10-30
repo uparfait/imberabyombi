@@ -27,6 +27,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 Made for a computer screen: every screen shows the same view, scaled to fit (`html.stage_page`), never rearranged.
 Its title in the top bar (one line); its details, the agenda item running now (large, with its presenter and
 progress), the agenda, the organiser and co-organisers as a table (name, email, phone, role), each with Edit until it
+is over; the time left above a large QR code (full screen on a click; an empty place before attendance opens, "Finished"
 after), the count and the link. **Menu** (tiles): Record/View minutes, Add task (Follow-ups), Attendees, Full screen.
 
 ## Minutes and follow-ups
