@@ -10,6 +10,7 @@ import { to } from '../router/index.js';
 /* body: the page's form and links (JSX) */
 export const auth_shell = (title, text, body) => (
   <main id="main" className="auth_bg flex min-h-[100dvh] flex-col">
+    <div className="pattern_layer" aria-hidden="true"></div>
       {logo()}
       <h1 className="mt-8 text-[2rem] leading-tight">{title}</h1><p className="mt-2 text-muted">{text}</p>
       {body}
