@@ -18,3 +18,4 @@ export function Cert_pick() {
 /* the file, then the (simulated) check; null when no file was chosen */
 export async function verify(form) {
   const file = form.elements.cert_file?.files[0];
+  if (!file) { form_msg(form, 'warn', 'No certificate yet', 'Choose your digital certificate file.'); return null; }
