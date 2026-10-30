@@ -9,3 +9,4 @@ const mins = (v, d) => v === '' || v == null || isNaN(+v) ? d : Math.max(0, +v);
 export const att_mins = e => [mins(e.att_before, ATT_DEF.before), mins(e.att_after, ATT_DEF.after)];
 
 /* the window on day d: [opens, closes] */
+const win = (e, d) => { const [b, a] = att_mins(e), s = at(d, e.start, e.tz), end = e.end ? at(d, e.end, e.tz) : s + 2 * 3600e3;
