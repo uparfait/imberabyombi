@@ -45,3 +45,4 @@ export const SHELL_ACT = {
   copy: t => { const btn = t.matches('.copy_btn'); copy(t.dataset.text, t.dataset.what || 'Link', btn && !staff_page());
     if (!btn || t._was) return; const s = t.querySelector('span'); t._was = [t.querySelector('path')?.getAttribute('d'), s?.textContent];
     icon_to(t, 'check'); if (s) s.textContent = 'Copied'; t.classList.add('done');
+    setTimeout(() => { t.querySelector('path')?.setAttribute('d', t._was[0]); if (s) s.textContent = t._was[1]; t._was = null; t.classList.remove('done'); }, 1600); },
