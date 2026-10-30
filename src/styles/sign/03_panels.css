@@ -14,3 +14,4 @@
 .sign_title:focus { border-color: rgb(var(--brand)); }
 .sign_hint { padding: 1rem; border: 1px dashed rgb(var(--line)); border-radius: 1rem; color: rgb(var(--muted)); font-size: .875rem; text-align: center; }
 .sign_dot { display: grid; flex: none; width: 2rem; height: 2rem; place-items: center; border-radius: var(--pill); color: #fff; font-size: .6875rem; font-weight: 600; }
+.sign_dot.sm { width: .625rem; height: .625rem; }
