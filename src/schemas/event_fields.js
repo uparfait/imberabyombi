@@ -8,6 +8,7 @@ import { set_native_value } from '../fields/form_values.js';
 import { dt_show } from '../fields/date_formats.js';
 import { repeat_from } from '../fields/repeat_field.jsx';
 import { agenda_from, agenda_ok } from '../fields/agenda_field.jsx';
+import { people_from } from '../fields/people_field.jsx';
 import { field_spec } from './fields.js';
 
 export const KINDS = [['Upcoming', 'Upcoming'], ['Live', 'Live now'], ['Recurring', 'Recurring']];
