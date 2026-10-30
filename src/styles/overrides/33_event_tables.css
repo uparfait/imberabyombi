@@ -1,3 +1,4 @@
 /* overrides/33_event_tables.css: the agenda and organisers tables (events/ev_tables.jsx), on an event's page and on
    Open This Event. In a narrow box (40rem) the .ev_wide columns fold away, their value shows under the first one
    (.ev_narrow), and the buttons keep their icons only */
+  .ev_tbl { container-type: inline-size; }
