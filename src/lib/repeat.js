@@ -14,3 +14,5 @@ const nth = d => Math.ceil(d.getDate() / 7);   /* the first … fifth of its wee
 const or = (xs, x) => xs?.length ? xs : [x];
 /* the weeks and weekdays a first date stands for: the 2nd Friday; a 5th one is the last */
 export const week_of = f => ({ weeks: [nth(f) > 4 ? -1 : nth(f)], wdays: [f.getDay()] });
+
+/* monthly and yearly: the day in the month (dates, or nth weekdays) */
