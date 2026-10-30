@@ -25,3 +25,4 @@ export function before_page(keep) {
 }
 
 export function run_after_render({ keep, anim }) {
+  if (skipped) { skipped = false; return; }
