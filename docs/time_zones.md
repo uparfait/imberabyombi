@@ -25,3 +25,4 @@ moment there in large type, its date, the offset, the difference and "Next day" 
 Code: [`src/tzconv/`](../src/tzconv/), styles in `src/styles/tzconv/`; it loads the first time it is opened.
 
 ## The helpers (`src/lib/tz.js`)
+| Helper | What it gives |
