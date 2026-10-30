@@ -32,3 +32,4 @@ export const prep_tools = d => <div className="sign_panel">
     <button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_save">{ic('check', 'h-4 w-4')}Save draft</button></section>
   <section aria-label="Placing for">{cap('Placing for', 'The signer whose fields you place now. Pick another signer to place theirs; '
     + 'each signer has a colour, and their fields on the page show it.')}{placing(d)}</section>
+  <section aria-label="Fields">{cap('Fields', 'Click a field to add it to the page on screen, or drag it onto the page. Drag a field '
