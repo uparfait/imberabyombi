@@ -32,9 +32,7 @@ export function preview_foot(d) {
     <button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_preview" data-id={d.id}>{ic('eye', 'h-4 w-4')}Preview</button></div> : null;
 }
 
-/* the column's foot: Preview, once someone has signed */
-export const preview_foot = d => d.recipients.some(r => r.status === 'signed')
-  ? <div className="sign_foot"><button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_preview" data-id={d.id}>{ic('eye', 'h-4 w-4')}Preview</button></div> : null;
+const dl = id => <button type="button" className="btn btn_primary btn_sm" data-act="sign_dl" data-id={id}>{ic('download', 'h-4 w-4')}Download a copy</button>;
 
 function Preview({ id }) {
   const d = find_doc(id), marks = use_marks(id, d?.updated);
