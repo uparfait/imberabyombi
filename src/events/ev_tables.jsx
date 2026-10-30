@@ -7,7 +7,7 @@ import { fmt_time } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { agenda_now } from './agenda_now.js';
 
-const sub = v => v ? <span className="ev_sub">{v}</span> : null;
+const sub = (v, x = 'truncate') => v ? <span className={`ev_sub ${x}`}>{v}</span> : null;
 
 export function agenda_table(e, fade = false) {
   const ag = e.agenda || [], now = agenda_now(e);
