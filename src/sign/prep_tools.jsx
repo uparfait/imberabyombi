@@ -21,7 +21,7 @@ const placing = d => d.recipients.length
 const placed = d => { const n = d.fields.length;
   return n ? <ul className="grid gap-1 text-sm">{d.recipients.map(r => { const k = d.fields.filter(f => f.rid === r.id).length;
     return <li key={r.id} className="flex items-center gap-2"><span className="sign_dot sm" style={{ background: r.color }}></span>
-      <span className="min-w-0 flex-1 truncate">{r.name}</span><span className={k ? 'text-muted' : 'text-warn'}>{k || 'none yet'}</span></li>; })}</ul>
+      <span className="min-w-0 flex-1 truncate">{shown(r)}</span><span className={r.status === 'signed' ? 'text-ok' : k ? 'text-muted' : 'text-warn'}>{r.status === 'signed' ? 'signed' : k || 'none yet'}</span></li>; })}</ul>
     : <p className="text-sm text-muted">No fields yet.</p>; };
 
 /* a column caption with its help icon: the description shows on hover, focus or tap */
