@@ -6,3 +6,4 @@ const CACHE = 'qr-scan-v1';
 const keep = (r, res) => caches.open(CACHE).then(c => c.put(r, res)).catch(() => {});
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.add('./')).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys()
+  .then(ks => Promise.all(ks.filter(k => k.startsWith('qr-scan-') && k !== CACHE).map(k => caches.delete(k)))).catch(() => {}).then(() => self.clients.claim())));
