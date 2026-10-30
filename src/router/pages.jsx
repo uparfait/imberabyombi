@@ -29,3 +29,4 @@ export function public_page(r) {
    replace the address once this draw is over (a draw cannot start the next one) */
 let redirecting = 0;
 const redirect = path => { if (!redirecting) redirecting = setTimeout(() => { redirecting = 0; go(path, { replace: true }); }); return null; };
+export function admin_page(r) {
