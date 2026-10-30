@@ -13,3 +13,4 @@ const here = r => { const tz = r.tz || page_tz(), to = page_tz(), a = convert(r.
   return { date: a.date, start: a.time, end: r.end ? convert(r.date, r.end, tz, to).time : add_time(a.time, 120) }; };
 const event_item = e => ({ id: e.id, title: e.title, ...here(e), c: 'events', tone: 'ink' });
 const task_item = t => ({ id: t.id, title: t.title, date: String(t.due).slice(0, 10), due: t.due, all_day: true, c: 'tasks', status: t.status });
+export const cal_items = () => [
