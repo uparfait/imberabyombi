@@ -35,3 +35,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   chev_d: 'm6 9 6 6 6-6', chev_u: 'm18 15-6-6-6 6', chev_r: 'm9 18 6-6-6-6', chev_l: 'm15 18-6-6 6-6',
   bell: 'M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0',
   grid: 'M4 4h3v3H4zM10.5 4h3v3h-3zM17 4h3v3h-3zM4 10.5h3v3H4zM10.5 10.5h3v3h-3zM17 10.5h3v3h-3zM4 17h3v3H4zM10.5 17h3v3h-3zM17 17h3v3h-3z',
+  mail: 'M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6',
