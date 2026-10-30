@@ -40,3 +40,4 @@
   .legend_line { width: 1rem; height: .15625rem; border-radius: var(--pill); }
   .viz_scale { display: flex; align-items: center; gap: .1875rem; font-size: .75rem; color: rgb(var(--muted)); }
   .viz_scale i { width: 1.75rem; height: .625rem; border-radius: .1875rem; }
+  .viz_scale span:first-child { margin-right: .375rem; }
