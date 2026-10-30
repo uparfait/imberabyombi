@@ -33,3 +33,4 @@ const create_menu = create => <div className="relative">
     <button key={m} className="menu_item" role="menuitem" data-act="create" data-mod={m} data-col={c}>{ic(i, 'h-4 w-4 text-muted')}{l}</button>)}</div></div>;
 
 export function sidebar(mod) {
+  const create = CREATE.filter(([m]) => auth.can(m, 2)); SIDE.busy = null;
