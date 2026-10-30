@@ -23,3 +23,4 @@
   border: 1px solid rgb(var(--line)); background: #fff; color: rgb(var(--bad)); }
 .sf_x svg { width: .875rem; height: .875rem; }
 .sf_rs { position: absolute; right: -.45rem; bottom: -.45rem; display: none; width: 1rem; height: 1rem; border: 2px solid #fff;
+  border-radius: var(--pill); background: var(--c); cursor: nwse-resize; }
