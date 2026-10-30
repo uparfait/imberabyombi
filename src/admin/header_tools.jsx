@@ -20,6 +20,7 @@ export const header_tools = (n = '') => <><button className="icon_btn" data-act=
   {theme_btn()}{account_menu(n, true)}</>;
 
 /* the signed-in person's avatar and its menu (name and email, settings, public website, the side panels on small screens
+   when rail is set, a small "Allow text selection" switch with its help icon, storage used, and Sign out last of all) */
 export function account_menu(n = '', rail = false) {
   const u = auth.user, pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
   return <div className="relative">
