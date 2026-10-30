@@ -50,3 +50,4 @@ const bulletin = r => <button className="btn btn_soft btn_sm" data-act="report" 
 VIEWS.students = () => {
   const t = ui.tab.stu || 'reg', pays = db.list('payments'), count = s => pays.filter(p => p.status === s).length;
   const body = t === 'reg' ? crud('students', { title: 'Registered students', acts: bulletin })
+    : t === 'bul' ? crud('bulletins', { title: 'Bulletin entries' })
