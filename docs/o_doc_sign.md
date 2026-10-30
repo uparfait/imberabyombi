@@ -51,3 +51,4 @@ every account starts empty.
   next field of its kind with one tap.
 - **Signature**: draw it, type it (five handwriting styles), or upload a picture. **Stamp**: create one (organisation,
   centre text, today's date, ink, round or square) or upload a picture.
+- **Remove background** (uploads): the paper colour becomes transparent, with a soft edge so the ink stays smooth. It starts
