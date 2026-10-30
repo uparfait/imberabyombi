@@ -64,3 +64,4 @@ Every feature below is working code. Each line says what it is and where it live
   images are kept); rulers on demand with a margin reset.
 
 ## O-Doc Sign (`src/sign/`, `/admin/sign`)
+- PDFs sent for signature, in the whole window with its own top bar and a lists menu: All, Drafts, Waiting, Completed
