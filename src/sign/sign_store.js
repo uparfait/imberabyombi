@@ -5,3 +5,5 @@
 import { db } from '../store/index.js';
 import { uid, seed_color } from '../lib/index.js';
 import { auth } from '../auth/index.js';
+
+export const C = 'sign_docs';
