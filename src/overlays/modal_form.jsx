@@ -4,7 +4,7 @@
 import { useLayoutEffect, useRef } from 'react';
 import { ic } from '../icons/index.js';
 import { help_tip } from '../ui/index.js';
-import { form_obj } from '../fields/index.js';
+import { form_obj, fill_rows } from '../fields/index.js';
 import { validate, request } from '../feedback/index.js';
 import { run_view } from './dialog_store.js';
 import { close_dialog, snap } from './dialogs.js';
