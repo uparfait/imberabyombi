@@ -65,3 +65,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 @media (prefers-reduced-motion: reduce) { .sign_rec, .sign_for { transition: none; } }
 
 .sign_prog { height: .375rem; overflow: hidden; border-radius: var(--pill); background: rgb(var(--fg) / .08); }
+.sign_prog > i { display: block; height: 100%; border-radius: inherit; background: rgb(var(--ok)); transition: width .5s var(--ease); }
