@@ -4,3 +4,4 @@
    the certificate; it brings you back to the draft), then "Signed by you". You can go on adding other signers and send
    it to them; your fields stay as signed. Preview (at the bottom of the column, once someone has signed): the document
    with the marks so far, and Download a copy. SELF_ACT: its buttons. */
+import { ic } from '../icons/index.js';
