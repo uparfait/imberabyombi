@@ -9,3 +9,4 @@ import { field_spec, option_list, STATUS } from './fields.js';
 
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'category'],
+  f: [
