@@ -8,3 +8,4 @@
 .sign_brand { display: flex; flex: none; align-items: center; gap: .5rem; margin-right: .25rem; }
 /* the lists menu, light / dark and the account in one pill, like the admin header's tools; the menu's own tint goes inside it */
 .sign_tools { display: flex; min-width: 0; }
+.sign_tools > nav { flex: 0 1 auto; min-width: 0; }
