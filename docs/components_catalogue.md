@@ -13,6 +13,7 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.kicker`                               | small section label with the diamond icon                        |
 | `.field`                                | outlined field: the label rests inside and floats onto the border |
 | `[data-fill-rows]` (`fill_rows()`)       | a two-column form grid where a field left alone on its row fills it (`.fill_row`) |
+| `.room` + `.room_2` / `.room_2w` / `.room_4` / `.room_side` / `.room_full` | grids that split by the room their box really has, not the window (the sidebar, side panel and zoom never squeeze them): see `styles/overrides/29_room_layouts.css` |
 | `.on_bg`                                | a form that sits on the page background (not on a card)          |
 | `.nav_link` / `.side_link` / `.link_group` | top navigation pill / sidebar link / translucent link group    |
 | `.panel` / `.memo` / `.check_row`       | side panel beside the content / note card / checklist row        |
