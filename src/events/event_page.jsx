@@ -19,3 +19,4 @@ const ACTS = [
   ['ev_cancel', 'Cancel event', 'x', ['Upcoming', 'Live', 'Recurring', 'Postponed']], ['ev_del', 'Delete', 'trash', null]
 ];
 const side = (e, st) => <aside className="card ev_card ev_side" aria-label="Status and actions">
+  <h3 className="ev_side_title">Status</h3><div className="mt-2">{badge(st)}</div>
