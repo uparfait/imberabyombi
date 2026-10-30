@@ -45,3 +45,4 @@ export const SIGNER_ACT = {
     if (!S.pending[f.id] && S.adopted[f.type]) return apply(d, f, S.adopted[f.type]);
     open_pad(d, f); },
   sign_next: () => { const d = find_doc(S.id), f = d && left_of(d)[0]; if (!f) return;
+    const el = qs(`[data-fid="${f.id}"]`); el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
