@@ -17,7 +17,7 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
   not open from here); any other text (Copy). **Scan again** goes back to the camera.
 
 ## Installing it
-Only Qr-scan installs, never the site's other pages: it has its own manifest (`manifest.webmanifest`, scope
+It wears the site's own icon and the colours set in Settings ([`qr_brand.js`](../src/qr/qr_brand.js)): the brand
 `/qr-scan/`) and service worker (`sw.js`, the same scope; the site itself has neither). **Install** shows in the top bar
 when the browser offers it (Chrome, Edge, Android); on an iPhone or iPad it says Share, then Add to Home Screen. Installed,
 it opens in its own window, also offline (its files are kept by the service worker where the browser allows).
