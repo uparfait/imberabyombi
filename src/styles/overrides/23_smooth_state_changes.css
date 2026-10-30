@@ -52,3 +52,4 @@
   .compose_foot { display: flex; justify-content: flex-end; padding: 0 .5rem .5rem; }
   .memo { padding: .875rem 1rem .375rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); }
   .memo h3 { font: 500 .9rem/1.4 var(--font_sans); }
+  .memo p { margin-top: .25rem; font-size: .85rem; color: rgb(var(--muted)); white-space: pre-line; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; overflow: hidden; }
