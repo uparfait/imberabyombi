@@ -25,3 +25,4 @@ function events_for_me(now) {
 }
 
 export function notices(now = Date.now()) {
+  const out = [], td = ymd(), can = (m, l) => auth.can(m, l);
