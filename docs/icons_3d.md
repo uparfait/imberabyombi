@@ -46,6 +46,7 @@ Completed green, Archived indigo, To sign violet.
 | view | the part of the 200 × 200 picture to show, `[x, y, w, h]` (default `[0, -4, 200, 200]`) |
 
 **Small sizes.** The lighting and the "goo" (the step that rounds and thickens) work per device pixel, so one set of
+numbers cannot look right at both 24 px and 300 px: small icons came out boxy, with hard black rims. The engine takes
 Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
 (gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
 
