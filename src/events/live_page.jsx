@@ -4,7 +4,7 @@
    agenda (done, now, next), the organiser and co-organisers (each card with Edit for those who manage it, not once it is
    over). On the right the time left, then the attendance QR code, large (a click shows it on
    the whole screen), or its empty place (not open yet; "Finished" once over), with the live count and the link. Menu
-   (tiles): Record minutes, Add task, Attendees, Full screen. Redrawn every 30 seconds; the count follows new ones at once. */
+   (tiles): Record/View minutes, Add task (Follow-ups), Attendees, Full screen. Redrawn every 30 seconds; the count follows new ones at once. */
 import { tz_parts, page_tz, fmt_time, fmt_d, zone_short } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
 import { auth } from '../auth/index.js';
