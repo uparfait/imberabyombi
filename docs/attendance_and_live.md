@@ -28,7 +28,6 @@ the time left above a large QR code (full screen on a click; an empty place befo
 after), the count and the link. **Menu** (tiles): Record minutes, Add task, Attendees, Full screen.
 
 ## Minutes and follow-ups
-- **Record minutes** (live screen) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
-  titled "Minutes · <title> · <date>" and started with who attended and the agenda. The event's page lists its minutes
+- **Record minutes** (View This Event) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
   by date with who wrote them, to open or copy the link; a recurring one gathers one per day.
 - **Add task** opens the task form, linked to the event (`ref`); its page lists these follow-ups with who does them.
