@@ -74,3 +74,4 @@ download ends with a **signing certificate** page: the document, its id, who sen
 they opened and signed it, and the activity.
 
 ## Who can do what
+The permission key is `sign`. Every role may use it at level 2 (roles saved before it existed get it too, see
