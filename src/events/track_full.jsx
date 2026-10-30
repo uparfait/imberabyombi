@@ -11,3 +11,5 @@ import { rerender } from '../store/index.js';
 import { at } from '../schemas/index.js';
 import { ic } from '../icons/index.js';
 import { left } from './countdown.js';
+
+const today = e => { const p = tz_parts(e.tz || page_tz(), Date.now()); return [`${p.y}-${pad(p.mo)}-${pad(p.d)}`, `${pad(p.h)}:${pad(p.mi)}`]; };
