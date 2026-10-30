@@ -28,3 +28,5 @@ const card = (e, s, can) => <section key={s} className="card ev_card" aria-label
   <header className="ev_card_head"><h3 id={`ev_sec_${s}`}>{s}</h3>
     {can ? <button type="button" className="btn btn_ghost btn_sm" data-act="ev_edit" data-id={e.id} data-sec={s}>{ic('edit', 'h-4 w-4')}Edit</button> : null}</header>
   <dl className="ev_dl">{ROWS[s](e).filter(Boolean).map(([k, v]) => <Fragment key={k}><dt>{k}</dt><dd>{v === '' || v == null ? dash() : v}</dd></Fragment>)}</dl></section>;
+
+export const event_cards = (e, can) => SECS.map(s => card(e, s, can));
