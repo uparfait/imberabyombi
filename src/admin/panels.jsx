@@ -30,3 +30,4 @@ const task_row = t => { const d = t.status === 'Done', items = items_of(t);
     <span className="chip bg-surface-2 text-muted">{t.status}</span></button></li>; };
 
 const my_tasks = () => {
+  const all = db.list('tasks').filter(t => t.assignee === me()), open = all.filter(t => t.status !== 'Done'), done = all.filter(t => t.status === 'Done');
