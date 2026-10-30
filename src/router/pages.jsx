@@ -43,3 +43,4 @@ export function admin_page(r) {
 /* Account pages share one shell (auth_shell); each route = [tab title, page] */
 export const AUTH_ROUTES = {
   '/login': ['Sign in', r => login_page(r)], '/forgot': ['Forgot password', r => forgot_page(r)], '/verify': ['2-step verification', () => verify_page()],
+  '/authenticator': ['Authenticator app', () => authenticator_page()], '/set-password': ['Set password', () => set_password_page()]
