@@ -26,3 +26,6 @@ async function install_files(c) {
     display: 'standalone', orientation: 'portrait', background_color: '#1F1F1F', theme_color: c, icons };
   link('manifest', URL.createObjectURL(new Blob([JSON.stringify(m)], { type: 'application/manifest+json' })));
   link('icon', 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(mark(c, 64))); link('apple-touch-icon', await png(c, 180, .86, null));
+}
+
+export function brand_apply() {
