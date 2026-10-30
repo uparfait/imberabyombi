@@ -30,3 +30,4 @@ modal({
 
 ## Always on top
 Open dialogs sit in the browser's top layer. `#toasts` and `#loader` are manual popovers, and every dialog opens through
+`show_dialog()`, which lifts them back above it, so notifications and the loader are never hidden behind a dialog.
