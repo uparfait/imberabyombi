@@ -32,3 +32,4 @@ export function open_form(c, id, preset = {}) {
 export function sync_when(form) { const st = form?.elements.status?.value; if (st == null) return;
   qsa('[data-when]', form).forEach(el => { const w = el.dataset.when, on = w.startsWith('!') ? st !== w.slice(1) : st === w;
     el.hidden = !on; el.querySelectorAll('input, select, textarea').forEach(i => i.disabled = !on); });
+  qsa('[data-fill-rows]', form).forEach(fill_rows); }
