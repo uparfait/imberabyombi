@@ -6,7 +6,7 @@ import { fmt_d, fmt_time } from '../lib/index.js';
 import { db, rerender, after_render, TIMERS } from '../store/index.js';
 import { empty } from '../ui/index.js';
 import { set_meta } from '../router/parse.js';
-import { ev_state } from './ev_state.js';
+import { att_phase } from './att_window.js';
 import { Attend_form, Tick } from './attend_form.jsx';
 
 addEventListener('storage', e => { if (e.key?.endsWith('c:attendees')) rerender(); });
