@@ -17,3 +17,4 @@ export function count_to(e, st) {
   if (st === 'Upcoming' || st === 'Postponed') return ['Starts in', at(e.date, e.start, e.tz)];
   if (st === 'Live') { const p = tz_parts(e.tz || page_tz(), Date.now()), day = e.repeat ? `${p.y}-${pad(p.mo)}-${pad(p.d)}` : e.date;
     return ['Ends in', end(day, at(day, e.start, e.tz))]; }
+  if (st === 'Recurring') { const p = tz_parts(e.tz || page_tz(), Date.now()), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
