@@ -6,3 +6,4 @@ import { to } from '../router/index.js';
 import { help_tip } from './search.jsx';
 
 /* Generic pieces */
+export const tabs = (key, items, cur) => (
