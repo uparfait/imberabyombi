@@ -15,7 +15,7 @@ addEventListener('appinstalled', () => { offer = null; mark(); emit(); });
 
 export const standalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 export const apple = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-export const can_install = () => !!offer;
+export const can_install = () => !!offer && !standalone();
 export async function install() {
   if (!offer) return false; offer.prompt(); const { outcome } = await offer.userChoice; offer = null; emit(); return outcome === 'accepted';
 }
