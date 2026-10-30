@@ -5,5 +5,6 @@
 export * from './ev_state.js';
 export * from './event_cards.jsx';
 export * from './invite_emails.js';
+export * from './event_invites.jsx';
 export * from './event_page.jsx';
 export * from './event_act.jsx';
