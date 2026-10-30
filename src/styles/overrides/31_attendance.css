@@ -19,3 +19,4 @@
   .att_done_t { font-family: var(--font_display); font-size: 1.5rem; font-weight: 500; }
   @keyframes att_draw { to { stroke-dashoffset: 0; } }
   @keyframes att_pop { 50% { transform: scale(1.08); } }
+  .qr { display: block; width: 100%; height: auto; border-radius: calc(var(--radius) * .5); }
