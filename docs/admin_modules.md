@@ -25,3 +25,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Settings                 | `/admin/settings`      | Theme, live design tokens, storage use, backup export / import, demo reset, profile |
 
 ## The admin shell ([`src/admin/`](../src/admin/))
+- **Sidebar**: full height, collapsible on desktop (the logo turns into "open sidebar" on hover), a drawer on phones;
