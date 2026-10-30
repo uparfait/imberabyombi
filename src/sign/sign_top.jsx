@@ -7,3 +7,5 @@ import { tile_menu, account_menu } from '../admin/index.js';
 import { theme_btn } from '../ui/index.js';
 import { to } from '../router/index.js';
 import { LISTS, count } from './sign_store.js';
+
+export const list_href = k => to(k === 'all' ? '/admin/sign' : `/admin/sign/${k}`);
