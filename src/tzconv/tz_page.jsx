@@ -48,3 +48,4 @@ export function Tz_page() {
           <div className="field"><label htmlFor="tz_date">Date</label><input key={st.dk} id="tz_date" {...dt_attrs('date')} defaultValue={st.date}
             onChange={e => /^\d{4}-\d{2}-\d{2}$/.test(e.target.value) && put({ date: e.target.value })} /></div>
           <div className="tzc_time_row">
+            <div className="field tzc_num"><label htmlFor="tz_h">Hour</label>
