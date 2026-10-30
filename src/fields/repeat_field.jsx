@@ -14,3 +14,4 @@ const BY_HELP = 'Dates: on days of the month, such as the 1st and the 15th. Week
 const END_HELP = 'Never: it repeats until you delete it. On a date: it stops after that day. After: it stops once it has happened that many times.';
 
 /* the rule in the form; lists left empty mean "as on the first date" */
+export function repeat_from(f) {
