@@ -18,3 +18,4 @@ export const glide = { y: 0, last: 0, raf: 0,
     /* stop when arrived, or when the user scrolled some other way meanwhile */
     if (Math.abs(dy) < 1 || Math.abs(scrollY - g.last) > 2) { g.raf = 0; return; }
     const before = scrollY; scrollTo({ top: before + (Math.abs(dy) * .2 < 1 ? Math.sign(dy) : dy * .2), behavior: 'instant' }); g.last = scrollY;
+    g.raf = scrollY === before ? 0 : requestAnimationFrame(g.step); } };   /* could not move (page end): stop */
