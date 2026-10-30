@@ -34,10 +34,7 @@ export function live_page(id, c) {
   const done = it ? Math.min(100, Math.max(0, (now_m - mins(it.from)) / Math.max(1, mins(it.to) - mins(it.from)) * 100)) : 0;
   return <div className="live">
     <header className="live_top"><a href={to(page)} className="icon_btn" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
-      <h1 className="live_title truncate">{e.title}</h1>
-      {t ? <span className="ev_left">{t[0]} <b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></span> : null}
-      <div className="live_acts">{tile_menu({ id: `pop_live_${id}`, title: e.title, icon: false, label: 'Menu', tiles: [
-        { icon: 'edit', label: 'Record minutes', attrs: { 'data-act': 'ev_minutes', 'data-c': c, 'data-id': id } }, { icon: 'tasks', label: 'Add task', attrs: { 'data-act': 'ev_follow', 'data-c': c, 'data-id': id } },
+      <div className="live_acts">{tile_menu({ id: `pop_live_${id}`, title: e.title, icon: 'grid', label: 'Menu', tiles: [
         { icon: 'users', label: 'Attendees', href: to(page + '/attendance') }, { icon: 'fullscreen', label: 'Full screen', attrs: { 'data-act': 'live_full' } }] })}</div></header>
     <div className="live_body"><section className="live_main">
       <div className="card live_now">{it ? <><p className="att_kind">Now · {span(it)}</p><h2 className="live_now_t">{it.title}</h2>
