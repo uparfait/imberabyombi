@@ -48,3 +48,6 @@ export function Qr_app() {
         <label className="btn btn_outline btn_sm cursor-pointer">{ic('image', 'h-4 w-4')}Scan a picture<input type="file" accept="image/*" hidden onChange={pick} /></label>
       </div>
       {st.phase === 'found' ? found_card(st.text) : null}
+      {recent_list(recent, () => { set_recent([]); keep([]); })}
+    </main></div>;
+}
