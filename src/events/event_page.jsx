@@ -4,3 +4,4 @@
    repeating, duplicate, delete). Reading only (no managing rights): no Edit buttons and no actions. */
 import { db, route } from '../store/index.js';
 import { auth } from '../auth/index.js';
+import { ic } from '../icons/index.js';
