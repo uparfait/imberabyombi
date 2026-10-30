@@ -5,3 +5,5 @@ import { qs, qsa } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { copy_box } from '../overlays/index.js';
 import { Qr } from './qr.jsx';
+
+addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) qsa('.qr_full').forEach(el => { el.hidden = true; }); });
