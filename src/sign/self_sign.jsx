@@ -40,10 +40,7 @@ const head = (d, extra) => <header className="flex items-center gap-2 py-2 pl-4 
 function Preview({ id }) {
   const d = find_doc(id), marks = use_marks(id, d?.updated);
   if (!d) return null;
-  return <><header className="flex items-center gap-2 py-2 pl-4 pr-2"><h2 className="min-w-0 flex-1 truncate font-sans text-base font-medium">{d.title}</h2>
-    <button type="button" className="btn btn_primary btn_sm" data-act="sign_dl" data-id={id}>{ic('download', 'h-4 w-4')}Download a copy</button>
-    <button type="button" className="icon_btn" data-act="close_viewer" aria-label="Close" data-tip="Close">{ic('x')}</button></header>
-    <div className="sign_preview min-h-0 flex-1 overflow-auto"><Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: 'view', marks })} /></div></>;
+  return <>{head(d, dl(id))}<div className="sign_preview min-h-0 flex-1 overflow-auto"><Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: 'view', marks })} /></div></>;
 }
 
 export const SELF_ACT = {
