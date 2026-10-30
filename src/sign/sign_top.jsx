@@ -19,3 +19,4 @@ const HUE = { all: 'orange', drafts: 'slate', waiting: 'amber', completed: 'gree
 export function lists_menu(cur) {
   const it = LISTS.find(x => x[0] === cur);
   return tile_menu({ id: 'pop_sign', title: 'O-Doc Sign', icon: it ? it[2] : 'file', color: it ? HUE[cur] : 'blue',
+    label: it ? <>{it[1]}{num(count(cur), cur)}</> : 'Documents', set: true,
