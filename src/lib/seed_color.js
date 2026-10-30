@@ -40,3 +40,4 @@ export function seed_hue(hex) {
   return (Math.atan2(bb, a) * 180 / Math.PI + 360) % 360;
 }
 const apart = (h, hs) => { const gap = Math.min(GAP, (HUES[1] - HUES[0]) / (hs.length + 1));
+  return hs.every(x => { const d = Math.abs(h - x) % 360; return Math.min(d, 360 - d) >= gap; }); };
