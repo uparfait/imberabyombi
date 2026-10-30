@@ -29,6 +29,7 @@ const ACTS = [
   ['ev_postpone', 'Postpone', 'clock', ['Upcoming', 'Recurring']], ['ev_postpone', 'Change the new date', 'calendar', ['Postponed']],
   ['ev_restore', 'Back on schedule', 'check', ['Postponed', 'Cancelled']], ['ev_done', 'Mark as completed', 'check', ['Live']],
   ['ev_stop', 'Stop repeating', 'x', ['Recurring']],
+  ['ev_cancel', 'Cancel event', 'x', ['Upcoming', 'Live', 'Recurring', 'Postponed']], ['ev_del', 'Delete', 'trash', ['Upcoming', 'Live', 'Recurring', 'Postponed', 'Cancelled']]
 ];
 const side = (e, c, st, acts, t = count_to(e, st), r = st === 'Past' && ran(e)) => <aside className="card ev_card ev_side" aria-label="Status and actions">
   <h3 className="ev_side_title">Status</h3><div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">{badge(st)}
