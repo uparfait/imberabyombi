@@ -18,3 +18,4 @@ import { to as link_to } from '../router/index.js';
    page: address, tab title, Back / Forward, refresh, the top loader. routed = false: the design-system demo, in place. */
 function nav_markup(routed) {
   const tree = NAVTREE(), ROOT = 'System 2';
+  if (routed) { const q = []; let list = tree;
