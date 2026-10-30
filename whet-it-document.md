@@ -18,3 +18,4 @@ Every feature below is working code. Each line says what it is and where it live
   ribbon, glossy, clay, glass), three colours, any size; copy or download the SVG.
 
 ## Forms and input (`src/fields/`, `src/overlays/`, `src/files/`)
+- Imberabyombi outlined fields with floating labels, help icons and custom validation (no browser bubbles).
