@@ -15,3 +15,4 @@ export const CERT_HELP = 'The signer must verify their identity with a digital c
 const row = (label, tick, a = {}, end = null) => { const Tag = a['data-act'] ? 'button' : 'div';
   return <Tag className="sign_opt" {...(Tag === 'button' ? { type: 'button' } : {})} {...a}><span className="min-w-0 truncate">{label}</span>
     {end || (tick ? ic('check', 'sign_opt_tick h-4 w-4 shrink-0') : null)}</Tag>; };
+const notes = r => <>{row('Notes', false, { 'data-act': 'pop', 'data-pop': `pop_note_${r.id}`, 'aria-haspopup': 'dialog' },
