@@ -80,3 +80,4 @@ Every feature below is working code. Each line says what it is and where it live
   their names in the file.
 
 ## Charts and KPIs (`src/charts/`)
+- Many chart types and KPI designs in SVG, drawn at their real width in the system colours, with a date range,
