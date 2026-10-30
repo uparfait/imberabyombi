@@ -4,3 +4,4 @@
    cannot (private windows, full storage), it still installs and works online. Bump CACHE to start the copies over. */
 const CACHE = 'qr-scan-v1';
 const keep = (r, res) => caches.open(CACHE).then(c => c.put(r, res)).catch(() => {});
+self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.add('./')).catch(() => {})); });
