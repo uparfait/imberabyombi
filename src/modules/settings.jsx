@@ -40,3 +40,6 @@ const time_zone = () => <section className="card p-6"><div className="flex items
   <div key={page_tz()} className="field mt-5"><label htmlFor="page_tz">Show times in</label>
     <select id="page_tz" data-page-tz="" defaultValue={page_tz()}>{zone_list().map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select></div>
   {page_tz() !== device_tz() ? <button className="btn btn_outline btn_sm mt-4" data-act="tz_device">{`Use this device's (${zone_of(device_tz()).short})`}</button> : null}
+</section>;
+
+function data_card() {
