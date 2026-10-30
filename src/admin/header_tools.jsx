@@ -25,3 +25,4 @@ export function account_menu(n = '') {
           <div className="mt-2 grid gap-0.5"><a href={to('/admin/settings')} className="menu_item">{ic('sliders', 'h-4 w-4 text-muted')}Settings</a>
             <a href={to('/')} className="menu_item">{ic('globe', 'h-4 w-4 text-muted')}Public website</a>
             <button className="menu_item menu_danger" data-act="logout">{ic('logout', 'h-4 w-4 text-muted')}Sign out</button></div>
+          <div className="mt-2 rounded-2xl bg-surface-2 p-4">
