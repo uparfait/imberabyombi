@@ -1,15 +1,4 @@
-/* qr/qr.css: Qr-scan's screen (qr_app.jsx), phone first, one column: the top bar; the viewfinder (a dark square, the
-   brand's four corners, a line that sweeps while it scans); the tools; what was found (green for a secure link, orange
-   for one that is not); the recent scans. Colours come from the site's tokens, so light and dark follow. */
-body { background: rgb(var(--bg)); }
-.qr_app { display: flex; min-height: 100dvh; flex-direction: column; }
-.qr_top { display: flex; align-items: center; gap: .625rem; padding: max(.75rem, env(safe-area-inset-top)) 1rem .75rem; }
-.qr_brand { display: grid; width: 2.25rem; height: 2.25rem; place-items: center; border-radius: .75rem; background: rgb(var(--brand)); color: #fff; }
-.qr_name { font-family: var(--font_display); font-size: 1.25rem; font-weight: 700; letter-spacing: -.01em; }
-.qr_hint { display: inline-flex; align-items: center; gap: .375rem; padding-inline: .5rem; color: rgb(var(--muted)); font-size: .75rem; }
-.qr_main { display: grid; width: 100%; max-width: 30rem; gap: 1.25rem; margin: 0 auto; padding: .5rem 1rem max(2rem, env(safe-area-inset-bottom)); }
-
-.qr_view { position: relative; overflow: hidden; aspect-ratio: 1; border-radius: calc(var(--radius) * 1.75); background: #0d0d0e; }
+/* qr/qr.css: Qr-scan's screen (qr_app.jsx): the camera on the whole page, on every screen. Over it: the top row (the
 .qr_view video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
 .qr_view.on video { opacity: 1; }
 .qr_view video.mirror { transform: scaleX(-1); }
