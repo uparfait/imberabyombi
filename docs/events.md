@@ -21,6 +21,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
     [`lib/repeat_words.js`](../src/lib/repeat_words.js) (the words).
 - The calendar shows a recurring one on each day it happens, and your part in each item: Organiser, Co-organiser,
   Presenter or Invited ([`events/my_role.js`](../src/events/my_role.js)).
+- **Time conflicts**: saving one that overlaps another at the same venue, or with the same organiser, says so; saving
 
 ## Location, organiser, audience
 - **Location**: *Physical* (venue or address) or *Virtual* (meeting link and joining notes, such as a passcode). All
