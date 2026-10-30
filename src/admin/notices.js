@@ -21,3 +21,7 @@ function events_for_me(now) {
     if (s > now && s - now < 24 * H) return [{ ...n, id: `ev:${e.id}:s:${e.date}`, icon: 'star', tone: 'info', title: `Starts at ${fmt_time(e.start)}` }];
     if (role === 'Invited' && s > now) return [{ ...n, id: `ev:${e.id}:i`, icon: 'mail', tone: 'info', title: 'You are invited', text: `${e.title} · ${fmt_d(e.date)}` }];
     return [];
+  });
+}
+
+export function notices(now = Date.now()) {
