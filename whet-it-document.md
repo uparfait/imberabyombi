@@ -46,3 +46,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Dashboard: welcome hero, counts, attendance chart, my tasks, agenda, low stock, parking.
 - Calendar: week (hour grid, now line) and month views, mini calendar, click a slot to add, your tasks on their due day.
 - Tasks: own / assigned / delegated / all tabs, dates with times by status, live countdown (red when overdue),
+  subtasks with progress, attachments with inline previews, comments (edit and delete your own), a details view with
