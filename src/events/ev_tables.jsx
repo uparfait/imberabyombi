@@ -17,3 +17,4 @@ export function agenda_table(e, fade = false) {
     <tbody>{ag.map((a, i) => <tr key={i} className={i === now ? 'is_now' : fade && now > -1 && i < now ? 'is_done' : undefined}>
       <td>{a.p_name ? <><b className="block font-medium">{a.p_name}</b>{sub(a.p_title)}</> : '—'}</td>
       <td><b className="block font-medium">{a.title}{i === now ? <span className="chip ml-2 bg-ok/15 text-ok">Now</span> : null}</b>{sub(a.desc)}
+        <span className="ev_sub ev_narrow">{fmt_time(a.from)} – {fmt_time(a.to)}</span></td>
