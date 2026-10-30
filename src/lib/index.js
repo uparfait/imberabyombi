@@ -8,3 +8,4 @@ export * from './dom.js';
 export * from './lorem.js';
 export * from './seed_color.js';
 export * from './tz.js';
+export * from './repeat.js';
