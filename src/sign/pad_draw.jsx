@@ -3,6 +3,7 @@
    mark is the drawn part, cut out. */
 import { useEffect, useRef, useState } from 'react';
 import { PAD, INK, trim } from './pad_state.js';
+import { help_tip } from '../ui/index.js';
 
 /* draws on canvas c; on_any(true / false) when it gets its first stroke or is cleared */
 function wire(c, on_any) {
