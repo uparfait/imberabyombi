@@ -27,3 +27,4 @@
   .viz_plot .hit_line { stroke: transparent; stroke-width: 16; }
   .viz_plot .crosshair { stroke: rgb(var(--muted)); stroke-width: 1; opacity: 0; pointer-events: none; }
   .viz_plot .x_band:hover .crosshair { opacity: .6; }
+  .viz_plot .mark { transition: opacity .15s; }
