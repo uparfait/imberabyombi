@@ -62,6 +62,7 @@ export const EV_ACT = {
   ev_restore: t => save(t.dataset.id, { status: 'Scheduled', status_note: '', tbd: false }, 'Back on schedule', 'It shows on the calendar again.'),
   ev_done: t => { const e = db.find('events', t.dataset.id); if (!e) return; const p = tz_parts(e.tz || page_tz(), Date.now());
     ask('Mark this event as completed? It ends now: its end time becomes the time now.', () =>
+      save(e.id, { status: 'Completed', end: `${pad(p.h)}:${pad(p.mi)}` }, 'Event completed', 'It is now with the past events.'), 'Mark as completed', false); },
   ev_stop: t => { const e = db.find('events', t.dataset.id); if (!e) return; const p = tz_parts(e.tz, Date.now()), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
     ask('Stop repeating this event? It will not happen after today. The days it has already happened on stay as they are.', () =>
       save(e.id, { repeat: { ...e.repeat, end: 'on', until: today } }, 'No longer repeating', 'It will not happen after today.'), 'Stop repeating', true); },
