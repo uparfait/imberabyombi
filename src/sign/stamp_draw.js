@@ -18,3 +18,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
     do { font(s); w = [...t].reduce((a, ch) => a + x.measureText(ch).width + sp, 0); } while (w / r > Math.PI * .8 && --s > 10);
     let acc = 0;
     for (const ch of t) {
+      const cw = x.measureText(ch).width, a = bottom ? at + (w / 2 - acc - cw / 2) / r : at - w / 2 / r + (acc + cw / 2) / r;
