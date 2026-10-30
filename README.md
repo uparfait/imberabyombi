@@ -74,3 +74,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [3D icons and Iconisus](docs/icons_3d.md) | |
 
 ## Rules this repository follows
+Every file is at most 100 lines; names are snake_case (React components `Capital_snake`); every file starts with a
