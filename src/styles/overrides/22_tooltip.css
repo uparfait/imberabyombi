@@ -6,3 +6,4 @@
   #tip.on { opacity: 1; }
   /* a help icon's introduction: the text rises and fades in slowly, and fades out the same way */
   #tip.intro { transition: opacity .45s ease, transform .45s ease; }
+  #tip.intro:not(.on) { transform: translateY(.375rem) scale(.96); }
