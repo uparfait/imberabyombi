@@ -36,6 +36,7 @@ const tz_say = r => { const s = r?.querySelector('.when_tz select'); if (!s) ret
   say(s.parentNode, tz_words_of(s.value, day_of(r))); s.parentNode.dataset.tip = s.selectedOptions[0]?.text || s.value; };
 
 /* the time zone: a select of every zone ("(GMT+02:00) Central Africa Time - Kigali", also its hover text) */
+const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz(), zs = zone_list();
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
     <span className="pick when_block"><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
