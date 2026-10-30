@@ -67,3 +67,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [Roles and access](docs/roles_and_access.md) | [Routes](docs/routes.md) |
 | [Components catalogue](docs/components_catalogue.md) | [Admin modules](docs/admin_modules.md) |
 | [How to add a module](docs/how_to_add_a_module.md) | [How to add a public page](docs/how_to_add_a_public_page.md) |
+| [Accessibility](docs/accessibility.md) | [Performance and SEO](docs/performance_and_seo.md) |
