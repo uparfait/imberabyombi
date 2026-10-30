@@ -53,6 +53,7 @@ export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
 const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (/^(rp|ag|co_orgs)_/.test(k)) delete d[k];
   if ('kind' in d) d.repeat = d.kind === 'Recurring' ? repeat_from(f) : null;
   if (f.querySelector('[data-agenda]')) d.agenda = agenda_from(f); const co = people_from(f, 'co_orgs'); if (co) d.co_orgs = co;
+  return d; };
 /* a schema's before(): the timing checked, then the record as saved */
 export const event_before = (d, row, f) => when_ok(d, row, f) ? place_in(repeat_in(d, f)) : false;
 
