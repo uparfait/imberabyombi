@@ -44,3 +44,4 @@
 
 /* a document's page: pages | progress */
 .sign_split { display: grid; flex: 1; grid-template-columns: minmax(0, 1fr) 22rem; align-content: start; }
+.sign_side { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 1rem; }
