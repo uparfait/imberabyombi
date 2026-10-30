@@ -52,6 +52,7 @@ export function vol(id, o, k = 1) {
   return f + `<feGaussianBlur in="${g}" stdDeviation="${num(bev)}" result="h"/>`
     + `<feDiffuseLighting in="h" surfaceScale="${surf}" diffuseConstant="1" lighting-color="#fff" result="d"><feDistantLight azimuth="225" elevation="60"/></feDiffuseLighting>`
     + `<feComposite in="${g}" in2="d" operator="arithmetic" k1="${k1}" k2="${num(1 - k1)}" result="c"/>`
+    + `<feSpecularLighting in="h" surfaceScale="${surf}" specularConstant="${spec}" specularExponent="${o.exp}" lighting-color="#fff" result="s"><fePointLight x="70" y="30" z="160"/></feSpecularLighting>`
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
