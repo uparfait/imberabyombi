@@ -23,3 +23,4 @@
 .sign_ink.on { outline-color: rgb(var(--brand)); }
 
 .sign_agree { display: flex; align-items: flex-start; gap: .75rem; padding: 1rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; cursor: pointer;
+  transition: border-color .2s, background-color .2s; }
