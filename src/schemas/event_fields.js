@@ -22,6 +22,7 @@ export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def
 /* a record saved before it had a type or a place (fill: what its form shows when it is edited): its type from its
    timing (a repeat rule: Recurring; running now: Live now; otherwise Upcoming), its place from its link */
 export function kind_of(r) {
+  if (r.kind) return r.kind; if (r.repeat) return 'Recurring'; if (!r.date) return 'Upcoming';
 
 /* where: in a place (a venue or address) or online (a meeting link and notes on joining, such as a passcode); all optional */
 const PLACE_HELP = 'Physical: it happens in a place; add the venue or address. Virtual: it happens online; add the meeting link '
