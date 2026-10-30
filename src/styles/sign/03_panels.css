@@ -2,3 +2,4 @@
    marks the one being placed for), the field tools, "Placing for" choices, the progress bar, signer rows, the activity
    list, and the facts of "Signing complete". Small things are pills. */
 /* one column that never grows past the panel: long names and file names trim instead of pushing the panel wider */
+.sign_panel { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 1.75rem; padding: 1.25rem; }
