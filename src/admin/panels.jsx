@@ -9,3 +9,4 @@ import { due_tag, items_of } from '../modules/index.js';
 import { to } from '../router/index.js';
 
 const edited = at => 'Edited ' + fmt_stamp(at, { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
+const memo = n => <article key={n.id} className="memo"><h3>{n.title || 'Untitled'}</h3><p>{n.body}</p><footer><small>{n.at ? edited(n.at) : ''}</small>
