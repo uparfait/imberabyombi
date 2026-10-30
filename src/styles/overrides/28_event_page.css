@@ -65,3 +65,4 @@
   @container ev_card (max-width: 30rem) { .ev_inv_table .ev_inv_day { display: none; } .ev_inv_sub { display: block; } .ev_inv_table td, .ev_inv_table th, .ev_inv_bar { padding-inline: .75rem; } }   /* a narrow card: the day under the address */
   /* Minutes and Follow-ups (events/event_minutes.jsx): short lists, one row each */
   .ev_list { display: grid; }
+  .ev_list li { display: flex; align-items: center; gap: .5rem; min-height: 3rem; border-top: 1px solid rgb(var(--line)); }
