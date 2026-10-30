@@ -39,3 +39,4 @@ const edit_row = (id, i) => <tr key={i.e} className="ev_inv_editing"><td>
 
 export function invite_table(e, open) {
   const inv = e.invites || [];
+  if (!open || !inv.some(i => editing === `${e.id}|${i.e}`)) editing = '';
