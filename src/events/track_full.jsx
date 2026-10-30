@@ -13,3 +13,4 @@ import { ic } from '../icons/index.js';
 import { left } from './countdown.js';
 
 const today = e => { const p = tz_parts(e.tz || page_tz(), Date.now()); return [`${p.y}-${pad(p.mo)}-${pad(p.d)}`, `${pad(p.h)}:${pad(p.mi)}`]; };
+export const item_end = (e, a) => at(e.repeat ? today(e)[0] : e.date, a.to, e.tz);
