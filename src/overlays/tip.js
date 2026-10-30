@@ -11,3 +11,4 @@ export const tip = {
   /* intro: shown at once, fading and rising in slowly (help_intro below) */
   show(x, intro = false) {
     if (x === this.on) return; this.hide(); this.on = x;
+    this.t = setTimeout(() => {
