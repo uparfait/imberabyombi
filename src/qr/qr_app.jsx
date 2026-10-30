@@ -22,3 +22,4 @@ export function Qr_app() {
   const go = async (f = facing) => {
     if (!navigator.mediaDevices?.getUserMedia) return set({ phase: 'error', msg: 'The camera needs a secure page (https).' });
     set({ phase: 'scan' });
+    try { await start(video.current, found, f); set_multi(await cameras() > 1); }
