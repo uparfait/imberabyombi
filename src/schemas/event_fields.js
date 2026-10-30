@@ -57,7 +57,7 @@ const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (/^(rp|ag|co_or
   return d; };
 /* a schema's before(): the timing and agenda checked, the record as saved, then any time conflict (events/conflicts.js) */
 export function event_before(d, row, f) {
-  if (!when_ok(d, row, f) || !agenda_ok(f)) return false;
+  const w = { ...row, ...d };
   d = place_in(repeat_in(d, f)); return clash_ok({ ...row, ...d }, row, d, f) ? d : false;
 }
 
