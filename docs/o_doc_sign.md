@@ -29,3 +29,4 @@ the wrong address moves to the right one (a sent draft to its page, someone else
 every account starts empty.
 
 ## Preparing
+- The page has three columns: signers on the left and the tools on the right float as rounded panels; the pages scroll in
