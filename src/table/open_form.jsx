@@ -9,6 +9,7 @@ import { modal } from '../overlays/index.js';
 
 /* fields; those a schema groups with row: 'when' (a date and its times) go on one line, where the first is */
 const fields_of = (fs, row) => fs.map(f => !f.row ? field(f, row[f.k])
+  : fs.find(x => x.row === f.row) === f ? when_row(fs.filter(x => x.row === f.row), row) : null);
 
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset) */
 export function open_form(c, id, preset = {}) {
