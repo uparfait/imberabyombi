@@ -6,6 +6,7 @@
    changed by the actions on its page, not in its form; the table shows where it stands (events/ev_state.js). */
 import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/index.js';
 import { bar_cell, badge } from '../ui/index.js';
+import { ev_state } from '../events/ev_state.js';
 import { field_spec, option_list, STATUS, mail, tel } from './fields.js';
 import { kind_spec, repeat_spec, where_f, org_f, audience_spec, event_before } from './event_fields.js';
 
