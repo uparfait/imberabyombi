@@ -49,3 +49,4 @@
   @keyframes file_in { from { opacity: 0; transform: translateY(.5rem) scale(.88); } }
   /* account pages (account/auth_shell.jsx): the brand colour with the white pattern, as the home page's Thanks block */
   .auth_bg { position: relative; isolation: isolate; background: rgb(var(--brand)); }
+  .auth_bg > .pattern_layer { --pc: 255 255 255; --pa: .13; }
