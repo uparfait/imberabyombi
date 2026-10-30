@@ -14,3 +14,4 @@ const copy_link = r => <button className="icon_btn h-8 w-8" data-act="copy" data
   data-tip="Copy access link">
   {ic('link', 'h-4 w-4')}</button>;
 VIEWS.staff = () => <>
+  <section className="card mb-6 flex flex-wrap items-center gap-4 p-5">{i3('shield', 'h-12 w-12', 'violet')}<div className="min-w-[12rem] flex-1">
