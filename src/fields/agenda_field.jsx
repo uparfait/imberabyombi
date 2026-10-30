@@ -43,3 +43,4 @@ export function agenda_ok(f, s, e, old = []) {
   const its = els.map((el, n) => ({ n, from: to24(val(el, 'from')), to: to24(val(el, 'to')), fi: el.querySelector('[data-ag=from]'), ti: el.querySelector('[data-ag=to]') }))
     .sort((a, b) => a.from.localeCompare(b.from));
   for (const [k, x] of its.entries()) { const p = its[k - 1];
+    if (x.from && x.to && x.to <= x.from) return bad(x.ti, 'Pick an end after the start.');
