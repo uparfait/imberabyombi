@@ -30,3 +30,4 @@ function on_click(e) {
   if (!t || t.disabled || !ACT[a]) return;
   if (t.closest('.tile_pop')) close_pops();
   if (t.tagName === 'A') e.preventDefault();
+  if (a in REQ) request(() => ACT[a](t, e), { btn: REQ[a] === 1 && t.tagName === 'BUTTON' ? t : null, delay: REQ[a] === 1 || staff_page() ? cfg.latency : 0 });
