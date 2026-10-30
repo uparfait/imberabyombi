@@ -20,3 +20,4 @@ function on_screen() {
 }
 
 /* type: 'signature' | 'stamp'; page, cx, cy: where (a page index and the centre as fractions), or nothing for "on screen" */
+export function add_field(type, page, cx, cy) {
