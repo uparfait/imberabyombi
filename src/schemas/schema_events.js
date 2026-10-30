@@ -15,6 +15,7 @@ const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when
 
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'kind', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
+  form_sec: true, sec: { Details: 'title,category,note', When: 'kind,date,start,end,tz' },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }),
     field_spec('start', 'Starts', 'time', 0, 1, { row: 'when' }), field_spec('end', 'Ends', 'time', 0, 1, { row: 'when' }),
