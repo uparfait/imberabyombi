@@ -1,4 +1,5 @@
 /* sign/signer_side.jsx: the signing page's guide (beside the document): who asks and as whom you sign (once you have
+   signed: "Signed on" with a green tick; when you sign with a digital certificate: a word about it first; Download a copy
 import { ic, i3 } from '../icons/index.js';
 import { KINDS } from './sign_store.js';
 import { own_fields, left_of } from './signer_state.js';
