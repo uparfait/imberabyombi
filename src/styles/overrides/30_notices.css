@@ -1,2 +1,3 @@
 /* overrides/30_notices.css: the bell (admin/notice_menu.jsx): its count, and the list of notices (new ones with a dot) */
   .notice_btn { position: relative; }
+  .notice_count { position: absolute; top: .25rem; right: .125rem; display: grid; place-items: center; min-width: 1.125rem; height: 1.125rem; padding: 0 .25rem;
