@@ -20,3 +20,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Roles & access           | `/admin/roles`         | Permission matrix, landing page per role, invite links           |
 | Email designs            | `/admin/emails`        | Invite, update, time change, reset link, sign-in code, access token in the brand |
 | System 2 (nested)        | `/admin/nav`           | Three navigation levels: this system (sidebar) › System 2 (4 pages + System 3) › System 3 (14 pages) |
+| Iconisus                 | `/admin/icons`         | The 3D icon maker: text, an icon from twelve libraries or an SVG, six styles, three colours, any size, copy or download (see [3D icons](icons_3d.md)) |
