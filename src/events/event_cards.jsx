@@ -1,6 +1,7 @@
 /* events/event_cards.jsx: an event's details as one table (Field | Value, like the details view), a row per section of
    its schema (Details, When, Location, Organisers, Agenda, Audience) with an Edit button that changes that section only
    (ev_edit). The organisers and the agenda are tables of their own (ev_tables.jsx); Organisers has Add (a co-organiser)
+   instead of Edit. */
 import { Fragment } from 'react';
 import { fmt_d, fmt_time, zone_short, page_tz, repeat_text, repeat_next, ymd } from '../lib/index.js';
 import { ic } from '../icons/index.js';
