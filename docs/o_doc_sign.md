@@ -30,3 +30,4 @@ every account starts empty.
 
 ## Preparing
 - The page has three columns: signers on the left and the tools on the right float as rounded panels; the pages scroll in
+  the middle. The right column starts with **Send for signing** and **Save draft**; its captions (Placing for, Fields,
