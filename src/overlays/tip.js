@@ -53,3 +53,4 @@ export function help_intro(root) {
 }
 /* a dialog's help icon: when a dialog opens */
 new MutationObserver(ms => ms.forEach(m => m.target.tagName === 'DIALOG' && m.target.open && help_intro(m.target)))
+  .observe(document.body, { subtree: true, attributes: true, attributeFilter: ['open'] });
