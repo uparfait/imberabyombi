@@ -9,3 +9,4 @@
     transition: --h 1.2s var(--ease); }
   .track_top { display: flex; align-items: center; gap: 1.5rem; min-width: 0; padding-inline: .5rem; }
   .track_ev { flex: 1; min-width: 0; color: rgb(var(--muted)); font-size: 1.125rem; }
+  .track_foot { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 1rem; }
