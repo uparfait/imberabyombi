@@ -4,3 +4,5 @@
 import { device_px } from '../icon3d/index.js';
 
 const svg = html => ({ __html: html });
+
+export const Stage = ({ draw }) => <section className="card ico_stage" aria-label="Preview">
