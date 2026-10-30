@@ -69,3 +69,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 /* the activity (activity.jsx): one line per event, the faces joined by a thin line; the action's icon sits on the face */
 .sign_events { display: grid; gap: .875rem; margin-top: .875rem; }
 .sign_ev { position: relative; display: flex; min-width: 0; align-items: center; gap: .625rem; }
+.sign_ev:not(:last-child)::after { content: ''; position: absolute; top: 1.875rem; bottom: -.875rem; left: .875rem; width: 2px; margin-left: -1px; background: rgb(var(--line)); }
