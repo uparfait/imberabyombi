@@ -5,3 +5,4 @@ import { install_links } from './link_clicks.js';
 import { install_input } from './input_events.js';
 import { install_change } from './change_events.js';
 import { install_keys } from './key_events.js';
+import { install_pointer } from './pointer_events.js';
