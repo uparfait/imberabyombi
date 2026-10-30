@@ -12,3 +12,5 @@ const box = (k, n, l, v, x = {}) => { const { cls = '', ...a } = x;
     {n === 'desc' ? <textarea id={`ag_${n}_${k}`} name={`ag_${n}`} data-ag={n} rows={2} placeholder=" " defaultValue={v} />
       : <input id={`ag_${n}_${k}`} name={`ag_${n}`} data-ag={n} defaultValue={v} placeholder=" " {...a} />}
     {a['data-type'] ? <span className="date_hint" aria-hidden="true"></span> : null}</div>; };
+
+function Agenda_editor({ v }) {
