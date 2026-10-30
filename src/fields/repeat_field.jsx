@@ -19,3 +19,4 @@ export function repeat_from(f) {
   const r = { freq: v('rp_freq') || 'weekly', every: Math.min(99, Math.max(1, +v('rp_every') || 1)), end: v('rp_end') || 'never' };
   if (r.freq === 'weekly') r.days = all('rp_days');
   if (r.freq === 'yearly') r.months = all('rp_months');
+  if (r.freq === 'monthly' || r.freq === 'yearly') Object.assign(r, v('rp_by') === 'week' ? { by: 'week', weeks: all('rp_weeks'), wdays: all('rp_wdays') } : { by: 'date', dates: all('rp_dates') });
