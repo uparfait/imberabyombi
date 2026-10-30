@@ -31,3 +31,4 @@ export const ORG_ACT = {
   ev_org_edit: t => { const [c, e, i] = get(t); if (!e) return; i < 0 ? open_form(c, e.id, {}, ['Edit organiser', ['org_name', 'org_email', 'org_tel']]) : co_form(c, e, i); },
   ev_co_del: t => { const [c, e, i] = get(t), p = e?.co_orgs?.[i]; if (!p) return;
     ask(`Remove ${p.name} from the co-organisers? They can no longer manage it.`, () =>
+      put(c, e, { co_orgs: e.co_orgs.filter((_, j) => j !== i) }, 'Co-organiser removed', `${p.name} is no longer a co-organiser.`), 'Remove', true); },
