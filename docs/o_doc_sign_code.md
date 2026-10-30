@@ -9,3 +9,5 @@ each file in [`src/sign/`](../src/sign/) does.
 | collection `sign_docs` (localStorage, `db`) | each document: title, file name, page sizes, owner, status, signers, fields, activity |
 | IndexedDB `<ns>sign`, `pdf:<id>` | the uploaded PDF |
 | IndexedDB `<ns>sign`, `marks:<id>` | the signatures and stamps (PNG) by field |
+
+Files of deleted documents are cleaned up the next time O-Doc Sign opens. Everything stays in this browser: to share
