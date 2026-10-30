@@ -11,3 +11,4 @@ export function in_words(t, v) {
   if (!v) return t === 'date' ? 'Pick a date' : 'Pick a time';
   if (t === 'date') { const d = new Date(`${v}T00:00`); return isNaN(d) ? v : d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }); }
   const [h, m] = to24(v).split(':').map(Number); if (isNaN(h) || isNaN(m)) return v;
+  return h24() ? `${pad(h)}:${pad(m)}` : `${h % 12 || 12}:${pad(m)}${h < 12 ? 'am' : 'pm'}`;
