@@ -30,3 +30,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   search: 'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.3-4.3',
   plus: 'M12 5v14M5 12h14',
   edit: 'M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z',
+  trash: 'M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6',
