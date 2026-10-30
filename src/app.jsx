@@ -9,7 +9,7 @@ import { Dialog_hosts } from './overlays/index.js';
 import { spinner } from './feedback/index.js';
 
 /* html.staff_page: admin pages draw a little larger on laptops and desktops (--scale_staff in src/styles/base);
-   html.public_page: the public website lets text be selected; html.stage_page: View This Event, one view scaled to fit */
+   html.public_page: the public website lets text be selected; html.stage_page: Open This Event, one view scaled to fit */
 const mark_page = () => {
   const c = document.documentElement.classList, p = route.path || '';
   c.toggle('staff_page', /^\/admin(\/|$)/.test(p)); c.toggle('public_page', is_public(p)); c.toggle('stage_page', /^\/admin\/(events|calendar)\/[^/]+\/live$/.test(p));
