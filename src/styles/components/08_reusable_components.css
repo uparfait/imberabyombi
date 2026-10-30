@@ -20,3 +20,4 @@
   .icon_btn { @apply inline-grid h-10 w-10 shrink-0 place-items-center rounded-full text-muted transition hover:bg-fg/5 hover:text-fg; }
   .card { @apply rounded-3xl border border-line bg-surface; }
   .card_hover { @apply transition duration-300 hover:border-brand/40 hover:bg-surface-2/40; }
+  .chip { @apply inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold; }
