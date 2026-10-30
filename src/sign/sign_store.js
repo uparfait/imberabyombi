@@ -33,3 +33,4 @@ export const of_list = k => (k === 'inbox' ? to_sign() : k === 'archived' ? mine
 /* the number a list shows; "To sign" counts only what still waits for you */
 export const count = k => k === 'inbox' ? to_sign().filter(my_turn).length : of_list(k).length;
 export const signed_n = d => d.recipients.filter(r => r.status === 'signed').length;
+/* a document someone has signed is kept: it can be archived, never deleted */
