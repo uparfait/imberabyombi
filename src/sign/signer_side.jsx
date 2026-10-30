@@ -25,3 +25,4 @@ export const note_card = (d, r) => r.note ? <section className="card sign_note_c
 export const steps_card = d => { const left = left_of(d);
   return <section className="card p-5"><h2 className="sign_cap">Your fields</h2>
     <p className={`text-sm ${left.length ? 'text-muted' : 'font-medium text-ok'}`}>{next_text(left)}</p>{bar(d)}
+    <div className="mt-4 grid gap-2">
