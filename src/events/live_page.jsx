@@ -55,7 +55,6 @@ export function live_page(id, c) {
         : <p className="text-sm text-muted">None yet</p>}</div>
       <div className="card live_card">{head('Organiser', 'Organiser')}<ul className="live_people">{person(e.org_name || '—', [e.org_email, e.org_tel].filter(Boolean).join(' · '))}
         {(e.co_orgs || []).map(o => person(o.name, `Co-organiser · ${o.email}`))}</ul></div>
-      {minutes_card(e, c, false)}{follow_card(e, c, false)}
     </section>
     <aside className="card live_qr">{t ? <p className="live_left">{t[0]}<b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></p> : null}{open ? <button type="button" className="live_qr_btn" data-act="ev_qr" data-id={id} aria-label="Show the QR code on the whole screen" data-tip="Full screen">
       <Qr text={att_url(c, id)} label="Attendance QR code" /></button> : <div className="qr_empty">{ph === 'closed' ? 'Finished' : ''}</div>}
