@@ -21,3 +21,4 @@ import { P, prep_start } from './prep_state.js';
 import { prep_page } from './prep_page.jsx';
 import { owner_page } from './owner_page.jsx';
 import { signer_page } from './signer_page.jsx';
+import { sign_done } from './sign_done.jsx';
