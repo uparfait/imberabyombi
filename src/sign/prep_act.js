@@ -43,3 +43,4 @@ export const PREP_ACT = {
     ask(`Remove ${r.name}? Their ${plural(n, 'field')} on the document go too.`, () => remove_rec(r), 'Remove', true); },
   sign_save: () => { prep_save(); notify('Your changes are kept. Send it when it is ready.', 'ok', 'Draft saved'); },
   sign_send: () => {
+    const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
