@@ -70,3 +70,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [Accessibility](docs/accessibility.md) | [Performance and SEO](docs/performance_and_seo.md) |
 | [Connecting a backend](docs/connecting_a_backend.md) | [Deploying](docs/deploying.md) |
 | [Before production](docs/before_production.md) | [Document editor](docs/document_editor.md) |
+| [Cartoon pictures and video](docs/cartoons.md) | [O-Doc Sign](docs/o_doc_sign.md) |
