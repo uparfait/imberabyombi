@@ -7,3 +7,4 @@
 .tzc_num { width: 6.5rem; }
 .tzc_colon { color: rgb(var(--muted)); font-size: 1.25rem; }
 .tzc_swap { position: relative; display: grid; margin: .5rem 0; place-items: center; }
+.tzc_swap::before { content: ''; position: absolute; top: 50%; right: 1.5rem; left: 1.5rem; height: 1px; background: rgb(var(--line)); }
