@@ -16,6 +16,7 @@ export function Qr_app() {
   useSyncExternalStore(on_change, can_install);   /* Install shows when the browser offers it */
   const video = useRef(null), [st, set] = useState({ phase: 'start' }), [cam, set_cam] = useState({ torch: false, lit: false });
   const found = t => { set({ phase: 'found', text: t }); navigator.vibrate?.(60); };
+  const go = async () => {
     if (!navigator.mediaDevices?.getUserMedia) return set({ phase: 'error', msg: 'The camera needs a secure page (https).' });
     set({ phase: 'scan' });
     try { await start(video.current, found, f); set_multi(await cameras() > 1); }
