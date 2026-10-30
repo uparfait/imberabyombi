@@ -26,3 +26,5 @@ const seg = (name, val, opts, put, label) => <div className="seg" role="radiogro
 const zone_field = (id, v, put, t) => <div className="field"><label htmlFor={id}>Time zone</label>
   <select id={id} value={v} onChange={e => put(e.target.value)}>{zone_list(t).map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select></div>;
 const FMT = [['12', '12h'], ['24', '24h']];
+
+export function Tz_page() {
