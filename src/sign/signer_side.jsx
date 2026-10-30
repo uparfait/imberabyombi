@@ -28,3 +28,5 @@ export const steps_card = d => { const left = left_of(d);
     <div className="mt-4 grid gap-2">
       <button type="button" className="btn btn_outline btn_sm" data-act="sign_next" disabled={!left.length}>{ic('arrow_downward', 'h-4 w-4')}Next field</button>
       <button type="button" className="btn btn_primary btn_sm" data-act="sign_finish" disabled={!!left.length}>{ic('signature', 'h-4 w-4')}Finish and sign</button></div></section>; };
+
+export const agree_body = (d, r) => <div className="grid gap-4 sm:col-span-2">
