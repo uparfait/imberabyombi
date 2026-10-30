@@ -17,3 +17,4 @@ function define_callout() {
 
 /* tasks saved before their dates had a time: start at 09:00, due and completed at 17:00 */
 function migrate_task_dates() {
+  const rows = db.get('c:tasks'), bare = v => /^\d{4}-\d{2}-\d{2}$/.test(v || ''), K = ['start', 'due', 'end'];
