@@ -1,6 +1,7 @@
 /* qr/qr_engine.js: reading QR codes. The browser's own BarcodeDetector where it reads QR codes; elsewhere jsQR, loaded from
    the CDN the first time. start(video, on_code) opens the back camera into video and reads a
    frame every 250 ms until a code is found (the camera then stops) or stop(); has_torch() / torch(on): the phone's light,
+   where the camera has one.
    secure(text): the link, when the text is one that starts with https; else null. */
 import { load_script } from '../editor/core/utils.js';
 
