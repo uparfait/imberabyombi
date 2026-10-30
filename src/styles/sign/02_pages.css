@@ -26,3 +26,4 @@
   border-radius: var(--pill); background: var(--c); cursor: nwse-resize; }
 @media (pointer: coarse) { .sf_rs { right: -.75rem; bottom: -.75rem; width: 1.5rem; height: 1.5rem; } }
 .sf_edit.sel .sf_x { display: grid; }
+.sf_edit.sel .sf_rs { display: block; }
