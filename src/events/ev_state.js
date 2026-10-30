@@ -12,3 +12,4 @@ const HOURS_2 = 2 * 3600e3;   /* an event with no end time lasts two hours */
 const runs = (e, date, now) => { const s = at(date, e.start, e.tz), end = e.end ? at(date, e.end, e.tz) : s + HOURS_2; return now >= s && now < end; };
 
 export function ev_state(e, now = Date.now()) {
+  if (e.status === 'Cancelled' || e.status === 'Postponed') return e.status;
