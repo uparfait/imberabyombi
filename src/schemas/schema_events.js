@@ -21,6 +21,7 @@ export const activities_schema = {
     field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1), repeat_spec()
   ],
   before: (d, row, f) => when_ok(d, row, f) ? repeat_in(d, f) : false,
+  g: i => {
     const h = lorem.int(7, 16);
     return {
       title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-6, 14))), start: `${pad(h)}:00`, end: `${pad(h + lorem.int(1, 2))}:${lorem.pick(['00', '30'])}`,
