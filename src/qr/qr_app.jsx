@@ -10,3 +10,4 @@ import { top_bar, found_card, recent_list } from './qr_parts.jsx';
 const KEY = 'loremds:v1:qr_recent';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
 const keep = r => { try { localStorage.setItem(KEY, JSON.stringify(r)); } catch { /* this visit only */ } };
+const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site, or scan a picture.', NotFoundError: 'No camera here. Scan a picture instead.',
