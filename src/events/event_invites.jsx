@@ -39,10 +39,7 @@ export const INVITE_ACT = {
     db.upsert('events', { id: e.id, invites: [...(e.invites || []), ...wait.list.map(m => ({ e: m, at: Date.now() }))] });
     const left = not_emails(qs('#ev_inv_in')?.value || '');   /* still in the box: not addresses */
     Object.assign(wait, { list: [], note: left.length ? `Not an email address: ${left.join(', ')}.` : '' });
-    rerender(); notify(`${n_of(n, 'person was', 'people were')} invited by email.`, 'ok', 'Invites sent'); },
-  ev_uninvite: t => ask(`Remove ${t.dataset.e} from the invitations? They will not get any more emails about this event.`, () => {
-    const e = db.find('events', t.dataset.id); db.upsert('events', { id: e.id, invites: (e.invites || []).filter(i => i.e !== t.dataset.e) }); rerender();
-    notify('They are no longer on the list.', 'ok', 'Invitation removed'); }, 'Remove', true)
+    rerender(); notify(`${n_of(n, 'person was', 'people were')} invited by email.`, 'ok', 'Invites sent'); }
 };
 
 export function invites_card(e, st, can) {
