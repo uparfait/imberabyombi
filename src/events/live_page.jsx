@@ -31,3 +31,4 @@ export function live_page(id, c) {
     <header className="live_top"><a href={to(page)} className="icon_btn" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
       <h1 className="live_title truncate">{e.title}</h1>{badge(st)}
       {t ? <span className="ev_left">{t[0]} <b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></span> : null}
+      <div className="live_acts">{tile_menu({ id: `pop_live_${id}`, title: e.title, icon: false, label: 'Menu', tiles: [
