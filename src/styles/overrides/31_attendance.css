@@ -1,3 +1,4 @@
 /* overrides/31_attendance.css: the attendance page (events/attend_page.jsx): one card in the middle of the screen, the
    form, the signature pad (as in O-Doc Sign), the large tick when it is sent; QR codes (events/qr.jsx) */
   .att_page { display: grid; min-height: 100dvh; place-items: center; padding: 1.5rem 1rem; background: rgb(var(--bg)); }
+  .att_card { width: 100%; max-width: 30rem; padding: 1.75rem 1.5rem; }
