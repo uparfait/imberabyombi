@@ -4,3 +4,4 @@
    warning colour on hover. On a phone the day shows under the address. INVITE_TABLE_ACT: its buttons. */
 import { qs, fmt_stamp } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
+import { ic } from '../icons/index.js';
