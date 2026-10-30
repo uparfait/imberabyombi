@@ -15,7 +15,6 @@ import { left } from './countdown.js';
 export const BASE = { events: '/admin/events', activities: '/admin/calendar' };
 export const att_count = id => db.list('attendees').filter(a => a.ref === id).length;
 export const att_url = (c, id) => new URL(to(`/attend/${c}/${id}`), location.origin).href;
-export const qr_open = st => ['Upcoming', 'Live', 'Recurring'].includes(st);
 
 export function attend_side(e, c, st) {
   const url = att_url(c, e.id), n = att_count(e.id), page = `${BASE[c]}/${e.id}`, open = qr_open(st);
