@@ -1,5 +1,6 @@
 /* events/event_page.jsx: one event or activity on its own page (/admin/events/<id>, /admin/calendar/<id>: from a table
    row, a card or the calendar): its title, its details as one table by section, each edited on its own, its invitations
+   (event_invites.jsx), and on the right where it stands (ev_state; when a past one ran) with the actions that fit it now
 import { db, route, after_render, TIMERS } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { ic } from '../icons/index.js';
