@@ -34,6 +34,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
   changes that section only (`open_form(c, id, {}, [title, keys])`).
 - On the right are the status and the actions that fit it:
   - **Postpone**: it opens with the event's date, times and time zone as they are now. Change them to the new ones, or
+    clear the date if the new one is not known yet (the event then leaves the calendar). A reason is optional.
   - **Cancel event**: with a reason. It leaves the calendar.
   - **Back on schedule**, **Mark as completed** (while live) and **Stop repeating**.
   - **Duplicate**: a new event with the same details and no date.
