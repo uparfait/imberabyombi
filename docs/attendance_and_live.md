@@ -13,3 +13,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   position, and a signature, drawn (the O-Doc Sign pad) or digital. Once per email; a large tick says it was sent.
   Before it opens it counts down to opening; while open, to closing; after, it is closed.
 - **When it is open** ([`att_window.js`](../src/events/att_window.js)): during the event, plus **Attendance settings**:
+  before it starts, how many minutes early it opens; while it runs, how many minutes after the end it stays open; once
