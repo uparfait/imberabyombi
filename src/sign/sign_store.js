@@ -46,3 +46,4 @@ export function new_doc(name, size, pages) {
   const me = who(), now = Date.now(), title = name.replace(/\.pdf$/i, '').trim().slice(0, 80) || 'Untitled document';
   const d = { id: uid(), title, file: name, size, pages, owner: me.email, owner_name: me.name, status: 'draft',
     recipients: [], fields: [], created: now, updated: now, audit: [] };
+  log(d, `${me.name} uploaded ${name}`, 'upload', me.email); db.upsert(C, d); return d;
