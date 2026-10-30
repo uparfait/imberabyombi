@@ -8,3 +8,4 @@ import { closed_pop } from '../admin/index.js';
 import { when } from './sign_store.js';
 
 /* what "Force digital signature" asks of a signer (its help icon and the row's tooltip) */
+export const CERT_HELP = 'The signer must verify their identity with a digital certificate (the certificate file and its password) before they '
