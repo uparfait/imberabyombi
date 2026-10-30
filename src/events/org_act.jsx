@@ -18,3 +18,4 @@ const taken = (e, mail, skip) => [[-1, e.org_email], ...(e.co_orgs || []).map((o
 const twice = (f, k) => { show_err(f.elements[k], 'Already one of the organisers.'); return false; };
 
 function co_form(c, e, i = -2) {
+  const co = e.co_orgs || [], p = co[i];
