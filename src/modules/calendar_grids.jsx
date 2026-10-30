@@ -30,3 +30,4 @@ export function week_grid(d, items) {
       {items.filter(i => i.date === k && !i.all_day).map(chip)}{k === td ? now_line : null}</div>; };
   return <div className="overflow-x-auto"><div className="min-w-[44rem]">
     <div className={`${cols} border-b border-line`}>
+      <div className="self-end pb-1 pl-1 text-[0.625rem] text-muted">{gl}</div>{days.map(head)}</div>
