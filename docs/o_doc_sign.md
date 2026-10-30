@@ -62,6 +62,7 @@ every account starts empty.
   resized, removed or added to), and you are not edited or removed as a signer ([`self_sign.jsx`](../src/sign/self_sign.jsx)).
 - **Preview**, at the foot of the right column once someone has signed: the document with the marks so far, and
   **Download a copy**.
+- You can go on adding other signers and send it: it goes to those who have not signed. When everyone on it has signed
 ## Signing
 - The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
   their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
