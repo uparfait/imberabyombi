@@ -12,3 +12,4 @@ const monday = d => add_d(d, -((d.getDay() + 6) % 7));
 const month_days = d => new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
 const nth = d => Math.ceil(d.getDate() / 7);   /* the first … fifth of its weekday in the month */
 const or = (xs, x) => xs?.length ? xs : [x];
+/* the weeks and weekdays a first date stands for: the 2nd Friday; a 5th one is the last */
