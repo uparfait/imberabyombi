@@ -78,3 +78,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_ev_text { display: flex; min-width: 0; flex: 1; align-items: center; gap: .3rem; overflow: hidden; font-size: .875rem; white-space: nowrap; }
 .sign_ev_text b { font-weight: 600; }
 .sign_ev time { flex: none; color: rgb(var(--muted)); font-size: .75rem; }
+.sign_ev_faces { display: flex; padding-left: .25rem; }
