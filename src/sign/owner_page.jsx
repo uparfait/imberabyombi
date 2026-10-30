@@ -38,3 +38,4 @@ export const dl_label = d => d.status === 'completed' ? 'Download signed PDF' : 
 
 export const owner_page = d => <div className="sign_split">
   <aside className="sign_side" aria-label="Progress">
+    <section className="card p-5">{progress(d)}<div className="mt-5">{signer_rows(d, true)}</div>
