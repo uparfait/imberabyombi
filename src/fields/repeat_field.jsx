@@ -51,3 +51,4 @@ export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...
     {line('In', <div className="rp_chips">{MONTH_NAMES.map((m, i) => chip('rp_months', i + 1, m.slice(0, 3), r.months.includes(i + 1), '', m))}</div>, 'rp_freq=yearly')}
     {line('On', <>{choose('rp_by', [['date', 'Dates'], ['week', 'Weeks']], r.by, 'On dates or weeks')}
       <div className="rp_dates" data-when="rp_by=date">{Array.from({ length: 31 }, (_, i) => chip('rp_dates', i + 1, i + 1, r.dates.includes(i + 1), 'rp_round', `The ${i + 1}`))}
+        {chip('rp_dates', -1, 'Last day', r.dates.includes(-1), 'rp_last', 'The last day of the month')}</div>
