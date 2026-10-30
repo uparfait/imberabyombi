@@ -15,3 +15,4 @@ export const mail_view = k => {
   const m = mail_body(k);
   return (
     <article key={k} className="card overflow-hidden" aria-label={`${MAILS[k].l} email`}>
+      <header className="border-b border-line p-4 sm:p-5"><h2 className="font-sans text-lg font-medium sm:text-xl">{m.s}</h2>
