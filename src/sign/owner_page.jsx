@@ -35,3 +35,5 @@ export const progress = d => { const n = d.recipients.length, s = signed_n(d);
     <div className="sign_prog mt-3" role="progressbar" aria-valuemin={0} aria-valuemax={n} aria-valuenow={s}><i style={{ width: `${n ? s / n * 100 : 0}%` }}></i></div></>; };
 
 export const dl_label = d => d.status === 'completed' ? 'Download signed PDF' : 'Download PDF';
+
+export const owner_page = d => <div className="sign_split">
