@@ -25,3 +25,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
   };
   const star = (cx, cy, r) => { x.beginPath();
     for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, q = i % 2 ? r * .45 : r; x.lineTo(cx + q * Math.cos(a), cy + q * Math.sin(a)); }
+    x.fill(); };
