@@ -20,6 +20,7 @@ const reason = (v = '') => <div key="reason" className="field sm:col-span-2"><la
   <textarea id="ev_reason" name="reason" rows={3} placeholder=" " defaultValue={v} /></div>;
 const WHEN = [{ k: 'date', l: 'Date', t: 'date' }, { k: 'start', l: 'Starts', t: 'time' }, { k: 'end', l: 'Ends', t: 'time' }, { k: 'tz', l: 'Time zone', t: 'tz' }];
 const POSTPONE_HELP = 'It opens with its date and time as they are now. Change them to the new ones, or clear the date if the new one is not '
+  + 'known yet. Everyone invited is told by email.';
 
 export const EV_ACT = {
   ...INVITE_ACT,
