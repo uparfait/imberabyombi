@@ -17,3 +17,4 @@ const END_HELP = 'Never: it repeats until you delete it. On a date: it stops aft
 export function repeat_from(f) {
   const v = n => f.elements[n]?.value ?? '', all = n => [...f.querySelectorAll(`[name=${n}]:checked`)].map(i => +i.value);
   const r = { freq: v('rp_freq') || 'weekly', every: Math.min(99, Math.max(1, +v('rp_every') || 1)), end: v('rp_end') || 'never' };
+  if (r.freq === 'weekly') r.days = all('rp_days');
