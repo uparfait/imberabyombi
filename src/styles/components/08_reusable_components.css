@@ -32,3 +32,4 @@
   .side_link { @apply flex items-center gap-3 rounded-full px-4 py-2.5 text-sm font-medium text-fg/80 transition hover:bg-fg/5; }
   .side_link.active { @apply bg-brand/15 font-semibold text-accent; }
   .pop { @apply absolute z-50 mt-2 max-h-[calc(100dvh-5rem)] overflow-y-auto rounded-3xl border border-line bg-surface p-2 shadow-soft; }
+  .pop:not([hidden]) { animation: pop .2s var(--ease); }
