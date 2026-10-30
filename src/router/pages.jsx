@@ -21,3 +21,4 @@ export function public_page(r) {
   set_meta(title); lorem.seed(5);
   return (
     <div className="relative isolate flex min-h-[100dvh] flex-col">{pub_header()}
+      <main id="main" tabIndex={-1} className="page_enter flex-1 outline-none">{inner}</main>{footer()}</div>
