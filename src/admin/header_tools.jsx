@@ -35,6 +35,7 @@ export function account_menu(n = '', rail = false) {
             <button key={k} className="menu_item" data-act="panel" data-k={k}>{ic(i, `h-4 w-4 ${c}`)}{l}</button>)}
             <button className="menu_item" data-act="cmdk">{ic('plus', 'h-4 w-4 text-muted')}Go to</button></div> : null}
           <label className="menu_item menu_item_sm mt-1 justify-between">Allow text selection
+            <input type="checkbox" role="switch" data-allow-select defaultChecked={document.documentElement.classList.contains('allow_select')} /></label>
           <div className="mt-2 rounded-2xl bg-surface-2 p-4">
             <p className="flex items-center gap-2 text-sm">{ic('box', 'h-4 w-4 text-muted')}{`${pct}% of 5 MB browser storage used`}</p>
             <progress className="mt-2" max="100" value={pct}></progress></div>
