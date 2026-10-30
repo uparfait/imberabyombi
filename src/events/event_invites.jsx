@@ -29,3 +29,4 @@ function add(id, found, bad = [], file = '') {
 const take = (id, input) => { if (!input?.value.trim()) return; const v = input.value; input.value = not_emails(v).join(' '); add(id, find_emails(v), not_emails(v)); };
 const upload = (id, input) => { const file = input.files[0]; input.value = ''; if (!file) return;
   request(async () => { try { add(id, await emails_in_file(file), [], file.name); }
+    catch { notify(`${file.name} could not be read. Save it as .xlsx or .csv and try again.`, 'bad', 'File not read'); } }, { btn: input.closest('label') }); };
