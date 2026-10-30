@@ -65,3 +65,4 @@ export function convert(date, time, from, to) {
   if (!date || !from || !to || from === to) return { date, time };
   const [y, mo, d] = String(date).split('-').map(Number), [h, mi] = String(time || '00:00').split(':').map(Number);
   const p = tz_parts(to, zoned_to_utc(y, mo, d, h || 0, mi || 0, from));
+  return { date: `${p.y}-${pad(p.mo)}-${pad(p.d)}`, time: `${pad(p.h)}:${pad(p.mi)}` };
