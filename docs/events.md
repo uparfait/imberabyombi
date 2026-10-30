@@ -43,3 +43,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 ## Invitations
 On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.jsx)):
 - **Add addresses**: type them (Enter, comma or semicolon after each), paste many at once, or **Upload a file**.
+- **Files**: every email address in the file is found ([`events/invite_emails.js`](../src/events/invite_emails.js)).
