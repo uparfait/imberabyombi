@@ -7,7 +7,6 @@ import { db, rerender } from '../store/index.js';
 import { ic } from '../icons/index.js';
 import { notify } from '../feedback/index.js';
 import { ask } from '../overlays/index.js';
-import { find_emails } from './invite_emails.js';
 
 let editing = '';   /* "<event id>|<address>" while an address is being changed */
 const day = at => fmt_stamp(at, { dateStyle: 'medium' });
