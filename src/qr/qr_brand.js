@@ -30,3 +30,4 @@ async function install_files(c) {
 
 export function brand_apply() {
   const t = tokens(), s = document.documentElement.style, c = brand();
+  if (c !== DEF) { const v = [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16)); s.setProperty('--brand', v.join(' ')); s.setProperty('--brand_2', v.map(x => Math.round(x * .64)).join(' ')); }
