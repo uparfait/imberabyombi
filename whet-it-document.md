@@ -16,3 +16,5 @@ Every feature below is working code. Each line says what it is and where it live
   (never changed by the theme), drawn by the Icon3D engine (`src/icon3d/`), with a glossy "#" brand mark.
 - Iconisus (`/admin/icons`): a 3D icon maker for text, library icons (twelve sets) or SVG in six styles (classic, balloon,
   ribbon, glossy, clay, glass), three colours, any size; copy or download the SVG.
+
+## Forms and input (`src/fields/`, `src/overlays/`, `src/files/`)
