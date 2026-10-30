@@ -5,7 +5,7 @@
 import { fmt_stamp } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
 import { ic } from '../icons/index.js';
-import { notify, show_err } from '../feedback/index.js';
+import { notify } from '../feedback/index.js';
 import { ask } from '../overlays/index.js';
 import { find_emails } from './invite_emails.js';
 
