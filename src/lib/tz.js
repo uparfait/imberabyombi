@@ -37,3 +37,4 @@ export function zoned_to_utc(y, mo, d, h, mi, tz) {
 }
 export const gmt = m => `GMT${m < 0 ? '-' : '+'}${pad(Math.floor(Math.abs(m) / 60))}:${pad(Math.abs(m) % 60)}`;
 const gmt_short = m => { const a = Math.abs(m); return `GMT${m < 0 ? '-' : '+'}${Math.floor(a / 60)}${a % 60 ? ':' + pad(a % 60) : ''}`; };
+const city = tz => tz === 'UTC' ? 'UTC' : tz.split('/').pop().replace(/_/g, ' ');
