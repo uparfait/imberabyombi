@@ -22,9 +22,7 @@ export function attend_side(e, c, can, shown) {
   const tiles = [...(open ? [{ icon: 'external', label: 'Attendance page', href: url, blank: true }] : []), { icon: 'eye', label: 'View This Event', href: to(page + '/live') },
     { icon: 'users', label: 'Attendees', href: to(page + '/attendance') },
     ...(can ? [{ icon: 'sliders', label: 'Attendance settings', attrs: { 'data-act': 'ev_att_set', 'data-c': c, 'data-id': e.id } }] : [])];
-  return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
-    {open ? <button type="button" className="ev_qr_btn" data-act="ev_qr" data-id={e.id} aria-label="Show the QR code on the whole screen" data-tip="Full screen">
-      <Qr text={url} label="Attendance QR code" /></button> : null}{open ? qr_full(e, url, n) : null}
+  return <div className="ev_att">
     <div className="ev_att_side"><a href={to(page + '/attendance')} className="ev_count" data-tip={n > 99 ? `${n} attended` : undefined}><b>{n > 99 ? '99+' : n}</b> attended</a>
       {open ? <span className="ev_left">{ph[0] === 'soon' ? 'Opens in' : 'Closes in'} <b data-count-to={ph[1]}>{left(ph[1] - Date.now())}</b></span> : null}
       {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={url} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button>
