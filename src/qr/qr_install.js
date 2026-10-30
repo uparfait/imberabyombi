@@ -3,3 +3,4 @@
    offer: there it is Share, then Add to Home Screen. on_change(fn) tells when that changes. */
 let offer = null;
 const subs = new Set(), emit = () => subs.forEach(f => f());
+addEventListener('beforeinstallprompt', e => { e.preventDefault(); offer = e; emit(); });
