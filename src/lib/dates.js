@@ -20,3 +20,5 @@ export const fmt_hour = h => h24() ? `${pad(h)}:00` : new Date(2000, 0, 1, h).to
 export const fmt_time = t => {
   const [h, m] = String(t).split(':').map(Number);
   return h24() ? `${pad(h || 0)}:${pad(m || 0)}` : new Date(2000, 0, 1, h || 0, m || 0).toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit', hour12: true });
+};
+export const iso_week = d => {
