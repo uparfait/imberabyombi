@@ -9,3 +9,6 @@ const UNITS = [['y', 31536000], ['mo', 2592000], ['d', 86400], ['h', 3600], ['m'
 export function left(ms) {
   let s = Math.max(0, Math.floor(ms / 1000)); const parts = UNITS.map(([u, n]) => { const v = Math.floor(s / n); s -= v * n; return [v, u]; });
   const i = parts.findIndex(([v]) => v > 0); return i < 0 ? '0s' : parts.slice(i).map(([v, u]) => v + u).join(' ');
+}
+
+export function count_to(e, st) {
