@@ -7,3 +7,4 @@ import { initials, help_tip } from '../ui/index.js';
 /* o = { routed, title, node, kids, path, to } from nav_drops. The header: icon, title and a help icon whose tooltip holds the
    description (no line above the title, no paragraph under it), then the page's buttons on the right. */
 const head = (o, icon, text, extra = null) => { const T = o.routed ? 'h2' : 'h3';
+  return <section className={`flex flex-wrap items-center gap-3 ${o.routed ? 'hero_in' : 'card p-4 sm:p-5'}`} aria-label={o.title}>{i3(icon, 'h-11 w-11')}
