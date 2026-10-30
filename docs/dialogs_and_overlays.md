@@ -42,3 +42,4 @@ shows the full text only when it is actually cut. On touch screens a tap shows i
 
 ## Right click
 A right click opens the browser's own menu everywhere (the document editor brings its own). "Allow text selection" is a
+small switch in the account menu (remembered).
