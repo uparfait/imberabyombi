@@ -19,8 +19,7 @@ export const header_tools = (n = '') => <><button className="icon_btn" data-act=
   <a className="icon_btn hidden sm:inline-grid" href={to('/ui')} aria-label="Design system">{ic('layers')}</a>
   {theme_btn()}{account_menu(n, true)}</>;
 
-/* the signed-in person's avatar and its menu (name and email, settings, public website, sign out, the side panels on small screens
-   when rail is set, a small "Allow text selection" switch, storage used) */
+/* the signed-in person's avatar and its menu (name and email, settings, public website, the side panels on small screens
 export function account_menu(n = '', rail = false) {
   const u = auth.user, pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
   return <div className="relative">
