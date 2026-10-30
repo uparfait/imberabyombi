@@ -62,3 +62,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   activity: 'M22 12h-4l-3 9L9 3l-3 9H2',
   diamond: 'M12 2 22 12 12 22 2 12z',
   play: 'M7 4v16l13-8z', pause: 'M7 4h3v16H7zM14 4h3v16h-3z',
+  refresh: 'M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5',
