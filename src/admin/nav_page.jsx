@@ -6,3 +6,4 @@ import { initials, help_tip } from '../ui/index.js';
 
 /* o = { routed, title, node, kids, path, to } from nav_drops. The header: icon, title and a help icon whose tooltip holds the
    description (no line above the title, no paragraph under it), then the page's buttons on the right. */
+const head = (o, icon, text, extra = null) => { const T = o.routed ? 'h2' : 'h3';
