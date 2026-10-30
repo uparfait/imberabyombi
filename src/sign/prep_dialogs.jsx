@@ -9,3 +9,4 @@ export const rec_body = r => <>
   <div className="field sm:col-span-2"><label htmlFor="sign_rec_email">Email</label>
     <input id="sign_rec_email" name="email" type="email" required maxLength={120} placeholder=" " autoComplete="off" defaultValue={r.email} /></div>
   <div className="field sm:col-span-2"><label htmlFor="sign_note_in">Note for this signer (optional)</label>
+    <textarea id="sign_note_in" name="note" rows={3} maxLength={500} placeholder=" " defaultValue={r.note || ''} /></div>
