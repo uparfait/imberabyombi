@@ -19,3 +19,4 @@ export function account_menu(n = '') {
   return <div className="relative">
         <button className="ml-1 rounded-full" data-act="pop" data-pop={`pop_account${n}`} aria-label="Account">{avatar(u.name, 'h-9 w-9 text-sm')}</button>
         <div id={`pop_account${n}`} ref={closed_pop()} className="pop right-0 w-[21rem] max-w-[calc(100vw-1rem)] p-3" hidden>
+          <div className="flex items-center gap-3 rounded-3xl bg-surface-2 p-4">{avatar(u.name, 'h-14 w-14 text-lg')}
