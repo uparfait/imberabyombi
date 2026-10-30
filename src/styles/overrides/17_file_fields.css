@@ -32,3 +32,4 @@
   .viz_plot .mark_flow { fill: none; opacity: .35; }
   .viz_plot .mark_group:hover .mark_flow { opacity: .65; }
   .viz_plot .mark_cell:hover { stroke: rgb(var(--fg)); stroke-width: 1.5; }
+  .viz_legend { display: flex; flex-wrap: wrap; gap: .375rem 1rem; font-size: .8125rem; color: rgb(var(--fg) / .85); }
