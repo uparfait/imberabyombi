@@ -23,6 +23,7 @@ function on_screen() {
 /* type: 'signature' | 'stamp'; page, cx, cy: where (a page index and the centre as fractions), or nothing for "on screen" */
 export function add_field(type, page, cx, cy) {
   if (!P.rid) { notify('Add a signer first, then place their fields.', 'warn', 'Who signs here?'); P.adding = true; rerender(); return; }
+  const r = rec_of(P.doc, P.rid);
   if (page == null) { const s = on_screen(), k = P.doc.fields.length % 4; page = s.page; cy = s.y + k * .02; cx = .5 + k * .03; }
   const [, , pw, ph] = KINDS[type], sz = P.doc.pages[page], w = Math.min(pw / sz.w, .9), h = Math.min(ph / sz.h, .9);
   const f = { id: uid(), type, rid: P.rid, page, w, h, x: clamp(cx - w / 2, 0, 1 - w), y: clamp(cy - h / 2, 0, 1 - h) };
