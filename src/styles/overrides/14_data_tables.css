@@ -31,3 +31,4 @@
   /* Search fields: .search_btn = search button (left, runs the search), .clear_btn = clear button (right, hidden while empty) */
   .search_btn, .clear_btn { position: absolute; top: 50%; translate: 0 -50%; z-index: 1; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: var(--pill);
     color: rgb(var(--muted)); transition: background-color .15s, color .15s; }
+  .search_btn { left: .375rem; }
