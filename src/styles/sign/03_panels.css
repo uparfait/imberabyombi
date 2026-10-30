@@ -39,3 +39,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_chip .sign_chev { transition: transform .2s; }
 .sign_chip[aria-expanded="true"] .sign_chev { transform: rotate(180deg); }
 .sign_note_open { margin-top: .375rem; }
+/* "Force digital signature": the checkbox and its help icon */
