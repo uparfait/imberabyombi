@@ -14,3 +14,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
   const ring = (r, w) => { x.lineWidth = w; x.beginPath(); x.arc(C, C, r, 0, Math.PI * 2); x.stroke(); };
   /* text along a circle of radius r, centred on angle at (top: reading left to right; bottom: upright too) */
   const arc = (t, r, at, bottom, s) => {
+    let w; const sp = 3;
