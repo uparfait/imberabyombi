@@ -12,3 +12,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
   const font = s => { x.font = `800 ${s}px ${FONT}`; };
   const fit = (t, cx, cy, max, s) => { do font(s); while (x.measureText(t).width > max && --s > 10); x.fillText(t, cx, cy); };
   const ring = (r, w) => { x.lineWidth = w; x.beginPath(); x.arc(C, C, r, 0, Math.PI * 2); x.stroke(); };
+  /* text along a circle of radius r, centred on angle at (top: reading left to right; bottom: upright too) */
