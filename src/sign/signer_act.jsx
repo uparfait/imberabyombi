@@ -53,3 +53,5 @@ export const SIGNER_ACT = {
     modal({ title: 'Sign this document?', body: <>{agree_body(d, r)}{r.cert ? <Cert_pick /> : null}</>, submit: r.cert ? 'Verify and sign' : 'Sign document',
       on_submit: !r.cert ? finish : async (v, form) => { const file = await verify(form); if (!file) return false;
         const d2 = find_doc(S.id), me = my_rec(d2); Object.assign(me, { cert_file: file, cert_at: Date.now() });
+        log(d2, `${me.name} verified their digital certificate (${file})`, 'cert', me.email); save_doc(d2); return finish(); } }); }
+};
