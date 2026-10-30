@@ -27,3 +27,4 @@ Every feature below is working code. Each line says what it is and where it live
 
 ## Feedback (`src/feedback/`)
 - Inline messages in the component that caused them; bottom-right notifications on staff pages only.
+- One segmented spinner for every request: in the clicked button and a top loader above any open dialog.
