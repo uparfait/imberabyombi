@@ -32,3 +32,4 @@ export const EV_ACT = {
     modal({ title: 'Cancel this event?', help: 'It stays in the list as cancelled, and you can put it back on schedule later. Everyone invited is told by email.',
       body: [reason()], submit: 'Cancel event', dismiss: 'Keep it', danger: true,
       on_submit: d => save(e.id, { status: 'Cancelled', status_note: d.reason || '' }, 'Event cancelled', 'It no longer shows on the calendar.' + told(e)) }); },
+  ev_restore: t => save(t.dataset.id, { status: 'Scheduled', status_note: '' }, 'Back on schedule', 'It shows on the calendar again.'),
