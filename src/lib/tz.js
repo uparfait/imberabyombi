@@ -54,3 +54,5 @@ export function zone_list(t = Date.now()) {
       key: `${g} ${text} ${tz.replace(/_/g, ' ')} ${s} utc${s.slice(3)}`.toLowerCase() }; })
     .sort((a, b) => a.off - b.off || a.text.localeCompare(b.text));
   LIST_DAY = day; return LIST;
+}
+/* a zone's short name on a given day ("GMT-5 · New York" in winter, "GMT-4 · New York" in summer): date 'YYYY-MM-DD' or now */
