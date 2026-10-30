@@ -64,6 +64,7 @@ every account starts empty.
   at 30% for a picture with paper around it; slide right until only the ink is left (the checkerboard shows what is
   transparent). Code: `src/sign/bg_cut.js`.
 - **Finish** asks the signer to agree to sign electronically. When everyone has signed, the document is Completed.
+- Signed, the guide's first card shows a green tick and "Signed on <date>". **Download a copy** appears there as soon as
 - **Digital certificate** (when the sender asked for it): Finish also asks for the certificate file and its password, and
   **Verify and sign** checks them before signing. The check is **simulated** in this template: any file and any password
   are accepted after a short wait; the file name and time are recorded, shown as "Digital signature verified" and printed on the
