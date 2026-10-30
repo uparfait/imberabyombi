@@ -14,3 +14,4 @@ const KIND_HELP = 'Upcoming: it starts later. Live now: it has already started, 
 const live_now = f => { const tz = f.elements.tz?.value || device_tz(), p = tz_parts(tz, Date.now());
   for (const [k, v] of [['date', `${p.y}-${pad(p.mo)}-${pad(p.d)}`], ['start', `${pad(p.h)}:${pad(p.mi)}`]]) {
     const i = f.elements[k]; if (i && !i.value) { set_native_value(i, dt_show(i.dataset.type, v)); i.dispatchEvent(new Event('input', { bubbles: true })); } } };
+export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def: () => 'Upcoming', help: KIND_HELP,
