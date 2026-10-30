@@ -45,3 +45,4 @@ export function invite_table(e, open) {
       {open ? <th scope="col" className="ev_inv_acts"><span className="sr-only">Actions</span></th> : null}</tr></thead>
       <tbody>{inv.map(i => editing === `${e.id}|${i.e}` ? edit_row(e.id, i) : <tr key={i.e}>
         <td><span className="block truncate">{i.e}</span><span className="ev_inv_sub">{day(i.at)}</span></td><td className="ev_inv_day">{day(i.at)}</td>
+        {open ? <td className="ev_inv_acts">{btn('ev_inv_edit', 'edit', 'Change the address', '', { id: e.id, e: i.e })}
