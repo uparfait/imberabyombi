@@ -38,3 +38,4 @@ export function admin_shell(mod, content) {
       {header_tools()}
     </div></header>
   <div className="flex flex-1">
+    <main id="main" key={page_key()} className="page_enter min-w-0 flex-1 p-3 sm:p-6">{content}</main>
