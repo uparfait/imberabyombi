@@ -21,3 +21,4 @@
   .brand_toggle .bt_open { opacity: 0; scale: .8; color: rgb(var(--fg)); }
   .brand_toggle:is(:hover, :focus-visible) { background: rgb(var(--fg) / .06); }
   .brand_toggle:is(:hover, :focus-visible) .bt_logo { opacity: 0; scale: .8; }
+  .brand_toggle:is(:hover, :focus-visible) .bt_open { opacity: 1; scale: 1; }
