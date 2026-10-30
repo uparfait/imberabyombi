@@ -20,3 +20,4 @@
 .sf_tag { position: absolute; bottom: 100%; left: -2px; max-width: 14rem; margin-bottom: 3px; padding: .1em .65em; overflow: hidden;
   border-radius: var(--pill); background: var(--c); color: #fff; font-size: clamp(8px, 1.3cqw, 12px); white-space: nowrap; text-overflow: ellipsis; }
 .sf_x { position: absolute; top: -.75rem; right: -.75rem; display: none; width: 1.5rem; height: 1.5rem; place-items: center; border-radius: var(--pill);
+  border: 1px solid rgb(var(--line)); background: #fff; color: rgb(var(--bad)); }
