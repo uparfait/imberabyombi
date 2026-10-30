@@ -9,3 +9,6 @@ export function fill_rows(grid) {
     el.classList.remove('fill_row');
     if (el.tagName === 'LEGEND' || el.hidden || getComputedStyle(el).display === 'none') continue;
     if (el.matches(FULL)) { open?.classList.add('fill_row'); open = null; } else open = open ? null : el;
+  }
+  open?.classList.add('fill_row');
+}
