@@ -29,3 +29,4 @@ lives in the browser and can be reset from Settings.
 | Account pages    | Sign in (role picker), forgot password, 2-step code, authenticator app, set password |
 | Admin shell      | Collapsible sidebar, apps grid, Create menu, side panels (notes, my tasks, help), Ctrl K palette, nested navigation |
 | Modules          | Dashboard, calendar, tasks, document editor, staff, employees, attendance, students, library, events, reservations & inventory, smart parking, roles & access, email designs, charts & KPIs, settings |
+| Data tables      | Column search, sort, pages, row settings, hide columns, full screen, details view, add / edit / delete, export to CSV, JSON or Excel |
