@@ -13,3 +13,4 @@ charts and KPIs, all sharing one set of design tokens. Start any new website fro
 
 ## Quick start
 ```bash
+npm install
