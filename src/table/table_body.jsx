@@ -54,6 +54,6 @@ export function table_body(c) {
         {with_acts ? <td className="table_acts"><div className="inline-flex items-center gap-1">{acts[i]}</div></td> : null}
         {cols.map(k => <td key={k} data-k={k}><div className="trunc">{cell(c, k, r)}</div></td>)}
       </tr>
-    )) : none_row(c, s, can, filtered, span)
+    )) : none_row(c, s, can && o.add !== false, filtered, span)
   };
 }
