@@ -1,5 +1,6 @@
 /* events/event_minutes.jsx: an event's or activity's minutes and follow-ups, two cards on its page (the buttons that
    add them are on its live screen, live_page.jsx). Minutes: Record minutes opens the document editor on that day's own
+   document ("Minutes · <title> · <date>"), started with who attended and the agenda; each day's minutes are listed by
 import { esc, fmt_d, fmt_time, pad, tz_parts, page_tz } from '../lib/index.js';
 import { db } from '../store/index.js';
 import { me } from '../auth/index.js';
