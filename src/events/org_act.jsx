@@ -25,6 +25,7 @@ function co_form(c, e, i = -2) {
     actions: p ? <button type="button" className="btn btn_warn" data-act="ev_co_del" data-c={c} data-id={e.id} data-i={i}>Remove</button> : null,
     on_submit: (d, f) => { if (taken(e, d.p_email, i)) return twice(f, 'p_email');
       const nu = one(d);
+      put(c, e, { co_orgs: p ? co.map((o, j) => j === i ? nu : o) : [...co, nu] }, p ? 'Changes saved' : 'Co-organiser added', p ? 'The co-organiser is updated.' : `${nu.name} can now manage it too.`); } });
 }
 
 export const ORG_ACT = {
