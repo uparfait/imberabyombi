@@ -19,3 +19,4 @@ export function count_to(e, st) {
     return ['Ends in', end(day, at(day, e.start, e.tz))]; }
   if (st === 'Recurring') { const p = tz_parts(e.tz || page_tz(), Date.now()), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
     let d = repeat_next(e.repeat, e.date, today); if (d === today && at(d, e.start, e.tz) <= Date.now()) d = repeat_next(e.repeat, e.date, ymd(add_d(parse_d(today), 1)));
+    return d ? ['Next in', at(d, e.start, e.tz)] : null; }
