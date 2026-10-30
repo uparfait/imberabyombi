@@ -15,3 +15,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
   /* text along a circle of radius r, centred on angle at (top: reading left to right; bottom: upright too) */
   const arc = (t, r, at, bottom, s) => {
     let w; const sp = 3;
+    do { font(s); w = [...t].reduce((a, ch) => a + x.measureText(ch).width + sp, 0); } while (w / r > Math.PI * .8 && --s > 10);
