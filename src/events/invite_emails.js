@@ -15,3 +15,4 @@ export async function emails_in_file(file) {
   const ext = file.name.split('.').pop().toLowerCase();
   if (['xlsx', 'xlsm', 'ods'].includes(ext)) return find_emails((await zip_texts(await file.arrayBuffer(), CELLS)).join(' '));
   if (ext === 'xls') {
+    const [{ load_script }, { LIB }] = await Promise.all([import('../editor/core/utils.js'), import('../editor/core/constants.js')]);
