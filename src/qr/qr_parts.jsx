@@ -41,3 +41,4 @@ export const recent_list = (items, clear) => items.length ? <section className="
   <div className="flex items-center justify-between"><h2 className="qr_cap">Recent</h2>
     <button type="button" className="text-xs text-muted hover:text-fg" onClick={clear}>Clear</button></div>
   <ul>{items.map(x => { const link = secure(x.t);
+    return <li key={x.at}>{ic(link ? 'link' : 'note', 'h-4 w-4 shrink-0 text-muted')}<span className="min-w-0 flex-1 truncate" title={x.t}>{x.t}</span>
