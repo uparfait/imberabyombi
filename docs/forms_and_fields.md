@@ -12,8 +12,7 @@ F('link', 'Meeting link', 'text', 0, 0, { when: 'place=Virtual' })   // shown on
 F('notes', 'Notes', 'textarea')
 ```
 Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `textarea`, `list` (suggestions),
-`date`, `time`, `datetime-local`, `month`, `week`, `hidden`, `files` (a file field), `subtasks` (task checklist editor).
-Extras: `def` (default), `when` (`'Done'` / `'!Done'`, shown by status), `min`, `max`.
+`date`, `time`, `datetime-local`, `month`, `week`, `hidden`, `files` (a file field), `subtasks` (task checklist editor),
 
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
