@@ -21,3 +21,4 @@ export function mail_body(k) {
     <div className="flex flex-wrap gap-2">{mail_btn('Yes, I will attend')}{mail_btn('Maybe', 'btn_outline')}{mail_btn('No', 'btn_outline')}</div></>;
   const cal = <p className="text-xs text-muted">Add to calendar: <a href={to('/admin/emails')} className="text-accent underline">Imberabyombi</a> · <a href={to('/admin/emails')}
     className="text-accent underline">Outlook</a> · <a href={to('/admin/emails')} className="text-accent underline">Apple (.ics)</a></p>;
+  /* all six mails are built in order (the same lorem sequence whichever mail is shown), then one is picked */
