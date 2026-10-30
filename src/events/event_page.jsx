@@ -32,7 +32,6 @@ export function event_page(id) {
   if (!e) return empty('Event not found', 'It may have been deleted. Go back to the events and pick another.',
     <a href={to('/admin/events')} className="btn btn_outline btn_sm">{ic('arrow_back', 'h-4 w-4')}Back to events</a>, 'alert', 'warn');
   route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
-  return <div className="ev_page">{back}
-    <div className="ev_head"><h2 className="ev_title">{e.title}</h2>{help_tip(HELP, 'this event')}{badge(st)}</div>
+  /* the way back is an arrow at the start of the title row (never a line above the title) */
     <div className={`ev_grid ${can ? '' : 'ev_one'}`}><div className="ev_main">{event_cards(e, can)}{invites_card(e, st, can)}</div>{can ? side(e, st) : null}</div></div>;
 }
