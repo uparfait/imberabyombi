@@ -1,8 +1,4 @@
-/* schemas/schema_events.js: calendar activities (classes, meetings, sport, exams; new ones default to the calendar's day;
-   their date, times and time zone on one line in the form: row 'when'; shown on the calendar in the page's zone) and events (venue, capacity and registrations; the registered
-   cell shows a fill bar). */
-import { lorem, pad, ymd, add_d, page_tz, zone_short } from '../lib/index.js';
-import { ui } from '../store/index.js';
+/* schemas/schema_events.js: calendar activities (classes, meetings, sport, exams; their date, times and time zone on one
 import { bar_cell } from '../ui/index.js';
 import { show_err } from '../feedback/index.js';
 import { field_spec, option_list, STATUS } from './fields.js';
