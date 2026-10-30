@@ -26,3 +26,4 @@ const btn = (act, l, i, e, c, icon) => <button type="button" className="ev_edit"
 export function org_table(e, c, can) {
   const row = (p, role, i) => <tr key={role + i}><td><span className="block truncate">{p.name || '—'}</span>
     <span className="ev_sub ev_narrow truncate">{p.email}</span><span className="ev_sub">{role}</span></td>
+    <td className="ev_wide"><span className="block truncate">{p.email || '—'}</span></td><td className="ev_wide ev_org_tel">{p.tel || '—'}</td>
