@@ -41,3 +41,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   pin: 'M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z',
   arrow_r: 'M5 12h14M13 6l6 6-6 6', arrow_l: 'M19 12H5M11 18l-6-6 6-6',
   download: 'M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3',
+  upload: 'M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12',
