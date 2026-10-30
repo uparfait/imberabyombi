@@ -15,3 +15,4 @@ body { background: rgb(var(--bg)); }
 .qr_view video.mirror { transform: scaleX(-1); }
 .qr_corners { --l: 2.5rem; --w: 4px; --c: rgb(var(--brand)); position: absolute; inset: 14%; pointer-events: none;
   background: linear-gradient(var(--c) 0 0) 0 0 / var(--l) var(--w), linear-gradient(var(--c) 0 0) 0 0 / var(--w) var(--l),
+    linear-gradient(var(--c) 0 0) 100% 0 / var(--l) var(--w), linear-gradient(var(--c) 0 0) 100% 0 / var(--w) var(--l),
