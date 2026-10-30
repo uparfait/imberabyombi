@@ -42,3 +42,5 @@ export const ORG_ACT = {
         const was = e.org_email ? [{ name: e.org_name || e.org_email, email: lc(e.org_email) }] : [];
         put(c, e, { org_name: nu.name, org_email: nu.email, org_tel: nu.tel, co_orgs: [...was, ...co.filter((_, i) => String(i) !== d.to)] },
           'Ownership transferred', `${nu.name} is now the organiser.`); } });
+    sync_when(qs('#modal form')); }
+};
