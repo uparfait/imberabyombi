@@ -3,6 +3,7 @@
    starts) and × to remove one. agenda_from(form) reads the items back; agenda_ok() checks their times, which the page
    and the live screen follow (agenda_now.js). */
 import { useState, useRef } from 'react';
+import { uid, fmt_time } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { show_err } from '../feedback/index.js';
 import { dt_attrs, dt_show, to24 } from './date_formats.js';
