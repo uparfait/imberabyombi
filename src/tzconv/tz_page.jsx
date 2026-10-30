@@ -56,3 +56,5 @@ export function Tz_page() {
               <select id="tz_m" value={st.m} onChange={e => put({ m: +e.target.value })}>{MINS.map(m => <option key={m} value={m}>{pad(m)}</option>)}</select></div>
             {is12 ? seg('tz_ampm', st.h < 12 ? 'AM' : 'PM', [['AM', 'AM'], ['PM', 'PM']], v => put({ h: st.h % 12 + (v === 'PM' ? 12 : 0) }), 'AM or PM') : null}
             <button type="button" className="btn btn_ghost btn_sm ml-auto" onClick={now}>{ic('clock', 'h-4 w-4')}Now</button></div></div>
+      </section>
+      <div className="tzc_swap"><button type="button" className="icon_btn" onClick={swap} aria-label="Swap the time zones" data-tip="Swap">{ic('swap_vert')}</button></div>
