@@ -3,3 +3,4 @@
 import { ic, i3 } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { to } from '../router/index.js';
+import { help_tip } from './search.jsx';
