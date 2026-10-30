@@ -5,3 +5,4 @@
 import { ic, mark3d } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { brand } from './qr_brand.js';
+import { Install } from './qr_parts.jsx';
