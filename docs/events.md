@@ -3,6 +3,7 @@
 Activities (the calendar) and events (`/admin/events`) share one form, in sections: **Details**, **When**,
 **Location**, **Organiser**, **Agenda** and **Audience**. Schemas: [`src/schemas/schema_events.js`](../src/schemas/schema_events.js),
 shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance, the live screen, minutes and follow-ups:
+[attendance and live](attendance_and_live.md).
 
 ## When
 - **Type**: *Upcoming* (it starts later), *Live now* (it has already started: an empty date and start time are filled in
