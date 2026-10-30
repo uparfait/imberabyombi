@@ -40,6 +40,7 @@ export const activities_schema = {
 
 export const events_schema = {
   l: 'event', n: 6, cols: ['title', 'kind', 'date', 'start', 'tz', 'place', 'registered', 'status'],
+  form_sec: true, sec: { Details: 'title,about,status', ...SEC, Audience: 'audience,capacity,registered' },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('about', 'Description', 'textarea'),
     field_spec('status', 'Status', 'select', STATUS.ev, 1, { def: () => 'Planned' }), kind_spec(), ...when_f(0), repeat_spec(),
