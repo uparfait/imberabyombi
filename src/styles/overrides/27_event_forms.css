@@ -20,3 +20,4 @@
   .rp_dates { display: grid; grid-template-columns: repeat(7, minmax(0, 2.25rem)); gap: .375rem; }   /* narrower circles on a phone */
   .rp_round, .rp_last { justify-content: center; padding: 0; }
   .rp_round { aspect-ratio: 1; }
+  .rp_last { grid-column: span 3; }
