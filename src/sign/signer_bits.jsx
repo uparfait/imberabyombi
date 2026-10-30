@@ -5,3 +5,5 @@
 import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
 import { when } from './sign_store.js';
+
+/* what "Force digital signature" asks of a signer (its help icon and the chip's tooltip) */
