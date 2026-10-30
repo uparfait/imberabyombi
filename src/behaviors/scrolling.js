@@ -7,3 +7,4 @@ import { viz_tip, redraw_charts } from '../charts/index.js';
 import { place_tile } from '../actions/index.js';
 
 /* Smooth scrolling: the page always uses the browser's own (threaded, smooth) scrolling. Only the scroll areas inside
+   the page that have content around them ([data-chain]: sidebar, side panel, calendar hours) listen to the wheel, and
