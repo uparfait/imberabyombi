@@ -10,3 +10,4 @@ import { to } from '../router/index.js';
 
 /* [module, label, icon, collection, filter?]: the numbers a role may open */
 const STATS = [['staff', 'Staff', 'users', 'staff'], ['students', 'Students', 'cap', 'students'], ['employees', 'Employees', 'briefcase', 'employees'],
+  ['tasks', 'Open tasks', 'tasks', 'tasks', x => x.status !== 'Done'], ['library', 'Books', 'book', 'books'], ['inventory', 'Stock items', 'box', 'inventory'],
