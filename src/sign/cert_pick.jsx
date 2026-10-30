@@ -7,3 +7,4 @@ import { form_msg } from '../feedback/index.js';
 
 export function Cert_pick() {
   const [name, set_name] = useState('');
+  return <div className="grid gap-3 sm:col-span-2">
