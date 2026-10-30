@@ -23,3 +23,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 
 ## Messages
 - Errors use `role="alert"`; other notifications `role="status"`; the notification region is `aria-live="polite"`.
+- Field errors are written under the field, linked with `aria-invalid`, and the first bad field gets focus.
