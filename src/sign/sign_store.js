@@ -9,3 +9,4 @@ import { auth } from '../auth/index.js';
 export const C = 'sign_docs';
 /* status → [label, chip classes] */
 export const STATUS = { draft: ['Draft', 'bg-muted/15 text-muted'], sent: ['Waiting', 'bg-warn/15 text-warn'], completed: ['Completed', 'bg-ok/15 text-ok'] };
+/* the lists in the O-Doc Sign menu: [key, label, icon, what it holds] */
