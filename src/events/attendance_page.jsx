@@ -5,3 +5,4 @@ import { db, route } from '../store/index.js';
 import { ic } from '../icons/index.js';
 import { empty } from '../ui/index.js';
 import { to } from '../router/index.js';
+import { crud } from '../table/index.js';
