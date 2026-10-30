@@ -11,3 +11,4 @@ import { file_info } from './file_info.jsx';
 /* a text or code file: its first 512 KB, read in the background (the spinner shows until then) */
 function Text_view({ f }) {
   const [text, set_text] = useState(null);
+  useEffect(() => {
