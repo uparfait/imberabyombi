@@ -12,6 +12,7 @@ import { ev_state } from './ev_state.js';
 import { count_to, left, tick } from './countdown.js';
 import { event_cards } from './event_cards.jsx';
 import { invites_card } from './event_invites.jsx';
+import { attend_side } from './attend_side.jsx';
 
 const HELP = { events: 'Every detail, by section. Edit a section on its own; postpone, cancel or restore it on the right.',
   activities: 'Every detail, by section. Edit a section on its own.' };
