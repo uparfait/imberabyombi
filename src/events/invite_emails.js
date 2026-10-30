@@ -17,3 +17,4 @@ export async function emails_in_file(file) {
   if (ext === 'xls') {
     const [{ load_script }, { LIB }] = await Promise.all([import('../editor/core/utils.js'), import('../editor/core/constants.js')]);
     await load_script(LIB.xlsx); const wb = window.XLSX.read(new Uint8Array(await file.arrayBuffer()), { type: 'array' });
+    return find_emails(wb.SheetNames.map(n => window.XLSX.utils.sheet_to_csv(wb.Sheets[n])).join('\n'));
