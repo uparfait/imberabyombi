@@ -45,3 +45,5 @@ export function sidebar(mod) {
     <div id="date_mini" className="pt-1"><Live_slot name="mini" first={mini_cal()} draw={mini_cal} /></div>)}</div> : null}
   <nav aria-label="Admin"><Live_slot name="side_nav" fresh={false} first={groups(mod)} draw={() => groups(mod)} /></nav>
   <p className="mt-auto px-4 pb-2 text-xs text-muted">
+    <a href={to('/sitemap')} className="hover:text-accent">Terms</a> – <a href={to('/sitemap')} className="hover:text-accent">Privacy</a></p></div></>;
+}
