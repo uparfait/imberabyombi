@@ -53,3 +53,5 @@ export const SHELL_ACT = {
   back: () => go(previous_path() || '/admin'),   /* a full-window page back to where the user came from */
   cmdk: () => open_cmd(),
   pwd: t => { const i = t.parentElement.querySelector('input'), show = i.type === 'password'; i.type = show ? 'text' : 'password'; icon_to(t, show ? 'eye_off' : 'eye'); t.setAttribute('aria-label', show ? 'Hide password' : 'Show password'); },
+  team: t => { qsa('[data-act=team]').forEach(b => b.setAttribute('aria-pressed', b === t)); qsa('.filter_card').forEach(c => c.hidden = !!t.dataset.v && c.dataset.team !== t.dataset.v); }
+};
