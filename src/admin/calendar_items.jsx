@@ -35,3 +35,4 @@ export function mini_cal() {
     <p className="date_mini_title pl-3 text-sm font-medium">{f.toLocaleDateString(undefined, { month: 'long', year: 'numeric' })}</p>
     <div><button className="icon_btn h-8 w-8" data-act="mini" data-n="-1" aria-label="Previous month">{ic('chevL', 'h-4 w-4')}</button>
       <button className="icon_btn h-8 w-8" data-act="mini" data-n="1" aria-label="Next month">{ic('chevR', 'h-4 w-4')}</button></div></div>
+  <div className="date_mini_grid mt-1 grid grid-cols-7 text-center text-[0.6875rem] text-muted">
