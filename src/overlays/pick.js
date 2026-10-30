@@ -66,3 +66,5 @@ export const pick = {
     qsa('.pk_item', list).forEach(b => { b.hidden = !!q && !b.textContent.toLowerCase().includes(q); any ||= !b.hidden; });
     qsa('.pk_group', list).forEach(g => { let n = g.nextElementSibling, vis = false; while (n?.matches('.pk_item')) { vis ||= !n.hidden; n = n.nextElementSibling; } g.hidden = !vis; });
     const none = list.querySelector('.pk_none'); if (none) none.hidden = any;
+  },
+  keys(e) {
