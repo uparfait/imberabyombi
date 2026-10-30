@@ -28,3 +28,4 @@
   meter { display: block; width: 100%; height: .55rem; -moz-appearance: none; border: 0; border-radius: var(--pill); background: rgb(var(--surface_3)); }
   meter::-webkit-meter-bar { background: rgb(var(--surface_3)); border: 0; border-radius: var(--pill); height: .55rem; }
   meter::-webkit-meter-optimum-value { background: rgb(var(--ok)); border-radius: var(--pill); }
+  meter::-webkit-meter-suboptimum-value { background: rgb(var(--warn)); border-radius: var(--pill); }
