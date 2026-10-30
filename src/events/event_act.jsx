@@ -15,6 +15,7 @@ import { INVITE_ACT } from './event_invites.jsx';
 import { QR_ACT } from './qr_full.jsx';
 import { MINUTES_ACT } from './event_minutes.jsx';
 import { LIVE_ACT } from './live_page.jsx';
+import { ATTENDEES_ACT } from './attendees_view.jsx';
 import { att_mins } from './att_window.js';
 import { ev_state } from './ev_state.js';
 import { field } from '../fields/index.js';
