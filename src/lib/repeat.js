@@ -22,3 +22,4 @@ const in_month = (r, d, f) => r.by === 'week'
 
 /* does rule r (first date f) fall on day d? */
 export function repeat_hit(r, d, f) {
+  const n = Math.max(1, +r.every || 1), months = (d.getFullYear() - f.getFullYear()) * 12 + d.getMonth() - f.getMonth();
