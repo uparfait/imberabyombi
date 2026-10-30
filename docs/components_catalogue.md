@@ -16,3 +16,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.nav_link` / `.side_link` / `.link_group` | top navigation pill / sidebar link / translucent link group    |
 | `.panel` / `.memo` / `.check_row`       | side panel beside the content / note card / checklist row        |
 | `.scroll_hover`                         | scrollbar visible only while hovered (admin sidebar)             |
+| `.fold`                                 | smooth collapsible section (sidebar groups, mini calendar)       |
