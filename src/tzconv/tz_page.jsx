@@ -14,3 +14,5 @@ const ymd_of = p => `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
 function first() {
   const from = page_tz(), p = tz_parts(from, Date.now()), f = h24() ? '24' : '12';
   return { from, to: from === 'UTC' ? 'Europe/London' : 'UTC', ff: f, tf: f, date: ymd_of(p), h: p.h, m: p.mi, dk: 0 };
+}
+const fmt = (h, m, mode) => mode === '24' ? [`${pad(h)}:${pad(m)}`, ''] : [`${h % 12 || 12}:${pad(m)}`, h < 12 ? 'AM' : 'PM'];
