@@ -29,3 +29,4 @@ export function run_after_render({ keep, anim }) {
   if (side_top) { const sd = qs('#sidebar_scroll'); if (sd) sd.scrollTop = side_top; side_top = 0; }
   /* React keeps <main> across redraws of the same page, so the animation is removed (keep) or restarted (keep + anim) by hand */
   const m = qs('#main');
+  if (!keep) main_enter = !!m?.classList.contains('page_enter');
