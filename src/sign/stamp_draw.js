@@ -32,3 +32,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
     ring(186, 10); ring(170, 3); ring(112, 3);
     arc(org.trim().toUpperCase() || ' ', 141, -Math.PI / 2, false, 34); arc(date, 141, Math.PI / 2, true, 26);
     star(C - 141, C, 10); star(C + 141, C, 10); fit(mid.trim().toUpperCase(), C, C + 2, 188, 46);
+  } else {
