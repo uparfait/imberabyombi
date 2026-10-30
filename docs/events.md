@@ -25,3 +25,5 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
   optional; a link without `https://` gets it.
 - **Organiser**: name and email (required) and phone. They start as the person signed in.
 - **Expected audience**: how many people are expected.
+
+## The Events page
