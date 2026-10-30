@@ -67,3 +67,4 @@
   .ev_list { display: grid; }
   .ev_list li { display: flex; align-items: center; gap: .5rem; min-height: 3rem; border-top: 1px solid rgb(var(--line)); }
   .ev_list_main { display: grid; flex: 1; min-width: 0; padding: .375rem 0; text-align: left; }
+  .ev_list_main b { font-weight: 500; } .ev_list_main:hover b { color: rgb(var(--brand)); }
