@@ -24,6 +24,7 @@ const placed = d => { const n = d.fields.length;
       <span className="min-w-0 flex-1 truncate">{shown(r)}</span><span className={r.status === 'signed' ? 'text-ok' : k ? 'text-muted' : 'text-warn'}>{r.status === 'signed' ? 'signed' : k || 'none yet'}</span></li>; })}</ul>
     : <p className="text-sm text-muted">No fields yet.</p>; };
 
+const all_signed = d => d.recipients.length && d.recipients.every(r => r.status === 'signed');
 /* a column caption with its help icon: the description shows on hover, focus or tap */
 const cap = (t, help) => <div className="sign_cap_row"><h2 className="sign_cap">{t}</h2>{help_tip(help, t.toLowerCase())}</div>;
 
