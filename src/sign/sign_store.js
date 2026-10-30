@@ -40,3 +40,4 @@ export const rec_of = (d, id) => d.recipients.find(r => r.id === id);
 /* an activity entry: its sentence (the signing certificate prints it), what was done (upload, send, open, sign, done) and
    by whom (email), so the activity can be drawn (activity.jsx) */
 export const log = (d, t, act = '', by = '') => { d.audit.push({ at: Date.now(), t, act, by }); };
+export const save_doc = d => { d.updated = Date.now(); db.upsert(C, d); return d; };
