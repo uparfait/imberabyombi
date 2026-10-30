@@ -24,4 +24,4 @@
   .live_qr_btn { border-radius: var(--radius); cursor: zoom-in; }
   .live_qr .copy_box { width: 100%; max-width: min(34vw, 30rem); }
   @media (max-aspect-ratio: 1/1) { .live { height: auto; min-height: 100dvh; } .live_body { grid-template-columns: minmax(0, 1fr); }
-    .live_title { max-width: 100%; } .live_qr .qr { width: min(100%, 26rem); } .live_agenda li { grid-template-columns: 7.5rem minmax(0, 1fr); } }
+    .live_qr .qr { width: min(100%, 26rem); } .live_agenda li { grid-template-columns: 7.5rem minmax(0, 1fr); } }
