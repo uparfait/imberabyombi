@@ -3,3 +3,4 @@
 import { createRoot } from 'react-dom/client';
 import '../styles/index.css';
 import '../styles/overrides.css';
+import './qr.css';
