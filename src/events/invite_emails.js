@@ -7,3 +7,4 @@ const EMAIL = /[a-z0-9._%+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}/gi;
 /* the parts that hold cells (not the file's own details, such as its author's address) */
 const CELLS = n => /^(xl\/sharedStrings|xl\/worksheets\/sheet\d+|content)\.xml$/i.test(n);
 export const find_emails = text => [...new Set((String(text).match(EMAIL) || []).map(m => m.toLowerCase()))];
+/* what is left once the addresses are taken out (words that are not addresses: shown so they can be corrected) */
