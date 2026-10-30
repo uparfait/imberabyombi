@@ -33,7 +33,7 @@ export function Modal_form({ m }) {
       </header>
       {plain
         ? <div className="grid gap-3 px-5 sm:px-6"><div data-msg-slot="" className="empty:hidden"></div>{help ? <p className="text-muted">{help}</p> : null}</div>
-        : <div className="grid min-h-0 flex-1 content-start gap-5 overflow-y-auto p-5 sm:grid-cols-2 sm:p-6"><div data-msg-slot="" className="empty:hidden sm:col-span-2"></div>{body}</div>}
+        : <div className="grid min-h-0 flex-1 content-start gap-5 overflow-y-auto p-5 sm:grid-cols-2 sm:p-6" data-fill-rows=""><div data-msg-slot="" className="empty:hidden sm:col-span-2"></div>{body}</div>}
       {submit || !blank(actions)
         ? <footer className={`flex flex-wrap justify-end gap-2 ${plain ? '' : 'border-t border-line'} px-5 py-4 sm:px-6`}>
             {submit ? <button type="button" className="btn btn_ghost" data-act="close_modal">Cancel</button> : null}
