@@ -19,6 +19,7 @@ export const att_url = (c, id) => new URL(to(`/attend/${c}/${id}`), location.ori
 
 export function attend_side(e, c, can, shown) {
   const url = att_url(c, e.id), n = att_count(e.id), page = `${BASE[c]}/${e.id}`, ph = att_phase(e), open = ph[0] !== 'closed', now = ph[0] === 'open', same = shown && Math.abs(ph[1] - shown) < 1000;
+  const tiles = [...(open ? [{ icon: 'external', label: 'Attendance page', href: url, blank: true }] : []), { icon: 'eye', label: 'View This Event', href: to(page + '/live') },
     { icon: 'users', label: 'Attendees', href: to(page + '/attendance') },
     ...(can ? [{ icon: 'sliders', label: 'Attendance settings', attrs: { 'data-act': 'ev_att_set', 'data-c': c, 'data-id': e.id } }] : [])];
   return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
