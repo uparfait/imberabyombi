@@ -22,3 +22,4 @@ O-Doc Sign is open), a narrow computer window through a zoom (`--sign_z`, `sign_
 | `/admin/sign/done/<id>` | "Signing complete" |
 
 The top bar: Back, the O-Doc Sign name, then one rounded group, like the admin header's tools: the lists menu (the same
+tile menu as nested systems: All, Drafts, Waiting, Completed, Archived and To sign, each with its count and a fixed
