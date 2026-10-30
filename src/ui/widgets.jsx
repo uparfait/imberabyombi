@@ -30,3 +30,4 @@ export const stat_row = items => (
    and an action. icon / color: a check in green by default; an error passes 'alert', 'bad'. */
 export const empty = (title, text, act = null, icon = 'check', color = 'ok') => (
   <div className="grid justify-items-center gap-3 px-6 py-14 text-center">
+    {i3(icon, 'w-16 h-16 float', color)}<div className="flex items-center justify-center gap-1"><h3 className="text-lg">{title}</h3>{text ? help_tip(text, title) : null}</div>{act || null}
