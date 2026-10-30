@@ -34,3 +34,4 @@ export function Tz_page() {
   const [main, suf] = fmt(tp.h, tp.mi, st.tf), days = Math.round((Date.UTC(tp.y, tp.mo - 1, tp.d) - Date.UTC(y, mo - 1, d)) / 864e5);
   const chips = [gmt(to), diff(to - fo), ...(days > 0 ? ['Next day'] : days < 0 ? ['Previous day'] : [])];
   const is12 = st.ff === '12', [um, us] = fmt(up.h, up.mi, st.tf);
+  /* Now and Swap set the date field anew (dk: its key), the rest follows the state */
