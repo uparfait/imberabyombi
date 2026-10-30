@@ -63,6 +63,8 @@ every account starts empty.
 - **Preview**, at the foot of the right column once someone has signed: the document with the marks so far, and
   **Download a copy**.
 - You can go on adding other signers and send it: it goes to those who have not signed. When everyone on it has signed
+  (you alone, say), **Send for signing** becomes **Finish**, which moves it to Completed.
+
 ## Signing
 - The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
   their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
