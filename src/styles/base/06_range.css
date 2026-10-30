@@ -34,3 +34,5 @@
   meter:-moz-meter-sub-optimum::-moz-meter-bar { background: rgb(var(--warn)); border-radius: var(--pill); }
   meter:-moz-meter-sub-sub-optimum::-moz-meter-bar { background: rgb(var(--bad)); border-radius: var(--pill); }
   :where(output) { display: inline-flex; align-items: center; font-family: var(--font_mono); font-size: .85rem; font-weight: 600; color: rgb(var(--brand)); background: rgb(var(--brand) / .1); padding: .1rem .55rem; border-radius: var(--pill); }
+
+  /* Fieldset, legend, label */
