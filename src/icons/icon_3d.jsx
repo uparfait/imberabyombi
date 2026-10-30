@@ -2,3 +2,4 @@
    Icon3D engine (src/icon3d/). Their colours are fixed here, at development: the theme and the live design tokens never
    change them. The place that shows an icon picks its colour: a tone (brand, ink, ok, info, warn, bad), a hue (orange,
    amber, green, teal, sky, blue, indigo, violet, pink, red, slate) or a hex.
+   i3(name, cls, color) draws it as an <img>, built for the pixel size its classes give (h-11: 44 px, times the screen's
