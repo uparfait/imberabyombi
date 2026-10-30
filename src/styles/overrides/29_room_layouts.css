@@ -9,3 +9,4 @@
      .room_full  a whole row in any of them */
   .room { container-type: inline-size; }
   .room_full { grid-column: 1 / -1; }
+  @container (min-width: 24rem) { .room_2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
