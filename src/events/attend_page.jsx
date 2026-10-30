@@ -1,1 +1,2 @@
 /* events/attend_page.jsx: the attendance page its QR code opens (/attend/<events|activities>/<id>): no header or sidebar,
+   just the event or activity, when and where, and the form (attend_form.jsx). Closed once it is over or cancelled. A
