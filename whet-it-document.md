@@ -38,3 +38,5 @@ Every feature below is working code. Each line says what it is and where it live
 ## Account (`src/account/`)
 - Sign in with a role picker and "Keep me signed in"; invite and personal access links.
 - Forgot password, 2-step verification code with resend timer, authenticator app set-up, set a new password.
+
+## Admin (`src/admin/`, `src/modules/`)
