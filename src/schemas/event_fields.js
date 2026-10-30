@@ -16,3 +16,5 @@ const live_now = f => { const tz = f.elements.tz?.value || device_tz(), p = tz_p
     const i = f.elements[k]; if (i && !i.value) { set_native_value(i, dt_show(i.dataset.type, v)); i.dispatchEvent(new Event('input', { bubbles: true })); } } };
 export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def: () => 'Upcoming', help: KIND_HELP,
   on: e => { if (e.target.value === 'Live') live_now(e.target.form); } });
+
+/* a wall-clock date and time in tz → the instant (ms) */
