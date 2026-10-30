@@ -16,7 +16,7 @@ export const qr_open = st => ['Upcoming', 'Live', 'Recurring'].includes(st);
 
 export function attend_side(e, c, st) {
   const url = att_url(c, e.id), n = att_count(e.id), page = `${BASE[c]}/${e.id}`, open = qr_open(st);
-  const links = [['Attendance page', 'external', url, true], ['Live screen', 'play', to(page + '/live')], ['Attendees', 'users', to(page + '/attendance')]];
+  const tiles = [{ icon: 'external', label: 'Attendance page', href: url }, { icon: 'play', label: 'Live screen', href: to(page + '/live') },
   return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
     {open ? <button type="button" className="ev_qr_btn" data-act="ev_qr" data-c={c} data-id={e.id} aria-label="Show the QR code full size" data-tip="Full size">
       <Qr text={url} label="Attendance QR code" /></button> : null}
