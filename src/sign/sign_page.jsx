@@ -32,3 +32,4 @@ const missing = () => <div className="sign_main max-w-2xl"><div className="card"
   'It was deleted, or it is kept in another browser.', <a href={list_href('all')} className="btn btn_primary btn_sm">All documents</a>)}</div></div>;
 
 /* /admin/sign/<a>/<id> → { title, cur (the list on show), back (Back's address), body }. A page's actions (Send, Save,
+   Download, Finish) sit in its own right column or bottom bar, never in the top bar. */
