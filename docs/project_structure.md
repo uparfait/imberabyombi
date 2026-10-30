@@ -23,3 +23,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `store/`     | `db` (browser storage) and `app_state` (`ui`, `route`, `render`, `rerender`, `AFTER`, `TIMERS`) |
 | `auth/`      | modules list (`MODS`), roles and levels, session (`auth`, `me`), landing pages, invite links |
 | `schemas/`   | one schema per data type: fields, table columns, renderers, seed data                       |
+| `ui/`        | small markup helpers: badge, tag, avatar, person, cells, tabs, stat row, empty state, logo, search pill |
