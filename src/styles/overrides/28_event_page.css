@@ -9,3 +9,4 @@
   .ev_main { display: grid; gap: 1.25rem; min-width: 0; }
   .ev_card { padding: 1.25rem; min-width: 0; }
   .ev_card_head { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-bottom: .875rem; }
+  .ev_card_head h3, .ev_side_title { font-size: 1rem; font-weight: 600; }
