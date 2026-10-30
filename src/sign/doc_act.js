@@ -30,3 +30,4 @@ export const DOC_ACT = {
       notify(`“${d.title}” is under Archived.`, 'ok', 'Document archived'); go('/admin/sign/archived');
     }, 'Archive'); },
   sign_doc_restore: t => { const d = find_doc(t.dataset.id);
+    d.archived = false; log(d, `${who().name} restored it from the archive`, 'restore', who().email); save_doc(d);
