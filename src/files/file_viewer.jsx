@@ -17,3 +17,6 @@ function Text_view({ f }) {
     return () => { live = false; };
   }, [f]);
   return <pre className="m-0 min-h-[12rem] whitespace-pre-wrap rounded-none text-sm" data-text="">{text ?? spinner('mx-auto')}</pre>;
+}
+
+/* the dialog's content: header (icon, name, help tip, Open in a new tab, Download, Close) + the file */
