@@ -11,3 +11,4 @@ import { ACT, REQ, close_pops, toggle_details } from '../actions/index.js';
 import { set_nav_busy } from './nav_busy.js';
 
 function on_click(e) {
+  tip.hide();
