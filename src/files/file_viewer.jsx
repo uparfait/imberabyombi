@@ -48,3 +48,5 @@ function File_view({ f, n }) {
 /* open a File (a chosen file, or one rebuilt from a saved attachment) in #viewer */
 export function view_file(f) {
   const n = ++VIEW.n; VIEW.f = f; tip.hide();
+  show_in_dialog('viewer', () => <File_view f={f} n={n} />);
+}
