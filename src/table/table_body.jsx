@@ -18,3 +18,4 @@ function row_acts(c, o, r, can) {
     <>
       {extra || null}
       {own ? <><button className="icon_btn h-8 w-8" data-act="edit" data-col={c} data-id={r.id} aria-label="Edit">{ic('edit', 'w-4 h-4')}</button>
+        <button className="icon_btn h-8 w-8 hover:text-bad" data-act="del" data-col={c} data-id={r.id} aria-label="Delete">{ic('trash', 'w-4 h-4')}</button></> : null}
