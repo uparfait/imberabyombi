@@ -38,3 +38,4 @@ export function table_body(c) {
   const s = schemas[c], o = cur[c] || {}, can = auth.can(o.mod, 2), v = tview(c), cols = s.cols.filter(k => !v.hide.includes(k));
   if (render_flags.nav_fetched) loaded.add(c);
   if (!loaded.has(c)) {
+    after_render(() => wait_load(c));
