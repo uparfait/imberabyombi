@@ -33,3 +33,4 @@ export const events_schema = {
   sec: { Event: 'title,about,status', 'When & where': 'date,start,venue', Seats: 'capacity,registered' },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1), field_spec('start', 'Starts', 'time', 0, 0, { def: () => '10:00' }),
+    field_spec('venue', 'Venue'), field_spec('capacity', 'Capacity', 'number', 0, 1, { min: 1, def: () => 100 }),
