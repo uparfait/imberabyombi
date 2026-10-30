@@ -26,3 +26,4 @@ export function signer_page(d) {
   const r = my_rec(d); if (!r) return not_yours(d);
   signer_start(d.id);
   if (!r.viewed_at && d.status === 'sent') { r.viewed_at = Date.now(); log(d, `${r.name} opened the document`, 'open', r.email); save_doc(d); }
+  const done = r.status === 'signed' || d.status !== 'sent';
