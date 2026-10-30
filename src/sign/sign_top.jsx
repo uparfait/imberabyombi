@@ -31,3 +31,4 @@ export const sign_top = (cur, back) =>
     <a href={list_href('all')} className="sign_brand" aria-label="O-Doc Sign, all documents">{i3('signature', 'h-10 w-10', 'violet')}
       <span className="font-display text-lg font-semibold">O-Doc Sign</span></a>
     <div className="sign_btns">
+      <div className="link_group sign_tools"><nav className="min-w-0" aria-label="O-Doc Sign lists">{lists_menu(cur)}</nav>
