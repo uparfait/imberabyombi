@@ -28,3 +28,4 @@ export const agenda_field = (f, v) => <div key={f.k} className="room sm:col-span
 
 const val = (el, n) => (el.querySelector(`[data-ag=${n}]`)?.value || '').trim();
 export const agenda_from = f => [...f.querySelectorAll('[data-ag-item]')].map(el => ({ from: to24(val(el, 'from')), to: to24(val(el, 'to')),
+  title: val(el, 'title'), desc: val(el, 'desc'), p_name: val(el, 'p_name'), p_email: val(el, 'p_email').toLowerCase(), p_title: val(el, 'p_title') }))
