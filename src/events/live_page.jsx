@@ -28,3 +28,4 @@ export function live_page(id, c) {
   const now_m = p.h * 60 + p.mi, it = ag[now_i], next = ag.find(a => mins(a.from) > now_m), n = att_count(id), open = att_phase(e)[0] !== 'closed';
   const done = it ? Math.min(100, Math.max(0, (now_m - mins(it.from)) / Math.max(1, mins(it.to) - mins(it.from)) * 100)) : 0;
   return <div className="live">
+    <header className="live_top"><a href={to(page)} className="icon_btn" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
