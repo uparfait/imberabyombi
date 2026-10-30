@@ -17,4 +17,4 @@ export * from './qr_full.jsx';
 export * from './attend_form.jsx';
 export * from './attend_page.jsx';
 export * from './attend_side.jsx';
-export * from './attendance_page.jsx';
+export * from './attendees_view.jsx';
