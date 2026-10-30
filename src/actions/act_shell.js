@@ -22,3 +22,4 @@ const react_owned = el => Object.keys(el).some(k => k.startsWith('__reactFiber$'
 const icon_to = (t, n) => t.querySelector('path')?.setAttribute('d', PATHS[n]);
 
 export const SHELL_ACT = {
+  theme: () => set_theme(document.documentElement.classList.contains('dark') ? 'light' : 'dark'),
