@@ -14,3 +14,4 @@ import { to, go } from './history.js';
 
 export function public_page(r) {
   const k = r.path.slice(1); let inner, title;
+  if (r.path === '/') { inner = home(); title = 'Home'; }
