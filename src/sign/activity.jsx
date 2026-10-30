@@ -14,3 +14,4 @@ const act_of = a => a.act || RE.find(([, re]) => re.test(a.t))?.[0] || '';
 /* who did it: a signer (by email, or by the name the sentence starts with), else the sender */
 const person = (d, a) => { const r = d.recipients.find(x => a.by ? x.email === a.by : a.t.startsWith(x.name + ' '));
   return r ? { name: r.name, color: r.color } : { name: d.owner_name, color: seed_color(d.owner) }; };
+const faces = d => <span className="sign_ev_faces">{d.recipients.slice(0, 5).map(r =>
