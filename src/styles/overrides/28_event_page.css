@@ -6,6 +6,7 @@
   .ev_page { container: ev_page / inline-size; }
   .ev_card { container: ev_card / inline-size; }
   .ev_back, .ev_head > :last-child { flex: none; } .ev_back { margin-left: -.5rem; }   /* the arrow back first in the title row, the help last */
+  .ev_head { display: flex; align-items: center; gap: .25rem .5rem; margin-bottom: 1.25rem; }
   .ev_grid { display: grid; gap: 1.25rem; align-items: start; }
   .ev_main { display: grid; gap: 1.25rem; min-width: 0; }
   .ev_card { padding: 1.25rem; min-width: 0; }
