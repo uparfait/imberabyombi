@@ -26,3 +26,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Copy boxes, one-time code boxes, password rules, authenticator QR code.
 
 ## Feedback (`src/feedback/`)
+- Inline messages in the component that caused them; bottom-right notifications on staff pages only.
