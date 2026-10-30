@@ -36,3 +36,4 @@ function File_view({ f, n }) {
       <header className="flex items-center gap-2 py-2 pl-4 pr-2">{ic(FICON[k], 'h-5 w-5 shrink-0 text-muted')}
         <div className="flex min-w-0 flex-1 items-center gap-1"><h2 className="truncate font-sans text-base font-medium">{f.name}</h2>
           {help_tip(`${f.type || 'Unknown type'} · ${fmt_size(f.size)}`, 'this file')}</div>
+        <a className="icon_btn" href={u} target="_blank" rel="noopener" aria-label="Open in a new tab">{ic('external')}</a>
