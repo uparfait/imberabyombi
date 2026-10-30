@@ -13,3 +13,4 @@
   .ev_dl { display: grid; grid-template-columns: minmax(0, 1fr); gap: .125rem; }
   .ev_dl dt { color: rgb(var(--muted)); font-size: .8125rem; }
   .ev_dl dd { min-width: 0; margin-bottom: .625rem; overflow-wrap: anywhere; }
+  .ev_link { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
