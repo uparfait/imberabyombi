@@ -16,3 +16,4 @@ export const CREATE = [['tasks', 'tasks', 'New task', 'tasks'], ['calendar', 'ac
   ['parking', 'parking', 'Check in a car', 'car'], ['staff', 'staff', 'New staff member', 'users']];
 
 const SIDE = { busy: null };   /* href of the clicked link whose page is loading */
+const link = (m, mod) => { const on = m.k === mod, href = to(`/admin/${m.k}`), busy = SIDE.busy === href;
