@@ -10,6 +10,7 @@ import { badge, empty, help_tip } from '../ui/index.js';
 import { to } from '../router/index.js';
 import { ev_state } from './ev_state.js';
 import { count_to, left, tick, ran } from './countdown.js';
+import { fmt_stamp } from '../lib/index.js';
 import { event_cards } from './event_cards.jsx';
 import { invites_card } from './event_invites.jsx';
 import { attend_side } from './attend_side.jsx';
