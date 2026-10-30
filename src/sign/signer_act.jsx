@@ -43,6 +43,7 @@ async function finish() {
   if (!own && d.recipients.every(x => x.status === 'signed')) { Object.assign(d, { status: 'completed', completed_at: now }); log(d, 'Everyone signed: the document is complete', 'done'); }
   /* your own draft: signed in its Preview and sign overlay, the draft takes the signed copy and the overlay shows Download a copy */
   if (own) { save_doc(d); S.pending = {}; notify('Download a copy, or add other signers and send it.', 'ok', 'You signed it');
+    if (P.doc?.id === d.id) { P.doc = d; return rerender(); }
     return go(`/admin/sign/edit/${d.id}`); }
   save_doc(d); S.pending = {}; go(`/admin/sign/done/${d.id}`);
 }
