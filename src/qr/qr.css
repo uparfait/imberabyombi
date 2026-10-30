@@ -1,5 +1,6 @@
 /* qr/qr.css: Qr-scan's screen (qr_app.jsx): the camera on the whole page, on every screen. Over it: the top row (the
    site's mark at the left, the name beside it but not on a phone; Install at the right), a large scan
+   window in the middle with the rest dimmed, the hint and round white buttons; what was found comes up in a sheet from the
 .qr_view video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
 .qr_view.on video { opacity: 1; }
 .qr_view video.mirror { transform: scaleX(-1); }
