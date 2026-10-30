@@ -12,3 +12,4 @@ const ACTS = { upload: ['upload', 'uploaded it'], send: ['send', 'sent it to'], 
 const RE = [['sign', / signed$/], ['open', / opened the document$/], ['cert', / verified their digital certificate/], ['send', / sent it to /], ['upload', / uploaded /], ['done', /^Everyone signed/]];
 const act_of = a => a.act || RE.find(([, re]) => re.test(a.t))?.[0] || '';
 /* who did it: a signer (by email, or by the name the sentence starts with), else the sender */
+const person = (d, a) => { const r = d.recipients.find(x => a.by ? x.email === a.by : a.t.startsWith(x.name + ' '));
