@@ -22,3 +22,4 @@ export const glide = { y: 0, last: 0, raf: 0,
 export function chain_wheel(e) {
   const el = e.currentTarget; if (e.ctrlKey || !e.deltaY || e.defaultPrevented) return;
   const end = e.deltaY > 0 ? el.scrollTop + el.clientHeight >= el.scrollHeight - 1 : el.scrollTop <= 0;
+  if (!end) return;
