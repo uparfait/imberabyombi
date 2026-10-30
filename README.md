@@ -56,3 +56,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 5. **SEO**: title, description, canonical URL and JSON-LD in `index.html`; domain in `public/robots.txt` and `sitemap.xml`.
 
 ## Documentation
+| Guide | Guide |
