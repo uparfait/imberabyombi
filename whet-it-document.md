@@ -72,3 +72,5 @@ Every feature below is working code. Each line says what it is and where it live
   removal makes the paper of an upload transparent. Next field, one-tap reuse, an agreement before signing.
 - Progress per signer, a copyable signing link, activity, and a download with the marks written into the PDF and a
   signing certificate page once everyone has signed.
+
+## Data tables (`src/table/`, `src/schemas/`)
