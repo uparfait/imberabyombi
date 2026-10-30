@@ -10,3 +10,4 @@ import { dt_attrs } from './date_formats.js';
 const FREQS = [['daily', 'Daily'], ['weekdays', 'Every weekday (Mon–Fri)'], ['weekly', 'Weekly'], ['monthly', 'Monthly'], ['yearly', 'Yearly']];
 const UNIT = { daily: 'day', weekly: 'week', monthly: 'month', yearly: 'year' };
 const MON_FIRST = [1, 2, 3, 4, 5, 6, 0];
+const BY_HELP = 'Dates: on days of the month, such as the 1st and the 15th. Weeks: on weekdays of chosen weeks, such as the second and the last Friday.';
