@@ -15,3 +15,4 @@ component needs its own click handler for app actions, and buttons inside dialog
   `rerender()`.
 
 ```js
+/* src/actions/act_example.js */
