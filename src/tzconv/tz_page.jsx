@@ -28,3 +28,4 @@ const zone_field = (id, v, put, t) => <div className="field"><label htmlFor={id}
 const FMT = [['12', '12h'], ['24', '24h']];
 
 export function Tz_page() {
+  const [st, set] = useState(first), put = o => set(s => ({ ...s, ...o }));
