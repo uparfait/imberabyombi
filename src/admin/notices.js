@@ -14,3 +14,4 @@ const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 
 function events_for_me(now) {
   return db.list('events').flatMap(e => {
+    const role = my_role(e); if (!role) return [];
