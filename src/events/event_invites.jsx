@@ -36,3 +36,4 @@ export const INVITE_ACT = {
   ev_invite: t => { take(t.dataset.id, qs('#ev_inv_in')); const e = db.find('events', t.dataset.id), n = wait.list.length;
     if (!e || !n) { wait.note = 'Add at least one email address first.'; return rerender(); }
     db.upsert('events', { id: e.id, invites: [...(e.invites || []), ...wait.list.map(m => ({ e: m, at: Date.now() }))] });
+    const left = not_emails(qs('#ev_inv_in')?.value || '');   /* still in the box: not addresses */
