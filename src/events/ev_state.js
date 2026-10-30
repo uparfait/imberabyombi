@@ -5,3 +5,4 @@ import { pad, tz_parts, repeat_next, page_tz } from '../lib/index.js';
 import { at } from '../schemas/index.js';
 
 export const EV_STATES = ['Live', 'Upcoming', 'Recurring', 'Postponed', 'Cancelled', 'Past'];
+const DONE = ['Completed', 'Done', 'Closed'];
