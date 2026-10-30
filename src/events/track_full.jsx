@@ -29,3 +29,4 @@ const left_of = ms => <b data-count-to={ms}>{left(ms - Date.now())}</b>;
 export function track_full(e, now, t) {
   const [st, cur] = track_at(e, now), ag = e.agenda, go = { 'data-act': 'track_go', 'data-id': e.id, 'data-now': now };
   const step = (d, l, i) => <button type="button" className="icon_btn track_step" {...go} data-i={cur + d} disabled={cur + d < 0 || cur + d >= ag.length} aria-label={l} data-tip={l}>{ic(i)}</button>;
+  return <div id={`track_${e.id}`} className="track_full tint" hidden role="dialog" aria-label="Agenda" style={{ '--h': hue(ag[cur]?.title) }}>
