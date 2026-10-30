@@ -8,3 +8,4 @@
   .help_tip:hover, .help_tip:focus-visible { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
   /* its introduction on a page's first load (help_intro): zooms in and out twice in the brand colour, then the tooltip shows */
   .help_tip.intro { animation: help_intro 1.4s ease-in-out both; background: rgb(var(--brand) / .14); color: rgb(var(--brand)); }
+  @keyframes help_intro { 0%, 50%, 100% { transform: scale(1); } 22% { transform: scale(1.45); } 72% { transform: scale(1.3); } }
