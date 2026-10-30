@@ -19,6 +19,7 @@ Extras: `def` (default), `min`, `max`, `when` (shown only for some values: `'Don
 `'field=A|B'` / `'field!=A'` by any field, a radio group too), `help` (a help icon by a `seg` title), `on` (runs when a
 `seg` choice changes), `form: false` (kept out of forms; set in code).
 
+## Forms in sections
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
   <div data-msg-slot="" className="empty:hidden" />
