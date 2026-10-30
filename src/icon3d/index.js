@@ -36,3 +36,5 @@ export function render(input, o = {}) {
   const px = +o.px || (typeof s === 'number' && s > 0 ? s : 200), k = px / view[2];   /* device px per unit */
   const [defs, body] = MAKERS[style](G, C, i, k);
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${s}" height="${s}" viewBox="${view.join(' ')}" `
+    + `style="user-select:none;-webkit-user-select:none"><defs>${sym(i + 'G', G)}${defs}</defs>${body}</svg>`;
+}
