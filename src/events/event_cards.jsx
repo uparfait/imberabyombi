@@ -27,6 +27,7 @@ const ROWS = {
     ? [['Where', 'Virtual'], ['Meeting link', e.link ? out(e.link, e.link) : null], ['Joining notes', e.join_note ? <p className="whitespace-pre-line">{e.join_note}</p> : null]]
     : [['Where', 'Physical'], ['Venue or address', e.venue]],
   Organiser: (e, c, can) => [['', org_table(e, c, can), 'kv_full']],
+  Agenda: e => [['', agenda_table(e), 'kv_full']],
   Audience: (e, c) => [['Expected', e.audience ? `${e.audience} people` : null], e.capacity ? ['Capacity', e.capacity] : null,
     ['Attended', <a href={to(`${BASE[c]}/${e.id}/attendance`)} className="ev_link">{`${att_count(e.id)} people`}</a>]]
 };
