@@ -24,3 +24,4 @@ const placed = d => { const n = d.fields.length;
     : <p className="text-sm text-muted">No fields yet.</p>; };
 
 /* a column caption with its help icon: the description shows on hover, focus or tap */
+const cap = (t, help) => <div className="sign_cap_row"><h2 className="sign_cap">{t}</h2>{help_tip(help, t.toLowerCase())}</div>;
