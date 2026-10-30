@@ -5,3 +5,4 @@ Every date and time in the system follows one time zone, the **page time zone**,
 on the browser's own time-zone data (Intl), so summer and winter time are always right.
 
 ## What follows it
+- **Today and now**: `ymd()`, `hm()` and `now_dt()` read the page's clock (`page_now()`), so the calendar's today, the
