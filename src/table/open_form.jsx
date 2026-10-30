@@ -35,6 +35,7 @@ export function open_form(c, id, preset = {}, part = null) {
       notify(id ? `Your changes to this ${s.l} are saved.` : `The new ${s.l} is in the list.`, 'ok', id ? 'Changes saved' : `${cap(s.l)} added`);
     } });
   /* modal() draws at once, except when called while React is drawing (a form opened after navigation): then a moment later.
+     The unsaved-changes check starts from the form as shown, after the fields hidden for its values are switched off */
 }
 
 /* data-when: "Done" or "!Done" (the status: F(..., { when: 'Done' })), or "<field>=A|B" / "<field>!=A" (any field of the
