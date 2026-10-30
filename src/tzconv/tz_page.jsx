@@ -61,3 +61,4 @@ export function Tz_page() {
       <section className="card p-5" aria-label="To">
         <div className="tzc_head"><h3 className="tzc_cap">To</h3>{seg('tz_tf', st.tf, FMT, v => put({ tf: v }), 'Time format')}</div>
         {zone_field('tz_to', st.to, v => put({ to: v }), t)}
+        <div className="tzc_result" aria-live="polite">
