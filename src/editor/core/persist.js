@@ -30,8 +30,7 @@ export function save_doc(force) {
   clearTimeout(save_timer); save_timer = null;
   if (force !== true && live_busy()) { save_soon(); return false; }   // never save a preview
   if (!ready) return false;
-  idb_set(DOC_KEY, doc_data()).then(ok => {
-    if (ok) { refused = false; if (db.get(DOC_KEY)) db.del(DOC_KEY); return; }   /* an older copy in localStorage is no longer needed */
+  idb_set(key, doc_data()).then(ok => {
     if (!refused) { refused = true; toast('This browser could not save the document. Download it to keep a copy.', 7000); }
   });
   return true;
