@@ -26,3 +26,4 @@ function events_for_me(now) {
 
 export function notices(now = Date.now()) {
   const out = [], td = ymd(), can = (m, l) => auth.can(m, l);
+  if (can('tasks')) db.list('tasks').filter(t => t.assignee === me() && t.status !== 'Done' && t.due).forEach(t => { const d = new Date(t.due).getTime();
