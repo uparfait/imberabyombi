@@ -29,3 +29,4 @@ export const pick = {
     (a.closest('dialog[open]') || document.body).append(this.el);
     this.draw(); if (this.el.hidden) return;
     const q = this.el.querySelector('[data-pk-q]');
+    if (q && (kb || FINE())) q.focus({ preventScroll: true });
