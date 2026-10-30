@@ -15,3 +15,4 @@
   .att_done { display: grid; justify-items: center; gap: .5rem; padding: 2rem 0 1rem; text-align: center; }
   .att_tick { width: 7rem; height: 7rem; fill: none; stroke: rgb(var(--ok)); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; animation: att_pop .5s .9s var(--ease) both; }
   .att_tick circle { stroke-dasharray: 151; stroke-dashoffset: 151; animation: att_draw .6s var(--ease) forwards; }
+  .att_tick path { stroke-dasharray: 36; stroke-dashoffset: 36; stroke-width: 4; animation: att_draw .4s .6s var(--ease) forwards; }
