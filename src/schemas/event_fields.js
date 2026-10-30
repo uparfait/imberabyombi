@@ -11,3 +11,4 @@ const KIND_HELP = 'Upcoming: it starts later. Live now: it has already started, 
   + 'the time now (change them if it started earlier). Recurring: it repeats on a schedule you choose.';
 
 /* Live now: an empty date and start become the time now, in the form's time zone */
+const live_now = f => { const tz = f.elements.tz?.value || device_tz(), p = tz_parts(tz, Date.now());
