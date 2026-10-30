@@ -4,3 +4,4 @@
 import { useState } from 'react';
 import { hash_str } from '../lib/index.js';
 import { ic } from '../icons/index.js';
+import { db } from '../store/index.js';
