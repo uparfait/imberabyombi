@@ -32,3 +32,4 @@ function nav_markup(routed) {
       icon: (act || sys).i, label: (act || sys).t, set: true, tiles: items.map((it, i) => ({ icon: it.i, label: it.t, on: cur === i, ...to(l, i) })) })}</Fragment>; };
   const title = node ? node.t : ROOT; if (routed) route.title = title;
   lorem.seed(hash_str(title));
+  const body = nav_page({ routed, title, node, kids, path, to });
