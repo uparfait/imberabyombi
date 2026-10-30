@@ -67,3 +67,5 @@ every account starts empty.
   shows who it went to as faces. Entries keep their sentence too (`log(d, text, act, by)`), which the certificate prints.
 - **Delete** only while nobody has signed. Once someone has signed, a document is never deleted: **Archive** moves it to
   Archived (orange: a caution, not a loss), and **Restore from archive** brings it back.
+
+## Download
