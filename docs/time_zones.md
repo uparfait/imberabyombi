@@ -20,3 +20,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
 - Email designs give every time with its time zone: "2:00 PM – 4:30 PM (GMT+2 · Kigali)".
 
 ## The time zone converter (`/admin/tz`)
+In the sidebar under System. From: a time zone, a date, hour and minute (12h / 24h, Now); To: a time zone, and the
