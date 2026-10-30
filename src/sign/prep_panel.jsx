@@ -10,7 +10,7 @@ import { initials, help_tip } from '../ui/index.js';
 import { add_rec, size_of } from './sign_store.js';
 import { P, prep_dirty } from './prep_state.js';
 import { status_chip } from './sign_list.jsx';
-import { chips, note_text, CERT_HELP } from './signer_bits.jsx';
+import { prep_opts, CERT_HELP } from './signer_bits.jsx';
 
 const people = () => db.list('staff').filter(s => s.email && s.name);
 
