@@ -42,3 +42,4 @@ VIEWS.attendance = () => {
     {stat_row([['Present today', count('Present'), 'check', 'ok'], ['Late', count('Late'), 'clock', 'warn'], ['Absent', count('Absent'), 'x', 'bad'],
       ['Excused', count('Excused'), 'note', 'info']])}
     {tabs('att', [['Staff', 'Staff'], ['Student', 'Students']], t)}
+    {crud('attendance', { filter: r => r.kind === t, preset: { kind: t }, title: `${t === 'Staff' ? 'Staff' : 'Student'} attendance` })}
