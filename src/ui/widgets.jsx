@@ -16,3 +16,4 @@ export const tabs = (key, items, cur) => (
   </div>
 );
 export const stat_row = items => (
+  <div className={`mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 ${items.length > 4 ? 'lg:grid-cols-5' : 'lg:grid-cols-4'}`}>
