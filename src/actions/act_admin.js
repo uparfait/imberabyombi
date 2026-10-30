@@ -14,6 +14,7 @@ import { apply_tokens } from './theme.js';
 const EASE = 'cubic-bezier(.22,.8,.22,1)';
 
 /* sets the time zone choice in Settings (as if picked), so Save and Cancel wake up when it differs from the one in use */
+const tz_choose = v => { const sel = qs('#page_tz'); if (!sel) return; sel.value = v; sel.dispatchEvent(new Event('change', { bubbles: true })); };
 export const ADMIN_ACT = {
   /* Email designs: switch the previewed email in place (no page jump). The address changes first: the redraw reads ?t= */
   mail: t => { const k = t.dataset.k; if (!qs('#mail_view') || !MAILS[k]) return; ui.mail = k;
