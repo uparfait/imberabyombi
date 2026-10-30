@@ -8,3 +8,4 @@ import { ask, slide_in } from '../overlays/index.js';
 import { MAILS } from '../emails/index.js';
 import { nav_draw, refresh_panel, ensure_mine } from '../admin/index.js';
 import { redraw_charts } from '../charts/index.js';
+import { to } from '../router/index.js';
