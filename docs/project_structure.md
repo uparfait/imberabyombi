@@ -27,3 +27,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `fields/`    | `field()` (one form field from a schema field), date/time masks, `form_obj()`, `set_native_value()` |
 | `feedback/`  | spinner, inline messages, notifications, validation, `request()`, the top loader            |
 | `overlays/`  | `modal()`, `ask()`, dialogs host, the shared picker (selects, dates, times) and tooltip     |
+| `files/`     | `File_box` (file field with tiles), file viewer, file helpers                                |
