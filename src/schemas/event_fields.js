@@ -32,3 +32,5 @@ export function when_ok(d, row, f) {
   if (d.kind === 'Upcoming' && s <= now) return err(d.start ? 'start' : 'date', 'This time has already passed. Pick a later one, or choose Live now.');
   if (d.kind === 'Live' && s > now) return err(d.start ? 'start' : 'date', 'A live one has already started. Pick a time before now, or choose Upcoming.');
   if (d.kind === 'Live' && d.end && at(d.date, d.end, d.tz) <= now) return err('end', 'This end time has already passed. Pick a later one.');
+  return true;
+}
