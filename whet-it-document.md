@@ -70,3 +70,4 @@ Every feature below is working code. Each line says what it is and where it live
   drag, move, resize, arrow keys), autosave, send.
 - Sign with a drawn, typed (five handwriting fonts) or uploaded signature; a created or uploaded stamp; background
   removal makes the paper of an upload transparent. Next field, one-tap reuse, an agreement before signing.
+- Progress per signer, a copyable signing link, activity, and a download with the marks written into the PDF and a
