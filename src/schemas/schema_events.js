@@ -8,7 +8,7 @@ import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/i
 import { bar_cell, badge, tag } from '../ui/index.js';
 import { ev_state } from '../events/ev_state.js';
 import { field_spec, option_list, STATUS, mail, tel } from './fields.js';
-import { kind_spec, kind_label, repeat_spec, where_f, org_f, audience_spec, event_before } from './event_fields.js';
+import { kind_spec, kind_label, repeat_spec, where_f, org_f, audience_spec, agenda_spec, event_before } from './event_fields.js';
 
 /* a record's time zone in a table cell or its details: "GMT+2 · Kigali" on its date (none: set in the page's) */
 const tz_cell = (v, row) => zone_short(v || page_tz(), row?.date);
