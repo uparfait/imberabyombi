@@ -33,6 +33,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
 - **Agenda**: items, each with a time from and to, a title, a description and a presenter (name, email, title). The item
   running now is marked on the page and the live screen ([`events/agenda_now.js`](../src/events/agenda_now.js)).
   Saving checks the times: each item ends after it starts, stays within the event's start and end, and starts once the
+  one before it has ended; changing the event's times checks the saved agenda too. **Add item** starts where the last
 - **Expected audience**: how many people are expected.
 - Editing a record saved before a field existed starts that field as the record stands for (its type from its timing,
   its place from a link) or as on a new record (`fill` / `def`).
