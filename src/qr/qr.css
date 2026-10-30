@@ -36,6 +36,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 .qr_tip { position: absolute; top: calc(100% + .5rem); right: 0; display: flex; width: max-content; max-width: 16rem; align-items: center; gap: .5rem;
   padding: .625rem .875rem; border-radius: var(--radius); background: #fff; color: #111; font-size: .8125rem; }
 
+/* what was found (or why the camera could not start), in a sheet from the bottom */
 .qr_found { display: grid; gap: .375rem; padding: 1.25rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
 .qr_found.is_link { border-color: rgb(var(--ok) / .35); background: rgb(var(--ok) / .06); }
 .qr_found.is_warn { border-color: rgb(var(--warn) / .35); background: rgb(var(--warn) / .06); }
