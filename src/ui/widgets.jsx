@@ -36,3 +36,6 @@ export const empty = (title, text, act = null, icon = 'check', color = 'ok') => 
 export const logo = light => (
   <a href={to('/')} className="font-display text-xl font-extrabold tracking-wide sm:text-2xl" aria-label={`${cfg.name}, home`}>
     <span className="text-brand">{cfg.logo[0]}</span><span className={light ? 'text-white' : 'text-fg'}>{cfg.logo[1]}</span>
+  </a>
+);
+export const theme_btn = (c = '') => (
