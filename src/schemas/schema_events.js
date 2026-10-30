@@ -41,3 +41,4 @@ export const events_schema = {
   g: () => {
     const c = lorem.int(4, 20) * 10;
     return {
+      title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-10, 30))), start: `${pad(lorem.int(9, 16))}:00`, venue: lorem.t(2), capacity: c,
