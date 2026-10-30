@@ -53,3 +53,7 @@ export function table_body(c) {
       <tr key={r.id} data-row={r.id} data-act="view" data-col={c} data-id={r.id} tabIndex="0" className={ui.flash === r.id ? 'row_flash' : ''}>
         {with_acts ? <td className="table_acts"><div className="inline-flex items-center gap-1">{acts[i]}</div></td> : null}
         {cols.map(k => <td key={k} data-k={k}><div className="trunc">{cell(c, k, r)}</div></td>)}
+      </tr>
+    )) : none_row(c, s, can, filtered, span)
+  };
+}
