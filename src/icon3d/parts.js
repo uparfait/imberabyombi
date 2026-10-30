@@ -50,6 +50,7 @@ export function vol(id, o, k = 1) {
   const bev = Math.max(o.bevel, PX.bevel / k), surf = num(o.surf * bev * k / o.bevel), spec = num(o.spec * Math.min(1, o.bevel / bev) ** 2);
   const amb = PX.ambient * (1 - Math.min(k, 1)), k1 = num(o.shade * (1 - amb));
   return f + `<feGaussianBlur in="${g}" stdDeviation="${num(bev)}" result="h"/>`
+    + `<feDiffuseLighting in="h" surfaceScale="${surf}" diffuseConstant="1" lighting-color="#fff" result="d"><feDistantLight azimuth="225" elevation="60"/></feDiffuseLighting>`
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
