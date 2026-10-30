@@ -3,3 +3,4 @@
    Excel; no filters); a row shows the person and their signature. Only what people submit: no Add, Edit or Delete. It
    follows new ones at once (the storage listener in attend_page.jsx). ATTENDEES_ACT.ev_att_list (data-c, data-id) opens it. */
 import { qs } from '../lib/index.js';
+import { db, rerender } from '../store/index.js';
