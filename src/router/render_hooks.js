@@ -20,3 +20,4 @@ export const skip_after_render = () => { skipped = true; };
 export function before_page(keep) {
   CHARTS.clear(); pick.close(); tip.hide(); viz_tip.hide(); clear_nav_busy();
   qsa('#sidebar a.side_link[aria-busy]').forEach(a => a.removeAttribute('aria-busy'));
+  side_top = qs('#sidebar_scroll')?.scrollTop || 0;
