@@ -6,3 +6,4 @@ import { ic } from '../icons/index.js';
 import { db, ui } from '../store/index.js';
 import { auth, me } from '../auth/index.js';
 import { countdown } from '../modules/index.js';
+import { redraw_slot } from './live_slot.jsx';
