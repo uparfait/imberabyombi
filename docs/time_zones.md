@@ -11,3 +11,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
 - The week view's corner shows its offset (GMT+2, GMT+5:30).
 
 ## Activities and events
+- The form's date row ends with a **time zone** block ("Monday, November 2 · 9:00am – 10:00am · GMT-5 · New York"). It
