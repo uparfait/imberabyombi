@@ -38,3 +38,4 @@ function nav_markup(routed) {
 }
 
 /* the routed pages draw with their page; the demo sits in a slot that nav_draw() draws again on its own */
+export const nav_drops = (routed = false) => routed ? nav_markup(true)
