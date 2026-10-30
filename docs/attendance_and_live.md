@@ -7,6 +7,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 - Under an event's (or activity's) status: "Opens in" or "Closes in" (only when it differs from the status's own
   countdown), its **QR code** while attendance is open (before, an empty place; once over, "Finished"), how many
   attended (live; past 99 it shows 99+), **Copy link** and **Open** (the system's tile menu: Attendance page, in a new
+  tab; View This Event; Attendees; Attendance settings). A click on the QR code shows it on the whole screen, as large
 - **The attendance page**, `/attend/<events|activities>/<id>` ([`attend_page.jsx`](../src/events/attend_page.jsx)):
   no header or sidebar; the name, when and where, then the form: full name, email, telephone, organisation or unit,
   position, and a signature, drawn (the O-Doc Sign pad) or digital. Once per email; a large tick says it was sent.
