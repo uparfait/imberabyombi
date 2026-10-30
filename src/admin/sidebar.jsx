@@ -16,8 +16,7 @@ export const CREATE = [['tasks', 'tasks', 'New task', 'tasks'], ['calendar', 'ac
   ['parking', 'parking', 'Check in a car', 'car'], ['staff', 'staff', 'New staff member', 'users']];
 
 const SIDE = { busy: null };   /* href of the clicked link whose page is loading */
-const link = (m, mod) => { const on = m.k === mod, href = to(`/admin/${m.k}`), busy = SIDE.busy === href;
-  return <li key={m.k}><a href={href} className={`side_link ${on ? 'active' : ''}`} aria-current={on ? 'page' : undefined} aria-busy={busy ? 'true' : undefined} data-tip={m.d}>
+const link = (m, mod) => { const on = m.k === mod, href = to(m.app || `/admin/${m.k}`), busy = SIDE.busy === href;
     {busy ? spinner('side_spin') : ic(m.i)}<span className="truncate">{m.l}</span></a></li>; };
 const groups = mod => uniq(MODS.map(m => m.g)).map(g => { const items = MODS.filter(m => m.g === g && auth.can(m.k)); if (!items.length) return null;
   return side_section(g, g, <ul className="mt-0.5 grid gap-0.5">{items.map(m => link(m, mod))}</ul>); });
