@@ -34,3 +34,5 @@ export function offset_min(tz, t) {
 export function zoned_to_utc(y, mo, d, h, mi, tz) {
   const guess = Date.UTC(y, mo - 1, d, h, mi); let t = guess - offset_min(tz, guess) * 60000;
   return guess - offset_min(tz, t) * 60000;
+}
+export const gmt = m => `GMT${m < 0 ? '-' : '+'}${pad(Math.floor(Math.abs(m) / 60))}:${pad(Math.abs(m) % 60)}`;
