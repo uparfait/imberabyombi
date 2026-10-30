@@ -30,3 +30,4 @@ export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipient
       aria-label={`Copy the signing link for ${r.name}`}>{ic('link', 'h-4 w-4')}</button> : null}</li>)}</ul>;
 
 export const progress = d => { const n = d.recipients.length, s = signed_n(d);
+  return <><div className="flex items-center gap-2">{status_chip(d)}{d.archived ? <span className="chip bg-fg/10 text-fg/70">Archived</span> : null}
