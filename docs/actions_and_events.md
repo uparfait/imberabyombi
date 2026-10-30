@@ -19,3 +19,4 @@ component needs its own click handler for app actions, and buttons inside dialog
 import { db, rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
 export const EXAMPLE_ACT = {
+  archive: t => { db.upsert('tasks', { id: t.dataset.id, status: 'Done' }); rerender(); notify('Archived.', 'ok'); }
