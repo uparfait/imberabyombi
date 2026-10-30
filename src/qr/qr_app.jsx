@@ -44,3 +44,4 @@ export function Qr_app() {
       </div>
       <div className="qr_tools">
         {scanning ? <button type="button" className="btn btn_outline btn_sm" onClick={() => { stop(); set({ phase: 'idle' }); }}>{ic('x', 'h-4 w-4')}Stop</button> : null}
+        {scanning && multi ? <button type="button" className="btn btn_outline btn_sm" onClick={flip}>{ic('refresh', 'h-4 w-4')}Flip</button> : null}
