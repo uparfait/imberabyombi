@@ -76,3 +76,5 @@ they opened and signed it, and the activity.
 ## Who can do what
 The permission key is `sign`. Every role may use it at level 2 (roles saved before it existed get it too, see
 `FOR_ALL` in `src/auth/roles.jsx`). Level 2: upload, prepare, send, delete, archive. Level 1: sign what is sent to you.
+
+Where its data lives, the libraries it loads and what each file does: [O-Doc Sign: data and code](o_doc_sign_code.md).
