@@ -7,3 +7,4 @@ import { before_render } from '../store/index.js';
 import { PK } from './pick_html.js';
 
 /* F. PICKERS: one shared #picker serves every select (searchable, checkboxes when multiple), date, week, month,
+      date & time, time and [data-list] suggestion field. The native control stays the source of truth, so forms,
