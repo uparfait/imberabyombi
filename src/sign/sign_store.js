@@ -49,3 +49,4 @@ export function new_doc(name, size, pages) {
   log(d, `${me.name} uploaded ${name}`, 'upload', me.email); db.upsert(C, d); return d;
 }
 /* a signer's colour (their card, avatar, tag and fields) comes from their email (lib/seed_color.js), kept clear of the
+   colours of the signers before them in this document */
