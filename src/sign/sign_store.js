@@ -35,3 +35,4 @@ export const count = k => k === 'inbox' ? to_sign().filter(my_turn).length : of_
 export const signed_n = d => d.recipients.filter(r => r.status === 'signed').length;
 /* a document someone has signed is kept: it can be archived, never deleted */
 export const kept_for_good = d => signed_n(d) > 0;
+export const rec_of = (d, id) => d.recipients.find(r => r.id === id);
