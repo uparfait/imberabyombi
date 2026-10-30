@@ -24,16 +24,7 @@ export function in_words(t, v) {
 /* a time zone in words on a date, long and short: "GMT+2 · Kigali" / "GMT+2" */
 const tz_words_of = (tz, date) => { const w = zone_short(tz, date); return [w, w.split(' · ')[0]]; };
 
-/* the time zone: a select of every zone ("(GMT+02:00) Central Africa Time - Kigali"), shown as "GMT+2 · Kigali", with its
-   offset on the row's date (summer and winter time differ); a new date updates it */
-const day_of = form => /^\d{4}-\d{2}-\d{2}$/.test(form?.elements.date?.value || '') ? form.elements.date.value : '';
-const tz_words = form => { const s = form?.querySelector('.when_tz select'); if (s) s.nextSibling.textContent = zone_short(s.value, day_of(form)); };
-const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz();
-  return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
-    <span className="pick when_block when_tz"><select id={id} name={f.k} defaultValue={tz} required={!!f.req}
-      onChange={e => tz_words(e.target.form)}>
-      {zone_list().map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select>
-      <span className="when_text" aria-hidden="true">{zone_short(tz, row.date)}</span></span></Fragment>; };
+/* a block's small label, and its value in words (both lengths; CSS shows the one that fits) with the arrow */
 
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
