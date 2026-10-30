@@ -19,3 +19,4 @@ export function Iconisus_page() {
   const input = st.mode === 'svg' && st.svg.trim() ? st.svg : st.mode === 'lib' && st.icon ? iconify_svg(st.icon) : st.text;
   const draw = (o = {}) => render(input, { style: st.style, colors: st.cols, ...o });
   return <div className="page_enter">
+    {page_title('Iconisus', 'Turn any letter, symbol, SVG or library icon into a 3D icon. Pick a style and up to three colours, then copy '
