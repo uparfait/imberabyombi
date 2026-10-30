@@ -40,6 +40,7 @@ button.sign_opt:hover { background: rgb(var(--fg) / .06); }
 .sign_opt[aria-expanded="true"] .sign_chev { transform: rotate(180deg); }
 /* a signer's note, in the pop-up Notes opens */
 .sign_note_pop { width: min(20rem, calc(100vw - 1rem)); padding: 1rem 1.125rem; }
+.sign_note_pop .sign_cap { margin-bottom: .375rem; }
 /* "Force digital signature": the checkbox and its help icon */
 .sign_check_row { display: flex; align-items: center; gap: .125rem; }
 .sign_check { display: flex; align-items: center; gap: .5rem; font-size: .875rem; cursor: pointer; }
