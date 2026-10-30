@@ -14,9 +14,10 @@ import { closed_pop } from './live_slot.jsx';
 import { to } from '../router/index.js';
 
 export const RAIL = [['notes', 'bulb', 'text-warn', 'Notes'], ['tasks', 'check', 'text-info', 'My tasks'], ['help', 'help', 'text-ok', 'Help']];
+
 export const header_tools = (n = '') => <><button className="icon_btn" data-act="cmdk" aria-label={`Search${key_hint('K') ? ` (${key_hint('K')})` : ''}`}>{ic('search')}</button>
   <a className="icon_btn hidden sm:inline-grid" href={to('/ui')} aria-label="Design system">{ic('layers')}</a>
-  {theme_btn()}{account_menu(n)}</>;
+  {theme_btn()}{account_menu(n, true)}</>;
 
 /* the signed-in person's avatar and its menu (who, settings, public website, sign out, storage used) */
 export function account_menu(n = '') {
