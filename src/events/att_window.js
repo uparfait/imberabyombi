@@ -15,6 +15,7 @@ const win = (e, d) => { const [b, a] = att_mins(e), s = at(d, e.start, e.tz), en
 
 export function att_phase(e, now = Date.now()) {
   if (!e?.date || e.tbd || e.status === 'Cancelled') return ['closed'];
+  if (+e.att_until > now) return ['open', +e.att_until];   /* reopened after it ended */
   let d = e.date;
   if (e.repeat) { const p = tz_parts(e.tz || page_tz(), now), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
     d = repeat_next(e.repeat, e.date, today); if (!d) return ['closed'];
