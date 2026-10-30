@@ -18,3 +18,4 @@ const task = () => { try { return modules.TASK_ACT || {}; } catch { return {}; }
 const has = (o, k) => Object.hasOwn(o, k);
 
 /* behaves like the plain merged object: ACT[k], k in ACT, Object.keys(ACT) */
+export const ACT = new Proxy(OWN, {
