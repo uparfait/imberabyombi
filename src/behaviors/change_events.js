@@ -14,3 +14,4 @@ import { set_token, set_theme } from '../actions/index.js';
 import { allow_select_change, page_tz_change, role_land_change, perm_change, import_change } from './settings_changes.js';
 
 function on_change(e) {
+  const t = e.target;
