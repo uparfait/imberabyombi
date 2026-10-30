@@ -20,6 +20,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 .qr_corners { --l: 3rem; position: absolute; inset: 0; pointer-events: none; border: 5px solid rgb(var(--brand)); border-radius: inherit;
   -webkit-mask: conic-gradient(at var(--l) var(--l), #0000 75%, #000 0) 0 0 / calc(100% - var(--l)) calc(100% - var(--l));
   mask: conic-gradient(at var(--l) var(--l), #0000 75%, #000 0) 0 0 / calc(100% - var(--l)) calc(100% - var(--l)); }   /* the rounded border, its four corners only */
+.qr_line { position: absolute; top: 5%; right: 7%; left: 7%; height: 2px; border-radius: 2px;
 @media (prefers-reduced-motion: reduce) { .qr_line { animation: none; top: 50%; } }
 .qr_idle { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1.25rem; padding: 2rem; color: #fff; text-align: center; }
 .qr_idle_ic { display: grid; width: 5rem; height: 5rem; place-items: center; border-radius: 1.5rem; background: rgb(255 255 255 / .08); }
