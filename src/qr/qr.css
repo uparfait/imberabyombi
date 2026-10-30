@@ -40,6 +40,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 .qr_sheet { position: absolute; right: 0; bottom: 0; left: 0; z-index: 4; display: grid; width: 100%; max-width: 32rem; gap: .75rem; margin: 0 auto;
   padding: 1rem 1rem max(1.25rem, env(safe-area-inset-bottom)); border-radius: 1.5rem 1.5rem 0 0; background: rgb(var(--bg)); animation: qr_up .3s var(--ease); }
 .qr_sheet_err { padding: .5rem .25rem; color: rgb(var(--fg)); }
+.qr_ask { justify-items: center; padding-top: 1.75rem; text-align: center; }   /* before the browser asks for the camera */
 .qr_found { display: grid; gap: .375rem; padding: 1.25rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
 .qr_found.is_link { border-color: rgb(var(--ok) / .35); background: rgb(var(--ok) / .06); }
 .qr_found.is_warn { border-color: rgb(var(--warn) / .35); background: rgb(var(--warn) / .06); }
