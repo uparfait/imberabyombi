@@ -14,6 +14,7 @@ export const activities_schema = {
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }),
     field_spec('start', 'Starts', 'time', 0, 1, { row: 'when' }), field_spec('end', 'Ends', 'time', 0, 1, { row: 'when' }),
+    field_spec('tz', 'Time zone', 'tz', 0, 1, { def: () => device_tz(), row: 'when' }),
     field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')), field_spec('note', 'Note', 'textarea')
   ],
   /* it ends after it starts */
