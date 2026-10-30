@@ -10,6 +10,7 @@ export * from './event_invites.jsx';
 export * from './event_page.jsx';
 export * from './event_minutes.jsx';
 export * from './event_act.jsx';
+export * from './live_page.jsx';
 export * from './qr.jsx';
 export * from './att_window.js';
 export * from './qr_full.jsx';
