@@ -27,3 +27,6 @@ function open_pad(d, f) {
     on_submit: async () => { const url = await PAD.get();
       if (!url) { form_msg(qs('#modal form'), 'warn', `No ${what} yet`, `Make your ${what} first.`); return false; }
       apply(d, f, url); } });
+}
+
+async function finish() {
