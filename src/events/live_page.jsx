@@ -49,6 +49,7 @@ export function live_page(id, c) {
       <div className="card live_card">{head('Details', 'Details')}{e.about || e.note ? <p className="live_about">{e.about || e.note}</p> : null}
         <p className="live_when_all">{[e.tbd ? '' : fmt_d(e.date), e.start ? `${fmt_time(e.start)}${e.end ? ` – ${fmt_time(e.end)}` : ''}` : '', zone_short(e.tz || page_tz(), e.date)].filter(Boolean).join(' · ')}</p></div>
       {ag.length ? <div className="card live_now tint" style={{ '--h': hue((it || next)?.title) }}><div className="live_head"><p className="att_kind">{it ? `Now · ${span(it)}` : next ? `Next · ${span(next)}` : 'Agenda'}</p>
+        <button type="button" className="icon_btn h-8 w-8" data-act="ev_track" data-id={id} aria-label="The agenda on the whole screen" data-tip="Full screen">{ic('expand', 'h-4 w-4')}</button></div>
       <div className="card live_card">{head('Agenda', 'Agenda')}{agenda_table(e, true)}</div>
       <div className="card live_card"><div className="live_head"><h2>Organisers</h2>{can ? add_co(e, c) : null}</div>{org_table(e, c, can)}</div>
     </section>
