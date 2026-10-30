@@ -8,3 +8,4 @@ Part of [O-Doc Sign](o_doc_sign.md): the owner of a draft signs it before (or in
   and brings you back to the draft: **Signed by you**. Your fields now show your marks and stay as they are (not moved,
   resized, removed or added to), and you are not edited or removed as a signer ([`self_sign.jsx`](../src/sign/self_sign.jsx)).
 - **Preview**, at the foot of the right column once someone has signed: the document with the marks so far, and
+  **Download a copy**.
