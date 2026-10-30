@@ -15,3 +15,4 @@ O-Doc Sign is open), a narrow computer window through a zoom (`--sign_z`, `sign_
 | `/admin/sign` · `/drafts` · `/waiting` · `/completed` | your documents: all, not sent yet, waiting for signatures, signed by everyone |
 | `/admin/sign/archived` | **Archived**: documents you put away (out of the other lists; their signers still see them) |
 | `/admin/sign/inbox` | **To sign**: documents sent to your email, waiting first, then the ones you signed |
+| `/admin/sign/new` | upload a PDF (PDF only, up to 20 MB; the file is checked to really be a PDF) |
