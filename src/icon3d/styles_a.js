@@ -14,7 +14,7 @@ export function classic(G, C, i, k) {
     + gvert(i + 'l', G, [[0, face], [1, mix(face, C.p, .14)]])
     + `<clipPath id="${i}k"><circle cx="100" cy="92" r="72"/></clipPath>`
     + `<filter id="${i}t" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="${shade(C.p, -35)}" flood-opacity=".45"/></filter>`;
-  let ext = ''; for (let k = 5; k >= 1; k--) ext += use(i + 'G', 58, 50 + k, 84, shade(C.p, -22, 6));
+  const ext = extrude(i + 'G', 58, 50, 84, deep(C.p, -22, k, 6), [0, 5], k);
   return [d, `<circle cx="100" cy="92" r="72" fill="url(#${i}b)"/><circle cx="100" cy="92" r="72" fill="url(#${i}c)"/>`
     + `<g clip-path="url(#${i}k)"><ellipse cx="100" cy="46" rx="58" ry="34" fill="url(#${i}g)"/></g>`
     + `<circle cx="100" cy="92" r="72" fill="none" stroke="url(#${i}r)" stroke-width="2.5"/>`
