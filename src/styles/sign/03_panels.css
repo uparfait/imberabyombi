@@ -51,3 +51,5 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_side details > summary:focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 0; }
 .sign_send_row { display: flex; align-items: flex-start; gap: .75rem; padding: .75rem; border: 1px solid color-mix(in srgb, var(--c) 28%, rgb(var(--line)));
   border-radius: 1rem; background: color-mix(in srgb, var(--c) 6%, transparent); }
+
+.sign_tool { display: flex; min-height: 2.75rem; align-items: center; gap: .625rem; padding: .5rem 1rem; border: 1px solid rgb(var(--line));
