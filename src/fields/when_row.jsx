@@ -26,3 +26,4 @@ const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz()
       <span className="when_text" aria-hidden="true">{zone_short(tz, row.date)}</span></span></Fragment>; };
 
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
+  return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
