@@ -19,6 +19,7 @@ export const INVITE_TABLE_ACT = {
 export function invite_table(e, open) {
   const inv = e.invites || [];
   return <div className="ev_inv_box">
+    <p className="ev_inv_bar">People invited<span className="chip bg-surface-2 text-muted">{inv.length}</span></p>
       {open ? <th scope="col" className="ev_inv_acts"><span className="sr-only">Actions</span></th> : null}</tr></thead>
       <tbody>{inv.map(i => editing === `${e.id}|${i.e}` ? edit_row(e.id, i) : <tr key={i.e}>
         <td><span className="block truncate">{i.e}</span><span className="ev_inv_sub">{day(i.at)}</span></td><td className="ev_inv_day">{day(i.at)}</td>
