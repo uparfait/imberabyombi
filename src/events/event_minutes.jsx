@@ -16,3 +16,4 @@ const today_in = e => { const p = tz_parts(e.tz || page_tz(), Date.now()); retur
 /* the first page: title, when and where, who attended (that day, for a series), the agenda, decisions and actions */
 function first_page(e, day) {
   const came = db.list('attendees').filter(a => a.ref === e.id && (!e.repeat || String(a.at).slice(0, 10) === day))
+    .map(a => `<li>${esc(a.name)}${a.org ? ` (${esc(a.org)})` : ''}</li>`).join('');
