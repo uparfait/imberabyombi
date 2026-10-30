@@ -5,6 +5,7 @@ import { pad, tz_parts, zoned_to_utc, device_tz } from '../lib/index.js';
 import { show_err } from '../feedback/index.js';
 import { set_native_value } from '../fields/form_values.js';
 import { dt_show } from '../fields/date_formats.js';
+import { repeat_from } from '../fields/repeat_field.jsx';
 import { field_spec } from './fields.js';
 
 export const KINDS = [['Upcoming', 'Upcoming'], ['Live', 'Live now'], ['Recurring', 'Recurring']];
