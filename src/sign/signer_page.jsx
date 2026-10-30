@@ -24,3 +24,4 @@ const not_yours = d => <div className="sign_main page_enter max-w-2xl"><div clas
 
 export function signer_page(d) {
   const r = my_rec(d); if (!r) return not_yours(d);
+  signer_start(d.id);
