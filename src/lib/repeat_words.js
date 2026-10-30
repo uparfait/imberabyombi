@@ -15,3 +15,4 @@ const mon_first = d => (d + 6) % 7;   /* the week starts on Monday */
 
 /* the day in the month: "on the 1st and 15th", "on the last day", "on the second and last Friday" */
 function month_day(r, f) {
+  if (r.by === 'week') { const w = r.weeks?.length ? r.weeks : f && week_of(f).weeks, wd = r.wdays?.length ? r.wdays : f && [f.getDay()];
