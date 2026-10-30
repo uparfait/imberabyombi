@@ -26,3 +26,4 @@ export const stat_row = items => (
   </div>
 );
 /* act: JSX (a button or link) shown under the text */
+/* Empty or error state: an icon, the title with a help icon (the explanation shows in its tooltip, never as a paragraph)
