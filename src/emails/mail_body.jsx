@@ -9,3 +9,4 @@ import { to } from '../router/index.js';
 
 export function mail_body(k) {
   lorem.seed(hash_str('mail-' + k));
+  const ev = lorem.t(3), place = `${lorem.t(2)} hall, ${lorem.t(1)}`, who = lorem.name(), d1 = add_d(new Date(), 9), d2 = add_d(new Date(), 12);
