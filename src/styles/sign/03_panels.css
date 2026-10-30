@@ -22,3 +22,4 @@
 .sign_rec { border-color: color-mix(in srgb, var(--c) 28%, rgb(var(--line))); background: color-mix(in srgb, var(--c) 7%, transparent); }
 /* the signer whose fields are being placed stands out: zoomed in a little, a border in their colour (thicker at the bottom),
    a deeper tint and a "Placing fields" chip */
+.sign_rec, .sign_for { transition: transform .3s var(--ease), border-color .2s, background-color .2s; }
