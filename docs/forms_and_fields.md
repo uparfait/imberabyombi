@@ -16,6 +16,7 @@ Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `t
 `tz` (a time zone), `seg` (a few choices as one segmented pill), `repeat` (how a recurring one repeats, see
 [events](events.md)).
 Extras: `def` (default), `min`, `max`, `when` (shown only for some values: `'Done'` / `'!Done'` by status, or
+`'field=A|B'` / `'field!=A'` by any field, a radio group too), `help` (a help icon by a `seg` title), `on` (runs when a
 
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
