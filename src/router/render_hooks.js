@@ -30,3 +30,4 @@ export function run_after_render({ keep, anim }) {
   /* React keeps <main> across redraws of the same page, so the animation is removed (keep) or restarted (keep + anim) by hand */
   const m = qs('#main');
   if (!keep) main_enter = !!m?.classList.contains('page_enter');
+  else if (m) { m.classList.remove('page_enter'); if (anim && main_enter) { void m.offsetWidth; m.classList.add('page_enter'); } }
