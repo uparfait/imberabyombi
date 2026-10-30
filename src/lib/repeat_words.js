@@ -22,3 +22,4 @@ function month_day(r, f) {
 }
 
 /* rule r whose first date is first ('YYYY-MM-DD', may be empty) in words */
+export function repeat_text(r, first) {
