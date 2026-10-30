@@ -31,6 +31,7 @@ const POSTPONE_HELP = 'It opens with its date and time as they are now. Change t
 export const EV_ACT = {
   ...INVITE_ACT, ...QR_ACT,
   /* when people can submit attendance, one setting at a time: before it starts, how early it opens; while it runs, how
+     long it stays open after the end; once it has ended, reopen it from now for some minutes (its QR code comes back) */
     modal({ title: 'Attendance settings', body: [field(field_spec(k, l, 'number', 0, 1, { min: 0, max: 1440 }), v), <p key="hint" className="att_hint sm:col-span-2">{hint}</p>],
       submit: 'Save', on_submit: d => save(e.id, { [k]: +d[k] }, 'Attendance settings saved', early ? `Attendance opens ${d[k]} min before the start.` : `Attendance stays open ${d[k]} min after the end.`, c) }); },
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
