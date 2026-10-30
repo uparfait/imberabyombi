@@ -7,3 +7,5 @@ import { lorem, page_now } from '../lib/index.js';
 import { ic, i3, hue_at } from '../icons/index.js';
 import { dash_widgets } from './dashboard_widgets.jsx';
 import { to } from '../router/index.js';
+
+/* [module, label, icon, collection, filter?]: the numbers a role may open */
