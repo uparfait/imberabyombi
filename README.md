@@ -43,3 +43,4 @@ src/config/      brand, media, business rules                src/actions/   ever
 src/cartoons/    cartoon pictures drawn from a seed          public/media/  sample video, poster, share image, logo
 src/icon3d/      the 3D icon engine (six styles)             src/iconisus/  the 3D icon maker (/admin/icons)
 src/lib/         small helpers, dates, lorem ipsum           src/behaviors/ delegated events, tooltips, gestures
+src/icons/       flat and glossy 3D icons (fixed colours)    src/site/ src/account/ src/kit/   public, account, design pages
