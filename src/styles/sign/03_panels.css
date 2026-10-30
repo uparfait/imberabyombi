@@ -12,3 +12,4 @@
   font: 600 1.25rem/1.3 var(--font_display); color: rgb(var(--fg)); outline: 0; }
 .sign_title:hover, .sign_title:focus { border-color: rgb(var(--line)); }
 .sign_title:focus { border-color: rgb(var(--brand)); }
+.sign_hint { padding: 1rem; border: 1px dashed rgb(var(--line)); border-radius: 1rem; color: rgb(var(--muted)); font-size: .875rem; text-align: center; }
