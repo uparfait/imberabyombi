@@ -61,3 +61,4 @@ export const recolor = d => d.recipients.reduce((used, r) => { r.color = seed_co
 export const when = t => t ? new Date(t).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' }) : '';
 export const ago = t => { const s = (Date.now() - t) / 1e3;
   return s < 60 ? 'just now' : s < 3600 ? `${s / 60 | 0} min ago` : s < 86400 ? `${s / 3600 | 0} h ago` : new Date(t).toLocaleDateString(undefined, { day: 'numeric', month: 'short' }); };
+export const size_of = n => n < 1048576 ? `${Math.max(1, Math.round(n / 1024))} KB` : `${(n / 1048576).toFixed(1)} MB`;
