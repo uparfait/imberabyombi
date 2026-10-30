@@ -10,3 +10,4 @@ styles in `src/styles/sign/`. It loads the first time someone opens it (its own 
 O-Doc Sign is open), a narrow computer window through a zoom (`--sign_z`, `sign_page.jsx`, `01_layout.css`).
 
 ## Pages (`/admin/sign/…`)
+| Address | Page |
