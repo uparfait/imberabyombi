@@ -26,3 +26,4 @@ export function add_field(type, page, cx, cy) {
   const [, , pw, ph] = KINDS[type], sz = P.doc.pages[page], w = Math.min(pw / sz.w, .9), h = Math.min(ph / sz.h, .9);
   const f = { id: uid(), type, rid: P.rid, page, w, h, x: clamp(cx - w / 2, 0, 1 - w), y: clamp(cy - h / 2, 0, 1 - h) };
   P.doc.fields.push(f); P.sel = f.id; prep_dirty(); rerender();
+  qs(`[data-fid="${f.id}"]`)?.classList.add('sf_new');
