@@ -84,3 +84,4 @@ Every feature below is working code. Each line says what it is and where it live
   hover values, and a click on a card (or a mark) that opens its data in a table, 20 rows a page.
 
 ## Platform
+- Path routes (`/about`, `/admin/tasks`) on the History API: per-page title, description and canonical link, Back /
