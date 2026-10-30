@@ -7,3 +7,4 @@ let lib = null;
 const load = () => lib ||= import('../editor/core/utils.js').then(u => u.load_script(LIB)).then(() => window.qrcode).catch(e => { lib = null; throw e; });
 
 /* the dark squares as one path, n squares a side */
+function draw(q, text) {
