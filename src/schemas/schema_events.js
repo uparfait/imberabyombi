@@ -10,6 +10,7 @@ import { kind_spec, when_ok } from './event_fields.js';
 /* a record's time zone in a table cell or its details: "GMT+2 · Kigali" on its date (none: set in the page's) */
 const tz_cell = (v, row) => zone_short(v || page_tz(), row?.date);
 /* the date row: date, start, end (required or not) and time zone */
+const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }), field_spec('start', 'Starts', 'time', 0, 1, { row: 'when' }),
 
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
