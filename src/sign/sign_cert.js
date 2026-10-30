@@ -32,3 +32,5 @@ export async function certificate(pdf, d, L) {
     if (r.cert_at) text(`Digital certificate: ${r.cert_file}, checked ${when(r.cert_at)} (simulated check)`, { x: 14, color: soft });
     y -= 6; });
   rule(); text('Activity', { size: 13, bold: true }); y -= 4;
+  d.audit.forEach(a => text(`${when(a.at)}   ${a.t}`, { size: 9, color: soft }));
+}
