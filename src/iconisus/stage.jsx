@@ -6,3 +6,4 @@ import { device_px } from '../icon3d/index.js';
 const svg = html => ({ __html: html });
 
 export const Stage = ({ draw }) => <section className="card ico_stage" aria-label="Preview">
+  <div className="ico_big" dangerouslySetInnerHTML={svg(draw({ size: '100%', px: device_px(Math.min(300, innerWidth * .72)) }))} />
