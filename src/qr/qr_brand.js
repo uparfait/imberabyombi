@@ -34,3 +34,4 @@ export function brand_apply() {
   if (t.radius != null) s.setProperty('--radius', t.radius + 'rem');
   if (t.space != null) s.setProperty('--space', t.space + 'rem');
   if (t.font) s.setProperty('--font_sans', `"${t.font}", system-ui, sans-serif`);
+  document.querySelector('meta[name=theme-color][media*=light]')?.setAttribute('content', c);
