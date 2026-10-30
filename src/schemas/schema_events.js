@@ -9,8 +9,9 @@ import { field_spec, option_list, STATUS } from './fields.js';
 
 /* a record's time zone in a table cell or its details: "GMT+2 · Kigali" on its date (none: set in the page's) */
 const tz_cell = (v, row) => zone_short(v || page_tz(), row?.date);
+
 export const activities_schema = {
-  l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'category'],
+  l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { def: () => ui.cal_date, row: 'when' }),
     field_spec('start', 'Starts', 'time', 0, 1, { def: () => '09:00', row: 'when' }), field_spec('end', 'Ends', 'time', 0, 1, { def: () => '10:00', row: 'when' }),
