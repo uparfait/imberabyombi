@@ -12,3 +12,4 @@ export const not_emails = text => String(text).replace(EMAIL, ' ').split(/[\s,;]
 export const INVITE_FILES = '.xlsx,.xlsm,.xls,.ods,.csv,.tsv,.txt';
 
 export async function emails_in_file(file) {
+  const ext = file.name.split('.').pop().toLowerCase();
