@@ -7,3 +7,4 @@ import { auth } from '../auth/index.js';
 import { avatar, theme_btn } from '../ui/index.js';
 import { key_hint } from '../feedback/index.js';
 import { closed_pop } from './live_slot.jsx';
+import { to } from '../router/index.js';
