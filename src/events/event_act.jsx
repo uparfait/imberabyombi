@@ -13,6 +13,7 @@ import { when_row } from '../fields/index.js';
 import { go } from '../router/index.js';
 import { INVITE_ACT } from './event_invites.jsx';
 import { QR_ACT } from './qr_full.jsx';
+import { att_mins } from './att_window.js';
 
 const SEC_TITLE = { Details: 'Edit details', When: 'Edit date and time', Location: 'Edit location', Organiser: 'Edit organiser', Agenda: 'Edit agenda',
   Audience: 'Edit audience' };
