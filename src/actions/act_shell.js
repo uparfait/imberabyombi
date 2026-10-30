@@ -33,3 +33,4 @@ export const SHELL_ACT = {
   clear_search: t => { const i = t.parentElement.querySelector('input[type=search]'); if (!i) return; set_native_value(i, ''); i.dispatchEvent(new Event('input', { bubbles: true })); i.focus({ preventScroll: true }); },
   run_search: t => { const i = t.parentElement.querySelector('input[type=search]'); if (!i) return; i.focus({ preventScroll: true }); i.dispatchEvent(new Event('input', { bubbles: true })); },
   msg_x: t => { const m = t.closest('.msg'); if (!m) return; m.classList.add('msg_out'); setTimeout(() => (react_owned(m) ? (m.hidden = true) : m.remove()), reduced() ? 0 : 300); },
+  side: () => { if (innerWidth < 1024) { ui.side = !ui.side; const s = qs('#sidebar'); s.inert = false; s.dataset.open = ui.side; qs('#sidebar_scrim').classList.toggle('on', ui.side); }
