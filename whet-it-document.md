@@ -60,3 +60,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Live preview: hovering a formatting choice shows it at once; leaving restores; a click keeps it.
 - Document tabs with outlines (fold, drag sections, move up / down; fold a whole tab's outline); import DOCX, PDF,
   XLSX, PPTX, EPUB, RTF, HTML, Markdown, JSON (at the cursor, in new tabs, or in place of one tab: the others are
+  never touched); export DOCX, PDF, RTF, EPUB, XLSX, CSV, HTML, Markdown, TXT; saved in the browser (IndexedDB, so
