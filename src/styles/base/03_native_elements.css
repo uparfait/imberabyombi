@@ -51,3 +51,4 @@
   :where(var) { font-style: italic; color: rgb(var(--info)); }
   :where(sub, sup) { font-size: .7em; }
   pre { background: rgb(var(--ink)); color: #F3E9DF; padding: 1.25rem; border-radius: var(--radius); overflow-x: auto; line-height: 1.65; }
+  .dark pre { background: rgb(var(--surface_2)); color: rgb(var(--fg)); border: 1px solid rgb(var(--line)); }
