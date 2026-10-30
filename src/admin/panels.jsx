@@ -42,3 +42,4 @@ const HELP = [['How do roles decide what I see?', 'Each role has a level per mod
   ['How do I check a car out?', 'Open Smart parking and select a busy slot, or use Check out in the log.']];
 
 /* search_box(attrs, placeholder): attrs is a props object spread on the search input */
+const help = () => <>{search_box({ 'data-filter': '.accordion_item' }, 'Search help')}
