@@ -47,3 +47,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | `data-token="brand|radius|space|font"` | live design-token editor (Settings)                         |
 
 ## The listeners
+click · input (masks, suggestions, live search) · change (selects, ticks, files) · submit · keydown (Esc, Ctrl K,
