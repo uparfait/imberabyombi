@@ -41,3 +41,4 @@ export const minutes_card = (e, c, can) => card('Minutes', can ? <button type="b
   <button type="button" className="icon_btn h-8 w-8" data-act="copy" data-text={doc_url(m)} data-what="Link" aria-label="Copy the link" data-tip="Copy link">{ic('link', 'h-4 w-4')}</button></li>));
 
 export const follow_card = (e, c, can) => card('Follow-ups', can ? <button type="button" className="btn btn_outline btn_sm" data-act="ev_follow" data-c={c} data-id={e.id}>
+  {ic('plus', 'h-4 w-4')}Add task</button> : null, db.list('tasks').filter(x => x.ref === e.id).map(x => <li key={x.id}>
