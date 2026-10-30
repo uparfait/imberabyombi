@@ -41,3 +41,5 @@ export const i3_html = (n, c = 'w-14 h-14', color = 'brand') =>
 export const HASH = '<svg viewBox="-37.5 0 660 660"><path transform="matrix(1 0 0 -1 -14 660)" '
   + 'd="M276 0 437 660H578L418 0ZM14 166V289H576V166ZM32 0 193 660H334L174 0ZM37 396V518H599V396Z"/></svg>';
 export const HASH_VIEW = [28, 24, 144, 144];
+
+/* a glossy letter or symbol, inline so it uses the site's fonts; '#' is drawn from HASH (the brand mark) */
