@@ -38,3 +38,4 @@ const edit_row = (id, i) => <tr key={i.e} className="ev_inv_editing"><td>
   <td className="ev_inv_acts">{btn('ev_inv_save', 'check', 'Save', '', { id, e: i.e })}{btn('ev_inv_stop', 'x', 'Cancel', '', { id, e: i.e })}</td></tr>;
 
 export function invite_table(e, open) {
+  const inv = e.invites || [];
