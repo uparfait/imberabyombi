@@ -26,3 +26,4 @@
   .track_dots { display: flex; align-self: center; justify-content: center; gap: .5rem; }
   .track_dots button { width: .5rem; height: .5rem; padding: 0; border-radius: 1rem; background: rgb(var(--fg) / .15); transition: width .4s var(--ease), background .4s; }
   .track_dots .done { background: rgb(var(--fg) / .35); } .track_dots .on { width: 1.75rem; background: rgb(var(--brand)); }
+  @media (prefers-reduced-motion: reduce) { .tint, .track_strip { transition: none; } }
