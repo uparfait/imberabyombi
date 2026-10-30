@@ -34,6 +34,7 @@ export function event_page(id) {
   if (!e) return empty('Event not found', 'It may have been deleted. Go back to the events and pick another.',
     <a href={to('/admin/events')} className="btn btn_outline btn_sm">{ic('chev_l', 'h-4 w-4')}Back to events</a>, 'alert', 'warn');
   route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
+  after_render(() => TIMERS.push(setInterval(tick, 1000)));   /* the time left counts down */
   /* the way back is an arrow at the start of the title row (never a line above the title) */
   return <div className="ev_page">
     <div className="ev_head"><a href={to('/admin/events')} className="icon_btn ev_back" aria-label="Back to events" data-tip="Back to events">{ic('chev_l')}</a>
