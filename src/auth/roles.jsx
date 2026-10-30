@@ -39,3 +39,4 @@ export const landing = id => {
 /* the "Lands on" choices: only the pages the role can open (they follow the access matrix as it changes).
    The chosen one is the select's value: <select defaultValue={land_value(r)} key={land_value(r)}>{land_opts(r)}</select> */
 export const land_opts = r => {
+  const ok = role_opens(r);
