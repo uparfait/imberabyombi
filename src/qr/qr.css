@@ -21,3 +21,4 @@ body { background: rgb(var(--bg)); }
   background-repeat: no-repeat; }
 .qr_line { position: absolute; top: 15%; right: 17%; left: 17%; height: 2px; border-radius: 2px;
   background: linear-gradient(90deg, transparent, rgb(var(--brand)), transparent); animation: qr_sweep 2.2s ease-in-out infinite alternate; }
+@keyframes qr_sweep { to { top: 85%; } }
