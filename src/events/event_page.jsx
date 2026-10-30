@@ -28,3 +28,4 @@ const side = (e, st) => <aside className="card ev_card ev_side" aria-label="Stat
 export function event_page(id) {
   const e = db.find('events', id), back = <a href={to('/admin/events')} className="ev_back">{ic('arrow_back', 'h-4 w-4')}Events</a>;
   if (!e) return <>{back}{empty('Event not found', 'It may have been deleted. Go back to the events and pick another.', null, 'alert', 'warn')}</>;
+  route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
