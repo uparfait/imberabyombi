@@ -15,7 +15,7 @@ const tool = (type, c = '') => { const [l, i] = KINDS[type];
 const placing = d => d.recipients.length
   ? <div className="grid gap-1.5" role="radiogroup" aria-label="Placing for">{d.recipients.map(r =>
     <button key={r.id} type="button" role="radio" aria-checked={P.rid === r.id} className={`sign_for ${P.rid === r.id ? 'on' : ''}`}
-      style={{ '--c': r.color }} data-act="sign_rid" data-id={r.id}><span className="truncate">{r.name}</span>{P.rid === r.id ? ic('check', 'ml-auto h-4 w-4 shrink-0 sign_for_tick') : null}</button>)}</div>
+      style={{ '--c': r.color }} data-act="sign_rid" data-id={r.id}><span className="truncate">{shown(r)}</span>{r.status === 'signed' ? ic('signature', 'h-3.5 w-3.5 shrink-0 text-ok') : null}{P.rid === r.id ? ic('check', 'ml-auto h-4 w-4 shrink-0 sign_for_tick') : null}</button>)}</div>
   : <p className="sign_hint">Add a signer first (on the left).</p>;
 
 const placed = d => { const n = d.fields.length;
