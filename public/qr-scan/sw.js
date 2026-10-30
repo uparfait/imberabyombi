@@ -5,3 +5,4 @@
 const CACHE = 'qr-scan-v1';
 const keep = (r, res) => caches.open(CACHE).then(c => c.put(r, res)).catch(() => {});
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.add('./')).catch(() => {})); });
+self.addEventListener('activate', e => e.waitUntil(caches.keys()
