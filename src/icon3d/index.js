@@ -13,3 +13,4 @@
    module (/admin/icons) is its playground. Import from here: import { render, STYLES } from '../icon3d/index.js' */
 import { classic, balloon, ribbon } from './styles_a.js';
 import { glossy, clay, glass } from './styles_b.js';
+import { glyph } from './glyph.js';
