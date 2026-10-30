@@ -44,3 +44,4 @@ function long_name(tz, t) {
 
 /* every zone at instant t, west to east: { tz, off, gmt, text ("Central Africa Time - Kigali"), label ("(GMT+02:00) …"),
    short ("GMT+2 · Kigali"), key (what a search matches: name, city, zone, "gmt+2", "utc+2") }; built once a day */
+let LIST = null, LIST_DAY = '';
