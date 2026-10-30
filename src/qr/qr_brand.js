@@ -4,3 +4,4 @@
    colour = the brand; icons: the site's mark drawn in the brand colour by the 3D engine), in place of the default one
    (public/qr-scan/manifest.webmanifest), and the tab and home-screen icons the same. brand() is that colour. */
 import { cfg } from '../config/index.js';
+import { render } from '../icon3d/index.js';
