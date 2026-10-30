@@ -20,8 +20,7 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
 - `hue_at(i)` gives rows of tiles and cards a different hue each, always the same for the same position.
 - The values live in `src/icons/icon_3d.jsx` (`HUES`, `TONES`, `HUE_RUN`): change a colour there and every icon that uses
   it follows.
-- Each name and colour is built once and cached; icons are `<img>` elements, see-through on every background.
-- The brand mark is `mark3d('#')`: the sidebar's top row, the header (sidebar closed) and the email designs.
+- Each icon is built for the pixel size it is shown at: `i3()` reads it from its size classes (`h-11` is 44 px; the largest
 
 ## Where the colours are used
 Status: green (done, complete), amber (warnings, waiting), red (problems). Files and documents: blue. Roles and access:
