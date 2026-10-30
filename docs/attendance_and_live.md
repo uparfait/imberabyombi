@@ -8,3 +8,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   "Closes in", how many attended (live; past 99 it shows 99+), **Copy link** and **Open** (the system's tile menu:
   Attendance page, Live screen, Attendees, Attendance settings). A click on the QR code shows it on the whole screen,
   as large as the screen allows ([`qr_full.jsx`](../src/events/qr_full.jsx)). The QR encoder loads from the CDN.
+- **The attendance page**, `/attend/<events|activities>/<id>` ([`attend_page.jsx`](../src/events/attend_page.jsx)):
