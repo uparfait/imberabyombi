@@ -19,3 +19,4 @@ const NEW_WHEN = [{ k: 'date', l: 'New date', t: 'date' }, { k: 'start', l: 'Sta
 
 export const EV_ACT = {
   ev_edit: t => open_form('events', t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas.events.sec[t.dataset.sec].split(',')]),
+  ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
