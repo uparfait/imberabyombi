@@ -84,3 +84,4 @@
   .when_chev { width: 1em; height: 1em; margin-left: auto; color: rgb(var(--muted)); transition: transform .2s var(--ease); }
   .when_block:has(> [aria-expanded="true"]) .when_chev { transform: rotate(180deg); }   /* its list is open */
   .when_dash { flex: none; color: rgb(var(--muted)); }
+  .when_block .field_err { position: absolute; top: 100%; left: 0; white-space: nowrap; font-size: .75rem; }
