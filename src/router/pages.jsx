@@ -13,3 +13,4 @@ import { set_meta } from './parse.js';
 import { to, go } from './history.js';
 
 export function public_page(r) {
+  const k = r.path.slice(1); let inner, title;
