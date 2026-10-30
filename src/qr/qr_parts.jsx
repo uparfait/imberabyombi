@@ -20,14 +20,6 @@ function Copy({ text, cls }) {
   return <button type="button" className={cls} onClick={copy}>{ic(ok ? 'check' : 'copy', 'h-4 w-4')}{ok ? 'Copied' : 'Copy'}</button>;
 }
 
-export const top_bar = () => <header className="qr_top">
-  <span className="qr_brand" aria-hidden="true">{ic('qr', 'h-5 w-5')}</span><h1 className="qr_name">Qr-scan</h1>
-  <div className="ml-auto flex items-center gap-1">
-    {can_install() ? <button type="button" className="btn btn_primary btn_sm" onClick={install}>{ic('download', 'h-4 w-4')}Install</button>
-      : !standalone() && apple() ? <span className="qr_hint" title="Share, then Add to Home Screen">{ic('download', 'h-4 w-4')}Add to Home Screen</span> : null}
-    <button type="button" className="icon_btn" onClick={theme} aria-label="Light or dark" title="Light or dark">{ic('moon')}</button>
-    {standalone() ? null : <a href={import.meta.env.BASE_URL} className="icon_btn" aria-label={`Back to ${cfg.name}`} title={cfg.name}>{ic('home')}</a>}</div></header>;
-
 /* what was found */
 export function found_card(text) {
   const link = secure(text), web = !link && /^http:\/\//i.test(text.trim());
