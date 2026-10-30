@@ -6,3 +6,4 @@
    seed_color(text, avoid = []) → '#rrggbb'. avoid: colours already in use side by side (the other signers of a document);
    the text's next hues are tried until one is at least GAP degrees from each (less when many share the range), so
    neighbours never look alike.
+   seed_hue(hex) → the OKLCH hue of a colour, in degrees. */
