@@ -57,3 +57,4 @@ Every feature below is working code. Each line says what it is and where it live
 - A full word processor in the whole window with a Back button: paper sizes, margins, headers, footers, page numbers.
 - Styles, fonts, sizes, colours, highlight, lists, checklists, tables, images with positions (in line, wrap, break,
   in front of or behind text) and drag to move, links, comments, find and replace, word count, zoom, editing modes.
+- Live preview: hovering a formatting choice shows it at once; leaving restores; a click keeps it.
