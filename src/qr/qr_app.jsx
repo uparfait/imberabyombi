@@ -1,4 +1,5 @@
 /* qr/qr_app.jsx: Qr-scan's screen: the camera on the whole page, on every screen and once installed. As it opens: allowed
+   already, the camera starts; not asked yet, a sheet says why it needs the camera and Allow camera asks (the browser's
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { ic } from '../icons/index.js';
 import { start, stop, cameras, read_image } from './qr_engine.js';
