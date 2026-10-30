@@ -27,6 +27,7 @@ export function lists_menu(cur) {
 export const sign_top = (cur, back) =>
   <header className="sign_top hdr">
     {back ? <a href={back} className="icon_btn" data-tip="Back" aria-label="Back">{ic('chev_l')}</a>
+      : <button type="button" className="icon_btn" data-act="back" data-tip="Back" aria-label="Back">{ic('chev_l')}</button>}
     <a href={list_href('all')} className="sign_brand" aria-label="O-Doc Sign, all documents" data-tip="Online document signing and stamping">{i3('signature', 'h-10 w-10', 'violet')}
       <span className="font-display text-lg font-semibold">O-Doc Sign</span></a>
     <div className="sign_btns">
