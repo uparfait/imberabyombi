@@ -25,3 +25,4 @@ documents between people and devices, keep these records and files on a server (
 | `sign_page.jsx`, `sign_top.jsx` | the window, its top bar and lists menu, the page for each address |
 | `sign_list.jsx`, `sign_new.jsx`, `sign_done.jsx` | the lists, the upload, "Signing complete" |
 | `prep_*.js(x)` | the prepare page: state and autosave, panels, tools, dialogs, adding fields, dragging |
+| `owner_page.jsx`, `activity.jsx`, `doc_act.js` | the sender's page, its activity and its buttons (copy link, download, delete, archive, restore) |
