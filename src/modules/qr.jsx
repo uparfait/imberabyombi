@@ -3,3 +3,5 @@
 import { VIEWS } from './views.js';
 import { loading } from '../feedback/index.js';
 import { to } from '../router/index.js';
+
+VIEWS.qr = () => { setTimeout(() => location.assign(to('/qr-scan/'))); return loading('Opening Qr-scan'); };
