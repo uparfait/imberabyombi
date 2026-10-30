@@ -42,3 +42,4 @@
   .panel_in { width: 22rem; }
   .rail_on { background: rgb(var(--brand) / .14); }
   /* Headers never draw a bottom border, scrolled or not */
+  .hdr { border-bottom: 0; }
