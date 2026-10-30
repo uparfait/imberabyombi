@@ -28,6 +28,7 @@ const tz_words_of = (tz, date) => { const w = zone_short(tz, date); return [w, w
 const CHEV = ic('chev_d', 'when_chev shrink-0');
 const inside = (f, id, w) => <><label htmlFor={id} className="when_lab">{f.l}</label>
   <span className="when_val" aria-hidden="true"><span className="when_text"><span className="when_long">{w[0]}</span><span className="when_short">{w[1]}</span></span>{CHEV}</span></>;
+const say = (b, [l, s]) => { const t = b?.querySelector('.when_text'); if (t) { t.firstChild.textContent = l; t.lastChild.textContent = s; } };
 
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
