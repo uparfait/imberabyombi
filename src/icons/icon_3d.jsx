@@ -25,3 +25,4 @@ export const css_px = cls => Math.max(0, ...[...String(cls).matchAll(/(?:^|[\s:]
 const CACHE = new Map();
 export function i3_src(n, color, css = 56) {
   const c = hex(color), px = Math.round(device_px(css)), k = `${n}|${c}|${px}`;
+  if (!CACHE.has(k)) {
