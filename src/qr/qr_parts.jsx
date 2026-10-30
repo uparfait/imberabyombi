@@ -11,3 +11,4 @@ function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
   const [ok, set] = useState(false);
   const copy = () => navigator.clipboard?.writeText(text).then(() => { set(true); setTimeout(() => set(false), 1500); }, () => {});
   return <button type="button" className={cls} onClick={copy} aria-label={label || 'Copy'} title={label ? undefined : 'Copy'}>
+    {ic(ok ? 'check' : 'copy', 'h-4 w-4')}{label ? ok ? 'Copied' : label : null}</button>;
