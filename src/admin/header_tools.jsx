@@ -18,7 +18,7 @@ export const RAIL = [['notes', 'bulb', 'text-warn', 'Notes'], ['tasks', 'check',
 
 export const header_tools = (n = '') => <><button className="icon_btn" data-act="cmdk" aria-label={`Search${key_hint('K') ? ` (${key_hint('K')})` : ''}`}>{ic('search')}</button>
   <a className="icon_btn hidden sm:inline-grid" href={to('/ui')} aria-label="Design system">{ic('layers')}</a>
-  {theme_btn()}{account_menu(n, true)}</>;
+  {notice_menu(n)}{theme_btn()}{account_menu(n, true)}</>;
 
 /* the signed-in person's avatar and its menu (name and email, settings, public website, the side panels on small screens
    when rail is set, a small "Allow text selection" switch with its help icon, storage used, and Sign out last of all) */
