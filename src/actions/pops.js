@@ -9,3 +9,4 @@ export function close_pops() { qsa('.pop:not([hidden])').forEach(p => { if (p._o
 export function toggle_pop(id) { const p = document.getElementById(id); if (!p) return; const open = !p.hidden && !p._out; close_pops(); if (!open) { p._out?.cancel(); p._out = null; p.hidden = false; if (p.classList.contains('tile_pop')) place_tile(p); } }
 /* "Your modules" style menus open like the account menu: right under their button (8px gap), kept 8px inside the screen,
    as tall as the room below allows (the tiles scroll inside) */
+export function place_tile(p) {
