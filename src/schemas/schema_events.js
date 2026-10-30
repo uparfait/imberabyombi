@@ -1,5 +1,6 @@
 /* schemas/schema_events.js: calendar activities (classes, meetings, sport, exams) and events (capacity and registrations;
    the registered cell shows a fill bar). Both have a type (Upcoming, Live now, Recurring) and their date, times and time
+   zone on one line in the form (row 'when'), empty to start but for the zone, the device's; the calendar shows them in the
 import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/index.js';
 import { bar_cell } from '../ui/index.js';
 import { show_err } from '../feedback/index.js';
