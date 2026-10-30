@@ -31,3 +31,4 @@ VIEWS.attendance = () => {
   const today = rows.filter(r => r.date === td);
   after_render(() => TIMERS.push(setInterval(() => { const o = qs('#live_clock'); if (o) o.value = fmt_stamp(Date.now(), { timeStyle: 'medium' }); }, 1000)));
   const count = s => today.filter(r => r.status === s).length;
+  return <>
