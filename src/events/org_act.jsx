@@ -14,3 +14,4 @@ const put = (c, e, d, title, text) => { db.upsert(c, { id: e.id, ...d }); rerend
 const get = t => [t.dataset.c, db.find(t.dataset.c, t.dataset.id), +t.dataset.i];
 const who = (p = {}, x = {}) => [field(field_spec('p_name', 'Name', 'text', 0, 1, x), p.name), field(field_spec('p_email', 'Email', 'email', 0, 1, x), p.email)];
 /* the email is on the list already (the person at index skip aside; -1: the organiser) */
+const taken = (e, mail, skip) => [[-1, e.org_email], ...(e.co_orgs || []).map((o, i) => [i, o.email])].some(([i, m]) => i !== skip && lc(m) === lc(mail));
