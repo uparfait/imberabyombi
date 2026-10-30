@@ -11,7 +11,7 @@ export function close_pops() { qsa('.pop:not([hidden])').forEach(p => { if (p._o
 export function toggle_pop(id) { const p = document.getElementById(id); if (!p) return; const open = !p.hidden && !p._out; close_pops(); if (!open) { p._out?.cancel(); p._out = null; p.hidden = false; expanded(p, true); if (p.matches('.tile_pop, .pop_fixed')) place_tile(p); } }
 /* "Your modules" style menus and fixed menus (the account menu): right under their button (8px gap), or above it when
    there is more room there than below (a button low on the screen), kept 8px inside the screen, as tall as that room
-   allows (a tile menu at most 480px; the tiles scroll inside) */
+   allows (a tile menu at most 480px; the tiles scroll inside). The room is what shows: the scrollbar is not part of it */
 export function place_tile(p) {
   const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
   /* inside a zoomed page (O-Doc Sign scaled to fit) the menu is placed in that page's own pixels: screen pixels ÷ zoom */
