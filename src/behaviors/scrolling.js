@@ -37,3 +37,4 @@ export const header_line = () => { qsa('#site_header, #app_header').forEach(h =>
 /* the resize timer: the heavy work waits until resizing pauses */
 export let RZ;
 const on_resize = () => { tip.hide(); pick.place(); clearTimeout(RZ);
+  RZ = setTimeout(() => { redraw_charts(); header_line(); const sb = qs('#sidebar'); if (sb) sb.inert = ui.side_min && innerWidth >= 1024;
