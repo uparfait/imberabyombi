@@ -1,4 +1,5 @@
 /* qr/qr_parts.jsx: Qr-scan's pieces: Install (an icon: the browser's offer; on an iPhone a tip: Share, then Add to Home
+   Screen; gone once installed) and what a scan found (a secure link, opened in a new tab; an http link, which does not
 import { useState } from 'react';
 import { ic } from '../icons/index.js';
 import { cfg } from '../config/index.js';
