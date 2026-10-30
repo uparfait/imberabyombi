@@ -36,3 +36,4 @@ const my_tasks = () => {
     {done.length ? <details className="done_list mt-2"><summary>{`Completed (${done.length})`}</summary><ul className="grid">{done.map(task_row)}</ul></details> : null}</>; };
 
 const HELP = [['How do roles decide what I see?', 'Each role has a level per module: no access, view, or manage. Super Admin sees everything.'],
+  ['How do I share an access link?', 'Open Staff, then use the link button on a row. Roles also have an invite link.'],
