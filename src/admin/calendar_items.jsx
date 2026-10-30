@@ -32,3 +32,4 @@ export function mini_cal() {
   const b = parse_d(ui.mini || ui.cal_date), f = new Date(b.getFullYear(), b.getMonth(), 1), s = add_d(f, -f.getDay()), td = ymd();
   const has = new Set(cal_items().map(i => i.date));
   return <div className="px-1"><div className="flex items-center justify-between">
+    <p className="date_mini_title pl-3 text-sm font-medium">{f.toLocaleDateString(undefined, { month: 'long', year: 'numeric' })}</p>
