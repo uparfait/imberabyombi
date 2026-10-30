@@ -9,3 +9,4 @@ import { show_in_dialog } from '../overlays/index.js';
 import { crud } from '../table/index.js';
 
 function view(c, id) {
+  const e = db.find(c, id); if (!e) return null;
