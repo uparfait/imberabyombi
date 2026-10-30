@@ -35,3 +35,4 @@
 .sf_wait .sf_l { overflow: hidden; padding: 0 .4em; white-space: nowrap; text-overflow: ellipsis; }
 .sf.sf_new { animation: sf_pop .45s cubic-bezier(.3, 1.5, .5, 1) both; }
 .sf.flash { animation: sf_flash 1s ease; }
+@keyframes sf_pulse { 0%, 100% { outline: 0 solid rgb(var(--warn) / .25); } 50% { outline: 6px solid rgb(var(--warn) / .25); } }
