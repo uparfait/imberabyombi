@@ -24,3 +24,4 @@ export function count_to(e, st) {
 }
 
 export function tick() {
+  for (const el of document.querySelectorAll('[data-count-to]')) {
