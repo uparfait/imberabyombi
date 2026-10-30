@@ -2,3 +2,4 @@
    share (event card, RSVP buttons, calendar links) are built here; the six bodies live in event_mails / account_mails. */
 import { ic } from '../icons/index.js';
 import { lorem, hash_str, add_d, fmt_time, zone_short, page_tz, ymd } from '../lib/index.js';
+import { mail_btn, mail_date } from './mails.jsx';
