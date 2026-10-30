@@ -32,3 +32,5 @@ export const sign_top = (cur, back) =>
       <span className="font-display text-lg font-semibold">O-Doc Sign</span></a>
     <div className="sign_btns">
       <div className="link_group sign_tools"><nav className="min-w-0" aria-label="O-Doc Sign lists">{lists_menu(cur)}</nav>
+        {theme_btn()}{account_menu('_sign')}</div></div>
+  </header>;
