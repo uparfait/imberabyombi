@@ -52,3 +52,6 @@ Put the class in `src/styles/components/` with `@apply` and token-based utilitie
 ```css
 @layer components {
   .notice_bar { @apply flex items-center gap-3 rounded-2xl border border-line bg-surface-2 px-4 py-3 text-sm; }
+}
+```
+Import the new file in `src/styles/index.css`, keep it under 100 lines, and add a specimen to the design-system page.
