@@ -4,3 +4,4 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { ic } from '../icons/index.js';
 import { start, stop, cameras, read_image } from './qr_engine.js';
+import { on_change, can_install } from './qr_install.js';
