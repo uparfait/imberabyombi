@@ -27,3 +27,4 @@
   @media (min-width: 640px) { .rp_top { grid-template-columns: minmax(0, 1fr) auto; }
     .rp_row { grid-template-columns: 4.5rem minmax(0, 1fr); align-items: start; } .rp_lab { min-height: 2.25rem; } }
   /* An agenda and a list of people in a form (fields/agenda_field.jsx, people_field.jsx): soft item cards, two fields a row */
+  .ag_cap { color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }
