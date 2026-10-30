@@ -42,4 +42,5 @@ export function account_menu(n = '', rail = false) {
             <progress className="mt-2" max="100" value={pct}></progress></div>
           <p className="mt-3 text-center text-xs text-muted">
             <a href={to('/sitemap')} className="hover:text-accent">Privacy Policy</a>, <a href={to('/sitemap')} className="hover:text-accent">Terms of Service</a></p>
+          <div className="mt-2 border-t border-line pt-2">
 }
