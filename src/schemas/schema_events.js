@@ -21,6 +21,7 @@ const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when
 const SEC = { When: 'kind,date,start,end,tz,repeat', Location: 'place,venue,link,join_note', Organiser: 'org_name,org_email,org_tel,co_orgs' };
 /* seed rows: an agenda from the start hour, where and who */
 const hm = (h, m) => `${String(h + Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+const ag_seed = h => [[0, 30, 'Welcome'], [30, 90, 'Main session'], [90, 120, 'Questions']].map(([a, b, t]) => { const n = lorem.name();
 const seed_more = () => { const n = lorem.name(), web = lorem.int(0, 3) === 0;
   return { place: web ? 'Virtual' : 'Physical', venue: web ? '' : lorem.t(2), link: web ? `https://meet.lorem.io/${lorem.w(1)}-${lorem.int(100, 999)}` : '',
     org_name: n, org_email: mail(n), org_tel: tel() }; };
