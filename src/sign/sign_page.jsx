@@ -52,3 +52,4 @@ function page_for(a, id) {
    scrolled sideways. Phones and tablets: the viewport says 1280 px (the browser shows it to fit); a narrow computer window
    (which ignores that): the zoom --sign_z (01_layout.css). Both are put back when O-Doc Sign is left. */
 const W = 1280;
+function use_desktop() {
