@@ -36,3 +36,4 @@
   .qr_full_code { width: min(calc(100dvh - 3rem), calc(100vw - 32rem)); padding: 1rem; border-radius: var(--radius); background: #fff; }
   .qr_full_info { display: grid; gap: 1rem; min-width: 0; }
   .qr_full_title { font-family: var(--font_display); font-size: clamp(1.75rem, 3vw, 3rem); font-weight: 500; line-height: 1.1; overflow-wrap: anywhere; }
+  .qr_full_count { color: rgb(var(--muted)); font-size: 1.125rem; } .qr_full_count b { color: rgb(var(--fg)); font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 600; }
