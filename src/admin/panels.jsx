@@ -14,3 +14,4 @@ const memo = n => <article key={n.id} className="memo"><h3>{n.title || 'Untitled
 
 const notes = () => { const ns = db.get('notes', []);
   return <><form data-form="note" className="compose" noValidate><div data-msg-slot="" className="mx-3 mt-3 empty:hidden"></div>
+      <label className="sr-only" htmlFor="compose_title">Title</label><input id="compose_title" name="title" placeholder="Title" autoComplete="off" />
