@@ -32,3 +32,4 @@ export function repeat_hit(r, d, f) {
 }
 
 /* the days ('YYYY-MM-DD') rule r with first date first falls on from 'from' to 'to' (both included), until it ends */
+export function repeat_dates(r, first, from, to) {
