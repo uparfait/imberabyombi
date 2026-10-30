@@ -9,8 +9,7 @@ import { zone_list, device_tz } from '../lib/index.js';
 import { seg_field } from './seg_field.jsx';
 import { repeat_field } from './repeat_field.jsx';
 
-/* Form field generated from a schema field */
-export function field(f, v) {
+/* Form field generated from a schema field (row: the whole record, for fields that read others) */
   const id = 'field_' + f.k, req = !!f.req, val = v ?? '', opts = typeof f.o === 'function' ? f.o() : (f.o || []);
   if (f.t === 'hidden') return <input key={f.k} type="hidden" name={f.k} defaultValue={val} />;
   if (f.t === 'seg') return seg_field(f, val);   /* a few choices as one segmented pill */
