@@ -15,3 +15,5 @@ const edit_field = (d, f, sel) => { const r = rec_of(d, f.rid), [l, i] = KINDS[f
     <span className="sf_tag">{r?.name || 'Unassigned'}</span>{ic(i, 'sf_ic')}<span className="sf_l">{l}</span>
     <button type="button" className="sf_x" data-act="sign_field_del" data-id={f.id} aria-label={`Remove this ${l.toLowerCase()} field`}>{ic('x')}</button>
     <i className="sf_rs" aria-hidden="true"></i></div>; };
+
+/* o = { mode: 'edit' | 'sign' | 'view', sel (edit), marks (saved), pending (signer's, not sent yet), me (signer's id) } */
