@@ -8,3 +8,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
 - **Today and now**: `ymd()`, `hm()` and `now_dt()` read the page's clock (`page_now()`), so the calendar's today, the
   dashboard's date, the date picker's Today, new records' default dates and times, and the attendance clock follow it.
 - **Moments** (signing times, notes, emails) show through `fmt_stamp(t, options)`.
+- The week view's corner shows its offset (GMT+2, GMT+5:30).
