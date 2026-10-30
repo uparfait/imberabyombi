@@ -32,3 +32,4 @@ export function notices(now = Date.now()) {
     out.push({ id: `park:${p.id}`, icon: 'car', tone: 'warn', title: 'Car overstaying', text: `${p.plate} · ${p.slot} · ${Math.floor((now - new Date(p.in)) / H)} h`, at: new Date(p.in).getTime(), href: '/admin/parking' }));
   if (can('events')) out.push(...events_for_me(now));
   const late = can('library') ? db.list('rentals').filter(r => r.status === 'Rented' && r.due < td).length : 0;
+  if (late) out.push({ id: `lib:${td}:${late}`, icon: 'book', tone: 'warn', title: 'Books overdue', text: plural(late, 'book is', 'books are') + ' past due', at: now, href: '/admin/library' });
