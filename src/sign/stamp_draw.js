@@ -29,3 +29,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
 
   x.clearRect(0, 0, 400, 400); x.strokeStyle = x.fillStyle = color; x.textAlign = 'center'; x.textBaseline = 'middle'; x.globalAlpha = .92;
   if (shape === 'round') {
+    ring(186, 10); ring(170, 3); ring(112, 3);
