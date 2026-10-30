@@ -22,8 +22,7 @@ colour, radius, spacing and font on the page; and, when the brand colour is not 
 page (theme colour = the brand; icons, tab and home-screen icon: the site's 3D mark in that colour) in place of the
 default files in `public/qr-scan/`. Only Qr-scan installs, never the site's other pages: it has its own manifest (`manifest.webmanifest`, scope
 `/qr-scan/`) and service worker (`sw.js`, the same scope; the site itself has neither). **Install** shows in the top bar
-when the browser offers it (Chrome, Edge, Android); on an iPhone or iPad it says Share, then Add to Home Screen. Installed,
-it opens in its own window, also offline (its files are kept by the service worker where the browser allows).
+when the browser offers it (Chrome, Edge, Android); on an iPhone or iPad it shows a tip: Share, then Add to Home Screen.
 
 ## Where it is linked
 - The admin sidebar (group Overview): **Qr-scan** (`app` in [`src/auth/mods.js`](../src/auth/mods.js)); a full page load,
