@@ -12,3 +12,4 @@ export const STATUS = { draft: ['Draft', 'bg-muted/15 text-muted'], sent: ['Wait
 /* the lists in the O-Doc Sign menu: [key, label, icon, what it holds] */
 export const LISTS = [
   ['all', 'All', 'layers', 'Every document you prepared, newest first.'], ['drafts', 'Drafts', 'edit', 'Documents you have not sent yet.'],
+  ['waiting', 'Waiting', 'clock', 'Sent and waiting for signatures.'], ['completed', 'Completed', 'check', 'Signed by everyone.'],
