@@ -22,3 +22,4 @@ it opens in its own window, also offline (its files are kept by the service work
 
 ## Where it is linked
 - The admin sidebar (group Overview): **Qr-scan** (`app` in [`src/auth/mods.js`](../src/auth/mods.js)); a full page load,
+  not a route of the app (`data-reload`, skipped by `behaviors/link_clicks.js`). `/admin/qr` goes there too.
