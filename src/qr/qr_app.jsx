@@ -46,3 +46,5 @@ export function Qr_app() {
         {scanning ? <button type="button" className="btn btn_outline btn_sm" onClick={() => { stop(); set({ phase: 'idle' }); }}>{ic('x', 'h-4 w-4')}Stop</button> : null}
         {scanning && multi ? <button type="button" className="btn btn_outline btn_sm" onClick={flip}>{ic('refresh', 'h-4 w-4')}Flip</button> : null}
         <label className="btn btn_outline btn_sm cursor-pointer">{ic('image', 'h-4 w-4')}Scan a picture<input type="file" accept="image/*" hidden onChange={pick} /></label>
+      </div>
+      {st.phase === 'found' ? found_card(st.text) : null}
