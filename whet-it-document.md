@@ -36,3 +36,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Detail pages, staff directory, long-form article pages, sitemap page, email design gallery.
 
 ## Account (`src/account/`)
+- Sign in with a role picker and "Keep me signed in"; invite and personal access links.
