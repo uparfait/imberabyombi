@@ -39,3 +39,5 @@ closes it, and on phones it stays inside the screen. "Your modules" style menus 
 ## Tooltip
 Icon buttons show their `aria-label`; any element with `data-tip` shows that text; trimmed `.truncate` / `.trunc` text
 shows the full text only when it is actually cut. On touch screens a tap shows it.
+
+## Right click
