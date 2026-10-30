@@ -7,3 +7,5 @@ import { db, ui } from '../store/index.js';
 import { auth, me } from '../auth/index.js';
 import { countdown } from '../modules/index.js';
 import { redraw_slot } from './live_slot.jsx';
+
+/* a record's date and times on the page's clock (records with no tz were set in the page's zone) */
