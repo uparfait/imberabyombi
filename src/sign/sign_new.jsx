@@ -27,3 +27,4 @@ async function take(file) {
 }
 
 export function Sign_new() {
+  const [busy, set_busy] = useState(false), [over, set_over] = useState(false);
