@@ -28,15 +28,3 @@ export const MINUTES_ACT = {
   ev_follow: t => { const e = db.find(t.dataset.c, t.dataset.id); if (e) open_form('tasks', null, { title: `Follow-up: ${e.title}`, ref: e.id }); }
 };
 
-const card = (title, btn, list) => <section className="card ev_card"><header className="ev_card_head"><h3>{title}</h3>{btn}</header>
-  {list.length ? <ul className="ev_list">{list}</ul> : <p className="text-sm text-muted">None yet</p>}</section>;
-
-export const minutes_card = (e, c, can) => card('Minutes', can ? <button type="button" className="btn btn_outline btn_sm" data-act="ev_minutes" data-c={c} data-id={e.id}>
-  {ic('edit', 'h-4 w-4')}Record minutes</button> : null, db.list('minutes').filter(m => m.ref === e.id).sort((a, b) => b.date.localeCompare(a.date)).map(m => <li key={m.id}>
-  <a href={to('/admin/docs?doc=m_' + m.id)} className="ev_list_main"><b>{fmt_d(m.date)}</b><span className="text-sm text-muted">{m.by}</span></a>
-  <button type="button" className="icon_btn h-8 w-8" data-act="copy" data-text={doc_url(m)} data-what="Link" aria-label="Copy the link" data-tip="Copy link">{ic('link', 'h-4 w-4')}</button></li>));
-
-export const follow_card = (e, c, can) => card('Follow-ups', can ? <button type="button" className="btn btn_outline btn_sm" data-act="ev_follow" data-c={c} data-id={e.id}>
-  {ic('plus', 'h-4 w-4')}Add task</button> : null, db.list('tasks').filter(x => x.ref === e.id).map(x => <li key={x.id}>
-  <button type="button" className="ev_list_main" data-act="task_open" data-id={x.id}><b className="truncate">{x.title}</b><span className="text-sm text-muted">{x.assignee}</span></button>
-  {badge(x.status)}</li>));
