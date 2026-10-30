@@ -25,3 +25,4 @@ export const DOC_ACT = {
       notify(`“${d.title}” is deleted.`, 'ok', 'Document deleted'); go('/admin/sign');
     }); },
   sign_doc_archive: t => { const d = find_doc(t.dataset.id);
+    ask(`Archive “${d.title}”? It moves to Archived, out of your other lists. Its signers still see it, and you can restore it.`, () => {
