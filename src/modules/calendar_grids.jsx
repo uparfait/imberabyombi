@@ -18,3 +18,4 @@ export function week_grid(d, items) {
   const s = add_d(d, -d.getDay()), days = Array.from({ length: 7 }, (_, i) => add_d(s, i)), td = ymd(), gl = zone_of(page_tz()).short.split(' · ')[0], now = page_now();
   const head = x => { const k = ymd(x); return <button key={k} className="grid justify-items-center gap-1 py-3" data-act="goday" data-d={k}>
     <span className={`text-[0.6875rem] font-semibold tracking-widest ${k === td ? 'text-accent' : 'text-muted'}`}>{wday(x)}</span>
+    <span className={`grid h-11 w-11 place-items-center rounded-full text-2xl transition ${k === td ? 'bg-brand text-white' : 'hover:bg-fg/5'}`}>{x.getDate()}</span>
