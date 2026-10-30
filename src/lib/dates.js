@@ -4,3 +4,5 @@ import { pad } from './text.js';
 /* db straight from its file (not the store barrel): the barrel also loads app_state, which needs these helpers first */
 import { db } from '../store/db.js';
 import { page_now } from './tz.js';
+
+export const ymd = (d = page_now()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
