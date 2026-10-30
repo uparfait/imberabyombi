@@ -51,3 +51,4 @@ On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.js
   stay in the box to be corrected.
 - **Send invites** sends them all, with anything still typed in the box. Each person invited is listed with the day.
   Remove someone with ×.
+- A cancelled or past event keeps its list but takes no new invites.
