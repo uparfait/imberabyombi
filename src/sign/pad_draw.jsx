@@ -40,6 +40,6 @@ export function Pad_draw() {
       {has ? null : <span className="sign_canvas_hint" aria-hidden="true">Sign here</span>}<i className="sign_canvas_line" aria-hidden="true"></i></div>
     <div className="mt-2 flex items-center justify-between gap-3">
       <button type="button" className="btn btn_ghost btn_sm" onClick={() => pad.current.clear()} disabled={!has}>Clear</button>
-      <span className="text-sm text-muted">{has ? 'Signature ready' : 'Draw with your finger, a pen or the mouse'}</span></div>
+      {has ? <span className="text-sm text-muted">Signature ready</span> : help_tip('Draw with your finger, a pen or the mouse.', 'signing')}</div>
   </div>;
 }
