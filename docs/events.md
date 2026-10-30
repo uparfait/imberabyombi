@@ -52,3 +52,4 @@ On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.js
 - **Send invites** sends them all, with anything still typed in the box. Each person invited is listed with the day.
   Remove someone with ×.
 - A cancelled or past event keeps its list but takes no new invites.
+- **See the email** opens the invitation design (`/admin/emails?t=invite`).
