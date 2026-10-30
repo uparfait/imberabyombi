@@ -27,3 +27,4 @@ body { background: rgb(var(--bg)); }
 .qr_idle_ic { display: grid; width: 5rem; height: 5rem; place-items: center; border-radius: 1.5rem; background: rgb(255 255 255 / .08); }
 .qr_idle_ic.ok { background: rgb(var(--ok)); }
 .qr_err { max-width: 18rem; color: rgb(255 255 255 / .85); font-size: .9375rem; }
+.qr_tools { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
