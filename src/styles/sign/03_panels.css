@@ -27,3 +27,4 @@
   background: color-mix(in srgb, var(--c) 16%, transparent); transform: scale(1.04); }
 .sign_chip.sign_chip_on { background: var(--c); color: #fff; }
 .sign_rec_pick { display: flex; min-width: 0; align-items: center; gap: .625rem; text-align: left; }
+.sign_note { display: -webkit-box; overflow: hidden; color: rgb(var(--muted)); font-size: .8125rem; font-style: italic; white-space: pre-line;
