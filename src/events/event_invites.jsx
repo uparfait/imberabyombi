@@ -51,3 +51,4 @@ export function invites_card(e, st, can) {
   return <section className="card ev_card" aria-labelledby="ev_sec_inv">
     <header className="ev_card_head"><div className="flex items-center gap-1"><h3 id="ev_sec_inv">Invitations</h3>{help_tip(HELP, 'invitations')}</div>
       {auth.can('emails') ? <a href={to('/admin/emails?t=invite')} className="ev_link text-sm">See the email</a> : null}</header>
+    {open ? <div className="ev_inv_add">
