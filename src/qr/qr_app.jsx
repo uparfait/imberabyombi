@@ -26,6 +26,7 @@ export function Qr_app() {
     navigator.permissions?.query({ name: 'camera' }).then(p => { perm = p; p.onchange = () => p.state === 'granted' && go();
       p.state === 'granted' ? go() : set(p.state === 'denied' ? { phase: 'error', msg: WHY.NotAllowedError } : { phase: 'ask' }); }, () => set({ phase: 'ask' }))
       ?? set({ phase: 'ask' });
+    return () => { if (perm) perm.onchange = null; stop(); }; }, []);   // eslint-disable-line react-hooks/exhaustive-deps
 
   return <div className="qr_app">{top_bar()}
     <main className="qr_main">
