@@ -3,3 +3,4 @@
 import { useEffect, useState } from 'react';
 
 const LIB = ['https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js', 'https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js'];
+let lib = null;
