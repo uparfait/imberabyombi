@@ -6,3 +6,5 @@ import { uid } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { show_err } from '../feedback/index.js';
 import { dt_attrs, dt_show, to24 } from './date_formats.js';
+
+const box = (k, n, l, v, x = {}) => { const { cls = '', ...a } = x;
