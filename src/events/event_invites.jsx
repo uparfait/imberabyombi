@@ -20,3 +20,4 @@ const wait = { id: '', list: [], note: '' };
 function add(id, found, bad = [], file = '') {
   const e = db.find('events', id), had = new Set([...(e?.invites || []).map(i => i.e), ...wait.list]), fresh = found.filter(m => !had.has(m)), old = found.length - fresh.length;
   wait.list.push(...fresh);
+  const said = [found.length ? `${n_of(fresh.length, 'address', 'addresses')} added` : '', old ? `${n_of(old, 'was', 'were')} already on the list` : '',
