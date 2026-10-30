@@ -25,3 +25,4 @@
   /* Invitations (events/event_invites.jsx): the addresses box and Upload, what was found, the waiting chips and Send, then
      the people invited; long lists scroll inside themselves */
   .ev_inv_add { display: grid; gap: .75rem; margin-bottom: 1.25rem; }
+  .ev_inv_row { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
