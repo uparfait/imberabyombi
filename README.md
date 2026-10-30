@@ -58,3 +58,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 ## Documentation
 | Guide | Guide |
 |---|---|
+| [Getting started](docs/getting_started.md) | [Project structure](docs/project_structure.md) |
