@@ -17,3 +17,5 @@ const scrim_sync = el => { el.classList.toggle('on', ui.side); };
 /* a new key for #main on a new page, or on a redraw that keeps the page-enter motion (render(true, true)) */
 let page_n = 0, seen = -1;
 const page_key = () => { const v = get_version(); if (v !== seen) { seen = v; if (!render_flags.keep || render_flags.anim) page_n++; } return 'page' + page_n; };
+
+export function admin_shell(mod, content) {
