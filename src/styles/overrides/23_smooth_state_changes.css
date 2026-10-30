@@ -12,3 +12,4 @@
   @media (min-width: 1024px) {
     .side { overflow: hidden; transition: width .3s var(--ease); }
     .side[data-min=true] { width: 0; }
+    .side > div { width: 18rem; }
