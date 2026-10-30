@@ -30,3 +30,4 @@ code loads on demand (O-Doc Sign) adds its handlers when it arrives: `add_act(EX
 with the submit button busy. Validation (required, email, patterns, date formats) runs first and writes messages inline.
 
 ## Attributes the listeners understand
+| Attribute                       | Effect                                                             |
