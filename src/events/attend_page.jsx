@@ -18,7 +18,7 @@ export function attend_page(r) {
   set_meta(e ? `Attendance · ${e.title}` : 'Attendance');
   return <main id="main" className="att_page"><div className="att_card card">
     {!e ? empty('Not found', 'This link does not lead to an event or activity.', null, 'alert', 'warn')
-      : <><h1 className="att_title">{e.title}</h1>
+      : <><h1 className="att_title line-clamp-3">{e.title}</h1>
         {ph[0] === 'soon' ? <div className="att_done">{clock('Attendance opens in', ph[1])}</div>
           : ph[0] === 'open' ? <>{clock('Closes in', ph[1])}<Attend_form c={c} id={id} /></>
           : <Tick text="Attendance is closed" sub={e.status === 'Cancelled' ? 'It was cancelled.' : ''} />}</>}
