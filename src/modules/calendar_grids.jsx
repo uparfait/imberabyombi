@@ -33,3 +33,4 @@ export function week_grid(d, items) {
       <div className="self-end pb-1 pl-1 text-[0.625rem] text-muted">{gl}</div>{days.map(head)}</div>
     {items.some(i => i.all_day && days.some(x => ymd(x) === i.date)) ? <div className={`${cols} border-b border-line`}>
       <div className="self-center pr-2 text-right text-[0.625rem] text-muted">Tasks</div>{days.map(all_day)}</div> : null}
+    <div id="date_hours" className="max-h-[34rem] overflow-y-auto" data-chain=""><div className={`relative ${cols}`} style={{ height: '72rem' }}>
