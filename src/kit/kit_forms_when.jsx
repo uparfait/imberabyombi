@@ -3,3 +3,4 @@
    What it is and how to use it is in the legend's help icon. */
 import { when_row } from '../fields/index.js';
 import { device_tz } from '../lib/index.js';
+import { help_tip } from '../ui/index.js';
