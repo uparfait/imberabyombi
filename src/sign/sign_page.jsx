@@ -36,3 +36,4 @@ const missing = () => <div className="sign_main max-w-2xl"><div className="card"
 function page_for(a, id) {
   if (!a || LIST.has(a)) { const k = a || 'all'; return { title: LISTS.find(x => x[0] === k)[1], cur: k, body: sign_list(k) }; }
   if (a === 'new') return { title: 'New document', back: list_href('all'),
+    body: auth.can('sign', 2) ? <Sign_new /> : <div className="sign_main">{forbidden()}</div> };
