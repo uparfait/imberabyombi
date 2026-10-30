@@ -7,3 +7,4 @@ import { ui, cur, loaded, render_flags, after_render } from '../store/index.js';
 import { loading } from '../feedback/index.js';
 import { cell, empty } from '../ui/index.js';
 import { tview } from './table_view.js';
+import { pager } from './table_parts.jsx';
