@@ -48,3 +48,4 @@ export const pick = {
     else { kind = 'cal'; h = this.mode === 'years' ? PK.years() : t === 'month' ? PK.months(a) : t === 'datetime-local' ? `<div class="pk_dt">${PK.cal(a)}${PK.times(to24(a.value.slice(11)))}</div>${PK.foot('Now')}` : PK.cal(a); }
     el.dataset.kind = kind; el.dataset.type = t; el.innerHTML = h; el.hidden = !h; if (!h) return;
     this.place();
+    el.querySelectorAll('.pk_list, .pk_years').forEach(box => { const s = box.querySelector('[aria-selected=true]') || box.querySelector('[data-near]'); if (s) box.scrollTop = s.offsetTop - (box.clientHeight - s.offsetHeight) / 2; });
