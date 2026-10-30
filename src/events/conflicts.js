@@ -20,3 +20,6 @@ export function conflicts(r, self) {
   return mine.length ? ['events', 'activities'].flatMap(c => db.list(c).filter(o => o.id !== self && (same_place(r, o) || same_host(r, o))).flatMap(o => {
     const hit = spans(o, from, to).find(([s, e]) => mine.some(([a, b]) => a < e && s < b));
     return hit ? [{ o, day: hit[2], why: same_place(r, o) ? 'same place' : 'same organiser' }] : []; })) : [];
+}
+
+export function clash_ok(r, row, d, f) {
