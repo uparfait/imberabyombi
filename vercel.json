@@ -9,6 +9,7 @@
       "destination": "/qr-scan/index.html"
     },
     {
+      "source": "/(.*)",
   "headers": [
     {
       "source": "/assets/(.*)",
