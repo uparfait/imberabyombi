@@ -27,6 +27,7 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
   the display font's own outline (`HASH`, Bricolage Grotesque extra bold), so it looks the same before fonts load.
 - The **favicon** is the same glossy "#": `public/favicon.svg` (browsers that take SVG), `public/favicon.ico` (16, 32 and
   48 px, each drawn for its size), `public/apple-touch-icon.png` (180 px) and `public/media/logo.png` (512 px, the logo
+  in the structured data). They are made with the engine; remake them the same way if the mark changes.
 
 ## Where the colours are used
 Status: green (done, complete), amber (warnings, waiting), red (problems). Files and documents: blue. Roles and access:
