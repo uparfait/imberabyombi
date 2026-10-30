@@ -1,4 +1,4 @@
-/* events/event_minutes.jsx: an event's or activity's minutes and follow-ups, from the Menu of View This Event
+/* events/event_minutes.jsx: an event's or activity's minutes and follow-ups, from the Menu of Open This Event
    (live_page.jsx). Record/View minutes opens the document editor on that day's own document ("Minutes · <title> ·
    <date>"), started with who attended and the agenda (a recurring one gets one per day); the minutes live there. Add
    task (Follow-ups) opens the task form, linked by ref; follow-ups live in Tasks. MINUTES_ACT: those two tiles. */
