@@ -10,6 +10,7 @@ import { help_tip } from '../ui/index.js';
 import { notify, request } from '../feedback/index.js';
 import { to } from '../router/index.js';
 import { find_emails, not_emails, emails_in_file, INVITE_FILES } from './invite_emails.js';
+import { invite_table, INVITE_TABLE_ACT } from './invite_table.jsx';
 
 const HELP = 'Type or paste email addresses (press Enter after each one, or paste many at once), or upload a spreadsheet or text '
   + 'file (Excel, CSV): every email address in it is found. Check the list, then send the invites: each person gets the invitation email.';
