@@ -61,3 +61,4 @@ every account starts empty.
   signing certificate as a simulated check (`cert_pick.jsx`). A real check belongs on a server.
 
 ## Following a document
+- Each signer's line: "Signed" in green, "Waiting" (or "Opened, not signed yet") in orange; their Note and certificate chips.
