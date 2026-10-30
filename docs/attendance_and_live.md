@@ -5,3 +5,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 
 ## Attendance
 - Under an event's (or activity's) status: its **QR code** while attendance is open or about to open, "Opens in" or
+  "Closes in", how many attended (live; past 99 it shows 99+), **Copy link** and **Open** (the system's tile menu:
