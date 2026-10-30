@@ -15,6 +15,7 @@ const times = e => e.start ? `${fmt_time(e.start)}${e.end ? ` – ${fmt_time(e.e
 /* each section's rows: [label, value] (an empty value shows a dash; a null row is left out) */
 const ROWS = {
   Details: e => [['Title', e.title], e.category ? ['Category', e.category] : null,
+    ['Description', e.about || e.note ? <p className="whitespace-pre-line">{e.about || e.note}</p> : null]],
   When: e => [['Type', tag(kind_label(e))],
     [kind_of(e) === 'Recurring' ? 'First date' : 'Date', e.tbd ? 'Not set yet (postponed)' : e.date ? fmt_d(e.date) : null],
     ['Time', e.tbd ? null : times(e)], ['Time zone', zone_short(e.tz || page_tz(), e.date)],
