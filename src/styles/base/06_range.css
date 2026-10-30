@@ -21,3 +21,4 @@
 
   /* Progress + meter */
   progress { appearance: none; display: block; width: 100%; height: .55rem; border: 0; border-radius: var(--pill); overflow: hidden; background: rgb(var(--surface_3)); }
+  progress::-webkit-progress-bar { background: rgb(var(--surface_3)); border-radius: var(--pill); }
