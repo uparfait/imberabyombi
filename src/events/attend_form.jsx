@@ -3,3 +3,4 @@
    certificate id). Saved to attendees, once per email; then a large tick. demo: the design system's copy (saves nothing). */
 import { useState } from 'react';
 import { hash_str } from '../lib/index.js';
+import { ic } from '../icons/index.js';
