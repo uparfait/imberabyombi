@@ -38,7 +38,7 @@ export const EV_ACT = {
       ['att_after', 'Allow attendance after the end (minutes)', a, 'People can still submit attendance this many minutes after it ends.', n => `Attendance stays open ${n} min after the end.`],
       ['att_more', 'Reopen attendance for (minutes)', 0, 'Attendance opens again now, with its QR code, for this many minutes.', n => +n ? `Attendance is open for ${n} min.` : 'Attendance is closed.']][mode];
     modal({ title: 'Attendance settings', body: [field(field_spec(k, l, 'number', 0, 1, { min: 0, max: 1440 }), v), <p key="hint" className="att_hint sm:col-span-2">{hint}</p>],
-      submit: 'Save', on_submit: d => save(e.id, { [k]: +d[k] }, 'Attendance settings saved', early ? `Attendance opens ${d[k]} min before the start.` : `Attendance stays open ${d[k]} min after the end.`, c) }); },
+      submit: 'Save', on_submit: d => save(e.id, mode === 2 ? { att_until: +d[k] ? Date.now() + d[k] * 60e3 : 0 } : { [k]: +d[k] }, 'Attendance settings saved', done(d[k]), c) }); },
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
