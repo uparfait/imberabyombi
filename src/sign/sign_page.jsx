@@ -56,3 +56,4 @@ function use_desktop() {
   useEffect(() => {
     const m = document.querySelector('meta[name=viewport]'), was = m?.content, root = document.documentElement;
     if (m) m.content = `width=${W}, viewport-fit=cover`;
+    const fit = () => root.style.setProperty('--sign_z', String(Math.min(1, innerWidth / W)));
