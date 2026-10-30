@@ -39,3 +39,4 @@ const line = (label, body, when, help) => <div className="rp_row" data-when={whe
   <p className="rp_lab">{label}{help ? help_tip(help, label.toLowerCase()) : null}</p><div className="rp_body">{body}</div></div>;
 const weekdays = (name, on) => <div className="rp_chips">{MON_FIRST.map(d => chip(name, d, DAY_NAMES[d].slice(0, 3), on.includes(d), '', DAY_NAMES[d]))}</div>;
 const num = (id, name, label, v, max) => <div className="field"><label htmlFor={id}>{label}</label>
+  <input id={id} name={name} type="number" min="1" max={max} defaultValue={v} placeholder=" " /></div>;
