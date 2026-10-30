@@ -13,6 +13,7 @@ import { when_row } from '../fields/index.js';
 import { go } from '../router/index.js';
 import { INVITE_ACT } from './event_invites.jsx';
 import { QR_ACT } from './qr_full.jsx';
+import { MINUTES_ACT } from './event_minutes.jsx';
 import { att_mins } from './att_window.js';
 import { ev_state } from './ev_state.js';
 import { field } from '../fields/index.js';
