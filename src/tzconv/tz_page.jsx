@@ -49,3 +49,4 @@ export function Tz_page() {
             onChange={e => /^\d{4}-\d{2}-\d{2}$/.test(e.target.value) && put({ date: e.target.value })} /></div>
           <div className="tzc_time_row">
             <div className="field tzc_num"><label htmlFor="tz_h">Hour</label>
+              <select id="tz_h" value={is12 ? st.h % 12 || 12 : st.h} onChange={e => { const v = +e.target.value; put({ h: is12 ? v % 12 + (st.h >= 12 ? 12 : 0) : v }); }}>
