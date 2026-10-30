@@ -5,6 +5,7 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/qr-scan/",
   "headers": [
     {
       "source": "/assets/(.*)",
