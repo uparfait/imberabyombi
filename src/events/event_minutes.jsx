@@ -43,3 +43,4 @@ export const minutes_card = (e, c, can) => card('Minutes', can ? <button type="b
 export const follow_card = (e, c, can) => card('Follow-ups', can ? <button type="button" className="btn btn_outline btn_sm" data-act="ev_follow" data-c={c} data-id={e.id}>
   {ic('plus', 'h-4 w-4')}Add task</button> : null, db.list('tasks').filter(x => x.ref === e.id).map(x => <li key={x.id}>
   <button type="button" className="ev_list_main" data-act="task_open" data-id={x.id}><b className="truncate">{x.title}</b><span className="text-sm text-muted">{x.assignee}</span></button>
+  {badge(x.status)}</li>));
