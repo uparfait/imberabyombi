@@ -37,3 +37,4 @@
 .sign_work { display: grid; grid-template-columns: 20rem minmax(0, 1fr) 16.5rem; height: calc(100dvh / var(--sign_z, 1) - 4rem); }
 .sign_work > * { min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
 /* the side columns float as rounded panels, clear of the window's edges, rounded at the top and the bottom */
+.sign_left, .sign_right { margin: .75rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
