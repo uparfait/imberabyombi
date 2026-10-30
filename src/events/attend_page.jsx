@@ -14,6 +14,7 @@ addEventListener('storage', e => { if (e.key?.endsWith('c:attendees')) rerender(
 
 export function attend_page(r) {
   const [, , c, id] = r.path.split('/'), e = ['events', 'activities'].includes(c) ? db.find(c, id) : null, ph = e ? att_phase(e) : ['closed'];
+  after_render(() => TIMERS.push(setInterval(tick, 1000)));
   set_meta(e ? `Attendance · ${e.title}` : 'Attendance');
   const where = e && (e.place === 'Virtual' ? 'Online' : e.venue);
   return <main id="main" className="att_page"><div className="att_card card">
