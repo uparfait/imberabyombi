@@ -12,6 +12,7 @@ export function allow_select_change(t) {
   t.closest('[role=menuitemcheckbox]')?.setAttribute('aria-checked', t.checked);
 }
 
+/* every page follows the new time zone at once */
 export function role_land_change(t) {
   const rs = roles(), r = rs.find(x => x.id === t.dataset.roleLand);
   if (r) request(() => { r.land = t.value; db.set('roles', rs);
