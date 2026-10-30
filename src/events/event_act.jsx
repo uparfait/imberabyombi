@@ -33,9 +33,7 @@ export const EV_ACT = {
         const same = ['date', 'start', 'end', 'tz'].every(k => (d[k] || '') === (was[k] || ''));
         if (same && !again && d.date) { show_err(f.elements.date, 'Pick a new date or time, or clear the date if the new one is not known yet.'); return false; }
         if (d.date && d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'Pick an end time after the start.'); return false; }
-        if (d.date && at(d.date, d.start || '23:59', d.tz) <= Date.now()) { show_err(f.elements[d.start ? 'start' : 'date'], 'Pick a time later than now.'); return false; }
-        const moved = d.date ? { date: d.date, start: d.start || e.start, end: d.end || (d.start ? '' : e.end), tz: d.tz, kind: e.kind === 'Live' ? 'Upcoming' : e.kind } : {};
-        save(e.id, { ...moved, status: 'Postponed', status_note: d.reason || '' }, 'Event postponed', (d.date ? 'It has a new date.' : 'Its new date is not set yet.') + told(e));
+        if (d.date && !same && at(d.date, d.start || '23:59', d.tz) <= Date.now()) { show_err(f.elements[d.start ? 'start' : 'date'], 'Pick a time later than now.'); return false; }
       } }); },
   ev_cancel: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     modal({ title: 'Cancel this event?', help: 'It stays in the list as cancelled, and you can put it back on schedule later. Everyone invited is told by email.',
