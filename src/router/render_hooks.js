@@ -11,3 +11,5 @@ import { CHARTS, viz_tip } from '../charts/index.js';
 import { open_form } from '../table/index.js';
 import { clear_nav_busy } from '../behaviors/index.js';
 import { enhance } from './enhance.js';
+
+let skipped = false;     /* this draw kept the previous page (an admin redirect): nothing to do after it */
