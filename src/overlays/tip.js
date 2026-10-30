@@ -50,3 +50,5 @@ export function help_intro(root) {
     if (!x) return; run++;
     if (!SEEN.has(tip.text(x))) intro(x);
   }, ms));
+}
+/* a dialog's help icon: when a dialog opens */
