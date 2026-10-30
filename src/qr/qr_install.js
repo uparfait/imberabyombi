@@ -3,6 +3,8 @@
    offer: there it is Share, then Add to Home Screen, until it is installed (remembered in this browser once installed or
    opened as the app). on_change(fn) tells when that changes. */
 import { cfg } from '../config/index.js';
+
+const KEY = cfg.ns + 'qr_installed';
 let offer = null;
 const subs = new Set(), emit = () => subs.forEach(f => f());
 addEventListener('beforeinstallprompt', e => { e.preventDefault(); offer = e; emit(); });
