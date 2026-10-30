@@ -14,3 +14,4 @@ export const rec_body = r => <>
 
 export const send_body = d => <div className="grid gap-4 sm:col-span-2">
   <p className="text-sm text-muted">“{d.title}” · {d.pages.length} page{d.pages.length === 1 ? '' : 's'}</p>
+  <ul className="grid gap-2">{d.recipients.map(r => { const n = d.fields.filter(f => f.rid === r.id).length;
