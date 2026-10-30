@@ -15,3 +15,4 @@ import { dl_label } from './owner_page.jsx';
 
 function Sign_doc({ d, me, done }) {
   const marks = use_marks(d.id, d.updated);
+  return <Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: done ? 'view' : 'sign', marks, pending: done ? null : S.pending, me })} />;
