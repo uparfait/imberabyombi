@@ -37,3 +37,4 @@ every account starts empty.
   folds into an **Add signer** button. **Edit signer** changes the name, email, note and certificate; **Remove** takes them
   and their fields off. A signer's note shows only when their **Note** chip is opened.
 - **Colours**: each signer's colour (their card's tint, avatar, tag and fields) comes from their email, through
+  `seed_color()` (`src/lib/seed_color.js`): the same email always gets the same colour; signers of one document are kept
