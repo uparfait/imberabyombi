@@ -29,6 +29,7 @@ Its title in the top bar (one line); its details; the agenda item running now: i
 description apart, its presenter, the time it has left and its progress; the agenda and the organisers as tables (Edit,
 Add and Transfer until it is over); the time left above a large QR code (full screen on a click; an empty place before
 attendance opens, "Finished" after), the count and the link. **Menu** (tiles): Record/View minutes, Add task
+(Follow-ups), Attendees, Full screen.
 
 ## Minutes and follow-ups
 - **Record/View minutes** (Open This Event) opens the document editor on that day's own document,
