@@ -19,3 +19,4 @@ export const hue_at = i => HUE_RUN[((i % HUE_RUN.length) + HUE_RUN.length) % HUE
 
 const hex = c => TONES[c] || HUES[c] || (/^#[0-9a-f]{3,8}$/i.test(c || '') ? c : TONES.brand);
 /* the icon fills more of its box than the engine's 200 × 200 picture leaves it (a single character, the brand mark, more) */
+const VIEW = [18, 12, 164, 164];
