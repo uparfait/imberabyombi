@@ -23,12 +23,12 @@ export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def
 export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
 export const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
   if ('kind' in d) d.repeat = d.kind === 'Recurring' ? repeat_from(f) : null; return d; };
+
 /* a wall-clock date and time in tz → the instant (ms) */
 export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(Number), [h, mi] = (time || '00:00').split(':').map(Number);
   return zoned_to_utc(y, mo, d, h, mi, tz || device_tz()); };
 
-/* the timing makes sense: an end after the start; an upcoming one starts later than now; a live one has started and has
-   not ended. Checked for a new record, or when its timing changes (an old one can still be corrected) */
+/* the timing makes sense: an end after the start; a recurring one that stops on a date stops on or after its first date;
 export function when_ok(d, row, f) {
   if (!d.date || !('kind' in d)) return true;   /* a form without the timing (one section) */
   const err = (k, m) => { const i = f.elements[k]; show_err(i, m); i?.focus(); return false; };
