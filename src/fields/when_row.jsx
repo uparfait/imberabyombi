@@ -17,3 +17,4 @@ export function in_words(t, v) {
 /* the time zone: a select of every zone ("(GMT+02:00) Central Africa Time - Kigali"), shown as "GMT+2 · Kigali", with its
    offset on the row's date (summer and winter time differ); a new date updates it */
 const day_of = form => /^\d{4}-\d{2}-\d{2}$/.test(form?.elements.date?.value || '') ? form.elements.date.value : '';
+const tz_words = form => { const s = form?.querySelector('.when_tz select'); if (s) s.nextSibling.textContent = zone_short(s.value, day_of(form)); };
