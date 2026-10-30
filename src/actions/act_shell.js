@@ -27,3 +27,4 @@ export const SHELL_ACT = {
   drawer: () => show_in_dialog('drawer', drawer_content),
   close_drawer: () => close_dialog(qs('#drawer')),
   close_modal: () => request_close(qs('#modal')),
+  confirm_keep: () => close_dialog(qs('#confirm')),
