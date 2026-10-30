@@ -9,3 +9,4 @@ component needs its own click handler for app actions, and buttons inside dialog
 ```
 - The click listener finds the closest `[data-act]` and runs `ACT[name](element, event)` from
   [`src/actions/`](../src/actions/). `Enter` / `Space` do the same on any element with `data-act` and a `tabIndex`.
+- `REQ` decides which actions are requests: `1` = a change (the button spins, the top loader shows on staff pages),
