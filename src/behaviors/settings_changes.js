@@ -28,3 +28,6 @@ export function perm_change(t) {
     toast(moved ? `${name(was)} is no longer open to this role, so it now lands on ${r.land ? name(r.land) : 'no page yet'}.` : 'Access updated', 'ok',
       moved ? 'Landing page moved' : undefined);
     rerender(); });
+}
+
+export function import_change(t) {
