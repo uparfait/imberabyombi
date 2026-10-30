@@ -23,3 +23,4 @@ VIEWS.dashboard = () => {
   const stats = STATS.filter(x => auth.can(x[0]));
   const W = dash_widgets(u);
   return <>
+    <section aria-label="Welcome" className="flex flex-wrap items-end gap-4">
