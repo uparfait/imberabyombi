@@ -29,6 +29,7 @@ export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(N
   return zoned_to_utc(y, mo, d, h, mi, tz || device_tz()); };
 
 /* the timing makes sense: an end after the start; a recurring one that stops on a date stops on or after its first date;
+   an upcoming one starts later than now; a live one has started and has not ended. The last two are checked for a new
 export function when_ok(d, row, f) {
   if (!d.date || !('kind' in d)) return true;   /* a form without the timing (one section) */
   const err = (k, m) => { const i = f.elements[k]; show_err(i, m); i?.focus(); return false; };
