@@ -14,3 +14,4 @@ modal({
   body: () => <Task_form />,           // JSX or a function returning JSX: a function is drawn again on every rerender()
   submit: 'Save',                      // the submit button's label (no submit = a view with no footer button)
   on_submit: (values, form) => { … }, // values = form_obj(form); return false to keep the dialog open
+  danger: false,                       // red submit button
