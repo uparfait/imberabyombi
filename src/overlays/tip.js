@@ -41,3 +41,5 @@ function intro(x) {
     tip.show(x, true);
     tip.t2 = setTimeout(() => { if (tip.on === x && !x.matches(':hover, :focus-visible')) tip.hide(); }, 3800);
   }, still() ? 0 : 1400);
+}
+export function help_intro(root) {
