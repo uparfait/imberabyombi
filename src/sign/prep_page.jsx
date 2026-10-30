@@ -6,3 +6,4 @@ import { fields_on } from './sign_fields.jsx';
 import { P } from './prep_state.js';
 import { prep_pointer } from './prep_drag.js';
 import { prep_panel } from './prep_panel.jsx';
+import { prep_tools } from './prep_tools.jsx';
