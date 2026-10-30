@@ -19,3 +19,5 @@ export function att_phase(e, now = Date.now()) {
     d = repeat_next(e.repeat, e.date, today); if (!d) return ['closed'];
     if (d === today && win(e, d)[1] <= now) d = repeat_next(e.repeat, e.date, ymd(add_d(parse_d(today), 1))); if (!d) return ['closed']; }
   const [o, c] = win(e, d);
+  return now < o ? ['soon', o] : now < c ? ['open', c] : ['closed'];
+}
