@@ -19,3 +19,4 @@ async function decode(src, w, h) {
   const d = await reader();
   if (d) return (await d.detect(src))[0]?.rawValue || null;
   const k = Math.min(1, 900 / Math.max(w, h)); cv.width = Math.round(w * k); cv.height = Math.round(h * k);
+  cx.drawImage(src, 0, 0, cv.width, cv.height); const px = cx.getImageData(0, 0, cv.width, cv.height);
