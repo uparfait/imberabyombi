@@ -2,3 +2,4 @@
    key numbers, about, recent activity). The lorem calls run in a fixed order, so the demo text stays the same. */
 import { lorem, ymd, add_d, fmt_d } from '../lib/index.js';
 import { ic, i3, hue_at } from '../icons/index.js';
+import { initials, help_tip } from '../ui/index.js';
