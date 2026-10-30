@@ -31,3 +31,4 @@ export const PREP_ACT = {
   sign_field_del: t => del_field(t.dataset.id),
   /* a signer's name, email and note; a new email brings its own colour */
   sign_rec_edit: t => { const r = rec_of(P.doc, t.dataset.id);
+    modal({ title: 'Edit signer', help: 'They find the document under To sign with this email, and read the note before they sign.',
