@@ -3,6 +3,7 @@
    filter: rounds, shades and lights), extrude() (a stack of copies: the depth) and deep() (a depth colour).
    Size awareness: blurs are in user units (the picture is 200 across) and scale with the icon, but the lighting kernel
    and the goo's alpha threshold work on device pixels. Below ~64 px a blur of a few units is under a pixel, so the goo
+   turns into a 1-bit mask (boxy circles) and the lighting sees a one-pixel cliff (a hard black rim). k, the device pixels
 const stop = ([o, c, a = 1]) => `<stop offset="${o}" stop-color="${c}"${a < 1 ? ` stop-opacity="${a}"` : ''}/>`;
 const US = ' gradientUnits="userSpaceOnUse"';
 
