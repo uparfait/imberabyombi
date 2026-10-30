@@ -35,3 +35,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.spinner_segmented_svg`                | THE loading indicator (`spinner()` in JS)                        |
 | `.tile` / `.tile.is_on`                 | selectable grid tile (a parking slot), `is_on` when taken        |
 | `.hero` / `.arch`                       | brand artwork pieces (follow the theme)                          |
+| `.theme_band`                           | full-width brand band: light tint or ink, by theme               |
