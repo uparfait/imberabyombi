@@ -19,9 +19,7 @@ export function attend_side(e, c, st) {
   const tiles = [{ icon: 'external', label: 'Attendance page', href: url }, { icon: 'play', label: 'Live screen', href: to(page + '/live') },
     { icon: 'users', label: 'Attendees', href: to(page + '/attendance') }];
   return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
-    {open ? <button type="button" className="ev_qr_btn" data-act="ev_qr" data-c={c} data-id={e.id} aria-label="Show the QR code full size" data-tip="Full size">
-      <Qr text={url} label="Attendance QR code" /></button> : null}
-    <div className="ev_att_side"><a href={to(page + '/attendance')} className="ev_count"><b>{n}</b> attended</a>
+    {open ? <button type="button" className="ev_qr_btn" data-act="ev_qr" data-id={e.id} aria-label="Show the QR code on the whole screen" data-tip="Full screen">
       {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={url} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button> : null}
       <div className="relative"><button type="button" className="btn btn_outline btn_sm w-full justify-between" data-act="pop" data-pop={`pop_links_${e.id}`} aria-haspopup="menu">
         Open{ic('chev_u', 'h-4 w-4')}</button>
