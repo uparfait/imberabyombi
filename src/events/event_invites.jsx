@@ -32,3 +32,4 @@ const upload = (id, input) => { const file = input.files[0]; input.value = ''; i
     catch { notify(`${file.name} could not be read. Save it as .xlsx or .csv and try again.`, 'bad', 'File not read'); } }, { btn: input.closest('label') }); };
 
 export const INVITE_ACT = {
+  ev_unwait: t => { wait.list = wait.list.filter(m => m !== t.dataset.e); rerender(); },
