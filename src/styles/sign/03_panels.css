@@ -1,3 +1,4 @@
 /* styles/sign/03_panels.css: the side columns' parts: section captions, the document title, signer cards (their colour
    marks the one being placed for), the field tools, "Placing for" choices, the progress bar, signer rows, the activity
    list, and the facts of "Signing complete". Small things are pills. */
+/* one column that never grows past the panel: long names and file names trim instead of pushing the panel wider */
