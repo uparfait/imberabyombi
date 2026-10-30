@@ -47,3 +47,5 @@ export function agenda_ok(f, s, e, old = []) {
     if (s && x.from && x.from < s) return bad(x.fi, `The event starts at ${fmt_time(s)}.`);
     if (e && x.to && x.to > e) return bad(x.ti, `The event ends at ${fmt_time(e)}.`);
     if (p?.to && x.from && x.from < p.to) return bad(x.fi, `Item ${p.n + 1} runs until ${fmt_time(p.to)}.`); }
+  return true;
+}
