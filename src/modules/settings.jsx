@@ -51,3 +51,4 @@ function data_card() {
     <div className="mt-6 flex flex-wrap gap-2"><button className="btn btn_outline btn_sm" data-act="data_export">{ic('download', 'h-4 w-4')}Export backup</button>
       <label className="btn btn_outline btn_sm cursor-pointer">
         {ic('upload', 'h-4 w-4')}Import backup<input type="file" accept="application/json" className="sr-only" data-import="" /></label>
+      {auth.boss() ? <button className="btn btn_danger btn_sm" data-act="data_reset">{ic('trash', 'h-4 w-4')}Reset demo data</button> : null}</div>
