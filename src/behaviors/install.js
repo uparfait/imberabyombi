@@ -10,3 +10,4 @@ import { install_page } from './page_events.js';
 import { install_scroll } from './scrolling.js';
 
 let installed = false;
+export function install_listeners() {
