@@ -22,3 +22,4 @@ export const DOC_ACT = {
     if (kept_for_good(d)) return notify('Someone has signed it, so it is kept. Archive it instead.', 'warn', 'A signed document cannot be deleted');
     ask(`Delete “${d.title}”? Its PDF and every signature on it are removed from this browser.`, async () => {
       drop_doc(d.id); forget_pdf(d.id); await drop_files(d.id);
+      notify(`“${d.title}” is deleted.`, 'ok', 'Document deleted'); go('/admin/sign');
