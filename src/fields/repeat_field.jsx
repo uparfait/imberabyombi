@@ -12,3 +12,5 @@ const UNIT = { daily: 'day', weekly: 'week', monthly: 'month', yearly: 'year' };
 const MON_FIRST = [1, 2, 3, 4, 5, 6, 0];
 const BY_HELP = 'Dates: on days of the month, such as the 1st and the 15th. Weeks: on weekdays of chosen weeks, such as the second and the last Friday.';
 const END_HELP = 'Never: it repeats until you delete it. On a date: it stops after that day. After: it stops once it has happened that many times.';
+
+/* the rule in the form; lists left empty mean "as on the first date" */
