@@ -5,3 +5,4 @@
     pointer-events: none; opacity: 0; transition: opacity .12s; }
   #tip.on { opacity: 1; }
   /* a help icon's introduction: the text rises and fades in slowly, and fades out the same way */
+  #tip.intro { transition: opacity .45s ease, transform .45s ease; }
