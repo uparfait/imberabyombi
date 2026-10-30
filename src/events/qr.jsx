@@ -14,3 +14,4 @@ function draw(q, text) {
 }
 
 export function Qr({ text, label = 'QR code' }) {
+  const [p, set] = useState(null);
