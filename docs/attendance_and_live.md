@@ -16,3 +16,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   before it starts, how many minutes early it opens; while it runs, how many minutes after the end it stays open; once
   it has ended, reopen it from now for some minutes (the QR code comes back). All 0 to start with.
 - **Attendees**: `…/<id>/attendance`, the usual table (search, sort, export to CSV, JSON or Excel). A row shows the
+  signature. A new sign-in shows at once on any open page (other tabs too).
