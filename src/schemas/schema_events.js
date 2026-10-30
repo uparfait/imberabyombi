@@ -18,6 +18,7 @@ const SEC = { When: 'kind,date,start,end,tz,repeat', Location: 'place,venue,link
 /* seed rows: where and who */
 const seed_more = () => { const n = lorem.name(), web = lorem.int(0, 3) === 0;
   return { place: web ? 'Virtual' : 'Physical', venue: web ? '' : lorem.t(2), link: web ? `https://meet.lorem.io/${lorem.w(1)}-${lorem.int(100, 999)}` : '',
+    org_name: n, org_email: mail(n), org_tel: tel() }; };
 
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'kind', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
