@@ -18,3 +18,5 @@ export const activities_schema = {
   before: (d, row, f) => {
     if (d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'End after it starts.'); f.elements.end.focus(); return false; }
     return d;
+  },
+  g: () => {
