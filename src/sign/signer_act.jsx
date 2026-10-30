@@ -24,3 +24,4 @@ function open_pad(d, f) {
   const [l] = KINDS[f.type], what = l.toLowerCase(); PAD.get = async () => null;
   modal({ title: `Add your ${what}`, help: f.type === 'stamp' ? 'Create a stamp, or upload a picture of yours.' : 'Draw it, type it, or upload a picture of it.',
     body: <Mark_pad key={f.id} kind={f.type} name={my_rec(d).name} />, submit: `Use this ${what}`,
+    on_submit: async () => { const url = await PAD.get();
