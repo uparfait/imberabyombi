@@ -40,11 +40,9 @@ const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz()
   return <span key={f.k} className="pick when_block when_tz" data-tip={zs.find(z => z.tz === tz)?.label || tz}>
     <select id={id} name={f.k} defaultValue={tz} required={!!f.req} onChange={e => tz_say(e.target.closest('.when_row'))}>
       {zs.map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select>{inside(f, id, tz_words_of(tz, row.date))}</span>; };
+
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
-  return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
-    <span className="pick when_block"><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
-      onInput={e => { e.target.nextSibling.textContent = in_words(f.t, e.target.value); if (f.t === 'date') tz_words(e.target.form); }} />
-      <span className="when_text" aria-hidden="true">{in_words(f.t, shown)}</span></span></Fragment>; };
+  return <span key={f.k} className={`pick when_block when_${f.t}`}><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
 
 /* fs: the row's fields in order; a dash goes between two times (start – end) */
 export const when_row = (fs, row) => <div key={'when_' + fs[0].k} className="when_row sm:col-span-2" role="group" aria-label="When">
