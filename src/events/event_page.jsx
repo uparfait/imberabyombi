@@ -35,6 +35,7 @@ export function event_page(id, c = 'events') {
   const [back, mod, word] = ROOT[c], e = db.find(c, id), ev = c === 'events';
   if (!e) return empty(`${word} not found`, 'It may have been deleted.',
     <a href={to(back)} className="btn btn_outline btn_sm">{ic('chev_l', 'h-4 w-4')}Back</a>, 'alert', 'warn');
+  route.title = e.title; const st = ev_state(e), can = auth.can(mod, 2);
   after_render(() => TIMERS.push(setInterval(tick, 1000)));   /* the time left counts down */
   /* the way back is an arrow at the start of the title row (never a line above the title) */
   return <div className="ev_page">
