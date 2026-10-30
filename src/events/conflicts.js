@@ -8,3 +8,4 @@ import { show_msg } from '../feedback/index.js';
 import { at } from '../schemas/event_fields.js';
 
 const spans = (r, from, to) => { if (!r.date || r.tbd || r.status === 'Cancelled') return [];
+  const days = r.kind === 'Recurring' && r.repeat ? repeat_dates(r.repeat, r.date, from, to) : r.date >= from && r.date <= to ? [r.date] : [];
