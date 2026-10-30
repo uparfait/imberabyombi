@@ -31,3 +31,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.choice_pill`                          | pill radio option (filter-chip style)                            |
 | `.search_btn` / `.clear_btn`            | search button (left) / clear button (right) of a search field    |
 | `.multi_value`                          | the visible box of a searchable multiple select                  |
+| `.filebox` / `.files` / `.file`         | file field: tiles of the chosen files                            |
