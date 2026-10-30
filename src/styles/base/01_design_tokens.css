@@ -24,7 +24,7 @@
     --scale_staff: 16.5;     /* the same on admin pages: a little larger text, icons and controls for daily work */
     --scale_ref: 1536;       /* reference desktop width: wider views (a larger screen, a zoomed-out browser) show this layout scaled up, never smaller */
     /* Light theme surfaces */
-    --bg: 250 250 250; --surface: 255 255 255; --surface_2: 243 242 241; --surface_3: 231 229 227;
+    --bg: 250 250 250; --surface: 255 255 255; --surface_2: 247 247 246; --surface_3: 231 229 227;
     --fg: 24 22 21; --muted: 105 100 96; --line: 228 226 223;
     --ok: 21 128 61; --warn: 180 100 0; --bad: 200 40 40; --info: 30 100 210;
     /* Chart series: a fixed order, checked for colour-blind separation on both surfaces. Series 1 is the brand.
