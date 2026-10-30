@@ -31,3 +31,4 @@ export const ADMIN_ACT = {
     const sp = qs('#side_panel'); if (sp) sp.dataset.open = !!next; setTimeout(redraw_charts, 320); },
   note_del: t => { db.set('notes', db.get('notes', []).filter(n => n.id !== t.dataset.id)); refresh_panel(); },
   tz_device: () => { db.del('pageTz'); rerender(); notify('Times follow this device\'s time zone again.', 'ok', 'Time zone changed'); },
+  tok_reset: () => { db.del('tokens'); apply_tokens(); rerender(); notify('Brand, radius, spacing and font follow the stylesheet again.', 'ok', 'Tokens reset'); },
