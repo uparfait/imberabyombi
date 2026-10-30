@@ -19,3 +19,4 @@ export function attend_side(e, c, st) {
     {open ? <button type="button" className="ev_qr_btn" data-act="ev_qr" data-c={c} data-id={e.id} aria-label="Show the QR code full size" data-tip="Full size">
       <Qr text={url} label="Attendance QR code" /></button> : null}
     <div className="ev_att_side"><a href={to(page + '/attendance')} className="ev_count"><b>{n}</b> attended</a>
+      {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={url} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button> : null}
