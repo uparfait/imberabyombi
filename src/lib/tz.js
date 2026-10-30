@@ -28,3 +28,4 @@ export function tz_parts(tz, t) {
 }
 /* tz's offset from UTC at instant t, in minutes */
 export function offset_min(tz, t) {
+  const p = tz_parts(tz, t); return Math.round((Date.UTC(p.y, p.mo - 1, p.d, p.h, p.mi, p.s) - Math.floor(t / 1000) * 1000) / 60000);
