@@ -4,3 +4,4 @@
 import { uid, qs, qsa } from '../lib/index.js';
 import { rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
+import { KINDS } from './sign_store.js';
