@@ -47,3 +47,4 @@ On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.js
   - `.xlsx`, `.xlsm` and `.ods` are read in the browser (cells only).
   - `.xls` is read with SheetJS, loaded on first use.
   - `.csv`, `.tsv` and `.txt` are read as text.
+- **Check the list**: addresses wait as chips; one already on the list is not added twice. Words that are not addresses
