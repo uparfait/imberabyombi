@@ -19,3 +19,4 @@
 .sign_rec { display: grid; grid-template-columns: minmax(0, 1fr); gap: .375rem; padding: .625rem .625rem .375rem; border: 1px solid rgb(var(--line)); border-radius: 1rem;
   transition: border-color .2s, background-color .2s; }
 /* a signer's card is always tinted with their colour (from their email); picked: their colour's border, a deeper tint */
+.sign_rec { border-color: color-mix(in srgb, var(--c) 28%, rgb(var(--line))); background: color-mix(in srgb, var(--c) 7%, transparent); }
