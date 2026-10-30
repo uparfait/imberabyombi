@@ -30,7 +30,7 @@
   .ev_tile:hover { border-color: rgb(var(--brand) / .5); }
   /* the status column on the right only when the cards still have room beside it */
   .ev_side { order: -1; }   /* one column (a phone, a narrow window): the status, its actions and the QR code first */
-  @container ev_page (min-width: 52rem) { .ev_grid { grid-template-columns: minmax(0, 1fr) 17rem; } .ev_side { position: sticky; top: 5rem; order: 0; } }
+  @container ev_page (min-width: 52rem) { .ev_grid { grid-template-columns: minmax(0, 1fr) 17rem; } .ev_side { position: sticky; top: 5rem; z-index: 1; order: 0; } }   /* z: its menus open over the side rail */
   /* Invitations (events/event_invites.jsx): the addresses box and Upload, what was found, the waiting chips and Send, then
      the people invited; long lists scroll inside themselves */
   .ev_inv_add { display: grid; gap: .75rem; margin-bottom: 1.25rem; }
