@@ -23,3 +23,4 @@ export const ADMIN_ACT = {
     const b = qs('#nav_demo .nav_page_body'); if (b && !reduced()) b.animate([{ opacity: 0, transform: 'translateY(.5rem)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: EASE }); },
   /* Side panels: opening slides the content in, closing fades it as the panel narrows, and switching panels slides the old one
      out and the new one in, so the change is easy to notice */
+  panel: t => { const was = ui.panel, next = was === t.dataset.k ? null : t.dataset.k, pi = () => qs('#side_panel .panel_in');
