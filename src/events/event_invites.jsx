@@ -22,3 +22,4 @@ function add(id, found, bad = [], file = '') {
   wait.list.push(...fresh);
   const said = [found.length ? `${n_of(fresh.length, 'address', 'addresses')} added` : '', old ? `${n_of(old, 'was', 'were')} already on the list` : '',
     bad.length ? `not an email address: ${bad.join(', ')}` : ''].filter(Boolean).join(', ');
+  wait.note = !file ? cap(said) + '.' : found.length ? `Found ${n_of(found.length, 'address', 'addresses')} in ${file}: ${said}.` : `No email addresses were found in ${file}.`;
