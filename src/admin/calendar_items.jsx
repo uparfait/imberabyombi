@@ -2,6 +2,7 @@
    and the sidebar mini calendar; mini_draw() pages it in place (only #date_mini redraws, not the page). Activities and
    events carry the time zone they were set in (tz); they show converted to the page's (Settings), day included. A
    recurring one shows on each day it happens near the dates on screen; a cancelled event does not show. */
+import { ymd, add_d, parse_d, fmt_d, fmt_dt, add_time, convert, page_tz, repeat_dates } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { db, ui } from '../store/index.js';
 import { auth, me } from '../auth/index.js';
