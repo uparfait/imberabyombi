@@ -20,3 +20,4 @@ export const mail_view = k => {
           <p className="truncate"><b className="font-medium">{cfg.name}</b> <span
             className="text-muted">&lt;no-reply@imberabyombi.com&gt;</span></p>
           <p className="truncate text-muted">to you@lorem.io</p></div>
+          <time className="shrink-0 text-xs text-muted">{fmt_stamp(Date.now(), { hour: 'numeric', minute: '2-digit' })}</time></div></header>
