@@ -20,3 +20,5 @@ export function ev_state(e, now = Date.now()) {
   }
   const s = at(e.date, e.start, e.tz);
   return now < s ? 'Upcoming' : runs(e, e.date, now) ? 'Live' : 'Past';
+}
+/* the events in one category ('all' or a state, any case) */
