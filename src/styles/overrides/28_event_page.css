@@ -25,6 +25,7 @@
   .ev_left b { color: rgb(var(--fg)); font-weight: 600; font-variant-numeric: tabular-nums; }
   .ev_note { margin-top: .75rem; color: rgb(var(--muted)); font-size: .875rem; white-space: pre-line; overflow-wrap: anywhere; }
   .ev_acts { display: flex; flex-wrap: wrap; gap: .375rem; margin-top: 1rem; }   /* side by side, wrapping: the card stays short */
+  .ev_acts .btn { flex: 1 1 auto; }
   .ev_bad { color: rgb(var(--bad)); }
   .ev_tile { display: block; transition: border-color .2s; }
   .ev_tile:hover { border-color: rgb(var(--brand) / .5); }
