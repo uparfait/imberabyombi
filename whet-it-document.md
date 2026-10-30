@@ -4,3 +4,4 @@ Every feature below is working code. Each line says what it is and where it live
 
 ## Design system (`src/styles/`, `/ui`)
 - Design tokens: brand, ink, surfaces, text, lines, status colours, radius, pill, spacing, fonts, motion, chart series.
+- Device scaling: phones show the 360px design scaled; desktops 15px; screens wider than the reference scale up.
