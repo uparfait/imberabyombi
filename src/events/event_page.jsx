@@ -31,11 +31,7 @@ const side = (e, st, acts, t = count_to(e, st)) => <aside className="card ev_car
     <button key={k + l} type="button" className={`btn btn_sm ${k === 'ev_cancel' || k === 'ev_del' ? 'btn_ghost ev_bad' : 'btn_outline'}`} data-act={k} data-id={e.id}>
       {ic(i, 'h-4 w-4')}{l}</button>)}</div> : null}</aside>;
 
-export function event_page(id) {
-  const e = db.find('events', id);
-  if (!e) return empty('Event not found', 'It may have been deleted. Go back to the events and pick another.',
-    <a href={to('/admin/events')} className="btn btn_outline btn_sm">{ic('chev_l', 'h-4 w-4')}Back to events</a>, 'alert', 'warn');
-  route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
+export function event_page(id, c = 'events') {
   after_render(() => TIMERS.push(setInterval(tick, 1000)));   /* the time left counts down */
   /* the way back is an arrow at the start of the title row (never a line above the title) */
   return <div className="ev_page">
