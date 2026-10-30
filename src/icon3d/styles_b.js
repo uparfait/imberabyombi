@@ -5,6 +5,7 @@ import { shade } from './color.js';
 import { lin, rad, grad, use, pl, blur, vol, extrude, deep } from './parts.js';
 
 export function glossy(G, C, i, k) {
+  const dk = C.hs ? C.s : C.p, ext = extrude(i + 'G', 35, 26, 130, deep(dk, -26, k, 4), [0, 9.6], k);
   return [grad(i + 'a', G, [[0, shade(C.p, 20, -6)], [.45, C.p], [1, shade(dk, -16, 4)]])
     + vol(i + 'v', { goo: 1.5, bevel: 3, surf: 5, spec: 1.3, exp: 34, shade: .5 }) + vol(i + 'e', { goo: 1.5, flat: 1 }),
     `<g filter="url(#${i}e)">${ext}</g><g filter="url(#${i}v)">${pl(G, 35, 26, 130, `url(#${i}a)`)}</g>`];
