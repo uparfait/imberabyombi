@@ -12,3 +12,4 @@ export function toggle_pop(id) { const p = document.getElementById(id); if (!p) 
 export function place_tile(p) {
   const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
   /* inside a zoomed page (O-Doc Sign scaled to fit) the menu is placed in that page's own pixels: screen pixels ÷ zoom */
+  const z = p.currentCSSZoom || 1, r = b.getBoundingClientRect(), top = r.bottom / z + 8, w = innerWidth / z, h = innerHeight / z;
