@@ -43,3 +43,4 @@ export const owner_page = d => <div className="sign_split">
         {my_turn(d) ? <a href={to(`/admin/sign/sign/${d.id}`)} className="btn btn_primary btn_sm">{ic('signature', 'h-4 w-4')}Sign now</a> : null}
         <button type="button" className="btn btn_outline btn_sm" data-act="sign_dl" data-id={d.id}>{ic('download', 'h-4 w-4')}{dl_label(d)}</button>
         {kept_for_good(d) ? <button type="button" className={`btn btn_sm ${d.archived ? 'btn_outline' : 'btn_warn'}`} data-act={d.archived ? 'sign_doc_restore' : 'sign_doc_archive'} data-id={d.id}>
+          {ic(d.archived ? 'restart_alt' : 'archive', 'h-4 w-4')}{d.archived ? 'Restore from archive' : 'Archive'}</button>
