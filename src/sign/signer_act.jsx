@@ -51,3 +51,4 @@ export const SIGNER_ACT = {
   sign_finish: () => { const d = find_doc(S.id), r = my_rec(d);
     if (!own_fields(d).length || left_of(d).length) return notify('Fill every field marked for you first.', 'warn', 'Not finished yet');
     modal({ title: 'Sign this document?', body: <>{agree_body(d, r)}{r.cert ? <Cert_pick /> : null}</>, submit: r.cert ? 'Verify and sign' : 'Sign document',
+      on_submit: !r.cert ? finish : async (v, form) => { const file = await verify(form); if (!file) return false;
