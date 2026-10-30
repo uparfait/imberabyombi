@@ -24,3 +24,4 @@ export function perm_change(t) {
   if (r && r.perms !== '*') request(() => { const was = r.land; r.perms = { ...r.perms, [t.dataset.perm]: +t.value };
     if (!role_opens(r).some(m => m.k === r.land)) r.land = role_opens(r)[0]?.k || '';   /* its landing page was taken away: the first page it can still open */
     db.set('roles', rs);
+    const name = k => MODS.find(m => m.k === k)?.l || k, moved = was && was !== r.land;
