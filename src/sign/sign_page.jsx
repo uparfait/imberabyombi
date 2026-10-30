@@ -7,3 +7,4 @@ import { useEffect } from 'react';
 import './sign_styles.css';
 import './sign_act.js';
 import { route } from '../store/index.js';
+import { auth } from '../auth/index.js';
