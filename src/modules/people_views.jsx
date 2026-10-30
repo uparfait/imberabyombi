@@ -29,3 +29,4 @@ VIEWS.employees = () => { const t = ui.tab.emp || 'All', rows = db.list('employe
 VIEWS.attendance = () => {
   const n = me(), td = ymd(), rows = db.list('attendance'), mine = rows.find(r => r.person === n && r.date === td), t = ui.tab.att || 'Staff';
   const today = rows.filter(r => r.date === td);
+  after_render(() => TIMERS.push(setInterval(() => { const o = qs('#live_clock'); if (o) o.value = fmt_stamp(Date.now(), { timeStyle: 'medium' }); }, 1000)));
