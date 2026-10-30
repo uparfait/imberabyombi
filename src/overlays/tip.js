@@ -20,3 +20,5 @@ export const tip = {
     }, intro ? 0 : 450);
   },
   hide() { clearTimeout(this.t); clearTimeout(this.t2); this.on = null; this.el?.classList.remove('on'); }
+};
+before_render(() => tip.hide());
