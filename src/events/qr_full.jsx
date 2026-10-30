@@ -3,3 +3,4 @@
    link beside it (under it on a tall screen). Esc or × closes it. QR_ACT: its buttons. */
 import { qs, qsa } from '../lib/index.js';
 import { ic } from '../icons/index.js';
+import { copy_box } from '../overlays/index.js';
