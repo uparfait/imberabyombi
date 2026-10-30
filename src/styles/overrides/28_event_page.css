@@ -13,9 +13,7 @@
   .ev_card { padding: 1.25rem; min-width: 0; }
   .ev_card_head { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-bottom: .875rem; }
   .ev_card_head h3, .ev_side_title { font-size: 1rem; font-weight: 600; }
-  .ev_dl { display: grid; grid-template-columns: minmax(0, 1fr); gap: .125rem; }
-  .ev_dl dt { color: rgb(var(--muted)); font-size: .8125rem; }
-  .ev_dl dd { min-width: 0; margin-bottom: .625rem; overflow-wrap: anywhere; }
+  /* the details: one Field | Value table, a row per section with its Edit button */
   .ev_link { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
   .ev_note { margin-top: .75rem; color: rgb(var(--muted)); font-size: .875rem; white-space: pre-line; overflow-wrap: anywhere; }
   .ev_acts { display: grid; gap: .5rem; margin-top: 1.25rem; }
