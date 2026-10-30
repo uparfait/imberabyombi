@@ -37,3 +37,4 @@ Open dialogs sit in the browser's top layer. `#toasts` and `#loader` are manual 
 closes it, and on phones it stays inside the screen. "Your modules" style menus (`tile_menu()`) drop a grid of 3D tiles.
 
 ## Tooltip
+Icon buttons show their `aria-label`; any element with `data-tip` shows that text; trimmed `.truncate` / `.trunc` text
