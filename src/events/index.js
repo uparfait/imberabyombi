@@ -8,6 +8,7 @@ export * from './event_cards.jsx';
 export * from './invite_emails.js';
 export * from './event_invites.jsx';
 export * from './event_page.jsx';
+export * from './event_minutes.jsx';
 export * from './event_act.jsx';
 export * from './qr.jsx';
 export * from './att_window.js';
