@@ -40,3 +40,4 @@ export function mini_cal() {
     {Array.from({ length: 42 }, (_, i) => { const x = add_d(s, i), k = ymd(x);
       return <button key={i} className={`relative mx-auto grid h-8 w-8 place-items-center rounded-full text-xs transition ${day_cls(k, td, f.getMonth(), x)}`}
         data-act="goday" data-d={k} aria-label={fmt_d(k)}>{x.getDate()}
+        {has.has(k) && k !== td ? <span className="absolute bottom-0.5 h-1 w-1 rounded-full bg-brand"></span> : null}</button>; })}</div></div>;
