@@ -15,6 +15,7 @@ import { S, signer_start } from './signer_state.js';
 import { Pdf_pages } from './pdf_pages.jsx';
 import { fields_on } from './sign_fields.jsx';
 import { use_marks } from './use_marks.js';
+import { steps_card } from './signer_side.jsx';
 
 const mine = d => d.recipients.find(r => r.email === who().email);
 
