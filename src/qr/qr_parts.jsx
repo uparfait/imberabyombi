@@ -25,3 +25,4 @@ export const top_bar = () => <header className="qr_top">
     {standalone() ? null : <a href={import.meta.env.BASE_URL} className="icon_btn" aria-label={`Back to ${cfg.name}`} title={cfg.name}>{ic('home')}</a>}</div></header>;
 
 /* what was found */
+export function found_card(text) {
