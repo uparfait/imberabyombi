@@ -9,3 +9,4 @@ export const device_tz = () => { try { return Intl.DateTimeFormat().resolvedOpti
 export const page_tz = () => db.get('pageTz', '') || device_tz();
 
 const FALLBACK = ['UTC', 'Africa/Kigali', 'Africa/Maputo', 'Africa/Lagos', 'Africa/Cairo', 'Africa/Nairobi', 'Europe/London', 'Europe/Paris',
+  'Europe/Berlin', 'Europe/Moscow', 'Asia/Dubai', 'Asia/Kolkata', 'Asia/Shanghai', 'Asia/Tokyo', 'Asia/Singapore', 'Australia/Sydney',
