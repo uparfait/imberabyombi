@@ -9,3 +9,4 @@
      there are and wherever the table is scrolled sideways: pinned to the view's left edge (sticky), as wide as the view
      (100cqw: the scroll box is a size container) */
   .table_scroll { container-type: inline-size; }
+  .table_data td.table_none { padding-inline: 0; }
