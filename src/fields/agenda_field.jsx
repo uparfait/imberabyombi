@@ -8,3 +8,4 @@ import { show_err } from '../feedback/index.js';
 import { dt_attrs, dt_show, to24 } from './date_formats.js';
 
 const box = (k, n, l, v, x = {}) => { const { cls = '', ...a } = x;
+  return <div className={`field ${cls}`}><label htmlFor={`ag_${n}_${k}`}>{l}</label>
