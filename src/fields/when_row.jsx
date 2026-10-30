@@ -19,6 +19,7 @@ export function in_words(t, v) {
   if (t === 'date') { const d = new Date(`${v}T00:00`); if (isNaN(d)) return [v, v];
     return [d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }), d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })]; }
   const [h, m] = to24(v).split(':').map(Number); if (isNaN(h) || isNaN(m)) return [v, v];
+  const w = h24() ? `${pad(h)}:${pad(m)}` : `${h % 12 || 12}:${pad(m)}${h < 12 ? 'am' : 'pm'}`; return [w, w];
 }
 
 /* the time zone: a select of every zone ("(GMT+02:00) Central Africa Time - Kigali"), shown as "GMT+2 · Kigali", with its
