@@ -3,6 +3,7 @@
    events carry the time zone they were set in (tz); they show converted to the page's (Settings), day included. A
    recurring one shows on each day it happens near the dates on screen; a cancelled event, or a postponed one whose new
    date is not set yet (tbd), does not show. Each carries the signed-in person's part in it (role: Organiser, Co-organiser,
+   Presenter, Invited). */
 import { ymd, add_d, parse_d, fmt_d, fmt_dt, add_time, convert, page_tz, repeat_dates } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { db, ui } from '../store/index.js';
