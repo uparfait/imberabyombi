@@ -16,3 +16,4 @@ export const glide = { y: 0, last: 0, raf: 0,
     this.y = Math.max(0, Math.min(max, this.y + d)); if (!this.raf) this.raf = requestAnimationFrame(this.step); },
   step() { const g = glide, dy = g.y - scrollY;
     /* stop when arrived, or when the user scrolled some other way meanwhile */
+    if (Math.abs(dy) < 1 || Math.abs(scrollY - g.last) > 2) { g.raf = 0; return; }
