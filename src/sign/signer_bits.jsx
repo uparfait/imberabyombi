@@ -11,3 +11,5 @@ export const CERT_HELP = 'The signer must verify their identity with a digital c
   + 'can sign or stamp.';
 const OPEN = new Set();
 export const NOTE_ACT = { sign_note_t: t => { const k = t.dataset.id; OPEN.has(k) ? OPEN.delete(k) : OPEN.add(k); rerender(); } };
+
+const note_chip = r => <button type="button" className="sign_chip" data-act="sign_note_t" data-id={r.id} aria-expanded={OPEN.has(r.id)}
