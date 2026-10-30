@@ -1,3 +1,4 @@
 {
   "name": "Qr-scan",
   "short_name": "Qr-scan",
+  "description": "Scan a QR code. Secure links (https) open in a new tab.",
