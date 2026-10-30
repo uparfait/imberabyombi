@@ -35,6 +35,7 @@
   border-radius: .625rem; font-size: .8125rem; text-align: left; transition: background-color .2s; }
 button.sign_opt:hover { background: rgb(var(--fg) / .06); }
 .sign_opt[aria-pressed="true"] { font-weight: 600; }
+.sign_opt_tick { color: var(--c); }
 /* "Force digital signature": the checkbox and its help icon */
 .sign_check_row { display: flex; align-items: center; gap: .125rem; }
 .sign_check { display: flex; align-items: center; gap: .5rem; font-size: .875rem; cursor: pointer; }
