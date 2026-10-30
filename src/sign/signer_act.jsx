@@ -33,3 +33,4 @@ async function finish() {
   const d = find_doc(S.id), r = my_rec(d), now = Date.now();
   if (!r || d.status !== 'sent' || r.status === 'signed') return go(`/admin/sign/sign/${S.id}`);
   if (!await file_set('marks:' + d.id, { ...await marks_get(d.id), ...S.pending })) {
+    notify('Free some space in this browser, then try again.', 'bad', 'Your signature could not be saved'); return false; }
