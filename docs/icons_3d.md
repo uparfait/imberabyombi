@@ -25,6 +25,7 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
   elements, see-through on every background.
 - The brand mark is `mark3d('#')`: the sidebar's top row, the header (sidebar closed) and the email designs. Its "#" is
   the display font's own outline (`HASH`, Bricolage Grotesque extra bold), so it looks the same before fonts load.
+- The **favicon** is the same glossy "#": `public/favicon.svg` (browsers that take SVG), `public/favicon.ico` (16, 32 and
 
 ## Where the colours are used
 Status: green (done, complete), amber (warnings, waiting), red (problems). Files and documents: blue. Roles and access:
