@@ -12,3 +12,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 - **Repeats** (Recurring only): Daily, Every weekday (Mon–Fri), Weekly, Monthly or Yearly, every 1 to 99 days, weeks,
   months or years.
   - Weekly: on chosen weekdays.
+  - Monthly: on dates (the 1st, the 15th, the last day) or on weeks (the second and the last Friday).
