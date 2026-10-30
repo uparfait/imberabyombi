@@ -45,3 +45,4 @@ export function Tz_page() {
         <div className="tzc_head"><h3 className="tzc_cap">From</h3>{seg('tz_ff', st.ff, FMT, v => put({ ff: v }), 'Time format')}</div>
         {zone_field('tz_from', st.from, v => put({ from: v }), t)}
         <div className="mt-3 grid gap-3">
+          <div className="field"><label htmlFor="tz_date">Date</label><input key={st.dk} id="tz_date" {...dt_attrs('date')} defaultValue={st.date}
