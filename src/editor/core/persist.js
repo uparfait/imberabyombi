@@ -15,6 +15,7 @@ import { idb_get, idb_set } from './idb.js';
 export const DOC_KEY = 'editor_doc';
 let save_timer = null, refused = false, ready = false, key = DOC_KEY;
 /* the document the address names (?doc=<name>), or the editor's own */
+export const doc_key = () => { const n = new URLSearchParams(location.search).get('doc'); return n ? `${DOC_KEY}:${n}` : DOC_KEY; };
 export const set_ready = v => { ready = v; };   /* nothing is saved until the saved document has loaded */
 
 /* the saved shape; the active tab's html comes from the pages (split parts re-joined) */
