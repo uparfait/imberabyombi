@@ -26,3 +26,4 @@ const side = (e, st) => <aside className="card ev_card ev_side" aria-label="Stat
       {ic(i, 'h-4 w-4')}{l}</button>)}</div></aside>;
 
 export function event_page(id) {
+  const e = db.find('events', id), back = <a href={to('/admin/events')} className="ev_back">{ic('arrow_back', 'h-4 w-4')}Events</a>;
