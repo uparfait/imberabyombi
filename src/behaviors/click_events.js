@@ -2,3 +2,4 @@
    opens the shared picker, animates <details>, scrolls to page sections and runs ACT[data-act] (through request() for REQ).
    Other internal links then move through go() (link_clicks.js). */
 import { qs } from '../lib/index.js';
+import { cfg } from '../config/index.js';
