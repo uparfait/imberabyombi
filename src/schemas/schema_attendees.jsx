@@ -11,3 +11,4 @@ export const attendees_schema = {
     field_spec('org', 'Organisation or unit'), field_spec('position', 'Position'),
     field_spec('sig_kind', 'Signed', 'select', ['Drawn', 'Digital', 'By hand'], 0, { def: () => 'By hand' }),
     field_spec('at', 'Time', 'hidden', 0, 0, { def: () => new Date().toISOString() }),
+    field_spec('ref', 'Event', 'hidden'), field_spec('c', 'Kind', 'hidden'), field_spec('sig', 'Signature', 'hidden', 0, 0, { form: false })
