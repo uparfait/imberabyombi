@@ -4,3 +4,4 @@
 import { ic, mark3d } from '../icons/index.js';
 import { ui, render_flags, get_version } from '../store/index.js';
 import { MODS } from '../auth/index.js';
+import { sidebar } from './sidebar.jsx';
