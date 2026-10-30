@@ -29,3 +29,4 @@ const create_menu = create => <div className="relative">
   <button className="btn h-14 gap-3 rounded-2xl border border-line bg-surface px-5 text-fg shadow-soft hover:bg-surface-2"
     data-act="pop" data-pop="pop_create" aria-haspopup="menu">
     {ic('plus', 'h-6 w-6')}Create{ic('chevD', 'h-4 w-4 text-muted')}</button>
+  <div id="pop_create" ref={closed_pop()} className="pop left-0 w-64" role="menu" hidden>{create.map(([m, c, l, i]) =>
