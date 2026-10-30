@@ -12,3 +12,4 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
   secure link", Copy only: it does not open from here); any other text (Copy).
 - **Recent**: the last six scans, kept in this browser (Clear empties it).
 - Light or dark follows the site's choice; the top bar switches it. Back to the site (the home icon) shows in the browser,
+  not in the installed app.
