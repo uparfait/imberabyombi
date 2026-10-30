@@ -23,6 +23,7 @@ items.map((x, i) => i3(x.icon, 'h-11 w-11', hue_at(i)))   // a row of tiles, eac
 - Each icon is built for the pixel size it is shown at: `i3()` reads it from its size classes (`h-11` is 44 px; the largest
   of `h-11 sm:h-12`), times the screen's pixel density, and caches one image per name, colour and size. Icons are `<img>`
   elements, see-through on every background.
+- The brand mark is `mark3d('#')`: the sidebar's top row, the header (sidebar closed) and the email designs. Its "#" is
 
 ## Where the colours are used
 Status: green (done, complete), amber (warnings, waiting), red (problems). Files and documents: blue. Roles and access:
