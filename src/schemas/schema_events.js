@@ -29,3 +29,4 @@ export const activities_schema = {
 };
 
 export const events_schema = {
+  l: 'event', n: 6, cols: ['title', 'date', 'start', 'venue', 'registered', 'status'],
