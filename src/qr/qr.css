@@ -32,3 +32,4 @@ body { background: rgb(var(--bg)); }
 .qr_found { display: grid; gap: .375rem; padding: 1.25rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
 .qr_found.is_link { border-color: rgb(var(--ok) / .35); background: rgb(var(--ok) / .06); }
 .qr_found.is_warn { border-color: rgb(var(--warn) / .35); background: rgb(var(--warn) / .06); }
+.qr_kind, .qr_cap { display: flex; align-items: center; gap: .375rem; color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
