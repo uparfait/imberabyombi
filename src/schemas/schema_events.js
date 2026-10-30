@@ -27,7 +27,7 @@ export const activities_schema = {
     field_spec('title', 'Title', 'text', 0, 1), field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')),
     field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1), repeat_spec(), ...where_f(), ...org_f(), audience_spec()
   ],
-  before: (d, row, f) => when_ok(d, row, f) ? repeat_in(d, f) : false,
+  before: event_before,
   g: i => {
     const h = lorem.int(7, 16);
     return {
