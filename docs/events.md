@@ -19,3 +19,5 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
     Wednesday, 5 times"). Code: [`lib/repeat.js`](../src/lib/repeat.js) (the days) and
     [`lib/repeat_words.js`](../src/lib/repeat_words.js) (the words).
 - The calendar shows a recurring one on each day it happens.
+
+## Location, organiser, audience
