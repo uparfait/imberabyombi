@@ -23,3 +23,4 @@ const icon_to = (t, n) => t.querySelector('path')?.setAttribute('d', PATHS[n]);
 
 export const SHELL_ACT = {
   theme: () => set_theme(document.documentElement.classList.contains('dark') ? 'light' : 'dark'),
+  pop: t => toggle_pop(t.dataset.pop),
