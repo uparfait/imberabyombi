@@ -25,3 +25,4 @@ const activity = i => { const n = lorem.name();
     <time className="shrink-0 text-xs text-muted">{`${i + 1} h`}</time></li>; };
 
 export function nav_page(o) {
+  const { title, node, kids } = o;
