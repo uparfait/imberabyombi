@@ -8,3 +8,4 @@ import { before_page } from './render_hooks.js';
 import { navigate, install_history } from './history.js';
 
 /* Web component: <ds-callout> clones #tpl_callout into its shadow root */
+function define_callout() {
