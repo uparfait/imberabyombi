@@ -2,3 +2,4 @@
    (by department), Attendance (live clock, check in / out, today's numbers) and Students (registration, bulletins, payments). */
 import { VIEWS } from './views.js';
 import { db, ui, after_render, TIMERS } from '../store/index.js';
+import { auth, me, access_link } from '../auth/index.js';
