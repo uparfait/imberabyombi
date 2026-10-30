@@ -24,3 +24,4 @@ function appearance(tk, th) {
     <fieldset className="mt-5 border-0 p-0"><legend className="mb-2 px-0 text-sm">Theme</legend><div className="seg">{['light', 'dark', 'system'].map(v => <label key={v}>
       <input type="radio" className="sr-only" name="theme" value={v} data-theme-set="" defaultChecked={th === v} /><span>{cap(v)}</span></label>)}</div></fieldset>
     <div key={get_version()} className="mt-6 grid gap-5 sm:grid-cols-2">
+      <div className="field"><label htmlFor="token_brand">Brand colour</label>
