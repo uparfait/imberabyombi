@@ -18,3 +18,4 @@ function first_page(e, day) {
   const came = db.list('attendees').filter(a => a.ref === e.id && (!e.repeat || String(a.at).slice(0, 10) === day))
     .map(a => `<li>${esc(a.name)}${a.org ? ` (${esc(a.org)})` : ''}</li>`).join('');
   const ag = (e.agenda || []).map(a => `<h3>${esc(a.title)}</h3><p>${esc([a.p_name, a.p_title].filter(Boolean).join(', '))}</p><p><br></p>`).join('');
+  return `<h1>${esc(e.title)}</h1><p>${[fmt_d(day), e.start ? fmt_time(e.start) : '', e.venue ? esc(e.venue) : ''].filter(Boolean).join(' · ')}</p>`
