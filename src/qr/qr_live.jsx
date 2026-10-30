@@ -4,3 +4,4 @@
    QR code" and Light (where the camera has one). */
 import { ic, mark3d } from '../icons/index.js';
 import { cfg } from '../config/index.js';
+import { brand } from './qr_brand.js';
