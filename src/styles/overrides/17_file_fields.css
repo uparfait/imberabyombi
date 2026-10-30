@@ -21,3 +21,4 @@
   .viz_plot text.center_value { font-family: var(--font_display); font-size: 1.375rem; font-weight: 700; fill: rgb(var(--fg)); }
   .viz_plot .grid_line { stroke: rgb(var(--line)); stroke-width: 1; }
   .viz_plot .base_line { stroke: rgb(var(--muted) / .55); stroke-width: 1; }
+  .viz_plot .series_line { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
