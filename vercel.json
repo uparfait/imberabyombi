@@ -36,5 +36,6 @@
   "redirects": [
     {
       "source": "/qr-scan",
+      "destination": "/qr-scan/",
   ]
 }
