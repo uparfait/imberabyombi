@@ -15,3 +15,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | Folder       | Holds                                                                                       |
 |--------------|---------------------------------------------------------------------------------------------|
 | `config/`    | `cfg`: brand name and logo parts, storage prefix, currency, latency, page size, business rules, media URLs |
+| `cartoons/`  | cartoon pictures drawn from a seed: scenes (`cartoon`) and portraits (`cartoon_face`), behind `cfg.img` / `cfg.face` |
