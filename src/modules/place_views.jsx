@@ -34,7 +34,7 @@ const event_card = (e, i) => <a key={e.id} href={to('/admin/events/' + e.id)} cl
     <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">{ic('pin', 'h-4 w-4')}{e.venue || '—'}</p><div className="mt-4">
       {bar_cell(e.registered, e.capacity)}</div></div></a>;
 VIEWS.events = () => {
-  const id = route.path.split('/')[3]; if (id) return event_page(id);
+  const [, , , id, sub] = route.path.split('/'); if (id) return sub === 'attendance' ? attendance_page(id, 'events') : event_page(id);
   const all = db.list('events'), t = ui.tab.ev || 'all', n = s => all.filter(in_state(s)).length;
   const next = all.filter(e => ev_state(e) === 'Upcoming').sort((a, b) => a.date.localeCompare(b.date)).slice(0, 3);
   return <>{t === 'all' && next.length ? <div className="mb-6 grid gap-5 md:grid-cols-3">{next.map(event_card)}</div> : null}
