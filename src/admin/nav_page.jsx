@@ -28,3 +28,4 @@ export function nav_page(o) {
   const { title, node, kids } = o;
   if (kids) return <>{head(o, node ? node.i : 'layers', lorem.p(1))}
     <section className="mt-6" aria-label={`In ${title}`}><h3 className="mb-3 text-lg">{`In ${title}`}</h3>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 xl:grid-cols-5">{kids.map((it, i) => tile(o, it, i))}</div></section></>;
