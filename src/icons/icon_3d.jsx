@@ -9,3 +9,5 @@
    the favicon (public/favicon.svg, made from HASH with the same engine). */
 import { icon_path } from './icon.jsx';
 import { render, device_px } from '../icon3d/index.js';
+
+export const HUES = { orange: '#E0661B', amber: '#E5A01A', green: '#17A34A', teal: '#0E9AA7', sky: '#0EA5E9', blue: '#2F6FDB',
