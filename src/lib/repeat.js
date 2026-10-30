@@ -5,3 +5,5 @@
      end: 'never' | 'on' (until 'YYYY-MM-DD') | 'after' (count times) }.
    An empty list means "as on the first date" (weekly from a Friday: on Fridays). */
 import { ymd, add_d, parse_d } from './dates.js';
+
+export const REPEAT_NEW = { freq: 'weekly', every: 1, days: [], by: 'date', dates: [], weeks: [], wdays: [], months: [], end: 'never', until: '', count: 10 };
