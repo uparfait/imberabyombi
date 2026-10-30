@@ -29,3 +29,4 @@ export function week_grid(d, items) {
     return <div key={k} className={`hour_lines relative border-l border-line ${k === td ? 'bg-brand/[.03]' : ''}`} data-act="slot" data-d={k}>
       {items.filter(i => i.date === k && !i.all_day).map(chip)}{k === td ? now_line : null}</div>; };
   return <div className="overflow-x-auto"><div className="min-w-[44rem]">
+    <div className={`${cols} border-b border-line`}>
