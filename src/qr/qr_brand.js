@@ -14,3 +14,4 @@ export const brand = () => { const b = tokens().brand; return HEX.test(b || '') 
 /* the site's mark in colour c: an SVG (n px), or a PNG data URL n px square with the mark taking k of it, on bg */
 const mark = (c, n) => render(HASH, { style: 'glossy', colors: [c], size: n, px: n, view: HASH_VIEW });
 const png = (c, n, k, bg) => new Promise((res, rej) => { const i = new Image();
+  i.onload = () => { const cv = document.createElement('canvas'), s = n * k; cv.width = cv.height = n; const x = cv.getContext('2d');
