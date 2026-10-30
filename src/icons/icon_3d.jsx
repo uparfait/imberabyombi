@@ -8,3 +8,4 @@
    mark3d('#'): its "#" is the display font's own outline (HASH), so it looks the same before the fonts load and matches
    the favicon (public/favicon.svg, made from HASH with the same engine). */
 import { icon_path } from './icon.jsx';
+import { render, device_px } from '../icon3d/index.js';
