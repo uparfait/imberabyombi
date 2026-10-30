@@ -46,3 +46,4 @@ addEventListener('keydown', k => { const f = qs('.track_full:not([hidden])'), b 
   if (b == null) return; k.preventDefault(); const s = f.querySelectorAll('.track_step')[b]; if (!s.disabled) s.click(); });
 
 export const TRACK_ACT = {
+  ev_track: t => { const el = qs('#track_' + t.dataset.id); if (!el) return; el.hidden = false; Promise.resolve(el.requestFullscreen?.()).catch(() => {}); },
