@@ -55,8 +55,7 @@ const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (/^(rp|ag|co_or
   if ('kind' in d) d.repeat = d.kind === 'Recurring' ? repeat_from(f) : null;
   if (f.querySelector('[data-agenda]')) d.agenda = agenda_from(f); const co = people_from(f, 'co_orgs'); if (co) d.co_orgs = co;
   return d; };
-/* a schema's before(): the timing checked, then the record as saved */
-export const event_before = (d, row, f) => when_ok(d, row, f) && agenda_ok(f) ? place_in(repeat_in(d, f)) : false;
+/* a schema's before(): the timing and agenda checked, the record as saved, then any time conflict (events/conflicts.js) */
 
 /* a wall-clock date and time in tz → the instant (ms) */
 export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(Number), [h, mi] = (time || '00:00').split(':').map(Number);
