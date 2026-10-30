@@ -43,3 +43,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | `data-reveal`                   | fade and rise in when scrolled into view (`style={{ '--d': '.1s' }}` delays it) |
 | `data-count="n"`                | count up when visible                                              |
 | `data-type='["a","b"]'` (not an input) | typing effect                                               |
+| `data-out="#id"`                | mirror a range value into an `<output>`                            |
