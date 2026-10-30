@@ -1,5 +1,6 @@
 /* overrides/28_event_page.css: one event on its own page (events/event_page.jsx): the title row (an arrow back, the
    title, where it stands), the details as cards by section and, from 1024px, the status and actions in a column on the
+   right that stays in view. A card on the Events page opens it (ev_tile). */
   .ev_head { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .5rem; margin-bottom: 1.25rem; }
   .ev_title { min-width: 0; font-family: var(--font_display); font-size: 1.625rem; font-weight: 500; letter-spacing: -.01em; overflow-wrap: anywhere; }
   .ev_grid { display: grid; gap: 1.25rem; align-items: start; }
