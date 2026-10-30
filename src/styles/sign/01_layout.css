@@ -13,3 +13,5 @@
 .sign_tools .tile_trigger:hover, .sign_tools .tile_trigger[aria-expanded="true"] { background: rgb(var(--fg) / .08); }
 .sign_btns { display: flex; min-width: 0; flex: 0 1 auto; align-items: center; gap: .5rem; margin-left: auto; }
 .sign_body { display: flex; min-height: 0; flex: 1; flex-direction: column; }
+
+/* lists, upload, done */
