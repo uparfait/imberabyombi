@@ -13,3 +13,6 @@ function view(c, id) {
   return <><header className="flex items-center gap-2 py-2 pl-4 pr-2"><h2 className="min-w-0 flex-1 truncate font-sans text-base font-medium">{e.title}</h2>
     <button type="button" className="icon_btn" data-act="close_viewer" aria-label="Close">{ic('x')}</button></header>
     <div className="att_list min-h-0 flex-1 overflow-auto">{crud('attendees', { title: 'Attended', mod: c === 'events' ? 'events' : 'calendar', filter: a => a.ref === id, preset: { ref: id, c }, can_row: () => false, add: false, full: false })}</div></>;
+}
+
+export const ATTENDEES_ACT = {
