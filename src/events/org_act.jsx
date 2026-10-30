@@ -34,3 +34,4 @@ export const ORG_ACT = {
       put(c, e, { co_orgs: e.co_orgs.filter((_, j) => j !== i) }, 'Co-organiser removed', `${p.name} is no longer a co-organiser.`), 'Remove', true); },
   ev_transfer: t => { const [c, e] = get(t); if (!e) return; const co = e.co_orgs || [], fresh = { when: 'to=new' };
     modal({ title: 'Transfer ownership', help: 'They become the organiser and own it from now on. The current organiser stays on as a co-organiser.',
+      body: [field(field_spec('to', 'New organiser', 'select', [...co.map((o, i) => [String(i), `${o.name} · ${o.email}`]), ['new', 'Someone new']], 1), co.length ? '0' : 'new'),
