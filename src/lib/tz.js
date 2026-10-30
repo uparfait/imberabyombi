@@ -33,3 +33,4 @@ export function offset_min(tz, t) {
 /* a wall-clock time in tz → the UTC instant */
 export function zoned_to_utc(y, mo, d, h, mi, tz) {
   const guess = Date.UTC(y, mo - 1, d, h, mi); let t = guess - offset_min(tz, guess) * 60000;
+  return guess - offset_min(tz, t) * 60000;
