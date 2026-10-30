@@ -22,3 +22,5 @@ export const tip = {
   hide() { clearTimeout(this.t); clearTimeout(this.t2); this.on = null; this.el?.classList.remove('on'); }
 };
 before_render(() => tip.hide());
+
+/* The first help icon (help_tip) of a page or a dialog introduces itself the first time it shows after a load: it zooms
