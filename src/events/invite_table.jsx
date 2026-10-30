@@ -46,3 +46,5 @@ export function invite_table(e, open) {
       <tbody>{inv.map(i => editing === `${e.id}|${i.e}` ? edit_row(e.id, i) : <tr key={i.e}>
         <td><span className="block truncate">{i.e}</span><span className="ev_inv_sub">{day(i.at)}</span></td><td className="ev_inv_day">{day(i.at)}</td>
         {open ? <td className="ev_inv_acts">{btn('ev_inv_edit', 'edit', 'Change the address', '', { id: e.id, e: i.e })}
+          {btn('ev_uninvite', 'x', 'Remove', 'ev_inv_x', { id: e.id, e: i.e })}</td> : null}</tr>)}</tbody></table></div></>;
+}
