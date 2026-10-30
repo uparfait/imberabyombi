@@ -21,6 +21,7 @@ Extras: `def` (default), `min`, `max`, `when` (shown only for some values: `'Don
 
 ## Forms in sections
 A schema with `form_sec: true` shows its `sec` groups as small headings in its form ("When", "Location"). `open_form(c, id,
+{}, [title, keys])` edits only some fields of a record, such as one section ("Edit location"). In a two-column form a
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
   <div data-msg-slot="" className="empty:hidden" />
