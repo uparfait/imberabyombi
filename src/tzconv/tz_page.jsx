@@ -65,3 +65,7 @@ export function Tz_page() {
           <p><span className="tzc_time">{main}</span>{suf ? <span className="tzc_suf">{suf}</span> : null}</p>
           <p className="mt-2 text-sm text-muted">{new Date(t).toLocaleDateString(undefined, { timeZone: st.to, weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
           <div className="mt-4 flex flex-wrap gap-1.5">{chips.map(c => <span key={c} className="chip bg-fg/10 text-fg/70">{c}</span>)}</div></div>
+      </section>
+      <p className="tzc_utc">{`UTC ${new Date(t).toLocaleDateString(undefined, { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}, ${um}${us ? ' ' + us : ''}`}</p>
+    </div></div>;
+}
