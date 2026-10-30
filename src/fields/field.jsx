@@ -9,6 +9,7 @@ import { zone_list, device_tz } from '../lib/index.js';
 import { seg_field } from './seg_field.jsx';
 import { repeat_field } from './repeat_field.jsx';
 import { agenda_field } from './agenda_field.jsx';
+import { people_field } from './people_field.jsx';
 
 /* Form field generated from a schema field (row: the whole record, for fields that read others) */
 export function field(f, v, row) {
