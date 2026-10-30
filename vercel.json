@@ -27,6 +27,7 @@
       "source": "/qr-scan/sw.js",
       "headers": [
         {
+          "key": "Cache-Control",
     }
   ]
 }
