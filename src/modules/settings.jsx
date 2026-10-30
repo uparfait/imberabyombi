@@ -29,3 +29,4 @@ function appearance(tk, th) {
           <output id="token_brand_out">{brand}</output></div></div>
       <div className="field"><label htmlFor="token_font">Body font</label>
         <select id="token_font" data-token="font" defaultValue={tk.font}>{FONTS.map(f => <option key={f}>{f}</option>)}</select></div>
+      {range('radius', 'Corner radius', radius, '0', '2', '.125')}{range('space', 'Spacing scale', space, '.75', '1.5', '.05')}
