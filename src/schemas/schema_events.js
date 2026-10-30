@@ -25,7 +25,7 @@ export const activities_schema = {
     const h = lorem.int(7, 16);
     return {
       title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-6, 14))), start: `${pad(h)}:00`, end: `${pad(h + lorem.int(1, 2))}:${lorem.pick(['00', '30'])}`,
-      category: lorem.pick(['Class', 'Meeting', 'Sport', 'Exam']), note: lorem.s(), kind: 'Upcoming'
+      category: lorem.pick(['Class', 'Meeting', 'Sport', 'Exam']), note: lorem.s(), kind: i % 4 === 1 ? 'Recurring' : 'Upcoming',
     };
   }
 };
