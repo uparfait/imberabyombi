@@ -15,3 +15,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
   - Monthly: on dates (the 1st, the 15th, the last day) or on weeks (the second and the last Friday).
   - Yearly: in chosen months, then on dates or weeks as for monthly.
   - **Ends**: *Never* (it repeats until you delete it), *On a date* (it stops after that day) or *After* a number of times.
+  - Nothing chosen means "as on the first date". The rule shows in words under the choices ("Every 2 weeks on Monday and
