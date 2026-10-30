@@ -25,7 +25,7 @@ export function signer_page(d) {
   const r = my_rec(d); if (!r) return not_yours(d);
   signer_start(d.id);
   if (!r.viewed_at && d.status === 'sent') { r.viewed_at = Date.now(); log(d, `${r.name} opened the document`, 'open', r.email); save_doc(d); }
-  const done = r.status === 'signed' || d.status !== 'sent';
+  const done = r.status === 'signed' || !(d.status === 'sent' || (d.status === 'draft' && d.owner === r.email));
   return <div className="sign_split">
     <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
       {done ? null : steps_card(d)}</aside>
