@@ -11,3 +11,4 @@ const tool = (type, c = '') => { const [l, i] = KINDS[type];
     aria-label={`Add a ${l.toLowerCase()} field`}>{ic(i, 'h-5 w-5 shrink-0')}<span>{l}</span></button>; };
 
 const placing = d => d.recipients.length
+  ? <div className="grid gap-1.5" role="radiogroup" aria-label="Placing for">{d.recipients.map(r =>
