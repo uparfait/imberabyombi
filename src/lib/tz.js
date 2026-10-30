@@ -6,3 +6,4 @@ import { pad } from './text.js';
 import { db } from '../store/db.js';
 
 export const device_tz = () => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC'; } catch { return 'UTC'; } };
+export const page_tz = () => db.get('pageTz', '') || device_tz();
