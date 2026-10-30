@@ -63,3 +63,4 @@ export function Tz_page() {
         {zone_field('tz_to', st.to, v => put({ to: v }), t)}
         <div className="tzc_result" aria-live="polite">
           <p><span className="tzc_time">{main}</span>{suf ? <span className="tzc_suf">{suf}</span> : null}</p>
+          <p className="mt-2 text-sm text-muted">{new Date(t).toLocaleDateString(undefined, { timeZone: st.to, weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
