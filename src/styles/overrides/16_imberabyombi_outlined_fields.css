@@ -58,3 +58,4 @@
   /* A date and its times on one line as soft blocks ("Friday, October 30 · 12:00pm – 1:00pm", fields/when_row.jsx). Each
      block is the real input, see-through, under its value in words; while it is typed in, its own text shows instead. */
   .when_row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+  .when_block { position: relative; display: inline-grid; min-width: 6.5rem; height: 2.75rem; padding: 0 1rem; place-items: center; border-radius: var(--radius);
