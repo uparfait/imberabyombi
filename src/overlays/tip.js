@@ -27,3 +27,4 @@ before_render(() => tip.hide());
    in and out twice, then its text shows for a few seconds and fades away. Each text does this once per load; hovering
    the icon keeps the text up. help_intro(root) looks in root (default: the page, without its headers, the admin sidebar
    and side panel, and dialogs) and tries a few times, so pages and dialogs that load their content later are caught too. */
+const SEEN = new Set(), still = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
