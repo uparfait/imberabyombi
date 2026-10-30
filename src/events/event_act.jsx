@@ -40,3 +40,5 @@ export const EV_ACT = {
   ev_copy: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const { id, date, start, end, status, status_note, invites, registered, ...keep } = e; open_form('events', null, keep); },
   ev_del: t => ask('Delete this event? It is removed for everyone, with its invitations. You cannot undo this.', () => {
+    db.remove('events', t.dataset.id); go('/admin/events'); notify('The event was removed.', 'ok', 'Deleted'); })
+};
