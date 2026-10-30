@@ -25,3 +25,4 @@ function row_acts(c, o, r, can) {
 
 /* the empty row: no matches (with Clear filters) or no records yet (with Add … for managers) */
 function none_row(c, s, can, filtered, span) {
+  const add = can ? <button className="btn btn_primary btn_sm" data-act="add" data-col={c}>{ic('plus', 'w-4 h-4')}{`Add ${s.l}`}</button> : null;
