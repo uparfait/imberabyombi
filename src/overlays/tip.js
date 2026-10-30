@@ -14,3 +14,4 @@ export const tip = {
     this.t = setTimeout(() => {
       const el = this.el, s = x.isConnected && this.on === x ? this.text(x) : ''; if (!s) return;
       el.textContent = s; (x.closest('dialog[open]') || document.body).append(el); el.classList.toggle('intro', intro);
+      const r = x.getBoundingClientRect(), w = el.offsetWidth, h = el.offsetHeight, top = r.bottom + 6 + h > innerHeight - 4 ? r.top - h - 6 : r.bottom + 6;
