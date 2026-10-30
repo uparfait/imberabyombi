@@ -3,3 +3,4 @@
    row of chips and note_text(r) the open note under it; NOTE_ACT opens and closes a note. */
 import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
+import { when } from './sign_store.js';
