@@ -13,3 +13,4 @@ let editing = '';   /* "<event id>|<address>" while an address is being changed 
 const day = at => fmt_stamp(at, { dateStyle: 'medium' });
 const stop = () => { editing = ''; rerender(); };
 function save(id, old, input) {
+  const e = db.find('events', id), v = (input?.value || '').trim().toLowerCase(); if (!e || !input) return stop();
