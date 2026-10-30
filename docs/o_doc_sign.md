@@ -39,3 +39,4 @@ every account starts empty.
 - **Colours**: each signer's colour (their card's tint, avatar, tag and fields) comes from their email, through
   `seed_color()` (`src/lib/seed_color.js`): the same email always gets the same colour; signers of one document are kept
   at least 40° apart; only greens, teals, blues, violets and magentas are used (reds, oranges and yellows would read as
+  alerts); white initials on every colour pass 4.5:1.
