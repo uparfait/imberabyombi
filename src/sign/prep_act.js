@@ -25,6 +25,7 @@ function send() {
   wait.forEach(r => { r.status = 'pending'; ['viewed_at', 'signed_at', 'cert_at', 'cert_file'].forEach(k => delete r[k]); });
   if (wait.length) log(d, `${who().name} sent it to ${wait.map(r => r.email).join(', ')}`, 'send', who().email);
   else { Object.assign(d, { status: 'completed', completed_at: now }); log(d, 'Everyone signed: the document is complete', 'done'); }
+  prep_save(); notify(wait.length ? `${plural(wait.length, 'signer')} can now sign it under To sign.` : 'It is under Completed, ready to download.',
 }
 
 export const PREP_ACT = {
