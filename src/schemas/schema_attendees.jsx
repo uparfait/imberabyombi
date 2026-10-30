@@ -6,3 +6,4 @@ import { field_spec } from './fields.js';
 
 export const attendees_schema = {
   l: 'attendee', n: 0, cols: ['name', 'email', 'tel', 'org', 'position', 'sig_kind', 'at'],
+  f: [
