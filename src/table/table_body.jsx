@@ -40,3 +40,4 @@ export function table_body(c) {
   if (!loaded.has(c)) {
     after_render(() => wait_load(c));
     return { acts: false, count: 0, pager: null,
+      rows: <tr key="wait" className="hover:bg-transparent"><td colSpan={cols.length} className="table_none border-0">{loading(`Loading ${s.l}s`)}</td></tr> };
