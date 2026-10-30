@@ -23,3 +23,5 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 and times; the agenda item running now, large, with its presenter and progress, and the agenda; the time left above a
 large QR code (full screen on a click), the count and the link. **Menu** (tiles): Edit agenda, Record minutes, Add
 task, Attendees, Full screen.
+
+## Minutes and follow-ups
