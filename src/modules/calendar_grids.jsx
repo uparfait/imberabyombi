@@ -21,3 +21,4 @@ export function week_grid(d, items) {
     <span className={`grid h-11 w-11 place-items-center rounded-full text-2xl transition ${k === td ? 'bg-brand text-white' : 'hover:bg-fg/5'}`}>{x.getDate()}</span>
   </button>; };
   const all_day = x => { const its = items.filter(i => i.all_day && i.date === ymd(x));
+    return <div key={ymd(x)} className="min-w-0 border-l border-line p-1">{its.slice(0, 2).map(cal_task)}{more(its.length - 2, 'px-1')}</div>; };
