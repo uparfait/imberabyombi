@@ -3,6 +3,7 @@
    zone on one line in the form (row 'when'), empty to start but for the zone, the device's; the calendar shows them in the
    page's zone. Then where (a place or online), who organises it and how many are expected. Their forms come in sections
    (form_sec): the same sections as their details. An event's status (Scheduled, Postponed, Cancelled, Completed) is
+   changed by the actions on its page, not in its form; the table shows where it stands (events/ev_state.js). */
 import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/index.js';
 import { bar_cell } from '../ui/index.js';
 import { field_spec, option_list, STATUS, mail, tel } from './fields.js';
