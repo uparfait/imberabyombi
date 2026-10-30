@@ -19,3 +19,4 @@ export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def
 
 /* a wall-clock date and time in tz → the instant (ms) */
 export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(Number), [h, mi] = (time || '00:00').split(':').map(Number);
+  return zoned_to_utc(y, mo, d, h, mi, tz || device_tz()); };
