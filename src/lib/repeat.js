@@ -37,3 +37,4 @@ export function repeat_dates(r, first, from, to) {
   const f = parse_d(first), last = r.end === 'on' && r.until && r.until < to ? r.until : to, max = r.end === 'after' ? Math.max(1, +r.count || 1) : Infinity;
   const out = []; let n = 0, d = max < Infinity || from <= first ? f : parse_d(from);   /* counting starts at the first date */
   for (let i = 0; ymd(d) <= last && n < max && i < 40000; d = add_d(d, 1), i++) {
+    if (!repeat_hit(r, d, f)) continue; n++; const k = ymd(d); if (k >= from) out.push(k);
