@@ -67,3 +67,4 @@ const profile = u => <section className="card p-6"><h2 className="text-lg">Your 
 
 const design = () => <section className="card p-6"><h2 className="text-lg">Design system</h2>
   <ds-callout className="mt-5"><h3 slot="title">One token, whole system</h3>
+    Edit <code>--brand</code>, <code>--radius</code> or <code>--space</code> at the top of the stylesheet. Every page and module follows.</ds-callout>
