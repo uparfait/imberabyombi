@@ -34,3 +34,4 @@ const create_menu = create => <div className="relative">
 
 export function sidebar(mod) {
   const create = CREATE.filter(([m]) => auth.can(m, 2)); SIDE.busy = null;
+  /* Top row (same height as the header): logo and web name (trimmed, never wider than the sidebar), close-sidebar button at the end */
