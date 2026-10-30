@@ -8,7 +8,7 @@ import { field, when_row, fill_rows } from '../fields/index.js';
 import { modal } from '../overlays/index.js';
 
 /* fields; those a schema groups with row: 'when' (a date and its times) go on one line, where the first is */
-const fields_of = (fs, row) => fs.map(f => !f.row ? field(f, row[f.k])
+const fields_of = (fs, row) => fs.map(f => !f.row ? field(f, row[f.k], row)
   : fs.find(x => x.row === f.row) === f ? when_row(fs.filter(x => x.row === f.row), row) : null);
 /* the form's fields (not those kept out of forms: form: false), or only keys (one section). A schema with form_sec
    shows its sec groups under small headings ("When", "Location") */
