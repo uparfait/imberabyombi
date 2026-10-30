@@ -8,7 +8,7 @@ const MENUBAR = [['file', 'File'], ['edit', 'Edit'], ['view', 'View'], ['insert'
 export const topbar = () => (
   <header id="topbar" className="no_print show">
     <div className="topbar_in"><div className="topbar_row">
-      <button type="button" className="icon_btn" data-act="back" data-tip="Back" aria-label="Back">{ic('arrow_back')}</button>
+      <button type="button" className="icon_btn" data-act="back" data-tip="Back" aria-label="Back">{ic('chev_l')}</button>
       <span className="doc_logo" aria-hidden="true">{i3('file', 'h-10 w-10', 'info')}</span>
       <div className="topbar_main">
         <input id="doc_title" className="title_input" defaultValue="Untitled document" spellCheck={false} aria-label="Document title" />
