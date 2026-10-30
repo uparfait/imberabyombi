@@ -30,6 +30,7 @@ export function add_field(type, page, cx, cy) {
   qs(`[data-fid="${f.id}"]`)?.classList.add('sf_new');
 }
 
+/* removing a field (its × or the Delete key) asks first */
 export function del_field(id) {
   P.doc.fields = P.doc.fields.filter(f => f.id !== id); if (P.sel === id) P.sel = null;
   prep_dirty(); rerender();
