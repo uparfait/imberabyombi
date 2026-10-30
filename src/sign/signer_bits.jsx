@@ -10,3 +10,4 @@ import { when } from './sign_store.js';
 export const CERT_HELP = 'The signer must verify their identity with a digital certificate (the certificate file and its password) before they '
   + 'can sign or stamp.';
 const OPEN = new Set();
+export const NOTE_ACT = { sign_note_t: t => { const k = t.dataset.id; OPEN.has(k) ? OPEN.delete(k) : OPEN.add(k); rerender(); } };
