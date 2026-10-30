@@ -37,3 +37,4 @@ VIEWS.attendance = () => {
         <output id="live_clock" className="bg-transparent p-0 font-display text-4xl font-bold text-fg">{fmt_stamp(Date.now(), { timeStyle: 'medium' })}</output>
         <p className="mt-1 text-sm text-muted">
           {mine ? `You checked in at ${mine.in}${mine.out ? ` and out at ${mine.out}` : ''}.` : 'You have not checked in today.'}</p></div>
+      <div>{!mine ? <button className="btn btn_primary" data-act="clock" data-v="in">{ic('check', 'h-4 w-4')}Check in</button>
