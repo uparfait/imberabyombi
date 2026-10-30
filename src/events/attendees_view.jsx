@@ -16,3 +16,4 @@ function view(c, id) {
 }
 
 export const ATTENDEES_ACT = {
+  ev_att_list: t => { const { c, id } = t.dataset, d = qs('#viewer');
