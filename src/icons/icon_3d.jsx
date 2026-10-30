@@ -11,3 +11,4 @@ import { icon_path } from './icon.jsx';
 import { render, device_px } from '../icon3d/index.js';
 
 export const HUES = { orange: '#E0661B', amber: '#E5A01A', green: '#17A34A', teal: '#0E9AA7', sky: '#0EA5E9', blue: '#2F6FDB',
+  indigo: '#4F46E5', violet: '#7C5CFF', pink: '#E0457B', red: '#DC3545', slate: '#5B6475' };
