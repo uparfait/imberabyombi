@@ -3,3 +3,4 @@
    apart), its presenter and, while it runs, the time it has left; the event's title on top, its time left bottom right. Back and
    Next (the arrow keys, the dots) step through the items; on its own it slides to the item running now (else the next):
    the page redraws every 30 seconds and when a countdown ends, and a picked item holds until the running one changes or
+   two minutes pass. The text starts at the left, the block in the middle. The background is a soft tint from the
