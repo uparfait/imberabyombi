@@ -6,3 +6,5 @@ import { ic } from '../icons/index.js';
 import { cfg } from '../config/index.js';
 import { secure } from './qr_engine.js';
 import { can_install, install, apple, standalone } from './qr_install.js';
+
+function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
