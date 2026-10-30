@@ -19,3 +19,4 @@ let page_n = 0, seen = -1;
 const page_key = () => { const v = get_version(); if (v !== seen) { seen = v; if (!render_flags.keep || render_flags.anim) page_n++; } return 'page' + page_n; };
 
 export function admin_shell(mod, content) {
+  const m = MODS.find(x => x.k === mod);
