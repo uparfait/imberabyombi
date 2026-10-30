@@ -39,3 +39,4 @@ Every module, sidebar link, widget, Create entry and button checks `auth.can(mod
 open shows "No access"; an unknown one shows "Page not found". See [roles and access](roles_and_access.md).
 
 ## Adding one
+See [how to add a module](how_to_add_a_module.md).
