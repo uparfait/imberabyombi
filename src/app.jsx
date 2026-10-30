@@ -19,3 +19,4 @@ const mark_page = () => {
 const boot_loader = <div className="boot_loader" role="status" aria-label="Loading">{spinner()}</div>;
 
 export default function App() {
+  const version = useSyncExternalStore(subscribe, get_version);
