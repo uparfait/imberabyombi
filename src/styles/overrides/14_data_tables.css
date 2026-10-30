@@ -29,3 +29,4 @@
   .table_filter:where([type=search]) { padding-left: 2.25rem; padding-right: 2.25rem; }
   .pick { position: relative; }
   /* Search fields: .search_btn = search button (left, runs the search), .clear_btn = clear button (right, hidden while empty) */
+  .search_btn, .clear_btn { position: absolute; top: 50%; translate: 0 -50%; z-index: 1; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: var(--pill);
