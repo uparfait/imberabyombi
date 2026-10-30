@@ -6,3 +6,4 @@ import { hash_str } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { db } from '../store/index.js';
 import { field_spec } from '../schemas/fields.js';
+import { field } from '../fields/index.js';
