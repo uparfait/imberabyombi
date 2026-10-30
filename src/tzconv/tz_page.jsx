@@ -44,3 +44,4 @@ export function Tz_page() {
       <section className="card p-5" aria-label="From">
         <div className="tzc_head"><h3 className="tzc_cap">From</h3>{seg('tz_ff', st.ff, FMT, v => put({ ff: v }), 'Time format')}</div>
         {zone_field('tz_from', st.from, v => put({ from: v }), t)}
+        <div className="mt-3 grid gap-3">
