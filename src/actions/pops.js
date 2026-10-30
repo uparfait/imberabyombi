@@ -16,4 +16,5 @@ export function place_tile(p) {
   const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
   /* inside a zoomed page (O-Doc Sign scaled to fit) the menu is placed in that page's own pixels: screen pixels ÷ zoom */
   const z = p.currentCSSZoom || 1, r = b.getBoundingClientRect(), w = innerWidth / z, h = innerHeight / z, below = h - r.bottom / z - 20, above = r.top / z - 20;
+  const cap = p.classList.contains('tile_pop') ? 480 : h, up = p.offsetHeight > below && above > below, room = Math.max(160, Math.min(cap, up ? above : below));
 }
