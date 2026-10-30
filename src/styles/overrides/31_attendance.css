@@ -8,3 +8,4 @@
   .att_form { display: grid; gap: 1rem; margin-top: 1.5rem; }
   .att_digital { display: flex; align-items: center; gap: .625rem; padding: 1rem; border-radius: var(--radius); background: rgb(var(--ok) / .1); color: rgb(var(--ok)); font-size: .875rem; }
   .att_form .sign_paper { position: relative; overflow: hidden; border: 2px dashed rgb(var(--muted) / .45); border-radius: 1.25rem; background: #fff; }
+  .att_form .sign_canvas { display: block; width: 100%; height: 11rem; cursor: crosshair; touch-action: none; }
