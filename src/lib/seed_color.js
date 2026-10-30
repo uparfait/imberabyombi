@@ -17,3 +17,5 @@ function hash(s) {
 }
 /* a hue in the allowed span */
 const hue_of = n => HUES[0] + n % (HUES[1] - HUES[0]);
+
+const lin = v => v <= .04045 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4;
