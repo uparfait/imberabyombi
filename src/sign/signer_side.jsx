@@ -18,3 +18,5 @@ export const request_card = (d, r) => <section className="card p-5">
     <span className="text-muted"> ({r.email})</span></span></p>
   {r.cert ? <p className="mt-2 flex items-center gap-2 text-sm">{ic('shield', 'h-4 w-4 shrink-0 text-muted')}
     <span>{r.cert_at ? `Signed with your digital certificate (${r.cert_file})` : 'You sign with your digital certificate and its password'}</span></p> : null}</section>;
+
+export const note_card = (d, r) => r.note ? <section className="card sign_note_card p-5"><h2 className="sign_cap">Note from {d.owner_name}</h2>
