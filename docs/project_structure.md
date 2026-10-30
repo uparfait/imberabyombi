@@ -14,3 +14,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 ## Folders in `src/` (each has an `index.js` that re-exports its files)
 | Folder       | Holds                                                                                       |
 |--------------|---------------------------------------------------------------------------------------------|
+| `config/`    | `cfg`: brand name and logo parts, storage prefix, currency, latency, page size, business rules, media URLs |
