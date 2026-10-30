@@ -27,3 +27,5 @@ export const cal_task = i => <button key={i.id} className={`cal_task ${i.status 
 
 const day_cls = (k, td, m, x) => k === td ? 'bg-brand font-semibold text-white' : k === ui.cal_date ? 'bg-brand/15 text-accent'
   : x.getMonth() !== m ? 'text-muted/60 hover:bg-fg/5' : 'text-fg hover:bg-fg/5';
+
+export function mini_cal() {
