@@ -20,6 +20,7 @@ const live_now = f => { const tz = f.elements.tz?.value || device_tz(), p = tz_p
 export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def: () => 'Upcoming', fill: kind_of, help: KIND_HELP,
   on: e => { if (e.target.value === 'Live') live_now(e.target.form); } });
 /* a record saved before it had a type or a place (fill: what its form shows when it is edited): its type from its
+   timing (a repeat rule: Recurring; running now: Live now; otherwise Upcoming), its place from its link */
 
 /* where: in a place (a venue or address) or online (a meeting link and notes on joining, such as a passcode); all optional */
 const PLACE_HELP = 'Physical: it happens in a place; add the venue or address. Virtual: it happens online; add the meeting link '
