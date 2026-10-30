@@ -20,3 +20,4 @@ export const ADMIN_ACT = {
     const v = qs('#mail_view'); if (v?.firstElementChild) slide_in([v.firstElementChild], 0); },
   /* Nested navigation: a tile (in a menu or on a page) opens that level's page; no menu opens by itself */
   nav_open: t => { const lvl = +t.dataset.level; ui.nav = [...ui.nav.slice(0, lvl - 1), +t.dataset.i]; nav_draw();
+    const b = qs('#nav_demo .nav_page_body'); if (b && !reduced()) b.animate([{ opacity: 0, transform: 'translateY(.5rem)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: EASE }); },
