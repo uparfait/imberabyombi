@@ -44,7 +44,7 @@ const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz()
 
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <span key={f.k} className={`pick when_block when_${f.t}`}><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
-    onInput={e => { say(e.target.parentNode, in_words(f.t, e.target.value)); if (f.t === 'date') tz_say(e.target.closest('.when_row')); }} />
+    onInput={e => { say(e.target.parentNode, in_words(f.t, e.target.value)); if (f.t === 'date') { tz_say(e.target.closest('.when_row')); repeat_say(e.target.form); } }} />
     {inside(f, id, in_words(f.t, shown))}</span>; };
 
 /* fs: the row's fields in order; a dash goes between two times (start – end) */
