@@ -29,3 +29,4 @@ export async function certificate(pdf, d, L) {
   d.recipients.forEach((r, i) => { room(60); text(`${i + 1}. ${r.name} <${r.email}>`, { size: 11, bold: true });
     text(`Opened: ${when(r.viewed_at) || '-'}     Signed: ${when(r.signed_at)}`, { x: 14, color: soft });
     const n = d.fields.filter(f => f.rid === r.id).length; text(`${n} mark${n === 1 ? '' : 's'} on the document`, { x: 14, color: soft });
+    if (r.cert_at) text(`Digital certificate: ${r.cert_file}, checked ${when(r.cert_at)} (simulated check)`, { x: 14, color: soft });
