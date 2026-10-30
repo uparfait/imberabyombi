@@ -39,3 +39,4 @@ export function Qr_app() {
         <i className="qr_corners" aria-hidden="true"></i>{scanning ? <i className="qr_line" aria-hidden="true"></i> : null}
         {scanning ? null : <div className="qr_idle">
           {st.phase === 'error' ? <p className="qr_err">{st.msg}</p>
+            : <span className={`qr_idle_ic ${st.phase === 'found' ? 'ok' : ''}`}>{ic(st.phase === 'found' ? 'check' : 'qr', 'h-10 w-10')}</span>}
