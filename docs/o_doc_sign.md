@@ -50,6 +50,7 @@ every account starts empty.
   move it, its corner to resize it (a stamp stays square); arrow keys nudge the selected field; its × or Delete removes
   it, after asking.
 - Changes save a moment after each one (and on Save, and when you leave). **Save draft** saves it as it is: a signer
+  still typed in the form is added first (a half-filled form stops the save and says so), and the signer whose fields you
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
 
 ## Signing
