@@ -42,3 +42,4 @@ src/app.jsx      root: current page + dialogs                src/router/    path
 src/config/      brand, media, business rules                src/actions/   every data-act and data-form handler
 src/cartoons/    cartoon pictures drawn from a seed          public/media/  sample video, poster, share image, logo
 src/icon3d/      the 3D icon engine (six styles)             src/iconisus/  the 3D icon maker (/admin/icons)
+src/lib/         small helpers, dates, lorem ipsum           src/behaviors/ delegated events, tooltips, gestures
