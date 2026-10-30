@@ -37,7 +37,7 @@ export const PREP_ACT = {
   /* Force digital signature, on or off, from the signer's card */
   sign_rec_cert: t => { const r = rec_of(P.doc, t.dataset.id); r.cert = !r.cert; prep_dirty(); rerender(); },
   /* a signer's name, email and note; a new email brings its own colour */
-  sign_rec_edit: t => { const r = rec_of(P.doc, t.dataset.id);
+  sign_rec_edit: t => { const r = rec_of(P.doc, t.dataset.id); if (signed(r)) return;
     modal({ title: 'Edit signer', help: 'They find the document under To sign with this email, and read the note before they sign.',
       body: rec_body(r), submit: 'Save', on_submit: v => {
         const email = String(v.email).trim().toLowerCase();
