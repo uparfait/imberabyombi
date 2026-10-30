@@ -6,6 +6,7 @@
   .live_title { font-family: var(--font_display); font-size: clamp(1.75rem, 3vw, 2.75rem); font-weight: 500; line-height: 1.1; overflow-wrap: anywhere; }
   .live_about { display: -webkit-box; overflow: hidden; color: rgb(var(--muted)); -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
   .live_when_all { font-size: 1rem; font-weight: 500; }
+  .live_left { display: grid; gap: .125rem; color: rgb(var(--muted)); font-size: 1rem; } .live_left b { color: rgb(var(--fg)); font-size: clamp(1.75rem, 2.6vw, 2.5rem); font-weight: 600; font-variant-numeric: tabular-nums; }
   .live_acts { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-left: auto; }
   .live_body { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; min-height: 0; }
   .live_main { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 1.25rem; min-height: 0; }
