@@ -17,3 +17,4 @@ VIEWS.staff = () => <>
   <section className="card mb-6 flex flex-wrap items-center gap-4 p-5">{i3('shield', 'h-12 w-12', 'violet')}<div className="min-w-[12rem] flex-1">
     <h2 className="text-base">Role-based access</h2>
     <p className="text-sm text-muted">{'Each person signs in with a role. The role decides which modules they can view or manage. '
+      + 'Copy a personal access link from any row.'}</p></div>
