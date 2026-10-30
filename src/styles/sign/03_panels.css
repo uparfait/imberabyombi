@@ -23,3 +23,4 @@
 /* the signer whose fields are being placed stands out: zoomed in a little, a border in their colour (thicker at the bottom),
    a deeper tint and a "Placing fields" chip */
 .sign_rec, .sign_for { transition: transform .3s var(--ease), border-color .2s, background-color .2s; }
+.sign_rec.on { padding: calc(.625rem - 1px) calc(.625rem - 1px) calc(.375rem - 4px); border: 2px solid var(--c); border-bottom-width: 5px;
