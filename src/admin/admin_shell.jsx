@@ -12,3 +12,4 @@ import { Live_slot, sync_ref } from './live_slot.jsx';
 const panel_now = () => ui.panel ? panel_html(ui.panel) : null;
 const desk_min = () => ui.side_min && innerWidth >= 1024;
 const side_sync = el => { el.dataset.open = ui.side; el.dataset.min = ui.side_min; el.inert = desk_min(); };
+const scrim_sync = el => { el.classList.toggle('on', ui.side); };
