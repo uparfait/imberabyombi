@@ -13,7 +13,7 @@ const bar = d => { const n = own_fields(d).length, k = n - left_of(d).length;
 
 export const request_card = (d, r) => <section className="card p-5">
   <div className="flex items-center gap-3">{i3('file', 'h-11 w-11', 'info')}<div className="min-w-0">
-    <p className="truncate font-display text-lg leading-tight">{d.title}</p><p className="truncate text-xs text-muted">Signing request from {d.owner_name}</p></div></div>
+    <p className="truncate font-display text-lg leading-tight">{d.title}</p><p className="truncate text-xs text-muted">{d.owner === r.email ? 'Your document' : `Signing request from ${d.owner_name}`}</p></div></div>
   <p className="mt-3 flex items-center gap-2 text-sm">{ic('user', 'h-4 w-4 shrink-0 text-muted')}<span className="min-w-0 truncate">Signing as <b className="font-medium">{r.name}</b>
     <span className="text-muted"> ({r.email})</span></span></p>
   {r.status === 'signed' ? <p className="mt-2 flex items-center gap-2 text-sm font-medium text-ok">{ic('check', 'h-4 w-4 shrink-0')}Signed on {when(r.signed_at)}</p>
