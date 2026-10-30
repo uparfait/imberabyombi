@@ -16,6 +16,7 @@ export function authenticator_page() {
         <li><p className="font-medium">Scan with the app</p>
           <div className="mt-3 flex justify-center" dangerouslySetInnerHTML={{ __html: qr_svg(key) }}></div></li>
         <li><p className="font-medium">Or enter this key</p><div className="mt-3">{copy_box(key, 'Key')}</div></li>
+        <li><p className="font-medium">Enter its 6-digit code</p><div className="mt-3">{otp_boxes('Code from the app')}</div></li>
       </ol>
       <button className="btn btn_primary w-full">Turn on</button></form>{auth_links('authenticator')}
   </>);
