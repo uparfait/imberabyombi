@@ -28,3 +28,4 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 
 ## Links
 Write normal anchors and build the address with `to()`, so it carries the base path:
+```jsx
