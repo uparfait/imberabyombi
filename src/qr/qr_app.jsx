@@ -25,6 +25,7 @@ export function Qr_app() {
   useEffect(() => { let perm;   /* the camera's permission, where the browser tells it */
     navigator.permissions?.query({ name: 'camera' }).then(p => { perm = p; p.onchange = () => p.state === 'granted' && go();
       p.state === 'granted' ? go() : set(p.state === 'denied' ? { phase: 'error', msg: WHY.NotAllowedError } : { phase: 'ask' }); }, () => set({ phase: 'ask' }))
+      ?? set({ phase: 'ask' });
 
   return <div className="qr_app">{top_bar()}
     <main className="qr_main">
