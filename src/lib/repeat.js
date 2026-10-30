@@ -13,3 +13,4 @@ const month_days = d => new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate()
 const nth = d => Math.ceil(d.getDate() / 7);   /* the first … fifth of its weekday in the month */
 const or = (xs, x) => xs?.length ? xs : [x];
 /* the weeks and weekdays a first date stands for: the 2nd Friday; a 5th one is the last */
+export const week_of = f => ({ weeks: [nth(f) > 4 ? -1 : nth(f)], wdays: [f.getDay()] });
