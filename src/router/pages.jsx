@@ -41,3 +41,4 @@ export function admin_page(r) {
 }
 
 /* Account pages share one shell (auth_shell); each route = [tab title, page] */
+export const AUTH_ROUTES = {
