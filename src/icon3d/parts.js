@@ -62,3 +62,5 @@ export function vol(id, o, k = 1) {
 export function extrude(id, x, y, s, color, [dx, dy], k, extra = '') {
   const len = Math.hypot(dx, dy), m = Math.max(1, PX.depth / (k * len)), n = Math.max(3, Math.ceil(len * m * k / PX.step));
   let r = ''; for (let j = n; j >= 1; j--) { const t = m * j / n; r += use(id, num(x + dx * t), num(y + dy * t), s, color, extra); }
+  return r;
+}
