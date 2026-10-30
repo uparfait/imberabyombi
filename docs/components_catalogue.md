@@ -30,3 +30,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.pop.pop_fixed`                         | a menu drawn at the top of the page (portal), placed under its button, above everything (the account menu) |
 | `.choice_pill`                          | pill radio option (filter-chip style)                            |
 | `.search_btn` / `.clear_btn`            | search button (left) / clear button (right) of a search field    |
+| `.multi_value`                          | the visible box of a searchable multiple select                  |
