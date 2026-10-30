@@ -31,3 +31,4 @@ function nav_markup(routed) {
     return <Fragment key={l}>{l ? ic('chevR', 'h-4 w-4 shrink-0 text-muted') : null}{tile_menu({ id: `pop_nav_${l + 1}`, title: sys.t,
       icon: (act || sys).i, label: (act || sys).t, set: true, tiles: items.map((it, i) => ({ icon: it.i, label: it.t, on: cur === i, ...to(l, i) })) })}</Fragment>; };
   const title = node ? node.t : ROOT; if (routed) route.title = title;
+  lorem.seed(hash_str(title));
