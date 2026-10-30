@@ -13,3 +13,5 @@ component needs its own click handler for app actions, and buttons inside dialog
   `2` = a get (open details, change page, sort, switch tab…). Others run at once.
 - Handlers read their data from the element (`t.dataset.id`, `t.closest('[data-task]')`), change data or `ui`, and call
   `rerender()`.
+
+```js
