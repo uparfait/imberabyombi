@@ -22,3 +22,4 @@ export function repeat_from(f) {
   if (r.freq === 'monthly' || r.freq === 'yearly') Object.assign(r, v('rp_by') === 'week' ? { by: 'week', weeks: all('rp_weeks'), wdays: all('rp_wdays') } : { by: 'date', dates: all('rp_dates') });
   if (r.end === 'on') r.until = v('rp_until');
   if (r.end === 'after') r.count = Math.min(999, Math.max(1, +v('rp_count') || 1));
+  return r;
