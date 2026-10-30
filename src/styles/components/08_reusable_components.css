@@ -17,3 +17,4 @@
   .btn_warn { @apply bg-warn/10 text-warn hover:bg-warn hover:text-white; }   /* a caution that is not a loss (archive) */
   .btn_glass { @apply border border-fg/20 bg-fg/5 text-fg backdrop-blur hover:bg-fg/10; }   /* on the hero, in either theme */
   .btn_sm { @apply min-h-9 px-4 py-1.5 text-[.8125rem]; }
+  .icon_btn { @apply inline-grid h-10 w-10 shrink-0 place-items-center rounded-full text-muted transition hover:bg-fg/5 hover:text-fg; }
