@@ -4,6 +4,7 @@
    over a small label ("Starts") and its value in words ("Pick a date" while empty), with an arrow that turns up while its
    list is open. A form's row starts empty but for the time zone (the device's; schema_events). A title above
    says what the row is ("Date, time and time zone"). It always stays on one line and the date and times always show in
+   full: the words get smaller with the row, where it is narrow they get shorter ("Fri, Oct 30", "GMT+2"), then the arrows
 import { Fragment } from 'react';
 import { pad, h24, zone_list, zone_short, page_tz } from '../lib/index.js';
 import { dt_attrs, dt_show, to24 } from './date_formats.js';
