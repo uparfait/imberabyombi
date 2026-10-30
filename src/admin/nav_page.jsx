@@ -34,3 +34,4 @@ export function nav_page(o) {
   const nums = [['Open items', String(4 + Math.floor(lorem.r() * 30)), 'tasks'], ['Last updated', fmt_d(ymd(add_d(new Date(), -Math.floor(lorem.r() * 9)))), 'calendar'],
     ['Owner', lorem.name(), 'user']];
   const about = [lorem.p(3), lorem.p(2)], recent = Array.from({ length: 5 }, (_, i) => activity(i));
+  return <>{top}<section className="mt-6 grid gap-3 sm:grid-cols-3 sm:gap-4" aria-label="Key numbers">{nums.map(number)}</section>
