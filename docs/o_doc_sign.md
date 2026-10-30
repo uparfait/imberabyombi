@@ -47,8 +47,7 @@ every account starts empty.
   at least 40° apart; only greens, teals, blues, violets and magentas are used (reds, oranges and yellows would read as
   alerts); white initials on every colour pass 4.5:1.
 - **Fields**: Signature and Stamp. Click a tool to add one on the page on screen, or drag it onto a page. Drag a field to
-  move it, its corner to resize it (a stamp stays square); arrow keys nudge the selected field, Delete removes it.
-- Changes save a moment after each one (and on Save, and when you leave). **Send** checks that there is a signer, a field,
+  move it, its corner to resize it (a stamp stays square); arrow keys nudge the selected field; its × or Delete removes
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
 
 ## Signing
