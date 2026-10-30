@@ -35,8 +35,7 @@ const first_help = root => [...root.querySelectorAll('.help_tip')]
 const seen_now = x => { const r = x.getBoundingClientRect(), hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
   return !!hit && x.contains(hit); };
 function intro(x) {
-  const s = tip.text(x); SEEN.add(s);
-  const r = x.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
+  SEEN.add(tip.text(x)); if (!seen_now(x)) return;
   x.classList.add('intro');
   setTimeout(() => {
     x.classList.remove('intro');
