@@ -37,3 +37,4 @@
   .clear_btn:hover, .clear_btn:focus-visible { color: rgb(var(--fg)); background: rgb(var(--fg) / .08); }
   .table_filter ~ :is(.search_btn, .clear_btn) { width: 1.75rem; height: 1.75rem; }
   .table_filter ~ .search_btn { left: .2rem; }
+  .table_filter ~ .clear_btn { right: .2rem; }
