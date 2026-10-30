@@ -13,3 +13,5 @@ export const qr_full = (e, url, n) => <div id={`qr_full_${e.id}`} className="qr_
   <div className="qr_full_info"><p className="att_kind">Scan to sign in</p><h2 className="qr_full_title">{e.title}</h2>
     <p className="qr_full_count"><b>{n}</b> attended</p>{copy_box(url, 'Link')}</div>
   <button type="button" className="icon_btn qr_full_x" data-act="qr_close" aria-label="Close" data-tip="Close (Esc)">{ic('x')}</button></div>;
+
+export const QR_ACT = {
