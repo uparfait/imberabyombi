@@ -11,7 +11,7 @@ export function glossy(G, C, i, k) {
     `<g filter="url(#${i}e)">${ext}</g><g filter="url(#${i}v)">${pl(G, 35, 26, 130, `url(#${i}a)`)}</g>`];
 }
 
-export function clay(G, C, i) {
+export function clay(G, C, i, k) {
   const dk = C.hs ? C.s : shade(C.p, -8), tile = y => `x="30" y="${y}" width="140" height="140" rx="44"`;
   return [lin(i + 'a', [[0, shade(C.p, 12, -4)], [.6, C.p], [1, dk]]) + lin(i + 'r', [[0, '#fff', .6], [.3, '#fff', 0]])
     + vol(i + 'v', { bevel: 9, surf: 4, spec: .4, exp: 10, shade: .7 }) + vol(i + 'w', { goo: 2.5, bevel: 3.5, surf: 4, spec: .9, exp: 20, shade: .45 })
