@@ -13,3 +13,4 @@ import { place_tile } from '../actions/index.js';
 export const glide = { y: 0, last: 0, raf: 0,
   by(d) { const max = document.documentElement.scrollHeight - innerHeight;
     if (!this.raf) this.y = this.last = scrollY;
+    this.y = Math.max(0, Math.min(max, this.y + d)); if (!this.raf) this.raf = requestAnimationFrame(this.step); },
