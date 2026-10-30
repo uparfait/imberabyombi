@@ -43,7 +43,6 @@ export function sign_list(k) {
     : <div className="card">{k === 'all' ? empty('No documents yet', 'Upload a PDF, add the people who sign it and place their fields.', new_btn())
       : empty(`No ${l.toLowerCase()} documents`, help)}</div>;
   return <div className="sign_main page_enter">
-    <section className="sign_head"><div className="min-w-0"><p className="text-sm text-muted">O-Doc Sign</p>
-      <h1 className="mt-1 text-3xl sm:text-4xl">{l}</h1><p className="mt-2 text-muted">{help}</p></div>{new_btn('shrink-0')}</section>
+    <section className="sign_head"><div className="sign_page_title"><h1>{l}</h1>{help_tip(help, l)}</div>{new_btn('shrink-0')}</section>
     {body}</div>;
 }
