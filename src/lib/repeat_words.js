@@ -6,3 +6,4 @@ import { week_of } from './repeat.js';
 export const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 export const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 export const WEEK_NAMES = { 1: 'first', 2: 'second', 3: 'third', 4: 'fourth', [-1]: 'last' };
+/* "a", "a and b", "a, b and c" */
