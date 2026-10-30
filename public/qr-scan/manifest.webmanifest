@@ -10,3 +10,4 @@
   "background_color": "#1F1F1F",
   "theme_color": "#E0661B",
   "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
