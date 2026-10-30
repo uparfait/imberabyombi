@@ -8,3 +8,4 @@ import { ic, i3 } from '../icons/index.js';
 import { badge, tabs, stat_row } from '../ui/index.js';
 import { DEPTS } from '../schemas/index.js';
 import { crud } from '../table/index.js';
+import { to } from '../router/index.js';
