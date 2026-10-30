@@ -56,3 +56,4 @@ export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...
         {weekdays('rp_wdays', r.wdays)}</div></>, 'rp_freq=monthly|yearly', BY_HELP)}
     {line('Ends', <>{choose('rp_end', [['never', 'Never'], ['on', 'On a date'], ['after', 'After']], r.end, 'Ends')}
       <div className="field rp_until" data-when="rp_end=on"><label htmlFor={id + '_until'}>End date</label>
+        <input id={id + '_until'} name="rp_until" {...dt_attrs('date')} defaultValue={r.until} /><span className="date_hint" aria-hidden="true"></span></div>
