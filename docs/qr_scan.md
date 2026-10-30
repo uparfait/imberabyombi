@@ -9,6 +9,7 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
 - As it opens: allowed already, the camera starts at once; not asked yet, a sheet says why it needs the camera ("Nothing
   is recorded or sent") and **Allow camera** brings the browser's own prompt; blocked, it says how to allow it, with
   **Try again** (it starts by itself once the camera is allowed in the browser's settings).
+- Over the camera: the site's mark at the top left (in the browser, back to the site; the name beside it, not on a
 
 ## Installing it
 Only Qr-scan installs, never the site's other pages: it has its own manifest (`manifest.webmanifest`, scope
