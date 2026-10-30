@@ -25,8 +25,7 @@ export function export_dialog(c, fmt) {
     + `${sels.length ? ' and the filters (All keeps every value)' : ''}. Tick the columns to include and change what each is shown as in the file.`;
   modal({ title: `Export as ${name}`, help,
     body: <>
-      {dk ? <>{field(field_spec('from', 'From', 'datetime-local'), '')}{field(field_spec('to', 'To', 'datetime-local'), '')}</>
-        : <p className="text-sm text-muted sm:col-span-2">This table has no dates to pick a range from.</p>}
+      {dk ? <>{field(field_spec('from', 'From', 'datetime-local'), '')}{field(field_spec('to', 'To', 'datetime-local'), '')}</> : null}
       {sels.length ? filters(c, sels) : null}
       <Export_cols c={c} />
     </>,
