@@ -15,3 +15,4 @@ charts and KPIs, all sharing one set of design tokens. Start any new website fro
 ```bash
 npm install
 npm run dev        # open the address it prints, e.g. http://localhost:5173
+npm run build      # production site in dist/
