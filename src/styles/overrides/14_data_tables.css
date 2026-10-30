@@ -45,3 +45,4 @@
   .pager:empty { display: none; }
   /* Full-details view (row click): a COLUMN NAME | VALUE table, grouped by category when the schema has them.
      Values wrap here, because this is where the full text is read. */
+  .kv { font-size: .875rem; }
