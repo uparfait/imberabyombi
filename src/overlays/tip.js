@@ -9,7 +9,7 @@ export const TIPS = '[data-tip], .icon_btn[aria-label], .truncate, .trunc, [clas
 const in_fs = x => { const fs = document.fullscreenElement; return fs && fs !== document.documentElement && fs.contains(x) ? fs : null; };
 export const tip = {
   el: document.getElementById('tip'), on: null, t: 0, t2: 0,
-  text(x) { return x.matches('.truncate, .trunc') ? (x.scrollWidth > x.clientWidth + 1 ? x.textContent.trim() : '') : x.dataset.tip || x.getAttribute('aria-label') || ''; },
+  text(x) { const cut = x.matches('.truncate, .trunc') ? x.scrollWidth > x.clientWidth + 1 : x.matches('[class*=line-clamp-]') ? x.scrollHeight > x.clientHeight + 1 : null;
   find(n) { for (let x = n?.closest?.(TIPS); x; x = x.parentElement?.closest(TIPS)) if (this.text(x)) return x; return null; },
   /* intro: shown at once, fading and rising in slowly (help_intro below) */
   show(x, intro = false) {
