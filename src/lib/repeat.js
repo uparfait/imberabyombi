@@ -34,3 +34,4 @@ export function repeat_hit(r, d, f) {
 /* the days ('YYYY-MM-DD') rule r with first date first falls on from 'from' to 'to' (both included), until it ends */
 export function repeat_dates(r, first, from, to) {
   if (!r || !/^\d{4}-\d{2}-\d{2}$/.test(first || '')) return [];
+  const f = parse_d(first), last = r.end === 'on' && r.until && r.until < to ? r.until : to, max = r.end === 'after' ? Math.max(1, +r.count || 1) : Infinity;
