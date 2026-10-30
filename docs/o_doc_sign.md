@@ -58,3 +58,4 @@ every account starts empty.
 - **Digital certificate** (when the sender asked for it): Finish also asks for the certificate file and its password, and
   **Verify and sign** checks them before signing. The check is **simulated** in this template: any file and any password
   are accepted after a short wait; the file name and time are recorded, shown as "Certificate verified" and printed on the
+  signing certificate as a simulated check (`cert_pick.jsx`). A real check belongs on a server.
