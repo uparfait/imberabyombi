@@ -16,3 +16,5 @@ const placing = d => d.recipients.length
       style={{ '--c': r.color }} data-act="sign_rid" data-id={r.id}><span className="sign_dot sm" style={{ background: r.color }}></span>
       <span className="truncate">{r.name}</span></button>)}</div>
   : <p className="sign_hint">Add a signer first (on the left).</p>;
+
+const placed = d => { const n = d.fields.length;
