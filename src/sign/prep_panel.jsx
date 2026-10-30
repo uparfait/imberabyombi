@@ -58,7 +58,7 @@ export const prep_panel = d => <div className="sign_panel">
         <input id="sign_r_email" name="email" type="email" required maxLength={120} placeholder=" " autoComplete="off" /></div>
       <div className="field"><label htmlFor="sign_r_note">Note for this signer (optional)</label>
         <textarea id="sign_r_note" name="note" rows={2} maxLength={500} placeholder=" " /></div>
-      <label className="sign_check"><input type="checkbox" name="cert" />Must sign with a digital certificate</label>
+      <div className="sign_check_row"><label className="sign_check"><input type="checkbox" name="cert" />Force digital signature</label>
       <div className="flex gap-2">{d.recipients.length ? <button type="button" className="btn btn_ghost btn_sm flex-1" onClick={() => open_form(false)}>Cancel</button> : null}
         <button className="btn btn_primary btn_sm flex-1">{ic('check', 'h-4 w-4')}Save signer</button></div></form>}</section>
 </div>;
