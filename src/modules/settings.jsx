@@ -21,3 +21,4 @@ function appearance(tk, th) {
   const brand = tk.brand || rgb2hex(css_var('--brand')), radius = tk.radius ?? parseFloat(css_var('--radius')), space = tk.space ?? parseFloat(css_var('--space'));
   return <section className="card p-6"><h2 className="text-lg">Appearance</h2>
     <p className="mt-1 text-sm text-muted">Changes apply instantly and are saved in this browser.</p>
+    <fieldset className="mt-5 border-0 p-0"><legend className="mb-2 px-0 text-sm">Theme</legend><div className="seg">{['light', 'dark', 'system'].map(v => <label key={v}>
