@@ -14,7 +14,7 @@ const edit_field = (d, f, sel, marks) => { const r = rec_of(d, f.rid), [l, i] = 
   if (f.done && marks?.[f.id]) return <div key={f.id} className="sf sf_final" data-fid={f.id} style={look(f, r)}><img src={marks[f.id]} alt={`${l} by ${shown(r)}`} /></div>;
   return <div key={f.id} className={`sf sf_edit ${sel === f.id ? 'sel' : ''}`} data-fid={f.id} style={look(f, r)} tabIndex={0}
     aria-label={`${l} field for ${r?.name || 'nobody'}`}>
-    <span className="sf_tag">{r?.name || 'Unassigned'}</span>{ic(i, 'sf_ic')}<span className="sf_l">{l}</span>
+    <span className="sf_tag">{shown(r) || 'Unassigned'}</span>{ic(i, 'sf_ic')}<span className="sf_l">{l}</span>
     <button type="button" className="sf_x" data-act="sign_field_del" data-id={f.id} aria-label={`Remove this ${l.toLowerCase()} field`}>{ic('x')}</button>
     <i className="sf_rs" aria-hidden="true"></i></div>; };
 
