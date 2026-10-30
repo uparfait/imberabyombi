@@ -13,3 +13,4 @@ export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 function on_screen() {
   const mid = innerHeight / 2; let best = { page: 0, y: .3 }, gap = Infinity;
   for (const s of qsa('.sign_sheet')) {
+    const b = s.getBoundingClientRect(), d = b.top > mid ? b.top - mid : b.bottom < mid ? mid - b.bottom : 0;
