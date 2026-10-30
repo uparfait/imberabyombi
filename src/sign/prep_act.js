@@ -48,3 +48,4 @@ export const PREP_ACT = {
     const stop = (title, help, submit, then = () => {}) => modal({ title, help, submit, on_submit: then });
     if (!R.length) return stop('No signers yet', 'Add the people who sign this document, then send it.', 'Add a signer', () => { P.adding = true; rerender(); });
     if (!d.fields.length) return stop('No fields yet', 'Place at least one signature or stamp field on the document, then send it.', 'Place a field');
+    if (alone) { P.rid = alone.id; rerender();
