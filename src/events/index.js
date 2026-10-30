@@ -13,3 +13,4 @@ export * from './qr.jsx';
 export * from './attend_form.jsx';
 export * from './attend_page.jsx';
 export * from './attend_side.jsx';
+export * from './attendance_page.jsx';
