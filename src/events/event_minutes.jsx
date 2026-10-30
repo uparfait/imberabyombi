@@ -33,3 +33,4 @@ export const MINUTES_ACT = {
 };
 
 const card = (title, btn, list) => <section className="card ev_card"><header className="ev_card_head"><h3>{title}</h3>{btn}</header>
+  {list.length ? <ul className="ev_list">{list}</ul> : <p className="text-sm text-muted">None yet</p>}</section>;
