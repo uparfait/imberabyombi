@@ -33,3 +33,4 @@ export function brand_apply() {
   if (c !== DEF) { const v = [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16)); s.setProperty('--brand', v.join(' ')); s.setProperty('--brand_2', v.map(x => Math.round(x * .64)).join(' ')); }
   if (t.radius != null) s.setProperty('--radius', t.radius + 'rem');
   if (t.space != null) s.setProperty('--space', t.space + 'rem');
+  if (t.font) s.setProperty('--font_sans', `"${t.font}", system-ui, sans-serif`);
