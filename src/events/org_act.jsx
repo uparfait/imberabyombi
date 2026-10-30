@@ -32,3 +32,4 @@ export const ORG_ACT = {
   ev_co_del: t => { const [c, e, i] = get(t), p = e?.co_orgs?.[i]; if (!p) return;
     ask(`Remove ${p.name} from the co-organisers? They can no longer manage it.`, () =>
       put(c, e, { co_orgs: e.co_orgs.filter((_, j) => j !== i) }, 'Co-organiser removed', `${p.name} is no longer a co-organiser.`), 'Remove', true); },
+  ev_transfer: t => { const [c, e] = get(t); if (!e) return; const co = e.co_orgs || [], fresh = { when: 'to=new' };
