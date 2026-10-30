@@ -25,3 +25,5 @@ function track_at(e, now) {
   return [st, held ? Math.min(pick.i, ag.length - 1) : now > -1 ? now : next > -1 ? next : ag.length - 1];
 }
 const left_of = ms => <b data-count-to={ms}>{left(ms - Date.now())}</b>;
+
+export function track_full(e, now, t) {
