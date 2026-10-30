@@ -22,3 +22,5 @@ export function notice_menu(n = '') {
           <span className="min-w-0 flex-1 text-left"><b className="block truncate text-sm font-medium">{x.title}</b><span className="block truncate text-xs text-muted">{x.text}</span></span>
         </button></li>)}</ul>
         : <p className="px-3 py-8 text-center text-sm text-muted">All caught up</p>}
+    </div>, document.body)}</div>;
+}
