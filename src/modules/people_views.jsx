@@ -28,3 +28,4 @@ VIEWS.employees = () => { const t = ui.tab.emp || 'All', rows = db.list('employe
 
 VIEWS.attendance = () => {
   const n = me(), td = ymd(), rows = db.list('attendance'), mine = rows.find(r => r.person === n && r.date === td), t = ui.tab.att || 'Staff';
+  const today = rows.filter(r => r.date === td);
