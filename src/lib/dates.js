@@ -15,3 +15,4 @@ export const fmt_dt = s => !s ? '—' : /T\d/.test(s) ? `${fmt_d(s)}, ${fmt_time
 export const to_min = t => { const [h, m] = String(t || '0:0').split(':').map(Number); return (h || 0) * 60 + (m || 0); };
 export const add_time = (t, mins) => { const v = Math.min(to_min(t) + mins, 23 * 60 + 59); return `${pad(Math.floor(v / 60))}:${pad(v % 60)}`; };
 /* Clock format: 24-hour or 12-hour (toggle in the time picker, saved as "h24"; default follows the locale) */
+export const h24 = () => db.get('h24', !new Intl.DateTimeFormat(undefined, { hour: 'numeric' }).resolvedOptions().hour12);
