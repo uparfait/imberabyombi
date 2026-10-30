@@ -30,3 +30,5 @@ let swept = false;
 const move = path => { setTimeout(() => go(path, { replace: true })); return { body: loading('Opening the document') }; };
 const missing = () => <div className="sign_main max-w-2xl"><div className="card">{empty('Document not found',
   'It was deleted, or it is kept in another browser.', <a href={list_href('all')} className="btn btn_primary btn_sm">All documents</a>)}</div></div>;
+
+/* /admin/sign/<a>/<id> → { title, cur (the list on show), back (Back's address), body }. A page's actions (Send, Save,
