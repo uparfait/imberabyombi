@@ -6,6 +6,7 @@
    says what the row is ("Date, time and time zone"). It always stays on one line and the date and times always show in
    full: the words get smaller with the row, where it is narrow they get shorter ("Fri, Oct 30", "GMT+2"), then the arrows
    go (container queries). Only the time zone gives way; its whole name is on hover.
+   A schema groups fields into one with row: 'when' (open_form). */
 import { Fragment } from 'react';
 import { pad, h24, zone_list, zone_short, page_tz } from '../lib/index.js';
 import { dt_attrs, dt_show, to24 } from './date_formats.js';
