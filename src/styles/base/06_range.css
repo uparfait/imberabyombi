@@ -38,3 +38,5 @@
   /* Fieldset, legend, label */
   fieldset { border: 1px solid rgb(var(--line)); border-radius: var(--radius); padding: 1.5rem 1.25rem 1.25rem; min-width: 0; }
   legend { padding: 0 .5rem; margin-left: -.5rem; font-family: var(--font_display); font-weight: 500; font-size: 1rem; }
+  :where(label) { font-size: .875rem; font-weight: 500; }
+}
