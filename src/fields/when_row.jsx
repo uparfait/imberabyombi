@@ -23,3 +23,4 @@ const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz()
     <span className="pick when_block when_tz"><select id={id} name={f.k} defaultValue={tz} required={!!f.req}
       onChange={e => tz_words(e.target.form)}>
       {zone_list().map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select>
+      <span className="when_text" aria-hidden="true">{zone_short(tz, row.date)}</span></span></Fragment>; };
