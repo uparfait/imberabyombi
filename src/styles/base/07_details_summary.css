@@ -19,6 +19,7 @@
   #modal > form { max-height: min(90dvh, 54rem); }
   #viewer { width: min(64rem, calc(100% - 1rem)); max-width: none; max-height: calc(100dvh - 1rem); }
   #viewer[open] { display: flex; flex-direction: column; }
+  #viewer.viewer_table { width: min(80rem, calc(100% - 1rem)); }   /* a table in it (who attended: events/attendees_view.jsx) */
   #confirm { width: min(26rem, calc(100% - 1.5rem)); max-width: none; }
   dialog.drawer { margin: 0 0 0 auto; height: 100dvh; max-height: none; width: min(20rem, 88vw); max-width: none; border-radius: var(--radius) 0 0 var(--radius); border-width: 0 0 0 1px; }
   dialog.drawer[open] { animation: slide .35s var(--ease); }
