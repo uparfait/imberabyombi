@@ -4,3 +4,4 @@
 import { fmt_d, fmt_time } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
 import { empty } from '../ui/index.js';
+import { set_meta } from '../router/parse.js';
