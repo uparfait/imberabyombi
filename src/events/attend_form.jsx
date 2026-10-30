@@ -12,3 +12,4 @@ import { Pad_draw } from '../sign/pad_draw.jsx';
 import { PAD } from '../sign/pad_state.js';
 
 const F = [field_spec('name', 'Full name', 'text', 0, 1), field_spec('email', 'Email', 'email', 0, 1), field_spec('tel', 'Telephone', 'tel'),
+  field_spec('org', 'Organisation or unit'), field_spec('position', 'Position')];
