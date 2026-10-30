@@ -9,3 +9,5 @@ import { ev_state } from './ev_state.js';
 import { Attend_form, Tick } from './attend_form.jsx';
 
 addEventListener('storage', e => { if (e.key?.endsWith('c:attendees')) rerender(); });
+
+export function attend_page(r) {
