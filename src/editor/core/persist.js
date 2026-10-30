@@ -1,5 +1,4 @@
-/* editor/core/persist.js: the document kept in IndexedDB (idb.js) under 'editor_doc': title, page setup, active tab,
-   comments, and every tab with ALL its fields (html with images as data URLs, folded headings, …) except the
+/* editor/core/persist.js: the document kept in IndexedDB (idb.js) under 'editor_doc', or 'editor_doc:<name>' when the
    undo / redo stacks, in tab order. Saved ~600 ms after each history commit / tab change, and when the editor stops. */
 import { db } from '../../store/index.js';
 import { uid } from './utils.js';
