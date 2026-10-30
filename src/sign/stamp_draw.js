@@ -16,3 +16,4 @@ export function draw_stamp(c, { org, mid, color, shape }) {
   const arc = (t, r, at, bottom, s) => {
     let w; const sp = 3;
     do { font(s); w = [...t].reduce((a, ch) => a + x.measureText(ch).width + sp, 0); } while (w / r > Math.PI * .8 && --s > 10);
+    let acc = 0;
