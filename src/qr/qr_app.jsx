@@ -27,6 +27,7 @@ export function Qr_app() {
       p.state === 'granted' ? go() : set(p.state === 'denied' ? { phase: 'error', msg: WHY.NotAllowedError } : { phase: 'ask' }); }, () => set({ phase: 'ask' }))
       ?? set({ phase: 'ask' });
     return () => { if (perm) perm.onchange = null; stop(); }; }, []);   // eslint-disable-line react-hooks/exhaustive-deps
+  const scanning = st.phase === 'scan' || st.phase === 'start';
 
   return <div className="qr_app">{top_bar()}
     <main className="qr_main">
