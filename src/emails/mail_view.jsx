@@ -38,3 +38,4 @@ export function emails_view() {
   return (
     <>{page_title('Email designs', 'How messages from the system look: invites, updates, time changes, password resets, sign-in codes and access tokens. '
       + 'Codes, links and tokens can be copied.')}
+      <section><div id="mail_menu" className="mb-5">{mail_menu(k)}</div><div id="mail_view" className="min-w-0">{mail_view(k)}</div></section></>
