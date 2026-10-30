@@ -49,3 +49,4 @@ export function invites_card(e, st, can) {
   const inv = e.invites || [], open = can && !['Cancelled', 'Past'].includes(st), n = wait.list.length;
   const keys = ev => { if (['Enter', ',', ';'].includes(ev.key)) { ev.preventDefault(); take(e.id, ev.currentTarget); } };
   return <section className="card ev_card" aria-labelledby="ev_sec_inv">
+    <header className="ev_card_head"><div className="flex items-center gap-1"><h3 id="ev_sec_inv">Invitations</h3>{help_tip(HELP, 'invitations')}</div>
