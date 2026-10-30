@@ -21,7 +21,7 @@
 /* a signer's card is always tinted with their colour (from their email); picked: their colour's border, a deeper tint */
 .sign_rec { border-color: color-mix(in srgb, var(--c) 28%, rgb(var(--line))); background: color-mix(in srgb, var(--c) 7%, transparent); }
 /* the signer whose fields are being placed stands out: zoomed in a little, a border in their colour (thicker at the bottom),
-   a deeper tint and a "Placing fields" chip */
+   a deeper tint, and Adding fields ticked in its list */
 .sign_rec, .sign_for { transition: transform .3s var(--ease), border-color .2s, background-color .2s; }
 .sign_rec.on { padding: calc(.625rem - 1px) calc(.625rem - 1px) calc(.375rem - 4px); border: 2px solid var(--c); border-bottom-width: 5px;
   background: color-mix(in srgb, var(--c) 16%, transparent); transform: scale(1.04); }
