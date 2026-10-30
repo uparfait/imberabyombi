@@ -25,3 +25,4 @@ large QR code (full screen on a click), the count and the link. **Menu** (tiles)
 task, Attendees, Full screen.
 
 ## Minutes and follow-ups
+- **Record minutes** (live screen) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
