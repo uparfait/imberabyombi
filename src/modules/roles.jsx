@@ -40,5 +40,5 @@ VIEWS.roles = () => {
         <select key={`${land}|${JSON.stringify(sel.perms)}`} id="role_land" data-role-land={sel.id} disabled={!can} defaultValue={land}>{land_opts(sel)}
           </select></div></div>
       {full ? empty('Full access', 'Super Admin can view and manage every module, including roles. This role cannot be changed.') : matrix(sel, edit)}
-    </section></div>;
+    </section></div></div>;
 };
