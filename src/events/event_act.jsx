@@ -19,7 +19,7 @@ import { field_spec } from '../schemas/index.js';
 
 const SEC_TITLE = { Details: 'Edit details', When: 'Edit date and time', Location: 'Edit location', Organiser: 'Edit organiser', Agenda: 'Edit agenda',
   Audience: 'Edit audience' };
-const save = (id, d, title, text) => { db.upsert('events', { id, ...d }); rerender(); notify(text, 'ok', title); };
+const save = (id, d, title, text, c = 'events') => { db.upsert(c, { id, ...d }); rerender(); notify(text, 'ok', title); };
 const told = e => e.invites?.length ? ` The ${e.invites.length} people invited were told by email.` : '';
 const reason = (v = '') => <div key="reason" className="field sm:col-span-2"><label htmlFor="ev_reason">Reason (optional)</label>
   <textarea id="ev_reason" name="reason" rows={3} placeholder=" " defaultValue={v} /></div>;
