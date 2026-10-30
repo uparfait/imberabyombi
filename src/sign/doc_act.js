@@ -29,3 +29,4 @@ export const DOC_ACT = {
       Object.assign(d, { archived: true, archived_at: Date.now() }); log(d, `${who().name} archived it`, 'archive', who().email); save_doc(d);
       notify(`“${d.title}” is under Archived.`, 'ok', 'Document archived'); go('/admin/sign/archived');
     }, 'Archive'); },
+  sign_doc_restore: t => { const d = find_doc(t.dataset.id);
