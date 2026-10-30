@@ -11,3 +11,4 @@ import { place_tile } from '../actions/index.js';
    only to hand it over: once such an area is at its end, the page keeps going with an eased glide (no jumps, never stuck).
    Menus and dialogs contain their own scroll (overscroll-behavior), and the page is frozen behind open overlays. */
 export const glide = { y: 0, last: 0, raf: 0,
+  by(d) { const max = document.documentElement.scrollHeight - innerHeight;
