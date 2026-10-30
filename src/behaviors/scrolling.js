@@ -8,3 +8,4 @@ import { place_tile } from '../actions/index.js';
 
 /* Smooth scrolling: the page always uses the browser's own (threaded, smooth) scrolling. Only the scroll areas inside
    the page that have content around them ([data-chain]: sidebar, side panel, calendar hours) listen to the wheel, and
+   only to hand it over: once such an area is at its end, the page keeps going with an eased glide (no jumps, never stuck).
