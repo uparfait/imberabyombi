@@ -50,3 +50,4 @@ function data_card() {
       </p><progress className="mt-2" max="100" value={pct}></progress>
     <div className="mt-6 flex flex-wrap gap-2"><button className="btn btn_outline btn_sm" data-act="data_export">{ic('download', 'h-4 w-4')}Export backup</button>
       <label className="btn btn_outline btn_sm cursor-pointer">
+        {ic('upload', 'h-4 w-4')}Import backup<input type="file" accept="application/json" className="sr-only" data-import="" /></label>
