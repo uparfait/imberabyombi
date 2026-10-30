@@ -27,3 +27,4 @@ export function admin_shell(mod, content) {
     data-act="side" aria-hidden="true"></div>
   <aside id="sidebar" ref={sync_ref(side_sync)}
     className="side fixed inset-y-0 left-0 z-50 flex w-72 shrink-0 -translate-x-full flex-col border-r border-line bg-bg lg:sticky lg:top-0 lg:bottom-auto lg:z-0 lg:h-[100dvh] lg:translate-x-0 lg:border-0"
+    data-open={String(ui.side)} data-min={String(ui.side_min)} inert={desk_min()} aria-label="Sidebar">{sidebar(mod)}</aside>
