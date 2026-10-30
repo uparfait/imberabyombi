@@ -31,7 +31,7 @@ export const kind_label = r => KINDS.find(k => k[0] === kind_of(r))?.[1];
 /* where: in a place (a venue or address) or online (a meeting link and notes on joining, such as a passcode); all optional */
 const PLACE_HELP = 'Physical: it happens in a place; add the venue or address. Virtual: it happens online; add the meeting link '
   + 'and any notes on joining, such as a passcode.';
-export const where_f = () => [field_spec('place', 'Location', 'seg', [['Physical', 'Physical'], ['Virtual', 'Virtual']], 1, { def: () => 'Physical', help: PLACE_HELP }),
+export const where_f = () => [field_spec('place', 'Location', 'seg', [['Physical', 'Physical'], ['Virtual', 'Virtual']], 1, { def: () => 'Physical', fill: place_of, help: PLACE_HELP }),
   field_spec('venue', 'Venue or address', 'text', 0, 0, { when: 'place=Physical' }), field_spec('link', 'Meeting link', 'text', 0, 0, { when: 'place=Virtual' }),
   field_spec('join_note', 'Joining notes', 'textarea', 0, 0, { when: 'place=Virtual' })];
 /* only the chosen kind of place is kept; a link without its https:// gets it */
