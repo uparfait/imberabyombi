@@ -5,3 +5,4 @@
         so any Tailwind utility on an element still wins.
         Elements that Tailwind Preflight resets (inputs, selects, textareas,
         headings, fieldset, legend, summary, table, hr, code…) use a bare
+        element selector instead (specificity 0,0,1): later than Preflight,
