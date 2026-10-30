@@ -50,3 +50,4 @@ export function new_doc(name, size, pages) {
 }
 /* a signer's colour (their card, avatar, tag and fields) comes from their email (lib/seed_color.js), kept clear of the
    colours of the signers before them in this document */
+export function add_rec(d, name, email, note, cert = false) {
