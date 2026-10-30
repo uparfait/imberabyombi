@@ -3,3 +3,5 @@
    activity. The table of one event's attendees exports like any other. */
 import { fmt_stamp } from '../lib/index.js';
 import { field_spec } from './fields.js';
+
+export const attendees_schema = {
