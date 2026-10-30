@@ -34,7 +34,7 @@ export const buses_schema = {
 Register it in `src/schemas/schemas.js` (`buses: buses_schema` in `schemas`). Tables, forms, validation, details view, export, search and seed data follow.
 
 Optional keys: `before(values, row, form)` adjusts values before saving (may be async, e.g. to read files),
-`sec` groups fields into categories in the details view.
+`sec` groups fields into categories in the details view, `form_sec: true` shows those groups as headings in the form too.
 
 ## Lorem ipsum that does not change
 `lorem` (src/lib) is deterministic: the same seed gives the same text every time, so a page looks the same on every visit
