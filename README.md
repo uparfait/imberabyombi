@@ -52,3 +52,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 1. **Brand**: name, logo parts, media and business rules in `src/config/site_config.js`.
 2. **Colours, corners, spacing, fonts**: one line each in `src/styles/base/01_design_tokens.css`.
 3. **Content**: replace the lorem text in the public sections (`src/site/`) and the detail pages.
+4. **Data**: add or edit schemas in `src/schemas/`; tables, forms, export and seed data follow.
