@@ -7,9 +7,7 @@ import { fmt_d, fmt_time, zone_short, page_tz, repeat_text, repeat_next, ymd } f
 import { ic } from '../icons/index.js';
 import { bar_cell, dash, tag } from '../ui/index.js';
 import { kind_of, kind_label, place_of } from '../schemas/index.js';
-import { agenda_now } from './agenda_now.js';
-import { att_count, BASE } from './attend_side.jsx';
-import { to } from '../router/index.js';
+import { agenda_table, org_table, add_co } from './ev_tables.jsx';
 
 const SECS = ['Details', 'When', 'Location', 'Organiser', 'Agenda', 'Audience'];
 const out = (href, text) => <a href={href} className="ev_link" target={href.startsWith('http') ? '_blank' : undefined} rel="noreferrer">{text}</a>;
