@@ -38,3 +38,4 @@ export function Tz_page() {
   const now = () => { const p = tz_parts(st.from, Date.now()); put({ date: ymd_of(p), h: p.h, m: p.mi, dk: st.dk + 1 }); };
   const swap = () => put({ from: st.to, to: st.from, ff: st.tf, tf: st.ff, date: ymd_of(tp), h: tp.h, m: tp.mi, dk: st.dk + 1 });
   return <div className="page_enter">
+    {page_title('Time zone converter', 'Pick a date and time in one time zone to see it in another. Swap turns them around; Now sets the current '
