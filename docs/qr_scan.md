@@ -18,6 +18,7 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
 
 ## Installing it
 It wears the site's own icon and the colours set in Settings ([`qr_brand.js`](../src/qr/qr_brand.js)): the brand
+colour, radius, spacing and font on the page; and, when the brand colour is not the default, the manifest is made in the
 `/qr-scan/`) and service worker (`sw.js`, the same scope; the site itself has neither). **Install** shows in the top bar
 when the browser offers it (Chrome, Edge, Android); on an iPhone or iPad it says Share, then Add to Home Screen. Installed,
 it opens in its own window, also offline (its files are kept by the service worker where the browser allows).
