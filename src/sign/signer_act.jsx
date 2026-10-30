@@ -3,3 +3,4 @@
    (and, when the sender asks for it, your digital certificate and its password, checked first: cert_pick.jsx), then
    keeps your marks, records your signature and completes the document once everyone has signed. */
 import { qs } from '../lib/index.js';
+import { rerender } from '../store/index.js';
