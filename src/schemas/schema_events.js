@@ -59,7 +59,7 @@ export const events_schema = {
   g: i => {
     const c = lorem.int(4, 20) * 10, h = lorem.int(9, 15);
     return {
-      title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-10, 30))), start: `${pad(lorem.int(9, 16))}:00`, venue: lorem.t(2), capacity: c,
+      title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-10, 30))), start: `${pad(h)}:00`, end: hm(h, 120), venue: lorem.t(2), capacity: c,
       registered: lorem.int(0, c), status: ['Scheduled', 'Scheduled', 'Scheduled', 'Postponed', 'Scheduled', 'Cancelled'][i], about: lorem.s(), kind: i === 2 ? 'Recurring' : 'Upcoming',
       repeat: i === 2 ? { freq: 'monthly', every: 1, by: 'week', end: 'after', count: 6 } : null, ...seed_more(), audience: Math.round(c * .8)
     };
