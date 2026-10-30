@@ -45,3 +45,4 @@ export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...
   return <div key={f.k} className="rp sm:col-span-2" data-when="kind=Recurring" data-repeat="" onChange={say} onInput={say}>
     <div className="rp_top">
       <div className="field"><label htmlFor={id}>{f.l}</label><select id={id} name="rp_freq" defaultValue={r.freq}>{FREQS.map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select></div>
+      <div className="rp_every" data-when="rp_freq!=weekdays">{num(id + '_every', 'rp_every', 'Every', r.every, 99)}
