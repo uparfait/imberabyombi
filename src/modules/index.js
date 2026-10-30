@@ -17,3 +17,4 @@ export * from './task_act.js';
 export * from './task_change.js';
 export * from './misc_views.jsx';
 export * from './dashboard_widgets.jsx';
+export * from './dashboard.jsx';
