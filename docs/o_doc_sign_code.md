@@ -6,3 +6,4 @@ each file in [`src/sign/`](../src/sign/) does.
 ## Data
 | Where | What |
 |---|---|
+| collection `sign_docs` (localStorage, `db`) | each document: title, file name, page sizes, owner, status, signers, fields, activity |
