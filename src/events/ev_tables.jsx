@@ -15,8 +15,7 @@ export function agenda_table(e, fade = false) {
   return <div className="ev_inv_box ev_tbl"><table className="ev_inv_table ev_ag_table">
     <thead><tr><th scope="col">Presenter</th><th scope="col">Item</th><th scope="col" className="ev_ag_time ev_wide">Time</th></tr></thead>
     <tbody>{ag.map((a, i) => <tr key={i} className={i === now ? 'is_now' : fade && now > -1 && i < now ? 'is_done' : undefined}>
-      <td>{a.p_name ? <><b className="block font-medium">{a.p_name}</b>{sub(a.p_title)}</> : '—'}</td>
-      <td><b className="block font-medium">{a.title}{i === now ? <span className="chip ml-2 bg-ok/15 text-ok">Now</span> : null}</b>{sub(a.desc)}
+      <td>{a.p_name ? <><b className="block truncate font-medium">{a.p_name}</b>{sub(a.p_title)}</> : '—'}</td>
         <span className="ev_sub ev_narrow">{fmt_time(a.from)} – {fmt_time(a.to)}</span></td>
       <td className="ev_ag_time ev_wide">{fmt_time(a.from)} – {fmt_time(a.to)}</td></tr>)}</tbody></table></div>;
 }
