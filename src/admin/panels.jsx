@@ -18,3 +18,4 @@ const notes = () => { const ns = db.get('notes', []);
       <label className="sr-only" htmlFor="compose_body">Note</label><textarea id="compose_body" name="body" rows="1" required placeholder="Take a note…"></textarea>
       <div className="compose_foot"><button className="btn btn_ghost btn_sm text-accent">Done</button></div></form>
     <div className="mt-4 grid gap-2">{ns.length ? ns.map(memo)
+      : <div className="grid justify-items-center gap-3 py-12 text-center">{i3('bulb', 'h-14 w-14', 'warn')}
