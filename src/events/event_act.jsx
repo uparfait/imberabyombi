@@ -11,3 +11,4 @@ import { when_row } from '../fields/index.js';
 import { go } from '../router/index.js';
 
 const SEC_TITLE = { Details: 'Edit details', When: 'Edit date and time', Location: 'Edit location', Organiser: 'Edit organiser', Audience: 'Edit audience' };
+const save = (id, d, title, text) => { db.upsert('events', { id, ...d }); rerender(); notify(text, 'ok', title); };
