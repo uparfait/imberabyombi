@@ -4,3 +4,4 @@
   .filebox.picking .file_wait { display: flex; }
   .file_wait .spinner_segmented_svg { width: 1.75rem; height: 1.75rem; }
   /* Help icon next to a title (help_tip): its text shows in the tooltip */
+  .help_tip { display: inline-grid; flex: none; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: var(--pill); color: rgb(var(--muted)); cursor: pointer; transition: background-color .2s, color .2s; }
