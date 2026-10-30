@@ -20,3 +20,4 @@ function on_change(e) {
   /* task view: a subtask ticked, the status picked, files added (modules own that state) */
   if (task_change(t)) return;
   if (t.name === 'status' && t.form?.querySelector('[data-when]')) table.sync_when(t.form);
+  /* export: an unticked column cannot be renamed; with no column ticked the download is off (the export dialog's state) */
