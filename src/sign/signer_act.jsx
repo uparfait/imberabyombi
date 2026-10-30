@@ -25,3 +25,4 @@ function open_pad(d, f) {
   modal({ title: `Add your ${what}`, help: f.type === 'stamp' ? 'Create a stamp, or upload a picture of yours.' : 'Draw it, type it, or upload a picture of it.',
     body: <Mark_pad key={f.id} kind={f.type} name={my_rec(d).name} />, submit: `Use this ${what}`,
     on_submit: async () => { const url = await PAD.get();
+      if (!url) { form_msg(qs('#modal form'), 'warn', `No ${what} yet`, `Make your ${what} first.`); return false; }
