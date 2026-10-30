@@ -9,3 +9,4 @@ const plain = s => String(s ?? '').replace(/[  ]/g, ' ').replace(/[‘’]/g
 
 export async function certificate(pdf, d, L) {
   const font = await pdf.embedFont(L.StandardFonts.Helvetica), bold = await pdf.embedFont(L.StandardFonts.HelveticaBold);
+  const ink = L.rgb(.13, .13, .16), soft = L.rgb(.42, .42, .47), brand = L.rgb(.878, .4, .106);
