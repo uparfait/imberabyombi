@@ -13,3 +13,4 @@ O-Doc Sign is open), a narrow computer window through a zoom (`--sign_z`, `sign_
 | Address | Page |
 |---|---|
 | `/admin/sign` · `/drafts` · `/waiting` · `/completed` | your documents: all, not sent yet, waiting for signatures, signed by everyone |
+| `/admin/sign/archived` | **Archived**: documents you put away (out of the other lists; their signers still see them) |
