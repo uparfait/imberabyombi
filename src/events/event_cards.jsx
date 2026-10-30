@@ -15,3 +15,4 @@ const ROWS = {
   Details: e => [['Title', e.title], ['Description', e.about ? <p className="whitespace-pre-line">{e.about}</p> : null]],
   When: e => [['Type', tag(KINDS.find(k => k[0] === e.kind)?.[1] || e.kind)], [e.kind === 'Recurring' ? 'First date' : 'Date', e.date ? fmt_d(e.date) : null],
     ['Time', times(e)], ['Time zone', zone_short(e.tz || page_tz(), e.date)],
+    e.kind === 'Recurring' && e.repeat ? ['Repeats', repeat_text(e.repeat, e.date)] : null,
