@@ -6,3 +6,5 @@
 import { fmt_time } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { agenda_now } from './agenda_now.js';
+
+const sub = v => v ? <span className="ev_sub">{v}</span> : null;
