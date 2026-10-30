@@ -35,3 +35,4 @@ export function org_table(e, c, can) {
 }
 
 /* a card's or section's Add: a co-organiser */
+export const add_co = (e, c) => <button type="button" className="ev_edit" data-act="ev_co_add" data-c={c} data-id={e.id}>{ic('plus', 'h-3.5 w-3.5')}Add</button>;
