@@ -6,3 +6,4 @@ the whole window, like the document editor: its own top bar, no admin header or 
 styles in `src/styles/sign/`. It loads the first time someone opens it (its own file in the build).
 
 **Made for computers.** O-Doc Sign has one layout, at every width: never a phone layout and never a sideways scroll. Below
+1280 px it is laid out 1280 px wide and scaled down to fit: phones and tablets through the viewport (`width=1280` while
