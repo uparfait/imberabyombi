@@ -5,5 +5,6 @@ import { add_act } from '../actions/index.js';
 import { PREP_ACT } from './prep_act.js';
 import { SIGNER_ACT } from './signer_act.jsx';
 import { DOC_ACT } from './doc_act.js';
+import { SELF_ACT } from './self_sign.jsx';
 
 add_act({ ...PREP_ACT, ...SIGNER_ACT, ...DOC_ACT }, { sign_save: 1, sign_dl: 1 });
