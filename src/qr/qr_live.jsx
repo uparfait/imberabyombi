@@ -3,3 +3,4 @@
    While it scans: the scan window in the middle (the rest dimmed; the brand's corners and a sweeping line), "Point at a
    QR code" and Light (where the camera has one). */
 import { ic, mark3d } from '../icons/index.js';
+import { cfg } from '../config/index.js';
