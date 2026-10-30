@@ -6,6 +6,7 @@ import { cfg } from '../config/index.js';
 
 const KEY = cfg.ns + 'qr_installed';
 const mark = () => { try { localStorage.setItem(KEY, '1'); } catch { /* this visit only */ } };
+export const installed = () => { try { return localStorage.getItem(KEY) === '1'; } catch { return false; } };
 let offer = null;
 const subs = new Set(), emit = () => subs.forEach(f => f());
 addEventListener('beforeinstallprompt', e => { e.preventDefault(); offer = e; emit(); });
