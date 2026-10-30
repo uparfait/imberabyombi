@@ -4,3 +4,4 @@ import { auth } from '../auth/index.js';
 
 const same = (a, m) => !!a && String(a).trim().toLowerCase() === m;
 export function my_role(r) {
+  const m = (auth.user?.email || '').toLowerCase(); if (!m || !r) return null;
