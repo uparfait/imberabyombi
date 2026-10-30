@@ -23,3 +23,5 @@ export function repeat_from(f) {
   if (r.end === 'on') r.until = v('rp_until');
   if (r.end === 'after') r.count = Math.min(999, Math.max(1, +v('rp_count') || 1));
   return r;
+}
+/* the unit after "Every" (week / weeks) and the rule in words follow the form */
