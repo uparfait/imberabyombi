@@ -34,3 +34,4 @@ export function render(input, o = {}) {
   const style = MAKERS[o.style] ? o.style : 'classic', C = palette(o.colors), s = o.size ?? 128, view = o.view || [0, -4, 200, 200];
   const G = glyph(input, FONTS[style] || DISPLAY), i = 'i3d' + (++n).toString(36) + Math.random().toString(36).slice(2, 5);
   const px = +o.px || (typeof s === 'number' && s > 0 ? s : 200), k = px / view[2];   /* device px per unit */
+  const [defs, body] = MAKERS[style](G, C, i, k);
