@@ -12,6 +12,7 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.chip` / `.chip_btn`                   | badge / pressable filter chip (`aria-pressed`)                   |
 | `.kicker`                               | small section label with the diamond icon                        |
 | `.field`                                | outlined field: the label rests inside and floats onto the border |
+| `[data-fill-rows]` (`fill_rows()`)       | a two-column form grid where a field left alone on its row fills it (`.fill_row`) |
 | `.on_bg`                                | a form that sits on the page background (not on a card)          |
 | `.nav_link` / `.side_link` / `.link_group` | top navigation pill / sidebar link / translucent link group    |
 | `.panel` / `.memo` / `.check_row`       | side panel beside the content / note card / checklist row        |
