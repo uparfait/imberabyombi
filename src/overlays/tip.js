@@ -36,3 +36,4 @@ function intro(x) {
   const r = x.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
   x.classList.add('intro');
   setTimeout(() => {
+    x.classList.remove('intro');
