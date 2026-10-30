@@ -54,6 +54,7 @@ every account starts empty.
   were placing is remembered, so the draft reopens on them. **Send** checks that there is a signer, a field,
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
 
+## Signing it yourself
 ## Signing
 - The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
   their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
