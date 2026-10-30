@@ -14,3 +14,4 @@ const HELP = 'Every detail of this event, by section. Edit a section on its own;
 /* the actions that fit each state: [handler, label, icon, the states it shows in] */
 const ACTS = [
   ['ev_postpone', 'Postpone', 'clock', ['Upcoming', 'Recurring']], ['ev_postpone', 'Change the new date', 'calendar', ['Postponed']],
+  ['ev_restore', 'Back on schedule', 'check', ['Postponed', 'Cancelled']], ['ev_done', 'Mark as completed', 'check', ['Live']],
