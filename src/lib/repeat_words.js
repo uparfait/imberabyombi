@@ -31,3 +31,4 @@ export function repeat_text(r, first) {
   if (r.freq === 'monthly') s = every('month') + month_day(r, f);
   if (r.freq === 'yearly') { const ms = r.months?.length ? r.months : f && [f.getMonth() + 1];
     s = every('year') + (ms ? ` in ${and_list(sorted(ms).map(x => MONTH_NAMES[x - 1]))}` : '') + month_day(r, f); }
+  if (r.end === 'on' && r.until) s += `, until ${parse_d(r.until).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
