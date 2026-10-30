@@ -44,3 +44,4 @@ export function admin_shell(mod, content) {
       <div className="panel_in scroll_hover h-full overflow-y-auto" data-chain=""><Live_slot name="panel" first={panel_now()} draw={panel_now} /></div></aside>
     <aside className="sticky top-16 hidden h-[calc(100dvh-4rem)] w-14 shrink-0 flex-col items-center gap-2 py-4 md:flex" aria-label="Side panels">
       {RAIL.map(([k, i, c, l]) =>
+        <button key={k} className={`icon_btn ${c} ${ui.panel === k ? 'rail_on' : ''}`} data-act="panel" data-k={k} aria-label={l}>{ic(i)}</button>)}
