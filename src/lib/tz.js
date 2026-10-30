@@ -56,3 +56,4 @@ export function zone_list(t = Date.now()) {
   LIST_DAY = day; return LIST;
 }
 /* a zone's short name on a given day ("GMT-5 · New York" in winter, "GMT-4 · New York" in summer): date 'YYYY-MM-DD' or now */
+export const zone_short = (tz, date) => `${gmt_short(offset_min(tz, date ? Date.parse(`${date}T12:00:00Z`) : Date.now()))} · ${city(tz)}`;
