@@ -30,3 +30,4 @@ export function public_page(r) {
 let redirecting = 0;
 const redirect = path => { if (!redirecting) redirecting = setTimeout(() => { redirecting = 0; go(path, { replace: true }); }); return null; };
 export function admin_page(r) {
+  if (!auth.user) return redirect('/login?next=' + encodeURIComponent(r.path));
