@@ -34,6 +34,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
   running now is marked on the page and the live screen ([`events/agenda_now.js`](../src/events/agenda_now.js)).
 - **Expected audience**: how many people are expected.
 - Editing a record saved before a field existed starts that field as the record stands for (its type from its timing,
+  its place from a link) or as on a new record (`fill` / `def`).
 
 ## The Events page
 - Tabs sort events by where they stand ([`events/ev_state.js`](../src/events/ev_state.js)): **Live**, **Upcoming**,
