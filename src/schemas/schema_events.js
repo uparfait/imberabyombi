@@ -20,11 +20,7 @@ export const activities_schema = {
     field_spec('title', 'Title', 'text', 0, 1), field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')),
     field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1)
   ],
-  /* it ends after it starts */
-  before: (d, row, f) => {
-    if (d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'End after it starts.'); f.elements.end.focus(); return false; }
-    return d;
-  },
+  before: (d, row, f) => when_ok(d, row, f) ? d : false,
   g: () => {
     const h = lorem.int(7, 16);
     return {
