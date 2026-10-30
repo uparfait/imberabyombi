@@ -41,4 +41,5 @@ export function event_page(id, c = 'events') {
   return <div className="ev_page">
     <div className="ev_head"><a href={to(back)} className="icon_btn ev_back" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
       <h2 className="ev_title">{e.title}</h2>{help_tip(HELP[c], word.toLowerCase())}</div>
+    <div className="ev_grid"><div className="ev_main">{event_cards(e, can, c)}{ev ? invites_card(e, st, can) : null}</div>{side(e, st, can && ev)}</div></div>;
 }
