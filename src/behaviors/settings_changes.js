@@ -14,3 +14,4 @@ export function allow_select_change(t) {
 export function role_land_change(t) {
   const rs = roles(), r = rs.find(x => x.id === t.dataset.roleLand);
   if (r) request(() => { r.land = t.value; db.set('roles', rs);
+    toast(`People with this role now land on ${MODS.find(m => m.k === t.value)?.l || t.value}.`, 'ok', 'Landing page updated'); });
