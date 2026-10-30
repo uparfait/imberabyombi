@@ -29,7 +29,7 @@ export function balloon(G, C, i, k) {
 
 export function ribbon(G, C, i, k) {
   const u = Math.max(G.vb[2], G.vb[3]) / 100, K = 5, bw = 2.2 * u, gw = .75 * u, base = G.sw, X = 42, Y = 36, S = 116, R = i + 'R';
-  const col = k => blend([C.p, C.s, C.t], k / K);
+  const col = j => blend([C.p, C.s, C.t], j / K);
   const at = w => `stroke="currentColor" stroke-width="${w.toFixed(3)}" stroke-linejoin="round" stroke-linecap="round"`;
   let ext = '', bands = '';
   for (let j = 7; j >= 1; j--) ext += use(R, X + j * .8, Y + j * 1.1, S, shade(col(K), -32), at(base + 2 * K * bw));
