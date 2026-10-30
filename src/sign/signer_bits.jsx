@@ -20,3 +20,4 @@ const cert_chip = r => <span className={`sign_chip ${r.cert_at ? 'ok' : ''}`} da
 
 export const chips = (r, lead = null) => lead || r.note || r.cert
   ? <div className="sign_chips">{lead}{r.note ? note_chip(r) : null}{r.cert ? cert_chip(r) : null}</div> : null;
+export const note_text = r => r.note && OPEN.has(r.id) ? <p className="sign_note sign_note_open">“{r.note}”</p> : null;
