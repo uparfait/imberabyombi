@@ -15,6 +15,5 @@ export function toggle_pop(id) { const p = document.getElementById(id); if (!p) 
 export function place_tile(p) {
   const b = document.querySelector(`[data-pop="${p.id}"]`); if (!b || p.hidden) return;
   /* inside a zoomed page (O-Doc Sign scaled to fit) the menu is placed in that page's own pixels: screen pixels ÷ zoom */
-  const z = p.currentCSSZoom || 1, r = b.getBoundingClientRect(), top = r.bottom / z + 8, w = innerWidth / z, h = innerHeight / z;
-  p.style.top = top + 'px'; p.style.left = Math.max(8, Math.min(r.left / z, w - p.offsetWidth - 8)) + 'px'; p.style.maxHeight = Math.max(160, Math.min(p.classList.contains('tile_pop') ? 480 : h, h - top - 12)) + 'px';
+  const z = p.currentCSSZoom || 1, r = b.getBoundingClientRect(), w = innerWidth / z, h = innerHeight / z, below = h - r.bottom / z - 20, above = r.top / z - 20;
 }
