@@ -33,4 +33,4 @@
   .ag_item_head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; font-size: .875rem; }
   .ag_grid { display: grid; gap: .75rem; }
   @container (min-width: 24rem) { .ag_grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  .pp_row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; align-items: center; gap: .5rem; }
+  .pp_row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, .8fr) auto; align-items: center; gap: .5rem; }
