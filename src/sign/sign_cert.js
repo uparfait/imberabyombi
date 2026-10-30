@@ -20,3 +20,4 @@ export async function certificate(pdf, d, L) {
   const rule = () => { room(16); page.drawLine({ start: { x: M, y: y - 6 }, end: { x: A4[0] - M, y: y - 6 }, thickness: .6, color: L.rgb(.86, .86, .88) }); y -= 18; };
 
   text('O-Doc Sign', { size: 10, bold: true, color: brand }); y -= 4;
+  text('Signing certificate', { size: 22, bold: true }); y -= 6;
