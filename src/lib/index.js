@@ -2,3 +2,4 @@
    colour from any text, e.g. a person's email).
    Import from here: import { esc, fmt_d, lorem } from '../lib/index.js' */
 export * from './text.js';
+export * from './dates.js';
