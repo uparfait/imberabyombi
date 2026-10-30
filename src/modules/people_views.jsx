@@ -32,3 +32,4 @@ VIEWS.attendance = () => {
   after_render(() => TIMERS.push(setInterval(() => { const o = qs('#live_clock'); if (o) o.value = fmt_stamp(Date.now(), { timeStyle: 'medium' }); }, 1000)));
   const count = s => today.filter(r => r.status === s).length;
   return <>
+    <section className="card mb-6 grid items-center gap-5 p-5 sm:grid-cols-[auto_1fr_auto] sm:p-6">{i3('clock', 'h-16 w-16', 'teal')}
