@@ -46,3 +46,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 - A page is a function that returns JSX and reads `db`, `ui` and `route` while it draws.
 - A button declares its job with `data-act="name"`; `ACT.name(button, event)` runs it (see
   [actions and events](actions_and_events.md)). After changing data it calls `rerender()`.
+- Folders import each other only through their `index.js` (`import { crud } from '../table/index.js'`).
