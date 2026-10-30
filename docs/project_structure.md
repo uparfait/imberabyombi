@@ -25,3 +25,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `schemas/`   | one schema per data type: fields, table columns, renderers, seed data                       |
 | `ui/`        | small markup helpers: badge, tag, avatar, person, cells, tabs, stat row, empty state, logo, search pill |
 | `fields/`    | `field()` (one form field from a schema field), date/time masks, `form_obj()`, `set_native_value()` |
+| `feedback/`  | spinner, inline messages, notifications, validation, `request()`, the top loader            |
