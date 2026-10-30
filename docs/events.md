@@ -10,3 +10,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
   started and not ended. These two checks run for a new record, or when its timing changes.
 - The date, start, end and time zone are on one line (the zone starts as the device's).
 - **Repeats** (Recurring only): Daily, Every weekday (Mon–Fri), Weekly, Monthly or Yearly, every 1 to 99 days, weeks,
+  months or years.
