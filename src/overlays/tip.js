@@ -13,3 +13,4 @@ export const tip = {
     if (x === this.on) return; this.hide(); this.on = x;
     this.t = setTimeout(() => {
       const el = this.el, s = x.isConnected && this.on === x ? this.text(x) : ''; if (!s) return;
+      el.textContent = s; (x.closest('dialog[open]') || document.body).append(el); el.classList.toggle('intro', intro);
