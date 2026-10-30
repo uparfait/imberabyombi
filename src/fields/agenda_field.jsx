@@ -20,3 +20,4 @@ function Agenda_editor({ v }) {
       <button type="button" className="icon_btn h-8 w-8" onClick={() => set(items.filter(y => y.k !== x.k))} aria-label={`Remove item ${i + 1}`} data-tip="Remove">{ic('x', 'h-4 w-4')}</button></div>
     <div className="ag_grid">{box(x.k, 'from', 'From', dt_show('time', x.from || ''), { ...t, required: true })}{box(x.k, 'to', 'To', dt_show('time', x.to || ''), { ...t, required: true })}
       {box(x.k, 'title', 'Title', x.title, { required: true, cls: 'room_full' })}{box(x.k, 'desc', 'Description', x.desc, { cls: 'room_full' })}
+      <p className="ag_cap room_full">Presenter</p>{box(x.k, 'p_name', 'Name', x.p_name)}{box(x.k, 'p_email', 'Email', x.p_email, { type: 'email' })}
