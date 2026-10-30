@@ -34,3 +34,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
   changes that section only (`open_form(c, id, {}, [title, keys])`).
 - On the right are the status and the actions that fit it:
   - **Postpone**: a new date, or none yet, and a reason.
+  - **Cancel event**: with a reason. It leaves the calendar.
