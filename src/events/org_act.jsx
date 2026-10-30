@@ -35,3 +35,4 @@ export const ORG_ACT = {
   ev_transfer: t => { const [c, e] = get(t); if (!e) return; const co = e.co_orgs || [], fresh = { when: 'to=new' };
     modal({ title: 'Transfer ownership', help: 'They become the organiser and own it from now on. The current organiser stays on as a co-organiser.',
       body: [field(field_spec('to', 'New organiser', 'select', [...co.map((o, i) => [String(i), `${o.name} · ${o.email}`]), ['new', 'Someone new']], 1), co.length ? '0' : 'new'),
+        ...who({}, fresh), field(field_spec('p_tel', 'Phone', 'tel', 0, 0, fresh), '')],
