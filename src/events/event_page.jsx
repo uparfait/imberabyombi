@@ -39,7 +39,7 @@ const side = (e, c, st, acts, t = count_to(e, st), r = st === 'Past' && ran(e)) 
   {e.status_note && (st === 'Postponed' || st === 'Cancelled') ? <p className="ev_note">{e.status_note}</p> : null}
   {acts && st !== 'Past' ? <div className="ev_acts">{ACTS.filter(a => !a[3] || a[3].includes(st)).map(([k, l, i]) =>
     <button key={k + l} type="button" className={`btn btn_sm ${k === 'ev_cancel' || k === 'ev_del' ? 'btn_ghost ev_bad' : 'btn_outline'}`} data-act={k} data-id={e.id}>
-      {ic(i, 'h-4 w-4')}{l}</button>)}</div> : null}{attend_side(e, c, acts_ok(c) && st !== 'Past')}</aside>;
+      {ic(i, 'h-4 w-4')}{l}</button>)}</div> : null}{attend_side(e, c, acts_ok(c) && st !== 'Cancelled')}</aside>;
 
 export function event_page(id, c = 'events') {
   const [back, mod, word] = ROOT[c], e = db.find(c, id), ev = c === 'events';
