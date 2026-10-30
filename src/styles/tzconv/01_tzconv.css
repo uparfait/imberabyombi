@@ -1,6 +1,4 @@
-/* styles/tzconv/01_tzconv.css: the time zone converter: two cards (From, To) with a round Swap button between them on a
-   line, the result time large, the UTC line under them. Template tokens; borders, no shadows. */
-.tzc { display: grid; max-width: 36rem; }
+/* styles/tzconv/01_tzconv.css: the time zone converter, centred and filling the page up to 72rem: two cards (From, To)
 .tzc_head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .875rem; }
 .tzc_cap { color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .tzc_time_row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
