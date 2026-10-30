@@ -26,6 +26,9 @@ export function count_to(e, st) {
 
 export function ran(e) {
   if (!e.date || e.tbd) return null; const d = e.repeat ? repeat_dates(e.repeat, e.date, e.date, ymd()).at(-1) || e.date : e.date, s = at(d, e.start, e.tz);
+  return [s, e.end ? at(d, e.end, e.tz) : s + 2 * 3600e3];
+}
+
 export function tick() {
   for (const el of document.querySelectorAll('[data-count-to]')) {
     const ms = +el.dataset.countTo - Date.now(); if (ms <= 0) return rerender(); el.textContent = left(ms);
