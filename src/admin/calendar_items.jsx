@@ -21,3 +21,4 @@ export const cal_items = () => [
 ];
 
 /* a task on the calendar (all-day row / month cell); keyed by id so callers can map over items */
+export const cal_task = i => <button key={i.id} className={`cal_task ${i.status === 'Done' ? 'is_done' : countdown(i.due || i.date).late ? 'is_late' : ''}`}
