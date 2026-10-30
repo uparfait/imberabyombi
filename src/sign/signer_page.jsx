@@ -12,3 +12,5 @@ import { use_marks } from './use_marks.js';
 import { S, signer_start } from './signer_state.js';
 import { request_card, note_card, steps_card } from './signer_side.jsx';
 import { dl_label } from './owner_page.jsx';
+
+function Sign_doc({ d, me, done }) {
