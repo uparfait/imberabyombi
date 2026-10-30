@@ -34,3 +34,4 @@ const first_help = root => [...root.querySelectorAll('.help_tip')]
 function intro(x) {
   const s = tip.text(x); SEEN.add(s);
   const r = x.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
+  x.classList.add('intro');
