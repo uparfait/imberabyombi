@@ -2,6 +2,7 @@
    and Send for signing (who gets it, how many fields each, the note each one reads). */
 import { ic } from '../icons/index.js';
 import { initials, help_tip } from '../ui/index.js';
+import { CERT_HELP } from './signer_bits.jsx';
 
 export const rec_body = r => <>
   <div className="field sm:col-span-2"><label htmlFor="sign_rec_name">Full name</label>
