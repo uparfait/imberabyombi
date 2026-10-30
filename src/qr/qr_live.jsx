@@ -19,3 +19,4 @@ export const qr_live = o => { const mark = mark3d('#', 'h-9 w-9', brand());
       <span className="qr_live_name">Qr-scan</span>
       {o.app ? null : <Install />}</div>
     {o.scanning ? <>
+      <div className="qr_window" aria-hidden="true"><i className="qr_corners"></i><i className="qr_line"></i></div>
