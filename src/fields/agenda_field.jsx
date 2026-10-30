@@ -16,3 +16,4 @@ const box = (k, n, l, v, x = {}) => { const { cls = '', ...a } = x;
 function Agenda_editor({ v }) {
   const [items, set] = useState(() => (v || []).map(x => ({ ...x, k: uid() }))), t = dt_attrs('time');
   return <div className="ag_edit" data-agenda="">{items.map((x, i) => <div key={x.k} className="ag_item" data-ag-item="">
+    <div className="ag_item_head"><b>{`Item ${i + 1}`}</b>
