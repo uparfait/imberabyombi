@@ -7,6 +7,7 @@ Part of [O-Doc Sign](o_doc_sign.md): the owner of a draft signs it before (or in
 - **Preview and sign**, at the foot of the right column (once you have a field): the document in an overlay with your
   fields to fill (your signature drawn, typed or uploaded, your stamp made or uploaded), **Next field** and **Finish and
   sign** (the agreement, and the certificate when forced). Signed, the overlay shows **Signed by you**, **Download a copy**
+  and **Add other signers**. Your fields now show your marks and stay as they are (not moved, resized, removed or added
   **Download a copy**.
 - You can go on adding other signers and send it: it goes to those who have not signed. When everyone on it has signed
   (you alone, say), **Send for signing** becomes **Finish**, which moves it to Completed.
