@@ -22,12 +22,7 @@ export function Qr_app() {
     try { await start(video.current, found); set_cam({ torch: has_torch(), lit: false }); }
     catch (e) { stop(); set({ phase: 'error', msg: WHY[e.name] || 'The camera could not start.' }); }
   };
-  const pick = async e => { const file = e.target.files[0]; e.target.value = ''; if (!file) return; stop();
-    try { const t = await read_image(file); t ? found(t) : set({ phase: 'error', msg: 'No QR code in that picture.' }); }
-    catch { set({ phase: 'error', msg: 'That picture could not be read.' }); } };
-  const flip = () => { const f = facing === 'environment' ? 'user' : 'environment'; set_facing(f); go(f); };
-  useEffect(() => stop, []);
-  const scanning = st.phase === 'scan';
+  useEffect(() => { let perm;   /* the camera's permission, where the browser tells it */
 
   return <div className="qr_app">{top_bar()}
     <main className="qr_main">
