@@ -42,3 +42,4 @@ export function repeat_dates(r, first, from, to) {
   return out;
 }
 /* the next day it happens on, from day 'from' on (within about two years), or '' when it has ended */
+export const repeat_next = (r, first, from) => repeat_dates(r, first, from, ymd(add_d(parse_d(from), 800)))[0] || '';
