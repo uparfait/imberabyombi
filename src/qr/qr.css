@@ -43,6 +43,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 .qr_ask { justify-items: center; padding-top: 1.75rem; text-align: center; }   /* before the browser asks for the camera */
 .qr_ask_ic { display: grid; width: 3.75rem; height: 3.75rem; place-items: center; border-radius: 1.25rem; background: rgb(var(--brand) / .12); color: rgb(var(--brand)); }
 .qr_ask_t { font-family: var(--font_display); font-size: 1.375rem; font-weight: 600; color: rgb(var(--fg)); }
+.qr_ask_p { max-width: 22rem; margin-bottom: .5rem; color: rgb(var(--muted)); font-size: .9375rem; }
 .qr_found { display: grid; gap: .375rem; padding: 1.25rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
 .qr_found.is_link { border-color: rgb(var(--ok) / .35); background: rgb(var(--ok) / .06); }
 .qr_found.is_warn { border-color: rgb(var(--warn) / .35); background: rgb(var(--warn) / .06); }
