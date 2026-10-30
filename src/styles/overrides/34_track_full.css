@@ -2,3 +2,4 @@
    one item in the middle (its title large, its description smaller and apart) between Back and Next, dots for the items
    below and the event's time left bottom right; it slides. Its text starts at the left, the block in the middle. .tint (here and on the now card): two soft
    glows of the item's hue (--h, from its title) mixed into the page colour, easing from one item's hue to the next */
+  @property --h { syntax: '<number>'; inherits: true; initial-value: 210; }
