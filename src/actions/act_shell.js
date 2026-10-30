@@ -36,3 +36,4 @@ export const SHELL_ACT = {
   side: () => { if (innerWidth < 1024) { ui.side = !ui.side; const s = qs('#sidebar'); s.inert = false; s.dataset.open = ui.side; qs('#sidebar_scrim').classList.toggle('on', ui.side); }
     else { ui.side_min = !ui.side_min; db.set('sideMin', ui.side_min); const s = qs('#sidebar'); s.dataset.min = ui.side_min; s.inert = ui.side_min; setTimeout(redraw_charts, 320); } header_line(); },
   /* Sidebar sections fold in place (no re-render), so the height animation plays */
+  group: t => { const k = t.dataset.g, closed = !ui.closed[k], f = t.nextElementSibling; ui.closed[k] = closed; db.set('sideClosed', ui.closed);
