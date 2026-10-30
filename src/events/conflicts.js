@@ -23,3 +23,4 @@ export function conflicts(r, self) {
 }
 
 export function clash_ok(r, row, d, f) {
+  if (!['date', 'start', 'end', 'tz', 'venue', 'place', 'org_email', 'repeat'].some(k => k in d)) return true;
