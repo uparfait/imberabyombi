@@ -22,3 +22,4 @@ function row(d, a, i) {
   return <li key={i} className="sign_ev" title={`${a.t} · ${when(a.at)}`}>
     {p ? <span className="sign_ev_who" style={{ background: p.color }}>{initials(p.name)}{icon ? <i>{ic(icon, 'h-2.5 w-2.5')}</i> : null}</span>
       : <span className="sign_ev_who done">{ic('check', 'h-4 w-4')}</span>}
+    <span className="sign_ev_text">{p ? verb ? <><b>{p.name.split(' ')[0]}</b>{verb}</> : a.t : <b>Completed</b>}{k === 'send' ? faces(d) : null}</span>
