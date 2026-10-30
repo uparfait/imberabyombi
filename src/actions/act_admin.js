@@ -29,3 +29,4 @@ export const ADMIN_ACT = {
     if (was && next) { const out = anim([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateX(-1.5rem)' }], 160); const swap = () => { refresh_panel(); slide(); }; out ? out.finished.then(swap) : swap(); return; }
     if (next) { refresh_panel(); slide(); } else anim([{ opacity: 1 }, { opacity: 0 }], 220);
     const sp = qs('#side_panel'); if (sp) sp.dataset.open = !!next; setTimeout(redraw_charts, 320); },
+  note_del: t => { db.set('notes', db.get('notes', []).filter(n => n.id !== t.dataset.id)); refresh_panel(); },
