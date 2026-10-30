@@ -66,3 +66,4 @@ Every feature below is working code. Each line says what it is and where it live
 ## O-Doc Sign (`src/sign/`, `/admin/sign`)
 - PDFs sent for signature, in the whole window with its own top bar and a lists menu: All, Drafts, Waiting, Completed
   and To sign, each with its count. Every account starts empty and sees what it prepared and what was sent to it.
+- Upload a PDF (checked to really be one), add signers with a note for each, place signature and stamp fields (click or
