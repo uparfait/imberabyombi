@@ -15,3 +15,5 @@ function on_screen() {
   for (const s of qsa('.sign_sheet')) {
     const b = s.getBoundingClientRect(), d = b.top > mid ? b.top - mid : b.bottom < mid ? mid - b.bottom : 0;
     if (d < gap) { gap = d; best = { page: +s.dataset.page, y: clamp((mid - b.top) / b.height, .12, .88) }; }
+  }
+  return best;
