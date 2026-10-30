@@ -28,7 +28,7 @@ const cap = (t, help) => <div className="sign_cap_row"><h2 className="sign_cap">
 
 export const prep_tools = d => <div className="sign_panel">
   <section className="grid gap-2" aria-label="Send">
-    <button type="button" className="btn btn_primary btn_sm w-full" data-act="sign_send">{ic('send', 'h-4 w-4')}Send for signing</button>
+    {(why => <span className="sign_send_wrap" data-tip={why || undefined}>
     <button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_save">{ic('check', 'h-4 w-4')}Save draft</button></section>
   <section aria-label="Placing for">{cap('Placing for', 'The signer whose fields you place now. Pick another signer to place theirs; '
     + 'each signer has a colour, and their fields on the page show it.')}{placing(d)}</section>
