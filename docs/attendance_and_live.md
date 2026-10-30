@@ -17,8 +17,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 - **When it is open** ([`att_window.js`](../src/events/att_window.js)): during the event, plus **Attendance settings**:
   before it starts, how many minutes early it opens; while it runs, how many minutes after the end it stays open; once
   it has ended, reopen it from now for some minutes (the QR code comes back). All 0 to start with.
-- **Attendees**: `…/<id>/attendance`, the usual table (search, sort, export to CSV, JSON or Excel). A row shows the
-  signature. A new sign-in shows at once on any open page (other tabs too).
+- **Attendees**: no page of its own; the count, Attendees (in Open and in Menu) or the Attended row open the usual
 
 ## View This Event
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)), also for a finished one: the whole window, no sidebar.
