@@ -36,3 +36,4 @@ export function track_full(e, now, t) {
       <li key={i} className="track_slide" aria-current={i === cur ? 'step' : undefined} aria-hidden={i !== cur}>
         <p className="att_kind">{st[i]} · {fmt_time(a.from)} – {fmt_time(a.to)}</p><h2 className="track_t line-clamp-3">{a.title}</h2>
         {a.desc ? <p className="track_d line-clamp-3">{a.desc}</p> : null}{a.p_name ? <p className="track_who truncate">{a.p_name}{a.p_title ? `, ${a.p_title}` : ''}</p> : null}
+        {i === now ? <p className="track_item_left">{left_of(item_end(e, a))} left</p> : null}</li>)}</ol></div>{step(1, 'Next', 'chev_r')}</div>
