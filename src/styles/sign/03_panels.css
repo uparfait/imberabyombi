@@ -6,3 +6,4 @@
 .sign_panel ul.grid { grid-template-columns: minmax(0, 1fr); }
 /* a caption with a help icon (its tooltip holds the how-to) */
 .sign_cap_row { display: flex; align-items: center; gap: .25rem; margin: -.375rem 0 .125rem; }
+.sign_cap_row .sign_cap { margin: 0; }
