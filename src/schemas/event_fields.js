@@ -22,3 +22,4 @@ export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(N
   return zoned_to_utc(y, mo, d, h, mi, tz || device_tz()); };
 
 /* the timing makes sense: an end after the start; an upcoming one starts later than now; a live one has started and has
+   not ended. Checked for a new record, or when its timing changes (an old one can still be corrected) */
