@@ -14,7 +14,7 @@ export function prep_start(id) {
   const d = find_doc(id);
   /* drafts made before colours came from emails take theirs */
   if (d?.status === 'draft') { const was = d.recipients.map(r => r.color).join(); recolor(d); if (d.recipients.map(r => r.color).join() !== was) save_doc(d); }
-  Object.assign(P, { doc: d, rid: d?.recipients[0]?.id || null, sel: null, dirty: false, adding: false });
+  /* it opens on the signer whose fields were being placed when it was saved (d.placing), else the first */
   return d;
 }
 let later = 0;
