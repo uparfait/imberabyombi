@@ -33,3 +33,5 @@ export const progress = d => { const n = d.recipients.length, s = signed_n(d);
   return <><div className="flex items-center gap-2">{status_chip(d)}{d.archived ? <span className="chip bg-fg/10 text-fg/70">Archived</span> : null}
     <span className="text-sm text-muted">{s} of {n} signed</span></div>
     <div className="sign_prog mt-3" role="progressbar" aria-valuemin={0} aria-valuemax={n} aria-valuenow={s}><i style={{ width: `${n ? s / n * 100 : 0}%` }}></i></div></>; };
+
+export const dl_label = d => d.status === 'completed' ? 'Download signed PDF' : 'Download PDF';
