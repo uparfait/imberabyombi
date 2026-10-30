@@ -16,3 +16,5 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 - A module the role cannot open shows "No access" (forbidden view).
 - Each route sets `<title>`, the meta description, `og:title` and the canonical link (`set_meta()`).
 - `/login?role=<id>` locks the sign-in form to a role (invite link); `&email=..&name=..` pre-fills it (access link).
+
+## How a navigation works
