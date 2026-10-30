@@ -59,3 +59,5 @@ every account starts empty.
   **Verify and sign** checks them before signing. The check is **simulated** in this template: any file and any password
   are accepted after a short wait; the file name and time are recorded, shown as "Certificate verified" and printed on the
   signing certificate as a simulated check (`cert_pick.jsx`). A real check belongs on a server.
+
+## Following a document
