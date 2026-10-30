@@ -33,3 +33,4 @@ export function Qr_app() {
   const scanning = st.phase === 'scan';
 
   return <div className="qr_app">{top_bar()}
+    <main className="qr_main">
