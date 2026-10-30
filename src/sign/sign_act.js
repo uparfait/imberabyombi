@@ -3,3 +3,4 @@
    Delete spin in their dialog's button). */
 import { add_act } from '../actions/index.js';
 import { PREP_ACT } from './prep_act.js';
+import { SIGNER_ACT } from './signer_act.jsx';
