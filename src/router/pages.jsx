@@ -22,3 +22,7 @@ export function public_page(r) {
   return (
     <div className="relative isolate flex min-h-[100dvh] flex-col">{pub_header()}
       <main id="main" tabIndex={-1} className="page_enter flex-1 outline-none">{inner}</main>{footer()}</div>
+  );
+}
+
+/* Signed out: to sign-in (then back here). A session whose role is gone: signed out. Both return null (the page stays) and
