@@ -9,3 +9,4 @@ export * from './lorem.js';
 export * from './seed_color.js';
 export * from './tz.js';
 export * from './repeat.js';
+export * from './repeat_words.js';
