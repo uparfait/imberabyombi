@@ -6,3 +6,4 @@ import { spinner, notify } from '../feedback/index.js';
 import { help_tip } from '../ui/index.js';
 import { go } from '../router/index.js';
 import { new_doc, drop_doc } from './sign_store.js';
+import { file_set } from './sign_idb.js';
