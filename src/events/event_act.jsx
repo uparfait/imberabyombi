@@ -29,3 +29,4 @@ export const EV_ACT = {
         save(e.id, { ...moved, status: 'Postponed', status_note: d.reason || '' }, 'Event postponed', (d.date ? 'It has a new date.' : 'Its new date is not set yet.') + told(e));
       } }); },
   ev_cancel: t => { const e = db.find('events', t.dataset.id); if (!e) return;
+    modal({ title: 'Cancel this event?', help: 'It stays in the list as cancelled, and you can put it back on schedule later. Everyone invited is told by email.',
