@@ -55,7 +55,7 @@ export const events_schema = {
     agenda_spec(), audience_spec(), field_spec('capacity', 'Capacity', 'number', 0, 1, { min: 1, def: () => 100 }),
     field_spec('registered', 'Attended', 'number', 0, 0, { min: 0, def: () => 0, form: false })
   ],
-  r: { registered: (v, row) => bar_cell(v, row.capacity), tz: tz_cell, place: place_cell, kind: kind_cell, status: (v, row) => badge(ev_state(row)) },
+  r: { registered: (v, row) => bar_cell(db.list('attendees').filter(a => a.ref === row.id).length, row.capacity), tz: tz_cell, place: place_cell, kind: kind_cell, status: (v, row) => badge(ev_state(row)) },
   before: event_before,
   g: i => {
     const c = lorem.int(4, 20) * 10, h = lorem.int(9, 15);
