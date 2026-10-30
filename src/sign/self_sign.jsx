@@ -24,3 +24,6 @@ export function self_part(d) {
   if (r.status === 'signed') return <p className="sign_self_done">{ic('check', 'h-4 w-4 shrink-0')}Signed by you</p>;
   return <span className="sign_send_wrap" data-tip={n ? undefined : 'Place your signature or stamp first.'}>
     <button type="button" className="btn btn_ink btn_sm w-full" data-act="sign_self_go" disabled={!n}>{ic('signature', 'h-4 w-4')}Sign my fields</button></span>;
+}
+
+/* the column's foot: Preview, once someone has signed */
