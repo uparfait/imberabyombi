@@ -59,3 +59,4 @@ function use_desktop() {
     const fit = () => root.style.setProperty('--sign_z', String(Math.min(1, innerWidth / W)));
     fit(); addEventListener('resize', fit);
     return () => { if (m) m.content = was; removeEventListener('resize', fit); root.style.removeProperty('--sign_z'); };
+  }, []);
