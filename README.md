@@ -71,7 +71,7 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [Connecting a backend](docs/connecting_a_backend.md) | [Deploying](docs/deploying.md) |
 | [Before production](docs/before_production.md) | [Document editor](docs/document_editor.md) |
 | [Cartoon pictures and video](docs/cartoons.md) | [O-Doc Sign](docs/o_doc_sign.md) |
-| [3D icons and Iconisus](docs/icons_3d.md) | |
+| [3D icons and Iconisus](docs/icons_3d.md) | [Time zones](docs/time_zones.md) |
 
 ## Rules this repository follows
 Every file is at most 100 lines; names are snake_case (React components `Capital_snake`); every file starts with a
