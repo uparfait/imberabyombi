@@ -12,3 +12,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Staff                    | `/admin/staff`         | System users with roles, personal access links                   |
 | Employees                | `/admin/employees`     | Teachers, kitchen, cleaners, security and administration tabs    |
 | Attendance               | `/admin/attendance`    | Live clock, check in / out (late after `cfg.work_start`), staff and student logs |
+| Students                 | `/admin/students`      | Registration, bulletins (a report card per student), payments summary |
