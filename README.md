@@ -38,3 +38,4 @@ The full feature list is in [whet-it-document.md](whet-it-document.md).
 ```
 index.html       SEO head, theme boot, overlay elements      src/styles/    tokens + stylesheet (≤100 lines per file)
 src/main.jsx     entry: styles, app, router boot             src/store/     storage (db) and redraw (render, rerender)
+src/app.jsx      root: current page + dialogs                src/router/    path routes, page meta, after-draw work
