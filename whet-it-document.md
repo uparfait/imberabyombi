@@ -77,3 +77,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Generated from a schema: column search, sort, pages, rows per page (10/20/50), hide columns, full-tab view,
   Action Buttons column pinned first, details view (COLUMN NAME / VALUE), add, edit, delete.
 - Export to CSV, JSON or Excel with a date-and-time range, filters for fixed-choice columns, chosen columns and
+  their names in the file.
