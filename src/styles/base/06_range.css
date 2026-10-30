@@ -15,3 +15,4 @@
   /* a hidden file input (sr-only, inside a styled button or drop box) keeps its 1px: full width would push the page wider */
   input[type=file]:not(.sr-only) { width: 100%; font-size: .875rem; line-height: 1.5rem; color: rgb(var(--muted)); border: 1px dashed rgb(var(--muted) / .6); border-radius: calc(var(--radius) * .75); padding: .5rem; background: rgb(var(--field, var(--surface))); cursor: pointer; transition: border-color .2s; }
   input[type=file]:not(.sr-only):hover { border-color: rgb(var(--brand)); }
+  input[type=color]:hover { border-color: rgb(var(--brand)); }
