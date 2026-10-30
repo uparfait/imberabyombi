@@ -27,3 +27,4 @@ export function self_part(d) {
 }
 
 /* the column's foot: Preview, once someone has signed */
+export const preview_foot = d => d.recipients.some(r => r.status === 'signed')
