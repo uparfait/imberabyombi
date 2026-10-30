@@ -23,3 +23,4 @@ export function Attend_form({ c, id, demo }) {
   const [mode, set_mode] = useState('Drawn'), [done, set_done] = useState(null), [err, set_err] = useState('');
   if (done) return <Tick text="Attendance submitted" sub={done} />;
   const submit = async e => {
+    e.preventDefault(); const f = e.currentTarget; if (!validate(f)) return;
