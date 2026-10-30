@@ -6,3 +6,4 @@ import { db } from '../store/index.js';
 import { me } from '../auth/index.js';
 import { empty, search_box } from '../ui/index.js';
 import { due_tag, items_of } from '../modules/index.js';
+import { to } from '../router/index.js';
