@@ -22,7 +22,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   CSV, JSON or Excel (no filters). A row shows the signature. Only what people submit: no Add, Edit or Delete. A new
   sign-in shows at once on any open page (other tabs too).
 
-## View This Event
+## Open This Event
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)), also for a finished one: the whole window, no sidebar.
 Made for a computer screen: every screen shows the same view, scaled to fit (`html.stage_page`), never rearranged.
 Its title in the top bar (one line); its details, the agenda item running now (large, with its presenter and
