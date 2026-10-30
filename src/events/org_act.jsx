@@ -42,6 +42,7 @@ export const ORG_ACT = {
         const nu = d.to === 'new' ? one(d) : co[+d.to];   /* everyone keeps their phone */
         if (d.to === 'new' && taken(e, nu.email, -2)) return twice(f, 'p_email');
         const was = e.org_email ? [{ name: e.org_name || e.org_email, email: lc(e.org_email), tel: e.org_tel || '' }] : [];
+        put(c, e, { org_name: nu.name, org_email: nu.email, org_tel: nu.tel || '', co_orgs: [...was, ...co.filter((_, i) => String(i) !== d.to)] },
           'Ownership transferred', `${nu.name} is now the organiser.`); } });
     sync_when(qs('#modal form')); }
 };
