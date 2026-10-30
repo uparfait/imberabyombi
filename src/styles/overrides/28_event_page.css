@@ -19,3 +19,4 @@
   .ev_acts .btn { justify-content: flex-start; }
   .ev_bad { color: rgb(var(--bad)); }
   .ev_tile { display: block; transition: border-color .2s; }
+  .ev_tile:hover { border-color: rgb(var(--brand) / .5); }
