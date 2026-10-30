@@ -6,3 +6,4 @@ import { pick, FINE } from '../overlays/index.js';
 import { kind_of, dt_show, dt_refresh } from '../fields/index.js';
 
 export const PICKER_ACT = {
+  pk_opt: t => { const a = pick.a, o = a?.options[+t.dataset.i]; if (!o) return;
