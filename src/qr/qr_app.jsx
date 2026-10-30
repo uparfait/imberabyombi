@@ -14,3 +14,4 @@ const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site, o
   NotReadableError: 'Another app is using the camera.' };
 
 export function Qr_app() {
+  useSyncExternalStore(on_change, can_install);   /* Install shows when the browser offers it */
