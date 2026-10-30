@@ -39,3 +39,4 @@ export const EV_ACT = {
       save(e.id, { repeat: { ...e.repeat, end: 'on', until: today } }, 'No longer repeating', 'It will not happen after today.'), 'Stop repeating', true); },
   ev_copy: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const { id, date, start, end, status, status_note, invites, registered, ...keep } = e; open_form('events', null, keep); },
+  ev_del: t => ask('Delete this event? It is removed for everyone, with its invitations. You cannot undo this.', () => {
