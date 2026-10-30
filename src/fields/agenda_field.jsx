@@ -9,3 +9,4 @@ import { dt_attrs, dt_show, to24 } from './date_formats.js';
 
 const box = (k, n, l, v, x = {}) => { const { cls = '', ...a } = x;
   return <div className={`field ${cls}`}><label htmlFor={`ag_${n}_${k}`}>{l}</label>
+    {n === 'desc' ? <textarea id={`ag_${n}_${k}`} name={`ag_${n}`} data-ag={n} rows={2} placeholder=" " defaultValue={v} />
