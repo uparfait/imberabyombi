@@ -9,3 +9,6 @@ src/app.jsx           root component: the page for the current route + the share
 src/styles/           the stylesheet: base/ (fonts, tokens, scaling, native elements), components/ (@layer components),
                       overrides/ (rules after the utilities); index.css and overrides.css import them in order
 src/assets/fonts/     the three typefaces (woff2) and their licence
+```
+
+## Folders in `src/` (each has an `index.js` that re-exports its files)
