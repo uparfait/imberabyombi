@@ -1,5 +1,6 @@
 /* events/attend_side.jsx: attendance under an event's status, compact so the card needs no scrolling: a small QR code
    while attendance is open or about to open (att_window.js; a click shows it on the whole screen: qr_full.jsx), "Opens
+   in" or "Closes in", and beside it how many
    attended (live; past 99 it shows 99+; it opens their table), Copy link (once it is over: Attendance, their table), and Open: the event's other pages as tiles (the system's tile menu).
    att_count() and the paths are shared with the live screen. */
 import { db } from '../store/index.js';
