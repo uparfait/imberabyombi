@@ -7,3 +7,4 @@ export const MODS = [
   { k: 'calendar', l: 'Calendar & activities', s: 'Calendar', i: 'calendar', g: 'Overview' },
   { k: 'tasks', l: 'Tasks', s: 'Tasks', i: 'tasks', g: 'Overview' },
   { k: 'docs', l: 'Document editor', s: 'Editor', i: 'description', g: 'Overview', full: true },   /* full: the whole window, no admin shell */
+  { k: 'sign', l: 'O-Doc Sign', s: 'Sign', i: 'signature', g: 'Overview', full: true, d: 'Online document signing and stamping' },
