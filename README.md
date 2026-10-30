@@ -40,3 +40,4 @@ index.html       SEO head, theme boot, overlay elements      src/styles/    toke
 src/main.jsx     entry: styles, app, router boot             src/store/     storage (db) and redraw (render, rerender)
 src/app.jsx      root: current page + dialogs                src/router/    path routes, page meta, after-draw work
 src/config/      brand, media, business rules                src/actions/   every data-act and data-form handler
+src/cartoons/    cartoon pictures drawn from a seed          public/media/  sample video, poster, share image, logo
