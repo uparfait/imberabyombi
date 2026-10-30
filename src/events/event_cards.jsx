@@ -18,7 +18,7 @@ const ROWS = {
     ['Time', e.tbd ? null : times(e)], ['Time zone', zone_short(e.tz || page_tz(), e.date)],
     e.kind === 'Recurring' && e.repeat ? ['Repeats', repeat_text(e.repeat, e.date)] : null,
     e.kind === 'Recurring' && e.repeat ? ['Next', (d => d ? fmt_d(d) : 'It has ended')(repeat_next(e.repeat, e.date, ymd()))] : null],
-  Location: e => e.place === 'Virtual'
+  Location: e => place_of(e) === 'Virtual'
     ? [['Where', 'Virtual'], ['Meeting link', e.link ? out(e.link, e.link) : null], ['Joining notes', e.join_note ? <p className="whitespace-pre-line">{e.join_note}</p> : null]]
     : [['Where', 'Physical'], ['Venue or address', e.venue]],
   Organiser: e => [['Name', e.org_name], ['Email', e.org_email ? out('mailto:' + e.org_email, e.org_email) : null], ['Phone', e.org_tel ? out('tel:' + e.org_tel.replace(/\s/g, ''), e.org_tel) : null]],
