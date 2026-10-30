@@ -12,7 +12,7 @@ export function allow_select_change(t) {
   t.closest('[role=menuitemcheckbox]')?.setAttribute('aria-checked', t.checked);
 }
 
-/* every page follows the new time zone at once */
+/* a new time zone is only a choice until Save: Save and Cancel wake up while it differs from the one in use */
 export function page_tz_change(t) {
   db.set('pageTz', t.value); rerender(); toast(`Times now show in ${zone_of(t.value).short}.`, 'ok', 'Time zone changed');
 }
