@@ -19,6 +19,7 @@ const live_now = f => { const tz = f.elements.tz?.value || device_tz(), p = tz_p
 export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def: () => 'Upcoming', help: KIND_HELP,
   on: e => { if (e.target.value === 'Live') live_now(e.target.form); } });
 
+/* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
 /* a wall-clock date and time in tz → the instant (ms) */
 export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(Number), [h, mi] = (time || '00:00').split(':').map(Number);
   return zoned_to_utc(y, mo, d, h, mi, tz || device_tz()); };
