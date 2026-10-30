@@ -14,3 +14,4 @@ export function notice_menu(n = '') {
     <button className="icon_btn notice_btn" data-act="pop" data-pop={`pop_notice${n}`} aria-label={fresh ? `Notifications, ${fresh} new` : 'Notifications'}>
       {ic('bell')}{fresh ? <span className="notice_count" aria-hidden="true">{fresh > 9 ? '9+' : fresh}</span> : null}</button>
     {createPortal(<div id={`pop_notice${n}`} ref={closed_pop()} className="pop pop_fixed w-[22rem] max-w-[calc(100vw-1rem)] p-2" hidden>
+      <div className="flex min-h-10 items-center justify-between gap-2 px-2"><p className="font-semibold">Notifications</p>
