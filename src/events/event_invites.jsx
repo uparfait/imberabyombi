@@ -54,3 +54,4 @@ export function invites_card(e, st, can) {
     {open ? <div className="ev_inv_add">
       <div className="ev_inv_row"><div className="field min-w-0 flex-1"><label htmlFor="ev_inv_in">Email addresses</label>
         <input id="ev_inv_in" type="text" inputMode="email" autoComplete="off" placeholder=" " onKeyDown={keys}
+          onPaste={ev => { const t = ev.currentTarget; setTimeout(() => take(e.id, t)); }} onBlur={ev => take(e.id, ev.currentTarget)} /></div>
