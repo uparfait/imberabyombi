@@ -12,3 +12,4 @@ const KIND_HELP = 'Upcoming: it starts later. Live now: it has already started, 
 
 /* Live now: an empty date and start become the time now, in the form's time zone */
 const live_now = f => { const tz = f.elements.tz?.value || device_tz(), p = tz_parts(tz, Date.now());
+  for (const [k, v] of [['date', `${p.y}-${pad(p.mo)}-${pad(p.d)}`], ['start', `${pad(p.h)}:${pad(p.mi)}`]]) {
