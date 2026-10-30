@@ -24,3 +24,4 @@ function on_click(e) {
   const sl = e.target.closest('#sidebar a.side_link[href]');
   if (sl && sl.getAttribute('href') !== location.pathname + location.search && !e.ctrlKey && !e.metaKey && !e.shiftKey) { sl.setAttribute('aria-busy', 'true'); set_nav_busy(sl.getAttribute('href')); }
   const sec = e.target.closest('a[data-sec]');
+  if (sec) { const el = qs('#s_' + sec.dataset.sec); close_dialog(qs('#drawer')); if (route.path === '/' && el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } }
