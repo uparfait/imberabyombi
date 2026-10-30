@@ -21,3 +21,5 @@ const link = (m, mod) => { const on = m.k === mod, href = to(`/admin/${m.k}`), b
     {busy ? spinner('side_spin') : ic(m.i)}<span className="truncate">{m.l}</span></a></li>; };
 const groups = mod => uniq(MODS.map(m => m.g)).map(g => { const items = MODS.filter(m => m.g === g && auth.can(m.k)); if (!items.length) return null;
   return side_section(g, g, <ul className="mt-0.5 grid gap-0.5">{items.map(m => link(m, mod))}</ul>); });
+
+/* Sidebar: the clicked link shows the spinner in place of its icon while the page loads (the redraw brings the icon back) */
