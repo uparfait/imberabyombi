@@ -17,3 +17,4 @@ export function public_page(r) {
   if (r.path === '/') { inner = home(); title = 'Home'; }
   else if (k === 'ui') { inner = kit(); title = 'Design system'; }
   else if (PAGES[k]) { inner = detail(k); title = PAGES[k].t; }
+  else { inner = not_found(); title = 'Page not found'; }
