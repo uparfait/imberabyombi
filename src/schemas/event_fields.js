@@ -36,6 +36,7 @@ export function when_ok(d, row, f) {
   const err = (k, m) => { const i = f.elements[k]; show_err(i, m); i?.focus(); return false; };
   if (d.start && d.end && d.end <= d.start) return err('end', 'Pick an end time after the start.');
   if (d.kind === 'Recurring' && f.elements.rp_end?.value === 'on') { const u = f.elements.rp_until?.value || '';
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(u)) return err('rp_until', 'Pick the date it stops on.');
   if (row.id && ['kind', 'date', 'start', 'end', 'tz'].every(k => (d[k] ?? '') === (row[k] ?? ''))) return true;
   const s = at(d.date, d.start || (d.kind === 'Live' ? '00:00' : '23:59'), d.tz), now = Date.now();
   if (d.kind === 'Upcoming' && s <= now) return err(d.start ? 'start' : 'date', 'This time has already passed. Pick a later one, or choose Live now.');
