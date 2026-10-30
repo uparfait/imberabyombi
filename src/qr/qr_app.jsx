@@ -19,3 +19,4 @@ export function Qr_app() {
   const [multi, set_multi] = useState(false), [recent, set_recent] = useState(load);
   const found = t => { set({ phase: 'found', text: t }); navigator.vibrate?.(60);
     const r = [{ t, at: Date.now() }, ...load().filter(x => x.t !== t)].slice(0, 6); set_recent(r); keep(r); };
+  const go = async (f = facing) => {
