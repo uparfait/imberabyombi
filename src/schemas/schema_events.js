@@ -14,7 +14,7 @@ const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when
   field_spec('end', 'Ends', 'time', 0, end_req, { row: 'when' }), field_spec('tz', 'Time zone', 'tz', 0, 1, { def: () => device_tz(), row: 'when' })];
 
 export const activities_schema = {
-  l: 'activity', n: 16, cols: ['title', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
+  l: 'activity', n: 16, cols: ['title', 'kind', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }),
     field_spec('start', 'Starts', 'time', 0, 1, { row: 'when' }), field_spec('end', 'Ends', 'time', 0, 1, { row: 'when' }),
