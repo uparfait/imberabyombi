@@ -31,3 +31,4 @@ Windows, Firefox, Safari) **jsQR**, loaded from the CDN the first time ([`qr_eng
 camera needs a secure page (https, or localhost while developing).
 
 ## Build and hosting
+`vite.config.js` builds two pages (`index.html` and `qr-scan/index.html`). On Vercel, `vercel.json` sends `/qr-scan` to
