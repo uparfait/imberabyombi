@@ -44,7 +44,7 @@ export function live_page(id, c) {
         { icon: 'note', label: 'Record minutes', attrs: { 'data-act': 'ev_minutes', 'data-c': c, 'data-id': id } }, { icon: 'tasks', label: 'Add task', attrs: { 'data-act': 'ev_follow', 'data-c': c, 'data-id': id } },
         { icon: 'users', label: 'Attendees', href: to(page + '/attendance') }, { icon: 'fullscreen', label: 'Full screen', attrs: { 'data-act': 'live_full' } }] })}</div></header>
     <div className="live_body"><section className="live_main">
-      <div className="card live_info"><h1 className="live_title">{e.title}</h1>{e.about || e.note ? <p className="live_about">{e.about || e.note}</p> : null}
+      <div className="card live_card">{head('Details', 'Details')}{e.about || e.note ? <p className="live_about">{e.about || e.note}</p> : null}
         <p className="live_when_all">{[e.tbd ? '' : fmt_d(e.date), e.start ? `${fmt_time(e.start)}${e.end ? ` – ${fmt_time(e.end)}` : ''}` : '', zone_short(e.tz || page_tz(), e.date)].filter(Boolean).join(' · ')}</p></div>
       {ag.length ? <div className="card live_now">{it ? <><p className="att_kind">Now · {span(it)}</p><h2 className="live_now_t">{it.title}</h2>{who(it)}
         <progress max="100" value={done} aria-label="How far it has got"></progress></>
