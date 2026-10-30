@@ -27,6 +27,7 @@ const tz_words_of = (tz, date) => { const w = zone_short(tz, date); return [w, w
 /* a block's small label, and its value in words (both lengths; CSS shows the one that fits) with the arrow */
 const CHEV = ic('chev_d', 'when_chev shrink-0');
 const inside = (f, id, w) => <><label htmlFor={id} className="when_lab">{f.l}</label>
+  <span className="when_val" aria-hidden="true"><span className="when_text"><span className="when_long">{w[0]}</span><span className="when_short">{w[1]}</span></span>{CHEV}</span></>;
 
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
