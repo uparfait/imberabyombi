@@ -16,3 +16,4 @@ export const MODS = [
   { k: 'events', l: 'Events', s: 'Events', i: 'star', g: 'Operations' },
   { k: 'inventory', l: 'Reservations & inventory', s: 'Inventory', i: 'box', g: 'Operations' },
   { k: 'parking', l: 'Smart parking', s: 'Parking', i: 'car', g: 'Operations' },
+  { k: 'roles', l: 'Roles & access', s: 'Roles', i: 'shield', g: 'System' },
