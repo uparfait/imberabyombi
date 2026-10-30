@@ -29,3 +29,5 @@ export function clash_ok(r, row, d, f) {
   f._clash = sig; const slot = f.querySelector('[data-msg-slot]');
   const say = ({ o, day, why }) => `${o.title} (${fmt_d(day)}, ${fmt_time(o.start)} ${zone_short(o.tz || page_tz(), day).split(' · ')[0]}, ${why})`;
   show_msg(slot, 'warn', 'Time conflict', `It overlaps with ${list.slice(0, 3).map(say).join('; ')}${list.length > 3 ? ` and ${list.length - 3} more` : ''}. Save again to keep it anyway.`);
+  slot?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); return false;
+}
