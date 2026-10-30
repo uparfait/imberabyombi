@@ -19,3 +19,6 @@ function month_day(r, f) {
     return w && wd ? ` on the ${and_list(sorted(w, x => x === -1 ? 9 : x).map(x => WEEK_NAMES[x]))} ${and_list(sorted(wd, mon_first).map(x => DAY_NAMES[x]))}` : ''; }
   const ds = r.dates?.length ? r.dates : f && [f.getDate()];
   return ds ? ` on the ${and_list(sorted(ds, x => x === -1 ? 99 : x).map(x => x === -1 ? 'last day' : ordinal(x)))}` : '';
+}
+
+/* rule r whose first date is first ('YYYY-MM-DD', may be empty) in words */
