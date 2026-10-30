@@ -6,3 +6,4 @@ export * from './masked.js';
 export * from './form_values.js';
 export * from './field.jsx';
 export * from './when_row.jsx';
+export * from './fill_rows.js';
