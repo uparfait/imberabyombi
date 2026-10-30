@@ -15,3 +15,4 @@ const STEPS = [['Upload', 'A PDF of the document to sign.'], ['Add signers', 'Wh
 const bad = (text, title) => { notify(text, 'bad', title); return false; };
 
 async function take(file) {
+  if (!/\.pdf$/i.test(file.name) && file.type !== 'application/pdf') return bad('Only PDF files can be uploaded. Save the document as a PDF first.', 'Not a PDF');
