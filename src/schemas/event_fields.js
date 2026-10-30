@@ -40,6 +40,7 @@ export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
 const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
   if ('kind' in d) d.repeat = d.kind === 'Recurring' ? repeat_from(f) : null; return d; };
 /* a schema's before(): the timing checked, then the record as saved */
+export const event_before = (d, row, f) => when_ok(d, row, f) ? place_in(repeat_in(d, f)) : false;
 
 /* a wall-clock date and time in tz → the instant (ms) */
 export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(Number), [h, mi] = (time || '00:00').split(':').map(Number);
