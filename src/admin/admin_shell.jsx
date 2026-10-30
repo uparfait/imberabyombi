@@ -25,3 +25,4 @@ export function admin_shell(mod, content) {
   return <div className="flex min-h-[100dvh]">
   <div id="sidebar_scrim" ref={sync_ref(scrim_sync)} className={`scrim fixed inset-0 z-40 bg-ink/50 lg:hidden ${ui.side ? 'on' : ''}`}
     data-act="side" aria-hidden="true"></div>
+  <aside id="sidebar" ref={sync_ref(side_sync)}
