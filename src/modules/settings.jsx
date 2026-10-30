@@ -12,3 +12,4 @@ import { to } from '../router/index.js';
 import { help_tip } from '../ui/index.js';
 
 const FONTS = ['Figtree', 'Bricolage Grotesque', 'system-ui'];
+/* a range token: its label shows the value (#token_<k>_out, updated while dragging) */
