@@ -2,6 +2,7 @@
    (picked under Placing for, so the fields you place are yours) and then goes. At the foot of the right column: Preview
    and sign, the document in an overlay with your fields to fill (your signature drawn, typed or uploaded, your stamp
    made or uploaded), Next field and Finish and sign (the agreement and, if forced, the certificate); signed, the same
+   overlay has Download a copy and Add other signers. Your fields stay as signed, and the draft goes on: add others and
 import { ic } from '../icons/index.js';
 import { rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
