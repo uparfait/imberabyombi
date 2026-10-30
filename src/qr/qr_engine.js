@@ -28,7 +28,7 @@ let stream = null, timer = 0;
 export function stop() { clearTimeout(timer); stream?.getTracks().forEach(t => t.stop()); stream = null; }
 export async function start(video, on_code) {
   stop(); await reader();
-  stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: facing }, width: { ideal: 1280 }, height: { ideal: 720 } }, audio: false });
+  stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280 }, height: { ideal: 720 } }, audio: false });
   video.srcObject = stream; await video.play();
   const tick = async () => { if (!stream) return;
     try { if (video.readyState >= 2) { const v = await decode(video, video.videoWidth, video.videoHeight); if (v) { stop(); on_code(v); return; } } } catch { /* the next frame */ }
