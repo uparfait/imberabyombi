@@ -28,3 +28,4 @@ export function org_table(e, c, can) {
     <span className="ev_sub ev_narrow truncate">{p.email}</span><span className="ev_sub">{role}</span></td>
     <td className="ev_wide"><span className="block truncate">{p.email || '—'}</span></td><td className="ev_wide ev_org_tel">{p.tel || '—'}</td>
     {can ? <td className="ev_org_acts">{btn('ev_org_edit', 'Edit', i, e, c, 'edit')}{i < 0 ? btn('ev_transfer', 'Transfer', i, e, c, 'key') : null}</td> : null}</tr>;
+  return <div className="ev_inv_box ev_tbl"><table className="ev_inv_table ev_org_table">
