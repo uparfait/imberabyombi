@@ -22,3 +22,4 @@ export const fmt_time = t => {
   return h24() ? `${pad(h || 0)}:${pad(m || 0)}` : new Date(2000, 0, 1, h || 0, m || 0).toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit', hour12: true });
 };
 export const iso_week = d => {
+  const x = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); x.setUTCDate(x.getUTCDate() + 4 - (x.getUTCDay() || 7));
