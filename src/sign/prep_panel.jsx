@@ -23,6 +23,7 @@ export function add_signer(f, quiet = false) {
   f.reset(); gate(f); prep_dirty(); rerender(); if (!quiet) notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
   return true;
 }
+const add = e => { e.preventDefault(); add_signer(e.currentTarget); };
 /* Save signer is enabled only when the form can be saved: a name, a valid email, and that email not a signer yet */
 const gate = f => { if (!f) return; const email = f.elements.email.value.trim().toLowerCase();
   f.querySelector('button.btn_primary').disabled = !f.checkValidity() || P.doc.recipients.some(r => r.email === email); };
