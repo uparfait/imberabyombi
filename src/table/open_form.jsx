@@ -16,3 +16,4 @@ export function open_form(c, id, preset = {}) {
   const s = schemas[c], row = id ? db.find(c, id) : { ...Object.fromEntries(s.f.filter(f => f.def).map(f => [f.k, f.def()])), ...(cur[c]?.preset || {}), ...preset };
   if (!row) return notify('It may have been deleted in another tab. Refresh the list and try again.', 'bad', 'Record not found');
   const before = qs('#modal form');
+  modal({ title: `${id ? 'Edit' : 'New'} ${s.l}`, body: body_of(s, row), submit: id ? 'Save changes' : `Add ${s.l}`,
