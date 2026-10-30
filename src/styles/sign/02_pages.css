@@ -10,3 +10,4 @@
 .sign_wait { position: absolute; top: 4rem; left: 50%; z-index: 3; transform: translateX(-50%); }
 
 .sf { position: absolute; display: flex; align-items: center; justify-content: center; gap: .35em; border-radius: .5rem;
+  font: 600 clamp(9px, 1.7cqw, 15px)/1.2 var(--font_sans); user-select: none; -webkit-user-select: none; }
