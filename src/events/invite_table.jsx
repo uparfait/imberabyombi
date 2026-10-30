@@ -18,3 +18,4 @@ function save(id, old, input) {
   if (v !== old && e.invites.some(i => i.e === v)) { show_err(input, 'This address is already invited.'); return input.focus(); }
   editing = '';
   if (v !== old) { db.upsert('events', { id, invites: e.invites.map(i => i.e === old ? { e: v, at: Date.now() } : i) }); notify(`The invitation was sent to ${v}.`, 'ok', 'Address changed'); }
+  rerender();
