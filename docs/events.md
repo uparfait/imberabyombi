@@ -41,3 +41,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 - An event's status is `Scheduled`, `Postponed`, `Cancelled` or `Completed`. The actions set it; the form does not show it.
 
 ## Invitations
+On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.jsx)):
