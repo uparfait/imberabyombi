@@ -27,3 +27,4 @@ export function perm_change(t) {
     const name = k => MODS.find(m => m.k === k)?.l || k, moved = was && was !== r.land;
     toast(moved ? `${name(was)} is no longer open to this role, so it now lands on ${r.land ? name(r.land) : 'no page yet'}.` : 'Access updated', 'ok',
       moved ? 'Landing page moved' : undefined);
+    rerender(); });
