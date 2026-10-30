@@ -15,3 +15,4 @@ async function reader() {
 }
 
 const cv = document.createElement('canvas'), cx = cv.getContext('2d', { willReadFrequently: true });
+async function decode(src, w, h) {
