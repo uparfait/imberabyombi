@@ -29,5 +29,4 @@
   .live_qr .qr_empty { font-size: 1.5rem; }
   .live_qr_btn { border-radius: var(--radius); cursor: zoom-in; }
   .live_qr .copy_box { width: 100%; max-width: min(34vw, 30rem); }
-  @media (max-aspect-ratio: 1/1) { .live { height: auto; min-height: 100dvh; } .live_body { grid-template-columns: minmax(0, 1fr); } .live_main { overflow: visible; }
-    .live_qr_btn .qr, .live_qr .qr_empty { width: min(100%, 26rem); } .live_agenda li { grid-template-columns: 7.5rem minmax(0, 1fr); } }
+  html.stage_page { font-size: min(100vw * var(--scale_staff) / var(--scale_ref), 100dvh * var(--scale_staff) / 864); }
