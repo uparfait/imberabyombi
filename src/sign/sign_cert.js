@@ -31,3 +31,4 @@ export async function certificate(pdf, d, L) {
     const n = d.fields.filter(f => f.rid === r.id).length; text(`${n} mark${n === 1 ? '' : 's'} on the document`, { x: 14, color: soft });
     if (r.cert_at) text(`Digital certificate: ${r.cert_file}, checked ${when(r.cert_at)} (simulated check)`, { x: 14, color: soft });
     y -= 6; });
+  rule(); text('Activity', { size: 13, bold: true }); y -= 4;
