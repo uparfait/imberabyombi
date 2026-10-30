@@ -48,6 +48,7 @@ function Self_view({ id }) {
   const d = find_doc(id), r = d && mine(d), marks = use_marks(id, d?.updated);
   if (!r) return null;
   const done = r.status === 'signed';
+  return <>{head(d, null)}<div className="sign_self_view">
 export const SELF_ACT = {
   sign_self: () => { const me = who(); if (!me.email) return;
     const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
