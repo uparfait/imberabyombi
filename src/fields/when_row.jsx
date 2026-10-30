@@ -48,3 +48,4 @@ const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); con
 
 /* fs: the row's fields in order; a dash goes between two times (start – end) */
 export const when_row = (fs, row) => { const cap = fs.some(f => f.t === 'tz') ? 'Date, time and time zone' : 'Date and time', id = 'when_' + fs[0].k;
+  return <div key={id} className="when_wrap sm:col-span-2"><p id={id} className="when_cap">{cap}</p>
