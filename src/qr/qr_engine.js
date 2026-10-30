@@ -27,3 +27,4 @@ let stream = null, timer = 0;
 export function stop() { clearTimeout(timer); stream?.getTracks().forEach(t => t.stop()); stream = null; }
 export async function start(video, on_code, facing = 'environment') {
   stop(); await reader();
+  stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: facing }, width: { ideal: 1280 }, height: { ideal: 720 } }, audio: false });
