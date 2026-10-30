@@ -19,5 +19,6 @@ export const CALENDAR_ACT = {
   slot: (t, e) => { if (!auth.can('calendar', 2)) return; let h = 9; if (t.classList.contains('hour_lines')) { const r = t.getBoundingClientRect(); h = Math.min(22, Math.max(0, Math.floor((e.clientY - r.top) / r.height * 24))); }
     open_form('activities', null, { date: t.dataset.d, start: `${pad(h)}:00`, end: `${pad(h + 1)}:00` }); },
   ev: t => { const c = t.dataset.c; if (c === 'events' && auth.can('events')) return go('/admin/events/' + t.dataset.id);   /* its page */
+    if (c === 'activities' && auth.can('calendar')) return go('/admin/calendar/' + t.dataset.id);
     else { const r = db.find(c, t.dataset.id); modal({ title: r?.title || 'Event', body: <p className="text-muted sm:col-span-2">{`${fmt_d(r?.date)}, ${r?.start || ''}`}</p> }); } }
 };
