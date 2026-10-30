@@ -12,3 +12,4 @@ export const ROLES0 = [
   { id: 'hr', name: 'HR manager', d: 'Staff, employees and attendance.',
     perms: perm_map('dashboard:1,calendar:1,tasks:2,docs:2,sign:2,icons:2,tz:2,staff:2,employees:2,attendance:2,settings:1') },
   { id: 'teacher', name: 'Teacher', d: 'Students, bulletins and class activities.',
+    perms: perm_map('dashboard:1,calendar:1,tasks:2,docs:2,sign:2,icons:2,tz:2,attendance:1,students:2,library:1,events:1,settings:1') },
