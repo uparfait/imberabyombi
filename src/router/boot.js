@@ -11,3 +11,4 @@ import { navigate, install_history } from './history.js';
 function define_callout() {
   if (customElements.get('ds-callout')) return;
   customElements.define('ds-callout', class extends HTMLElement {
+    constructor() { super(); this.attachShadow({ mode: 'open' }).append(document.getElementById('tpl_callout').content.cloneNode(true)); }
