@@ -19,6 +19,7 @@
   .ev_edit { display: inline-flex; align-items: center; gap: .25rem; padding: .25rem .625rem; border-radius: var(--pill); font-size: .75rem;
     letter-spacing: 0; text-transform: none; color: rgb(var(--fg) / .8); transition: background-color .2s; }
   .ev_edit:hover { background: rgb(var(--brand) / .12); }
+  .ev_table .ag_now > * { background: rgb(var(--ok) / .08); }   /* the agenda item running now */
   .ev_link { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
   .ev_left { color: rgb(var(--muted)); font-size: .8125rem; }   /* "Starts in 2d 4h 5m 6s" */
   .ev_left b { color: rgb(var(--fg)); font-weight: 600; font-variant-numeric: tabular-nums; }
