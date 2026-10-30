@@ -18,3 +18,4 @@ function events_for_me(now) {
     const s = e.date ? at(e.date, e.start, e.tz) : 0, href = '/admin/events/' + e.id, n = { at: s, href, text: e.title };
     if (e.status === 'Cancelled') return [{ ...n, id: `ev:${e.id}:x`, icon: 'x', tone: 'bad', title: 'Event cancelled' }];
     if (e.status === 'Postponed') return [{ ...n, id: `ev:${e.id}:p:${e.date}`, icon: 'clock', tone: 'warn', title: 'Event postponed' }];
+    if (s > now && s - now < 24 * H) return [{ ...n, id: `ev:${e.id}:s:${e.date}`, icon: 'star', tone: 'info', title: `Starts at ${fmt_time(e.start)}` }];
