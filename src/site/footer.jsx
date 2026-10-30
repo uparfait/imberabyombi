@@ -1,4 +1,4 @@
-/* site/footer.jsx: the public footer: logo, a line of text, social links and the map below them, the Explore and Platform link lists,
+/* site/footer.jsx: the public footer: logo, a line of text, social links, the Qr-scan app badge and the map below them, the Explore and Platform link lists,
    the newsletter form (data-form="news") and the copyright bar with "Back to top". */
 import { ic } from '../icons/index.js';
 import { logo } from '../ui/index.js';
