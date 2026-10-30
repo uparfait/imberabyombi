@@ -13,3 +13,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
   months or years.
   - Weekly: on chosen weekdays.
   - Monthly: on dates (the 1st, the 15th, the last day) or on weeks (the second and the last Friday).
+  - Yearly: in chosen months, then on dates or weeks as for monthly.
