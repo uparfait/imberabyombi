@@ -46,3 +46,4 @@ every account starts empty.
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
 
 ## Signing
+- The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
