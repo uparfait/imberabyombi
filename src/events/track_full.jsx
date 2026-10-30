@@ -18,3 +18,4 @@ export const hue = s => [...String(s || '')].reduce((h, ch) => (h * 31 + ch.char
 let pick = null;   /* { id, i, now, at }: the item picked with Back / Next */
 
 /* each item: Now, Done or Next; the slide shown: the one picked, else the one running now, else the next, else the last */
+function track_at(e, now) {
