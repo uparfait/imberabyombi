@@ -18,6 +18,7 @@ import { attend_side } from './attend_side.jsx';
 /* when a past one ran, short: "Oct 23 · 12:00 PM – 2:00 PM" (the year when it is not this one; another day: its date too) */
 const T = { timeStyle: 'short' }, D = t => ({ month: 'short', day: 'numeric', ...(fmt_stamp(t, { year: 'numeric' }) === fmt_stamp(Date.now(), { year: 'numeric' }) ? {} : { year: 'numeric' }) });
 const span = ([a, b]) => fmt_stamp(a, D(a)) === fmt_stamp(b, D(b)) ? `${fmt_stamp(a, D(a))} · ${fmt_stamp(a, T)} – ${fmt_stamp(b, T)}`
+  : `${fmt_stamp(a, D(a))}, ${fmt_stamp(a, T)} – ${fmt_stamp(b, D(b))}, ${fmt_stamp(b, T)}`;
 const HELP = { events: 'Every detail, by section. Edit a section on its own; postpone, cancel or restore it on the right.',
   activities: 'Every detail, by section. Edit a section on its own.' };
 const acts_ok = c => auth.can(c === 'events' ? 'events' : 'calendar', 2);
