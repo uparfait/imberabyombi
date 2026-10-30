@@ -18,3 +18,4 @@ export function mail_body(k) {
       <p className="mt-0.5 flex items-center gap-1.5 text-sm text-muted">{ic('pin', 'h-4 w-4 shrink-0')}{place}</p></div></div>
   );
   const rsvp = <><p className="text-sm font-medium">Will you attend?</p>
+    <div className="flex flex-wrap gap-2">{mail_btn('Yes, I will attend')}{mail_btn('Maybe', 'btn_outline')}{mail_btn('No', 'btn_outline')}</div></>;
