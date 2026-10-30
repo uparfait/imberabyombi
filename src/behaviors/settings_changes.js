@@ -8,3 +8,4 @@ import { apply_tokens } from '../actions/index.js';
 
 export function allow_select_change(t) {
   db.set('allowSelect', t.checked); document.documentElement.classList.toggle('allow_select', t.checked);
+  t.closest('[role=menuitemcheckbox]')?.setAttribute('aria-checked', t.checked);
