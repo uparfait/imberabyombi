@@ -9,3 +9,4 @@ const CELLS = n => /^(xl\/sharedStrings|xl\/worksheets\/sheet\d+|content)\.xml$/
 export const find_emails = text => [...new Set((String(text).match(EMAIL) || []).map(m => m.toLowerCase()))];
 /* what is left once the addresses are taken out (words that are not addresses: shown so they can be corrected) */
 export const not_emails = text => String(text).replace(EMAIL, ' ').split(/[\s,;]+/).filter(Boolean);
+export const INVITE_FILES = '.xlsx,.xlsm,.xls,.ods,.csv,.tsv,.txt';
