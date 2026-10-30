@@ -32,3 +32,4 @@
   h4 { font-size: 1.25rem; }
   h5 { font-size: 1.0625rem; }
   h6 { font-size: .9375rem; color: rgb(var(--muted)); }
+  :where(p) { text-wrap: pretty; }
