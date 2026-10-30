@@ -8,3 +8,4 @@ import { help_tip } from '../ui/index.js';
 import { dt_attrs } from './date_formats.js';
 
 const FREQS = [['daily', 'Daily'], ['weekdays', 'Every weekday (Mon–Fri)'], ['weekly', 'Weekly'], ['monthly', 'Monthly'], ['yearly', 'Yearly']];
+const UNIT = { daily: 'day', weekly: 'week', monthly: 'month', yearly: 'year' };
