@@ -8,7 +8,7 @@ import { ic } from '../icons/index.js';
 import { db } from '../store/index.js';
 import { cfg } from '../config/index.js';
 import { auth } from '../auth/index.js';
-import { avatar, theme_btn } from '../ui/index.js';
+import { avatar, theme_btn, help_tip } from '../ui/index.js';
 import { key_hint } from '../feedback/index.js';
 import { closed_pop } from './live_slot.jsx';
 import { to } from '../router/index.js';
