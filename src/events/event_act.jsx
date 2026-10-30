@@ -28,6 +28,7 @@ export const EV_ACT = {
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
     modal({ title: again ? 'Change the new date?' : 'Postpone this event?', help: POSTPONE_HELP,
+      body: [when_row(WHEN, was), reason(again ? e.status_note : '')], submit: again ? 'Save changes' : 'Postpone',
       on_submit: (d, f) => {
         if (d.date && d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'Pick an end time after the start.'); return false; }
         if (d.date && at(d.date, d.start || '23:59', d.tz) <= Date.now()) { show_err(f.elements[d.start ? 'start' : 'date'], 'Pick a time later than now.'); return false; }
