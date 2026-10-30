@@ -28,3 +28,4 @@ function appearance(tk, th) {
         <div className="flex items-center gap-3"><input id="token_brand" type="color" defaultValue={brand} data-token="brand" />
           <output id="token_brand_out">{brand}</output></div></div>
       <div className="field"><label htmlFor="token_font">Body font</label>
+        <select id="token_font" data-token="font" defaultValue={tk.font}>{FONTS.map(f => <option key={f}>{f}</option>)}</select></div>
