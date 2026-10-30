@@ -32,3 +32,4 @@ export function found_card(text) {
     {link ? <><p className="qr_host truncate">{new URL(link).host}</p><p className="qr_text truncate" title={link}>{link}</p></>
       : <p className="qr_text qr_plain">{text}</p>}
     {web ? <p className="qr_note">Only links that start with https open from here.</p> : null}
+    <div className="qr_acts">{link ? <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn_primary">{ic('external', 'h-4 w-4')}Open link</a> : null}
