@@ -17,6 +17,7 @@ Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `t
 [events](events.md)).
 Extras: `def` (default), `min`, `max`, `when` (shown only for some values: `'Done'` / `'!Done'` by status, or
 `'field=A|B'` / `'field!=A'` by any field, a radio group too), `help` (a help icon by a `seg` title), `on` (runs when a
+`seg` choice changes), `form: false` (kept out of forms; set in code).
 
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
