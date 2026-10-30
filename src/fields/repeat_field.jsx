@@ -6,3 +6,5 @@ import { REPEAT_NEW, DAY_NAMES, MONTH_NAMES, WEEK_NAMES, repeat_text, cap } from
 import { ic } from '../icons/index.js';
 import { help_tip } from '../ui/index.js';
 import { dt_attrs } from './date_formats.js';
+
+const FREQS = [['daily', 'Daily'], ['weekdays', 'Every weekday (Mon–Fri)'], ['weekly', 'Weekly'], ['monthly', 'Monthly'], ['yearly', 'Yearly']];
