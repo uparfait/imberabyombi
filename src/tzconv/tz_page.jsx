@@ -42,3 +42,4 @@ export function Tz_page() {
       + 'time. Search the time zones by city, name or offset, such as GMT+2.')}
     <div className="tzc">
       <section className="card p-5" aria-label="From">
+        <div className="tzc_head"><h3 className="tzc_cap">From</h3>{seg('tz_ff', st.ff, FMT, v => put({ ff: v }), 'Time format')}</div>
