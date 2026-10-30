@@ -47,3 +47,4 @@ function data_card() {
   return <section className="card p-6"><h2 className="text-lg">Data in this browser</h2>
     <p className="mt-1 text-sm text-muted">Everything is saved with localStorage on this device only.</p>
     <p className="mt-5 flex justify-between text-sm"><span>{`${(used / 1024).toFixed(1)} KB used`}</span><span className="text-muted">{`${pct}% of 5 MB`}</span>
+      </p><progress className="mt-2" max="100" value={pct}></progress>
