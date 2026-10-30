@@ -71,8 +71,7 @@ export function invites_card(e, st, can) {
         <label className="btn btn_outline ev_upload">{ic('upload', 'h-4 w-4')}Upload a file
           <input type="file" accept={INVITE_FILES} className="sr-only" onChange={ev => upload(e.id, ev.currentTarget)} /></label></div>
       {wait.note ? <p className="ev_inv_note" role="status">{wait.note}</p> : null}
-      {n ? <div className="ev_chips">{wait.list.map(m => <span key={m} className="ev_chip"><span className="min-w-0 truncate">{m}</span>
-        <button type="button" className="ev_chip_x" data-act="ev_unwait" data-e={m} aria-label={`Remove ${m}`}>{ic('x', 'h-3 w-3')}</button></span>)}</div> : null}
+      {n ? <div className="ev_chips">{wait.list.map(m => wait.edit === m
       <button type="button" className="btn btn_primary btn_sm justify-self-start" data-act="ev_invite" data-id={e.id}>{ic('send', 'h-4 w-4')}{n ? `Send ${n_of(n, 'invite', 'invites')}` : 'Send invites'}</button>
     </div> : null}
     {inv.length ? invite_table(e, open) : <p className="text-sm text-muted">No one is invited yet.</p>}
