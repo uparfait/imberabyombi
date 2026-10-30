@@ -13,3 +13,4 @@ export function prep_start(id) {
   if (P.doc?.id === id) return P.doc;
   const d = find_doc(id);
   /* drafts made before colours came from emails take theirs */
+  if (d?.status === 'draft') { const was = d.recipients.map(r => r.color).join(); recolor(d); if (d.recipients.map(r => r.color).join() !== was) save_doc(d); }
