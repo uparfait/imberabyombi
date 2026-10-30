@@ -1,5 +1,6 @@
 /* behaviors/link_clicks.js: internal links move without reloading the page. A click on an <a href> of this site (same origin,
    inside the base path, no target or download, no modifier key, not an in-page #fragment, not a file, not data-reload: an
+   app of its own on this site, such as Qr-scan) becomes go(path).
    It listens after the main click listener: links that one already handled (data-act, header sections on the home page) stay. */
 import { go, app_path, in_base } from '../router/index.js';
 
