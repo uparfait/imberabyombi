@@ -29,3 +29,4 @@
   meter::-webkit-meter-bar { background: rgb(var(--surface_3)); border: 0; border-radius: var(--pill); height: .55rem; }
   meter::-webkit-meter-optimum-value { background: rgb(var(--ok)); border-radius: var(--pill); }
   meter::-webkit-meter-suboptimum-value { background: rgb(var(--warn)); border-radius: var(--pill); }
+  meter::-webkit-meter-even-less-good-value { background: rgb(var(--bad)); border-radius: var(--pill); }
