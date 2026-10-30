@@ -16,3 +16,4 @@ function first() {
   return { from, to: from === 'UTC' ? 'Europe/London' : 'UTC', ff: f, tf: f, date: ymd_of(p), h: p.h, m: p.mi, dk: 0 };
 }
 const fmt = (h, m, mode) => mode === '24' ? [`${pad(h)}:${pad(m)}`, ''] : [`${h % 12 || 12}:${pad(m)}`, h < 12 ? 'AM' : 'PM'];
+const diff = min => { if (!min) return 'Same time'; const a = Math.abs(min), h = Math.floor(a / 60), m = a % 60;
