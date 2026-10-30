@@ -6,3 +6,5 @@ import { schemas } from '../schemas/index.js';
 import { notify } from '../feedback/index.js';
 import { field, when_row } from '../fields/index.js';
 import { modal } from '../overlays/index.js';
+
+/* the form's fields; those a schema groups with row: 'when' (a date and its times) go on one line, where the first is */
