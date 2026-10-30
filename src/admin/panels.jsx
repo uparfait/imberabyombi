@@ -33,3 +33,4 @@ const my_tasks = () => {
   const all = db.list('tasks').filter(t => t.assignee === me()), open = all.filter(t => t.status !== 'Done'), done = all.filter(t => t.status === 'Done');
   return <><button className="btn btn_ghost btn_sm -ml-2 text-accent" data-act="create" data-mod="tasks" data-col="tasks">{ic('plus', 'h-4 w-4')}Add a task</button>
     {open.length ? <ul className="mt-1 grid">{open.map(task_row)}</ul> : empty('All tasks complete', 'Nice work. New tasks assigned to you will show up here.')}
+    {done.length ? <details className="done_list mt-2"><summary>{`Completed (${done.length})`}</summary><ul className="grid">{done.map(task_row)}</ul></details> : null}</>; };
