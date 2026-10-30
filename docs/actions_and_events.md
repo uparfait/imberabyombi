@@ -8,3 +8,4 @@ component needs its own click handler for app actions, and buttons inside dialog
 <button className="btn btn-primary btn-sm" data-act="add" data-col="tasks">Add a task</button>
 ```
 - The click listener finds the closest `[data-act]` and runs `ACT[name](element, event)` from
+  [`src/actions/`](../src/actions/). `Enter` / `Space` do the same on any element with `data-act` and a `tabIndex`.
