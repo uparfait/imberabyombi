@@ -41,3 +41,4 @@ export function notices(now = Date.now()) {
 }
 
 export const notices_read = () => new Set(db.get('notices_read', []));
+/* marks ids read, keeping only ids that still have a notice */
