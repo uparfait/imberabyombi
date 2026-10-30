@@ -35,3 +35,5 @@ lives in the browser and can be reset from Settings.
 The full feature list is in [whet-it-document.md](whet-it-document.md).
 
 ## Project map
+```
+index.html       SEO head, theme boot, overlay elements      src/styles/    tokens + stylesheet (≤100 lines per file)
