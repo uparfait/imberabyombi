@@ -49,3 +49,4 @@ export function month_grid(d, items) {
     return <div key={k} className={`min-h-[6.5rem] min-w-0 border-b border-r border-line p-1 sm:p-1.5 ${out}`} data-act="slot" data-d={k}>
       <span className={`mx-auto mb-1 grid h-7 w-7 place-items-center rounded-full text-xs ${k === td ? 'bg-brand text-white' : 'text-muted'}`}>{x.getDate()}</span>
       {its.slice(0, 3).map(item)}{more(its.length - 3, 'px-1.5')}</div>; };
+  return <>
