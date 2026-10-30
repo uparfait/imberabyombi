@@ -37,6 +37,7 @@ export const deep = (c, dl, k, ds = 0) => shade(c, dl * (.6 + .4 * Math.min(k, 1
 export function vol(id, o, k = 1) {
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
   if (o.goo && o.goo * k >= PX.goo) {
+    /* goo: blur, then a steep alpha ramp (threshold at alpha ≈ .17, which thickens the shape by ≈ .93 goo). The ramp is
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
