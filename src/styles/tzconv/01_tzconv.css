@@ -2,3 +2,4 @@
    line, the result time large, the UTC line under them. Template tokens; borders, no shadows. */
 .tzc { display: grid; max-width: 36rem; }
 .tzc_head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .875rem; }
+.tzc_cap { color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
