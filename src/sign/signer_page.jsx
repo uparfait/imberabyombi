@@ -14,3 +14,4 @@ import { request_card, note_card, steps_card } from './signer_side.jsx';
 import { dl_label } from './owner_page.jsx';
 
 function Sign_doc({ d, me, done }) {
+  const marks = use_marks(d.id, d.updated);
