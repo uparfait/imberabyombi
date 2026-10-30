@@ -15,3 +15,4 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
   not in the installed app.
 
 ## Installing it
+Only Qr-scan installs, never the site's other pages: it has its own manifest (`manifest.webmanifest`, scope
