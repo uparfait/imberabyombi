@@ -20,7 +20,7 @@ const edit_field = (d, f, sel, marks) => { const r = rec_of(d, f.rid), [l, i] = 
 
 /* o = { mode: 'edit' | 'sign' | 'view', sel (edit), marks (saved), pending (signer's, not sent yet), me (signer's id) } */
 export const fields_on = (d, page, o) => d.fields.filter(f => f.page === page).map(f => {
-  if (o.mode === 'edit') return edit_field(d, f, o.sel);
+  if (o.mode === 'edit') return edit_field(d, f, o.sel, o.marks);
   const r = rec_of(d, f.rid), [l, i] = KINDS[f.type], v = o.pending?.[f.id] || o.marks?.[f.id];
   if (o.mode === 'sign' && f.rid === o.me) return <button key={f.id} type="button" className={`sf ${v ? 'sf_done' : 'sf_todo'}`} data-fid={f.id}
     data-act="sign_fill" data-id={f.id} style={look(f, r)} aria-label={v ? `Change your ${l.toLowerCase()}` : `Add your ${l.toLowerCase()}`}>
