@@ -8,3 +8,5 @@ import { avatar, theme_btn } from '../ui/index.js';
 import { key_hint } from '../feedback/index.js';
 import { closed_pop } from './live_slot.jsx';
 import { to } from '../router/index.js';
+
+export const header_tools = (n = '') => <><button className="icon_btn" data-act="cmdk" aria-label={`Search${key_hint('K') ? ` (${key_hint('K')})` : ''}`}>{ic('search')}</button>
