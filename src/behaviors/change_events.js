@@ -25,3 +25,4 @@ function on_change(e) {
   if (t.dataset.tablePer) { const c = t.dataset.tablePer; table.tview(c).per = +t.value; table.tview_save(c); ui.page[c] = 1;
     return request(() => table.refresh(c), { delay: staff_page() ? cfg.latency : 0 }); }
   if (t.dataset.tableCol) { const c = t.dataset.tableCol, v = table.tview(c), k = t.value;
+    if (!t.checked && schemas[c].cols.length - v.hide.length <= 1) { t.checked = true; return; }   /* one column always stays */
