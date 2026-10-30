@@ -22,6 +22,7 @@ import { att_phase } from './att_window.js';
 import { Qr } from './qr.jsx';
 import { qr_full } from './qr_full.jsx';
 import { agenda_table, org_table, add_co } from './ev_tables.jsx';
+import { track_full, item_end, hue } from './track_full.jsx';
 
 const mins = t => { const [h, m] = String(t || '0:0').split(':').map(Number); return h * 60 + m; };
 const span = a => `${fmt_time(a.from)} – ${fmt_time(a.to)}`;
