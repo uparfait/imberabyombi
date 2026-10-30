@@ -39,3 +39,4 @@ const HELP = [['How do roles decide what I see?', 'Each role has a level per mod
   ['How do I share an access link?', 'Open Staff, then use the link button on a row. Roles also have an invite link.'],
   ['Where is my data stored?', 'In this browser only (localStorage). Export a backup from Settings.'],
   ['How do I change the brand colour?', 'Settings, Appearance, Brand colour. Or edit --brand in the stylesheet.'],
+  ['How do I check a car out?', 'Open Smart parking and select a busy slot, or use Check out in the log.']];
