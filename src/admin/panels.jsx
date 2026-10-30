@@ -25,3 +25,4 @@ const task_row = t => { const d = t.status === 'Done', items = items_of(t);
   return <li key={t.id}><button type="button" className="task_row" data-act="task_open" data-id={t.id}>
     <span className="status_dot" data-s={t.status} aria-hidden="true"></span>
     <span className="min-w-0 flex-1"><span className={`block truncate text-sm font-medium ${d ? 'text-muted line-through' : ''}`}>{t.title}</span>
+      <span className="mt-0.5 flex flex-wrap items-center gap-x-2">{t.due ? due_tag(t) : null}
