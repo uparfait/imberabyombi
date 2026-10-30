@@ -24,3 +24,5 @@ const groups = mod => uniq(MODS.map(m => m.g)).map(g => { const items = MODS.fil
 
 /* Sidebar: the clicked link shows the spinner in place of its icon while the page loads (the redraw brings the icon back) */
 export const side_spin = a => { SIDE.busy = a.getAttribute('href'); redraw_slot('side_nav'); };
+
+const create_menu = create => <div className="relative">
