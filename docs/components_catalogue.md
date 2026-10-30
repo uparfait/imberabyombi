@@ -39,3 +39,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.pattern_layer`                        | diamond lattice; tint with `--pc` (rgb) and `--pa` (alpha)       |
 | `.prose_x`                              | long-form article typography                                     |
 | `.toast`                                | notification                                                     |
+| `.hero_title`                           | oversized display headline                                       |
