@@ -25,3 +25,4 @@ function appearance(tk, th) {
       <input type="radio" className="sr-only" name="theme" value={v} data-theme-set="" defaultChecked={th === v} /><span>{cap(v)}</span></label>)}</div></fieldset>
     <div key={get_version()} className="mt-6 grid gap-5 sm:grid-cols-2">
       <div className="field"><label htmlFor="token_brand">Brand colour</label>
+        <div className="flex items-center gap-3"><input id="token_brand" type="color" defaultValue={brand} data-token="brand" />
