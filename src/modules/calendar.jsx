@@ -2,7 +2,7 @@
    Activities table) and cal_go(), which moves the calendar to a date with a slide. */
 import { VIEWS } from './views.js';
 import { ui, route, rerender, after_render } from '../store/index.js';
-import { event_page, attendance_page, live_page } from '../events/index.js';
+import { event_page, live_page } from '../events/index.js';
 import { go } from '../router/index.js';
 import { auth } from '../auth/index.js';
 import { parse_d, add_d, ymd, cap, qs, rem } from '../lib/index.js';
