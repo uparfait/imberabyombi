@@ -1,4 +1,4 @@
-/* behaviors/settings_changes.js: the change listener's settings branches: the text-selection switch (account menu),
+/* behaviors/settings_changes.js: the change listener's settings branches: the text-selection switch (account menu), the
    a role's landing page, a role's access level per module, and importing a backup file. */
 import { qs } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
