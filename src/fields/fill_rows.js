@@ -4,3 +4,4 @@
    after theirs (run_after_render), sync_when when fields show or hide. */
 const FULL = '.sm\\:col-span-2, .col-span-2';
 export function fill_rows(grid) {
+  let open = null;
