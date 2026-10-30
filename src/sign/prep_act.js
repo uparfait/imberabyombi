@@ -28,6 +28,7 @@ function send() {
   prep_save(); notify(wait.length ? `${plural(wait.length, 'signer')} can now sign it under To sign.` : 'It is under Completed, ready to download.',
     'ok', wait.length ? 'Document sent' : 'Document complete'); go(`/admin/sign/doc/${d.id}`);
 }
+const signed = r => r?.status === 'signed' && (notify(`${r.name} has signed, so they stay as they are.`, 'warn', 'Already signed'), true);
 
 export const PREP_ACT = {
   sign_rid: t => { P.rid = t.dataset.id; rerender(); },
