@@ -13,3 +13,5 @@ const panel_now = () => ui.panel ? panel_html(ui.panel) : null;
 const desk_min = () => ui.side_min && innerWidth >= 1024;
 const side_sync = el => { el.dataset.open = ui.side; el.dataset.min = ui.side_min; el.inert = desk_min(); };
 const scrim_sync = el => { el.classList.toggle('on', ui.side); };
+
+/* a new key for #main on a new page, or on a redraw that keeps the page-enter motion (render(true, true)) */
