@@ -9,3 +9,4 @@
   /* 44px touch target (mobile first); .btn_sm is 36px; a button placed beside a field grows to the field height (section 5G) */
   .btn { @apply inline-flex min-h-11 select-none items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-medium transition duration-300 active:scale-[.97] disabled:pointer-events-none disabled:opacity-50; }
   .btn_primary { @apply bg-brand text-white hover:bg-brand-2; }
+  .btn_ink { @apply bg-ink text-white hover:bg-brand dark:bg-fg dark:text-bg dark:hover:bg-brand dark:hover:text-white; }
