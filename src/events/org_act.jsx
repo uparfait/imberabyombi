@@ -37,3 +37,4 @@ export const ORG_ACT = {
       body: [field(field_spec('to', 'New organiser', 'select', [...co.map((o, i) => [String(i), `${o.name} · ${o.email}`]), ['new', 'Someone new']], 1), co.length ? '0' : 'new'),
         ...who({}, fresh), field(field_spec('p_tel', 'Phone', 'tel', 0, 0, fresh), '')],
       submit: 'Transfer', on_submit: (d, f) => {
+        const nu = d.to === 'new' ? { name: d.p_name.trim(), email: lc(d.p_email), tel: d.p_tel || '' } : { ...co[+d.to], tel: '' };
