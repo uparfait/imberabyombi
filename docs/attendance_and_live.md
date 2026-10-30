@@ -21,6 +21,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   signature. A new sign-in shows at once on any open page (other tabs too).
 
 ## View This Event
+`…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)), also for a finished one: the whole window, no sidebar.
 
 ## Minutes and follow-ups
 - **Record minutes** (live screen) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
