@@ -5,3 +5,4 @@ Activities (the calendar) and events (`/admin/events`) share one form, in sectio
 shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 
 ## When
+- **Type**: *Upcoming* (it starts later), *Live now* (it has already started: an empty date and start time are filled in
