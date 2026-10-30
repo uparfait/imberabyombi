@@ -6,7 +6,7 @@
 import { pad, tz_parts, page_tz, fmt_time } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
 import { ic } from '../icons/index.js';
-import { badge, empty } from '../ui/index.js';
+import { empty } from '../ui/index.js';
 import { to } from '../router/index.js';
 import { ev_state } from './ev_state.js';
 import { agenda_now } from './agenda_now.js';
