@@ -38,3 +38,4 @@ export const header_line = () => { qsa('#site_header, #app_header').forEach(h =>
 export let RZ;
 const on_resize = () => { tip.hide(); pick.place(); clearTimeout(RZ);
   RZ = setTimeout(() => { redraw_charts(); header_line(); const sb = qs('#sidebar'); if (sb) sb.inert = ui.side_min && innerWidth >= 1024;
+    qsa('.tile_pop:not([hidden]), .pop_fixed:not([hidden])').forEach(place_tile); }, 150); };
