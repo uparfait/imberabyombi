@@ -55,3 +55,4 @@ export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...
       <div className="grid gap-2" data-when="rp_by=week"><div className="rp_chips">{[1, 2, 3, 4, -1].map(w => chip('rp_weeks', w, cap(WEEK_NAMES[w]), r.weeks.includes(w), '', `The ${WEEK_NAMES[w]} week`))}</div>
         {weekdays('rp_wdays', r.wdays)}</div></>, 'rp_freq=monthly|yearly', BY_HELP)}
     {line('Ends', <>{choose('rp_end', [['never', 'Never'], ['on', 'On a date'], ['after', 'After']], r.end, 'Ends')}
+      <div className="field rp_until" data-when="rp_end=on"><label htmlFor={id + '_until'}>End date</label>
