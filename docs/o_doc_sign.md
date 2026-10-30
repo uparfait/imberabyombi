@@ -44,3 +44,5 @@ every account starts empty.
   move it, its corner to resize it (a stamp stays square); arrow keys nudge the selected field, Delete removes it.
 - Changes save a moment after each one (and on Save, and when you leave). **Send** checks that there is a signer, a field,
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
+
+## Signing
