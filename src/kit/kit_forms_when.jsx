@@ -14,3 +14,4 @@ const ABOUT = 'When something happens, on one line as in a calendar app: the dat
   + 'full and only the time zone is cut (its whole name is on hover). A form uses it by giving the fields row: \'when\'.';
 
 export const kit_forms_when = () => <fieldset className="grid gap-3"><legend className="flex items-center gap-1">Date and time row{help_tip(ABOUT, 'the date and time row')}</legend>
+  {when_row(FIELDS, { kit_tz: device_tz() })}</fieldset>;
