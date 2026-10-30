@@ -42,3 +42,4 @@ export function invite_table(e, open) {
   if (!open || !inv.some(i => editing === `${e.id}|${i.e}`)) editing = '';
   return <><p className="ev_inv_count">{`${inv.length} invited`}</p>
     <div className="ev_inv_scroll"><table className="ev_inv_table"><thead><tr><th scope="col">Email address</th><th scope="col" className="ev_inv_day">Invited</th>
+      {open ? <th scope="col" className="ev_inv_acts"><span className="sr-only">Actions</span></th> : null}</tr></thead>
