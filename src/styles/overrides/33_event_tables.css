@@ -18,3 +18,4 @@
   @container (max-width: 40rem) {
     .ev_tbl .ev_wide { display: none; } .ev_tbl .ev_narrow { display: block; }
     .ev_tbl .ev_ag_table th:first-child { width: 38%; }
+    .ev_btn_l { display: none; } .ev_tbl :is(th, td).ev_org_acts { width: 5.5rem; } }
