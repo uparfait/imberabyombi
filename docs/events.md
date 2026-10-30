@@ -39,10 +39,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
 ## The Events page
 - Tabs sort events by where they stand ([`events/ev_state.js`](../src/events/ev_state.js)): **Live**, **Upcoming**,
   **Recurring**, **Postponed**, **Cancelled** and **Past**, each with its count. The table's Status column shows the same.
-- A row, a card or an event on the calendar opens the event's page, `/admin/events/<id>`
-  ([`events/event_page.jsx`](../src/events/event_page.jsx)). It shows one card per section, and each card's **Edit**
-  changes that section only (`open_form(c, id, {}, [title, keys])`).
-- On the right are the status and the actions that fit it:
+- A row, a card or an event on the calendar opens its page, `/admin/events/<id>`; an activity's is `/admin/calendar/<id>`
   - **Postpone**: it opens with the event's date, times and time zone as they are now. Change them to the new ones, or
     clear the date if the new one is not known yet (the event then leaves the calendar). A reason is optional.
   - **Cancel event**: with a reason. It leaves the calendar.
