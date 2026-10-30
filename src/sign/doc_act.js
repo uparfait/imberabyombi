@@ -23,3 +23,5 @@ export const DOC_ACT = {
     ask(`Delete “${d.title}”? Its PDF and every signature on it are removed from this browser.`, async () => {
       drop_doc(d.id); forget_pdf(d.id); await drop_files(d.id);
       notify(`“${d.title}” is deleted.`, 'ok', 'Document deleted'); go('/admin/sign');
+    }); },
+  sign_doc_archive: t => { const d = find_doc(t.dataset.id);
