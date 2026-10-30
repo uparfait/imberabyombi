@@ -15,6 +15,7 @@ const blank = v => v == null || v === false || v === '' || (Array.isArray(v) && 
 export function Modal_form({ m }) {
   const ref = useRef(null);
   useLayoutEffect(() => {   /* the dirty check starts from the values the form opens with; the first field gets focus (not a
+    date row's block: it would show its typing text instead of its value in words) */
     const f = ref.current; f._init = snap(f);
     setTimeout(() => f.querySelector('input:not([type=hidden]),select,textarea')?.focus(), 50);
   }, []);
