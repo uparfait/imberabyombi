@@ -18,3 +18,4 @@ export function count_to(e, st) {
   if (st === 'Live') { const p = tz_parts(e.tz || page_tz(), Date.now()), day = e.repeat ? `${p.y}-${pad(p.mo)}-${pad(p.d)}` : e.date;
     return ['Ends in', end(day, at(day, e.start, e.tz))]; }
   if (st === 'Recurring') { const p = tz_parts(e.tz || page_tz(), Date.now()), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
+    let d = repeat_next(e.repeat, e.date, today); if (d === today && at(d, e.start, e.tz) <= Date.now()) d = repeat_next(e.repeat, e.date, ymd(add_d(parse_d(today), 1)));
