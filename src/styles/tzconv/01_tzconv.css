@@ -4,3 +4,4 @@
 .tzc_head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .875rem; }
 .tzc_cap { color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .tzc_time_row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.tzc_num { width: 6.5rem; }
