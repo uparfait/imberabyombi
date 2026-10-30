@@ -46,3 +46,4 @@
   .compose { display: grid; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); transition: border-color .2s; }
   .compose:focus-within { border-color: rgb(var(--brand) / .55); }
   .compose :is(input, textarea) { min-height: 0; padding: .75rem 1rem; border: 0; outline: 0; background: transparent; resize: none; field-sizing: content; }
+  .compose input { padding: .875rem 1rem .625rem; border-bottom: 1px dashed rgb(var(--line)); font-family: var(--font_display); font-size: 1.0625rem; font-weight: 600; }
