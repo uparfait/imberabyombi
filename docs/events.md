@@ -6,3 +6,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 
 ## When
 - **Type**: *Upcoming* (it starts later), *Live now* (it has already started: an empty date and start time are filled in
+  with the time now) or *Recurring* (it repeats). An upcoming one must start later than now; a live one must have
