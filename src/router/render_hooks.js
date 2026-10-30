@@ -22,3 +22,6 @@ export function before_page(keep) {
   qsa('#sidebar a.side_link[aria-busy]').forEach(a => a.removeAttribute('aria-busy'));
   side_top = qs('#sidebar_scroll')?.scrollTop || 0;
   if (!keep) ['confirm', 'modal', 'viewer'].forEach(id => { const d = qs('#' + id); if (d?.open) d.close(); });
+}
+
+export function run_after_render({ keep, anim }) {
