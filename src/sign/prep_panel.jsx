@@ -14,3 +14,5 @@ import { status_chip } from './sign_list.jsx';
 import { chips, note_text } from './signer_bits.jsx';
 
 const people = () => db.list('staff').filter(s => s.email && s.name);
+
+function add(e) {
