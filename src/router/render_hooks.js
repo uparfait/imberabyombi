@@ -34,3 +34,4 @@ export function run_after_render({ keep, anim }) {
   if (!keep) scrollTo({ top: 0, behavior: 'instant' });
   AFTER.splice(0).forEach(f => { try { f(); } catch (e) { console.error(e); } });
   ui.flash = null; render_flags.nav_fetched = false; enhance(); show_next();
+  if (!keep) help_intro();   /* a new page: its first help icon introduces itself (once per load) */
