@@ -3,3 +3,4 @@
    a grid split by the window can squeeze its cards, fields and text into narrow columns. A box marked .room is measured;
    a grid inside it splits only when that box has the room:
      .room_2     two columns from 24rem (fields in a card)
+     .room_2w    two columns from 52rem (cards on a page)
