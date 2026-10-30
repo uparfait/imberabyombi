@@ -25,3 +25,4 @@ function month_day(r, f) {
 export function repeat_text(r, first) {
   if (!r) return '';
   const f = /^\d{4}-\d{2}-\d{2}$/.test(first || '') ? parse_d(first) : null, n = Math.max(1, +r.every || 1);
+  const every = unit => n === 1 ? `Every ${unit}` : `Every ${n} ${unit}s`;
