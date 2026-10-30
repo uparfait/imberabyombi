@@ -1,1 +1,2 @@
 /* overrides/17_file_fields.css: rules that come after Tailwind's utilities, so they win at equal specificity */
+  /* While the system file dialog is open: the one spinner, until files are chosen or the dialog is cancelled */
