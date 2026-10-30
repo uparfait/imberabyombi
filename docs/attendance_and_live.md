@@ -22,6 +22,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 
 ## View This Event
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)), also for a finished one: the whole window, no sidebar.
+Made for a computer screen: every screen shows the same view, scaled to fit (`html.stage_page`), never rearranged.
 Its title in the top bar (one line); its details, the agenda item running now (large, with its presenter and
 progress), the agenda, the organiser and co-organisers (each with Edit until it is over), its minutes and follow-ups;
 the time left above a large QR code (full screen on a click; an empty place before attendance opens, "Finished"
