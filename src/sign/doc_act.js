@@ -2,3 +2,4 @@
    email and land on the document), download the PDF with the marks placed so far (a completed one with its certificate),
    delete the document with its PDF and marks (only while nobody has signed it), and archive or restore a signed one. */
 import { notify } from '../feedback/index.js';
+import { rerender } from '../store/index.js';
