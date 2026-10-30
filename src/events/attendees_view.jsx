@@ -10,3 +10,4 @@ import { crud } from '../table/index.js';
 
 function view(c, id) {
   const e = db.find(c, id); if (!e) return null;
+  return <><header className="flex items-center gap-2 py-2 pl-4 pr-2"><h2 className="min-w-0 flex-1 truncate font-sans text-base font-medium">{e.title}</h2>
