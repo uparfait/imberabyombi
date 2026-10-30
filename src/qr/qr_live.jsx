@@ -9,3 +9,5 @@ import { Install } from './qr_parts.jsx';
 
 const round = (icon, label, on, pressed) => <button type="button" className={`qr_round ${pressed ? 'on' : ''}`} onClick={on} aria-label={label}
   aria-pressed={pressed} title={label}>{ic(icon, 'h-5 w-5')}<span>{label}</span></button>;
+
+/* o: { app (installed), scanning, has_torch, lit, toggle_torch } */
