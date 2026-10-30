@@ -38,3 +38,4 @@ function intro(x) {
   setTimeout(() => {
     x.classList.remove('intro');
     if (!x.isConnected || (tip.on && tip.on !== x)) return;
+    tip.show(x, true);
