@@ -6,3 +6,4 @@
 .tzc_time_row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
 .tzc_num { width: 6.5rem; }
 .tzc_colon { color: rgb(var(--muted)); font-size: 1.25rem; }
+.tzc_swap { position: relative; display: grid; margin: .5rem 0; place-items: center; }
