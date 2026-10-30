@@ -5,7 +5,7 @@ import { fmt_stamp } from '../lib/index.js';
 import { field_spec } from './fields.js';
 
 export const attendees_schema = {
-  l: 'attendee', n: 0, cols: ['name', 'email', 'tel', 'org', 'position', 'sig_kind', 'at'],
+  l: 'attendee', n: 0, export_filters: false, cols: ['name', 'email', 'tel', 'org', 'position', 'sig_kind', 'at'],
   f: [
     field_spec('name', 'Full name', 'text', 0, 1), field_spec('email', 'Email', 'email', 0, 1), field_spec('tel', 'Telephone', 'tel'),
     field_spec('org', 'Organisation or unit'), field_spec('position', 'Position'),
