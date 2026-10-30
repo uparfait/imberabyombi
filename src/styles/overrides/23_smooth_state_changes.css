@@ -30,3 +30,4 @@
   .fold[data-closed=true] { grid-template-rows: 0fr; opacity: 0; }
   .fold > div { min-height: 0; overflow: hidden; }
   .chev { transition: rotate .3s var(--ease); }
+  [aria-expanded=true] > .chev { rotate: 180deg; }
