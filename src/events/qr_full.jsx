@@ -17,5 +17,5 @@ export const qr_full = (e, url, n) => <div id={`qr_full_${e.id}`} className="qr_
 export const QR_ACT = {
   ev_qr: t => { const el = qs('#qr_full_' + t.dataset.id); if (!el) return; el.hidden = false;
     Promise.resolve(el.requestFullscreen?.()).catch(() => {}); },
-  qr_close: () => { if (document.fullscreenElement) document.exitFullscreen(); else qsa('.qr_full').forEach(el => { el.hidden = true; }); }
+  qr_close: () => { if (document.fullscreenElement) document.exitFullscreen(); else qsa('.qr_full, .track_full').forEach(el => { el.hidden = true; }); }
 };
