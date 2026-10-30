@@ -12,6 +12,7 @@ import { avatar, theme_btn, help_tip } from '../ui/index.js';
 import { key_hint } from '../feedback/index.js';
 import { closed_pop } from './live_slot.jsx';
 import { to } from '../router/index.js';
+import { notice_menu } from './notice_menu.jsx';
 
 export const RAIL = [['notes', 'bulb', 'text-warn', 'Notes'], ['tasks', 'check', 'text-info', 'My tasks'], ['help', 'help', 'text-ok', 'Help']];
 
