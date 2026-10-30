@@ -53,6 +53,9 @@ function Self_view({ id }) {
     <aside className="sign_self_side">{done ? <section className="card p-5"><p className="sign_self_done">{ic('check', 'h-4 w-4 shrink-0')}Signed by you</p>
       <div className="mt-3 grid gap-2">{dl(id)}<button type="button" className="btn btn_outline btn_sm" data-act="close_viewer">{ic('plus', 'h-4 w-4')}Add other signers</button></div></section>
       : steps_card(d)}</aside></div></>;
+}
+
+/* the overlay in use (#viewer, wide) */
 export const SELF_ACT = {
   sign_self: () => { const me = who(); if (!me.email) return;
     const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
