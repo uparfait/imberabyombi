@@ -14,6 +14,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 .qr_live_top { position: relative; z-index: 3; display: flex; align-items: center; gap: .5rem; }
 .qr_live_mark { display: grid; flex: none; place-items: center; }
 .qr_live_name { flex: 1; font-family: var(--font_display); font-size: 1.125rem; font-weight: 600; }
+@media (max-width: 640px) { .qr_live_name { visibility: hidden; } }   /* a phone: the mark alone */
 @media (prefers-reduced-motion: reduce) { .qr_line { animation: none; top: 50%; } }
 .qr_idle { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1.25rem; padding: 2rem; color: #fff; text-align: center; }
 .qr_idle_ic { display: grid; width: 5rem; height: 5rem; place-items: center; border-radius: 1.5rem; background: rgb(255 255 255 / .08); }
