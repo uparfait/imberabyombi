@@ -14,3 +14,4 @@ export const INVITE_FILES = '.xlsx,.xlsm,.xls,.ods,.csv,.tsv,.txt';
 export async function emails_in_file(file) {
   const ext = file.name.split('.').pop().toLowerCase();
   if (['xlsx', 'xlsm', 'ods'].includes(ext)) return find_emails((await zip_texts(await file.arrayBuffer(), CELLS)).join(' '));
+  if (ext === 'xls') {
