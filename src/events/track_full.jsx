@@ -9,3 +9,4 @@
 import { qs, pad, tz_parts, page_tz, fmt_time } from '../lib/index.js';
 import { rerender } from '../store/index.js';
 import { at } from '../schemas/index.js';
+import { ic } from '../icons/index.js';
