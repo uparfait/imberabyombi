@@ -18,3 +18,4 @@ export const CREATE = [['tasks', 'tasks', 'New task', 'tasks'], ['calendar', 'ac
 const SIDE = { busy: null };   /* href of the clicked link whose page is loading */
 const link = (m, mod) => { const on = m.k === mod, href = to(`/admin/${m.k}`), busy = SIDE.busy === href;
   return <li key={m.k}><a href={href} className={`side_link ${on ? 'active' : ''}`} aria-current={on ? 'page' : undefined} aria-busy={busy ? 'true' : undefined} data-tip={m.d}>
+    {busy ? spinner('side_spin') : ic(m.i)}<span className="truncate">{m.l}</span></a></li>; };
