@@ -24,7 +24,7 @@ VIEWS.library = () => {
       : t === 'rentals' ? crud('rentals', { title: 'Rentals', acts: returned }) : crud('declarations', { title: 'Declarations' })}</>;
 };
 
-const event_card = (e, i) => <article key={e.id} className="card overflow-hidden"><figure className="relative m-0">
+const event_card = (e, i) => <a key={e.id} href={to('/admin/events/' + e.id)} className="card ev_tile overflow-hidden"><figure className="relative m-0">
   <img src={cfg.img('event-' + i, 640, 360)} alt="" width="640" height="360" loading="lazy" className="aspect-video w-full object-cover" />
   <figcaption className="absolute left-3 top-3 m-0 rounded-2xl bg-surface px-3 py-1.5 text-center leading-none"><time dateTime={e.date}>
     <b className="block font-display text-xl text-fg">{parse_d(e.date).getDate()}</b>
