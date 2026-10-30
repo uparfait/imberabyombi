@@ -11,7 +11,7 @@ export const rec_body = r => <>
     <input id="sign_rec_email" name="email" type="email" required maxLength={120} placeholder=" " autoComplete="off" defaultValue={r.email} /></div>
   <div className="field sm:col-span-2"><label htmlFor="sign_note_in">Note for this signer (optional)</label>
     <textarea id="sign_note_in" name="note" rows={3} maxLength={500} placeholder=" " defaultValue={r.note || ''} /></div>
-  <label className="sign_check sm:col-span-2"><input type="checkbox" name="cert" defaultChecked={!!r.cert} />Must sign with a digital certificate</label></>;
+  <div className="sign_check_row sm:col-span-2"><label className="sign_check"><input type="checkbox" name="cert" defaultChecked={!!r.cert} />Force digital signature</label>
 
 export const send_body = d => <div className="grid gap-4 sm:col-span-2">
   <p className="text-sm text-muted">“{d.title}” · {d.pages.length} page{d.pages.length === 1 ? '' : 's'}</p>
