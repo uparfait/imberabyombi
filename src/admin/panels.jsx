@@ -13,3 +13,4 @@ const memo = n => <article key={n.id} className="memo"><h3>{n.title || 'Untitled
   <button className="icon_btn h-8 w-8" data-act="note_del" data-id={n.id} aria-label="Delete note">{ic('trash', 'h-4 w-4')}</button></footer></article>;
 
 const notes = () => { const ns = db.get('notes', []);
+  return <><form data-form="note" className="compose" noValidate><div data-msg-slot="" className="mx-3 mt-3 empty:hidden"></div>
