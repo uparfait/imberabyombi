@@ -20,3 +20,4 @@ export const activities_schema = {
     return d;
   },
   g: () => {
+    const h = lorem.int(7, 16);
