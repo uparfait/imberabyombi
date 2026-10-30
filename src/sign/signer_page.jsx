@@ -27,9 +27,7 @@ export function signer_page(d) {
   const done = r.status === 'signed' || d.status !== 'sent';
   return <div className="sign_split">
     <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
-      {done ? d.status === 'completed' ? <section className="card p-5"><button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_dl" data-id={d.id}>
-          {ic('download', 'h-4 w-4')}{dl_label(d)}</button></section> : null
-        : steps_card(d)}</aside>
+      {done ? null : steps_card(d)}</aside>
     <section className="sign_center" aria-label="Pages">
       {done ? <p className="sign_banner" role="status">{ic('check', 'h-5 w-5 shrink-0')}
         {r.status === 'signed' ? `You signed this on ${when(r.signed_at)}.` : 'This document is no longer open for signing.'}</p> : null}
