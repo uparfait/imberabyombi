@@ -45,3 +45,5 @@ export const SELF_ACT = {
     Object.assign(P, { rid: r.id, adding: false }); prep_dirty(); rerender();
     notify('Place your signature or stamp on the document, then sign them.', 'ok', 'You sign it too'); },
   sign_self_go: () => { prep_save(); go(`/admin/sign/sign/${P.doc.id}`); },
+  sign_preview: t => { if (P.doc) prep_save(); show_in_dialog('viewer', () => <Preview id={t.dataset.id} />); }
+};
