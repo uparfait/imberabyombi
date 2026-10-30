@@ -35,3 +35,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 - **Nested navigation**: "Your modules" style menus for System 2 and System 3, pinned under the header while scrolling.
 
 ## Permissions
+Every module, sidebar link, widget, Create entry and button checks `auth.can(module, level)`. A module the role cannot
