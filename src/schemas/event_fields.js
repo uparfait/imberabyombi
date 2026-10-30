@@ -1,6 +1,5 @@
 /* schemas/event_fields.js: what activities and events share: their type (Upcoming, Live now, Recurring), how a recurring
-   one repeats (lib/repeat.js) and the check that their timing makes sense. Choosing Live now fills an empty date and
-   start with the time now. */
+   one repeats (lib/repeat.js), where it happens, who organises it, how many are expected, and the check that their timing
 import { pad, tz_parts, zoned_to_utc, device_tz } from '../lib/index.js';
 import { show_err } from '../feedback/index.js';
 import { set_native_value } from '../fields/form_values.js';
