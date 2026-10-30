@@ -21,3 +21,8 @@ export const stat_row = items => (
       <div key={j} className="card flex items-center gap-3 p-4">
         {i3(i, 'w-11 h-11', t || 'brand')}
         <div className="min-w-0"><p className="truncate text-sm text-muted">{l}</p><p className="font-display text-2xl font-bold tabular-nums">{v}</p></div>
+      </div>
+    ))}
+  </div>
+);
+/* act: JSX (a button or link) shown under the text */
