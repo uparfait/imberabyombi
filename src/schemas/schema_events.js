@@ -34,8 +34,7 @@ export const events_schema = {
   l: 'event', n: 6, cols: ['title', 'kind', 'date', 'start', 'tz', 'venue', 'registered', 'status'],
   form_sec: true, sec: { Details: 'title,about,status', When: 'kind,date,start,end,tz', Location: 'venue', Seats: 'capacity,registered' },
   f: [
-    field_spec('title', 'Title', 'text', 0, 1), field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }),
-    field_spec('start', 'Starts', 'time', 0, 0, { row: 'when' }), field_spec('tz', 'Time zone', 'tz', 0, 1, { def: () => device_tz(), row: 'when' }),
+    field_spec('title', 'Title', 'text', 0, 1), field_spec('about', 'Description', 'textarea'),
     field_spec('venue', 'Venue'), field_spec('capacity', 'Capacity', 'number', 0, 1, { min: 1, def: () => 100 }),
     field_spec('registered', 'Registered', 'number', 0, 0, { min: 0, def: () => 0 }), field_spec('status', 'Status', 'select', STATUS.ev, 1, { def: () => 'Planned' }),
     field_spec('about', 'Description', 'textarea')
