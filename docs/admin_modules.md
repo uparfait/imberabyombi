@@ -36,3 +36,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 
 ## Permissions
 Every module, sidebar link, widget, Create entry and button checks `auth.can(module, level)`. A module the role cannot
+open shows "No access"; an unknown one shows "Page not found". See [roles and access](roles_and_access.md).
