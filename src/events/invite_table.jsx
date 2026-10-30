@@ -9,15 +9,6 @@ import { notify } from '../feedback/index.js';
 import { ask } from '../overlays/index.js';
 
 const day = at => fmt_stamp(at, { dateStyle: 'medium' });
-const stop = () => { editing = ''; rerender(); };
-function save(id, old, input) {
-  const e = db.find('events', id), v = (input?.value || '').trim().toLowerCase(); if (!e || !input) return stop();
-  if (find_emails(v)[0] !== v) { show_err(input, 'Enter an email address, such as name@example.com.'); return input.focus(); }
-  if (v !== old && e.invites.some(i => i.e === v)) { show_err(input, 'This address is already invited.'); return input.focus(); }
-  editing = '';
-  if (v !== old) { db.upsert('events', { id, invites: e.invites.map(i => i.e === old ? { e: v, at: Date.now() } : i) }); notify(`The invitation was sent to ${v}.`, 'ok', 'Address changed'); }
-  rerender();
-}
 
 export const INVITE_TABLE_ACT = {
   ev_inv_edit: t => { editing = `${t.dataset.id}|${t.dataset.e}`; rerender(); },
