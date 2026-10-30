@@ -14,3 +14,4 @@ const sorted = (xs, key = x => x) => [...xs].sort((a, b) => key(a) - key(b));
 const mon_first = d => (d + 6) % 7;   /* the week starts on Monday */
 
 /* the day in the month: "on the 1st and 15th", "on the last day", "on the second and last Friday" */
+function month_day(r, f) {
