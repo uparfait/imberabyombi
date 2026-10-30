@@ -39,3 +39,4 @@
   .qr_full_count { color: rgb(var(--muted)); font-size: 1.125rem; } .qr_full_count b { color: rgb(var(--fg)); font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 600; }
   .qr_full_x { position: absolute; top: 1rem; right: 1rem; }
   @media (max-aspect-ratio: 1/1) { .qr_full { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
+    .qr_full_code { width: min(calc(100vw - 3rem), calc(100dvh - 18rem)); } .qr_full_info { justify-items: center; } }
