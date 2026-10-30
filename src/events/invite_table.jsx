@@ -24,6 +24,5 @@ export function invite_table(e, open) {
       {open ? <th scope="col" className="ev_inv_acts"><span className="sr-only">Actions</span></th> : null}</tr></thead>
       <tbody>{inv.map(i => <tr key={i.e}>
         <td><span className="block truncate">{i.e}</span><span className="ev_inv_sub">{day(i.at)}</span></td><td className="ev_inv_day">{day(i.at)}</td>
-        {open ? <td className="ev_inv_acts">{btn('ev_inv_edit', 'edit', 'Change the address', '', { id: e.id, e: i.e })}
-          {btn('ev_uninvite', 'x', 'Remove', 'ev_inv_x', { id: e.id, e: i.e })}</td> : null}</tr>)}</tbody></table></div></>;
+        {open ? <td className="ev_inv_acts"><button type="button" className="icon_btn ev_inv_x h-8 w-8" data-act="ev_uninvite" data-id={e.id} data-e={i.e}
 }
