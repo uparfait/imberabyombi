@@ -2,3 +2,4 @@
    A field's size is a share of its page, so its text follows the page's width (cqw). Each signer has a colour (--c). */
 .sign_doc { position: relative; display: grid; max-width: 56rem; gap: 1.25rem; margin: 0 auto; }
 .sign_fig { margin: 0; }
+.sign_sheet { position: relative; container-type: inline-size; border: 1px solid rgb(var(--line)); border-radius: .375rem; background: #fff; }
