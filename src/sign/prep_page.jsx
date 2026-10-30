@@ -13,3 +13,6 @@ function Prep_doc({ d }) {
   const root = useRef(null);
   useEffect(() => prep_pointer(root.current), []);
   return <div ref={root}><Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: 'edit', sel: P.sel })} /></div>;
+}
+
+export const prep_page = d => <div className="sign_work">
