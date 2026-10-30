@@ -50,3 +50,4 @@ function page_for(a, id) {
 
 /* O-Doc Sign is made for computers: below 1280 px it is laid out 1280 px wide and scaled down to fit, never re-arranged or
    scrolled sideways. Phones and tablets: the viewport says 1280 px (the browser shows it to fit); a narrow computer window
+   (which ignores that): the zoom --sign_z (01_layout.css). Both are put back when O-Doc Sign is left. */
