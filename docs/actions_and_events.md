@@ -41,3 +41,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | `data-filter=".selector"`       | a search box that hides elements whose text does not match         |
 | `data-pop="id"`                 | toggle a popover menu                                              |
 | `data-reveal`                   | fade and rise in when scrolled into view (`style={{ '--d': '.1s' }}` delays it) |
+| `data-count="n"`                | count up when visible                                              |
