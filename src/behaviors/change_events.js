@@ -32,3 +32,4 @@ function on_change(e) {
   if (t.dataset.roleLand) role_land_change(t);
   if (t.dataset.perm) perm_change(t);
   if (t.dataset.token && t.type === 'select-one') set_token(t.dataset.token, t.value);
+  if (t.dataset.themeSet != null) set_theme(t.value);
