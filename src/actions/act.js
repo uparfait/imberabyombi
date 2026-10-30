@@ -12,3 +12,5 @@ import { ROLE_ACT } from './act_roles.jsx';
 import { CALENDAR_ACT } from './act_calendar.jsx';
 import { RECORD_ACT } from './act_records.jsx';
 import { DEMO_ACT } from './act_demo.js';
+
+const OWN = { ...SHELL_ACT, ...TABLE_ACT, ...PICKER_ACT, ...FILE_ACT, ...ADMIN_ACT, ...ROLE_ACT, ...CALENDAR_ACT, ...RECORD_ACT, ...DEMO_ACT };
