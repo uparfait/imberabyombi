@@ -29,3 +29,4 @@
   .ev_upload { cursor: pointer; }
   .ev_upload:has(input:focus-visible) { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   .ev_inv_note { color: rgb(var(--muted)); font-size: .8125rem; overflow-wrap: anywhere; }
+  .ev_chips { display: flex; flex-wrap: wrap; gap: .375rem; max-height: 10rem; overflow-y: auto; }
