@@ -4,3 +4,4 @@ import { render, STYLES, device_px } from '../icon3d/index.js';
 const NAMES = { classic: 'Classic', balloon: 'Balloon', ribbon: 'Ribbon', glossy: 'Glossy', clay: 'Clay', glass: 'Glass' };
 
 export const Styles = ({ st, put, input }) => <section aria-label="Style"><h3 className="ico_cap">Style</h3>
+  <div className="grid grid-cols-3 gap-2" role="radiogroup" aria-label="Style">{STYLES.map(s =>
