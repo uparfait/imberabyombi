@@ -15,3 +15,4 @@ export const ROLES0 = [
     perms: perm_map('dashboard:1,calendar:1,tasks:2,docs:2,sign:2,icons:2,tz:2,attendance:1,students:2,library:1,events:1,settings:1') },
   { id: 'accountant', name: 'Accountant', d: 'Payments and stock value.', perms: perm_map('dashboard:1,tasks:2,docs:2,sign:2,icons:2,tz:2,students:1,inventory:1,settings:1') },
   { id: 'librarian', name: 'Librarian', d: 'Books, rentals and declarations.', perms: perm_map('dashboard:1,tasks:2,docs:2,sign:2,icons:2,tz:2,attendance:1,library:2,settings:1') },
+  { id: 'store', name: 'Store keeper', d: 'Reservations and inventory.', perms: perm_map('dashboard:1,tasks:2,docs:2,sign:2,icons:2,tz:2,inventory:2,settings:1') },
