@@ -51,3 +51,4 @@ export const SHELL_ACT = {
   otp_resend: t => { form_msg(t.form, 'ok', 'Code sent', 'A new 6-digit code is on its way to your email.'); resend_in(30); },
   go: t => { close_dialog(qs('#modal')); go(t.dataset.href); },
   back: () => go(previous_path() || '/admin'),   /* a full-window page back to where the user came from */
+  cmdk: () => open_cmd(),
