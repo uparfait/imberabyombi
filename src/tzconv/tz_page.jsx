@@ -53,3 +53,4 @@ export function Tz_page() {
                 {(is12 ? H12 : H24).map(h => <option key={h} value={h}>{is12 ? h : pad(h)}</option>)}</select></div>
             <span className="tzc_colon" aria-hidden="true">:</span>
             <div className="field tzc_num"><label htmlFor="tz_m">Minute</label>
+              <select id="tz_m" value={st.m} onChange={e => put({ m: +e.target.value })}>{MINS.map(m => <option key={m} value={m}>{pad(m)}</option>)}</select></div>
