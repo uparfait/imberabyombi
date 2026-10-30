@@ -49,3 +49,4 @@
   .compose input { padding: .875rem 1rem .625rem; border-bottom: 1px dashed rgb(var(--line)); font-family: var(--font_display); font-size: 1.0625rem; font-weight: 600; }
   .compose textarea { padding-top: .625rem; font-size: .875rem; line-height: 1.6; }   /* the title reads as a heading, the note as body text */
   .compose:not(:focus-within):not(:has(:is(input, textarea):not(:placeholder-shown))) :is(input, .compose_foot) { display: none; }
+  .compose_foot { display: flex; justify-content: flex-end; padding: 0 .5rem .5rem; }
