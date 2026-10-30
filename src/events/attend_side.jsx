@@ -22,3 +22,4 @@ export function attend_side(e, c, st) {
       {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={url} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button> : null}
       <div className="relative"><button type="button" className="btn btn_outline btn_sm w-full justify-between" data-act="pop" data-pop={`pop_links_${e.id}`} aria-haspopup="menu">
         Open{ic('chev_u', 'h-4 w-4')}</button>
+        <div id={`pop_links_${e.id}`} className="pop bottom-full right-0 mb-2 w-56" role="menu" hidden>{links.map(([l, i, href, out]) =>
