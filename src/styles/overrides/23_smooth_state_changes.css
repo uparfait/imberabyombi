@@ -34,3 +34,4 @@
   /* Side panel sits beside the content (the page shrinks); it slides open by width */
   /* Side panel (notes, my tasks, help): opens beside the content; a border with rounded top corners shows its edges under the header */
   /* the side panel floats: rounded and bordered all round, clear of the screen's bottom edge (its height leaves .75rem) */
+  .panel { width: 0; border: 0 solid rgb(var(--line)); border-radius: 1.5rem; transition: width .3s var(--ease); }
