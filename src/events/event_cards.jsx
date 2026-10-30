@@ -28,6 +28,7 @@ const ROWS = {
   /* one row per item: its times, then its title, presenter and description; the one running now is marked */
   Agenda: e => { const now = agenda_now(e); return e.agenda?.length ? e.agenda.map((a, i) => [`${fmt_time(a.from)} – ${fmt_time(a.to)}`,
     <div className="grid gap-0.5"><span className="flex flex-wrap items-center gap-2 font-medium">{a.title}{i === now ? <span className="chip bg-ok/15 text-ok">Now</span> : null}</span>
+      {a.p_name ? <span className="text-sm">{a.p_name}{a.p_title ? `, ${a.p_title}` : ''}</span> : null}{a.desc ? <span className="text-sm text-muted">{a.desc}</span> : null}</div>,
   Audience: e => [['Expected', e.audience ? `${e.audience} people` : null], ['Capacity', e.capacity], ['Registered', bar_cell(e.registered || 0, e.capacity)]]
 };
 
