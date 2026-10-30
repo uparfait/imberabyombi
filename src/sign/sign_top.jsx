@@ -27,3 +27,4 @@ export function lists_menu(cur) {
 export const sign_top = (cur, back) =>
   <header className="sign_top">
     {back ? <a href={back} className="icon_btn" data-tip="Back" aria-label="Back">{ic('arrow_back')}</a>
+      : <button type="button" className="icon_btn" data-act="back" data-tip="Back" aria-label="Back">{ic('arrow_back')}</button>}
