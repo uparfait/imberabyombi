@@ -33,3 +33,4 @@ const first_help = root => [...root.querySelectorAll('.help_tip')]
   .find(x => (root.tagName === 'DIALOG' || !x.closest('header, #sidebar, #side_panel, dialog')) && x.getClientRects().length);
 function intro(x) {
   const s = tip.text(x); SEEN.add(s);
+  const r = x.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
