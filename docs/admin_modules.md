@@ -33,3 +33,5 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 - **Command palette**: `Ctrl K` / `⌘K`, every page the role can open, searchable.
 - **Account menu**: Settings, Public website, Sign out, a small "Allow text selection" switch, storage used.
 - **Nested navigation**: "Your modules" style menus for System 2 and System 3, pinned under the header while scrolling.
+
+## Permissions
