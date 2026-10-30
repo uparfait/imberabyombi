@@ -29,3 +29,5 @@ function oklch_hex(l, c, h) {
     const rgb = [4.0767416621 * l3 - 3.3077115913 * m3 + .2309699292 * s3, -1.2684380046 * l3 + 2.6097574011 * m3 - .3413193965 * s3,
       -.0041960863 * l3 - .7034186147 * m3 + 1.707614701 * s3];
     if (rgb.every(v => v >= -1e-4 && v <= 1 + 1e-4)) return '#' + rgb.map(v => Math.round(gam(Math.min(1, Math.max(0, v))) * 255).toString(16).padStart(2, '0')).join('');
+  }
+  return oklch_hex(l, 0, h);
