@@ -59,3 +59,5 @@ export function zone_list(t = Date.now()) {
 export const zone_short = (tz, date) => `${gmt_short(offset_min(tz, date ? Date.parse(`${date}T12:00:00Z`) : Date.now()))} · ${city(tz)}`;
 export const zone_of = (tz, t) => zone_list(t).find(z => z.tz === tz) || { tz, off: offset_min(tz, t ?? Date.now()), gmt: gmt(offset_min(tz, t ?? Date.now())),
   text: tz, label: tz, short: tz, key: tz.toLowerCase() };
+
+/* a wall-clock date ('YYYY-MM-DD') and time ('HH:MM') in zone from, as it reads in zone to → { date, time } */
