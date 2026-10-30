@@ -56,3 +56,4 @@ Every feature below is working code. Each line says what it is and where it live
 ## Document editor (`src/editor/`, `/admin/docs`)
 - A full word processor in the whole window with a Back button: paper sizes, margins, headers, footers, page numbers.
 - Styles, fonts, sizes, colours, highlight, lists, checklists, tables, images with positions (in line, wrap, break,
+  in front of or behind text) and drag to move, links, comments, find and replace, word count, zoom, editing modes.
