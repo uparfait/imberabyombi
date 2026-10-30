@@ -6,6 +6,7 @@ import { sub_editor, subs_of } from '../modules/index.js';
 import { File_box } from '../files/index.js';
 import { DTF, dt_attrs, dt_show } from './date_formats.js';
 import { zone_list, device_tz } from '../lib/index.js';
+import { seg_field } from './seg_field.jsx';
 
 /* Form field generated from a schema field */
 export function field(f, v) {
