@@ -34,3 +34,4 @@
   background: rgb(var(--brand)); color: #fff; font-size: .75rem; font-weight: 700; }
 
 /* the prepare page: signers | pages | tools, each column scrolling on its own, never sideways */
+.sign_work { display: grid; grid-template-columns: 20rem minmax(0, 1fr) 16.5rem; height: calc(100dvh / var(--sign_z, 1) - 4rem); }
