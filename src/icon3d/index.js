@@ -8,3 +8,4 @@
              goo work per device pixel, so their numbers follow it (parts.js): render one SVG per size you show, with
              the real px (CSS px × devicePixelRatio), rather than scaling one SVG down.
      view    the part of the 200 × 200 picture to show, [x, y, w, h] (default [0, -4, 200, 200]); a tighter view makes
+             the icon fill more of its box, and px then counts across that view
