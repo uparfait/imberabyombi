@@ -50,6 +50,7 @@ export function live_page(id, c) {
         <progress max="100" value={done} aria-label="How far it has got"></progress></>
         : <><p className="att_kind">{next ? `Next · ${span(next)}` : 'Agenda'}</p><h2 className="live_now_t">{next ? next.title : 'Done'}</h2>{who(next)}</>}</div> : null}
       <div className="card live_card">{head('Agenda', 'Agenda')}{ag.length ? <ol className="live_agenda">{ag.map((a, i) =>
+        <li key={i} className={i === now_i ? 'is_now' : mins(a.to) <= now_m && now_i > -1 ? 'is_done' : ''}><span className="live_when">{span(a)}</span>
     </section>
     <aside className="card live_qr">{t ? <p className="live_left">{t[0]}<b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></p> : null}{open ? <button type="button" className="live_qr_btn" data-act="ev_qr" data-id={id} aria-label="Show the QR code on the whole screen" data-tip="Full screen">
       <Qr text={att_url(c, id)} label="Attendance QR code" /></button> : <p className="text-muted">Attendance is closed</p>}
