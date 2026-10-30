@@ -63,3 +63,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   diamond: 'M12 2 22 12 12 22 2 12z',
   play: 'M7 4v16l13-8z', pause: 'M7 4h3v16H7zM14 4h3v16h-3z',
   refresh: 'M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5',
+  expand: 'M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7', shrink: 'M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7',
