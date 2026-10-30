@@ -15,6 +15,7 @@ Types: `text`, `email`, `tel`, `number` (`min`, `max`), `password`, `select`, `t
 `date`, `time`, `datetime-local`, `month`, `week`, `hidden`, `files` (a file field), `subtasks` (task checklist editor),
 `tz` (a time zone), `seg` (a few choices as one segmented pill), `repeat` (how a recurring one repeats, see
 [events](events.md)).
+Extras: `def` (default), `min`, `max`, `when` (shown only for some values: `'Done'` / `'!Done'` by status, or
 
 ```jsx
 <form data-form="note" noValidate className="grid gap-4">
