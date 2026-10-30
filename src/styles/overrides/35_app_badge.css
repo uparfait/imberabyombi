@@ -1,3 +1,4 @@
 /* overrides/35_app_badge.css: the footer's "Get the app · Qr-scan" badge (site/footer.jsx), shaped like a store badge: ink
    in light, light in dark */
   .app_badge { display: flex; width: fit-content; align-items: center; gap: .75rem; padding: .625rem 1.25rem .625rem .875rem;
+    border-radius: calc(var(--radius) * .9); background: rgb(var(--ink)); color: #fff; transition: transform .2s var(--ease), background .2s; }
