@@ -31,3 +31,4 @@ function on_change(e) {
   if (t.dataset.pageTz != null) return page_tz_change(t);
   if (t.dataset.roleLand) role_land_change(t);
   if (t.dataset.perm) perm_change(t);
+  if (t.dataset.token && t.type === 'select-one') set_token(t.dataset.token, t.value);
