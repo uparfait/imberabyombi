@@ -26,8 +26,7 @@ export const EV_ACT = {
   ...INVITE_ACT,
   ev_edit: t => open_form('events', t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas.events.sec[t.dataset.sec].split(',')]),
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
-    modal({ title: 'Postpone this event?', help: 'Move it to a new date, or leave the date empty if it is not known yet. Everyone invited is told by email.',
-      body: [when_row(NEW_WHEN, { tz: e.tz }), reason()], submit: 'Postpone',
+    const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
       on_submit: (d, f) => {
         if (d.date && d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'Pick an end time after the start.'); return false; }
         if (d.date && at(d.date, d.start || '23:59', d.tz) <= Date.now()) { show_err(f.elements[d.start ? 'start' : 'date'], 'Pick a time later than now.'); return false; }
