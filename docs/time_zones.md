@@ -12,3 +12,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
 
 ## Activities and events
 - The form's date row ends with a **time zone** block ("Monday, November 2 · 9:00am – 10:00am · GMT-5 · New York"). It
+  starts as the page time zone (the person's own) and opens a searchable list of every zone (city, name or offset, such
