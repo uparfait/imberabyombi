@@ -5,3 +5,4 @@
    MINUTES_ACT: their buttons. */
 import { esc, fmt_d, fmt_time, pad, tz_parts, page_tz } from '../lib/index.js';
 import { db } from '../store/index.js';
+import { me } from '../auth/index.js';
