@@ -14,3 +14,4 @@
 import { classic, balloon, ribbon } from './styles_a.js';
 import { glossy, clay, glass } from './styles_b.js';
 import { glyph } from './glyph.js';
+import { sym } from './parts.js';
