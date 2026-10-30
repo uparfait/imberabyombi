@@ -32,3 +32,4 @@ function File_view({ f, n }) {
   else if (k === 'pdf') body = <iframe src={u} title={f.name} className="h-[78dvh] rounded-none bg-transparent"></iframe>;
   else body = <Text_view f={f} />;
   return (
+    <>
