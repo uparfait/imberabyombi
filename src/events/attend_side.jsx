@@ -17,6 +17,7 @@ export const att_count = id => db.list('attendees').filter(a => a.ref === id).le
 export const att_url = (c, id) => new URL(to(`/attend/${c}/${id}`), location.origin).href;
 
 export function attend_side(e, c, can) {
+  const url = att_url(c, e.id), n = att_count(e.id), page = `${BASE[c]}/${e.id}`, ph = att_phase(e), open = ph[0] !== 'closed';
   const tiles = [...(open ? [{ icon: 'external', label: 'Attendance page', href: url }] : []), { icon: 'play', label: 'Live screen', href: to(page + '/live') },
     { icon: 'users', label: 'Attendees', href: to(page + '/attendance') }];
   return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
