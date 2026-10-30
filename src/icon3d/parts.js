@@ -45,6 +45,7 @@ export function vol(id, o, k = 1) {
     g = 'g';
   }
   if (o.flat) return f + (g === 'SourceGraphic' ? '<feMerge><feMergeNode in="SourceGraphic"/></feMerge>' : '') + '</filter>';   /* an empty filter draws nothing */
+  /* the bevel (height map) is at least PX.bevel device px, and surfaceScale follows it, so the slope the lighting sees
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
