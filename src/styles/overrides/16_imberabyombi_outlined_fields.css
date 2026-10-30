@@ -63,3 +63,4 @@
   .when_block:hover { background: rgb(var(--fg) / .1); }
   .when_block:focus-within { outline: 2px solid rgb(var(--brand)); outline-offset: 0; }
   .when_block input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0 1rem; border: 0; border-radius: inherit; background: transparent;
+    color: transparent; caret-color: transparent; text-align: center; font: inherit; cursor: pointer; }
