@@ -13,3 +13,5 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
 - **Recent**: the last six scans, kept in this browser (Clear empties it).
 - Light or dark follows the site's choice; the top bar switches it. Back to the site (the home icon) shows in the browser,
   not in the installed app.
+
+## Installing it
