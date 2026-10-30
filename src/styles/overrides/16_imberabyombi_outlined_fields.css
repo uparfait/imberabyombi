@@ -57,6 +57,7 @@
     color: rgb(var(--fg)); background: rgb(var(--surface) / .92); border: 1px solid rgb(var(--line)); transition: background-color .2s, color .2s; }
   .file_x:hover { color: #fff; background: rgb(var(--bad)); border-color: rgb(var(--bad)); }
   .fill_row { grid-column: 1 / -1; }   /* a field alone on its row of a two-column form fills it (fields/fill_rows.js) */
+  /* A date, its times and their time zone on one line as soft blocks (fields/when_row.jsx), never wrapping. Everything in
   .when_block:hover { background: rgb(var(--fg) / .1); }
   .when_block:focus-within { outline: 2px solid rgb(var(--brand)); outline-offset: 0; }
   .when_block input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0 1rem; border: 0; border-radius: inherit; background: transparent;
