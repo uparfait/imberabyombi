@@ -63,3 +63,4 @@ export function invites_card(e, st, can) {
       <button type="button" className="btn btn_primary btn_sm justify-self-start" data-act="ev_invite" data-id={e.id}>{ic('send', 'h-4 w-4')}{n ? `Send ${n_of(n, 'invite', 'invites')}` : 'Send invites'}</button>
     </div> : null}
     {inv.length ? <><p className="ev_inv_count">{`${inv.length} invited`}</p><ul className="ev_invited">{inv.map(i => <li key={i.e}>
+      <span className="min-w-0 truncate">{i.e}</span><span className="ev_inv_when">{fmt_stamp(i.at, { dateStyle: 'medium' })}</span>
