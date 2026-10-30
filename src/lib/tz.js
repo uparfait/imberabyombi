@@ -68,3 +68,4 @@ export function convert(date, time, from, to) {
   return { date: `${p.y}-${pad(p.mo)}-${pad(p.d)}`, time: `${pad(p.h)}:${pad(p.mi)}` };
 }
 /* now on the page's clock (see the top) */
+export const page_now = () => { const p = tz_parts(page_tz(), Date.now()); return new Date(p.y, p.mo - 1, p.d, p.h, p.mi, p.s); };
