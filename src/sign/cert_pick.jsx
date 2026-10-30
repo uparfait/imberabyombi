@@ -13,3 +13,6 @@ export function Cert_pick() {
       <span className="mt-1 block text-xs text-muted">{name ? 'Choose another file to change it.' : 'A .p12 or .pfx file (any file works in this demo).'}</span></label>
     <div className="field"><label htmlFor="sign_cert_pw">Certificate password</label>
       <input id="sign_cert_pw" name="cert_pw" type="password" required autoComplete="off" placeholder=" " /></div></div>;
+}
+
+/* the file, then the (simulated) check; null when no file was chosen */
