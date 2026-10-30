@@ -19,3 +19,5 @@ const fmt = (h, m, mode) => mode === '24' ? [`${pad(h)}:${pad(m)}`, ''] : [`${h 
 const diff = min => { if (!min) return 'Same time'; const a = Math.abs(min), h = Math.floor(a / 60), m = a % 60;
   return `${min > 0 ? '+' : '−'}${h ? h + 'h' : ''}${h && m ? ' ' : ''}${m ? m + 'm' : ''}`; };
 const H12 = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], H24 = Array.from({ length: 24 }, (_, i) => i), MINS = Array.from({ length: 60 }, (_, i) => i);
+
+/* a segmented choice (12h / 24h, AM / PM) */
