@@ -31,7 +31,7 @@
   .mail_top { padding: 1rem 1.5rem; border-bottom: 3px solid rgb(var(--brand)); }
   .mail_body { display: grid; gap: 1rem; padding: 1.75rem 1.5rem; line-height: 1.6; }
   .mail_h { font-size: 1.5rem; }
-  .mail_foot { padding: 1.25rem 1.5rem; border-top: 1px solid rgb(var(--line)); font-size: .75rem; color: rgb(var(--muted)); background: rgb(var(--surface_2) / .6); }
+  .mail_foot { padding: 1.25rem 1.5rem; border-top: 1px solid rgb(var(--line)); font-size: .75rem; color: rgb(var(--muted)); background: rgb(var(--fg) / .05); }
   .mail_event, .mail_move { display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * .75); }
   .mail_date { display: grid; flex: none; place-items: center; width: 4rem; padding: .375rem 0; border-radius: calc(var(--radius) * .75); line-height: 1.15; text-align: center;
     color: color-mix(in srgb, rgb(var(--brand)) 80%, rgb(var(--fg))); background: rgb(var(--brand) / .1); }
