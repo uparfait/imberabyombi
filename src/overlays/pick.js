@@ -73,3 +73,4 @@ export const pick = {
     if (t.matches('[data-pk-q]')) { if (k === 'ArrowDown' || k === 'Enter') { e.preventDefault(); const b = items()[0]; k === 'Enter' ? b?.click() : b?.focus(); } return; }
     if (t.matches('.pk_day') && k.startsWith('Arrow')) {
       e.preventDefault(); const d = add_d(parse_d(t.dataset.v), { ArrowLeft: -1, ArrowRight: 1, ArrowUp: -7, ArrowDown: 7 }[k]);
+      if (d.getMonth() !== this.view.getMonth() || d.getFullYear() !== this.view.getFullYear()) { const n = d > this.view ? 1 : -1; this.view = new Date(d.getFullYear(), d.getMonth(), 1); this.draw(); this.slide(n); }
