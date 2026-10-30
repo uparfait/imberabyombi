@@ -20,3 +20,4 @@ export function open_form(c, id, preset = {}) {
     on_submit: async (d, form) => {
       s.f.forEach(f => { if (f.t === 'number' && d[f.k] !== '' && d[f.k] != null) d[f.k] = +d[f.k]; });
       if (s.before) { const r = await s.before(d, row, form); if (r === false) return false; d = r; }
+      ui.flash = db.upsert(c, { ...row, ...d }); rerender();
