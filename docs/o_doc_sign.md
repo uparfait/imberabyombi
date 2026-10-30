@@ -69,3 +69,4 @@ every account starts empty.
   Archived (orange: a caution, not a loss), and **Restore from archive** brings it back.
 
 ## Download
+**Download PDF** writes every mark placed so far into the file's pages (rotated pages included). A completed document's
