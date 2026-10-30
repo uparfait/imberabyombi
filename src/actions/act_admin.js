@@ -17,3 +17,4 @@ export const ADMIN_ACT = {
   /* Email designs: switch the previewed email in place (no page jump). The address changes first: the redraw reads ?t= */
   mail: t => { const k = t.dataset.k; if (!qs('#mail_view') || !MAILS[k]) return; ui.mail = k;
     history.replaceState(null, '', to('/admin/emails?t=' + k)); rerender();
+    const v = qs('#mail_view'); if (v?.firstElementChild) slide_in([v.firstElementChild], 0); },
