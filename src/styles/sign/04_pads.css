@@ -9,3 +9,4 @@
 .sign_style { display: grid; min-height: 5.5rem; place-items: center; gap: .125rem; padding: .5rem; overflow: hidden; border: 2px solid rgb(var(--line));
   border-radius: 1rem; background: #fff; color: #16204A; transition: border-color .2s; }
 .sign_style:hover { border-color: rgb(var(--brand) / .5); }
+.sign_style.on { border-color: rgb(var(--brand)); }
