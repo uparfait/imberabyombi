@@ -6,3 +6,4 @@ import { db } from '../store/db.js';
 import { page_now } from './tz.js';
 
 export const ymd = (d = page_now()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+export const hm = (d = page_now()) => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
