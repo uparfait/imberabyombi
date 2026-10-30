@@ -12,3 +12,4 @@ import { file_info } from './file_info.jsx';
 function Text_view({ f }) {
   const [text, set_text] = useState(null);
   useEffect(() => {
+    let live = true;
