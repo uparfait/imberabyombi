@@ -88,3 +88,4 @@
   @container when (max-width: 30rem) { .when_long { display: none; } .when_short { display: inline; } .when_row { font-size: clamp(.625rem, 3.2cqi, .9375rem); } }
   @container when (max-width: 22rem) {
     .when_chev { display: none; } .when_row { gap: .375em; font-size: clamp(.625rem, 4.1cqi, .9375rem); }
+    .when_block { padding: 0 .55em; } .when_block input { padding: .9em .55em 0; } .when_block.when_tz { min-width: 3.5em; } }
