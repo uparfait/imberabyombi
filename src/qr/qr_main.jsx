@@ -6,6 +6,7 @@ import '../styles/index.css';
 import '../styles/overrides.css';
 import './qr.css';
 import { Qr_app } from './qr_app.jsx';
+import { brand_apply } from './qr_brand.js';
 
 createRoot(document.getElementById('qr_root')).render(<Qr_app />);
 const at = `${import.meta.env.BASE_URL}qr-scan/`;
