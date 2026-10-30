@@ -7,3 +7,4 @@ import { pad, h24, zone_list, zone_short, page_tz } from '../lib/index.js';
 import { dt_attrs, dt_show, to24 } from './date_formats.js';
 
 /* a value in words: a date "Friday, October 30", a time "12:00pm" (or "12:00" on the 24-hour clock) */
+export function in_words(t, v) {
