@@ -35,3 +35,4 @@ export const PREP_ACT = {
       body: rec_body(r), submit: 'Save', on_submit: v => {
         const email = String(v.email).trim().toLowerCase();
         if (P.doc.recipients.some(x => x !== r && x.email === email)) { notify(`${email} already signs this document.`, 'warn', 'Already a signer'); return false; }
+        const moved = email !== r.email; Object.assign(r, { name: String(v.name).trim(), email, note: String(v.note || '').trim(), cert: !!v.cert });
