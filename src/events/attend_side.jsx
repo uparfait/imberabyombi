@@ -15,3 +15,4 @@ export const qr_open = st => ['Upcoming', 'Live', 'Recurring'].includes(st);
 export function attend_side(e, c, st) {
   const url = att_url(c, e.id), n = att_count(e.id), page = `${BASE[c]}/${e.id}`, open = qr_open(st);
   const links = [['Attendance page', 'external', url, true], ['Live screen', 'play', to(page + '/live')], ['Attendees', 'users', to(page + '/attendance')]];
+  return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
