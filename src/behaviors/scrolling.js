@@ -36,3 +36,4 @@ export const header_line = () => { qsa('#site_header, #app_header').forEach(h =>
 
 /* the resize timer: the heavy work waits until resizing pauses */
 export let RZ;
+const on_resize = () => { tip.hide(); pick.place(); clearTimeout(RZ);
