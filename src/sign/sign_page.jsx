@@ -49,3 +49,4 @@ function page_for(a, id) {
 }
 
 /* O-Doc Sign is made for computers: below 1280 px it is laid out 1280 px wide and scaled down to fit, never re-arranged or
+   scrolled sideways. Phones and tablets: the viewport says 1280 px (the browser shows it to fit); a narrow computer window
