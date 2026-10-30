@@ -6,3 +6,4 @@ import { ic } from '../icons/index.js';
 
 function People_editor({ k, v, add }) {
   const [rows, set] = useState(() => (v || []).map(x => ({ ...x, i: uid() })));
+  return <div className="pp_edit" data-people={k}>{rows.map(r => <div key={r.i} className="pp_row" data-pp-row="">
