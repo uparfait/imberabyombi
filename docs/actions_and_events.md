@@ -33,3 +33,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | Attribute                       | Effect                                                             |
 |---------------------------------|--------------------------------------------------------------------|
 | `data-act="name"`               | run `ACT.name` on click (and Enter / Space)                        |
+| `data-form="name"`              | run `FORMS.name` on a valid submit                                 |
