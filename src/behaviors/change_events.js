@@ -35,3 +35,4 @@ function on_change(e) {
   if (t.dataset.themeSet != null) set_theme(t.value);
   if (t.dataset.calview != null) { ui.cal_view = t.value; ui.slide = { n: 0, sel: '.date_body' }; rerender(); }
   if (t.multiple && t.tagName === 'SELECT') ms_sync(t);
+  if (t.type === 'file' && t.dataset.import == null) file_tiles(t);
