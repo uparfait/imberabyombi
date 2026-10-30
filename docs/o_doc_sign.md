@@ -30,11 +30,7 @@ every account starts empty.
 
 ## Preparing
 - The page has three columns: signers on the left and the tools on the right float as rounded panels; the pages scroll in
-  the middle. The right column starts with **Send for signing** and **Save draft**; its captions (Placing for, Fields,
-  Placed) explain themselves in help icons.
-- **Signers**: name, email, an optional **note for that signer** (they read it before signing), and **Must sign with a
-  digital certificate**. People already in the system are suggested as you type a name. Once there is a signer the form
-  folds into an **Add signer** button. **Edit signer** changes the name, email, note and certificate; **Remove** takes them
+  the middle. The right column starts with **Send for signing** (disabled until every signer has a field; hovering it
   and their fields off. A signer's note shows only when their **Note** chip is opened.
 - **Colours**: each signer's colour (their card's tint, avatar, tag and fields) comes from their email, through
   `seed_color()` (`src/lib/seed_color.js`): the same email always gets the same colour; signers of one document are kept
