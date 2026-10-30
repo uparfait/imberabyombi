@@ -36,3 +36,4 @@ export function zoned_to_utc(y, mo, d, h, mi, tz) {
   return guess - offset_min(tz, t) * 60000;
 }
 export const gmt = m => `GMT${m < 0 ? '-' : '+'}${pad(Math.floor(Math.abs(m) / 60))}:${pad(Math.abs(m) % 60)}`;
+const gmt_short = m => { const a = Math.abs(m); return `GMT${m < 0 ? '-' : '+'}${Math.floor(a / 60)}${a % 60 ? ':' + pad(a % 60) : ''}`; };
