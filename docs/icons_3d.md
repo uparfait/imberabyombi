@@ -47,6 +47,7 @@ Completed green, Archived indigo, To sign violet.
 
 **Small sizes.** The lighting and the "goo" (the step that rounds and thickens) work per device pixel, so one set of
 numbers cannot look right at both 24 px and 300 px: small icons came out boxy, with hard black rims. The engine takes
+`k`, device pixels per unit, and sets every number from it (`parts.js`): the goo's edge ramp stays about 1.4 px wide and
 Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
 (gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
 
