@@ -22,3 +22,4 @@
   .card_hover { @apply transition duration-300 hover:border-brand/40 hover:bg-surface-2/40; }
   .chip { @apply inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold; }
   .chip_btn { @apply rounded-full border border-muted/40 px-4 py-1.5 text-sm font-medium text-fg/80 transition hover:bg-fg/5; }
+  .chip_btn[aria-pressed=true] { @apply border-transparent bg-brand/15 text-accent; }
