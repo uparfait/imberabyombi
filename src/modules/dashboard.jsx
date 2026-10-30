@@ -3,3 +3,4 @@
 import { VIEWS } from './views.js';
 import { db } from '../store/index.js';
 import { auth } from '../auth/index.js';
+import { lorem, page_now } from '../lib/index.js';
