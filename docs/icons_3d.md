@@ -52,8 +52,9 @@ is skipped when it would be under a pixel; the bevel is at least 1.2 px, with th
 widened bevel dims the highlight; small icons get a little fill light so far rims never go black; the extrusion's copies
 are at most 0.7 px apart and at least 1.1 px deep in all. So render one SVG per size you show, with its real `px`, rather
 than scaling one SVG down.
+
 Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
-(gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
+(gradients, the size-aware volume filter, extrusion), `styles_a.js` and `styles_b.js` (the six styles), `index.js`
 
 ## Iconisus (`/admin/icons`)
 In the sidebar under System. Source: Text, Library (twelve icon sets, Lucide to Simple Icons, loaded from jsDelivr only
