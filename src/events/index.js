@@ -10,3 +10,4 @@ export * from './event_invites.jsx';
 export * from './event_page.jsx';
 export * from './event_act.jsx';
 export * from './qr.jsx';
+export * from './attend_form.jsx';
