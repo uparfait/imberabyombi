@@ -9,3 +9,4 @@ import { go } from '../router/index.js';
 import { find_doc, drop_doc, save_doc, log, who, kept_for_good } from './sign_store.js';
 import { drop_files, marks_get } from './sign_idb.js';
 import { forget_pdf } from './pdf_lib.js';
+import { signed_pdf, save_pdf } from './sign_export.js';
