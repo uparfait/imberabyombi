@@ -39,3 +39,4 @@ export const logo = light => (
   </a>
 );
 export const theme_btn = (c = '') => (
+  <button className={c ? `icon_btn ${c}` : 'icon_btn'} data-act="theme" aria-label="Switch light or dark mode">
