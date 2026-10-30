@@ -15,3 +15,4 @@ export const LISTS = [
   ['waiting', 'Waiting', 'clock', 'Sent and waiting for signatures.'], ['completed', 'Completed', 'check', 'Signed by everyone.'],
   ['archived', 'Archived', 'archive', 'Documents you put away. A document someone signed cannot be deleted: it is archived, and can be restored.'],
   ['inbox', 'To sign', 'signature', 'Documents sent to you for your signature.']];
+const OF = { drafts: 'draft', waiting: 'sent', completed: 'completed' };
