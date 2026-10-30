@@ -10,3 +10,4 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
   as large as the screen allows ([`qr_full.jsx`](../src/events/qr_full.jsx)). The QR encoder loads from the CDN.
 - **The attendance page**, `/attend/<events|activities>/<id>` ([`attend_page.jsx`](../src/events/attend_page.jsx)):
   no header or sidebar; the name, when and where, then the form: full name, email, telephone, organisation or unit,
+  position, and a signature, drawn (the O-Doc Sign pad) or digital. Once per email; a large tick says it was sent.
