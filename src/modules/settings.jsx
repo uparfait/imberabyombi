@@ -34,3 +34,4 @@ function appearance(tk, th) {
 }
 
 /* the time zone every date and time follows (the calendar, today, activities and events set in other zones) */
+const time_zone = () => <section className="card p-6"><div className="flex items-center gap-1"><h2 className="text-lg">Time zone</h2>
