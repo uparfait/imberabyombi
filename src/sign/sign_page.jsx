@@ -53,3 +53,4 @@ function page_for(a, id) {
    (which ignores that): the zoom --sign_z (01_layout.css). Both are put back when O-Doc Sign is left. */
 const W = 1280;
 function use_desktop() {
+  useEffect(() => {
