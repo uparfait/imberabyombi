@@ -1,6 +1,6 @@
 /* vite.config.js: the dev server (npm run dev) and the production build (npm run build → dist/).
    base: the path the site is served from. '/' by default (the domain root); set BASE_PATH to serve it from a folder,
-   for example GitHub Pages: BASE_PATH=/<repo>/ npm run build. Links in the app follow it (to() in src/router). */
+   for example GitHub Pages: BASE_PATH=/<repo>/ npm run build. Links in the app follow it (to() in src/router).
 import { copyFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import react from '@vitejs/plugin-react';
