@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 import { fmt_d, fmt_time, zone_short, page_tz, repeat_text, repeat_next, ymd } from '../lib/index.js';
 import { ic } from '../icons/index.js';
 import { bar_cell, dash, tag } from '../ui/index.js';
-import { KINDS } from '../schemas/index.js';
+import { kind_of, kind_label, place_of } from '../schemas/index.js';
 
 const SECS = ['Details', 'When', 'Location', 'Organiser', 'Audience'];
 const out = (href, text) => <a href={href} className="ev_link" target={href.startsWith('http') ? '_blank' : undefined} rel="noreferrer">{text}</a>;
