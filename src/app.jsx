@@ -24,3 +24,4 @@ export default function App() {
   useLayoutEffect(() => { mark_page(); run_after_render({ ...render_flags }); }, [version]);
   return (
     <>
+      {page ?? (version === 0 && boot_loader)}
