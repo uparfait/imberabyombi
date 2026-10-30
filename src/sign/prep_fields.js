@@ -34,4 +34,5 @@ export function add_field(type, page, cx, cy) {
 export function del_field(id) {
   const f = P.doc.fields.find(x => x.id === id); if (!f) return;
   const [l] = KINDS[f.type], r = rec_of(P.doc, f.rid);
+  ask(`Remove this ${l.toLowerCase()} field${r ? ` for ${r.name}` : ''}? They will not ${f.type === 'stamp' ? 'stamp' : 'sign'} here.`, () => {
 }
