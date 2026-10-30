@@ -25,9 +25,6 @@ const ROWS = {
   Audience: e => [['Expected', e.audience ? `${e.audience} people` : null], ['Capacity', e.capacity], ['Registered', bar_cell(e.registered || 0, e.capacity)]]
 };
 
-const card = (e, s, can) => <section key={s} className="card ev_card" aria-labelledby={`ev_sec_${s}`}>
-  <header className="ev_card_head"><h3 id={`ev_sec_${s}`}>{s}</h3>
-    {can ? <button type="button" className="btn btn_ghost btn_sm" data-act="ev_edit" data-id={e.id} data-sec={s}>{ic('edit', 'h-4 w-4')}Edit</button> : null}</header>
-  <dl className="ev_dl">{ROWS[s](e).filter(Boolean).map(([k, v]) => <Fragment key={k}><dt>{k}</dt><dd>{v === '' || v == null ? dash() : v}</dd></Fragment>)}</dl></section>;
+const group = (e, s, can) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
 
 export const event_cards = (e, can) => SECS.map(s => card(e, s, can));
