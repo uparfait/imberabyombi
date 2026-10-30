@@ -1,4 +1,4 @@
-/* events/live_page.jsx: the live screen of an event or activity (/admin/events/<id>/live, /admin/calendar/<id>/live): the
+/* events/live_page.jsx: View This Event, the live screen of an event or activity (/admin/events/<id>/live, …/live): the
    whole window, no sidebar, to show while it runs. Its title in the top bar (cut with "…" when long, whole on hover);
    then its description and times, the agenda item running now (large, with its presenter and how far it has got), the
    agenda (done, now, next), and the organiser and co-organisers: each card with Edit for those who manage it (not once
