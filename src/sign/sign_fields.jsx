@@ -8,3 +8,5 @@ import { KINDS, rec_of } from './sign_store.js';
 
 export const at = f => ({ left: `${f.x * 100}%`, top: `${f.y * 100}%`, width: `${f.w * 100}%`, height: `${f.h * 100}%` });
 const look = (f, r) => ({ ...at(f), '--c': r?.color || '#94A3B8' });
+
+const edit_field = (d, f, sel) => { const r = rec_of(d, f.rid), [l, i] = KINDS[f.type];
