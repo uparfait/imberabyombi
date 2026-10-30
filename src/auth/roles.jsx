@@ -37,3 +37,4 @@ export const landing = id => {
   return k ? `/admin/${k}` : '/admin';
 };
 /* the "Lands on" choices: only the pages the role can open (they follow the access matrix as it changes).
+   The chosen one is the select's value: <select defaultValue={land_value(r)} key={land_value(r)}>{land_opts(r)}</select> */
