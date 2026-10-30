@@ -10,3 +10,4 @@ export function raise_top() {
     bars.forEach(([n, s]) => { n.classList.add('raised'); n.querySelector('.bar').style.animationDelay = `-${(1 - s) * parseFloat(n.style.getPropertyValue('--life'))}ms`; }); }
 }
 export const show_dialog = d => { d.showModal(); raise_top(); };
+/* the browser's full screen lands above them too ("Copied" would be hidden): lifted again on each change */
