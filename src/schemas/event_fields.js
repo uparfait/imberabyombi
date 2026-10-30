@@ -24,3 +24,4 @@ export const at = (date, time, tz) => { const [y, mo, d] = date.split('-').map(N
 /* the timing makes sense: an end after the start; an upcoming one starts later than now; a live one has started and has
    not ended. Checked for a new record, or when its timing changes (an old one can still be corrected) */
 export function when_ok(d, row, f) {
+  if (!d.date || !('kind' in d)) return true;   /* a form without the timing (one section) */
