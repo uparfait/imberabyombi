@@ -20,3 +20,4 @@ const mine = d => d.recipients.find(r => r.email === who().email);
 /* under Save draft, in ink (apart from Send and Save): Sign it myself → Sign my fields → Signed by you */
 export function self_part(d) {
   const r = mine(d), n = r ? d.fields.filter(f => f.rid === r.id).length : 0;
+  if (!r) return <button type="button" className="btn btn_ink btn_sm w-full" data-act="sign_self">{ic('signature', 'h-4 w-4')}Sign it myself</button>;
