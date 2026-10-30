@@ -12,3 +12,4 @@ import { rec_body, send_body } from './prep_dialogs.jsx';
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 
 function remove_rec(r) {
+  P.doc.recipients = P.doc.recipients.filter(x => x.id !== r.id); P.doc.fields = P.doc.fields.filter(f => f.rid !== r.id);
