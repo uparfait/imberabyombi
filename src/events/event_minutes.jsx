@@ -26,3 +26,4 @@ export const MINUTES_ACT = {
   ev_minutes: async t => { const c = t.dataset.c, e = db.find(c, t.dataset.id); if (!e) return; const day = today_in(e);
     let m = db.list('minutes').find(x => x.ref === e.id && x.date === day);
     if (!m) m = db.find('minutes', db.upsert('minutes', { ref: e.id, c, date: day, title: `Minutes · ${e.title} · ${fmt_d(day)}`, by: me(), at: Date.now() }));
+    const key = 'editor_doc:m_' + m.id, { idb_get, idb_set } = await import('../editor/core/idb.js');
