@@ -46,3 +46,4 @@ function long_name(tz, t) {
    short ("GMT+2 · Kigali"), key (what a search matches: name, city, zone, "gmt+2", "utc+2") }; built once a day */
 let LIST = null, LIST_DAY = '';
 export function zone_list(t = Date.now()) {
+  const day = new Date(t).toISOString().slice(0, 10); if (LIST && LIST_DAY === day) return LIST;
