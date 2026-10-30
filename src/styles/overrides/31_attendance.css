@@ -23,3 +23,4 @@
   .qr_wait { aspect-ratio: 1; background: rgb(var(--fg) / .05); }
   .qr_off { font-size: .75rem; color: rgb(var(--muted)); overflow-wrap: anywhere; }
   /* under an event's status: its QR code (a click shows it full size), the count, the link, Links */
+  .ev_att { display: grid; grid-template-columns: 7rem minmax(0, 1fr); align-items: center; gap: .75rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgb(var(--line)); }
