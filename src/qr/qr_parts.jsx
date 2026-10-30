@@ -2,3 +2,4 @@
    secure link, opened in a new tab; an http link, which does not open from here; any other text, to copy) and the recent
    scans. */
 import { useState } from 'react';
+import { ic } from '../icons/index.js';
