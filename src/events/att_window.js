@@ -5,3 +5,4 @@ import { pad, tz_parts, page_tz, repeat_next, ymd, add_d, parse_d } from '../lib
 import { at } from '../schemas/index.js';
 
 export const ATT_DEF = { before: 15, after: 15 };
+const mins = (v, d) => v === '' || v == null || isNaN(+v) ? d : Math.max(0, +v);
