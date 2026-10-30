@@ -23,3 +23,4 @@ const gam = v => v <= .0031308 ? 12.92 * v : 1.055 * v ** (1 / 2.4) - .055;
 /* OKLCH → sRGB hex; the chroma steps down until the colour fits in sRGB */
 function oklch_hex(l, c, h) {
   const t = h * Math.PI / 180;
+  for (; c > 0; c -= .005) {
