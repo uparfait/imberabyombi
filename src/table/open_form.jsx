@@ -24,3 +24,4 @@ export function open_form(c, id, preset = {}) {
       notify(id ? `Your changes to this ${s.l} are saved.` : `The new ${s.l} is in the list.`, 'ok', id ? 'Changes saved' : `${cap(s.l)} added`);
     } });
   /* modal() draws at once, except when called while React is drawing (a form opened after navigation): then a moment later */
+  const f = qs('#modal form');
