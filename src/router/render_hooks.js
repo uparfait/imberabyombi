@@ -10,3 +10,4 @@ import { pick, tip, help_intro } from '../overlays/index.js';
 import { CHARTS, viz_tip } from '../charts/index.js';
 import { open_form } from '../table/index.js';
 import { clear_nav_busy } from '../behaviors/index.js';
+import { enhance } from './enhance.js';
