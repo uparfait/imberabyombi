@@ -7,3 +7,4 @@
      px      the device pixels the icon is drawn at (default: size when it is a number, else 200). The lighting and the
              goo work per device pixel, so their numbers follow it (parts.js): render one SVG per size you show, with
              the real px (CSS px × devicePixelRatio), rather than scaling one SVG down.
+     view    the part of the 200 × 200 picture to show, [x, y, w, h] (default [0, -4, 200, 200]); a tighter view makes
