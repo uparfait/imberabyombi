@@ -11,3 +11,4 @@
   .ev_card_head { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-bottom: .875rem; }
   .ev_card_head h3, .ev_side_title { font-size: 1rem; font-weight: 600; }
   .ev_dl { display: grid; grid-template-columns: minmax(0, 1fr); gap: .125rem; }
+  .ev_dl dt { color: rgb(var(--muted)); font-size: .8125rem; }
