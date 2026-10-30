@@ -34,4 +34,5 @@ export function Qr_app() {
     {qr_live({ app: standalone(), scanning, has_torch: cam.torch, lit: cam.lit,
       toggle_torch: () => { torch(!cam.lit); set_cam({ ...cam, lit: !cam.lit }); } })}
     {scanning ? null : st.phase === 'ask' ? <div className="qr_sheet qr_ask"><span className="qr_ask_ic" aria-hidden="true">{ic('video', 'h-7 w-7')}</span>
+      <h2 className="qr_ask_t">Allow the camera</h2><p className="qr_ask_p">Qr-scan reads QR codes with it. Nothing is recorded or sent.</p>
 }
