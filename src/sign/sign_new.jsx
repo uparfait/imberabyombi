@@ -20,3 +20,4 @@ async function take(file) {
   const bytes = await file.arrayBuffer();
   if (!new TextDecoder().decode(bytes.slice(0, 1024)).includes('%PDF')) return bad('This file is not a PDF, whatever its name says.', 'Not a PDF');
   let pages; try { pages = await read_pdf(bytes); } catch { return bad('It may be damaged, or locked with a password.', 'This PDF could not be read'); }
+  if (!pages.length) return bad('This PDF has no pages.', 'Empty PDF');
