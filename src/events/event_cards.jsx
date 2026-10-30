@@ -26,6 +26,7 @@ const ROWS = {
   Organiser: e => [['Name', e.org_name], ['Email', e.org_email ? out('mailto:' + e.org_email, e.org_email) : null], ['Phone', e.org_tel ? out('tel:' + e.org_tel.replace(/\s/g, ''), e.org_tel) : null],
     ['Co-organisers', e.co_orgs?.length ? <div className="grid gap-1">{e.co_orgs.map(p => <span key={p.email}>{p.name} · {out('mailto:' + p.email, p.email)}</span>)}</div> : null]],
   /* one row per item: its times, then its title, presenter and description; the one running now is marked */
+  Agenda: e => { const now = agenda_now(e); return e.agenda?.length ? e.agenda.map((a, i) => [`${fmt_time(a.from)} – ${fmt_time(a.to)}`,
   Audience: e => [['Expected', e.audience ? `${e.audience} people` : null], ['Capacity', e.capacity], ['Registered', bar_cell(e.registered || 0, e.capacity)]]
 };
 
