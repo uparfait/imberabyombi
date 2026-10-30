@@ -30,3 +30,4 @@ export const my_turn = d => d.status === 'sent' && my_rec(d)?.status !== 'signed
 const kept = () => mine().filter(d => !d.archived);
 export const of_list = k => (k === 'inbox' ? to_sign() : k === 'archived' ? mine().filter(d => d.archived) : k === 'all' ? kept()
   : kept().filter(d => d.status === OF[k])).sort((a, b) => b.updated - a.updated);
+/* the number a list shows; "To sign" counts only what still waits for you */
