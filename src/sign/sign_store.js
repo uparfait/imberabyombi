@@ -53,3 +53,5 @@ export function new_doc(name, size, pages) {
 export function add_rec(d, name, email, note, cert = false) {
   const r = { id: uid(), name, email, note, cert, color: seed_color(email, d.recipients.map(x => x.color)), status: 'pending' };
   d.recipients.push(r); return r;
+}
+/* colours again from the emails, in order (a draft opened, an email changed) */
