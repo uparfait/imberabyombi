@@ -30,3 +30,4 @@ export function live_page(id, c) {
   return <div className="live">
     <header className="live_top"><a href={to(page)} className="icon_btn" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
       <h1 className="live_title truncate">{e.title}</h1>{badge(st)}
+      {t ? <span className="ev_left">{t[0]} <b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></span> : null}
