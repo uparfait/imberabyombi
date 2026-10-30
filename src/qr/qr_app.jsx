@@ -9,11 +9,7 @@ import { on_change, can_install, standalone } from './qr_install.js';
 import { found_card } from './qr_parts.jsx';
 import { qr_live } from './qr_live.jsx';
 
-const KEY = 'loremds:v1:qr_recent';
-const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
-const keep = r => { try { localStorage.setItem(KEY, JSON.stringify(r)); } catch { /* this visit only */ } };
-const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site, or scan a picture.', NotFoundError: 'No camera here. Scan a picture instead.',
-  NotReadableError: 'Another app is using the camera.' };
+const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site in the browser’s settings, then try again.',
 
 export function Qr_app() {
   useSyncExternalStore(on_change, can_install);   /* Install shows when the browser offers it */
