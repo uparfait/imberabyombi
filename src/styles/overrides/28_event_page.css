@@ -1,8 +1,4 @@
-/* overrides/28_event_page.css: one event on its own page (events/event_page.jsx): a back link, the title with where it
-   stands, the details as cards by section and, from 1024px, the status and actions in a column on the right that stays
-   in view. A card on the Events page opens it (ev_tile). */
-  .ev_back { display: inline-flex; align-items: center; gap: .375rem; margin-bottom: .75rem; color: rgb(var(--muted)); font-size: .875rem; font-weight: 500; }
-  .ev_back:hover { color: rgb(var(--fg)); }
+/* overrides/28_event_page.css: one event on its own page (events/event_page.jsx): the title row (an arrow back, the
   .ev_head { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .5rem; margin-bottom: 1.25rem; }
   .ev_title { min-width: 0; font-family: var(--font_display); font-size: 1.625rem; font-weight: 500; letter-spacing: -.01em; overflow-wrap: anywhere; }
   .ev_grid { display: grid; gap: 1.25rem; align-items: start; }
