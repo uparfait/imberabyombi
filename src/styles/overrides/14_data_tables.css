@@ -10,3 +10,4 @@
      (100cqw: the scroll box is a size container) */
   .table_scroll { container-type: inline-size; }
   .table_data td.table_none { padding-inline: 0; }
+  .table_data td.table_none > * { position: sticky; left: 0; width: 100cqw; }
