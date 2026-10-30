@@ -19,7 +19,7 @@ function Doc_view({ d }) {
 }
 
 const state = r => r.status === 'signed' ? `Signed ${when(r.signed_at)}` : r.viewed_at ? `Opened ${ago(r.viewed_at)}, not signed yet` : 'Waiting';
-export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipients.map(r => <li key={r.id} className="flex items-start gap-3">
+export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipients.map(r => <li key={r.id} className="flex items-start gap-3" style={{ '--c': r.color }}>
   <span className="sign_dot" style={{ background: r.color }}>{initials(r.name)}</span>
   <div className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
     <span className="block truncate text-xs text-muted">{r.email}</span>
