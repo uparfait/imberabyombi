@@ -29,22 +29,5 @@ export function Qr_app() {
     return () => { if (perm) perm.onchange = null; stop(); }; }, []);   // eslint-disable-line react-hooks/exhaustive-deps
   const scanning = st.phase === 'scan' || st.phase === 'start';
 
-  return <div className="qr_app">{top_bar()}
-    <main className="qr_main">
-      <div className={`qr_view ${scanning ? 'on' : ''}`}>
-        <video ref={video} muted playsInline className={facing === 'user' ? 'mirror' : ''} />
-        <i className="qr_corners" aria-hidden="true"></i>{scanning ? <i className="qr_line" aria-hidden="true"></i> : null}
-        {scanning ? null : <div className="qr_idle">
-          {st.phase === 'error' ? <p className="qr_err">{st.msg}</p>
-            : <span className={`qr_idle_ic ${st.phase === 'found' ? 'ok' : ''}`}>{ic(st.phase === 'found' ? 'check' : 'qr', 'h-10 w-10')}</span>}
-          <button type="button" className="btn btn_primary" onClick={() => go()}>{ic('play', 'h-4 w-4')}{st.phase === 'idle' ? 'Start camera' : 'Scan again'}</button></div>}
-      </div>
-      <div className="qr_tools">
-        {scanning ? <button type="button" className="btn btn_outline btn_sm" onClick={() => { stop(); set({ phase: 'idle' }); }}>{ic('x', 'h-4 w-4')}Stop</button> : null}
-        {scanning && multi ? <button type="button" className="btn btn_outline btn_sm" onClick={flip}>{ic('refresh', 'h-4 w-4')}Flip</button> : null}
-        <label className="btn btn_outline btn_sm cursor-pointer">{ic('image', 'h-4 w-4')}Scan a picture<input type="file" accept="image/*" hidden onChange={pick} /></label>
-      </div>
-      {st.phase === 'found' ? found_card(st.text) : null}
-      {recent_list(recent, () => { set_recent([]); keep([]); })}
-    </main></div>;
+  return <div className="qr_app"><div className={`qr_view ${st.phase === 'scan' ? 'on' : ''}`}>
 }
