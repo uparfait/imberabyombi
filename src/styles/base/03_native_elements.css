@@ -58,3 +58,4 @@
   :where(address) { font-style: normal; }
   :where(dt) { font-weight: 600; }
   :where(dd) { color: rgb(var(--muted)); }
+  :where(figcaption) { font-size: .85rem; color: rgb(var(--muted)); margin-top: .6rem; }
