@@ -14,3 +14,4 @@ import { rows_of, wait_load } from './rows.js';
 function row_acts(c, o, r, can) {
   const extra = o.acts ? o.acts(r, can) : null, own = can && (!o.can_row || o.can_row(r));
   if (!extra && !own) return null;
+  return (
