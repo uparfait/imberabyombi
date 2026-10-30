@@ -31,3 +31,4 @@ export function signer_page(d) {
     <aside className="sign_side" aria-label="Signing">{request_card(d, r)}{note_card(d, r)}
       {done ? d.status === 'completed' ? <section className="card p-5"><button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_dl" data-id={d.id}>
           {ic('download', 'h-4 w-4')}{dl_label(d)}</button></section> : null
+        : steps_card(d)}</aside>
