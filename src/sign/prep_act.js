@@ -26,3 +26,4 @@ function send() {
 }
 
 export const PREP_ACT = {
+  sign_rid: t => { P.rid = t.dataset.id; rerender(); },
