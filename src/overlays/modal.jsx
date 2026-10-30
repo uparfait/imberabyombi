@@ -16,7 +16,7 @@ export function modal({ title, help = '', body = '', submit, on_submit, danger, 
   /* The description (help): a dialog with content shows it behind the help icon by the title; a dialog with nothing
      else to show (a confirm) shows it as its text, in a compact layout without dividers. */
   const d = qs('#modal'); pick.close(); tip.hide(); d.classList.toggle('modal_wide', wide);
-  set_dialog('modal', { title, help, body, submit, on_submit, danger, actions });
+  set_dialog('modal', { title, help, body, submit, on_submit, danger, actions, dismiss });
   if (!d.open) show_dialog(d);
 }
 
