@@ -36,3 +36,4 @@
   color: rgb(var(--fg) / .8); font-size: .75rem; font-weight: 500; transition: background-color .2s; }
 button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_chip.ok { background: rgb(var(--ok) / .14); color: rgb(var(--ok)); }
+.sign_chip .sign_chev { transition: transform .2s; }
