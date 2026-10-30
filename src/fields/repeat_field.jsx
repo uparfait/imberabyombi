@@ -44,3 +44,4 @@ const num = (id, name, label, v, max) => <div className="field"><label htmlFor={
 export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...(v || {}) }, id = 'field_' + f.k, say = e => repeat_say(e.currentTarget.closest('form'));
   return <div key={f.k} className="rp sm:col-span-2" data-when="kind=Recurring" data-repeat="" onChange={say} onInput={say}>
     <div className="rp_top">
+      <div className="field"><label htmlFor={id}>{f.l}</label><select id={id} name="rp_freq" defaultValue={r.freq}>{FREQS.map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select></div>
