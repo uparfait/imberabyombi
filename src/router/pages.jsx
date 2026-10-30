@@ -14,6 +14,7 @@ import { attend_page } from '../events/index.js';
 import { to, go } from './history.js';
 
 export function public_page(r) {
+  if (r.path.startsWith('/attend/')) return attend_page(r);   /* an attendance page: no header or footer */
   const k = r.path.slice(1); let inner, title;
   if (r.path === '/') { inner = home(); title = 'Home'; }
   else if (k === 'ui') { inner = kit(); title = 'Design system'; }
