@@ -25,3 +25,4 @@ export function add_field(type, page, cx, cy) {
   if (page == null) { const s = on_screen(), k = P.doc.fields.length % 4; page = s.page; cy = s.y + k * .02; cx = .5 + k * .03; }
   const [, , pw, ph] = KINDS[type], sz = P.doc.pages[page], w = Math.min(pw / sz.w, .9), h = Math.min(ph / sz.h, .9);
   const f = { id: uid(), type, rid: P.rid, page, w, h, x: clamp(cx - w / 2, 0, 1 - w), y: clamp(cy - h / 2, 0, 1 - h) };
+  P.doc.fields.push(f); P.sel = f.id; prep_dirty(); rerender();
