@@ -21,7 +21,7 @@ const matrix = (sel, edit) => <div className="overflow-x-auto"><table><thead><tr
 VIEWS.roles = () => {
   const rs = roles(), sel = rs.find(r => r.id === ui.role) || rs[0], can = auth.can('roles', 2), st = db.list('staff'), cnt = id => st.filter(s => s.role === id).length;
   const full = sel.perms === '*', edit = can && !full, land = land_value(sel);
-  return <div className="grid gap-6 xl:grid-cols-[20rem_minmax(0,1fr)]">
+  return <div className="room"><div className="room_side grid gap-6">
     <section className="card p-3"><header className="flex items-center justify-between p-2"><h2 className="text-lg">Roles</h2>
       {can ? <button className="btn btn_primary btn_sm" data-act="role_new">{ic('plus', 'h-4 w-4')}New role</button> : null}</header>
       <ul className="grid gap-1">{rs.map(r => <li key={r.id}>
