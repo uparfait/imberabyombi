@@ -35,7 +35,6 @@ export const steps_card = d => { const left = left_of(d);
       <button type="button" className="btn btn_primary btn_sm" data-act="sign_finish" disabled={!!left.length}>{ic('signature', 'h-4 w-4')}Finish and sign</button></div></section>; };
 
 export const agree_body = (d, r) => <div className="grid gap-4 sm:col-span-2">
-  <p className="text-sm text-muted">Your marks go on “{d.title}”. Your name, email and the time are recorded with your signature, and{' '}
-    {d.owner_name} sees that you signed.</p>
+  <p className="text-sm text-muted">Your marks go on “{d.title}”. Your name, email and the time are recorded with your signature
   <label className="sign_agree"><input type="checkbox" name="agree" required />
     <span className="text-sm">I, {r.name}, agree to sign this document electronically, with the same effect as a handwritten signature.</span></label></div>;
