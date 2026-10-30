@@ -24,3 +24,4 @@ const VIEW = [18, 12, 164, 164];
 export const css_px = cls => Math.max(0, ...[...String(cls).matchAll(/(?:^|[\s:])(?:h|w|size)-(\d+(?:\.5)?)(?=\s|$)/g)].map(m => +m[1] * 4)) || 56;
 const CACHE = new Map();
 export function i3_src(n, color, css = 56) {
+  const c = hex(color), px = Math.round(device_px(css)), k = `${n}|${c}|${px}`;
