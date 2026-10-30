@@ -14,7 +14,7 @@ const more = (n, c) => n > 0 ? <span className={`${c} text-[0.6875rem] text-mute
 const CHIP = 'absolute inset-x-1 z-[1] overflow-hidden rounded-lg px-2 py-1 text-left text-xs leading-tight transition hover:brightness-110';
 const chip = i => { const a = to_min(i.start), b = Math.max(to_min(i.end), a + 30);
   return <button key={i.c + i.id} className={`${CHIP} ${i.tone === 'ink' ? INK : 'bg-brand text-white'}`} style={{ top: `${a / 20}rem`, height: `${(b - a) / 20}rem` }}
-    data-act="ev" data-c={i.c} data-id={i.id}><b className="block truncate">{i.title}</b>{`${i.start} – ${i.end}`}</button>; };
+    data-act="ev" data-c={i.c} data-id={i.id}><b className="block truncate">{i.title}</b>{`${i.start} – ${i.end}`}{role(i)}</button>; };
 
 export function week_grid(d, items) {
   const s = add_d(d, -d.getDay()), days = Array.from({ length: 7 }, (_, i) => add_d(s, i)), td = ymd(), gl = zone_of(page_tz()).short.split(' · ')[0], now = page_now();
