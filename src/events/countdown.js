@@ -13,3 +13,4 @@ export function left(ms) {
 
 export function count_to(e, st) {
   if (!e.date || e.tbd) return null;
+  const end = (date, s) => e.end ? at(date, e.end, e.tz) : s + 2 * 3600e3;
