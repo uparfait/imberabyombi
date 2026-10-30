@@ -11,3 +11,4 @@ const TONE = { bad: 'bg-bad/15 text-bad', warn: 'bg-warn/15 text-warn', info: 'b
 export function notice_menu(n = '') {
   const all = notices(), read = notices_read(), fresh = all.filter(x => !read.has(x.id)).length;
   return <div className="relative">
+    <button className="icon_btn notice_btn" data-act="pop" data-pop={`pop_notice${n}`} aria-label={fresh ? `Notifications, ${fresh} new` : 'Notifications'}>
