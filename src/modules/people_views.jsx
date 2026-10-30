@@ -48,3 +48,4 @@ VIEWS.attendance = () => {
 
 const bulletin = r => <button className="btn btn_soft btn_sm" data-act="report" data-name={r.name}>Bulletin</button>;
 VIEWS.students = () => {
+  const t = ui.tab.stu || 'reg', pays = db.list('payments'), count = s => pays.filter(p => p.status === s).length;
