@@ -61,6 +61,7 @@ function data_card() {
 
 const profile = u => <section className="card room p-6"><h2 className="text-lg">Your profile</h2>
   <form data-form="profile" className="room_2 mt-5 grid gap-4" data-fill-rows="" noValidate>
+  <div data-msg-slot="" className="room_full empty:hidden"></div>
   <div className="field"><label htmlFor="profile_name">Full name</label>
     <input id="profile_name" name="name" required autoComplete="name" placeholder=" " defaultValue={u.name} /></div>
   <div className="field"><label htmlFor="profile_email">Email</label>
