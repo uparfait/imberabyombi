@@ -33,3 +33,4 @@ VIEWS.attendance = () => {
   const count = s => today.filter(r => r.status === s).length;
   return <>
     <section className="card mb-6 grid items-center gap-5 p-5 sm:grid-cols-[auto_1fr_auto] sm:p-6">{i3('clock', 'h-16 w-16', 'teal')}
+      <div><p className="text-sm text-muted">{`Today, ${fmt_d(td)}`}</p>
