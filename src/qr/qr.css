@@ -2,6 +2,7 @@
    site's mark at the left, the name beside it but not on a phone; Install at the right), a large scan
    window in the middle with the rest dimmed, the hint and round white buttons; what was found comes up in a sheet from the
    bottom. Colours come from the site's tokens (the brand as set in Settings), so light and dark follow. */
+html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrollbar-gutter: auto; }   /* nothing scrolls: no space kept for a scrollbar */
 .qr_view video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
 .qr_view.on video { opacity: 1; }
 .qr_view video.mirror { transform: scaleX(-1); }
