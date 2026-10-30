@@ -17,3 +17,4 @@ export const cal_items = () => [
   ...(auth.can('calendar') ? db.list('activities').map(a => ({ ...a, ...here(a), c: 'activities', tone: 'brand' })) : []),
   ...(auth.can('calendar') || auth.can('events') ? db.list('events').map(event_item) : []),
   /* tasks assigned to you, on their due day (all day): a click opens Tasks with that task highlighted */
+  ...(auth.can('tasks') ? db.list('tasks').filter(t => t.assignee === me() && t.due).map(task_item) : [])
