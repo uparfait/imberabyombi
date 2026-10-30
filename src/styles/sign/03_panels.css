@@ -17,6 +17,7 @@
 .sign_rec { display: grid; gap: .375rem; padding: .625rem .625rem .375rem; border: 1px solid rgb(var(--line)); border-radius: 1rem;
   transition: border-color .2s, background-color .2s; }
 /* a signer's card is always tinted with their colour (from their email); picked: their colour's border, a deeper tint */
+.sign_rec { border-color: color-mix(in srgb, var(--c) 28%, rgb(var(--line))); background: color-mix(in srgb, var(--c) 7%, transparent); }
 .sign_rec_pick { display: flex; min-width: 0; align-items: center; gap: .625rem; text-align: left; }
 .sign_note { display: -webkit-box; overflow: hidden; color: rgb(var(--muted)); font-size: .8125rem; font-style: italic; white-space: pre-line;
   -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
