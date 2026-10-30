@@ -26,3 +26,4 @@
 .sign_faces > span { display: grid; width: 1.75rem; height: 1.75rem; margin-left: -.375rem; place-items: center; border-radius: var(--pill);
   border: 2px solid rgb(var(--surface)); color: #fff; font-size: .625rem; font-weight: 600; }
 .sign_drop { display: grid; justify-items: center; padding: 3rem 1.5rem; border: 2px dashed rgb(var(--muted) / .45); border-radius: var(--radius);
+  background: rgb(var(--surface)); text-align: center; cursor: pointer; transition: border-color .2s, background-color .2s; }
