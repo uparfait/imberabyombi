@@ -35,3 +35,4 @@ VIEWS.attendance = () => {
     <section className="card mb-6 grid items-center gap-5 p-5 sm:grid-cols-[auto_1fr_auto] sm:p-6">{i3('clock', 'h-16 w-16', 'teal')}
       <div><p className="text-sm text-muted">{`Today, ${fmt_d(td)}`}</p>
         <output id="live_clock" className="bg-transparent p-0 font-display text-4xl font-bold text-fg">{fmt_stamp(Date.now(), { timeStyle: 'medium' })}</output>
+        <p className="mt-1 text-sm text-muted">
