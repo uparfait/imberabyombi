@@ -39,5 +39,5 @@ export const prep_tools = d => <><div className="sign_panel">
     + 'to move it and its corner to resize it. Arrow keys nudge the selected field; Delete removes it.')}<div className="grid gap-2">{tool('signature')}{tool('stamp')}</div></section>
   <section aria-label="Placed">{cap('Placed', 'How many fields each signer has on the document. Every signer needs at least one '
     + 'before you can send it.')}{placed(d)}</section>
-</div>;
+</div>{preview_foot(d)}</>;
 
