@@ -9,6 +9,7 @@ export * from './calendar_items.jsx';
 export * from './side_section.jsx';
 export * from './sidebar.jsx';
 export * from './notices.js';
+export * from './notice_menu.jsx';
 export * from './header_tools.jsx';
 export * from './admin_shell.jsx';
 export * from './panels.jsx';
