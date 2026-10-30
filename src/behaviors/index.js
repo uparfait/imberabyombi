@@ -7,3 +7,4 @@ export * from './link_clicks.js';
 export * from './input_events.js';
 export * from './change_events.js';
 export * from './settings_changes.js';
+export * from './key_events.js';
