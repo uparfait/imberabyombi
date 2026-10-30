@@ -44,3 +44,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | `data-count="n"`                | count up when visible                                              |
 | `data-type='["a","b"]'` (not an input) | typing effect                                               |
 | `data-out="#id"`                | mirror a range value into an `<output>`                            |
+| `data-token="brand|radius|space|font"` | live design-token editor (Settings)                         |
