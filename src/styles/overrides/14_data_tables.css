@@ -25,3 +25,4 @@
   /* Column filters: compact but never tiny (40px tall, 14px text) */
   .table_filter { min-height: 2.5rem; padding: .5rem .75rem; font-size: .875rem; line-height: 1.5rem; font-weight: 400; letter-spacing: normal; text-transform: none; }
   select.table_filter { padding-right: 2.25rem; background-position: right .4rem center; background-size: 1.375rem; }
+  .table_filter:where([data-type]) { padding-right: 2.25rem; background-position: right .6rem center; background-size: 1.125rem; }
