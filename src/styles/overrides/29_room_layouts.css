@@ -12,3 +12,4 @@
   @container (min-width: 24rem) { .room_2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @container (min-width: 52rem) { .room_2w { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @container (min-width: 30rem) { .room_4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .room_span2 { grid-column: span 2; } }
+  @container (min-width: 56rem) { .room_4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
