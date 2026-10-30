@@ -32,6 +32,7 @@ const upload = (id, input) => { const file = input.files[0]; input.value = ''; i
     catch { notify(`${file.name} could not be read. Save it as .xlsx or .csv and try again.`, 'bad', 'File not read'); } }, { btn: input.closest('label') }); };
 
 export const INVITE_ACT = {
+  ...INVITE_TABLE_ACT,
   ev_unwait: t => { wait.list = wait.list.filter(m => m !== t.dataset.e); rerender(); },
   ev_invite: t => { take(t.dataset.id, qs('#ev_inv_in')); const e = db.find('events', t.dataset.id), n = wait.list.length;
     if (!e || !n) { wait.note = 'Add at least one email address first.'; return rerender(); }
