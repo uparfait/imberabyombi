@@ -12,3 +12,4 @@ export function notice_menu(n = '') {
   const all = notices(), read = notices_read(), fresh = all.filter(x => !read.has(x.id)).length;
   return <div className="relative">
     <button className="icon_btn notice_btn" data-act="pop" data-pop={`pop_notice${n}`} aria-label={fresh ? `Notifications, ${fresh} new` : 'Notifications'}>
+      {ic('bell')}{fresh ? <span className="notice_count" aria-hidden="true">{fresh > 9 ? '9+' : fresh}</span> : null}</button>
