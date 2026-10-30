@@ -46,3 +46,4 @@ export const prep_panel = d => <div className="sign_panel">
     {d.recipients.length ? <ul className="grid gap-2">{d.recipients.map(r => rec(d, r))}</ul>
       : <p className="sign_hint">No signers yet. Add the people who sign this document.</p>}
     {d.recipients.length && !P.adding
+      ? <button type="button" className="btn btn_outline btn_sm mt-4 w-full" onClick={() => open_form(true)}>{ic('plus', 'h-4 w-4')}Add signer</button>
