@@ -28,3 +28,4 @@ function on_change(e) {
     if (!t.checked && schemas[c].cols.length - v.hide.length <= 1) { t.checked = true; return; }   /* one column always stays */
     v.hide = t.checked ? v.hide.filter(x => x !== k) : [...v.hide, k]; table.tview_save(c); return table.col_show(c, k, t.checked); }
   if (t.matches?.('[data-allow-select]')) return allow_select_change(t);
+  if (t.dataset.pageTz != null) return page_tz_change(t);
