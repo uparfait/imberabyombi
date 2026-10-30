@@ -4,3 +4,4 @@
      style   'classic' | 'balloon' | 'ribbon' | 'glossy' | 'clay' | 'glass'
      colors  ['#primary', '#secondary', '#tertiary']: 1, 2 or 3 (missing ones are worked out from the first)
      size    pixels or any CSS size ('100%')
+     px      the device pixels the icon is drawn at (default: size when it is a number, else 200). The lighting and the
