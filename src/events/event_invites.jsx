@@ -19,3 +19,4 @@ const n_of = (n, one, many) => n === 1 ? `1 ${one}` : `${n} ${many}`;
 const wait = { id: '', list: [], note: '' };
 function add(id, found, bad = [], file = '') {
   const e = db.find('events', id), had = new Set([...(e?.invites || []).map(i => i.e), ...wait.list]), fresh = found.filter(m => !had.has(m)), old = found.length - fresh.length;
+  wait.list.push(...fresh);
