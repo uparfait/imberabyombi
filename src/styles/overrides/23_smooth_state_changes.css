@@ -45,6 +45,7 @@
   .hdr { border-bottom: 0; }
   /* top headers (site, admin, O-Doc Sign): glass, the page showing through, blurred, as it scrolls under them. The glass is
      a layer behind the header's content (::before), so the header does not become the frame of its fixed menus. */
+  .hdr { background: transparent; }
   .compose { display: grid; border: 1px solid rgb(var(--line)); border-radius: var(--radius); background: rgb(var(--surface)); transition: border-color .2s; }
   .compose:focus-within { border-color: rgb(var(--brand) / .55); }
   .compose :is(input, textarea) { min-height: 0; padding: .75rem 1rem; border: 0; outline: 0; background: transparent; resize: none; field-sizing: content; }
