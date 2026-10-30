@@ -23,6 +23,7 @@ Code: [`src/events/`](../src/events/). Attendance records are the `attendees` co
 ## View This Event
 `…/<id>/live` ([`live_page.jsx`](../src/events/live_page.jsx)), also for a finished one: the whole window, no sidebar.
 Its title in the top bar (one line); its details, the agenda item running now (large, with its presenter and
+progress), the agenda, the organiser and co-organisers (each with Edit until it is over), its minutes and follow-ups;
 
 ## Minutes and follow-ups
 - **Record minutes** (live screen) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
