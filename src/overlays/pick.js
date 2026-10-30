@@ -36,3 +36,5 @@ export const pick = {
     const a = this.a; if (!a) return;
     this.a = null; this.el.hidden = true; this.el.innerHTML = ''; delete a.dataset.open; a.removeAttribute('aria-expanded');
     if (refocus) { this.mute = true; a.focus({ preventScroll: true }); this.mute = false; }
+  },
+  emit() { const a = this.a; this.mute = true; a.dispatchEvent(new Event('input', { bubbles: true })); a.dispatchEvent(new Event('change', { bubbles: true })); this.mute = false; },
