@@ -27,3 +27,4 @@ const open_form = v => { P.adding = v; rerender(); if (v) requestAnimationFrame(
 const fill = e => { const p = people().find(s => s.name === e.target.value); if (p && !e.target.form.elements.email.value) e.target.form.elements.email.value = p.email; };
 
 const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, on = P.rid === r.id;
+  return <li key={r.id} className={`sign_rec ${on ? 'on' : ''}`} style={{ '--c': r.color }}>
