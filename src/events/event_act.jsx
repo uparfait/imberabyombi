@@ -30,13 +30,7 @@ const POSTPONE_HELP = 'It opens with its date and time as they are now. Change t
 
 export const EV_ACT = {
   ...INVITE_ACT, ...QR_ACT,
-  /* when people can sign in: minutes before the start and after the end */
-  ev_att_set: t => { const c = t.dataset.c, e = db.find(c, t.dataset.id); if (!e) return; const [b, a] = att_mins(e);
-    const num = (k, l, v) => field(field_spec(k, l, 'number', 0, 1, { min: 0, max: 1440 }), v);
-    modal({ title: 'Attendance settings', help: 'When people can sign in with the QR code: from some minutes before it starts to some minutes after it ends.',
-      body: [num('att_before', 'Minutes before the start', b), num('att_after', 'Minutes after the end', a)], submit: 'Save',
-      on_submit: d => save(e.id, { att_before: +d.att_before, att_after: +d.att_after }, 'Attendance settings saved',
-        `It opens ${d.att_before} min before the start and closes ${d.att_after} min after the end.`, c) }); },
+  /* when people can submit attendance, one setting at a time: before it starts, how early it opens; once it has started
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
   ev_postpone: t => { const e = db.find('events', t.dataset.id); if (!e) return;
     const tz = e.tz || page_tz(), was = e.tbd ? { tz } : { date: e.date, start: e.start, end: e.end, tz }, again = e.status === 'Postponed';   /* no zone saved: the page's */
