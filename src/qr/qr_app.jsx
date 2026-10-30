@@ -30,4 +30,5 @@ export function Qr_app() {
   const scanning = st.phase === 'scan' || st.phase === 'start';
 
   return <div className="qr_app"><div className={`qr_view ${st.phase === 'scan' ? 'on' : ''}`}>
+    <video ref={video} muted playsInline />
 }
