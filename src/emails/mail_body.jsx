@@ -8,3 +8,4 @@ import { account_mails } from './account_mails.jsx';
 import { to } from '../router/index.js';
 
 export function mail_body(k) {
+  lorem.seed(hash_str('mail-' + k));
