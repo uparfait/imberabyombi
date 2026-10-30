@@ -35,6 +35,5 @@ export async function start(video, on_code) {
     timer = setTimeout(tick, 250); };
   tick();
 }
-export const cameras = async () => (await navigator.mediaDevices?.enumerateDevices?.() || []).filter(d => d.kind === 'videoinput').length;
-export async function read_image(file) { const bmp = await createImageBitmap(file); return decode(bmp, bmp.width, bmp.height); }
+const track = () => stream?.getVideoTracks()[0];
 export const secure = t => { try { const u = new URL(String(t).trim()); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
