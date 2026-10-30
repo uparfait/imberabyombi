@@ -22,3 +22,4 @@ const side = (e, st) => <aside className="card ev_card ev_side" aria-label="Stat
   <h3 className="ev_side_title">Status</h3><div className="mt-2">{badge(st)}</div>
   {e.status_note && (st === 'Postponed' || st === 'Cancelled') ? <p className="ev_note">{e.status_note}</p> : null}
   <div className="ev_acts">{ACTS.filter(a => !a[3] || a[3].includes(st)).map(([k, l, i]) =>
+    <button key={k + l} type="button" className={`btn btn_sm ${k === 'ev_cancel' || k === 'ev_del' ? 'btn_ghost ev_bad' : 'btn_outline'}`} data-act={k} data-id={e.id}>
