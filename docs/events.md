@@ -11,3 +11,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 - The date, start, end and time zone are on one line (the zone starts as the device's).
 - **Repeats** (Recurring only): Daily, Every weekday (Mon–Fri), Weekly, Monthly or Yearly, every 1 to 99 days, weeks,
   months or years.
+  - Weekly: on chosen weekdays.
