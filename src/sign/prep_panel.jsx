@@ -23,3 +23,4 @@ function add(e) {
   f.reset(); prep_dirty(); rerender(); notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
 }
 const open_form = v => { P.adding = v; rerender(); if (v) requestAnimationFrame(() => document.getElementById('sign_r_name')?.focus()); };
+/* a name picked from the suggestions brings its email */
