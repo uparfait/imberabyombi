@@ -1,1 +1,2 @@
 /* overrides/22_tooltip.css: rules that come after Tailwind's utilities, so they win at equal specificity */
+  /* I. Tooltip (Imberabyombi style): icon buttons, [data-tip], and any trimmed .truncate / .trunc text */
