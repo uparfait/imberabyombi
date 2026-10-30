@@ -43,3 +43,4 @@ export function sidebar(mod) {
   {create.length ? create_menu(create) : null}
   {auth.can('calendar') ? <div className="-mb-4">{side_section('cal', 'Calendar',
     <div id="date_mini" className="pt-1"><Live_slot name="mini" first={mini_cal()} draw={mini_cal} /></div>)}</div> : null}
+  <nav aria-label="Admin"><Live_slot name="side_nav" fresh={false} first={groups(mod)} draw={() => groups(mod)} /></nav>
