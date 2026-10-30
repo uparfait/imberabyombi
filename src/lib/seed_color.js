@@ -8,3 +8,5 @@
    neighbours never look alike.
    seed_hue(hex) → the OKLCH hue of a colour, in degrees. */
 const L = .54, C = .15, GAP = 40, HUES = [150, 335];
+
+/* FNV-1a, 32 bits: a quick, well-spread hash of the text */
