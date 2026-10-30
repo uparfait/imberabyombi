@@ -4,3 +4,4 @@
 import { page_tz } from '../lib/index.js';
 
 export const INKS = ['#1F3A93', '#B42318', '#0E7A55', '#6D28D9'];
+const FONT = '"Bricolage Grotesque", system-ui, sans-serif', C = 200;
