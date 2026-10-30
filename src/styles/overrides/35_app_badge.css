@@ -4,3 +4,4 @@
     border-radius: calc(var(--radius) * .9); background: rgb(var(--ink)); color: #fff; transition: transform .2s var(--ease), background .2s; }
   .app_badge:hover { background: rgb(var(--brand)); transform: translateY(-1px); }
   .app_badge small { display: block; font-size: .6875rem; line-height: 1.1; opacity: .75; }
+  .app_badge b { display: block; font-family: var(--font_display); font-size: 1.125rem; font-weight: 700; line-height: 1.15; }
