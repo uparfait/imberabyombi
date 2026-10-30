@@ -58,3 +58,4 @@ export function invites_card(e, st, can) {
         <label className="btn btn_outline ev_upload">{ic('upload', 'h-4 w-4')}Upload a file
           <input type="file" accept={INVITE_FILES} className="sr-only" onChange={ev => upload(e.id, ev.currentTarget)} /></label></div>
       {wait.note ? <p className="ev_inv_note" role="status">{wait.note}</p> : null}
+      {n ? <div className="ev_chips">{wait.list.map(m => <span key={m} className="ev_chip"><span className="min-w-0 truncate">{m}</span>
