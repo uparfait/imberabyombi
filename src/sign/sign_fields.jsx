@@ -25,3 +25,5 @@ export const fields_on = (d, page, o) => d.fields.filter(f => f.page === page).m
     {v ? <img src={v} alt={`Your ${l.toLowerCase()}`} /> : <>{ic(i, 'sf_ic')}<span className="sf_l">{l}</span></>}</button>;
   if (v) return <div key={f.id} className="sf sf_final" data-fid={f.id} style={look(f, r)}><img src={v} alt={`${l} by ${r?.name}`} /></div>;
   /* someone signing (o.me) sees only their own fields and what others have already signed, not where others still sign */
+  return o.me ? null : <div key={f.id} className="sf sf_wait" data-fid={f.id} style={look(f, r)}><span className="sf_l">{l} · {r?.name}</span></div>;
+});
