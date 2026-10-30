@@ -34,3 +34,4 @@
   .qr_full { position: fixed; inset: 0; z-index: 90; display: grid; grid-template-columns: auto minmax(14rem, 26rem); align-items: center; justify-content: center;
     gap: clamp(1.5rem, 4vw, 4rem); padding: 1.5rem; background: rgb(var(--surface)); }
   .qr_full_code { width: min(calc(100dvh - 3rem), calc(100vw - 32rem)); padding: 1rem; border-radius: var(--radius); background: #fff; }
+  .qr_full_info { display: grid; gap: 1rem; min-width: 0; }
