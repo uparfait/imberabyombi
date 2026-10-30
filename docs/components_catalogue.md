@@ -48,3 +48,4 @@ Elements Tailwind's reset touches (inputs, headings, fieldset, legend, summary, 
 selectors, so the reset never shrinks them and utilities still win.
 
 ## Adding a component
+Put the class in `src/styles/components/` with `@apply` and token-based utilities, never hard-coded colours:
