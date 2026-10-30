@@ -19,8 +19,7 @@ export const header_tools = (n = '') => <><button className="icon_btn" data-act=
   <a className="icon_btn hidden sm:inline-grid" href={to('/ui')} aria-label="Design system">{ic('layers')}</a>
   {theme_btn()}{account_menu(n, true)}</>;
 
-/* the signed-in person's avatar and its menu (who, settings, public website, sign out, storage used) */
-export function account_menu(n = '') {
+/* the signed-in person's avatar and its menu (who, settings, public website, sign out, the side panels on small screens
   const u = auth.user, r = auth.role(), pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
   return <div className="relative">
         <button className="ml-1 rounded-full" data-act="pop" data-pop={`pop_account${n}`} aria-label="Account">{avatar(u.name, 'h-9 w-9 text-sm')}</button>
