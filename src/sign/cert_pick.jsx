@@ -16,3 +16,4 @@ export function Cert_pick() {
 }
 
 /* the file, then the (simulated) check; null when no file was chosen */
+export async function verify(form) {
