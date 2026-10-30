@@ -28,6 +28,7 @@ export function preview_foot(d) {
   const r = mine(d), n = r ? d.fields.filter(f => f.rid === r.id).length : 0;
   if (r && r.status !== 'signed') return <div className="sign_foot"><span className="sign_send_wrap" data-tip={n ? undefined : 'Place your signature or stamp first.'}>
     <button type="button" className="btn btn_ink btn_sm w-full" data-act="sign_self_view" data-id={d.id} disabled={!n}>{ic('signature', 'h-4 w-4')}Preview and sign</button></span></div>;
+  return d.recipients.some(x => x.status === 'signed') ? <div className="sign_foot">
 }
 
 /* the column's foot: Preview, once someone has signed */
