@@ -12,3 +12,4 @@ import { rows_of, wait_load } from './rows.js';
 
 /* a row's buttons: the page's own (o.acts) + Edit and Delete for managers (unless o.can_row says no); null when none */
 function row_acts(c, o, r, can) {
+  const extra = o.acts ? o.acts(r, can) : null, own = can && (!o.can_row || o.can_row(r));
