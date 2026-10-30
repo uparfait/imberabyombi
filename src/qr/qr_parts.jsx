@@ -10,3 +10,4 @@ import { can_install, install, apple, standalone } from './qr_install.js';
 function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
   const [ok, set] = useState(false);
   const copy = () => navigator.clipboard?.writeText(text).then(() => { set(true); setTimeout(() => set(false), 1500); }, () => {});
+  return <button type="button" className={cls} onClick={copy} aria-label={label || 'Copy'} title={label ? undefined : 'Copy'}>
