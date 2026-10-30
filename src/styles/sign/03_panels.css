@@ -45,3 +45,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 /* Send for signing while it cannot be sent: disabled; hovering its wrapper shows why */
 .sign_send_wrap { display: block; }
 .sign_send_wrap > button:disabled { pointer-events: none; }
+.sign_check input { width: 1rem; height: 1rem; accent-color: rgb(var(--brand)); }
