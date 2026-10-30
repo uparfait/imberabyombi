@@ -33,7 +33,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
   ([`events/event_page.jsx`](../src/events/event_page.jsx)). It shows one card per section, and each card's **Edit**
   changes that section only (`open_form(c, id, {}, [title, keys])`).
 - On the right are the status and the actions that fit it:
-  - **Postpone**: a new date, or none yet, and a reason.
+  - **Postpone**: it opens with the event's date, times and time zone as they are now. Change them to the new ones, or
   - **Cancel event**: with a reason. It leaves the calendar.
   - **Back on schedule**, **Mark as completed** (while live) and **Stop repeating**.
   - **Duplicate**: a new event with the same details and no date.
