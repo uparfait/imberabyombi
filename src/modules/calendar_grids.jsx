@@ -44,3 +44,4 @@ export function month_grid(d, items) {
   const item = it => it.all_day ? cal_task(it) : <button key={it.c + it.id} data-act="ev" data-c={it.c} data-id={it.id}
     className={`mb-0.5 block w-full truncate rounded-md px-1.5 py-0.5 text-left text-[0.6875rem] ${it.tone === 'ink' ? INK : 'bg-brand/15 text-accent'}`}>
     {`${it.start} ${it.title}`}</button>;
+  const cell = i => { const x = add_d(s, i), k = ymd(x), its = items.filter(it => it.date === k);
