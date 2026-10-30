@@ -27,3 +27,4 @@ export function clash_ok(r, row, d, f) {
   const sig = JSON.stringify([r.date, r.start, r.end, r.tz, r.venue, r.place, r.org_email, r.repeat]), list = conflicts(r, row.id);
   if (!list.length || f._clash === sig) return true;
   f._clash = sig; const slot = f.querySelector('[data-msg-slot]');
+  const say = ({ o, day, why }) => `${o.title} (${fmt_d(day)}, ${fmt_time(o.start)} ${zone_short(o.tz || page_tz(), day).split(' · ')[0]}, ${why})`;
