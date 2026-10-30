@@ -13,3 +13,4 @@ const bar = d => { const n = own_fields(d).length, k = n - left_of(d).length;
 
 export const request_card = (d, r) => <section className="card p-5">
   <div className="flex items-center gap-3">{i3('signature', 'h-11 w-11', 'violet')}<div className="min-w-0">
+    <p className="truncate font-display text-lg leading-tight">{d.title}</p><p className="truncate text-xs text-muted">Signing request from {d.owner_name}</p></div></div>
