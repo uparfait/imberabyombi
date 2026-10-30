@@ -41,3 +41,4 @@ async function finish() {
 }
 
 export const SIGNER_ACT = {
+  sign_fill: t => { const d = find_doc(S.id), f = d?.fields.find(x => x.id === t.dataset.id); if (!f) return;
