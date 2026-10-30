@@ -24,3 +24,5 @@
   ::-webkit-scrollbar-corner { background: transparent; }
   html::-webkit-scrollbar-track, body::-webkit-scrollbar-track { margin: 0; }   /* the page scrollbar keeps its full length */
   ::-webkit-scrollbar-thumb { background: rgb(var(--brand) / .4); border-radius: var(--pill); border: .15rem solid transparent; background-clip: padding-box; }
+
+  h1, h2, h3, h4, h5, h6 { font-family: var(--font_display); font-weight: 500; letter-spacing: -.01em; line-height: 1.15; text-wrap: balance; }
