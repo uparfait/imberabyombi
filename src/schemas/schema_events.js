@@ -17,6 +17,7 @@ const kind_cell = (v, row) => tag(kind_label(row || {}));
 /* the date row: date, start, end (required or not) and time zone */
 const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }), field_spec('start', 'Starts', 'time', 0, 1, { row: 'when' }),
   field_spec('end', 'Ends', 'time', 0, end_req, { row: 'when' }), field_spec('tz', 'Time zone', 'tz', 0, 1, { def: () => device_tz(), fill: () => page_tz(), row: 'when' })];
+/* (a record saved without a zone was set in the page's: the calendar reads it so too) */
 const SEC = { When: 'kind,date,start,end,tz,repeat', Location: 'place,venue,link,join_note', Organiser: 'org_name,org_email,org_tel' };
 /* seed rows: where and who */
 const seed_more = () => { const n = lorem.name(), web = lorem.int(0, 3) === 0;
