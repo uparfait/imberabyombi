@@ -2,3 +2,4 @@
    sidebar, scrolling, sign-out, copy, help tips, the password eye and the command palette.
    Swaps on React nodes change attributes or a single text only (an icon is one <path>: its d changes). */
 import { qs, qsa } from '../lib/index.js';
+import { PATHS } from '../icons/index.js';
