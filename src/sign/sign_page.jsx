@@ -54,3 +54,4 @@ function page_for(a, id) {
 const W = 1280;
 function use_desktop() {
   useEffect(() => {
+    const m = document.querySelector('meta[name=viewport]'), was = m?.content, root = document.documentElement;
