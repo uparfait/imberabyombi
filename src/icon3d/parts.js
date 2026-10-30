@@ -56,3 +56,5 @@ export function vol(id, o, k = 1) {
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
+
+/* extrude(id, x, y, s, color, [dx, dy], k): copies of the glyph along [dx, dy] (units), no more than PX.step device px
