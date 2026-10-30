@@ -30,6 +30,7 @@ export const where_f = () => [field_spec('place', 'Location', 'seg', [['Physical
 const place_in = d => { if (!('place' in d)) return d;
   if (d.place === 'Virtual') { d.venue = ''; if (d.link && !/^[a-z][a-z0-9+.-]*:\/\//i.test(d.link)) d.link = 'https://' + d.link; } else { d.link = ''; d.join_note = ''; }
   return d; };
+/* who organises it (the person signed in, to start with) and how many people are expected */
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
 export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
 export const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
