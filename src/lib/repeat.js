@@ -21,3 +21,4 @@ const in_month = (r, d, f) => r.by === 'week'
   : or(r.dates, f.getDate()).some(x => x === -1 ? d.getDate() === month_days(d) : d.getDate() === x);
 
 /* does rule r (first date f) fall on day d? */
+export function repeat_hit(r, d, f) {
