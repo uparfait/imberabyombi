@@ -15,3 +15,4 @@ import { enhance } from './enhance.js';
 let skipped = false;     /* this draw kept the previous page (an admin redirect): nothing to do after it */
 let side_top = 0;        /* the admin sidebar keeps its scroll position across navigation */
 let main_enter = false;  /* the current page's <main> came with the page-enter animation */
+export const skip_after_render = () => { skipped = true; };
