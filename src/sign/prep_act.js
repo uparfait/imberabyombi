@@ -3,3 +3,4 @@
 import { rerender } from '../store/index.js';
 import { notify } from '../feedback/index.js';
 import { modal, ask } from '../overlays/index.js';
+import { go } from '../router/index.js';
