@@ -36,7 +36,7 @@ async function finish() {
     notify('Free some space in this browser, then try again.', 'bad', 'Your signature could not be saved'); return false; }
   d.fields.forEach(f => { if (S.pending[f.id]) { f.done = true; f.at = now; } });
   Object.assign(r, { status: 'signed', signed_at: now }); log(d, `${r.name} signed`, 'sign', r.email);
-  if (d.recipients.every(x => x.status === 'signed')) { Object.assign(d, { status: 'completed', completed_at: now }); log(d, 'Everyone signed: the document is complete', 'done'); }
+  if (!own && d.recipients.every(x => x.status === 'signed')) { Object.assign(d, { status: 'completed', completed_at: now }); log(d, 'Everyone signed: the document is complete', 'done'); }
   save_doc(d); S.pending = {}; go(`/admin/sign/done/${d.id}`);
 }
 
