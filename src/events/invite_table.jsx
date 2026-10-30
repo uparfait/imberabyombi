@@ -3,3 +3,4 @@
    Esc or the cross cancels); a new address gets the invitation, dated today. Remove asks first; its button takes the
    warning colour on hover. On a phone the day shows under the address. INVITE_TABLE_ACT: its buttons. */
 import { qs, fmt_stamp } from '../lib/index.js';
+import { db, rerender } from '../store/index.js';
