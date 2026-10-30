@@ -14,3 +14,4 @@ const FALLBACK = ['UTC', 'Africa/Kigali', 'Africa/Maputo', 'Africa/Lagos', 'Afri
 let ZONES = null;
 export const zones = () => ZONES ||= (() => {
   let z = typeof Intl.supportedValuesOf === 'function' ? Intl.supportedValuesOf('timeZone') : FALLBACK.slice();
+  z = z.filter(x => !x.startsWith('Etc/')); for (const x of ['UTC', device_tz()]) if (!z.includes(x)) z.push(x); return z; })();
