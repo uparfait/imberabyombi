@@ -9,3 +9,4 @@ import { field_spec } from '../schemas/fields.js';
 import { field } from '../fields/index.js';
 import { validate } from '../feedback/index.js';
 import { Pad_draw } from '../sign/pad_draw.jsx';
+import { PAD } from '../sign/pad_state.js';
