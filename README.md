@@ -74,3 +74,5 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [3D icons and Iconisus](docs/icons_3d.md) | [Time zones](docs/time_zones.md) |
 | [Events and activities](docs/events.md) | [Attendance, View This Event, minutes](docs/attendance_and_live.md) |
 | [Notifications](docs/notifications.md) | |
+
+## Rules this repository follows
