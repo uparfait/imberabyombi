@@ -22,3 +22,4 @@
   .ev_tile:hover { border-color: rgb(var(--brand) / .5); }
   @media (min-width: 640px) { .ev_dl { grid-template-columns: 10rem minmax(0, 1fr); gap: .75rem 1rem; } .ev_dl dd { margin-bottom: 0; } .ev_dl dt { padding-top: .125rem; } }
   @media (min-width: 1024px) { .ev_grid:not(.ev_one) { grid-template-columns: minmax(0, 1fr) 17rem; } .ev_side { position: sticky; top: 5rem; } }
+  /* Invitations (events/event_invites.jsx): the addresses box and Upload, what was found, the waiting chips and Send, then
