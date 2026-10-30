@@ -14,7 +14,7 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Attendance               | `/admin/attendance`    | Live clock, check in / out (late after `cfg.work_start`), staff and student logs |
 | Students                 | `/admin/students`      | Registration, bulletins (a report card per student), payments summary |
 | Library                  | `/admin/library`       | Books, rentals (return, overdue), declarations, monitoring tiles |
-| Events                   | `/admin/events`        | Upcoming cards with capacity progress, the full event list       |
+| Events                   | `/admin/events`        | Upcoming cards, every event by where it stands (Live, Upcoming, Recurring, Postponed, Cancelled, Past); one event's page with its sections, actions and invitations ([events](events.md)) |
 | Reservations & inventory | `/admin/inventory`     | Approve / reject reservations, stock with minimum-level meters   |
 | Smart parking            | `/admin/parking`       | Live slot grid, check-in, check-out with a fee (`cfg.parking_rate` per hour), movement log |
 | Roles & access           | `/admin/roles`         | Permission matrix, landing page per role, invite links           |
