@@ -2,3 +2,5 @@
    and Send for signing (who gets it, how many fields each, the note each one reads). */
 import { ic } from '../icons/index.js';
 import { initials } from '../ui/index.js';
+
+export const rec_body = r => <>
