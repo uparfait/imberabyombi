@@ -29,3 +29,4 @@ export const MINUTES_ACT = {
     const key = 'editor_doc:m_' + m.id, { idb_get, idb_set } = await import('../editor/core/idb.js');
     if (!(await idb_get(key))) await idb_set(key, { title: m.title, tabs: [{ id: 't1', name: 'Minutes', html: first_page(e, day) }], active: 't1', comments: [] });
     go('/admin/docs?doc=m_' + m.id); },
+  ev_follow: t => { const e = db.find(t.dataset.c, t.dataset.id); if (e) open_form('tasks', null, { title: `Follow-up: ${e.title}`, ref: e.id }); }
