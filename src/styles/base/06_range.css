@@ -3,3 +3,4 @@
   /* Range (fill width is set by JS through --val) */
   input[type=range] { appearance: none; width: 100%; height: .4rem; border-radius: var(--pill); cursor: pointer; background:
     linear-gradient(rgb(var(--brand)), rgb(var(--brand))) 0 / var(--val, 50%) 100% no-repeat, rgb(var(--surface_3)); }
+  input[type=range]::-webkit-slider-thumb { appearance: none; width: 1.15rem; height: 1.15rem; border-radius: var(--pill); background: #fff; border: 3px solid rgb(var(--brand)); transition: transform .2s; }
