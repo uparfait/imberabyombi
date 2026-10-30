@@ -14,6 +14,9 @@ export function allow_select_change(t) {
 
 /* every page follows the new time zone at once */
 export function page_tz_change(t) {
+  db.set('pageTz', t.value); rerender(); toast(`Times now show in ${zone_of(t.value).short}.`, 'ok', 'Time zone changed');
+}
+
 export function role_land_change(t) {
   const rs = roles(), r = rs.find(x => x.id === t.dataset.roleLand);
   if (r) request(() => { r.land = t.value; db.set('roles', rs);
