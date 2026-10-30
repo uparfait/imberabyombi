@@ -24,3 +24,5 @@ const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz()
       onChange={e => tz_words(e.target.form)}>
       {zone_list().map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select>
       <span className="when_text" aria-hidden="true">{zone_short(tz, row.date)}</span></span></Fragment>; };
+
+const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
