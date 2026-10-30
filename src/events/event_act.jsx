@@ -13,3 +13,4 @@ import { go } from '../router/index.js';
 const SEC_TITLE = { Details: 'Edit details', When: 'Edit date and time', Location: 'Edit location', Organiser: 'Edit organiser', Audience: 'Edit audience' };
 const save = (id, d, title, text) => { db.upsert('events', { id, ...d }); rerender(); notify(text, 'ok', title); };
 const told = e => e.invites?.length ? ` The ${e.invites.length} people invited were told by email.` : '';
+const reason = (l = 'Reason (optional)') => <div key="reason" className="field sm:col-span-2"><label htmlFor="ev_reason">{l}</label>
