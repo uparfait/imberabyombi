@@ -38,3 +38,4 @@ export const agenda_from = f => [...f.querySelectorAll('[data-ag-item]')].map(el
    starts once the one before it has ended. A form with new times but no agenda checks the saved one (old) against them. */
 export function agenda_ok(f, s, e, old = []) {
   const bad = (i, m) => { show_err(i, m); i?.focus(); return false; }, els = [...f.querySelectorAll('[data-ag-item]')];
+  if (!f.querySelector('[data-agenda]')) { const k = f.elements.start ? (old || []).findIndex(a => (s && a.from < s) || (e && a.to > e)) : -1;
