@@ -8,7 +8,6 @@
   .live_card { display: grid; gap: .5rem; padding: 1.25rem 1.5rem; }
   .live_head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
   .live_head h2 { color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-  .live_people { display: grid; gap: .5rem; } .live_people li { min-width: 0; }
   .live_about { display: -webkit-box; overflow: hidden; color: rgb(var(--muted)); -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
   .live_when_all { font-size: 1rem; font-weight: 500; }
   .live_left { display: grid; gap: .125rem; color: rgb(var(--muted)); font-size: 1rem; } .live_left b { color: rgb(var(--fg)); font-size: clamp(1.75rem, 2.6vw, 2.5rem); font-weight: 600; font-variant-numeric: tabular-nums; }
