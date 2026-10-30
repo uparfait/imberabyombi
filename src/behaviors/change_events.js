@@ -30,3 +30,4 @@ function on_change(e) {
   if (t.matches?.('[data-allow-select]')) return allow_select_change(t);
   if (t.dataset.pageTz != null) return page_tz_change(t);
   if (t.dataset.roleLand) role_land_change(t);
+  if (t.dataset.perm) perm_change(t);
