@@ -5,3 +5,4 @@
   .app_badge:hover { background: rgb(var(--brand)); transform: translateY(-1px); }
   .app_badge small { display: block; font-size: .6875rem; line-height: 1.1; opacity: .75; }
   .app_badge b { display: block; font-family: var(--font_display); font-size: 1.125rem; font-weight: 700; line-height: 1.15; }
+  .dark .app_badge { background: rgb(var(--fg)); color: rgb(var(--bg)); } .dark .app_badge:hover { background: rgb(var(--brand)); color: #fff; }
