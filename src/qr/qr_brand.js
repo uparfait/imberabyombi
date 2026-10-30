@@ -22,3 +22,4 @@ async function install_files(c) {
   const at = new URL('./', location.href).href, link = (rel, href) => { const l = document.querySelector(`link[rel="${rel}"]`); if (l) l.href = href; };
   const icons = await Promise.all([[192, .86, null, 'any'], [512, .86, null, 'any'], [512, .58, '#FFFFFF', 'maskable']]
     .map(async ([n, k, bg, purpose]) => ({ src: await png(c, n, k, bg), sizes: `${n}x${n}`, type: 'image/png', purpose })));
+  const m = { name: 'Qr-scan', short_name: 'Qr-scan', description: 'Scan a QR code. Secure links (https) open in a new tab.', id: at, start_url: at, scope: at,
