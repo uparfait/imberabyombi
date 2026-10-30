@@ -17,3 +17,4 @@ export const zones = () => ZONES ||= (() => {
   z = z.filter(x => !x.startsWith('Etc/')); for (const x of ['UTC', device_tz()]) if (!z.includes(x)) z.push(x); return z; })();
 
 const FMT = new Map();
+const F = (tz, key, opts) => { const k = tz + '|' + key; let f = FMT.get(k);
