@@ -26,3 +26,4 @@ function appearance(tk, th) {
     <div key={get_version()} className="mt-6 grid gap-5 sm:grid-cols-2">
       <div className="field"><label htmlFor="token_brand">Brand colour</label>
         <div className="flex items-center gap-3"><input id="token_brand" type="color" defaultValue={brand} data-token="brand" />
+          <output id="token_brand_out">{brand}</output></div></div>
