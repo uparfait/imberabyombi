@@ -43,3 +43,4 @@ function intro(x) {
   }, still() ? 0 : 1400);
 }
 export function help_intro(root) {
+  const id = ++run;
