@@ -30,6 +30,7 @@ export const EV_ACT = {
     modal({ title: again ? 'Change the new date?' : 'Postpone this event?', help: POSTPONE_HELP,
       body: [when_row(WHEN, was), reason(again ? e.status_note : '')], submit: again ? 'Save changes' : 'Postpone',
       on_submit: (d, f) => {
+        const same = ['date', 'start', 'end', 'tz'].every(k => (d[k] || '') === (was[k] || ''));
         if (d.date && d.start && d.end && d.end <= d.start) { show_err(f.elements.end, 'Pick an end time after the start.'); return false; }
         if (d.date && at(d.date, d.start || '23:59', d.tz) <= Date.now()) { show_err(f.elements[d.start ? 'start' : 'date'], 'Pick a time later than now.'); return false; }
         const moved = d.date ? { date: d.date, start: d.start || e.start, end: d.end || (d.start ? '' : e.end), tz: d.tz, kind: e.kind === 'Live' ? 'Upcoming' : e.kind } : {};
