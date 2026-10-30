@@ -26,3 +26,4 @@ Code: [`src/tzconv/`](../src/tzconv/), styles in `src/styles/tzconv/`; it loads 
 
 ## The helpers (`src/lib/tz.js`)
 | Helper | What it gives |
+|---|---|
