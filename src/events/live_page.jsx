@@ -45,3 +45,7 @@ export function live_page(id, c) {
     <aside className="card live_qr">{open ? <Qr text={att_url(c, id)} label="Attendance QR code" /> : <p className="text-muted">Attendance is closed</p>}
       <p className="qr_full_count"><b>{n}</b> attended</p>
       {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={att_url(c, id)} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button> : null}</aside></div>
+  </div>;
+}
+
+/* the browser's own full screen for the live screen (Esc leaves it) */
