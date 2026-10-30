@@ -36,3 +36,4 @@
   :where(output) { display: inline-flex; align-items: center; font-family: var(--font_mono); font-size: .85rem; font-weight: 600; color: rgb(var(--brand)); background: rgb(var(--brand) / .1); padding: .1rem .55rem; border-radius: var(--pill); }
 
   /* Fieldset, legend, label */
+  fieldset { border: 1px solid rgb(var(--line)); border-radius: var(--radius); padding: 1.5rem 1.25rem 1.25rem; min-width: 0; }
