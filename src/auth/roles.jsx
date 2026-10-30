@@ -7,3 +7,4 @@ export const perm_map = s => Object.fromEntries(s.split(',').map(x => { const [k
 export const ROLES0 = [
   { id: 'super', name: 'Super Admin', perms: '*', locked: true, d: 'Sees and manages everything, including roles.' },
   { id: 'admin', name: 'Administrator', d: 'Runs daily operations across every module.',
+    perms: perm_map('dashboard:2,calendar:2,tasks:2,docs:2,sign:2,icons:2,tz:2,staff:2,employees:2,attendance:2,' +
