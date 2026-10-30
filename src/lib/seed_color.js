@@ -38,3 +38,5 @@ export function seed_hue(hex) {
     s = Math.cbrt(.0883024619 * r + .2817188376 * g + .6299787005 * b);
   const a = 1.9779984951 * l - 2.428592205 * m + .4505937099 * s, bb = .0259040371 * l + .7827717662 * m - .808675766 * s;
   return (Math.atan2(bb, a) * 180 / Math.PI + 360) % 360;
+}
+const apart = (h, hs) => { const gap = Math.min(GAP, (HUES[1] - HUES[0]) / (hs.length + 1));
