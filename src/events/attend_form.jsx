@@ -26,7 +26,7 @@ export function Attend_form({ c, id, demo }) {
     e.preventDefault(); const f = e.currentTarget; if (!validate(f)) return;
     const d = Object.fromEntries(new FormData(f)), email = d.email.trim().toLowerCase(), name = d.name.trim(), at = new Date().toISOString();
     const sig = mode === 'Drawn' ? await PAD.get() : `${name} · ${email} · ${at} · ${hash_str(email + at).toString(16).toUpperCase()}`;
-    if (!sig) return set_err('Sign in the box.');
+    if (!sig) return set_err('Sign inside the box.');
     if (!demo && !db.list('attendees').some(a => a.ref === id && a.email === email))
       db.upsert('attendees', { ref: id, c, name, email, tel: d.tel.trim(), org: d.org.trim(), position: d.position.trim(), sig_kind: mode, sig, at });
     set_done(name);
