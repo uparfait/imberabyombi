@@ -35,3 +35,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `admin/`     | admin shell: sidebar, header tools, side panels, apps menus, nested navigation              |
 | `modules/`   | one view per admin module (`VIEWS`), the calendar and the task feature                      |
 | `charts/`    | charts and KPIs (SVG), their data dialog and tooltip; the small canvas chart registry       |
+| `emails/`    | email designs and the email gallery                                                         |
