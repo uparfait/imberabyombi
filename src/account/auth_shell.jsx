@@ -18,8 +18,8 @@ export function auth_shell(title, text, body) {
       {body}
     </section>
     <p className="auth_foot px-6 py-4 text-center text-xs">© {new Date().getFullYear()} {cfg.name} · <a href={to('/sitemap')}>Privacy</a>
-      {' · '}<a href={to('/sitemap')}>Terms</a></p></main>
-);
+      {' · '}<a href={to('/sitemap')}>Terms</a></p></main>;
+}
 
 /* the other account pages (route paths stay as they are) */
 const LINKS = [['login', 'Sign in'], ['forgot', 'Forgot password'], ['verify', '2-step verification'], ['authenticator', 'Authenticator app'],
