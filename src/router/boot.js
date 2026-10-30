@@ -3,3 +3,4 @@
 import { db, before_render } from '../store/index.js';
 import { raise_top } from '../feedback/index.js';
 import { apply_tokens } from '../actions/index.js';
+import { install_listeners } from '../behaviors/index.js';
