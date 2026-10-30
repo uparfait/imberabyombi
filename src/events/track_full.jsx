@@ -47,3 +47,5 @@ addEventListener('keydown', k => { const f = qs('.track_full:not([hidden])'), b 
 
 export const TRACK_ACT = {
   ev_track: t => { const el = qs('#track_' + t.dataset.id); if (!el) return; el.hidden = false; Promise.resolve(el.requestFullscreen?.()).catch(() => {}); },
+  track_go: t => { pick = { id: t.dataset.id, i: +t.dataset.i, now: +t.dataset.now, at: Date.now() }; rerender(); }
+};
