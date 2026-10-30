@@ -16,3 +16,4 @@ export const header_tools = (n = '') => <><button className="icon_btn" data-act=
 /* the signed-in person's avatar and its menu (who, settings, public website, sign out, storage used) */
 export function account_menu(n = '') {
   const u = auth.user, r = auth.role(), pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
+  return <div className="relative">
