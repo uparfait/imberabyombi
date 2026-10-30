@@ -4,3 +4,4 @@
    glows of the item's hue (--h, from its title) mixed into the page colour, easing from one item's hue to the next */
   @property --h { syntax: '<number>'; inherits: true; initial-value: 210; }
   .track_full { position: fixed; inset: 0; z-index: 90; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 1rem; padding: 1.25rem 1.5rem 1.75rem; }
+  .tint { background: radial-gradient(70% 80% at 12% 8%, color-mix(in oklab, hsl(var(--h) 70% 62%) 20%, transparent), transparent 72%),
