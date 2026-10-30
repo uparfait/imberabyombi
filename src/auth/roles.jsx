@@ -21,3 +21,5 @@ export const ROLES0 = [
   { id: 'security', name: 'Parking officer', d: 'Car check-in, check-out and monitoring.', perms: perm_map('dashboard:1,tasks:2,docs:2,sign:2,icons:2,tz:2,attendance:1,parking:2,settings:1') },
   { id: 'coordinator', name: 'Event coordinator', d: 'Events, calendar and reservations.',
     perms: perm_map('dashboard:1,calendar:2,tasks:2,docs:2,sign:2,icons:2,tz:2,events:2,inventory:2,settings:1') }
+];
+/* modules every role may use, and at what level (the document editor, O-Doc Sign, Iconisus, the time zone converter): roles
