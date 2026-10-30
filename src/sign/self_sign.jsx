@@ -57,6 +57,7 @@ function Self_view({ id }) {
 
 /* the overlay in use (#viewer, wide) */
 const overlay = view => { const v = qs('#viewer'); show_in_dialog('viewer', view); v.classList.add('viewer_table');
+  v.addEventListener('close', () => v.classList.remove('viewer_table'), { once: true }); };
 export const SELF_ACT = {
   sign_self: () => { const me = who(); if (!me.email) return;
     const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
