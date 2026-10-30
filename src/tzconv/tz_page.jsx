@@ -36,3 +36,4 @@ export function Tz_page() {
   const is12 = st.ff === '12', [um, us] = fmt(up.h, up.mi, st.tf);
   /* Now and Swap set the date field anew (dk: its key), the rest follows the state */
   const now = () => { const p = tz_parts(st.from, Date.now()); put({ date: ymd_of(p), h: p.h, m: p.mi, dk: st.dk + 1 }); };
+  const swap = () => put({ from: st.to, to: st.from, ff: st.tf, tf: st.ff, date: ymd_of(tp), h: tp.h, m: tp.mi, dk: st.dk + 1 });
