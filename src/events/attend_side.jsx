@@ -17,9 +17,7 @@ export const BASE = { events: '/admin/events', activities: '/admin/calendar' };
 export const att_count = id => db.list('attendees').filter(a => a.ref === id).length;
 export const att_url = (c, id) => new URL(to(`/attend/${c}/${id}`), location.origin).href;
 
-export function attend_side(e, c, can) {
-  const url = att_url(c, e.id), n = att_count(e.id), page = `${BASE[c]}/${e.id}`, ph = att_phase(e), open = ph[0] !== 'closed';
-  const tiles = [...(open ? [{ icon: 'external', label: 'Attendance page', href: url }] : []), { icon: 'play', label: 'Live screen', href: to(page + '/live') },
+export function attend_side(e, c, can, shown) {
     { icon: 'users', label: 'Attendees', href: to(page + '/attendance') },
     ...(can ? [{ icon: 'sliders', label: 'Attendance settings', attrs: { 'data-act': 'ev_att_set', 'data-c': c, 'data-id': e.id } }] : [])];
   return <div className={`ev_att ${open ? '' : 'ev_att_one'}`}>
