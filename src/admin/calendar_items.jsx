@@ -12,6 +12,7 @@ import { redraw_slot } from './live_slot.jsx';
 /* a record's date and times on the page's clock (records with no tz were set in the page's zone) */
 const here = r => { const tz = r.tz || page_tz(), to = page_tz(), a = convert(r.date, r.start || '09:00', tz, to);
   return { date: a.date, start: a.time, end: r.end ? convert(r.date, r.end, tz, to).time : add_time(a.time, 120) }; };
+/* a record on each of its days: its date, or each day a recurring one happens from 6 weeks before the calendar's day
 const event_item = e => ({ id: e.id, title: e.title, ...here(e), c: 'events', tone: 'ink' });
 const task_item = t => ({ id: t.id, title: t.title, date: String(t.due).slice(0, 10), due: t.due, all_day: true, c: 'tasks', status: t.status });
 export const cal_items = () => [
