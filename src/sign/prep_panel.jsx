@@ -49,3 +49,4 @@ export const prep_panel = d => <div className="sign_panel">
       ? <button type="button" className="btn btn_outline btn_sm mt-4 w-full" onClick={() => open_form(true)}>{ic('plus', 'h-4 w-4')}Add signer</button>
       : <form className="mt-4 grid gap-3" noValidate onSubmit={add} aria-label="Add a signer">
       <div className="field"><label htmlFor="sign_r_name">Full name</label>
+        <input id="sign_r_name" name="name" required maxLength={60} placeholder=" " autoComplete="off" list="sign_people" onInput={fill} /></div>
