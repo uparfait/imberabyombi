@@ -18,3 +18,4 @@ body { background: rgb(var(--bg)); }
     linear-gradient(var(--c) 0 0) 100% 0 / var(--l) var(--w), linear-gradient(var(--c) 0 0) 100% 0 / var(--w) var(--l),
     linear-gradient(var(--c) 0 0) 0 100% / var(--l) var(--w), linear-gradient(var(--c) 0 0) 0 100% / var(--w) var(--l),
     linear-gradient(var(--c) 0 0) 100% 100% / var(--l) var(--w), linear-gradient(var(--c) 0 0) 100% 100% / var(--w) var(--l);
+  background-repeat: no-repeat; }
