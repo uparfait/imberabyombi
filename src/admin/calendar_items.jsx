@@ -31,3 +31,4 @@ const day_cls = (k, td, m, x) => k === td ? 'bg-brand font-semibold text-white' 
 export function mini_cal() {
   const b = parse_d(ui.mini || ui.cal_date), f = new Date(b.getFullYear(), b.getMonth(), 1), s = add_d(f, -f.getDay()), td = ymd();
   const has = new Set(cal_items().map(i => i.date));
+  return <div className="px-1"><div className="flex items-center justify-between">
