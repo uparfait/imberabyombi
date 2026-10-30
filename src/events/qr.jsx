@@ -5,3 +5,5 @@ import { useEffect, useState } from 'react';
 const LIB = ['https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js', 'https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js'];
 let lib = null;
 const load = () => lib ||= import('../editor/core/utils.js').then(u => u.load_script(LIB)).then(() => window.qrcode).catch(e => { lib = null; throw e; });
+
+/* the dark squares as one path, n squares a side */
