@@ -21,6 +21,7 @@ export function in_words(t, v) {
   const [h, m] = to24(v).split(':').map(Number); if (isNaN(h) || isNaN(m)) return [v, v];
   const w = h24() ? `${pad(h)}:${pad(m)}` : `${h % 12 || 12}:${pad(m)}${h < 12 ? 'am' : 'pm'}`; return [w, w];
 }
+/* a time zone in words on a date, long and short: "GMT+2 · Kigali" / "GMT+2" */
 
 /* the time zone: a select of every zone ("(GMT+02:00) Central Africa Time - Kigali"), shown as "GMT+2 · Kigali", with its
    offset on the row's date (summer and winter time differ); a new date updates it */
