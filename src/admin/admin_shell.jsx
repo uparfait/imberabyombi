@@ -10,3 +10,4 @@ import { panel_html } from './panel_html.jsx';
 import { Live_slot, sync_ref } from './live_slot.jsx';
 
 const panel_now = () => ui.panel ? panel_html(ui.panel) : null;
+const desk_min = () => ui.side_min && innerWidth >= 1024;
