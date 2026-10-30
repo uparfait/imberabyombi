@@ -4,3 +4,4 @@
    follows new ones at once (the storage listener in attend_page.jsx). ATTENDEES_ACT.ev_att_list (data-c, data-id) opens it. */
 import { qs } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
+import { ic } from '../icons/index.js';
