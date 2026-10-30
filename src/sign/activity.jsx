@@ -24,3 +24,5 @@ function row(d, a, i) {
       : <span className="sign_ev_who done">{ic('check', 'h-4 w-4')}</span>}
     <span className="sign_ev_text">{p ? verb ? <><b>{p.name.split(' ')[0]}</b>{verb}</> : a.t : <b>Completed</b>}{k === 'send' ? faces(d) : null}</span>
     <time dateTime={new Date(a.at).toISOString()}>{ago(a.at)}</time></li>;
+}
+export const activity = d => <ol className="sign_events">{[...d.audit].reverse().map((a, i) => row(d, a, i))}</ol>;
