@@ -30,7 +30,7 @@ const person = (name, sub) => <li key={name + sub}><b className="block truncate"
 export function live_page(id, c) {
   const e = db.find(c, id), page = `${BASE[c]}/${id}`;
   if (!e) return empty('Not found', 'It may have been deleted.', null, 'alert', 'warn');
-  route.title = `Live · ${e.title}`; route.full = true;
+  route.title = e.title; route.full = true;
   after_render(() => TIMERS.push(setInterval(tick, 1000), setInterval(rerender, 30000)));
   const st = ev_state(e), t = count_to(e, st), ag = e.agenda || [], now_i = agenda_now(e), p = tz_parts(e.tz || page_tz(), Date.now());
   const now_m = p.h * 60 + p.mi, it = ag[now_i], next = ag.find(a => mins(a.from) > now_m), n = att_count(id), open = att_phase(e)[0] !== 'closed';
