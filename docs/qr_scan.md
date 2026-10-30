@@ -5,3 +5,4 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
 [`qr-scan/index.html`](../qr-scan/index.html); its install files: [`public/qr-scan/`](../public/qr-scan/).
 
 ## Using it
+- **Start camera**: the back camera, in a square viewfinder; it stops by itself once it finds a code. **Stop**, and
