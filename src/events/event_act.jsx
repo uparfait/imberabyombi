@@ -9,3 +9,5 @@ import { modal, ask } from '../overlays/index.js';
 import { open_form } from '../table/index.js';
 import { when_row } from '../fields/index.js';
 import { go } from '../router/index.js';
+
+const SEC_TITLE = { Details: 'Edit details', When: 'Edit date and time', Location: 'Edit location', Organiser: 'Edit organiser', Audience: 'Edit audience' };
