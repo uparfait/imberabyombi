@@ -20,3 +20,4 @@ let pick = null;   /* { id, i, now, at }: the item picked with Back / Next */
 /* each item: Now, Done or Next; the slide shown: the one picked, else the one running now, else the next, else the last */
 function track_at(e, now) {
   const [d, hm] = today(e), day = e.repeat ? d : e.date, ag = e.agenda || [];
+  const st = ag.map((a, i) => i === now ? 'Now' : day < d || (day === d && a.to <= hm) ? 'Done' : 'Next'), next = st.indexOf('Next');
