@@ -9,3 +9,5 @@ export function my_role(r) {
   if ((r.co_orgs || []).some(p => same(p.email, m))) return 'Co-organiser';
   if ((r.agenda || []).some(a => same(a.p_email, m))) return 'Presenter';
   if ((r.invites || []).some(i => same(i.e, m))) return 'Invited';
+  return null;
+}
