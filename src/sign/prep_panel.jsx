@@ -23,6 +23,7 @@ function add(e) {
   f.reset(); gate(f); prep_dirty(); rerender(); notify(`Now place ${name.split(' ')[0]}’s fields on the document.`, 'ok', 'Signer added');
 }
 /* Save signer is enabled only when the form can be saved: a name, a valid email, and that email not a signer yet */
+const gate = f => { if (!f) return; const email = f.elements.email.value.trim().toLowerCase();
 const open_form = v => { P.adding = v; rerender(); if (v) requestAnimationFrame(() => document.getElementById('sign_r_name')?.focus()); };
 /* a name picked from the suggestions brings its email */
 const fill = e => { const p = people().find(s => s.name === e.target.value); if (p && !e.target.form.elements.email.value) e.target.form.elements.email.value = p.email; };
