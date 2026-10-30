@@ -19,3 +19,4 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 
 ## How a navigation works
 1. A click on an internal link, `go(path)` from code, or Back / Forward (`popstate`) → `navigate()`.
+2. On staff pages the navigation is a "get": the clicked sidebar link shows the spinner, the top loader shows if it
