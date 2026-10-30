@@ -27,3 +27,4 @@ const activity = i => { const n = lorem.name();
 export function nav_page(o) {
   const { title, node, kids } = o;
   if (kids) return <>{head(o, node ? node.i : 'layers', lorem.p(1))}
+    <section className="mt-6" aria-label={`In ${title}`}><h3 className="mb-3 text-lg">{`In ${title}`}</h3>
