@@ -41,3 +41,4 @@ Icon buttons show their `aria-label`; any element with `data-tip` shows that tex
 shows the full text only when it is actually cut. On touch screens a tap shows it.
 
 ## Right click
+A right click opens the browser's own menu everywhere (the document editor brings its own). "Allow text selection" is a
