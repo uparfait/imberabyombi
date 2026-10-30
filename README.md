@@ -69,3 +69,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [How to add a module](docs/how_to_add_a_module.md) | [How to add a public page](docs/how_to_add_a_public_page.md) |
 | [Accessibility](docs/accessibility.md) | [Performance and SEO](docs/performance_and_seo.md) |
 | [Connecting a backend](docs/connecting_a_backend.md) | [Deploying](docs/deploying.md) |
+| [Before production](docs/before_production.md) | [Document editor](docs/document_editor.md) |
