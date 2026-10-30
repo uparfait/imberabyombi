@@ -67,3 +67,4 @@
   .when_block:focus-within input { color: rgb(var(--fg)); caret-color: auto; }
   .when_block:focus-within .when_text { visibility: hidden; }
   .when_text { white-space: nowrap; pointer-events: none; }
+  .when_dash { color: rgb(var(--muted)); }
