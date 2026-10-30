@@ -14,6 +14,7 @@ import { spinner } from './feedback/index.js';
 const mark_page = () => {
   const c = document.documentElement.classList, p = route.path || '';
   c.toggle('staff_page', /^\/admin(\/|$)/.test(p)); c.toggle('public_page', is_public(p)); c.toggle('stage_page', /^\/admin\/(events|calendar)\/[^/]+\/live$/.test(p));
+  c.toggle('full_page', !!route.full);
 };
 
 /* the same spinner index.html shows while the app loads, kept until the first page is drawn */
