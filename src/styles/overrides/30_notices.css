@@ -6,3 +6,4 @@
   .notice { position: relative; display: flex; align-items: center; gap: .75rem; width: 100%; padding: .625rem .75rem; border-radius: var(--radius); transition: background-color .2s; }
   .notice:hover { background: rgb(var(--fg) / .05); }
   .notice_ic { display: grid; flex: none; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: var(--pill); }
+  .notice.is_new::after { content: ''; flex: none; width: .5rem; height: .5rem; border-radius: var(--pill); background: rgb(var(--brand)); }
