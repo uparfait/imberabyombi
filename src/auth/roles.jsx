@@ -43,3 +43,4 @@ export const land_opts = r => {
   return ok.length ? ok.map(m => <option key={m.k} value={m.k}>{m.l}</option>) : <option value="">No page yet</option>;
 };
 export const land_value = r => landing(r.id).replace(/^\/admin\/?/, '');
+export const role_name = id => roles().find(r => r.id === id)?.name || id || '—';
