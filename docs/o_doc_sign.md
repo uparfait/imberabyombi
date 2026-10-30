@@ -50,3 +50,4 @@ every account starts empty.
   their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
   next field of its kind with one tap.
 - **Signature**: draw it, type it (five handwriting styles), or upload a picture. **Stamp**: create one (organisation,
+  centre text, today's date, ink, round or square) or upload a picture.
