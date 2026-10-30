@@ -31,3 +31,4 @@ export function track_full(e, now, t) {
   const step = (d, l, i) => <button type="button" className="icon_btn track_step" {...go} data-i={cur + d} disabled={cur + d < 0 || cur + d >= ag.length} aria-label={l} data-tip={l}>{ic(i)}</button>;
   return <div id={`track_${e.id}`} className="track_full tint" hidden role="dialog" aria-label="Agenda" style={{ '--h': hue(ag[cur]?.title) }}>
     <header className="track_top"><p className="track_ev truncate">{e.title}</p>
+      <button type="button" className="icon_btn" data-act="qr_close" aria-label="Close" data-tip="Close (Esc)">{ic('x')}</button></header>
