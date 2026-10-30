@@ -70,3 +70,4 @@ export function convert(date, time, from, to) {
 /* now on the page's clock (see the top) */
 export const page_now = () => { const p = tz_parts(page_tz(), Date.now()); return new Date(p.y, p.mo - 1, p.d, p.h, p.mi, p.s); };
 /* a moment (ms, Date or ISO string) shown on the page's clock, with Intl options */
+export const fmt_stamp = (t, o = { dateStyle: 'medium', timeStyle: 'short' }) => new Date(t).toLocaleString(undefined, { ...o, timeZone: page_tz() });
