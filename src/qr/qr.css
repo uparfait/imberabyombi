@@ -29,6 +29,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 .qr_live_bar { display: flex; gap: 2rem; min-height: 1px; }
 .qr_round { display: grid; justify-items: center; gap: .375rem; color: #fff; font-size: .75rem; }
 .qr_round svg { box-sizing: content-box; padding: .875rem; border-radius: var(--pill); background: rgb(255 255 255 / .16); backdrop-filter: blur(8px); }
+.qr_round:hover svg { background: rgb(255 255 255 / .26); }
 
 .qr_found { display: grid; gap: .375rem; padding: 1.25rem; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * 1.5); background: rgb(var(--surface)); }
 .qr_found.is_link { border-color: rgb(var(--ok) / .35); background: rgb(var(--ok) / .06); }
