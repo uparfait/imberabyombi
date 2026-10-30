@@ -19,3 +19,4 @@
   .table_full thead th { position: sticky; top: 0; z-index: 2; }
   .table_full thead th.table_acts { z-index: 3; }
   html:has(.table_full) { overflow: hidden; }
+  .table_data tbody tr[data-act] { cursor: pointer; }
