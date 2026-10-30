@@ -33,7 +33,7 @@ every account starts empty.
   the middle. The right column starts with **Send for signing** (disabled until every signer has a field; hovering it
   says what is missing) and **Save draft**; its captions (Placing for, Fields, Placed) explain themselves in help icons.
 - The signer whose fields you are placing stands out, on both sides: zoomed in a little, a border in their colour that is
-  thicker at the bottom, and a "Placing fields" chip (a tick under Placing for).
+  thicker at the bottom, "Adding fields" ticked in its list, and a tick under Placing for (no dots there).
 - **Signers**: name, email, an optional **note for that signer** (they read it before signing), and **Force digital
   signature** (its help icon: the signer must verify their identity with a digital certificate before they can sign or
   stamp). People already in the system are suggested as you type a name. **Save signer** is enabled once there is a name
