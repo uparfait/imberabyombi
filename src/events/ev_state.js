@@ -14,7 +14,7 @@ const runs = (e, date, now) => { const s = at(date, e.start, e.tz), end = e.end 
 export function ev_state(e, now = Date.now()) {
   if (e.status === 'Cancelled' || e.status === 'Postponed') return e.status;
   if (DONE.includes(e.status) || !e.date) return e.date ? 'Past' : 'Upcoming';
-  if (e.kind === 'Recurring' && e.repeat) {
+  if (kind_of(e) === 'Recurring' && e.repeat) {
     const p = tz_parts(e.tz || page_tz(), now), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`, next = repeat_next(e.repeat, e.date, today);
     return !next ? 'Past' : next === today && runs(e, today, now) ? 'Live' : 'Recurring';
   }
