@@ -16,3 +16,4 @@ export function attend_page(r) {
   const where = e && (e.place === 'Virtual' ? 'Online' : e.venue);
   return <main id="main" className="att_page"><div className="att_card card">
     {!e ? empty('Not found', 'This link does not lead to an event or activity.', null, 'alert', 'warn')
+      : <><p className="att_kind">{c === 'events' ? 'Event' : 'Activity'}</p><h1 className="att_title">{e.title}</h1>
