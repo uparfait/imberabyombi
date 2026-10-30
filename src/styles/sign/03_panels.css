@@ -27,6 +27,7 @@
 .sign_chips { display: flex; flex-wrap: wrap; gap: .375rem; margin-top: .375rem; }
 .sign_chip { display: inline-flex; height: 1.625rem; align-items: center; gap: .3rem; padding: 0 .625rem; border-radius: var(--pill); background: rgb(var(--fg) / .06);
   color: rgb(var(--fg) / .8); font-size: .75rem; font-weight: 500; transition: background-color .2s; }
+button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 
 .sign_tool { display: flex; min-height: 2.75rem; align-items: center; gap: .625rem; padding: .5rem 1rem; border: 1px solid rgb(var(--line));
   border-radius: var(--pill); background: rgb(var(--bg)); font-size: .875rem; font-weight: 500; cursor: grab; transition: border-color .2s, background-color .2s, transform .15s; }
