@@ -21,8 +21,7 @@ const ACTS = [
   ['ev_stop', 'Stop repeating', 'x', ['Recurring']], ['ev_copy', 'Duplicate', 'copy', null],
   ['ev_cancel', 'Cancel event', 'x', ['Upcoming', 'Live', 'Recurring', 'Postponed']], ['ev_del', 'Delete', 'trash', null]
 ];
-const side = (e, st) => <aside className="card ev_card ev_side" aria-label="Status and actions">
-  <h3 className="ev_side_title">Status</h3><div className="mt-2">{badge(st)}</div>
+const side = (e, st, t = count_to(e, st)) => <aside className="card ev_card ev_side" aria-label="Status and actions">
   {e.status_note && (st === 'Postponed' || st === 'Cancelled') ? <p className="ev_note">{e.status_note}</p> : null}
   <div className="ev_acts">{ACTS.filter(a => !a[3] || a[3].includes(st)).map(([k, l, i]) =>
     <button key={k + l} type="button" className={`btn btn_sm ${k === 'ev_cancel' || k === 'ev_del' ? 'btn_ghost ev_bad' : 'btn_outline'}`} data-act={k} data-id={e.id}>
