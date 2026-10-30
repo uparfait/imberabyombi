@@ -40,3 +40,5 @@ const line = (label, body, when, help) => <div className="rp_row" data-when={whe
 const weekdays = (name, on) => <div className="rp_chips">{MON_FIRST.map(d => chip(name, d, DAY_NAMES[d].slice(0, 3), on.includes(d), '', DAY_NAMES[d]))}</div>;
 const num = (id, name, label, v, max) => <div className="field"><label htmlFor={id}>{label}</label>
   <input id={id} name={name} type="number" min="1" max={max} defaultValue={v} placeholder=" " /></div>;
+
+export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...(v || {}) }, id = 'field_' + f.k, say = e => repeat_say(e.currentTarget.closest('form'));
