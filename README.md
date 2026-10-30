@@ -24,3 +24,4 @@ lives in the browser and can be reset from Settings.
 ## What is inside
 | Area             | Highlights                                                                          |
 |------------------|-------------------------------------------------------------------------------------|
+| Public website   | Hero, about, mission, vision, strategies, staff, partners, thanks, contact, detail pages, sitemap |
