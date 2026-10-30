@@ -35,6 +35,7 @@ const ROWS = {
 const edit = (e, s, c) => <button type="button" className="ev_edit" data-act="ev_edit" data-col={c} data-id={e.id} data-sec={s} aria-label={`Edit ${s.toLowerCase()}`}>{ic('edit', 'h-3.5 w-3.5')}Edit</button>;
 const group = (e, s, can, c) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s === 'Organiser' ? 'Organisers' : s}
   {can ? s === 'Organiser' ? add_co(e, c) : edit(e, s, c) : null}</div></th></tr>
+  {ROWS[s](e, c, can).filter(Boolean).map(([k, v, cls], j) => cls === 'kv_full' ? <tr key={s} className="kv_full"><td colSpan={2}>{v}</td></tr>
 
 export const event_cards = (e, can, c = 'events') => <section className="card ev_table" aria-label="Details"><table className="kv">
   <thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody>{SECS.map(s => group(e, s, can, c))}</tbody></table></section>;
