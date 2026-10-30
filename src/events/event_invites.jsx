@@ -4,3 +4,4 @@
    its list but takes no new invites. INVITE_ACT: the card's buttons (merged into EV_ACT). */
 import { qs, cap, fmt_stamp } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
+import { auth } from '../auth/index.js';
