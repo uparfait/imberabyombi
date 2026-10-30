@@ -5,3 +5,4 @@ import { initials } from '../ui/index.js';
 
 export const rec_body = r => <>
   <div className="field sm:col-span-2"><label htmlFor="sign_rec_name">Full name</label>
+    <input id="sign_rec_name" name="name" required maxLength={60} placeholder=" " autoComplete="off" defaultValue={r.name} /></div>
