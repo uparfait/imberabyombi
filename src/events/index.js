@@ -18,3 +18,4 @@ export * from './attend_form.jsx';
 export * from './attend_page.jsx';
 export * from './attend_side.jsx';
 export * from './attendees_view.jsx';
+export * from './ev_tables.jsx';
