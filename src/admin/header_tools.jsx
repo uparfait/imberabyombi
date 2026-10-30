@@ -18,3 +18,4 @@ export function account_menu(n = '') {
   const u = auth.user, r = auth.role(), pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
   return <div className="relative">
         <button className="ml-1 rounded-full" data-act="pop" data-pop={`pop_account${n}`} aria-label="Account">{avatar(u.name, 'h-9 w-9 text-sm')}</button>
+        <div id={`pop_account${n}`} ref={closed_pop()} className="pop right-0 w-[21rem] max-w-[calc(100vw-1rem)] p-3" hidden>
