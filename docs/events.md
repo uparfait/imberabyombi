@@ -48,3 +48,4 @@ On the event's page ([`events/event_invites.jsx`](../src/events/event_invites.js
   - `.xls` is read with SheetJS, loaded on first use.
   - `.csv`, `.tsv` and `.txt` are read as text.
 - **Check the list**: addresses wait as chips; one already on the list is not added twice. Words that are not addresses
+  stay in the box to be corrected.
