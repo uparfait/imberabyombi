@@ -18,3 +18,4 @@ export function att_phase(e, now = Date.now()) {
   if (e.repeat) { const p = tz_parts(e.tz || page_tz(), now), today = `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
     d = repeat_next(e.repeat, e.date, today); if (!d) return ['closed'];
     if (d === today && win(e, d)[1] <= now) d = repeat_next(e.repeat, e.date, ymd(add_d(parse_d(today), 1))); if (!d) return ['closed']; }
+  const [o, c] = win(e, d);
