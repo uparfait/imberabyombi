@@ -30,3 +30,4 @@ export function org_table(e, c, can) {
     {can ? <td className="ev_org_acts">{btn('ev_org_edit', 'Edit', i, e, c, 'edit')}{i < 0 ? btn('ev_transfer', 'Transfer', i, e, c, 'key') : null}</td> : null}</tr>;
   return <div className="ev_inv_box ev_tbl"><table className="ev_inv_table ev_org_table">
     <thead><tr><th scope="col">Name</th><th scope="col" className="ev_wide">Email</th><th scope="col" className="ev_wide ev_org_tel">Phone</th>
+      {can ? <th scope="col" className="ev_org_acts"><span className="sr-only">Actions</span></th> : null}</tr></thead>
