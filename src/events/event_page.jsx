@@ -15,7 +15,6 @@ import { fmt_stamp } from '../lib/index.js';
 import { event_cards } from './event_cards.jsx';
 import { invites_card } from './event_invites.jsx';
 import { attend_side } from './attend_side.jsx';
-import { minutes_card, follow_card } from './event_minutes.jsx';
 
 /* when a past one ran, short: "Oct 23 · 12:00 PM – 2:00 PM" (the year when it is not this one; another day: its date too) */
 const T = { timeStyle: 'short' }, D = t => ({ month: 'short', day: 'numeric', ...(fmt_stamp(t, { year: 'numeric' }) === fmt_stamp(Date.now(), { year: 'numeric' }) ? {} : { year: 'numeric' }) });
