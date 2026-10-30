@@ -40,3 +40,5 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.prose_x`                              | long-form article typography                                     |
 | `.toast`                                | notification                                                     |
 | `.hero_title`                           | oversized display headline                                       |
+
+## Native elements need no class
