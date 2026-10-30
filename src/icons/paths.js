@@ -57,3 +57,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   heart: 'M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.6 1-1.1a5.5 5.5 0 0 0 0-7.7z',
   flag: 'M4 22V4M4 4h13l-2 4 2 4H4',
   globe: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20',
+  send: 'M22 2 11 13M22 2l-7 20-4-9-9-4z',
