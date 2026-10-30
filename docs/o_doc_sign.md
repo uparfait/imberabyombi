@@ -34,3 +34,4 @@ every account starts empty.
   Placed) explain themselves in help icons.
 - **Signers**: name, email, an optional **note for that signer** (they read it before signing), and **Must sign with a
   digital certificate**. People already in the system are suggested as you type a name. Once there is a signer the form
+  folds into an **Add signer** button. **Edit signer** changes the name, email, note and certificate; **Remove** takes them
