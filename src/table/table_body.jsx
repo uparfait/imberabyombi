@@ -29,3 +29,4 @@ function none_row(c, s, can, filtered, span) {
   return (
     <tr key="none" className="hover:bg-transparent"><td colSpan={span} className="table_none border-0">{filtered
       ? empty('No matches', '', <button className="btn btn_outline btn_sm" data-act="q_clear" data-col={c}>Clear filters</button>)
+      : empty(`No ${s.l}s yet`, can ? `Add the first ${s.l} to get started.` : 'Records will appear here once they are added.', add)}</td></tr>
