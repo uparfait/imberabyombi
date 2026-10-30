@@ -38,6 +38,7 @@ export const kept_for_good = d => signed_n(d) > 0;
 export const rec_of = (d, id) => d.recipients.find(r => r.id === id);
 /* what still stops a draft from being sent (the Send button's tooltip while it is disabled), or '' */
 export const send_block = d => !d.recipients.length ? 'Add the people who sign this document first.'
+  : !d.fields.length ? 'Place a signature or stamp field on the document first.'
 
 /* an activity entry: its sentence (the signing certificate prints it), what was done (upload, send, open, sign, done) and
    by whom (email), so the activity can be drawn (activity.jsx) */
