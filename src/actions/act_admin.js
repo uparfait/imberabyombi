@@ -34,6 +34,7 @@ export const ADMIN_ACT = {
     const sp = qs('#side_panel'); if (sp) sp.dataset.open = !!next; setTimeout(redraw_charts, 320); },
   note_del: t => { db.set('notes', db.get('notes', []).filter(n => n.id !== t.dataset.id)); refresh_panel(); },
   /* Settings → Time zone: Save keeps the choice (every page follows it), Cancel puts the one in use back, "Use this device's"
+     picks the device's (then Save) */
   tok_reset: () => { db.del('tokens'); apply_tokens(); rerender(); notify('Brand, radius, spacing and font follow the stylesheet again.', 'ok', 'Tokens reset'); },
   data_export: () => { const o = {}; db.keys().filter(k => k !== 'session').forEach(k => o[k] = db.get(k)); dl(`lorem-backup-${ymd()}.json`, JSON.stringify(o, null, 2), 'application/json'); notify('Keep the JSON file somewhere safe.', 'ok', 'Backup downloaded'); },
   data_reset: () => ask('Reset all demo data? Your session, theme and tokens stay. Everything else is replaced with fresh sample data.', () => {
