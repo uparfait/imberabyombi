@@ -19,3 +19,4 @@ npm run build      # production site in dist/
 npm run preview    # check the production build
 ```
 Open `/login`, pick a role, type any email and password, and explore the admin. No backend is needed: demo data
+lives in the browser and can be reset from Settings.
