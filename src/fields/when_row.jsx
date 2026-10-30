@@ -21,3 +21,4 @@ const tz_words = form => { const s = form?.querySelector('.when_tz select'); if 
 const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz();
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
     <span className="pick when_block when_tz"><select id={id} name={f.k} defaultValue={tz} required={!!f.req}
+      onChange={e => tz_words(e.target.form)}>
