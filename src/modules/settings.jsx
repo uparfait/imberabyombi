@@ -4,3 +4,4 @@
    The token fields are new on every draw (keyed by the draw), so a reset (tok_reset → rerender) shows the stylesheet values. */
 import { VIEWS } from './views.js';
 import { db, get_version } from '../store/index.js';
+import { auth } from '../auth/index.js';
