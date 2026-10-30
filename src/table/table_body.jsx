@@ -51,3 +51,4 @@ export function table_body(c) {
     acts: with_acts, count: rows.length, pager: rows.length ? pager(c, p, n) : null,
     rows: rows.length ? shown.map((r, i) => (
       <tr key={r.id} data-row={r.id} data-act="view" data-col={c} data-id={r.id} tabIndex="0" className={ui.flash === r.id ? 'row_flash' : ''}>
+        {with_acts ? <td className="table_acts"><div className="inline-flex items-center gap-1">{acts[i]}</div></td> : null}
