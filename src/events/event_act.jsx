@@ -35,6 +35,7 @@ export const EV_ACT = {
   ev_att_set: t => { const c = t.dataset.c, e = db.find(c, t.dataset.id); if (!e) return; const [b, a] = att_mins(e), st = ev_state(e);
     const mode = ['Upcoming', 'Postponed', 'Recurring'].includes(st) ? 0 : st === 'Live' ? 1 : 2;
     const [k, l, v, hint, done] = [['att_before', 'Allow attendance before the start (minutes)', b, 'People can submit attendance this many minutes before it starts.', n => `Attendance opens ${n} min before the start.`],
+      ['att_after', 'Allow attendance after the end (minutes)', a, 'People can still submit attendance this many minutes after it ends.', n => `Attendance stays open ${n} min after the end.`],
     modal({ title: 'Attendance settings', body: [field(field_spec(k, l, 'number', 0, 1, { min: 0, max: 1440 }), v), <p key="hint" className="att_hint sm:col-span-2">{hint}</p>],
       submit: 'Save', on_submit: d => save(e.id, { [k]: +d[k] }, 'Attendance settings saved', early ? `Attendance opens ${d[k]} min before the start.` : `Attendance stays open ${d[k]} min after the end.`, c) }); },
   ev_edit: t => { const c = t.dataset.col || 'events'; open_form(c, t.dataset.id, {}, [SEC_TITLE[t.dataset.sec], schemas[c].sec[t.dataset.sec].split(',')]); },
