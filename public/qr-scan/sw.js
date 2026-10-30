@@ -10,3 +10,5 @@ self.addEventListener('activate', e => e.waitUntil(caches.keys()
 self.addEventListener('fetch', e => {
   const r = e.request; if (r.method !== 'GET' || !r.url.startsWith('http')) return;
   e.respondWith(fetch(r).then(res => { if (res.ok || res.type === 'opaque') keep(r, res.clone()); return res; })
+    .catch(() => caches.match(r).then(hit => hit || (r.mode === 'navigate' ? caches.match('./') : Response.error())).catch(() => Response.error())));
+});
