@@ -35,3 +35,4 @@
   .pop:not([hidden]) { animation: pop .2s var(--ease); }
   .menu_item { @apply flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm text-fg transition hover:bg-fg/5; }
   .menu_danger { @apply hover:bg-bad/10 hover:text-bad; }
+  .menu_danger:hover svg { @apply text-bad; }
