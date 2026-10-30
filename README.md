@@ -22,3 +22,4 @@ Open `/login`, pick a role, type any email and password, and explore the admin. 
 lives in the browser and can be reset from Settings.
 
 ## What is inside
+| Area             | Highlights                                                                          |
