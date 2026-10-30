@@ -33,3 +33,4 @@ export function signer_page(d) {
           {ic('download', 'h-4 w-4')}{dl_label(d)}</button></section> : null
         : steps_card(d)}</aside>
     <section className="sign_center" aria-label="Pages">
+      {done ? <p className="sign_banner" role="status">{ic('check', 'h-5 w-5 shrink-0')}
