@@ -9,3 +9,4 @@ export const attendees_schema = {
   f: [
     field_spec('name', 'Full name', 'text', 0, 1), field_spec('email', 'Email', 'email', 0, 1), field_spec('tel', 'Telephone', 'tel'),
     field_spec('org', 'Organisation or unit'), field_spec('position', 'Position'),
+    field_spec('sig_kind', 'Signed', 'select', ['Drawn', 'Digital', 'By hand'], 0, { def: () => 'By hand' }),
