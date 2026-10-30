@@ -12,3 +12,4 @@ body { background: rgb(var(--bg)); }
 .qr_view { position: relative; overflow: hidden; aspect-ratio: 1; border-radius: calc(var(--radius) * 1.75); background: #0d0d0e; }
 .qr_view video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
 .qr_view.on video { opacity: 1; }
+.qr_view video.mirror { transform: scaleX(-1); }
