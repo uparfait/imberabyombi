@@ -21,3 +21,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Imberabyombi outlined fields with floating labels, help icons and custom validation (no browser bubbles).
 - Text date, time, date-and-time, month and week fields: type freely (separators added) or pick from a mini calendar
   and a 15-minute time list; 12-hour or 24-hour clock.
+- Searchable select menus, multiple selects with checkboxes, suggestions while typing (datalist).
