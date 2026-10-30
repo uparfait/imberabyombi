@@ -34,3 +34,4 @@
   .ev_chip_x { display: grid; flex: none; place-items: center; width: 1.375rem; height: 1.375rem; border-radius: var(--pill); color: rgb(var(--muted)); }
   .ev_chip_x:hover { background: rgb(var(--fg) / .1); color: rgb(var(--fg)); }
   .ev_inv_count { margin-bottom: .5rem; color: rgb(var(--muted)); font-size: .8125rem; }
+  /* the people invited (events/invite_table.jsx): a table that scrolls down inside itself, its header staying on top */
