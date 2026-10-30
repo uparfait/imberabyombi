@@ -30,3 +30,4 @@ const val = (el, n) => (el.querySelector(`[data-ag=${n}]`)?.value || '').trim();
 export const agenda_from = f => [...f.querySelectorAll('[data-ag-item]')].map(el => ({ from: to24(val(el, 'from')), to: to24(val(el, 'to')),
   title: val(el, 'title'), desc: val(el, 'desc'), p_name: val(el, 'p_name'), p_email: val(el, 'p_email').toLowerCase(), p_title: val(el, 'p_title') }))
   .sort((a, b) => a.from.localeCompare(b.from));
+export const agenda_ok = f => { for (const el of f.querySelectorAll('[data-ag-item]')) { const a = to24(val(el, 'from')), b = to24(val(el, 'to'));
