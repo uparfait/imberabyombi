@@ -24,7 +24,7 @@ export const signer_rows = (d, links) => <ul className="grid gap-3">{d.recipient
   <div className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
     <span className="block truncate text-xs text-muted">{r.email}</span>
     <span className={`block text-xs ${r.status === 'signed' ? 'text-ok' : 'text-warn'}`}>{state(r)}</span>
-    {links ? <>{chips(r)}{note_text(r)}</> : null}</div>
+    {links ? doc_opts(r) : null}</div>
   {r.status === 'signed' ? <span className="mt-1 text-ok">{ic('check', 'h-5 w-5')}</span>
     : links && d.status === 'sent' ? <button type="button" className="icon_btn h-8 w-8" data-act="sign_link" data-id={d.id} data-tip="Copy signing link"
       aria-label={`Copy the signing link for ${r.name}`}>{ic('link', 'h-4 w-4')}</button> : null}</li>)}</ul>;
