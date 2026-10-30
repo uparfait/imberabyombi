@@ -46,3 +46,4 @@ function File_view({ f, n }) {
 }
 
 /* open a File (a chosen file, or one rebuilt from a saved attachment) in #viewer */
+export function view_file(f) {
