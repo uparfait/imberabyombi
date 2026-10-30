@@ -2,3 +2,4 @@
    site (qr-scan/index.html, src/qr/); the sidebar links to it directly. */
 import { VIEWS } from './views.js';
 import { loading } from '../feedback/index.js';
+import { to } from '../router/index.js';
