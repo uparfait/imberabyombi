@@ -14,3 +14,5 @@ export const attendees_schema = {
     field_spec('ref', 'Event', 'hidden'), field_spec('c', 'Kind', 'hidden'), field_spec('sig', 'Signature', 'hidden', 0, 0, { form: false })
   ],
   r: { at: v => v ? fmt_stamp(v) : '', sig: (v, row) => !v ? '' : row.sig_kind === 'Drawn' ? <img src={v} alt="Signature" className="h-14 w-auto rounded bg-white p-1" /> : <code className="text-xs">{v}</code> },
+  g: () => ({})
+};
