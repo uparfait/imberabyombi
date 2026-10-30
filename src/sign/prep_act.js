@@ -23,6 +23,7 @@ function send() {
   const d = P.doc, now = Date.now(), wait = d.recipients.filter(r => r.status !== 'signed');
   Object.assign(d, { status: 'sent', sent_at: now });
   wait.forEach(r => { r.status = 'pending'; ['viewed_at', 'signed_at', 'cert_at', 'cert_file'].forEach(k => delete r[k]); });
+  if (wait.length) log(d, `${who().name} sent it to ${wait.map(r => r.email).join(', ')}`, 'send', who().email);
 }
 
 export const PREP_ACT = {
