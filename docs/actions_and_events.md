@@ -53,3 +53,4 @@ They are installed once by `boot()`. A right click is left to the browser (its o
 
 ## Keyboard shortcuts
 `Esc` closes the top layer (picker, menu, then dialog) · `Ctrl K` / `⌘K` opens the command palette · `Alt + ↓` or `F4`
+opens a picker · arrows move in menus and pickers · `Enter` picks.
