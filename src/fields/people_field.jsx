@@ -16,3 +16,4 @@ export const people_field = f => <div key={f.k} className="sm:col-span-2"><p cla
 
 export const people_from = (f, k) => { const box = f.querySelector(`[data-people="${k}"]`); if (!box) return undefined;
   return [...box.querySelectorAll('[data-pp-row]')].map(r => ({ name: r.querySelector('[data-pp=name]').value.trim(), email: r.querySelector('[data-pp=email]').value.trim().toLowerCase() }))
+    .filter(p => p.name || p.email); };
