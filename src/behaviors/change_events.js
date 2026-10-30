@@ -19,7 +19,7 @@ function on_change(e) {
   if (t.getAttribute?.('aria-invalid') === 'true' && t.checkValidity()) { clear_err(t); if (t.type === 'radio') qsa(`[name="${t.name}"]`, t.form || document).forEach(clear_err); }
   /* task view: a subtask ticked, the status picked, files added (modules own that state) */
   if (task_change(t)) return;
-  if (t.name === 'status' && t.form?.querySelector('[data-when]')) table.sync_when(t.form);
+  if (t.name && t.form?.querySelector('[data-when]')) table.sync_when(t.form);   /* fields shown for some values only */
   /* export: an unticked column cannot be renamed; with no column ticked the download is off (the export dialog's state) */
   if (t.closest?.('[data-export-cols]') && t.type === 'checkbox') { table.export_change?.(t); return; }
   if (t.dataset.tablePer) { const c = t.dataset.tablePer; table.tview(c).per = +t.value; table.tview_save(c); ui.page[c] = 1;
