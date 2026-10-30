@@ -29,3 +29,4 @@ export function open_form(c, id, preset = {}) {
 }
 
 /* fields shown only for some statuses (F(..., { when: 'Done' }) or '!Done'); hidden ones are disabled, so they are not sent or checked */
+export function sync_when(form) { const st = form?.elements.status?.value; if (st == null) return;
