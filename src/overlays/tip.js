@@ -5,6 +5,7 @@ import { before_render } from '../store/index.js';
 /* G. TOOLTIPS (Imberabyombi style): icon buttons (from aria-label), [data-tip], and trimmed .truncate / .trunc / line-clamp-N
    text (only when cut) */
 export const TIPS = '[data-tip], .icon_btn[aria-label], .truncate, .trunc, [class*=line-clamp-]';
+/* the browser's full screen shows only its own element: a tip for something in it goes inside it */
 export const tip = {
   el: document.getElementById('tip'), on: null, t: 0, t2: 0,
   text(x) { return x.matches('.truncate, .trunc') ? (x.scrollWidth > x.clientWidth + 1 ? x.textContent.trim() : '') : x.dataset.tip || x.getAttribute('aria-label') || ''; },
