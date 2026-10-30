@@ -16,3 +16,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 - Focus is always visible (focus rings follow the brand colour) and returns to the trigger when a menu closes.
 
 ## Dialogs and overlays
+- One native `<dialog>` per kind (`#modal`, `#confirm`, `#drawer`, `#viewer`): focus is trapped by the browser,
