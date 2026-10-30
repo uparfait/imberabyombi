@@ -3,3 +3,4 @@
    change them. The place that shows an icon picks its colour: a tone (brand, ink, ok, info, warn, bad), a hue (orange,
    amber, green, teal, sky, blue, indigo, violet, pink, red, slate) or a hex.
    i3(name, cls, color) draws it as an <img>, built for the pixel size its classes give (h-11: 44 px, times the screen's
+   pixel density; the engine tunes its lighting to it) and cached per name, colour and size; i3_html(...) is the string
