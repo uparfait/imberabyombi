@@ -65,4 +65,5 @@ export const SELF_ACT = {
     Object.assign(P, { rid: r.id, adding: false }); prep_dirty(); rerender();
     notify('Place your signature or stamp on the document, then Preview and sign (at the bottom right).', 'ok', 'You sign it too'); },
   sign_self_view: t => { prep_save(); signer_start(t.dataset.id); overlay(() => <Self_view id={t.dataset.id} />); },
+  sign_preview: t => { if (P.doc) prep_save(); overlay(() => <Preview id={t.dataset.id} />); }
 };
