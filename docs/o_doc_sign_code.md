@@ -31,3 +31,4 @@ documents between people and devices, keep these records and files on a server (
 | `sign_pad.jsx`, `pad_*.js(x)`, `stamp_*.js(x)`, `bg_cut.js` | the signature and stamp dialog |
 | `pdf_lib.js`, `pdf_pages.jsx`, `sign_fields.jsx` | reading and drawing pages, the fields over them |
 | `sign_export.js`, `sign_cert.js` | the signed PDF and its certificate |
+| `sign_store.js`, `sign_idb.js`, `use_marks.js`, `sign_act.js` | data, files, saved marks, the buttons' registration |
