@@ -9,3 +9,5 @@ import { field_spec } from './fields.js';
 export const KINDS = [['Upcoming', 'Upcoming'], ['Live', 'Live now'], ['Recurring', 'Recurring']];
 const KIND_HELP = 'Upcoming: it starts later. Live now: it has already started, so its date and start time are filled in with '
   + 'the time now (change them if it started earlier). Recurring: it repeats on a schedule you choose.';
+
+/* Live now: an empty date and start become the time now, in the form's time zone */
