@@ -33,3 +33,4 @@ export const prep_tools = d => <div className="sign_panel">
   <section aria-label="Placing for">{cap('Placing for', 'The signer whose fields you place now. Pick another signer to place theirs; '
     + 'each signer has a colour, and their fields on the page show it.')}{placing(d)}</section>
   <section aria-label="Fields">{cap('Fields', 'Click a field to add it to the page on screen, or drag it onto the page. Drag a field '
+    + 'to move it and its corner to resize it. Arrow keys nudge the selected field; Delete removes it.')}<div className="grid gap-2">{tool('signature')}{tool('stamp')}</div></section>
