@@ -27,3 +27,4 @@ function track_at(e, now) {
 const left_of = ms => <b data-count-to={ms}>{left(ms - Date.now())}</b>;
 
 export function track_full(e, now, t) {
+  const [st, cur] = track_at(e, now), ag = e.agenda, go = { 'data-act': 'track_go', 'data-id': e.id, 'data-now': now };
