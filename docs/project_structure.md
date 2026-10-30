@@ -21,3 +21,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `icon3d/`    | the 3D icon engine: `render(input, { style, colors, size })` in six styles |
 | `iconisus/`  | Iconisus (`/admin/icons`): the 3D icon maker (styles in `styles/iconisus/`) |
 | `store/`     | `db` (browser storage) and `app_state` (`ui`, `route`, `render`, `rerender`, `AFTER`, `TIMERS`) |
+| `auth/`      | modules list (`MODS`), roles and levels, session (`auth`, `me`), landing pages, invite links |
