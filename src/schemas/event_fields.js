@@ -20,6 +20,7 @@ const live_now = f => { const tz = f.elements.tz?.value || device_tz(), p = tz_p
 export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def: () => 'Upcoming', help: KIND_HELP,
   on: e => { if (e.target.value === 'Live') live_now(e.target.form); } });
 
+/* where: in a place (a venue or address) or online (a meeting link and notes on joining, such as a passcode); all optional */
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
 export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
 export const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
