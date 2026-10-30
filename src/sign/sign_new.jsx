@@ -16,3 +16,4 @@ const bad = (text, title) => { notify(text, 'bad', title); return false; };
 
 async function take(file) {
   if (!/\.pdf$/i.test(file.name) && file.type !== 'application/pdf') return bad('Only PDF files can be uploaded. Save the document as a PDF first.', 'Not a PDF');
+  if (file.size > MAX) return bad('Choose a PDF of 20 MB or less.', 'The file is too large');
