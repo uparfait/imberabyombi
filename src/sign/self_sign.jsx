@@ -13,3 +13,4 @@ import { find_doc, who, add_rec } from './sign_store.js';
 import { P, prep_dirty, prep_save } from './prep_state.js';
 import { Pdf_pages } from './pdf_pages.jsx';
 import { fields_on } from './sign_fields.jsx';
+import { use_marks } from './use_marks.js';
