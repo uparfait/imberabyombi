@@ -2,6 +2,7 @@
    email address, the day they were invited and, while the event takes invites, Remove (it asks first; its button takes
    the warning colour on hover). Addresses are changed before sending, on their chips (event_invites.jsx). On a phone the
    day shows under the address. INVITE_TABLE_ACT: its button. */
+import { fmt_stamp } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
 import { ic } from '../icons/index.js';
 import { notify, show_err } from '../feedback/index.js';
