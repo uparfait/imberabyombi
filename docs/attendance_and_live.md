@@ -1,4 +1,4 @@
-# Attendance, View This Event, minutes and follow-ups
+# Attendance, Open This Event, minutes and follow-ups
 
 Code: [`src/events/`](../src/events/). Attendance records are the `attendees` collection
 ([`schema_attendees.jsx`](../src/schemas/schema_attendees.jsx)).
