@@ -19,3 +19,5 @@ export function Qr({ text, label = 'QR code' }) {
   if (!p) return <div className="qr qr_wait" role="img" aria-label={label} />;
   if (p.off) return <p className="qr_off">{text}</p>;
   return <svg className="qr" viewBox={`-2 -2 ${p.n + 4} ${p.n + 4}`} role="img" aria-label={label} shapeRendering="crispEdges">
+    <rect x="-2" y="-2" width={p.n + 4} height={p.n + 4} fill="#fff" /><path d={p.d} fill="#111" /></svg>;
+}
