@@ -29,3 +29,4 @@ export function Qr_app() {
     try { const t = await read_image(file); t ? found(t) : set({ phase: 'error', msg: 'No QR code in that picture.' }); }
     catch { set({ phase: 'error', msg: 'That picture could not be read.' }); } };
   const flip = () => { const f = facing === 'environment' ? 'user' : 'environment'; set_facing(f); go(f); };
+  useEffect(() => stop, []);
