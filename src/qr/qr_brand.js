@@ -8,3 +8,4 @@ import { render } from '../icon3d/index.js';
 import { HASH, HASH_VIEW } from '../icons/index.js';
 
 const DEF = '#E0661B', HEX = /^#[0-9a-f]{6}$/i;
+const tokens = () => { try { return JSON.parse(localStorage.getItem(cfg.ns + 'tokens') || '{}') || {}; } catch { return {}; } };
