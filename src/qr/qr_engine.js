@@ -6,3 +6,4 @@ import { load_script } from '../editor/core/utils.js';
 
 const JSQR = ['https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js', 'https://unpkg.com/jsqr@1.4.0/dist/jsQR.js'];
 let detector;   /* undefined: not chosen yet; null: jsQR */
+async function reader() {
