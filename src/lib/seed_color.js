@@ -31,3 +31,5 @@ function oklch_hex(l, c, h) {
     if (rgb.every(v => v >= -1e-4 && v <= 1 + 1e-4)) return '#' + rgb.map(v => Math.round(gam(Math.min(1, Math.max(0, v))) * 255).toString(16).padStart(2, '0')).join('');
   }
   return oklch_hex(l, 0, h);
+}
+export function seed_hue(hex) {
