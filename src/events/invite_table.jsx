@@ -15,3 +15,4 @@ const stop = () => { editing = ''; rerender(); };
 function save(id, old, input) {
   const e = db.find('events', id), v = (input?.value || '').trim().toLowerCase(); if (!e || !input) return stop();
   if (find_emails(v)[0] !== v) { show_err(input, 'Enter an email address, such as name@example.com.'); return input.focus(); }
+  if (v !== old && e.invites.some(i => i.e === v)) { show_err(input, 'This address is already invited.'); return input.focus(); }
