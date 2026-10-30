@@ -16,3 +16,5 @@ const person = (d, a) => { const r = d.recipients.find(x => a.by ? x.email === a
   return r ? { name: r.name, color: r.color } : { name: d.owner_name, color: seed_color(d.owner) }; };
 const faces = d => <span className="sign_ev_faces">{d.recipients.slice(0, 5).map(r =>
   <span key={r.id} style={{ background: r.color }} title={r.name}>{initials(r.name)}</span>)}</span>;
+
+function row(d, a, i) {
