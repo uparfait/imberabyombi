@@ -34,9 +34,7 @@ export function open_form(c, id, preset = {}, part = null) {
       ui.flash = db.upsert(c, { ...row, ...d }); rerender();
       notify(id ? `Your changes to this ${s.l} are saved.` : `The new ${s.l} is in the list.`, 'ok', id ? 'Changes saved' : `${cap(s.l)} added`);
     } });
-  /* modal() draws at once, except when called while React is drawing (a form opened after navigation): then a moment later */
-  const f = qs('#modal form');
-  if (f && f !== before) sync_when(f); else setTimeout(() => sync_when(qs('#modal form')));
+  /* modal() draws at once, except when called while React is drawing (a form opened after navigation): then a moment later.
 }
 
 /* data-when: "Done" or "!Done" (the status: F(..., { when: 'Done' })), or "<field>=A|B" / "<field>!=A" (any field of the
