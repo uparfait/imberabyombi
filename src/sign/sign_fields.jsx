@@ -4,3 +4,4 @@
    sign: the signer's own fields are buttons (to do: pulsing; done: their mark) and the others say who signs there;
    view: every mark placed so far, and a dashed box for each one still to come. */
 import { ic } from '../icons/index.js';
+import { KINDS, rec_of } from './sign_store.js';
