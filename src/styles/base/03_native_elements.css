@@ -57,3 +57,4 @@
   :where(blockquote) { border-inline-start: 4px solid rgb(var(--brand)); background: rgb(var(--brand) / .06); padding: 1rem 1.25rem; border-radius: 0 var(--radius) var(--radius) 0; font-size: 1.08rem; }
   :where(address) { font-style: normal; }
   :where(dt) { font-weight: 600; }
+  :where(dd) { color: rgb(var(--muted)); }
