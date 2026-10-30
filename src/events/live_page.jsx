@@ -24,3 +24,4 @@ export function live_page(id, c) {
   if (!e) return empty('Not found', 'It may have been deleted.', null, 'alert', 'warn');
   route.title = `Live · ${e.title}`; route.full = true;
   after_render(() => TIMERS.push(setInterval(tick, 1000), setInterval(rerender, 30000)));
+  const st = ev_state(e), t = count_to(e, st), ag = e.agenda || [], now_i = agenda_now(e), p = tz_parts(e.tz || page_tz(), Date.now());
