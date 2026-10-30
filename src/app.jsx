@@ -16,3 +16,4 @@ const mark_page = () => {
 };
 
 /* the same spinner index.html shows while the app loads, kept until the first page is drawn */
+const boot_loader = <div className="boot_loader" role="status" aria-label="Loading">{spinner()}</div>;
