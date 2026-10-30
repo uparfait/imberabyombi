@@ -69,3 +69,4 @@ export const pick = {
   },
   keys(e) {
     const t = e.target, k = e.key, items = () => qsa('.pk_item:not([hidden]):not([disabled]), .pk_mon', this.el);
+    if (k === 'Tab') return this.close(true);
