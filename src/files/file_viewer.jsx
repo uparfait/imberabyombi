@@ -16,3 +16,4 @@ function Text_view({ f }) {
     f.slice(0, 512e3).text().then(s => { if (live) set_text(s + (f.size > 512e3 ? '\n\n… The preview shows the first 512 KB.' : '')); });
     return () => { live = false; };
   }, [f]);
+  return <pre className="m-0 min-h-[12rem] whitespace-pre-wrap rounded-none text-sm" data-text="">{text ?? spinner('mx-auto')}</pre>;
