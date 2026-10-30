@@ -22,6 +22,7 @@ export const request_card = (d, r) => <section className="card p-5">
     : null}
   {/* a copy as soon as anyone has signed: the signatures given so far are shared; empty places are not drawn */}
   {d.recipients.some(x => x.status === 'signed') ? <button type="button" className="btn btn_outline btn_sm mt-4 w-full" data-act="sign_dl" data-id={d.id}>
+    {ic('download', 'h-4 w-4')}Download a copy</button> : null}</section>;
 
 export const note_card = (d, r) => r.note ? <section className="card sign_note_card p-5"><h2 className="sign_cap">Note from {d.owner_name}</h2>
   <p className="mt-2 whitespace-pre-line text-sm">{r.note}</p></section> : null;
