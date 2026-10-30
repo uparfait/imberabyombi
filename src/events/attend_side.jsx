@@ -21,3 +21,4 @@ export function attend_side(e, c, st) {
     <div className="ev_att_side"><a href={to(page + '/attendance')} className="ev_count"><b>{n}</b> attended</a>
       {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={url} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button> : null}
       <div className="relative"><button type="button" className="btn btn_outline btn_sm w-full justify-between" data-act="pop" data-pop={`pop_links_${e.id}`} aria-haspopup="menu">
+        Open{ic('chev_u', 'h-4 w-4')}</button>
