@@ -16,3 +16,4 @@ const note_chip = r => <button type="button" className="sign_chip" data-act="sig
   aria-label={`${OPEN.has(r.id) ? 'Hide' : 'Show'} the note for ${r.name}`}>{ic('note', 'h-3.5 w-3.5')}Note{ic('chev_d', 'sign_chev h-3.5 w-3.5')}</button>;
 const cert_chip = r => <span className={`sign_chip ${r.cert_at ? 'ok' : ''}`} data-tip={r.cert_at
   ? `${r.cert_file} · verified ${when(r.cert_at)}` : CERT_HELP}>
+  {ic('shield', 'h-3.5 w-3.5')}{r.cert_at ? 'Digital signature verified' : 'Digital signature'}</span>;
