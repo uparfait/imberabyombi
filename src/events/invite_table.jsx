@@ -26,3 +26,4 @@ export const INVITE_TABLE_ACT = {
   ev_inv_save: t => save(t.dataset.id, t.dataset.e, qs('.ev_inv_input')),
   ev_inv_stop: stop,
   ev_uninvite: t => ask(`Remove ${t.dataset.e} from the invitations? They will not get any more emails about this event.`, () => {
+    const e = db.find('events', t.dataset.id); db.upsert('events', { id: e.id, invites: (e.invites || []).filter(i => i.e !== t.dataset.e) }); rerender();
