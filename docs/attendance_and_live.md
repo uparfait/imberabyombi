@@ -30,6 +30,7 @@ description apart, its presenter, the time it has left and its progress; the age
 Add and Transfer until it is over); the time left above a large QR code (full screen on a click; an empty place before
 attendance opens, "Finished" after), the count and the link. **Menu** (tiles): Record/View minutes, Add task
 (Follow-ups), Attendees, Full screen.
+- **The agenda on the whole screen** (the now card's full-screen button, [`track_full.jsx`](../src/events/track_full.jsx)):
 
 ## Minutes and follow-ups
 - **Record/View minutes** (Open This Event) opens the document editor on that day's own document,
