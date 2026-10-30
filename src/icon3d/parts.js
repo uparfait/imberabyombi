@@ -39,6 +39,7 @@ export function vol(id, o, k = 1) {
   if (o.goo && o.goo * k >= PX.goo) {
     /* goo: blur, then a steep alpha ramp (threshold at alpha ≈ .17, which thickens the shape by ≈ .93 goo). The ramp is
        PX.edge device px wide at every size, a real anti-aliased edge; a goo under PX.goo px could neither round nor
+       thicken anything visible, so it is skipped and the shape's own anti-aliased edge is kept. */
     + `<feComposite in="s" in2="${g}" operator="in" result="s2"/><feComposite in="c" in2="s2" operator="arithmetic" k2="1" k3="1" result="o"/>`
     + `<feComposite in="o" in2="${g}" operator="in"/></filter>`;
 }
