@@ -19,3 +19,4 @@ const theme = () => { const html = document.documentElement, dark = !html.classL
 export const top_bar = () => <header className="qr_top">
   <span className="qr_brand" aria-hidden="true">{ic('qr', 'h-5 w-5')}</span><h1 className="qr_name">Qr-scan</h1>
   <div className="ml-auto flex items-center gap-1">
+    {can_install() ? <button type="button" className="btn btn_primary btn_sm" onClick={install}>{ic('download', 'h-4 w-4')}Install</button>
