@@ -52,3 +52,5 @@ Every feature below is working code. Each line says what it is and where it live
   rentals, declarations), events, reservations and inventory (approve/reject, stock levels), smart parking (live slot
   grid, check-in/out with fees), roles and access (matrix, landing pages, invite links), email designs, settings
   (theme, live tokens, storage, backup export/import, demo reset, profile).
+
+## Document editor (`src/editor/`, `/admin/docs`)
