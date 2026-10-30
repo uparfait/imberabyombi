@@ -1,3 +1,4 @@
 /* styles/sign/01_layout.css: O-Doc Sign's window: its top bar, the lists, the upload box, the prepare page (signers · pages
    · tools) and the document pages (pages · progress). It is made for computers: one layout at every width, never a phone
    layout and never a sideways scroll. Where the window is narrower than 1280 px it is laid out 1280 px wide and scaled
+   down to fit (sign_page.jsx): phones and tablets through the viewport, a narrow computer window through --sign_z (the
