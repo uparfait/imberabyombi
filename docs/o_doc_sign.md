@@ -47,3 +47,4 @@ every account starts empty.
 
 ## Signing
 - The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
+  their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
