@@ -7,3 +7,4 @@ import { rerender } from '../store/index.js';
 import { notify, form_msg } from '../feedback/index.js';
 import { modal } from '../overlays/index.js';
 import { go } from '../router/index.js';
+import { find_doc, my_rec, KINDS, log, save_doc } from './sign_store.js';
