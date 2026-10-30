@@ -39,3 +39,4 @@ export function live_page(id, c) {
         {it.p_name ? <p className="live_who">{it.p_name}{it.p_title ? `, ${it.p_title}` : ''}</p> : null}<progress max="100" value={done} aria-label="How far it has got"></progress></>
         : <><p className="att_kind">{next ? `Next · ${span(next)}` : 'Agenda'}</p><h2 className="live_now_t">{next ? next.title : ag.length ? 'Done' : 'No agenda'}</h2>
           {next?.p_name ? <p className="live_who">{next.p_name}{next.p_title ? `, ${next.p_title}` : ''}</p> : null}</>}</div>
+      {ag.length ? <ol className="card live_agenda">{ag.map((a, i) => <li key={i} className={i === now_i ? 'is_now' : mins(a.to) <= now_m && now_i > -1 ? 'is_done' : ''}>
