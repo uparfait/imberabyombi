@@ -63,3 +63,4 @@ function use_desktop() {
 }
 
 export function Sign_page() {
+  use_desktop();
