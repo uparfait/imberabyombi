@@ -3,7 +3,7 @@
       but for a small margin on phones). All of them are demos: any details are accepted. ──
    account/auth_shell.jsx: that shell, the links to the other account pages, and the password field with its eye button. */
 import { ic } from '../icons/index.js';
-import { logo, theme_btn } from '../ui/index.js';
+import { logo, theme_btn, help_tip } from '../ui/index.js';
 import { cfg } from '../config/index.js';
 import { to } from '../router/index.js';
 
