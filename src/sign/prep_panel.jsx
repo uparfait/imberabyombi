@@ -54,3 +54,4 @@ export const prep_panel = d => <div className="sign_panel">
       <div className="field"><label htmlFor="sign_r_email">Email</label>
         <input id="sign_r_email" name="email" type="email" required maxLength={120} placeholder=" " autoComplete="off" /></div>
       <div className="field"><label htmlFor="sign_r_note">Note for this signer (optional)</label>
+        <textarea id="sign_r_note" name="note" rows={2} maxLength={500} placeholder=" " /></div>
