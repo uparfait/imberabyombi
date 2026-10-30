@@ -6,3 +6,4 @@ import { cfg } from '../config/index.js';
 import { route } from '../store/index.js';
 import { request, staff_page } from '../feedback/index.js';
 import { pick, pick_at, tip, close_dialog } from '../overlays/index.js';
+import { file_box } from '../files/index.js';
