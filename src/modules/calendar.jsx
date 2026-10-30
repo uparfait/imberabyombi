@@ -17,6 +17,7 @@ const views = wk => <div className="seg" role="radiogroup" aria-label="Calendar 
   <span>{cap(v)}</span></label>)}</div>;
 
 VIEWS.calendar = () => {
+  const id = route.path.split('/')[3]; if (id) return event_page(id, 'activities');   /* one activity: its page */
   const d = parse_d(ui.cal_date), wk = ui.cal_view !== 'month', items = cal_items(), can = auth.can('calendar', 2);
   after_render(() => { const s = qs('#date_hours'); if (s) s.scrollTop = 7 * 3 * rem(); });
   const grid = wk ? week_grid(d, items) : month_grid(d, items);
