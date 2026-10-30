@@ -7,3 +7,4 @@ import { initials } from '../ui/index.js';
 import { to } from '../router/index.js';
 import { signed_n, my_turn, when, ago, kept_for_good } from './sign_store.js';
 import { Pdf_pages } from './pdf_pages.jsx';
+import { fields_on } from './sign_fields.jsx';
