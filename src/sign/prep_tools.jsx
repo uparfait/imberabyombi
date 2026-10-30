@@ -3,6 +3,7 @@
    click or drop one where they are dragged; what is placed so far; at its foot, Preview once someone has signed). */
 import { ic } from '../icons/index.js';
 import { KINDS, send_block, shown } from './sign_store.js';
+import { self_part, preview_foot } from './self_sign.jsx';
 import { P } from './prep_state.js';
 import { help_tip } from '../ui/index.js';
 
