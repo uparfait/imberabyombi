@@ -48,3 +48,4 @@ export const SHELL_ACT = {
     setTimeout(() => { t.querySelector('path')?.setAttribute('d', t._was[0]); if (s) s.textContent = t._was[1]; t._was = null; t.classList.remove('done'); }, 1600); },
   /* Help icon: a tap shows its tooltip on touch screens (hover and keyboard focus show it already) */
   help_tip: t => tip.show(t),
+  otp_resend: t => { form_msg(t.form, 'ok', 'Code sent', 'A new 6-digit code is on its way to your email.'); resend_in(30); },
