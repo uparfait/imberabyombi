@@ -9,3 +9,4 @@ export * from './sub_act.js';
 export * from './task_files.jsx';
 export * from './tv_editor.jsx';
 export * from './tv_state.js';
+export * from './task_view_rows.jsx';
