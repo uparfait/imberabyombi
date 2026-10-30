@@ -6,3 +6,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
 
 ## What follows it
 - **Today and now**: `ymd()`, `hm()` and `now_dt()` read the page's clock (`page_now()`), so the calendar's today, the
+  dashboard's date, the date picker's Today, new records' default dates and times, and the attendance clock follow it.
