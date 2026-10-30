@@ -36,6 +36,7 @@ export function live_page(id, c) {
   const done = it ? Math.min(100, Math.max(0, (now_m - mins(it.from)) / Math.max(1, mins(it.to) - mins(it.from)) * 100)) : 0;
   const can = auth.can(c === 'events' ? 'events' : 'calendar', 2) && st !== 'Past';
   const head = (title, sec) => <div className="live_head"><h2>{title}</h2>
+    {can ? <button type="button" className="ev_edit" data-act="ev_edit" data-col={c} data-id={id} data-sec={sec} aria-label={`Edit ${title.toLowerCase()}`}>{ic('edit', 'h-3.5 w-3.5')}Edit</button> : null}</div>;
   return <div className="live">
     <header className="live_top"><a href={to(page)} className="icon_btn" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
       <div className="live_acts">{tile_menu({ id: `pop_live_${id}`, title: e.title, icon: 'grid', label: 'Menu', tiles: [
