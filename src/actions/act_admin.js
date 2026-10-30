@@ -30,3 +30,4 @@ export const ADMIN_ACT = {
     if (next) { refresh_panel(); slide(); } else anim([{ opacity: 1 }, { opacity: 0 }], 220);
     const sp = qs('#side_panel'); if (sp) sp.dataset.open = !!next; setTimeout(redraw_charts, 320); },
   note_del: t => { db.set('notes', db.get('notes', []).filter(n => n.id !== t.dataset.id)); refresh_panel(); },
+  tz_device: () => { db.del('pageTz'); rerender(); notify('Times follow this device\'s time zone again.', 'ok', 'Time zone changed'); },
