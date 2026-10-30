@@ -9,3 +9,4 @@ import { Qr } from './qr.jsx';
 addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) qsa('.qr_full').forEach(el => { el.hidden = true; }); });
 
 export const qr_full = (e, url, n) => <div id={`qr_full_${e.id}`} className="qr_full" hidden role="dialog" aria-label="Attendance QR code">
+  <div className="qr_full_code"><Qr text={url} label="Attendance QR code" /></div>
