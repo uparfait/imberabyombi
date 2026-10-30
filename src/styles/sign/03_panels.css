@@ -8,3 +8,4 @@
 .sign_cap_row { display: flex; align-items: center; gap: .25rem; margin: -.375rem 0 .125rem; }
 .sign_cap_row .sign_cap { margin: 0; }
 .sign_cap { margin-bottom: .5rem; color: rgb(var(--muted)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.sign_title { width: 100%; margin-top: .625rem; padding: .125rem 0; border: 0; border-bottom: 1px solid transparent; background: transparent;
