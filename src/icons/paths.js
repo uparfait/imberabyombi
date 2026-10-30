@@ -33,6 +33,7 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   trash: 'M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6',
   x: 'M18 6 6 18M6 6l12 12',
   chev_d: 'm6 9 6 6 6-6', chev_u: 'm18 15-6-6-6 6', chev_r: 'm9 18 6-6-6-6', chev_l: 'm15 18-6-6 6-6',
+  qr: 'M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM7 7h.01M17 7h.01M7 17h.01M14 14h2v2h-2zM18 14h2M14 18v2M18 18h2v2h-2z',
   bell: 'M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0',
   grid: 'M4 4h3v3H4zM10.5 4h3v3h-3zM17 4h3v3h-3zM4 10.5h3v3H4zM10.5 10.5h3v3h-3zM17 10.5h3v3h-3zM4 17h3v3H4zM10.5 17h3v3h-3zM17 17h3v3h-3z',
   mail: 'M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6',
