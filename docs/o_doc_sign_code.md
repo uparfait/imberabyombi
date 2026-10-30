@@ -18,3 +18,5 @@ documents between people and devices, keep these records and files on a server (
 - **pdf.js** (shows the pages) is the copy the document editor loads from the CDN on first use.
 - **pdf-lib** (writes the signed PDF) loads from the CDN the first time someone downloads.
 - The five handwriting fonts are served with the site (`src/assets/fonts/`, open font licence) and load only when shown.
+
+## Files
