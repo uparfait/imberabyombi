@@ -32,9 +32,7 @@
   .nav_row.is_pinned > .relative { min-width: 4.75rem; }   /* short on room: names trim, but icon + arrow always fit */
   .nav_row.is_pinned > .relative:last-child:not(:first-child) { flex-shrink: 12; }   /* the deepest (usually the longest) name trims first */
   @media (max-width: 639px) {
-    html.nav_docked .nav_row.is_pinned .tile_trigger { gap: .25rem; padding: 0 .75rem; }   /* docked on a phone: the names stay, trimmed */
-    html.nav_docked .nav_row.is_pinned .tile_trigger > :not(.truncate) { display: none; }
-    html.nav_docked .nav_row.is_pinned > .relative { min-width: 3rem; } }
+    /* docked on a phone: the names stay, trimmed, and the arrow stays (it shows the button opens a menu); the icon goes */
   /* A usual dropdown under its button. Many tiles: the title stays, only the tiles scroll; the menu never runs off the screen.
      Phones: as wide as the screen allows (8px from each edge), still right under its button. */
   .tile_pop:not([hidden]) { display: flex; flex-direction: column; overflow: hidden; }
