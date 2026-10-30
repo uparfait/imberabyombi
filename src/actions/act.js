@@ -29,7 +29,7 @@ export const ACT = new Proxy(OWN, {
    page, sort, switch tab, week or template…). Both show the top #loader on staff pages. On public and sign-in pages a get
    runs at once with no loader (there is nothing to fetch there). */
 export const REQ = { view: 2, row: 2, viz_open: 2, viz_page: 2, edit: 2, ev: 2, page: 2, sort: 2, tab: 2, mail: 2, report: 2, role_sel: 2, cal_nav: 2, cal_today: 2, goday: 2,
-  task_open: 2, clock: 1, return: 1, res: 1, data_export: 1, tok_reset: 1, note_del: 1, tz_save: 1 };
+  task_open: 2, clock: 1, return: 1, res: 1, data_export: 1, tok_reset: 1, note_del: 1, tz_save: 1, ev_restore: 1, ev_done: 1 };
 
 /* a module loaded on demand (O-Doc Sign) adds its buttons' handlers when its code arrives: add_act(handlers, requests) */
 export const add_act = (acts, req = {}) => { Object.assign(OWN, acts); Object.assign(REQ, req); };
