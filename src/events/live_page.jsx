@@ -6,6 +6,7 @@
    sign-ins at once. */
 import { tz_parts, page_tz, fmt_time, fmt_d, zone_short } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
+import { auth } from '../auth/index.js';
 import { ic } from '../icons/index.js';
 import { empty } from '../ui/index.js';
 import { to } from '../router/index.js';
