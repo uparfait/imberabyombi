@@ -55,6 +55,7 @@ every account starts empty.
   and a field for every signer; what is missing shows in a dialog. Sent, the document leaves Drafts for Waiting.
 
 ## Signing it yourself
+- Under **Save draft**, **Sign it myself** (in ink, apart from Send and Save) adds you to the signers as **You** and picks
 ## Signing
 - The signer sees only their own part: the sender's note and their own fields (pulsing). Not the other signers, and of
   their fields only what they have already signed. **Next field** goes to the next one; a mark made once is placed on the
