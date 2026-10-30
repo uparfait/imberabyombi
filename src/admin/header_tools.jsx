@@ -2,3 +2,4 @@
    them, or just account_menu() (O-Doc Sign's top bar); n is an id suffix so their menus stay unique. */
 import { ic } from '../icons/index.js';
 import { db } from '../store/index.js';
+import { cfg } from '../config/index.js';
