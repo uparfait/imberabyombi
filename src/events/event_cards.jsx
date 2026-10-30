@@ -7,3 +7,4 @@ import { bar_cell, dash, tag } from '../ui/index.js';
 import { KINDS } from '../schemas/index.js';
 
 const SECS = ['Details', 'When', 'Location', 'Organiser', 'Audience'];
+const out = (href, text) => <a href={href} className="ev_link" target={href.startsWith('http') ? '_blank' : undefined} rel="noreferrer">{text}</a>;
