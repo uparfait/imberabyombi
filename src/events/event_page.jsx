@@ -19,6 +19,7 @@ import { attend_side } from './attend_side.jsx';
 const T = { timeStyle: 'short' }, D = t => ({ month: 'short', day: 'numeric', ...(fmt_stamp(t, { year: 'numeric' }) === fmt_stamp(Date.now(), { year: 'numeric' }) ? {} : { year: 'numeric' }) });
 const span = ([a, b]) => fmt_stamp(a, D(a)) === fmt_stamp(b, D(b)) ? `${fmt_stamp(a, D(a))} · ${fmt_stamp(a, T)} – ${fmt_stamp(b, T)}`
   : `${fmt_stamp(a, D(a))}, ${fmt_stamp(a, T)} – ${fmt_stamp(b, D(b))}, ${fmt_stamp(b, T)}`;
+
 const HELP = { events: 'Every detail, by section. Edit a section on its own; postpone, cancel or restore it on the right.',
   activities: 'Every detail, by section. Edit a section on its own.' };
 const acts_ok = c => auth.can(c === 'events' ? 'events' : 'calendar', 2);
@@ -27,8 +28,7 @@ const ROOT = { events: ['/admin/events', 'events', 'Event'], activities: ['/admi
 const ACTS = [
   ['ev_postpone', 'Postpone', 'clock', ['Upcoming', 'Recurring']], ['ev_postpone', 'Change the new date', 'calendar', ['Postponed']],
   ['ev_restore', 'Back on schedule', 'check', ['Postponed', 'Cancelled']], ['ev_done', 'Mark as completed', 'check', ['Live']],
-  ['ev_stop', 'Stop repeating', 'x', ['Recurring']], ['ev_copy', 'Duplicate', 'copy', null],
-  ['ev_cancel', 'Cancel event', 'x', ['Upcoming', 'Live', 'Recurring', 'Postponed']], ['ev_del', 'Delete', 'trash', null]
+  ['ev_stop', 'Stop repeating', 'x', ['Recurring']],
 ];
 const side = (e, c, st, acts, t = count_to(e, st), r = st === 'Past' && ran(e)) => <aside className="card ev_card ev_side" aria-label="Status and actions">
   <h3 className="ev_side_title">Status</h3><div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">{badge(st)}
