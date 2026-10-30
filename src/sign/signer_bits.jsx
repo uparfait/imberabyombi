@@ -30,3 +30,4 @@ export const prep_opts = (r, on) => <div className="sign_opts">
 export const doc_opts = r => r.cert || r.note ? <div className="sign_opts">
   {r.cert ? row(r.cert_at ? 'Digital signature verified' : 'Digital signature', !!r.cert_at,
     { 'data-tip': r.cert_at ? `${r.cert_file} · verified ${when(r.cert_at)}` : CERT_HELP }) : null}
+  {r.note ? notes(r) : null}</div> : null;
