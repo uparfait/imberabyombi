@@ -9,3 +9,4 @@ const DONE = ['Completed', 'Done', 'Closed'];
 const HOURS_2 = 2 * 3600e3;   /* an event with no end time lasts two hours */
 
 /* running on day date: started and not ended */
+const runs = (e, date, now) => { const s = at(date, e.start, e.tz), end = e.end ? at(date, e.end, e.tz) : s + HOURS_2; return now >= s && now < end; };
