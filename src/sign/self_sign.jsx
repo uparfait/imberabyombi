@@ -50,6 +50,7 @@ function Self_view({ id }) {
   const done = r.status === 'signed';
   return <>{head(d, null)}<div className="sign_self_view">
     <div className="sign_preview overflow-auto"><Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: done ? 'view' : 'sign', marks, pending: done ? null : S.pending, me: r.id })} /></div>
+    <aside className="sign_self_side">{done ? <section className="card p-5"><p className="sign_self_done">{ic('check', 'h-4 w-4 shrink-0')}Signed by you</p>
 export const SELF_ACT = {
   sign_self: () => { const me = who(); if (!me.email) return;
     const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
