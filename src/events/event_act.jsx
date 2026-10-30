@@ -13,7 +13,7 @@ import { when_row } from '../fields/index.js';
 import { go } from '../router/index.js';
 import { INVITE_ACT } from './event_invites.jsx';
 
-const SEC_TITLE = { Details: 'Edit details', When: 'Edit date and time', Location: 'Edit location', Organiser: 'Edit organiser', Audience: 'Edit audience' };
+const SEC_TITLE = { Details: 'Edit details', When: 'Edit date and time', Location: 'Edit location', Organiser: 'Edit organiser', Agenda: 'Edit agenda',
 const save = (id, d, title, text) => { db.upsert('events', { id, ...d }); rerender(); notify(text, 'ok', title); };
 const told = e => e.invites?.length ? ` The ${e.invites.length} people invited were told by email.` : '';
 const reason = (v = '') => <div key="reason" className="field sm:col-span-2"><label htmlFor="ev_reason">Reason (optional)</label>
