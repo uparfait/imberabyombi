@@ -5,3 +5,4 @@ import { cfg } from '../config/index.js';
 import { lorem, fmt_stamp } from '../lib/index.js';
 import { route, ui } from '../store/index.js';
 import { page_title } from '../ui/index.js';
+import { tile_menu } from '../admin/index.js';
