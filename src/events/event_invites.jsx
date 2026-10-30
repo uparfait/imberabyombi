@@ -45,3 +45,4 @@ export const INVITE_ACT = {
 };
 
 export function invites_card(e, st, can) {
+  if (wait.id !== e.id) Object.assign(wait, { id: e.id, list: [], note: '' });
