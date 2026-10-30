@@ -5,7 +5,7 @@
 import { pad, tz_parts, page_tz, repeat_next, ymd, add_d, parse_d } from '../lib/index.js';
 import { at } from '../schemas/index.js';
 
-export const ATT_DEF = { before: 15, after: 15 };
+export const ATT_DEF = { before: 0, after: 0 };
 const mins = (v, d) => v === '' || v == null || isNaN(+v) ? d : Math.max(0, +v);
 export const att_mins = e => [mins(e.att_before, ATT_DEF.before), mins(e.att_after, ATT_DEF.after)];
 
