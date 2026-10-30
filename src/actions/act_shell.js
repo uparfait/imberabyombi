@@ -40,3 +40,4 @@ export const SHELL_ACT = {
     t.setAttribute('aria-expanded', !closed); f.dataset.closed = closed; f.inert = closed; },
   scroll: t => { const el = document.getElementById(t.dataset.to); el?.scrollIntoView({ behavior: 'smooth', block: 'start' }); if (t.dataset.to === 'main') el?.focus?.(); },
   top: () => scrollTo({ top: 0, behavior: 'smooth' }),
+  logout: () => { close_pops(); ask('Sign out? You will need to sign in again to keep working.', () => { auth.logout(); notify_next('Sign in again to keep working.', 'info', 'Signed out'); close_dialog(qs('#modal')); go('/login'); }, 'Sign out', true); },
