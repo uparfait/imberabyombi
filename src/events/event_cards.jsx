@@ -34,6 +34,7 @@ const ROWS = {
       {a.p_name ? <span className="text-sm">{a.p_name}{a.p_title ? `, ${a.p_title}` : ''}</span> : null}{a.desc ? <span className="text-sm text-muted">{a.desc}</span> : null}</div>,
     i === now ? 'ag_now' : '']) : [['Items', null]]; },
   Audience: (e, c) => [['Expected', e.audience ? `${e.audience} people` : null], e.capacity ? ['Capacity', e.capacity] : null,
+    ['Attended', <a href={to(`${BASE[c]}/${e.id}/attendance`)} className="ev_link">{`${att_count(e.id)} people`}</a>]]
 };
 
 const group = (e, s, can, c) => <Fragment key={s}><tr className="kv_group"><th scope="colgroup" colSpan={2}><div className="ev_group">{s}
