@@ -30,3 +30,4 @@ src/assets/fonts/     the three typefaces (woff2) and their licence
 | `files/`     | `File_box` (file field with tiles), file viewer, file helpers                                |
 | `table/`     | `crud()` data tables, column filters, pager, table settings, full screen, details view, forms, export |
 | `site/`      | public website: header, footer, home sections, detail pages, long-form pages                |
+| `account/`   | sign in, forgot password, 2-step code, authenticator app, set password                      |
