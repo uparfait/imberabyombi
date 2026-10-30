@@ -27,3 +27,4 @@ export function tz_parts(tz, t) {
   return { y: +o.year, mo: +o.month, d: +o.day, h: (+o.hour) % 24, mi: +o.minute, s: +o.second };
 }
 /* tz's offset from UTC at instant t, in minutes */
+export function offset_min(tz, t) {
