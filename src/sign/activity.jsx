@@ -10,3 +10,4 @@ const ACTS = { upload: ['upload', 'uploaded it'], send: ['send', 'sent it to'], 
   sign: ['signature', 'signed'], archive: ['archive', 'archived it'], restore: ['restart_alt', 'restored it'] };
 /* entries saved before they carried their action read it from their sentence */
 const RE = [['sign', / signed$/], ['open', / opened the document$/], ['cert', / verified their digital certificate/], ['send', / sent it to /], ['upload', / uploaded /], ['done', /^Everyone signed/]];
+const act_of = a => a.act || RE.find(([, re]) => re.test(a.t))?.[0] || '';
