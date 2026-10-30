@@ -24,6 +24,7 @@ export const kind_spec = () => field_spec('kind', 'Type', 'seg', KINDS, 1, { def
 const PLACE_HELP = 'Physical: it happens in a place; add the venue or address. Virtual: it happens online; add the meeting link '
   + 'and any notes on joining, such as a passcode.';
 export const where_f = () => [field_spec('place', 'Location', 'seg', [['Physical', 'Physical'], ['Virtual', 'Virtual']], 1, { def: () => 'Physical', help: PLACE_HELP }),
+  field_spec('venue', 'Venue or address', 'text', 0, 0, { when: 'place=Physical' }), field_spec('link', 'Meeting link', 'text', 0, 0, { when: 'place=Virtual' }),
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
 export const repeat_spec = () => field_spec('repeat', 'Repeats', 'repeat');
 export const repeat_in = (d, f) => { for (const k of Object.keys(d)) if (k.startsWith('rp_')) delete d[k];
