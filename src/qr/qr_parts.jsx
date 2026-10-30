@@ -12,6 +12,9 @@ export function Install() {
   return <span className="relative"><button type="button" className="qr_round sm qr_install" onClick={add} aria-label="Install Qr-scan" title="Install"
     aria-expanded={can_install() ? undefined : tip}>{ic('download', 'h-5 w-5')}</button>
     {tip ? <p className="qr_tip" role="status">{ic('upload', 'h-4 w-4 shrink-0')}Tap Share, then Add to Home Screen</p> : null}</span>;
+}
+
+function Copy({ text, cls }) {
   const [ok, set] = useState(false);
   const copy = () => navigator.clipboard?.writeText(text).then(() => { set(true); setTimeout(() => set(false), 1500); }, () => {});
   return <button type="button" className={cls} onClick={copy} aria-label={label || 'Copy'} title={label ? undefined : 'Copy'}>
