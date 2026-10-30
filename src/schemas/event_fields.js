@@ -45,6 +45,7 @@ export const org_f = () => [field_spec('org_name', 'Name', 'text', 0, 1, { def: 
   field_spec('org_email', 'Email', 'email', 0, 1, { def: () => auth.user?.email || '' }), field_spec('org_tel', 'Phone', 'tel'),
   field_spec('co_orgs', 'Co-organisers', 'people', 0, 0, { add: 'Add co-organiser' })];
 /* the agenda: items with times, a title, a description and a presenter */
+export const agenda_spec = () => field_spec('agenda', 'Agenda', 'agenda');
 export const audience_spec = () => field_spec('audience', 'Expected audience', 'number', 0, 0, { min: 1 });
 
 /* how a recurring one repeats (shown while the type is Recurring); saved as one rule, not as the form's rp_ fields */
