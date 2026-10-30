@@ -39,3 +39,4 @@ export function mini_cal() {
     {'SMTWTFS'.split('').map((x, i) => <span key={'w' + i} className="py-1" aria-hidden="true">{x}</span>)}
     {Array.from({ length: 42 }, (_, i) => { const x = add_d(s, i), k = ymd(x);
       return <button key={i} className={`relative mx-auto grid h-8 w-8 place-items-center rounded-full text-xs transition ${day_cls(k, td, f.getMonth(), x)}`}
+        data-act="goday" data-d={k} aria-label={fmt_d(k)}>{x.getDate()}
