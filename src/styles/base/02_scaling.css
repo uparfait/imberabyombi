@@ -25,6 +25,7 @@
      the page is frozen behind open dialogs / the phone menu, and overlays never pass their scroll to the page. */
   html { scrollbar-gutter: stable; }
   /* ...but none where the page never scrolls: full-window pages (the editor, Open This Event), something on the whole
+     screen (which also stops the page behind from scrolling) */
   html:has(dialog[open]), html:has(#sidebar_scrim.on) { overflow: hidden; }
   :where(dialog, dialog *, #picker, #sidebar_scroll, .panel_in) { overscroll-behavior: contain; }
   body {
