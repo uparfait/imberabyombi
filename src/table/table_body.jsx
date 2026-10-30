@@ -39,3 +39,4 @@ export function table_body(c) {
   if (render_flags.nav_fetched) loaded.add(c);
   if (!loaded.has(c)) {
     after_render(() => wait_load(c));
+    return { acts: false, count: 0, pager: null,
