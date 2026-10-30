@@ -29,7 +29,7 @@
   .kv_pen:hover { background: rgb(var(--fg) / .06); color: rgb(var(--fg)); }
   @media (hover: none) { .kv_pen { opacity: 1; } }
   .tv_sub + .tv_sub { margin-top: .75rem; padding-top: .75rem; border-top: 1px dashed rgb(var(--line)); }
-  .task_preview { margin-top: .75rem; padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; background: rgb(var(--surface_2) / .5); }
+  .task_preview { margin-top: .75rem; padding: .75rem; border: 1px solid rgb(var(--line)); border-radius: 1rem; background: rgb(var(--fg) / .05); }
   .task_pre { max-height: 15rem; overflow-y: auto; margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .8125rem; }
   .task_file_open { display: flex; min-width: 0; flex: 1; align-items: center; gap: .625rem; text-align: left; }
   .task_file:has(.task_file_open.active) { background: rgb(var(--brand) / .08); }
