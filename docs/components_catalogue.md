@@ -24,3 +24,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.selectable`                           | lets people select (copy) the text inside it                     |
 | `.help_tip`                             | help icon after a title; its text shows in the tooltip           |
 | `.brand_toggle`                         | collapsed sidebar: logo that becomes "open sidebar" on hover     |
+| `.date_hint`                            | the format hint shown while typing a date or time                |
