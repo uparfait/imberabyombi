@@ -10,3 +10,4 @@
   border-radius: 1rem; background: #fff; color: #16204A; transition: border-color .2s; }
 .sign_style:hover { border-color: rgb(var(--brand) / .5); }
 .sign_style.on { border-color: rgb(var(--brand)); }
+.sign_style > span { max-width: 100%; overflow: hidden; padding: 0 .25rem; font-size: 1.625rem; line-height: 1.3; white-space: nowrap; text-overflow: ellipsis; }
