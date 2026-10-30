@@ -29,7 +29,7 @@ const event_card = (e, i) => <a key={e.id} href={to('/admin/events/' + e.id)} cl
   <figcaption className="absolute left-3 top-3 m-0 rounded-2xl bg-surface px-3 py-1.5 text-center leading-none"><time dateTime={e.date}>
     <b className="block font-display text-xl text-fg">{parse_d(e.date).getDate()}</b>
     <small className="text-[0.6875rem]">{parse_d(e.date).toLocaleDateString(undefined, { month: 'short' })}</small></time></figcaption></figure>
-  <div className="p-5"><div className="flex items-center justify-between gap-2">{badge(e.status)}<span className="text-xs text-muted">{e.start || ''}</span>
+  <div className="p-5"><div className="flex items-center justify-between gap-2">{badge(ev_state(e))}<span className="text-xs text-muted">{e.start || ''}</span>
     </div><h3 className="mt-3 text-lg">{e.title}</h3>
     <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">{ic('pin', 'h-4 w-4')}{e.venue || '—'}</p><div className="mt-4">
       {bar_cell(e.registered, e.capacity)}</div></div></article>;
