@@ -6,3 +6,4 @@ import { before_render } from '../store/index.js';
 export const TIPS = '[data-tip], .icon_btn[aria-label], .truncate, .trunc';
 export const tip = {
   el: document.getElementById('tip'), on: null, t: 0, t2: 0,
+  text(x) { return x.matches('.truncate, .trunc') ? (x.scrollWidth > x.clientWidth + 1 ? x.textContent.trim() : '') : x.dataset.tip || x.getAttribute('aria-label') || ''; },
