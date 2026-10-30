@@ -11,7 +11,7 @@ import { badge, bar_cell, tabs, stat_row } from '../ui/index.js';
 import { slot_ids } from '../schemas/index.js';
 import { crud } from '../table/index.js';
 import { to, go } from '../router/index.js';
-import { event_page, attendance_page, live_page, ev_state, in_state, EV_STATES } from '../events/index.js';
+import { event_page, live_page, ev_state, in_state, EV_STATES } from '../events/index.js';
 
 const returned = (r, can) => can && r.status === 'Rented' ? <button className="btn btn_soft btn_sm" data-act="return" data-id={r.id}>Mark returned</button> : null;
 VIEWS.library = () => {
