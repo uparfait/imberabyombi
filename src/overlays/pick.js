@@ -47,3 +47,4 @@ export const pick = {
     else if (t === 'time') h = PK.times(to24(a.value));
     else { kind = 'cal'; h = this.mode === 'years' ? PK.years() : t === 'month' ? PK.months(a) : t === 'datetime-local' ? `<div class="pk_dt">${PK.cal(a)}${PK.times(to24(a.value.slice(11)))}</div>${PK.foot('Now')}` : PK.cal(a); }
     el.dataset.kind = kind; el.dataset.type = t; el.innerHTML = h; el.hidden = !h; if (!h) return;
+    this.place();
