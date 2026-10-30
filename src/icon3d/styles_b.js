@@ -16,7 +16,7 @@ export function clay(G, C, i, k) {
   return [lin(i + 'a', [[0, shade(C.p, 12, -4)], [.6, C.p], [1, dk]]) + lin(i + 'r', [[0, '#fff', .6], [.3, '#fff', 0]])
     + vol(i + 'v', { bevel: 9, surf: 4, spec: .4, exp: 10, shade: .7 }, k) + vol(i + 'w', { goo: 2.5, bevel: 3.5, surf: 4, spec: .9, exp: 20, shade: .45 }, k)
     + `<filter id="${i}d" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="${shade(C.p, -32)}" flood-opacity=".5"/></filter>`,
-    `<rect ${tile(33)} fill="${shade(dk, -20)}"/><g filter="url(#${i}v)"><rect ${tile(24)} fill="url(#${i}a)"/></g>`
+    `<rect ${tile(33)} fill="${deep(dk, -20, k)}"/><g filter="url(#${i}v)"><rect ${tile(24)} fill="url(#${i}a)"/></g>`
     + `<rect ${tile(24)} fill="none" stroke="url(#${i}r)" stroke-width="2"/>`
     + `<g filter="url(#${i}d)"><g filter="url(#${i}w)">${use(i + 'G', 60, 54, 80, C.ht ? C.t : '#ffffff')}</g></g>`];
 }
