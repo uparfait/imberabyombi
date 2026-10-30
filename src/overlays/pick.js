@@ -18,3 +18,4 @@ export const slide_in = (els, n) => { if (reduced()) return; [...els].forEach((g
   : [{ opacity: 0, transform: 'scale(.97)' }, { opacity: 1, transform: 'none' }], { duration: 280, easing: 'cubic-bezier(.22,.8,.22,1)' })); };
 export const FINE = () => matchMedia('(pointer: fine)').matches;
 /* a multiple select shows its choices in the .multi_value element after it (rendered EMPTY by React) */
+export const ms_sync = s => { const v = s.nextElementSibling; if (v?.matches('.multi_value')) v.textContent = [...s.selectedOptions].map(o => o.text).join(', '); };
