@@ -29,3 +29,4 @@ export function nav_page(o) {
   if (kids) return <>{head(o, node ? node.i : 'layers', lorem.p(1))}
     <section className="mt-6" aria-label={`In ${title}`}><h3 className="mb-3 text-lg">{`In ${title}`}</h3>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 xl:grid-cols-5">{kids.map((it, i) => tile(o, it, i))}</div></section></>;
+  const top = head(o, node.i, lorem.s(), <div className="flex flex-wrap gap-2"><button className="btn btn_primary btn_sm">{ic('edit', 'h-4 w-4')}Edit</button>
