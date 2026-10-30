@@ -5,3 +5,4 @@
    (public/qr-scan/manifest.webmanifest), and the tab and home-screen icons the same. brand() is that colour. */
 import { cfg } from '../config/index.js';
 import { render } from '../icon3d/index.js';
+import { HASH, HASH_VIEW } from '../icons/index.js';
