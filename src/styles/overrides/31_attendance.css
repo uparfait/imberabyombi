@@ -38,3 +38,4 @@
   .qr_full_title { font-family: var(--font_display); font-size: clamp(1.75rem, 3vw, 3rem); font-weight: 500; line-height: 1.1; overflow-wrap: anywhere; }
   .qr_full_count { color: rgb(var(--muted)); font-size: 1.125rem; } .qr_full_count b { color: rgb(var(--fg)); font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 600; }
   .qr_full_x { position: absolute; top: 1rem; right: 1rem; }
+  @media (max-aspect-ratio: 1/1) { .qr_full { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
