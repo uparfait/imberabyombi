@@ -31,3 +31,4 @@ export function offset_min(tz, t) {
   const p = tz_parts(tz, t); return Math.round((Date.UTC(p.y, p.mo - 1, p.d, p.h, p.mi, p.s) - Math.floor(t / 1000) * 1000) / 60000);
 }
 /* a wall-clock time in tz → the UTC instant */
+export function zoned_to_utc(y, mo, d, h, mi, tz) {
