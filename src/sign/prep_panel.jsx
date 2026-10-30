@@ -33,3 +33,4 @@ const rec = (d, r) => { const n = d.fields.filter(f => f.rid === r.id).length, o
         <span className="sign_dot" style={{ background: r.color }}>{initials(r.name)}</span>
         <span className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
           <span className="block truncate text-xs text-muted">{r.email} · {n} field{n === 1 ? '' : 's'}</span></span></button>
+      <button type="button" className="icon_btn h-8 w-8" data-act="sign_rec_edit" data-id={r.id} data-tip="Edit signer" aria-label={`Edit ${r.name}`}>{ic('edit', 'h-4 w-4')}</button>
