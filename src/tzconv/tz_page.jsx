@@ -29,3 +29,4 @@ const FMT = [['12', '12h'], ['24', '24h']];
 
 export function Tz_page() {
   const [st, set] = useState(first), put = o => set(s => ({ ...s, ...o }));
+  const [y, mo, d] = st.date.split('-').map(Number), t = zoned_to_utc(y, mo, d, st.h, st.m, st.from);
