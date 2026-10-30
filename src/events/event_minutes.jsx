@@ -1,4 +1,5 @@
 /* events/event_minutes.jsx: an event's or activity's minutes and follow-ups, from the Menu of View This Event
+   (live_page.jsx). Record/View minutes opens the document editor on that day's own document ("Minutes · <title> ·
 import { esc, fmt_d, fmt_time, pad, tz_parts, page_tz } from '../lib/index.js';
 import { db } from '../store/index.js';
 import { me } from '../auth/index.js';
