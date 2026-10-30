@@ -40,3 +40,4 @@ export function Qr_app() {
         {scanning ? null : <div className="qr_idle">
           {st.phase === 'error' ? <p className="qr_err">{st.msg}</p>
             : <span className={`qr_idle_ic ${st.phase === 'found' ? 'ok' : ''}`}>{ic(st.phase === 'found' ? 'check' : 'qr', 'h-10 w-10')}</span>}
+          <button type="button" className="btn btn_primary" onClick={() => go()}>{ic('play', 'h-4 w-4')}{st.phase === 'idle' ? 'Start camera' : 'Scan again'}</button></div>}
