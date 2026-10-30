@@ -25,7 +25,7 @@ const ACTS = [
   ['ev_stop', 'Stop repeating', 'x', ['Recurring']], ['ev_copy', 'Duplicate', 'copy', null],
   ['ev_cancel', 'Cancel event', 'x', ['Upcoming', 'Live', 'Recurring', 'Postponed']], ['ev_del', 'Delete', 'trash', null]
 ];
-const side = (e, c, st, acts, t = count_to(e, st)) => <aside className="card ev_card ev_side" aria-label="Status and actions">
+const side = (e, c, st, acts, t = count_to(e, st), r = st === 'Past' && ran(e)) => <aside className="card ev_card ev_side" aria-label="Status and actions">
   <h3 className="ev_side_title">Status</h3><div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">{badge(st)}
     {t ? <span className="ev_left">{t[0]} <b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></span> : null}</div>
   {e.status_note && (st === 'Postponed' || st === 'Cancelled') ? <p className="ev_note">{e.status_note}</p> : null}
