@@ -3,6 +3,7 @@
    then its description and times, the agenda item running now (large, with its presenter and how far it has got), the
    agenda (done, now, next), the organiser and co-organisers (each card with Edit for those who manage it, not once it is
    over), its minutes and follow-ups. On the right the time left, then the attendance QR code, large (a click shows it on
+   the whole screen), or its empty place (not open yet; "Finished" once over), with the live count and the link. Menu
 import { tz_parts, page_tz, fmt_time, fmt_d, zone_short } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
 import { auth } from '../auth/index.js';
