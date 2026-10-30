@@ -13,3 +13,4 @@
   .att_form .sign_canvas_line { position: absolute; right: 1.5rem; bottom: 2.25rem; left: 1.5rem; border-bottom: 1px solid #D1D5DB; pointer-events: none; }
   /* the tick: the ring draws itself, then the check, with a small bounce */
   .att_done { display: grid; justify-items: center; gap: .5rem; padding: 2rem 0 1rem; text-align: center; }
+  .att_tick { width: 7rem; height: 7rem; fill: none; stroke: rgb(var(--ok)); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; animation: att_pop .5s .9s var(--ease) both; }
