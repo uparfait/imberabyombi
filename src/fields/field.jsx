@@ -17,6 +17,7 @@ export function field(f, v, row) {
   if (f.t === 'hidden') return <input key={f.k} type="hidden" name={f.k} defaultValue={val} />;
   if (f.t === 'seg') return seg_field(f, val);   /* a few choices as one segmented pill */
   if (f.t === 'repeat') return repeat_field(f, v, row);   /* how a recurring one repeats */
+  if (f.t === 'agenda') return agenda_field(f, v);   /* items with times, title and presenter */
   let ctl; /* placeholder=" " lets the Imberabyombi label rest inside an empty field */
   /* a checklist (tasks): rows of tick + text, added and removed in place */
   if (f.t === 'subtasks') return <div key={f.k} className="sm:col-span-2"><p className="mb-2 text-sm font-medium">{f.l}</p>{sub_editor(subs_of({ subs: v }))}</div>;
