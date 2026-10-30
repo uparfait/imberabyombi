@@ -1,5 +1,6 @@
 /* events/invite_table.jsx: the people invited to an event, as a table with its count on top ("People invited 3"):
    email address, the day they were invited and, while the event takes invites, Remove (it asks first; its button takes
+   the warning colour on hover). Addresses are changed before sending, on their chips (event_invites.jsx). On a phone the
 import { db, rerender } from '../store/index.js';
 import { ic } from '../icons/index.js';
 import { notify, show_err } from '../feedback/index.js';
