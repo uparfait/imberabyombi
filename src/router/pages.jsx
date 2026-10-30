@@ -36,3 +36,4 @@ export function admin_page(r) {
   route.mod = mod; lorem.seed(hash_str(mod));
   const body = !m ? not_found(true) : !auth.can(mod) ? forbidden() : VIEWS[mod]();
   set_meta(route.title || m?.l || 'Not found');
+  if (m?.full && auth.can(mod)) return <main id="main" tabIndex={-1} className="outline-none">{body}</main>;   /* full-window modules (the editor) */
