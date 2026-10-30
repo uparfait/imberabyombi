@@ -12,3 +12,4 @@ export const MODS = [
   { k: 'employees', l: 'Employees', s: 'Employees', i: 'briefcase', g: 'People' },
   { k: 'attendance', l: 'Attendance', s: 'Attendance', i: 'clock', g: 'People' },
   { k: 'students', l: 'Students', s: 'Students', i: 'cap', g: 'Academics' },
+  { k: 'library', l: 'Library', s: 'Library', i: 'book', g: 'Academics' },
