@@ -39,3 +39,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | `data-list="id"`                | suggestions from `<datalist id>` while typing                      |
 | `data-tip="text"`               | tooltip (icon buttons use their `aria-label`)                      |
 | `data-filter=".selector"`       | a search box that hides elements whose text does not match         |
+| `data-pop="id"`                 | toggle a popover menu                                              |
