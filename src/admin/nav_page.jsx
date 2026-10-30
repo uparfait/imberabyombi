@@ -33,3 +33,4 @@ export function nav_page(o) {
     <button className="btn btn_glass btn_sm">{ic('link', 'h-4 w-4')}Share</button></div>);
   const nums = [['Open items', String(4 + Math.floor(lorem.r() * 30)), 'tasks'], ['Last updated', fmt_d(ymd(add_d(new Date(), -Math.floor(lorem.r() * 9)))), 'calendar'],
     ['Owner', lorem.name(), 'user']];
+  const about = [lorem.p(3), lorem.p(2)], recent = Array.from({ length: 5 }, (_, i) => activity(i));
