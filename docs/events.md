@@ -29,3 +29,4 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js).
 ## The Events page
 - Tabs sort events by where they stand ([`events/ev_state.js`](../src/events/ev_state.js)): **Live**, **Upcoming**,
   **Recurring**, **Postponed**, **Cancelled** and **Past**, each with its count. The table's Status column shows the same.
+- A row, a card or an event on the calendar opens the event's page, `/admin/events/<id>`
