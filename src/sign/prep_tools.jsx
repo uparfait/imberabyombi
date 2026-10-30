@@ -25,3 +25,5 @@ const placed = d => { const n = d.fields.length;
 
 /* a column caption with its help icon: the description shows on hover, focus or tap */
 const cap = (t, help) => <div className="sign_cap_row"><h2 className="sign_cap">{t}</h2>{help_tip(help, t.toLowerCase())}</div>;
+
+export const prep_tools = d => <div className="sign_panel">
