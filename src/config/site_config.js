@@ -9,7 +9,7 @@ const BASE = import.meta.env.BASE_URL || '/';   // public files follow the site'
 export const cfg = {
   name: 'Imberabyombi', logo: ['IMBERA', 'BYOMBI'] /* two-tone logo: first part in brand colour */, ns: window.NS || 'loremds:v1:',
   currency: 'USD', latency: 450 /* ms of simulated network time per request (saving, loading a table); set 0 or swap for fetch() */,
-  page_size: 10 /* table rows per page */, parking_slots: 24, parking_rate: 2, work_start: '08:00', storage_cap: 5 * 1024 * 1024,
+  page_size: 10 /* table rows per page */, parking_slots: 24, parking_rate: 2, overstay_hours: 8 /* a car parked longer is flagged (the bell) */, work_start: '08:00', storage_cap: 5 * 1024 * 1024,
   img: (seed, w = 900, h = 650) => cartoon(seed, w, h) /* a cartoon scene; the same seed always draws the same one */,
   face: (n, w = 320, h = w) => cartoon_face(n, w, h) /* a cartoon portrait (h > w for a tall card) */,
   hero: 'https://uparfait.github.io/uparfait/favicon.ico' /* home hero portrait */,
