@@ -42,3 +42,4 @@ export const PREP_ACT = {
     if (!n) return remove_rec(r);
     ask(`Remove ${r.name}? Their ${plural(n, 'field')} on the document go too.`, () => remove_rec(r), 'Remove', true); },
   sign_save: () => { prep_save(); notify('Your changes are kept. Send it when it is ready.', 'ok', 'Draft saved'); },
+  sign_send: () => {
