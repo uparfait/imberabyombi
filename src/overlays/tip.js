@@ -18,3 +18,5 @@ export const tip = {
       el.style.left = Math.max(4, Math.min(r.left + r.width / 2 - w / 2, innerWidth - w - 4)) + 'px'; el.style.top = Math.max(4, top) + 'px';
       intro ? requestAnimationFrame(() => requestAnimationFrame(() => this.on === x && el.classList.add('on'))) : el.classList.add('on');
     }, intro ? 0 : 450);
+  },
+  hide() { clearTimeout(this.t); clearTimeout(this.t2); this.on = null; this.el?.classList.remove('on'); }
