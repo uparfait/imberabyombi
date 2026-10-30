@@ -3,3 +3,4 @@
 import { ic } from '../icons/index.js';
 import { lorem, hash_str, add_d, fmt_time, zone_short, page_tz, ymd } from '../lib/index.js';
 import { mail_btn, mail_date } from './mails.jsx';
+import { event_mails } from './event_mails.jsx';
