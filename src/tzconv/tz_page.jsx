@@ -23,3 +23,4 @@ const H12 = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], H24 = Array.from({ length: 
 /* a segmented choice (12h / 24h, AM / PM) */
 const seg = (name, val, opts, put, label) => <div className="seg" role="radiogroup" aria-label={label}>{opts.map(([v, l]) =>
   <label key={v}><input type="radio" className="sr-only" name={name} checked={val === v} onChange={() => put(v)} /><span>{l}</span></label>)}</div>;
+const zone_field = (id, v, put, t) => <div className="field"><label htmlFor={id}>Time zone</label>
