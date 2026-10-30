@@ -7,3 +7,5 @@ import { empty } from '../ui/index.js';
 import { set_meta } from '../router/parse.js';
 import { ev_state } from './ev_state.js';
 import { Attend_form, Tick } from './attend_form.jsx';
+
+addEventListener('storage', e => { if (e.key?.endsWith('c:attendees')) rerender(); });
