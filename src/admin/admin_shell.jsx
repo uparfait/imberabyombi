@@ -20,3 +20,4 @@ const page_key = () => { const v = get_version(); if (v !== seen) { seen = v; if
 
 export function admin_shell(mod, content) {
   const m = MODS.find(x => x.k === mod);
+  /* Layout (Imberabyombi style): full-height sidebar on the left; header + content + side panels on the right.
