@@ -21,3 +21,4 @@ export const ADMIN_ACT = {
   /* Nested navigation: a tile (in a menu or on a page) opens that level's page; no menu opens by itself */
   nav_open: t => { const lvl = +t.dataset.level; ui.nav = [...ui.nav.slice(0, lvl - 1), +t.dataset.i]; nav_draw();
     const b = qs('#nav_demo .nav_page_body'); if (b && !reduced()) b.animate([{ opacity: 0, transform: 'translateY(.5rem)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: EASE }); },
+  /* Side panels: opening slides the content in, closing fades it as the panel narrows, and switching panels slides the old one
