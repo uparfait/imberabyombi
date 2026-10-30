@@ -1,6 +1,6 @@
 /* events/live_page.jsx: Open This Event, the live screen of an event or activity (/admin/events/<id>/live, …/live): the
    whole window, no sidebar, to show while it runs. Its title in the top bar (cut with "…" when long, whole on hover);
-   then its description and times, the agenda item running now (large, with its presenter and how far it has got), the
+   then its description and times, the agenda item running now (its title, then its description apart, its presenter,
    agenda and the organisers as tables (ev_tables.jsx: Edit, Add and Transfer for those who manage it, not once it is
    over). On the right the time left, then the attendance QR code, large (a click shows it on the whole screen), or its
    empty place (not open yet; "Finished" once over), with the live count and the link. Menu (tiles): Record/View
