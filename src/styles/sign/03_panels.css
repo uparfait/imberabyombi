@@ -31,6 +31,7 @@
 .sign_note_card { border-color: rgb(var(--brand) / .35); background: rgb(var(--brand) / .05); }
 /* a signer's options (signer_bits.jsx): a short list, no icons; a tick in their colour shows what is on */
 .sign_opts { display: grid; margin-top: .375rem; padding-top: .25rem; border-top: 1px solid color-mix(in srgb, var(--c) 22%, rgb(var(--line))); }
+.sign_opt { display: flex; min-height: 2rem; min-width: 0; align-items: center; justify-content: space-between; gap: .5rem; padding: 0 .5rem;
 /* "Force digital signature": the checkbox and its help icon */
 .sign_check_row { display: flex; align-items: center; gap: .125rem; }
 .sign_check { display: flex; align-items: center; gap: .5rem; font-size: .875rem; cursor: pointer; }
