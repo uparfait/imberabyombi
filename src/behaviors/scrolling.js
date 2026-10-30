@@ -41,3 +41,4 @@ const on_resize = () => { tip.hide(); pick.place(); clearTimeout(RZ);
     qsa('.tile_pop:not([hidden]), .pop_fixed:not([hidden])').forEach(place_tile); }, 150); };
 
 export function install_scroll() {
+  addEventListener('scroll', header_line, { passive: true });
