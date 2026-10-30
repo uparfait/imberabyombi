@@ -8,3 +8,4 @@ import { auth } from '../auth/index.js';
 import { reduced, staff_page, notify_next, form_msg } from '../feedback/index.js';
 import { close_dialog, request_close, ask, copy, tip, show_in_dialog } from '../overlays/index.js';
 import { set_native_value } from '../fields/index.js';
+import { drawer_content } from '../site/index.js';
