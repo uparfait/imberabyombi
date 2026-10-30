@@ -25,3 +25,7 @@ export default function App() {
   return (
     <>
       {page ?? (version === 0 && boot_loader)}
+      <Dialog_hosts />
+    </>
+  );
+}
