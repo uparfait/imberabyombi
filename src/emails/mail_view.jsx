@@ -44,3 +44,4 @@ export function emails_view() {
 
 /* The template picker: a "Your modules" menu (no second sidebar) */
 export const mail_menu = k => tile_menu({ id: 'pop_mail', title: 'Email designs', icon: MAILS[k].i, label: MAILS[k].l, set: true,
+  tiles: Object.entries(MAILS).map(([key, m]) => ({ icon: m.i, label: m.l, attrs: { 'data-act': 'mail', 'data-k': key }, on: key === k })) });
