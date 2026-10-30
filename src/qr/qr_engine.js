@@ -36,3 +36,4 @@ export async function start(video, on_code, facing = 'environment') {
 }
 export const cameras = async () => (await navigator.mediaDevices?.enumerateDevices?.() || []).filter(d => d.kind === 'videoinput').length;
 export async function read_image(file) { const bmp = await createImageBitmap(file); return decode(bmp, bmp.width, bmp.height); }
+export const secure = t => { try { const u = new URL(String(t).trim()); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
