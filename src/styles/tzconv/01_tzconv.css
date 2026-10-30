@@ -15,3 +15,4 @@
 .tzc_time { font-family: var(--font_display); font-size: clamp(3.75rem, 7cqi, 5.5rem); font-weight: 500; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
 .tzc_suf { margin-left: .5rem; color: rgb(var(--muted)); font-family: var(--font_display); font-size: 1.25rem; }
 @container tzc (min-width: 48rem) {
+  .tzc { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
