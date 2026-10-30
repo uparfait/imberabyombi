@@ -19,3 +19,4 @@ const stat = ([m, l, i, c, f], j) => { const n = f ? db.list(c).filter(f).length
       <p className="font-display text-2xl font-bold tabular-nums sm:text-3xl" data-count={n}>0</p></div></a>; };
 
 VIEWS.dashboard = () => {
+  const u = auth.user, r = auth.role(), first = u.name.split(' ')[0];
