@@ -20,3 +20,4 @@ function remove_rec(r) {
 function send() {
   const d = P.doc, now = Date.now();
   Object.assign(d, { status: 'sent', sent_at: now });
+  d.recipients.forEach(r => { r.status = 'pending'; ['viewed_at', 'signed_at', 'cert_at', 'cert_file'].forEach(k => delete r[k]); });
