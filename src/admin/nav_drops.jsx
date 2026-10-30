@@ -7,3 +7,4 @@ import { ui, route } from '../store/index.js';
 import { NAVTREE, slug } from './nav_tree.js';
 import { tile_menu } from './tile_menu.jsx';
 import { nav_page } from './nav_page.jsx';
+import { Live_slot, redraw_slot } from './live_slot.jsx';
