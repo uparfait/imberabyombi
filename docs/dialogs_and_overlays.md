@@ -45,3 +45,4 @@ A right click opens the browser's own menu everywhere (the document editor bring
 small switch in the account menu (remembered).
 
 ## Command palette
+`Ctrl K` / `⌘K` (or the search button in the admin header) opens a searchable list of every page the role can open.
