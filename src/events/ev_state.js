@@ -13,3 +13,4 @@ const runs = (e, date, now) => { const s = at(date, e.start, e.tz), end = e.end 
 
 export function ev_state(e, now = Date.now()) {
   if (e.status === 'Cancelled' || e.status === 'Postponed') return e.status;
+  if (DONE.includes(e.status) || !e.date) return e.date ? 'Past' : 'Upcoming';
