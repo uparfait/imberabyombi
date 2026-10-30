@@ -42,3 +42,4 @@ To navigate from code: `go('/admin/tasks')`. A redirect that should not leave a 
 
 ## Base path
 The site can live at the domain root (`/`) or in a folder (`/my-site/`). The folder comes from `BASE_PATH` at build
+time (`base` in `vite.config.js`, `import.meta.env.BASE_URL` in code). `to('/about')` gives `/my-site/about` there,
