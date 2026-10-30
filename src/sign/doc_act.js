@@ -31,3 +31,5 @@ export const DOC_ACT = {
     }, 'Archive'); },
   sign_doc_restore: t => { const d = find_doc(t.dataset.id);
     d.archived = false; log(d, `${who().name} restored it from the archive`, 'restore', who().email); save_doc(d);
+    notify(`“${d.title}” is back in your lists.`, 'ok', 'Document restored'); rerender(); }
+};
