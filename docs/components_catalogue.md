@@ -26,3 +26,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.brand_toggle`                         | collapsed sidebar: logo that becomes "open sidebar" on hover     |
 | `.date_hint`                            | the format hint shown while typing a date or time                |
 | `.tab` / `.seg`                         | underlined tabs / segmented button                               |
+| `.pop` / `.menu_item` / `.menu_danger`  | popover menu and its items                                       |
