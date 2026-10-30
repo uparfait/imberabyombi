@@ -22,3 +22,5 @@ export function mail_body(k) {
   const cal = <p className="text-xs text-muted">Add to calendar: <a href={to('/admin/emails')} className="text-accent underline">Imberabyombi</a> · <a href={to('/admin/emails')}
     className="text-accent underline">Outlook</a> · <a href={to('/admin/emails')} className="text-accent underline">Apple (.ics)</a></p>;
   /* all six mails are built in order (the same lorem sequence whichever mail is shown), then one is picked */
+  return { ...event_mails({ ev, place, who, d1, d2, tm, event, rsvp, cal }), ...account_mails() }[k];
+}
