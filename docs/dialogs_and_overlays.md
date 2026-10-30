@@ -24,3 +24,4 @@ modal({
   asks "Discard changes?" first.
 
 ## Questions and other dialogs
+- `ask(message, on_yes, cta = 'Delete', danger)`: the part up to the first `?` is the title, the rest is the text.
