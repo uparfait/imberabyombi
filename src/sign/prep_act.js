@@ -29,3 +29,4 @@ export const PREP_ACT = {
   sign_rid: t => { P.rid = t.dataset.id; rerender(); },
   sign_tool: t => add_field(t.dataset.type),
   sign_field_del: t => del_field(t.dataset.id),
+  /* a signer's name, email and note; a new email brings its own colour */
