@@ -18,3 +18,4 @@ export const MODS = [
   { k: 'parking', l: 'Smart parking', s: 'Parking', i: 'car', g: 'Operations' },
   { k: 'roles', l: 'Roles & access', s: 'Roles', i: 'shield', g: 'System' },
   { k: 'emails', l: 'Email designs', s: 'Emails', i: 'mail', g: 'System' },
+  { k: 'charts', l: 'Charts & KPIs', s: 'Charts', i: 'activity', g: 'System' },
