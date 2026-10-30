@@ -38,3 +38,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 | `data-type="date|time|datetime-local|month|week"` (input) | text date/time field with the picker   |
 | `data-list="id"`                | suggestions from `<datalist id>` while typing                      |
 | `data-tip="text"`               | tooltip (icon buttons use their `aria-label`)                      |
+| `data-filter=".selector"`       | a search box that hides elements whose text does not match         |
