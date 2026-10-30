@@ -46,3 +46,6 @@ function page_for(a, id) {
   if (a === 'sign') return { title: d.title, back: list_href('inbox'), body: signer_page(d) };
   if (a === 'done') return { title: 'Signing complete', back: list_href('inbox'), body: sign_done(d) };
   return { title: 'Not found', back: list_href('all'), body: missing() };
+}
+
+/* O-Doc Sign is made for computers: below 1280 px it is laid out 1280 px wide and scaled down to fit, never re-arranged or
