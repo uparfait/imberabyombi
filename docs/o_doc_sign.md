@@ -40,3 +40,4 @@ every account starts empty.
   `seed_color()` (`src/lib/seed_color.js`): the same email always gets the same colour; signers of one document are kept
   at least 40° apart; only greens, teals, blues, violets and magentas are used (reds, oranges and yellows would read as
   alerts); white initials on every colour pass 4.5:1.
+- **Fields**: Signature and Stamp. Click a tool to add one on the page on screen, or drag it onto a page. Drag a field to
