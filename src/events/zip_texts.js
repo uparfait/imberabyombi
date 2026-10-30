@@ -7,3 +7,4 @@ export async function zip_texts(buf, keep = name => /\.xml$/i.test(name)) {
   const u8 = new Uint8Array(buf), dv = new DataView(buf), dec = new TextDecoder(); let e = u8.length - 22;
   while (e >= 0 && dv.getUint32(e, true) !== 0x06054b50) e--;   /* the end of the zip's directory */
   if (e < 0) throw new Error('This is not a zip file.');
+  const out = []; let p = dv.getUint32(e + 16, true);
