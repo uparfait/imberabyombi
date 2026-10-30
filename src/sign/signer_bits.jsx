@@ -24,3 +24,4 @@ const notes = r => <>{row('Notes', false, { 'data-act': 'pop', 'data-pop': `pop_
 /* on: this signer is the one whose fields are being placed */
 export const prep_opts = (r, on) => <div className="sign_opts">
   {row('Adding fields', on, { 'data-act': 'sign_rid', 'data-id': r.id, 'aria-pressed': on })}
+  {row('Digital signature', !!r.cert, { 'data-act': 'sign_rec_cert', 'data-id': r.id, 'aria-pressed': !!r.cert, 'data-tip': CERT_HELP })}
