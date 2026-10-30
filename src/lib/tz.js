@@ -12,3 +12,4 @@ const FALLBACK = ['UTC', 'Africa/Kigali', 'Africa/Maputo', 'Africa/Lagos', 'Afri
   'Europe/Berlin', 'Europe/Moscow', 'Asia/Dubai', 'Asia/Kolkata', 'Asia/Shanghai', 'Asia/Tokyo', 'Asia/Singapore', 'Australia/Sydney',
   'Pacific/Auckland', 'America/New_York', 'America/Chicago', 'America/Denver', 'America/Los_Angeles', 'America/Sao_Paulo'];
 let ZONES = null;
+export const zones = () => ZONES ||= (() => {
