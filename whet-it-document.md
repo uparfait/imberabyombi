@@ -31,3 +31,4 @@ Every feature below is working code. Each line says what it is and where it live
 - Empty states, no-result states, broken-media fallbacks.
 
 ## Public website (`src/site/`)
+- Header with section links and scroll spy, mobile drawer, footer with sitemap; hero with typing effect.
