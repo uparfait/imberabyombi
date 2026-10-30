@@ -38,4 +38,6 @@ export function Qr_app() {
       <button type="button" className="btn btn_primary w-full" onClick={() => go()}>{ic('video', 'h-4 w-4')}Allow camera</button></div>
     : <div className="qr_sheet">
       {st.phase === 'found' ? found_card(st.text) : <p className="qr_sheet_err">{st.msg}</p>}
+      <button type="button" className="btn btn_primary w-full" onClick={() => go()}>{ic('play', 'h-4 w-4')}{st.phase === 'found' ? 'Scan again' : 'Try again'}</button></div>}
+  </div></div>;
 }
