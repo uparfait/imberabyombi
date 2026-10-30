@@ -21,8 +21,7 @@
   .ev_edit:hover { background: rgb(var(--brand) / .12); }
   .ev_table .ag_now > * { background: rgb(var(--ok) / .08); }   /* the agenda item running now */
   .ev_link { color: rgb(var(--brand)); text-decoration: underline; text-underline-offset: 3px; }
-  .ev_left { color: rgb(var(--muted)); font-size: .8125rem; }
-  .ev_ran { display: grid; gap: .125rem; margin-top: .75rem; font-size: .8125rem; } .ev_ran dt { color: rgb(var(--muted)); } .ev_ran dd + dt { margin-top: .375rem; }   /* a past one: when it ran */   /* "Starts in 2d 4h 5m 6s" */
+  .ev_left { max-width: 100%; overflow: hidden; color: rgb(var(--muted)); font-size: .8125rem; text-overflow: ellipsis; white-space: nowrap; }   /* one line */   /* "Starts in 2d 4h 5m 6s" */
   .ev_left b { color: rgb(var(--fg)); font-weight: 600; font-variant-numeric: tabular-nums; }
   .ev_note { margin-top: .75rem; color: rgb(var(--muted)); font-size: .875rem; white-space: pre-line; overflow-wrap: anywhere; }
   .ev_acts { display: flex; flex-wrap: wrap; gap: .375rem; margin-top: 1rem; }   /* side by side, wrapping: the card stays short */
