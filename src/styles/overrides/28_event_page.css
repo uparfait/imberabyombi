@@ -40,6 +40,7 @@
   /* the people invited (events/invite_table.jsx): their count on top of the table, which scrolls down inside itself
      with its header staying on top */
   .ev_inv_box { overflow: hidden; border: 1px solid rgb(var(--line)); border-radius: calc(var(--radius) * .75); }
+  .ev_inv_bar { display: flex; align-items: center; gap: .5rem; padding: .75rem 1rem; border-bottom: 1px solid rgb(var(--line)); font-size: .9375rem; font-weight: 600; }
   .ev_inv_table { table-layout: fixed; }
   .ev_inv_table thead th { position: sticky; top: 0; z-index: 1; }
   .ev_inv_table tbody tr:last-child td { border-bottom: 0; }
