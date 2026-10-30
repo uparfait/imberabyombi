@@ -28,3 +28,4 @@ export function public_page(r) {
 /* Signed out: to sign-in (then back here). A session whose role is gone: signed out. Both return null (the page stays) and
    replace the address once this draw is over (a draw cannot start the next one) */
 let redirecting = 0;
+const redirect = path => { if (!redirecting) redirecting = setTimeout(() => { redirecting = 0; go(path, { replace: true }); }); return null; };
