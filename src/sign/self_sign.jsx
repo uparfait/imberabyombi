@@ -31,3 +31,4 @@ export const preview_foot = d => d.recipients.some(r => r.status === 'signed')
   ? <div className="sign_foot"><button type="button" className="btn btn_outline btn_sm w-full" data-act="sign_preview" data-id={d.id}>{ic('eye', 'h-4 w-4')}Preview</button></div> : null;
 
 function Preview({ id }) {
+  const d = find_doc(id), marks = use_marks(id, d?.updated);
