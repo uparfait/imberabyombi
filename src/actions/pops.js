@@ -1,5 +1,6 @@
 /* actions/pops.js: the small menus (.pop): close them all (animated), open or close one, and place a "Your modules" menu.
    They open and close by their hidden attribute only (no redraw); the button that opens one gets aria-expanded, so screen
+   readers know and its arrow can turn (e.g. Notes on a signer). */
 import { qsa } from '../lib/index.js';
 import { reduced } from '../feedback/index.js';
 
