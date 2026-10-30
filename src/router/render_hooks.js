@@ -31,3 +31,4 @@ export function run_after_render({ keep, anim }) {
   const m = qs('#main');
   if (!keep) main_enter = !!m?.classList.contains('page_enter');
   else if (m) { m.classList.remove('page_enter'); if (anim && main_enter) { void m.offsetWidth; m.classList.add('page_enter'); } }
+  if (!keep) scrollTo({ top: 0, behavior: 'instant' });
