@@ -57,3 +57,4 @@ every account starts empty.
 - **Finish** asks the signer to agree to sign electronically. When everyone has signed, the document is Completed.
 - **Digital certificate** (when the sender asked for it): Finish also asks for the certificate file and its password, and
   **Verify and sign** checks them before signing. The check is **simulated** in this template: any file and any password
+  are accepted after a short wait; the file name and time are recorded, shown as "Certificate verified" and printed on the
