@@ -54,3 +54,4 @@ Every feature below is working code. Each line says what it is and where it live
   (theme, live tokens, storage, backup export/import, demo reset, profile).
 
 ## Document editor (`src/editor/`, `/admin/docs`)
+- A full word processor in the whole window with a Back button: paper sizes, margins, headers, footers, page numbers.
