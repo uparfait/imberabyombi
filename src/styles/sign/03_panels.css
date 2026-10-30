@@ -63,3 +63,5 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
   background: color-mix(in srgb, var(--c) 16%, transparent); font-weight: 600; transform: scale(1.04); }
 .sign_for_tick { color: var(--c); }
 @media (prefers-reduced-motion: reduce) { .sign_rec, .sign_for { transition: none; } }
+
+.sign_prog { height: .375rem; overflow: hidden; border-radius: var(--pill); background: rgb(var(--fg) / .08); }
