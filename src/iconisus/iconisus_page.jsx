@@ -7,3 +7,4 @@ import { render, iconify_svg } from '../icon3d/index.js';
 import { Stage } from './stage.jsx';
 import { Source } from './source.jsx';
 import { Styles } from './style_grid.jsx';
+import { Colors } from './color_chips.jsx';
