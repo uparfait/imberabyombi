@@ -32,6 +32,7 @@ attendance opens, "Finished" after), the count and the link. **Menu** (tiles): R
 (Follow-ups), Attendees, Full screen.
 - **The agenda on the whole screen** (the now card's full-screen button, [`track_full.jsx`](../src/events/track_full.jsx)):
   one item at a time, its text from the left in the middle; the time it has left, and the event's bottom right. Back,
+  Next, the arrow keys or the dots step through; on its own it slides to the item running now. A picked item holds
 
 ## Minutes and follow-ups
 - **Record/View minutes** (Open This Event) opens the document editor on that day's own document,
