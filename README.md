@@ -71,3 +71,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 | [Connecting a backend](docs/connecting_a_backend.md) | [Deploying](docs/deploying.md) |
 | [Before production](docs/before_production.md) | [Document editor](docs/document_editor.md) |
 | [Cartoon pictures and video](docs/cartoons.md) | [O-Doc Sign](docs/o_doc_sign.md) |
+| [3D icons and Iconisus](docs/icons_3d.md) | |
