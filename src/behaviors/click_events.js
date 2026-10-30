@@ -18,3 +18,4 @@ function on_click(e) {
   const pk = pick_at(e);
   if (pk) { if (pick.a !== pk) pick.open(pk); else if (pk.tagName === 'SELECT') pick.close(); return; }
   if (pick.a && !e.target.closest('#picker') && e.target !== pick.a) pick.close();
+  const sum = e.target.closest('summary'); if (sum?.parentElement.tagName === 'DETAILS' && !e.target.closest('a, button, input')) toggle_details(sum.parentElement, e);
