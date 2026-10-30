@@ -11,6 +11,7 @@ export const at = f => ({ left: `${f.x * 100}%`, top: `${f.y * 100}%`, width: `$
 const look = (f, r) => ({ ...at(f), '--c': r?.color || '#94A3B8' });
 
 const edit_field = (d, f, sel, marks) => { const r = rec_of(d, f.rid), [l, i] = KINDS[f.type];
+  if (f.done && marks?.[f.id]) return <div key={f.id} className="sf sf_final" data-fid={f.id} style={look(f, r)}><img src={marks[f.id]} alt={`${l} by ${shown(r)}`} /></div>;
   return <div key={f.id} className={`sf sf_edit ${sel === f.id ? 'sel' : ''}`} data-fid={f.id} style={look(f, r)} tabIndex={0}
     aria-label={`${l} field for ${r?.name || 'nobody'}`}>
     <span className="sf_tag">{r?.name || 'Unassigned'}</span>{ic(i, 'sf_ic')}<span className="sf_l">{l}</span>
