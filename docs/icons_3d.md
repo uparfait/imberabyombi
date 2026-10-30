@@ -42,6 +42,7 @@ Completed green, Archived indigo, To sign violet.
 | style | `classic` (orb, extruded glyph), `balloon` (inflated two-tone), `ribbon` (striped bands), `glossy` (solid, shiny), `clay` (soft tile), `glass` (translucent tile) |
 | colors | `[primary, secondary, tertiary]`: 1 to 3; the missing ones are worked out from the first |
 | size | pixels or any CSS size (`'100%'`) |
+| px | the device pixels it is drawn at (default: `size` when it is a number). `device_px(css)` gives it for this screen |
 
 Text is set in the site's own fonts. Files: `color.js` (colour maths, palette), `glyph.js` (input → glyph), `parts.js`
 (gradients, filters), `styles_a.js` and `styles_b.js` (the six styles), `index.js` (`render`).
