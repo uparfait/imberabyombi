@@ -14,3 +14,4 @@ export function attend_page(r) {
   const [, , c, id] = r.path.split('/'), e = ['events', 'activities'].includes(c) ? db.find(c, id) : null, st = e && ev_state(e);
   set_meta(e ? `Attendance · ${e.title}` : 'Attendance');
   const where = e && (e.place === 'Virtual' ? 'Online' : e.venue);
+  return <main id="main" className="att_page"><div className="att_card card">
