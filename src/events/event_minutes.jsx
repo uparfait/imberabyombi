@@ -5,9 +5,7 @@
 import { esc, fmt_d, fmt_time, pad, tz_parts, page_tz } from '../lib/index.js';
 import { db } from '../store/index.js';
 import { me } from '../auth/index.js';
-import { ic } from '../icons/index.js';
-import { badge } from '../ui/index.js';
-import { to, go } from '../router/index.js';
+import { go } from '../router/index.js';
 import { open_form } from '../table/index.js';
 
 const doc_url = m => new URL(to('/admin/docs?doc=m_' + m.id), location.origin).href;
