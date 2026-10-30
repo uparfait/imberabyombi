@@ -11,3 +11,4 @@ export async function zip_texts(buf, keep = name => /\.xml$/i.test(name)) {
   for (let i = 0, n = dv.getUint16(e + 10, true); i < n; i++) {
     const method = dv.getUint16(p + 10, true), size = dv.getUint32(p + 20, true), nl = dv.getUint16(p + 28, true), at = dv.getUint32(p + 42, true);
     const name = dec.decode(u8.subarray(p + 46, p + 46 + nl)); p += 46 + nl + dv.getUint16(p + 30, true) + dv.getUint16(p + 32, true);
+    if (!keep(name)) continue;
