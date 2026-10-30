@@ -15,6 +15,7 @@ const EASE = 'cubic-bezier(.22,.8,.22,1)';
 
 /* sets the time zone choice in Settings (as if picked), so Save and Cancel wake up when it differs from the one in use */
 const tz_choose = v => { const sel = qs('#page_tz'); if (!sel) return; sel.value = v; sel.dispatchEvent(new Event('change', { bubbles: true })); };
+
 export const ADMIN_ACT = {
   /* Email designs: switch the previewed email in place (no page jump). The address changes first: the redraw reads ?t= */
   mail: t => { const k = t.dataset.k; if (!qs('#mail_view') || !MAILS[k]) return; ui.mail = k;
@@ -32,7 +33,7 @@ export const ADMIN_ACT = {
     if (next) { refresh_panel(); slide(); } else anim([{ opacity: 1 }, { opacity: 0 }], 220);
     const sp = qs('#side_panel'); if (sp) sp.dataset.open = !!next; setTimeout(redraw_charts, 320); },
   note_del: t => { db.set('notes', db.get('notes', []).filter(n => n.id !== t.dataset.id)); refresh_panel(); },
-  tz_device: () => { db.del('pageTz'); rerender(); notify('Times follow this device\'s time zone again.', 'ok', 'Time zone changed'); },
+  /* Settings → Time zone: Save keeps the choice (every page follows it), Cancel puts the one in use back, "Use this device's"
   tok_reset: () => { db.del('tokens'); apply_tokens(); rerender(); notify('Brand, radius, spacing and font follow the stylesheet again.', 'ok', 'Tokens reset'); },
   data_export: () => { const o = {}; db.keys().filter(k => k !== 'session').forEach(k => o[k] = db.get(k)); dl(`lorem-backup-${ymd()}.json`, JSON.stringify(o, null, 2), 'application/json'); notify('Keep the JSON file somewhere safe.', 'ok', 'Backup downloaded'); },
   data_reset: () => ask('Reset all demo data? Your session, theme and tokens stay. Everything else is replaced with fresh sample data.', () => {
