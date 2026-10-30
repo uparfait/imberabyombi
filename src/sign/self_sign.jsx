@@ -43,6 +43,7 @@ function Preview({ id }) {
   return <>{head(d, dl(id))}<div className="sign_preview min-h-0 flex-1 overflow-auto"><Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: 'view', marks })} /></div></>;
 }
 
+/* the document with your fields to fill, beside your progress; signed: Download a copy and Add other signers */
 export const SELF_ACT = {
   sign_self: () => { const me = who(); if (!me.email) return;
     const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
