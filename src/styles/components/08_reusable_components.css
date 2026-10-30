@@ -26,3 +26,4 @@
   .kicker { @apply inline-flex items-center gap-2 text-sm font-semibold text-accent; }
   .field { @apply grid content-start gap-1.5; }
   .nav_link { @apply relative block rounded-full px-3.5 py-1.5 text-sm font-medium text-fg/80 transition hover:bg-fg/5 hover:text-fg; }
+  .nav_link.active { @apply bg-surface text-accent; }
