@@ -32,6 +32,7 @@ const say = (b, [l, s]) => { const t = b?.querySelector('.when_text'); if (t) { 
 
 /* the time zone's offset follows the row's date (summer and winter time differ); a new date updates it */
 const day_of = r => { const v = r?.querySelector('.when_date input')?.value || ''; return /^\d{4}-\d{2}-\d{2}$/.test(v) ? v : ''; };
+const tz_say = r => { const s = r?.querySelector('.when_tz select'); if (!s) return;
 const block = (f, v, row) => { if (f.t === 'tz') return tz_block(f, v, row); const id = 'field_' + f.k, shown = dt_show(f.t, v);
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
     <span className="pick when_block"><input id={id} name={f.k} {...dt_attrs(f.t)} defaultValue={shown} required={!!f.req}
