@@ -11,7 +11,7 @@ import { use_marks } from './use_marks.js';
 
 /* the pages with the fields being placed; the pointer and keys work on them while the page is open */
 function Prep_doc({ d }) {
-  const root = useRef(null);
+  const root = useRef(null), marks = use_marks(d.id, d.updated);   /* your own marks, once you have signed your fields */
   useEffect(() => prep_pointer(root.current), []);
   return <div ref={root}><Pdf_pages doc={d} layer={i => fields_on(d, i, { mode: 'edit', sel: P.sel })} /></div>;
 }
