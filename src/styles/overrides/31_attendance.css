@@ -6,3 +6,4 @@
   .att_title { margin-top: .25rem; font-family: var(--font_display); font-size: 1.75rem; font-weight: 500; line-height: 1.15; overflow-wrap: anywhere; }
   .att_when { margin-top: .375rem; color: rgb(var(--muted)); font-size: .875rem; }
   .att_form { display: grid; gap: 1rem; margin-top: 1.5rem; }
+  .att_digital { display: flex; align-items: center; gap: .625rem; padding: 1rem; border-radius: var(--radius); background: rgb(var(--ok) / .1); color: rgb(var(--ok)); font-size: .875rem; }
