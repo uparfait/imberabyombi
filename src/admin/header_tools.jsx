@@ -22,7 +22,7 @@ export const header_tools = (n = '') => <><button className="icon_btn" data-act=
 /* the signed-in person's avatar and its menu (name and email, settings, public website, sign out, the side panels on small screens
    when rail is set, storage used) */
 export function account_menu(n = '', rail = false) {
-  const u = auth.user, r = auth.role(), pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
+  const u = auth.user, pct = Math.min(100, Math.round(db.bytes() / cfg.storage_cap * 100));
   return <div className="relative">
         <button className="ml-1 rounded-full" data-act="pop" data-pop={`pop_account${n}`} aria-label="Account">{avatar(u.name, 'h-9 w-9 text-sm')}</button>
         {createPortal(<div id={`pop_account${n}`} ref={closed_pop()} className="pop pop_fixed w-[21rem] max-w-[calc(100vw-1rem)] p-3" hidden>
