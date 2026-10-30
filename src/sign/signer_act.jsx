@@ -16,3 +16,4 @@ import { Cert_pick, verify } from './cert_pick.jsx';
 
 function apply(d, f, url) {
   const first = !S.adopted[f.type], [l] = KINDS[f.type];
+  S.pending[f.id] = url; S.adopted[f.type] = url; rerender(); qs(`[data-fid="${f.id}"]`)?.classList.add('sf_new');
