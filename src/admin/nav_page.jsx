@@ -32,3 +32,4 @@ export function nav_page(o) {
   const top = head(o, node.i, lorem.s(), <div className="flex flex-wrap gap-2"><button className="btn btn_primary btn_sm">{ic('edit', 'h-4 w-4')}Edit</button>
     <button className="btn btn_glass btn_sm">{ic('link', 'h-4 w-4')}Share</button></div>);
   const nums = [['Open items', String(4 + Math.floor(lorem.r() * 30)), 'tasks'], ['Last updated', fmt_d(ymd(add_d(new Date(), -Math.floor(lorem.r() * 9)))), 'calendar'],
+    ['Owner', lorem.name(), 'user']];
