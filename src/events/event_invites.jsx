@@ -6,3 +6,4 @@ import { qs, cap, fmt_stamp } from '../lib/index.js';
 import { db, rerender } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { ic } from '../icons/index.js';
+import { help_tip } from '../ui/index.js';
