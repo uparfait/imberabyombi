@@ -24,3 +24,4 @@ async function install_files(c) {
     .map(async ([n, k, bg, purpose]) => ({ src: await png(c, n, k, bg), sizes: `${n}x${n}`, type: 'image/png', purpose })));
   const m = { name: 'Qr-scan', short_name: 'Qr-scan', description: 'Scan a QR code. Secure links (https) open in a new tab.', id: at, start_url: at, scope: at,
     display: 'standalone', orientation: 'portrait', background_color: '#1F1F1F', theme_color: c, icons };
+  link('manifest', URL.createObjectURL(new Blob([JSON.stringify(m)], { type: 'application/manifest+json' })));
