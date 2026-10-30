@@ -20,3 +20,4 @@ body { background: rgb(var(--bg)); }
     linear-gradient(var(--c) 0 0) 100% 100% / var(--l) var(--w), linear-gradient(var(--c) 0 0) 100% 100% / var(--w) var(--l);
   background-repeat: no-repeat; }
 .qr_line { position: absolute; top: 15%; right: 17%; left: 17%; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, transparent, rgb(var(--brand)), transparent); animation: qr_sweep 2.2s ease-in-out infinite alternate; }
