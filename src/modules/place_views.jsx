@@ -37,6 +37,7 @@ VIEWS.events = () => {
   const id = route.path.split('/')[3]; if (id) return event_page(id);
   const all = db.list('events'), t = ui.tab.ev || 'all', n = s => all.filter(in_state(s)).length;
   const next = all.filter(e => ev_state(e) === 'Upcoming').sort((a, b) => a.date.localeCompare(b.date)).slice(0, 3);
+  return <>{t === 'all' && next.length ? <div className="mb-6 grid gap-5 md:grid-cols-3">{next.map(event_card)}</div> : null}
 };
 
 const decide = (r, can) => can && r.status === 'Pending' ? <><button className="btn btn_soft btn_sm" data-act="res" data-v="Approved" data-id={r.id}>Approve</button>
