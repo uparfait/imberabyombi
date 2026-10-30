@@ -18,3 +18,4 @@
   .att_tick path { stroke-dasharray: 36; stroke-dashoffset: 36; stroke-width: 4; animation: att_draw .4s .6s var(--ease) forwards; }
   .att_done_t { font-family: var(--font_display); font-size: 1.5rem; font-weight: 500; }
   @keyframes att_draw { to { stroke-dashoffset: 0; } }
+  @keyframes att_pop { 50% { transform: scale(1.08); } }
