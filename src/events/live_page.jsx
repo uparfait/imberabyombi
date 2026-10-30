@@ -41,6 +41,7 @@ export function live_page(id, c) {
     <div className="live_body"><section className="live_main">
       <div className="card live_info"><h1 className="live_title">{e.title}</h1>{e.about || e.note ? <p className="live_about">{e.about || e.note}</p> : null}
         <p className="live_when_all">{[e.tbd ? '' : fmt_d(e.date), e.start ? `${fmt_time(e.start)}${e.end ? ` – ${fmt_time(e.end)}` : ''}` : '', zone_short(e.tz || page_tz(), e.date)].filter(Boolean).join(' · ')}</p></div>
+      {ag.length ? <div className="card live_now">{it ? <><p className="att_kind">Now · {span(it)}</p><h2 className="live_now_t">{it.title}</h2>{who(it)}
       {ag.length ? <ol className="card live_agenda">{ag.map((a, i) => <li key={i} className={i === now_i ? 'is_now' : mins(a.to) <= now_m && now_i > -1 ? 'is_done' : ''}>
         <span className="live_when">{span(a)}</span><span className="min-w-0"><b className="block truncate">{a.title}</b><span className="block truncate text-sm text-muted">{a.p_name}</span></span></li>)}</ol> : null}
     </section>
