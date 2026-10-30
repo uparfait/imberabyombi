@@ -67,6 +67,7 @@
   .when_cap { margin-bottom: .5rem; color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }   /* its title: what the row is */
   .when_row { display: flex; flex-wrap: nowrap; align-items: center; gap: .5em; font-size: clamp(.625rem, 2.6cqi, .9375rem); }
   .when_block { position: relative; display: flex; flex: 1 0 auto; flex-direction: column; justify-content: center; min-width: 0; height: 3.25rem;
+    padding: 0 .7em 0 .85em; border-radius: var(--radius); background: rgb(var(--fg) / .06); cursor: pointer; transition: background-color .2s; }
   .when_block:hover { background: rgb(var(--fg) / .1); }
   .when_block:focus-within { outline: 2px solid rgb(var(--brand)); outline-offset: 0; }
   .when_block input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0 1rem; border: 0; border-radius: inherit; background: transparent;
