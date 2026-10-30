@@ -24,3 +24,5 @@ function add(id, found, bad = [], file = '') {
     bad.length ? `not an email address: ${bad.join(', ')}` : ''].filter(Boolean).join(', ');
   wait.note = !file ? cap(said) + '.' : found.length ? `Found ${n_of(found.length, 'address', 'addresses')} in ${file}: ${said}.` : `No email addresses were found in ${file}.`;
   rerender();
+}
+/* the typed text: its addresses join the list, anything else stays in the box to be corrected */
