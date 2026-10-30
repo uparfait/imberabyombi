@@ -38,3 +38,4 @@ export const SHELL_ACT = {
   /* Sidebar sections fold in place (no re-render), so the height animation plays */
   group: t => { const k = t.dataset.g, closed = !ui.closed[k], f = t.nextElementSibling; ui.closed[k] = closed; db.set('sideClosed', ui.closed);
     t.setAttribute('aria-expanded', !closed); f.dataset.closed = closed; f.inert = closed; },
+  scroll: t => { const el = document.getElementById(t.dataset.to); el?.scrollIntoView({ behavior: 'smooth', block: 'start' }); if (t.dataset.to === 'main') el?.focus?.(); },
