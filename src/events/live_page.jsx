@@ -47,9 +47,7 @@ export function live_page(id, c) {
       {ag.length ? <ol className="card live_agenda">{ag.map((a, i) => <li key={i} className={i === now_i ? 'is_now' : mins(a.to) <= now_m && now_i > -1 ? 'is_done' : ''}>
         <span className="live_when">{span(a)}</span><span className="min-w-0"><b className="block truncate">{a.title}</b><span className="block truncate text-sm text-muted">{a.p_name}</span></span></li>)}</ol> : null}
     </section>
-    <aside className="card live_qr">{open ? <Qr text={att_url(c, id)} label="Attendance QR code" /> : <p className="text-muted">Attendance is closed</p>}
-      <p className="qr_full_count"><b>{n}</b> attended</p>
-      {open ? <button type="button" className="btn btn_outline btn_sm" data-act="copy" data-text={att_url(c, id)} data-what="Link">{ic('copy', 'h-4 w-4')}Copy link</button> : null}</aside></div>
+    <aside className="card live_qr">{t ? <p className="live_left">{t[0]}<b data-count-to={t[1]}>{left(t[1] - Date.now())}</b></p> : null}{open ? <button type="button" className="live_qr_btn" data-act="ev_qr" data-id={id} aria-label="Show the QR code on the whole screen" data-tip="Full screen">
   </div>;
 }
 
