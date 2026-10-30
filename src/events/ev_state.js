@@ -7,3 +7,5 @@ import { at } from '../schemas/index.js';
 export const EV_STATES = ['Live', 'Upcoming', 'Recurring', 'Postponed', 'Cancelled', 'Past'];
 const DONE = ['Completed', 'Done', 'Closed'];
 const HOURS_2 = 2 * 3600e3;   /* an event with no end time lasts two hours */
+
+/* running on day date: started and not ended */
