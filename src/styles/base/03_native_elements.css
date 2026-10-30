@@ -17,3 +17,4 @@
   :focus-visible { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   /* Scrollbars stay inside their component: slim, no arrow buttons, and the track keeps clear of rounded corners.
      Chrome, Edge and Safari use the ::-webkit-scrollbar rules; other browsers get the standard thin scrollbar. */
+  @supports not selector(::-webkit-scrollbar) { * { scrollbar-width: thin; scrollbar-color: rgb(var(--brand) / .45) transparent; } }
