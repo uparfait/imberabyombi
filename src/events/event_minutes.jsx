@@ -13,3 +13,4 @@ import { open_form } from '../table/index.js';
 
 const doc_url = m => new URL(to('/admin/docs?doc=m_' + m.id), location.origin).href;
 const today_in = e => { const p = tz_parts(e.tz || page_tz(), Date.now()); return `${p.y}-${pad(p.mo)}-${pad(p.d)}`; };
+/* the first page: title, when and where, who attended (that day, for a series), the agenda, decisions and actions */
