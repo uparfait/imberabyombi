@@ -28,3 +28,4 @@ Code: [`src/tzconv/`](../src/tzconv/), styles in `src/styles/tzconv/`; it loads 
 | Helper | What it gives |
 |---|---|
 | `page_tz()`, `device_tz()` | the page's zone (Settings), the device's |
+| `page_now()` | now on the page's clock, as a Date to read with `getDate()`, `getHours()`… |
