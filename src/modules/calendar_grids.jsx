@@ -25,3 +25,4 @@ export function week_grid(d, items) {
   const now_line = <span className="pointer-events-none absolute inset-x-0 z-[2] h-0.5 bg-bad" style={{ top: `${(now.getHours() * 60 + now.getMinutes()) / 20}rem` }}>
     <span className="absolute -left-1.5 -top-1 h-2.5 w-2.5 rounded-full bg-bad"></span></span>;
   const hour = h => <span key={h} className="absolute right-2 -translate-y-1/2 text-[0.6875rem] text-muted" style={{ top: `${(h + 1) * 3}rem` }}>{fmt_hour(h + 1)}</span>;
+  const day = x => { const k = ymd(x);
