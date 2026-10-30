@@ -44,3 +44,4 @@ const apart = (h, hs) => { const gap = Math.min(GAP, (HUES[1] - HUES[0]) / (hs.l
 
 export function seed_color(text, avoid = []) {
   const s = String(text || '').trim().toLowerCase(), hs = avoid.filter(Boolean).map(seed_hue);
+  let h = hue_of(hash(s));
