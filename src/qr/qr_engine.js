@@ -9,3 +9,4 @@ let detector;   /* undefined: not chosen yet; null: jsQR */
 async function reader() {
   if (detector !== undefined) return detector;
   if ('BarcodeDetector' in window) {
+    try { if ((await BarcodeDetector.getSupportedFormats()).includes('qr_code')) return detector = new BarcodeDetector({ formats: ['qr_code'] }); } catch { /* jsQR below */ }
