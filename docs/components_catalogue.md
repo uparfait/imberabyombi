@@ -24,7 +24,7 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.viz_card` / `.kpi`                    | chart card / KPI card                                            |
 | `.selectable`                           | lets people select (copy) the text inside it                     |
 | `.help_tip`                             | help icon after a title; its text shows in the tooltip           |
-| `.when_row` (`when_row()`)               | a date and its times on one line as soft blocks ("Friday, October 30 · 9:00am – 10:00am"); a schema groups fields with `row: 'when'` |
+| `.when_row` (`when_row()`)               | a date, its times and time zone on one line as labelled soft blocks ("Friday, October 30 · 9:00am – 10:00am · GMT+2"), never wrapping: its words scale with its width; a schema groups fields with `row: 'when'` |
 | `.brand_toggle`                         | collapsed sidebar: logo that becomes "open sidebar" on hover     |
 | `.date_hint`                            | the format hint shown while typing a date or time                |
 | `.tab` / `.seg`                         | underlined tabs / segmented button                               |
