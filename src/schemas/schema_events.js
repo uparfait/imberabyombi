@@ -32,7 +32,7 @@ export const activities_schema = {
   form_sec: true, sec: { Details: 'title,category,note', ...SEC, Agenda: 'agenda', Audience: 'audience' },
   f: [
     field_spec('title', 'Title', 'text', 0, 1), field_spec('category', 'Category', 'select', option_list('Class|Meeting|Sport|Exam|Other')),
-    field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1), repeat_spec(), ...where_f(), ...org_f(), audience_spec()
+    field_spec('note', 'Note', 'textarea'), kind_spec(), ...when_f(1), repeat_spec(), ...where_f(), ...org_f(), agenda_spec(), audience_spec()
   ],
   before: event_before,
   g: i => {
