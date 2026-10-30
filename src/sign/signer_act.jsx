@@ -15,3 +15,4 @@ import { agree_body } from './signer_side.jsx';
 import { Cert_pick, verify } from './cert_pick.jsx';
 
 function apply(d, f, url) {
+  const first = !S.adopted[f.type], [l] = KINDS[f.type];
