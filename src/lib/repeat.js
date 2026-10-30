@@ -28,3 +28,4 @@ export function repeat_hit(r, d, f) {
   if (r.freq === 'weekly') return or(r.days, f.getDay()).includes(d.getDay()) && (days_between(monday(f), monday(d)) / 7) % n === 0;
   if (r.freq === 'monthly') return months % n === 0 && in_month(r, d, f);
   if (r.freq === 'yearly') return (d.getFullYear() - f.getFullYear()) % n === 0 && or(r.months, f.getMonth() + 1).includes(d.getMonth() + 1) && in_month(r, d, f);
+  return false;
