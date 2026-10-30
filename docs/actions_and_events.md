@@ -34,3 +34,4 @@ with the submit button busy. Validation (required, email, patterns, date formats
 |---------------------------------|--------------------------------------------------------------------|
 | `data-act="name"`               | run `ACT.name` on click (and Enter / Space)                        |
 | `data-form="name"`              | run `FORMS.name` on a valid submit                                 |
+| `data-search="col" data-k="key"`| live column search of a data table                                 |
