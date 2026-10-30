@@ -40,3 +40,4 @@ function intro(x) {
     if (!x.isConnected || (tip.on && tip.on !== x)) return;
     tip.show(x, true);
     tip.t2 = setTimeout(() => { if (tip.on === x && !x.matches(':hover, :focus-visible')) tip.hide(); }, 3800);
+  }, still() ? 0 : 1400);
