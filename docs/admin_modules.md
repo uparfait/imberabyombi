@@ -22,3 +22,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | System 2 (nested)        | `/admin/nav`           | Three navigation levels: this system (sidebar) › System 2 (4 pages + System 3) › System 3 (14 pages) |
 | Iconisus                 | `/admin/icons`         | The 3D icon maker: text, an icon from twelve libraries or an SVG, six styles, three colours, any size, copy or download (see [3D icons](icons_3d.md)) |
 | Charts & KPIs            | `/admin/charts`        | Thirty chart types and KPI designs, a date range, hover values; a click on a card (or a mark) opens its data, 20 rows a page |
+| Settings                 | `/admin/settings`      | Theme, live design tokens, storage use, backup export / import, demo reset, profile |
