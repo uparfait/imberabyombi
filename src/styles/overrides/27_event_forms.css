@@ -29,3 +29,4 @@
   /* An agenda and a list of people in a form (fields/agenda_field.jsx, people_field.jsx): soft item cards, two fields a row */
   .ag_cap { color: rgb(var(--muted)); font-size: .8125rem; font-weight: 500; }
   .ag_edit, .pp_edit { display: grid; gap: .75rem; }
+  .ag_item { padding: .75rem 1rem 1rem; border: 1px solid rgb(var(--line)); border-radius: var(--radius); }
