@@ -14,3 +14,4 @@ export const header_tools = (n = '') => <><button className="icon_btn" data-act=
   {theme_btn()}{account_menu(n)}</>;
 
 /* the signed-in person's avatar and its menu (who, settings, public website, sign out, storage used) */
+export function account_menu(n = '') {
