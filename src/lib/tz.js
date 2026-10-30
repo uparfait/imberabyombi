@@ -52,3 +52,4 @@ export function zone_list(t = Date.now()) {
     const text = [name, tz === 'UTC' ? '' : city(tz)].filter(Boolean).join(' - ') || tz;
     return { tz, off, gmt: g, text, label: `(${g}) ${text}`, short: `${s} · ${city(tz)}`,
       key: `${g} ${text} ${tz.replace(/_/g, ' ')} ${s} utc${s.slice(3)}`.toLowerCase() }; })
+    .sort((a, b) => a.off - b.off || a.text.localeCompare(b.text));
