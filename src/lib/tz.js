@@ -7,3 +7,5 @@ import { db } from '../store/db.js';
 
 export const device_tz = () => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC'; } catch { return 'UTC'; } };
 export const page_tz = () => db.get('pageTz', '') || device_tz();
+
+const FALLBACK = ['UTC', 'Africa/Kigali', 'Africa/Maputo', 'Africa/Lagos', 'Africa/Cairo', 'Africa/Nairobi', 'Europe/London', 'Europe/Paris',
