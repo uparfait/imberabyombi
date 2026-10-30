@@ -9,3 +9,4 @@ import { find_doc, save_doc, recolor } from './sign_store.js';
 export const P = { doc: null, rid: null, sel: null, dirty: false, adding: false };
 
 /* the copy of draft id (made once, when its page opens) */
+export function prep_start(id) {
