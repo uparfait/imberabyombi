@@ -40,3 +40,6 @@ const gmt_short = m => { const a = Math.abs(m); return `GMT${m < 0 ? '-' : '+'}$
 const city = tz => tz === 'UTC' ? 'UTC' : tz.split('/').pop().replace(/_/g, ' ');
 function long_name(tz, t) {
   const p = F(tz, 'n', { timeZoneName: 'long' }).formatToParts(new Date(t)).find(x => x.type === 'timeZoneName'); return p ? p.value : '';
+}
+
+/* every zone at instant t, west to east: { tz, off, gmt, text ("Central Africa Time - Kigali"), label ("(GMT+02:00) …"),
