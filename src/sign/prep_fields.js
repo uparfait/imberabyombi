@@ -30,3 +30,4 @@ export function add_field(type, page, cx, cy) {
 }
 
 export function del_field(id) {
+  P.doc.fields = P.doc.fields.filter(f => f.id !== id); if (P.sel === id) P.sel = null;
