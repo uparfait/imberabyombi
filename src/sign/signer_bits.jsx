@@ -13,3 +13,4 @@ export const CERT_HELP = 'The signer must verify their identity with a digital c
 
 /* one row: a button when it does something (a: its data-act and other attributes), else plain text; tick: a ✓ at its end */
 const row = (label, tick, a = {}, end = null) => { const Tag = a['data-act'] ? 'button' : 'div';
+  return <Tag className="sign_opt" {...(Tag === 'button' ? { type: 'button' } : {})} {...a}><span className="min-w-0 truncate">{label}</span>
