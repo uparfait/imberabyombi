@@ -31,3 +31,4 @@ export async function start(video, on_code, facing = 'environment') {
   video.srcObject = stream; await video.play();
   const tick = async () => { if (!stream) return;
     try { if (video.readyState >= 2) { const v = await decode(video, video.videoWidth, video.videoHeight); if (v) { stop(); on_code(v); return; } } } catch { /* the next frame */ }
+    timer = setTimeout(tick, 250); };
