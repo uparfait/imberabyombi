@@ -28,3 +28,4 @@ export const prep_opts = (r, on) => <div className="sign_opts">
   {row('Editing', false, { 'data-act': 'sign_rec_edit', 'data-id': r.id })}
   {notes(r)}</div>;
 export const doc_opts = r => r.cert || r.note ? <div className="sign_opts">
+  {r.cert ? row(r.cert_at ? 'Digital signature verified' : 'Digital signature', !!r.cert_at,
