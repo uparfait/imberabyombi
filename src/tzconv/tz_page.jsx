@@ -62,3 +62,4 @@ export function Tz_page() {
         <div className="tzc_head"><h3 className="tzc_cap">To</h3>{seg('tz_tf', st.tf, FMT, v => put({ tf: v }), 'Time format')}</div>
         {zone_field('tz_to', st.to, v => put({ to: v }), t)}
         <div className="tzc_result" aria-live="polite">
+          <p><span className="tzc_time">{main}</span>{suf ? <span className="tzc_suf">{suf}</span> : null}</p>
