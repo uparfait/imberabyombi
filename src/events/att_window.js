@@ -14,3 +14,4 @@ const win = (e, d) => { const [b, a] = att_mins(e), s = at(d, e.start, e.tz), en
 
 export function att_phase(e, now = Date.now()) {
   if (!e?.date || e.tbd || e.status === 'Cancelled') return ['closed'];
+  let d = e.date;
