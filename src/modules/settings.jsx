@@ -63,3 +63,4 @@ const profile = u => <section className="card p-6"><h2 className="text-lg">Your 
   <div className="field"><label htmlFor="profile_email">Email</label>
     <input id="profile_email" name="email" type="email" required autoComplete="email" placeholder=" " defaultValue={u.email} /></div>
   <p className="text-sm text-muted sm:col-span-2">Role: <span className="chip bg-brand/15 text-accent">{auth.role().name}</span></p><div>
+    <button className="btn btn_primary btn_sm">Save profile</button></div></form></section>;
