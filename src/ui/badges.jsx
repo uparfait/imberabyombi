@@ -5,7 +5,7 @@ import { me } from '../auth/index.js';
 export const TONE = { Active: 'ok', Present: 'ok', Approved: 'ok', Paid: 'ok', Returned: 'ok', Done: 'ok', Open: 'ok', Exited: 'ok', Found: 'ok', Donated: 'info', Graduated: 'info',
   'On leave': 'warn', Late: 'warn', Pending: 'warn', Partial: 'warn', Medium: 'warn', Damaged: 'warn', Suspended: 'warn',
   Planned: 'info', 'In progress': 'info', Rented: 'info', Low: 'info', Excused: 'info', Parked: 'info',
-  Inactive: 'bad', Absent: 'bad', Rejected: 'bad', Overdue: 'bad', Unpaid: 'bad', High: 'bad', Lost: 'bad', Closed: 'muted', 'To do': 'muted' };
+  Inactive: 'bad', Absent: 'bad', Rejected: 'bad', Overdue: 'bad', Unpaid: 'bad', High: 'bad', Lost: 'bad', Closed: 'muted', 'To do': 'muted',
 /* the tone classes written out in full so Tailwind's scanner keeps them (a class built as bg-${tone}/15 would not be generated) */
 const TONE_CLASS = { ok: 'bg-ok/15 text-ok', warn: 'bg-warn/15 text-warn', info: 'bg-info/15 text-info', bad: 'bg-bad/15 text-bad', muted: 'bg-muted/15 text-muted' };
 /* an empty value in a cell */
