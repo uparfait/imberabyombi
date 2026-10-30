@@ -27,3 +27,4 @@ The template is built so that keyboard, screen-reader and low-vision users get t
 
 ## Motion and colour
 - `prefers-reduced-motion` turns off animations, count-ups and the typing effect; the spinner keeps a calm rotation.
+- Small orange text uses the accent colour (≥ 4.5:1 in both themes).
