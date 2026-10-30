@@ -24,3 +24,4 @@ import { signer_page } from './signer_page.jsx';
 import { sign_done } from './sign_done.jsx';
 
 const LIST = new Set(LISTS.map(x => x[0]));
+let swept = false;
