@@ -3,3 +3,4 @@
 /* =====================================================================
    4. REUSABLE COMPONENTS: declared once, used everywhere.
    ===================================================================== */
+  /* Public pages fill the screen edge to edge (gutters only); the root scaling rule keeps proportions the same on every device */
