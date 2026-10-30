@@ -4,3 +4,4 @@ import { cap, qs, qsa } from '../lib/index.js';
 import { db, ui, cur, rerender } from '../store/index.js';
 import { schemas } from '../schemas/index.js';
 import { notify } from '../feedback/index.js';
+import { field, when_row } from '../fields/index.js';
