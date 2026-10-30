@@ -29,3 +29,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
   groups and the mini calendar fold smoothly and remember their state; the clicked link shows a spinner while its page loads.
 - **Header tools**: search (command palette), apps grid ("Your modules"), theme switch, account menu.
 - **Side panels** beside the content: notes, my tasks (with Completed), searchable help. The page shrinks to make room.
+- **Create menu**: adds a record in any module the role can manage, from any page.
