@@ -6,3 +6,5 @@ import { ic } from '../icons/index.js';
 import { start, stop, cameras, read_image } from './qr_engine.js';
 import { on_change, can_install } from './qr_install.js';
 import { top_bar, found_card, recent_list } from './qr_parts.jsx';
+
+const KEY = 'loremds:v1:qr_recent';
