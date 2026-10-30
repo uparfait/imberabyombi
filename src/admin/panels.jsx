@@ -22,3 +22,4 @@ const notes = () => { const ns = db.get('notes', []);
         <p className="text-sm text-muted">Notes you add appear here.</p></div>}</div></>; };
 
 const task_row = t => { const d = t.status === 'Done', items = items_of(t);
+  return <li key={t.id}><button type="button" className="task_row" data-act="task_open" data-id={t.id}>
