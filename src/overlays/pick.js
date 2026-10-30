@@ -79,3 +79,7 @@ export const pick = {
     if (k === 'ArrowDown' || k === 'ArrowUp') {
       e.preventDefault(); const b = items(), n = b.indexOf(t) + (k === 'ArrowDown' ? 1 : -1);
       n < 0 ? this.el.querySelector('[data-pk-q]')?.focus() : b[Math.min(n, b.length - 1)]?.focus();
+    }
+  }
+};
+/* The picker control under the pointer (selects and touch-screen date fields ignore the pointer, so the click lands on .field/.pick) */
