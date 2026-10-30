@@ -7,3 +7,4 @@ each file in [`src/sign/`](../src/sign/) does.
 | Where | What |
 |---|---|
 | collection `sign_docs` (localStorage, `db`) | each document: title, file name, page sizes, owner, status, signers, fields, activity |
+| IndexedDB `<ns>sign`, `pdf:<id>` | the uploaded PDF |
