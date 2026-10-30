@@ -2,6 +2,7 @@
    row, a card or the calendar): its title, its details as one table by section, each edited on its own, its invitations
    (event_invites.jsx), and on the right where it stands (ev_state; when a past one ran) with the actions that fit it now
    (postpone, cancel, back on schedule, mark as completed, stop repeating, delete) and attendance (attend_side.jsx).
+   Reading only (no managing rights), or past: no Edit buttons, no actions, no new invites, no settings (minutes stay). */
 import { db, route, after_render, TIMERS } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { ic } from '../icons/index.js';
