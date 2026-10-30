@@ -43,6 +43,7 @@ const time_zone = () => <section className="card p-6"><div className="flex items
   <div key={'tz_btns' + page_tz()} className="mt-4 flex flex-wrap items-center gap-2">
     <button className="btn btn_primary btn_sm" data-act="tz_save" disabled>{ic('check', 'h-4 w-4')}Save</button>
     <button className="btn btn_outline btn_sm" data-act="tz_cancel" disabled>Cancel</button>
+    {device_tz() !== page_tz() ? <button className="btn btn_ghost btn_sm" data-act="tz_device">{`Use this device's (${zone_of(device_tz()).short})`}</button> : null}</div>
 </section>;
 
 function data_card() {
