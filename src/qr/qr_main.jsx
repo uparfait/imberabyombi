@@ -2,3 +2,4 @@
    a build its service worker (public/qr-scan/sw.js), so the installed app opens offline. */
 import { createRoot } from 'react-dom/client';
 import '../styles/index.css';
+import '../styles/overrides.css';
