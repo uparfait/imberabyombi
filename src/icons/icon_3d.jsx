@@ -26,3 +26,4 @@ const CACHE = new Map();
 export function i3_src(n, color, css = 56) {
   const c = hex(color), px = Math.round(device_px(css)), k = `${n}|${c}|${px}`;
   if (!CACHE.has(k)) {
+    const glyph = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="${icon_path(n)}"/></svg>`;
