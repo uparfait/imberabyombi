@@ -40,4 +40,5 @@ export function event_page(id, c = 'events') {
   /* the way back is an arrow at the start of the title row (never a line above the title) */
   return <div className="ev_page">
     <div className="ev_head"><a href={to(back)} className="icon_btn ev_back" aria-label="Back" data-tip="Back">{ic('chev_l')}</a>
+      <h2 className="ev_title">{e.title}</h2>{help_tip(HELP[c], word.toLowerCase())}</div>
 }
