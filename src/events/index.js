@@ -12,3 +12,4 @@ export * from './event_act.jsx';
 export * from './qr.jsx';
 export * from './attend_form.jsx';
 export * from './attend_page.jsx';
+export * from './attend_side.jsx';
