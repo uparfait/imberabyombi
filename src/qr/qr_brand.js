@@ -6,3 +6,5 @@
 import { cfg } from '../config/index.js';
 import { render } from '../icon3d/index.js';
 import { HASH, HASH_VIEW } from '../icons/index.js';
+
+const DEF = '#E0661B', HEX = /^#[0-9a-f]{6}$/i;
