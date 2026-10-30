@@ -41,3 +41,4 @@ function Preview({ id }) {
 
 export const SELF_ACT = {
   sign_self: () => { const me = who(); if (!me.email) return;
+    const r = mine(P.doc) || add_rec(P.doc, me.name || me.email, me.email, '', false);
