@@ -15,6 +15,7 @@ const place_cell = (v, row) => v === 'Virtual' ? 'Virtual' : row?.venue || '—'
 const when_f = end_req => [field_spec('date', 'Date', 'date', 0, 1, { row: 'when' }), field_spec('start', 'Starts', 'time', 0, 1, { row: 'when' }),
   field_spec('end', 'Ends', 'time', 0, end_req, { row: 'when' }), field_spec('tz', 'Time zone', 'tz', 0, 1, { def: () => device_tz(), row: 'when' })];
 const SEC = { When: 'kind,date,start,end,tz,repeat', Location: 'place,venue,link,join_note', Organiser: 'org_name,org_email,org_tel' };
+/* seed rows: where and who */
 
 export const activities_schema = {
   l: 'activity', n: 16, cols: ['title', 'kind', 'date', 'start', 'end', 'tz', 'category'], r: { tz: tz_cell },
