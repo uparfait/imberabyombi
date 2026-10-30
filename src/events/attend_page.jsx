@@ -12,3 +12,4 @@ addEventListener('storage', e => { if (e.key?.endsWith('c:attendees')) rerender(
 
 export function attend_page(r) {
   const [, , c, id] = r.path.split('/'), e = ['events', 'activities'].includes(c) ? db.find(c, id) : null, st = e && ev_state(e);
+  set_meta(e ? `Attendance · ${e.title}` : 'Attendance');
