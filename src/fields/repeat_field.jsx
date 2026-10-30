@@ -35,3 +35,4 @@ const chip = (name, v, label, on, cls = '', tip) => <label key={v} className={`c
   <input type="checkbox" className="sr-only" name={name} value={v} defaultChecked={on} aria-label={tip} />{label}</label>;
 const choose = (name, opts, cur, label) => <div className="seg max-w-full" role="radiogroup" aria-label={label}>{opts.map(([v, l]) => <label key={v}>
   <input type="radio" className="sr-only" name={name} value={v} defaultChecked={cur === v} /><span>{l}</span></label>)}</div>;
+const line = (label, body, when, help) => <div className="rp_row" data-when={when}>
