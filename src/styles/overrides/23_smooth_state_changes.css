@@ -15,3 +15,4 @@
     .side > div { width: 18rem; }
   }
   /* Phone: the backdrop behind the sidebar fades in and out */
+  /* Collapsed sidebar (desktop): the header shows the logo; on hover/focus it turns into the "open sidebar" icon */
