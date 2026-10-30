@@ -66,3 +66,4 @@ const profile = u => <section className="card p-6"><h2 className="text-lg">Your 
     <button className="btn btn_primary btn_sm">Save profile</button></div></form></section>;
 
 const design = () => <section className="card p-6"><h2 className="text-lg">Design system</h2>
+  <ds-callout className="mt-5"><h3 slot="title">One token, whole system</h3>
