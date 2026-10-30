@@ -28,3 +28,4 @@ function co_form(c, e, i = -2) {
 
 export const ORG_ACT = {
   ev_co_add: t => { const [c, e] = get(t); if (e) co_form(c, e); },
+  ev_org_edit: t => { const [c, e, i] = get(t); if (!e) return; i < 0 ? open_form(c, e.id, {}, ['Edit organiser', ['org_name', 'org_email', 'org_tel']]) : co_form(c, e, i); },
