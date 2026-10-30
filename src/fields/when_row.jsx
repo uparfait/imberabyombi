@@ -20,3 +20,4 @@ const day_of = form => /^\d{4}-\d{2}-\d{2}$/.test(form?.elements.date?.value || 
 const tz_words = form => { const s = form?.querySelector('.when_tz select'); if (s) s.nextSibling.textContent = zone_short(s.value, day_of(form)); };
 const tz_block = (f, v, row) => { const id = 'field_' + f.k, tz = v || page_tz();
   return <Fragment key={f.k}><label htmlFor={id} className="sr-only">{f.l}</label>
+    <span className="pick when_block when_tz"><select id={id} name={f.k} defaultValue={tz} required={!!f.req}
