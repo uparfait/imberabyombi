@@ -5,3 +5,4 @@
 import { VIEWS } from './views.js';
 import { db, get_version } from '../store/index.js';
 import { auth } from '../auth/index.js';
+import { cap, css_var, rgb2hex, page_tz, device_tz, zone_list, zone_of } from '../lib/index.js';
