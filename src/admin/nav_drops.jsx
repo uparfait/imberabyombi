@@ -35,3 +35,6 @@ function nav_markup(routed) {
   const body = nav_page({ routed, title, node, kids, path, to });
   return <><nav className={`nav_row ${routed ? 'is_pinned' : ''}`} aria-label={`${ROOT} navigation`}>{[0, 1].map(menu)}</nav>
     <div className="nav_page_body mt-4">{body}</div></>;
+}
+
+/* the routed pages draw with their page; the demo sits in a slot that nav_draw() draws again on its own */
