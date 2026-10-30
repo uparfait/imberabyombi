@@ -38,3 +38,4 @@
 @keyframes sf_pulse { 0%, 100% { outline: 0 solid rgb(var(--warn) / .25); } 50% { outline: 6px solid rgb(var(--warn) / .25); } }
 @keyframes sf_pop { from { opacity: 0; transform: scale(.6); } }
 @keyframes sf_flash { 30% { outline: 10px solid rgb(var(--warn) / .4); } }
+@media (prefers-reduced-motion: reduce) { .sf_todo, .sf.sf_new, .sf.flash { animation: none; } .sign_sheet canvas { transition: none; } }
