@@ -4,3 +4,4 @@
 import { zip_texts } from './zip_texts.js';
 
 const EMAIL = /[a-z0-9._%+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}/gi;
+/* the parts that hold cells (not the file's own details, such as its author's address) */
