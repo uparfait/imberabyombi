@@ -3,3 +3,4 @@
   .trunc { max-width: 18rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .table_data thead th { min-width: 11rem; vertical-align: top; }
   .table_data thead button { text-transform: inherit; }
+  /* Action Buttons: first column, pinned to the left edge while the table scrolls sideways */
