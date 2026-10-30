@@ -45,3 +45,4 @@ export function month_grid(d, items) {
     className={`mb-0.5 block w-full truncate rounded-md px-1.5 py-0.5 text-left text-[0.6875rem] ${it.tone === 'ink' ? INK : 'bg-brand/15 text-accent'}`}>
     {`${it.start} ${it.title}`}</button>;
   const cell = i => { const x = add_d(s, i), k = ymd(x), its = items.filter(it => it.date === k);
+    const out = x.getMonth() !== d.getMonth() ? 'bg-surface-2/60' : '';
