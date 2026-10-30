@@ -29,3 +29,4 @@ function on_click(e) {
   const t = e.target.closest('[data-act]'), a = t?.dataset.act;
   if (!t || t.disabled || !ACT[a]) return;
   if (t.closest('.tile_pop')) close_pops();
+  if (t.tagName === 'A') e.preventDefault();
