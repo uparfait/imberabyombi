@@ -42,3 +42,4 @@ export function notices(now = Date.now()) {
 
 export const notices_read = () => new Set(db.get('notices_read', []));
 /* marks ids read, keeping only ids that still have a notice */
+export const mark_read = ids => { const now = new Set(notices().map(n => n.id)); db.set('notices_read', [...new Set([...notices_read(), ...ids])].filter(id => now.has(id))); };
