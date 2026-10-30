@@ -20,6 +20,7 @@ const body_of = (s, row, keys) => { const fs = s.f.filter(f => f.form !== false 
 /* a saved record as its form shows it: a field it lacks (it was saved before the field existed) starts as what the record
    stands for (the field's fill(record)) or as on a new record (def) */
 const filled = (s, r) => r && { ...r, ...Object.fromEntries(s.f.filter(f => (f.fill || f.def) && (r[f.k] == null || r[f.k] === ''))
+  .map(f => [f.k, f.fill ? f.fill(r) : f.def()])) };
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset). part: [title, keys]
    edits one section of a record only ("Edit location") */
 export function open_form(c, id, preset = {}, part = null) {
