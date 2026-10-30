@@ -18,6 +18,7 @@ function remove_rec(r) {
   P.sel = null; prep_dirty(); rerender();
 }
 
+/* sent to the signers who have not signed (you may have signed your own fields already); signed by everyone: complete */
 function send() {
   const d = P.doc, now = Date.now();
   Object.assign(d, { status: 'sent', sent_at: now });
