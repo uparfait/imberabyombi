@@ -25,3 +25,4 @@ VIEWS.dashboard = () => {
   return <>
     <section aria-label="Welcome" className="flex flex-wrap items-end gap-4">
       <div className="hero_in min-w-0 flex-1"><p className="text-sm text-muted">
+        {page_now().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
