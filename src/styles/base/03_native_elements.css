@@ -23,3 +23,4 @@
   ::-webkit-scrollbar-track { background: transparent; margin: calc(var(--radius) * .75); }
   ::-webkit-scrollbar-corner { background: transparent; }
   html::-webkit-scrollbar-track, body::-webkit-scrollbar-track { margin: 0; }   /* the page scrollbar keeps its full length */
+  ::-webkit-scrollbar-thumb { background: rgb(var(--brand) / .4); border-radius: var(--pill); border: .15rem solid transparent; background-clip: padding-box; }
