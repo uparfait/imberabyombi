@@ -15,3 +15,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
   starts as the page time zone (the person's own) and opens a searchable list of every zone (city, name or offset, such
   as GMT+2). Its short name follows the row's date: New York is GMT-4 in summer and GMT-5 in winter.
 - The record keeps its time zone (`tz`), and its date and times as they were entered.
+- **The calendar converts**: each activity and event shows at its time in the page time zone, on the right day (a 9:00
