@@ -31,6 +31,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
 - **Organiser**: name and email (required) and phone. They start as the person signed in. **Co-organisers**: names and
   emails, added and removed in the form.
 - **Agenda**: items, each with a time from and to, a title, a description and a presenter (name, email, title). The item
+  running now is marked on the page and the live screen ([`events/agenda_now.js`](../src/events/agenda_now.js)).
 - **Expected audience**: how many people are expected.
 
 ## The Events page
