@@ -36,3 +36,4 @@ one live. Classes are snake_case; Tailwind utilities keep Tailwind's names.
 | `.tile` / `.tile.is_on`                 | selectable grid tile (a parking slot), `is_on` when taken        |
 | `.hero` / `.arch`                       | brand artwork pieces (follow the theme)                          |
 | `.theme_band`                           | full-width brand band: light tint or ink, by theme               |
+| `.pattern_layer`                        | diamond lattice; tint with `--pc` (rgb) and `--pa` (alpha)       |
