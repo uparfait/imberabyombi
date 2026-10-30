@@ -10,3 +10,4 @@ import { field_spec } from '../schemas/index.js';
 import { open_form, sync_when } from '../table/index.js';
 
 const lc = s => String(s || '').trim().toLowerCase();
+const put = (c, e, d, title, text) => { db.upsert(c, { id: e.id, ...d }); rerender(); notify(text, 'ok', title); };
