@@ -48,3 +48,4 @@ export function help_intro(root) {
     if (id !== run) return;
     const r = root || document.getElementById('app'), x = r && first_help(r);
     if (!x) return; run++;
+    if (!SEEN.has(tip.text(x))) intro(x);
