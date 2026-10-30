@@ -41,6 +41,7 @@ const time_zone = () => <section className="card p-6"><div className="flex items
     <select id="page_tz" data-page-tz="" defaultValue={page_tz()}>{zone_list().map(z => <option key={z.tz} value={z.tz}>{z.label}</option>)}</select></div>
   {/* a new choice is kept only on Save; Save and Cancel wake up when the choice differs from the time zone in use */}
   <div key={'tz_btns' + page_tz()} className="mt-4 flex flex-wrap items-center gap-2">
+    <button className="btn btn_primary btn_sm" data-act="tz_save" disabled>{ic('check', 'h-4 w-4')}Save</button>
 </section>;
 
 function data_card() {
