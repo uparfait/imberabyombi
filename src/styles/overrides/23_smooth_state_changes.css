@@ -1,2 +1,3 @@
 /* overrides/23_smooth_state_changes.css: rules that come after Tailwind's utilities, so they win at equal specificity */
   /* E. Smooth state changes */
+  .row_flash > td { animation: flash 1.8s var(--ease); }
