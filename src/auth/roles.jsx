@@ -29,3 +29,4 @@ export const roles = () => { let r = db.get('roles'); if (!Array.isArray(r) || !
   else if (r.some(x => x.perms !== '*' && Object.keys(FOR_ALL).some(k => x.perms[k] == null))) {
     r = r.map(x => x.perms === '*' ? x : { ...x, perms: { ...FOR_ALL, ...x.perms } }); db.set('roles', r); }
   return r; };
+/* Landing page: where people with a role arrive after signing in (set on Roles & access). It falls back to the
