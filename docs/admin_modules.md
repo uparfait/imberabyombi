@@ -19,3 +19,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 | Smart parking            | `/admin/parking`       | Live slot grid, check-in, check-out with a fee (`cfg.parking_rate` per hour), movement log |
 | Roles & access           | `/admin/roles`         | Permission matrix, landing page per role, invite links           |
 | Email designs            | `/admin/emails`        | Invite, update, time change, reset link, sign-in code, access token in the brand |
+| System 2 (nested)        | `/admin/nav`           | Three navigation levels: this system (sidebar) › System 2 (4 pages + System 3) › System 3 (14 pages) |
