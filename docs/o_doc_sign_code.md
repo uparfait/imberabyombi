@@ -20,3 +20,4 @@ documents between people and devices, keep these records and files on a server (
 - The five handwriting fonts are served with the site (`src/assets/fonts/`, open font licence) and load only when shown.
 
 ## Files
+| File | What it does |
