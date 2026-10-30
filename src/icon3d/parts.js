@@ -34,6 +34,7 @@ export const deep = (c, dl, k, ds = 0) => shade(c, dl * (.6 + .4 * Math.min(k, 1
 
 /* vol(id, o, k): optional goo (round and thicken), then diffuse shading and a specular highlight.
    o = { goo, flat (goo only), bevel, surf, spec, exp, shade } */
+export function vol(id, o, k = 1) {
   let f = `<filter id="${id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">`, g = 'SourceGraphic';
   if (o.goo) { f += `<feGaussianBlur in="SourceGraphic" stdDeviation="${o.goo}"/><feComponentTransfer result="g"><feFuncA type="linear" slope="12" intercept="-1.6"/></feComponentTransfer>`; g = 'g'; }
   if (o.flat) return f + '</filter>';
