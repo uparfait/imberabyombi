@@ -4,3 +4,4 @@
   "description": "Scan a QR code. Secure links (https) open in a new tab.",
   "id": "./",
   "start_url": "./",
+  "scope": "./",
