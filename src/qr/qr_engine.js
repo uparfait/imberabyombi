@@ -8,3 +8,4 @@ const JSQR = ['https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js', 'https://u
 let detector;   /* undefined: not chosen yet; null: jsQR */
 async function reader() {
   if (detector !== undefined) return detector;
+  if ('BarcodeDetector' in window) {
