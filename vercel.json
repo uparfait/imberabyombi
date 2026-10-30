@@ -26,6 +26,7 @@
     {
       "source": "/qr-scan/sw.js",
       "headers": [
+        {
     }
   ]
 }
