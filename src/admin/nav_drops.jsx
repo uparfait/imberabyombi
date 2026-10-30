@@ -23,3 +23,4 @@ function nav_markup(routed) {
   const p = ui.nav, path = []; { let list = tree; for (const i of p) { const n = list?.[i]; if (!n) break; path.push(n); list = n.c; } }
   const node = path.at(-1), kids = node ? node.c : tree, list_at = l => l ? path[l - 1]?.c : tree;
   const href = idx => { let list = tree; return link_to('/admin/nav' + idx.map(i => { const n = list[i]; list = n.c; return `/${i}-${slug(n.t)}`; }).join('')); };
+  const to = (l, i) => routed ? { href: href([...p.slice(0, l), i]) } : { attrs: { 'data-act': 'nav_open', 'data-level': l + 1, 'data-i': i } };
