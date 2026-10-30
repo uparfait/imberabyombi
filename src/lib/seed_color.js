@@ -12,3 +12,4 @@ const L = .54, C = .15, GAP = 40, HUES = [150, 335];
 /* FNV-1a, 32 bits: a quick, well-spread hash of the text */
 function hash(s) {
   let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193); }
