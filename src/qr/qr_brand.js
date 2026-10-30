@@ -25,3 +25,4 @@ async function install_files(c) {
   const m = { name: 'Qr-scan', short_name: 'Qr-scan', description: 'Scan a QR code. Secure links (https) open in a new tab.', id: at, start_url: at, scope: at,
     display: 'standalone', orientation: 'portrait', background_color: '#1F1F1F', theme_color: c, icons };
   link('manifest', URL.createObjectURL(new Blob([JSON.stringify(m)], { type: 'application/manifest+json' })));
+  link('icon', 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(mark(c, 64))); link('apple-touch-icon', await png(c, 180, .86, null));
