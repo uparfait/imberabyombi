@@ -7,3 +7,4 @@ import { reduced, notify } from '../feedback/index.js';
 import { ask, slide_in } from '../overlays/index.js';
 import { MAILS } from '../emails/index.js';
 import { nav_draw, refresh_panel, ensure_mine } from '../admin/index.js';
+import { redraw_charts } from '../charts/index.js';
