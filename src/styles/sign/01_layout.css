@@ -23,3 +23,4 @@
 .sign_main li { min-width: 0; }
 .sign_row { display: flex; align-items: center; gap: .875rem; padding: .75rem 1rem .75rem .75rem; }
 .sign_faces { display: flex; flex: none; padding-left: .375rem; }
+.sign_faces > span { display: grid; width: 1.75rem; height: 1.75rem; margin-left: -.375rem; place-items: center; border-radius: var(--pill);
