@@ -2,7 +2,7 @@
    the registered cell shows a fill bar). Both have a type (Upcoming, Live now, Recurring) and their date, times and time
    zone on one line in the form (row 'when'), empty to start but for the zone, the device's; the calendar shows them in the
    page's zone. Then where (a place or online), who organises it and how many are expected. Their forms come in sections
-   (form_sec): the same sections as their details. */
+   (form_sec): the same sections as their details. An event's status (Scheduled, Postponed, Cancelled, Completed) is
 import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/index.js';
 import { bar_cell } from '../ui/index.js';
 import { field_spec, option_list, STATUS, mail, tel } from './fields.js';
