@@ -21,3 +21,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
 
 ## The time zone converter (`/admin/tz`)
 In the sidebar under System. From: a time zone, a date, hour and minute (12h / 24h, Now); To: a time zone, and the
+moment there in large type, its date, the offset, the difference and "Next day" / "Previous day". Swap turns them around.
