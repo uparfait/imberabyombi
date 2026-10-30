@@ -25,3 +25,4 @@ before_render(() => tip.hide());
 
 /* The first help icon (help_tip) of a page or a dialog introduces itself the first time it shows after a load: it zooms
    in and out twice, then its text shows for a few seconds and fades away. Each text does this once per load; hovering
+   the icon keeps the text up. help_intro(root) looks in root (default: the page, without its headers, the admin sidebar
