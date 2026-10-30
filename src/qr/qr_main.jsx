@@ -1,4 +1,5 @@
 /* qr/qr_main.jsx: Qr-scan's entry (qr-scan/index.html): the site's stylesheet and its own, the site's colours as set in
+   Settings (qr_brand.js), the screen (qr_app.jsx), and in a build its service worker (public/qr-scan/sw.js), so the
 import { createRoot } from 'react-dom/client';
 import '../styles/index.css';
 import '../styles/overrides.css';
