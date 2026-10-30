@@ -4,3 +4,4 @@
 import { createPortal } from 'react-dom';
 import { ic } from '../icons/index.js';
 import { closed_pop } from './live_slot.jsx';
+import { notices, notices_read } from './notices.js';
