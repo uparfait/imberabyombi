@@ -5,6 +5,7 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { ic } from '../icons/index.js';
 import { start, stop, has_torch, torch } from './qr_engine.js';
+import { on_change, can_install, standalone } from './qr_install.js';
 
 const KEY = 'loremds:v1:qr_recent';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
