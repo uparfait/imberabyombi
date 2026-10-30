@@ -7,3 +7,4 @@ with `https`), shows it with **Open link**, which opens it in a new tab. Code: [
 ## Using it
 - **Start camera**: the back camera, in a square viewfinder; it stops by itself once it finds a code. **Stop**, and
   **Flip** (front / back) when there are two cameras.
+- **Scan a picture**: a photo or screenshot of a code, from the gallery or the files.
