@@ -47,6 +47,7 @@ button.sign_opt:hover { background: rgb(var(--fg) / .06); }
 /* Send for signing while it cannot be sent: disabled; hovering its wrapper shows why */
 .sign_send_wrap { display: block; }
 .sign_send_wrap > button:disabled { pointer-events: none; }
+.sign_self_done { display: flex; align-items: center; justify-content: center; gap: .375rem; min-height: 2.25rem; color: rgb(var(--ok)); font-size: .8125rem; font-weight: 600; }
 .sign_check input { width: 1rem; height: 1rem; accent-color: rgb(var(--brand)); }
 /* the Activity heading: a rounded row (and a rounded focus ring) */
 .sign_side details > summary { margin: -.5rem; padding: .5rem .75rem; border-bottom: 0; border-radius: var(--pill); }
