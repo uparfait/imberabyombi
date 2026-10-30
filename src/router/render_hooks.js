@@ -33,3 +33,4 @@ export function run_after_render({ keep, anim }) {
   else if (m) { m.classList.remove('page_enter'); if (anim && main_enter) { void m.offsetWidth; m.classList.add('page_enter'); } }
   if (!keep) scrollTo({ top: 0, behavior: 'instant' });
   AFTER.splice(0).forEach(f => { try { f(); } catch (e) { console.error(e); } });
+  ui.flash = null; render_flags.nav_fetched = false; enhance(); show_next();
