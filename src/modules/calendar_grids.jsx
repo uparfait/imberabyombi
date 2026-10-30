@@ -45,7 +45,7 @@ export function month_grid(d, items) {
   const f = new Date(d.getFullYear(), d.getMonth(), 1), s = add_d(f, -f.getDay()), td = ymd();
   const item = it => it.all_day ? cal_task(it) : <button key={it.c + it.id} data-act="ev" data-c={it.c} data-id={it.id}
     className={`mb-0.5 block w-full truncate rounded-md px-1.5 py-0.5 text-left text-[0.6875rem] ${it.tone === 'ink' ? INK : 'bg-brand/15 text-accent'}`}>
-    {`${it.start} ${it.title}`}</button>;
+    {`${it.start} ${it.title}`}{role(it)}</button>;
   const cell = i => { const x = add_d(s, i), k = ymd(x), its = items.filter(it => it.date === k);
     const out = x.getMonth() !== d.getMonth() ? 'bg-surface-2/60' : '';
     return <div key={k} className={`min-h-[6.5rem] min-w-0 border-b border-r border-line p-1 sm:p-1.5 ${out}`} data-act="slot" data-d={k}>
