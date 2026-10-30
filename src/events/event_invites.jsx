@@ -65,3 +65,6 @@ export function invites_card(e, st, can) {
     {inv.length ? <><p className="ev_inv_count">{`${inv.length} invited`}</p><ul className="ev_invited">{inv.map(i => <li key={i.e}>
       <span className="min-w-0 truncate">{i.e}</span><span className="ev_inv_when">{fmt_stamp(i.at, { dateStyle: 'medium' })}</span>
       {open ? <button type="button" className="icon_btn h-8 w-8" data-act="ev_uninvite" data-id={e.id} data-e={i.e} aria-label={`Remove ${i.e}`}>{ic('x', 'h-4 w-4')}</button> : null}</li>)}</ul></>
+      : <p className="text-sm text-muted">No one is invited yet.</p>}
+  </section>;
+}
