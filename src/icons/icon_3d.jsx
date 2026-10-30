@@ -15,3 +15,4 @@ export const HUES = { orange: '#E0661B', amber: '#E5A01A', green: '#17A34A', tea
 export const TONES = { brand: HUES.orange, ink: HUES.slate, ok: HUES.green, info: HUES.blue, warn: HUES.amber, bad: HUES.red };
 /* a run of hues for rows of icons that should each look different (tiles, cards): hue_at(i) */
 export const HUE_RUN = ['orange', 'blue', 'green', 'violet', 'teal', 'pink', 'amber', 'indigo', 'sky', 'red'];
+export const hue_at = i => HUE_RUN[((i % HUE_RUN.length) + HUE_RUN.length) % HUE_RUN.length];
