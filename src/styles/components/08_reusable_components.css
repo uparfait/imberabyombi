@@ -14,3 +14,4 @@
   .btn_ghost { @apply text-fg hover:bg-fg/5; }
   .btn_soft { @apply bg-brand/10 text-accent hover:bg-brand/20; }
   .btn_danger { @apply bg-bad/10 text-bad hover:bg-bad hover:text-white; }
+  .btn_warn { @apply bg-warn/10 text-warn hover:bg-warn hover:text-white; }   /* a caution that is not a loss (archive) */
