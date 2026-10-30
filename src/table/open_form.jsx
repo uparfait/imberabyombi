@@ -7,9 +7,7 @@ import { notify } from '../feedback/index.js';
 import { field, when_row, fill_rows } from '../fields/index.js';
 import { modal } from '../overlays/index.js';
 
-/* the form's fields; those a schema groups with row: 'when' (a date and its times) go on one line, where the first is */
-const body_of = (s, row) => s.f.map(f => !f.row ? field(f, row[f.k])
-  : s.f.find(x => x.row === f.row) === f ? when_row(s.f.filter(x => x.row === f.row), row) : null);
+/* fields; those a schema groups with row: 'when' (a date and its times) go on one line, where the first is */
 
 /* preset: values a new record starts with (on top of the fields' defaults and the page's preset) */
 export function open_form(c, id, preset = {}) {
