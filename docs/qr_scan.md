@@ -24,6 +24,7 @@ default files in `public/qr-scan/`. Only Qr-scan installs, never the site's othe
 `/qr-scan/`) and service worker (`sw.js`, the same scope; the site itself has neither). **Install** shows in the top bar
 when the browser offers it (Chrome, Edge, Android); on an iPhone or iPad it shows a tip: Share, then Add to Home Screen.
 Once installed it is not offered again. Installed, it opens straight onto the camera in its own window (the site's mark
+only, no way back to the site), also offline (its files are kept by the service worker where the browser allows).
 
 ## Where it is linked
 - The admin sidebar (group Overview): **Qr-scan** (`app` in [`src/auth/mods.js`](../src/auth/mods.js)); a full page load,
