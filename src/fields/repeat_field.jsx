@@ -20,3 +20,4 @@ export function repeat_from(f) {
   if (r.freq === 'weekly') r.days = all('rp_days');
   if (r.freq === 'yearly') r.months = all('rp_months');
   if (r.freq === 'monthly' || r.freq === 'yearly') Object.assign(r, v('rp_by') === 'week' ? { by: 'week', weeks: all('rp_weeks'), wdays: all('rp_wdays') } : { by: 'date', dates: all('rp_dates') });
+  if (r.end === 'on') r.until = v('rp_until');
