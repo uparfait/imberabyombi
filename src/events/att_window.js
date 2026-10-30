@@ -7,3 +7,5 @@ import { at } from '../schemas/index.js';
 export const ATT_DEF = { before: 15, after: 15 };
 const mins = (v, d) => v === '' || v == null || isNaN(+v) ? d : Math.max(0, +v);
 export const att_mins = e => [mins(e.att_before, ATT_DEF.before), mins(e.att_after, ATT_DEF.after)];
+
+/* the window on day d: [opens, closes] */
