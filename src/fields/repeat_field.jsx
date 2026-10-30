@@ -48,3 +48,4 @@ export const repeat_field = (f, v, row = {}) => { const r = { ...REPEAT_NEW, ...
       <div className="rp_every" data-when="rp_freq!=weekdays">{num(id + '_every', 'rp_every', 'Every', r.every, 99)}
         <span className="rp_unit" data-rp-unit="">{UNIT[r.freq] ? UNIT[r.freq] + (r.every > 1 ? 's' : '') : ''}</span></div></div>
     {line('On', weekdays('rp_days', r.days), 'rp_freq=weekly')}
+    {line('In', <div className="rp_chips">{MONTH_NAMES.map((m, i) => chip('rp_months', i + 1, m.slice(0, 3), r.months.includes(i + 1), '', m))}</div>, 'rp_freq=yearly')}
