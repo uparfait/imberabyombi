@@ -42,3 +42,4 @@ Every feature below is working code. Each line says what it is and where it live
 ## Admin (`src/admin/`, `src/modules/`)
 - Collapsible sidebar with groups and a mini calendar, apps grid, Create menu, account menu, side panels (notes,
   my tasks, help), command palette (Ctrl K / ⌘K), and a text-selection switch in the account menu.
+- Nested navigation: three levels (this system, System 2, System 3) with "Your modules" style menus.
