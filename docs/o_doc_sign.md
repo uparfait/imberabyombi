@@ -25,3 +25,4 @@ The top bar: Back, the O-Doc Sign name, then one rounded group, like the admin h
 tile menu as nested systems: All, Drafts, Waiting, Completed, Archived and To sign, each with its count and a fixed
 colour), light / dark, and the account menu. A page's actions (Send, Save, Download, Finish) are never in the top bar:
 they are in the page's right column. Page titles carry their explanation in a help icon (`help_tip`). A document opened at
+the wrong address moves to the right one (a sent draft to its page, someone else's to signing). No document is seeded:
