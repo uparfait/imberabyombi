@@ -51,3 +51,4 @@ export const when_row = (fs, row) => { const cap = fs.some(f => f.t === 'tz') ? 
   return <div key={id} className="when_wrap sm:col-span-2"><p id={id} className="when_cap">{cap}</p>
     <div className="when_row" role="group" aria-labelledby={id}>
       {fs.map((f, i) => <Fragment key={f.k}>{i && f.t === 'time' && fs[i - 1].t === 'time' ? <span className="when_dash" aria-hidden="true">–</span> : null}
+        {block(f, row[f.k], row)}</Fragment>)}</div></div>; };
