@@ -17,3 +17,4 @@ export function Qr_app() {
   useSyncExternalStore(on_change, can_install);   /* Install shows when the browser offers it */
   const video = useRef(null), [st, set] = useState({ phase: 'idle' }), [facing, set_facing] = useState('environment');
   const [multi, set_multi] = useState(false), [recent, set_recent] = useState(load);
+  const found = t => { set({ phase: 'found', text: t }); navigator.vibrate?.(60);
