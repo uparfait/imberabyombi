@@ -11,3 +11,4 @@ import { prep_tools } from './prep_tools.jsx';
 /* the pages with the fields being placed; the pointer and keys work on them while the page is open */
 function Prep_doc({ d }) {
   const root = useRef(null);
+  useEffect(() => prep_pointer(root.current), []);
