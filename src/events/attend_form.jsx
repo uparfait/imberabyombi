@@ -33,3 +33,4 @@ export function Attend_form({ c, id, demo }) {
   };
   return <form className="att_form" noValidate onSubmit={submit} onPointerDown={() => err && set_err('')}>{F.map(f => field(f, ''))}
     <div className="seg_field"><p className="seg_cap">Signature</p><div className="seg" role="radiogroup" aria-label="Signature">{MODES.map(([v, l]) => <label key={v}>
+      <input type="radio" className="sr-only" name="sig_mode" checked={mode === v} onChange={() => { set_mode(v); set_err(''); }} /><span>{l}</span></label>)}</div></div>
