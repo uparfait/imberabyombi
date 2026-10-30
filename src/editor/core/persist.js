@@ -41,8 +41,7 @@ set_on_change(save_soon);
 
 /* the saved document: IndexedDB first; a copy saved earlier in localStorage moves there */
 export async function load_doc() {
-  if (apply_doc(await idb_get(DOC_KEY))) return true;
-  const old = db.get(DOC_KEY); if (!apply_doc(old)) return false;
+  key = doc_key(); if (apply_doc(await idb_get(key))) return true;
   if (await idb_set(DOC_KEY, old)) db.del(DOC_KEY); return true;
 }
 /* fill state from a saved document; false when it is not a valid one */
