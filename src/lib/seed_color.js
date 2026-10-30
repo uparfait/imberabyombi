@@ -25,3 +25,4 @@ function oklch_hex(l, c, h) {
   const t = h * Math.PI / 180;
   for (; c > 0; c -= .005) {
     const a = c * Math.cos(t), b = c * Math.sin(t);
+    const l3 = (l + .3963377774 * a + .2158037573 * b) ** 3, m3 = (l - .1055613458 * a - .0638541728 * b) ** 3, s3 = (l - .0894841775 * a - 1.291485548 * b) ** 3;
