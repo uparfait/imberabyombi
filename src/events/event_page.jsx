@@ -33,5 +33,6 @@ export function event_page(id) {
     <a href={to('/admin/events')} className="btn btn_outline btn_sm">{ic('arrow_back', 'h-4 w-4')}Back to events</a>, 'alert', 'warn');
   route.title = e.title; const st = ev_state(e), can = auth.can('events', 2);
   /* the way back is an arrow at the start of the title row (never a line above the title) */
+  return <div className="ev_page">
     <div className={`ev_grid ${can ? '' : 'ev_one'}`}><div className="ev_main">{event_cards(e, can)}{invites_card(e, st, can)}</div>{can ? side(e, st) : null}</div></div>;
 }
