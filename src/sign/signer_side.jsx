@@ -6,3 +6,4 @@ import { KINDS } from './sign_store.js';
 import { own_fields, left_of } from './signer_state.js';
 
 const next_text = left => left.length
+  ? `${left.length} field${left.length > 1 ? 's' : ''} left · next: ${KINDS[left[0].type][0].toLowerCase()}` : 'All your fields are filled';
