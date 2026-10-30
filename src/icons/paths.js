@@ -28,3 +28,4 @@ export const PATHS = { ...EDITOR_PATHS,   /* the document editor's icons first: 
   side_close: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM9 3v18M16 9l-3 3 3 3',
   side_open: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM9 3v18M13 9l3 3-3 3',
   search: 'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.3-4.3',
+  plus: 'M12 5v14M5 12h14',
