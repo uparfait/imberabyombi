@@ -46,3 +46,4 @@ export const PREP_ACT = {
     const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
     /* what still stops it from being sent, in a dialog (a passing message was easy to miss) */
     const stop = (title, help, submit, then = () => {}) => modal({ title, help, submit, on_submit: then });
+    if (!R.length) return stop('No signers yet', 'Add the people who sign this document, then send it.', 'Add a signer', () => { P.adding = true; rerender(); });
