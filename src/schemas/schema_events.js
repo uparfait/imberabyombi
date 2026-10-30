@@ -26,6 +26,7 @@ export const activities_schema = {
     return {
       title: lorem.t(3), date: ymd(add_d(new Date(), lorem.int(-6, 14))), start: `${pad(h)}:00`, end: `${pad(h + lorem.int(1, 2))}:${lorem.pick(['00', '30'])}`,
       category: lorem.pick(['Class', 'Meeting', 'Sport', 'Exam']), note: lorem.s(), kind: i % 4 === 1 ? 'Recurring' : 'Upcoming',
+      repeat: i % 4 === 1 ? { freq: ['weekly', 'weekdays', 'monthly', 'daily'][i % 16 >> 2], every: 1, end: 'never' } : null
     };
   }
 };
