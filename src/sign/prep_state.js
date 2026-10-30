@@ -26,7 +26,7 @@ export const prep_dirty = () => {
 };
 export const prep_save = () => {
   clearTimeout(later); if (!P.doc) return;
-  save_doc(P.doc); P.dirty = false; document.querySelector('[data-unsaved]')?.setAttribute('hidden', '');
+  P.doc.placing = P.rid; save_doc(P.doc); P.dirty = false; document.querySelector('[data-unsaved]')?.setAttribute('hidden', '');
 };
 const leave = () => { if (P.dirty) prep_save(); P.doc = null; };
 
