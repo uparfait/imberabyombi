@@ -37,3 +37,4 @@ function intro(x) {
   x.classList.add('intro');
   setTimeout(() => {
     x.classList.remove('intro');
+    if (!x.isConnected || (tip.on && tip.on !== x)) return;
