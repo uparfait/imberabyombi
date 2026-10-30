@@ -2,3 +2,4 @@
    form, the signature pad (as in O-Doc Sign), the large tick when it is sent; QR codes (events/qr.jsx) */
   .att_page { display: grid; min-height: 100dvh; place-items: center; padding: 1.5rem 1rem; background: rgb(var(--bg)); }
   .att_card { width: 100%; max-width: 30rem; padding: 1.75rem 1.5rem; }
+  .att_kind { color: rgb(var(--brand)); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
