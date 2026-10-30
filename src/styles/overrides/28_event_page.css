@@ -40,3 +40,4 @@
   .ev_inv_table thead th { position: sticky; top: 0; z-index: 1; }
   .ev_inv_table tbody tr:last-child td { border-bottom: 0; }
   .ev_inv_table td:first-child { overflow: hidden; }
+  .ev_inv_day { width: 9rem; color: rgb(var(--muted)); }
