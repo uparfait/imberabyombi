@@ -35,3 +35,5 @@ export const role_opens = r => MODS.filter(m => r && (r.perms === '*' || (r.perm
 export const landing = id => {
   const r = roles().find(x => x.id === id), ok = role_opens(r), k = ok.some(m => m.k === r?.land) ? r.land : ok[0]?.k;
   return k ? `/admin/${k}` : '/admin';
+};
+/* the "Lands on" choices: only the pages the role can open (they follow the access matrix as it changes).
