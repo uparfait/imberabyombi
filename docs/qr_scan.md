@@ -32,3 +32,4 @@ camera needs a secure page (https, or localhost while developing).
 
 ## Build and hosting
 `vite.config.js` builds two pages (`index.html` and `qr-scan/index.html`). On Vercel, `vercel.json` sends `/qr-scan` to
+`/qr-scan/` and serves its page before the site's catch-all; `sw.js` is never cached by the browser.
