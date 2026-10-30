@@ -18,5 +18,6 @@ export function place_tile(p) {
   const z = p.currentCSSZoom || 1, r = b.getBoundingClientRect(), de = document.documentElement, w = de.clientWidth / z, h = de.clientHeight / z, below = h - r.bottom / z - 20, above = r.top / z - 20;
   p.style.maxHeight = ''; const need = p.offsetHeight;   /* its full height (not the height it was squeezed to last time) */
   const cap = p.classList.contains('tile_pop') ? 480 : h, up = need > below && above > below, least = Math.min(need, 340, h - 16);
+  const room = Math.max(least, Math.min(cap, up ? above : below)), tall = Math.min(need, room);
   p.style.left = Math.max(8, Math.min(r.left / z, w - p.offsetWidth - 8)) + 'px';
 }
