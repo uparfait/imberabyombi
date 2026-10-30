@@ -40,3 +40,4 @@
   :where(s) { text-decoration-color: rgb(var(--bad)); text-decoration-thickness: 2px; opacity: .75; }
   :where(mark) { background: rgb(var(--brand) / .2); color: inherit; padding: .05em .3em; border-radius: calc(var(--radius) * .3); }
   abbr:where([title]) { text-decoration: underline dotted rgb(var(--brand)); text-underline-offset: 3px; cursor: help; }
+  :where(q) { font-style: italic; quotes: "“" "”" "‘" "’"; }
