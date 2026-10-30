@@ -45,3 +45,4 @@
 /* a document's page: pages | progress */
 .sign_split { display: grid; flex: 1; grid-template-columns: minmax(0, 1fr) 22rem; align-content: start; }
 .sign_side { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 1rem; }
+.sign_split > .sign_side { position: sticky; top: 4rem; order: 2; height: calc(100dvh / var(--sign_z, 1) - 4rem); overflow-y: auto; padding: 1.5rem 1.25rem; }
