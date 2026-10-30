@@ -18,3 +18,4 @@ Every page has its own address: `/path?key=value`. The router ([`src/router/`](.
 - `/login?role=<id>` locks the sign-in form to a role (invite link); `&email=..&name=..` pre-fills it (access link).
 
 ## How a navigation works
+1. A click on an internal link, `go(path)` from code, or Back / Forward (`popstate`) → `navigate()`.
