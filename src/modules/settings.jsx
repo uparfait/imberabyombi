@@ -18,3 +18,4 @@ const range = (k, label, v, min, max, step) => <div className="field">
   <input id={`token_${k}`} type="range" min={min} max={max} step={step} defaultValue={v} data-token={k} /></div>;
 
 function appearance(tk, th) {
+  const brand = tk.brand || rgb2hex(css_var('--brand')), radius = tk.radius ?? parseFloat(css_var('--radius')), space = tk.space ?? parseFloat(css_var('--space'));
