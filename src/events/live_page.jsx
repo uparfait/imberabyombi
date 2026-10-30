@@ -38,3 +38,4 @@ export function live_page(id, c) {
       <div className="card live_now">{it ? <><p className="att_kind">Now · {span(it)}</p><h2 className="live_now_t">{it.title}</h2>
         {it.p_name ? <p className="live_who">{it.p_name}{it.p_title ? `, ${it.p_title}` : ''}</p> : null}<progress max="100" value={done} aria-label="How far it has got"></progress></>
         : <><p className="att_kind">{next ? `Next · ${span(next)}` : 'Agenda'}</p><h2 className="live_now_t">{next ? next.title : ag.length ? 'Done' : 'No agenda'}</h2>
+          {next?.p_name ? <p className="live_who">{next.p_name}{next.p_title ? `, ${next.p_title}` : ''}</p> : null}</>}</div>
