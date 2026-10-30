@@ -58,3 +58,4 @@ Import the new file in `src/styles/index.css`, keep it under 100 lines, and add 
 
 ## Adding an icon
 Add one 24×24 stroke path to the dictionary in `src/icons/paths.js`; it works in `ic(name, classes)` and in the 3D
+`i3(name, classes, color)` at once (glossy 3D; colour: a tone, a hue or a hex, fixed in code; see [3D icons](icons_3d.md)).
