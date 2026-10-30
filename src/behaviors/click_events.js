@@ -9,3 +9,5 @@ import { pick, pick_at, tip, close_dialog } from '../overlays/index.js';
 import { file_box } from '../files/index.js';
 import { ACT, REQ, close_pops, toggle_details } from '../actions/index.js';
 import { set_nav_busy } from './nav_busy.js';
+
+function on_click(e) {
