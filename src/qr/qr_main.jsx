@@ -5,3 +5,5 @@ import '../styles/index.css';
 import '../styles/overrides.css';
 import './qr.css';
 import { Qr_app } from './qr_app.jsx';
+
+createRoot(document.getElementById('qr_root')).render(<Qr_app />);
