@@ -2,3 +2,4 @@
    the design-system demo in place. */
 import { Fragment } from 'react';
 import { lorem, hash_str, qs } from '../lib/index.js';
+import { ic } from '../icons/index.js';
