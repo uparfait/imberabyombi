@@ -17,3 +17,4 @@ on the browser's own time-zone data (Intl), so summer and winter time are always
 - The record keeps its time zone (`tz`), and its date and times as they were entered.
 - **The calendar converts**: each activity and event shows at its time in the page time zone, on the right day (a 9:00
   New York meeting shows at 16:00 in Kigali, at 23:00 in Tokyo). Tables show the zone it was set in (the `tz` column).
+- Email designs give every time with its time zone: "2:00 PM – 4:30 PM (GMT+2 · Kigali)".
