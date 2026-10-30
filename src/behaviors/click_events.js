@@ -19,3 +19,4 @@ function on_click(e) {
   if (pk) { if (pick.a !== pk) pick.open(pk); else if (pk.tagName === 'SELECT') pick.close(); return; }
   if (pick.a && !e.target.closest('#picker') && e.target !== pick.a) pick.close();
   const sum = e.target.closest('summary'); if (sum?.parentElement.tagName === 'DETAILS' && !e.target.closest('a, button, input')) toggle_details(sum.parentElement, e);
+  /* Sidebar: the clicked link shows the spinner in place of its icon while the page loads (the redraw brings the icon back).
