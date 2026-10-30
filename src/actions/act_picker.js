@@ -19,3 +19,4 @@ export const PICKER_ACT = {
   pk_nav: t => { const v = pick.view, n = +t.dataset.n; pick.view = pick.a && kind_of(pick.a) === 'month' ? new Date(v.getFullYear() + n, 0, 1) : new Date(v.getFullYear(), v.getMonth() + n, 1); pick.draw(); pick.slide(n); },
   pk_h24: t => { db.set('h24', t.dataset.v === '1'); dt_refresh(); pick.draw(); },
   pk_years: () => { pick.mode = pick.mode === 'years' ? 'days' : 'years'; pick.draw(); pick.slide(0); },
+  pk_year: t => { pick.view = new Date(+t.dataset.v, pick.view.getMonth(), 1); pick.mode = 'days'; pick.draw(); pick.slide(0); },
