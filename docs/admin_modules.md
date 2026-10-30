@@ -32,6 +32,7 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 - **Create menu**: adds a record in any module the role can manage, from any page.
 - **Command palette**: `Ctrl K` / `⌘K`, every page the role can open, searchable.
 - **Account menu**: Settings, Public website, a small "Allow text selection" switch (its help icon says what it does),
+  storage used, and Sign out at the very bottom.
 - **Nested navigation**: "Your modules" style menus for System 2 and System 3, pinned under the header while scrolling.
 
 ## Permissions
