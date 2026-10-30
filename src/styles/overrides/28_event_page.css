@@ -30,3 +30,4 @@
   .ev_upload:has(input:focus-visible) { outline: 2px solid rgb(var(--brand)); outline-offset: 2px; }
   .ev_inv_note { color: rgb(var(--muted)); font-size: .8125rem; overflow-wrap: anywhere; }
   .ev_chips { display: flex; flex-wrap: wrap; gap: .375rem; max-height: 10rem; overflow-y: auto; }
+  .ev_chip { display: inline-flex; align-items: center; gap: .25rem; max-width: 100%; padding: .25rem .25rem .25rem .75rem; border-radius: var(--pill);
