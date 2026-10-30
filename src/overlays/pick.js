@@ -22,3 +22,4 @@ export const ms_sync = s => { const v = s.nextElementSibling; if (v?.matches('.m
 export const pick = {
   el: document.getElementById('picker'), a: null, kb: false, mute: false, esc: false, mode: 'days', view: page_now(),
   from(a) { const v = a.value; return kind_of(a) === 'week' && /W\d/.test(v) ? week_date(v) : /^\d{4}-\d{2}/.test(v) ? parse_d(v) : page_now(); },
+  open(a, kb = false) {
