@@ -43,3 +43,4 @@ button.sign_chip:hover { background: rgb(var(--fg) / .1); }
 .sign_check_row { display: flex; align-items: center; gap: .125rem; }
 .sign_check { display: flex; align-items: center; gap: .5rem; font-size: .875rem; cursor: pointer; }
 /* Send for signing while it cannot be sent: disabled; hovering its wrapper shows why */
+.sign_send_wrap { display: block; }
