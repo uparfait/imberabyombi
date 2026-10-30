@@ -21,3 +21,4 @@
   .rp_round, .rp_last { justify-content: center; padding: 0; }
   .rp_round { aspect-ratio: 1; }
   .rp_last { grid-column: span 3; }
+  .rp_until { width: 12rem; }
