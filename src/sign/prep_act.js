@@ -46,6 +46,7 @@ export const PREP_ACT = {
     ask(`Remove ${r.name}? ${n ? `Their ${plural(n, 'field')} on the document go too.` : 'They will not get this document to sign.'}`, () => remove_rec(r), 'Remove', true); },
   /* Save draft keeps the draft as it is now: a signer still typed in the form is added first (a half-filled form stops the
      save and says what is missing), and the signer whose fields you are placing is remembered */
+  sign_save: () => { const f = document.querySelector('form[aria-label="Add a signer"]');
   sign_send: () => {
     const d = P.doc, R = d.recipients, alone = R.find(r => !d.fields.some(f => f.rid === r.id));
     /* what still stops it from being sent, in a dialog (a passing message was easy to miss) */
