@@ -12,3 +12,4 @@ import { Output } from './output.jsx';
 import { page_title } from '../ui/index.js';
 
 /* the state: the source (mode: text, lib or svg, and its value), the style, the colours ('' = worked out), the size */
+const FIRST = { mode: 'text', text: '#', svg: '', icon: null, icon_name: '', lib: 'lucide', style: 'glossy', cols: ['#E0661B', '', ''], size: 128 };
