@@ -11,3 +11,4 @@ const round = (icon, label, on, pressed) => <button type="button" className={`qr
   aria-pressed={pressed} title={label}>{ic(icon, 'h-5 w-5')}<span>{label}</span></button>;
 
 /* o: { app (installed), scanning, has_torch, lit, toggle_torch } */
+export const qr_live = o => { const mark = mark3d('#', 'h-9 w-9', brand());
