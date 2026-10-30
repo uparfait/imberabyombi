@@ -5,6 +5,7 @@
    (form_sec): the same sections as their details. An event's status (Scheduled, Postponed, Cancelled, Completed) is
    changed by the actions on its page, not in its form; the table shows where it stands (events/ev_state.js). */
 import { lorem, pad, ymd, add_d, page_tz, device_tz, zone_short } from '../lib/index.js';
+import { db } from '../store/index.js';
 import { bar_cell, badge, tag } from '../ui/index.js';
 import { ev_state } from '../events/ev_state.js';
 import { field_spec, option_list, STATUS, mail, tel } from './fields.js';
