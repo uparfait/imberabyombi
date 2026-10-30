@@ -16,3 +16,4 @@ import { allow_select_change, page_tz_change, role_land_change, perm_change, imp
 function on_change(e) {
   const t = e.target;
   if (t.matches?.('[data-viz-range]')) return request(() => viz_range(t.value));   /* a get: new numbers for the range */
+  if (t.getAttribute?.('aria-invalid') === 'true' && t.checkValidity()) { clear_err(t); if (t.type === 'radio') qsa(`[name="${t.name}"]`, t.form || document).forEach(clear_err); }
