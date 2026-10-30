@@ -17,7 +17,7 @@ export function Modal_form({ m }) {
   useLayoutEffect(() => {   /* the dirty check starts from the values the form opens with; the first field gets focus (not a
     date row's block: it would show its typing text instead of its value in words) */
     const f = ref.current; f._init = snap(f);
-    setTimeout(() => f.querySelector('input:not([type=hidden]),select,textarea')?.focus(), 50);
+    setTimeout(() => [...f.querySelectorAll('input:not([type=hidden]),select,textarea')].find(i => !i.closest('.when_row'))?.focus(), 50);
   }, []);
   useLayoutEffect(() => ref.current.querySelectorAll('[data-fill-rows]').forEach(fill_rows));   /* a field alone on its row fills it */
   const body = run_view(m.body), actions = run_view(m.actions), plain = blank(body), { title, help, submit, danger } = m;
