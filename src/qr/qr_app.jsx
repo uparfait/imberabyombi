@@ -15,3 +15,4 @@ const WHY = { NotAllowedError: 'The camera is blocked. Allow it for this site, o
 
 export function Qr_app() {
   useSyncExternalStore(on_change, can_install);   /* Install shows when the browser offers it */
+  const video = useRef(null), [st, set] = useState({ phase: 'idle' }), [facing, set_facing] = useState('environment');
