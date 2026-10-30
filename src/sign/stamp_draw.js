@@ -9,3 +9,4 @@ const FONT = '"Bricolage Grotesque", system-ui, sans-serif', C = 200;
 export function draw_stamp(c, { org, mid, color, shape }) {
   const x = c.getContext('2d', { willReadFrequently: true });
   const date = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: page_tz() }).toUpperCase();
+  const font = s => { x.font = `800 ${s}px ${FONT}`; };
