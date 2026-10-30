@@ -2,7 +2,7 @@
    signed: "Signed on" with a green tick; when you sign with a digital certificate: a word about it first; Download a copy
    as soon as anyone has signed), the sender's note for you, your progress with Next field and Finish, and the agreement shown before you sign. */
 import { ic, i3 } from '../icons/index.js';
-import { KINDS } from './sign_store.js';
+import { KINDS, when } from './sign_store.js';
 import { own_fields, left_of } from './signer_state.js';
 
 const next_text = left => left.length
