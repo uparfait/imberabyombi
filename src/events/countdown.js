@@ -15,3 +15,4 @@ export function count_to(e, st) {
   if (!e.date || e.tbd) return null;
   const end = (date, s) => e.end ? at(date, e.end, e.tz) : s + 2 * 3600e3;
   if (st === 'Upcoming' || st === 'Postponed') return ['Starts in', at(e.date, e.start, e.tz)];
+  if (st === 'Live') { const p = tz_parts(e.tz || page_tz(), Date.now()), day = e.repeat ? `${p.y}-${pad(p.mo)}-${pad(p.d)}` : e.date;
