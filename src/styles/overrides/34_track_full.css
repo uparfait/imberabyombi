@@ -18,3 +18,4 @@
   .track_step { width: 3.5rem; height: 3.5rem; } .track_step:disabled { opacity: .2; }
   .track_strip { display: flex; height: 100%; transition: transform .8s var(--ease); }
   .track_slide { display: grid; flex: 0 0 100%; place-content: center; justify-items: start; gap: 1.25rem; min-width: 0; padding: 0 6vw; text-align: left; }
+  .track_slide > * { max-width: min(100%, 70rem); }
