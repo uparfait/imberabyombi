@@ -13,3 +13,4 @@
   .ev_ag_table tr.is_done > td { opacity: .5; }
   .ev_org_table td { overflow: hidden; }
   .ev_tbl :is(th, td).ev_org_tel { width: 9rem; }
+  .ev_tbl :is(th, td).ev_org_acts { width: 10.5rem; padding-block: .375rem; text-align: right; white-space: nowrap; }
