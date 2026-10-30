@@ -19,3 +19,4 @@ const png = (c, n, k, bg) => new Promise((res, rej) => { const i = new Image();
   i.onerror = rej; i.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(mark(c, n)); });
 
 async function install_files(c) {
+  const at = new URL('./', location.href).href, link = (rel, href) => { const l = document.querySelector(`link[rel="${rel}"]`); if (l) l.href = href; };
