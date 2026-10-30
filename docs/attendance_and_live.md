@@ -26,3 +26,4 @@ task, Attendees, Full screen.
 
 ## Minutes and follow-ups
 - **Record minutes** (live screen) opens the document editor on that day's own document, `/admin/docs?doc=m_<id>`,
+  titled "Minutes · <title> · <date>" and started with who attended and the agenda. The event's page lists its minutes
