@@ -7,3 +7,5 @@ import { help_tip } from '../ui/index.js';
 import { show_in_dialog, tip } from '../overlays/index.js';
 import { VIEW, furl, fmt_size, file_kind, FICON } from './file_utils.js';
 import { file_info } from './file_info.jsx';
+
+/* a text or code file: its first 512 KB, read in the background (the spinner shows until then) */
