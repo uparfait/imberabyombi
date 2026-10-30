@@ -2,3 +2,4 @@
    stands, the details as cards by section and, from 1024px, the status and actions in a column on the right that stays
    in view. A card on the Events page opens it (ev_tile). */
   .ev_back { display: inline-flex; align-items: center; gap: .375rem; margin-bottom: .75rem; color: rgb(var(--muted)); font-size: .875rem; font-weight: 500; }
+  .ev_back:hover { color: rgb(var(--fg)); }
