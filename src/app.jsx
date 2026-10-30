@@ -21,3 +21,4 @@ const boot_loader = <div className="boot_loader" role="status" aria-label="Loadi
 export default function App() {
   const version = useSyncExternalStore(subscribe, get_version);
   const page = render_route();
+  useLayoutEffect(() => { mark_page(); run_after_render({ ...render_flags }); }, [version]);
