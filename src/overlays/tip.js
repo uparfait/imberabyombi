@@ -31,3 +31,4 @@ const SEEN = new Set(), still = () => matchMedia('(prefers-reduced-motion: reduc
 let run = 0;
 const first_help = root => [...root.querySelectorAll('.help_tip')]
   .find(x => (root.tagName === 'DIALOG' || !x.closest('header, #sidebar, #side_panel, dialog')) && x.getClientRects().length);
+function intro(x) {
