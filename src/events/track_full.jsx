@@ -5,3 +5,4 @@
    the page redraws every 30 seconds and when a countdown ends, and a picked item holds until the running one changes or
    two minutes pass. The text starts at the left, the block in the middle. The background is a soft tint from the
    item's title (hue(): the same title, the same colour; .tint), mixed into the page colour so it stays calm in both
+   themes; the now card has it too. item_end(e, a): when an item ends (ms). TRACK_ACT: its buttons. */
