@@ -38,3 +38,4 @@ export const ORG_ACT = {
         ...who({}, fresh), field(field_spec('p_tel', 'Phone', 'tel', 0, 0, fresh), '')],
       submit: 'Transfer', on_submit: (d, f) => {
         const nu = d.to === 'new' ? { name: d.p_name.trim(), email: lc(d.p_email), tel: d.p_tel || '' } : { ...co[+d.to], tel: '' };
+        if (d.to === 'new' && taken(e, nu.email, -2)) return twice(f, 'p_email');
