@@ -3,3 +3,4 @@
      /admin/sign · /drafts · /waiting · /completed · /inbox   the lists        /new   upload a PDF
      /edit/<id> prepare a draft   /doc/<id> follow a sent document   /sign/<id> sign it   /done/<id> signed
    A document opened at the wrong address moves to the right one (a sent draft to its page, someone else's to signing). */
+import { useEffect } from 'react';
