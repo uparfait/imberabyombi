@@ -32,3 +32,4 @@ Every feature below is working code. Each line says what it is and where it live
 
 ## Public website (`src/site/`)
 - Header with section links and scroll spy, mobile drawer, footer with sitemap; hero with typing effect.
+- Sections: about, mission, vision, strategies, staff, partners, thanks, contact (form + map), FAQ, pricing tiers.
