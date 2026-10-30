@@ -9,3 +9,5 @@ import { tile_menu } from '../admin/index.js';
 import { MAILS } from './mails.jsx';
 import { mail_body } from './mail_body.jsx';
 import { to } from '../router/index.js';
+
+/* key={k}: a new mail is a new element, so the paper's rise animation plays again (React draws the paper anew instead of patching it) */
