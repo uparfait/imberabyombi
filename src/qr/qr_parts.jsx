@@ -3,3 +3,4 @@
    scans. */
 import { useState } from 'react';
 import { ic } from '../icons/index.js';
+import { cfg } from '../config/index.js';
