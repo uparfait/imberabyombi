@@ -11,6 +11,7 @@ html, body { height: 100%; overflow: hidden; background: #0d0d0e; } html { scrol
 /* over the camera: the top row, the scan window (the rest dimmed by its outline), the hint and the round buttons */
 .qr_live { position: absolute; inset: 0; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; color: #fff;
   padding: max(.75rem, env(safe-area-inset-top)) 1rem max(1.25rem, env(safe-area-inset-bottom)); }
+.qr_live_top { position: relative; z-index: 3; display: flex; align-items: center; gap: .5rem; }
 @media (prefers-reduced-motion: reduce) { .qr_line { animation: none; top: 50%; } }
 .qr_idle { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1.25rem; padding: 2rem; color: #fff; text-align: center; }
 .qr_idle_ic { display: grid; width: 5rem; height: 5rem; place-items: center; border-radius: 1.5rem; background: rgb(255 255 255 / .08); }
