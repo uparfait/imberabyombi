@@ -62,3 +62,4 @@ export function invites_card(e, st, can) {
         <button type="button" className="ev_chip_x" data-act="ev_unwait" data-e={m} aria-label={`Remove ${m}`}>{ic('x', 'h-3 w-3')}</button></span>)}</div> : null}
       <button type="button" className="btn btn_primary btn_sm justify-self-start" data-act="ev_invite" data-id={e.id}>{ic('send', 'h-4 w-4')}{n ? `Send ${n_of(n, 'invite', 'invites')}` : 'Send invites'}</button>
     </div> : null}
+    {inv.length ? <><p className="ev_inv_count">{`${inv.length} invited`}</p><ul className="ev_invited">{inv.map(i => <li key={i.e}>
