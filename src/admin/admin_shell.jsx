@@ -36,3 +36,5 @@ export function admin_shell(mod, content) {
     <h1 className="sr-only">{m?.l || 'Not found'}</h1>
     <div className="link_group ml-auto flex sm:gap-1">
       {header_tools()}
+    </div></header>
+  <div className="flex flex-1">
