@@ -32,3 +32,4 @@ export function Tz_page() {
   const [y, mo, d] = st.date.split('-').map(Number), t = zoned_to_utc(y, mo, d, st.h, st.m, st.from);
   const tp = tz_parts(st.to, t), up = tz_parts('UTC', t), fo = offset_min(st.from, t), to = offset_min(st.to, t);
   const [main, suf] = fmt(tp.h, tp.mi, st.tf), days = Math.round((Date.UTC(tp.y, tp.mo - 1, tp.d) - Date.UTC(y, mo - 1, d)) / 864e5);
+  const chips = [gmt(to), diff(to - fo), ...(days > 0 ? ['Next day'] : days < 0 ? ['Previous day'] : [])];
