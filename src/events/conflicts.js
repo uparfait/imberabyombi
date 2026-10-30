@@ -9,3 +9,4 @@ import { at } from '../schemas/event_fields.js';
 
 const spans = (r, from, to) => { if (!r.date || r.tbd || r.status === 'Cancelled') return [];
   const days = r.kind === 'Recurring' && r.repeat ? repeat_dates(r.repeat, r.date, from, to) : r.date >= from && r.date <= to ? [r.date] : [];
+  return days.map(d => { const s = at(d, r.start, r.tz); return [s, r.end ? at(d, r.end, r.tz) : s + 2 * 3600e3, d]; }); };
