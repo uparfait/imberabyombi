@@ -42,3 +42,4 @@ export const pick = {
   set(v, done = true) { if (!this.a) return; set_native_value(this.a, v); this.emit(); done ? this.close(this.kb || FINE()) : this.draw(); },
   draw() {
     const a = this.a, el = this.el, t = kind_of(a); let h = '', kind = 'menu';
+    if (a.dataset.list != null) h = PK.list(a);
