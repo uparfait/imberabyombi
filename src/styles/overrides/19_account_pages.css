@@ -50,3 +50,4 @@
   /* account pages (account/auth_shell.jsx): the brand colour with the white pattern, as the home page's Thanks block */
   .auth_bg { position: relative; isolation: isolate; background: rgb(var(--brand)); }
   .auth_bg > .pattern_layer { --pc: 255 255 255; --pa: .13; }
+  .auth_top .icon_btn { color: #fff; } .auth_top .icon_btn:hover { background: rgb(255 255 255 / .12); color: #fff; }
