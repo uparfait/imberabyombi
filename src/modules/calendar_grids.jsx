@@ -17,3 +17,4 @@ const chip = i => { const a = to_min(i.start), b = Math.max(to_min(i.end), a + 3
 export function week_grid(d, items) {
   const s = add_d(d, -d.getDay()), days = Array.from({ length: 7 }, (_, i) => add_d(s, i)), td = ymd(), gl = zone_of(page_tz()).short.split(' · ')[0], now = page_now();
   const head = x => { const k = ymd(x); return <button key={k} className="grid justify-items-center gap-1 py-3" data-act="goday" data-d={k}>
+    <span className={`text-[0.6875rem] font-semibold tracking-widest ${k === td ? 'text-accent' : 'text-muted'}`}>{wday(x)}</span>
