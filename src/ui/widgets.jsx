@@ -11,3 +11,8 @@ export const tabs = (key, items, cur) => (
     {items.map(([v, l, n]) => (
       <button key={v} role="tab" aria-selected={v === cur} className={v === cur ? 'tab active' : 'tab'} data-act="tab" data-key={key} data-v={v}>
         {l}{n ? <>{' '}<span className="chip ml-1 bg-surface-2 text-muted">{n}</span></> : null}
+      </button>
+    ))}
+  </div>
+);
+export const stat_row = items => (
