@@ -27,3 +27,4 @@ export const steps_card = d => { const left = left_of(d);
     <p className={`text-sm ${left.length ? 'text-muted' : 'font-medium text-ok'}`}>{next_text(left)}</p>{bar(d)}
     <div className="mt-4 grid gap-2">
       <button type="button" className="btn btn_outline btn_sm" data-act="sign_next" disabled={!left.length}>{ic('arrow_downward', 'h-4 w-4')}Next field</button>
+      <button type="button" className="btn btn_primary btn_sm" data-act="sign_finish" disabled={!!left.length}>{ic('signature', 'h-4 w-4')}Finish and sign</button></div></section>; };
