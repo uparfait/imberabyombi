@@ -10,6 +10,7 @@ import { db, ui } from '../store/index.js';
 import { auth, me } from '../auth/index.js';
 import { countdown } from '../modules/index.js';
 import { redraw_slot } from './live_slot.jsx';
+import { my_role } from '../events/my_role.js';
 
 /* a record's date and times on the page's clock (records with no tz were set in the page's zone) */
 const here = r => { const tz = r.tz || page_tz(), to = page_tz(), a = convert(r.date, r.start || '09:00', tz, to);
