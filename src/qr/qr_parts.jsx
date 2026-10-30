@@ -8,3 +8,4 @@ import { secure } from './qr_engine.js';
 import { can_install, install, apple, standalone } from './qr_install.js';
 
 function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
+  const [ok, set] = useState(false);
