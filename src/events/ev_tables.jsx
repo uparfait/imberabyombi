@@ -5,3 +5,4 @@
    item, and the buttons show their icons only (ev_wide / ev_narrow). */
 import { fmt_time } from '../lib/index.js';
 import { ic } from '../icons/index.js';
+import { agenda_now } from './agenda_now.js';
