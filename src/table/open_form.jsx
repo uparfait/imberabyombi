@@ -25,3 +25,4 @@ export function open_form(c, id, preset = {}) {
     } });
   /* modal() draws at once, except when called while React is drawing (a form opened after navigation): then a moment later */
   const f = qs('#modal form');
+  if (f && f !== before) sync_when(f); else setTimeout(() => sync_when(qs('#modal form')));
