@@ -15,3 +15,5 @@ function Copy({ text, label = 'Copy', cls = 'btn btn_outline' }) {
 }
 const theme = () => { const html = document.documentElement, dark = !html.classList.contains('dark'); html.classList.toggle('dark', dark);
   try { localStorage.setItem('loremds:v1:theme', JSON.stringify(dark ? 'dark' : 'light')); } catch { /* kept for this visit only */ } };
+
+export const top_bar = () => <header className="qr_top">
