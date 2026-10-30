@@ -15,6 +15,7 @@ import { agree_body } from './signer_side.jsx';
 import { Cert_pick, verify } from './cert_pick.jsx';
 import { P } from './prep_state.js';
 
+/* a field on screen: in the Preview and sign overlay when it is open (the draft's own fields are behind it) */
 function apply(d, f, url) {
   const first = !S.adopted[f.type], [l] = KINDS[f.type];
   S.pending[f.id] = url; S.adopted[f.type] = url; rerender(); qs(`[data-fid="${f.id}"]`)?.classList.add('sf_new');
