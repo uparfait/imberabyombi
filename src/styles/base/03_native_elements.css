@@ -41,3 +41,4 @@
   :where(mark) { background: rgb(var(--brand) / .2); color: inherit; padding: .05em .3em; border-radius: calc(var(--radius) * .3); }
   abbr:where([title]) { text-decoration: underline dotted rgb(var(--brand)); text-underline-offset: 3px; cursor: help; }
   :where(q) { font-style: italic; quotes: "“" "”" "‘" "’"; }
+  :where(q)::before { content: open-quote; color: rgb(var(--brand)); }
