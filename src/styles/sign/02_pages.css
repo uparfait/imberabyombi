@@ -27,3 +27,4 @@
 @media (pointer: coarse) { .sf_rs { right: -.75rem; bottom: -.75rem; width: 1.5rem; height: 1.5rem; } }
 .sf_edit.sel .sf_x { display: grid; }
 .sf_edit.sel .sf_rs { display: block; }
+.sf_todo { border: 2px solid rgb(var(--warn)); background: color-mix(in srgb, rgb(var(--warn)) 13%, #fff); color: #7A5A00; cursor: pointer;
