@@ -31,3 +31,4 @@ Each module is a view in [`src/modules/`](../src/modules/) registered in `VIEWS`
 - **Side panels** beside the content: notes, my tasks (with Completed), searchable help. The page shrinks to make room.
 - **Create menu**: adds a record in any module the role can manage, from any page.
 - **Command palette**: `Ctrl K` / `⌘K`, every page the role can open, searchable.
+- **Account menu**: Settings, Public website, Sign out, a small "Allow text selection" switch, storage used.
