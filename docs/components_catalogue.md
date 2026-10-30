@@ -55,3 +55,5 @@ Put the class in `src/styles/components/` with `@apply` and token-based utilitie
 }
 ```
 Import the new file in `src/styles/index.css`, keep it under 100 lines, and add a specimen to the design-system page.
+
+## Adding an icon
