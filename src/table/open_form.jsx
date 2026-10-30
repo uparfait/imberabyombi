@@ -21,3 +21,4 @@ export function open_form(c, id, preset = {}) {
       s.f.forEach(f => { if (f.t === 'number' && d[f.k] !== '' && d[f.k] != null) d[f.k] = +d[f.k]; });
       if (s.before) { const r = await s.before(d, row, form); if (r === false) return false; d = r; }
       ui.flash = db.upsert(c, { ...row, ...d }); rerender();
+      notify(id ? `Your changes to this ${s.l} are saved.` : `The new ${s.l} is in the list.`, 'ok', id ? 'Changes saved' : `${cap(s.l)} added`);
