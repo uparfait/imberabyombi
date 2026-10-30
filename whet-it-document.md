@@ -82,3 +82,5 @@ Every feature below is working code. Each line says what it is and where it live
 ## Charts and KPIs (`src/charts/`)
 - Many chart types and KPI designs in SVG, drawn at their real width in the system colours, with a date range,
   hover values, and a click on a card (or a mark) that opens its data in a table, 20 rows a page.
+
+## Platform
