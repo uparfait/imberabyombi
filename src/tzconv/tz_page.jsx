@@ -13,3 +13,4 @@ const ymd_of = p => `${p.y}-${pad(p.mo)}-${pad(p.d)}`;
 /* the start: now, in the page's time zone, converted to UTC (or to London when the page is on UTC) */
 function first() {
   const from = page_tz(), p = tz_parts(from, Date.now()), f = h24() ? '24' : '12';
+  return { from, to: from === 'UTC' ? 'Europe/London' : 'UTC', ff: f, tf: f, date: ymd_of(p), h: p.h, m: p.mi, dk: 0 };
