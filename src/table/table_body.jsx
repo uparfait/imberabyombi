@@ -27,3 +27,4 @@ function row_acts(c, o, r, can) {
 function none_row(c, s, can, filtered, span) {
   const add = can ? <button className="btn btn_primary btn_sm" data-act="add" data-col={c}>{ic('plus', 'w-4 h-4')}{`Add ${s.l}`}</button> : null;
   return (
+    <tr key="none" className="hover:bg-transparent"><td colSpan={span} className="table_none border-0">{filtered
