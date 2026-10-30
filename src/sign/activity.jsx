@@ -3,3 +3,4 @@
    sentence and date show on hover. Sending shows who it went to as faces, not a list of emails. */
 import { ic } from '../icons/index.js';
 import { initials } from '../ui/index.js';
+import { seed_color } from '../lib/index.js';
