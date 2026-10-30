@@ -32,6 +32,7 @@ shared fields in [`event_fields.js`](../src/schemas/event_fields.js). Attendance
   emails. On the event's page and Open This Event they are one **Organisers** table (name, email, phone, role) with
   **Add** (a co-organiser), **Edit** on each (a co-organiser's has Remove) and **Transfer** on the organiser: a
   co-organiser or someone new becomes the organiser, and the one before stays on as a co-organiser
+  ([`ev_tables.jsx`](../src/events/ev_tables.jsx), [`org_act.jsx`](../src/events/org_act.jsx)). An email is on it once.
 - **Agenda**: items, each with a time from and to, a title, a description and a presenter (name, email, title). The item
   running now is marked on the page and the live screen ([`events/agenda_now.js`](../src/events/agenda_now.js)).
   Saving checks the times: each item ends after it starts, stays within the event's start and end, and starts once the
