@@ -34,6 +34,7 @@
   @media (max-width: 639px) {
     /* docked on a phone: the names stay, trimmed, and the arrow stays (it shows the button opens a menu); the icon goes */
     html.nav_docked .nav_row.is_pinned .tile_trigger { gap: .25rem; padding: 0 .625rem 0 .875rem; }
+    html.nav_docked .nav_row.is_pinned .tile_trigger > :first-child:not(.truncate) { display: none; }
   /* A usual dropdown under its button. Many tiles: the title stays, only the tiles scroll; the menu never runs off the screen.
      Phones: as wide as the screen allows (8px from each edge), still right under its button. */
   .tile_pop:not([hidden]) { display: flex; flex-direction: column; overflow: hidden; }
