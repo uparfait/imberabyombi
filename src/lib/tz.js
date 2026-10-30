@@ -3,3 +3,4 @@
    clock, as a Date whose local fields (getDate, getHours…) read it, so ymd(), hm() and the calendar follow it. */
 import { pad } from './text.js';
 /* db straight from its file (not the store barrel), as in dates.js */
+import { db } from '../store/db.js';
