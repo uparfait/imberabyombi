@@ -43,3 +43,4 @@ export const HASH = '<svg viewBox="-37.5 0 660 660"><path transform="matrix(1 0 
 export const HASH_VIEW = [28, 24, 144, 144];
 
 /* a glossy letter or symbol, inline so it uses the site's fonts; '#' is drawn from HASH (the brand mark) */
+const MARKS = new Map();
