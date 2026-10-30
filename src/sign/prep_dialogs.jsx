@@ -22,5 +22,5 @@ export const send_body = d => <div className="grid gap-4 sm:col-span-2">
       <span className="min-w-0 flex-1"><span className="block truncate text-sm font-medium">{r.name}</span>
         <span className="block truncate text-xs text-muted">{r.email} · {n} field{n === 1 ? '' : 's'}{r.cert ? ' · digital signature' : ''}</span>
         {r.note ? <span className="sign_note mt-1">“{r.note}”</span> : null}</span>
-      {ic('send', 'h-4 w-4 shrink-0 text-muted')}</li>; })}</ul>
+      {r.status === 'signed' ? ic('check', 'h-4 w-4 shrink-0 text-ok') : ic('send', 'h-4 w-4 shrink-0 text-muted')}</li>; })}</ul>
 </div>;
