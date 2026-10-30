@@ -24,3 +24,4 @@ const PARTS = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeri
 /* the wall-clock parts of instant t in tz */
 export function tz_parts(tz, t) {
   const o = {}; for (const p of F(tz, 'p', PARTS).formatToParts(new Date(t))) o[p.type] = p.value;
+  return { y: +o.year, mo: +o.month, d: +o.day, h: (+o.hour) % 24, mi: +o.minute, s: +o.second };
