@@ -49,3 +49,4 @@ src/schemas/     one schema per data type                    src/table/ src/fiel
 ```
 
 ## Make it yours in five steps
+1. **Brand**: name, logo parts, media and business rules in `src/config/site_config.js`.
