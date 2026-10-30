@@ -27,3 +27,4 @@ code loads on demand (O-Doc Sign) adds its handlers when it arrives: `add_act(EX
 
 ## data-form: a form names its handler
 `<form data-form="contact" noValidate>` → on a valid submit `FORMS.contact(values, form)` runs, inside `request()`
+with the submit button busy. Validation (required, email, patterns, date formats) runs first and writes messages inline.
