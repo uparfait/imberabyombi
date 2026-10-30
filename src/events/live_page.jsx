@@ -1,5 +1,6 @@
 /* events/live_page.jsx: the live screen of an event or activity (/admin/events/<id>/live, /admin/calendar/<id>/live): the
    whole window, no sidebar, to show while it runs. Its title in the top bar (cut with "…" when long, whole on hover);
+   then its description and times, the agenda item running now (large, with its presenter and how far it has got), the
 import { tz_parts, page_tz, fmt_time, fmt_d, zone_short } from '../lib/index.js';
 import { db, route, rerender, after_render, TIMERS } from '../store/index.js';
 import { auth } from '../auth/index.js';
