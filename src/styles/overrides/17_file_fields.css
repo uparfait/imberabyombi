@@ -31,3 +31,4 @@
   .viz_plot svg:has(.mark_group:hover) .mark_group:not(:hover) .mark:not(.mark_flow) { opacity: .4; }
   .viz_plot .mark_flow { fill: none; opacity: .35; }
   .viz_plot .mark_group:hover .mark_flow { opacity: .65; }
+  .viz_plot .mark_cell:hover { stroke: rgb(var(--fg)); stroke-width: 1.5; }
