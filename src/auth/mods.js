@@ -1,7 +1,7 @@
 /* auth/mods.js: RBAC modules = permission keys; levels 0 none · 1 view · 2 manage.
    Each record: k = key (route /admin/<k>), l = label, s = short label, i = icon, g = sidebar group, full = opens in the
    whole window without the admin sidebar and header (it brings its own Back button), d = what it is (the sidebar link's
-   tooltip). */
+   tooltip), app = an app of its own on this site that the link opens (a full page load, not a route of this one). */
 export const MODS = [
   { k: 'dashboard', l: 'Dashboard', s: 'Home', i: 'chart', g: 'Overview' },
   { k: 'calendar', l: 'Calendar & activities', s: 'Calendar', i: 'calendar', g: 'Overview' },
