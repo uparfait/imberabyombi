@@ -6,3 +6,4 @@ import { db, route } from '../store/index.js';
 import { auth } from '../auth/index.js';
 import { ic } from '../icons/index.js';
 import { badge, empty, help_tip } from '../ui/index.js';
+import { to } from '../router/index.js';
