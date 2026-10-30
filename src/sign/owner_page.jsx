@@ -14,3 +14,4 @@ import { activity } from './activity.jsx';
 import { chips, note_text } from './signer_bits.jsx';
 
 function Doc_view({ d }) {
+  const marks = use_marks(d.id, d.updated);
