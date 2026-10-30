@@ -5,7 +5,7 @@ import { db, ui, cur, rerender } from '../store/index.js';
 import { schemas } from '../schemas/index.js';
 import { notify } from '../feedback/index.js';
 import { field, when_row, fill_rows } from '../fields/index.js';
-import { modal } from '../overlays/index.js';
+import { modal, snap } from '../overlays/index.js';
 
 /* fields; those a schema groups with row: 'when' (a date and its times) go on one line, where the first is */
 const fields_of = (fs, row) => fs.map(f => !f.row ? field(f, row[f.k], row)
