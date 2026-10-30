@@ -3,3 +3,4 @@
    back, agenda_ok(form) checks each ends after it starts. */
 import { useState } from 'react';
 import { uid } from '../lib/index.js';
+import { ic } from '../icons/index.js';
